@@ -10,12 +10,14 @@ triple_banana_manifest = "$target_gen_dir/AndroidManifest.xml"
 
 jinja_template("triple_banana_manifest") {
   # TripleBanana's manifest is based on chrome_public_apk's manifest.
-  input = "//chrome/android/java/AndroidManifest.xml"
+  includes = [ "//chrome/android/java/AndroidManifest.xml" ]
+  input = "//triple_banana/browser/java/AndroidManifest.xml"
   output = triple_banana_manifest
-  variables = default_chrome_public_jinja_variables +
-              [ "manifest_package=$manifest_package",
+  variables = default_chrome_public_jinja_variables + [
+                "manifest_package=$manifest_package",
                 "min_sdk_version=19",
-                "target_sdk_version=$android_sdk_version", ]
+                "target_sdk_version=$android_sdk_version",
+              ]
 }
 
 chrome_public_common_apk_or_module_tmpl("triple_banana") {
@@ -25,8 +27,23 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   android_manifest = triple_banana_manifest
   android_manifest_dep = ":triple_banana_manifest"
 
-  shared_libraries = ["//chrome/android:libchrome"]
+  shared_libraries = [ "//chrome/android:libchrome" ]
 
+  deps = [
+    ":triple_banana_java",
+    "//chrome/android:chrome_apk_pak_assets",
+    "//chrome/android:chrome_public_apk_resources",
+    "//chrome/android:chrome_public_base_module_java",
+    "//chrome/android:chrome_public_non_pak_assets",
+    "//chrome/android:chrome_public_v8_assets",
+    "//third_party/icu:icu_assets",
+  ]
+}
+
+android_library("triple_banana_java") {
+  java_files = [
+    "//triple_banana/browser/java/org/triple/banana/TripleBananaApplication.java",
+  ]
   deps = [
     "//chrome/android:chrome_apk_pak_assets",
     "//chrome/android:chrome_public_apk_resources",
