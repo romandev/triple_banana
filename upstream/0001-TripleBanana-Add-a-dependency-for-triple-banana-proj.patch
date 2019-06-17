@@ -1,0 +1,25 @@
+From 626e187660740adb4e831255b532e1790220338e Mon Sep 17 00:00:00 2001
+From: Jinho Bang <jinho.bang@samsung.com>
+Date: Mon, 17 Jun 2019 19:36:11 +0900
+Subject: [PATCH] TripleBanana: Add a dependency for triple banana project
+
+After this patch, we can build triple_banana target via ninja build.
+---
+ BUILD.gn | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/BUILD.gn b/BUILD.gn
+index 653e1d24..f82e846 100644
+--- a/BUILD.gn
++++ b/BUILD.gn
+@@ -63,6 +63,7 @@ group("gn_all") {
+   testonly = true
+ 
+   deps = [
++    "//triple_banana:triple_banana",
+     ":gn_visibility",
+     "//base:base_perftests",
+     "//base:base_unittests",
+-- 
+2.7.4
+
