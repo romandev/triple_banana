@@ -41,15 +41,9 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 }
 
 android_library("triple_banana_java") {
-  java_files = [
-    "//triple_banana/browser/java/org/triple/banana/TripleBananaApplication.java",
-  ]
+  java_files =
+      [ "//triple_banana/browser/java/org/triple/banana/ChromeExport.java" ]
   deps = [
-    "//chrome/android:chrome_apk_pak_assets",
-    "//chrome/android:chrome_public_apk_resources",
-    "//chrome/android:chrome_public_base_module_java",
-    "//chrome/android:chrome_public_non_pak_assets",
-    "//chrome/android:chrome_public_v8_assets",
-    "//third_party/icu:icu_assets",
+    "//base:base_java",
   ]
 }

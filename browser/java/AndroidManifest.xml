@@ -6,4 +6,4 @@
 
 ## Note: This is a jinja2 template, processed at build time into the final manifest.
 
-{% block application_name %}org.triple.banana.TripleBananaApplication{% endblock %}
+## {% block application_name %}org.triple.banana.TripleBananaApplication{% endblock %}
