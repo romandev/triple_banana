@@ -1,14 +1,14 @@
-From 689d564ae60a159c672d294ca16a65b24022ea3d Mon Sep 17 00:00:00 2001
+From d7f733874cfeb9607089191ad8f4cbcffaed2a8e Mon Sep 17 00:00:00 2001
 From: Jinho Bang <zino@chromium.org>
 Date: Mon, 17 Jun 2019 19:36:11 +0900
 Subject: [PATCH] TripleBanana: Add a dependency for triple banana project
 
 After this patch, we can build triple_banana target via ninja build.
 ---
- BUILD.gn                                                               | 1 +
- chrome/android/BUILD.gn                                                | 3 ++-
- .../java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java     | 1 +
- 3 files changed, 4 insertions(+), 1 deletion(-)
+ BUILD.gn                                                          | 1 +
+ chrome/android/BUILD.gn                                           | 8 ++++----
+ .../src/org/chromium/chrome/browser/ChromeTabbedActivity.java     | 1 +
+ 3 files changed, 6 insertions(+), 4 deletions(-)
 
 diff --git a/BUILD.gn b/BUILD.gn
 index 653e1d24..30eb19ca 100644
@@ -23,18 +23,28 @@ index 653e1d24..30eb19ca 100644
      "//ui/gfx:gfx_unittests",
      "//url:url_unittests",
 diff --git a/chrome/android/BUILD.gn b/chrome/android/BUILD.gn
-index fed5592..6303638 100644
+index fed5592..c59e57d 100644
 --- a/chrome/android/BUILD.gn
 +++ b/chrome/android/BUILD.gn
 @@ -27,6 +27,7 @@ import("//third_party/icu/config.gni")
  import("//third_party/protobuf/proto_library.gni")
  import("//tools/resources/generate_resource_whitelist.gni")
  import("//tools/v8_context_snapshot/v8_context_snapshot.gni")
-+import("//triple_banana/triple_banana_sources.gni")
++import("//triple_banana/triple_banana.gni")
  import("//ui/android/features.gni")
  import("channel.gni")
  import("java_sources.gni")
-@@ -441,7 +442,7 @@ android_library("chrome_java") {
+@@ -102,8 +103,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
+ android_resources("chrome_app_java_resources") {
+   resource_dirs = [
+     "java/res",
+-    "//chrome/android/java/res_chromium",
+-  ]
++  ] + triple_banana_resource
+ 
+   if (enable_android_night_mode) {
+     resource_dirs += [ "//chrome/android/java/res_night" ]
+@@ -441,7 +441,7 @@ android_library("chrome_java") {
    java_files = chrome_java_sources + [
                   app_hooks_impl,
                   _chrome_version_java_file,
@@ -43,6 +53,15 @@ index fed5592..6303638 100644
  
    # Include sources from feed_java_sources.gni.
    java_files += feed_java_sources
+@@ -1066,7 +1066,7 @@ if (enable_vr || enable_arcore) {
+ 
+ # Overrides icon / name defined in chrome_app_java_resources.
+ android_resources("chrome_public_apk_resources") {
+-  resource_dirs = [ "java/res_chromium" ]
++  resource_dirs = triple_banana_resource
+ 
+   # Dep needed to ensure override works properly.
+   deps = [
 diff --git a/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java b/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 index 402e898..97b776b 100644
 --- a/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
