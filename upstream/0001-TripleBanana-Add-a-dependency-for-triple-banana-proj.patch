@@ -1,52 +1,60 @@
-From eff40618ac6a915127351cf0f711179e68dec14b Mon Sep 17 00:00:00 2001
+From 689d564ae60a159c672d294ca16a65b24022ea3d Mon Sep 17 00:00:00 2001
 From: Jinho Bang <zino@chromium.org>
-Date: Wed, 3 Jul 2019 00:53:49 +0900
+Date: Mon, 17 Jun 2019 19:36:11 +0900
 Subject: [PATCH] TripleBanana: Add a dependency for triple banana project
 
 After this patch, we can build triple_banana target via ninja build.
 ---
- BUILD.gn                                                                | 1 +
- chrome/android/BUILD.gn                                                 | 1 +
- .../java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java      | 2 ++
- 3 files changed, 4 insertions(+)
+ BUILD.gn                                                               | 1 +
+ chrome/android/BUILD.gn                                                | 3 ++-
+ .../java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java     | 1 +
+ 3 files changed, 4 insertions(+), 1 deletion(-)
 
 diff --git a/BUILD.gn b/BUILD.gn
-index 653e1d24..f82e846 100644
+index 653e1d24..30eb19ca 100644
 --- a/BUILD.gn
 +++ b/BUILD.gn
-@@ -63,6 +63,7 @@ group("gn_all") {
-   testonly = true
- 
-   deps = [
+@@ -78,6 +78,7 @@ group("gn_all") {
+     "//tools/binary_size:binary_size_trybot_py",
+     "//tools/ipc_fuzzer:ipc_fuzzer_all",
+     "//tools/metrics:metrics_metadata",
 +    "//triple_banana:triple_banana",
-     ":gn_visibility",
-     "//base:base_perftests",
-     "//base:base_unittests",
+     "//ui/base:ui_base_unittests",
+     "//ui/gfx:gfx_unittests",
+     "//url:url_unittests",
 diff --git a/chrome/android/BUILD.gn b/chrome/android/BUILD.gn
-index fed5592..75c7e26 100644
+index fed5592..6303638 100644
 --- a/chrome/android/BUILD.gn
 +++ b/chrome/android/BUILD.gn
-@@ -267,6 +267,7 @@ android_library("chrome_java") {
-     ":thumbnail_cache_entry_proto_java",
-     ":update_proto_java",
-     ":usage_stats_proto_java",
-+    "//triple_banana:triple_banana_java",
-     "$google_play_services_package:google_play_services_auth_base_java",
-     "$google_play_services_package:google_play_services_base_java",
-     "$google_play_services_package:google_play_services_basement_java",
+@@ -27,6 +27,7 @@ import("//third_party/icu/config.gni")
+ import("//third_party/protobuf/proto_library.gni")
+ import("//tools/resources/generate_resource_whitelist.gni")
+ import("//tools/v8_context_snapshot/v8_context_snapshot.gni")
++import("//triple_banana/triple_banana_sources.gni")
+ import("//ui/android/features.gni")
+ import("channel.gni")
+ import("java_sources.gni")
+@@ -441,7 +442,7 @@ android_library("chrome_java") {
+   java_files = chrome_java_sources + [
+                  app_hooks_impl,
+                  _chrome_version_java_file,
+-               ]
++               ] + triple_banana_hooks_sources
+ 
+   # Include sources from feed_java_sources.gni.
+   java_files += feed_java_sources
 diff --git a/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java b/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-index 402e898..6cce731 100644
+index 402e898..97b776b 100644
 --- a/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 +++ b/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-@@ -1565,6 +1565,8 @@ public class ChromeTabbedActivity
+@@ -1564,6 +1564,7 @@ public class ChromeTabbedActivity
+                 commandLine.appendSwitchesAndArguments(args);
              }
          }
++        org.triple.banana.hooks_api.ChromeHooks.api.initCommandLine();
  
-+        org.triple.banana.ChromeExport.api.initCommandLine(commandLine);
-+
          supportRequestWindowFeature(Window.FEATURE_ACTION_MODE_OVERLAY);
  
-         // We are starting from history with a URL after data has been cleared. On Samsung this
 -- 
 2.7.4
 

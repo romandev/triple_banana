@@ -4,17 +4,12 @@
 
 package org.triple.banana;
 
-import org.chromium.base.CommandLine;
+import org.triple.banana.public_api.export.BananaApplication;
+import org.triple.banana.public_api.export.BananaCommandLine;
 
-public enum ChromeExport {
-    api;
-
-    /**
-     * Perform TripleBanana-specific command line initialization.
-     *
-     * @param commandLine CommandLine instance to be updated.
-     */
-    public void initCommandLine(CommandLine commandLine) {
+public class TripleBananaApplication extends BananaApplication {
+    @Override
+    public void initCommandLine(BananaCommandLine commandLine) {
         commandLine.appendSwitchWithValue(
                 "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
     }

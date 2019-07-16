@@ -11,7 +11,7 @@ triple_banana_manifest = "$target_gen_dir/AndroidManifest.xml"
 jinja_template("triple_banana_manifest") {
   # TripleBanana's manifest is based on chrome_public_apk's manifest.
   includes = [ "//chrome/android/java/AndroidManifest.xml" ]
-  input = "//triple_banana/browser/java/AndroidManifest.xml"
+  input = "//triple_banana/src/AndroidManifest.xml"
   output = triple_banana_manifest
   variables = default_chrome_public_jinja_variables + [
                 "manifest_package=$manifest_package",
@@ -30,7 +30,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   shared_libraries = [ "//chrome/android:libchrome" ]
 
   deps = [
-    ":triple_banana_java",
+    ":triple_banana_application_java",
     "//chrome/android:chrome_apk_pak_assets",
     "//chrome/android:chrome_public_apk_resources",
     "//chrome/android:chrome_public_base_module_java",
@@ -40,10 +40,23 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   ]
 }
 
-android_library("triple_banana_java") {
-  java_files =
-      [ "//triple_banana/browser/java/org/triple/banana/ChromeExport.java" ]
+android_library("triple_banana_public_api_java") {
+  java_files = [
+    "//triple_banana/public/org/triple/banana/public_api/internal/BananaChromeHooksImpl.java",
+    "//triple_banana/public/org/triple/banana/public_api/export/BananaApplication.java",
+    "//triple_banana/public/org/triple/banana/public_api/export/BananaCommandLine.java",
+    "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
+  ]
   deps = [
     "//base:base_java",
+    "//chrome/android:chrome_java",
+  ]
+}
+
+android_library("triple_banana_application_java") {
+  java_files =
+      [ "//triple_banana/src/org/triple/banana/TripleBananaApplication.java" ]
+  deps = [
+    ":triple_banana_public_api_java",
   ]
 }
