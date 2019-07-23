@@ -46,16 +46,20 @@ android_library("triple_banana_public_api_java") {
     "//triple_banana/public/org/triple/banana/public_api/export/BananaApplication.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaCommandLine.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
+    "//triple_banana/public/org/triple/banana/public_api/export/BananaTab.java",
   ]
   deps = [
     "//base:base_java",
     "//chrome/android:chrome_java",
+    "//content/public/android:content_java",
   ]
 }
 
 android_library("triple_banana_application_java") {
-  java_files =
-      [ "//triple_banana/src/org/triple/banana/TripleBananaApplication.java" ]
+  java_files = [
+    "//triple_banana/src/org/triple/banana/MediaSuspendController.java",
+    "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
+  ]
   deps = [
     ":triple_banana_public_api_java",
   ]

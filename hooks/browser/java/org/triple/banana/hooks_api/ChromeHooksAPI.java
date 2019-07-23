@@ -4,6 +4,9 @@
 
 package org.triple.banana.hooks_api;
 
+import org.chromium.chrome.browser.tab.Tab;
+
 public interface ChromeHooksAPI {
     void initCommandLine();
+    void onUrlUpdated(Tab tab);
 }

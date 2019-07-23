@@ -8,6 +8,9 @@ import org.triple.banana.hooks_api.ChromeHooks;
 import org.triple.banana.hooks_api.ChromeHooksAPI;
 import org.triple.banana.public_api.export.BananaCommandLine;
 import org.triple.banana.public_api.export.BananaHooks;
+import org.triple.banana.public_api.export.BananaTab;
+
+import org.chromium.chrome.browser.tab.Tab;
 
 public class BananaChromeHooksImpl implements ChromeHooksAPI {
     private BananaHooks mImpl;
@@ -25,5 +28,10 @@ public class BananaChromeHooksImpl implements ChromeHooksAPI {
     @Override
     public void initCommandLine() {
         getImpl().initCommandLine(BananaCommandLine.instance);
+    }
+
+    @Override
+    public void onUrlUpdated(Tab tab) {
+        getImpl().onUrlUpdated(new BananaTab(tab));
     }
 }

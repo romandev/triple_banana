@@ -6,4 +6,5 @@ package org.triple.banana.public_api.export;
 
 public interface BananaHooks {
     void initCommandLine(BananaCommandLine commandLine);
+    void onUrlUpdated(BananaTab tab);
 }

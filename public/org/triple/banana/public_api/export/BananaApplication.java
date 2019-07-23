@@ -22,4 +22,7 @@ public class BananaApplication extends ChromeApplication implements BananaHooks 
     @Override
     public void initCommandLine(BananaCommandLine commandLine) {
     }
+
+    @Override
+    public void onUrlUpdated(BananaTab tab) {}
 }

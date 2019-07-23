@@ -4,6 +4,8 @@
 
 package org.triple.banana.hooks_api;
 
+import org.chromium.chrome.browser.tab.Tab;
+
 public enum ChromeHooks implements ChromeHooksAPI {
     api;
 
@@ -21,5 +23,10 @@ public enum ChromeHooks implements ChromeHooksAPI {
     @Override
     public void initCommandLine() {
         getImpl().initCommandLine();
+    }
+
+    @Override
+    public void onUrlUpdated(Tab tab) {
+        getImpl().onUrlUpdated(tab);
     }
 }

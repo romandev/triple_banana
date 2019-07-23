@@ -1,4 +1,4 @@
-From d7f733874cfeb9607089191ad8f4cbcffaed2a8e Mon Sep 17 00:00:00 2001
+From b0e573a1cd4d0ec512a9e48bb7c0f731e5bddfe6 Mon Sep 17 00:00:00 2001
 From: Jinho Bang <zino@chromium.org>
 Date: Mon, 17 Jun 2019 19:36:11 +0900
 Subject: [PATCH] TripleBanana: Add a dependency for triple banana project
@@ -7,8 +7,11 @@ After this patch, we can build triple_banana target via ninja build.
 ---
  BUILD.gn                                                          | 1 +
  chrome/android/BUILD.gn                                           | 8 ++++----
+ .../java/src/org/chromium/chrome/browser/ChromeActivity.java      | 5 +++++
  .../src/org/chromium/chrome/browser/ChromeTabbedActivity.java     | 1 +
- 3 files changed, 6 insertions(+), 4 deletions(-)
+ content/browser/frame_host/render_frame_host_impl.cc              | 1 -
+ content/browser/renderer_host/render_process_host_impl.cc         | 1 +
+ 6 files changed, 12 insertions(+), 5 deletions(-)
 
 diff --git a/BUILD.gn b/BUILD.gn
 index 653e1d24..30eb19ca 100644
@@ -62,6 +65,22 @@ index fed5592..c59e57d 100644
  
    # Dep needed to ensure override works properly.
    deps = [
+diff --git a/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java b/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
+index a31b993..4aa89b8 100644
+--- a/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
++++ b/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
+@@ -696,6 +696,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+             }
+ 
+             @Override
++            public void onUrlUpdated(Tab tab) {
++                org.triple.banana.hooks_api.ChromeHooks.api.onUrlUpdated(tab);
++            }
++
++            @Override
+             public void onCrash(Tab tab) {
+                 postDeferredStartupIfNeeded();
+             }
 diff --git a/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java b/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 index 402e898..97b776b 100644
 --- a/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
@@ -73,6 +92,30 @@ index 402e898..97b776b 100644
 +        org.triple.banana.hooks_api.ChromeHooks.api.initCommandLine();
  
          supportRequestWindowFeature(Window.FEATURE_ACTION_MODE_OVERLAY);
+ 
+diff --git a/content/browser/frame_host/render_frame_host_impl.cc b/content/browser/frame_host/render_frame_host_impl.cc
+index dd62197..a97f5ed 100644
+--- a/content/browser/frame_host/render_frame_host_impl.cc
++++ b/content/browser/frame_host/render_frame_host_impl.cc
+@@ -1333,7 +1333,6 @@ void RenderFrameHostImpl::AddMessageToConsole(
+ void RenderFrameHostImpl::ExecuteJavaScript(const base::string16& javascript,
+                                             JavaScriptResultCallback callback) {
+   DCHECK_CURRENTLY_ON(BrowserThread::UI);
+-  CHECK(CanExecuteJavaScript());
+ 
+   const bool wants_result = !callback.is_null();
+   GetNavigationControl()->JavaScriptExecuteRequest(javascript, wants_result,
+diff --git a/content/browser/renderer_host/render_process_host_impl.cc b/content/browser/renderer_host/render_process_host_impl.cc
+index e43d9c4..3d2e9cf 100644
+--- a/content/browser/renderer_host/render_process_host_impl.cc
++++ b/content/browser/renderer_host/render_process_host_impl.cc
+@@ -2874,6 +2874,7 @@ void RenderProcessHostImpl::AppendRendererCommandLine(
+       switches::kDeviceScaleFactor,
+       base::NumberToString(display::win::GetDPIScale()));
+ #endif
++  command_line->AppendSwitch(switches::kDisableMediaSuspend);
+ 
+   AppendCompositorCommandLineFlags(command_line);
  
 -- 
 2.7.4
