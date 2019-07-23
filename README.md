@@ -15,10 +15,22 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instr
    ```
 3. Apply patches in Chromium upstream for triple banana
    ```sh
-   chromium/src$ git am triple_banana/upstream/*.patch
+   chromium/src$ ./triple_banana/tools/apply_patches
    ```
 4. Build TripleBanana.apk
    ```sh
    chromium/src$ ninja -C out/Default triple_banana
    ```
 5. Then, you can check the `TripleBanana.apk` under `out/Default/apks/`
+
+## Update upstream changes
+
+1. Make changes in `chromium/src` but it SHOULD NOT be committed.
+2. Run `update_patches` command
+   ```sh
+   chromium/src/triple_banana$ ./tools/update_patches
+   ```
+3. Commit upstream changes
+   ```sh
+   chromium/src/triple_banana$ git add upstream/ && git commit
+   ```

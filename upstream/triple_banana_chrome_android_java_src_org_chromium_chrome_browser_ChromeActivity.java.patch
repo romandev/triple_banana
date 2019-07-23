@@ -1,0 +1,16 @@
+diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
+index 5f46ae4..f0dfc4d7 100644
+--- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
++++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
+@@ -698,6 +698,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+             }
+ 
+             @Override
++            public void onUrlUpdated(Tab tab) {
++                org.triple.banana.hooks_api.ChromeHooks.api.onUrlUpdated(tab);
++            }
++
++            @Override
+             public void onCrash(Tab tab) {
+                 postDeferredStartupIfNeeded();
+             }
