@@ -6,17 +6,25 @@ package org.triple.banana;
 
 import org.triple.banana.public_api.export.BananaApplication;
 import org.triple.banana.public_api.export.BananaCommandLine;
+import org.triple.banana.public_api.export.BananaHooks;
 import org.triple.banana.public_api.export.BananaTab;
 
 public class TripleBananaApplication extends BananaApplication {
     @Override
-    public void initCommandLine(BananaCommandLine commandLine) {
-        commandLine.appendSwitchWithValue(
-                "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
-    }
+    public boolean onInitializeHooks(BananaHooks hooks) {
+        hooks.setEventListener(new BananaHooks.Listener() {
+            @Override
+            public void initCommandLine(BananaCommandLine commandLine) {
+                commandLine.appendSwitchWithValue(
+                        "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
+            }
 
-    @Override
-    public void onUrlUpdated(BananaTab tab) {
-        MediaSuspendController.instance.DisableOnYouTube(tab);
+            @Override
+            public void onUrlUpdated(BananaTab tab) {
+                MediaSuspendController.instance.DisableOnYouTube(tab);
+            }
+        });
+
+        return true;
     }
 }

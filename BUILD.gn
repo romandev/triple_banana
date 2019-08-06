@@ -42,7 +42,6 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 
 android_library("triple_banana_public_api_java") {
   java_files = [
-    "//triple_banana/public/org/triple/banana/public_api/internal/BananaChromeHooksImpl.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaApplication.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaCommandLine.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",

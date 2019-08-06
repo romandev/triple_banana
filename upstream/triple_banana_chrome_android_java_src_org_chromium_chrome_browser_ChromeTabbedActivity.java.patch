@@ -1,12 +1,12 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-index a168b08..a26e786 100644
+index a168b08..9fcb859 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 @@ -1546,6 +1546,7 @@ public class ChromeTabbedActivity
                  commandLine.appendSwitchesAndArguments(args);
              }
          }
-+        org.triple.banana.hooks_api.ChromeHooks.api.initCommandLine();
++        org.triple.banana.hooks_api.ChromeHooks.getInstance().initCommandLine();
  
          supportRequestWindowFeature(Window.FEATURE_ACTION_MODE_OVERLAY);
  

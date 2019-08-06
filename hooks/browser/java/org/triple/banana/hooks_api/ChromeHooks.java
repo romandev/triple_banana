@@ -6,27 +6,16 @@ package org.triple.banana.hooks_api;
 
 import org.chromium.chrome.browser.tab.Tab;
 
-public enum ChromeHooks implements ChromeHooksAPI {
-    api;
+public class ChromeHooks {
+    public static ChromeHooksDelegate sDelegate = new ChromeHooksDelegate() {};
 
-    private ChromeHooksAPI mImpl;
-
-    private ChromeHooksAPI getImpl() {
-        assert mImpl != null;
-        return mImpl;
+    public static void setInstance(ChromeHooksDelegate delegate) {
+        if (delegate != null) {
+            sDelegate = delegate;
+        }
     }
 
-    public void setImpl(ChromeHooksAPI impl) {
-        mImpl = impl;
-    }
-
-    @Override
-    public void initCommandLine() {
-        getImpl().initCommandLine();
-    }
-
-    @Override
-    public void onUrlUpdated(Tab tab) {
-        getImpl().onUrlUpdated(tab);
+    public static ChromeHooksDelegate getInstance() {
+        return sDelegate;
     }
 }

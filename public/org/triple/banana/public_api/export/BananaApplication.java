@@ -6,23 +6,18 @@ package org.triple.banana.public_api.export;
 
 import org.chromium.chrome.browser.ChromeApplication;
 
-import org.triple.banana.public_api.internal.BananaChromeHooksImpl;
-
-public class BananaApplication extends ChromeApplication implements BananaHooks {
-    private static boolean wasHooksInitialized;
+public class BananaApplication extends ChromeApplication {
+    private static boolean sWasInitialized;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        if (!wasHooksInitialized) {
-            new BananaChromeHooksImpl(this);
+        if (!sWasInitialized) {
+            sWasInitialized = onInitializeHooks(BananaHooks.getInstance());
         }
     }
 
-    @Override
-    public void initCommandLine(BananaCommandLine commandLine) {
+    public boolean onInitializeHooks(BananaHooks hooks) {
+        return true;
     }
-
-    @Override
-    public void onUrlUpdated(BananaTab tab) {}
 }
