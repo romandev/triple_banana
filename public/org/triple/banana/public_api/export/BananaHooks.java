@@ -14,12 +14,15 @@ import org.chromium.chrome.browser.tab.Tab;
 
 public class BananaHooks {
     private Listener mListener = new Listener() {};
+    private static BananaHooks sInstance;
 
     public static BananaHooks getInstance() {
-        if (ChromeHooks.getInstance() == null) {
-            ChromeHooks.setInstance(new BananaHooksImpl());
+        if (sInstance == null) {
+            BananaHooksImpl impl = new BananaHooksImpl();
+            sInstance = impl;
+            ChromeHooks.setInstance(impl);
         }
-        return (BananaHooks) ChromeHooks.getInstance();
+        return sInstance;
     }
 
     public void setEventListener(Listener listener) {
