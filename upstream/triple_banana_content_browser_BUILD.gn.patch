@@ -1,0 +1,12 @@
+diff --git triple_banana/content/browser/BUILD.gn triple_banana_change/content/browser/BUILD.gn
+index 4f44dae..f558a4e 100644
+--- triple_banana/content/browser/BUILD.gn
++++ triple_banana_change/content/browser/BUILD.gn
+@@ -213,6 +213,7 @@ jumbo_source_set("browser") {
+     "//third_party/zlib",
+     "//third_party/zlib/google:compression_utils",
+     "//third_party/zlib/google:zip",
++    "//triple_banana/services/hello:manifest",
+     "//ui/accessibility",
+     "//ui/accessibility:ax_enums_mojo",
+     "//ui/base",
