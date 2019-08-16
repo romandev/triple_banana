@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-import("//build/config/jumbo.gni")
+import("//build/config/android/rules.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
 source_set("hello") {
@@ -17,6 +17,10 @@ source_set("hello") {
     ":mojom",
     "//services/service_manager/public/cpp",
   ]
+
+  if (is_android) {
+    deps += [ ":jni_headers" ]
+  }
 }
 
 mojom("mojom") {
@@ -44,4 +48,31 @@ source_set("manifest") {
     ":mojom",
     "//base",
   ]
+}
+
+if (is_android) {
+  generate_jni("jni_headers") {
+    sources = [
+      "android/java/src/org/triple/banana/hello/InterfaceRegistrar.java",
+    ]
+  }
+
+  android_library("hello_java") {
+    java_files = [
+      "android/java/src/org/triple/banana/hello/HelloImpl.java",
+      "android/java/src/org/triple/banana/hello/InterfaceRegistrar.java",
+    ]
+
+    deps = [
+      ":mojom_java",
+      "//base:base_java",
+      "//chrome/android:chrome_java",
+      "//mojo/public/java:base_java",
+      "//mojo/public/java:bindings_java",
+      "//mojo/public/java:system_java",
+      "//mojo/public/java/system:system_impl_java",
+      "//services/service_manager/public/java:service_manager_java",
+      "//services/service_manager/public/mojom:mojom_java",
+    ]
+  }
 }

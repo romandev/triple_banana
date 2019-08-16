@@ -8,7 +8,8 @@
 #include <string>
 #include "base/macros.h"
 #include "mojo/public/cpp/bindings/unique_receiver_set.h"
-#include "services/service_manager/public/cpp/binder_map.h"
+#include "services/service_manager/public/cpp/binder_registry.h"
+#include "services/service_manager/public/cpp/interface_provider.h"
 #include "services/service_manager/public/cpp/service.h"
 #include "services/service_manager/public/cpp/service_binding.h"
 #include "services/service_manager/public/mojom/service.mojom.h"
@@ -26,12 +27,17 @@ class HelloService : public service_manager::Service {
                  const std::string& interface_name,
                  mojo::ScopedMessagePipeHandle pipe) override;
 
-  void BindHello(mojo::PendingReceiver<mojom::Hello> receiver);
+#if defined(OS_ANDROID)
+  // Binds |java_interface_provider_| to an interface registry that exposes
+  // factories for the interfaces that are provided via Java on Android.
+  service_manager::InterfaceProvider* GetJavaInterfaces();
 
-  mojo::UniqueReceiverSet<mojom::Hello> hello_receivers_;
+  // InterfaceProvider that is bound to the Java-side interface registry.
+  std::unique_ptr<service_manager::InterfaceProvider> java_interface_provider_;
+#endif
 
   service_manager::ServiceBinding service_binding_;
-  service_manager::BinderMap binders_;
+  service_manager::BinderRegistry registry_;
 
   DISALLOW_COPY_AND_ASSIGN(HelloService);
 };

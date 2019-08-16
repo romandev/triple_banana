@@ -11,12 +11,17 @@
 #include "services/service_manager/public/mojom/service.mojom.h"
 #include "triple_banana/services/hello/hello.h"
 
+#include "base/android/jni_android.h"
+#include "triple_banana/services/hello/jni_headers/InterfaceRegistrar_jni.h"
+
 namespace hello {
 
 HelloService::HelloService(service_manager::mojom::ServiceRequest request)
     : service_binding_(this, std::move(request)) {
-  binders_.Add(
-      base::BindRepeating(&HelloService::BindHello, base::Unretained(this)));
+#if defined(OS_ANDROID)
+  registry_.AddInterface(
+      GetJavaInterfaces()->CreateInterfaceFactory<mojom::Hello>());
+#endif
 }
 
 HelloService::~HelloService() = default;
@@ -24,11 +29,22 @@ HelloService::~HelloService() = default;
 void HelloService::OnConnect(const service_manager::ConnectSourceInfo& source,
                              const std::string& interface_name,
                              mojo::ScopedMessagePipeHandle pipe) {
-  binders_.TryBind(interface_name, &pipe);
+  registry_.BindInterface(interface_name, std::move(pipe));
 }
 
-void HelloService::BindHello(mojo::PendingReceiver<mojom::Hello> receiver) {
-  hello_receivers_.Add(std::make_unique<Hello>(), std::move(receiver));
+#if defined(OS_ANDROID)
+service_manager::InterfaceProvider* HelloService::GetJavaInterfaces() {
+  if (!java_interface_provider_) {
+    service_manager::mojom::InterfaceProviderPtr provider;
+    Java_InterfaceRegistrar_createInterfaceRegistryForContext(
+        base::android::AttachCurrentThread(),
+        mojo::MakeRequest(&provider).PassMessagePipe().release().value());
+    java_interface_provider_ =
+        std::make_unique<service_manager::InterfaceProvider>();
+    java_interface_provider_->Bind(std::move(provider));
+  }
+  return java_interface_provider_.get();
 }
+#endif
 
 }  // namespace hello
