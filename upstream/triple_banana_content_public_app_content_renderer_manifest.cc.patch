@@ -1,12 +1,12 @@
 diff --git triple_banana/content/public/app/content_renderer_manifest.cc triple_banana_change/content/public/app/content_renderer_manifest.cc
-index 71ccdf0..8af643d1 100644
+index 71ccdf0..47e8d6e 100644
 --- triple_banana/content/public/app/content_renderer_manifest.cc
 +++ triple_banana_change/content/public/app/content_renderer_manifest.cc
 @@ -46,6 +46,7 @@ const service_manager::Manifest& GetContentRendererManifest() {
            .RequireCapability("device", "device:power_monitor")
            .RequireCapability("device", "device:screen_orientation")
            .RequireCapability("device", "device:time_zone_monitor")
-+          .RequireCapability("hello", "hello")
++          .RequireCapability("triple_banana", "modules")
            .RequireCapability(mojom::kBrowserServiceName, "dwrite_font_proxy")
            .RequireCapability(mojom::kSystemServiceName, "dwrite_font_proxy")
            .RequireCapability(mojom::kSystemServiceName, "field_trials")

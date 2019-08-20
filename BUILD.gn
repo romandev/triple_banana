@@ -37,7 +37,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
     "//chrome/android:chrome_public_non_pak_assets",
     "//chrome/android:chrome_public_v8_assets",
     "//third_party/icu:icu_assets",
-    "//triple_banana/services/hello:hello_java",
+    "//triple_banana/modules:java",
   ]
 }
 

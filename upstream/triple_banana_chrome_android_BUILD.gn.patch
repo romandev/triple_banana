@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/BUILD.gn triple_banana_change/chrome/android/BUILD.gn
-index e2a297d..22ef30b 100644
+index e2a297d..920ad13 100644
 --- triple_banana/chrome/android/BUILD.gn
 +++ triple_banana_change/chrome/android/BUILD.gn
 @@ -25,6 +25,7 @@ import("//third_party/icu/config.gni")
@@ -10,17 +10,27 @@ index e2a297d..22ef30b 100644
  import("//ui/android/features.gni")
  import("channel.gni")
  import("java_sources.gni")
-@@ -90,8 +91,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
+@@ -88,10 +89,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
+ }
+ 
  android_resources("chrome_app_java_resources") {
-   resource_dirs = [
-     "java/res",
+-  resource_dirs = [
+-    "java/res",
 -    "//chrome/android/java/res_chromium",
 -  ]
-+  ] + triple_banana_resource
++  resource_dirs = [ "java/res" ] + triple_banana_resource
  
    if (enable_android_night_mode) {
      resource_dirs += [ "//chrome/android/java/res_night" ]
-@@ -442,7 +442,7 @@ android_library("chrome_java") {
+@@ -381,6 +379,7 @@ android_library("chrome_java") {
+     "//third_party/gif_player:gif_player_java",
+     "//third_party/google_android_play_core:com_google_android_play_core_java",
+     "//third_party/jsr-305:jsr_305_javalib",
++    "//triple_banana/modules:mojom_java",
+     "//ui/android:ui_java",
+     "//ui/base/mojom:mojom_java",
+     "//ui/gfx/geometry/mojo:mojo_java",
+@@ -442,7 +441,7 @@ android_library("chrome_java") {
    java_files = chrome_java_sources + [
                   app_hooks_impl,
                   _chrome_version_java_file,
@@ -29,7 +39,7 @@ index e2a297d..22ef30b 100644
  
    # Include sources from feed_java_sources.gni.
    java_files += feed_java_sources
-@@ -1079,7 +1079,7 @@ if (enable_vr || enable_arcore) {
+@@ -1079,7 +1078,7 @@ if (enable_vr || enable_arcore) {
  
  # Overrides icon / name defined in chrome_app_java_resources.
  android_resources("chrome_public_apk_resources") {

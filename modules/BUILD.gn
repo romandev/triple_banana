@@ -5,27 +5,8 @@
 import("//build/config/android/rules.gni")
 import("//mojo/public/tools/bindings/mojom.gni")
 
-source_set("hello") {
-  sources = [
-    "hello.cc",
-    "hello.h",
-    "hello_service.cc",
-    "hello_service.h",
-  ]
-
-  deps = [
-    ":mojom",
-    "//services/service_manager/public/cpp",
-  ]
-
-  if (is_android) {
-    deps += [ ":jni_headers" ]
-  }
-}
-
 mojom("mojom") {
   sources = [
-    "public/mojom/constants.mojom",
     "public/mojom/hello.mojom",
   ]
 
@@ -40,8 +21,8 @@ mojom("mojom") {
 
 source_set("manifest") {
   sources = [
-    "public/cpp/manifest.cc",
-    "public/cpp/manifest.h",
+    "public/manifest/manifest.cc",
+    "public/manifest/manifest.h",
   ]
 
   deps = [
@@ -50,17 +31,35 @@ source_set("manifest") {
   ]
 }
 
+source_set("native") {
+  sources = [
+    "hello/hello.cc",
+    "hello/hello.h",
+    "public/module_service.cc",
+    "public/module_service.h",
+  ]
+
+  deps = [
+    ":mojom",
+    "//services/service_manager/public/cpp",
+  ]
+
+  if (is_android) {
+    deps += [ ":jni_headers" ]
+  }
+}
+
 if (is_android) {
   generate_jni("jni_headers") {
     sources = [
-      "android/java/src/org/triple/banana/hello/InterfaceRegistrar.java",
+      "public/java/org/triple/banana/modules/InterfaceRegistrar.java",
     ]
   }
 
-  android_library("hello_java") {
+  android_library("java") {
     java_files = [
-      "android/java/src/org/triple/banana/hello/HelloImpl.java",
-      "android/java/src/org/triple/banana/hello/InterfaceRegistrar.java",
+      "hello/java/org/triple/banana/hello/HelloImpl.java",
+      "public/java/org/triple/banana/modules/InterfaceRegistrar.java",
     ]
 
     deps = [

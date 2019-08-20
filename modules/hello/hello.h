@@ -2,11 +2,11 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef TRIPLE_BANANA_SERVICES_HELLO_HELLO_H_
-#define TRIPLE_BANANA_SERVICES_HELLO_HELLO_H_
+#ifndef TRIPLE_BANANA_MODULES_HELLO_HELLO_H_
+#define TRIPLE_BANANA_MODULES_HELLO_HELLO_H_
 
 #include "base/macros.h"
-#include "triple_banana/services/hello/public/mojom/hello.mojom.h"
+#include "triple_banana/modules/public/mojom/hello.mojom.h"
 
 namespace hello {
 
@@ -23,4 +23,4 @@ class Hello : public mojom::Hello {
 
 }  // namespace hello
 
-#endif  // TRIPLE_BANANA_SERVICES_HELLO_HELLO_H_
+#endif  // TRIPLE_BANANA_MODULES_HELLO_HELLO_H_

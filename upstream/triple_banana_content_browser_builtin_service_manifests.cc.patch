@@ -1,12 +1,12 @@
 diff --git triple_banana/content/browser/builtin_service_manifests.cc triple_banana_change/content/browser/builtin_service_manifests.cc
-index 07e2029..a4fc52e 100644
+index 07e2029..57dd7ac 100644
 --- triple_banana/content/browser/builtin_service_manifests.cc
 +++ triple_banana_change/content/browser/builtin_service_manifests.cc
 @@ -43,6 +43,8 @@
  #endif  // BUILDFLAG(ENABLE_CROS_LIBASSISTANT)
  #endif  // defined(OS_CHROMEOS)
  
-+#include "triple_banana/services/hello/public/cpp/manifest.h"
++#include "triple_banana/modules/public/manifest/manifest.h"
 +
  namespace content {
  
@@ -15,7 +15,7 @@ index 07e2029..a4fc52e 100644
  #if defined(OS_LINUX)
            font_service::GetManifest(),
  #endif
-+          hello::GetManifest(),
++          triple_banana::GetManifest(),
  #if defined(OS_CHROMEOS)
  #if BUILDFLAG(ENABLE_CROS_LIBASSISTANT)
            // TODO(https://crbug.com/929340): This doesn't belong here!
