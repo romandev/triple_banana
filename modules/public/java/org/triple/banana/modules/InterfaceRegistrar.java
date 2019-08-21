@@ -4,6 +4,8 @@
 
 package org.triple.banana.modules;
 
+import org.triple.banana.authentication.AuthenticationManagerImpl;
+import org.triple.banana.authentication.mojom.AuthenticationManager;
 import org.triple.banana.hello.HelloImpl;
 import org.triple.banana.hello.mojom.Hello;
 
@@ -20,6 +22,8 @@ class InterfaceRegistrar {
         // is not necessary to hold on to a reference to it explicitly.
         InterfaceRegistry registry = InterfaceRegistry.create(
                 CoreImpl.getInstance().acquireNativeHandle(nativeHandle).toMessagePipeHandle());
+        registry.addInterface(
+                AuthenticationManager.MANAGER, new AuthenticationManagerImpl.Factory());
         registry.addInterface(Hello.MANAGER, new HelloImpl.Factory());
     }
 }

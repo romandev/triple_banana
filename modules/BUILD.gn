@@ -7,6 +7,7 @@ import("//mojo/public/tools/bindings/mojom.gni")
 
 mojom("mojom") {
   sources = [
+    "public/mojom/authentication.mojom",
     "public/mojom/hello.mojom",
   ]
 
@@ -58,6 +59,8 @@ if (is_android) {
 
   android_library("java") {
     java_files = [
+      "authentication/java/org/triple/banana/authentication/AuthenticationActivity.java",
+      "authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
       "hello/java/org/triple/banana/hello/HelloImpl.java",
       "public/java/org/triple/banana/modules/InterfaceRegistrar.java",
     ]

@@ -7,3 +7,13 @@
 ## Note: This is a jinja2 template, processed at build time into the final manifest.
 
 {% block application_name %}org.triple.banana.TripleBananaApplication{% endblock %}
+
+{% block extra_application_definitions %}
+<activity
+    android:name="org.triple.banana.authentication.AuthenticationActivity"
+    android:excludeFromRecents="true"
+    android:noHistory="true"
+    android:theme="@android:style/Theme.Dialog"
+    android:configChanges="locale|fontScale|orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize">
+</activity>
+{% endblock %}
