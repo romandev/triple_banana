@@ -1,8 +1,8 @@
 diff --git triple_banana/chrome/browser/BUILD.gn triple_banana_change/chrome/browser/BUILD.gn
-index d06f984..7476fc4 100644
+index 7976067..76c0aac 100644
 --- triple_banana/chrome/browser/BUILD.gn
 +++ triple_banana_change/chrome/browser/BUILD.gn
-@@ -2162,6 +2162,7 @@ jumbo_split_static_library("browser") {
+@@ -2199,6 +2199,7 @@ jumbo_split_static_library("browser") {
      "//third_party/zlib:minizip",
      "//third_party/zlib/google:compression_utils",
      "//third_party/zlib/google:zip",

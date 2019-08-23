@@ -10,4 +10,7 @@ export CHROMIUM_SRC_PATH=$(realpath $TRIPLE_BANANA_TOOLS_PATH/../..)
 
 pushd $CHROMIUM_SRC_PATH > /dev/null &&
 git stash && echo &&
-git apply $TRIPLE_BANANA_PATH/upstream/*.patch --verbose && echo
+git apply $TRIPLE_BANANA_PATH/upstream/*.patch \
+    --3way \
+    --verbose &&
+git commit -m "Triple Banana"

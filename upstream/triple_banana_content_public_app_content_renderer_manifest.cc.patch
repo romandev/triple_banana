@@ -1,5 +1,5 @@
 diff --git triple_banana/content/public/app/content_renderer_manifest.cc triple_banana_change/content/public/app/content_renderer_manifest.cc
-index 71ccdf0..47e8d6e 100644
+index 30b6f1f..dface3c 100644
 --- triple_banana/content/public/app/content_renderer_manifest.cc
 +++ triple_banana_change/content/public/app/content_renderer_manifest.cc
 @@ -46,6 +46,7 @@ const service_manager::Manifest& GetContentRendererManifest() {
@@ -10,3 +10,6 @@ index 71ccdf0..47e8d6e 100644
            .RequireCapability(mojom::kBrowserServiceName, "dwrite_font_proxy")
            .RequireCapability(mojom::kSystemServiceName, "dwrite_font_proxy")
            .RequireCapability(mojom::kSystemServiceName, "field_trials")
+-- 
+2.7.4
+

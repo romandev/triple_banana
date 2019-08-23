@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-index 5f46ae4..ea292b4 100644
+index 7f81a1b..027f60f7 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 @@ -698,6 +698,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
