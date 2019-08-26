@@ -1,0 +1,65 @@
+diff --git triple_banana/components/autofill/content/renderer/autofill_agent.cc triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
+index c4f8436..4b254ae 100644
+--- triple_banana/components/autofill/content/renderer/autofill_agent.cc
++++ triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
+@@ -46,6 +46,7 @@
+ #include "net/cert/cert_status_flags.h"
+ #include "services/service_manager/public/cpp/interface_provider.h"
+ #include "third_party/blink/public/common/associated_interfaces/associated_interface_provider.h"
++#include "third_party/blink/public/platform/web_coalesced_input_event.h"
+ #include "third_party/blink/public/platform/web_keyboard_event.h"
+ #include "third_party/blink/public/platform/web_url_request.h"
+ #include "third_party/blink/public/web/web_ax_object.h"
+@@ -59,6 +60,8 @@
+ #include "third_party/blink/public/web/web_option_element.h"
+ #include "third_party/blink/public/web/web_user_gesture_indicator.h"
+ #include "third_party/blink/public/web/web_view.h"
++#include "third_party/blink/public/web/web_widget.h"
++#include "triple_banana/modules/public/connector.h"
+ #include "ui/base/l10n/l10n_util.h"
+ #include "ui/events/keycodes/keyboard_codes.h"
+ 
+@@ -548,9 +551,40 @@ void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
+   if (element_.IsNull())
+     return;
+ 
+-  bool handled =
+-      password_autofill_agent_->FillSuggestion(element_, username, password);
+-  DCHECK(handled);
++  static auto manager = triple_banana::BindInterfaceOnRenderer<
++      authentication::mojom::AuthenticationManager>();
++  manager->Authenticate(base::BindOnce(
++      [](PasswordAutofillAgent* agent,
++         const blink::WebFormControlElement& element,
++         const base::string16& username, const base::string16& password,
++         bool result) {
++        if (!result || !agent)
++          return;
++
++        bool filled = agent->FillSuggestion(element, username, password);
++        if (!filled || !agent->render_frame() ||
++            !agent->render_frame()->GetRenderView())
++          return;
++
++        blink::WebWidget* web_widget = agent->render_frame()
++                                           ->GetRenderView()
++                                           ->GetWebView()
++                                           ->MainFrameWidget();
++        if (!web_widget)
++          return;
++
++        blink::WebKeyboardEvent keyboard_event;
++        keyboard_event.windows_key_code = ui::VKEY_RETURN;
++        keyboard_event.SetModifiers(blink::WebInputEvent::kIsKeyPad);
++        keyboard_event.text[0] = ui::VKEY_RETURN;
++        keyboard_event.SetType(blink::WebInputEvent::kKeyDown);
++        web_widget->HandleInputEvent(
++            blink::WebCoalescedInputEvent(keyboard_event));
++        keyboard_event.SetType(blink::WebInputEvent::kKeyUp);
++        web_widget->HandleInputEvent(
++            blink::WebCoalescedInputEvent(keyboard_event));
++      },
++      password_autofill_agent_, element_, username, password));
+ }
+ 
+ void AutofillAgent::PreviewPasswordSuggestion(const base::string16& username,

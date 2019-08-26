@@ -10,10 +10,8 @@
 
 {% block extra_application_definitions %}
 <activity
-    android:name="org.triple.banana.authentication.AuthenticationActivity"
-    android:excludeFromRecents="true"
-    android:noHistory="true"
-    android:theme="@android:style/Theme.Dialog"
+    android:name="org.triple.banana.authentication.KeyguardAuthenticationActivity"
+    android:theme="@style/Theme.Chromium.Activity.FakeTranslucent"
     android:configChanges="locale|fontScale|orientation|keyboardHidden|screenSize|screenLayout|smallestScreenSize">
 </activity>
 {% endblock %}

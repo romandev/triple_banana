@@ -31,7 +31,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
     private void startAuthenticationActivity() {
         Context context = ContextUtils.getApplicationContext();
-        Intent intent = new Intent(context, AuthenticationActivity.class);
+        Intent intent = new Intent(context, KeyguardAuthenticationActivity.class);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
