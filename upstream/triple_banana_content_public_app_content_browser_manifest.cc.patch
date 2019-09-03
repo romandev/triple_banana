@@ -1,8 +1,8 @@
 diff --git triple_banana/content/public/app/content_browser_manifest.cc triple_banana_change/content/public/app/content_browser_manifest.cc
-index 35c2eb1..b128573 100644
+index b08b7e9..63e6055 100644
 --- triple_banana/content/public/app/content_browser_manifest.cc
 +++ triple_banana_change/content/public/app/content_browser_manifest.cc
-@@ -145,6 +145,7 @@ const service_manager::Manifest& GetContentBrowserManifest() {
+@@ -140,6 +140,7 @@ const service_manager::Manifest& GetContentBrowserManifest() {
            .RequireCapability("device", "device:usb_test")
            .RequireCapability("device", "device:vibration")
            .RequireCapability("device", "device:wake_lock")

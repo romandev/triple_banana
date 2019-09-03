@@ -1,21 +1,21 @@
 diff --git triple_banana/content/browser/builtin_service_manifests.cc triple_banana_change/content/browser/builtin_service_manifests.cc
-index 8f9164d..773fbc0 100644
+index 5fb43e9..82b7001 100644
 --- triple_banana/content/browser/builtin_service_manifests.cc
 +++ triple_banana_change/content/browser/builtin_service_manifests.cc
-@@ -29,6 +29,8 @@
- #include "services/service_manager/public/cpp/manifest_builder.h"
- #include "services/tracing/manifest.h"
+@@ -42,6 +42,8 @@
+ #endif  // BUILDFLAG(ENABLE_CROS_LIBASSISTANT)
+ #endif  // defined(OS_CHROMEOS)
  
 +#include "triple_banana/modules/public/manifest/manifest.h"
 +
  namespace content {
  
  namespace {
-@@ -75,6 +77,7 @@ const std::vector<service_manager::Manifest>& GetBuiltinServiceManifests() {
-                         kOutOfProcessBuiltin),
+@@ -90,6 +92,7 @@ const std::vector<service_manager::Manifest>& GetBuiltinServiceManifests() {
            resource_coordinator::GetManifest(),
+           shape_detection::GetManifest(),
            tracing::GetManifest(),
 +          triple_banana::GetManifest(),
-       }};
-   return *manifests;
- }
+ #if defined(OS_LINUX)
+           font_service::GetManifest(),
+ #endif
