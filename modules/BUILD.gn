@@ -61,6 +61,7 @@ if (is_android) {
     java_files = [
       "authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
       "authentication/java/org/triple/banana/authentication/BiometricPromptAuthenticationActivity.java",
+      "authentication/java/org/triple/banana/authentication/FingerprintManagerAuthenticationActivity.java",
       "authentication/java/org/triple/banana/authentication/KeyguardAuthenticationActivity.java",
       "authentication/java/org/triple/banana/authentication/TranslucentActivity.java",
       "hello/java/org/triple/banana/hello/HelloImpl.java",

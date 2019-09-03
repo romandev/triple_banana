@@ -33,6 +33,8 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
     private void startAuthenticationActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             startAuthenticationActivity(BiometricPromptAuthenticationActivity.class);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            startAuthenticationActivity(FingerprintManagerAuthenticationActivity.class);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             startAuthenticationActivity(KeyguardAuthenticationActivity.class);
         } else {
