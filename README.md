@@ -25,7 +25,7 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instr
 
 ## Update upstream changes
 
-1. Make changes in `chromium/src` but it SHOULD NOT be committed.
+1. Make changes in `chromium/src` but it SHOULD be committed.
 2. Run `update_patches` command
    ```sh
    chromium/src/triple_banana$ ./tools/banana update_patches
