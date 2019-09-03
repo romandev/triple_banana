@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+# Copyright 2019 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+. $TOOLS_PATH/common/chromium.sh
+. $TOOLS_PATH/common/path.sh
+. $TOOLS_PATH/common/stack_dir.sh
+
+function make_base_branch() {
+  push_dir $(chromium_path)
+  echo "Fetching refs/tags/$(get_chromium_version)..."
+  git fetch origin refs/tags/$(get_chromium_version) &&
+  git checkout -B triple_banana_$(get_chromium_version) \
+      refs/tags/$(get_chromium_version) &&
+  gclient sync --with_branch_heads --with_tags
+  pop_dir
+  return $?
+}
+
+make_base_branch && $(triple_banana_tools_path)/banana apply_patches

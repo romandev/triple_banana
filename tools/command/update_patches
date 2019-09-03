@@ -4,6 +4,7 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
+. $TOOLS_PATH/common/chromium.sh
 . $TOOLS_PATH/common/path.sh
 . $TOOLS_PATH/common/stack_dir.sh
 
@@ -16,7 +17,7 @@ function reset_upstream_patches() {
 function update_upstream_patches() {
   push_dir $(chromium_path)
 
-  git format-patch origin/master \
+  git format-patch refs/tags/$(get_chromium_version) \
       --src-prefix="triple_banana/" \
       --dst-prefix="triple_banana_change/" \
       --stdout > /tmp/triple_banana.patch &&

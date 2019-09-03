@@ -13,9 +13,9 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instr
    ```sh
    chromium/src$ git clone https://github.com/romandev/triple_banana
    ```
-3. Apply patches in Chromium upstream for triple banana
+3. Update Chromium repository and apply upstream patches for triple banana
    ```sh
-   chromium/src$ ./triple_banana/tools/banana apply_patches
+   chromium/src$ ./triple_banana/tools/banana update_chromium
    ```
 4. Build TripleBanana.apk
    ```sh
