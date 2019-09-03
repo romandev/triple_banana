@@ -6,7 +6,7 @@
 #define TRIPLE_BANANA_MODULES_PUBLIC_MANIFEST_MANIFEST_H_
 
 namespace service_manager {
-class Manifest;
+struct Manifest;
 }  // namespace service_manager
 
 namespace triple_banana {
