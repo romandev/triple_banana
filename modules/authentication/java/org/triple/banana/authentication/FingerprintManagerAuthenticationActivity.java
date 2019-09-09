@@ -5,15 +5,14 @@
 package org.triple.banana.authentication;
 
 import android.annotation.TargetApi;
-import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.CancellationSignal;
+import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
+import android.support.v4.os.CancellationSignal;
 
 @TargetApi(Build.VERSION_CODES.M)
 public class FingerprintManagerAuthenticationActivity extends TranslucentActivity {
-    // TODO(#56): Use FingerprintManagerCompat instead of FingerprintManager in authentication
-    private FingerprintManager mFingerprintManager;
+    private FingerprintManagerCompat mFingerprintManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -23,32 +22,44 @@ public class FingerprintManagerAuthenticationActivity extends TranslucentActivit
             return;
         }
 
-        mFingerprintManager = this.getSystemService(FingerprintManager.class);
+        mFingerprintManager = FingerprintManagerCompat.from(this);
 
         if (isFingerprintAuthAvailable()) {
             CancellationSignal cancellationSignal = new CancellationSignal();
             // TODO(#54): Inject cryptoObject for using private key
             mFingerprintManager.authenticate(
-                    null, cancellationSignal, 0, new AuthenticationCallback(), null);
+                    null, 0, cancellationSignal, new AuthenticationCallback(), null);
         }
     }
 
     private boolean isFingerprintAuthAvailable() {
-        return mFingerprintManager.isHardwareDetected()
-                && mFingerprintManager.hasEnrolledFingerprints();
+        return FingerprintManagerCompat.from(this).isHardwareDetected()
+                && FingerprintManagerCompat.from(this).hasEnrolledFingerprints();
     }
 
-    private class AuthenticationCallback extends FingerprintManager.AuthenticationCallback {
+    private void handleResult(boolean result) {
+        AuthenticationManagerImpl.handleResult(result);
+        finish();
+    }
+
+    private class AuthenticationCallback extends FingerprintManagerCompat.AuthenticationCallback {
         @Override
-        public void onAuthenticationError(int errorCode, CharSequence errorString) {}
+        public void onAuthenticationError(int errorCode, CharSequence errorString) {
+            handleResult(false);
+        }
 
         @Override
         public void onAuthenticationHelp(int helpCode, CharSequence helpString) {}
 
         @Override
-        public void onAuthenticationSucceeded(FingerprintManager.AuthenticationResult result) {}
+        public void onAuthenticationSucceeded(
+                FingerprintManagerCompat.AuthenticationResult result) {
+            handleResult(true);
+        }
 
         @Override
-        public void onAuthenticationFailed() {}
+        public void onAuthenticationFailed() {
+            handleResult(false);
+        }
     }
 }

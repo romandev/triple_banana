@@ -78,6 +78,7 @@ if (is_android) {
       "//mojo/public/java/system:system_impl_java",
       "//services/service_manager/public/java:service_manager_java",
       "//services/service_manager/public/mojom:mojom_java",
+      "//third_party/android_deps:com_android_support_support_compat_java",
     ]
   }
 }
