@@ -1,8 +1,8 @@
 diff --git triple_banana/chrome/browser/chrome_content_browser_client.cc triple_banana_change/chrome/browser/chrome_content_browser_client.cc
-index 0b29bc11..f6e7c23 100644
+index 0f2160c..497653c 100644
 --- triple_banana/chrome/browser/chrome_content_browser_client.cc
 +++ triple_banana_change/chrome/browser/chrome_content_browser_client.cc
-@@ -652,6 +652,8 @@
+@@ -653,6 +653,8 @@
  #include "third_party/blink/public/mojom/page/spatial_navigation.mojom.h"
  #endif
  
@@ -11,7 +11,7 @@ index 0b29bc11..f6e7c23 100644
  using base::FileDescriptor;
  using content::BrowserThread;
  using content::BrowserURLHandler;
-@@ -3989,6 +3991,12 @@ void ChromeContentBrowserClient::RunServiceInstance(
+@@ -3992,6 +3994,12 @@ void ChromeContentBrowserClient::RunServiceInstance(
    if (service)
      service_manager::Service::RunAsyncUntilTermination(std::move(service));
  #endif  // defined(OS_CHROMEOS)
