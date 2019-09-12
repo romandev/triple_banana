@@ -1,0 +1,12 @@
+// Copyright 2019 The Triple Banana Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
+
+[JavaPackage="org.triple.banana.encrypter.mojom"]
+module encrypter.mojom;
+
+interface EncrypterManager {
+  Initialize(string keyName, bool userAuthenticationRequired);
+  Decrypt(string cipherText) => (string plainText);
+  Encrypt(string plainText) => (string cipherText);
+};

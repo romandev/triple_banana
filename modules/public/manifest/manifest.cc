@@ -8,6 +8,7 @@
 #include "services/service_manager/public/cpp/manifest.h"
 #include "services/service_manager/public/cpp/manifest_builder.h"
 #include "triple_banana/modules/public/mojom/authentication.mojom.h"
+#include "triple_banana/modules/public/mojom/encrypter.mojom.h"
 #include "triple_banana/modules/public/mojom/hello.mojom.h"
 
 namespace triple_banana {
@@ -22,10 +23,11 @@ const service_manager::Manifest& GetManifest() {
                   .WithExecutionMode(service_manager::Manifest::ExecutionMode::
                                          kInProcessBuiltin)
                   .Build())
-          .ExposeCapability("modules",
-                            service_manager::Manifest::InterfaceList<
-                                authentication::mojom::AuthenticationManager,
-                                hello::mojom::Hello>())
+          .ExposeCapability(
+              "modules",
+              service_manager::Manifest::InterfaceList<
+                  authentication::mojom::AuthenticationManager,
+                  encrypter::mojom::EncrypterManager, hello::mojom::Hello>())
           .Build()};
   return *manifest;
 }

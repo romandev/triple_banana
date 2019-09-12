@@ -9,6 +9,7 @@
 #include "services/service_manager/public/cpp/interface_provider.h"
 #include "triple_banana/modules/jni_headers/InterfaceRegistrar_jni.h"
 #include "triple_banana/modules/public/mojom/authentication.mojom.h"
+#include "triple_banana/modules/public/mojom/encrypter.mojom.h"
 #include "triple_banana/modules/public/mojom/hello.mojom.h"
 
 namespace triple_banana {
@@ -20,6 +21,9 @@ ModuleService::ModuleService(service_manager::mojom::ServiceRequest request)
       GetJavaInterfaces()
           ->CreateInterfaceFactory<
               authentication::mojom::AuthenticationManager>());
+  registry_.AddInterface(
+      GetJavaInterfaces()
+          ->CreateInterfaceFactory<encrypter::mojom::EncrypterManager>());
   registry_.AddInterface(
       GetJavaInterfaces()->CreateInterfaceFactory<hello::mojom::Hello>());
 #endif

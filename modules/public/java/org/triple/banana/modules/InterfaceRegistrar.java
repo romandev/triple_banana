@@ -6,6 +6,8 @@ package org.triple.banana.modules;
 
 import org.triple.banana.authentication.AuthenticationManagerImpl;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
+import org.triple.banana.encrypter.EncrypterManagerImpl;
+import org.triple.banana.encrypter.mojom.EncrypterManager;
 import org.triple.banana.hello.HelloImpl;
 import org.triple.banana.hello.mojom.Hello;
 
@@ -24,6 +26,7 @@ class InterfaceRegistrar {
                 CoreImpl.getInstance().acquireNativeHandle(nativeHandle).toMessagePipeHandle());
         registry.addInterface(
                 AuthenticationManager.MANAGER, new AuthenticationManagerImpl.Factory());
+        registry.addInterface(EncrypterManager.MANAGER, new EncrypterManagerImpl.Factory());
         registry.addInterface(Hello.MANAGER, new HelloImpl.Factory());
     }
 }
