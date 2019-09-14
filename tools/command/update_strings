@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# Copyright 2019 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+. $TOOLS_PATH/common/path.sh
+. $TOOLS_PATH/common/stack_dir.sh
+
+function generate_banana_strings() {
+  push_dir $(chromium_path)
+
+  chromium_out_path=$1
+  gn gen $chromium_out_path
+  ninja -C $chromium_out_path chrome_strings_grd
+
+  input_paths=$(ls -d $chromium_out_path/gen/chrome/android/chrome_strings_grd_grit_output/values*)
+  for input_path in $input_paths; do
+    mkdir -p $(triple_banana_resource_path)/$(basename $input_path)
+    awk '/(<string.*>.*Chrome.*|<?(resources|xml).*)/,/(<\/string>|>$)/' \
+        $input_path/android_chrome_strings.xml \
+        > $(triple_banana_resource_path)/$(basename $input_path)/android_chrome_strings.xml
+  done
+
+  pop_dir
+}
+
+function rewrite_banana_strings() {
+  strings_path=$1
+  pattern=$2
+  sed "$pattern" $strings_path/android_chrome_strings.xml \
+      > $strings_path/android_chrome_strings_tmp.xml
+  mv $strings_path/android_chrome_strings_tmp.xml \
+      $strings_path/android_chrome_strings.xml
+}
+
+function main() {
+  chromium_out_path=$1
+  generate_banana_strings $chromium_out_path
+
+  strings_paths=$(ls -d $(triple_banana_resource_path)/values*)
+  for strings_path in $strings_paths; do
+    rewrite_banana_strings $strings_path "s/Chrome/Banana Browser/g"
+  done
+
+  rewrite_banana_strings "$(triple_banana_resource_path)/values-ko" \
+      "s/Banana Browser이/Banana Browser가/g"
+  rewrite_banana_strings "$(triple_banana_resource_path)/values-ko" \
+      "s/Banana Browser은/Banana Browser는/g"
+}
+
+main $1

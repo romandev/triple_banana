@@ -20,6 +20,10 @@ function triple_banana_upstream_path() {
   echo $(triple_banana_path)/upstream
 }
 
+function triple_banana_resource_path() {
+  echo $(triple_banana_path)/res
+}
+
 function chromium_path() {
   echo $(realpath $(triple_banana_path)/..)
 }
