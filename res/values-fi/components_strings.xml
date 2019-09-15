@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;ei tallenna&lt;/em&gt;
+        &lt;ul&gt;
+          &lt;li&gt;selaushistoriaasi
+          &lt;li&gt;evästeitä ja sivuston tietoja
+          &lt;li&gt;lomakkeisiin syötettyjä tietoja.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kortit ja osoitteet ovat peräisin Banana Browsersta ja Google-tililtäsi (%1$s). Voit hallinnoida niitä BEGIN_LINKasetuksissaEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kortit ja osoitteet ovat peräisin Banana Browsersta. Voit hallinnoida niitä BEGIN_LINKasetuksissaEND_LINK."</string>
+</resources>

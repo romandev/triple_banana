@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"A Banana Browser &lt;em&gt;nem menti&lt;/em&gt; a következő adatokat:
+        &lt;ul&gt;
+          &lt;li&gt;Böngészési előzmények
+          &lt;li&gt;Cookie-k és webhelyadatok
+          &lt;li&gt;Űrlapokon megadott adatok
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"A kártyák és a címek a Banana Browser-ból és az Ön Google-fiókjából (%1$s) származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
+<string name="payments_card_and_address_settings_signed_out">"A kártyák és a címek a Banana Browser-ból származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
+</resources>

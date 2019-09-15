@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser የሚከተሉትን መረጃዎች &lt;em&gt;አያስቀምጥም&lt;/em&gt;፦
+        &lt;ul&gt;
+          &lt;li&gt;የእርስዎ የአሰሳ ታሪክ
+          &lt;li&gt;ኩኪዎች እና የጣቢያ ውሂብ
+          &lt;li&gt;በቅጾች ውስጥ የገባ መረጃ
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ካርዶች እና አድራሻዎች ከBanana Browser እና ከGoogle መለያዎ (%1$s) የተገኙ ናቸው። በBEGIN_LINKቅንብሮችEND_LINK ውስጥ ሊያቀናብሯቸው ይችላሉ።"</string>
+<string name="payments_card_and_address_settings_signed_out">"ካርዶች እና አድራሻዎች ከBanana Browser የመጡ ናቸው። በBEGIN_LINKቅንብሮችEND_LINK ውስጥ ሊያስተዳድሯቸው ይችላሉ።"</string>
+</resources>

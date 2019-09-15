@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser નિમ્નલિખિત માહિતી &lt;em&gt;સાચવશે નહીં&lt;/em&gt;:
+        &lt;ul&gt; &lt;li&gt;તમારો બ્રાઉઝિંગ ઇતિહાસ
+          &lt;li&gt;કુકી અને સાઇટ ડેટા
+          &lt;li&gt;ફોર્મમાં દાખલ કરેલી માહિતી
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"કાર્ડ અને સરનામા Banana Browser અને Google એકાઉન્ટ (%1$s)માંથી છે. તમે તેને BEGIN_LINKસેટિંગEND_LINKમાં જઈને મેનેજ કરી શકો છો."</string>
+<string name="payments_card_and_address_settings_signed_out">"કાર્ડ અને સરનામા Banana Browserમાંથી છે. તમે તેને BEGIN_LINKસેટિંગ્સEND_LINKમાં સંચાલિત કરી શકો છો."</string>
+</resources>

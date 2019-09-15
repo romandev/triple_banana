@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser ఈ కింది సమాచారాన్ని &lt;em&gt;సేవ్ చేయదు&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;మీ బ్రౌజింగ్ చరిత్ర
+          &lt;li&gt;కుక్కీలు మరియు సైట్ డేటా
+          &lt;li&gt;ఫారమ్‌లలో నమోదు చేసిన సమాచారం
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"కార్డ్‌లు, చిరునామాలు- Banana Browser నుండి, మీ Google ఖాతా (%1$s) నుండి పొందినవి. మీరు BEGIN_LINKసెట్టింగ్‌లుEND_LINKలో వాటిని నిర్వహించవచ్చు."</string>
+<string name="payments_card_and_address_settings_signed_out">"కార్డ్‌లు మరియు చిరునామాలు Banana Browser నుండి పొందినవి. మీరు BEGIN_LINKసెట్టింగ్‌లుEND_LINKలో వాటిని నిర్వహించవచ్చు."</string>
+</resources>

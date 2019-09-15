@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser には、&lt;em&gt;次の情報は&lt;/em&gt;保存されません。
+        &lt;ul&gt;
+          &lt;li&gt;閲覧履歴
+          &lt;li&gt;Cookie とサイトデータ
+          &lt;li&gt;フォームに入力した情報
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Banana Browser と Google アカウント（%1$s）に保存されているクレジット カードと住所です。[BEGIN_LINK設定END_LINK] で管理できます。"</string>
+<string name="payments_card_and_address_settings_signed_out">"Banana Browser に保存されているクレジット カードと住所です。[BEGIN_LINK設定END_LINK] で管理できます。"</string>
+</resources>

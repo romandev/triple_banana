@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"De volgende gegevens worden &lt;em&gt;niet opgeslagen&lt;/em&gt; in Banana Browser:
+        &lt;ul&gt;
+          &lt;li&gt;Je browsegeschiedenis
+          &lt;li&gt;Cookies en sitegegevens
+          &lt;li&gt;Informatie die is opgegeven in formulieren
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Passen en adressen zijn afkomstig uit Banana Browser en je Google-account (%1$s). Je kunt ze beheren in BEGIN_LINKInstellingenEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Passen en adressen zijn afkomstig uit Banana Browser. Je kunt ze beheren in BEGIN_LINKInstellingenEND_LINK."</string>
+</resources>

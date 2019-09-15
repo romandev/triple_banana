@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"ಈ ಮುಂದಿನ ಮಾಹಿತಿಯನ್ನು Banana Browser ಗೆ &lt;em&gt;ಉಳಿಸಲು ಆಗುವುದಿಲ್ಲ&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;ನಿಮ್ಮ ಬ್ರೌಸಿಂಗ್ ಇತಿಹಾಸ
+          &lt;li&gt;ಕುಕೀಸ್ ಮತ್ತು ಸೈಟ್ ಡೇಟಾ
+          &lt;li&gt;ಫಾರ್ಮ್‌ಗಳಲ್ಲಿ ನಮೂದಿಸಿದ ಮಾಹಿತಿ
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ವಿಳಾಸಗಳನ್ನು ನಿಮ್ಮ Banana Browser ಮತ್ತು ನಿಮ್ಮ Google ಖಾತೆಯಿಂದ (%1$s) ಪಡೆಯಲಾಗಿದೆ. ನೀವು ಅವುಗಳನ್ನು BEGIN_LINKಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿEND_LINK ನಿರ್ವಹಿಸಬಹುದು."</string>
+<string name="payments_card_and_address_settings_signed_out">"ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ವಿಳಾಸಗಳನ್ನು Banana Browser ನಿಂದ ಪಡೆಯಲಾಗಿದೆ. ನೀವು ಅವುಗಳನ್ನು BEGIN_LINKಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿEND_LINK ನಿರ್ವಹಿಸಬಹುದು."</string>
+</resources>

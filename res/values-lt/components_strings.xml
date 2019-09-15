@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"„Banana Browser“ &lt;em&gt;nesaugos&lt;/em&gt; šios informacijos:
+        &lt;ul&gt;
+          &lt;li&gt;naršymo istorijos;
+          &lt;li&gt;slapukų ir svetainių duomenų;
+          &lt;li&gt;formose įvestos informacijos.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kortelės ir adresai naudojami iš „Banana Browser“ ir jūsų „Google“ paskyros (%1$s). Galite juos tvarkyti skiltyje BEGIN_LINKNustatymaiEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kortelės ir adresai naudojami iš „Banana Browser“. Juos galite tvarkyti nuėję į BEGIN_LINKNustatymusEND_LINK."</string>
+</resources>

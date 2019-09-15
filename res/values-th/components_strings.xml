@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;จะไม่บันทึก&lt;/em&gt;ข้อมูลต่อไปนี้:
+        &lt;ul&gt;
+          &lt;li&gt;ประวัติการท่องเว็บของคุณ
+          &lt;li&gt;คุกกี้และข้อมูลไซต์
+          &lt;li&gt;ข้อมูลที่กรอกในฟอร์ม
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ข้อมูลบัตรและที่อยู่มาจาก Banana Browser และบัญชี Google (%1$s) คุณสามารถจัดการข้อมูลเหล่านี้ในBEGIN_LINKการตั้งค่าEND_LINK"</string>
+<string name="payments_card_and_address_settings_signed_out">"ข้อมูลบัตรและที่อยู่มาจาก Banana Browser คุณสามารถจัดการข้อมูลเหล่านี้ในBEGIN_LINKการตั้งค่าEND_LINK"</string>
+</resources>

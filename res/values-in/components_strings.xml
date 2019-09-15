@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;tidak akan menyimpan&lt;/em&gt; informasi berikut:
+        &lt;ul&gt;
+          &lt;li&gt;Histori penjelajahan Anda
+          &lt;li&gt;Cookie dan data situs
+          &lt;li&gt;Informasi yang dimasukkan dalam formulir
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kartu dan alamat berasal dari Banana Browser dan Akun Google (%1$s). Anda dapat mengelolanya di BEGIN_LINKSetelanEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kartu dan alamat berasal dari Banana Browser. Anda dapat mengelolanya di BEGIN_LINKSetelanEND_LINK."</string>
+</resources>
