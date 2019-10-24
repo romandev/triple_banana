@@ -1,8 +1,8 @@
 diff --git triple_banana/BUILD.gn triple_banana_change/BUILD.gn
-index 19fd588..ced1234 100644
+index 5e2f6b9..a3e920e 100644
 --- triple_banana/BUILD.gn
 +++ triple_banana_change/BUILD.gn
-@@ -78,6 +78,7 @@ group("gn_all") {
+@@ -79,6 +79,7 @@ group("gn_all") {
      "//tools/binary_size:binary_size_trybot_py",
      "//tools/ipc_fuzzer:ipc_fuzzer_all",
      "//tools/metrics:metrics_metadata",

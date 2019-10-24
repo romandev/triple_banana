@@ -1,8 +1,8 @@
 diff --git triple_banana/content/browser/renderer_host/render_process_host_impl.cc triple_banana_change/content/browser/renderer_host/render_process_host_impl.cc
-index c49bdce..b102600 100644
+index 8379cdf..7a28c48 100644
 --- triple_banana/content/browser/renderer_host/render_process_host_impl.cc
 +++ triple_banana_change/content/browser/renderer_host/render_process_host_impl.cc
-@@ -2892,6 +2892,7 @@ void RenderProcessHostImpl::AppendRendererCommandLine(
+@@ -2858,6 +2858,7 @@ void RenderProcessHostImpl::AppendRendererCommandLine(
        switches::kDeviceScaleFactor,
        base::NumberToString(display::win::GetDPIScale()));
  #endif
