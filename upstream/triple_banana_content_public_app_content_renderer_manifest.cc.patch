@@ -10,6 +10,3 @@ index 30b6f1f..dface3c 100644
            .RequireCapability(mojom::kBrowserServiceName, "dwrite_font_proxy")
            .RequireCapability(mojom::kSystemServiceName, "dwrite_font_proxy")
            .RequireCapability(mojom::kSystemServiceName, "field_trials")
--- 
-2.7.4
-
