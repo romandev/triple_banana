@@ -1,5 +1,5 @@
 diff --git triple_banana/components/autofill/content/renderer/autofill_agent.cc triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
-index 5c47936..adc69cb 100644
+index 5c47936..83aa34d 100644
 --- triple_banana/components/autofill/content/renderer/autofill_agent.cc
 +++ triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
 @@ -46,6 +46,7 @@
@@ -31,7 +31,7 @@ index 5c47936..adc69cb 100644
  
 +  static auto manager = triple_banana::BindInterfaceOnRenderer<
 +      authentication::mojom::AuthenticationManager>();
-+  if (!co_await(manager->Authenticate, bool) || !password_autofill_agent_)
++  if (!co_await(bool, manager->Authenticate) || !password_autofill_agent_)
 +    return;
 +
    bool handled =

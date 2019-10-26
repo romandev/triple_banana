@@ -36,130 +36,36 @@ using Coroutine = std::function<void(void*, void*)>;
 
 #define co_await_overload(_0, _1, _2, _3, _4, _5, _6, _7, _8, _9, name, ...) \
   name
-#define co_await(...)                                                      \
-  co_await_overload(_0, ##__VA_ARGS__, co_await9, co_await8, co_await7,    \
-                    co_await6, co_await5, co_await4, co_await3, co_await2, \
-                    co_await1, co_await0)(__VA_ARGS__)
+#define co_await(...)                                                          \
+  co_await_overload(_0, ##__VA_ARGS__, co_await_with_args, co_await_with_args, \
+                    co_await_with_args, co_await_with_args,                    \
+                    co_await_with_args, co_await_with_args,                    \
+                    co_await_with_args, co_await_with_no_args,                 \
+                    co_await_with_no_args, co_await_with_no_args)(__VA_ARGS__)
 
-// FIXME: We should reduce duplicated code
-#define co_await2(method, result_type)                       \
-  ({                                                         \
-    method(base::BindOnce(                                   \
-        [](Coroutine* c, result_type result) {               \
-          result_type* result_ref = new result_type();       \
-          *result_ref = result;                              \
-          co_resume_with_data(c, result_ref);                \
-        },                                                   \
-        co_this));                                           \
-    co_yield();                                              \
-    result_type result = *static_cast<result_type*>(__data); \
-    delete static_cast<result_type*>(__data);                \
-    result;                                                  \
+#define co_await_with_no_args(result_type, method_name)            \
+  ({                                                               \
+    method_name(base::BindOnce(                                    \
+        [](Coroutine* c, result_type result) {                     \
+          co_resume_with_data(                                     \
+              c, const_cast<std::decay_t<result_type>*>(&result)); \
+        },                                                         \
+        co_this));                                                 \
+    co_yield();                                                    \
+    *static_cast<std::decay_t<result_type>*>(__data);              \
   })
-#define co_await3(method, result_type, arg1)                        \
-  ({                                                                \
-    method(arg1, base::BindOnce(                                    \
-                     [](Coroutine* c, result_type result) {         \
-                       result_type* result_ref = new result_type(); \
-                       *result_ref = result;                        \
-                       co_resume_with_data(c, result_ref);          \
-                     },                                             \
-                     co_this));                                     \
-    co_yield();                                                     \
-    result_type result = *static_cast<result_type*>(__data);        \
-    delete static_cast<result_type*>(__data);                       \
-    result;                                                         \
-  })
-#define co_await4(method, result_type, arg1, arg2)            \
-  ({                                                          \
-    method(arg1, arg2,                                        \
-           base::BindOnce(                                    \
-               [](Coroutine* c, result_type result) {         \
-                 result_type* result_ref = new result_type(); \
-                 *result_ref = result;                        \
-                 co_resume_with_data(c, result_ref);          \
-               },                                             \
-               co_this));                                     \
-    co_yield();                                               \
-    result_type result = *static_cast<result_type*>(__data);  \
-    delete static_cast<result_type*>(__data);                 \
-    result;                                                   \
-  })
-#define co_await5(method, result_type, arg1, arg2, arg3)      \
-  ({                                                          \
-    method(arg1, arg2,                                        \
-           arg3 base::BindOnce(                               \
-               [](Coroutine* c, result_type result) {         \
-                 result_type* result_ref = new result_type(); \
-                 *result_ref = result;                        \
-                 co_resume_with_data(c, result_ref);          \
-               },                                             \
-               co_this));                                     \
-    co_yield();                                               \
-    result_type result = *static_cast<result_type*>(__data);  \
-    delete static_cast<result_type*>(__data);                 \
-    result;                                                   \
-  })
-#define co_await6(method, result_type, arg1, arg2, arg3, arg4) \
-  ({                                                           \
-    method(arg1, arg2, arg3,                                   \
-           arg4 base::BindOnce(                                \
-               [](Coroutine* c, result_type result) {          \
-                 result_type* result_ref = new result_type();  \
-                 *result_ref = result;                         \
-                 co_resume_with_data(c, result_ref);           \
-               },                                              \
-               co_this));                                      \
-    co_yield();                                                \
-    result_type result = *static_cast<result_type*>(__data);   \
-    delete static_cast<result_type*>(__data);                  \
-    result;                                                    \
-  })
-#define co_await7(method, result_type, arg1, arg2, arg3, arg4, arg5) \
-  ({                                                                 \
-    method(arg1, arg2, arg3, arg4,                                   \
-           arg5 base::BindOnce(                                      \
-               [](Coroutine* c, result_type result) {                \
-                 result_type* result_ref = new result_type();        \
-                 *result_ref = result;                               \
-                 co_resume_with_data(c, result_ref);                 \
-               },                                                    \
-               co_this));                                            \
-    co_yield();                                                      \
-    result_type result = *static_cast<result_type*>(__data);         \
-    delete static_cast<result_type*>(__data);                        \
-    result;                                                          \
-  })
-#define co_await8(method, result_type, arg1, arg2, arg3, arg4, arg5, arg6) \
-  ({                                                                       \
-    method(arg1, arg2, arg3, arg4, arg5,                                   \
-           arg6 base::BindOnce(                                            \
-               [](Coroutine* c, result_type result) {                      \
-                 result_type* result_ref = new result_type();              \
-                 *result_ref = result;                                     \
-                 co_resume_with_data(c, result_ref);                       \
-               },                                                          \
-               co_this));                                                  \
-    co_yield();                                                            \
-    result_type result = *static_cast<result_type*>(__data);               \
-    delete static_cast<result_type*>(__data);                              \
-    result;                                                                \
-  })
-#define co_await9(method, result_type, arg1, arg2, arg3, arg4, arg5, arg6, \
-                  arg7)                                                    \
-  ({                                                                       \
-    method(arg1, arg2, arg3, arg4, arg5, arg6,                             \
-           arg7 base::BindOnce(                                            \
-               [](Coroutine* c, result_type result) {                      \
-                 result_type* result_ref = new result_type();              \
-                 *result_ref = result;                                     \
-                 co_resume_with_data(c, result_ref);                       \
-               },                                                          \
-               co_this));                                                  \
-    co_yield();                                                            \
-    result_type result = *static_cast<result_type*>(__data);               \
-    delete static_cast<result_type*>(__data);                              \
-    result;                                                                \
+
+#define co_await_with_args(result_type, method_name, ...)                      \
+  ({                                                                           \
+    method_name(__VA_ARGS__,                                                   \
+                base::BindOnce(                                                \
+                    [](Coroutine* c, result_type result) {                     \
+                      co_resume_with_data(                                     \
+                          c, const_cast<std::decay_t<result_type>*>(&result)); \
+                    },                                                         \
+                    co_this));                                                 \
+    co_yield();                                                                \
+    *static_cast<std::decay_t<result_type>*>(__data);                          \
   })
 
 template <typename T>
