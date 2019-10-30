@@ -14,9 +14,9 @@ using Coroutine = std::function<void(void*, void*)>;
 
 #define co_this static_cast<Coroutine*>(__self)
 
-#define co_begin(unused) \
+#define co_begin(unused)  \
+  int __pending_line = 0; \
   auto* __coroutine = new Coroutine([=](void* __self, void* __data) mutable { \
-    static int __pending_line = 0; \
     switch (__pending_line) { \
     case 0:;
 #define co_yield(unused)       \
