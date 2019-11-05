@@ -5,6 +5,9 @@
 #ifndef TRIPLE_BANANA_MODULES_PUBLIC_COROUTINE_H_
 #define TRIPLE_BANANA_MODULES_PUBLIC_COROUTINE_H_
 
+#include <memory>
+#include "base/bind.h"
+
 using Coroutine = std::function<void(void*, void*)>;
 
 #define co_resume_with_data(coroutine, result_ref) \
@@ -68,32 +71,60 @@ using Coroutine = std::function<void(void*, void*)>;
     *static_cast<std::decay_t<result_type>*>(__data);                          \
   })
 
-template <typename T>
-class CopyableWrapper {
- public:
-  CopyableWrapper(T&& t) : value(std::move(t)) {}
-  CopyableWrapper(CopyableWrapper const& other)
-      : value(std::move(other.value)) {}
-  CopyableWrapper(CopyableWrapper&& other) : value(std::move(other.value)) {}
-  CopyableWrapper& operator=(CopyableWrapper const& other) {
-    value = std::move(other.value);
-    return *this;
-  }
+#define DEFINE_DEFAULT_OPERATORS(MoveableType)                         \
+ public:                                                               \
+  Copyable() = default;                                                \
+  Copyable(MoveableType&& value) : value_(std::move(value)) {}         \
+  Copyable(Copyable&& other) : value_(std::move(other.value_)) {}      \
+  Copyable(const Copyable& other) : value_(std::move(other.value_)) {} \
+  Copyable& operator=(MoveableType&& value) {                          \
+    value_ = std::move(value);                                         \
+    return *this;                                                      \
+  }                                                                    \
+  Copyable& operator=(Copyable&& other) {                              \
+    value_ = std::move(other.value_);                                  \
+    return *this;                                                      \
+  }                                                                    \
+  Copyable& operator=(const Copyable& other) {                         \
+    value_ = std::move(other.value_);                                  \
+    return *this;                                                      \
+  }                                                                    \
+  operator MoveableType &&()&& { return std::move(value_); }           \
+                                                                       \
+ private:                                                              \
+  mutable MoveableType value_
 
-  CopyableWrapper& operator=(CopyableWrapper&& other) {
-    value = std::move(other.value);
-    return *this;
-  }
-
-  operator T &&() && { return std::move(value); }
-
- private:
-  mutable T value;
+template <typename Moveable>
+class Copyable {
+  DEFINE_DEFAULT_OPERATORS(Moveable);
 };
 
-template <typename T>
-CopyableWrapper<T> make_copyable(T&& value) {
-  return CopyableWrapper<T>(std::move(value));
-}
+template <typename InternalType>
+class Copyable<std::unique_ptr<InternalType>> {
+  DEFINE_DEFAULT_OPERATORS(std::unique_ptr<InternalType>);
+
+ public:
+  operator bool() { return static_cast<bool>(value_); }
+
+  auto operator-> () const { return value_.operator->(); }
+
+  template <typename ResetType>
+  void reset(ResetType value) {
+    value_.reset(value);
+  }
+
+  auto get() { return value_.get(); }
+};
+
+template <typename InternalType>
+class Copyable<base::OnceCallback<InternalType>> {
+  DEFINE_DEFAULT_OPERATORS(base::OnceCallback<InternalType>);
+
+ public:
+  template <typename... Args>
+  auto Run(Args... args) {
+    return std::move(value_).Run(std::forward<Args>(args)...);
+  }
+};
 
 #endif  // TRIPLE_BANANA_MODULES_PUBLIC_COROUTINE_H_
