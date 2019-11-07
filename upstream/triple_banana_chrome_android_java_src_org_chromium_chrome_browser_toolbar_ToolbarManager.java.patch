@@ -1,0 +1,16 @@
+diff —git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
+index 0f37cc998862..a1f99bed7d5d 100644
+— triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
++++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
+@@ -804,7 +804,7 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
+                         || mActivity.getResources().getConfiguration().orientation
+                                 != Configuration.ORIENTATION_LANDSCAPE);
+         mBottomControlsCoordinator.setBottomControlsVisible(mIsBottomToolbarVisible);
+-        mToolbar.onBottomToolbarVisibilityChanged(mIsBottomToolbarVisible);
++        mToolbar.onBottomToolbarVisibilityChanged(false);
+
+         Toast.setGlobalExtraYOffset(mActivity.getResources().getDimensionPixelSize(
+                 FeatureUtilities.isLabeledBottomToolbarEnabled()
+—
+2.23.0
+
