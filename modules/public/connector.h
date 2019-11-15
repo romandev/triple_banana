@@ -12,8 +12,24 @@
 #include "triple_banana/modules/public/mojom/authentication.mojom.h"
 #include "triple_banana/modules/public/mojom/encrypter.mojom.h"
 #include "triple_banana/modules/public/mojom/hello.mojom.h"
+#include "triple_banana/modules/public/string_view.h"
 
 namespace triple_banana {
+
+inline constexpr bool IsBrowserProcess(const string_view& file_name) {
+  // TODO(zino): We should replace operator== with string_view.find().
+  return file_name == string_view(
+                          "./../../components/password_manager/content/browser/"
+                          "content_password_manager_driver.cc") ||
+         file_name == string_view(
+                          "./../../components/password_manager/core/browser/"
+                          "form_saver_impl.cc");
+}
+
+#define AutoBind(interface_name)                                \
+  triple_banana::IsBrowserProcess(__FILE__)                     \
+      ? triple_banana::BindInterfaceOnBrowser<interface_name>() \
+      : triple_banana::BindInterfaceOnRenderer<interface_name>()
 
 template <typename Interface>
 inline mojo::InterfacePtr<Interface> BindInterfaceOnRenderer() {
