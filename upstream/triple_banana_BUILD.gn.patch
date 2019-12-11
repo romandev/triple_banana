@@ -1,5 +1,5 @@
 diff --git triple_banana/BUILD.gn triple_banana_change/BUILD.gn
-index ac02976..81ce8cd 100644
+index 5e2f6b9..a3e920e 100644
 --- triple_banana/BUILD.gn
 +++ triple_banana_change/BUILD.gn
 @@ -79,6 +79,7 @@ group("gn_all") {
