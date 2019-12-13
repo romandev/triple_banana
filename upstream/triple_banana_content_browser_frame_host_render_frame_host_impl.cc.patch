@@ -1,8 +1,8 @@
 diff --git triple_banana/content/browser/frame_host/render_frame_host_impl.cc triple_banana_change/content/browser/frame_host/render_frame_host_impl.cc
-index f25b4fa..12e5352 100644
+index 523c981..f852fe2 100644
 --- triple_banana/content/browser/frame_host/render_frame_host_impl.cc
 +++ triple_banana_change/content/browser/frame_host/render_frame_host_impl.cc
-@@ -1317,7 +1317,6 @@ void RenderFrameHostImpl::AddMessageToConsole(
+@@ -1321,7 +1321,6 @@ void RenderFrameHostImpl::AddMessageToConsole(
  void RenderFrameHostImpl::ExecuteJavaScript(const base::string16& javascript,
                                              JavaScriptResultCallback callback) {
    DCHECK_CURRENTLY_ON(BrowserThread::UI);
