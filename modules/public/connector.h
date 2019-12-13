@@ -5,6 +5,7 @@
 #ifndef TRIPLE_BANANA_MODULES_PUBLIC_CONNECTOR_H_
 #define TRIPLE_BANANA_MODULES_PUBLIC_CONNECTOR_H_
 
+#include <string>
 #include "content/child/child_process.h"
 #include "content/child/child_thread_impl.h"
 #include "content/public/browser/system_connector.h"
@@ -17,13 +18,7 @@
 namespace triple_banana {
 
 inline constexpr bool IsBrowserProcess(const string_view& file_name) {
-  // TODO(zino): We should replace operator== with string_view.find().
-  return file_name == string_view(
-                          "./../../components/password_manager/content/browser/"
-                          "content_password_manager_driver.cc") ||
-         file_name == string_view(
-                          "./../../components/password_manager/core/browser/"
-                          "form_saver_impl.cc");
+  return file_name.find("/browser/") != std::string::npos;
 }
 
 #define AutoBind(interface_name)                                \

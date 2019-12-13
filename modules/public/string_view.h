@@ -25,8 +25,18 @@ class string_view {
   }
 
   constexpr size_t find(const string_view& other) const {
-    // TODO(zino): We should implement string searching algorithm.
-    return 0;
+    for (size_t i = 0; i < length() - other.length(); i++) {
+      bool found = true;
+      for (size_t j = 0; j < other.length(); j++) {
+        if (data_[i + j] != other.data_[j]) {
+          found = false;
+          break;
+        }
+      }
+      if (found)
+        return i;
+    }
+    return std::string::npos;
   }
 
   constexpr bool operator==(const string_view& other) const {
