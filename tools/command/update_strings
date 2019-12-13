@@ -19,19 +19,19 @@ function generate_banana_strings() {
   # Filter on android_chrome_strings
   input_paths=$(ls -d $chromium_out_path/gen/chrome/android/chrome_strings_grd_grit_output/values*)
   for input_path in $input_paths; do
-    mkdir -p $(triple_banana_resource_path)/$(basename $input_path)
+    mkdir -p $(override_resource_path)/$(basename $input_path)
     awk '/(<string.*>.*Chrome.*|<?(resources|xml).*)/,/(<\/string>|>$)/' \
         $input_path/android_chrome_strings.xml \
-        > $(triple_banana_resource_path)/$(basename $input_path)/android_chrome_strings.xml
+        > $(override_resource_path)/$(basename $input_path)/android_chrome_strings.xml
   done
 
   #Filter on components_strings
   input_paths=$(ls -d $chromium_out_path/gen/components/strings/java/res/values*)
   for input_path in $input_paths; do
-    mkdir -p $(triple_banana_resource_path)/$(basename $input_path)
+    mkdir -p $(override_resource_path)/$(basename $input_path)
     awk '/(<string.*>.*Chrome.*|<?(resources|xml).*)/,/(<\/string>|>$)/' \
         $input_path/components_strings.xml \
-        > $(triple_banana_resource_path)/$(basename $input_path)/components_strings.xml
+        > $(override_resource_path)/$(basename $input_path)/components_strings.xml
   done
 
   pop_dir
@@ -58,21 +58,21 @@ function main() {
   chromium_out_path=$1
   generate_banana_strings $chromium_out_path
 
-  strings_paths=$(ls -d $(triple_banana_resource_path)/values*)
+  strings_paths=$(ls -d $(override_resource_path)/values*)
   for strings_path in $strings_paths; do
     rewrite_banana_strings $strings_path "s/Chrome/Banana Browser/g"
   done
 
   # Fix postpositions in Korean translation
-  rewrite_banana_strings "$(triple_banana_resource_path)/values-ko" \
+  rewrite_banana_strings "$(override_resource_path)/values-ko" \
       "s/Banana Browser이/Banana Browser가/g"
-  rewrite_banana_strings "$(triple_banana_resource_path)/values-ko" \
+  rewrite_banana_strings "$(override_resource_path)/values-ko" \
       "s/Banana Browser은/Banana Browser는/g"
-  rewrite_banana_strings "$(triple_banana_resource_path)/values-ko" \
+  rewrite_banana_strings "$(override_resource_path)/values-ko" \
       "s/Banana Browser을/Banana Browser를/g"
 
   # Fix upstream bug in French translation
-  rewrite_banana_strings "$(triple_banana_resource_path)/values-fr" \
+  rewrite_banana_strings "$(override_resource_path)/values-fr" \
       "s/60 % de/60 \\\% de/g"
 }
 

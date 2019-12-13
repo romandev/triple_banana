@@ -32,7 +32,6 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   deps = [
     ":triple_banana_application_java",
     "//chrome/android:chrome_apk_pak_assets",
-    "//chrome/android:chrome_public_apk_resources",
     "//chrome/android:chrome_public_base_module_java",
     "//chrome/android:chrome_public_non_pak_assets",
     "//chrome/android:chrome_public_v8_assets",
@@ -63,4 +62,13 @@ android_library("triple_banana_application_java") {
   deps = [
     ":triple_banana_public_api_java",
   ]
+}
+
+android_resources("triple_banana_resources") {
+  resource_dirs = [ "//triple_banana/res" ]
+
+  deps = [
+    "//chrome/android:chrome_public_apk_resources",
+  ]
+  custom_package = "org.triple.banana"
 }

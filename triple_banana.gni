@@ -8,4 +8,4 @@ triple_banana_hooks_sources = [
   "//triple_banana/modules/public/java/org/triple/banana/modules/Connector.java",
 ]
 
-triple_banana_resource = [ "//triple_banana/res" ]
+triple_banana_resource = [ "//triple_banana/res_override" ]

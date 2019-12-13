@@ -24,6 +24,10 @@ function triple_banana_resource_path() {
   echo $(triple_banana_path)/res
 }
 
+function override_resource_path() {
+  echo $(triple_banana_path)/res_override
+}
+
 function chromium_path() {
   echo $(realpath $(triple_banana_path)/..)
 }
