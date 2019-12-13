@@ -10,9 +10,6 @@
 #include "content/child/child_thread_impl.h"
 #include "content/public/browser/system_connector.h"
 #include "mojo/public/cpp/bindings/interface_request.h"
-#include "triple_banana/modules/public/mojom/authentication.mojom.h"
-#include "triple_banana/modules/public/mojom/encrypter.mojom.h"
-#include "triple_banana/modules/public/mojom/hello.mojom.h"
 #include "triple_banana/modules/public/string_view.h"
 
 namespace triple_banana {

@@ -7,9 +7,7 @@
 #include "base/no_destructor.h"
 #include "services/service_manager/public/cpp/manifest.h"
 #include "services/service_manager/public/cpp/manifest_builder.h"
-#include "triple_banana/modules/public/mojom/authentication.mojom.h"
-#include "triple_banana/modules/public/mojom/encrypter.mojom.h"
-#include "triple_banana/modules/public/mojom/hello.mojom.h"
+#include "triple_banana/modules/public/interfaces.h"
 
 namespace triple_banana {
 
@@ -25,9 +23,7 @@ const service_manager::Manifest& GetManifest() {
                   .Build())
           .ExposeCapability(
               "modules",
-              service_manager::Manifest::InterfaceList<
-                  authentication::mojom::AuthenticationManager,
-                  encrypter::mojom::EncrypterManager, hello::mojom::Hello>())
+              service_manager::Manifest::InterfaceList<EXPORT_INTERFACE_LIST>())
           .Build()};
   return *manifest;
 }
