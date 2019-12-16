@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:minWidth="1000dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/authentication_title"
+        android:textColor="@color/authentication_title_color"
+        android:textSize="20sp" />
+
+     <TextView
+        android:id="@+id/authentication_description_text"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/authentication_description"
+        android:drawableStart="@drawable/ic_fingerprint_black_36dp"
+        android:drawablePadding="10dp"
+        android:text="@string/authentication_description"
+        android:textColor="@color/authentication_hint_color"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/cancel_button"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/authentication_cancel"
+        android:textColor="@color/cancel_text_color"
+        android:textSize="13sp" />
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<resources>
+    <color name="cancel_text_color">#ff0099cc</color>
+    <color name="authentication_warning_color">#f4511e</color>
+    <color name="authentication_hint_color">#ffaaaaaa</color>
+    <color name="authentication_title_color">#ff000000</color>
+</resources>
