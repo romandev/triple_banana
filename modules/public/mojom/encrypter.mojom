@@ -6,7 +6,6 @@
 module encrypter.mojom;
 
 interface EncrypterManager {
-  Initialize(string keyName, bool userAuthenticationRequired);
   Decrypt(string cipherText) => (string plainText);
   Encrypt(string plainText) => (string cipherText);
 };

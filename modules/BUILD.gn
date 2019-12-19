@@ -65,7 +65,11 @@ if (is_android) {
       "authentication/java/org/triple/banana/authentication/FingerprintManagerAuthenticationActivity.java",
       "authentication/java/org/triple/banana/authentication/KeyguardAuthenticationActivity.java",
       "authentication/java/org/triple/banana/authentication/TranslucentActivity.java",
+      "encrypter/java/org/triple/banana/encrypter/Encrypter.java",
+      "encrypter/java/org/triple/banana/encrypter/EncrypterFactory.java",
       "encrypter/java/org/triple/banana/encrypter/EncrypterManagerImpl.java",
+      "encrypter/java/org/triple/banana/encrypter/FakeEncrypter.java",
+      "encrypter/java/org/triple/banana/encrypter/KeyStoreEncrypter.java",
       "hello/java/org/triple/banana/hello/HelloImpl.java",
       "public/java/org/triple/banana/modules/InterfaceRegistrar.java",
     ]
