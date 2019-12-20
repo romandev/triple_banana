@@ -6,8 +6,7 @@
 #define TRIPLE_BANANA_MODULES_PUBLIC_CONNECTOR_H_
 
 #include <string>
-#include "content/child/child_process.h"
-#include "content/child/child_thread_impl.h"
+#include "content/public/child/child_thread.h"
 #include "content/public/browser/system_connector.h"
 #include "mojo/public/cpp/bindings/interface_request.h"
 #include "triple_banana/modules/public/string_view.h"
@@ -26,7 +25,7 @@ inline constexpr bool IsBrowserProcess(const string_view& file_name) {
 template <typename Interface>
 inline mojo::InterfacePtr<Interface> BindInterfaceOnRenderer() {
   mojo::InterfacePtr<Interface> interface_ptr = nullptr;
-  content::ChildThreadImpl::current()->GetConnector()->BindInterface(
+  content::ChildThread::Get()->GetConnector()->BindInterface(
       "triple_banana", mojo::MakeRequest(&interface_ptr));
   return interface_ptr;
 }
