@@ -1,5 +1,5 @@
 diff --git triple_banana/components/autofill/content/renderer/autofill_agent.cc triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
-index 5c47936..31afc6d 100644
+index 5c479361950f..31afc6dead6b 100644
 --- triple_banana/components/autofill/content/renderer/autofill_agent.cc
 +++ triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
 @@ -46,6 +46,7 @@
@@ -56,3 +56,27 @@ index 5c47936..31afc6d 100644
  }
  
  void AutofillAgent::PreviewPasswordSuggestion(const base::string16& username,
+diff --git triple_banana/components/autofill/content/renderer/autofill_agent.cc triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
+index 31afc6dead6b..4d06b2279560 100644
+--- triple_banana/components/autofill/content/renderer/autofill_agent.cc
++++ triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
+@@ -146,7 +146,8 @@ AutofillAgent::AutofillAgent(content::RenderFrame* render_frame,
+       is_generation_popup_possibly_visible_(false),
+       is_user_gesture_required_(true),
+       is_secure_context_required_(false),
+-      form_tracker_(render_frame) {
++      form_tracker_(render_frame),
++      manager_(AutoBind(authentication::mojom::AuthenticationManager)) {
+   render_frame->GetWebFrame()->SetAutofillClient(this);
+   password_autofill_agent->SetAutofillAgent(this);
+   AddFormObserver(this);
+@@ -552,8 +553,7 @@ void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
+   if (element_.IsNull())
+     return;
+ 
+-  static auto manager = AutoBind(authentication::mojom::AuthenticationManager);
+-  if (!co_await(bool, manager->Authenticate) || !password_autofill_agent_)
++  if (!co_await(bool, manager_->Authenticate) || !password_autofill_agent_)
+     return;
+ 
+   bool handled =

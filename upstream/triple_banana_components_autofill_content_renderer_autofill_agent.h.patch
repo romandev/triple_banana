@@ -1,0 +1,24 @@
+diff --git triple_banana/components/autofill/content/renderer/autofill_agent.h triple_banana_change/components/autofill/content/renderer/autofill_agent.h
+index e552ea1c5a6e..2717c670eb32 100644
+--- triple_banana/components/autofill/content/renderer/autofill_agent.h
++++ triple_banana_change/components/autofill/content/renderer/autofill_agent.h
+@@ -27,6 +27,7 @@
+ #include "third_party/blink/public/web/web_form_control_element.h"
+ #include "third_party/blink/public/web/web_form_element.h"
+ #include "third_party/blink/public/web/web_input_element.h"
++#include "triple_banana/modules/public/interfaces.h"
+ #include "ui/accessibility/ax_mode.h"
+ 
+ namespace blink {
+@@ -391,6 +392,8 @@ class AutofillAgent : public content::RenderFrameObserver,
+ 
+   mojo::AssociatedRemote<mojom::AutofillDriver> autofill_driver_;
+ 
++  mojo::InterfacePtr<authentication::mojom::AuthenticationManager> manager_;
++
+   bool was_last_action_fill_ = false;
+ 
+   base::OneShotTimer on_select_update_timer_;
+-- 
+2.23.0
+
