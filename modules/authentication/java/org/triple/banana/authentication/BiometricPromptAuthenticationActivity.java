@@ -42,6 +42,7 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
         @Override
         @TargetApi(Build.VERSION_CODES.P)
         public void onAuthenticationError(int errorCode, CharSequence errString) {
+            // TODO(#140) Implement dialog for biometric prompt
             handleResult(false);
         }
 
@@ -55,7 +56,6 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
 
         @Override
         public void onAuthenticationFailed() {
-            handleResult(false);
         }
     }
 }
