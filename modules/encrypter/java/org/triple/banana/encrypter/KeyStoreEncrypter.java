@@ -44,20 +44,24 @@ public class KeyStoreEncrypter implements Encrypter {
     public static KeyStoreEncrypter create(
             String keyStoreAlias, boolean userAuthenticationRequired) {
         try {
-            KeyPairGenerator keyPairGenerator =
-                    KeyPairGenerator.getInstance(KeyProperties.KEY_ALGORITHM_RSA, KEY_STORE_TYPE);
-            KeyGenParameterSpec.Builder builder =
-                    new KeyGenParameterSpec
-                            .Builder(keyStoreAlias,
-                                    KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT)
-                            .setDigests(KeyProperties.DIGEST_SHA256, KeyProperties.DIGEST_SHA512)
-                            .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_RSA_PKCS1)
-                            .setUserAuthenticationRequired(userAuthenticationRequired);
-            keyPairGenerator.initialize(builder.build());
-            keyPairGenerator.generateKeyPair();
-
             KeyStore keyStore = KeyStore.getInstance(KEY_STORE_TYPE);
             keyStore.load(null);
+
+            if (!keyStore.containsAlias(keyStoreAlias)) {
+                KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance(
+                        KeyProperties.KEY_ALGORITHM_RSA, KEY_STORE_TYPE);
+                KeyGenParameterSpec.Builder builder =
+                        new KeyGenParameterSpec
+                                .Builder(keyStoreAlias,
+                                        KeyProperties.PURPOSE_ENCRYPT
+                                                | KeyProperties.PURPOSE_DECRYPT)
+                                .setDigests(
+                                        KeyProperties.DIGEST_SHA256, KeyProperties.DIGEST_SHA512)
+                                .setEncryptionPaddings(KeyProperties.ENCRYPTION_PADDING_RSA_PKCS1)
+                                .setUserAuthenticationRequired(userAuthenticationRequired);
+                keyPairGenerator.initialize(builder.build());
+                keyPairGenerator.generateKeyPair();
+            }
             return new KeyStoreEncrypter(keyStore, keyStoreAlias);
         } catch (NoSuchAlgorithmException | CertificateException | IOException | KeyStoreException
                 | NoSuchProviderException | InvalidAlgorithmParameterException e) {
