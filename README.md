@@ -23,6 +23,15 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instr
    ```
 5. Then, you can check the `TripleBanana.apk` under `out/Default/apks/`
 
+## GN flags for release build
+```
+target_os="android"
+android_channel="stable"
+is_official_build=true
+use_official_google_api_keys=false
+enable_triple_banana=true
+```
+
 ## Update upstream changes
 
 1. Make changes in `chromium/src` but it SHOULD be committed.
