@@ -1,0 +1,9 @@
+# Copyright 2019 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+declare_args() {
+  enable_triple_banana = true
+}
+
+triple_banana_build_flags = [ "ENABLE_TRIPLE_BANANA=1" ]

@@ -1,24 +1,26 @@
 diff --git triple_banana/components/autofill/content/renderer/autofill_agent.h triple_banana_change/components/autofill/content/renderer/autofill_agent.h
-index e552ea1c5a6e..2717c670eb32 100644
+index e552ea1..fefe5d4 100644
 --- triple_banana/components/autofill/content/renderer/autofill_agent.h
 +++ triple_banana_change/components/autofill/content/renderer/autofill_agent.h
-@@ -27,6 +27,7 @@
- #include "third_party/blink/public/web/web_form_control_element.h"
- #include "third_party/blink/public/web/web_form_element.h"
+@@ -29,6 +29,10 @@
  #include "third_party/blink/public/web/web_input_element.h"
-+#include "triple_banana/modules/public/interfaces.h"
  #include "ui/accessibility/ax_mode.h"
  
- namespace blink {
-@@ -391,6 +392,8 @@ class AutofillAgent : public content::RenderFrameObserver,
- 
-   mojo::AssociatedRemote<mojom::AutofillDriver> autofill_driver_;
- 
-+  mojo::InterfacePtr<authentication::mojom::AuthenticationManager> manager_;
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/interfaces.h"
++#endif
 +
-   bool was_last_action_fill_ = false;
+ namespace blink {
+ class WebNode;
+ class WebView;
+@@ -382,6 +386,10 @@ class AutofillAgent : public content::RenderFrameObserver,
+   blink::WebFormControlElement last_clicked_form_control_element_for_testing_;
+   bool last_clicked_form_control_element_was_focused_for_testing_ = false;
  
-   base::OneShotTimer on_select_update_timer_;
--- 
-2.23.0
-
++#if defined(ENABLE_TRIPLE_BANANA)
++  mojo::InterfacePtr<authentication::mojom::AuthenticationManager> manager_;
++#endif
++
+   FormTracker form_tracker_;
+ 
+   // Whether or not we delay focus handling until scrolling occurs.

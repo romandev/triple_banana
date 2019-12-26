@@ -1,12 +1,14 @@
 diff --git triple_banana/content/browser/renderer_host/render_process_host_impl.cc triple_banana_change/content/browser/renderer_host/render_process_host_impl.cc
-index 8379cdf..7a28c48 100644
+index 8379cdf..3a06a68 100644
 --- triple_banana/content/browser/renderer_host/render_process_host_impl.cc
 +++ triple_banana_change/content/browser/renderer_host/render_process_host_impl.cc
-@@ -2858,6 +2858,7 @@ void RenderProcessHostImpl::AppendRendererCommandLine(
+@@ -2858,6 +2858,9 @@ void RenderProcessHostImpl::AppendRendererCommandLine(
        switches::kDeviceScaleFactor,
        base::NumberToString(display::win::GetDPIScale()));
  #endif
++#if defined(ENABLE_TRIPLE_BANANA)
 +  command_line->AppendSwitch(switches::kDisableMediaSuspend);
++#endif
  
    AppendCompositorCommandLineFlags(command_line);
  

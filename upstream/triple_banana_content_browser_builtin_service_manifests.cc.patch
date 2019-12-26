@@ -1,21 +1,26 @@
 diff --git triple_banana/content/browser/builtin_service_manifests.cc triple_banana_change/content/browser/builtin_service_manifests.cc
-index 8f9164d..ab2160b 100644
+index 8f9164d..4b9fef6 100644
 --- triple_banana/content/browser/builtin_service_manifests.cc
 +++ triple_banana_change/content/browser/builtin_service_manifests.cc
-@@ -28,6 +28,7 @@
- #include "services/resource_coordinator/public/cpp/manifest.h"
+@@ -29,6 +29,10 @@
  #include "services/service_manager/public/cpp/manifest_builder.h"
  #include "services/tracing/manifest.h"
-+#include "triple_banana/modules/public/manifest/manifest.h"
  
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/manifest/manifest.h"
++#endif
++
  namespace content {
  
-@@ -54,6 +55,8 @@ const std::vector<service_manager::Manifest>& GetBuiltinServiceManifests() {
+ namespace {
+@@ -53,7 +57,9 @@ const std::vector<service_manager::Manifest>& GetBuiltinServiceManifests() {
+           GetContentPluginManifest(),
            GetContentRendererManifest(),
            GetContentUtilityManifest(),
- 
+-
++#if defined(ENABLE_TRIPLE_BANANA)
 +          triple_banana::GetManifest(),
-+
++#endif
            audio::GetManifest(IsAudioServiceOutOfProcess()
                                   ? service_manager::Manifest::ExecutionMode::
                                         kOutOfProcessBuiltin
