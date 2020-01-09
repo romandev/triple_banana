@@ -4,16 +4,25 @@
 
 package org.triple.banana.authentication;
 
+import static android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_LOCKOUT;
+import static android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_LOCKOUT_PERMANENT;
+
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.app.AlertDialog;
 import android.hardware.biometrics.BiometricPrompt;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.CancellationSignal;
+import android.widget.LinearLayout;
+
+import org.triple.banana.R;
 
 @SuppressLint("Override")
 @TargetApi(Build.VERSION_CODES.P)
 public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
+    private AlertDialog mLockoutDialog;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,8 +42,17 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
         prompt.authenticate(cancellationSignal, getMainExecutor(), new AuthenticationCallback());
     }
 
+    @Override
+    public void onPause() {
+        super.onPause();
+        handleResult(false);
+    }
+
     private void handleResult(boolean result) {
         AuthenticationManagerImpl.handleResult(result);
+        if (mLockoutDialog != null && mLockoutDialog.isShowing()) {
+            mLockoutDialog.dismiss();
+        }
         finish();
     }
 
@@ -42,8 +60,13 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
         @Override
         @TargetApi(Build.VERSION_CODES.P)
         public void onAuthenticationError(int errorCode, CharSequence errString) {
-            // TODO(#140) Implement dialog for biometric prompt
-            handleResult(false);
+            if (errorCode == BIOMETRIC_ERROR_LOCKOUT_PERMANENT) {
+                showLockout(getResources().getString(R.string.authentication_lockout_permenent));
+            } else if (errorCode == BIOMETRIC_ERROR_LOCKOUT) {
+                showLockout(getResources().getString(R.string.authentication_lockout));
+            } else {
+                handleResult(false);
+            }
         }
 
         @Override
@@ -56,6 +79,28 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
 
         @Override
         public void onAuthenticationFailed() {
+        }
+    }
+
+    private void showLockout(CharSequence lockoutString) {
+        if (mLockoutDialog == null) {
+            mLockoutDialog =
+                    new AlertDialog
+                            .Builder(this,
+                                    android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar)
+                            .setTitle(getResources().getString(R.string.authentication_error))
+                            .setPositiveButton(
+                                    getResources().getString(R.string.authentication_check),
+                                    (dialogInterface, i) -> { handleResult(false); })
+                            .setCancelable(false)
+                            .create();
+        }
+
+        if (!mLockoutDialog.isShowing()) {
+            mLockoutDialog.setMessage(lockoutString);
+            mLockoutDialog.show();
+            mLockoutDialog.getWindow().setLayout(
+                    LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         }
     }
 }

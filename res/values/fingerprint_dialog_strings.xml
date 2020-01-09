@@ -10,4 +10,5 @@
     <string name="authentication_lockout">Please try after 30 seconds</string>
     <string name="authentication_lockout_permenent">Please try after unlock your device</string>
     <string name="authentication_check">Check</string>
+    <string name="authentication_error">Authentication Error</string>
 </resources>
