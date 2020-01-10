@@ -22,6 +22,7 @@ import org.triple.banana.R;
 @TargetApi(Build.VERSION_CODES.P)
 public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
     private AlertDialog mLockoutDialog;
+    private CancellationSignal mCancellationSignal;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -38,8 +39,8 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
                         .setNegativeButton(getResources().getText(android.R.string.cancel),
                                 getMainExecutor(), (dialogInterface, i) -> { handleResult(false); })
                         .build();
-        final CancellationSignal cancellationSignal = new CancellationSignal();
-        prompt.authenticate(cancellationSignal, getMainExecutor(), new AuthenticationCallback());
+        mCancellationSignal = new CancellationSignal();
+        prompt.authenticate(mCancellationSignal, getMainExecutor(), new AuthenticationCallback());
     }
 
     @Override
@@ -49,10 +50,14 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
     }
 
     private void handleResult(boolean result) {
-        AuthenticationManagerImpl.handleResult(result);
+        if (mCancellationSignal != null) {
+            mCancellationSignal.cancel();
+            mCancellationSignal = null;
+        }
         if (mLockoutDialog != null && mLockoutDialog.isShowing()) {
             mLockoutDialog.dismiss();
         }
+        AuthenticationManagerImpl.handleResult(result);
         finish();
     }
 
