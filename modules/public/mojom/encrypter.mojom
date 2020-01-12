@@ -5,7 +5,23 @@
 [JavaPackage="org.triple.banana.encrypter.mojom"]
 module encrypter.mojom;
 
+enum EncrypterVersion {
+  VERSION_01,
+};
+
+struct EncryptedDataHeader {
+  EncrypterVersion version;
+};
+
+struct EncryptedData {
+  EncryptedDataHeader header;
+  array<uint8> cipher_data;
+  string hashed_text;
+};
+
 interface EncrypterManager {
-  Decrypt(string cipherText) => (string plainText);
-  Encrypt(string plainText) => (string cipherText);
+  Decrypt(string cipher_text) => (string plain_text);
+  Encrypt(string plain_text) => (string cipher_text);
+  GetEncryptedDataFromPlainText(string plain_text) => (EncryptedData encrpyted_data);
+  GetEncryptedDataFromCipherText(string cipher_text) => (EncryptedData encrpyted_data);
 };

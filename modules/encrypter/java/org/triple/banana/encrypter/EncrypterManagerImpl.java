@@ -27,6 +27,18 @@ public class EncrypterManagerImpl implements EncrypterManager {
     }
 
     @Override
+    public void getEncryptedDataFromPlainText(
+            String plainText, GetEncryptedDataFromPlainTextResponse callback) {
+        callback.call(mEncrypter.getEncryptedDataFromPlainText(plainText));
+    }
+
+    @Override
+    public void getEncryptedDataFromCipherText(
+            String cipherText, GetEncryptedDataFromCipherTextResponse callback) {
+        callback.call(mEncrypter.getEncryptedDataFromCipherText(cipherText));
+    }
+
+    @Override
     public void close() {}
 
     @Override
