@@ -4,9 +4,11 @@
 
 package org.triple.banana.authentication;
 
+import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
+import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 
 import org.triple.banana.authentication.mojom.AuthenticationManager;
 
@@ -32,15 +34,37 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
     private void startAuthenticationActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            startAuthenticationActivity(BiometricPromptAuthenticationActivity.class);
+            if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
+                startAuthenticationActivity(BiometricPromptAuthenticationActivity.class);
+            } else if (isKeyguardSecured()) {
+                startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+            } else {
+                // Fallback
+                handleResult(false);
+            }
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            startAuthenticationActivity(FingerprintManagerAuthenticationActivity.class);
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+            if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()
+                    && isKeyguardSecured()) {
+                startAuthenticationActivity(FingerprintManagerAuthenticationActivity.class);
+            } else if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
+                startAuthenticationActivity(FingerprintManagerAuthenticationActivity.class);
+            } else if (isKeyguardSecured()) {
+                startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+            } else {
+                // Fallback
+                handleResult(false);
+            }
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+            if (isKeyguardSecured()) {
+                startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+            } else {
+                // Fallback
+                handleResult(false);
+            }
         } else {
             // If the user's device can't support any authenticator, just calls handleResult as
             // follows.
-            handleResult(true);
+            handleResult(false);
         }
     }
 
@@ -55,6 +79,22 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         if (!isRunning()) return;
         sCallback.call(result);
         sCallback = null;
+    }
+
+    private boolean isFingerPrintSupportedDevice() {
+        Context context = ContextUtils.getApplicationContext();
+        return FingerprintManagerCompat.from(context).isHardwareDetected();
+    }
+
+    private boolean isBiometricDataRegistered() {
+        Context context = ContextUtils.getApplicationContext();
+        return FingerprintManagerCompat.from(context).hasEnrolledFingerprints();
+    }
+
+    private boolean isKeyguardSecured() {
+        Context context = ContextUtils.getApplicationContext();
+        return ((KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE))
+                .isKeyguardSecure();
     }
 
     @Override
