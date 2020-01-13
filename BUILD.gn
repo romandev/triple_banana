@@ -58,9 +58,11 @@ android_library("triple_banana_application_java") {
   java_files = [
     "//triple_banana/src/org/triple/banana/MediaSuspendController.java",
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
+    "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
   ]
   deps = [
     ":triple_banana_public_api_java",
+    "//chrome/android:chrome_java",
   ]
 }
 

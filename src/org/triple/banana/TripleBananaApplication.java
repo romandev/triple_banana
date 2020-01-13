@@ -4,10 +4,19 @@
 
 package org.triple.banana;
 
+import android.content.Context;
+import android.content.Intent;
+import android.view.View;
+
 import org.triple.banana.public_api.export.BananaApplication;
 import org.triple.banana.public_api.export.BananaCommandLine;
 import org.triple.banana.public_api.export.BananaHooks;
 import org.triple.banana.public_api.export.BananaTab;
+import org.triple.banana.toolbar.BottomToolbarController;
+
+import org.chromium.chrome.browser.ActivityTabProvider;
+import org.chromium.chrome.browser.tab.Tab;
+import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
 
 public class TripleBananaApplication extends BananaApplication {
     @Override
@@ -23,6 +32,17 @@ public class TripleBananaApplication extends BananaApplication {
             public void onUrlUpdated(BananaTab tab) {
                 MediaSuspendController.instance.DisableOnYouTube(tab);
             }
+
+            @Override
+            public BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
+                    View root, ActivityTabProvider tabProvider) {
+                // TODO(bk_1.ko) : we should implement toolbarmanager getter
+
+                return new BottomToolbarController();
+            }
+
+            @Override
+            public void startToolbarEditActivity(Context packageContext) {}
         });
 
         return true;

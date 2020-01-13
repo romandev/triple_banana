@@ -1,0 +1,26 @@
+diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
+index ad733b3674f4..1b83885835b2 100644
+--- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
++++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
+@@ -803,8 +803,8 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
+                 && (!FeatureUtilities.isAdaptiveToolbarEnabled()
+                         || mActivity.getResources().getConfiguration().orientation
+                                 != Configuration.ORIENTATION_LANDSCAPE);
+-        mBottomControlsCoordinator.setBottomControlsVisible(mIsBottomToolbarVisible);
+-        mToolbar.onBottomToolbarVisibilityChanged(mIsBottomToolbarVisible);
++        mBottomControlsCoordinator.setBottomControlsVisible(true);
++        mToolbar.onBottomToolbarVisibilityChanged(false);
+ 
+         Toast.setGlobalExtraYOffset(mActivity.getResources().getDimensionPixelSize(
+                 FeatureUtilities.isLabeledBottomToolbarEnabled()
+@@ -1278,8 +1278,8 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
+                 && FeatureUtilities.isAdaptiveToolbarEnabled()) {
+             mIsBottomToolbarVisible = mActivity.getResources().getConfiguration().orientation
+                     != Configuration.ORIENTATION_LANDSCAPE;
+-            mToolbar.onBottomToolbarVisibilityChanged(mIsBottomToolbarVisible);
+-            mBottomControlsCoordinator.setBottomControlsVisible(mIsBottomToolbarVisible);
++            mToolbar.onBottomToolbarVisibilityChanged(false);
++            mBottomControlsCoordinator.setBottomControlsVisible(true);
+             if (mAppMenuButtonHelper != null) {
+                 mAppMenuButtonHelper.setMenuShowsFromBottom(mIsBottomToolbarVisible);
+             }
