@@ -57,35 +57,4 @@ if (is_android) {
       "public/java/org/triple/banana/modules/InterfaceRegistrar.java",
     ]
   }
-
-  android_library("java") {
-    java_files = [
-      "authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
-      "authentication/java/org/triple/banana/authentication/BiometricPromptAuthenticationActivity.java",
-      "authentication/java/org/triple/banana/authentication/FingerprintManagerAuthenticationActivity.java",
-      "authentication/java/org/triple/banana/authentication/KeyguardAuthenticationActivity.java",
-      "authentication/java/org/triple/banana/authentication/TranslucentActivity.java",
-      "encrypter/java/org/triple/banana/encrypter/Encrypter.java",
-      "encrypter/java/org/triple/banana/encrypter/EncrypterFactory.java",
-      "encrypter/java/org/triple/banana/encrypter/EncrypterManagerImpl.java",
-      "encrypter/java/org/triple/banana/encrypter/FakeEncrypter.java",
-      "encrypter/java/org/triple/banana/encrypter/KeyStoreEncrypter.java",
-      "hello/java/org/triple/banana/hello/HelloImpl.java",
-      "public/java/org/triple/banana/modules/InterfaceRegistrar.java",
-    ]
-
-    deps = [
-      ":mojom_java",
-      "//base:base_java",
-      "//chrome/android:chrome_java",
-      "//mojo/public/java:base_java",
-      "//mojo/public/java:bindings_java",
-      "//mojo/public/java:system_java",
-      "//mojo/public/java/system:system_impl_java",
-      "//services/service_manager/public/java:service_manager_java",
-      "//services/service_manager/public/mojom:mojom_java",
-      "//third_party/android_deps:com_android_support_support_compat_java",
-      "//triple_banana:triple_banana_resources",
-    ]
-  }
 }
