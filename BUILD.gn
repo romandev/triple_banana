@@ -46,6 +46,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaApplication.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaCommandLine.java",
+    "//triple_banana/public/org/triple/banana/public_api/export/BananaContextUtils.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaTab.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",

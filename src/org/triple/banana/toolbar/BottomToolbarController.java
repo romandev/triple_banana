@@ -6,6 +6,7 @@ package org.triple.banana.toolbar;
 
 import android.view.View.OnClickListener;
 
+// TODO(zino): We should remove this upstream dependency.
 import org.chromium.chrome.browser.ThemeColorProvider;
 import org.chromium.chrome.browser.appmenu.AppMenuButtonHelper;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
@@ -13,6 +14,8 @@ import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
 import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
+
+import org.triple.banana.public_api.export.BananaContextUtils;
 
 public class BottomToolbarController implements BottomToolbarCoordinatorDelegate {
     @Override
@@ -46,7 +49,7 @@ public class BottomToolbarController implements BottomToolbarCoordinatorDelegate
      */
     @Override
     public MenuButton getMenuButton() {
-        return null;
+        return new MenuButton(BananaContextUtils.getApplicationContext(), null);
     }
 
     @Override
