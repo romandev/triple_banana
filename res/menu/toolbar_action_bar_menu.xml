@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/refresh_menu_id"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/standard_mode_tint" />
+
+    <item
+        android:id="@+id/close_menu_id"
+        android:icon="@drawable/btn_close"
+        android:title="@string/bookmark_action_bar_close"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/standard_mode_tint" />
+
+    <item
+        android:id="@+id/done_menu_id"
+        android:icon="@drawable/btn_done"
+        android:title="@string/search"
+        app:showAsAction="ifRoom"
+        app:iconTint="@color/standard_mode_tint" />
+
+</menu>

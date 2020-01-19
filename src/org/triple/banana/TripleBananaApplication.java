@@ -13,6 +13,7 @@ import org.triple.banana.public_api.export.BananaCommandLine;
 import org.triple.banana.public_api.export.BananaHooks;
 import org.triple.banana.public_api.export.BananaTab;
 import org.triple.banana.toolbar.BottomToolbarController;
+import org.triple.banana.toolbar.ToolbarEditActivity;
 
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.tab.Tab;
@@ -37,12 +38,16 @@ public class TripleBananaApplication extends BananaApplication {
             public BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
                     View root, ActivityTabProvider tabProvider) {
                 // TODO(bk_1.ko) : we should implement toolbarmanager getter
+                BottomToolbarController.createBottomToolbarController(root, tabProvider);
 
-                return new BottomToolbarController();
+                return BottomToolbarController.getInstance();
             }
 
             @Override
-            public void startToolbarEditActivity(Context packageContext) {}
+            public void startToolbarEditActivity(Context packageContext) {
+                Intent intent = new Intent(packageContext, ToolbarEditActivity.class);
+                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            }
         });
 
         return true;

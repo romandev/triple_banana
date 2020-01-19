@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="TextAppearance.ToolbarButton" tools:ignore="UnusedResources">
+        <item name="android:textColor">@color/chip_text_color_secondary</item>
+        <item name="android:textSize">@dimen/text_size_button</item>
+    </style>
+</resources>

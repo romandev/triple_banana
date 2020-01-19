@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_button_wrapper"
+    android:layout_height="56dp"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="?android:attr/selectableItemBackground">
+
+    <org.chromium.ui.widget.ChromeImageButton
+        android:id="@+id/image_button"
+        style="@style/SplitToolbarButton"/>
+
+    <TextView
+        android:id="@+id/button_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:visibility="gone"
+        style="@style/TextAppearance.ToolbarButton" />
+</LinearLayout>

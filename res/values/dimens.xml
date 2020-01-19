@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<resources>
+    <dimen name="candidate_icon_round_rect_corner_radius">10dp</dimen>
+    <dimen name="candidate_icon_round_rect_stroke">1dp</dimen>
+    <dimen name="text_size_button">8sp</dimen>
+</resources>
