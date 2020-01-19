@@ -1,0 +1,18 @@
+diff --git triple_banana/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc triple_banana_change/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc
+index ac4e262..f9683bc 100644
+--- triple_banana/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc
++++ triple_banana_change/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc
+@@ -308,6 +308,13 @@ ContentSubresourceFilterThrottleManager::
+       throttle->NotifyPageActivationWithRuleset(EnsureRulesetHandle(),
+                                                 ad_tagging_state);
+     }
++#if defined(ENABLE_TRIPLE_BANANA)
++    ActivationDecision decision;
++    mojom::ActivationState state;
++    state.activation_level = client_->OnPageActivationComputed(
++        navigation_handle, mojom::ActivationLevel::kEnabled, &decision);
++    throttle->NotifyPageActivationWithRuleset(EnsureRulesetHandle(), state);
++#endif
+     return throttle;
+   }
+ 

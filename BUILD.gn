@@ -32,6 +32,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   deps = [
     ":triple_banana_java",
     "//chrome/android:chrome_apk_pak_assets",
+    ":triple_banana_assets",
     "//chrome/android:chrome_public_base_module_java",
     "//chrome/android:chrome_public_non_pak_assets",
     "//chrome/android:chrome_public_v8_assets",
@@ -65,6 +66,7 @@ android_library("triple_banana_java") {
     "//triple_banana/public/org/triple/banana/public_api/export/BananaContextUtils.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaTab.java",
+    "//triple_banana/modules/adblock/java/org/triple/banana/adblock/FilterLoaderImpl.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/BiometricPromptAuthenticationActivity.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/FingerprintManagerAuthenticationActivity.java",
@@ -105,4 +107,10 @@ android_resources("triple_banana_resources") {
     "//chrome/android:chrome_public_apk_resources",
   ]
   custom_package = "org.triple.banana"
+}
+
+android_assets("triple_banana_assets") {
+  sources = [
+    "//triple_banana/modules/adblock/filter/Filters"
+  ]
 }

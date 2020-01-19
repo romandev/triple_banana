@@ -4,6 +4,8 @@
 
 package org.triple.banana.modules;
 
+import org.triple.banana.adblock.FilterLoaderImpl;
+import org.triple.banana.adblock.mojom.FilterLoader;
 import org.triple.banana.authentication.AuthenticationManagerImpl;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
 import org.triple.banana.encrypter.EncrypterManagerImpl;
@@ -24,6 +26,8 @@ class InterfaceRegistrar {
         // is not necessary to hold on to a reference to it explicitly.
         InterfaceRegistry registry = InterfaceRegistry.create(
                 CoreImpl.getInstance().acquireNativeHandle(nativeHandle).toMessagePipeHandle());
+        registry.addInterface(
+                FilterLoader.MANAGER, new FilterLoaderImpl.Factory());
         registry.addInterface(
                 AuthenticationManager.MANAGER, new AuthenticationManagerImpl.Factory());
         registry.addInterface(EncrypterManager.MANAGER, new EncrypterManagerImpl.Factory());

@@ -1,0 +1,27 @@
+diff --git triple_banana/chrome/browser/browser_process_impl.h triple_banana_change/chrome/browser/browser_process_impl.h
+index dadcf85..7f43a5c 100644
+--- triple_banana/chrome/browser/browser_process_impl.h
++++ triple_banana_change/chrome/browser/browser_process_impl.h
+@@ -35,6 +35,10 @@
+ #include "services/network/public/cpp/network_quality_tracker.h"
+ #include "services/network/public/mojom/network_service.mojom-forward.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/interfaces.h"
++#endif
++
+ class BatteryMetrics;
+ class ChromeFeatureListCreator;
+ class ChromeMetricsServicesManagerClient;
+@@ -404,6 +408,11 @@ class BrowserProcessImpl : public BrowserProcess,
+   std::unique_ptr<SecureOriginPrefsObserver> secure_origin_prefs_observer_;
+   std::unique_ptr<SiteIsolationPrefsObserver> site_isolation_prefs_observer_;
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  mojo::InterfacePtr<adblock::mojom::FilterLoader> filter_loader_ =
++      AutoBind(adblock::mojom::FilterLoader);
++#endif
++
+ #if !defined(OS_ANDROID)
+   // Called to signal the process' main message loop to exit.
+   base::OnceClosure quit_closure_;
