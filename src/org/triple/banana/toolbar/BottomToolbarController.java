@@ -196,40 +196,6 @@ public class BottomToolbarController
         }
     }
 
-    private ToolbarButton.ButtonState getButtonState(ButtonId id) {
-        if (id == ButtonId.HOME) {
-            return new ToolbarButton.ButtonState() {
-                @Override
-                public Boolean onObservingDifferentTab(Tab tab) {
-                    return updateHomeButtonEnabledState(tab, null);
-                }
-
-                @Override
-                public Boolean onUpdateUrl(Tab tab, String url) {
-                    return updateHomeButtonEnabledState(tab, url);
-                }
-            };
-        }
-        return null;
-    }
-
-    private Boolean updateHomeButtonEnabledState(Tab tab, String url) {
-        // New tab page button takes precedence over homepage.
-        final boolean isHomepageEnabled = HomepageManager.isHomepageEnabled();
-        final boolean isEnabled = !isActiveTabNTP()
-                || (isHomepageEnabled && !NewTabPage.isNTPUrl(HomepageManager.getHomepageUri()));
-        return isEnabled;
-    }
-
-    private boolean isActiveTabNTP() {
-        if (mTabProvider == null) return false;
-
-        final Tab tab = mTabProvider.get();
-        if (tab == null) return false;
-
-        return NewTabPage.isNTPUrl(tab.getUrl());
-    }
-
     @Override
     public void destroy() {
         buttonDestroy();

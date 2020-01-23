@@ -15,38 +15,36 @@ import java.util.HashMap;
 import java.util.Map;
 
 public enum ButtonId {
-    HOME,
+    BACK,
+    FORWARD,
     SHARE,
     SEARCH,
-    FORWARD,
-    CAPTURE,
-    NEW_PAGE,
-    NIGHT_MODE,
-    FAVORITE,
-    ONLY_IMAGE,
-    LANGUAGE,
-    TBA,
-    POWER,
-    BLOCK,
-    SETTING,
-    SHOPPING,
-    STAR,
-    TRANSLATE,
-    YOUTUBE,
-    VOLUME_OFF,
-    BRIGHTNESS,
-    BOYSANDGIRS,
-    PC,
-    BACK,
-    DOWN;
+    NEW_TAB,
+    BOOKMARK,
+    BOOKMARK_LIST,
+    ADD_BLOCK,
+    SECRET_MODE,
+    ADD_SECRET_TAB,
+    DOWNLOAD,
+    DESKTOP_VIEW,
+    FIND_IN_PAGE,
+    ADD_TO_HOME,
+    RELOAD,
+    VISIT_HISTORY,
+    PRINT,
+    PASSWORD,
+    ARCHIVE;
 
     static Map<ButtonId, View.OnClickListener> sOnClickListeners;
 
     public static int getImageResource(ButtonId id) {
         int imageResource = 0;
         switch (id) {
-            case HOME:
-                imageResource = R.drawable.btn_toolbar_home;
+            case BACK:
+                imageResource = R.drawable.btn_back;
+                break;
+            case FORWARD:
+                imageResource = R.drawable.btn_forward;
                 break;
             case SHARE:
                 imageResource = R.drawable.ic_menu_share_holo_light;
@@ -54,70 +52,43 @@ public enum ButtonId {
             case SEARCH:
                 imageResource = R.drawable.ic_search;
                 break;
-            case FORWARD:
-                imageResource = R.drawable.btn_forward;
-                break;
-            case BACK:
-                imageResource = R.drawable.btn_back;
-                break;
-            case DOWN:
-                imageResource = R.drawable.ic_file_download_24dp;
-                break;
-            case CAPTURE:
-                imageResource = R.drawable.ic_add_a_photo_black_24dp;
-                break;
-            case NEW_PAGE:
+            case NEW_TAB:
                 imageResource = R.drawable.ic_add_black_24dp;
                 break;
-            case NIGHT_MODE:
-                imageResource = R.drawable.ic_brightness_3_black_24dp;
-                break;
-            case FAVORITE:
-                imageResource = R.drawable.ic_favorite_border_black_24dp;
-                break;
-            case ONLY_IMAGE:
-                imageResource = R.drawable.ic_filter_black_24dp;
-                break;
-            case LANGUAGE:
-                imageResource = R.drawable.ic_language_black_24dp;
-                break;
-            case TBA:
-                imageResource = R.drawable.ic_merge_type_black_24dp;
-                break;
-            case POWER:
-                imageResource = R.drawable.ic_power_settings_new_black_24dp;
-                break;
-            case BLOCK:
-                imageResource = R.drawable.ic_remove_circle_outline_black_24dp;
-                break;
-            case SETTING:
-                imageResource = R.drawable.ic_settings_black_24dp;
-                break;
-            case SHOPPING:
-                imageResource = R.drawable.ic_shopping_cart_black_24dp;
-                break;
-            case STAR:
+            case BOOKMARK:
                 imageResource = R.drawable.ic_star_border_black_24dp;
                 break;
-            case TRANSLATE:
-                imageResource = R.drawable.ic_translate_black_24dp;
+            case BOOKMARK_LIST:
+                imageResource = R.drawable.ic_folder_special_black_24dp;
                 break;
-            case YOUTUBE:
-                imageResource = R.drawable.ic_video_library_black_24dp;
+            case ADD_BLOCK:
+                imageResource = R.drawable.ic_remove_circle_outline_black_24dp;
                 break;
-            case VOLUME_OFF:
-                imageResource = R.drawable.ic_volume_off_black_24dp;
+            case DOWNLOAD:
+                imageResource = R.drawable.ic_file_download_24dp;
                 break;
-            case BRIGHTNESS:
-                imageResource = R.drawable.ic_wb_sunny_black_24dp;
-                break;
-            case BOYSANDGIRS:
-                imageResource = R.drawable.ic_wc_black_24dp;
-                break;
-            case PC:
+            case DESKTOP_VIEW:
                 imageResource = R.drawable.ic_personal_video_black_24dp;
                 break;
+            case RELOAD:
+                imageResource = R.drawable.ic_refresh_black_24dp;
+                break;
+            case FIND_IN_PAGE:
+                imageResource = R.drawable.ic_find_in_page_black_24dp;
+                break;
+            case PRINT:
+                imageResource = R.drawable.ic_local_printshop_black_24dp;
+                break;
+            case PASSWORD:
+                imageResource = R.drawable.ic_fingerprint_black_24dp;
+                break;
+            case ARCHIVE:
+                imageResource = R.drawable.ic_archive_black_24dp;
+                break;
             default:
+                // SECRET_MODE, ADD_SECRET_TAB, ADD_TO_HOME, VISIT_HISTORY
+                // TODO(codeimpl) : After adding all images, it should be removed.
+                imageResource = R.drawable.ic_not_interested_black_24dp;
                 break;
         }
         return imageResource;
