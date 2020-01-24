@@ -66,6 +66,7 @@ android_library("triple_banana_java") {
     "//triple_banana/public/org/triple/banana/public_api/export/BananaContextUtils.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaTab.java",
+    "//triple_banana/public/org/triple/banana/public_api/export/BananaToolsApi.java",
     "//triple_banana/modules/adblock/java/org/triple/banana/adblock/FilterLoaderImpl.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/BiometricPromptAuthenticationActivity.java",
