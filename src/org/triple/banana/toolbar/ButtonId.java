@@ -42,6 +42,10 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.BACK, v -> BananaToolsApi.instance.back());
         sOnClickListeners.put(ButtonId.FORWARD, v -> BananaToolsApi.instance.forward());
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolsApi.instance.search());
+        sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolsApi.instance.addNewTab());
+        sOnClickListeners.put(ButtonId.BOOKMARK_LIST, v -> BananaToolsApi.instance.goBookmark());
+        sOnClickListeners.put(ButtonId.ADD_SECRET_TAB, v -> BananaToolsApi.instance.addSecretTab());
+        sOnClickListeners.put(ButtonId.DOWNLOAD, v -> BananaToolsApi.instance.download());
     }
 
     public static int getImageResource(ButtonId id) {
