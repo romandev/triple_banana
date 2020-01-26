@@ -1,8 +1,8 @@
 diff --git triple_banana/testing/variations/fieldtrial_testing_config.json triple_banana_change/testing/variations/fieldtrial_testing_config.json
-index 7093783..02a56a8 100644
+index 526a217..8ac7e10 100644
 --- triple_banana/testing/variations/fieldtrial_testing_config.json
 +++ triple_banana_change/testing/variations/fieldtrial_testing_config.json
-@@ -3433,8 +3433,7 @@
+@@ -3421,8 +3421,7 @@
                  "chromeos",
                  "linux",
                  "mac",

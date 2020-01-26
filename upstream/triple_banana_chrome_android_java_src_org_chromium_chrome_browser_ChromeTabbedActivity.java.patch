@@ -1,8 +1,8 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-index 0275c21..cf616dd 100644
+index 50a2a8c..c184177 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-@@ -1598,6 +1598,7 @@ public class ChromeTabbedActivity extends ChromeActivity implements ScreenshotMo
+@@ -1607,6 +1607,7 @@ public class ChromeTabbedActivity extends ChromeActivity implements ScreenshotMo
                  commandLine.appendSwitchesAndArguments(args);
              }
          }

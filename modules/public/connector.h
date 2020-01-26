@@ -7,8 +7,9 @@
 
 #include <string>
 #include "content/public/child/child_thread.h"
-#include "content/public/browser/system_connector.h"
-#include "mojo/public/cpp/bindings/interface_request.h"
+#include "mojo/public/cpp/bindings/remote.h"
+//#include "services/service_manager/public/cpp/interface_provider.h"
+#include "triple_banana/modules/public/module_service.h"
 #include "triple_banana/modules/public/string_view.h"
 
 namespace triple_banana {
@@ -23,19 +24,25 @@ inline constexpr bool IsBrowserProcess(const string_view& file_name) {
       : triple_banana::BindInterfaceOnRenderer<interface_name>()
 
 template <typename Interface>
-inline mojo::InterfacePtr<Interface> BindInterfaceOnRenderer() {
-  mojo::InterfacePtr<Interface> interface_ptr = nullptr;
-  content::ChildThread::Get()->GetConnector()->BindInterface(
-      "triple_banana", mojo::MakeRequest(&interface_ptr));
-  return interface_ptr;
+inline mojo::Remote<Interface> BindInterfaceOnRenderer() {
+  mojo::Remote<Interface> remote_interface;
+  content::ChildThread::Get()->BindHostReceiver(
+      remote_interface.BindNewPipeAndPassReceiver());
+  return remote_interface;
 }
 
 template <typename Interface>
-inline mojo::InterfacePtr<Interface> BindInterfaceOnBrowser() {
-  mojo::InterfacePtr<Interface> interface_ptr = nullptr;
-  content::GetSystemConnector()->BindInterface(
-      "triple_banana", mojo::MakeRequest(&interface_ptr));
-  return interface_ptr;
+inline mojo::Remote<Interface> BindInterfaceOnBrowser() {
+  mojo::Remote<Interface> remote_interface;
+  ModuleService::Get().GetJavaInterfaces()->GetInterface(
+      remote_interface.BindNewPipeAndPassReceiver());
+  return remote_interface;
+}
+
+inline void OnBindHostReceiverForRenderer(
+    mojo::GenericPendingReceiver receiver) {
+  ModuleService::Get().GetJavaInterfaces()->GetInterfaceByName(
+      *receiver.interface_name(), receiver.PassPipe());
 }
 
 }  // namespace triple_banana

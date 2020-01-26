@@ -20,7 +20,7 @@
 <string name="android_microphone_permission_off">"‏כדי לאפשר ל-Banana Browser לגשת אל המיקרופון, צריך להפעיל אותו גם ב&lt;link&gt;הגדרות Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏במצב טעינה מהירה, Banana Browser טוען דפים מהר יותר ומפחית את השימוש בנתונים בשיעור של עד 60 אחוזים."</string>
 <string name="data_reduction_description_lite_mode">"‏כשמצב הטעינה המהירה מופעל, Banana Browser משתמש בשרתים של Google כדי להאיץ את טעינת הדפים. אם מדובר בדפים איטיים מאוד, במצב הטעינה המהירה הם עוברים שכתוב כך שרק התוכן החיוני שלהם נטען. מצב הטעינה המהירה לא חל על כרטיסיות גלישה בסתר."</string>
-<string name="data_reduction_promo_summary_lite_mode">"‏במצב טעינה מהירה, Banana Browser טוען דפים מהר יותר ומפחית את השימוש בנתונים בשיעור של עד 60 אחוזים. טכנולוגיית הענן של Google מבצעת אופטימיזציה של הדפים שנכנסים אליהם."</string>
+<string name="data_reduction_promo_summary_lite_mode">"‏במצב טעינה מהירה, Banana Browser טוען דפים מהר יותר ומפחית את השימוש בנתונים בשיעור של עד 60 אחוזים. כדי לבצע אופטימיזציה לדפים שהמשתמש נכנס אליהם, Banana Browser שולח אל Google את התנועה שלו באינטרנט. &lt;link&gt;מידע נוסף&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"‏Banana Browser חסך לך ‎%1$d MB"</string>
 <string name="data_reduction_milestone_promo_text_gb">"‏Banana Browser חסך לך ‎%1$d GB"</string>
 <string name="prefs_about_chrome">"‏מידע כללי על Banana Browser"</string>
@@ -34,14 +34,13 @@
 <string name="remove_local_data">"‏יש לנקות גם את נתוני Banana Browser מהמכשיר הזה"</string>
 <string name="signout_managed_account_message">"‏מכיוון שבחרת לצאת מחשבון שמנוהל על ידי %1$s, נתוני Banana Browser שלך יימחקו מהמכשיר הזה. הם יישמרו בחשבון Google שלך."</string>
 <string name="sign_in_managed_account_description">"‏אתה נכנס עם חשבון המנוהל על-ידי %1$s ומעניק למנהל שלו שליטה על הנתונים שלך ב-Banana Browser. הנתונים שלך ישויכו לצמיתות אל החשבון הזה. יציאה מ-Banana Browser תמחק את הנתונים שלך מהמכשיר הזה, אבל הם יישארו בחשבון Google."</string>
-<string name="sign_out_managed_account_description">"‏אתה יוצא מחשבון המנוהל על-ידי %1$s. פעולה זו תמחק את הנתונים שלך ב-Banana Browser מהמכשיר הזה, אבל הם יישארו בחשבון Google שלך."</string>
-<string name="switch_from_managed_account_description">"‏אתה עובר מחשבון סינכרון %1$s אל חשבון סינכרון %2$s. הנתונים הקיימים שלך ב-Banana Browser מנוהלים על-ידי %3$s. פעולה זו תמחק את הנתונים מהמכשיר הזה, אבל הם יישארו ב-%1$s."</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"‏כרטיסיות שפתחת ב-Banana Browser במכשירים האחרים שלך יופיעו כאן."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"‏לא ניתן להפעיל ב-Banana Browser את מתאם Bluetooth"</string>
 <string name="bluetooth_need_location_permission">"‏כדי לבצע סריקה לאיתור מכשירים ב-Banana Browser, יש צורך בגישה לנתוני מיקום. &lt;permission_link&gt;עדכן הרשאות&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"‏כדי לבצע סריקה לאיתור מכשירים, Banana Browser זקוק לגישה לנתוני מיקום. הגישה למיקום &lt;services_link&gt;כבויה במכשיר הזה&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"‏כדי לבצע סריקה לאיתור מכשירים, Banana Browser זקוק לגישה לנתוני מיקום. &lt;permission_link&gt;עדכן את ההרשאות&lt;/permission_link&gt;. כמו כן, הגישה למיקום &lt;services_link&gt;כבויה במכשיר הזה&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"‏פתח את הגדרות Android והפעל מחדש את הסנכרון של מערכת Android כדי להתחיל בסנכרון של Banana Browser"</string>
+<string name="hint_sync_settings_not_confirmed_description">"‏כדי להתחיל לסנכרן צריך להפעיל את האפשרות \"סנכרון הנתונים מ-Banana Browser\"."</string>
 <string name="inline_update_infobar_ready_link_text">"‏הפעלה מחדש של Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"‏מוריד עדכון של Banana Browser…"</string>
 <string name="update_notification_title_default">"‏כדאי לעדכן את Banana Browser"</string>
@@ -55,10 +54,6 @@
 <string name="infobar_missing_location_permission_text">"‏Banana Browser זקוק לגישה אל המיקום שלך כדי לשתף אותו עם האתר הזה."</string>
 <string name="missing_storage_permission_download_education_text">"‏לצורך הורדת קבצים, Banana Browser זקוק לגישה לאחסון."</string>
 <string name="contextmenu_open_in_new_chrome_tab">"‏פתיחה בכרטיסייה חדשה של Banana Browser"</string>
-<string name="download_manager_offline_header_title">"‏דפים פופולריים מ-Banana Browser"</string>
-<string name="os_version_missing_features">"‏חסרה פונקציונליות קריטית הנדרשת להפעלת Banana Browser. התקנת Banana Browser אינה מלאה, או שאינה תואמת לגרסה הזו של Android."</string>
-<string name="incompatible_libraries">"‏הרכיבים של Banana Browser אינם תואמים זה לזה. ייתכן ש-Banana Browser מבצע שדרוג, נסה שוב בעוד כמה דקות. אם הבעיה נמשכת, נסה להסיר את Banana Browser ולהתקין אותו מחדש."</string>
-<string name="native_startup_failed">"‏שגיאה בלתי צפויה גרמה לכשל של Banana Browser בעת ההפעלה."</string>
 <string name="fre_activity_label">"‏חוויית ההפעלה הראשונה של Banana Browser"</string>
 <string name="fre_tos_and_privacy">"‏השימוש באפליקציה זו מהוות את הסכמתך ל&lt;LINK1&gt;תנאים ולהגבלות&lt;/LINK1&gt; ול&lt;LINK2&gt;הודעת הפרטיות&lt;/LINK2&gt; של Banana Browser."</string>
 <string name="fre_tos_and_privacy_child_account">"‏השימוש שלך באפליקציה הזו מבטא את הסכמתך ל&lt;LINK1&gt;תנאים ולהגבלות&lt;/LINK1&gt; ול&lt;LINK2&gt;מדיניות הפרטיות&lt;/LINK2&gt; של Banana Browser, וכן ל&lt;LINK3&gt;הודעת הפרטיות לחשבונות Google שמנוהלים ב-Family Link&lt;/LINK3&gt;."</string>
@@ -90,6 +85,9 @@
 <string name="module_install_start_text">"‏מתקין את %1$s ל-Banana Browser…"</string>
 <string name="module_install_failure_text">"‏לא ניתן להתקין את %1$s ל-Banana Browser"</string>
 <string name="iph_download_infobar_downloads_are_faster_text">"‏הורדת קבצים ב-Banana Browser מתבצעת עכשיו מהר יותר"</string>
+<string name="sharing_no_devices_available_text">"‏כדי לשתף משהו מהטלפון שלך עם מכשיר אחר, יש להפעיל את הסנכרון בהגדרות Banana Browser בשני המכשירים"</string>
+<string name="sharing_chrome_settings">"‏כניסה להגדרות Banana Browser"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"‏יש לוודא שהסנכרון ב-Banana Browser הופעל ב-%1$s"</string>
 <string name="near_oom_intervention_message">"‏הדף הזה מנצל יותר מדי זיכרון, כך שהוא הושהה על-ידי Banana Browser."</string>
 <string name="near_oom_reduction_message">"‏הדף הזה משתמש בנפח זיכרון גדול מידי, לכן מערכת Banana Browser הסירה חלק מהתוכן."</string>
 <string name="prefs_autofill_assistant_title">"‏Google Assistant ב-Banana Browser"</string>

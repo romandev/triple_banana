@@ -20,7 +20,7 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="android_microphone_permission_off">"Aktivieren Sie das Mikrofon auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf es zugreifen kann."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 Prozent weniger Daten verbraucht."</string>
 <string name="data_reduction_description_lite_mode">"Wenn der Lite-Modus aktiviert ist, wird der Seitenaufbau in Banana Browser mithilfe von Google-Servern beschleunigt. Im Lite-Modus werden sehr langsame Seiten so umgeschrieben, dass nur die wesentlichen Inhalte geladen werden. Der Lite-Modus wird nicht auf Inkognito-Tabs angewendet."</string>
-<string name="data_reduction_promo_summary_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 % weniger Daten verbraucht. Durch die Cloud-Technologie von Google werden die von Ihnen besuchten Seiten optimiert."</string>
+<string name="data_reduction_promo_summary_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 % weniger Daten verbraucht. Zum Optimieren der von Ihnen besuchten Seiten sendet Banana Browser Ihren Datenverkehr an Google. &lt;link&gt;Weitere Informationen&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Dank Banana Browser haben Sie %1$d MB eingespart"</string>
 <string name="data_reduction_milestone_promo_text_gb">"Dank Banana Browser haben Sie %1$d GB eingespart"</string>
 <string name="prefs_about_chrome">"Über Google Banana Browser"</string>
@@ -34,14 +34,13 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="remove_local_data">"Meine Banana Browser-Daten auch von diesem Gerät löschen"</string>
 <string name="signout_managed_account_message">"Da Sie sich von einem Konto abmelden, das von %1$s verwaltet wird, werden Ihre Banana Browser-Daten auf diesem Gerät gelöscht. Die Daten bleiben jedoch in Ihrem Google-Konto."</string>
 <string name="sign_in_managed_account_description">"Sie melden sich mit einem von %1$s verwalteten Konto an und geben dem Administrator der Domain Kontrolle über Ihre Banana Browser-Daten. Die Daten werden diesem Konto dauerhaft zugeordnet. Wenn Sie sich von Banana Browser abmelden, werden Ihre Daten auf dem Gerät gelöscht, bleiben jedoch in Ihrem Google-Konto erhalten."</string>
-<string name="sign_out_managed_account_description">"Sie melden sich von einem Konto ab, das von %1$s verwaltet wird. Dadurch werden Ihre Banana Browser-Daten von diesem Gerät gelöscht, bleiben jedoch in Ihrem Google-Konto erhalten."</string>
-<string name="switch_from_managed_account_description">"Sie wechseln das Synchronisierungskonto von %1$s zu %2$s. Ihre vorhandenen Banana Browser-Daten werden von %3$s verwaltet. Dadurch werden Ihre Daten von diesem Gerät gelöscht, aber Ihre Daten verbleiben in %1$s."</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"Hier werden Tabs angezeigt, die Sie auf Ihren anderen Geräten in Banana Browser geöffnet haben."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser kann den Bluetooth-Adapter nicht aktivieren"</string>
 <string name="bluetooth_need_location_permission">"Banana Browser benötigt Zugriff auf den Standort, um nach Geräten suchen zu können. &lt;permission_link&gt;Berechtigungen aktualisieren&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Banana Browser benötigt Zugriff auf den Standort, um nach Geräten suchen zu können. Der Standortzugriff ist &lt;services_link&gt;für dieses Gerät deaktiviert&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser benötigt Zugriff auf den Standort, um nach Geräten suchen zu können. &lt;permission_link&gt;Berechtigungen aktualisieren.&lt;/permission_link&gt; Außerdem ist der Standortzugriff &lt;services_link&gt;für dieses Gerät deaktiviert&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Einstellungen öffnen und Systemsynchr. aktivieren, um Banana Browser-Synchr. zu starten"</string>
+<string name="hint_sync_settings_not_confirmed_description">"Aktivieren Sie \"Banana Browser-Daten synchronisieren\", um die Synchronisierung zu starten."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser neu starten"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser-Update wird heruntergeladen…"</string>
 <string name="update_notification_title_default">"Banana Browser aktualisieren"</string>
@@ -55,10 +54,6 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="infobar_missing_location_permission_text">"Banana Browser benötigt Zugriff auf Ihren Standort, um ihn mit dieser Website zu teilen."</string>
 <string name="missing_storage_permission_download_education_text">"Banana Browser benötigt Speicherzugriff, um Dateien herunterladen zu können."</string>
 <string name="contextmenu_open_in_new_chrome_tab">"In neuem Banana Browser-Tab öffnen"</string>
-<string name="download_manager_offline_header_title">"Beliebte Seiten aus Banana Browser"</string>
-<string name="os_version_missing_features">"Es fehlen wichtige Funktionen zur Ausführung von Banana Browser. Ihre Banana Browser-Installation ist entweder unvollständig oder nicht mit dieser Android-Version kompatibel."</string>
-<string name="incompatible_libraries">"Die Banana Browser-Komponenten sind nicht miteinander kompatibel. Möglicherweise wird Banana Browser gerade aktualisiert. Bitte versuchen Sie es in einigen Minuten erneut. Sollte das Problem weiterhin bestehen, versuchen Sie, Banana Browser zu deinstallieren und erneut zu installieren."</string>
-<string name="native_startup_failed">"Während des Startvorgangs ist in Banana Browser ein unerwarteter Fehler aufgetreten."</string>
 <string name="fre_activity_label">"Eindruck beim ersten Ausführen von Banana Browser"</string>
 <string name="fre_tos_and_privacy">"Durch die Verwendung dieser App stimmen Sie den &lt;LINK1&gt;Nutzungsbedingungen&lt;/LINK1&gt; und &lt;LINK2&gt;Datenschutzhinweisen&lt;/LINK2&gt; von Banana Browser zu."</string>
 <string name="fre_tos_and_privacy_child_account">"Durch die Nutzung dieser Anwendung stimmen Sie den &lt;LINK1&gt;Nutzungsbedingungen&lt;/LINK1&gt; und &lt;LINK2&gt;Datenschutzhinweisen&lt;/LINK2&gt; von Banana Browser sowie den &lt;LINK3&gt;Datenschutzhinweisen für mit Family Link verwaltete Google-Konten&lt;/LINK3&gt; zu."</string>
@@ -89,6 +84,9 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="module_install_start_text">"%1$s für Banana Browser wird installiert…"</string>
 <string name="module_install_failure_text">"%1$s kann nicht für Banana Browser installiert werden"</string>
 <string name="iph_download_infobar_downloads_are_faster_text">"In Banana Browser sind Downloads jetzt noch schneller"</string>
+<string name="sharing_no_devices_available_text">"Wenn Sie Inhalte auf Ihrem Smartphone mit einem anderen Gerät teilen möchten, aktivieren Sie auf beiden Geräten in den Banana Browser-Einstellungen die Synchronisierung"</string>
+<string name="sharing_chrome_settings">"Zu den Banana Browser-Einstellungen"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Prüfen Sie, ob auf %1$s die Synchronisierung in Banana Browser aktiviert ist"</string>
 <string name="near_oom_intervention_message">"Diese Seite benötigt zu viel Arbeitsspeicher und wurde daher von Banana Browser angehalten."</string>
 <string name="near_oom_reduction_message">"Diese Seite benötigt zu viel Arbeitsspeicher. Darum hat Banana Browser einige Inhalte entfernt."</string>
 <string name="prefs_autofill_assistant_title">"Google Assistant für Banana Browser"</string>

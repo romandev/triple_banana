@@ -1,5 +1,5 @@
 diff --git triple_banana/components/autofill/content/renderer/autofill_agent.h triple_banana_change/components/autofill/content/renderer/autofill_agent.h
-index e552ea1..fefe5d4 100644
+index 0ea12f0..82f4bde 100644
 --- triple_banana/components/autofill/content/renderer/autofill_agent.h
 +++ triple_banana_change/components/autofill/content/renderer/autofill_agent.h
 @@ -29,6 +29,10 @@
@@ -13,12 +13,12 @@ index e552ea1..fefe5d4 100644
  namespace blink {
  class WebNode;
  class WebView;
-@@ -382,6 +386,10 @@ class AutofillAgent : public content::RenderFrameObserver,
+@@ -357,6 +361,10 @@ class AutofillAgent : public content::RenderFrameObserver,
    blink::WebFormControlElement last_clicked_form_control_element_for_testing_;
    bool last_clicked_form_control_element_was_focused_for_testing_ = false;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  mojo::InterfacePtr<authentication::mojom::AuthenticationManager> manager_;
++  mojo::Remote<authentication::mojom::AuthenticationManager> manager_;
 +#endif
 +
    FormTracker form_tracker_;

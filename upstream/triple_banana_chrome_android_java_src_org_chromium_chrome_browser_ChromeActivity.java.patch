@@ -1,24 +1,20 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-index d9310b865848..72a00481cbd9 100644
+index 99cac3d..f46f91c 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-@@ -697,6 +697,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
-                 OfflinePageUtils.showOfflineSnackbarIfNecessary(tab);
+@@ -699,6 +699,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
              }
  
-+            @Override
+             @Override
 +            public void onUrlUpdated(Tab tab) {
 +                org.triple.banana.hooks_api.ChromeHooks.getInstance().onUrlUpdated(tab);
 +            }
 +
-             @Override
++            @Override
              public void onCrash(Tab tab) {
                  postDeferredStartupIfNeeded();
-diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-index 72a00481cbd9..cd34aaa75f9f 100644
---- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-+++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-@@ -2197,6 +2197,8 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+             }
+@@ -2259,6 +2264,8 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
              RecordUserAction.record("MobileMenuRequestDesktopSite");
          } else if (id == R.id.reader_mode_prefs_id) {
              DomDistillerUIUtils.openSettings(currentTab.getWebContents());
@@ -27,6 +23,3 @@ index 72a00481cbd9..cd34aaa75f9f 100644
          } else {
              return false;
          }
--- 
-2.17.1
-

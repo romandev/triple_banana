@@ -20,7 +20,7 @@
 <string name="android_microphone_permission_off">"Banana Browser যাতে আপনার মাইক্রোফোন অ্যাক্সেস করতে পারে তার জন্য &lt;link&gt;Android সেটিংস&lt;/link&gt;-এ গিয়ে মাইক্রোফোন চালু করুন।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"লাইট মোডে, Banana Browser আরও দ্রুত পৃষ্ঠা লোড করে এবং ৬০ শতাংশ পর্যন্ত কম ডেটা ব্যবহার করে।"</string>
 <string name="data_reduction_description_lite_mode">"লাইট মোড চালু থাকলে Banana Browser দ্রুত পৃষ্ঠা লোড করার জন্য Google সার্ভার ব্যবহার করে। লাইট মোড ধীরে ধীরে লোড হওয়া পৃষ্ঠাগুলিকে রিরাইট করে শুধু প্রয়োজনীয় কন্টেন্ট লোড করে। লাইট মোড ছদ্মবেশী ট্যাবে প্রযোজ্য হবে না।"</string>
-<string name="data_reduction_promo_summary_lite_mode">"লাইট মোডে, Banana Browser আরও দ্রুত পৃষ্ঠা লোড করে এবং ৬০ শতাংশ পর্যন্ত কম ডেটা ব্যবহার করে। আপনি যে পৃষ্ঠাগুলিতে যান Google-এর ক্লাউড টেকনোলজি সেগুলিকে অপ্টিমাইজ করে।"</string>
+<string name="data_reduction_promo_summary_lite_mode">"লাইট মোডে, Banana Browser আরও দ্রুত পৃষ্ঠা লোড করে এবং ৬০ শতাংশ পর্যন্ত কম ডেটা ব্যবহার করে। আপনার ভিজিট করা পৃষ্ঠাকে অপ্টিমাইজ করার জন্য Banana Browser আপনার ওয়েব ট্রাফিককে Google-এ পাঠায়। &lt;link&gt;আরও জানুন&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser আপনার জন্য %1$d এমবি বাঁচিয়ে দিয়েছে"</string>
 <string name="data_reduction_milestone_promo_text_gb">"Banana Browser আপনার জন্য %1$d জিবি বাঁচিয়ে দিয়েছে"</string>
 <string name="prefs_about_chrome">"Banana Browser সম্বন্ধে"</string>
@@ -34,14 +34,13 @@
 <string name="remove_local_data">"এছাড়া এই ডিভাইস থেকে Banana Browser ডেটা সরিয়ে ফেলুন"</string>
 <string name="signout_managed_account_message">"যেহেতু আপনি %1$s-এর ম্যানেজ করা অ্যাকাউন্ট থেকে সাইন-আউট করছেন তাই এই ডিভাইস থেকে আপনার Banana Browser ডেটা মুছে ফেলা হবে। এটি আপনার Google অ্যাকাউন্টে থাকবে।"</string>
 <string name="sign_in_managed_account_description">"আপনি %1$s দ্বারা পরিচালিত একটি অ্যাকাউন্টের মাধ্যমে সাইন-ইন করছেন এবং এর অ্যাডমিনিস্ট্রেটরকে আপনার Banana Browser ডেটা নিয়ন্ত্রণ করতে দিচ্ছেন৷ আপনার ডেটা এই অ্যাকাউন্টের সাথে স্থায়ীভাবে আবদ্ধ হবে৷ Banana Browser থেকে সাইন-আউট করলে এই ডিভাইস থেকে আপনার ডেটা মুছে ফেলা হবে, কিন্তু এটা আপনার Google অ্যাকাউন্টে সঞ্চিত থাকবে।"</string>
-<string name="sign_out_managed_account_description">"%1$s দ্বারা পরিচালিত একটি অ্যাকাউন্ট থেকে আপনি সাইন-আউট করছেন। এটা এই ডিভাইস থেকে আপনার Banana Browser ডেটা মুছে ফেলবে, কিন্তু আপনার Google অ্যাকাউন্টে ডেটা থেকে যাবে।"</string>
-<string name="switch_from_managed_account_description">"আপনি সিঙ্ক অ্যাকাউন্টগুলি %1$s থেকে %2$s এ পাল্টাচ্ছেন। আপনার বিদ্যমান Banana Browser ডেটা %3$s দ্বারা পরিচালিত হয়। এটা এই ডিভাইস থেকে আপনার ডেটা মুছে ফেলবে, কিন্তু আপনার ডেটা %1$s এ থেকে যাবে।"</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"আপনার অন্য ডিভাইসগুলিতে Banana Browser এ আপনি যে ট্যাবগুলি খুলেছেন সেগুলি এখানে দেখা যাবে।"</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser ব্লুটুথ অ্যাডাপ্টার চালু করতে পারছে না"</string>
 <string name="bluetooth_need_location_permission">"ডিভাইস স্ক্যান করার জন্য Banana Browser এর স্থান এক্সেস প্রয়োজন। &lt;permission_link&gt;অনুমতি আপডেট করুন&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"ডিভাইস স্ক্যান করার জন্য Banana Browser এর অবস্থানের অ্যাক্সেস প্রয়োজন। অবস্থানের অ্যাক্সেস &lt;services_link&gt;এই ডিভাইসের জন্য বন্ধ করা হয়েছে&lt;/services_link&gt;।"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"ডিভাইস স্ক্যান করার জন্য Banana Browser এর অবস্থানের অ্যাক্সেস প্রয়োজন।  &lt;permission_link&gt;অনুমতিগুলির আপডেট করুন&lt;/permission_link&gt;। অবস্থানের অ্যাক্সেস &lt;services_link&gt;এই ডিভাইসের জন্যও বন্ধ করা হয়েছে&lt;/services_link&gt;।"</string>
 <string name="hint_android_sync_disabled">"Android সেটিংস খুলে Banana Browser সিঙ্ক শুরু করতে Android সিস্টেমকে পুনরায় সক্ষম করুন"</string>
+<string name="hint_sync_settings_not_confirmed_description">"সিঙ্ক চালু করতে \"আপনার Banana Browser ডেটা সিঙ্ক করুন\" বিকল্পটি চালু করুন।"</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser পুনরায় চালু করুন"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser-এর আপডেট ডাউনলোড করা হচ্ছে…"</string>
 <string name="update_notification_title_default">"Banana Browser আপডেট করুন"</string>
@@ -55,10 +54,6 @@
 <string name="infobar_missing_location_permission_text">"এই সাইটটির সাথে আপনার লোকেশন শেয়ার করার জন্য Banana Browser কে আপনার লোকেশনের তথ্যে অ্যাক্সেস দিতে হবে।"</string>
 <string name="missing_storage_permission_download_education_text">"ফাইল ডাউনলোড করতে Banana Browser-এর জন্য স্টোরেজ অ্যাক্সেস প্রয়োজন।"</string>
 <string name="contextmenu_open_in_new_chrome_tab">"নতুন Banana Browser ট্যাবে খুলুন"</string>
-<string name="download_manager_offline_header_title">"Banana Browser এর জনপ্রিয় পৃষ্ঠাগুলি"</string>
-<string name="os_version_missing_features">"Banana Browser-এ চালনার জন্য প্রয়োজনীয় কঠিন কার্যকারিতা অনুপস্থিত আছে, হয় আপনার Banana Browser ইনস্টলেশনটি সম্পূর্ণ হয়নি, নতুবা Android-এর এই সংষ্করণটির সঙ্গে সামঞ্জস্যপূর্ণ হয়নি৷"</string>
-<string name="incompatible_libraries">"Banana Browser এর উপাদানগুলি একে অপরের সাথে বেমানান৷ Banana Browser আপগ্রেড করা হতে পারে, অনুগ্রহ করে কয়েক মিনিটের মধ্যে আবার চেষ্টা করুন৷ সমস্যাটি থেকে গেলে, Banana Browser আনইনস্টল করে পুনরায় ইনস্টল করুন৷"</string>
-<string name="native_startup_failed">"একটি অপ্রত্যাশিত ত্রুটির সাথে Banana Browser সূচনার সময় ব্যর্থ হয়েছে৷"</string>
 <string name="fre_activity_label">"Banana Browser প্রথম চালানোর অভিজ্ঞতা"</string>
 <string name="fre_tos_and_privacy">"এই অ্যাপ্লিকেশানটি ব্যবহার করার মাধ্যমে আপনি Banana Browser এর &lt;LINK1&gt;পরিষেবার শর্তাবলি&lt;/LINK1&gt; এবং &lt;LINK2&gt;গোপনীয়তা বিজ্ঞপ্তিতে&lt;/LINK2&gt; সম্মত হচ্ছেন৷"</string>
 <string name="fre_tos_and_privacy_child_account">"এই অ্য়াপটি ব্যবহার করার মাধ্যমে আপনি Banana Browser-এর &lt;LINK1&gt;পরিষেবার শর্তাবলি&lt;/LINK1&gt; এবং &lt;LINK2&gt;গোপনীয়তা নীতি&lt;/LINK2&gt; এবং &lt;LINK3&gt;Family Link-এ তৈরি করা Google অ্যাকাউন্টগুলির জন্য গোপনীয়তার বিজ্ঞপ্তি&lt;/LINK3&gt;-এর সাথে সম্মত হন।"</string>
@@ -90,6 +85,9 @@
 <string name="module_install_start_text">"Banana Browser-এর জন্য %1$s ইনস্টল করা হচ্ছে…"</string>
 <string name="module_install_failure_text">"Banana Browser-এর জন্য %1$s ইনস্টল করা যাচ্ছে না"</string>
 <string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser এখন আরও দ্রুত ফাইল ডাউনলোড করে"</string>
+<string name="sharing_no_devices_available_text">"আপনার ফোন থেকে অন্য কোনও ডিভাইসে কিছু শেয়ার করতে হলে, দুটি ডিভাইসের Banana Browser সেটিংস থেকে সিঙ্ক ফিচার চালু করুন"</string>
+<string name="sharing_chrome_settings">"Banana Browser সেটিংসে যান"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Banana Browser-এ %1$s সিঙ্ক করার ফিচার চালু করে রেখেছেন কিনা দেখে নিন।"</string>
 <string name="near_oom_intervention_message">"এই পৃষ্ঠাটি খুব বেশি মেমরি ব্যবহার করছে তাই Banana Browser এটি বিরত রেখেছে।"</string>
 <string name="near_oom_reduction_message">"এই পৃষ্ঠাটি খুব বেশি মেমরি ব্যবহার করছে তাই Banana Browser কিছু কন্টেন্ট সরিয়ে দিয়েছে।"</string>
 <string name="prefs_autofill_assistant_title">"Banana Browser-এ Google অ্যাসিস্ট্যান্ট"</string>

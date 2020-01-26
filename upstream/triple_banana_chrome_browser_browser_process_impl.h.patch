@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/browser/browser_process_impl.h triple_banana_change/chrome/browser/browser_process_impl.h
-index dadcf85..7f43a5c 100644
+index d17ae49..6fe98b6 100644
 --- triple_banana/chrome/browser/browser_process_impl.h
 +++ triple_banana_change/chrome/browser/browser_process_impl.h
 @@ -35,6 +35,10 @@
@@ -13,12 +13,12 @@ index dadcf85..7f43a5c 100644
  class BatteryMetrics;
  class ChromeFeatureListCreator;
  class ChromeMetricsServicesManagerClient;
-@@ -404,6 +408,11 @@ class BrowserProcessImpl : public BrowserProcess,
+@@ -397,6 +401,11 @@ class BrowserProcessImpl : public BrowserProcess,
    std::unique_ptr<SecureOriginPrefsObserver> secure_origin_prefs_observer_;
    std::unique_ptr<SiteIsolationPrefsObserver> site_isolation_prefs_observer_;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  mojo::InterfacePtr<adblock::mojom::FilterLoader> filter_loader_ =
++  mojo::Remote<adblock::mojom::FilterLoader> filter_loader_ =
 +      AutoBind(adblock::mojom::FilterLoader);
 +#endif
 +

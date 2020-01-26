@@ -22,7 +22,7 @@
 <string name="android_microphone_permission_off">"如要讓 Banana Browser 存取你的麥克風，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟麥克風。"</string>
 <string name="data_reduction_benefits_description_lite_mode">"使用精簡模式時，Banana Browser 可加快網頁載入速度，並可節省多達百分之 60 的數據用量。"</string>
 <string name="data_reduction_description_lite_mode">"開啟精簡模式後，Banana Browser 會使用 Google 伺服器來加快網頁載入速度。精簡模式會改寫載入速度特別慢的網頁，只載入基本內容。精簡模式不適用於無痕模式分頁。"</string>
-<string name="data_reduction_promo_summary_lite_mode">"使用精簡模式時，Banana Browser 可加快網頁載入速度，並可節省多達 60% 的數據用量。Google 的雲端技術會透過最佳化功能來處理你所造訪的網頁。"</string>
+<string name="data_reduction_promo_summary_lite_mode">"使用精簡模式時，Banana Browser 可加快網頁載入速度，並可節省多達 60% 的數據用量。Banana Browser 會將你的網路流量傳送給 Google，以便針對你造訪的網頁進行最佳化處理。&lt;link&gt;瞭解詳情&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser 為你節省了 %1$d MB"</string>
 <string name="data_reduction_milestone_promo_text_gb">"Banana Browser 為你節省了 %1$d GB"</string>
 <string name="prefs_about_chrome">"關於 Banana Browser"</string>
@@ -36,14 +36,13 @@
 <string name="remove_local_data">"一併清除你在這個裝置上的 Banana Browser 資料"</string>
 <string name="signout_managed_account_message">"你即將登出由 %1$s 管理的帳戶，因此系統會將你的 Banana Browser 資料從這個裝置上刪除，但是這些資料會繼續保留在你的 Google 帳戶中。"</string>
 <string name="sign_in_managed_account_description">"您即將使用由 %1$s 所管理的帳戶登入，並授權該網域的管理員控管您的 Banana Browser 資料。您的資料會與這個帳戶建立永久連結。登出 Banana Browser 後，系統會將您的資料從這個裝置上刪除，但繼續保留在您的 Google 帳戶中。"</string>
-<string name="sign_out_managed_account_description">"您即將登出由 %1$s 所管理的帳戶。系統會將您的 Banana Browser 資料從這個裝置上刪除，但繼續保留在您的 Google 帳戶中。"</string>
-<string name="switch_from_managed_account_description">"您的同步處理帳戶即將從 %1$s 切換至 %2$s。您現有的 Banana Browser 資料是由 %3$s 所管理。系統會將您的資料從這個裝置上刪除，但繼續保留在 %1$s 中。"</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"您在其他裝置上透過 Banana Browser 開啟的分頁會顯示在這裡。"</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser 無法開啟藍牙轉接器"</string>
 <string name="bluetooth_need_location_permission">"Banana Browser 需要位置資訊存取權才能掃描裝置。&lt;permission_link&gt;更新權限&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Banana Browser 需要位置資訊存取權才能掃描裝置。&lt;services_link&gt;這個裝置的位置資訊存取權已關閉&lt;/services_link&gt;。"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser 需要位置資訊存取權才能掃描裝置。&lt;permission_link&gt;更新權限&lt;/permission_link&gt;。此外，&lt;services_link&gt;這個裝置的位置資訊存取權已關閉&lt;/services_link&gt;。"</string>
 <string name="hint_android_sync_disabled">"如要啟動 Banana Browser 同步功能，請開啟 Android 設定並重新啟用 Android 系統同步處理設定"</string>
+<string name="hint_sync_settings_not_confirmed_description">"如要開始同步處理，請開啟「同步處理你的 Banana Browser 資料」。"</string>
 <string name="inline_update_infobar_ready_link_text">"重新啟動 Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"正在下載 Banana Browser 更新…"</string>
 <string name="update_notification_title_default">"更新 Banana Browser"</string>
@@ -57,10 +56,6 @@
 <string name="infobar_missing_location_permission_text">"Banana Browser 需要位置資訊存取權，才能與這個網站分享你的位置資訊。"</string>
 <string name="missing_storage_permission_download_education_text">"Banana Browser 必須取得儲存空間的存取權才能下載檔案。"</string>
 <string name="contextmenu_open_in_new_chrome_tab">"在新的 Banana Browser 分頁中開啟"</string>
-<string name="download_manager_offline_header_title">"Banana Browser 常用網頁"</string>
-<string name="os_version_missing_features">"找不到執行 Banana Browser 所需的重要功能；Banana Browser 安裝程序可能未完成，或是 Banana Browser 與這個 Android 版本不相容。"</string>
-<string name="incompatible_libraries">"出現元件互不相容的情況，這可能是因為 Banana Browser 目前正在進行升級，請稍候片刻再試。如果問題持續發生，請先將 Banana Browser 移除，然後重新安裝一次。"</string>
-<string name="native_startup_failed">"發生未預期的錯誤，Banana Browser 啟動失敗。"</string>
 <string name="fre_activity_label">"Banana Browser 初次使用體驗"</string>
 <string name="fre_tos_and_privacy">"使用這個應用程式即表示您同意接受 Banana Browser 的《&lt;LINK1&gt;服務條款&lt;/LINK1&gt;》和《&lt;LINK2&gt;隱私權聲明&lt;/LINK2&gt;》。"</string>
 <string name="fre_tos_and_privacy_child_account">"使用這個應用程式即表示您同意接受 Banana Browser 的《&lt;LINK1&gt;服務條款&lt;/LINK1&gt;》和《&lt;LINK2&gt;隱私權聲明&lt;/LINK2&gt;》，以及《&lt;LINK3&gt;透過 Family Link 管理的 Google 帳戶所適用的隱私權聲明&lt;/LINK3&gt;》。"</string>
@@ -92,6 +87,9 @@
 <string name="module_install_start_text">"正在為 Banana Browser 安裝 %1$s…"</string>
 <string name="module_install_failure_text">"無法為 Banana Browser 安裝 %1$s"</string>
 <string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser 現在的檔案下載速度更快了"</string>
+<string name="sharing_no_devices_available_text">"如要將手機上的內容分享至另一台裝置，你必須在這兩台裝置的 Banana Browser 設定中開啟同步功能"</string>
+<string name="sharing_chrome_settings">"前往 Banana Browser 設定"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"請確認「%1$s」的 Banana Browser 同步功能已開啟"</string>
 <string name="near_oom_intervention_message">"這個網頁使用了過多記憶體，因此遭到 Banana Browser 暫停。"</string>
 <string name="near_oom_reduction_message">"這個網頁使用了過多記憶體，因此 Banana Browser 移除了部分內容。"</string>
 <string name="prefs_autofill_assistant_title">"Banana Browser 版 Google 助理"</string>

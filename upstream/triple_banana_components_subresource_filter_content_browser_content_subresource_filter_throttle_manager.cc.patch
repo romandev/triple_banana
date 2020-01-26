@@ -1,8 +1,8 @@
 diff --git triple_banana/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc triple_banana_change/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc
-index ac4e262..f9683bc 100644
+index 835e4c4..f7f2d4b 100644
 --- triple_banana/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc
 +++ triple_banana_change/components/subresource_filter/content/browser/content_subresource_filter_throttle_manager.cc
-@@ -308,6 +308,13 @@ ContentSubresourceFilterThrottleManager::
+@@ -306,6 +306,13 @@ ContentSubresourceFilterThrottleManager::
        throttle->NotifyPageActivationWithRuleset(EnsureRulesetHandle(),
                                                  ad_tagging_state);
      }

@@ -22,18 +22,6 @@ mojom("mojom") {
   export_header_blink = "third_party/blink/public/platform/web_common.h"
 }
 
-source_set("manifest") {
-  sources = [
-    "public/manifest/manifest.cc",
-    "public/manifest/manifest.h",
-  ]
-
-  deps = [
-    ":mojom",
-    "//base",
-  ]
-}
-
 source_set("native") {
   sources = [
     "hello/hello.cc",

@@ -1,8 +1,8 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-index 4200f0f96ffc..f1a1f08d8282 100644
+index 3e6369a..e146dc1d 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-@@ -22,9 +22,8 @@ import org.chromium.chrome.browser.toolbar.TabCountProvider;
+@@ -23,9 +23,8 @@ import org.chromium.chrome.browser.toolbar.TabCountProvider;
   * The root coordinator for the bottom toolbar. It has two sub-components: the browsing mode bottom
   * toolbar and the tab switcher mode bottom toolbar.
   */
@@ -14,7 +14,7 @@ index 4200f0f96ffc..f1a1f08d8282 100644
  
      /** The tab switcher mode bottom toolbar component */
      private TabSwitcherBottomToolbarCoordinator mTabSwitcherModeCoordinator;
-@@ -35,6 +34,18 @@ class BottomToolbarCoordinator {
+@@ -36,6 +35,18 @@ class BottomToolbarCoordinator {
      /** A provider that notifies components when the theme color changes.*/
      private final ThemeColorProvider mThemeColorProvider;
  
@@ -33,12 +33,13 @@ index 4200f0f96ffc..f1a1f08d8282 100644
      /**
       * Build the coordinator that manages the bottom toolbar.
       * @param stub The bottom toolbar {@link ViewStub} to inflate.
-@@ -49,8 +60,9 @@ class BottomToolbarCoordinator {
-             OnClickListener shareButtonListener, ThemeColorProvider themeColorProvider) {
+@@ -51,9 +62,9 @@ class BottomToolbarCoordinator {
+             ThemeColorProvider themeColorProvider) {
          View root = stub.inflate();
  
 -        mBrowsingModeCoordinator = new BrowsingModeBottomToolbarCoordinator(root, tabProvider,
--                homeButtonListener, searchAcceleratorListener, shareButtonListener);
+-                homeButtonListener, searchAcceleratorListener, shareButtonListener,
+-                tabSwitcherLongClickListener);
 +        mBrowsingModeCoordinator =
 +                org.triple.banana.hooks_api.ChromeHooks.getInstance()
 +                        .createBottomToolbarCoordinatorDelegate(root, tabProvider);

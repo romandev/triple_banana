@@ -1,8 +1,8 @@
 diff --git triple_banana/chrome/browser/browser_process_impl.cc triple_banana_change/chrome/browser/browser_process_impl.cc
-index a68d42d..700a90d 100644
+index d0cf8ec..65027c1 100644
 --- triple_banana/chrome/browser/browser_process_impl.cc
 +++ triple_banana_change/chrome/browser/browser_process_impl.cc
-@@ -1279,6 +1279,20 @@ void BrowserProcessImpl::CreateSubresourceFilterRulesetService() {
+@@ -1273,6 +1273,20 @@ void BrowserProcessImpl::CreateSubresourceFilterRulesetService() {
        std::make_unique<subresource_filter::RulesetService>(
            local_state(), background_task_runner, indexed_ruleset_base_dir,
            blocking_task_runner);

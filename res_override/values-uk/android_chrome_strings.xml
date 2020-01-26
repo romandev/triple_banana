@@ -20,7 +20,7 @@
 <string name="android_microphone_permission_off">"Щоб надати Banana Browser доступ до мікрофона, також увімкніть його в &lt;link&gt;налаштуваннях Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"У спрощеному режимі Banana Browser завантажує сторінки швидше та використовує на 60 відсотків менше трафіку."</string>
 <string name="data_reduction_description_lite_mode">"Коли ввімкнено спрощений режим, Banana Browser використовує сервери Google, щоб швидше завантажувати сторінки. Спрощений режим переписує дуже повільні сторінки, щоб завантажувати лише основний вміст. Це не стосується анонімних вкладок."</string>
-<string name="data_reduction_promo_summary_lite_mode">"У спрощеному режимі Banana Browser завантажує сторінки швидше та використовує на 60% менше трафіку. Хмарна технологія Google оптимізує сторінки, які ви відвідуєте."</string>
+<string name="data_reduction_promo_summary_lite_mode">"У спрощеному режимі Banana Browser завантажує сторінки швидше та використовує на 60% менше трафіку. Щоб оптимізувати сторінки, які ви відвідуєте, Banana Browser надсилає ваш веб-трафік у Google. &lt;link&gt;Докладніше&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser заощадив %1$d МБ"</string>
 <string name="data_reduction_milestone_promo_text_gb">"Banana Browser заощадив %1$d ГБ"</string>
 <string name="prefs_about_chrome">"Про Banana Browser"</string>
@@ -34,14 +34,13 @@
 <string name="remove_local_data">"Також видалити дані Banana Browser із цього пристрою"</string>
 <string name="signout_managed_account_message">"Оскільки ви виходите з облікового запису, зареєстрованого в домені %1$s, ваші дані Banana Browser буде видалено з цього пристрою. Вони залишаться у вашому обліковому записі Google."</string>
 <string name="sign_in_managed_account_description">"Ви входите в обліковий запис, зареєстрований у домені %1$s, і надаєте його адміністратору доступ до своїх даних Banana Browser. Ваші дані буде назавжди зв’язано з цим обліковим записом. Якщо ви вийдете з облікового запису в Banana Browser, дані буде видалено з цього пристрою, але вони залишаться у вашому обліковому записі Google."</string>
-<string name="sign_out_managed_account_description">"Ви виходите з облікового запису, зареєстрованого в домені %1$s. Дані Banana Browser буде видалено з цього пристрою, але вони залишаться у вашому обліковому записі Google."</string>
-<string name="switch_from_managed_account_description">"Ви переходите з облікового запису для синхронізації %1$s на %2$s. Ваші наявні дані Banana Browser збережено в домені %3$s. Дані буде видалено з цього пристрою, але вони залишаться в обліковому записі %1$s."</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"Тут відображатимуться вкладки, відкриті в Banana Browser на інших ваших пристроях."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser не може ввімкнути адаптер Bluetooth"</string>
 <string name="bluetooth_need_location_permission">"Щоб знаходити пристрої, Banana Browser потрібний доступ до геоданих. &lt;permission_link&gt;Оновлити дозволи&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Щоб шукати пристрої, Banana Browser потрібен доступ до геоданих. Доступ до геоданих &lt;services_link&gt;вимкнено на цьому пристрої&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Щоб шукати пристрої, Banana Browser потрібен доступ до геоданих. &lt;permission_link&gt;Оновити дозволи&lt;/permission_link&gt;. Доступ до геоданих також &lt;services_link&gt;вимкнено на цьому пристрої&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Щоб почати синхронізацію Banana Browser, відкрийте параметри Android і знову ввімкніть синхронізацію системи"</string>
+<string name="hint_sync_settings_not_confirmed_description">"Щоб почати синхронізацію, увімкніть параметр \"Синхронізувати дані Banana Browser\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Перезапустіть Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Завантажується оновлення Banana Browser…"</string>
 <string name="update_notification_title_default">"Оновити Banana Browser"</string>
@@ -55,10 +54,6 @@
 <string name="infobar_missing_location_permission_text">"Banana Browser потрібен доступ до місцезнаходження, щоб повідомляти ваші геодані цьому сайту."</string>
 <string name="missing_storage_permission_download_education_text">"Щоб завантажувати файли, Banana Browser потребує доступу до пам’яті."</string>
 <string name="contextmenu_open_in_new_chrome_tab">"Відкрити в новій вкладці Banana Browser"</string>
-<string name="download_manager_offline_header_title">"Популярні сторінки з Banana Browser"</string>
-<string name="os_version_missing_features">"Немає важливого компонента, який потрібний для роботи Banana Browser. Встановлення Banana Browser не завершено або веб-переглядач не сумісний із цією версією Android."</string>
-<string name="incompatible_libraries">"Компоненти Banana Browser несумісні одне з одним. Веб-переглядач може оновлюватися, спробуйте через декілька хвилин. Якщо проблема не зникне, видаліть Banana Browser і встановіть його знову."</string>
-<string name="native_startup_failed">"Не вдалося запустити Banana Browser через неочікувану помилку."</string>
 <string name="fre_activity_label">"Перший запуск Banana Browser"</string>
 <string name="fre_tos_and_privacy">"Користуючись цим додатком, ви приймаєте &lt;LINK1&gt;Умови використання&lt;/LINK1&gt; та &lt;LINK2&gt;Примітку про конфіденційність&lt;/LINK2&gt; Banana Browser."</string>
 <string name="fre_tos_and_privacy_child_account">"Користуючись цим додатком, ви приймаєте &lt;LINK1&gt;Умови використання&lt;/LINK1&gt; та &lt;LINK2&gt;Примітку про конфіденційність&lt;/LINK2&gt; Banana Browser, а також &lt;LINK3&gt;Примітку про конфіденційність для облікових записів Google, якими можна керувати у Family Link&lt;/LINK3&gt;."</string>
@@ -90,6 +85,9 @@
 <string name="module_install_start_text">"Встановлення модуля %1$s для Banana Browser…"</string>
 <string name="module_install_failure_text">"Не вдалося встановити модуль %1$s для Banana Browser"</string>
 <string name="iph_download_infobar_downloads_are_faster_text">"Тепер Banana Browser завантажує файли швидше"</string>
+<string name="sharing_no_devices_available_text">"Щоб файли з вашого телефона були доступними на іншому вашому пристрої, увімкніть синхронізацію в налаштуваннях Banana Browser на обох пристроях"</string>
+<string name="sharing_chrome_settings">"Перейти в налаштування Banana Browser"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Переконайтеся, що на пристрої %1$s увімкнено синхронізацію в Banana Browser"</string>
 <string name="near_oom_intervention_message">"Ця сторінка займає велику кількість пам’яті, тому Banana Browser призупинив її роботу."</string>
 <string name="near_oom_reduction_message">"Ця сторінка використовує забагато пам’яті, тому веб-переглядач Banana Browser вилучив деякий вміст."</string>
 <string name="prefs_autofill_assistant_title">"Google Асистент у Banana Browser"</string>

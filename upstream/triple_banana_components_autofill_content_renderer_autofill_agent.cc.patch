@@ -1,8 +1,8 @@
 diff --git triple_banana/components/autofill/content/renderer/autofill_agent.cc triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
-index 5c47936..345785d 100644
+index e372068..6d8b163 100644
 --- triple_banana/components/autofill/content/renderer/autofill_agent.cc
 +++ triple_banana_change/components/autofill/content/renderer/autofill_agent.cc
-@@ -62,6 +62,11 @@
+@@ -64,6 +64,11 @@
  #include "ui/base/l10n/l10n_util.h"
  #include "ui/events/keycodes/keyboard_codes.h"
  
@@ -14,7 +14,7 @@ index 5c47936..345785d 100644
  using blink::WebAutofillClient;
  using blink::WebAutofillState;
  using blink::WebAXObject;
-@@ -143,6 +148,9 @@ AutofillAgent::AutofillAgent(content::RenderFrame* render_frame,
+@@ -145,6 +150,9 @@ AutofillAgent::AutofillAgent(content::RenderFrame* render_frame,
        is_generation_popup_possibly_visible_(false),
        is_user_gesture_required_(true),
        is_secure_context_required_(false),
@@ -24,7 +24,7 @@ index 5c47936..345785d 100644
        form_tracker_(render_frame) {
    render_frame->GetWebFrame()->SetAutofillClient(this);
    password_autofill_agent->SetAutofillAgent(this);
-@@ -544,12 +552,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
+@@ -562,12 +570,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
  
  void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
                                             const base::string16& password) {

@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/java/res/menu/main_menu.xml triple_banana_change/chrome/android/java/res/menu/main_menu.xml
-index 4580a99b4e57..a303d37e0881 100644
+index 4580a99..a303d37 100644
 --- triple_banana/chrome/android/java/res/menu/main_menu.xml
 +++ triple_banana_change/chrome/android/java/res/menu/main_menu.xml
 @@ -27,6 +27,8 @@

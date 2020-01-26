@@ -20,7 +20,7 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="android_microphone_permission_off">"Para payagang i-access ng Banana Browser ang iyong mikropono, i-on din ang mikropono sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Sa Lite mode, mas mabilis na nilo-load ng Banana Browser ang mga page at mas kaunti nang 60 porsyento ang ginagamit nitong data."</string>
 <string name="data_reduction_description_lite_mode">"Kapag naka-on ang Lite mode, ginagamit ng Banana Browser ang mga server ng Google para mapabilis ang pag-load ng mga page. Muling isinusulat ng Lite mode ang mga napakabagal na page para ma-load lang ang mahalagang content. Hindi nalalapat sa mga tab na Incognito ang Lite mode."</string>
-<string name="data_reduction_promo_summary_lite_mode">"Sa Lite mode, mas mabilis na nilo-load ng Banana Browser ang mga page at gumagamit ng hanggang 60 porsyentong mas kaunting data. Ino-optimize ng Cloud technology ng Google ang mga page na binibisita mo."</string>
+<string name="data_reduction_promo_summary_lite_mode">"Sa Lite mode, mas mabilis na naglo-load ng mga page ang Banana Browser at gumagamit ito ng hanggang 60 porsyentong mas kaunting data. Para i-optimize ang mga page na binibisita mo, ipinapadala ng Banana Browser ang iyong trapiko sa web sa Google. &lt;link&gt;Matuto pa&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Nag-save ang Banana Browser ng %1$d MB para sa iyo"</string>
 <string name="data_reduction_milestone_promo_text_gb">"Nag-save ang Banana Browser ng %1$d GB para sa iyo"</string>
 <string name="prefs_about_chrome">"Tungkol sa Banana Browser"</string>
@@ -34,14 +34,13 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="remove_local_data">"I-clear din ang iyong data ng Banana Browser sa device na ito"</string>
 <string name="signout_managed_account_message">"Dahil nagsa-sign out ka sa isang account na pinapamahalaan ng %1$s, made-delete ang data ng Banana Browser sa device na ito. Mananatili ito sa iyong Google Account."</string>
 <string name="sign_in_managed_account_description">"Nagsa-sign in ka gamit ang isang account na pinamamahalaan ng %1$s at binibigyan mo ang administrator nito ng kontrol sa iyong data sa Banana Browser. Permanenteng mauugnay ang iyong data sa account na ito. Made-delete ang data mo sa device na ito kapag nag-sign out ka sa Banana Browser, ngunit mananatili itong naka-store sa iyong Google Account."</string>
-<string name="sign_out_managed_account_description">"Nagsa-sign out ka sa account na pinamamahalaan ng %1$s. Ide-delete nito ang data mo sa Banana Browser mula sa device na ito, ngunit mananatili ang data mo sa iyong Google account."</string>
-<string name="switch_from_managed_account_description">"Lilipat ka ng account sa pag-sync mula sa %1$s papunta sa %2$s. Pinamamahalaan ng %3$s ang iyong kasalukuyang data ng Banana Browser. Ide-delete nito ang iyong data mula sa device na ito, ngunit mananatili ang iyong data sa %1$s."</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"Dito lalabas ang mga nabuksan mong tab sa Banana Browser sa iba mo pang mga device."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Hindi ma-on ng Banana Browser ang Bluetooth adapter"</string>
 <string name="bluetooth_need_location_permission">"Kailangan ng Banana Browser ng access sa lokasyon upang makapag-scan at makakita ng mga device. &lt;permission_link&gt;I-update ang mga pahintulot&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Kailangan ng Banana Browser ng access sa lokasyon upang magkapag-scan ng mga device. Ang access sa lokasyon ay &lt;services_link&gt;naka-off para sa device na ito&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Kailangan ng Banana Browser ng access sa lokasyon upang makapag-scan ng mga device. &lt;permission_link&gt;I-update ang mga pahintulot&lt;/permission_link&gt;. Ang access sa lokasyon ay &lt;services_link&gt;naka-off din para sa device na ito&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Buksan ang mga setting ng Android at muling i-enable ang Android system sync upang simulan ang Banana Browser sync"</string>
+<string name="hint_sync_settings_not_confirmed_description">"Para simulan ang pag-sync, i-on ang \"I-sync ang iyong data sa Banana Browser.\""</string>
 <string name="inline_update_infobar_ready_link_text">"I-restart ang Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Dina-download ang Update sa Banana Browser…"</string>
 <string name="update_notification_title_default">"I-update ang Banana Browser"</string>
@@ -55,10 +54,6 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="infobar_missing_location_permission_text">"Kailangan ng Banana Browser ng access sa iyong lokasyon upang ibahagi ang lokasyon mo sa site na ito."</string>
 <string name="missing_storage_permission_download_education_text">"Kailangan ng Banana Browser ng access sa storage para mag-download ng mga file."</string>
 <string name="contextmenu_open_in_new_chrome_tab">"Buksan sa bagong tab ng Banana Browser"</string>
-<string name="download_manager_offline_header_title">"Mga sikat na page mula sa Banana Browser"</string>
-<string name="os_version_missing_features">"Wala ang mahalagang functionality na kinakailangan upang patakbuhin ang Banana Browser; maaaring hindi natapos ang pag-install sa iyong Banana Browser o hindi ito tugma sa bersyong ito ng Android."</string>
-<string name="incompatible_libraries">"Hindi tugma ang mga bahagi ng Banana Browser sa isa\'t isa. Maaaring nag-a-upgrade ang Banana Browser, subukang muli pagkatapos ng ilang sandali. Kung magpapatuloy ang problema, subukang i-uninstall at muling i-install ang Banana Browser."</string>
-<string name="native_startup_failed">"Nagkaroon ng hindi inaasahang error ang Banana Browser habang nagsasagawa ng pag-start up."</string>
 <string name="fre_activity_label">"Unang Karanasan sa Pagtakbo ng Banana Browser"</string>
 <string name="fre_tos_and_privacy">"Kapag ginamit mo ang application na ito, ang ibig sabihin, sumasang-ayon ka sa &lt;LINK1&gt;Mga Tuntunin ng Serbisyo&lt;/LINK1&gt; at &lt;LINK2&gt;Patakaran sa Privacy&lt;/LINK2&gt; ng Banana Browser."</string>
 <string name="fre_tos_and_privacy_child_account">"Kapag ginamit ang application na ito, nangangahulugan ito na sumasang-ayon ka sa &lt;LINK1&gt;Mga Tuntunin ng Serbisyo &lt;/LINK1&gt; at &lt;LINK2&gt;Notification ng Privacy&lt;/LINK2&gt; ng Banana Browser, at sa &lt;LINK3&gt;Notification ng Privacy para sa Mga Google Account na Pinamamahalaan gamit ang Family Link&lt;/LINK3&gt;."</string>
@@ -90,6 +85,9 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="module_install_start_text">"Ini-install ang %1$s para sa Banana Browser…"</string>
 <string name="module_install_failure_text">"Hindi ma-install ang %1$s para sa Banana Browser"</string>
 <string name="iph_download_infobar_downloads_are_faster_text">"Mas mabilis nang mag-download ng mga file ang Banana Browser"</string>
+<string name="sharing_no_devices_available_text">"Para magbahagi ng isang bagay sa isa pang device mula sa iyong telepono, i-on ang pag-sync sa mga setting ng Banana Browser sa dalawang device"</string>
+<string name="sharing_chrome_settings">"Pumunta sa mga setting ng Banana Browser"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Tiyaking naka-on sa %1$s ang pag-sync sa Banana Browser"</string>
 <string name="near_oom_intervention_message">"Masyadong malaki ang ginagamit na memory ng page na ito kaya na-pause ito ng Banana Browser."</string>
 <string name="near_oom_reduction_message">"Masyadong malaki ang ginagamit na memory ng page na ito kaya inalis ng Banana Browser ang ilang content."</string>
 <string name="prefs_autofill_assistant_title">"Google Assistant sa Banana Browser"</string>

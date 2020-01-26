@@ -1,16 +1,16 @@
 diff --git triple_banana/chrome/android/BUILD.gn triple_banana_change/chrome/android/BUILD.gn
-index cb76914..27a80fb 100644
+index f0c7c5c..08f1bc8 100644
 --- triple_banana/chrome/android/BUILD.gn
 +++ triple_banana_change/chrome/android/BUILD.gn
-@@ -26,6 +26,7 @@ import("//third_party/icu/config.gni")
+@@ -27,6 +27,7 @@ import("//third_party/icu/config.gni")
  import("//third_party/protobuf/proto_library.gni")
  import("//tools/resources/generate_resource_whitelist.gni")
  import("//tools/v8_context_snapshot/v8_context_snapshot.gni")
 +import("//triple_banana/triple_banana.gni")
  import("//ui/android/features.gni")
+ import("//weblayer/variables.gni")
  import("channel.gni")
- import("java_sources.gni")
-@@ -89,10 +90,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
+@@ -91,10 +92,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
  }
  
  android_resources("chrome_app_java_resources") {
@@ -22,7 +22,7 @@ index cb76914..27a80fb 100644
  
    if (enable_android_night_mode) {
      resource_dirs += [ "//chrome/android/java/res_night" ]
-@@ -392,6 +390,7 @@ android_library("chrome_java") {
+@@ -383,6 +381,7 @@ android_library("chrome_java") {
      "//third_party/gif_player:gif_player_java",
      "//third_party/google_android_play_core:com_google_android_play_core_java",
      "//third_party/jsr-305:jsr_305_javalib",
@@ -30,7 +30,7 @@ index cb76914..27a80fb 100644
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -457,7 +456,7 @@ android_library("chrome_java") {
+@@ -445,7 +444,7 @@ android_library("chrome_java") {
    java_files = chrome_java_sources + [
                   app_hooks_impl,
                   _chrome_version_java_file,
@@ -39,7 +39,7 @@ index cb76914..27a80fb 100644
  
    # Include sources from feed_java_sources.gni.
    java_files += feed_java_sources
-@@ -1107,7 +1106,7 @@ if (enable_vr || enable_arcore) {
+@@ -1085,7 +1084,7 @@ android_resources("chrome_public_test_apk_resources") {
  
  # Overrides icon / name defined in chrome_app_java_resources.
  android_resources("chrome_public_apk_resources") {

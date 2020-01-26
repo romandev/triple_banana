@@ -6,25 +6,19 @@
 
 #include <utility>
 #include "base/android/jni_android.h"
-#include "services/service_manager/public/cpp/interface_provider.h"
+#include "base/no_destructor.h"
 #include "triple_banana/modules/jni_headers/InterfaceRegistrar_jni.h"
-#include "triple_banana/modules/public/interfaces.h"
 
 namespace triple_banana {
 
-ModuleService::ModuleService(service_manager::mojom::ServiceRequest request)
-    : service_binding_(this, std::move(request)) {
-#if defined(OS_ANDROID)
-  AddJavaInterfaces<EXPORT_INTERFACE_LIST>();
-#endif
-}
+ModuleService::ModuleService() = default;
 
 ModuleService::~ModuleService() = default;
 
-void ModuleService::OnConnect(const service_manager::ConnectSourceInfo& source,
-                              const std::string& interface_name,
-                              mojo::ScopedMessagePipeHandle pipe) {
-  registry_.BindInterface(interface_name, std::move(pipe));
+// static
+ModuleService& ModuleService::Get() {
+  static base::NoDestructor<ModuleService> instance;
+  return *instance;
 }
 
 #if defined(OS_ANDROID)
