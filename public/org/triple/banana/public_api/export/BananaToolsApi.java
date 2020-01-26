@@ -4,11 +4,42 @@
 
 package org.triple.banana.public_api.export;
 
+import android.app.Activity;
+
+import org.chromium.base.ApplicationStatus;
+import org.chromium.chrome.browser.ChromeActivity;
+import org.chromium.chrome.browser.toolbar.ToolbarManager;
+
 public enum BananaToolsApi {
     instance;
 
-    public void back() {}
-    public void forward() {}
+    private ToolbarManager mToolbarManager;
+
+    private ToolbarManager getToolbarManager() {
+        if (mToolbarManager == null) {
+            Activity activity = ApplicationStatus.getLastTrackedFocusedActivity();
+            if (!(activity instanceof ChromeActivity)) return null;
+
+            ChromeActivity chromeActivity = (ChromeActivity) activity;
+            mToolbarManager = chromeActivity.getToolbarManager();
+        }
+        return mToolbarManager;
+    }
+
+    public void back() {
+        ToolbarManager toolbarManager = getToolbarManager();
+        if (toolbarManager == null) return;
+
+        toolbarManager.back();
+    }
+
+    public void forward() {
+        ToolbarManager toolbarManager = getToolbarManager();
+        if (toolbarManager == null) return;
+
+        toolbarManager.forward();
+    }
+
     public void share() {}
     public void search() {}
     public void addNewTab() {}

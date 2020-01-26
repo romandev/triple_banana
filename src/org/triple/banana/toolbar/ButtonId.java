@@ -8,11 +8,11 @@ import android.view.View;
 
 import org.triple.banana.R;
 import org.triple.banana.public_api.export.BananaContextUtils;
+import org.triple.banana.public_api.export.BananaToolsApi;
 
 import org.chromium.ui.widget.Toast;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.EnumMap;
 
 public enum ButtonId {
     BACK,
@@ -35,7 +35,13 @@ public enum ButtonId {
     PASSWORD,
     ARCHIVE;
 
-    static Map<ButtonId, View.OnClickListener> sOnClickListeners;
+    static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
+            new EnumMap<>(ButtonId.class);
+
+    static {
+        sOnClickListeners.put(ButtonId.BACK, v -> BananaToolsApi.instance.back());
+        sOnClickListeners.put(ButtonId.FORWARD, v -> BananaToolsApi.instance.forward());
+    }
 
     public static int getImageResource(ButtonId id) {
         int imageResource = 0;
@@ -101,15 +107,7 @@ public enum ButtonId {
         return null;
     }
 
-    public static void setOnClickListener(ButtonId id, View.OnClickListener clickListener) {
-        if (sOnClickListeners == null) sOnClickListeners = new HashMap<>();
-
-        sOnClickListeners.put(id, clickListener);
-    }
-
     public static View.OnClickListener getOnClickListeners(ButtonId id) {
-        if (sOnClickListeners == null) sOnClickListeners = new HashMap<>();
-
         View.OnClickListener listener = sOnClickListeners.get(id);
 
         if (listener == null) {
