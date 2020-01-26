@@ -22,8 +22,6 @@ public enum ButtonId {
     NEW_TAB,
     BOOKMARK,
     BOOKMARK_LIST,
-    ADD_BLOCK,
-    SECRET_MODE,
     ADD_SECRET_TAB,
     DOWNLOAD,
     DESKTOP_VIEW,
@@ -31,9 +29,11 @@ public enum ButtonId {
     ADD_TO_HOME,
     RELOAD,
     VISIT_HISTORY,
+    ARCHIVE,
     PRINT,
-    PASSWORD,
-    ARCHIVE;
+    SECRET_MODE,
+    ADBLOCK,
+    PASSWORD;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -41,11 +41,21 @@ public enum ButtonId {
     static {
         sOnClickListeners.put(ButtonId.BACK, v -> BananaToolsApi.instance.back());
         sOnClickListeners.put(ButtonId.FORWARD, v -> BananaToolsApi.instance.forward());
+        sOnClickListeners.put(ButtonId.SHARE, v -> BananaToolsApi.instance.share());
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolsApi.instance.search());
         sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolsApi.instance.addNewTab());
+        sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolsApi.instance.addBookmark());
         sOnClickListeners.put(ButtonId.BOOKMARK_LIST, v -> BananaToolsApi.instance.goBookmark());
         sOnClickListeners.put(ButtonId.ADD_SECRET_TAB, v -> BananaToolsApi.instance.addSecretTab());
         sOnClickListeners.put(ButtonId.DOWNLOAD, v -> BananaToolsApi.instance.download());
+        sOnClickListeners.put(
+                ButtonId.DESKTOP_VIEW, v -> BananaToolsApi.instance.changeDesktopMode());
+        sOnClickListeners.put(ButtonId.FIND_IN_PAGE, v -> BananaToolsApi.instance.findInPage());
+        sOnClickListeners.put(ButtonId.ADD_TO_HOME, v -> BananaToolsApi.instance.addToHomeScreen());
+        sOnClickListeners.put(ButtonId.RELOAD, v -> BananaToolsApi.instance.reload());
+        sOnClickListeners.put(
+                ButtonId.VISIT_HISTORY, v -> BananaToolsApi.instance.goVisitHistory());
+        sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolsApi.instance.goArchive());
     }
 
     public static int getImageResource(ButtonId id) {
@@ -72,7 +82,7 @@ public enum ButtonId {
             case BOOKMARK_LIST:
                 imageResource = R.drawable.ic_folder_special_black_24dp;
                 break;
-            case ADD_BLOCK:
+            case ADBLOCK:
                 imageResource = R.drawable.ic_remove_circle_outline_black_24dp;
                 break;
             case DOWNLOAD:

@@ -45,7 +45,11 @@ public enum BananaToolsApi {
         toolbarManager.forward();
     }
 
-    public void share() {}
+    public void share() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.share_menu_id, false);
+    }
 
     public void search() {
         ToolbarManager toolbarManager = getToolbarManager();
@@ -59,16 +63,17 @@ public enum BananaToolsApi {
         activity.onMenuOrKeyboardAction(R.id.new_tab_menu_id, false);
     }
 
-    public void addBookmark() {}
+    public void addBookmark() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.bookmark_this_page_id, false);
+    }
 
     public void goBookmark() {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;
         activity.onMenuOrKeyboardAction(R.id.all_bookmarks_menu_id, false);
     }
-
-    public void addBlock() {}
-    public void changeSecretMode() {}
 
     public void addSecretTab() {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
@@ -79,15 +84,47 @@ public enum BananaToolsApi {
     public void download() {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.offline_page_id, false);
+    }
+
+    public void changeDesktopMode() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.request_desktop_site_id, false);
+    }
+
+    public void findInPage() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.find_in_page_id, false);
+    }
+
+    public void addToHomeScreen() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.add_to_homescreen_id, false);
+    }
+
+    public void reload() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.reload_menu_id, false);
+    }
+
+    public void goVisitHistory() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.open_history_menu_id, false);
+    }
+
+    public void goArchive() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
         activity.onMenuOrKeyboardAction(R.id.downloads_menu_id, false);
     }
 
-    public void changeDesktopMode() {}
-    public void findInpage() {}
-    public void addHomeScreen() {}
-    public void reload() {}
-    public void goVisitHistory() {}
     public void print() {}
+    public void changeSecretMode() {}
+    public void goAdblockSetting() {}
     public void goPasswordSetting() {}
-    public void goArchive() {}
 }
