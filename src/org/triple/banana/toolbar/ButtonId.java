@@ -41,6 +41,7 @@ public enum ButtonId {
     static {
         sOnClickListeners.put(ButtonId.BACK, v -> BananaToolsApi.instance.back());
         sOnClickListeners.put(ButtonId.FORWARD, v -> BananaToolsApi.instance.forward());
+        sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolsApi.instance.search());
     }
 
     public static int getImageResource(ButtonId id) {

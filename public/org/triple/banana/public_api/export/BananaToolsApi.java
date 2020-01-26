@@ -8,6 +8,7 @@ import android.app.Activity;
 
 import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeActivity;
+import org.chromium.chrome.browser.omnibox.LocationBar;
 import org.chromium.chrome.browser.toolbar.ToolbarManager;
 
 public enum BananaToolsApi {
@@ -41,7 +42,14 @@ public enum BananaToolsApi {
     }
 
     public void share() {}
-    public void search() {}
+
+    public void search() {
+        ToolbarManager toolbarManager = getToolbarManager();
+        if (toolbarManager == null) return;
+
+        toolbarManager.setUrlBarFocus(true, LocationBar.OmniboxFocusReason.ACCELERATOR_TAP);
+    }
+
     public void addNewTab() {}
     public void addBookmark() {}
     public void goBookmark() {}
