@@ -22,8 +22,9 @@
       : triple_banana::BindInterfaceOnRenderer<interface_name>()
 
 #define BIND_HOST_RECEIVER(interface_name)                                \
-  if (auto r = receiver.As<interface_name>()) {                             \
+  if (auto r = receiver.As<interface_name>()) {                           \
     ModuleService::Get().GetJavaInterfaces()->GetInterface(std::move(r)); \
+    return;                                                               \
   }
 
 namespace triple_banana {
