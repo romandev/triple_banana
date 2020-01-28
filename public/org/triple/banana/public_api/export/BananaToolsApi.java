@@ -130,7 +130,11 @@ public enum BananaToolsApi {
         PreferencesLauncher.showPasswordSettings(activity, 0);
     }
 
-    public void print() {}
-    public void changeSecretMode() {}
+    public void print() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.print_id, false);
+    }
+
     public void goAdblockSetting() {}
 }

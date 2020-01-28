@@ -31,7 +31,6 @@ public enum ButtonId {
     VISIT_HISTORY,
     ARCHIVE,
     PRINT,
-    SECRET_MODE,
     ADBLOCK,
     PASSWORD;
 
@@ -57,6 +56,7 @@ public enum ButtonId {
                 ButtonId.VISIT_HISTORY, v -> BananaToolsApi.instance.goVisitHistory());
         sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolsApi.instance.goArchive());
         sOnClickListeners.put(ButtonId.PASSWORD, v -> BananaToolsApi.instance.goPasswordSetting());
+        sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolsApi.instance.print());
     }
 
     public static int getImageResource(ButtonId id) {
@@ -108,7 +108,7 @@ public enum ButtonId {
                 imageResource = R.drawable.ic_archive_black_24dp;
                 break;
             default:
-                // SECRET_MODE, ADD_SECRET_TAB, ADD_TO_HOME, VISIT_HISTORY
+                // ADD_SECRET_TAB, ADD_TO_HOME, VISIT_HISTORY
                 // TODO(codeimpl) : After adding all images, it should be removed.
                 imageResource = R.drawable.ic_not_interested_black_24dp;
                 break;
