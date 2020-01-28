@@ -56,6 +56,7 @@ public enum ButtonId {
         sOnClickListeners.put(
                 ButtonId.VISIT_HISTORY, v -> BananaToolsApi.instance.goVisitHistory());
         sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolsApi.instance.goArchive());
+        sOnClickListeners.put(ButtonId.PASSWORD, v -> BananaToolsApi.instance.goPasswordSetting());
     }
 
     public static int getImageResource(ButtonId id) {
