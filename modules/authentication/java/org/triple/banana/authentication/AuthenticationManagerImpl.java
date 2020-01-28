@@ -7,6 +7,7 @@ package org.triple.banana.authentication;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 
@@ -33,7 +34,11 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
     }
 
     private void startAuthenticationActivity() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
+        if (!isAuthenticationEnabled()) {
+            // TODO(#169): Remove all saved data when biometric and keyguard data is
+            // unregistered
+            handleResult(true);
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
                 startAuthenticationActivity(BiometricPromptAuthenticationActivity.class);
             } else if (isKeyguardSecured()) {
@@ -73,6 +78,12 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         Intent intent = new Intent(context, activityClass);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
+    }
+
+    private boolean isAuthenticationEnabled() {
+        SharedPreferences pref = ContextUtils.getApplicationContext().getSharedPreferences(
+                "org.triple.banana_preferences", Context.MODE_PRIVATE);
+        return pref.getBoolean("authentication_switch", false);
     }
 
     static void handleResult(boolean result) {

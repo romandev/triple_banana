@@ -6,6 +6,7 @@ package org.triple.banana;
 
 import android.content.Context;
 import android.content.Intent;
+import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
 import org.triple.banana.public_api.export.BananaApplication;
@@ -47,6 +48,11 @@ public class TripleBananaApplication extends BananaApplication {
             public void startToolbarEditActivity(Context packageContext) {
                 Intent intent = new Intent(packageContext, ToolbarEditActivity.class);
                 startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+            }
+
+            @Override
+            public SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
+                return SharedPreferenceController.instance.createAuthenticationSwitch(context);
             }
         });
 

@@ -5,6 +5,7 @@
 package org.triple.banana.hooks_api;
 
 import android.content.Context;
+import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
 import org.chromium.chrome.browser.ActivityTabProvider;
@@ -19,4 +20,7 @@ public interface ChromeHooksDelegate {
         return null;
     }
     default void startToolbarEditActivity(Context packageContext) {}
+    default SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
+        return null;
+    }
 }

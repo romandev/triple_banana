@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+<resources>
+	<string name="prefs_authentication">Authentication</string>
+	<string name="text_on">On</string>
+	<string name="text_off">Off</string>
+</resources>

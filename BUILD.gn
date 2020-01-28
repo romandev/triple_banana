@@ -43,6 +43,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 android_library("triple_banana_java") {
   java_files = [
     "//triple_banana/src/org/triple/banana/MediaSuspendController.java",
+    "//triple_banana/src/org/triple/banana/SharedPreferenceController.java",
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarButtonDecoration.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",

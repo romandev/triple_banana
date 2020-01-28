@@ -5,6 +5,7 @@
 package org.triple.banana.public_api.export;
 
 import android.content.Context;
+import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
 import org.triple.banana.hooks_api.ChromeHooks;
@@ -48,6 +49,9 @@ public class BananaHooks {
             return null;
         }
         default void startToolbarEditActivity(Context packageContext) {}
+        default SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
+            return null;
+        }
     }
 
     private static class BananaHooksImpl extends BananaHooks implements ChromeHooksDelegate {
@@ -70,6 +74,11 @@ public class BananaHooks {
         @Override
         public void startToolbarEditActivity(Context packageContext) {
             getEventListener().startToolbarEditActivity(packageContext);
+        }
+
+        @Override
+        public SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
+            return getEventListener().createAuthenticationSwitch(context);
         }
     }
 }
