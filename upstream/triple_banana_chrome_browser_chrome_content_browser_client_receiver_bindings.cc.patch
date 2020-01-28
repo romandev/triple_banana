@@ -24,3 +24,19 @@ index 7187658..235ec5c 100644
  }
  
  void ChromeContentBrowserClient::BindHostReceiverForRendererOnIOThread(
+diff --git triple_banana/chrome/browser/chrome_content_browser_client_receiver_bindings.cc triple_banana_change/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
+index 235ec5c..8c20e1a 100644
+--- triple_banana/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
++++ triple_banana_change/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
+@@ -65,7 +65,7 @@
+ #endif
+ 
+ #if defined(ENABLE_TRIPLE_BANANA)
+-#include "triple_banana/modules/public/connector.h"
++#include "triple_banana/modules/public/interfaces.h"
+ #endif
+ 
+ namespace {
+-- 
+2.7.4
+
