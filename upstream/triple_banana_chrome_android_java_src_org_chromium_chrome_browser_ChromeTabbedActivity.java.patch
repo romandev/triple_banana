@@ -1,12 +1,12 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-index 50a2a8c..c184177 100644
+index 50a2a8c..e740e28 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 @@ -1607,6 +1607,7 @@ public class ChromeTabbedActivity extends ChromeActivity implements ScreenshotMo
                  commandLine.appendSwitchesAndArguments(args);
              }
          }
-+        org.triple.banana.hooks_api.ChromeHooks.getInstance().initCommandLine();
++        org.banana.cake.interfaces.BananaCommandLineInitializer.get().initCommandLine();
  
          supportRequestWindowFeature(Window.FEATURE_ACTION_MODE_OVERLAY);
  

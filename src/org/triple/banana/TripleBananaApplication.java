@@ -10,7 +10,6 @@ import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
 import org.banana.cake.bootstrap.BananaApplication;
-import org.triple.banana.public_api.export.BananaCommandLine;
 import org.triple.banana.public_api.export.BananaHooks;
 import org.triple.banana.public_api.export.BananaTab;
 import org.triple.banana.toolbar.BottomToolbarController;
@@ -37,12 +36,6 @@ public class TripleBananaApplication extends BananaApplication {
 
     public boolean onInitializeHooks(BananaHooks hooks) {
         hooks.setEventListener(new BananaHooks.Listener() {
-            @Override
-            public void initCommandLine(BananaCommandLine commandLine) {
-                commandLine.appendSwitchWithValue(
-                        "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
-            }
-
             @Override
             public void onUrlUpdated(BananaTab tab) {
                 MediaSuspendController.instance.DisableOnYouTube(tab);

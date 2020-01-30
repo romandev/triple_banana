@@ -43,7 +43,6 @@ public class BananaHooks {
 
     public interface Listener {
         default void onUrlUpdated(BananaTab tab) {}
-        default void initCommandLine(BananaCommandLine line) {}
         default BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
                 View root, ActivityTabProvider tabProvider) {
             return null;
@@ -58,11 +57,6 @@ public class BananaHooks {
         @Override
         public void onUrlUpdated(Tab tab) {
             getEventListener().onUrlUpdated(new BananaTab(tab));
-        }
-
-        @Override
-        public void initCommandLine() {
-            getEventListener().initCommandLine(BananaCommandLine.instance);
         }
 
         @Override

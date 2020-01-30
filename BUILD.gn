@@ -42,6 +42,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 
 android_library("triple_banana_java") {
   java_files = [
+    "//triple_banana/src/org/triple/banana/CommandLineInitializer.java",
     "//triple_banana/src/org/triple/banana/InterfaceProvider.java",
     "//triple_banana/src/org/triple/banana/MediaSuspendController.java",
     "//triple_banana/src/org/triple/banana/SharedPreferenceController.java",
@@ -82,6 +83,7 @@ android_library("triple_banana_java") {
     "//triple_banana/modules/hello/java/org/triple/banana/hello/HelloImpl.java",
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
     "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
   ]
   deps = [

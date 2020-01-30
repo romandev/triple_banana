@@ -8,6 +8,8 @@ import org.banana.cake.interfaces.BananaInterfaceProvider;
 
 class InterfaceProvider {
     static void initialize() {
-        // Add interfaces
+        BananaInterfaceProvider.register(
+                org.banana.cake.interfaces.BananaCommandLineInitializer.class,
+                org.triple.banana.CommandLineInitializer.class);
     }
 }

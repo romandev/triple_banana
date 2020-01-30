@@ -6,6 +6,7 @@ package org.banana.cake.interfaces;
 
 import android.util.Log;
 
+import java.lang.reflect.Constructor;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -21,7 +22,9 @@ public class BananaInterfaceProvider {
     private static <T> T create(Class<T> interfaceClass) {
         try {
             Class<T> implClass = CLASS_MAP.get(interfaceClass);
-            return implClass.newInstance();
+            Constructor<T> constructor = implClass.getDeclaredConstructor();
+            constructor.setAccessible(true);
+            return constructor.newInstance();
         } catch (Exception e) {
             Log.e(TAG, "create(): " + e.toString());
         }
