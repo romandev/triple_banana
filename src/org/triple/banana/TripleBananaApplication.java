@@ -9,7 +9,7 @@ import android.content.Intent;
 import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
-import org.triple.banana.public_api.export.BananaApplication;
+import org.banana.cake.bootstrap.BananaApplication;
 import org.triple.banana.public_api.export.BananaCommandLine;
 import org.triple.banana.public_api.export.BananaHooks;
 import org.triple.banana.public_api.export.BananaTab;
@@ -21,7 +21,20 @@ import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
 
 public class TripleBananaApplication extends BananaApplication {
+    static {
+        InterfaceProvider.initialize();
+    }
+
+    private static boolean sWasInitialized;
+
     @Override
+    public void onCreate() {
+        super.onCreate();
+        if (!sWasInitialized) {
+            sWasInitialized = onInitializeHooks(BananaHooks.getInstance());
+        }
+    }
+
     public boolean onInitializeHooks(BananaHooks hooks) {
         hooks.setEventListener(new BananaHooks.Listener() {
             @Override

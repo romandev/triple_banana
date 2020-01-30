@@ -1,4 +1,3 @@
-# Copyright 2019 The Triple Banana Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
@@ -6,6 +5,7 @@ triple_banana_hooks_sources = [
   "//triple_banana/hooks/browser/java/org/triple/banana/hooks_api/ChromeHooks.java",
   "//triple_banana/hooks/browser/java/org/triple/banana/hooks_api/ChromeHooksDelegate.java",
   "//triple_banana/modules/public/java/org/triple/banana/modules/Connector.java",
+  "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaInterfaceProvider.java",
 ]
 
 triple_banana_resource = [ "//triple_banana/res_override" ]

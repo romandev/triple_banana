@@ -30,9 +30,9 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   shared_libraries = [ "//chrome/android:libchrome" ]
 
   deps = [
+    ":triple_banana_assets",
     ":triple_banana_java",
     "//chrome/android:chrome_apk_pak_assets",
-    ":triple_banana_assets",
     "//chrome/android:chrome_public_base_module_java",
     "//chrome/android:chrome_public_non_pak_assets",
     "//chrome/android:chrome_public_v8_assets",
@@ -42,6 +42,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 
 android_library("triple_banana_java") {
   java_files = [
+    "//triple_banana/src/org/triple/banana/InterfaceProvider.java",
     "//triple_banana/src/org/triple/banana/MediaSuspendController.java",
     "//triple_banana/src/org/triple/banana/SharedPreferenceController.java",
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
@@ -62,7 +63,6 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarStatePreferenceStoreImpl.java",
     "//triple_banana/src/org/triple/banana/toolbar/ViewHolderDragListener.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
-    "//triple_banana/public/org/triple/banana/public_api/export/BananaApplication.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaCommandLine.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaContextUtils.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
@@ -81,6 +81,8 @@ android_library("triple_banana_java") {
     "//triple_banana/modules/encrypter/java/org/triple/banana/encrypter/KeyStoreEncrypter.java",
     "//triple_banana/modules/hello/java/org/triple/banana/hello/HelloImpl.java",
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
+    "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
   ]
   deps = [
     ":triple_banana_resources",
@@ -113,6 +115,6 @@ android_resources("triple_banana_resources") {
 
 android_assets("triple_banana_assets") {
   sources = [
-    "//triple_banana/modules/adblock/filter/Filters"
+    "//triple_banana/modules/adblock/filter/Filters",
   ]
 }
