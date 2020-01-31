@@ -1,23 +1,29 @@
-// Copyright 2019 The Triple Banana Authors. All rights reserved.
+// Copyright 2020 The Triple Banana Authors. All rights reserved.
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.triple.banana.public_api.export;
+package org.banana.cake;
+
+import org.banana.cake.interfaces.BananaTab;
 
 import org.chromium.chrome.browser.tab.Tab;
 
-public class BananaTab {
+class CakeTab implements BananaTab {
     private Tab mTab;
 
-    public BananaTab(Tab tab) {
+    @Override
+    public BananaTab wrap(Tab tab) {
         mTab = tab;
+        return this;
     }
 
     /**
      * @return The URL that is currently visible in the location bar. This may not be the same as
      *         the last committed URL if a new navigation is in progress.
      */
+    @Override
     public String getUrl() {
+        if (mTab == null) return new String();
         return mTab.getUrl();
     }
 
@@ -27,7 +33,9 @@ public class BananaTab {
      *
      * @param script The Javascript to execute.
      */
+    @Override
     public void evaluateJavaScript(String script) {
+        if (mTab == null) return;
         mTab.getWebContents().evaluateJavaScript(script, null);
     }
 }

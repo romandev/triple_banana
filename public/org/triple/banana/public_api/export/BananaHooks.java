@@ -8,12 +8,11 @@ import android.content.Context;
 import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
+import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.hooks_api.ChromeHooks;
 import org.triple.banana.hooks_api.ChromeHooksDelegate;
-import org.triple.banana.public_api.export.BananaTab;
 
 import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
 
 public class BananaHooks {
@@ -40,7 +39,6 @@ public class BananaHooks {
     }
 
     public interface Listener {
-        default void onUrlUpdated(BananaTab tab) {}
         default BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
                 View root, ActivityTabProvider tabProvider) {
             return null;
@@ -52,11 +50,6 @@ public class BananaHooks {
     }
 
     private static class BananaHooksImpl extends BananaHooks implements ChromeHooksDelegate {
-        @Override
-        public void onUrlUpdated(Tab tab) {
-            getEventListener().onUrlUpdated(new BananaTab(tab));
-        }
-
         @Override
         public BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
                 View root, ActivityTabProvider tabProvider) {

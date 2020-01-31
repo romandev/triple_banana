@@ -10,13 +10,12 @@ import android.support.v7.preference.SwitchPreferenceCompat;
 import android.view.View;
 
 import org.banana.cake.bootstrap.BananaApplication;
+import org.banana.cake.interfaces.BananaTabManager;
 import org.triple.banana.public_api.export.BananaHooks;
-import org.triple.banana.public_api.export.BananaTab;
 import org.triple.banana.toolbar.BottomToolbarController;
 import org.triple.banana.toolbar.ToolbarEditActivity;
 
 import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
 
 public class TripleBananaApplication extends BananaApplication {
@@ -35,12 +34,10 @@ public class TripleBananaApplication extends BananaApplication {
     }
 
     public boolean onInitializeHooks(BananaHooks hooks) {
-        hooks.setEventListener(new BananaHooks.Listener() {
-            @Override
-            public void onUrlUpdated(BananaTab tab) {
-                MediaSuspendController.instance.DisableOnYouTube(tab);
-            }
+        BananaTabManager.get().addObserver(
+                bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
 
+        hooks.setEventListener(new BananaHooks.Listener() {
             @Override
             public BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
                     View root, ActivityTabProvider tabProvider) {

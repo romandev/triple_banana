@@ -7,7 +7,7 @@ package org.triple.banana;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.triple.banana.public_api.export.BananaTab;
+import org.banana.cake.interfaces.BananaTab;
 
 import java.net.MalformedURLException;
 import java.net.URL;

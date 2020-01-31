@@ -13,7 +13,6 @@ import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
 
 public interface ChromeHooksDelegate {
-    default void onUrlUpdated(Tab tab) {}
     default BottomToolbarCoordinatorDelegate createBottomToolbarCoordinatorDelegate(
             View root, ActivityTabProvider tabProvider) {
         return null;

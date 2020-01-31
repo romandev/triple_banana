@@ -66,7 +66,6 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaContextUtils.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaHooks.java",
-    "//triple_banana/public/org/triple/banana/public_api/export/BananaTab.java",
     "//triple_banana/public/org/triple/banana/public_api/export/BananaToolsApi.java",
     "//triple_banana/modules/adblock/java/org/triple/banana/adblock/FilterLoaderImpl.java",
     "//triple_banana/modules/authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
@@ -84,6 +83,8 @@ android_library("triple_banana_java") {
     "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeTab.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeTabManager.java",
   ]
   deps = [
     ":triple_banana_resources",
