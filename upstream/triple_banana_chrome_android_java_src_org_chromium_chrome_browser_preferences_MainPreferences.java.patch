@@ -1,0 +1,154 @@
+diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java
+index 374daebc1967..fcdccec948dd 100644
+--- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java
++++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java
+@@ -41,12 +41,8 @@ import java.util.Map;
+ /**
+  * The main settings screen, shown when the user first opens Settings.
+  */
+-public class MainPreferences extends PreferenceFragmentCompat
+-        implements TemplateUrlService.LoadListener, ProfileSyncService.SyncStateChangedListener,
+-                   SigninManager.SignInStateObserver {
+-    public static final String PREF_ACCOUNT_SECTION = "account_section";
+-    public static final String PREF_SIGN_IN = "sign_in";
+-    public static final String PREF_SYNC_AND_SERVICES = "sync_and_services";
++public class MainPreferences
++        extends PreferenceFragmentCompat implements TemplateUrlService.LoadListener {
+     public static final String PREF_SEARCH_ENGINE = "search_engine";
+     public static final String PREF_SAVED_PASSWORDS = "saved_passwords";
+     public static final String PREF_HOMEPAGE = "homepage";
+@@ -65,7 +61,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+ 
+     private final ManagedPreferenceDelegate mManagedPreferenceDelegate;
+     private final Map<String, Preference> mAllPreferences = new HashMap<>();
+-    private SignInPreference mSignInPreference;
+ 
+     public MainPreferences() {
+         setHasOptionsMenu(true);
+@@ -85,40 +80,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+         getListView().setItemAnimator(null);
+     }
+ 
+-    @Override
+-    public void onDestroy() {
+-        super.onDestroy();
+-        mSignInPreference.onPreferenceFragmentDestroyed();
+-    }
+-
+-    @Override
+-    public void onStart() {
+-        super.onStart();
+-        SigninManager signinManager = IdentityServicesProvider.getSigninManager();
+-        if (signinManager.isSigninSupported()) {
+-            signinManager.addSignInStateObserver(this);
+-            mSignInPreference.registerForUpdates();
+-        }
+-        ProfileSyncService syncService = ProfileSyncService.get();
+-        if (syncService != null) {
+-            syncService.addSyncStateChangedListener(this);
+-        }
+-    }
+-
+-    @Override
+-    public void onStop() {
+-        super.onStop();
+-        SigninManager signinManager = IdentityServicesProvider.getSigninManager();
+-        if (signinManager.isSigninSupported()) {
+-            signinManager.removeSignInStateObserver(this);
+-            mSignInPreference.unregisterForUpdates();
+-        }
+-        ProfileSyncService syncService = ProfileSyncService.get();
+-        if (syncService != null) {
+-            syncService.removeSyncStateChangedListener(this);
+-        }
+-    }
+-
+     @Override
+     public void onResume() {
+         super.onResume();
+@@ -129,8 +90,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+         PreferenceUtils.addPreferencesFromResource(this, R.xml.main_preferences);
+         cachePreferences();
+ 
+-        mSignInPreference.setOnStateChangedCallback(this::onSignInPreferenceStateChanged);
+-
+         updatePasswordsPreference();
+ 
+         setManagedPreferenceDelegateForPreference(PREF_SEARCH_ENGINE);
+@@ -188,7 +147,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+             Preference preference = getPreferenceScreen().getPreference(index);
+             mAllPreferences.put(preference.getKey(), preference);
+         }
+-        mSignInPreference = (SignInPreference) mAllPreferences.get(PREF_SIGN_IN);
+     }
+ 
+     private void setManagedPreferenceDelegateForPreference(String key) {
+@@ -197,13 +155,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+     }
+ 
+     private void updatePreferences() {
+-        if (IdentityServicesProvider.getSigninManager().isSigninSupported()) {
+-            addPreferenceIfAbsent(PREF_SIGN_IN);
+-        } else {
+-            removePreferenceIfPresent(PREF_SIGN_IN);
+-        }
+-
+-        updateSyncAndServicesPreference();
+         updateSearchEnginePreference();
+ 
+         Preference homepagePref = addPreferenceIfAbsent(PREF_HOMEPAGE);
+@@ -237,13 +188,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+         if (preference != null) getPreferenceScreen().removePreference(preference);
+     }
+ 
+-    private void updateSyncAndServicesPreference() {
+-        ChromeBasePreference syncAndServices =
+-                (ChromeBasePreference) findPreference(PREF_SYNC_AND_SERVICES);
+-        syncAndServices.setIcon(SyncPreferenceUtils.getSyncStatusIcon(getActivity()));
+-        syncAndServices.setSummary(SyncPreferenceUtils.getSyncStatusSummary(getActivity()));
+-    }
+-
+     private void updateSearchEnginePreference() {
+         if (!TemplateUrlServiceFactory.get().isLoaded()) {
+             ChromeBasePreference searchEnginePref =
+@@ -275,28 +219,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+         pref.setSummary(isOn ? R.string.text_on : R.string.text_off);
+     }
+ 
+-    // SigninManager.SignInStateObserver implementation.
+-    @Override
+-    public void onSignedIn() {
+-        // After signing in or out of a managed account, preferences may change or become enabled
+-        // or disabled.
+-        new Handler().post(() -> updatePreferences());
+-    }
+-
+-    @Override
+-    public void onSignedOut() {
+-        updatePreferences();
+-    }
+-
+-    private void onSignInPreferenceStateChanged() {
+-        // Remove "Account" section header if the personalized sign-in promo is shown.
+-        if (mSignInPreference.getState() == SignInPreference.State.PERSONALIZED_PROMO) {
+-            removePreferenceIfPresent(PREF_ACCOUNT_SECTION);
+-        } else {
+-            addPreferenceIfAbsent(PREF_ACCOUNT_SECTION);
+-        }
+-    }
+-
+     // TemplateUrlService.LoadListener implementation.
+     @Override
+     public void onTemplateUrlServiceLoaded() {
+@@ -304,11 +226,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+         updateSearchEnginePreference();
+     }
+ 
+-    @Override
+-    public void syncStateChanged() {
+-        updateSyncAndServicesPreference();
+-    }
+-
+     @VisibleForTesting
+     ManagedPreferenceDelegate getManagedPreferenceDelegateForTest() {
+         return mManagedPreferenceDelegate;

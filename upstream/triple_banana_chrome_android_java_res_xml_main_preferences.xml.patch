@@ -1,0 +1,26 @@
+diff --git triple_banana/chrome/android/java/res/xml/main_preferences.xml triple_banana_change/chrome/android/java/res/xml/main_preferences.xml
+index a5c50e6987dd..3fd01dfc0f36 100644
+--- triple_banana/chrome/android/java/res/xml/main_preferences.xml
++++ triple_banana_change/chrome/android/java/res/xml/main_preferences.xml
+@@ -6,21 +6,6 @@
+ <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orderingFromXml="false">
+ 
+-    <PreferenceCategory
+-        android:key="account_section"
+-        android:order="0"
+-        android:title="@string/prefs_section_account"/>
+-    <org.chromium.chrome.browser.preferences.sync.SignInPreference
+-        android:key="sign_in"
+-        android:order="1"
+-        android:title="@string/sign_in_to_chrome"/>
+-    <org.chromium.chrome.browser.preferences.ChromeBasePreference
+-        android:key="sync_and_services"
+-        android:order="2"
+-        android:layout="@layout/account_management_account_row"
+-        android:title="@string/prefs_sync_and_services"
+-        android:fragment="org.chromium.chrome.browser.preferences.sync.SyncAndServicesPreferences"/>
+-
+     <PreferenceCategory
+         android:key="basics_section"
+         android:order="3"

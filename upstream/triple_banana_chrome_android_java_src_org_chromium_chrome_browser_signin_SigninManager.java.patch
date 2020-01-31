@@ -1,0 +1,43 @@
+diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java
+index c745bd5658bf..a014ad7df0b5 100644
+--- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java
++++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java
+@@ -285,15 +285,14 @@ public class SigninManager
+      * Returns true if signin can be started now.
+      */
+     public boolean isSignInAllowed() {
+-        return !mFirstRunCheckIsPending && mSignInState == null && mSigninAllowedByPolicy
+-                && ChromeSigninController.get().getSignedInUser() == null && isSigninSupported();
++        return false;
+     }
+ 
+     /**
+      * Returns true if signin is disabled by policy.
+      */
+     public boolean isSigninDisabledByPolicy() {
+-        return !mSigninAllowedByPolicy;
++        return true;
+     }
+ 
+     /**
+@@ -301,15 +300,14 @@ public class SigninManager
+      *         Google Play Services installed.
+      */
+     public boolean isSigninSupported() {
+-        return !ApiCompatibilityUtils.isDemoUser() && isGooglePlayServicesPresent()
+-                && !SigninManagerJni.get().isMobileIdentityConsistencyEnabled();
++        return false;
+     }
+ 
+     /**
+      * @return Whether force sign-in is enabled by policy.
+      */
+     public boolean isForceSigninEnabled() {
+-        return SigninManagerJni.get().isForceSigninEnabled(mNativeSigninManagerAndroid);
++        return false;
+     }
+ 
+     /**
+-- 
+2.17.1
+
