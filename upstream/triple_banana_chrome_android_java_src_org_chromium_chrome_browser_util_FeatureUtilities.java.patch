@@ -1,0 +1,16 @@
+diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/util/FeatureUtilities.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/util/FeatureUtilities.java
+index 198a05b1b0e4..1374d727db6c 100644
+--- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/util/FeatureUtilities.java
++++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/util/FeatureUtilities.java
+@@ -379,7 +379,7 @@ public class FeatureUtilities {
+      */
+     public static boolean isBottomToolbarEnabled() {
+         // TODO(crbug.com/944228): TabGroupsAndroid and ChromeDuet are incompatible for now.
+-        return isFlagEnabled(BOTTOM_TOOLBAR_ENABLED_KEY, false)
++        return isFlagEnabled(BOTTOM_TOOLBAR_ENABLED_KEY, true)
+                 && !DeviceFormFactor.isNonMultiDisplayContextOnTablet(
+                         ContextUtils.getApplicationContext())
+                 && (isDuetTabStripIntegrationAndroidEnabled() || !isTabGroupsAndroidEnabled());
+-- 
+2.23.0
+
