@@ -10,6 +10,6 @@ class InterfaceProvider {
     static void initialize() {
         BananaInterfaceProvider.register(
                 org.banana.cake.interfaces.BananaCommandLineInitializer.class,
-                org.triple.banana.CommandLineInitializer.class);
+                org.triple.banana.CommandLineInitializer::new);
     }
 }

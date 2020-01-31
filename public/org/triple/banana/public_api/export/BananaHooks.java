@@ -10,10 +10,8 @@ import android.view.View;
 
 import org.triple.banana.hooks_api.ChromeHooks;
 import org.triple.banana.hooks_api.ChromeHooksDelegate;
-import org.triple.banana.public_api.export.BananaCommandLine;
 import org.triple.banana.public_api.export.BananaTab;
 
-import org.chromium.base.CommandLine;
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;

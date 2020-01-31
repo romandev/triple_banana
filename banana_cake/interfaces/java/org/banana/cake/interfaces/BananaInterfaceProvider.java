@@ -11,8 +11,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BananaInterfaceProvider {
+    public interface Supplier<T> { T get(); }
+
     private static final String TAG = "BananaInterfaceProvider";
-    private static final Map<Class, Class> CLASS_MAP = new HashMap<>();
+    private static final Map<Class, Supplier> CONSTRUCTOR_MAP = new HashMap<>();
     private static final Map<Class, Object> INSTANCE_MAP = new HashMap<>();
 
     private static boolean isSingleton(Class interfaceClass) {
@@ -21,10 +23,7 @@ public class BananaInterfaceProvider {
 
     private static <T> T create(Class<T> interfaceClass) {
         try {
-            Class<T> implClass = CLASS_MAP.get(interfaceClass);
-            Constructor<T> constructor = implClass.getDeclaredConstructor();
-            constructor.setAccessible(true);
-            return constructor.newInstance();
+            return (T) CONSTRUCTOR_MAP.get(interfaceClass).get();
         } catch (Exception e) {
             Log.e(TAG, "create(): " + e.toString());
         }
@@ -47,13 +46,14 @@ public class BananaInterfaceProvider {
 
     public enum InstanceType { NORMAL, SINGLETON }
 
-    public static void register(Class interfaceClass, Class implClass, InstanceType type) {
-        CLASS_MAP.put(interfaceClass, implClass);
+    public static <T> void register(
+            Class<T> interfaceClass, Supplier<? extends T> constructor, InstanceType type) {
+        CONSTRUCTOR_MAP.put(interfaceClass, constructor);
         if (type == InstanceType.SINGLETON) INSTANCE_MAP.put(interfaceClass, null);
     }
 
-    public static void register(Class interfaceClass, Class implClass) {
-        register(interfaceClass, implClass, InstanceType.NORMAL);
+    public static <T> void register(Class<T> interfaceClass, Supplier<? extends T> constructor) {
+        register(interfaceClass, constructor, InstanceType.NORMAL);
     }
 
     public static <T> T get(Class<T> interfaceClass) {

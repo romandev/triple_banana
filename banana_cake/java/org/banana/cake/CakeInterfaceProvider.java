@@ -9,6 +9,6 @@ import org.banana.cake.interfaces.BananaInterfaceProvider;
 public class CakeInterfaceProvider {
     public static void initialize() {
         BananaInterfaceProvider.register(org.banana.cake.interfaces.BananaCommandLine.class,
-                org.banana.cake.CakeCommandLine.class);
+                org.banana.cake.CakeCommandLine::new);
     }
 }
