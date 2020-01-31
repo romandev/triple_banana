@@ -2,23 +2,23 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.package org.triple.banana;
 
-package org.triple.banana;
+package org.triple.banana.password;
 
 import android.content.Context;
+import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.SwitchPreferenceCompat;
 
+import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;
 import org.triple.banana.authentication.AuthenticationManagerImpl;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
 
-public enum SharedPreferenceController {
-    instance;
-
+public class PasswordExtension implements BananaPasswordExtension {
     public static final String PREF_AUTHENTICATION_SWITCH = "authentication_switch";
     private static final int ORDER_SWITCH = 0;
     private static AuthenticationManager authenticationManager;
 
-    public SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
+    private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         if (authenticationManager == null)
             authenticationManager = new AuthenticationManagerImpl.Factory().createImpl();
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
@@ -42,5 +42,10 @@ public enum SharedPreferenceController {
             }
         });
         return authenticationSwitch;
+    }
+
+    @Override
+    public void overridePreferenceScreen(Context context, PreferenceScreen screen) {
+        screen.addPreference(createAuthenticationSwitch(context));
     }
 }

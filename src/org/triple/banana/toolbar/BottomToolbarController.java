@@ -11,6 +11,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
+import org.banana.cake.interfaces.BananaBottomToolbarController;
 import org.banana.cake.interfaces.BananaContextUtils;
 import org.triple.banana.R;
 
@@ -26,15 +27,14 @@ import org.chromium.chrome.browser.tab.TabThemeColorHelper;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.toolbar.bottom.BottomToolbarCoordinator.BottomToolbarCoordinatorDelegate;
 import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
 public class BottomToolbarController
-        implements BottomToolbarCoordinatorDelegate, IToolbarStateChangedObserver {
-    private final WeakReference<ViewGroup> mViewGroup;
+        implements BananaBottomToolbarController, IToolbarStateChangedObserver {
+    private WeakReference<ViewGroup> mViewGroup;
     private static final int MAX_BUTTON_SIZE = 6;
 
     ArrayList<ToolbarButton> mToolbarButtons;
@@ -48,9 +48,8 @@ public class BottomToolbarController
     private OverviewModeBehavior mOverviewModeBehavior;
     private boolean mIsInitializeWithNative;
 
-    private static BottomToolbarController sInstance;
-
-    private BottomToolbarController(View root, ActivityTabProvider tabProvider) {
+    @Override
+    public BananaBottomToolbarController init(View root, ActivityTabProvider tabProvider) {
         mViewGroup = new WeakReference<>(root.findViewById(R.id.bottom_toolbar_browsing));
 
         mToolbarButtons = new ArrayList<>();
@@ -63,17 +62,11 @@ public class BottomToolbarController
                 tabProvider.removeObserver(this);
             }
         });
-    }
 
-    public static void createBottomToolbarController(View root, ActivityTabProvider tabProvider) {
-        if (sInstance == null) sInstance = new BottomToolbarController(root, tabProvider);
-
-        ToolbarStateModel.getInstance().addObserver(sInstance);
+        ToolbarStateModel.getInstance().addObserver(this);
         ToolbarStateModel.getInstance().notifyObservers(); // only first time
-    }
 
-    public static BottomToolbarController getInstance() {
-        return sInstance;
+        return this;
     }
 
     @Override
@@ -202,7 +195,6 @@ public class BottomToolbarController
     @Override
     public void destroy() {
         buttonDestroy();
-        ToolbarStateModel.getInstance().removeObserver(sInstance);
-        sInstance = null;
+        ToolbarStateModel.getInstance().removeObserver(this);
     }
 }
