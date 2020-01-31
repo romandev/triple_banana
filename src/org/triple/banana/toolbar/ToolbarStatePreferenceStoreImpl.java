@@ -6,10 +6,10 @@ package org.triple.banana.toolbar;
 
 import android.content.Context;
 
+import org.banana.cake.interfaces.BananaContextUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.triple.banana.public_api.export.BananaContextUtils;
 
 import java.util.ArrayList;
 
@@ -26,7 +26,8 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
                 jsonObject.put(Integer.toString(i), arrayList.get(i));
                 array.put(jsonObject);
             }
-            BananaContextUtils.getApplicationContext()
+            BananaContextUtils.get()
+                    .getApplicationContext()
                     .getSharedPreferences(PREFERENCE_FILE_NAME, Context.MODE_PRIVATE)
                     .edit()
                     .putString(SAVED_DATA, array.toString())
@@ -38,7 +39,8 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
 
     @Override
     public ArrayList<ButtonId> loadStateFromPersistentStore() {
-        String data = BananaContextUtils.getApplicationContext()
+        String data = BananaContextUtils.get()
+                              .getApplicationContext()
                               .getSharedPreferences(PREFERENCE_FILE_NAME, Context.MODE_PRIVATE)
                               .getString(SAVED_DATA, null);
         ArrayList<ButtonId> arrayList = new ArrayList<>();

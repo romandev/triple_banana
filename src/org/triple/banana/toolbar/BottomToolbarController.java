@@ -11,10 +11,10 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
+import org.banana.cake.interfaces.BananaContextUtils;
 import org.triple.banana.R;
-// TODO(zino): We should remove this upstream dependency.
-import org.triple.banana.public_api.export.BananaContextUtils;
 
+// TODO(zino): We should remove this upstream dependency.
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.ThemeColorProvider;
 import org.chromium.chrome.browser.appmenu.AppMenuButtonHelper;
@@ -85,9 +85,12 @@ public class BottomToolbarController
 
         for (int i = 0; i < MAX_BUTTON_SIZE; i++) {
             ToolbarButton toolbarButton =
-                    new ToolbarButton(BananaContextUtils.getApplicationContext());
+                    new ToolbarButton(BananaContextUtils.get().getApplicationContext());
             int width = (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), 56,
-                    BananaContextUtils.getApplicationContext().getResources().getDisplayMetrics());
+                    BananaContextUtils.get()
+                            .getApplicationContext()
+                            .getResources()
+                            .getDisplayMetrics());
             toolbarButton.setLayoutParams(
                     new ViewGroup.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT));
             toolbarButton.setButtonId(mButtonIdList.get(i));
@@ -108,15 +111,15 @@ public class BottomToolbarController
     }
 
     private void makeToolbarMenuButton() {
-        View view = View.inflate(
-                BananaContextUtils.getApplicationContext(), R.layout.toolbar_menu_button, null);
+        View view = View.inflate(BananaContextUtils.get().getApplicationContext(),
+                R.layout.toolbar_menu_button, null);
         mMenuButton = view.findViewById(R.id.menu_button_wrapper);
         mMenuButton.setWrapperView(view.findViewById(R.id.labeled_menu_button_wrapper));
     }
 
     private void addSpaceView() {
         LayoutInflater inflater =
-                (LayoutInflater) BananaContextUtils.getApplicationContext().getSystemService(
+                (LayoutInflater) BananaContextUtils.get().getApplicationContext().getSystemService(
                         Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.toolbar_space, mViewGroup.get(), true);
     }

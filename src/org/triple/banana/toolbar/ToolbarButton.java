@@ -15,8 +15,8 @@ import android.view.LayoutInflater;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import org.banana.cake.interfaces.BananaContextUtils;
 import org.triple.banana.R;
-import org.triple.banana.public_api.export.BananaContextUtils;
 
 import org.chromium.base.ApiCompatibilityUtils;
 import org.chromium.chrome.browser.ActivityTabProvider;
@@ -66,7 +66,7 @@ class ToolbarButton extends LinearLayout implements TintObserver {
     }
 
     private void init() {
-        LayoutInflater.from(BananaContextUtils.getApplicationContext())
+        LayoutInflater.from(BananaContextUtils.get().getApplicationContext())
                 .inflate(R.layout.toolbar_button, this, true);
 
         mToolbarWrapper = findViewById(R.id.toolbar_button_wrapper);

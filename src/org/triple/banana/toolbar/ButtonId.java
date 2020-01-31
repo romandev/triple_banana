@@ -6,9 +6,9 @@ package org.triple.banana.toolbar;
 
 import android.view.View;
 
+import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
-import org.triple.banana.public_api.export.BananaContextUtils;
-import org.triple.banana.public_api.export.BananaToolsApi;
 
 import org.chromium.ui.widget.Toast;
 
@@ -38,25 +38,28 @@ public enum ButtonId {
             new EnumMap<>(ButtonId.class);
 
     static {
-        sOnClickListeners.put(ButtonId.BACK, v -> BananaToolsApi.instance.back());
-        sOnClickListeners.put(ButtonId.FORWARD, v -> BananaToolsApi.instance.forward());
-        sOnClickListeners.put(ButtonId.SHARE, v -> BananaToolsApi.instance.share());
-        sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolsApi.instance.search());
-        sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolsApi.instance.addNewTab());
-        sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolsApi.instance.addBookmark());
-        sOnClickListeners.put(ButtonId.BOOKMARK_LIST, v -> BananaToolsApi.instance.goBookmark());
-        sOnClickListeners.put(ButtonId.ADD_SECRET_TAB, v -> BananaToolsApi.instance.addSecretTab());
-        sOnClickListeners.put(ButtonId.DOWNLOAD, v -> BananaToolsApi.instance.download());
+        sOnClickListeners.put(ButtonId.BACK, v -> BananaToolbarManager.get().back());
+        sOnClickListeners.put(ButtonId.FORWARD, v -> BananaToolbarManager.get().forward());
+        sOnClickListeners.put(ButtonId.SHARE, v -> BananaToolbarManager.get().share());
+        sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolbarManager.get().search());
+        sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolbarManager.get().addNewTab());
+        sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().addBookmark());
+        sOnClickListeners.put(ButtonId.BOOKMARK_LIST, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(
-                ButtonId.DESKTOP_VIEW, v -> BananaToolsApi.instance.changeDesktopMode());
-        sOnClickListeners.put(ButtonId.FIND_IN_PAGE, v -> BananaToolsApi.instance.findInPage());
-        sOnClickListeners.put(ButtonId.ADD_TO_HOME, v -> BananaToolsApi.instance.addToHomeScreen());
-        sOnClickListeners.put(ButtonId.RELOAD, v -> BananaToolsApi.instance.reload());
+                ButtonId.ADD_SECRET_TAB, v -> BananaToolbarManager.get().addSecretTab());
+        sOnClickListeners.put(ButtonId.DOWNLOAD, v -> BananaToolbarManager.get().download());
         sOnClickListeners.put(
-                ButtonId.VISIT_HISTORY, v -> BananaToolsApi.instance.goVisitHistory());
-        sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolsApi.instance.goArchive());
-        sOnClickListeners.put(ButtonId.PASSWORD, v -> BananaToolsApi.instance.goPasswordSetting());
-        sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolsApi.instance.print());
+                ButtonId.DESKTOP_VIEW, v -> BananaToolbarManager.get().changeDesktopMode());
+        sOnClickListeners.put(ButtonId.FIND_IN_PAGE, v -> BananaToolbarManager.get().findInPage());
+        sOnClickListeners.put(
+                ButtonId.ADD_TO_HOME, v -> BananaToolbarManager.get().addToHomeScreen());
+        sOnClickListeners.put(ButtonId.RELOAD, v -> BananaToolbarManager.get().reload());
+        sOnClickListeners.put(
+                ButtonId.VISIT_HISTORY, v -> BananaToolbarManager.get().goVisitHistory());
+        sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolbarManager.get().goArchive());
+        sOnClickListeners.put(
+                ButtonId.PASSWORD, v -> BananaToolbarManager.get().goPasswordSetting());
+        sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolbarManager.get().print());
     }
 
     public static int getImageResource(ButtonId id) {
@@ -128,7 +131,7 @@ public enum ButtonId {
 
         if (listener == null) {
             listener = v
-                    -> Toast.makeText(BananaContextUtils.getApplicationContext(),
+                    -> Toast.makeText(BananaContextUtils.get().getApplicationContext(),
                                     id.name() + " Clicked", Toast.LENGTH_SHORT)
                                .show();
         }

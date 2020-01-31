@@ -4,15 +4,28 @@
 
 package org.banana.cake;
 
+import org.banana.cake.CakeCommandLine;
+import org.banana.cake.CakeContextUtils;
+import org.banana.cake.CakeTab;
+import org.banana.cake.CakeTabManager;
+import org.banana.cake.CakeToolbarManager;
+import org.banana.cake.interfaces.BananaCommandLine;
+import org.banana.cake.interfaces.BananaContextUtils;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
+import org.banana.cake.interfaces.BananaTab;
+import org.banana.cake.interfaces.BananaTabManager;
+import org.banana.cake.interfaces.BananaToolbarManager;
 
 public class CakeInterfaceProvider {
     public static void initialize() {
-        BananaInterfaceProvider.register(org.banana.cake.interfaces.BananaCommandLine.class,
-                org.banana.cake.CakeCommandLine::new);
-        BananaInterfaceProvider.register(
-                org.banana.cake.interfaces.BananaTab.class, org.banana.cake.CakeTab::new);
-        BananaInterfaceProvider.register(org.banana.cake.interfaces.BananaTabManager.class,
-                org.banana.cake.CakeTabManager::new);
+        BananaInterfaceProvider.register(BananaCommandLine.class, CakeCommandLine::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaContextUtils.class, CakeContextUtils::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaTab.class, CakeTab::new);
+        BananaInterfaceProvider.register(BananaTabManager.class, CakeTabManager::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaToolbarManager.class, CakeToolbarManager::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
     }
 }

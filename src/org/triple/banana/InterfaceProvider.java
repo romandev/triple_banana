@@ -4,12 +4,13 @@
 
 package org.triple.banana;
 
+import org.banana.cake.interfaces.BananaCommandLineInitializer;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
+import org.triple.banana.CommandLineInitializer;
 
 class InterfaceProvider {
     static void initialize() {
-        BananaInterfaceProvider.register(
-                org.banana.cake.interfaces.BananaCommandLineInitializer.class,
-                org.triple.banana.CommandLineInitializer::new);
+        BananaInterfaceProvider.register(BananaCommandLineInitializer.class,
+                CommandLineInitializer::new, BananaInterfaceProvider.InstanceType.SINGLETON);
     }
 }
