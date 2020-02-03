@@ -5,7 +5,7 @@ import android.content.Intent;
 
 import org.banana.cake.interfaces.BananaToolbarEditor;
 
-class ToolbarEditor implements BananaToolbarEditor {
+public class ToolbarEditor implements BananaToolbarEditor {
     @Override
     public void show(Context context) {
         Intent intent = new Intent(context, ToolbarEditActivity.class);
