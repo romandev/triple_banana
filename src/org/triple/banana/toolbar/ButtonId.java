@@ -18,10 +18,11 @@ public enum ButtonId {
     BACK,
     FORWARD,
     SHARE,
-    SEARCH,
-    NEW_TAB,
-    BOOKMARK,
     BOOKMARK_LIST,
+    NEW_TAB,
+    PASSWORD,
+    SEARCH,
+    BOOKMARK,
     ADD_SECRET_TAB,
     DOWNLOAD,
     DESKTOP_VIEW,
@@ -31,8 +32,7 @@ public enum ButtonId {
     VISIT_HISTORY,
     ARCHIVE,
     PRINT,
-    ADBLOCK,
-    PASSWORD;
+    ADBLOCK;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
