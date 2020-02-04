@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-index 99cac3d..f46f91c 100644
+index 99cac3d..e57ebc3 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 @@ -699,6 +699,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
@@ -7,7 +7,7 @@ index 99cac3d..f46f91c 100644
  
              @Override
 +            public void onUrlUpdated(Tab tab) {
-+                org.triple.banana.hooks_api.ChromeHooks.getInstance().onUrlUpdated(tab);
++                org.banana.cake.interfaces.BananaTabManager.get().notifyUrlUpdated(tab);
 +            }
 +
 +            @Override
@@ -19,28 +19,6 @@ index 99cac3d..f46f91c 100644
          } else if (id == R.id.reader_mode_prefs_id) {
              DomDistillerUIUtils.openSettings(currentTab.getWebContents());
 +        } else if (id == R.id.toolbar_edit) {
-+            org.triple.banana.hooks_api.ChromeHooks.getInstance().startToolbarEditActivity(this);
-         } else {
-             return false;
-         }
-diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-index f46f91c..e57ebc3 100644
---- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-+++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-@@ -700,7 +700,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
- 
-             @Override
-             public void onUrlUpdated(Tab tab) {
--                org.triple.banana.hooks_api.ChromeHooks.getInstance().onUrlUpdated(tab);
-+                org.banana.cake.interfaces.BananaTabManager.get().notifyUrlUpdated(tab);
-             }
- 
-             @Override
-@@ -2265,7 +2265,7 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
-         } else if (id == R.id.reader_mode_prefs_id) {
-             DomDistillerUIUtils.openSettings(currentTab.getWebContents());
-         } else if (id == R.id.toolbar_edit) {
--            org.triple.banana.hooks_api.ChromeHooks.getInstance().startToolbarEditActivity(this);
 +            org.banana.cake.interfaces.BananaToolbarEditor.get().show(this);
          } else {
              return false;

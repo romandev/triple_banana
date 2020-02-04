@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java
-index c745bd5658bf..a014ad7df0b5 100644
+index c745bd5..a014ad7 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninManager.java
 @@ -285,15 +285,14 @@ public class SigninManager
@@ -38,6 +38,3 @@ index c745bd5658bf..a014ad7df0b5 100644
      }
  
      /**
--- 
-2.17.1
-

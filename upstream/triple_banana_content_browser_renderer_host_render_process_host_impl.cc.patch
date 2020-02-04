@@ -1,5 +1,5 @@
 diff --git triple_banana/content/browser/renderer_host/render_process_host_impl.cc triple_banana_change/content/browser/renderer_host/render_process_host_impl.cc
-index 323e6eb..0be9d31 100644
+index f468f4a..3bac81f 100644
 --- triple_banana/content/browser/renderer_host/render_process_host_impl.cc
 +++ triple_banana_change/content/browser/renderer_host/render_process_host_impl.cc
 @@ -2930,6 +2930,9 @@ void RenderProcessHostImpl::AppendRendererCommandLine(

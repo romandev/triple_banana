@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java
-index 374daebc1967..fcdccec948dd 100644
+index 374daeb..fcdccec 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/preferences/MainPreferences.java
 @@ -41,12 +41,8 @@ import java.util.Map;
@@ -25,11 +25,10 @@ index 374daebc1967..fcdccec948dd 100644
  
      public MainPreferences() {
          setHasOptionsMenu(true);
-@@ -85,40 +80,6 @@ public class MainPreferences extends PreferenceFragmentCompat
-         getListView().setItemAnimator(null);
+@@ -86,40 +81,6 @@ public class MainPreferences extends PreferenceFragmentCompat
      }
  
--    @Override
+     @Override
 -    public void onDestroy() {
 -        super.onDestroy();
 -        mSignInPreference.onPreferenceFragmentDestroyed();
@@ -63,9 +62,10 @@ index 374daebc1967..fcdccec948dd 100644
 -        }
 -    }
 -
-     @Override
+-    @Override
      public void onResume() {
          super.onResume();
+         updatePreferences();
 @@ -129,8 +90,6 @@ public class MainPreferences extends PreferenceFragmentCompat
          PreferenceUtils.addPreferencesFromResource(this, R.xml.main_preferences);
          cachePreferences();

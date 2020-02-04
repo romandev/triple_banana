@@ -1,5 +1,5 @@
 diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-index 3e6369a..e146dc1d 100644
+index 3e6369a..70acbb7 100644
 --- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
 +++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
 @@ -23,9 +23,8 @@ import org.chromium.chrome.browser.toolbar.TabCountProvider;
@@ -10,30 +10,11 @@ index 3e6369a..e146dc1d 100644
 -    /** The browsing mode bottom toolbar component */
 -    private final BrowsingModeBottomToolbarCoordinator mBrowsingModeCoordinator;
 +public class BottomToolbarCoordinator {
-+    private final BottomToolbarCoordinatorDelegate mBrowsingModeCoordinator;
++    private final org.banana.cake.interfaces.BananaBottomToolbarController mBrowsingModeCoordinator;
  
      /** The tab switcher mode bottom toolbar component */
      private TabSwitcherBottomToolbarCoordinator mTabSwitcherModeCoordinator;
-@@ -36,6 +35,18 @@ class BottomToolbarCoordinator {
-     /** A provider that notifies components when the theme color changes.*/
-     private final ThemeColorProvider mThemeColorProvider;
- 
-+    public interface BottomToolbarCoordinatorDelegate {
-+        void initializeWithNative(OnClickListener tabSwitcherListener,
-+                AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
-+                TabCountProvider tabCountProvider, ThemeColorProvider themeColorProvider,
-+                IncognitoStateProvider incognitoStateProvider);
-+        void showAppMenuUpdateBadge();
-+        void removeAppMenuUpdateBadge();
-+        boolean isShowingAppMenuUpdateBadge();
-+        MenuButton getMenuButton();
-+        void destroy();
-+    }
-+
-     /**
-      * Build the coordinator that manages the bottom toolbar.
-      * @param stub The bottom toolbar {@link ViewStub} to inflate.
-@@ -51,9 +62,9 @@ class BottomToolbarCoordinator {
+@@ -51,9 +50,9 @@ class BottomToolbarCoordinator {
              ThemeColorProvider themeColorProvider) {
          View root = stub.inflate();
  
@@ -41,49 +22,6 @@ index 3e6369a..e146dc1d 100644
 -                homeButtonListener, searchAcceleratorListener, shareButtonListener,
 -                tabSwitcherLongClickListener);
 +        mBrowsingModeCoordinator =
-+                org.triple.banana.hooks_api.ChromeHooks.getInstance()
-+                        .createBottomToolbarCoordinatorDelegate(root, tabProvider);
- 
-         mTabSwitcherModeStub = root.findViewById(R.id.bottom_toolbar_tab_switcher_mode_stub);
- 
-diff --git triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-index e146dc1d..70acbb7 100644
---- triple_banana/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-+++ triple_banana_change/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-@@ -24,7 +24,7 @@ import org.chromium.chrome.browser.toolbar.TabCountProvider;
-  * toolbar and the tab switcher mode bottom toolbar.
-  */
- public class BottomToolbarCoordinator {
--    private final BottomToolbarCoordinatorDelegate mBrowsingModeCoordinator;
-+    private final org.banana.cake.interfaces.BananaBottomToolbarController mBrowsingModeCoordinator;
- 
-     /** The tab switcher mode bottom toolbar component */
-     private TabSwitcherBottomToolbarCoordinator mTabSwitcherModeCoordinator;
-@@ -35,18 +35,6 @@ public class BottomToolbarCoordinator {
-     /** A provider that notifies components when the theme color changes.*/
-     private final ThemeColorProvider mThemeColorProvider;
- 
--    public interface BottomToolbarCoordinatorDelegate {
--        void initializeWithNative(OnClickListener tabSwitcherListener,
--                AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
--                TabCountProvider tabCountProvider, ThemeColorProvider themeColorProvider,
--                IncognitoStateProvider incognitoStateProvider);
--        void showAppMenuUpdateBadge();
--        void removeAppMenuUpdateBadge();
--        boolean isShowingAppMenuUpdateBadge();
--        MenuButton getMenuButton();
--        void destroy();
--    }
--
-     /**
-      * Build the coordinator that manages the bottom toolbar.
-      * @param stub The bottom toolbar {@link ViewStub} to inflate.
-@@ -63,8 +51,8 @@ public class BottomToolbarCoordinator {
-         View root = stub.inflate();
- 
-         mBrowsingModeCoordinator =
--                org.triple.banana.hooks_api.ChromeHooks.getInstance()
--                        .createBottomToolbarCoordinatorDelegate(root, tabProvider);
 +                org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
 +                        root, tabProvider);
  
