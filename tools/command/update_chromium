@@ -19,4 +19,4 @@ function make_base_branch() {
   return $?
 }
 
-make_base_branch && $(triple_banana_tools_path)/banana apply_patches
+make_base_branch && $(triple_banana_tools_path)/banana apply_upstream
