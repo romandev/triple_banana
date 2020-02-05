@@ -1,0 +1,54 @@
+#!/bin/bash
+#
+# Copyright 2019 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+. $TOOLS_PATH/common/chromium.sh
+. $TOOLS_PATH/common/path.sh
+. $TOOLS_PATH/common/stack_dir.sh
+
+function get_upstream_change_list() {
+  push_dir $(triple_banana_upstream_base_path)
+  find -type f -printf '%P\n'
+  pop_dir
+}
+
+function make_diff() {
+  local change_file=$1
+  push_dir $(triple_banana_upstream_path)
+  diff -ruN base/$change_file diff/$change_file
+  pop_dir
+}
+
+function check_patch() {
+  local change_file=$1
+  make_diff $change_file | git apply --check --3way
+  return $?
+}
+
+function apply_patch() {
+  local change_file=$1
+  make_diff $change_file | git apply --3way
+  return $?
+}
+
+function apply_patches() {
+  push_dir $(chromium_path)
+  local success=true
+  for change in $(get_upstream_change_list); do
+    echo "Patching $change..."
+    if check_patch $change; then
+      apply_patch $change
+    else
+      success=false
+    fi
+    echo
+  done
+  if $success; then
+    git commit -m "Triple Banana $(get_chromium_version)"
+  fi
+  pop_dir
+}
+
+apply_patches

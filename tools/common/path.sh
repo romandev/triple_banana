@@ -20,6 +20,14 @@ function triple_banana_upstream_path() {
   echo $(triple_banana_path)/upstream
 }
 
+function triple_banana_upstream_base_path() {
+  echo $(triple_banana_upstream_path)/base
+}
+
+function triple_banana_upstream_diff_path() {
+  echo $(triple_banana_upstream_path)/diff
+}
+
 function triple_banana_resource_path() {
   echo $(triple_banana_path)/res
 }

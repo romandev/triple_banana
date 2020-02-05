@@ -1,0 +1,52 @@
+#!/bin/bash
+#
+# Copyright 2019 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+. $TOOLS_PATH/common/chromium.sh
+. $TOOLS_PATH/common/path.sh
+. $TOOLS_PATH/common/stack_dir.sh
+
+function get_list_upstream_changes() {
+  push_dir $(chromium_path)
+  git diff refs/tags/$(get_chromium_version) --name-only
+  pop_dir
+}
+
+function reset_upstream_changes() {
+  rm -rf $(triple_banana_upstream_base_path)
+  rm -rf $(triple_banana_upstream_diff_path)
+}
+
+function update_upstream_changes() {
+  local on_rebase=$1
+
+  if $on_rebase; then
+    local base="$(triple_banana_upstream_base_path)/"
+  fi
+
+  echo "Cleaning existing upstream changes..."
+  reset_upstream_changes
+
+  push_dir $(chromium_path)
+  for change in $(get_list_upstream_changes); do
+    echo "Creating upstream changes for $change..."
+    mkdir -p $(triple_banana_upstream_base_path)/$(dirname $change)
+    git show refs/tags/$(get_chromium_version):$change \
+        > $(triple_banana_upstream_base_path)/$change
+    mkdir -p $(triple_banana_upstream_diff_path)/$(dirname $change)
+    cp $base$change $(triple_banana_upstream_diff_path)/$change
+  done
+  pop_dir
+}
+
+for option in "$@"; do
+  case $option in
+    --rebase)
+      on_rebase=true
+    ;;
+esac
+done
+
+update_upstream_changes $on_rebase

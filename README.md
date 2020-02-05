@@ -35,9 +35,9 @@ enable_triple_banana=true
 ## Update upstream changes
 
 1. Make changes in `chromium/src` but it SHOULD be committed.
-2. Run `update_patches` command
+2. Run `update_upstream` command
    ```sh
-   chromium/src/triple_banana$ ./tools/banana update_patches
+   chromium/src/triple_banana$ ./tools/banana update_upstream
    ```
 3. Commit upstream changes
    ```sh
