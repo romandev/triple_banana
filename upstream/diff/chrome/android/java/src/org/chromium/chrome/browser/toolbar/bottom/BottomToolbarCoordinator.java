@@ -10,20 +10,24 @@ import android.view.View.OnLongClickListener;
 import android.view.ViewGroup;
 import android.view.ViewStub;
 
+import org.chromium.base.ObservableSupplier;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.ThemeColorProvider;
-import org.chromium.chrome.browser.appmenu.AppMenuButtonHelper;
+import org.chromium.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
+import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
+import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
-import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
+import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
 
 /**
  * The root coordinator for the bottom toolbar. It has two sub-components: the browsing mode bottom
  * toolbar and the tab switcher mode bottom toolbar.
  */
-public class BottomToolbarCoordinator {
+class BottomToolbarCoordinator {
+    /** The browsing mode bottom toolbar component */
     private final org.banana.cake.interfaces.BananaBottomToolbarController mBrowsingModeCoordinator;
 
     /** The tab switcher mode bottom toolbar component */
@@ -34,6 +38,13 @@ public class BottomToolbarCoordinator {
 
     /** A provider that notifies components when the theme color changes.*/
     private final ThemeColorProvider mThemeColorProvider;
+
+    /** The overview mode manager. */
+    private OverviewModeBehavior mOverviewModeBehavior;
+    private OverviewModeObserver mOverviewModeObserver;
+
+    /** The activity tab provider. */
+    private ActivityTabProvider mTabProvider;
 
     /**
      * Build the coordinator that manages the bottom toolbar.
@@ -46,7 +57,8 @@ public class BottomToolbarCoordinator {
      */
     BottomToolbarCoordinator(ViewStub stub, ActivityTabProvider tabProvider,
             OnClickListener homeButtonListener, OnClickListener searchAcceleratorListener,
-            OnClickListener shareButtonListener, OnLongClickListener tabSwitcherLongClickListener,
+            ObservableSupplier<OnClickListener> shareButtonListenerSupplier,
+            OnLongClickListener tabsSwitcherLongClickListner,
             ThemeColorProvider themeColorProvider) {
         View root = stub.inflate();
 
@@ -57,6 +69,7 @@ public class BottomToolbarCoordinator {
         mTabSwitcherModeStub = root.findViewById(R.id.bottom_toolbar_tab_switcher_mode_stub);
 
         mThemeColorProvider = themeColorProvider;
+        mTabProvider = tabProvider;
     }
 
     /**
@@ -86,7 +99,7 @@ public class BottomToolbarCoordinator {
                 incognitoStateProvider);
         mTabSwitcherModeCoordinator = new TabSwitcherBottomToolbarCoordinator(mTabSwitcherModeStub,
                 topToolbarRoot, incognitoStateProvider, mThemeColorProvider, newTabClickListener,
-                closeTabsClickListener, menuButtonHelper, overviewModeBehavior, tabCountProvider);
+                closeTabsClickListener, menuButtonHelper, tabCountProvider);
     }
 
     /**
@@ -99,34 +112,6 @@ public class BottomToolbarCoordinator {
     }
 
     /**
-     * Show the update badge over the bottom toolbar's app menu.
-     */
-    void showAppMenuUpdateBadge() {
-        mBrowsingModeCoordinator.showAppMenuUpdateBadge();
-    }
-
-    /**
-     * Remove the update badge.
-     */
-    void removeAppMenuUpdateBadge() {
-        mBrowsingModeCoordinator.removeAppMenuUpdateBadge();
-    }
-
-    /**
-     * @return Whether the update badge is showing.
-     */
-    boolean isShowingAppMenuUpdateBadge() {
-        return mBrowsingModeCoordinator.isShowingAppMenuUpdateBadge();
-    }
-
-    /**
-     * @return The wrapper for the browsing mode toolbar's app menu button.
-     */
-    MenuButton getMenuButtonWrapper() {
-        return mBrowsingModeCoordinator.getMenuButton();
-    }
-
-    /**
      * Clean up any state when the bottom toolbar is destroyed.
      */
     void destroy() {
@@ -134,6 +119,11 @@ public class BottomToolbarCoordinator {
         if (mTabSwitcherModeCoordinator != null) {
             mTabSwitcherModeCoordinator.destroy();
             mTabSwitcherModeCoordinator = null;
+        }
+        if (mOverviewModeBehavior != null) {
+            mOverviewModeBehavior.removeOverviewModeObserver(mOverviewModeObserver);
+            mOverviewModeBehavior = null;
+            mOverviewModeObserver = null;
         }
         mThemeColorProvider.destroy();
     }

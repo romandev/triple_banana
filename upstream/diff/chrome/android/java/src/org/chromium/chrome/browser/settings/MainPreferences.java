@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences;
+package org.chromium.chrome.browser.settings;
 
 import android.content.Intent;
 import android.os.Build;
@@ -13,25 +13,27 @@ import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.view.View;
 
+import androidx.annotation.VisibleForTesting;
+
 import org.chromium.base.ContextUtils;
-import org.chromium.base.VisibleForTesting;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ChromeFeatureList;
+import org.chromium.chrome.browser.flags.FeatureUtilities;
 import org.chromium.chrome.browser.net.spdyproxy.DataReductionProxySettings;
 import org.chromium.chrome.browser.night_mode.NightModeUtils;
 import org.chromium.chrome.browser.offlinepages.prefetch.PrefetchConfiguration;
 import org.chromium.chrome.browser.partnercustomizations.HomepageManager;
 import org.chromium.chrome.browser.password_manager.ManagePasswordsReferrer;
-import org.chromium.chrome.browser.preferences.autofill_assistant.AutofillAssistantPreferences;
-import org.chromium.chrome.browser.preferences.datareduction.DataReductionPreferenceFragment;
-import org.chromium.chrome.browser.preferences.developer.DeveloperPreferences;
-import org.chromium.chrome.browser.preferences.sync.SignInPreference;
-import org.chromium.chrome.browser.preferences.sync.SyncPreferenceUtils;
+import org.chromium.chrome.browser.password_manager.PasswordManagerLauncher;
 import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
+import org.chromium.chrome.browser.settings.autofill_assistant.AutofillAssistantPreferences;
+import org.chromium.chrome.browser.settings.datareduction.DataReductionPreferenceFragment;
+import org.chromium.chrome.browser.settings.developer.DeveloperSettings;
+import org.chromium.chrome.browser.settings.sync.SignInPreference;
+import org.chromium.chrome.browser.settings.sync.SyncPreferenceUtils;
 import org.chromium.chrome.browser.signin.IdentityServicesProvider;
 import org.chromium.chrome.browser.signin.SigninManager;
 import org.chromium.chrome.browser.sync.ProfileSyncService;
-import org.chromium.chrome.browser.util.FeatureUtilities;
 import org.chromium.components.search_engines.TemplateUrl;
 import org.chromium.components.search_engines.TemplateUrlService;
 
@@ -87,7 +89,7 @@ public class MainPreferences
     }
 
     private void createPreferences() {
-        PreferenceUtils.addPreferencesFromResource(this, R.xml.main_preferences);
+        SettingsUtils.addPreferencesFromResource(this, R.xml.main_preferences);
         cachePreferences();
 
         updatePasswordsPreference();
@@ -166,7 +168,7 @@ public class MainPreferences
             removePreferenceIfPresent(PREF_UI_THEME);
         }
 
-        if (DeveloperPreferences.shouldShowDeveloperPreferences()) {
+        if (DeveloperSettings.shouldShowDeveloperSettings()) {
             addPreferenceIfAbsent(PREF_DEVELOPER);
         } else {
             removePreferenceIfPresent(PREF_DEVELOPER);
@@ -209,7 +211,7 @@ public class MainPreferences
     private void updatePasswordsPreference() {
         Preference passwordsPreference = findPreference(PREF_SAVED_PASSWORDS);
         passwordsPreference.setOnPreferenceClickListener(preference -> {
-            PreferencesLauncher.showPasswordSettings(
+            PasswordManagerLauncher.showPasswordSettings(
                     getActivity(), ManagePasswordsReferrer.CHROME_SETTINGS);
             return true;
         });

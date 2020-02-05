@@ -24,10 +24,10 @@ ModuleService& ModuleService::Get() {
 #if defined(OS_ANDROID)
 service_manager::InterfaceProvider* ModuleService::GetJavaInterfaces() {
   if (!java_interface_provider_) {
-    service_manager::mojom::InterfaceProviderPtr provider;
+    mojo::PendingRemote<service_manager::mojom::InterfaceProvider> provider;
     modules::Java_InterfaceRegistrar_createInterfaceRegistryForContext(
         base::android::AttachCurrentThread(),
-        mojo::MakeRequest(&provider).PassMessagePipe().release().value());
+        provider.InitWithNewPipeAndPassReceiver().PassPipe().release().value());
     java_interface_provider_ =
         std::make_unique<service_manager::InterfaceProvider>();
     java_interface_provider_->Bind(std::move(provider));

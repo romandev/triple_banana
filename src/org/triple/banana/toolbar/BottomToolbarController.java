@@ -18,7 +18,6 @@ import org.triple.banana.R;
 // TODO(zino): We should remove this upstream dependency.
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.ThemeColorProvider;
-import org.chromium.chrome.browser.appmenu.AppMenuButtonHelper;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
 import org.chromium.chrome.browser.ntp.NewTabPage;
 import org.chromium.chrome.browser.partnercustomizations.HomepageManager;
@@ -27,6 +26,7 @@ import org.chromium.chrome.browser.tab.TabThemeColorHelper;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
+import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
 import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.lang.ref.WeakReference;
@@ -107,7 +107,6 @@ public class BottomToolbarController
         View view = View.inflate(BananaContextUtils.get().getApplicationContext(),
                 R.layout.toolbar_menu_button, null);
         mMenuButton = view.findViewById(R.id.menu_button_wrapper);
-        mMenuButton.setWrapperView(view.findViewById(R.id.labeled_menu_button_wrapper));
     }
 
     private void addSpaceView() {

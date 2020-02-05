@@ -2,7 +2,7 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-package org.chromium.chrome.browser.preferences.password;
+package org.chromium.chrome.browser.settings.password;
 
 import android.app.Activity;
 import android.content.Context;
@@ -22,19 +22,22 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.VisibleForTesting;
+
 import org.chromium.base.ApiCompatibilityUtils;
 import org.chromium.base.StrictModeContext;
-import org.chromium.base.VisibleForTesting;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.help.HelpAndFeedback;
-import org.chromium.chrome.browser.preferences.ChromeBaseCheckBoxPreference;
-import org.chromium.chrome.browser.preferences.ChromeBasePreference;
-import org.chromium.chrome.browser.preferences.ChromeSwitchPreference;
+import org.chromium.chrome.browser.password_manager.PasswordManagerLauncher;
+import org.chromium.chrome.browser.preferences.Pref;
 import org.chromium.chrome.browser.preferences.PrefServiceBridge;
-import org.chromium.chrome.browser.preferences.PreferencesLauncher;
-import org.chromium.chrome.browser.preferences.SearchUtils;
-import org.chromium.chrome.browser.preferences.TextMessagePreference;
 import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.chrome.browser.settings.ChromeBaseCheckBoxPreference;
+import org.chromium.chrome.browser.settings.ChromeBasePreference;
+import org.chromium.chrome.browser.settings.ChromeSwitchPreference;
+import org.chromium.chrome.browser.settings.PreferencesLauncher;
+import org.chromium.chrome.browser.settings.SearchUtils;
+import org.chromium.chrome.browser.settings.TextMessagePreference;
 import org.chromium.ui.text.SpanApplier;
 
 import java.util.Locale;
@@ -400,11 +403,13 @@ public class SavePasswordsPreferences
         mSavePasswordsSwitch.setSummaryOn(R.string.text_on);
         mSavePasswordsSwitch.setSummaryOff(R.string.text_off);
         mSavePasswordsSwitch.setOnPreferenceChangeListener((preference, newValue) -> {
-            PrefServiceBridge.getInstance().setRememberPasswordsEnabled((boolean) newValue);
+            PrefServiceBridge.getInstance().setBoolean(
+                    Pref.REMEMBER_PASSWORDS_ENABLED, (boolean) newValue);
             return true;
         });
-        mSavePasswordsSwitch.setManagedPreferenceDelegate(
-                preference -> PrefServiceBridge.getInstance().isRememberPasswordsManaged());
+        mSavePasswordsSwitch.setManagedPreferenceDelegate(preference
+                -> PrefServiceBridge.getInstance().isManagedPreference(
+                        Pref.REMEMBER_PASSWORDS_ENABLED));
 
         try (StrictModeContext ignored = StrictModeContext.allowDiskReads()) {
             getPreferenceScreen().addPreference(mSavePasswordsSwitch);
@@ -415,7 +420,7 @@ public class SavePasswordsPreferences
         // (e.g. the switch will say "On" when save passwords is really turned off), so
         // .setChecked() should be called after .addPreference()
         mSavePasswordsSwitch.setChecked(
-                PrefServiceBridge.getInstance().isRememberPasswordsEnabled());
+                PrefServiceBridge.getInstance().getBoolean(Pref.REMEMBER_PASSWORDS_ENABLED));
     }
 
     private void createAutoSignInCheckbox() {
@@ -425,18 +430,20 @@ public class SavePasswordsPreferences
         mAutoSignInSwitch.setOrder(ORDER_AUTO_SIGNIN_CHECKBOX);
         mAutoSignInSwitch.setSummary(R.string.passwords_auto_signin_description);
         mAutoSignInSwitch.setOnPreferenceChangeListener((preference, newValue) -> {
-            PrefServiceBridge.getInstance().setPasswordManagerAutoSigninEnabled((boolean) newValue);
+            PrefServiceBridge.getInstance().setBoolean(
+                    Pref.PASSWORD_MANAGER_AUTO_SIGNIN_ENABLED, (boolean) newValue);
             return true;
         });
-        mAutoSignInSwitch.setManagedPreferenceDelegate(
-                preference -> PrefServiceBridge.getInstance().isPasswordManagerAutoSigninManaged());
+        mAutoSignInSwitch.setManagedPreferenceDelegate(preference
+                -> PrefServiceBridge.getInstance().isManagedPreference(
+                        Pref.PASSWORD_MANAGER_AUTO_SIGNIN_ENABLED));
         getPreferenceScreen().addPreference(mAutoSignInSwitch);
-        mAutoSignInSwitch.setChecked(
-                PrefServiceBridge.getInstance().isPasswordManagerAutoSigninEnabled());
+        mAutoSignInSwitch.setChecked(PrefServiceBridge.getInstance().getBoolean(
+                Pref.PASSWORD_MANAGER_AUTO_SIGNIN_ENABLED));
     }
 
     private void displayManageAccountLink() {
-        if (!PreferencesLauncher.isSyncingPasswordsWithoutCustomPassphrase()) {
+        if (!PasswordManagerLauncher.isSyncingPasswordsWithoutCustomPassphrase()) {
             return;
         }
         if (mSearchQuery != null && !mNoPasswords) {
