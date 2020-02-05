@@ -88,7 +88,14 @@ public class BottomToolbarController
                     new ViewGroup.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT));
             toolbarButton.setButtonId(mButtonIdList.get(i));
             toolbarButton.setImageResource(ButtonId.getImageResource(mButtonIdList.get(i)));
-            toolbarButton.setOnClickListener(ButtonId.getOnClickListeners(mButtonIdList.get(i)));
+            if (ButtonId.getOnClickListeners(mButtonIdList.get(i)) != null) {
+                toolbarButton.setOnClickListener(
+                        ButtonId.getOnClickListeners(mButtonIdList.get(i)));
+            }
+            if (ButtonId.getOnClickListeners(mButtonIdList.get(i)) != null) {
+                toolbarButton.setOnLongClickListener(
+                        ButtonId.getOnLongClickListeners(mButtonIdList.get(i)));
+            }
             toolbarButton.setActivityTabProvider(mTabProvider);
             viewGroup.addView(toolbarButton);
             mToolbarButtons.add(toolbarButton);

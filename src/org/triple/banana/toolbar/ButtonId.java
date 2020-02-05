@@ -18,11 +18,10 @@ public enum ButtonId {
     BACK,
     FORWARD,
     SHARE,
-    BOOKMARK_LIST,
+    BOOKMARK,
     NEW_TAB,
     PASSWORD,
     SEARCH,
-    BOOKMARK,
     ADD_SECRET_TAB,
     DOWNLOAD,
     DESKTOP_VIEW,
@@ -36,6 +35,8 @@ public enum ButtonId {
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
+    static EnumMap<ButtonId, View.OnLongClickListener> sOnLongClickListeners =
+            new EnumMap<>(ButtonId.class);
 
     static {
         sOnClickListeners.put(ButtonId.BACK, v -> BananaToolbarManager.get().back());
@@ -43,8 +44,7 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.SHARE, v -> BananaToolbarManager.get().share());
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolbarManager.get().search());
         sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolbarManager.get().addNewTab());
-        sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().addBookmark());
-        sOnClickListeners.put(ButtonId.BOOKMARK_LIST, v -> BananaToolbarManager.get().goBookmark());
+        sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(
                 ButtonId.ADD_SECRET_TAB, v -> BananaToolbarManager.get().addSecretTab());
         sOnClickListeners.put(ButtonId.DOWNLOAD, v -> BananaToolbarManager.get().download());
@@ -60,6 +60,11 @@ public enum ButtonId {
         sOnClickListeners.put(
                 ButtonId.PASSWORD, v -> BananaToolbarManager.get().goPasswordSetting());
         sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolbarManager.get().print());
+
+        sOnLongClickListeners.put(ButtonId.BOOKMARK, v -> {
+            BananaToolbarManager.get().addBookmark();
+            return true;
+        });
     }
 
     public static int getImageResource(ButtonId id) {
@@ -82,9 +87,6 @@ public enum ButtonId {
                 break;
             case BOOKMARK:
                 imageResource = R.drawable.ic_star_border_black_24dp;
-                break;
-            case BOOKMARK_LIST:
-                imageResource = R.drawable.ic_folder_special_black_24dp;
                 break;
             case ADBLOCK:
                 imageResource = R.drawable.ic_remove_circle_outline_black_24dp;
@@ -127,15 +129,10 @@ public enum ButtonId {
     }
 
     public static View.OnClickListener getOnClickListeners(ButtonId id) {
-        View.OnClickListener listener = sOnClickListeners.get(id);
+        return sOnClickListeners.get(id);
+    }
 
-        if (listener == null) {
-            listener = v
-                    -> Toast.makeText(BananaContextUtils.get().getApplicationContext(),
-                                    id.name() + " Clicked", Toast.LENGTH_SHORT)
-                               .show();
-        }
-
-        return listener;
+    public static View.OnLongClickListener getOnLongClickListeners(ButtonId id) {
+        return sOnLongClickListeners.get(id);
     }
 }
