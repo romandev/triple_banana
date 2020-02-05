@@ -41,6 +41,7 @@ function update_upstream_changes() {
   pop_dir
 }
 
+on_rebase=false
 for option in "$@"; do
   case $option in
     --rebase)
