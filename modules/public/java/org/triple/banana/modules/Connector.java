@@ -6,7 +6,6 @@ package org.triple.banana.modules;
 
 import org.chromium.mojo.bindings.InterfaceRequest;
 import org.chromium.mojo.bindings.Interface;
-import org.chromium.mojo.system.MessagePipeHandle;
 import org.chromium.mojo.system.Pair;
 import org.chromium.mojo.system.impl.CoreImpl;
 import org.chromium.content.common.ServiceManagerConnectionImpl;

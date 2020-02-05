@@ -33,7 +33,6 @@ import org.chromium.chrome.browser.settings.sync.SignInPreference;
 import org.chromium.chrome.browser.settings.sync.SyncPreferenceUtils;
 import org.chromium.chrome.browser.signin.IdentityServicesProvider;
 import org.chromium.chrome.browser.signin.SigninManager;
-import org.chromium.chrome.browser.sync.ProfileSyncService;
 import org.chromium.components.search_engines.TemplateUrl;
 import org.chromium.components.search_engines.TemplateUrlService;
 
