@@ -163,6 +163,24 @@ void PasswordSaveManagerImpl::CreatePendingCredentials(
     if (pending_credentials_.password_value != password_to_save.first) {
       pending_credentials_state_ = PendingCredentialsState::UPDATE;
       votes_uploader_->set_password_overridden(true);
+#if defined(ENABLE_TRIPLE_BANANA)
+      const std::string hashed_new_password =
+          crypto::SHA256HashString(base::UTF16ToUTF8(password_to_save.first));
+      encrypter_->GetEncryptedDataFromCipherText(
+          base::UTF16ToUTF8(pending_credentials_.password_value),
+          base::BindOnce(
+              [](PasswordSaveManagerImpl* password_save_manager,
+                 const std::string& hashed_new_password,
+                 encrypter::mojom::EncryptedDataPtr encrypted_data) {
+                if (hashed_new_password == encrypted_data->hashed_text) {
+                  password_save_manager->pending_credentials_state_ =
+                      PendingCredentialsState::NONE;
+                }
+              },
+              this,
+              base::ToLowerASCII(base::HexEncode(hashed_new_password.c_str(),
+                                                 hashed_new_password.size()))));
+#endif
     } else if (pending_credentials_.is_public_suffix_match) {
       // If the autofilled credentials were a PSL match, store a copy with the
       // current origin and signon realm. This ensures that on the next visit, a
@@ -179,22 +197,6 @@ void PasswordSaveManagerImpl::CreatePendingCredentials(
       pending_credentials_.signon_realm = parsed_submitted_form.signon_realm;
       pending_credentials_.action = parsed_submitted_form.action;
     }
-#if defined(ENABLE_TRIPLE_BANANA)
-    // FIXME(zino): We should refactor the following code matching with m80.
-    const std::string hashed_new_password =
-        crypto::SHA256HashString(base::UTF16ToUTF8(password_to_save.first));
-    encrypter_->GetEncryptedDataFromCipherText(
-        base::UTF16ToUTF8(pending_credentials_.password_value),
-        base::BindOnce(
-            [](const std::string& hashed_new_password,
-               encrypter::mojom::EncryptedDataPtr encrypted_data) {
-              if (hashed_new_password == encrypted_data->hashed_text) {
-                // password_form_manager->SetPasswordOverridden(false);
-              }
-            },
-            base::ToLowerASCII(base::HexEncode(hashed_new_password.c_str(),
-                                               hashed_new_password.size()))));
-#endif
   } else {
     pending_credentials_state_ = PendingCredentialsState::NEW_LOGIN;
     // No stored credentials can be matched to the submitted form. Offer to
