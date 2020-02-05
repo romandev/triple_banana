@@ -14,7 +14,6 @@ import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
 
 import org.chromium.base.ContextUtils;
-import org.chromium.chrome.browser.payments.SslValidityChecker;
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
 

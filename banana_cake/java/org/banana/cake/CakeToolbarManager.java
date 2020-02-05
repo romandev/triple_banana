@@ -6,7 +6,6 @@ package org.banana.cake;
 
 import android.app.Activity;
 
-import org.banana.cake.interfaces.BananaToolbarEditor;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 

@@ -8,7 +8,6 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.AssetManager;
 import android.support.v4.content.ContextCompat;
-import android.util.Log;
 
 import org.banana.cake.interfaces.BananaContextUtils;
 import org.triple.banana.adblock.mojom.FilterLoader;
@@ -19,7 +18,6 @@ import org.chromium.services.service_manager.InterfaceFactory;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStream;
-import java.nio.file.Files;
 
 public class FilterLoaderImpl implements FilterLoader {
     @SuppressLint("SdCardPath")

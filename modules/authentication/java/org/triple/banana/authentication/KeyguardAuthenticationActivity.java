@@ -4,13 +4,11 @@
 
 package org.triple.banana.authentication;
 
-import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 
 public class KeyguardAuthenticationActivity extends TranslucentActivity {
     private static final int REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS = 1;

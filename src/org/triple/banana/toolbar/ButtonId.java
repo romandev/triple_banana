@@ -6,11 +6,8 @@ package org.triple.banana.toolbar;
 
 import android.view.View;
 
-import org.banana.cake.interfaces.BananaContextUtils;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
-
-import org.chromium.ui.widget.Toast;
 
 import java.util.EnumMap;
 

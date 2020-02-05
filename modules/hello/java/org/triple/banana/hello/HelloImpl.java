@@ -6,7 +6,6 @@ package org.triple.banana.hello;
 
 import org.triple.banana.hello.mojom.Hello;
 
-import org.chromium.chrome.browser.payments.SslValidityChecker;
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
 

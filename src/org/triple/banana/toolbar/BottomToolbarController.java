@@ -19,15 +19,12 @@ import org.triple.banana.R;
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.ThemeColorProvider;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.ntp.NewTabPage;
-import org.chromium.chrome.browser.partnercustomizations.HomepageManager;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.tab.TabThemeColorHelper;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
 import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
-import org.chromium.ui.modelutil.PropertyModelChangeProcessor;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
