@@ -1,0 +1,23 @@
+diff --git tb/build/config/BUILD.gn tb_diff/build/config/BUILD.gn
+--- tb/build/config/BUILD.gn
++++ tb_diff/build/config/BUILD.gn
+@@ -24,6 +24,8 @@ if (is_android) {
+   import("//build/config/android/abi.gni")
+ }
+ 
++import("//triple_banana/build/config/triple_banana_build.gni")
++
+ # ==============================================
+ #   PLEASE DO NOT ADD MORE THINGS TO THIS LIST
+ # ==============================================
+@@ -108,6 +110,10 @@ config("feature_flags") {
+     defines += [ "GOOGLE_CHROME_BUILD" ]
+   }
+ 
++  if (enable_triple_banana) {
++    defines += triple_banana_build_flags
++  }
++
+   # ==============================================
+   #   PLEASE DO NOT ADD MORE THINGS TO THIS LIST
+   # ==============================================

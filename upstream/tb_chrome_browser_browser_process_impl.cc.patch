@@ -1,0 +1,24 @@
+diff --git tb/chrome/browser/browser_process_impl.cc tb_diff/chrome/browser/browser_process_impl.cc
+--- tb/chrome/browser/browser_process_impl.cc
++++ tb_diff/chrome/browser/browser_process_impl.cc
+@@ -1275,6 +1275,20 @@ void BrowserProcessImpl::CreateSubresourceFilterRulesetService() {
+       std::make_unique<subresource_filter::RulesetService>(
+           local_state(), background_task_runner, indexed_ruleset_base_dir,
+           blocking_task_runner);
++
++#if defined(ENABLE_TRIPLE_BANANA)
++  std::string filter_path;
++  co_begin();
++  filter_path = co_await(const std::string&, filter_loader_->Load);
++  if (filter_path.empty())
++    return;
++  subresource_filter::UnindexedRulesetInfo ruleset_info;
++  ruleset_info.ruleset_path = base::FilePath(filter_path);
++  ruleset_info.content_version = "1.0.0.00000";
++  subresource_filter_ruleset_service_->IndexAndStoreAndPublishRulesetIfNeeded(
++      ruleset_info);
++  co_return();
++#endif
+ }
+ 
+ void BrowserProcessImpl::CreateOptimizationGuideService() {

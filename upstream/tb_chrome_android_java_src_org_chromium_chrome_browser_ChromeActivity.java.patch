@@ -1,0 +1,24 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
+@@ -642,6 +642,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+             }
+ 
+             @Override
++            public void onUrlUpdated(Tab tab) {
++                org.banana.cake.interfaces.BananaTabManager.get().notifyUrlUpdated(tab);
++            }
++
++            @Override
+             public void onCrash(Tab tab) {
+                 postDeferredStartupIfNeeded();
+             }
+@@ -2232,6 +2237,8 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+             RecordUserAction.record("MobileMenuRequestDesktopSite");
+         } else if (id == R.id.reader_mode_prefs_id) {
+             DomDistillerUIUtils.openSettings(currentTab.getWebContents());
++        } else if (id == R.id.toolbar_edit) {
++            org.banana.cake.interfaces.BananaToolbarEditor.get().show(this);
+         } else {
+             return false;
+         }

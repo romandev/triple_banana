@@ -1,0 +1,25 @@
+diff --git tb/chrome/android/java/res/xml/main_preferences.xml tb_diff/chrome/android/java/res/xml/main_preferences.xml
+--- tb/chrome/android/java/res/xml/main_preferences.xml
++++ tb_diff/chrome/android/java/res/xml/main_preferences.xml
+@@ -7,21 +7,6 @@
+     android:orderingFromXml="false">
+ 
+     <PreferenceCategory
+-        android:key="account_section"
+-        android:order="0"
+-        android:title="@string/prefs_section_account"/>
+-    <org.chromium.chrome.browser.settings.sync.SignInPreference
+-        android:key="sign_in"
+-        android:order="1"
+-        android:title="@string/sign_in_to_chrome"/>
+-    <org.chromium.chrome.browser.settings.ChromeBasePreference
+-        android:key="sync_and_services"
+-        android:order="2"
+-        android:layout="@layout/account_management_account_row"
+-        android:title="@string/prefs_sync_and_services"
+-        android:fragment="org.chromium.chrome.browser.settings.sync.SyncAndServicesPreferences"/>
+-
+-    <PreferenceCategory
+         android:key="basics_section"
+         android:order="3"
+         android:title="@string/prefs_section_basics"/>

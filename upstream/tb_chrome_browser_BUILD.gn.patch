@@ -1,0 +1,11 @@
+diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
+--- tb/chrome/browser/BUILD.gn
++++ tb_diff/chrome/browser/BUILD.gn
+@@ -2232,6 +2232,7 @@ jumbo_static_library("browser") {
+     "//third_party/zlib:minizip",
+     "//third_party/zlib/google:compression_utils",
+     "//third_party/zlib/google:zip",
++    "//triple_banana/modules:native",
+     "//ui/accessibility",
+     "//ui/base",
+     "//ui/base:ui_data_pack",

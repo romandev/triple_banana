@@ -1,0 +1,26 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java
+@@ -153,13 +153,6 @@ public class FirstRunActivity extends FirstRunActivityBase implements FirstRunPa
+             notifyAdapter = true;
+         }
+ 
+-        // An optional sign-in page.
+-        if (mFreProperties.getBoolean(SHOW_SIGNIN_PAGE)) {
+-            mPages.add(SigninFirstRunFragment::new);
+-            mFreProgressStates.add(FRE_PROGRESS_SIGNIN_SHOWN);
+-            notifyAdapter = true;
+-        }
+-
+         if (notifyAdapter && mPagerAdapter != null) {
+             mPagerAdapter.notifyDataSetChanged();
+         }
+@@ -185,7 +178,7 @@ public class FirstRunActivity extends FirstRunActivityBase implements FirstRunPa
+     protected View createContentView() {
+         mPager = new FirstRunViewPager(this);
+         mPager.setId(R.id.fre_pager);
+-        mPager.setOffscreenPageLimit(3);
++        mPager.setOffscreenPageLimit(2);
+         return mPager;
+     }
+ 

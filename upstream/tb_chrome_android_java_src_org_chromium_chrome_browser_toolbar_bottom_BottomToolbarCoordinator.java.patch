@@ -1,0 +1,96 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
+@@ -14,10 +14,8 @@ import org.chromium.base.ObservableSupplier;
+ import org.chromium.chrome.R;
+ import org.chromium.chrome.browser.ActivityTabProvider;
+ import org.chromium.chrome.browser.ThemeColorProvider;
+-import org.chromium.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
+ import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
+ import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
+-import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
+ import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
+ import org.chromium.chrome.browser.toolbar.TabCountProvider;
+ import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
+@@ -28,7 +26,7 @@ import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
+  */
+ class BottomToolbarCoordinator {
+     /** The browsing mode bottom toolbar component */
+-    private final BrowsingModeBottomToolbarCoordinator mBrowsingModeCoordinator;
++    private final org.banana.cake.interfaces.BananaBottomToolbarController mBrowsingModeCoordinator;
+ 
+     /** The tab switcher mode bottom toolbar component */
+     private TabSwitcherBottomToolbarCoordinator mTabSwitcherModeCoordinator;
+@@ -62,9 +60,9 @@ class BottomToolbarCoordinator {
+             ThemeColorProvider themeColorProvider) {
+         View root = stub.inflate();
+ 
+-        mBrowsingModeCoordinator = new BrowsingModeBottomToolbarCoordinator(root, tabProvider,
+-                homeButtonListener, searchAcceleratorListener, shareButtonListenerSupplier,
+-                tabsSwitcherLongClickListner);
++        mBrowsingModeCoordinator =
++                org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
++                        root, tabProvider);
+ 
+         mTabSwitcherModeStub = root.findViewById(R.id.bottom_toolbar_tab_switcher_mode_stub);
+ 
+@@ -94,48 +92,12 @@ class BottomToolbarCoordinator {
+             AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
+             TabCountProvider tabCountProvider, IncognitoStateProvider incognitoStateProvider,
+             ViewGroup topToolbarRoot) {
+-        mBrowsingModeCoordinator.initializeWithNative(newTabClickListener, tabSwitcherListener,
+-                menuButtonHelper, tabCountProvider, mThemeColorProvider, incognitoStateProvider,
+-                overviewModeBehavior);
++        mBrowsingModeCoordinator.initializeWithNative(tabSwitcherListener, menuButtonHelper,
++                overviewModeBehavior, tabCountProvider, mThemeColorProvider,
++                incognitoStateProvider);
+         mTabSwitcherModeCoordinator = new TabSwitcherBottomToolbarCoordinator(mTabSwitcherModeStub,
+                 topToolbarRoot, incognitoStateProvider, mThemeColorProvider, newTabClickListener,
+                 closeTabsClickListener, menuButtonHelper, tabCountProvider);
+-
+-        // Do not change bottom bar if StartSurface Single Pane is enabled and HomePage is not
+-        // customized.
+-        if (!ReturnToChromeExperimentsUtil.shouldShowStartSurfaceAsTheHomePage()
+-                && BottomToolbarVariationManager.shouldBottomToolbarBeVisibleInOverviewMode()) {
+-            mOverviewModeBehavior = overviewModeBehavior;
+-            mOverviewModeObserver = new EmptyOverviewModeObserver() {
+-                @Override
+-                public void onOverviewModeStartedShowing(boolean showToolbar) {
+-                    mBrowsingModeCoordinator.getSearchAccelerator().setEnabled(false);
+-                    if (BottomToolbarVariationManager.isShareButtonOnBottom()) {
+-                        mBrowsingModeCoordinator.getShareButton().setEnabled(false);
+-                    }
+-                    if (BottomToolbarVariationManager.isHomeButtonOnBottom()) {
+-                        mBrowsingModeCoordinator.getHomeButton().setEnabled(false);
+-                    }
+-                }
+-
+-                @Override
+-                public void onOverviewModeStartedHiding(
+-                        boolean showToolbar, boolean delayAnimation) {
+-                    mBrowsingModeCoordinator.getSearchAccelerator().setEnabled(true);
+-                    if (BottomToolbarVariationManager.isShareButtonOnBottom()) {
+-                        mBrowsingModeCoordinator.getShareButton().updateButtonEnabledState(
+-                                mTabProvider.get());
+-                    }
+-                    if (BottomToolbarVariationManager.isHomeButtonOnBottom()) {
+-                        mBrowsingModeCoordinator.getHomeButton().updateButtonEnabledState(
+-                                mTabProvider.get());
+-                    }
+-                }
+-            };
+-            if (mOverviewModeBehavior != null) {
+-                mOverviewModeBehavior.addOverviewModeObserver(mOverviewModeObserver);
+-            }
+-        }
+     }
+ 
+     /**
+@@ -145,7 +107,6 @@ class BottomToolbarCoordinator {
+         if (mTabSwitcherModeCoordinator != null) {
+             mTabSwitcherModeCoordinator.showToolbarOnTop(!isVisible);
+         }
+-        mBrowsingModeCoordinator.onVisibilityChanged(isVisible);
+     }
+ 
+     /**

@@ -1,0 +1,11 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
+@@ -1545,6 +1545,7 @@ public class ChromeTabbedActivity extends ChromeActivity implements ScreenshotMo
+                 commandLine.appendSwitchesAndArguments(args);
+             }
+         }
++        org.banana.cake.interfaces.BananaCommandLineInitializer.get().initCommandLine();
+ 
+         supportRequestWindowFeature(Window.FEATURE_ACTION_MODE_OVERLAY);
+ 

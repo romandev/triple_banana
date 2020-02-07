@@ -9,27 +9,20 @@
 . $TOOLS_PATH/common/stack_dir.sh
 
 function get_upstream_change_list() {
-  push_dir $(triple_banana_upstream_base_path)
-  find -type f -printf '%P\n'
-  pop_dir
-}
-
-function make_diff() {
-  local change_file=$1
   push_dir $(triple_banana_upstream_path)
-  diff -ruN base/$change_file diff/$change_file
+  ls $(triple_banana_upstream_path)/*.patch
   pop_dir
 }
 
 function check_patch() {
-  local change_file=$1
-  make_diff $change_file | git apply --check --3way
+  local patch_file=$1
+  git apply --check --3way $patch_file
   return $?
 }
 
 function apply_patch() {
-  local change_file=$1
-  make_diff $change_file | git apply --3way
+  local patch_file=$1
+  git apply --3way $patch_file
   return $?
 }
 

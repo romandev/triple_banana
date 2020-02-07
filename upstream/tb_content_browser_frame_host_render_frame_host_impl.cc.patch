@@ -1,0 +1,13 @@
+diff --git tb/content/browser/frame_host/render_frame_host_impl.cc tb_diff/content/browser/frame_host/render_frame_host_impl.cc
+--- tb/content/browser/frame_host/render_frame_host_impl.cc
++++ tb_diff/content/browser/frame_host/render_frame_host_impl.cc
+@@ -1523,7 +1523,9 @@ void RenderFrameHostImpl::AddMessageToConsole(
+ void RenderFrameHostImpl::ExecuteJavaScript(const base::string16& javascript,
+                                             JavaScriptResultCallback callback) {
+   DCHECK_CURRENTLY_ON(BrowserThread::UI);
++#if !defined(ENABLE_TRIPLE_BANANA)
+   CHECK(CanExecuteJavaScript());
++#endif
+ 
+   const bool wants_result = !callback.is_null();
+   GetNavigationControl()->JavaScriptExecuteRequest(javascript, wants_result,

@@ -1,0 +1,25 @@
+diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
+--- tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
++++ tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
+@@ -72,6 +72,10 @@
+ #endif
+ #endif
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/interfaces.h"
++#endif
++
+ namespace {
+ 
+ void AddDataReductionProxyReceiver(
+@@ -309,6 +313,10 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
+         std::move(host_receiver));
+   }
+ #endif  // BUILDFLAG(ENABLE_PLUGINS)
++
++#if defined(ENABLE_TRIPLE_BANANA)
++  triple_banana::OnBindHostReceiverForRenderer(std::move(receiver));
++#endif
+ }
+ 
+ void ChromeContentBrowserClient::BindHostReceiverForRendererOnIOThread(

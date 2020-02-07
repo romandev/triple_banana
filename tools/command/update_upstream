@@ -8,46 +8,25 @@
 . $TOOLS_PATH/common/path.sh
 . $TOOLS_PATH/common/stack_dir.sh
 
-function get_list_upstream_changes() {
-  push_dir $(chromium_path)
-  git diff refs/tags/$(get_chromium_version) --name-only
+function reset_upstream_patches() {
+  push_dir $(triple_banana_upstream_path)
+  rm -f *.patch
   pop_dir
 }
 
-function reset_upstream_changes() {
-  rm -rf $(triple_banana_upstream_base_path)
-  rm -rf $(triple_banana_upstream_diff_path)
-}
-
-function update_upstream_changes() {
-  local on_rebase=$1
-
-  if $on_rebase; then
-    local base="$(triple_banana_upstream_base_path)/"
-  fi
-
-  echo "Cleaning existing upstream changes..."
-  reset_upstream_changes
-
+function update_upstream_patches() {
   push_dir $(chromium_path)
-  for change in $(get_list_upstream_changes); do
-    echo "Creating upstream changes for $change..."
-    mkdir -p $(triple_banana_upstream_base_path)/$(dirname $change)
-    git show refs/tags/$(get_chromium_version):$change \
-        > $(triple_banana_upstream_base_path)/$change
-    mkdir -p $(triple_banana_upstream_diff_path)/$(dirname $change)
-    cp $base$change $(triple_banana_upstream_diff_path)/$change
-  done
+
+  git diff refs/tags/$(get_chromium_version) \
+      --src-prefix="tb/" \
+      --dst-prefix="tb_diff/" \
+      | sed -r "/^index\ [a-z|0-9]+\.\.[a-z|0-9]+[\ ]?[0-9]*$/d" \
+      > /tmp/triple_banana.patch &&
+  push_dir $(triple_banana_upstream_path) &&
+  splitdiff -a -d /tmp/triple_banana.patch &&
+  pop_dir
+
   pop_dir
 }
 
-on_rebase=false
-for option in "$@"; do
-  case $option in
-    --rebase)
-      on_rebase=true
-    ;;
-esac
-done
-
-update_upstream_changes $on_rebase
+reset_upstream_patches && update_upstream_patches

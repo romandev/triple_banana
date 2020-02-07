@@ -1,0 +1,12 @@
+diff --git tb/components/subresource_filter/content/browser/verified_ruleset_dealer.cc tb_diff/components/subresource_filter/content/browser/verified_ruleset_dealer.cc
+--- tb/components/subresource_filter/content/browser/verified_ruleset_dealer.cc
++++ tb_diff/components/subresource_filter/content/browser/verified_ruleset_dealer.cc
+@@ -39,6 +39,8 @@ base::File VerifiedRulesetDealer::OpenAndSetRulesetFile(
+     SetRulesetFile(file.Duplicate());
+     expected_checksum_ = expected_checksum;
+   }
++  // TODO(zino): We might have to make a callback here to detect when the
++  // ruleset is updated.
+   return file;
+ }
+ 

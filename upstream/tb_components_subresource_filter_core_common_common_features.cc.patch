@@ -1,0 +1,11 @@
+diff --git tb/components/subresource_filter/core/common/common_features.cc tb_diff/components/subresource_filter/core/common/common_features.cc
+--- tb/components/subresource_filter/core/common/common_features.cc
++++ tb_diff/components/subresource_filter/core/common/common_features.cc
+@@ -6,6 +6,6 @@
+ 
+ namespace subresource_filter {
+ 
+-const base::Feature kAdTagging{"AdTagging", base::FEATURE_ENABLED_BY_DEFAULT};
++const base::Feature kAdTagging{"AdTagging", base::FEATURE_DISABLED_BY_DEFAULT};
+ 
+ }  // namespace subresource_filter

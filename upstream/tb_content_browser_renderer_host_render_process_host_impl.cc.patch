@@ -1,0 +1,13 @@
+diff --git tb/content/browser/renderer_host/render_process_host_impl.cc tb_diff/content/browser/renderer_host/render_process_host_impl.cc
+--- tb/content/browser/renderer_host/render_process_host_impl.cc
++++ tb_diff/content/browser/renderer_host/render_process_host_impl.cc
+@@ -3047,6 +3047,9 @@ void RenderProcessHostImpl::AppendRendererCommandLine(
+       switches::kDeviceScaleFactor,
+       base::NumberToString(display::win::GetDPIScale()));
+ #endif
++#if defined(ENABLE_TRIPLE_BANANA)
++  command_line->AppendSwitch(switches::kDisableMediaSuspend);
++#endif
+ 
+   AppendCompositorCommandLineFlags(command_line);
+ 

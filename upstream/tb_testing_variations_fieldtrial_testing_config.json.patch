@@ -1,0 +1,13 @@
+diff --git tb/testing/variations/fieldtrial_testing_config.json tb_diff/testing/variations/fieldtrial_testing_config.json
+--- tb/testing/variations/fieldtrial_testing_config.json
++++ tb_diff/testing/variations/fieldtrial_testing_config.json
+@@ -3671,8 +3671,7 @@
+                 "chromeos",
+                 "linux",
+                 "mac",
+-                "windows",
+-                "android"
++                "windows"
+             ],
+             "experiments": [
+                 {
