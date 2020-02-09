@@ -5,6 +5,8 @@
 package org.triple.banana.toolbar;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
+import android.graphics.Color;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,10 +20,11 @@ import org.triple.banana.R;
 // TODO(zino): We should remove this upstream dependency.
 import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.ThemeColorProvider;
+import org.chromium.chrome.browser.ThemeColorProvider.ThemeColorObserver;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
 import org.chromium.chrome.browser.tab.Tab;
-import org.chromium.chrome.browser.tab.TabThemeColorHelper;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
+import org.chromium.chrome.browser.toolbar.IncognitoStateProvider.IncognitoStateObserver;
 import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
 import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
@@ -29,8 +32,9 @@ import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 
-public class BottomToolbarController
-        implements BananaBottomToolbarController, IToolbarStateChangedObserver {
+public class BottomToolbarController implements BananaBottomToolbarController,
+                                                IToolbarStateChangedObserver, ThemeColorObserver,
+                                                IncognitoStateObserver {
     private WeakReference<ViewGroup> mViewGroup;
     private static final int MAX_BUTTON_SIZE = 6;
 
@@ -43,7 +47,9 @@ public class BottomToolbarController
     private TabCountProvider mTabCountProvider;
     private ThemeColorProvider mThemeColorProvider;
     private OverviewModeBehavior mOverviewModeBehavior;
+    private IncognitoStateProvider mIncognitoStateProvider;
     private boolean mIsInitializeWithNative;
+    private boolean mIsIncognitoMode;
 
     @Override
     public BananaBottomToolbarController init(View root, ActivityTabProvider tabProvider) {
@@ -96,6 +102,10 @@ public class BottomToolbarController
             toolbarButton.setActivityTabProvider(mTabProvider);
             viewGroup.addView(toolbarButton);
             mToolbarButtons.add(toolbarButton);
+            if (mIsIncognitoMode) {
+                toolbarButton.getImageButton().setImageTintList(
+                        ColorStateList.valueOf(Color.WHITE));
+            }
 
             if (i < MAX_BUTTON_SIZE - 1) addSpaceView();
         }
@@ -125,11 +135,12 @@ public class BottomToolbarController
             button.setThemeColorProvider(mThemeColorProvider);
         }
 
+        mThemeColorProvider.addThemeColorObserver(this);
+        mIncognitoStateProvider.addIncognitoStateObserverAndTrigger(this);
+
         assert mMenuButtonHelper != null;
         mMenuButton.setAppMenuButtonHelper(mMenuButtonHelper);
         mMenuButton.setThemeColorProvider(mThemeColorProvider);
-
-        TabThemeColorHelper.get(mTabProvider.get()).updateIfNeeded(false);
     }
 
     @Override
@@ -143,8 +154,19 @@ public class BottomToolbarController
         mTabCountProvider = tabCountProvider;
         mThemeColorProvider = themeColorProvider;
         mOverviewModeBehavior = overviewModeBehavior;
+        mIncognitoStateProvider = incognitoStateProvider;
 
         buttonInitializeWithNative();
+    }
+
+    @Override
+    public void onThemeColorChanged(int primaryColor, boolean shouldAnimate) {
+        mViewGroup.get().setBackgroundColor(primaryColor);
+    }
+
+    @Override
+    public void onIncognitoStateChanged(boolean isIncognito) {
+        mIsIncognitoMode = isIncognito;
     }
 
     /**
@@ -198,6 +220,17 @@ public class BottomToolbarController
     @Override
     public void destroy() {
         buttonDestroy();
+
+        if (mThemeColorProvider != null) {
+            mThemeColorProvider.removeThemeColorObserver(this);
+            mThemeColorProvider = null;
+        }
+
+        if (mIncognitoStateProvider != null) {
+            mIncognitoStateProvider.removeObserver(this);
+            mIncognitoStateProvider = null;
+        }
+
         ToolbarStateModel.getInstance().removeObserver(this);
     }
 }
