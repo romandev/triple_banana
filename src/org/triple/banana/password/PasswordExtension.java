@@ -10,17 +10,13 @@ import android.support.v7.preference.SwitchPreferenceCompat;
 
 import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;
-import org.triple.banana.authentication.AuthenticationManagerImpl;
-import org.triple.banana.authentication.mojom.AuthenticationManager;
+import org.triple.banana.authentication.Authenticator;
 
 public class PasswordExtension implements BananaPasswordExtension {
     public static final String PREF_AUTHENTICATION_SWITCH = "authentication_switch";
     private static final int ORDER_SWITCH = 0;
-    private static AuthenticationManager authenticationManager;
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
-        if (authenticationManager == null)
-            authenticationManager = new AuthenticationManagerImpl.Factory().createImpl();
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
         authenticationSwitch.setKey(PREF_AUTHENTICATION_SWITCH);
         authenticationSwitch.setOrder(ORDER_SWITCH);
@@ -31,9 +27,9 @@ public class PasswordExtension implements BananaPasswordExtension {
         authenticationSwitch.setSummaryOff(context.getResources().getString(R.string.text_off));
         authenticationSwitch.setOnPreferenceChangeListener((preference, newValue) -> {
             if (authenticationSwitch.isChecked()) {
-                authenticationManager.authenticate((result) -> {
+                Authenticator.get().authenticate(result -> {
                     if (result) {
-                        authenticationSwitch.setChecked((boolean) newValue);
+                        authenticationSwitch.setChecked(false);
                     }
                 });
                 return false;
