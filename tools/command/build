@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+# Copyright 2019 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+. $TOOLS_PATH/common/chromium.sh
+. $TOOLS_PATH/common/path.sh
+. $TOOLS_PATH/common/stack_dir.sh
+
+function gn_gen() {
+  local build_target=$1
+  local use_goma=$2
+  local gn_args=$(cat $(triple_banana_build_gn_path)/$build_target.gn)
+
+  if [ "$use_goma" = true ]; then
+    gn_args="$gn_args use_goma = true goma_dir = \"$GOMA_DIR\""
+  fi
+
+  push_dir $(chromium_path)
+  gn gen out/$build_target --args="$gn_args"
+  pop_dir
+}
+
+function ninja_build() {
+  local build_target=$1
+  local job_flags=$1
+
+  push_dir $(chromium_path)
+  autoninja $job_flags -C out/$build_target triple_banana
+  pop_dir
+}
+
+function triple_banana_build() {
+  local build_target=$1
+}
+
+build_target="debug"
+
+for option in "$@"; do
+  case $option in
+    --goma)
+      use_goma=true
+      shift
+    ;;
+    --release)
+      build_target="release"
+      shift
+    ;;
+    --no-gen)
+      disable_gn_gen=true
+      shift
+    ;;
+    -j)
+      job_flags="$1 $2"
+      shift 2
+    ;;
+esac
+done
+
+if [ "$disable_gn_gen" != true ]; then
+  echo "Configuration for out/$build_target build..."
+  gn_gen $build_target $use_goma
+fi
+ninja_build $build_target $job_flags
+
+

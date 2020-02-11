@@ -12,6 +12,10 @@ function triple_banana_path() {
   echo $(realpath $(triple_banana_tools_path)/..)
 }
 
+function triple_banana_build_gn_path() {
+  echo $(triple_banana_path)/build/gn
+}
+
 function triple_banana_command_path() {
   echo $(triple_banana_tools_path)/command
 }

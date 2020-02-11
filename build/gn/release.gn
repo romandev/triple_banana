@@ -1,0 +1,14 @@
+# Copyright 2020 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+# Please keep alphabetical order
+android_channel = "stable"
+debuggable_apks=false
+enable_triple_banana = true
+fieldtrial_testing_like_official_build = true
+is_component_build = false
+is_debug = false
+is_official_build = true
+target_os = "android"
+use_official_google_api_keys = false
