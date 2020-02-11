@@ -4,14 +4,12 @@
 
 package org.triple.banana.authentication;
 
-import android.app.Activity;
-
 import org.triple.banana.base.InterActivity;
 
 /**
- * AuthenticatorBaseActivity
+ * BaseActivity
  */
-public class AuthenticatorBaseActivity extends InterActivity<Object, Boolean> {
+public class BaseActivity extends InterActivity<Object, Boolean> {
     @Override
     public void finish() {
         super.finish();

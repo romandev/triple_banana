@@ -20,7 +20,7 @@ import org.triple.banana.R;
 
 @SuppressLint("Override")
 @TargetApi(Build.VERSION_CODES.P)
-public class BiometricPromptActivity extends AuthenticatorBaseActivity {
+public class BiometricPromptActivity extends BaseActivity {
     private AlertDialog mLockoutDialog;
     private CancellationSignal mCancellationSignal;
 

@@ -10,7 +10,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
-public class KeyguardActivity extends AuthenticatorBaseActivity {
+public class KeyguardActivity extends BaseActivity {
     private static final int REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS = 1;
 
     @Override

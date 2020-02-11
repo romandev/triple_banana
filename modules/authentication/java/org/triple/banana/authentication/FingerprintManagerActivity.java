@@ -22,7 +22,7 @@ import android.widget.TextView;
 import org.triple.banana.R;
 
 @TargetApi(Build.VERSION_CODES.M)
-public class FingerprintManagerActivity extends AuthenticatorBaseActivity {
+public class FingerprintManagerActivity extends BaseActivity {
     private static final long ERROR_TIMEOUT_MILLIS = 1600;
     private final Handler mHandler = new Handler();
 

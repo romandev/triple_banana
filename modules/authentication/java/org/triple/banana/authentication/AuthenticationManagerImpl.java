@@ -4,17 +4,12 @@
 
 package org.triple.banana.authentication;
 
-import android.app.KeyguardManager;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.os.Build;
-import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 
+import org.banana.cake.interfaces.BananaContextUtils;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
-import org.triple.banana.base.InterActivity;
 
-import org.chromium.base.ContextUtils;
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
 
@@ -26,60 +21,24 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         if (isRunning()) return;
 
         sCallback = callback;
-        startAuthenticationActivity();
+
+        if (!isAuthenticationEnabled()) {
+            // TODO(#169): Remove all saved data when biometric and keyguard data is
+            // unregistered
+            handleResult(true);
+        }
+
+        Authenticator.get().authenticate(AuthenticationManagerImpl::handleResult);
     }
 
     private static boolean isRunning() {
         return sCallback != null;
     }
 
-    private void startAuthenticationActivity() {
-        if (!isAuthenticationEnabled()) {
-            // TODO(#169): Remove all saved data when biometric and keyguard data is
-            // unregistered
-            handleResult(true);
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
-                startAuthenticationActivity(BiometricPromptActivity.class);
-            } else if (isKeyguardSecured()) {
-                startAuthenticationActivity(KeyguardActivity.class);
-            } else {
-                // Fallback
-                handleResult(false);
-            }
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()
-                    && isKeyguardSecured()) {
-                startAuthenticationActivity(FingerprintManagerActivity.class);
-            } else if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
-                startAuthenticationActivity(FingerprintManagerActivity.class);
-            } else if (isKeyguardSecured()) {
-                startAuthenticationActivity(KeyguardActivity.class);
-            } else {
-                // Fallback
-                handleResult(false);
-            }
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            if (isKeyguardSecured()) {
-                startAuthenticationActivity(KeyguardActivity.class);
-            } else {
-                // Fallback
-                handleResult(false);
-            }
-        } else {
-            // If the user's device can't support any authenticator, just calls handleResult as
-            // follows.
-            handleResult(false);
-        }
-    }
-
-    private void startAuthenticationActivity(Class activityClass) {
-        InterActivity.start(activityClass, new Object(), AuthenticationManagerImpl::handleResult);
-    }
-
     private boolean isAuthenticationEnabled() {
-        SharedPreferences pref = ContextUtils.getApplicationContext().getSharedPreferences(
-                "org.triple.banana_preferences", Context.MODE_PRIVATE);
+        SharedPreferences pref =
+                BananaContextUtils.get().getApplicationContext().getSharedPreferences(
+                        "org.triple.banana_preferences", Context.MODE_PRIVATE);
         return pref.getBoolean("authentication_switch", false);
     }
 
@@ -87,22 +46,6 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         if (!isRunning()) return;
         sCallback.call(result);
         sCallback = null;
-    }
-
-    private boolean isFingerPrintSupportedDevice() {
-        Context context = ContextUtils.getApplicationContext();
-        return FingerprintManagerCompat.from(context).isHardwareDetected();
-    }
-
-    private boolean isBiometricDataRegistered() {
-        Context context = ContextUtils.getApplicationContext();
-        return FingerprintManagerCompat.from(context).hasEnrolledFingerprints();
-    }
-
-    private boolean isKeyguardSecured() {
-        Context context = ContextUtils.getApplicationContext();
-        return ((KeyguardManager) context.getSystemService(Context.KEYGUARD_SERVICE))
-                .isKeyguardSecure();
     }
 
     @Override
