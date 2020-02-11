@@ -10,7 +10,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
-public class KeyguardAuthenticationActivity extends TranslucentActivity {
+public class KeyguardActivity extends AuthenticatorBaseActivity {
     private static final int REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS = 1;
 
     @Override
@@ -38,7 +38,7 @@ public class KeyguardAuthenticationActivity extends TranslucentActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS) {
-            AuthenticationManagerImpl.handleResult(resultCode == RESULT_OK);
+            handleCallback(resultCode == RESULT_OK);
             finish();
         }
     }

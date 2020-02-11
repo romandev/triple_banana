@@ -22,7 +22,7 @@ import android.widget.TextView;
 import org.triple.banana.R;
 
 @TargetApi(Build.VERSION_CODES.M)
-public class FingerprintManagerAuthenticationActivity extends TranslucentActivity {
+public class FingerprintManagerActivity extends AuthenticatorBaseActivity {
     private static final long ERROR_TIMEOUT_MILLIS = 1600;
     private final Handler mHandler = new Handler();
 
@@ -75,7 +75,7 @@ public class FingerprintManagerAuthenticationActivity extends TranslucentActivit
             mCancellationSignal.cancel();
             mCancellationSignal = null;
         }
-        AuthenticationManagerImpl.handleResult(result);
+        handleCallback(result);
         finish();
     }
 

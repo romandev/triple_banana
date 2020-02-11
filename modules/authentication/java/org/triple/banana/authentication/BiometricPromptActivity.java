@@ -20,7 +20,7 @@ import org.triple.banana.R;
 
 @SuppressLint("Override")
 @TargetApi(Build.VERSION_CODES.P)
-public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
+public class BiometricPromptActivity extends AuthenticatorBaseActivity {
     private AlertDialog mLockoutDialog;
     private CancellationSignal mCancellationSignal;
 
@@ -57,7 +57,7 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
         if (mLockoutDialog != null && mLockoutDialog.isShowing()) {
             mLockoutDialog.dismiss();
         }
-        AuthenticationManagerImpl.handleResult(result);
+        handleCallback(result);
         finish();
     }
 
@@ -83,8 +83,7 @@ public class BiometricPromptAuthenticationActivity extends TranslucentActivity {
         }
 
         @Override
-        public void onAuthenticationFailed() {
-        }
+        public void onAuthenticationFailed() {}
     }
 
     private void showLockout(CharSequence lockoutString) {

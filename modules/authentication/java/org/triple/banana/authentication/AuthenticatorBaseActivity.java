@@ -6,10 +6,12 @@ package org.triple.banana.authentication;
 
 import android.app.Activity;
 
+import org.triple.banana.base.InterActivity;
+
 /**
- * Translucent Activity for technical reasons
+ * AuthenticatorBaseActivity
  */
-public class TranslucentActivity extends Activity {
+public class AuthenticatorBaseActivity extends InterActivity<Object, Boolean> {
     @Override
     public void finish() {
         super.finish();

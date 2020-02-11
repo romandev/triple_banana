@@ -12,6 +12,7 @@ import android.os.Build;
 import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 
 import org.triple.banana.authentication.mojom.AuthenticationManager;
+import org.triple.banana.base.InterActivity;
 
 import org.chromium.base.ContextUtils;
 import org.chromium.mojo.system.MojoException;
@@ -39,9 +40,9 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
             handleResult(true);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
-                startAuthenticationActivity(BiometricPromptAuthenticationActivity.class);
+                startAuthenticationActivity(BiometricPromptActivity.class);
             } else if (isKeyguardSecured()) {
-                startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+                startAuthenticationActivity(KeyguardActivity.class);
             } else {
                 // Fallback
                 handleResult(false);
@@ -49,18 +50,18 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()
                     && isKeyguardSecured()) {
-                startAuthenticationActivity(FingerprintManagerAuthenticationActivity.class);
+                startAuthenticationActivity(FingerprintManagerActivity.class);
             } else if (isFingerPrintSupportedDevice() && isBiometricDataRegistered()) {
-                startAuthenticationActivity(FingerprintManagerAuthenticationActivity.class);
+                startAuthenticationActivity(FingerprintManagerActivity.class);
             } else if (isKeyguardSecured()) {
-                startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+                startAuthenticationActivity(KeyguardActivity.class);
             } else {
                 // Fallback
                 handleResult(false);
             }
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             if (isKeyguardSecured()) {
-                startAuthenticationActivity(KeyguardAuthenticationActivity.class);
+                startAuthenticationActivity(KeyguardActivity.class);
             } else {
                 // Fallback
                 handleResult(false);
@@ -73,10 +74,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
     }
 
     private void startAuthenticationActivity(Class activityClass) {
-        Context context = ContextUtils.getApplicationContext();
-        Intent intent = new Intent(context, activityClass);
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
+        InterActivity.start(activityClass, new Object(), AuthenticationManagerImpl::handleResult);
     }
 
     private boolean isAuthenticationEnabled() {
