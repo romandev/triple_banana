@@ -6,6 +6,7 @@ package org.triple.banana;
 
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaTabManager;
+import org.triple.banana.media.MediaSuspendController;
 
 public class TripleBananaApplication extends BananaApplication {
     static {

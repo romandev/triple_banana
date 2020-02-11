@@ -42,12 +42,54 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 
 android_library("triple_banana_java") {
   java_files = [
+    # banana_cake layer
+    "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeContextUtils.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeTab.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeTabManager.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeToolbarManager.java",
+
+    # src
     "//triple_banana/src/org/triple/banana/CommandLineInitializer.java",
     "//triple_banana/src/org/triple/banana/InterfaceProvider.java",
-    "//triple_banana/src/org/triple/banana/MediaSuspendController.java",
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
+
+    # adblock
+    "//triple_banana/src/org/triple/banana/adblock/FilterLoaderImpl.java",
+
+    # authentication
+    "//triple_banana/src/org/triple/banana/authentication/AuthenticationManagerImpl.java",
+    "//triple_banana/src/org/triple/banana/authentication/Authenticator.java",
+    "//triple_banana/src/org/triple/banana/authentication/ActivityBasedBackend.java",
+    "//triple_banana/src/org/triple/banana/authentication/Backend.java",
+    "//triple_banana/src/org/triple/banana/authentication/BaseActivity.java",
+    "//triple_banana/src/org/triple/banana/authentication/BiometricPromptActivity.java",
+    "//triple_banana/src/org/triple/banana/authentication/FallbackBackend.java",
+    "//triple_banana/src/org/triple/banana/authentication/FingerprintManagerActivity.java",
+    "//triple_banana/src/org/triple/banana/authentication/KeyguardActivity.java",
+
+    # base
     "//triple_banana/src/org/triple/banana/base/InterActivity.java",
+
+    # encrypter
+    "//triple_banana/src/org/triple/banana/encrypter/Encrypter.java",
+    "//triple_banana/src/org/triple/banana/encrypter/EncrypterFactory.java",
+    "//triple_banana/src/org/triple/banana/encrypter/EncrypterManagerImpl.java",
+    "//triple_banana/src/org/triple/banana/encrypter/FakeEncrypter.java",
+    "//triple_banana/src/org/triple/banana/encrypter/KeyStoreEncrypter.java",
+
+    # hello
+    "//triple_banana/src/org/triple/banana/hello/HelloImpl.java",
+
+    # media
+    "//triple_banana/src/org/triple/banana/media/MediaSuspendController.java",
+
+    # password
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",
+
+    # toolbar
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarButtonDecoration.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
     "//triple_banana/src/org/triple/banana/toolbar/ButtonId.java",
@@ -66,30 +108,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarStatePreferenceStoreImpl.java",
     "//triple_banana/src/org/triple/banana/toolbar/ViewHolderDragListener.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
-    "//triple_banana/modules/adblock/java/org/triple/banana/adblock/FilterLoaderImpl.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/AuthenticationManagerImpl.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/Authenticator.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/ActivityBasedBackend.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/Backend.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/BaseActivity.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/BiometricPromptActivity.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/FallbackBackend.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/FingerprintManagerActivity.java",
-    "//triple_banana/modules/authentication/java/org/triple/banana/authentication/KeyguardActivity.java",
-    "//triple_banana/modules/encrypter/java/org/triple/banana/encrypter/Encrypter.java",
-    "//triple_banana/modules/encrypter/java/org/triple/banana/encrypter/EncrypterFactory.java",
-    "//triple_banana/modules/encrypter/java/org/triple/banana/encrypter/EncrypterManagerImpl.java",
-    "//triple_banana/modules/encrypter/java/org/triple/banana/encrypter/FakeEncrypter.java",
-    "//triple_banana/modules/encrypter/java/org/triple/banana/encrypter/KeyStoreEncrypter.java",
-    "//triple_banana/modules/hello/java/org/triple/banana/hello/HelloImpl.java",
+
+    # legacy modules
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
-    "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
-    "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
-    "//triple_banana/banana_cake/java/org/banana/cake/CakeContextUtils.java",
-    "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
-    "//triple_banana/banana_cake/java/org/banana/cake/CakeTab.java",
-    "//triple_banana/banana_cake/java/org/banana/cake/CakeTabManager.java",
-    "//triple_banana/banana_cake/java/org/banana/cake/CakeToolbarManager.java",
   ]
   deps = [
     ":triple_banana_resources",
@@ -122,6 +143,6 @@ android_resources("triple_banana_resources") {
 
 android_assets("triple_banana_assets") {
   sources = [
-    "//triple_banana/modules/adblock/filter/Filters",
+    "//triple_banana/src/org/triple/banana/adblock/filter/Filters",
   ]
 }

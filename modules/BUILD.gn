@@ -25,8 +25,6 @@ mojom("mojom") {
 
 source_set("native") {
   sources = [
-    "hello/hello.cc",
-    "hello/hello.h",
     "public/module_service.cc",
     "public/module_service.h",
   ]
