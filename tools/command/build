@@ -24,7 +24,7 @@ function gn_gen() {
 
 function ninja_build() {
   local build_target=$1
-  local job_flags=$1
+  local job_flags=$2
 
   push_dir $(chromium_path)
   autoninja $job_flags -C out/$build_target triple_banana
@@ -51,8 +51,12 @@ for option in "$@"; do
       disable_gn_gen=true
       shift
     ;;
-    -j)
-      job_flags="$1 $2"
+    -j*)
+      if [ "${2:0:1}" = "-" ]; then
+        job_flags="$1"
+      else
+        job_flags="$1$2"
+      fi
       shift 2
     ;;
 esac
