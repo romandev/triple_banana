@@ -6,13 +6,11 @@ package org.banana.cake;
 
 import org.banana.cake.CakeApplicationUtils;
 import org.banana.cake.CakeCommandLine;
-import org.banana.cake.CakeContextUtils;
 import org.banana.cake.CakeTab;
 import org.banana.cake.CakeTabManager;
 import org.banana.cake.CakeToolbarManager;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaCommandLine;
-import org.banana.cake.interfaces.BananaContextUtils;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
 import org.banana.cake.interfaces.BananaTab;
 import org.banana.cake.interfaces.BananaTabManager;
@@ -23,8 +21,6 @@ public class CakeInterfaceProvider {
         BananaInterfaceProvider.register(BananaApplicationUtils.class, CakeApplicationUtils::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaCommandLine.class, CakeCommandLine::new,
-                BananaInterfaceProvider.InstanceType.SINGLETON);
-        BananaInterfaceProvider.register(BananaContextUtils.class, CakeContextUtils::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaTab.class, CakeTab::new);
         BananaInterfaceProvider.register(BananaTabManager.class, CakeTabManager::new,

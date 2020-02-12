@@ -9,7 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -31,7 +31,7 @@ public class InterActivity<Request, Response> extends Activity {
         REQUEST_DATA.put(sRequestId, requestData);
         CALLBACKS.put(sRequestId, callback);
 
-        Context context = BananaContextUtils.get().getApplicationContext();
+        Context context = BananaApplicationUtils.get().getApplicationContext();
         Intent intent = new Intent(context, activityClass);
         intent.putExtra("__request_id", sRequestId);
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

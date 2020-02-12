@@ -17,7 +17,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.R;
 
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ public class CandidateToolbarButtonAdapter
         ToolbarButtonItem toolbarButtonItem = mButtonList.get(i);
 
         int height = (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), 80,
-                BananaContextUtils.get()
+                BananaApplicationUtils.get()
                         .getApplicationContext()
                         .getResources()
                         .getDisplayMetrics());
@@ -49,7 +49,7 @@ public class CandidateToolbarButtonAdapter
         buttonViewHolder.mToolbarButton.getToolbarWrapper().setLayoutParams(
                 new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, height));
         buttonViewHolder.mToolbarButton.getToolbarWrapper().setBackground(
-                BananaContextUtils.get().getApplicationContext().getResources().getDrawable(
+                BananaApplicationUtils.get().getApplicationContext().getResources().getDrawable(
                         R.drawable.round_rect));
         buttonViewHolder.mToolbarButton.getTextView().setVisibility(View.VISIBLE);
 
@@ -87,7 +87,7 @@ public class CandidateToolbarButtonAdapter
         buttonViewHolder.mToolbarButton.getToolbarWrapper().setOnDragListener((v, event) -> {
             switch (event.getAction()) {
                 case DragEvent.ACTION_DRAG_ENDED:
-                    v.setBackground(BananaContextUtils.get()
+                    v.setBackground(BananaApplicationUtils.get()
                                             .getApplicationContext()
                                             .getResources()
                                             .getDrawable(R.drawable.round_rect));
@@ -97,7 +97,7 @@ public class CandidateToolbarButtonAdapter
                             Color.parseColor("#FFFDC534"), PorterDuff.Mode.SRC_IN);
                     break;
                 case DragEvent.ACTION_DRAG_EXITED:
-                    v.setBackground(BananaContextUtils.get()
+                    v.setBackground(BananaApplicationUtils.get()
                                             .getApplicationContext()
                                             .getResources()
                                             .getDrawable(R.drawable.round_rect));

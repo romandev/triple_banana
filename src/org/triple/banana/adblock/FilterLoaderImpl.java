@@ -9,7 +9,7 @@ import android.content.Context;
 import android.content.res.AssetManager;
 import android.support.v4.content.ContextCompat;
 
-import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.adblock.mojom.FilterLoader;
 
 import org.chromium.mojo.system.MojoException;
@@ -23,7 +23,7 @@ public class FilterLoaderImpl implements FilterLoader {
     @SuppressLint("SdCardPath")
     @Override
     public void load(LoadResponse callback) {
-        Context context = BananaContextUtils.get().getApplicationContext();
+        Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return;
 
         AssetManager manager = context.getAssets();
@@ -40,7 +40,7 @@ public class FilterLoaderImpl implements FilterLoader {
 
     @SuppressLint("SdCardPath")
     private String getDataDir() {
-        Context context = BananaContextUtils.get().getApplicationContext();
+        Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return new String();
         File dataDir = ContextCompat.getDataDir(context);
         if (dataDir != null) return dataDir.getAbsolutePath();

@@ -13,8 +13,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaBottomToolbarController;
-import org.banana.cake.interfaces.BananaContextUtils;
 import org.triple.banana.R;
 
 // TODO(zino): We should remove this upstream dependency.
@@ -81,9 +81,9 @@ public class BottomToolbarController implements BananaBottomToolbarController,
 
         for (int i = 0; i < MAX_BUTTON_SIZE; i++) {
             ToolbarButton toolbarButton =
-                    new ToolbarButton(BananaContextUtils.get().getApplicationContext());
+                    new ToolbarButton(BananaApplicationUtils.get().getApplicationContext());
             int width = (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), 56,
-                    BananaContextUtils.get()
+                    BananaApplicationUtils.get()
                             .getApplicationContext()
                             .getResources()
                             .getDisplayMetrics());
@@ -118,15 +118,15 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     }
 
     private void makeToolbarMenuButton() {
-        View view = View.inflate(BananaContextUtils.get().getApplicationContext(),
+        View view = View.inflate(BananaApplicationUtils.get().getApplicationContext(),
                 R.layout.toolbar_menu_button, null);
         mMenuButton = view.findViewById(R.id.menu_button_wrapper);
     }
 
     private void addSpaceView() {
-        LayoutInflater inflater =
-                (LayoutInflater) BananaContextUtils.get().getApplicationContext().getSystemService(
-                        Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater) BananaApplicationUtils.get()
+                                          .getApplicationContext()
+                                          .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         inflater.inflate(R.layout.toolbar_space, mViewGroup.get(), true);
     }
 

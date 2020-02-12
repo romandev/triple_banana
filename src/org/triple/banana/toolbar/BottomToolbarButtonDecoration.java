@@ -10,7 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.util.TypedValue;
 import android.view.View;
 
-import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils;
 
 class BottomToolbarButtonDecoration extends RecyclerView.ItemDecoration {
     private int mSize;
@@ -21,7 +21,7 @@ class BottomToolbarButtonDecoration extends RecyclerView.ItemDecoration {
 
     private int dpToPx(int dp) {
         return (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), dp,
-                BananaContextUtils.get()
+                BananaApplicationUtils.get()
                         .getApplicationContext()
                         .getResources()
                         .getDisplayMetrics());
