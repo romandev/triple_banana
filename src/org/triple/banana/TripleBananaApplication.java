@@ -6,12 +6,15 @@ package org.triple.banana;
 
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaTabManager;
+import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.media.MediaSuspendController;
+import org.triple.banana.password.PasswordExtension;
 
 public class TripleBananaApplication extends BananaApplication {
     static {
         InterfaceProvider.initialize();
         BananaTabManager.get().addObserver(
                 bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
+        SecurityLevelChecker.get().addListener(PasswordExtension::onSecurityLevelChanged);
     }
 }

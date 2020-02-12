@@ -5,37 +5,38 @@
 package org.triple.banana.password;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.SwitchPreferenceCompat;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator;
+import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 
 public class PasswordExtension implements BananaPasswordExtension {
-    public static final String PREF_AUTHENTICATION_SWITCH = "authentication_switch";
-    private static final int ORDER_SWITCH = 0;
+    private static final String PREF_KEY_IS_AUTHENTICATION_ENABLED = "is_authentication_enabled";
+    private static SecurityLevel sCurrentSecurityLevel = SecurityLevel.UNKNOWN;
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
-        authenticationSwitch.setKey(PREF_AUTHENTICATION_SWITCH);
-        authenticationSwitch.setOrder(ORDER_SWITCH);
-        authenticationSwitch.setDefaultValue(false);
+        authenticationSwitch.setKey(PREF_KEY_IS_AUTHENTICATION_ENABLED);
+        authenticationSwitch.setOrder(0);
         authenticationSwitch.setTitle(
                 context.getResources().getString(R.string.prefs_authentication));
         authenticationSwitch.setSummaryOn(context.getResources().getString(R.string.text_on));
         authenticationSwitch.setSummaryOff(context.getResources().getString(R.string.text_off));
+        authenticationSwitch.setEnabled(sCurrentSecurityLevel == SecurityLevel.SECURE);
         authenticationSwitch.setOnPreferenceChangeListener((preference, newValue) -> {
             if (authenticationSwitch.isChecked()) {
                 Authenticator.get().authenticate(result -> {
-                    if (result) {
-                        authenticationSwitch.setChecked(false);
-                    }
+                    if (result) authenticationSwitch.setChecked(false);
                 });
                 return false;
-            } else {
-                return true;
             }
+
+            return true;
         });
         return authenticationSwitch;
     }
@@ -43,5 +44,24 @@ public class PasswordExtension implements BananaPasswordExtension {
     @Override
     public void overridePreferenceScreen(Context context, PreferenceScreen screen) {
         screen.addPreference(createAuthenticationSwitch(context));
+    }
+
+    public static void onSecurityLevelChanged(SecurityLevel newLevel) {
+        sCurrentSecurityLevel = newLevel;
+        if (isAuthenticatorEnabled() && newLevel == SecurityLevel.NON_SECURE) {
+            setAuthenticatorEnabled(false);
+        }
+    }
+
+    private static boolean isAuthenticatorEnabled() {
+        return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
+                PREF_KEY_IS_AUTHENTICATION_ENABLED, false);
+    }
+
+    private static void setAuthenticatorEnabled(boolean value) {
+        SharedPreferences.Editor editor =
+                BananaApplicationUtils.get().getSharedPreferences().edit();
+        editor.putBoolean(PREF_KEY_IS_AUTHENTICATION_ENABLED, value);
+        editor.apply();
     }
 }

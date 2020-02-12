@@ -9,7 +9,7 @@ import android.content.Context;
 import android.os.Build;
 import android.support.v4.hardware.fingerprint.FingerprintManagerCompat;
 
-import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils;
 
 public class Authenticator {
     private static Authenticator sInstance;
@@ -50,15 +50,15 @@ public class Authenticator {
         return new FallbackBackend();
     }
 
-    private static boolean isBiometricsSecure() {
-        Context context = BananaContextUtils.get().getApplicationContext();
+    static boolean isBiometricsSecure() {
+        Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return false;
         return FingerprintManagerCompat.from(context).isHardwareDetected()
                 && FingerprintManagerCompat.from(context).hasEnrolledFingerprints();
     }
 
-    private static boolean isKeyguardSecure() {
-        Context context = BananaContextUtils.get().getApplicationContext();
+    static boolean isKeyguardSecure() {
+        Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return false;
 
         Object manager = context.getSystemService(Context.KEYGUARD_SERVICE);

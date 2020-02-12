@@ -45,6 +45,7 @@ android_library("triple_banana_java") {
     # banana_cake layer
     "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeApplicationUtils.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeContextUtils.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeTab.java",
@@ -69,6 +70,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/authentication/FallbackBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/FingerprintManagerActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/KeyguardActivity.java",
+    "//triple_banana/src/org/triple/banana/authentication/SecurityLevelChecker.java",
 
     # base
     "//triple_banana/src/org/triple/banana/base/InterActivity.java",

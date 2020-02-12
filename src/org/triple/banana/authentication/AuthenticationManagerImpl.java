@@ -7,7 +7,7 @@ package org.triple.banana.authentication;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import org.banana.cake.interfaces.BananaContextUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
 
 import org.chromium.mojo.system.MojoException;
@@ -22,9 +22,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
         sCallback = callback;
 
-        if (!isAuthenticationEnabled()) {
-            // TODO(#169): Remove all saved data when biometric and keyguard data is
-            // unregistered
+        if (!isAuthenticatorEnabled()) {
             handleResult(true);
             return;
         }
@@ -36,11 +34,9 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         return sCallback != null;
     }
 
-    private boolean isAuthenticationEnabled() {
-        SharedPreferences pref =
-                BananaContextUtils.get().getApplicationContext().getSharedPreferences(
-                        "org.triple.banana_preferences", Context.MODE_PRIVATE);
-        return pref.getBoolean("authentication_switch", false);
+    private static boolean isAuthenticatorEnabled() {
+        return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
+                "is_authentication_enabled", false);
     }
 
     static void handleResult(boolean result) {
