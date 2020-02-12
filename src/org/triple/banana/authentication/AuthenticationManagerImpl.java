@@ -26,6 +26,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
             // TODO(#169): Remove all saved data when biometric and keyguard data is
             // unregistered
             handleResult(true);
+            return;
         }
 
         Authenticator.get().authenticate(AuthenticationManagerImpl::handleResult);
