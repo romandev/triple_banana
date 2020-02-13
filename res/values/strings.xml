@@ -9,7 +9,8 @@
     <string name="advanced_features">Advanced Features</string>
     <string name="background_play">Background Play</string>
     <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
-    <string name="drag_and_drop_buttons">Drag and Drop Buttons</string>
+    <string name="banana_extension">Banana Extension</string>
+    <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
     <string name="safe_login">Safe Login</string>
     <string name="safe_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>

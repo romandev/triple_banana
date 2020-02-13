@@ -8,11 +8,11 @@
 
     <PreferenceCategory
         android:order="1"
-        android:title="Banana Extension"/>
+        android:title="@string/banana_extension"/>
     <Preference
         android:fragment="org.triple.banana.settings.ExtensionFeaturesSettings"
         android:order="2"
-        android:title="Banana Extension"/>
+        android:title="@string/banana_extension"/>
     <PreferenceCategory
         android:key="basics_section"
         android:order="3"

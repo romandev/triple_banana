@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<resources>
+    <string name="adblock">광고 차단</string>
+    <string name="adblock_summary">방해가 되거나 사용자를 현혹하는 광고를 차단합니다</string>
+    <string name="advanced_features">고급 기능</string>
+    <string name="background_play">백그라운드 재생</string>
+    <string name="background_play_summary">탭이 활성화 상태가 아니거나 장치의 화면이 꺼져있을 때도 미디어를 재생하도록 합니다</string>
+    <string name="banana_extension">Banana 확장 기능</string>
+    <string name="drag_and_drop_buttons">자주 사용하는 기능을 도구모음에 배치하세요</string>
+    <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
+    <string name="safe_login">안전한 로그인</string>
+    <string name="safe_login_summary">웹 페이지에 로그인을 할 때, 저장된 사용자 비밀번호를 사용하는 경우 추가 인증을 사용합니다 (예: 생체 인증, 패턴, PIN 등)</string>
+    <string name="toolbar_editor">도구모음 편집하기</string>
+    <string name="user_interface">사용자 인터페이스</string>
+</resources>
