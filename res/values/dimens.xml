@@ -7,4 +7,6 @@
     <dimen name="candidate_icon_round_rect_corner_radius">10dp</dimen>
     <dimen name="candidate_icon_round_rect_stroke">1dp</dimen>
     <dimen name="text_size_button">8sp</dimen>
+    <dimen name="layout_outer_margin">10dp</dimen>
+    <dimen name="layout_vertical_margin">20dp</dimen>
 </resources>

@@ -4,5 +4,5 @@
      found in the LICENSE file. -->
 
 <resources>
-    <string name="move_below_buttons_to_bottom_toolbar">Move below buttons to bottom toolbar</string>
+    <string name="drag_and_drop_buttons">Drag and Drop Buttons</string>
 </resources>

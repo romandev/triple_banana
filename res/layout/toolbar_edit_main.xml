@@ -7,54 +7,59 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:clipChildren="false"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clipChildren="false">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
+        style="@style/ModernToolbar"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/toolbar_height_no_shadow"
-        style="@style/ModernToolbar" />
+        android:layout_height="@dimen/toolbar_height_no_shadow" />
 
     <TextView
+        style="@style/TextAppearance.BlackHeadline"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/candidate_recycler_view_wrapper"
-        android:text="@string/move_below_buttons_to_bottom_toolbar"
-        style="@style/TextAppearance.BlackHeadline" />
+        android:layout_marginStart="@dimen/layout_outer_margin"
+        android:layout_marginEnd="@dimen/layout_outer_margin"
+        android:layout_marginBottom="@dimen/layout_vertical_margin"
+        android:gravity="center"
+        android:text="@string/drag_and_drop_buttons" />
 
     <LinearLayout
         android:id="@+id/candidate_recycler_view_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_container_top_shadow"
+        android:layout_marginStart="@dimen/layout_outer_margin"
+        android:layout_marginEnd="@dimen/layout_outer_margin"
+        android:layout_marginBottom="@dimen/layout_vertical_margin"
         android:background="@drawable/round_rect"
-        android:backgroundTint="@color/modern_grey_200_alpha_38"
-        android:layout_marginBottom="30dp"
-        android:layout_above="@+id/bottom_container_top_shadow" >
+        android:backgroundTint="@color/modern_grey_200_alpha_38">
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/candidate_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
             android:layout_marginStart="5dp"
             android:layout_marginEnd="5dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:layout_gravity="bottom"
             android:foregroundGravity="center"
+            android:paddingTop="@dimen/layout_vertical_margin"
+            android:paddingBottom="@dimen/layout_vertical_margin"
             app:layoutManager="GridLayoutManager"
             app:spanCount="4" />
     </LinearLayout>
-
 
     <ImageView
         android:id="@+id/bottom_container_top_shadow"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_shadow_height"
-        android:src="@drawable/modern_toolbar_shadow"
         android:layout_above="@+id/selected_recycler_view"
         android:scaleType="fitXY"
         android:scaleY="-1"
+        android:src="@drawable/modern_toolbar_shadow"
         tools:ignore="ContentDescription" />
 
     <android.support.v7.widget.RecyclerView
@@ -63,6 +68,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/layout_outer_margin"
+        android:layout_marginEnd="@dimen/layout_outer_margin"
         android:foregroundGravity="center"
         app:layoutManager="GridLayoutManager"
         app:spanCount="6" />
