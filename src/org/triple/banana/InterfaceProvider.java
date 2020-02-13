@@ -6,13 +6,13 @@ package org.triple.banana;
 
 import org.banana.cake.interfaces.BananaBottomToolbarController;
 import org.banana.cake.interfaces.BananaCommandLineInitializer;
+import org.banana.cake.interfaces.BananaExtensionSettings;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
 import org.banana.cake.interfaces.BananaPasswordExtension;
-import org.banana.cake.interfaces.BananaToolbarEditor;
 import org.triple.banana.CommandLineInitializer;
 import org.triple.banana.password.PasswordExtension;
+import org.triple.banana.settings.SettingsOpener;
 import org.triple.banana.toolbar.BottomToolbarController;
-import org.triple.banana.toolbar.ToolbarEditor;
 
 class InterfaceProvider {
     static void initialize() {
@@ -20,9 +20,9 @@ class InterfaceProvider {
                 BottomToolbarController::new, BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaCommandLineInitializer.class,
                 CommandLineInitializer::new, BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaExtensionSettings.class, SettingsOpener::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaPasswordExtension.class, PasswordExtension::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
-        BananaInterfaceProvider.register(BananaToolbarEditor.class,
-                ToolbarEditor::new, BananaInterfaceProvider.InstanceType.SINGLETON);
     }
 }

@@ -10,7 +10,7 @@
         android:order="1"
         android:title="Banana Extension"/>
     <Preference
-        android:fragment="org.triple.banana.settings.BananaExtensionSettings"
+        android:fragment="org.triple.banana.settings.ExtensionFeaturesSettings"
         android:order="2"
         android:title="Banana Extension"/>
     <PreferenceCategory

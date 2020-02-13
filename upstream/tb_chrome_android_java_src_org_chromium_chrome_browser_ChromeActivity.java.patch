@@ -17,8 +17,8 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity
              RecordUserAction.record("MobileMenuRequestDesktopSite");
          } else if (id == R.id.reader_mode_prefs_id) {
              DomDistillerUIUtils.openSettings(currentTab.getWebContents());
-+        } else if (id == R.id.toolbar_edit) {
-+            org.banana.cake.interfaces.BananaToolbarEditor.get().show(this);
++        } else if (id == R.id.banana_extension) {
++            org.banana.cake.interfaces.BananaExtensionSettings.get().open(this);
          } else {
              return false;
          }
