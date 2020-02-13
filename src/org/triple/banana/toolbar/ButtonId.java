@@ -8,6 +8,7 @@ import android.view.View;
 
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
+import org.triple.banana.settings.BananaExtensionSettings;
 
 import java.util.EnumMap;
 
@@ -28,7 +29,8 @@ public enum ButtonId {
     VISIT_HISTORY,
     ARCHIVE,
     PRINT,
-    ADBLOCK;
+    ADBLOCK,
+    BANANA_EXTENSION;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -57,6 +59,8 @@ public enum ButtonId {
         sOnClickListeners.put(
                 ButtonId.PASSWORD, v -> BananaToolbarManager.get().goPasswordSetting());
         sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolbarManager.get().print());
+        sOnClickListeners.put(ButtonId.BANANA_EXTENSION,
+                v -> BananaToolbarManager.get().openSettingPage(BananaExtensionSettings.class));
 
         sOnLongClickListeners.put(ButtonId.BOOKMARK, v -> {
             BananaToolbarManager.get().addBookmark();
@@ -108,6 +112,9 @@ public enum ButtonId {
                 break;
             case ARCHIVE:
                 imageResource = R.drawable.ic_archive_black_24dp;
+                break;
+            case BANANA_EXTENSION:
+                imageResource = R.drawable.fre_product_logo;
                 break;
             default:
                 // ADD_SECRET_TAB, ADD_TO_HOME, VISIT_HISTORY

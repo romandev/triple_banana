@@ -27,4 +27,5 @@ public interface BananaToolbarManager {
     void goPasswordSetting();
     void print();
     void goAdblockSetting();
+    void openSettingPage(Class settingFragmentPage);
 }

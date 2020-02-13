@@ -41,6 +41,8 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 }
 
 android_library("triple_banana_java") {
+  proguard_configs = [ "//triple_banana/proguard.flags" ]
+
   java_files = [
     # banana_cake layer
     "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
@@ -90,6 +92,9 @@ android_library("triple_banana_java") {
     # password
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",
 
+    # settings
+    "//triple_banana/src/org/triple/banana/settings/BananaExtensionSettings.java",
+
     # toolbar
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarButtonDecoration.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
@@ -128,6 +133,7 @@ android_library("triple_banana_java") {
     "//third_party/android_deps:com_android_support_preference_v7_java",
     "//third_party/android_deps:com_android_support_recyclerview_v7_java",
     "//third_party/android_deps:com_android_support_support_compat_java",
+    "//third_party/android_deps:com_android_support_support_fragment_java",
     "//triple_banana/modules:mojom_java",
     "//ui/android:ui_full_java",
   ]

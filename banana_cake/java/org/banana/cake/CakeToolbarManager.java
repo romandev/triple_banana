@@ -13,6 +13,7 @@ import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeTabbedActivity;
 import org.chromium.chrome.browser.omnibox.LocationBar;
 import org.chromium.chrome.browser.password_manager.PasswordManagerLauncher;
+import org.chromium.chrome.browser.settings.PreferencesLauncher;
 import org.chromium.chrome.browser.toolbar.ToolbarManager;
 
 public class CakeToolbarManager implements BananaToolbarManager {
@@ -155,5 +156,12 @@ public class CakeToolbarManager implements BananaToolbarManager {
     @Override
     public void goAdblockSetting() {
         // NOTIMPLEMENTED
+    }
+
+    @Override
+    public void openSettingPage(Class settingFragmentClass) {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        PreferencesLauncher.launchSettingsPage(activity, settingFragmentClass);
     }
 }
