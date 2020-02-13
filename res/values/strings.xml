@@ -4,5 +4,15 @@
      found in the LICENSE file. -->
 
 <resources>
+    <string name="adblock">Ad Block</string>
+    <string name="adblock_summary">Block ads on sites that show intrusive or misleading ads</string>
+    <string name="advanced_features">Advanced Features</string>
+    <string name="background_play">Background Play</string>
+    <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
     <string name="drag_and_drop_buttons">Drag and Drop Buttons</string>
+    <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
+    <string name="safe_login">Safe Login</string>
+    <string name="safe_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>
+    <string name="toolbar_editor">Toolbar Editor</string>
+    <string name="user_interface">User Interface</string>
 </resources>

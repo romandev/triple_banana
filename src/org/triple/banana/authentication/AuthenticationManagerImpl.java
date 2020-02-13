@@ -36,7 +36,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
     private static boolean isAuthenticatorEnabled() {
         return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
-                "is_authentication_enabled", false);
+                "is_safe_login_enabled", false);
     }
 
     static void handleResult(boolean result) {

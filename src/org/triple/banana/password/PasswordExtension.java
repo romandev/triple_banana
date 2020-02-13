@@ -16,12 +16,12 @@ import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 
 public class PasswordExtension implements BananaPasswordExtension {
-    private static final String PREF_KEY_IS_AUTHENTICATION_ENABLED = "is_authentication_enabled";
+    private static final String PREF_KEY_IS_SAFE_LOGIN_ENABLED = "is_safe_login_enabled";
     private static SecurityLevel sCurrentSecurityLevel = SecurityLevel.UNKNOWN;
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
-        authenticationSwitch.setKey(PREF_KEY_IS_AUTHENTICATION_ENABLED);
+        authenticationSwitch.setKey(PREF_KEY_IS_SAFE_LOGIN_ENABLED);
         authenticationSwitch.setOrder(0);
         authenticationSwitch.setTitle(
                 context.getResources().getString(R.string.prefs_authentication));
@@ -55,13 +55,13 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     private static boolean isAuthenticatorEnabled() {
         return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
-                PREF_KEY_IS_AUTHENTICATION_ENABLED, false);
+                PREF_KEY_IS_SAFE_LOGIN_ENABLED, false);
     }
 
     private static void setAuthenticatorEnabled(boolean value) {
         SharedPreferences.Editor editor =
                 BananaApplicationUtils.get().getSharedPreferences().edit();
-        editor.putBoolean(PREF_KEY_IS_AUTHENTICATION_ENABLED, value);
+        editor.putBoolean(PREF_KEY_IS_SAFE_LOGIN_ENABLED, value);
         editor.apply();
     }
 }

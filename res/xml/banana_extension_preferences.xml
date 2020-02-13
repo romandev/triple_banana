@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orderingFromXml="false">
+
+    <PreferenceCategory
+        android:title="@string/advanced_features"/>
+    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+        android:key="is_adblock_enabled"
+        android:title="@string/adblock"
+        android:summaryOn="@string/adblock_summary"
+        android:summaryOff="@string/text_off" />
+    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+        android:key="is_safe_login_enabled"
+        android:title="@string/safe_login"
+        android:summaryOn="@string/safe_login_summary"
+        android:summaryOff="@string/text_off" />
+    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+        android:key="is_background_media_play_enabled"
+        android:title="@string/background_play"
+        android:summaryOn="@string/background_play_summary"
+        android:summaryOff="@string/text_off" />
+
+    <PreferenceCategory
+        android:title="@string/user_interface"/>
+    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+        android:key="is_bottom_toolbar_enabled"
+        android:title="@string/enable_bottom_toolbar"
+        android:summaryOn="@string/text_on"
+        android:summaryOff="@string/text_off" />
+    <Preference
+        android:key="launch_toolbar_editor"
+        android:title="@string/toolbar_editor"/>
+
+</PreferenceScreen>
