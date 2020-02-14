@@ -96,7 +96,7 @@ public enum ButtonId {
                 imageResource = R.drawable.ic_file_download_24dp;
                 break;
             case DESKTOP_VIEW:
-                imageResource = R.drawable.ic_personal_video_black_24dp;
+                imageResource = R.drawable.ic_desktop_black_24dp;
                 break;
             case RELOAD:
                 imageResource = R.drawable.ic_refresh_black_24dp;

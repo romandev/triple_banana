@@ -16,6 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 
 import org.chromium.base.ApiCompatibilityUtils;
@@ -112,12 +113,30 @@ class ToolbarButton extends LinearLayout implements TintObserver {
         mActivityTabTabObserver = new ActivityTabTabObserver(activityTabProvider) {
             @Override
             protected void onObservingDifferentTab(Tab tab) {
+                updateButtonState();
             }
 
             @Override
             public void onUpdateUrl(Tab tab, String url) {
+                updateButtonState();
             }
         };
+    }
+
+    public void updateButtonState() {
+        if (mButtonId == ButtonId.BACK) {
+            boolean canGoBack = BananaToolbarManager.get().canGoBack();
+            setEnabled(canGoBack);
+            mImageButton.setEnabled(canGoBack);
+        } else if (mButtonId == ButtonId.FORWARD) {
+            boolean canGoForward = BananaToolbarManager.get().canGoForward();
+            setEnabled(canGoForward);
+            mImageButton.setEnabled(canGoForward);
+        } else if (mButtonId == ButtonId.DESKTOP_VIEW) {
+            boolean isRds = BananaToolbarManager.get().isRds();
+            setImageResource(
+                    isRds ? R.drawable.ic_phone_black_24dp : R.drawable.ic_desktop_black_24dp);
+        }
     }
 
     @Override
