@@ -12,6 +12,6 @@ import org.banana.cake.interfaces.BananaToolbarManager;
 public class SettingsOpener implements BananaExtensionSettings {
     @Override
     public void open(Context context) {
-        BananaToolbarManager.get().openSettingPage(ExtensionFeaturesSettings.class);
+        BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class);
     }
 }

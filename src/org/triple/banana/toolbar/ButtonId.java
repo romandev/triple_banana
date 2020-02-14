@@ -8,7 +8,7 @@ import android.view.View;
 
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
-import org.triple.banana.settings.ExtensionFeaturesSettings;
+import org.triple.banana.settings.ExtensionFeatures;
 
 import java.util.EnumMap;
 
@@ -60,7 +60,7 @@ public enum ButtonId {
                 ButtonId.PASSWORD, v -> BananaToolbarManager.get().goPasswordSetting());
         sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolbarManager.get().print());
         sOnClickListeners.put(ButtonId.BANANA_EXTENSION,
-                v -> BananaToolbarManager.get().openSettingPage(ExtensionFeaturesSettings.class));
+                v -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
 
         sOnLongClickListeners.put(ButtonId.BOOKMARK, v -> {
             BananaToolbarManager.get().addBookmark();

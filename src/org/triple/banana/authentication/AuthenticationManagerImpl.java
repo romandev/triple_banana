@@ -7,8 +7,9 @@ package org.triple.banana.authentication;
 import android.content.Context;
 import android.content.SharedPreferences;
 
-import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
+import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
@@ -22,7 +23,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
         sCallback = callback;
 
-        if (!isAuthenticatorEnabled()) {
+        if (!ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)) {
             handleResult(true);
             return;
         }
@@ -32,11 +33,6 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
     private static boolean isRunning() {
         return sCallback != null;
-    }
-
-    private static boolean isAuthenticatorEnabled() {
-        return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
-                "is_safe_login_enabled", false);
     }
 
     static void handleResult(boolean result) {

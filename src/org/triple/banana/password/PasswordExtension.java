@@ -9,19 +9,19 @@ import android.content.SharedPreferences;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.SwitchPreferenceCompat;
 
-import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
+import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 public class PasswordExtension implements BananaPasswordExtension {
-    private static final String PREF_KEY_IS_SAFE_LOGIN_ENABLED = "is_safe_login_enabled";
     private static SecurityLevel sCurrentSecurityLevel = SecurityLevel.UNKNOWN;
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
-        authenticationSwitch.setKey(PREF_KEY_IS_SAFE_LOGIN_ENABLED);
+        authenticationSwitch.setKey(FeatureName.SAFE_LOGIN);
         authenticationSwitch.setOrder(0);
         authenticationSwitch.setTitle(
                 context.getResources().getString(R.string.prefs_authentication));
@@ -48,20 +48,9 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     public static void onSecurityLevelChanged(SecurityLevel newLevel) {
         sCurrentSecurityLevel = newLevel;
-        if (isAuthenticatorEnabled() && newLevel == SecurityLevel.NON_SECURE) {
-            setAuthenticatorEnabled(false);
+        if (ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)
+                && newLevel == SecurityLevel.NON_SECURE) {
+            ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, false);
         }
-    }
-
-    private static boolean isAuthenticatorEnabled() {
-        return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
-                PREF_KEY_IS_SAFE_LOGIN_ENABLED, false);
-    }
-
-    private static void setAuthenticatorEnabled(boolean value) {
-        SharedPreferences.Editor editor =
-                BananaApplicationUtils.get().getSharedPreferences().edit();
-        editor.putBoolean(PREF_KEY_IS_SAFE_LOGIN_ENABLED, value);
-        editor.apply();
     }
 }

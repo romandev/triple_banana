@@ -14,7 +14,7 @@
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
     <org.chromium.chrome.browser.settings.ChromeSwitchPreference
-        android:key="is_safe_login_enabled"
+        android:key="feature_name_safe_login"
         android:title="@string/safe_login"
         android:summaryOn="@string/safe_login_summary"
         android:summaryOff="@string/text_off" />
