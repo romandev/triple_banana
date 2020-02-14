@@ -37,7 +37,6 @@ class ToolbarButton extends LinearLayout implements TintObserver {
     private ButtonId mButtonId;
     private ThemeColorProvider mThemeColorProvider;
     private ActivityTabTabObserver mActivityTabTabObserver;
-    private ButtonState mButtonStateListener;
 
     private LinearLayout mToolbarWrapper;
     private ChromeImageButton mImageButton;
@@ -113,26 +112,12 @@ class ToolbarButton extends LinearLayout implements TintObserver {
         mActivityTabTabObserver = new ActivityTabTabObserver(activityTabProvider) {
             @Override
             protected void onObservingDifferentTab(Tab tab) {
-                if (mButtonStateListener != null) {
-                    Boolean isEnabled = mButtonStateListener.onObservingDifferentTab(tab);
-                    setEnabled(isEnabled);
-                    mImageButton.setEnabled(isEnabled);
-                }
             }
 
             @Override
             public void onUpdateUrl(Tab tab, String url) {
-                if (mButtonStateListener != null) {
-                    Boolean isEnabled = mButtonStateListener.onUpdateUrl(tab, url);
-                    setEnabled(isEnabled);
-                    mImageButton.setEnabled(isEnabled);
-                }
             }
         };
-    }
-
-    public void setButtonState(ButtonState mButtonState) {
-        this.mButtonStateListener = mButtonState;
     }
 
     @Override
@@ -150,10 +135,5 @@ class ToolbarButton extends LinearLayout implements TintObserver {
             mActivityTabTabObserver.destroy();
             mActivityTabTabObserver = null;
         }
-    }
-
-    interface ButtonState {
-        Boolean onObservingDifferentTab(Tab tab);
-        Boolean onUpdateUrl(Tab tab, String url);
     }
 }
