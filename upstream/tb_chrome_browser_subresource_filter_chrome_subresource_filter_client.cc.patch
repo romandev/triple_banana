@@ -1,0 +1,12 @@
+diff --git tb/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc tb_diff/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
+--- tb/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
++++ tb_diff/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
+@@ -158,7 +158,7 @@ void ChromeSubresourceFilterClient::LogAction(SubresourceFilterAction action) {
+ }
+ 
+ void ChromeSubresourceFilterClient::ShowUI(const GURL& url) {
+-#if defined(OS_ANDROID)
++#if defined(OS_ANDROID) && !defined(ENABLE_TRIPLE_BANANA)
+   InfoBarService* infobar_service =
+       InfoBarService::FromWebContents(web_contents());
+   AdsBlockedInfobarDelegate::Create(infobar_service);
