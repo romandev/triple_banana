@@ -16,4 +16,5 @@
     <string name="safe_login_summary">웹 페이지에 로그인을 할 때, 저장된 사용자 비밀번호를 사용하는 경우 추가 인증을 사용합니다 (예: 생체 인증, 패턴, PIN 등)</string>
     <string name="toolbar_editor">도구모음 편집하기</string>
     <string name="user_interface">사용자 인터페이스</string>
+    <string name="use_safe_login">안전한 로그인 사용하기\n(예: 생체인증, 패턴, PIN 등)</string>
 </resources>

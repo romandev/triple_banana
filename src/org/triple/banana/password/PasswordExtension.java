@@ -8,6 +8,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.support.v7.preference.PreferenceScreen;
 import android.support.v7.preference.SwitchPreferenceCompat;
+import android.support.v7.widget.SwitchCompat;
+import android.util.Log;
+import android.view.View;
+import android.widget.TextView;
 
 import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;
@@ -18,6 +22,7 @@ import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 public class PasswordExtension implements BananaPasswordExtension {
     private static SecurityLevel sCurrentSecurityLevel = SecurityLevel.UNKNOWN;
+    private boolean mSafeLoginSwitchChecked;
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
@@ -44,6 +49,31 @@ public class PasswordExtension implements BananaPasswordExtension {
     @Override
     public void overridePreferenceScreen(Context context, PreferenceScreen screen) {
         screen.addPreference(createAuthenticationSwitch(context));
+    }
+
+    @Override
+    public void setupSafeLoginSwitch(View container) {
+        mSafeLoginSwitchChecked = true;
+        SwitchCompat switchView = container.findViewById(R.id.infobar_extra_check);
+        switchView.setOnCheckedChangeListener(
+                (buttonView, isChecked) -> { mSafeLoginSwitchChecked = isChecked; });
+        TextView text = (TextView) container.findViewById(R.id.control_message);
+        text.setText(R.string.use_safe_login);
+    }
+
+    @Override
+    public boolean isSafeLoginEnabled() {
+        return sCurrentSecurityLevel == SecurityLevel.SECURE
+                && ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN);
+    }
+
+    @Override
+    public void setSafeLoginEnabled() {
+        if (sCurrentSecurityLevel == SecurityLevel.NON_SECURE
+                || ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)) {
+            return;
+        }
+        ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, mSafeLoginSwitchChecked);
     }
 
     public static void onSecurityLevelChanged(SecurityLevel newLevel) {
