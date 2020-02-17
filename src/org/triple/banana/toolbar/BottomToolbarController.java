@@ -31,6 +31,8 @@ import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class BottomToolbarController implements BananaBottomToolbarController,
                                                 IToolbarStateChangedObserver, ThemeColorObserver,
@@ -38,7 +40,7 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     private WeakReference<ViewGroup> mViewGroup;
     private static final int MAX_BUTTON_SIZE = 6;
 
-    ArrayList<ToolbarButton> mToolbarButtons;
+    Map<ButtonId, ToolbarButton> mToolbarButtons;
 
     private ActivityTabProvider mTabProvider;
     private MenuButton mMenuButton;
@@ -55,7 +57,7 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     public BananaBottomToolbarController init(View root, ActivityTabProvider tabProvider) {
         mViewGroup = new WeakReference<>(root.findViewById(R.id.bottom_toolbar_browsing));
 
-        mToolbarButtons = new ArrayList<>();
+        mToolbarButtons = new HashMap<>();
         mTabProvider = tabProvider;
 
         mTabProvider.addObserverAndTrigger(new ActivityTabProvider.HintlessActivityTabObserver() {
@@ -101,7 +103,7 @@ public class BottomToolbarController implements BananaBottomToolbarController,
             }
             toolbarButton.setActivityTabProvider(mTabProvider);
             viewGroup.addView(toolbarButton);
-            mToolbarButtons.add(toolbarButton);
+            mToolbarButtons.put(mButtonIdList.get(i), toolbarButton);
             if (mIsIncognitoMode) {
                 toolbarButton.getImageButton().setImageTintList(
                         ColorStateList.valueOf(Color.WHITE));
@@ -131,7 +133,7 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     }
 
     private void buttonInitializeWithNative() {
-        for (ToolbarButton button : mToolbarButtons) {
+        for (ToolbarButton button : mToolbarButtons.values()) {
             button.setThemeColorProvider(mThemeColorProvider);
         }
 
@@ -167,6 +169,13 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     @Override
     public void onIncognitoStateChanged(boolean isIncognito) {
         mIsIncognitoMode = isIncognito;
+    }
+
+    @Override
+    public void updateBookmarkButtonStatus(boolean isBookmarked, boolean editingAllowed) {
+        ToolbarButton bookmarkButton = mToolbarButtons.get(ButtonId.BOOKMARK);
+        if (bookmarkButton != null)
+            bookmarkButton.updateBookmarkButtonState(isBookmarked, editingAllowed);
     }
 
     /**
@@ -205,7 +214,7 @@ public class BottomToolbarController implements BananaBottomToolbarController,
      * Clean up any state when the browsing mode bottom toolbar is destroyed.
      */
     private void buttonDestroy() {
-        for (ToolbarButton toolbarButton : mToolbarButtons) {
+        for (ToolbarButton toolbarButton : mToolbarButtons.values()) {
             toolbarButton.destroy();
         }
 
