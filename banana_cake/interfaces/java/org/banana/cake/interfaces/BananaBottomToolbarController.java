@@ -30,5 +30,4 @@ public interface BananaBottomToolbarController {
     boolean isShowingAppMenuUpdateBadge();
     MenuButton getMenuButton();
     void destroy();
-    void updateBookmarkButtonStatus(boolean isBookmarked, boolean editingAllowed);
 }

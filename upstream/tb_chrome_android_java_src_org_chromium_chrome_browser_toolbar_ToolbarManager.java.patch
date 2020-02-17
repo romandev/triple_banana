@@ -23,12 +23,3 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/Toolba
              if (mAppMenuButtonHelper != null) {
                  mAppMenuButtonHelper.setMenuShowsFromBottom(isMenuFromBottom());
              }
-@@ -1883,6 +1883,8 @@ public class ToolbarManager implements ScrimObserver, ToolbarTabController, UrlF
-         boolean editingAllowed = currentTab == null || mBookmarkBridge == null
-                 || mBookmarkBridge.isEditBookmarksEnabled();
-         mToolbar.updateBookmarkButton(isBookmarked, editingAllowed);
-+        org.banana.cake.interfaces.BananaBottomToolbarController.get().updateBookmarkButtonStatus(
-+                isBookmarked, editingAllowed);
-     }
- 
-     private void updateReloadState(boolean tabCrashed) {

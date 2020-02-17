@@ -10,7 +10,6 @@ import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.DrawableRes;
-import android.support.v7.content.res.AppCompatResources;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
@@ -137,26 +136,6 @@ class ToolbarButton extends LinearLayout implements TintObserver {
             boolean isRds = BananaToolbarManager.get().isRds();
             setImageResource(
                     isRds ? R.drawable.ic_phone_black_24dp : R.drawable.ic_desktop_black_24dp);
-        }
-    }
-
-    public void updateBookmarkButtonState(boolean isBookmarked, boolean editingAllowed) {
-        if (mButtonId == ButtonId.BOOKMARK) {
-            if (mThemeColorProvider == null) return;
-            if (isBookmarked) {
-                mImageButton.setImageResource(R.drawable.btn_star_filled);
-                ApiCompatibilityUtils.setImageTintList(getImageButton(),
-                        mThemeColorProvider.useLight()
-                                ? mThemeColorProvider.getTint()
-                                : AppCompatResources.getColorStateList(
-                                        BananaApplicationUtils.get().getApplicationContext(),
-                                        R.color.blue_mode_tint));
-            } else {
-                mImageButton.setImageResource(R.drawable.btn_star);
-                ApiCompatibilityUtils.setImageTintList(
-                        getImageButton(), mThemeColorProvider.getTint());
-            }
-            setEnabled(editingAllowed);
         }
     }
 
