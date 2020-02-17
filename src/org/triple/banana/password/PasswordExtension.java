@@ -29,7 +29,7 @@ public class PasswordExtension implements BananaPasswordExtension {
         authenticationSwitch.setKey(FeatureName.SAFE_LOGIN);
         authenticationSwitch.setOrder(0);
         authenticationSwitch.setTitle(
-                context.getResources().getString(R.string.prefs_authentication));
+                context.getResources().getString(R.string.authentication_title));
         authenticationSwitch.setSummaryOn(context.getResources().getString(R.string.text_on));
         authenticationSwitch.setSummaryOff(context.getResources().getString(R.string.text_off));
         authenticationSwitch.setEnabled(sCurrentSecurityLevel == SecurityLevel.SECURE);

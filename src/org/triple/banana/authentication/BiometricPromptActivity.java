@@ -34,8 +34,9 @@ public class BiometricPromptActivity extends BaseActivity {
 
         final BiometricPrompt prompt =
                 new BiometricPrompt.Builder(this)
-                        .setTitle("Authentication")
-                        .setDescription("Scan your biometric data to sign-in your credentials")
+                        .setTitle(getResources().getString(R.string.authentication_title))
+                        .setDescription(
+                                getResources().getString(R.string.authentication_description))
                         .setNegativeButton(getResources().getText(android.R.string.cancel),
                                 getMainExecutor(), (dialogInterface, i) -> { handleResult(false); })
                         .build();
@@ -92,9 +93,8 @@ public class BiometricPromptActivity extends BaseActivity {
                     new AlertDialog
                             .Builder(this,
                                     android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar)
-                            .setTitle(getResources().getString(R.string.authentication_error))
-                            .setPositiveButton(
-                                    getResources().getString(R.string.authentication_check),
+                            .setTitle(getResources().getString(R.string.authentication_title))
+                            .setPositiveButton(getResources().getString(android.R.string.ok),
                                     (dialogInterface, i) -> { handleResult(false); })
                             .setCancelable(false)
                             .create();

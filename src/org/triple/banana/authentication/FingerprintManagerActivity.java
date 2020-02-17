@@ -127,7 +127,7 @@ public class FingerprintManagerActivity extends BaseActivity {
                     getResources().getColor(R.color.authentication_warning_color));
             mAuthenticationDescriptionText.setGravity(Gravity.CENTER);
             mAuthenticationDescriptionText.setCompoundDrawablesWithIntrinsicBounds(0, 0, 0, 0);
-            mCancelButton.setText(R.string.authentication_check);
+            mCancelButton.setText(android.R.string.ok);
         }
     }
 }

@@ -7,6 +7,11 @@
     <string name="adblock">광고 차단</string>
     <string name="adblock_summary">방해가 되거나 사용자를 현혹하는 광고를 차단합니다</string>
     <string name="advanced_features">고급 기능</string>
+    <string name="authentication_title">생체 인증</string>
+    <string name="authentication_description">저장된 아이디/패스워드를 이용하려면\n생체인증을 진행하세요</string>
+    <string name="authentication_not_recognized">일치하지 않습니다</string>
+    <string name="authentication_lockout">30초 후에 다시 시도하세요</string>
+    <string name="authentication_lockout_permenent">락스크린에서 디바이스 인증 후 다시 시도하세요</string>
     <string name="background_play">백그라운드 재생</string>
     <string name="background_play_summary">탭이 활성화 상태가 아니거나 장치의 화면이 꺼져있을 때도 미디어를 재생하도록 합니다</string>
     <string name="banana_extension">Banana 확장 기능</string>
