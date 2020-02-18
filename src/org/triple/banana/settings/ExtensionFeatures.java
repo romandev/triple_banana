@@ -9,8 +9,10 @@ import android.os.Bundle;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.SwitchPreferenceCompat;
+import android.text.TextUtils;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.toolbar.ToolbarEditor;
@@ -36,13 +38,27 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             }
             return true;
         });
+
+        SwitchPreferenceCompat adblock =
+                (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
+        adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
+        adblock.setOnPreferenceChangeListener((preference, newValue) -> {
+            setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
+            return true;
+        });
     }
 
     public static class FeatureName {
         public static final String SAFE_LOGIN = "feature_name_safe_login";
+        public static final String ADBLOCK = "feature_name_adblock";
     }
 
     public static void setEnabled(String feature, boolean value) {
+        if (TextUtils.equals(feature, FeatureName.ADBLOCK)) {
+            BananaFeatureFlags.get().setAdblockEnabled(value);
+            return;
+        }
+
         SharedPreferences.Editor editor =
                 BananaApplicationUtils.get().getSharedPreferences().edit();
         editor.putBoolean(feature, value);
@@ -54,6 +70,10 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     }
 
     public static boolean isEnabled(String feature, boolean defaultValue) {
+        if (TextUtils.equals(feature, FeatureName.ADBLOCK)) {
+            return BananaFeatureFlags.get().isAdblockEnabled();
+        }
+
         return BananaApplicationUtils.get().getSharedPreferences().getBoolean(
                 feature, defaultValue);
     }

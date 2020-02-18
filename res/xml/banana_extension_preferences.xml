@@ -9,7 +9,7 @@
     <PreferenceCategory
         android:title="@string/advanced_features"/>
     <org.chromium.chrome.browser.settings.ChromeSwitchPreference
-        android:key="is_adblock_enabled"
+        android:key="feature_name_adblock"
         android:title="@string/adblock"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
