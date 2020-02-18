@@ -140,13 +140,6 @@ public class CakeToolbarManager implements BananaToolbarManager {
     }
 
     @Override
-    public void goPasswordSetting() {
-        ChromeTabbedActivity activity = getChromeTabbedActivity();
-        if (activity == null) return;
-        PasswordManagerLauncher.showPasswordSettings(activity, 0);
-    }
-
-    @Override
     public void print() {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;

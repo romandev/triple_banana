@@ -24,7 +24,6 @@ public interface BananaToolbarManager {
     void reload();
     void goVisitHistory();
     void goArchive();
-    void goPasswordSetting();
     void print();
     void goAdblockSetting();
     void openSettingPage(Class settingFragmentPage);

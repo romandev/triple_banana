@@ -18,7 +18,7 @@ public enum ButtonId {
     SHARE,
     BOOKMARK,
     NEW_TAB,
-    PASSWORD,
+    BANANA_EXTENSION,
     SEARCH,
     ADD_SECRET_TAB,
     DOWNLOAD,
@@ -29,8 +29,7 @@ public enum ButtonId {
     VISIT_HISTORY,
     ARCHIVE,
     PRINT,
-    ADBLOCK,
-    BANANA_EXTENSION;
+    ADBLOCK;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -43,6 +42,8 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.SHARE, v -> BananaToolbarManager.get().share());
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolbarManager.get().search());
         sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolbarManager.get().addNewTab());
+        sOnClickListeners.put(ButtonId.BANANA_EXTENSION,
+                v -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
         sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(
                 ButtonId.ADD_SECRET_TAB, v -> BananaToolbarManager.get().addSecretTab());
@@ -56,11 +57,7 @@ public enum ButtonId {
         sOnClickListeners.put(
                 ButtonId.VISIT_HISTORY, v -> BananaToolbarManager.get().goVisitHistory());
         sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolbarManager.get().goArchive());
-        sOnClickListeners.put(
-                ButtonId.PASSWORD, v -> BananaToolbarManager.get().goPasswordSetting());
         sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolbarManager.get().print());
-        sOnClickListeners.put(ButtonId.BANANA_EXTENSION,
-                v -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
 
         sOnLongClickListeners.put(ButtonId.BOOKMARK, v -> {
             BananaToolbarManager.get().addBookmark();
@@ -107,14 +104,11 @@ public enum ButtonId {
             case PRINT:
                 imageResource = R.drawable.ic_local_printshop_black_24dp;
                 break;
-            case PASSWORD:
-                imageResource = R.drawable.ic_fingerprint_black_24dp;
-                break;
             case ARCHIVE:
                 imageResource = R.drawable.ic_archive_black_24dp;
                 break;
             case BANANA_EXTENSION:
-                imageResource = R.drawable.fre_product_logo;
+                imageResource = R.drawable.toolbar_button_banana;
                 break;
             default:
                 // ADD_SECRET_TAB, ADD_TO_HOME, VISIT_HISTORY
