@@ -4,7 +4,6 @@
 
 package org.triple.banana.toolbar;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
@@ -86,10 +85,9 @@ class ToolbarButton extends LinearLayout implements TintObserver {
         mTextView.setText(str);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void setImageResource(@DrawableRes int resId) {
         mImageButton.setImageResource(resId);
-        mImageButton.setImageTintList(ColorStateList.valueOf(Color.BLACK));
+        ApiCompatibilityUtils.setImageTintList(mImageButton, ColorStateList.valueOf(Color.BLACK));
     }
 
     public void setImageColor(int color) {
