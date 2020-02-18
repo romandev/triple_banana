@@ -4,7 +4,6 @@
 
 package org.triple.banana.authentication;
 
-import android.content.Context;
 import android.content.SharedPreferences;
 
 import org.triple.banana.authentication.mojom.AuthenticationManager;
