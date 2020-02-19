@@ -10,3 +10,12 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplicat
              // Requires command-line flags.
              TraceEvent.maybeEnableEarlyTracing();
              TraceEvent.begin("ChromeApplication.attachBaseContext");
+@@ -153,7 +155,7 @@ public class ChromeApplication extends Application {
+         return FeatureUtilities.isCommandLineOnNonRootedEnabled();
+     }
+ 
+-    private static boolean isBrowserProcess() {
++    protected static boolean isBrowserProcess() {
+         return !ContextUtils.getProcessName().contains(":");
+     }
+ 
