@@ -6,6 +6,7 @@ package org.banana.cake.interfaces;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.support.v7.app.AlertDialog;
 
 import org.chromium.base.ActivityState;
 import org.chromium.base.ApplicationStatus.ActivityStateListener;
@@ -22,4 +23,6 @@ public interface BananaApplicationUtils {
     SharedPreferences getSharedPreferences();
     void registerStateListenerForAllActivities(BananaActivityStateListener listener);
     void unregisterActivityStateListener(BananaActivityStateListener listener);
+    void restart();
+    AlertDialog.Builder getDialogBuilder(Context context);
 }

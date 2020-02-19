@@ -6,6 +6,7 @@ package org.triple.banana.settings;
 
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceFragmentCompat;
 import android.support.v7.preference.SwitchPreferenceCompat;
@@ -27,6 +28,14 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return false;
         });
 
+        SwitchPreferenceCompat adblock =
+                (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
+        adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
+        adblock.setOnPreferenceChangeListener((preference, newValue) -> {
+            setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
+            return true;
+        });
+
         SwitchPreferenceCompat safeLogin =
                 (SwitchPreferenceCompat) findPreference(FeatureName.SAFE_LOGIN);
         safeLogin.setOnPreferenceChangeListener((preference, newValue) -> {
@@ -39,18 +48,28 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
-        SwitchPreferenceCompat adblock =
-                (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
-        adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
-        adblock.setOnPreferenceChangeListener((preference, newValue) -> {
-            setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
+        SwitchPreferenceCompat backgroundPlay =
+                (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
+        backgroundPlay.setOnPreferenceChangeListener((preference, newValue) -> {
+            showRestartDialog();
             return true;
         });
     }
 
+    private void showRestartDialog() {
+        AlertDialog.Builder builder = BananaApplicationUtils.get().getDialogBuilder(getActivity());
+        builder.setMessage(R.string.restart_message)
+                .setNegativeButton(android.R.string.cancel, null)
+                .setPositiveButton(android.R.string.ok,
+                        (dialog, which) -> { BananaApplicationUtils.get().restart(); })
+                .create()
+                .show();
+    }
+
     public static class FeatureName {
-        public static final String SAFE_LOGIN = "feature_name_safe_login";
         public static final String ADBLOCK = "feature_name_adblock";
+        public static final String BACKGROUND_PLAY = "feature_name_background_play";
+        public static final String SAFE_LOGIN = "feature_name_safe_login";
     }
 
     public static void setEnabled(String feature, boolean value) {

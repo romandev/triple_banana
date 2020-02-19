@@ -11,6 +11,8 @@ import org.banana.cake.interfaces.BananaTabManager;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.password.PasswordExtension;
+import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 public class TripleBananaApplication extends BananaApplication {
     static {
@@ -18,8 +20,10 @@ public class TripleBananaApplication extends BananaApplication {
     }
 
     private void initializeOnBrowser() {
-        BananaTabManager.get().addObserver(
-                bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
+        if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
+            BananaTabManager.get().addObserver(
+                    bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
+        }
         SecurityLevelChecker.get().addListener(PasswordExtension::onSecurityLevelChanged);
     }
 

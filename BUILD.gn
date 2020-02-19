@@ -137,7 +137,7 @@ android_library("triple_banana_java") {
     "//third_party/android_deps:com_android_support_support_compat_java",
     "//third_party/android_deps:com_android_support_support_fragment_java",
     "//triple_banana/modules:mojom_java",
-    "//ui/android:ui_full_java",
+    "//ui/android:ui_java",
   ]
 }
 

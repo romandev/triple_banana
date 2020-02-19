@@ -19,7 +19,7 @@
         android:summaryOn="@string/safe_login_summary"
         android:summaryOff="@string/text_off" />
     <org.chromium.chrome.browser.settings.ChromeSwitchPreference
-        android:key="is_background_media_play_enabled"
+        android:key="feature_name_background_play"
         android:title="@string/background_play"
         android:summaryOn="@string/background_play_summary"
         android:summaryOff="@string/text_off" />
