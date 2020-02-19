@@ -12,7 +12,6 @@ import org.triple.banana.R;
 import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeTabbedActivity;
 import org.chromium.chrome.browser.omnibox.LocationBar;
-import org.chromium.chrome.browser.password_manager.PasswordManagerLauncher;
 import org.chromium.chrome.browser.settings.PreferencesLauncher;
 import org.chromium.chrome.browser.toolbar.ToolbarManager;
 
