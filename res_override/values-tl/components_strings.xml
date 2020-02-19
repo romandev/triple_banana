@@ -4,7 +4,7 @@
         &lt;ul&gt;
           &lt;li&gt;Iyong history ng pag-browse
           &lt;li&gt;Cookies at data ng site
-          &lt;li&gt;Impormasyong nilagay sa mga form
+          &lt;li&gt;Impormasyong inilalagay sa mga form
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Ang mga card at address ay mula sa Banana Browser at sa iyong Google Account (%1$s). Maaari mong pamahalaan ang mga ito sa BEGIN_LINKMga SettingEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Ang mga card at address ay mula sa Banana Browser. Maaari mong pamahalaan ang mga ito sa BEGIN_LINKMga SettingEND_LINK."</string>

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"Banana Browser નિમ્નલિખિત માહિતી &lt;em&gt;સાચવશે નહીં&lt;/em&gt;:
-        &lt;ul&gt; &lt;li&gt;તમારો બ્રાઉઝિંગ ઇતિહાસ
+<string name="new_tab_otr_not_saved">"Banana Browser નીચે આપેલી માહિતી &lt;em&gt;સાચવશે નહીં&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;તમારો બ્રાઉઝિંગ ઇતિહાસ
           &lt;li&gt;કુકી અને સાઇટ ડેટા
           &lt;li&gt;ફોર્મમાં દાખલ કરેલી માહિતી
         &lt;/ul&gt;"</string>

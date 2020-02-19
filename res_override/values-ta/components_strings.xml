@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="new_tab_otr_not_saved">"பின்வரும் தகவலை Banana Browser &lt;em&gt;சேமிக்காது&lt;/em&gt;:
         &lt;ul&gt;
-          &lt;li&gt;உலாவல் வரலாறு
+          &lt;li&gt;உங்கள் உலாவல் வரலாறு
           &lt;li&gt;குக்கீகள் மற்றும் தளத் தரவு
           &lt;li&gt;படிவங்களில் உள்ளிடும் தகவல்
         &lt;/ul&gt;"</string>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;no guardará&lt;/em&gt; la siguiente información:
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;no almacenará&lt;/em&gt; la siguiente información:
         &lt;ul&gt;
           &lt;li&gt;Tu historial de navegación
-          &lt;li&gt;Las cookies y los datos de sitios web
-          &lt;li&gt;La información introducida en formularios
+          &lt;li&gt;Cookies y datos del sitio web
+          &lt;li&gt;Información introducida en formularios
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Las tarjetas y las direcciones proceden de Banana Browser y tu cuenta de Google (%1$s). Puedes gestionarlas en BEGIN_LINKConfiguraciónEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Las tarjetas y las direcciones proceden de Banana Browser. Puedes gestionarlas en BEGIN_LINKConfiguraciónEND_LINK."</string>

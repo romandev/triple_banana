@@ -13,8 +13,11 @@ import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.password.PasswordExtension;
 
 public class TripleBananaApplication extends BananaApplication {
-    private void initializeOnBrowser() {
+    static {
         InterfaceProvider.initialize();
+    }
+
+    private void initializeOnBrowser() {
         BananaTabManager.get().addObserver(
                 bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
         SecurityLevelChecker.get().addListener(PasswordExtension::onSecurityLevelChanged);

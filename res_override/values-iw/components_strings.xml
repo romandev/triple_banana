@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"‏Banana Browser &lt;em&gt;לא ישמור&lt;/em&gt; את המידע הבא:
+<string name="new_tab_otr_not_saved">"‏Banana Browser &lt;em&gt;לא ישמור&lt;/em&gt; את הנתונים הבאים:
         &lt;ul&gt;
           &lt;li&gt;היסטוריית הגלישה שלך
-          &lt;li&gt;קובצי Cookie ונתוני אתרים
+          &lt;li&gt;קובצי cookie ונתוני אתרים
           &lt;li&gt;מידע שהוזן בטפסים
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"‏הכרטיסים והכתובות לקוחים מ-Banana Browser ומחשבון Google שלך (%1$s). אפשר לנהל אותם בBEGIN_LINKהגדרותEND_LINK."</string>

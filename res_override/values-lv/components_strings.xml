@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"Pārlūkā Banana Browser &lt;em&gt;netiks saglabāta&lt;/em&gt; šāda informācija:
+<string name="new_tab_otr_not_saved">"Pārlūkprogrammā Banana Browser &lt;em&gt;netiks saglabāta&lt;/em&gt; tālāk norādītā informācija.
         &lt;ul&gt;
-          &lt;li&gt;jūsu pārlūkošanas vēsture;
-          &lt;li&gt;sīkfaili un vietņu dati;
-          &lt;li&gt;veidlapās ievadītā informācija.
+          &lt;li&gt;Jūsu pārlūkošanas vēsture
+          &lt;li&gt;Sīkfaili un vietņu dati
+          &lt;li&gt;Veidlapās ievadītā informācija
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kartes un adreses tiek iegūtas no Banana Browser un jūsu Google konta (%1$s). Varat tās pārvaldīt BEGIN_LINKiestatījumosEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartes un adreses tiek iegūtas no Banana Browser. Varat pārvaldīt tās BEGIN_LINKiestatījumosEND_LINK."</string>

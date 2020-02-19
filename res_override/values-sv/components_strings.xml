@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"Följande information &lt;em&gt;sparas inte&lt;/em&gt; i Banana Browser:
+<string name="new_tab_otr_not_saved">"Följande information sparas &lt;em&gt;inte&lt;/em&gt; i Banana Browser:
         &lt;ul&gt;
-          &lt;li&gt;webbhistoriken
-          &lt;li&gt;cookies och webbplatsdata
-          &lt;li&gt;uppgifter som angetts i formulär.
+          &lt;li&gt;Din webbhistorik
+          &lt;li&gt;Cookies och webbplatsdata
+          &lt;li&gt;Uppgifter som anges i formulär
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kort och adresser har hämtats från Banana Browser och ditt Google-konto (%1$s). Du hanterar dessa under BEGIN_LINKInställningarEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kort och adresser har hämtats från Banana Browser. Du hanterar dessa under BEGIN_LINKInställningarEND_LINK."</string>

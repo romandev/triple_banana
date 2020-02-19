@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="new_tab_otr_not_saved">"В Banana Browser &lt;em&gt;не будет сохраняться&lt;/em&gt; следующая информация:
         &lt;ul&gt;
-          &lt;li&gt;история просмотров;
+          &lt;li&gt;история браузера;
           &lt;li&gt;файлы cookie и данные сайтов;
           &lt;li&gt;сведения, которые вы указываете в формах.
         &lt;/ul&gt;"</string>

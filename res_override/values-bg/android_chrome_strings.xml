@@ -13,7 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Избраните данни са премахнати от Banana Browser и синхронизираните ви устройства.
 
 Възможно е в профила ви в Google да има други видове история на сърфиране, съхранявани на адрес &lt;link&gt;myactivity.google.com&lt;/link&gt; – например търсения и активност от други наши услуги."</string>
-<string name="usage_and_crash_reports_description_legacy">"Автоматично изпращане до Google на статистически данни за използването на Banana Browser и сигнали за сривове"</string>
 <string name="android_permission_off_plural">"Включете разрешенията за Banana Browser от &lt;link&gt;настройките на Android&lt;/link&gt;."</string>
 <string name="android_permission_off">"Включете разрешението за Banana Browser от &lt;link&gt;настройките на Android&lt;/link&gt;."</string>
 <string name="android_location_permission_off">"За да разрешите на Banana Browser да осъществява достъп до местоположението ви, то трябва да бъде включено и от &lt;link&gt;настройките на Android&lt;/link&gt;."</string>

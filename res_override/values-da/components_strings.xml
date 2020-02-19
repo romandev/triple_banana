@@ -4,7 +4,7 @@
         &lt;ul&gt;
           &lt;li&gt;Din browserhistorik
           &lt;li&gt;Cookies og websitedata
-          &lt;li&gt;Oplysninger, du angiver i formularer
+          &lt;li&gt;Oplysninger, der er angivet i formularer
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kort og adresser stammer fra Banana Browser og din Google-konto (%1$s). Du kan administrere dem i BEGIN_LINKIndstillingerEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kort og adresser stammer fra Banana Browser. Du kan administrere dem i BEGIN_LINKIndstillingerEND_LINK."</string>

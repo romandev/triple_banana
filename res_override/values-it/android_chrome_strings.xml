@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="sign_in_to_chrome">"Accedi a Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizza i tuoi dati di Banana Browser"</string>
-<string name="usage_and_crash_reports_title">"Contribuisci a migliorare le funzioni e le prestazioni di Banana Browser"</string>
+<string name="usage_and_crash_reports_title">"Contribuisci a migliorare le funzionalità e le prestazioni di Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Copiata in Banana Browser"</string>
 <string name="save_password_preferences_export_action_description">"Esporta le password memorizzate su Banana Browser"</string>
 <string name="save_password_preferences_export_subject">"Password Banana Browser"</string>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"‏Banana Browser اطلاعات زیر را &lt;em&gt;ذخیره نخواهد کرد&lt;/em&gt;:
+<string name="new_tab_otr_not_saved">"‏Banana Browser اطلاعات زیر را&lt;em&gt;ذخیره نخواهد کرد&lt;/em&gt;:
         &lt;ul&gt;
-          &lt;li&gt;سابقه مرور
-          &lt;li&gt;کوکی‌ها و داده‌های سایت
+          &lt;li&gt;سابقه مرور شما
+          &lt;li&gt;داده‌های سایت و کوکی‌ها
           &lt;li&gt;اطلاعات واردشده در فرم‌ها
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"‏کارت‌ها و نشانی‌ها از Banana Browser و حساب Google شما (%1$s) هستند. می‌توانید آن‌ها را در BEGIN_LINKتنظیماتEND_LINK مدیریت کنید."</string>

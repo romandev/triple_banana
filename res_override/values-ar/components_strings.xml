@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"‏لن يحفظ &lt;em&gt;Banana Browser&lt;/em&gt; المعلومات التالية:
+<string name="new_tab_otr_not_saved">"‏&lt;em&gt;لن يحفظ&lt;/em&gt; Banana Browser المعلومات التالية:
         &lt;ul&gt;
-          &lt;li&gt;سجل التصفّح لديك
-          &lt;li&gt;ملفات تعريف الارتباط وبيانات الموقع
+          &lt;li&gt;سجلّ التصفُّح
+          &lt;li&gt;ملفات تعريف الارتباط وبيانات المواقع الإلكترونية
           &lt;li&gt;المعلومات التي تم إدخالها في النماذج
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"‏يتم أخذ البطاقات والعناوين من Banana Browser وحسابك على Google (%1$s)، ويمكنك إدارتها في BEGIN_LINKالإعداداتEND_LINK."</string>

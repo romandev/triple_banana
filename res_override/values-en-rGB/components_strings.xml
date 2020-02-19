@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;won’t save&lt;/em&gt; the following information:
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;won\'t save&lt;/em&gt; the following information:
         &lt;ul&gt;
           &lt;li&gt;Your browsing history
           &lt;li&gt;Cookies and site data

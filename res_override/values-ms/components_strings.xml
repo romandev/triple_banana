@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;tidak akan menyimpan&lt;/em&gt; maklumat berikut:
         &lt;ul&gt;
-          &lt;li&gt;Sejarah semak imbas anda
+          &lt;li&gt;Sejarah penyemakan imbas anda
           &lt;li&gt;Kuki dan data tapak
           &lt;li&gt;Maklumat yang dimasukkan dalam borang
         &lt;/ul&gt;"</string>

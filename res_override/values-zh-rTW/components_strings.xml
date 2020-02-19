@@ -4,7 +4,7 @@
         &lt;ul&gt;
           &lt;li&gt;你的瀏覽記錄
           &lt;li&gt;Cookie 和網站資料
-          &lt;li&gt;你在表單中輸入的資訊
+          &lt;li&gt;在表單中輸入的資訊
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"信用卡和地址資訊皆來自 Banana Browser 和你的 Google 帳戶 (%1$s)。你可以在BEGIN_LINK設定END_LINK頁面管理這些資訊。"</string>
 <string name="payments_card_and_address_settings_signed_out">"信用卡和地址資訊皆來自 Banana Browser。你可以在BEGIN_LINK設定END_LINK頁面管理這些資訊。"</string>

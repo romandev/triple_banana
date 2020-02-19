@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-<string name="new_tab_otr_not_saved">"Banana Browser এ নিম্নলিখিত তথ্য &lt;em&gt;সংরক্ষণ করা হয় না&lt;/em&gt;:
+<string name="new_tab_otr_not_saved">"এক্ষেত্রে নিচে দেওয়া তথ্য Banana Browser &lt;em&gt;সেভ করবে না&lt;/em&gt;:
         &lt;ul&gt;
-          &lt;li&gt;আপনার ব্রাউজিং এর ইতিহাস
-          &lt;li&gt;কুকিজ এবং সাইটের ডেটা
-          &lt;li&gt;আপনি ফর্মে যে তথ্য দিয়েছেন
+          &lt;li&gt;আপনার ব্রাউজিং ইতিহাস
+          &lt;li&gt;কুকি এবং সাইট ডেটা
+          &lt;li&gt;ফর্মে লেখা তথ্য
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"কার্ড ও ঠিকানাগুলি Banana Browser এবং আপনার Google অ্যাকাউন্ট (%1$s) থেকে এসেছে। আপনি BEGIN_LINKসেটিংসEND_LINKএ গিয়ে সেগুলি পরিচালনা করতে পারবেন।"</string>
 <string name="payments_card_and_address_settings_signed_out">"Banana Browser থেকে কার্ড এবং ঠিকানাগুলি এসেছে। আপনি BEGIN_LINKসেটিংসEND_LINK এ এগুলি পরিচালনা করতে পারবেন।"</string>
