@@ -33,7 +33,7 @@ public class ToolbarEditActivity extends SnackbarActivity {
                 ToolbarStateModel.getInstance().getToolbarButtonList());
 
         Toolbar toolbar = findViewById(R.id.toolbar);
-        toolbar.setTitle("Toolbar Editor");
+        toolbar.setTitle(R.string.toolbar_editor);
         setSupportActionBar(toolbar);
     }
 
