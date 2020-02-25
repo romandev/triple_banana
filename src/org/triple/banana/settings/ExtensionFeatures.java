@@ -54,6 +54,13 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             showRestartDialog();
             return true;
         });
+
+        SwitchPreferenceCompat bottomToolbar =
+                (SwitchPreferenceCompat) findPreference(FeatureName.BOTTOM_TOOLBAR);
+        bottomToolbar.setOnPreferenceChangeListener((preference, newValue) -> {
+            showRestartDialog();
+            return true;
+        });
     }
 
     private void showRestartDialog() {
@@ -69,6 +76,10 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     public static class FeatureName {
         public static final String ADBLOCK = "feature_name_adblock";
         public static final String BACKGROUND_PLAY = "feature_name_background_play";
+        // bottom_toolbar_enabled preference value is referenced to enable bottom toolbar in
+        // upstream. For sync with this value in triple banana, BOTTOM_TOOLBAR feature name has
+        // diffrent name style like others.
+        public static final String BOTTOM_TOOLBAR = "bottom_toolbar_enabled";
         public static final String SAFE_LOGIN = "feature_name_safe_login";
     }
 

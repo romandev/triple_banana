@@ -8,8 +8,10 @@ import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 class CommandLineInitializer implements BananaCommandLineInitializer {
     @Override
     public void initCommandLine() {
-        BananaCommandLine.get().appendSwitchWithValue(
-                "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
+        if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
+            BananaCommandLine.get().appendSwitchWithValue(
+                    "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
+        }
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             BananaCommandLine.get().appendSwitchWithValue(
                     "enable-blink-features", "BackgroundPlay");
