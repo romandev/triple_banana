@@ -16,19 +16,15 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator;
+import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.toolbar.ToolbarEditor;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.banana_extension_preferences);
-        Preference toolbarEditor = findPreference("launch_toolbar_editor");
-        toolbarEditor.setOnPreferenceClickListener(preference -> {
-            ToolbarEditor.show(getActivity());
-            return false;
-        });
 
-        SwitchPreferenceCompat adblock =
+        final SwitchPreferenceCompat adblock =
                 (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
         adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
         adblock.setOnPreferenceChangeListener((preference, newValue) -> {
@@ -36,7 +32,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
-        SwitchPreferenceCompat safeLogin =
+        final SwitchPreferenceCompat safeLogin =
                 (SwitchPreferenceCompat) findPreference(FeatureName.SAFE_LOGIN);
         safeLogin.setOnPreferenceChangeListener((preference, newValue) -> {
             if (safeLogin.isChecked()) {
@@ -48,19 +44,33 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
-        SwitchPreferenceCompat backgroundPlay =
-                (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
-        backgroundPlay.setOnPreferenceChangeListener((preference, newValue) -> {
-            showRestartDialog();
-            return true;
-        });
-
-        SwitchPreferenceCompat bottomToolbar =
+        final SwitchPreferenceCompat bottomToolbar =
                 (SwitchPreferenceCompat) findPreference(FeatureName.BOTTOM_TOOLBAR);
         bottomToolbar.setOnPreferenceChangeListener((preference, newValue) -> {
             showRestartDialog();
             return true;
         });
+
+        final Preference toolbarEditor = findPreference("launch_toolbar_editor");
+        toolbarEditor.setOnPreferenceClickListener(preference -> {
+            ToolbarEditor.show(getActivity());
+            return false;
+        });
+
+        final SwitchPreferenceCompat backgroundPlay =
+                (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
+        backgroundPlay.setVisible(backgroundPlay.isChecked());
+        backgroundPlay.setOnPreferenceChangeListener((preference, newValue) -> {
+            showRestartDialog();
+            return true;
+        });
+        if (!backgroundPlay.isChecked()) {
+            RemoteConfig.getBoolean("background_play", result -> {
+                if (result && backgroundPlay != null) {
+                    backgroundPlay.setVisible(true);
+                }
+            });
+        }
     }
 
     private void showRestartDialog() {
