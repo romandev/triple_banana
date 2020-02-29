@@ -1,0 +1,19 @@
+diff --git tb/components/search_engines/prepopulated_engines.json tb_diff/components/search_engines/prepopulated_engines.json
+--- tb/components/search_engines/prepopulated_engines.json
++++ tb_diff/components/search_engines/prepopulated_engines.json
+@@ -1104,6 +1104,15 @@
+       "id": 17
+     },
+ 
++    "youtube": {
++      "name": "YouTube",
++      "keyword": "youtube.com",
++      "favicon_url": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
++      "search_url": "https://m.youtube.com/results?search_query={searchTerms}",
++      "type": "SEARCH_ENGINE_YOUTUBE",
++      "id": 32
++    },
++
+     "walla": {
+       "name": "\u05d5\u05d5\u05d0\u05dc\u05d4!",
+       "keyword": "walla.co.il",

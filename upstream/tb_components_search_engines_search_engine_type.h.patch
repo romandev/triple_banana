@@ -1,0 +1,11 @@
+diff --git tb/components/search_engines/search_engine_type.h tb_diff/components/search_engines/search_engine_type.h
+--- tb/components/search_engines/search_engine_type.h
++++ tb_diff/components/search_engines/search_engine_type.h
+@@ -61,6 +61,7 @@ enum SearchEngineType {
+   SEARCH_ENGINE_WP,
+   SEARCH_ENGINE_YAHOO,
+   SEARCH_ENGINE_YANDEX,
++  SEARCH_ENGINE_YOUTUBE,
+   SEARCH_ENGINE_ZOZNAM,
+   SEARCH_ENGINE_360,
+   SEARCH_ENGINE_COCCOC,
