@@ -110,10 +110,14 @@ public enum ButtonId {
             case BANANA_EXTENSION:
                 imageResource = R.drawable.toolbar_button_banana;
                 break;
-            default:
-                // ADD_SECRET_TAB, ADD_TO_HOME, VISIT_HISTORY
-                // TODO(codeimpl) : After adding all images, it should be removed.
-                imageResource = R.drawable.ic_not_interested_black_24dp;
+            case ADD_SECRET_TAB:
+                imageResource = R.drawable.ic_add_secret_tab_black_24dp;
+                break;
+            case VISIT_HISTORY:
+                imageResource = R.drawable.ic_visit_history_black_24dp;
+                break;
+            case ADD_TO_HOME:
+                imageResource = R.drawable.ic_add_to_home_black_24dp;
                 break;
         }
         return imageResource;

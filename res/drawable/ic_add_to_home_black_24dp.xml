@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     Use of this source code is governed by a BSD-style license that can be
+     found in the LICENSE file. -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:targetApi="21"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M433.3,476.9H313.9c-8.8,0 -15.9,-7.1 -15.9,-15.9V360.6h-80.2v100.3c0,8.8 -7.1,15.9 -15.9,15.9H82.9c-8.8,0 -15.9,-7.1 -15.9,-15.9V213h31.9v232h87.1V344.7c0,-8.8 7.1,-15.9 15.9,-15.9h112c8.8,0 15.9,7.1 15.9,15.9V445h87.6V213h31.9v247.9C449.2,469.7 442.1,476.9 433.3,476.9z"
+        android:strokeWidth="5"
+        android:strokeColor="#010202" />
+
+    <path
+        android:fillColor="#050607"
+        android:pathData="M22.9,283.1c-4.3,0 -8.6,-1.7 -11.7,-5.2c-6,-6.5 -5.5,-16.5 1,-22.5L247.3,39.3c6.1,-5.6 15.6,-5.6 21.7,0.1l230.9,216.1c6.4,6 6.8,16.1 0.7,22.5c-6,6.4 -16.1,6.8 -22.5,0.7L258,72.8L33.7,278.9C30.7,281.7 26.8,283.1 22.9,283.1z"
+        android:strokeWidth="5"
+        android:strokeColor="#000000" />
+
+    <path
+        android:fillColor="#FF000000"
+        android:pathData="M246.1,233.3h-46.2v-15.5h46.2v-49.6h16.6v49.6h46.2v15.5h-46.2v49.8h-16.6V233.3z"
+        android:strokeWidth="9"
+        android:strokeColor="#010202" />
+</vector>
