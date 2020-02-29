@@ -1,0 +1,12 @@
+diff --git tb/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/TestNetworkClient.java tb_diff/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/TestNetworkClient.java
+--- tb/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/TestNetworkClient.java
++++ tb_diff/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/TestNetworkClient.java
+@@ -4,7 +4,7 @@
+ 
+ package org.chromium.chrome.browser.feed;
+ 
+-import org.chromium.base.VisibleForTesting;
++import androidx.annotation.VisibleForTesting;
+ 
+ /**
+  * A network client that returns configurable responses

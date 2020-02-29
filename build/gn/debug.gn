@@ -3,7 +3,8 @@
 # found in the LICENSE file.
 
 # Please keep alphabetical order
-enable_triple_banana=true
+enable_feed_in_chrome = false
+enable_triple_banana = true
 ffmpeg_branding = "Chrome"
 fieldtrial_testing_like_official_build=true
 is_component_build = true
