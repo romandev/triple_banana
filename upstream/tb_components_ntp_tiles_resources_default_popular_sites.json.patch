@@ -1,0 +1,70 @@
+diff --git tb/components/ntp_tiles/resources/default_popular_sites.json tb_diff/components/ntp_tiles/resources/default_popular_sites.json
+--- tb/components/ntp_tiles/resources/default_popular_sites.json
++++ tb_diff/components/ntp_tiles/resources/default_popular_sites.json
+@@ -1,42 +1,42 @@
+ [
+     {
+-        "large_icon_url": "https://www.chromium.org/_/rsrc/1484148948583/apple-touch-icon.png",
+-        "title": "The Chromium Projects `",
+-        "url": "https://www.chromium.org/"
++        "favicon_url": "https://www.google.com/favicon.ico",
++        "title": "Google",
++        "url": "https://www.google.com"
+     },
+     {
+-        "favicon_url": "https://codereview.chromium.org/static/favicon.ico",
+-        "title": "Chromium Code Reviews",
+-        "url": "https://codereview.chromium.org/"
++        "favicon_url": "https://s.ytimg.com/yts/img/favicon_32-vflOogEID.png",
++        "title": "YouTube",
++        "url": "https://www.youtube.com"
+     },
+     {
+-        "large_icon_url": "https://www.chromium.org/_/rsrc/1484148948583/apple-touch-icon.png",
+-        "title": "Git Repositories on chromium",
+-        "url": "https://chromium.googlesource.com/"
++        "favicon_url": "https://static.xx.fbcdn.net/rsrc.php/yo/r/iRmz9lCMBD2.ico",
++        "title": "Facebook",
++        "url": "https://www.facebook.com"
+     },
+     {
+-        "large_icon_url": "https://developers.google.com/_static/9bce7b6017/images/touch-icon.png",
+-        "title": "Google Open Source Programs Office",
+-        "url": "https://developers.google.com/open-source/"
++        "favicon_url": "https://abs.twimg.com/favicons/twitter.ico",
++        "title": "Twitter",
++        "url": "https://www.twitter.com"
+     },
+     {
+-        "large_icon_url": "https://freenode.net/static/img/logos/coloured-alphabg-sq-120.png",
+-        "title": "freenode",
+-        "url": "https://freenode.net/"
++        "favicon_url": "https://www.amazon.com/favicon.ico",
++        "title": "Amazon",
++        "url": "https://www.amazon.com"
+     },
+     {
+-        "large_icon_url": "https://assets-cdn.github.com/pinned-octocat.svg",
+-        "title": "Github Page of the Chromium Project",
+-        "url": "https://github.com/chromium/"
++        "favicon_url": "https://en.wikipedia.org/favicon.ico",
++        "title": "Wikipedia",
++        "url": "https://www.wikipedia.org"
+     },
+     {
+-        "large_icon_url": "https://cdn2.iconfinder.com/data/icons/minimalism/512/Chromium.png",
+-        "title": "Chrome Flags",
+-        "url": "chrome://flags"
++        "favicon_url": "https://www.naver.com/favicon.ico",
++        "title": "Naver",
++        "url": "https://www.naver.com"
+     },
+     {
+-        "large_icon_url": "https://cdn2.iconfinder.com/data/icons/minimalism/512/Chromium.png",
+-        "title": "Chrome Version",
+-        "url": "chrome://version/"
++        "favicon_url": "https://www.daum.net/favicon.ico",
++        "title": "Daum",
++        "url": "https://www.daum.net"
+     }
+ ]
