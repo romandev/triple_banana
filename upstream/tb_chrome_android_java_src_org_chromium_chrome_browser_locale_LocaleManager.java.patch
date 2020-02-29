@@ -1,0 +1,13 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java
+@@ -440,8 +440,7 @@ public class LocaleManager {
+      * @return List of engines to show.
+      */
+     public List<TemplateUrl> getSearchEnginesForPromoDialog(@SearchEnginePromoType int promoType) {
+-        throw new IllegalStateException(
+-                "Not applicable unless existing or new promos are required");
++        return TemplateUrlServiceFactory.get().getTemplateUrls();
+     }
+ 
+     /** Set a LocaleManager to be used for testing. */

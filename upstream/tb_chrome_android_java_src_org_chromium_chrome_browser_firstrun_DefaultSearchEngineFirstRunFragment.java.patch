@@ -1,0 +1,21 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java
+@@ -53,7 +53,7 @@ public class DefaultSearchEngineFirstRunFragment extends Fragment implements Fir
+ 
+         assert TemplateUrlServiceFactory.get().isLoaded();
+         mSearchEnginePromoDialoType = LocaleManager.getInstance().getSearchEnginePromoShowType();
+-        if (mSearchEnginePromoDialoType != LocaleManager.SearchEnginePromoType.DONT_SHOW) {
++        if (true) {
+             Runnable dismissRunnable = new Runnable() {
+                 @Override
+                 public void run() {
+@@ -71,7 +71,7 @@ public class DefaultSearchEngineFirstRunFragment extends Fragment implements Fir
+     public void setUserVisibleHint(boolean isVisibleToUser) {
+         super.setUserVisibleHint(isVisibleToUser);
+ 
+-        if (isVisibleToUser) {
++        if (false) {
+             if (mSearchEnginePromoDialoType == LocaleManager.SearchEnginePromoType.DONT_SHOW) {
+                 PostTask.postTask(UiThreadTaskTraits.DEFAULT, new Runnable() {
+                     @Override
