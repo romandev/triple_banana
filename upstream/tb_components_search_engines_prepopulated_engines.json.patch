@@ -1,7 +1,7 @@
 diff --git tb/components/search_engines/prepopulated_engines.json tb_diff/components/search_engines/prepopulated_engines.json
 --- tb/components/search_engines/prepopulated_engines.json
 +++ tb_diff/components/search_engines/prepopulated_engines.json
-@@ -1104,6 +1104,15 @@
+@@ -1104,6 +1104,16 @@
        "id": 17
      },
  
@@ -10,6 +10,7 @@ diff --git tb/components/search_engines/prepopulated_engines.json tb_diff/compon
 +      "keyword": "youtube.com",
 +      "favicon_url": "https://s.ytimg.com/yts/img/favicon-vfl8qSV2F.ico",
 +      "search_url": "https://m.youtube.com/results?search_query={searchTerms}",
++      "suggest_url": "{google:baseSuggestURL}search?{google:searchFieldtrialParameter}client={google:suggestClient}&gs_ri={google:suggestRid}&xssi=t&q={searchTerms}&{google:inputType}{google:omniboxFocusType}{google:cursorPosition}{google:currentPageUrl}{google:pageClassification}{google:searchVersion}{google:sessionToken}{google:prefetchQuery}sugkey={google:suggestAPIKeyParameter}",
 +      "type": "SEARCH_ENGINE_YOUTUBE",
 +      "id": 32
 +    },
