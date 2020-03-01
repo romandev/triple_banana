@@ -13,13 +13,13 @@ import org.triple.banana.settings.ExtensionFeatures;
 import java.util.EnumMap;
 
 public enum ButtonId {
-    BACK,
     FORWARD,
     SHARE,
     BOOKMARK,
+    SEARCH,
     NEW_TAB,
     BANANA_EXTENSION,
-    SEARCH,
+    BACK,
     ADD_SECRET_TAB,
     DOWNLOAD,
     DESKTOP_VIEW,
@@ -28,8 +28,7 @@ public enum ButtonId {
     RELOAD,
     VISIT_HISTORY,
     ARCHIVE,
-    PRINT,
-    ADBLOCK;
+    PRINT;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -85,9 +84,6 @@ public enum ButtonId {
                 break;
             case BOOKMARK:
                 imageResource = R.drawable.ic_star_border_black_24dp;
-                break;
-            case ADBLOCK:
-                imageResource = R.drawable.ic_remove_circle_outline_black_24dp;
                 break;
             case DOWNLOAD:
                 imageResource = R.drawable.ic_file_download_24dp;
