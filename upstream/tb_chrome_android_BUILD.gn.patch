@@ -29,7 +29,15 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -413,7 +412,7 @@ android_library("chrome_java") {
+@@ -405,6 +404,7 @@ android_library("chrome_java") {
+     "//components/ui_metrics:ui_metrics_enums_java",
+     "//content/public/browser:contacts_picker_properties_requested_javagen",
+     "//net:effective_connection_type_java",
++    "//triple_banana:triple_banana_build_config",
+   ]
+ 
+   android_manifest_for_lint = chrome_public_android_manifest
+@@ -413,7 +413,7 @@ android_library("chrome_java") {
    java_files = chrome_java_sources + [
                   app_hooks_impl,
                   _chrome_version_java_file,
@@ -38,7 +46,7 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  
    # Include sources from feed_java_sources.gni.
    java_files += feed_java_sources
-@@ -1063,7 +1062,7 @@ android_resources("chrome_public_test_apk_resources") {
+@@ -1063,7 +1063,7 @@ android_resources("chrome_public_test_apk_resources") {
  
  # Overrides icon / name defined in chrome_app_java_resources.
  android_resources("chrome_public_apk_resources") {

@@ -158,3 +158,15 @@ android_assets("triple_banana_assets") {
     "//triple_banana/src/org/triple/banana/adblock/filter/Filters",
   ]
 }
+
+java_cpp_template("triple_banana_build_config") {
+  package_path = "org/banana/cake/interfaces"
+  sources = [
+    "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaBuildConfig.template",
+  ]
+  defines = []
+
+  if (target_cpu == "arm64") {
+    defines += [ "_IS_ARM64" ]
+  }
+}
