@@ -9,8 +9,8 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
     @Override
     public void initCommandLine() {
         if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
-            BananaCommandLine.get().appendSwitchWithValue(
-                    "enable-features", "ChromeDuet,HomePageButtonForceEnabled");
+            BananaCommandLine.get().appendSwitchWithValue("enable-features",
+                    "ChromeDuet,HomePageButtonForceEnabled,OmniboxSearchEngineLogo");
         }
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             BananaCommandLine.get().appendSwitchWithValue(
