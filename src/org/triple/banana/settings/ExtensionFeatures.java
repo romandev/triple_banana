@@ -59,14 +59,16 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
 
         final SwitchPreferenceCompat backgroundPlay =
                 (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
-        backgroundPlay.setVisible(backgroundPlay.isChecked());
+        boolean isVisible = wasSetByUser(FeatureName.BACKGROUND_PLAY);
+        backgroundPlay.setVisible(isVisible);
         backgroundPlay.setOnPreferenceChangeListener((preference, newValue) -> {
             showRestartDialog();
             return true;
         });
-        if (!backgroundPlay.isChecked()) {
+        if (!isVisible) {
             RemoteConfig.getBoolean("background_play", result -> {
                 if (result && backgroundPlay != null) {
+                    setEnabled(FeatureName.BACKGROUND_PLAY, backgroundPlay.isChecked());
                     backgroundPlay.setVisible(true);
                 }
             });
@@ -107,6 +109,10 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
 
     public static boolean isEnabled(String feature) {
         return isEnabled(feature, false);
+    }
+
+    public static boolean wasSetByUser(String feature) {
+        return BananaApplicationUtils.get().getSharedPreferences().contains(feature);
     }
 
     public static boolean isEnabled(String feature, boolean defaultValue) {
