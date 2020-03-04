@@ -1,0 +1,47 @@
+#!/bin/bash
+#
+# Copyright 2020 The Triple Banana Authors. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+
+. $TOOLS_PATH/common/chromium.sh
+. $TOOLS_PATH/common/path.sh
+. $TOOLS_PATH/common/stack_dir.sh
+
+function get_private_change_list() {
+  push_dir $(triple_banana_private_path)
+  ls $(triple_banana_private_path)/*.patch
+  pop_dir
+}
+
+function check_patch() {
+  local patch_file=$1
+  git apply --check --3way $patch_file
+  return $?
+}
+
+function apply_patch() {
+  local patch_file=$1
+  git apply --3way $patch_file
+  return $?
+}
+
+function apply_patches() {
+  push_dir $(chromium_path)
+  local success=true
+  for change in $(get_private_change_list); do
+    echo "Patching $change..."
+    if check_patch $change; then
+      apply_patch $change
+    else
+      success=false
+    fi
+    echo
+  done
+  if $success; then
+    git commit -m "Triple Banana Private"
+  fi
+  pop_dir
+}
+
+apply_patches

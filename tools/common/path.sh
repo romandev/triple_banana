@@ -28,6 +28,10 @@ function triple_banana_resource_path() {
   echo $(triple_banana_path)/res
 }
 
+function triple_banana_private_path() {
+  echo $(chromium_path)/triple_banana_private
+}
+
 function override_resource_path() {
   echo $(triple_banana_path)/res_override
 }
