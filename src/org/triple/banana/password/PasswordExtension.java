@@ -19,9 +19,17 @@ import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
+import java.lang.ref.WeakReference;
+
 public class PasswordExtension implements BananaPasswordExtension {
     private SecurityLevel mCurrentSecurityLevel = SecurityLevel.UNKNOWN;
     private boolean mSafeLoginSwitchChecked;
+    private WeakReference<SwitchCompat> mInfobarSwitch;
+    private WeakReference<TextView> mInfobarSwitchDescription;
+
+    public PasswordExtension() {
+        SecurityLevelChecker.get().addListener(this::onSecurityLevelChanged);
+    }
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
@@ -47,7 +55,6 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     @Override
     public void overridePreferenceScreen(Context context, PreferenceScreen screen) {
-        SecurityLevelChecker.get().addListener(this::onSecurityLevelChanged);
         screen.addPreference(createAuthenticationSwitch(context));
     }
 
@@ -55,9 +62,11 @@ public class PasswordExtension implements BananaPasswordExtension {
     public void setupSafeLoginSwitch(View container) {
         mSafeLoginSwitchChecked = true;
         SwitchCompat switchView = container.findViewById(R.id.infobar_extra_check);
+        mInfobarSwitch = new WeakReference<>(switchView);
         switchView.setOnCheckedChangeListener(
                 (buttonView, isChecked) -> { mSafeLoginSwitchChecked = isChecked; });
         TextView text = (TextView) container.findViewById(R.id.control_message);
+        mInfobarSwitchDescription = new WeakReference<>(text);
         text.setText(R.string.use_safe_login);
     }
 
@@ -81,6 +90,13 @@ public class PasswordExtension implements BananaPasswordExtension {
         if (ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)
                 && newLevel == SecurityLevel.NON_SECURE) {
             ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, false);
+        }
+
+        if (mInfobarSwitch != null && mInfobarSwitch.get() != null) {
+            boolean isSecure = newLevel == SecurityLevel.SECURE;
+            mInfobarSwitch.get().setEnabled(isSecure);
+            mInfobarSwitch.get().setChecked(isSecure);
+            mInfobarSwitchDescription.get().setEnabled(isSecure);
         }
     }
 }
