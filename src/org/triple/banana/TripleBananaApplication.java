@@ -8,7 +8,6 @@ import android.content.Context;
 
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaTabManager;
-import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.password.PasswordExtension;
 import org.triple.banana.settings.ExtensionFeatures;
@@ -24,7 +23,6 @@ public class TripleBananaApplication extends BananaApplication {
             BananaTabManager.get().addObserver(
                     bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
         }
-        SecurityLevelChecker.get().addListener(PasswordExtension::onSecurityLevelChanged);
     }
 
     @Override

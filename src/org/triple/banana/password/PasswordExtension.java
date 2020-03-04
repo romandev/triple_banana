@@ -14,12 +14,13 @@ import android.widget.TextView;
 import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator;
+import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 public class PasswordExtension implements BananaPasswordExtension {
-    private static SecurityLevel sCurrentSecurityLevel = SecurityLevel.UNKNOWN;
+    private SecurityLevel mCurrentSecurityLevel = SecurityLevel.UNKNOWN;
     private boolean mSafeLoginSwitchChecked;
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
@@ -30,7 +31,7 @@ public class PasswordExtension implements BananaPasswordExtension {
                 context.getResources().getString(R.string.authentication_title));
         authenticationSwitch.setSummaryOn(context.getResources().getString(R.string.text_on));
         authenticationSwitch.setSummaryOff(context.getResources().getString(R.string.text_off));
-        authenticationSwitch.setEnabled(sCurrentSecurityLevel == SecurityLevel.SECURE);
+        authenticationSwitch.setEnabled(mCurrentSecurityLevel == SecurityLevel.SECURE);
         authenticationSwitch.setOnPreferenceChangeListener((preference, newValue) -> {
             if (authenticationSwitch.isChecked()) {
                 Authenticator.get().authenticate(result -> {
@@ -46,6 +47,7 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     @Override
     public void overridePreferenceScreen(Context context, PreferenceScreen screen) {
+        SecurityLevelChecker.get().addListener(this::onSecurityLevelChanged);
         screen.addPreference(createAuthenticationSwitch(context));
     }
 
@@ -61,21 +63,21 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     @Override
     public boolean isSafeLoginEnabled() {
-        return sCurrentSecurityLevel == SecurityLevel.SECURE
+        return mCurrentSecurityLevel == SecurityLevel.SECURE
                 && ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN);
     }
 
     @Override
     public void setSafeLoginEnabled() {
-        if (sCurrentSecurityLevel == SecurityLevel.NON_SECURE
+        if (mCurrentSecurityLevel == SecurityLevel.NON_SECURE
                 || ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)) {
             return;
         }
         ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, mSafeLoginSwitchChecked);
     }
 
-    public static void onSecurityLevelChanged(SecurityLevel newLevel) {
-        sCurrentSecurityLevel = newLevel;
+    public void onSecurityLevelChanged(SecurityLevel newLevel) {
+        mCurrentSecurityLevel = newLevel;
         if (ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)
                 && newLevel == SecurityLevel.NON_SECURE) {
             ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, false);

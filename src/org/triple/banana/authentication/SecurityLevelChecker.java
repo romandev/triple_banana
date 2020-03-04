@@ -13,7 +13,7 @@ import java.util.Set;
 public class SecurityLevelChecker {
     private static SecurityLevelChecker sInstance;
     private final Set<Listener> mListeners = new HashSet<>();
-    private SecurityLevel mLastSecurityLevel;
+    private SecurityLevel mLastSecurityLevel = SecurityLevel.UNKNOWN;
 
     public enum SecurityLevel { UNKNOWN, SECURE, NON_SECURE }
 
@@ -29,6 +29,7 @@ public class SecurityLevelChecker {
 
     public void addListener(Listener listener) {
         mListeners.add(listener);
+        listener.onChange(mLastSecurityLevel);
     }
 
     public void removeListener(Listener listener) {
@@ -41,6 +42,7 @@ public class SecurityLevelChecker {
                 checkAndUpdateSecurityLevel();
             }
         });
+        checkAndUpdateSecurityLevel();
     }
 
     private void checkAndUpdateSecurityLevel() {
