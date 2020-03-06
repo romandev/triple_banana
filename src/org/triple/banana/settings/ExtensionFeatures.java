@@ -16,10 +16,14 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator;
+import org.triple.banana.authentication.SecurityLevelChecker;
+import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.toolbar.ToolbarEditor;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
+    private SwitchPreferenceCompat mSafeLogin;
+
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.banana_extension_preferences);
@@ -32,12 +36,11 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
-        final SwitchPreferenceCompat safeLogin =
-                (SwitchPreferenceCompat) findPreference(FeatureName.SAFE_LOGIN);
-        safeLogin.setOnPreferenceChangeListener((preference, newValue) -> {
-            if (safeLogin.isChecked()) {
+        mSafeLogin = (SwitchPreferenceCompat) findPreference(FeatureName.SAFE_LOGIN);
+        mSafeLogin.setOnPreferenceChangeListener((preference, newValue) -> {
+            if (mSafeLogin.isChecked()) {
                 Authenticator.get().authenticate(result -> {
-                    if (result) safeLogin.setChecked(false);
+                    if (result) mSafeLogin.setChecked(false);
                 });
                 return false;
             }
@@ -75,6 +78,20 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         }
     }
 
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        SecurityLevelChecker.get().addListener(this::onSecurityLevelChanged);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        // FIXME(#313): Need a good way to prevent memory leak. Because 'onDestroy' is not
+        // guaranteed to be called in the fragment.
+        SecurityLevelChecker.get().removeListener(this::onSecurityLevelChanged);
+    }
+
     private void showRestartDialog() {
         AlertDialog.Builder builder = BananaApplicationUtils.get().getDialogBuilder(getActivity());
         builder.setMessage(R.string.restart_message)
@@ -83,6 +100,16 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
                         (dialog, which) -> { BananaApplicationUtils.get().restart(); })
                 .create()
                 .show();
+    }
+
+    public void onSecurityLevelChanged(SecurityLevel newLevel) {
+        if (mSafeLogin != null) {
+            boolean isSecure = newLevel == SecurityLevel.SECURE;
+            mSafeLogin.setEnabled(isSecure);
+            if (!isSecure) {
+                mSafeLogin.setChecked(false);
+            }
+        }
     }
 
     public static class FeatureName {
