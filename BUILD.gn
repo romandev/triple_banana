@@ -4,6 +4,7 @@
 
 import("//build/config/android/rules.gni")
 import("//chrome/android/chrome_public_apk_tmpl.gni")
+import("//triple_banana/VERSION")
 
 manifest_package = "org.triple.banana"
 triple_banana_manifest = "$target_gen_dir/AndroidManifest.xml"
@@ -28,6 +29,9 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   android_manifest_dep = ":triple_banana_manifest"
 
   shared_libraries = [ "//chrome/android:libchrome" ]
+
+  version_name = BANANA_VERSION + "(" + CHROMIUM_VERSION + ")"
+  version_code = BANANA_VERSION
 
   deps = [
     ":triple_banana_assets",

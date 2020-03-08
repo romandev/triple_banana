@@ -4,9 +4,9 @@
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
 
-. $TOOLS_PATH/common/chromium.sh
 . $TOOLS_PATH/common/path.sh
 . $TOOLS_PATH/common/stack_dir.sh
+. $TOOLS_PATH/common/version.sh
 
 function reset_upstream_patches() {
   push_dir $(triple_banana_upstream_path)
