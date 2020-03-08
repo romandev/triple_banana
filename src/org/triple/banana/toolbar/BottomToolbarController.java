@@ -68,6 +68,12 @@ public class BottomToolbarController implements BananaBottomToolbarController,
             }
         });
 
+        // Create all toolbar buttons when toolbar controller initialized
+        for (ButtonId buttonId : ButtonId.values()) {
+            mToolbarButtons.put(buttonId, createToolbarButton(buttonId));
+        }
+        makeToolbarMenuButton();
+
         ToolbarStateModel.getInstance().addObserver(this);
         ToolbarStateModel.getInstance().notifyObservers(); // only first time
 
@@ -79,44 +85,43 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         ViewGroup viewGroup = mViewGroup.get();
         viewGroup.removeAllViews();
 
-        buttonDestroy();
-
         for (int i = 0; i < MAX_BUTTON_SIZE; i++) {
-            ToolbarButton toolbarButton =
-                    new ToolbarButton(BananaApplicationUtils.get().getApplicationContext());
-            int width = (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), 56,
-                    BananaApplicationUtils.get()
-                            .getApplicationContext()
-                            .getResources()
-                            .getDisplayMetrics());
-            toolbarButton.setLayoutParams(
-                    new ViewGroup.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT));
-            toolbarButton.setButtonId(mButtonIdList.get(i));
-            toolbarButton.setImageResource(ButtonId.getImageResource(mButtonIdList.get(i)));
-            if (ButtonId.getOnClickListeners(mButtonIdList.get(i)) != null) {
-                toolbarButton.setOnClickListener(
-                        ButtonId.getOnClickListeners(mButtonIdList.get(i)));
-            }
-            if (ButtonId.getOnClickListeners(mButtonIdList.get(i)) != null) {
-                toolbarButton.setOnLongClickListener(
-                        ButtonId.getOnLongClickListeners(mButtonIdList.get(i)));
-            }
-            toolbarButton.setActivityTabProvider(mTabProvider);
+            ToolbarButton toolbarButton = mToolbarButtons.get(mButtonIdList.get(i));
             viewGroup.addView(toolbarButton);
-            mToolbarButtons.put(mButtonIdList.get(i), toolbarButton);
             if (mIsIncognitoMode) {
                 toolbarButton.getImageButton().setImageTintList(
                         ColorStateList.valueOf(Color.WHITE));
             }
-
             if (i < MAX_BUTTON_SIZE - 1) addSpaceView();
         }
-
-        makeToolbarMenuButton();
 
         if (mIsInitializeWithNative) {
             buttonInitializeWithNative();
         }
+    }
+
+    private ToolbarButton createToolbarButton(ButtonId buttonId) {
+        ToolbarButton toolbarButton =
+                new ToolbarButton(BananaApplicationUtils.get().getApplicationContext());
+        int width = (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), 56,
+                BananaApplicationUtils.get()
+                        .getApplicationContext()
+                        .getResources()
+                        .getDisplayMetrics());
+        toolbarButton.setLayoutParams(
+                new ViewGroup.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT));
+        toolbarButton.setButtonId(buttonId);
+        toolbarButton.setImageResource(ButtonId.getImageResource(buttonId));
+        if (ButtonId.getOnClickListeners(buttonId) != null) {
+            toolbarButton.setOnClickListener(ButtonId.getOnClickListeners(buttonId));
+        }
+        if (ButtonId.getOnClickListeners(buttonId) != null) {
+            toolbarButton.setOnLongClickListener(ButtonId.getOnLongClickListeners(buttonId));
+        }
+        if (mTabProvider != null) {
+            toolbarButton.setActivityTabProvider(mTabProvider);
+        }
+        return toolbarButton;
     }
 
     private void makeToolbarMenuButton() {
