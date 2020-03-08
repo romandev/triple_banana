@@ -31,4 +31,7 @@ public interface BananaBottomToolbarController {
     MenuButton getMenuButton();
     void destroy();
     void updateBookmarkButtonStatus(boolean isBookmarked, boolean editingAllowed);
+    void updateBackButtonVisibility(boolean canGoBack);
+    void updateForwardButtonVisibility(boolean canGoForward);
+    void updateDesktopViewButtonState(boolean isDesktopView);
 }

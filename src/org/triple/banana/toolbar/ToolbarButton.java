@@ -15,7 +15,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
-import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 
 import org.chromium.base.ApiCompatibilityUtils;
@@ -111,30 +110,12 @@ class ToolbarButton extends LinearLayout implements TintObserver {
         mActivityTabTabObserver = new ActivityTabTabObserver(activityTabProvider) {
             @Override
             protected void onObservingDifferentTab(Tab tab) {
-                updateButtonState();
             }
 
             @Override
             public void onUpdateUrl(Tab tab, String url) {
-                updateButtonState();
             }
         };
-    }
-
-    public void updateButtonState() {
-        if (mButtonId == ButtonId.BACK) {
-            boolean canGoBack = BananaToolbarManager.get().canGoBack();
-            setEnabled(canGoBack);
-            mImageButton.setEnabled(canGoBack);
-        } else if (mButtonId == ButtonId.FORWARD) {
-            boolean canGoForward = BananaToolbarManager.get().canGoForward();
-            setEnabled(canGoForward);
-            mImageButton.setEnabled(canGoForward);
-        } else if (mButtonId == ButtonId.DESKTOP_VIEW) {
-            boolean isRds = BananaToolbarManager.get().isRds();
-            setImageResource(
-                    isRds ? R.drawable.ic_phone_black_24dp : R.drawable.ic_desktop_black_24dp);
-        }
     }
 
     public void updateBookmarkButtonState(boolean isBookmarked, boolean editingAllowed) {
@@ -154,6 +135,27 @@ class ToolbarButton extends LinearLayout implements TintObserver {
                         getImageButton(), mThemeColorProvider.getTint());
             }
             setEnabled(editingAllowed);
+        }
+    }
+
+    public void updateBackButtonVisibility(boolean canGoBack) {
+        if (mButtonId == ButtonId.BACK) {
+            mImageButton.setEnabled(canGoBack);
+            setEnabled(canGoBack);
+        }
+    }
+
+    public void updateForwardButtonVisibility(boolean canGoForward) {
+        if (mButtonId == ButtonId.FORWARD) {
+            mImageButton.setEnabled(canGoForward);
+            setEnabled(canGoForward);
+        }
+    }
+
+    public void updateDesktopViewButtonState(boolean isDesktopView) {
+        if (mButtonId == ButtonId.DESKTOP_VIEW) {
+            setImageResource(isDesktopView ? R.drawable.ic_phone_black_24dp
+                                           : R.drawable.ic_desktop_black_24dp);
         }
     }
 

@@ -186,6 +186,36 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         }
     }
 
+    @Override
+    public void updateBackButtonVisibility(boolean canGoBack) {
+        if (mToolbarButtons != null) {
+            ToolbarButton backButton = mToolbarButtons.get(ButtonId.BACK);
+            if (backButton != null) {
+                backButton.updateBackButtonVisibility(canGoBack);
+            }
+        }
+    }
+
+    @Override
+    public void updateForwardButtonVisibility(boolean canGoForward) {
+        if (mToolbarButtons != null) {
+            ToolbarButton forwardButton = mToolbarButtons.get(ButtonId.FORWARD);
+            if (forwardButton != null) {
+                forwardButton.updateForwardButtonVisibility(canGoForward);
+            }
+        }
+    }
+
+    @Override
+    public void updateDesktopViewButtonState(boolean isDesktopView) {
+        if (mToolbarButtons != null) {
+            ToolbarButton desktopViewButton = mToolbarButtons.get(ButtonId.DESKTOP_VIEW);
+            if (desktopViewButton != null) {
+                desktopViewButton.updateDesktopViewButtonState(isDesktopView);
+            }
+        }
+    }
+
     /**
      * Show the update badge over the bottom toolbar's app menu.
      */

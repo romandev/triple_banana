@@ -27,7 +27,4 @@ public interface BananaToolbarManager {
     void print();
     void goAdblockSetting();
     void openSettingPage(Class settingFragmentPage);
-    boolean canGoBack();
-    boolean canGoForward();
-    boolean isRds();
 }

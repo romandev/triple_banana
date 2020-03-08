@@ -156,28 +156,4 @@ public class CakeToolbarManager implements BananaToolbarManager {
         if (activity == null) return;
         PreferencesLauncher.launchSettingsPage(activity, settingFragmentClass);
     }
-
-    @Override
-    public boolean canGoBack() {
-        ChromeTabbedActivity activity = getChromeTabbedActivity();
-        if (activity == null) return false;
-        return activity.getActivityTab().canGoBack();
-    }
-
-    @Override
-    public boolean canGoForward() {
-        ChromeTabbedActivity activity = getChromeTabbedActivity();
-        if (activity == null) return false;
-        return activity.getActivityTab().canGoForward();
-    }
-
-    @Override
-    public boolean isRds() {
-        ChromeTabbedActivity activity = getChromeTabbedActivity();
-        if (activity == null) return false;
-        return activity.getActivityTab()
-                .getWebContents()
-                .getNavigationController()
-                .getUseDesktopUserAgent();
-    }
 }
