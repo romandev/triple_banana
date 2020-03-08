@@ -1,0 +1,13 @@
+diff --git tb/components/component_updater/configurator_impl.h tb_diff/components/component_updater/configurator_impl.h
+--- tb/components/component_updater/configurator_impl.h
++++ tb_diff/components/component_updater/configurator_impl.h
+@@ -98,7 +98,9 @@ class ConfiguratorImpl {
+   const bool deltas_enabled_;
+   const bool fast_update_;
+   const bool pings_enabled_;
++#if !defined(ENABLE_TRIPLE_BANANA)
+   const bool require_encryption_;
++#endif
+   const GURL url_source_override_;
+   const int initial_delay_;
+ 

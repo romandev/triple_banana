@@ -1,0 +1,32 @@
+diff --git tb/components/component_updater/configurator_impl.cc tb_diff/components/component_updater/configurator_impl.cc
+--- tb/components/component_updater/configurator_impl.cc
++++ tb_diff/components/component_updater/configurator_impl.cc
+@@ -43,7 +43,9 @@ ConfiguratorImpl::ConfiguratorImpl(
+       deltas_enabled_(config_policy.DeltaUpdatesEnabled()),
+       fast_update_(config_policy.FastUpdate()),
+       pings_enabled_(config_policy.PingsEnabled()),
++#if !defined(ENABLE_TRIPLE_BANANA)
+       require_encryption_(require_encryption),
++#endif
+       url_source_override_(config_policy.UrlSourceOverride()),
+       initial_delay_(config_policy.InitialDelay()) {
+   if (config_policy.TestRequest()) {
+@@ -73,6 +75,9 @@ int ConfiguratorImpl::UpdateDelay() const {
+ }
+ 
+ std::vector<GURL> ConfiguratorImpl::UpdateUrl() const {
++#if defined(ENABLE_TRIPLE_BANANA)
++  std::vector<GURL> urls;
++#else
+   if (url_source_override_.is_valid())
+     return {GURL(url_source_override_)};
+ 
+@@ -80,7 +85,7 @@ std::vector<GURL> ConfiguratorImpl::UpdateUrl() const {
+                          GURL(kUpdaterJSONFallbackUrl)};
+   if (require_encryption_)
+     update_client::RemoveUnsecureUrls(&urls);
+-
++#endif
+   return urls;
+ }
+ 
