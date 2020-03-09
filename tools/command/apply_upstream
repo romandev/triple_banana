@@ -38,9 +38,7 @@ function apply_patches() {
     fi
     echo
   done
-  write_version_file
   if $success; then
-    git add $(chromium_path)/chrome/VERSION
     git commit -m "Triple Banana $(get_triple_banana_version)"
   fi
   pop_dir

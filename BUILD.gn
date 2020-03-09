@@ -31,7 +31,6 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   shared_libraries = [ "//chrome/android:libchrome" ]
 
   version_name = BANANA_VERSION + "(" + CHROMIUM_VERSION + ")"
-  version_code = BANANA_VERSION
 
   deps = [
     ":triple_banana_assets",
