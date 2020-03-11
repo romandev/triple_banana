@@ -30,6 +30,10 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 
   shared_libraries = [ "//chrome/android:libchrome" ]
 
+  # FIXME(#323): We might have to support loading the native library directly
+  # from the apk (without extracting) by mmap() or the system linker.
+  load_library_from_apk = false
+
   version_name = BANANA_VERSION + "(" + CHROMIUM_VERSION + ")"
 
   deps = [
