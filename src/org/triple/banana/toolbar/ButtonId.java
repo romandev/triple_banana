@@ -74,10 +74,10 @@ public enum ButtonId {
                 imageResource = R.drawable.btn_forward;
                 break;
             case SHARE:
-                imageResource = R.drawable.ic_menu_share_holo_light;
+                imageResource = R.drawable.ic_share_black_24dp;
                 break;
             case SEARCH:
-                imageResource = R.drawable.ic_search;
+                imageResource = R.drawable.ic_search_black_24dp;
                 break;
             case NEW_TAB:
                 imageResource = R.drawable.ic_add_black_24dp;

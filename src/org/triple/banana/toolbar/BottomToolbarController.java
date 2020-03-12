@@ -5,8 +5,6 @@
 package org.triple.banana.toolbar;
 
 import android.content.Context;
-import android.content.res.ColorStateList;
-import android.graphics.Color;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -88,10 +86,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         for (int i = 0; i < MAX_BUTTON_SIZE; i++) {
             ToolbarButton toolbarButton = mToolbarButtons.get(mButtonIdList.get(i));
             viewGroup.addView(toolbarButton);
-            if (mIsIncognitoMode) {
-                toolbarButton.getImageButton().setImageTintList(
-                        ColorStateList.valueOf(Color.WHITE));
-            }
             if (i < MAX_BUTTON_SIZE - 1) addSpaceView();
         }
 
