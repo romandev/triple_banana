@@ -1,3 +1,13 @@
+# 1.02 @ 80.0.3987.132
+
+## Chromium base version
+- **80.0.3987.132**
+
+## Minor changes
+- Fix a bug toolbar button color according to theme (#320)
+- Use system linker instead of crazy linker since N+ OS (#327)
+
+
 # 1.00 @ 80.0.3987.132
 
 ## Chromium base version
