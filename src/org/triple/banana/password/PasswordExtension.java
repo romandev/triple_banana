@@ -53,6 +53,14 @@ public class PasswordExtension implements BananaPasswordExtension {
         return authenticationSwitch;
     }
 
+    private void updateSafeLoginSwitchState(boolean enabled) {
+        if (mInfobarSwitch == null || mInfobarSwitch.get() == null) return;
+
+        mInfobarSwitch.get().setEnabled(enabled);
+        mInfobarSwitch.get().setChecked(enabled);
+        mInfobarSwitchDescription.get().setEnabled(enabled);
+    }
+
     @Override
     public void overridePreferenceScreen(Context context, PreferenceScreen screen) {
         screen.addPreference(createAuthenticationSwitch(context));
@@ -60,14 +68,20 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     @Override
     public void setupSafeLoginSwitch(View container) {
-        mSafeLoginSwitchChecked = true;
+        assert !isSafeLoginEnabled();
+
+        mSafeLoginSwitchChecked = mCurrentSecurityLevel == SecurityLevel.SECURE;
+
         SwitchCompat switchView = container.findViewById(R.id.infobar_extra_check);
         mInfobarSwitch = new WeakReference<>(switchView);
         switchView.setOnCheckedChangeListener(
                 (buttonView, isChecked) -> { mSafeLoginSwitchChecked = isChecked; });
+
         TextView text = (TextView) container.findViewById(R.id.control_message);
         mInfobarSwitchDescription = new WeakReference<>(text);
         text.setText(R.string.use_safe_login);
+
+        updateSafeLoginSwitchState(mSafeLoginSwitchChecked);
     }
 
     @Override
@@ -92,11 +106,6 @@ public class PasswordExtension implements BananaPasswordExtension {
             ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, false);
         }
 
-        if (mInfobarSwitch != null && mInfobarSwitch.get() != null) {
-            boolean isSecure = newLevel == SecurityLevel.SECURE;
-            mInfobarSwitch.get().setEnabled(isSecure);
-            mInfobarSwitch.get().setChecked(isSecure);
-            mInfobarSwitchDescription.get().setEnabled(isSecure);
-        }
+        updateSafeLoginSwitchState(newLevel == SecurityLevel.SECURE);
     }
 }
