@@ -14,7 +14,7 @@ public interface BananaPasswordExtension {
     }
 
     void overridePreferenceScreen(Context context, PreferenceScreen screen);
-    void setupSafeLoginSwitch(View container);
-    boolean isSafeLoginEnabled();
-    void setSafeLoginEnabled();
+    void setupSecureLoginSwitch(View container);
+    boolean isSecureLoginEnabled();
+    void setSecureLoginEnabled();
 }

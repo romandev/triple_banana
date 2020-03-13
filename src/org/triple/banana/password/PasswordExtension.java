@@ -23,7 +23,7 @@ import java.lang.ref.WeakReference;
 
 public class PasswordExtension implements BananaPasswordExtension {
     private SecurityLevel mCurrentSecurityLevel = SecurityLevel.UNKNOWN;
-    private boolean mSafeLoginSwitchChecked;
+    private boolean mSecureLoginSwitchChecked;
     private WeakReference<SwitchCompat> mInfobarSwitch;
     private WeakReference<TextView> mInfobarSwitchDescription;
 
@@ -33,7 +33,7 @@ public class PasswordExtension implements BananaPasswordExtension {
 
     private SwitchPreferenceCompat createAuthenticationSwitch(Context context) {
         SwitchPreferenceCompat authenticationSwitch = new SwitchPreferenceCompat(context, null);
-        authenticationSwitch.setKey(FeatureName.SAFE_LOGIN);
+        authenticationSwitch.setKey(FeatureName.SECURE_LOGIN);
         authenticationSwitch.setOrder(0);
         authenticationSwitch.setTitle(
                 context.getResources().getString(R.string.authentication_title));
@@ -53,7 +53,7 @@ public class PasswordExtension implements BananaPasswordExtension {
         return authenticationSwitch;
     }
 
-    private void updateSafeLoginSwitchState(boolean enabled) {
+    private void updateSecureLoginSwitchState(boolean enabled) {
         if (mInfobarSwitch == null || mInfobarSwitch.get() == null) return;
 
         mInfobarSwitch.get().setEnabled(enabled);
@@ -67,45 +67,45 @@ public class PasswordExtension implements BananaPasswordExtension {
     }
 
     @Override
-    public void setupSafeLoginSwitch(View container) {
-        assert !isSafeLoginEnabled();
+    public void setupSecureLoginSwitch(View container) {
+        assert !isSecureLoginEnabled();
 
-        mSafeLoginSwitchChecked = mCurrentSecurityLevel == SecurityLevel.SECURE;
+        mSecureLoginSwitchChecked = mCurrentSecurityLevel == SecurityLevel.SECURE;
 
         SwitchCompat switchView = container.findViewById(R.id.infobar_extra_check);
         mInfobarSwitch = new WeakReference<>(switchView);
         switchView.setOnCheckedChangeListener(
-                (buttonView, isChecked) -> { mSafeLoginSwitchChecked = isChecked; });
+                (buttonView, isChecked) -> { mSecureLoginSwitchChecked = isChecked; });
 
         TextView text = (TextView) container.findViewById(R.id.control_message);
         mInfobarSwitchDescription = new WeakReference<>(text);
-        text.setText(R.string.use_safe_login);
+        text.setText(R.string.use_secure_login);
 
-        updateSafeLoginSwitchState(mSafeLoginSwitchChecked);
+        updateSecureLoginSwitchState(mSecureLoginSwitchChecked);
     }
 
     @Override
-    public boolean isSafeLoginEnabled() {
+    public boolean isSecureLoginEnabled() {
         return mCurrentSecurityLevel == SecurityLevel.SECURE
-                && ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN);
+                && ExtensionFeatures.isEnabled(FeatureName.SECURE_LOGIN);
     }
 
     @Override
-    public void setSafeLoginEnabled() {
+    public void setSecureLoginEnabled() {
         if (mCurrentSecurityLevel == SecurityLevel.NON_SECURE
-                || ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)) {
+                || ExtensionFeatures.isEnabled(FeatureName.SECURE_LOGIN)) {
             return;
         }
-        ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, mSafeLoginSwitchChecked);
+        ExtensionFeatures.setEnabled(FeatureName.SECURE_LOGIN, mSecureLoginSwitchChecked);
     }
 
     public void onSecurityLevelChanged(SecurityLevel newLevel) {
         mCurrentSecurityLevel = newLevel;
-        if (ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)
+        if (ExtensionFeatures.isEnabled(FeatureName.SECURE_LOGIN)
                 && newLevel == SecurityLevel.NON_SECURE) {
-            ExtensionFeatures.setEnabled(FeatureName.SAFE_LOGIN, false);
+            ExtensionFeatures.setEnabled(FeatureName.SECURE_LOGIN, false);
         }
 
-        updateSafeLoginSwitchState(newLevel == SecurityLevel.SECURE);
+        updateSecureLoginSwitchState(newLevel == SecurityLevel.SECURE);
     }
 }

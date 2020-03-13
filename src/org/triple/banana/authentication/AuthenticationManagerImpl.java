@@ -20,7 +20,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
 
         sCallback = callback;
 
-        if (!ExtensionFeatures.isEnabled(FeatureName.SAFE_LOGIN)) {
+        if (!ExtensionFeatures.isEnabled(FeatureName.SECURE_LOGIN)) {
             handleResult(true);
             return;
         }

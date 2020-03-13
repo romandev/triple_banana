@@ -22,7 +22,7 @@ import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.toolbar.ToolbarEditor;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
-    private SwitchPreferenceCompat mSafeLogin;
+    private SwitchPreferenceCompat mSecureLogin;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -36,11 +36,11 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
-        mSafeLogin = (SwitchPreferenceCompat) findPreference(FeatureName.SAFE_LOGIN);
-        mSafeLogin.setOnPreferenceChangeListener((preference, newValue) -> {
-            if (mSafeLogin.isChecked()) {
+        mSecureLogin = (SwitchPreferenceCompat) findPreference(FeatureName.SECURE_LOGIN);
+        mSecureLogin.setOnPreferenceChangeListener((preference, newValue) -> {
+            if (mSecureLogin.isChecked()) {
                 Authenticator.get().authenticate(result -> {
-                    if (result) mSafeLogin.setChecked(false);
+                    if (result) mSecureLogin.setChecked(false);
                 });
                 return false;
             }
@@ -103,11 +103,11 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     }
 
     public void onSecurityLevelChanged(SecurityLevel newLevel) {
-        if (mSafeLogin != null) {
+        if (mSecureLogin != null) {
             boolean isSecure = newLevel == SecurityLevel.SECURE;
-            mSafeLogin.setEnabled(isSecure);
+            mSecureLogin.setEnabled(isSecure);
             if (!isSecure) {
-                mSafeLogin.setChecked(false);
+                mSecureLogin.setChecked(false);
             }
         }
     }
@@ -119,7 +119,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         // upstream. For sync with this value in triple banana, BOTTOM_TOOLBAR feature name has
         // diffrent name style like others.
         public static final String BOTTOM_TOOLBAR = "bottom_toolbar_enabled";
-        public static final String SAFE_LOGIN = "feature_name_safe_login";
+        public static final String SECURE_LOGIN = "feature_name_secure_login";
     }
 
     public static void setEnabled(String feature, boolean value) {
