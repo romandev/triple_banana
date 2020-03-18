@@ -1,0 +1,23 @@
+diff --git tb/components/subresource_filter/core/browser/subresource_filter_features.h tb_diff/components/subresource_filter/core/browser/subresource_filter_features.h
+--- tb/components/subresource_filter/core/browser/subresource_filter_features.h
++++ tb_diff/components/subresource_filter/core/browser/subresource_filter_features.h
+@@ -122,6 +122,9 @@ struct Configuration {
+   static Configuration MakePresetForLiveRunOnPhishingSites();
+   static Configuration MakePresetForPerformanceTestingDryRunOnAllSites();
+   static Configuration MakePresetForLiveRunForBetterAds();
++#if defined(ENABLE_TRIPLE_BANANA)
++  static Configuration MakePresetForLiveRunOnAllSites();
++#endif
+ 
+   ActivationConditions activation_conditions;
+   ActivationOptions activation_options;
+@@ -219,6 +222,9 @@ extern const char kDisablePresetsParameterName[];
+ extern const char kPresetLiveRunOnPhishingSites[];
+ extern const char kPresetPerformanceTestingDryRunOnAllSites[];
+ extern const char kPresetLiveRunForBetterAds[];
++#if defined(ENABLE_TRIPLE_BANANA)
++extern const char kPresetLiveRunOnAllSites[];
++#endif
+ 
+ }  // namespace subresource_filter
+ 
