@@ -6,7 +6,7 @@
 enable_feed_in_chrome = false
 enable_triple_banana = true
 ffmpeg_branding = "Chrome"
-fieldtrial_testing_like_official_build=true
+fieldtrial_testing_like_official_build = true
 is_component_build = true
 is_debug = true
 proprietary_codecs = true

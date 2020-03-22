@@ -4,7 +4,7 @@
 
 # Please keep alphabetical order
 android_channel = "stable"
-debuggable_apks=false
+debuggable_apks = false
 enable_feed_in_chrome = false
 enable_triple_banana = true
 ffmpeg_branding = "Chrome"
