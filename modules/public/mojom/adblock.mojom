@@ -6,5 +6,5 @@
 module adblock.mojom;
 
 interface FilterLoader {
-  Load() => (string filter_path);
+  Load(string current_version) => (string filter_path);
 };
