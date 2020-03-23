@@ -1,3 +1,22 @@
+# 1.03 @ 80.0.3987.149
+
+## Chromium base version
+- **80.0.3987.149**
+
+## Change log
+- Update LICENSE for this project (#355)
+- Implement metadata check for subresource filter (#354)
+- Make RemoteConfig reusable (#353)
+- Disable seed based field trial testing (#351)
+- Make the filter loader download from the remote server (#350)
+- Improve SimpleDownloader class (#349)
+- Implement SimpleDownloader class (#345)
+- Rebase 80.0.3987.149 (#344)
+- Refactor subresource filtering related code in upstream patches (#342)
+- Rename SafeLogin with SecureLogin (#330)
+- Fix a bug that the safe login infobar switch is always enabled (#329)
+
+
 # 1.02 @ 80.0.3987.132
 
 ## Chromium base version
