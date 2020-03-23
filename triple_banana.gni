@@ -1,5 +1,6 @@
-# Use of this source code is governed by a BSD-style license that can be
-# found in the LICENSE file.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 triple_banana_hooks_sources = [
   "//triple_banana/modules/public/java/org/triple/banana/modules/Connector.java",
