@@ -23,6 +23,8 @@ import org.triple.banana.toolbar.ToolbarEditor;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
     private SwitchPreferenceCompat mSecureLogin;
+    private RemoteConfig mRemoteConfig =
+            new RemoteConfig("https://zino.dev/triple_banana_config/remote_config.json");
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -69,8 +71,9 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
         if (!isVisible) {
-            RemoteConfig.getBoolean("background_play", result -> {
-                if (result && backgroundPlay != null) {
+            mRemoteConfig.getAsync(config -> {
+                boolean isRemoteEnabled = config.optBoolean("background_play");
+                if (isRemoteEnabled && backgroundPlay != null) {
                     setEnabled(FeatureName.BACKGROUND_PLAY, backgroundPlay.isChecked());
                     backgroundPlay.setVisible(true);
                 }

@@ -19,34 +19,37 @@ import java.util.concurrent.Executors;
 
 public class RemoteConfig {
     private static final String TAG = "RemoteConfig";
-    private static final String REMOTE_CONFIG_URL =
-            "https://zino.dev/triple_banana_config/remote_config.json";
     private static final Executor WORKER_THREAD = Executors.newSingleThreadExecutor();
     private static final Handler MAIN_THREAD = new Handler(Looper.getMainLooper());
 
-    private static JSONObject sCache;
+    private final String mRemoteConfigUrl;
+    private JSONObject mCache;
 
-    private interface JsonCallback { void onResult(JSONObject json); }
+    public interface JsonCallback { void onResult(JSONObject json); }
 
-    private static void getJsonFromUrlAsync(final String urlString, final JsonCallback callback) {
-        if (sCache != null && sCache.length() != 0) {
-            callback.onResult(sCache);
+    public RemoteConfig(String url) {
+        mRemoteConfigUrl = url;
+    }
+
+    public void getAsync(final JsonCallback callback) {
+        if (mCache != null && mCache.length() != 0) {
+            callback.onResult(mCache);
             return;
         }
 
         WORKER_THREAD.execute(() -> {
-            final JSONObject json = getJsonFromUrl(urlString);
+            final JSONObject json = get();
             MAIN_THREAD.post(() -> {
-                sCache = json;
+                mCache = json;
                 callback.onResult(json);
             });
         });
     }
 
-    private static JSONObject getJsonFromUrl(String urlString) {
+    public JSONObject get() {
         HttpURLConnection connection = null;
         try {
-            URL url = new URL(urlString);
+            URL url = new URL(mRemoteConfigUrl);
 
             connection = (HttpURLConnection) url.openConnection();
             connection.setConnectTimeout(5000);
@@ -64,7 +67,7 @@ public class RemoteConfig {
         return new JSONObject();
     }
 
-    private static String getStringFromStream(InputStream inputStream) {
+    private String getStringFromStream(InputStream inputStream) {
         if (inputStream == null) return new String();
 
         try {
@@ -76,25 +79,12 @@ public class RemoteConfig {
             }
             return outputStream.toString("UTF-8");
         } catch (Exception e) {
-            Log.e(TAG, "readStringFromStream(): " + e.toString());
+            Log.e(TAG, "getStringFromStream(): " + e.toString());
         }
         return new String();
     }
 
-    private static JSONObject getJSONObjectFromStream(InputStream inputStream) throws Exception {
+    private JSONObject getJSONObjectFromStream(InputStream inputStream) throws Exception {
         return new JSONObject(getStringFromStream(inputStream));
-    }
-
-    public interface BooleanCallback { void onResult(boolean result); }
-
-    public static void getBoolean(final String key, final BooleanCallback callback) {
-        getJsonFromUrlAsync(REMOTE_CONFIG_URL, json -> {
-            try {
-                callback.onResult(json.has(key) && json.getBoolean(key));
-            } catch (Exception e) {
-                Log.e(TAG, "getBoolean(): " + e.toString());
-                callback.onResult(false);
-            }
-        });
     }
 }
