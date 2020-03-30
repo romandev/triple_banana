@@ -140,6 +140,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarStatePreferenceStoreImpl.java",
     "//triple_banana/src/org/triple/banana/toolbar/ViewHolderDragListener.java",
 
+    # util
+    "//triple_banana/src/org/triple/banana/util/Unzip.java",
+
     # legacy modules
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
   ]

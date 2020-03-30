@@ -15,9 +15,12 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.adblock.mojom.FilterLoader;
 import org.triple.banana.download.SimpleDownloader;
 import org.triple.banana.remote_config.RemoteConfig;
+import org.triple.banana.util.Unzip;
 
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
+
+import java.io.File;
 
 public class FilterLoaderImpl implements FilterLoader {
     private static final String TAG = "FilterLoaderImpl";
@@ -49,20 +52,35 @@ public class FilterLoaderImpl implements FilterLoader {
             Log.i(TAG, "load(): current = " + currentVersion + ", new = " + newVersion);
             if (TextUtils.equals(currentVersion, newVersion)) return;
 
-            // TODO(zino): We might have to consider zip compression.
-
             final long filterSize = info.optLong("size");
-            Uri filterUri = Uri.withAppendedPath(FILTER_BASE_URL, newVersion + ".filter");
-            SimpleDownloader.get().download(filterUri, result -> {
-                if (result == null || result.length() != filterSize) {
-                    Log.i(TAG, "load(): Download failed");
+            Uri filterUri = Uri.withAppendedPath(FILTER_BASE_URL, newVersion + ".filter.zip");
+            SimpleDownloader.get().download(filterUri, compressedFilter -> {
+                if (compressedFilter == null) {
+                    Log.e(TAG, "load(): Downloading failed");
                     callback.call(new String());
                     return;
                 }
 
+                Log.i(TAG, "load(): Extract " + compressedFilter);
+                if (!Unzip.get().extract(compressedFilter, true)) {
+                    Log.e(TAG, "load(): Extracting failed");
+                    callback.call(new String());
+                    return;
+                }
+
+                File filterFile = new File(compressedFilter.getPath().replace(".zip", ""));
+                if (filterFile.length() != filterSize) {
+                    Log.e(TAG, "load(): Downloaded filter is corrupted");
+                    callback.call(new String());
+                    return;
+                }
+
+                compressedFilter.remove();
+                // TODO(zino): How can we remove filterFile?
+
                 Log.i(TAG, "load(): Filter updated");
                 updateLastCheckTime();
-                callback.call(result.getAbsolutePath());
+                callback.call(filterFile.getPath());
             });
         });
     }
