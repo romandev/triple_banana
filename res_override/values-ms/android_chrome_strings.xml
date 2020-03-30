@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Segerakkan data Banana Browser anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu meningkatkan ciri dan prestasi Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Disalin ke Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Eksport kata laluan yang disimpan dengan menggunakan Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Kata Laluan Banana Browser"</string>
+<string name="password_settings_export_action_description">"Eksport kata laluan yang disimpan dengan menggunakan Banana Browser"</string>
+<string name="password_settings_export_subject">"Kata Laluan Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Bantu tingkatkan keselamatan Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Untuk mengesan apl dan tapak berbahaya, Banana Browser menghantar URL sesetengah halaman yang anda lawati, maklumat sistem yang terhad dan sesetengah kandungan halaman kepada Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Data Banana Browser dikosongkan"</string>

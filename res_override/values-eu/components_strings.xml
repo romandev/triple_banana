@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser-k &lt;em&gt;ez du gordeko&lt;/em&gt; informazio hau:
+        &lt;ul&gt;
+          &lt;li&gt;arakatze-historia,
+          &lt;li&gt;cookieak eta webguneko datuak,
+          &lt;li&gt;inprimakietan idatzitako datuak.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Banana Browser-tik eta zure Google-ko kontutik (%1$s) hartu dira txartelak eta helbideak. Kudeatu nahi badituzu, joan BEGIN_LINKEzarpenakEND_LINK atalera."</string>
+<string name="payments_card_and_address_settings_signed_out">"Banana Browser-tik hartu dira txartelak eta helbideak. Kudeatu nahi badituzu, joan BEGIN_LINKEzarpenakEND_LINK atalera."</string>
+</resources>

@@ -4,20 +4,20 @@
 <string name="sync_switch_title">"‏مزامنة بيانات Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"‏المساعدة في تحسين ميزات Banana Browser وأدائه"</string>
 <string name="autofill_describe_local_copy">"‏تم النسخ إلى Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"‏تصدير كلمات المرور المخزنة من خلال Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"‏كلمات المرور في Banana Browser"</string>
+<string name="password_settings_export_action_description">"‏تصدير كلمات المرور المخزنة من خلال Banana Browser"</string>
+<string name="password_settings_export_subject">"‏كلمات المرور في Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"‏المساعدة في تحسين أمان Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"‏لرصد التطبيقات ومواقع الويب الضارة، يُرسل Banana Browser عناوين URL لبعض الصفحات التي زرتها ومعلومات محدودة للنظام وبعض أنواع محتوى الصفحات إلى Google."</string>
 <string name="clear_browsing_data_history_dialog_title">"‏بيانات Banana Browser التي تم محوها"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"‏تمت إزالة البيانات المُحددة من متصفح Banana Browser والأجهزة التي تمت مزامنتها.
 
 قد يحتوي حسابك على Google على نماذج أخرى لسجل التصفح، مثل عمليات البحث والأنشطة من خدمات Google الأخرى في &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"‏تشغيل الأذونات لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"‏تفعيل الأذونات لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
 <string name="android_permission_off">"‏إتاحة الإذن لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;"</string>
 <string name="android_location_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى موقعك الجغرافي، يُرجى أيضًا تفعيل الموقع الجغرافي في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الكاميرا، يُرجى أيضًا تشغيل الكاميرا في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الكاميرا، يُرجى أيضًا تفعيل الكاميرا في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
 <string name="android_notifications_permission_off">"‏للسماح لمتصفِّح Banana Browser بإرسال الإشعارات إليك، يمكنك أيضًا تفعيل الإشعارات في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الميكروفون، يُرجى أيضًا تشغيل الميكروفون في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الميكروفون، يُرجى أيضًا تفعيل الميكروفون في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60 بالمائة."</string>
 <string name="data_reduction_description_lite_mode">"‏عند تفعيل الوضع البسيط، يستخدم Banana Browser خدمات Google لتحميل الصفحات بشكلٍ أسرع. يعيد الوضع البسيط كتابة الصفحات البطيئة للغاية من أجل تحميل المحتوى الأساسي فقط. لا ينطبق الوضع البسيط على علامات تبويب التصفُّح المتخفي."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60%. لتحسين مستوى أداء الصفحات التي تزورها، يرسل Banana Browser عدد زيارات الويب إلى Google. &lt;link&gt;مزيد من المعلومات&lt;/link&gt;"</string>
@@ -69,7 +69,7 @@
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"‏يتعذَّر تحديث Banana Browser. يُرجى الاطِّلاع على مزيد من الخيارات"</string>
 <string name="unsupported_number_of_windows">"‏عدد نسخ Banana Browser غير متوافق."</string>
 <string name="storage_management_unimportant_site_data_description">"‏مساحة تخزين الموقع التي لا يعتقد Banana Browser أنها مهمة (مثل المواقع التي لا تتضمَّن إعدادات محفوظة أو تلك التي لا تزورها مرارًا)"</string>
-<string name="storage_management_clear_unimportant_dialog_text">"‏سيؤدي هذا إلى مسح ملفات تعريف الارتباط وذاكرة التخزين المؤقت والبيانات الأخرى للمواقع التي لا يعتقد Banana Browser أنها مهمة."</string>
+<string name="storage_management_clear_unimportant_dialog_text">"‏سيؤدي هذا إلى محو ملفات تعريف الارتباط وذاكرة التخزين المؤقت والبيانات الأخرى للمواقع التي لا يعتقد Banana Browser أنها مهمة."</string>
 <string name="storage_management_all_storage_description">"‏إجمالي البيانات المُستخدَمة من قِبل Banana Browser، بما في ذلك الحسابات والإشارات المرجعية والإعدادات المحفوظة"</string>
 <string name="storage_management_reset_app_dialog_text">"‏سيتم حذف جميع بيانات تطبيق Banana Browser نهائيًا. ويشمل ذلك جميع الملفات والإعدادات والحسابات وقواعد البيانات وما إلى ذلك."</string>
 <string name="sogou_explanation">"‏يمكن لـ Banana Browser استخدام &lt;b&gt;Sogou&lt;/b&gt; للبحث في الصين. ويمكنك تغيير هذا في &lt;link&gt;الإعدادات&lt;/link&gt;."</string>

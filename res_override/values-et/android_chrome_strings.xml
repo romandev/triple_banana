@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Banana Browser\'i andmete sünkroonimine"</string>
 <string name="usage_and_crash_reports_title">"Aidake täiustada Banana Browser\'i funktsioone ja toimivust"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'i kopeeritud"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser\'i salvestatud paroolide eksportimine"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser\'i paroolid"</string>
+<string name="password_settings_export_action_description">"Banana Browser\'i salvestatud paroolide eksportimine"</string>
+<string name="password_settings_export_subject">"Banana Browser\'i paroolid"</string>
 <string name="safe_browsing_scout_reporting_title">"Aidake Banana Browser\'i turvalisust täiustada"</string>
 <string name="safe_browsing_scout_reporting_summary">"Ohtlike rakenduste ja saitide tuvastamiseks saadab Banana Browser mõnede teie külastatud lehtede URL-id, piiratud süsteemiteabe ja mõne lehe sisu Google\'ile"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser\'i andmed kustutati"</string>

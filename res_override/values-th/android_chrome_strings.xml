@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"ซิงค์ข้อมูล Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"ช่วยปรับปรุงฟีเจอร์และประสิทธิภาพของ Banana Browser"</string>
 <string name="autofill_describe_local_copy">"คัดลอกไปยัง Banana Browser แล้ว"</string>
-<string name="save_password_preferences_export_action_description">"ส่งออกรหัสผ่านที่เก็บไว้ใน Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"รหัสผ่าน Banana Browser"</string>
+<string name="password_settings_export_action_description">"ส่งออกรหัสผ่านที่เก็บไว้ใน Banana Browser"</string>
+<string name="password_settings_export_subject">"รหัสผ่าน Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"ช่วยปรับปรุงความปลอดภัยของ Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"ในการตรวจหาแอปและเว็บไซต์ที่เป็นอันตราย Banana Browser จะส่ง URL ของหน้าบางหน้าที่คุณเข้าชม ข้อมูลระบบที่จำกัด และเนื้อหาบางส่วนของหน้าไปให้ Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"ล้างข้อมูล Banana Browser แล้ว"</string>

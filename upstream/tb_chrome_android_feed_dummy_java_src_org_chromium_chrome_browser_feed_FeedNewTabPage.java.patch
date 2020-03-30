@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/FeedNewTabPage.java tb_diff/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/FeedNewTabPage.java
 --- tb/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/FeedNewTabPage.java
 +++ tb_diff/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/feed/FeedNewTabPage.java
-@@ -4,7 +4,8 @@
+@@ -4,13 +4,15 @@
  
  package org.chromium.chrome.browser.feed;
  
@@ -11,3 +11,27 @@ diff --git tb/chrome/android/feed/dummy/java/src/org/chromium/chrome/browser/fee
  import org.chromium.chrome.browser.ActivityTabProvider;
  import org.chromium.chrome.browser.ChromeActivity;
  import org.chromium.chrome.browser.lifecycle.ActivityLifecycleDispatcher;
+-import org.chromium.chrome.browser.native_page.NativePageHost;
+ import org.chromium.chrome.browser.ntp.NewTabPage;
++import org.chromium.chrome.browser.tab.TabImpl;
+ import org.chromium.chrome.browser.tabmodel.TabModelSelector;
++import org.chromium.chrome.browser.ui.native_page.NativePageHost;
+ 
+ /**
+  * Provides a new tab page that displays an interest feed rendered list of content suggestions.
+@@ -23,12 +25,13 @@ public class FeedNewTabPage extends NewTabPage {
+      * @param tabModelSelector The {@link TabModelSelector} for the containing activity.
+      * @param activityTabProvider Allows us to check if we are the current tab.
+      * @param activityLifecycleDispatcher Allows us to subscribe to backgrounding events.
++     * @param tab The {@link TabImpl} that contains this new tab page.
+      */
+     public FeedNewTabPage(ChromeActivity activity, NativePageHost nativePageHost,
+             TabModelSelector tabModelSelector, ActivityTabProvider activityTabProvider,
+-            ActivityLifecycleDispatcher activityLifecycleDispatcher) {
++            ActivityLifecycleDispatcher activityLifecycleDispatcher, TabImpl tab) {
+         super(activity, nativePageHost, tabModelSelector, activityTabProvider,
+-                activityLifecycleDispatcher);
++                activityLifecycleDispatcher, tab);
+     }
+ 
+     @VisibleForTesting

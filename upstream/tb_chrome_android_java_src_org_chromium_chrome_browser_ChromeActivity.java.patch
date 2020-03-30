@@ -13,7 +13,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity
              public void onCrash(Tab tab) {
                  postDeferredStartupIfNeeded();
              }
-@@ -2229,9 +2234,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -2096,9 +2101,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);

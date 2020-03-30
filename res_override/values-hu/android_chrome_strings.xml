@@ -2,10 +2,10 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="sign_in_to_chrome">"Bejelentkezés a Banana Browser-ba"</string>
 <string name="sync_switch_title">"Banana Browser-adatok szinkronizálása"</string>
-<string name="usage_and_crash_reports_title">"Segítség a Banana Browser funkcióinak és teljesítményének javítása érdekében"</string>
+<string name="usage_and_crash_reports_title">"Hozzájárulás a Banana Browser funkcióinak és teljesítményének javításához"</string>
 <string name="autofill_describe_local_copy">"A Banana Browser-ba másolva"</string>
-<string name="save_password_preferences_export_action_description">"A Banana Browser-ban tárolt jelszavak exportálása"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser-jelszavak"</string>
+<string name="password_settings_export_action_description">"A Banana Browser-ban tárolt jelszavak exportálása"</string>
+<string name="password_settings_export_subject">"Banana Browser-jelszavak"</string>
 <string name="safe_browsing_scout_reporting_title">"Segítség a Banana Browser biztonságának továbberősítésében"</string>
 <string name="safe_browsing_scout_reporting_summary">"A veszélyes alkalmazások és webhelyek észlelésének érdekében a Banana Browser az egyes felkeresett oldalak URL-jét, valamint korlátozott rendszer-információkat és bizonyos oldaltartalmakat továbbít a Google-nak."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-adatok törölve"</string>

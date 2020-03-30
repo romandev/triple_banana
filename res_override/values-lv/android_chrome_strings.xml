@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Jūsu Banana Browser datu sinhronizācija"</string>
 <string name="usage_and_crash_reports_title">"Palīdzēt uzlabot Banana Browser funkcijas un veiktspēju"</string>
 <string name="autofill_describe_local_copy">"Nokopēta pārlūkā Banana Browser."</string>
-<string name="save_password_preferences_export_action_description">"Eksportēt pārlūkā Banana Browser saglabātās paroles"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser paroles"</string>
+<string name="password_settings_export_action_description">"Eksportēt pārlūkā Banana Browser saglabātās paroles"</string>
+<string name="password_settings_export_subject">"Banana Browser paroles"</string>
 <string name="safe_browsing_scout_reporting_title">"Palīdzēt uzlabot Banana Browser drošību"</string>
 <string name="safe_browsing_scout_reporting_summary">"Lai noteiktu bīstamas lietotnes un vietnes, pārlūkā Banana Browser dažu jūsu apmeklēto lapu saturs, ierobežots sistēmas informācijas apjoms un daļa lapu satura tiek nosūtīta uzņēmumam Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser dati tika notīrīti"</string>

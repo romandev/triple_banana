@@ -5,8 +5,8 @@
 <string name="usage_and_crash_reports_title">"Помощ за подобряването на функциите и ефективността на Banana Browser"</string>
 <string name="usage_and_crash_reports_summary">"Автоматично изпраща до Google статистически данни за използването на Banana Browser и сигнали за сривове"</string>
 <string name="autofill_describe_local_copy">"Копирано в Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Експортиране на паролите, съхранявани в Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Пароли в Banana Browser"</string>
+<string name="password_settings_export_action_description">"Експортиране на паролите, съхранявани в Banana Browser"</string>
+<string name="password_settings_export_subject">"Пароли в Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Помощ за подобряването на сигурността на Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"За да открива опасни приложения и сайтове, Banana Browser изпраща до Google URL адресите на някои от страниците, които посещавате, ограничена системна информация и част от съдържанието на страниците"</string>
 <string name="clear_browsing_data_history_dialog_title">"Данните в Banana Browser са изчистени"</string>

@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
 --- tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
 +++ tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
-@@ -72,6 +72,10 @@
+@@ -70,6 +70,10 @@
  #endif
  #endif
  
@@ -12,7 +12,7 @@ diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc 
  namespace {
  
  void AddDataReductionProxyReceiver(
-@@ -309,6 +313,10 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
+@@ -348,4 +352,8 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
          std::move(host_receiver));
    }
  #endif  // BUILDFLAG(ENABLE_PLUGINS)
@@ -21,5 +21,3 @@ diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc 
 +  triple_banana::OnBindHostReceiverForRenderer(std::move(receiver));
 +#endif
  }
- 
- void ChromeContentBrowserClient::BindHostReceiverForRendererOnIOThread(

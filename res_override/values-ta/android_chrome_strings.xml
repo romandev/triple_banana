@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"உங்கள் Banana Browser தரவை ஒத்திசைக்கவும்"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser இன் அம்சங்களையும் செயல்திறனையும் மேம்படுத்த உதவுக"</string>
 <string name="autofill_describe_local_copy">"Banana Browserக்கு நகலெடுக்கப்பட்டது"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser இல் சேமித்த கடவுச்சொற்களை ஏற்றும்"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser கடவுச்சொற்கள்"</string>
+<string name="password_settings_export_action_description">"Banana Browser இல் சேமித்த கடவுச்சொற்களை ஏற்றும்"</string>
+<string name="password_settings_export_subject">"Banana Browser கடவுச்சொற்கள்"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browserமின் பாதுகாப்பை மேம்படுத்த உதவுக"</string>
 <string name="safe_browsing_scout_reporting_summary">"ஆபத்தான ஆப்ஸையும் தளங்களையும் கண்டறிய நீங்கள் பார்வையிட்ட சில பக்கங்களின் URLகளையும், வரம்பிற்குட்பட்ட சிஸ்டம் தகவல்களையும், சில பக்கங்களின் உள்ளடக்கத்தையும் Googleளுக்கு Banana Browser அனுப்பும்"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser தரவு அழிக்கப்பட்டது"</string>

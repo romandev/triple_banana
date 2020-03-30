@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Sincronitza les dades de Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Ajuda a millorar les funcions i el rendiment de Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Copiada de Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Exporta les contrasenyes emmagatzemades a Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Contrasenyes de Banana Browser"</string>
+<string name="password_settings_export_action_description">"Exporta les contrasenyes emmagatzemades a Banana Browser"</string>
+<string name="password_settings_export_subject">"Contrasenyes de Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Ajuda a millorar la seguretat de Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Per detectar aplicacions i llocs web perillosos, Banana Browser envia a Google els URL d\'algunes de les pàgines que visites, informació limitada del sistema i part del contingut de les pàgines"</string>
 <string name="clear_browsing_data_history_dialog_title">"S\'han esborrat les dades de Banana Browser"</string>

@@ -1,7 +1,7 @@
 diff --git tb/components/search_engines/prepopulated_engines.json tb_diff/components/search_engines/prepopulated_engines.json
 --- tb/components/search_engines/prepopulated_engines.json
 +++ tb_diff/components/search_engines/prepopulated_engines.json
-@@ -1104,6 +1104,16 @@
+@@ -1100,6 +1100,16 @@
        "id": 17
      },
  

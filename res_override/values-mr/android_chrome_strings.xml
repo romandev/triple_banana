@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"तुमचा Banana Browser डेटा सिंक करा"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ची वैशिष्ट्ये आणि परफॉर्मन्स सुधारण्यात मदत करा"</string>
 <string name="autofill_describe_local_copy">"Banana Browser वर कॉपी केले"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser सह स्टोअर केलेला पासवर्ड पाठवा"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser पासवर्ड"</string>
+<string name="password_settings_export_action_description">"Banana Browser सह स्टोअर केलेला पासवर्ड पाठवा"</string>
+<string name="password_settings_export_subject">"Banana Browser पासवर्ड"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser सुरक्षेमध्ये सुधारणा करण्यात मदत करा"</string>
 <string name="safe_browsing_scout_reporting_summary">"धोकादायक ॲप्स आणि साइट शोधण्यासाठी, Banana Browser तुम्ही भेट दिलेल्या काही पेजचे URL, मर्यादित सिस्टमची माहिती आणि काही पेजचा आशय Google कडे पाठवतो"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser डेटा साफ केला"</string>

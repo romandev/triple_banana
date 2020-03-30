@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Đồng bộ hóa dữ liệu của bạn trên Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Giúp cải thiện hiệu suất và các tính năng của Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Đã sao chép vào Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Xuất mật khẩu đã lưu trữ với Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Mật khẩu Banana Browser"</string>
+<string name="password_settings_export_action_description">"Xuất mật khẩu đã lưu trữ với Banana Browser"</string>
+<string name="password_settings_export_subject">"Mật khẩu Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Giúp cải thiện khả năng bảo mật của Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Để phát hiện các ứng dụng và trang web nguy hiểm, Banana Browser sẽ gửi URL của một số trang mà bạn truy cập, thông tin hệ thống giới hạn và một số nội dung trang cho Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Đã xóa dữ liệu Banana Browser"</string>

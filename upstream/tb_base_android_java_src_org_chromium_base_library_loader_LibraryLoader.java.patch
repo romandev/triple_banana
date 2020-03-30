@@ -1,8 +1,8 @@
 diff --git tb/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java tb_diff/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
 --- tb/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
 +++ tb_diff/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
-@@ -194,8 +194,13 @@ public class LibraryLoader {
-         }
+@@ -246,8 +246,13 @@ public class LibraryLoader {
+         mConfigurationSet = true;
      }
  
 +    private boolean useSystemLinker() {
@@ -16,20 +16,20 @@ diff --git tb/base/android/java/src/org/chromium/base/library_loader/LibraryLoad
      }
  
      public boolean useModernLinker() {
-@@ -249,10 +254,11 @@ public class LibraryLoader {
+@@ -330,10 +335,11 @@ public class LibraryLoader {
          }
      }
  
 +    @GuardedBy("mLock")
-     private void preloadAlreadyLocked(ApplicationInfo appInfo) {
+     private void preloadAlreadyLocked(ApplicationInfo appInfo, boolean inZygote) {
          try (TraceEvent te = TraceEvent.scoped("LibraryLoader.preloadAlreadyLocked")) {
              // Preloader uses system linker, we shouldn't preload if Chromium linker is used.
--            assert !mUseChromiumLinker;
-+            assert !useChromiumLinker();
+-            assert !mUseChromiumLinker || inZygote;
++            assert !useChromiumLinker() || inZygote;
              if (mLibraryPreloader != null && !mLibraryPreloaderCalled) {
                  mLibraryPreloader.loadLibrary(appInfo);
                  mLibraryPreloaderCalled = true;
-@@ -420,8 +426,8 @@ public class LibraryLoader {
+@@ -500,8 +506,8 @@ public class LibraryLoader {
                  // Load directly from the APK.
                  boolean is64Bit = ApiHelperForM.isProcess64Bit();
                  String zipFilePath = appInfo.sourceDir;
@@ -40,7 +40,7 @@ diff --git tb/base/android/java/src/org/chromium/base/library_loader/LibraryLoad
  
                  Log.i(TAG, "libraryName: %s", fullPath);
                  System.load(fullPath);
-@@ -440,7 +446,7 @@ public class LibraryLoader {
+@@ -522,7 +528,7 @@ public class LibraryLoader {
  
              long startTime = SystemClock.uptimeMillis();
  

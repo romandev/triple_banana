@@ -13,7 +13,7 @@ import org.triple.banana.R;
 import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeTabbedActivity;
 import org.chromium.chrome.browser.omnibox.LocationBar;
-import org.chromium.chrome.browser.settings.PreferencesLauncher;
+import org.chromium.chrome.browser.settings.SettingsLauncher;
 import org.chromium.chrome.browser.toolbar.ToolbarManager;
 
 public class CakeToolbarManager implements BananaToolbarManager {
@@ -155,6 +155,6 @@ public class CakeToolbarManager implements BananaToolbarManager {
     public void openSettingPage(Class settingFragmentClass) {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;
-        PreferencesLauncher.launchSettingsPage(activity, settingFragmentClass);
+        SettingsLauncher.getInstance().launchSettingsPage(activity, settingFragmentClass);
     }
 }

@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"നിങ്ങളുടെ Banana Browser ഡാറ്റ സമന്വയിപ്പിക്കുക"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser-ന്റെ ഫീച്ചറുകളും പ്രകടനവും മെച്ചപ്പെടുത്താൻ സഹായിക്കുക"</string>
 <string name="autofill_describe_local_copy">"Banana Browser-ലേക്ക് പ്കർത്തി"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser ഉപയോഗിച്ച് സംഭരിച്ചിട്ടുള്ള പാസ്‍വേഡുകൾ എക്സ്പോർട്ട് ചെയ്യുക"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser പാസ്‌വേഡുകൾ"</string>
+<string name="password_settings_export_action_description">"Banana Browser ഉപയോഗിച്ച് സംഭരിച്ചിട്ടുള്ള പാസ്‍വേഡുകൾ എക്സ്പോർട്ട് ചെയ്യുക"</string>
+<string name="password_settings_export_subject">"Banana Browser പാസ്‌വേഡുകൾ"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser സുരക്ഷ മെച്ചപ്പെടുത്താൻ സഹായിക്കുക"</string>
 <string name="safe_browsing_scout_reporting_summary">"അപകടകരമായ ആപ്പുകളും സൈറ്റുകളും കണ്ടെത്തുന്നതിന്, നിങ്ങൾ സന്ദർശിക്കുന്ന ചില പേജുകളുടെ URL, പരിമിത സിസ്റ്റം വിവരങ്ങൾ, ചില പേജ് ഉള്ളടക്കം എന്നിവ Banana Browser Google-ന് അയയ്ക്കുന്നു"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser ഡാറ്റ മായ്‌ച്ചു"</string>

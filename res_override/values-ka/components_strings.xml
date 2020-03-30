@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser-ის მიერ &lt;em&gt;არ შეინახება&lt;/em&gt; შემდეგი ინფორმაცია:
+        &lt;ul&gt;
+          &lt;li&gt;დათვალიერების ისტორია
+          &lt;li&gt;ქუქი-ჩანაწერები და საიტების მონაცემები
+          &lt;li&gt;ფორმებში მითითებული ინფორმაცია
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ბარათებისა და მისამართების შესახებ ინფორმაცია მიღებულია Banana Browser-იდან და თქვენი Google ანგარიშიდან (%1$s). მათი მართვა შეგიძლიათ BEGIN_LINKპარამეტრებშიEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"ბარათებისა და მისამართების შესახებ ინფორმაცია მიღებულია Banana Browser-იდან. მათი მართვა შეგიძლიათ BEGIN_LINKპარამეტრებშიEND_LINK."</string>
+</resources>

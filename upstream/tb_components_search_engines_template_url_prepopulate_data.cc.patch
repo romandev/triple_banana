@@ -1,13 +1,23 @@
 diff --git tb/components/search_engines/template_url_prepopulate_data.cc tb_diff/components/search_engines/template_url_prepopulate_data.cc
 --- tb/components/search_engines/template_url_prepopulate_data.cc
 +++ tb_diff/components/search_engines/template_url_prepopulate_data.cc
-@@ -454,6 +454,9 @@ const PrepopulatedEngine* const engines_KR[] = {
-     &naver,
-     &daum,
+@@ -514,6 +514,9 @@ const PrepopulatedEngine* const engines_KR[] = {
      &bing,
+     &daum,
+     &yahoo_jp,
 +#if defined(ENABLE_TRIPLE_BANANA)
 +    &youtube,
 +#endif
  };
  
  // Kuwait
+@@ -946,6 +949,9 @@ const PrepopulatedEngine* const engines_US[] = {
+     &yahoo,
+     &duckduckgo,
+     &ecosia,
++#if defined(ENABLE_TRIPLE_BANANA)
++    &youtube,
++#endif
+ };
+ 
+ // Uruguay

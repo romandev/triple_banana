@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"„Banana Browser“ duomenų sinchronizavimas"</string>
 <string name="usage_and_crash_reports_title">"Padėti tobulinti „Banana Browser“ funkcijas ir našumą"</string>
 <string name="autofill_describe_local_copy">"Nukopijuota į „Banana Browser“"</string>
-<string name="save_password_preferences_export_action_description">"Eksportuoti sistemoje „Banana Browser“ saugomus slaptažodžius"</string>
-<string name="save_password_preferences_export_subject">"„Banana Browser“ slaptažodžiai"</string>
+<string name="password_settings_export_action_description">"Eksportuoti sistemoje „Banana Browser“ saugomus slaptažodžius"</string>
+<string name="password_settings_export_subject">"„Banana Browser“ slaptažodžiai"</string>
 <string name="safe_browsing_scout_reporting_title">"Padėkite tobulinti „Banana Browser“ saugą"</string>
 <string name="safe_browsing_scout_reporting_summary">"Tam, kad būtų aptiktos pavojingos programos ir svetainės, „Banana Browser“ siunčia „Google“ kai kurių puslapių, kuriuose lankotės, URL, ribotą sistemos informaciją ir kai kurių puslapių turinį"</string>
 <string name="clear_browsing_data_history_dialog_title">"Išvalyti „Banana Browser“ duomenys"</string>

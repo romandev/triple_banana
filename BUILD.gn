@@ -60,7 +60,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
 android_library("triple_banana_java") {
   proguard_configs = [ "//triple_banana/proguard.flags" ]
 
-  java_files = [
+  sources = [
     # banana_cake layer
     "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeApplicationUtils.java",
@@ -80,9 +80,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/adblock/FilterLoaderImpl.java",
 
     # authentication
+    "//triple_banana/src/org/triple/banana/authentication/ActivityBasedBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/AuthenticationManagerImpl.java",
     "//triple_banana/src/org/triple/banana/authentication/Authenticator.java",
-    "//triple_banana/src/org/triple/banana/authentication/ActivityBasedBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/Backend.java",
     "//triple_banana/src/org/triple/banana/authentication/BaseActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/BiometricPromptActivity.java",
@@ -123,6 +123,7 @@ android_library("triple_banana_java") {
     # toolbar
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarButtonDecoration.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
+    "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
     "//triple_banana/src/org/triple/banana/toolbar/ButtonId.java",
     "//triple_banana/src/org/triple/banana/toolbar/ButtonTouchHelperCallback.java",
     "//triple_banana/src/org/triple/banana/toolbar/CandidateToolbarButtonAdapter.java",
@@ -138,7 +139,6 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarStateModel.java",
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarStatePreferenceStoreImpl.java",
     "//triple_banana/src/org/triple/banana/toolbar/ViewHolderDragListener.java",
-    "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
 
     # legacy modules
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
@@ -167,17 +167,13 @@ android_library("triple_banana_java") {
 android_resources("triple_banana_resources") {
   resource_dirs = [ "//triple_banana/res" ]
 
-  deps = [
-    "//chrome/android:chrome_public_apk_resources",
-  ]
+  deps = [ "//chrome/android:chrome_app_java_resources" ]
   custom_package = "org.triple.banana"
 }
 
 java_cpp_template("triple_banana_build_config") {
   package_path = "org/banana/cake/interfaces"
-  sources = [
-    "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaBuildConfig.template",
-  ]
+  sources = [ "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaBuildConfig.template" ]
   defines = []
 
   if (target_cpu == "arm64") {

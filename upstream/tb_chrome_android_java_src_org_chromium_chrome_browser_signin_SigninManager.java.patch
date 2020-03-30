@@ -9,7 +9,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninM
  import org.chromium.base.Callback;
  import org.chromium.base.ContextUtils;
  import org.chromium.base.Log;
-@@ -282,15 +281,14 @@ public class SigninManager
+@@ -284,15 +283,14 @@ public class SigninManager
       * Returns true if signin can be started now.
       */
      public boolean isSignInAllowed() {
@@ -27,12 +27,11 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninM
      }
  
      /**
-@@ -298,15 +296,14 @@ public class SigninManager
+@@ -300,14 +298,14 @@ public class SigninManager
       *         Google Play Services installed.
       */
      public boolean isSigninSupported() {
--        return !ApiCompatibilityUtils.isDemoUser() && isGooglePlayServicesPresent()
--                && !SigninManagerJni.get().isMobileIdentityConsistencyEnabled();
+-        return !ApiCompatibilityUtils.isDemoUser() && isGooglePlayServicesPresent();
 +        return false;
      }
  

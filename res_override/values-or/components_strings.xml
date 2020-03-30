@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser ଆପଣଙ୍କର ନିମ୍ନୋକ୍ତ ସୂଚନା &lt;em&gt;ସେଭ୍ କରିବ ନାହିଁ&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;ଆପଣଙ୍କର ବ୍ରାଉଜିଂ ଇତିହାସ
+          &lt;li&gt;କୁକୀଗୁଡ଼ିକ ଏବଂ ସାଇଟ୍ ଡାଟା
+          &lt;li&gt;ଫର୍ମଗୁଡ଼ିକରେ ଲେଖାଯାଇଥିବା ସୂଚନା
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_out">"କାର୍ଡ ଓ ଠିକଣାଗୁଡ଼ିକ ଆପଣଙ୍କର Banana Browserରୁ ଆସିଛି। ଆପଣ ସେଗୁଡ଼ିକୁ BEGIN_LINKସେଟିଂସ୍‍END_LINKରେ ପରିଚାଳନ କରିପାରିବେ।"</string>
+</resources>

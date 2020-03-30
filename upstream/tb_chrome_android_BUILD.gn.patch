@@ -9,7 +9,7 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  import("//ui/android/features.gni")
  import("//weblayer/variables.gni")
  import("channel.gni")
-@@ -107,10 +108,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
+@@ -127,10 +128,7 @@ generate_ui_locale_resources("ui_locale_string_resources") {
  }
  
  android_resources("chrome_app_java_resources") {
@@ -21,7 +21,7 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  
    if (enable_android_night_mode) {
      resource_dirs += [ "//chrome/android/java/res_night" ]
-@@ -349,6 +347,7 @@ android_library("chrome_java") {
+@@ -370,6 +368,7 @@ android_library("chrome_java") {
      "//third_party/gif_player:gif_player_java",
      "//third_party/google_android_play_core:com_google_android_play_core_java",
      "//third_party/jsr-305:jsr_305_javalib",
@@ -29,7 +29,7 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -405,6 +404,7 @@ android_library("chrome_java") {
+@@ -426,6 +425,7 @@ android_library("chrome_java") {
      "//components/ui_metrics:ui_metrics_enums_java",
      "//content/public/browser:contacts_picker_properties_requested_javagen",
      "//net:effective_connection_type_java",
@@ -37,16 +37,16 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
    ]
  
    android_manifest_for_lint = chrome_public_android_manifest
-@@ -413,7 +413,7 @@ android_library("chrome_java") {
-   java_files = chrome_java_sources + [
-                  app_hooks_impl,
-                  _chrome_version_java_file,
--               ]
-+               ] + triple_banana_hooks_sources
+@@ -434,7 +434,7 @@ android_library("chrome_java") {
+   sources = chrome_java_sources + [
+               app_hooks_impl,
+               _chrome_version_java_file,
+-            ]
++            ] + triple_banana_hooks_sources
  
    # Include sources from feed_java_sources.gni.
-   java_files += feed_java_sources
-@@ -1063,7 +1063,7 @@ android_resources("chrome_public_test_apk_resources") {
+   sources += feed_java_sources
+@@ -1083,7 +1083,7 @@ if (enable_vr || enable_arcore) {
  
  # Overrides icon / name defined in chrome_app_java_resources.
  android_resources("chrome_public_apk_resources") {
@@ -54,4 +54,4 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
 +  resource_dirs = triple_banana_resource
  
    # Dep needed to ensure override works properly.
-   deps = [
+   deps = [ ":chrome_app_java_resources" ]

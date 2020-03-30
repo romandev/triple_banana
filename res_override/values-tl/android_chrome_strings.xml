@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"I-sync ang iyong data ng Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Tumulong sa pagpapahusay sa mga feature at performance ng Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Kinopya sa Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Mag-export ng mga password na naka-store sa Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Mga Password sa Banana Browser"</string>
+<string name="password_settings_export_action_description">"Mag-export ng mga password na naka-store sa Banana Browser"</string>
+<string name="password_settings_export_subject">"Mga Password sa Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Tulungang paigtingin ang seguridad ng Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Para matukoy ang mapapanganib na app at site, nagpapadala ang Banana Browser ng mga URL ng ilang page na binibisita mo, limitadong impormasyon ng system, at ilang content ng page sa Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Na-clear ang data ng Banana Browser"</string>

@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Banana Browser データを同期"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser の機能と動作の改善に協力する"</string>
 <string name="autofill_describe_local_copy">"Banana Browser にコピー済み"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser に保存されたパスワードをエクスポートします"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser パスワード"</string>
+<string name="password_settings_export_action_description">"Banana Browser に保存されたパスワードをエクスポートします"</string>
+<string name="password_settings_export_subject">"Banana Browser パスワード"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser のセキュリティ改善に協力する"</string>
 <string name="safe_browsing_scout_reporting_summary">"危険なアプリやサイトを検出するために、アクセスした一部のページの URL と限定的なシステム情報、一部のページ コンテンツが Banana Browser から Google に送信されます"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser データの消去完了"</string>

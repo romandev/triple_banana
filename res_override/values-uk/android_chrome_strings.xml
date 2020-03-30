@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Синхронізуйте дані Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Допоможіть покращити функції й ефективність Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Скопійовано в Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Експортувати паролі, збережені в Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Паролі Banana Browser"</string>
+<string name="password_settings_export_action_description">"Експортувати паролі, збережені в Banana Browser"</string>
+<string name="password_settings_export_subject">"Паролі Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Допоможіть покращити безпеку Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Щоб виявляти небезпечні додатки й сайти, Banana Browser надсилає URL-адреси певних відвіданих сторінок, обмежену системну інформацію та вміст деяких сторінок у Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Дані Banana Browser видалено"</string>

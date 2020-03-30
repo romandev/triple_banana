@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browserএ তলত দিয়া তথ্যসমূহ &lt;em&gt;ছেভ নকৰিব&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;আপোনাৰ ব্ৰাউজিঙৰ ইতিহাস
+          &lt;li&gt;কুকিসমূহ আৰু ছাইটৰ ডেটা
+          &lt;li&gt;ফৰ্মসমূহত দিয়া তথ্য
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Banana Browser আৰু আপোনাৰ Google একাউণ্ট (%1$s)ৰ কার্ড আৰু ঠিকনাসমূহ। আপুনি সেইবোৰ BEGIN_LINKছেটিংসমূহEND_LINKত পৰিচালনা কৰক।"</string>
+<string name="payments_card_and_address_settings_signed_out">"কাৰ্ড আৰু ঠিকনাসমূহ Banana Browserৰ পৰা লোৱা হয়। আপুনি সেয়া BEGIN_LINKছেটিংসমূহEND_LINK-ত পৰিচালনা কৰিব পাৰে।"</string>
+</resources>

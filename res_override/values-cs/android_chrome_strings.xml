@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="sync_switch_title">"Synchronizovat data prohlížeče Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Pomoci s vylepšováním funkcí a výkonu prohlížeče Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Hesla Banana Browser"</string>
+<string name="password_settings_export_subject">"Hesla Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Kvůli detekci nebezpečných aplikací a webů odesílá Banana Browser do Googlu adresy URL některých navštívených stránek, omezené informace o systému a část obsahu stránek"</string>
 <string name="android_permission_off_plural">"Oprávnění pro Banana Browser zapnete v &lt;link&gt;Nastavení pro Android&lt;/link&gt;."</string>
 <string name="android_permission_off">"Oprávnění pro Banana Browser zapnete v &lt;link&gt;Nastavení pro Android&lt;/link&gt;."</string>

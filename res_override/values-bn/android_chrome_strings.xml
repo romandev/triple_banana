@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"আপনার Banana Browser ডেটা সিঙ্ক করুন"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser-এর বৈশিষ্ট্য এবং পারফরম্যান্স আরও ভালো করতে সাহায্য করুন"</string>
 <string name="autofill_describe_local_copy">"Banana Browser-এ প্রতিলিপি করা হয়েছে"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser এ সেভ করা পাসওয়ার্ড এক্সপোর্ট করুন"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser পাসওয়ার্ডগুলি"</string>
+<string name="password_settings_export_action_description">"Banana Browser এ সেভ করা পাসওয়ার্ড এক্সপোর্ট করুন"</string>
+<string name="password_settings_export_subject">"Banana Browser পাসওয়ার্ডগুলি"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser-এর নিরাপত্তা উন্নত করতে সাহায্য করুন"</string>
 <string name="safe_browsing_scout_reporting_summary">"বিপজ্জনক অ্যাপ ও সাইট শনাক্ত করতে Banana Browser আপনার দেখা পৃষ্ঠাগুলির ইউআরএল, সিস্টেমের কিছু তথ্য ও কিছু পৃষ্ঠার কন্টেন্ট Google-কে পাঠায়"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser ডেটা সাফ হয়েছে"</string>

@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"同步 Banana Browser 数据"</string>
 <string name="usage_and_crash_reports_title">"帮助我们改进 Banana Browser 的功能和性能"</string>
 <string name="autofill_describe_local_copy">"已复制到 Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"导出存储在 Banana Browser 中的密码"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser 密码"</string>
+<string name="password_settings_export_action_description">"导出存储在 Banana Browser 中的密码"</string>
+<string name="password_settings_export_subject">"Banana Browser 密码"</string>
 <string name="safe_browsing_scout_reporting_title">"帮助我们改善 Banana Browser 安全性"</string>
 <string name="safe_browsing_scout_reporting_summary">"为了检测危险应用和网站，Banana Browser 会将您所访问的部分网页的网址、有限的系统信息以及部分网页内容发送给 Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"已清除 Banana Browser 数据"</string>

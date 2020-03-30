@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Sinkronkan data Banana Browser Anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu sempurnakan fitur dan performa Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Disalin ke Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Ekspor sandi yang disimpan dengan Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Sandi Banana Browser"</string>
+<string name="password_settings_export_action_description">"Ekspor sandi yang disimpan dengan Banana Browser"</string>
+<string name="password_settings_export_subject">"Sandi Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Bantu meningkatkan keamanan Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Untuk mendeteksi aplikasi dan situs berbahaya, Banana Browser mengirimkan URL beberapa halaman yang Anda kunjungi, informasi sistem terbatas, dan beberapa konten halaman ke Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Data Banana Browser telah dihapus"</string>

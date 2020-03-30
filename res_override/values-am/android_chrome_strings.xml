@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"የBanana Browser ውሂብዎን ያስምሩ"</string>
 <string name="usage_and_crash_reports_title">"የBanana Browser ባህሪያት እና አፈጻጸም እንዲሻሻል ያግዙ"</string>
 <string name="autofill_describe_local_copy">"ወደ Banana Browser ተቀድቷል"</string>
-<string name="save_password_preferences_export_action_description">"ከBanana Browser ጋር የተከማቹ የይለፍ ቃሎችን ወደ ውጭ ላክ"</string>
-<string name="save_password_preferences_export_subject">"የBanana Browser ይለፍ ቃላት"</string>
+<string name="password_settings_export_action_description">"ከBanana Browser ጋር የተከማቹ የይለፍ ቃሎችን ወደ ውጭ ላክ"</string>
+<string name="password_settings_export_subject">"የBanana Browser ይለፍ ቃላት"</string>
 <string name="safe_browsing_scout_reporting_title">"የBanana Browser ደህንነት እንዲሻሻል ያግዙ"</string>
 <string name="safe_browsing_scout_reporting_summary">"አደገኛ መተግበሪያዎችን እና ጣቢያዎችን ፈልጎ ለማግኘት፣ Banana Browser እርስዎ የጎበኟቸውን አንዳንድ ገጾች ዩአርኤሎች፣ የተወሰነ የሥርዓት መረጃ እና አንዳንድ የገጽ ይዘት ወደ Google ይልካል"</string>
 <string name="clear_browsing_data_history_dialog_title">"የBanana Browser ውሂብ ጸድቷል"</string>

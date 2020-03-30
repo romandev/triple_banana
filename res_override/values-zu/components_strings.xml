@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"I-Banana Browser &lt;em&gt;ngeke ilondoloze&lt;/em&gt; ulwazi olulandelayo:
+        &lt;ul&gt;
+          &lt;li&gt;Umlando wakho wokuphequlula
+          &lt;li&gt;Amakhukhi nedatha yesayithi
+          &lt;li&gt;Ulwazi olufakwe kumafomu
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Amakhadi namakheli avela ku-Banana Browser naku-akhawunti yakho ye-Google (%1$s). Ungawaphatha BEGIN_LINKKuzilungiseleloEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Amakhadi namakheli asuka ku-Banana Browser. Ungawaphatha BEGIN_LINKkuzilungiseleloEND_LINK."</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser төмөнкү маалыматты &lt;em&gt;сактабайт&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;Серептөө таржымалыңызды
+          &lt;li&gt;Кукилерди жана сайттардын дайындарын
+          &lt;li&gt;Формаларга киргизилген маалыматты
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Карточкалар жана даректер Banana Browser’дон жана Google аккаунтуңуздан (%1$s) алынган. Аларды BEGIN_LINKЖөндөөлөрдөнEND_LINK башкарсаңыз болот."</string>
+<string name="payments_card_and_address_settings_signed_out">"Карточкалар жана даректер Banana Browser’дон алынган. Аларды BEGIN_LINKЖөндөөлөрдөнEND_LINK башкарсаңыз болот."</string>
+</resources>

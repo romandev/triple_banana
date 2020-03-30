@@ -1,6 +1,6 @@
-diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainPreferences.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/settings/MainPreferences.java
---- tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainPreferences.java
-+++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/settings/MainPreferences.java
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainSettings.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/settings/MainSettings.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainSettings.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/settings/MainSettings.java
 @@ -7,7 +7,6 @@ package org.chromium.chrome.browser.settings;
  import android.content.Intent;
  import android.os.Build;
@@ -9,42 +9,42 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
  import android.provider.Settings;
  import android.support.v7.preference.Preference;
  import android.support.v7.preference.PreferenceFragmentCompat;
-@@ -29,11 +28,7 @@ import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
- import org.chromium.chrome.browser.settings.autofill_assistant.AutofillAssistantPreferences;
+@@ -28,11 +27,6 @@ import org.chromium.chrome.browser.password_manager.PasswordManagerLauncher;
+ import org.chromium.chrome.browser.search_engines.TemplateUrlServiceFactory;
  import org.chromium.chrome.browser.settings.datareduction.DataReductionPreferenceFragment;
  import org.chromium.chrome.browser.settings.developer.DeveloperSettings;
 -import org.chromium.chrome.browser.settings.sync.SignInPreference;
--import org.chromium.chrome.browser.settings.sync.SyncPreferenceUtils;
+-import org.chromium.chrome.browser.settings.sync.SyncSettingsUtils;
 -import org.chromium.chrome.browser.signin.IdentityServicesProvider;
- import org.chromium.chrome.browser.signin.SigninManager;
+-import org.chromium.chrome.browser.signin.SigninManager;
 -import org.chromium.chrome.browser.sync.ProfileSyncService;
  import org.chromium.components.search_engines.TemplateUrl;
  import org.chromium.components.search_engines.TemplateUrlService;
  
-@@ -43,12 +38,8 @@ import java.util.Map;
+@@ -42,12 +36,8 @@ import java.util.Map;
  /**
   * The main settings screen, shown when the user first opens Settings.
   */
--public class MainPreferences extends PreferenceFragmentCompat
+-public class MainSettings extends PreferenceFragmentCompat
 -        implements TemplateUrlService.LoadListener, ProfileSyncService.SyncStateChangedListener,
 -                   SigninManager.SignInStateObserver {
 -    public static final String PREF_ACCOUNT_SECTION = "account_section";
 -    public static final String PREF_SIGN_IN = "sign_in";
 -    public static final String PREF_SYNC_AND_SERVICES = "sync_and_services";
-+public class MainPreferences
++public class MainSettings
 +        extends PreferenceFragmentCompat implements TemplateUrlService.LoadListener {
      public static final String PREF_SEARCH_ENGINE = "search_engine";
-     public static final String PREF_SAVED_PASSWORDS = "saved_passwords";
+     public static final String PREF_PASSWORDS = "passwords";
      public static final String PREF_HOMEPAGE = "homepage";
-@@ -67,7 +58,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -60,7 +50,6 @@ public class MainSettings extends PreferenceFragmentCompat
  
      private final ManagedPreferenceDelegate mManagedPreferenceDelegate;
      private final Map<String, Preference> mAllPreferences = new HashMap<>();
 -    private SignInPreference mSignInPreference;
  
-     public MainPreferences() {
+     public MainSettings() {
          setHasOptionsMenu(true);
-@@ -88,40 +78,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -81,40 +70,6 @@ public class MainSettings extends PreferenceFragmentCompat
      }
  
      @Override
@@ -56,7 +56,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
 -    @Override
 -    public void onStart() {
 -        super.onStart();
--        SigninManager signinManager = IdentityServicesProvider.getSigninManager();
+-        SigninManager signinManager = IdentityServicesProvider.get().getSigninManager();
 -        if (signinManager.isSigninSupported()) {
 -            signinManager.addSignInStateObserver(this);
 -            mSignInPreference.registerForUpdates();
@@ -70,7 +70,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
 -    @Override
 -    public void onStop() {
 -        super.onStop();
--        SigninManager signinManager = IdentityServicesProvider.getSigninManager();
+-        SigninManager signinManager = IdentityServicesProvider.get().getSigninManager();
 -        if (signinManager.isSigninSupported()) {
 -            signinManager.removeSignInStateObserver(this);
 -            mSignInPreference.unregisterForUpdates();
@@ -85,7 +85,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
      public void onResume() {
          super.onResume();
          updatePreferences();
-@@ -131,8 +87,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -124,8 +79,6 @@ public class MainSettings extends PreferenceFragmentCompat
          SettingsUtils.addPreferencesFromResource(this, R.xml.main_preferences);
          cachePreferences();
  
@@ -94,7 +94,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
          updatePasswordsPreference();
  
          setManagedPreferenceDelegateForPreference(PREF_SEARCH_ENGINE);
-@@ -190,7 +144,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -175,7 +128,6 @@ public class MainSettings extends PreferenceFragmentCompat
              Preference preference = getPreferenceScreen().getPreference(index);
              mAllPreferences.put(preference.getKey(), preference);
          }
@@ -102,11 +102,11 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
      }
  
      private void setManagedPreferenceDelegateForPreference(String key) {
-@@ -199,13 +152,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -184,13 +136,6 @@ public class MainSettings extends PreferenceFragmentCompat
      }
  
      private void updatePreferences() {
--        if (IdentityServicesProvider.getSigninManager().isSigninSupported()) {
+-        if (IdentityServicesProvider.get().getSigninManager().isSigninSupported()) {
 -            addPreferenceIfAbsent(PREF_SIGN_IN);
 -        } else {
 -            removePreferenceIfPresent(PREF_SIGN_IN);
@@ -116,21 +116,21 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
          updateSearchEnginePreference();
  
          Preference homepagePref = addPreferenceIfAbsent(PREF_HOMEPAGE);
-@@ -239,13 +185,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -224,13 +169,6 @@ public class MainSettings extends PreferenceFragmentCompat
          if (preference != null) getPreferenceScreen().removePreference(preference);
      }
  
 -    private void updateSyncAndServicesPreference() {
 -        ChromeBasePreference syncAndServices =
 -                (ChromeBasePreference) findPreference(PREF_SYNC_AND_SERVICES);
--        syncAndServices.setIcon(SyncPreferenceUtils.getSyncStatusIcon(getActivity()));
--        syncAndServices.setSummary(SyncPreferenceUtils.getSyncStatusSummary(getActivity()));
+-        syncAndServices.setIcon(SyncSettingsUtils.getSyncStatusIcon(getActivity()));
+-        syncAndServices.setSummary(SyncSettingsUtils.getSyncStatusSummary(getActivity()));
 -    }
 -
      private void updateSearchEnginePreference() {
          if (!TemplateUrlServiceFactory.get().isLoaded()) {
              ChromeBasePreference searchEnginePref =
-@@ -277,28 +216,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -262,28 +200,6 @@ public class MainSettings extends PreferenceFragmentCompat
          pref.setSummary(isOn ? R.string.text_on : R.string.text_off);
      }
  
@@ -159,7 +159,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
      // TemplateUrlService.LoadListener implementation.
      @Override
      public void onTemplateUrlServiceLoaded() {
-@@ -306,11 +223,6 @@ public class MainPreferences extends PreferenceFragmentCompat
+@@ -291,11 +207,6 @@ public class MainSettings extends PreferenceFragmentCompat
          updateSearchEnginePreference();
      }
  
@@ -169,5 +169,5 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainP
 -    }
 -
      @VisibleForTesting
-     ManagedPreferenceDelegate getManagedPreferenceDelegateForTest() {
+     public ManagedPreferenceDelegate getManagedPreferenceDelegateForTest() {
          return mManagedPreferenceDelegate;

@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Banana Browser-datan synkronointi"</string>
 <string name="usage_and_crash_reports_title">"Auta parantamaan Banana Browsern ominaisuuksia ja suorituskykyä"</string>
 <string name="autofill_describe_local_copy">"Kopioitiin Banana Browseren."</string>
-<string name="save_password_preferences_export_action_description">"Vie Banana Browseren tallennetut salasanat"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser-salasanat"</string>
+<string name="password_settings_export_action_description">"Vie Banana Browseren tallennetut salasanat"</string>
+<string name="password_settings_export_subject">"Banana Browser-salasanat"</string>
 <string name="safe_browsing_scout_reporting_title">"Auta parantamaan Banana Browsern suojausta"</string>
 <string name="safe_browsing_scout_reporting_summary">"Vaarallisia sovelluksia ja sivustoja löytääkseen Banana Browser lähettää joidenkin avattujen sivujen URL-osoitteita, rajallisia järjestelmätietoja ja osia sivujen sisällöstä Googlelle"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-tiedot tyhjennetty"</string>

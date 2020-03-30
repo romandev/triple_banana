@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;នឹង​មិន​រក្សាទុក&lt;/em&gt;ព័ត៌មាន​ខាងក្រោម​ទេ៖
+        &lt;ul&gt;
+          &lt;li&gt;ប្រវត្តិ​រុករក​តាមអ៊ីនធឺណិត​របស់អ្នក
+          &lt;li&gt;ខូគី និង​ទិន្នន័យ​គេហទំព័រ
+          &lt;li&gt;ព័ត៌មាន​ដែលបាន​បញ្ចូល​ក្នុង​ទម្រង់​បែបបទ
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"បណ្ណ និងអាសយដ្ឋានគឺបានមកពី Banana Browser និងគណនី Google របស់អ្នក (%1$s)។ អ្នកអាចគ្រប់គ្រងពួកវាបាននៅក្នុង BEGIN_LINKការកំណត់END_LINK។"</string>
+<string name="payments_card_and_address_settings_signed_out">"បណ្ណ និងអាសយដ្ឋានគឺបានមកពី Banana Browser ។ អ្នកអាចគ្រប់គ្រងពួកវាបាននៅក្នុង BEGIN_LINKការកំណត់END_LINK។"</string>
+</resources>

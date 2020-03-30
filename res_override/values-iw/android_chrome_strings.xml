@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"‏סנכרון הנתונים מ-Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"‏עזרה בשיפור התכונות והביצועים של Banana Browser"</string>
 <string name="autofill_describe_local_copy">"‏הועתק אל Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"‏ייצוא סיסמאות המאוחסנות ב-Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"‏סיסמאות Banana Browser"</string>
+<string name="password_settings_export_action_description">"‏ייצוא סיסמאות המאוחסנות ב-Banana Browser"</string>
+<string name="password_settings_export_subject">"‏סיסמאות Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"‏עזרה בשיפור האבטחה של Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"‏כדי לזהות אפליקציות ואתרים מסוכנים, Banana Browser שולח אל Google כתובות URL של חלק מהדפים שאליהם נכנסת, מידע מוגבל לגבי המערכת וחלק מתוכן הדפים"</string>
 <string name="clear_browsing_data_history_dialog_title">"‏נתוני Banana Browser נוקו"</string>

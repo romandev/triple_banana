@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Banana Browser-Daten synchronisieren"</string>
 <string name="usage_and_crash_reports_title">"Helfen, die Funktionen und die Leistung von Banana Browser zu verbessern"</string>
 <string name="autofill_describe_local_copy">"In Banana Browser kopiert"</string>
-<string name="save_password_preferences_export_action_description">"In Banana Browser gespeicherte Passwörter exportieren"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser-Passwörter"</string>
+<string name="password_settings_export_action_description">"In Banana Browser gespeicherte Passwörter exportieren"</string>
+<string name="password_settings_export_subject">"Banana Browser-Passwörter"</string>
 <string name="safe_browsing_scout_reporting_title">"Zur Verbesserung der Sicherheit von Banana Browser beitragen"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser sendet die URLs einiger von Ihnen besuchter Seiten, bestimmte Systeminformationen und einige Seiteninhalte an Google, um gefährliche Apps und Websites zu erkennen"</string>
 <string name="clear_browsing_data_history_dialog_title">"Gelöschte Banana Browser-Daten"</string>
@@ -90,6 +90,7 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="near_oom_intervention_message">"Diese Seite benötigt zu viel Arbeitsspeicher und wurde daher von Banana Browser angehalten."</string>
 <string name="near_oom_reduction_message">"Diese Seite benötigt zu viel Arbeitsspeicher. Darum hat Banana Browser einige Inhalte entfernt."</string>
 <string name="prefs_autofill_assistant_title">"Google Assistant für Banana Browser"</string>
+<string name="prefs_autofill_assistant_summary">"Wenn Sie in Banana Browser mit Assistant Aufgaben erledigen, werden die URLs und Inhalte der Websites, auf denen Sie Assistant verwenden, sowie die Daten, die Sie über Assistant weitergeben, an Google gesendet"</string>
 <string name="usage_stats_consent_title">"Ihre Banana Browser-Aktivitäten in Digital Wellbeing anzeigen?"</string>
 <string name="usage_stats_consent_prompt">"Sie sehen in Banana Browser besuchte Websites und können Timer einstellen.\n\nGoogle erhält Informationen zu den Websites, für die Sie Timer einstellen, sowie zur Dauer des Besuchs. Anhand dieser Informationen wird Digital Wellbeing optimiert."</string>
 <string name="usage_stats_setting_title">"Banana Browser-Aktivitäten aus Digital Wellbeing entfernen"</string>

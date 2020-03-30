@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Synkroniser dine Banana Browser-data"</string>
 <string name="usage_and_crash_reports_title">"Vær med til at forbedre Banana Browsers funktioner og ydeevne"</string>
 <string name="autofill_describe_local_copy">"Kopieret til Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Eksportér adgangskoder, der er gemt med Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser-adgangskoder"</string>
+<string name="password_settings_export_action_description">"Eksportér adgangskoder, der er gemt med Banana Browser"</string>
+<string name="password_settings_export_subject">"Banana Browser-adgangskoder"</string>
 <string name="safe_browsing_scout_reporting_title">"Hjælp med at forbedre sikkerheden i Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser sender webadresser på nogle sider, du besøger, begrænsede systemoplysninger og noget sideindhold til Google med henblik på at registrere farlige apps og websites."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-dataene blev ryddet"</string>

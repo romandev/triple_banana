@@ -12,7 +12,6 @@ import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.ThemeColorProvider;
 import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
-import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
 import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
 
@@ -26,10 +25,6 @@ public interface BananaBottomToolbarController {
             AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
             TabCountProvider tabCountProvider, ThemeColorProvider themeColorProvider,
             IncognitoStateProvider incognitoStateProvider);
-    void showAppMenuUpdateBadge();
-    void removeAppMenuUpdateBadge();
-    boolean isShowingAppMenuUpdateBadge();
-    MenuButton getMenuButton();
     void destroy();
     void updateBookmarkButtonStatus(boolean isBookmarked, boolean editingAllowed);
     void updateBackButtonVisibility(boolean canGoBack);

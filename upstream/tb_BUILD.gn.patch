@@ -1,11 +1,14 @@
 diff --git tb/BUILD.gn tb_diff/BUILD.gn
 --- tb/BUILD.gn
 +++ tb_diff/BUILD.gn
-@@ -81,6 +81,7 @@ group("gn_all") {
-     "//tools/binary_size:binary_size_trybot_py",
-     "//tools/ipc_fuzzer:ipc_fuzzer_all",
-     "//tools/metrics:metrics_metadata",
-+    "//triple_banana:triple_banana",
-     "//ui/base:ui_base_unittests",
-     "//ui/gfx:gfx_unittests",
+@@ -88,6 +88,10 @@ group("gn_all") {
      "//url:url_unittests",
+   ]
+ 
++  if (is_android) {
++    deps += [ "//triple_banana:triple_banana" ]
++  }
++
+   if (!is_android && !is_chromecast) {
+     deps += [
+       "//crypto:crypto_unittests",

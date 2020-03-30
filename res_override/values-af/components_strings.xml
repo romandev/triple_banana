@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+<string name="new_tab_otr_not_saved">"Banana Browser sal nie die volgende inligting &lt;em&gt;stoor nie&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;Jou blaaigeskiedenis
+          &lt;li&gt;Webkoekies en werfdata
+          &lt;li&gt;Inligting wat op vorms ingevul is
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kaarte en adresse kom uit Banana Browser en jou Google-rekening (%1$s). Jy kan hulle in BEGIN_LINKInstellingsEND_LINK bestuur."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kaarte en adresse kom uit Banana Browser. Jy kan hulle in BEGIN_LINKInstellingsEND_LINK bestuur."</string>
+</resources>

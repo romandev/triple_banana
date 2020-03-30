@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Banana Browser verilerimi senkronize et"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'un özelliklerini ve performansını iyileştirmeye yardımcı olun"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'a kopyalandı"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser\'da depolanan şifreleri dışa aktarın"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser Şifreleri"</string>
+<string name="password_settings_export_action_description">"Banana Browser\'da depolanan şifreleri dışa aktarın"</string>
+<string name="password_settings_export_subject">"Banana Browser Şifreleri"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser güvenliğini iyileştirmeye yardımcı olun"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser, tehlikeli uygulamaları ve siteleri algılamak için Google\'a ziyaret ettiğiniz bazı sitelerin URL\'lerini, sınırlı sistem bilgisini ve bazı sayfa içeriklerini gönderir."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser verileri temizlendi"</string>

@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Sincronizează datele din Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Contribuie la îmbunătățirea funcțiilor și performanței Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Copiat în Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Exportă parolele stocate în Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Parole Banana Browser"</string>
+<string name="password_settings_export_action_description">"Exportă parolele stocate în Banana Browser"</string>
+<string name="password_settings_export_subject">"Parole Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Contribuie la îmbunătățirea securității pentru Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Pentru a detecta aplicațiile și site-urile periculoase, Banana Browser trimite la Google adresele URL ale unor pagini pe care le accesezi, informații de sistem limitate și o parte din conținutul paginii"</string>
 <string name="clear_browsing_data_history_dialog_title">"Datele Banana Browser au fost șterse"</string>

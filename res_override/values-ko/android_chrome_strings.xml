@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Banana Browser 데이터 동기화"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser의 기능 및 성능 개선에 참여"</string>
 <string name="autofill_describe_local_copy">"Banana Browser에 복사됨"</string>
-<string name="save_password_preferences_export_action_description">"Banana Browser으로 저장한 비밀번호 내보내기"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser 비밀번호"</string>
+<string name="password_settings_export_action_description">"Banana Browser으로 저장한 비밀번호 내보내기"</string>
+<string name="password_settings_export_subject">"Banana Browser 비밀번호"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser 보안 강화 개선에 참여하기"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser는 위험한 앱 및 사이트를 감지하기 위해 일부 방문 페이지의 URL, 제한적인 시스템 정보, 페이지 콘텐츠 일부를 Google로 전송합니다."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser 데이터 삭제됨"</string>

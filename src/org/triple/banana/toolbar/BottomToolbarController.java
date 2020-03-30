@@ -24,7 +24,6 @@ import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.IncognitoStateProvider.IncognitoStateObserver;
-import org.chromium.chrome.browser.toolbar.MenuButton;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
 import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
 
@@ -42,7 +41,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     Map<ButtonId, ToolbarButton> mToolbarButtons;
 
     private ActivityTabProvider mTabProvider;
-    private MenuButton mMenuButton;
     private OnClickListener mTabSwitcherListener;
     private AppMenuButtonHelper mMenuButtonHelper;
     private TabCountProvider mTabCountProvider;
@@ -71,7 +69,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         for (ButtonId buttonId : ButtonId.values()) {
             mToolbarButtons.put(buttonId, createToolbarButton(buttonId));
         }
-        makeToolbarMenuButton();
 
         ToolbarStateModel.getInstance().addObserver(this);
         ToolbarStateModel.getInstance().notifyObservers(); // only first time
@@ -119,12 +116,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         return toolbarButton;
     }
 
-    private void makeToolbarMenuButton() {
-        View view = View.inflate(BananaApplicationUtils.get().getApplicationContext(),
-                R.layout.toolbar_menu_button, null);
-        mMenuButton = view.findViewById(R.id.menu_button_wrapper);
-    }
-
     private void addSpaceView() {
         LayoutInflater inflater = (LayoutInflater) BananaApplicationUtils.get()
                                           .getApplicationContext()
@@ -139,10 +130,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
 
         mThemeColorProvider.addThemeColorObserver(this);
         mIncognitoStateProvider.addIncognitoStateObserverAndTrigger(this);
-
-        assert mMenuButtonHelper != null;
-        mMenuButton.setAppMenuButtonHelper(mMenuButtonHelper);
-        mMenuButton.setThemeColorProvider(mThemeColorProvider);
     }
 
     @Override
@@ -212,38 +199,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     }
 
     /**
-     * Show the update badge over the bottom toolbar's app menu.
-     */
-    @Override
-    public void showAppMenuUpdateBadge() {
-        mMenuButton.showAppMenuUpdateBadgeIfAvailable(true);
-    }
-
-    /**
-     * Remove the update badge.
-     */
-    @Override
-    public void removeAppMenuUpdateBadge() {
-        mMenuButton.removeAppMenuUpdateBadge(true);
-    }
-
-    /**
-     * @return Whether the update badge is showing.
-     */
-    @Override
-    public boolean isShowingAppMenuUpdateBadge() {
-        return mMenuButton.isShowingAppMenuUpdateBadge();
-    }
-
-    /**
-     * @return The browsing mode bottom toolbar's menu button.
-     */
-    @Override
-    public MenuButton getMenuButton() {
-        return mMenuButton;
-    }
-
-    /**
      * Clean up any state when the browsing mode bottom toolbar is destroyed.
      */
     private void buttonDestroy() {
@@ -252,11 +207,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         }
 
         mToolbarButtons.clear();
-
-        if (mMenuButton != null) {
-            mMenuButton.destroy();
-            mMenuButton = null;
-        }
     }
 
     @Override

@@ -1,5 +1,5 @@
 # Banana version
-BANANA_VERSION="1.03"
+BANANA_VERSION="2.00"
 
 # Chromium base version for triple banana
-CHROMIUM_VERSION="80.0.3987.149"
+CHROMIUM_VERSION="81.0.4044.71"

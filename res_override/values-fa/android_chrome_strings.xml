@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"‏همگام‌سازی داده‌های Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"‏کمک به بهبود ویژگی‌ها و عملکرد Banana Browser"</string>
 <string name="autofill_describe_local_copy">"‏کپی در Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"‏صادر کردن گذرواژه‌های ذخیره‌شده در Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"‏گذرواژه‌های Banana Browser"</string>
+<string name="password_settings_export_action_description">"‏صادر کردن گذرواژه‌های ذخیره‌شده در Banana Browser"</string>
+<string name="password_settings_export_subject">"‏گذرواژه‌های Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"‏کمک به بهبود امنیت Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"‏برای حذف برنامه‌ها و سایت‌های خطرناک، Banana Browser نشانی‌های وب برخی از صفحه‌هایی را که بازدید می‌کنید، اطلاعات سیستم محدود و برخی از محتوای صفحه را به Google می‌فرستد."</string>
 <string name="clear_browsing_data_history_dialog_title">"‏داده‌های Banana Browser پاک شد"</string>

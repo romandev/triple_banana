@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Синхронизировать данные Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Помогать повышать производительность Banana Browser и улучшать функции"</string>
 <string name="autofill_describe_local_copy">"Скопировано в Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Экспорт паролей, сохраненных в Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Пароли Banana Browser"</string>
+<string name="password_settings_export_action_description">"Экспорт паролей, сохраненных в Banana Browser"</string>
+<string name="password_settings_export_subject">"Пароли Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Помочь Banana Browser стать ещё безопаснее"</string>
 <string name="safe_browsing_scout_reporting_summary">"Для обнаружения опасных приложений и сайтов Banana Browser отправляет в Google URL некоторых страниц, которые вы открываете, контент на них, а также определенные сведения о системе"</string>
 <string name="clear_browsing_data_history_dialog_title">"Данные Banana Browser удалены"</string>
@@ -83,6 +83,7 @@
 <string name="sharing_chrome_settings">"Открыть настройки Banana Browser"</string>
 <string name="browser_sharing_error_dialog_text_device_not_found">"Убедитесь, что в браузере Banana Browser на устройстве %1$s включена синхронизация."</string>
 <string name="prefs_autofill_assistant_title">"Google Ассистент в Banana Browser"</string>
+<string name="prefs_autofill_assistant_summary">"Выполнять действия в Banana Browser с помощью Ассистента: отправлять в Google контент и URL сайтов, а также информацию, сообщаемую Ассистенту"</string>
 <string name="usage_stats_consent_title">"Показать данные о ваших действиях в Banana Browser в сервисе \"Цифровое благополучие\"?"</string>
 <string name="usage_stats_consent_prompt">"Вы сможете просматривать список сайтов, посещенных в Banana Browser, и устанавливать для них таймеры.\n\nВ Google будут отправляться сведения о сайтах, для которых настроены таймеры, и времени их посещения. Мы собираем эти данные, чтобы улучшать сервис \"Цифровое благополучие\"."</string>
 <string name="usage_stats_setting_title">"Удалить данные о действиях в Banana Browser из сервиса \"Цифровое благополучие\""</string>

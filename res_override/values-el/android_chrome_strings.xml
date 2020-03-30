@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Συγχρονισμός των δεδομένων του Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Συμβάλλετε στη βελτίωση των λειτουργιών και της απόδοσης του Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Αντιγράφηκε στο Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Εξαγωγή κωδικών πρόσβασης που έχουν αποθηκευτεί στο Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Κωδικοί πρόσβασης Banana Browser"</string>
+<string name="password_settings_export_action_description">"Εξαγωγή κωδικών πρόσβασης που έχουν αποθηκευτεί στο Banana Browser"</string>
+<string name="password_settings_export_subject">"Κωδικοί πρόσβασης Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Συμβάλετε στη βελτίωση της ασφάλειας του Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Για τον εντοπισμό επικίνδυνων εφαρμογών και ιστοτόπων, το Banana Browser στέλνει URL ορισμένων ιστοτόπων που επισκέπτεστε, περιορισμένες πληροφορίες συστήματος και ένα μέρος του περιεχομένου σελίδας στο Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Τα δεδομένα του Banana Browser διαγράφηκαν"</string>

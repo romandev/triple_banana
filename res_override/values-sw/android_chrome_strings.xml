@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Sawazisha data yako kwenye Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Tusaidie tuboreshe utendaji na vipengele vya Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Imenakiliwa kwenye Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Tuma manenosiri yaliyohifadhiwa kwenye Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Manenosiri ya Banana Browser"</string>
+<string name="password_settings_export_action_description">"Tuma manenosiri yaliyohifadhiwa kwenye Banana Browser"</string>
+<string name="password_settings_export_subject">"Manenosiri ya Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Tusaidie kuboresha usalama wa Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Ili kutambua programu na tovuti hatari, Banana Browser hutuma URL za baadhi ya kurasa unazotembelea. maelezo machache ya mfumo na maudhui ya ukurasa kwa Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Data ya Banana Browser imefutwa"</string>

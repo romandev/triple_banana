@@ -2,7 +2,7 @@
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 <string name="sign_in_to_chrome">"Prijava v Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Kopirano v Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Gesla za Banana Browser"</string>
+<string name="password_settings_export_subject">"Gesla za Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Zaradi zaznavanja nevarnih aplikacij in spletnih mest Banana Browser Googlu pošlje URL-je nekaterih strani, ki jih obiščete, omejene podatke o sistemu in vsebino nekaterih strani"</string>
 <string name="android_permission_off_plural">"V &lt;link&gt;nastavitvah za Android&lt;/link&gt; vklopite dovoljenja za Banana Browser."</string>
 <string name="android_permission_off">"V &lt;link&gt;nastavitvah za Android&lt;/link&gt; vklopite dovoljenje za Banana Browser."</string>

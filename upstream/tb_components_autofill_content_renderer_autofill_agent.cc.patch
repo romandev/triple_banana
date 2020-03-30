@@ -1,7 +1,7 @@
 diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/components/autofill/content/renderer/autofill_agent.cc
 --- tb/components/autofill/content/renderer/autofill_agent.cc
 +++ tb_diff/components/autofill/content/renderer/autofill_agent.cc
-@@ -64,6 +64,11 @@
+@@ -63,6 +63,11 @@
  #include "ui/base/l10n/l10n_util.h"
  #include "ui/events/keycodes/keyboard_codes.h"
  
@@ -13,7 +13,7 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/com
  using blink::WebAutofillClient;
  using blink::WebAutofillState;
  using blink::WebAXObject;
-@@ -145,6 +150,9 @@ AutofillAgent::AutofillAgent(content::RenderFrame* render_frame,
+@@ -143,6 +148,9 @@ AutofillAgent::AutofillAgent(content::RenderFrame* render_frame,
        is_generation_popup_possibly_visible_(false),
        is_user_gesture_required_(true),
        is_secure_context_required_(false),
@@ -23,7 +23,7 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/com
        form_tracker_(render_frame) {
    render_frame->GetWebFrame()->SetAutofillClient(this);
    password_autofill_agent->SetAutofillAgent(this);
-@@ -562,12 +570,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
+@@ -560,12 +568,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
  
  void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
                                             const base::string16& password) {

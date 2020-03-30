@@ -18,7 +18,7 @@
         android:layout_height="@dimen/toolbar_height_no_shadow" />
 
     <TextView
-        style="@style/TextAppearance.BlackHeadline"
+        style="@style/TextAppearance.Headline.Primary"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@+id/candidate_recycler_view_wrapper"

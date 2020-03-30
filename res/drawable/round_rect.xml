@@ -15,5 +15,5 @@
     <stroke android:width="@dimen/candidate_icon_round_rect_stroke"
         android:color="@color/candidate_icon_round_rect_stroke_color" />
 
-    <solid android:color="@color/default_icon_color_white" />
+    <solid android:color="@color/default_icon_color_light" />
 </shape>

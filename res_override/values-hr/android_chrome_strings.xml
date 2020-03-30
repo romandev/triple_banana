@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Sinkroniziraj podatke iz Banana Browsera"</string>
 <string name="usage_and_crash_reports_title">"Pomozite poboljšati Banana Browserove značajke i izvedbu"</string>
 <string name="autofill_describe_local_copy">"Kopirano u Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Izvoz zaporki pohranjenih u Banana Browseru"</string>
-<string name="save_password_preferences_export_subject">"Zaporke preglednika Banana Browser"</string>
+<string name="password_settings_export_action_description">"Izvoz zaporki pohranjenih u Banana Browseru"</string>
+<string name="password_settings_export_subject">"Zaporke preglednika Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Pomognite poboljšati sigurnost na Banana Browseru"</string>
 <string name="safe_browsing_scout_reporting_summary">"Radi otkrivanja opasnih aplikacija i web-lokacija Banana Browser šalje Googleu URL-ove nekih stranica koje posjećujete, ograničene podatke o sustavu i dio sadržaja web-stranica"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browserovi su podaci izbrisani"</string>

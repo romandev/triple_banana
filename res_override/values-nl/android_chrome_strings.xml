@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"Je Banana Browser-gegevens synchroniseren"</string>
 <string name="usage_and_crash_reports_title">"Help de functies en prestaties van Banana Browser verbeteren"</string>
 <string name="autofill_describe_local_copy">"Gekopieerd naar Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"Wachtwoorden exporteren die zijn opgeslagen in Banana Browser"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser-wachtwoorden"</string>
+<string name="password_settings_export_action_description">"Wachtwoorden exporteren die zijn opgeslagen in Banana Browser"</string>
+<string name="password_settings_export_subject">"Banana Browser-wachtwoorden"</string>
 <string name="safe_browsing_scout_reporting_title">"Help de beveiliging van Banana Browser te verbeteren"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser verzendt de URL\'s van sommige pagina\'s die je bezoekt, beperkte systeemgegevens en bepaalde paginacontent naar Google om gevaarlijke apps en sites te detecteren"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-gegevens gewist"</string>

@@ -4,8 +4,8 @@
 <string name="sync_switch_title">"同步處理你的 Banana Browser 資料"</string>
 <string name="usage_and_crash_reports_title">"協助改善 Banana Browser 的功能與效能"</string>
 <string name="autofill_describe_local_copy">"已複製到 Banana Browser"</string>
-<string name="save_password_preferences_export_action_description">"將使用 Banana Browser 儲存的密碼匯出"</string>
-<string name="save_password_preferences_export_subject">"Banana Browser 密碼"</string>
+<string name="password_settings_export_action_description">"將使用 Banana Browser 儲存的密碼匯出"</string>
+<string name="password_settings_export_subject">"Banana Browser 密碼"</string>
 <string name="safe_browsing_scout_reporting_title">"協助改善 Banana Browser 安全性"</string>
 <string name="safe_browsing_scout_reporting_summary">"為了偵測危險的應用程式和網站，Banana Browser 會將你造訪的部分網頁網址、部分系統資訊以及部分網頁內容傳送給 Google"</string>
 <string name="safe_browsing_summary">"當網站具有安全性風險時，Banana Browser 會將你造訪的部分網頁網址傳送給 Google"</string>
@@ -13,7 +13,7 @@
 <string name="clear_browsing_data_history_dialog_data_text">"系統已將你所選取的資料從 Banana Browser 和其他同步的裝置中移除。
 
 你的 Google 帳戶仍可能保留了其他類型的瀏覽記錄，例如其他 Google 服務中的搜尋和活動記錄 (可前往 &lt;link&gt;myactivity.google.com&lt;/link&gt; 查詢)。"</string>
-<string name="languages_list_prefs_description">"Banana Browser 會儘可能以你慣用的語言顯示網站文字。"</string>
+<string name="languages_list_description">"Banana Browser 會儘可能以你慣用的語言顯示網站文字。"</string>
 <string name="android_permission_off_plural">"請在 &lt;link&gt;Android 設定&lt;/link&gt;中為 Banana Browser 啟用這些權限。"</string>
 <string name="android_permission_off">"請在 &lt;link&gt;Android 設定&lt;/link&gt;中為 Banana Browser 啟用這項權限。"</string>
 <string name="android_location_permission_off">"如要讓 Banana Browser 存取你的位置，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟定位功能。"</string>
