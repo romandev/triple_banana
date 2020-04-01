@@ -75,7 +75,7 @@ public class FilterLoaderImpl implements FilterLoader {
                     return;
                 }
 
-                compressedFilter.remove();
+                compressedFilter.delete();
                 // TODO(zino): How can we remove filterFile?
 
                 Log.i(TAG, "load(): Filter updated");
