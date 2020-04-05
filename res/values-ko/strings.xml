@@ -15,6 +15,8 @@
     <string name="authentication_lockout_permenent">락스크린에서 디바이스 인증 후 다시 시도하세요</string>
     <string name="background_play">백그라운드 재생</string>
     <string name="background_play_summary">탭이 활성화 상태가 아니거나 장치의 화면이 꺼져있을 때도 미디어를 재생하도록 합니다</string>
+    <string name="secure_dns">안전한 DNS</string>
+    <string name="secure_dns_summary">안전한 DNS를 사용하여 사용자의 프라이버시를 보호합니다</string>
     <string name="banana_extension">Banana 확장 기능</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 도구모음에 배치하세요</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>

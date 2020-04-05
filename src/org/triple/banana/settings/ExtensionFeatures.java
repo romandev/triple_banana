@@ -80,6 +80,14 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
                 }
             });
         }
+
+        final SwitchPreferenceCompat secureDNS =
+                (SwitchPreferenceCompat) findPreference(FeatureName.SECURE_DNS);
+        secureDNS.setChecked(isEnabled(FeatureName.SECURE_DNS));
+        secureDNS.setOnPreferenceChangeListener((preference, newValue) -> {
+            showRestartDialog();
+            return true;
+        });
     }
 
     @Override
@@ -124,6 +132,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         // diffrent name style like others.
         public static final String BOTTOM_TOOLBAR = "bottom_toolbar_enabled";
         public static final String SECURE_LOGIN = "feature_name_secure_login";
+        public static final String SECURE_DNS = "feature_name_secure_dns";
     }
 
     public static void setEnabled(String feature, boolean value) {

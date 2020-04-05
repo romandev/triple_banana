@@ -24,6 +24,11 @@
         android:title="@string/background_play"
         android:summaryOn="@string/background_play_summary"
         android:summaryOff="@string/text_off" />
+    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+        android:key="feature_name_secure_dns"
+        android:title="@string/secure_dns"
+        android:summaryOn="@string/secure_dns_summary"
+        android:summaryOff="@string/text_off" />
 
     <PreferenceCategory
         android:title="@string/user_interface"/>
