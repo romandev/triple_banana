@@ -1,0 +1,13 @@
+diff --git tb/chrome/browser/flag_descriptions.h tb_diff/chrome/browser/flag_descriptions.h
+--- tb/chrome/browser/flag_descriptions.h
++++ tb_diff/chrome/browser/flag_descriptions.h
+@@ -356,6 +356,9 @@ extern const char kEnableSystemWebAppsDescription[];
+ extern const char kEnableTLS13EarlyDataName[];
+ extern const char kEnableTLS13EarlyDataDescription[];
+ 
++extern const char kPostQuantumCECPQ2Name[];
++extern const char kPostQuantumCECPQ2Description[];
++
+ extern const char kWinrtGeolocationImplementationName[];
+ extern const char kWinrtGeolocationImplementationDescription[];
+ 
