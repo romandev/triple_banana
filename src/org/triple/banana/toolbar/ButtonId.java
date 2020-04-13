@@ -10,6 +10,7 @@ import android.view.View;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.theme.DarkModeController;
 
 import java.util.EnumMap;
 
@@ -29,7 +30,8 @@ public enum ButtonId {
     RELOAD,
     VISIT_HISTORY,
     ARCHIVE,
-    PRINT;
+    PRINT,
+    DARK_MODE;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -58,6 +60,7 @@ public enum ButtonId {
                 ButtonId.VISIT_HISTORY, v -> BananaToolbarManager.get().goVisitHistory());
         sOnClickListeners.put(ButtonId.ARCHIVE, v -> BananaToolbarManager.get().goArchive());
         sOnClickListeners.put(ButtonId.PRINT, v -> BananaToolbarManager.get().print());
+        sOnClickListeners.put(ButtonId.DARK_MODE, v -> DarkModeController.get().toggle());
 
         sOnLongClickListeners.put(ButtonId.BOOKMARK, v -> {
             BananaToolbarManager.get().addBookmark();
@@ -115,6 +118,9 @@ public enum ButtonId {
                 break;
             case ADD_TO_HOME:
                 imageResource = R.drawable.ic_add_to_home_black_24dp;
+                break;
+            case DARK_MODE:
+                imageResource = R.drawable.ic_dark_black_24dp;
                 break;
         }
         return imageResource;

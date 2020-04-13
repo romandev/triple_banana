@@ -18,6 +18,8 @@
     <string name="secure_dns">Secure DNS</string>
     <string name="secure_dns_summary">Your privacy protected on the Internet</string>
     <string name="banana_extension">Banana Extension</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>

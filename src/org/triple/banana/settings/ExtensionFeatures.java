@@ -20,6 +20,7 @@ import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 import org.triple.banana.remote_config.RemoteConfig;
+import org.triple.banana.theme.DarkModeController;
 import org.triple.banana.toolbar.ToolbarEditor;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
@@ -63,6 +64,14 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return false;
         });
 
+        final SwitchPreferenceCompat darkMode =
+                (SwitchPreferenceCompat) findPreference(FeatureName.DARK_MODE);
+        darkMode.setChecked(DarkModeController.get().isDarkModeOn());
+        darkMode.setOnPreferenceChangeListener((preference, newValue) -> {
+            DarkModeController.get().toggle();
+            return true;
+        });
+
         final SwitchPreferenceCompat backgroundPlay =
                 (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
         boolean isVisible = wasSetByUser(FeatureName.BACKGROUND_PLAY);
@@ -71,6 +80,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             showRestartDialog();
             return true;
         });
+
         if (!isVisible) {
             mRemoteConfig.getAsync(config -> {
                 boolean isRemoteEnabled = config.optBoolean("background_play");
@@ -133,6 +143,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         public static final String BOTTOM_TOOLBAR = "bottom_toolbar_enabled";
         public static final String SECURE_LOGIN = "feature_name_secure_login";
         public static final String SECURE_DNS = "feature_name_secure_dns";
+        public static final String DARK_MODE = "feature_name_dark_mode";
     }
 
     public static void setEnabled(String feature, boolean value) {
