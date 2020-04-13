@@ -1,0 +1,18 @@
+diff --git tb/net/android/java/src/org/chromium/net/DnsStatus.java tb_diff/net/android/java/src/org/chromium/net/DnsStatus.java
+--- tb/net/android/java/src/org/chromium/net/DnsStatus.java
++++ tb_diff/net/android/java/src/org/chromium/net/DnsStatus.java
+@@ -39,11 +39,12 @@ public class DnsStatus {
+ 
+     @CalledByNative
+     public boolean getPrivateDnsActive() {
+-        return mPrivateDnsActive;
++        return mPrivateDnsActive
++                || org.chromium.base.CommandLine.getInstance().hasSwitch("DnsOverHttps");
+     }
+ 
+     @CalledByNative
+     public String getPrivateDnsServerName() {
+-        return mPrivateDnsServerName;
++        return mPrivateDnsActive ? mPrivateDnsServerName : "1dot1dot1dot1.cloudflare-dns.com";
+     }
+ }

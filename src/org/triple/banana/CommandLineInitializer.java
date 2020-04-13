@@ -13,20 +13,29 @@ import org.banana.cake.interfaces.BananaCommandLineInitializer;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
+import java.util.ArrayList;
+
 class CommandLineInitializer implements BananaCommandLineInitializer {
     @Override
     public void initCommandLine() {
         if (BananaBuildConfig.IS_ARM64 && Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
             BananaCommandLine.get().appendSwitchWithValue("disable_aimagereader", "1");
         }
-        if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
-            BananaCommandLine.get().appendSwitchWithValue("enable-features",
-                    "ChromeDuet,HomePageButtonForceEnabled,OmniboxSearchEngineLogo");
-        }
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             BananaCommandLine.get().appendSwitchWithValue(
                     "enable-blink-features", "BackgroundPlay");
             BananaCommandLine.get().appendSwitchWithValue("disable-media-suspend", null);
+        }
+        ArrayList<String> enableFeatures = new ArrayList<>();
+        if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
+            enableFeatures.add("ChromeDuet,HomePageButtonForceEnabled,OmniboxSearchEngineLogo");
+        }
+        if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
+            enableFeatures.add("PostQuantumCECPQ2,DnsOverHttps");
+        }
+        if (!enableFeatures.isEmpty()) {
+            BananaCommandLine.get().appendSwitchWithValue(
+                    "enable-features", String.join(",", enableFeatures));
         }
     }
 }
