@@ -67,6 +67,7 @@ android_library("triple_banana_java") {
     "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeFeatureFlags.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeSystemNightModeMonitor.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeTab.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeTabManager.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeToolbarManager.java",

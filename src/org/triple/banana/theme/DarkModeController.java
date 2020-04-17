@@ -5,9 +5,21 @@
 
 package org.triple.banana.theme;
 
+import android.content.SharedPreferences;
+
+import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaSystemNightModeMonitor;
+
 public class DarkModeController {
+    private static final String UI_THEME_SETTING = "ui_theme_setting";
+    private static final String UI_THEME_DARKEN_WEBSITES_ENABLED = "darken_websites_enabled";
+    interface State {
+        static final int SYSTEM_DEFAULT = 0;
+        static final int LIGHT = 1;
+        static final int DARK = 2;
+    }
+
     private static DarkModeController sInstance;
-    private static Boolean mSetting;
 
     DarkModeController() {}
 
@@ -16,18 +28,42 @@ public class DarkModeController {
             sInstance = new DarkModeController();
         }
 
-        // TODO(bk_1.ko) : It will be updated from UI_THEME_SETTING
-        mSetting = false;
-
         return sInstance;
     }
 
-    public void toggle() {
-        // TODO(bk_1.ko) : implement for toggle() api.
+    private boolean isSystemNightModeOn() {
+        return BananaSystemNightModeMonitor.get().isSystemNightModeOn();
     }
 
-    public Boolean isDarkModeOn() {
-        // TODO(bk_1.ko) : implement for isDarkModeOn() api
-        return mSetting;
+    private int getCurrentState() {
+        return BananaApplicationUtils.get().getSharedPreferences().getInt(
+                UI_THEME_SETTING, State.SYSTEM_DEFAULT);
+    }
+
+    private void setCurrentState(int state) {
+        SharedPreferences.Editor editor =
+                BananaApplicationUtils.get().getSharedPreferences().edit();
+        editor.putInt(UI_THEME_SETTING, state);
+        editor.putBoolean(UI_THEME_DARKEN_WEBSITES_ENABLED, true);
+        editor.apply();
+    }
+
+    public void toggle() {
+        if (isSystemNightModeOn()) {
+            if (getCurrentState() == State.LIGHT)
+                setCurrentState(State.SYSTEM_DEFAULT);
+            else
+                setCurrentState(State.LIGHT);
+        } else {
+            if (getCurrentState() == State.DARK)
+                setCurrentState(State.SYSTEM_DEFAULT);
+            else
+                setCurrentState(State.DARK);
+        }
+    }
+
+    public boolean isDarkModeOn() {
+        return getCurrentState() == State.DARK
+                || (getCurrentState() == State.SYSTEM_DEFAULT && isSystemNightModeOn());
     }
 }

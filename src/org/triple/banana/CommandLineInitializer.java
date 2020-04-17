@@ -27,6 +27,7 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
             BananaCommandLine.get().appendSwitchWithValue("disable-media-suspend", null);
         }
         ArrayList<String> enableFeatures = new ArrayList<>();
+        enableFeatures.add("DarkenWebsitesCheckboxInThemesSetting");
         if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
             enableFeatures.add("ChromeDuet,HomePageButtonForceEnabled,OmniboxSearchEngineLogo");
         }
