@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/about_flags.cc tb_diff/chrome/browser/about_flags.cc
 --- tb/chrome/browser/about_flags.cc
 +++ tb_diff/chrome/browser/about_flags.cc
-@@ -2498,6 +2498,9 @@ const FeatureEntry kFeatureEntries[] = {
+@@ -2505,6 +2505,9 @@ const FeatureEntry kFeatureEntries[] = {
      {"enable-tls13-early-data", flag_descriptions::kEnableTLS13EarlyDataName,
       flag_descriptions::kEnableTLS13EarlyDataDescription, kOsAll,
       FEATURE_VALUE_TYPE(net::features::kEnableTLS13EarlyData)},
