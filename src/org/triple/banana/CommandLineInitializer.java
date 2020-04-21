@@ -6,6 +6,7 @@
 package org.triple.banana;
 
 import android.os.Build;
+import android.text.TextUtils;
 
 import org.banana.cake.interfaces.BananaBuildConfig;
 import org.banana.cake.interfaces.BananaCommandLine;
@@ -36,7 +37,7 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
         }
         if (!enableFeatures.isEmpty()) {
             BananaCommandLine.get().appendSwitchWithValue(
-                    "enable-features", String.join(",", enableFeatures));
+                    "enable-features", TextUtils.join(",", enableFeatures));
         }
     }
 }
