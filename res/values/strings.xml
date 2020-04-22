@@ -15,14 +15,14 @@
     <string name="authentication_lockout_permenent">Please try after unlock your device</string>
     <string name="background_play">Background Play</string>
     <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
-    <string name="secure_dns">Secure DNS</string>
-    <string name="secure_dns_summary">Your privacy protected on the Internet</string>
     <string name="banana_extension">Banana Extension</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
+    <string name="secure_dns">Secure DNS</string>
+    <string name="secure_dns_summary">Your privacy protected on the Internet</string>
     <string name="secure_login">Secure Login</string>
     <string name="secure_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>
     <string name="toolbar_editor">Toolbar Editor</string>
