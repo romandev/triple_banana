@@ -1,0 +1,13 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarVariationManager.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarVariationManager.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarVariationManager.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarVariationManager.java
+@@ -92,8 +92,7 @@ public class BottomToolbarVariationManager {
+      *         in current variation.
+      */
+     public static boolean isHomeButtonOnBottom() {
+-        return FeatureUtilities.isBottomToolbarEnabled()
+-                && !getVariation().equals(Variations.NEW_TAB_SEARCH_SHARE);
++        return false;
+     }
+ 
+     /**
