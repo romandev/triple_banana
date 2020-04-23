@@ -8,7 +8,7 @@ package org.triple.banana.theme;
 import android.content.SharedPreferences;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
-import org.banana.cake.interfaces.BananaSystemNightModeMonitor;
+import org.banana.cake.interfaces.BananaDarkModeUtils;
 
 public class DarkModeController {
     private static final String UI_THEME_SETTING = "ui_theme_setting";
@@ -31,13 +31,17 @@ public class DarkModeController {
         return sInstance;
     }
 
-    private boolean isSystemNightModeOn() {
-        return BananaSystemNightModeMonitor.get().isSystemNightModeOn();
+    private boolean isSystemDarkModeOn() {
+        return BananaDarkModeUtils.get().isSystemDarkModeOn();
+    }
+
+    private boolean isDarkModeDefaultToLight() {
+        return BananaDarkModeUtils.get().isDarkModeDefaultToLight();
     }
 
     private int getCurrentState() {
         return BananaApplicationUtils.get().getSharedPreferences().getInt(
-                UI_THEME_SETTING, State.SYSTEM_DEFAULT);
+                UI_THEME_SETTING, isDarkModeDefaultToLight() ? State.LIGHT : State.SYSTEM_DEFAULT);
     }
 
     private void setCurrentState(int state) {
@@ -49,7 +53,7 @@ public class DarkModeController {
     }
 
     public void toggle() {
-        if (isSystemNightModeOn()) {
+        if (isSystemDarkModeOn()) {
             if (getCurrentState() == State.LIGHT)
                 setCurrentState(State.SYSTEM_DEFAULT);
             else
@@ -64,6 +68,6 @@ public class DarkModeController {
 
     public boolean isDarkModeOn() {
         return getCurrentState() == State.DARK
-                || (getCurrentState() == State.SYSTEM_DEFAULT && isSystemNightModeOn());
+                || (getCurrentState() == State.SYSTEM_DEFAULT && isSystemDarkModeOn());
     }
 }

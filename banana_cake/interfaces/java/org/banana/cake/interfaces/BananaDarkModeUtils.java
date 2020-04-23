@@ -5,10 +5,11 @@
 
 package org.banana.cake.interfaces;
 
-public interface BananaSystemNightModeMonitor {
-    static BananaSystemNightModeMonitor get() {
-        return BananaInterfaceProvider.get(BananaSystemNightModeMonitor.class);
+public interface BananaDarkModeUtils {
+    static BananaDarkModeUtils get() {
+        return BananaInterfaceProvider.get(BananaDarkModeUtils.class);
     }
 
-    boolean isSystemNightModeOn();
+    boolean isSystemDarkModeOn();
+    boolean isDarkModeDefaultToLight();
 }
