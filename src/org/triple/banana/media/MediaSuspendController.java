@@ -17,16 +17,8 @@ public enum MediaSuspendController {
 
     private static final String TAG = "MediaSuspendController";
     private static final String DISABLE_ON_YOUTUBE_SCRIPT = ""
-            + "(function() {"
-            + "    if (document._addEventListener === undefined) {"
-            + "        document._addEventListener = document.addEventListener;"
-            + "        document.addEventListener = function(a,b,c) {"
-            + "            if(a != 'visibilitychange') {"
-            + "                document._addEventListener(a,b,c);"
-            + "            }"
-            + "        };"
-            + "    }"
-            + "}());";
+            + "window.addEventListener('visibilitychange',"
+            + "evt => evt.stopImmediatePropagation(), true);";
 
     public void DisableOnYouTube(BananaTab tab) {
         if (TextUtils.isEmpty(tab.getUrl())) {
