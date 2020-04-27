@@ -23,6 +23,11 @@ public class ToolbarEditController {
     }
 
     public void commit() {
+        ToolbarStateModel.getInstance().setToolbarButtonList(getButtonList());
+        ToolbarStateModel.getInstance().commit();
+    }
+
+    private ArrayList<ButtonId> getButtonList() {
         ArrayList<ButtonId> idList = getButtonIdList(
                 ((SelectedToolbarButtonAdapter) (mSelectedRecyclerView.getAdapter()))
                         .getButtonList());
@@ -31,8 +36,7 @@ public class ToolbarEditController {
                 ((CandidateToolbarButtonAdapter) (mCandidateRecyclerView.getAdapter()))
                         .getButtonList()));
 
-        ToolbarStateModel.getInstance().setToolbarButtonList(idList);
-        ToolbarStateModel.getInstance().commit();
+        return idList;
     }
 
     private ArrayList<ButtonId> getButtonIdList(ArrayList<ToolbarButtonItem> buttonList) {
@@ -96,5 +100,12 @@ public class ToolbarEditController {
         CandidateToolbarButtonAdapter bottomToolbarButtonAdapter1 =
                 (CandidateToolbarButtonAdapter) mCandidateRecyclerView.getAdapter();
         bottomToolbarButtonAdapter1.setButtonList(candidateButtonList);
+    }
+
+    public boolean isToolbarChanged() {
+        ArrayList<ButtonId> originList = ToolbarStateModel.getInstance().getToolbarButtonList();
+        ArrayList<ButtonId> editedList = getButtonList();
+
+        return !originList.equals(editedList);
     }
 }

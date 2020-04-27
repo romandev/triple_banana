@@ -5,6 +5,8 @@
 
 package org.triple.banana.toolbar;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
@@ -60,5 +62,28 @@ public class ToolbarEditActivity extends SnackbarActivity {
         } else {
             return super.onOptionsItemSelected(item);
         }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mToolbarEditController.isToolbarChanged()) {
+            showSavePopup();
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+    private void showSavePopup() {
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.save_suggestion_message)
+                .setPositiveButton(R.string.save,
+                        (dialog, id) -> {
+                            mToolbarEditController.commit();
+                            finish();
+                        })
+                .setNegativeButton(R.string.discard, (dialog, id) -> { finish(); })
+                .setNeutralButton(android.R.string.cancel, (dialog, id) -> dialog.dismiss())
+                .create()
+                .show();
     }
 }
