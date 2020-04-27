@@ -8,9 +8,12 @@ package org.triple.banana;
 import android.content.Context;
 
 import org.banana.cake.bootstrap.BananaApplication;
+import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaApplicationUtils.BananaActivityState;
 import org.banana.cake.interfaces.BananaTabManager;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.password.PasswordExtension;
+import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
@@ -23,6 +26,19 @@ public class TripleBananaApplication extends BananaApplication {
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             BananaTabManager.get().addObserver(
                     bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
+        }
+
+        if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
+            BananaApplicationUtils.get().registerStateListenerForAllActivities((activity,
+                                                                                       state) -> {
+                if (state == BananaActivityState.PAUSED
+                        && SecureDnsNotificationManager.getInstance().isShowing()) {
+                    SecureDnsNotificationManager.getInstance().dismissSecureDnsNotification();
+                } else if (state == BananaActivityState.RESUMED
+                        && !SecureDnsNotificationManager.getInstance().isShowing()) {
+                    SecureDnsNotificationManager.getInstance().showSecureDnsNotification();
+                }
+            });
         }
     }
 

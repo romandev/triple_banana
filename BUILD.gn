@@ -117,6 +117,9 @@ android_library("triple_banana_java") {
     # remote_config
     "//triple_banana/src/org/triple/banana/remote_config/RemoteConfig.java",
 
+    # secure_dns
+    "//triple_banana/src/org/triple/banana/secure_dns/SecureDnsNotificationManager.java",
+
     # settings
     "//triple_banana/src/org/triple/banana/settings/ExtensionFeatures.java",
     "//triple_banana/src/org/triple/banana/settings/SettingsOpener.java",
