@@ -8,7 +8,9 @@ package org.triple.banana.secure_dns;
 import android.annotation.TargetApi;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Build;
 import android.support.v4.app.NotificationCompat;
 
@@ -43,6 +45,8 @@ public enum SecureDnsNotificationManager {
 
     public void showSecureDnsNotification() {
         final Context context = BananaApplicationUtils.get().getApplicationContext();
+        PendingIntent pendingIntent = PendingIntent.getActivity(
+                context, 0, new Intent(), PendingIntent.FLAG_UPDATE_CURRENT);
         String title = context.getResources().getString(R.string.secure_dns_notification_title);
         String message = context.getResources().getString(R.string.secure_dns_notification_message);
         NotificationCompat.Builder builder;
@@ -56,7 +60,8 @@ public enum SecureDnsNotificationManager {
             builder = new NotificationCompat.Builder(context, CHANNEL_SECURE_DNS_IMPORTANCE_LOW)
                               .setPriority(NotificationCompat.PRIORITY_LOW);
         }
-        builder.setContentTitle(title)
+        builder.setContentIntent(pendingIntent)
+                .setContentTitle(title)
                 .setContentText(message)
                 .setOngoing(true)
                 .setOnlyAlertOnce(true)
