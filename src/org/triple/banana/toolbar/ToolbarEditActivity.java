@@ -49,14 +49,14 @@ public class ToolbarEditActivity extends SnackbarActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.close_menu_id) {
+        if (item.getItemId() == R.id.discard_menu_id) {
             finish();
             return true;
-        } else if (item.getItemId() == R.id.done_menu_id) {
+        } else if (item.getItemId() == R.id.save_menu_id) {
             mToolbarEditController.commit();
             finish();
             return true;
-        } else if (item.getItemId() == R.id.refresh_menu_id) {
+        } else if (item.getItemId() == R.id.reset_menu_id) {
             mToolbarEditController.initialization();
             return true;
         } else {

@@ -21,6 +21,7 @@
     <string name="discard">Discard</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
+    <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
     <string name="save">Save</string>
     <string name="save_suggestion_message">Do you want to save your changes?</string>

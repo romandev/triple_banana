@@ -8,23 +8,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto" >
 
     <item
-        android:id="@+id/refresh_menu_id"
+        android:id="@+id/reset_menu_id"
         android:icon="@drawable/ic_refresh_black_24dp"
-        android:title="@string/search"
+        android:title="@string/reset"
         app:showAsAction="ifRoom"
         app:iconTint="@color/standard_mode_tint" />
 
     <item
-        android:id="@+id/close_menu_id"
+        android:id="@+id/discard_menu_id"
         android:icon="@drawable/btn_close"
-        android:title="@string/bookmark_action_bar_close"
+        android:title="@string/discard"
         app:showAsAction="ifRoom"
         app:iconTint="@color/standard_mode_tint" />
 
     <item
-        android:id="@+id/done_menu_id"
+        android:id="@+id/save_menu_id"
         android:icon="@drawable/btn_done"
-        android:title="@string/search"
+        android:title="@string/save"
         app:showAsAction="ifRoom"
         app:iconTint="@color/standard_mode_tint" />
 
