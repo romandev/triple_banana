@@ -132,10 +132,12 @@ public class CandidateToolbarButtonAdapter
                     } else {
                         SelectedToolbarButtonAdapter.ReplaceItem item =
                                 (SelectedToolbarButtonAdapter.ReplaceItem) v.getTag();
-                        Collections.swap(mButtonList,
-                                Integer.parseInt(
-                                        event.getClipData().getItemAt(0).getText().toString()),
-                                item.getPosition());
+
+                        int selectedPosition = Integer.parseInt(
+                                event.getClipData().getItemAt(0).getText().toString());
+                        if (selectedPosition < 0 || selectedPosition >= mButtonList.size()) break;
+
+                        Collections.swap(mButtonList, selectedPosition, item.getPosition());
                         notifyDataSetChanged();
                     }
 
