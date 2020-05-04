@@ -10,4 +10,7 @@
     <color name="authentication_warning_color">#f4511e</color>
     <color name="cancel_text_color">#ff0099cc</color>
     <color name="candidate_icon_round_rect_stroke_color">#EEEEEE</color>
+    <color name="candidate_icon_round_rect_stroke_dark_color">#AAAAAA</color>
+    <color name="toolbar_modern_grey_background_color">#202124</color>
+    <color name="toolbar_modern_grey_text_color">#3C4043</color>
 </resources>

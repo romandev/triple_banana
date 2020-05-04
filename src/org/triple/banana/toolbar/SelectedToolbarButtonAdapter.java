@@ -7,6 +7,7 @@ package org.triple.banana.toolbar;
 
 import android.content.ClipData;
 import android.content.ClipDescription;
+import android.content.Context;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
@@ -14,6 +15,10 @@ import android.view.DragEvent;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+
+import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.triple.banana.R;
+import org.triple.banana.theme.DarkModeController;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -66,6 +71,8 @@ public class SelectedToolbarButtonAdapter
     @Override
     public void onBindViewHolder(
             SelectedToolbarButtonAdapter.ButtonViewHolder buttonViewHolder, int i) {
+        final Context context = BananaApplicationUtils.get().getApplicationContext();
+        final boolean isDarkMode = DarkModeController.get().isDarkModeOn();
         ToolbarButtonItem toolbarButtonItem = mButtonList.get(i);
 
         buttonViewHolder.mToolbarButton.setImageResource(toolbarButtonItem.getImageResource());
@@ -73,8 +80,12 @@ public class SelectedToolbarButtonAdapter
         ReplaceItem replaceItem =
                 new ReplaceItem(i, toolbarButtonItem.getImageResource(), toolbarButtonItem.getId());
         buttonViewHolder.mToolbarButton.getToolbarWrapper().setTag(replaceItem);
-        buttonViewHolder.mToolbarButton.getToolbarWrapper().setBackgroundColor(
-                Color.rgb(255, 255, 255));
+        buttonViewHolder.mToolbarButton.getToolbarWrapper().setBackgroundColor(isDarkMode
+                        ? context.getResources().getColor(
+                                R.color.toolbar_modern_grey_background_color)
+                        : Color.WHITE);
+        buttonViewHolder.mToolbarButton.getImageButton().setColorFilter(
+                isDarkMode ? Color.WHITE : Color.BLACK);
     }
 
     public void setCandidateToolbarButtonAdapter(
@@ -110,13 +121,15 @@ public class SelectedToolbarButtonAdapter
         buttonViewHolder.mToolbarButton.getToolbarWrapper().setOnDragListener((v, event) -> {
             switch (event.getAction()) {
                 case DragEvent.ACTION_DRAG_ENDED:
-                    v.setBackgroundColor(Color.rgb(255, 255, 255));
+                case DragEvent.ACTION_DRAG_EXITED:
+                    final Context context = BananaApplicationUtils.get().getApplicationContext();
+                    final boolean isDarkMode = DarkModeController.get().isDarkModeOn();
+                    v.setBackgroundColor(isDarkMode ? context.getResources().getColor(
+                                                 R.color.toolbar_modern_grey_background_color)
+                                                    : Color.WHITE);
                     break;
                 case DragEvent.ACTION_DRAG_ENTERED:
                     v.setBackgroundColor(Color.parseColor("#FFFDC534"));
-                    break;
-                case DragEvent.ACTION_DRAG_EXITED:
-                    v.setBackgroundColor(Color.rgb(255, 255, 255));
                     break;
                 case DragEvent.ACTION_DRAG_LOCATION:
                 case DragEvent.ACTION_DRAG_STARTED:
