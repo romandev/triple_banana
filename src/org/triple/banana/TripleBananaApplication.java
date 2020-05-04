@@ -28,7 +28,7 @@ public class TripleBananaApplication extends BananaApplication {
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
-            SecureDnsNotificationManager.getInstance().showSecureDnsNotification();
+            SecureDnsNotificationManager.getInstance().showSecureDnsNotificationIfNeeded();
         }
     }
 

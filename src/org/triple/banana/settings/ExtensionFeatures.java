@@ -20,6 +20,7 @@ import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
 import org.triple.banana.remote_config.RemoteConfig;
+import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.theme.DarkModeController;
 import org.triple.banana.toolbar.ToolbarEditor;
 
@@ -96,6 +97,10 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         secureDNS.setChecked(isEnabled(FeatureName.SECURE_DNS));
         secureDNS.setOnPreferenceChangeListener((preference, newValue) -> {
             showRestartDialog();
+            if (((boolean) newValue)
+                    && SecureDnsNotificationManager.getInstance().wasNotificationShown()) {
+                SecureDnsNotificationManager.getInstance().resetNotificationState();
+            }
             return true;
         });
     }

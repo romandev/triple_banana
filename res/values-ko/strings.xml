@@ -26,9 +26,7 @@
     <string name="save">저장</string>
     <string name="save_suggestion_message">변경사항을 저장하시겠습니까?</string>
     <string name="secure_dns">안전한 DNS</string>
-    <string name="secure_dns_notification_message">안전한 DNS를 사용하여 인터넷을 보호 중입니다.</string>
-    <string name="secure_dns_notification_title">안전한 DNS 사용 중</string>
-    <string name="secure_dns_summary">안전한 DNS를 사용하여 사용자의 프라이버시를 보호합니다</string>
+    <string name="secure_dns_summary">HTTPS 차단으로부터 개인정보를 보호하도록 우회합니다</string>
     <string name="secure_login">안전한 로그인</string>
     <string name="secure_login_summary">웹 페이지에 로그인을 할 때, 저장된 사용자 비밀번호를 사용하는 경우 추가 인증을 사용합니다 (예: 생체 인증, 패턴, PIN 등)</string>
     <string name="toolbar_editor">도구모음 편집하기</string>
