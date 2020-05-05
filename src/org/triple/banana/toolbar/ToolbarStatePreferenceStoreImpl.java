@@ -45,22 +45,24 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
                               .getSharedPreferences(PREFERENCE_FILE_NAME, Context.MODE_PRIVATE)
                               .getString(SAVED_DATA, null);
         ArrayList<ButtonId> arrayList = new ArrayList<>();
+
         try {
             if (data != null) {
                 JSONArray arr = new JSONArray(data);
                 for (int i = 0; i < arr.length(); i++) {
                     JSONObject jsonObject = arr.getJSONObject(i);
-                    arrayList.add(ButtonId.valueOf(jsonObject.getString(Integer.toString(i))));
+                    ButtonId buttonId =
+                            ButtonId.getButtonId(jsonObject.getString(Integer.toString(i)));
+
+                    if (buttonId != null) arrayList.add(buttonId);
                 }
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        if (arrayList.isEmpty()) {
-            for (ButtonId id : ButtonId.values()) {
-                arrayList.add(id);
-            }
+        for (ButtonId id : ButtonId.values()) {
+            if (!arrayList.contains(id)) arrayList.add(id);
         }
 
         return arrayList;
