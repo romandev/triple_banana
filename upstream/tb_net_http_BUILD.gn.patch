@@ -1,0 +1,14 @@
+diff --git tb/net/http/BUILD.gn tb_diff/net/http/BUILD.gn
+--- tb/net/http/BUILD.gn
++++ tb_diff/net/http/BUILD.gn
+@@ -73,6 +73,9 @@ source_set("transport_security_state_generated_files") {
+   ]
+ 
+   if (include_transport_security_state_preload_list) {
+-    deps += [ ":generate_transport_security_state" ]
++    deps += [
++      ":generate_transport_security_state",
++      "//triple_banana/hsts:generate_triple_banana_hsts",
++    ]
+   }
+ }

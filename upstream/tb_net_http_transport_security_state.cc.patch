@@ -1,0 +1,52 @@
+diff --git tb/net/http/transport_security_state.cc tb_diff/net/http/transport_security_state.cc
+--- tb/net/http/transport_security_state.cc
++++ tb_diff/net/http/transport_security_state.cc
+@@ -41,6 +41,10 @@
+ #include "net/net_buildflags.h"
+ #include "net/ssl/ssl_info.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "net/base/features.h"
++#endif
++
+ namespace net {
+ 
+ const base::Feature kEnforceCTForNewCerts{"EnforceCTForNewCerts",
+@@ -58,6 +62,16 @@ const TransportSecurityStateSource* const kDefaultHSTSSource = &kHSTSSource;
+ const TransportSecurityStateSource* const kDefaultHSTSSource = nullptr;
+ #endif
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#if BUILDFLAG(INCLUDE_TRANSPORT_SECURITY_STATE_PRELOAD_LIST)
++namespace triple_banana {
++#include "triple_banana/hsts/triple_banana_hsts.h"  // nogncheck
++const TransportSecurityStateSource* const kTripleBananaHSTSSource =
++    &kHSTSSource;
++}  // namespace triple_banana
++#endif
++#endif
++
+ const TransportSecurityStateSource* g_hsts_source = kDefaultHSTSSource;
+ 
+ // Parameters for remembering sent HPKP and Expect-CT reports.
+@@ -379,6 +393,20 @@ bool DecodeHSTSPreload(const std::string& search_hostname, PreloadResult* out) {
+     return false;
+   }
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (base::FeatureList::IsEnabled(features::kPostQuantumCECPQ2)) {
++    const auto* hsts_source = triple_banana::kTripleBananaHSTSSource;
++    HSTSPreloadDecoder decoder(
++        hsts_source->huffman_tree, hsts_source->huffman_tree_size,
++        hsts_source->preloaded_data, hsts_source->preloaded_bits,
++        hsts_source->root_position);
++    if (decoder.Decode(hostname, &found) && found) {
++      *out = decoder.result();
++      return found;
++    }
++  }
++#endif
++
+   HSTSPreloadDecoder decoder(
+       g_hsts_source->huffman_tree, g_hsts_source->huffman_tree_size,
+       g_hsts_source->preloaded_data, g_hsts_source->preloaded_bits,

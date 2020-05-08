@@ -1,0 +1,19 @@
+# Copyright 2020 The Triple Banana Authors. All rights reserved.
+# This Source Code Form is subject to the terms of the Mozilla Public
+# License, v. 2.0. If a copy of the MPL was not distributed with this
+# file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+import("//build/compiled_action.gni")
+
+compiled_action("generate_triple_banana_hsts") {
+  tool = "//net/tools/transport_security_state_generator"
+
+  inputs = [
+    "//triple_banana/hsts/hsts.json",
+    "//triple_banana/hsts/hsts.pins",
+    "//net/http/transport_security_state_static.template",
+  ]
+  outputs = [ "$target_gen_dir/triple_banana_hsts.h" ]
+  args =
+      rebase_path(inputs, root_build_dir) + rebase_path(outputs, root_build_dir)
+}
