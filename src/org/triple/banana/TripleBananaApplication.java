@@ -6,6 +6,7 @@
 package org.triple.banana;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaApplicationUtils;
@@ -21,7 +22,45 @@ public class TripleBananaApplication extends BananaApplication {
         InterfaceProvider.initialize();
     }
 
+    private boolean isFirstInstall() {
+        return !BananaApplicationUtils.get().getSharedPreferences().contains(
+                FeatureName.BOTTOM_TOOLBAR);
+    }
+
+    private String getCurrentVersion() {
+        try {
+            Context context = BananaApplicationUtils.get().getApplicationContext();
+            if (context == null) return "";
+
+            return context.getPackageManager()
+                    .getPackageInfo(context.getPackageName(), 0)
+                    .versionName;
+        } catch (Exception e) {
+        }
+        return "";
+    }
+
+    private String getLastUpdatedVersion() {
+        return BananaApplicationUtils.get().getSharedPreferences().getString(
+                "last_updated_version_name", "");
+    }
+
+    private void setLastUpdatedVersion(String version) {
+        SharedPreferences.Editor editor =
+                BananaApplicationUtils.get().getSharedPreferences().edit();
+        editor.putString("last_updated_version_name", version);
+        editor.apply();
+    }
+
     private void initializeOnBrowser() {
+        if (isFirstInstall()) {
+            setLastUpdatedVersion(getCurrentVersion());
+        }
+        if (!getLastUpdatedVersion().equals(getCurrentVersion())) {
+            // FIXME(#404): Should show 'new' icon for Banana Extensions
+            setLastUpdatedVersion(getCurrentVersion());
+        }
+
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             BananaTabManager.get().addObserver(
                     bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
