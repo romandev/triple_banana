@@ -16,6 +16,7 @@ import android.text.TextUtils;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
+import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
@@ -32,6 +33,8 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.banana_extension_preferences);
+
+        AppMenuDelegate.get().setNewFeatureIcon(false);
 
         final SwitchPreferenceCompat adblock =
                 (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);

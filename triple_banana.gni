@@ -3,6 +3,7 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 triple_banana_hooks_sources = [
+  "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaAppMenu.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaApplicationUtils.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaBottomToolbarController.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaCommandLine.java",

@@ -80,6 +80,9 @@ android_library("triple_banana_java") {
     # adblock
     "//triple_banana/src/org/triple/banana/adblock/FilterLoaderImpl.java",
 
+    # appmenu
+    "//triple_banana/src/org/triple/banana/appmenu/AppMenuDelegate.java",
+
     # authentication
     "//triple_banana/src/org/triple/banana/authentication/ActivityBasedBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/AuthenticationManagerImpl.java",

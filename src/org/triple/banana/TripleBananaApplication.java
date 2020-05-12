@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaTabManager;
+import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.password.PasswordExtension;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
@@ -57,7 +58,7 @@ public class TripleBananaApplication extends BananaApplication {
             setLastUpdatedVersion(getCurrentVersion());
         }
         if (!getLastUpdatedVersion().equals(getCurrentVersion())) {
-            // FIXME(#404): Should show 'new' icon for Banana Extensions
+            AppMenuDelegate.get().setNewFeatureIcon(true);
             setLastUpdatedVersion(getCurrentVersion());
         }
 

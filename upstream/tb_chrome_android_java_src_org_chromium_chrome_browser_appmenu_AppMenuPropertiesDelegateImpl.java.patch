@@ -1,0 +1,11 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/appmenu/AppMenuPropertiesDelegateImpl.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/appmenu/AppMenuPropertiesDelegateImpl.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/appmenu/AppMenuPropertiesDelegateImpl.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/appmenu/AppMenuPropertiesDelegateImpl.java
+@@ -291,6 +291,7 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate
+             menu.findItem(R.id.enter_vr_id)
+                     .setVisible(CommandLine.getInstance().hasSwitch(
+                             ChromeSwitches.ENABLE_VR_SHELL_DEV));
++            org.banana.cake.interfaces.BananaAppMenu.get().prepareMenu(menu);
+         }
+ 
+         // We have to iterate all menu items since same menu item ID may be associated with more
