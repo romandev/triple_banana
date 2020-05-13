@@ -1,3 +1,16 @@
+# 2.02 @ 81.0.4044.138
+
+## Chromium base version
+- **81.0.4044.138**
+
+## Change log
+- Change the new feature icon size (#422)
+- Handle the new feature icon if applicaiton is updated as a new version (#421)
+- Store application version name (#420)
+- Implement HSTS to enforce https (#416)
+- New toolbar button is not displayed. (#415)
+
+
 # 2.01 @ 81.0.4044.117
 
 ## Chromium base version
