@@ -1,3 +1,12 @@
+# 2.03 @ 81.0.4044.138
+
+## Chromium base version
+- **81.0.4044.138**
+
+## Change log
+- Fixing a zip path traversal vulnerability (#424)
+
+
 # 2.02 @ 81.0.4044.138
 
 ## Chromium base version
