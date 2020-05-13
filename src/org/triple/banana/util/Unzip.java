@@ -33,6 +33,11 @@ public class Unzip {
             ZipEntry entry;
             while ((entry = zipStream.getNextEntry()) != null) {
                 File outputPath = new File(destination.getPath(), entry.getName());
+
+                // We need to check whether the output path is canonical path in order to avoid zip
+                // traversal attack. Please see the following link in more details.
+                //   - https://support.google.com/faqs/answer/929400
+                if (!outputPath.getCanonicalPath().startsWith(destination.getPath())) return false;
                 if (!isOverwritten && outputPath.exists()) return false;
             }
         } catch (Exception e) {
@@ -44,6 +49,11 @@ public class Unzip {
             ZipEntry entry;
             while ((entry = zipStream.getNextEntry()) != null) {
                 File outputPath = new File(destination.getPath(), entry.getName());
+
+                // We already checked that the output path is canonical above. So, it should always
+                // be `true` here.
+                assert outputPath.getCanonicalPath().startsWith(destination.getPath());
+
                 if (entry.isDirectory()) {
                     if (!outputPath.exists() && !outputPath.mkdirs()) return false;
                     continue;
