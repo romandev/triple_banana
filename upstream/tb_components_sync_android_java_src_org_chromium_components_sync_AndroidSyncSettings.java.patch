@@ -1,0 +1,27 @@
+diff --git tb/components/sync/android/java/src/org/chromium/components/sync/AndroidSyncSettings.java tb_diff/components/sync/android/java/src/org/chromium/components/sync/AndroidSyncSettings.java
+--- tb/components/sync/android/java/src/org/chromium/components/sync/AndroidSyncSettings.java
++++ tb_diff/components/sync/android/java/src/org/chromium/components/sync/AndroidSyncSettings.java
+@@ -212,6 +212,10 @@ public class AndroidSyncSettings {
+     }
+ 
+     private void setChromeSyncEnabled(boolean value) {
++        if (true) {
++            mChromeSyncEnabled = false;
++            return;
++        }
+         synchronized (mLock) {
+             updateSyncability(null);
+             if (value == mChromeSyncEnabled || mAccount == null) return;
+@@ -296,6 +300,12 @@ public class AndroidSyncSettings {
+      * @return Whether either chromeSyncEnabled or masterSyncEnabled changed.
+      */
+     private boolean updateCachedSettings() {
++        if (true) {
++            mIsSyncable = false;
++            mChromeSyncEnabled = false;
++            mMasterSyncEnabled = false;
++            return false;
++        }
+         synchronized (mLock) {
+             boolean oldChromeSyncEnabled = mChromeSyncEnabled;
+             boolean oldMasterSyncEnabled = mMasterSyncEnabled;
