@@ -7,7 +7,7 @@ package org.banana.cake;
 
 import org.banana.cake.interfaces.BananaDarkModeUtils;
 
-import org.chromium.chrome.browser.flags.FeatureUtilities;
+import org.chromium.chrome.browser.night_mode.NightModeUtils;
 import org.chromium.chrome.browser.night_mode.SystemNightModeMonitor;
 
 class CakeDarkModeUtils implements BananaDarkModeUtils {
@@ -18,6 +18,6 @@ class CakeDarkModeUtils implements BananaDarkModeUtils {
 
     @Override
     public boolean isDarkModeDefaultToLight() {
-        return FeatureUtilities.isNightModeDefaultToLight();
+        return NightModeUtils.isNightModeDefaultToLight();
     }
 }

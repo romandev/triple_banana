@@ -1,7 +1,7 @@
 diff --git tb/components/autofill/content/renderer/autofill_agent.h tb_diff/components/autofill/content/renderer/autofill_agent.h
 --- tb/components/autofill/content/renderer/autofill_agent.h
 +++ tb_diff/components/autofill/content/renderer/autofill_agent.h
-@@ -29,6 +29,10 @@
+@@ -30,6 +30,10 @@
  #include "third_party/blink/public/web/web_input_element.h"
  #include "ui/accessibility/ax_mode.h"
  
@@ -12,12 +12,13 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.h tb_diff/comp
  namespace blink {
  class WebNode;
  class WebView;
-@@ -357,6 +361,10 @@ class AutofillAgent : public content::RenderFrameObserver,
+@@ -354,6 +358,11 @@ class AutofillAgent : public content::RenderFrameObserver,
    blink::WebFormControlElement last_clicked_form_control_element_for_testing_;
    bool last_clicked_form_control_element_was_focused_for_testing_ = false;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  mojo::Remote<authentication::mojom::AuthenticationManager> manager_;
++  mojo::Remote<authentication::mojom::AuthenticationManager> manager_ =
++      AutoBind(authentication::mojom::AuthenticationManager);
 +#endif
 +
    FormTracker form_tracker_;

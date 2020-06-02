@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity.java
-@@ -642,6 +642,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -620,6 +620,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
              }
  
              @Override
@@ -13,7 +13,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity
              public void onCrash(Tab tab) {
                  postDeferredStartupIfNeeded();
              }
-@@ -2096,9 +2101,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -2012,9 +2017,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);

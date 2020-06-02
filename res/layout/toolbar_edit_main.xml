@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:clipChildren="false">
 
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         style="@style/ModernToolbar"
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
         android:background="@drawable/round_rect"
         android:backgroundTint="@color/modern_grey_200_alpha_38">
 
-        <android.support.v7.widget.RecyclerView
+        <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/candidate_recycler_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
         android:src="@drawable/modern_toolbar_shadow"
         tools:ignore="ContentDescription" />
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/selected_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

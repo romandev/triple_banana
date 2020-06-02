@@ -9,22 +9,22 @@
 
     <PreferenceCategory
         android:title="@string/advanced_features"/>
-    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_adblock"
         android:title="@string/adblock"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_secure_login"
         android:title="@string/secure_login"
         android:summaryOn="@string/secure_login_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_background_play"
         android:title="@string/background_play"
         android:summaryOn="@string/background_play_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_secure_dns"
         android:title="@string/secure_dns"
         android:summaryOn="@string/secure_dns_summary"
@@ -32,12 +32,12 @@
 
     <PreferenceCategory
         android:title="@string/user_interface"/>
-    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_dark_mode"
         android:title="@string/dark_mode"
         android:summaryOn="@string/dark_mode_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.chrome.browser.settings.ChromeSwitchPreference
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="bottom_toolbar_enabled"
         android:title="@string/enable_bottom_toolbar"
         android:summaryOn="@string/text_on"

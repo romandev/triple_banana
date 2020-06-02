@@ -1,29 +1,19 @@
 diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/components/autofill/content/renderer/autofill_agent.cc
 --- tb/components/autofill/content/renderer/autofill_agent.cc
 +++ tb_diff/components/autofill/content/renderer/autofill_agent.cc
-@@ -63,6 +63,11 @@
+@@ -65,6 +65,11 @@
  #include "ui/base/l10n/l10n_util.h"
  #include "ui/events/keycodes/keyboard_codes.h"
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +#include "third_party/blink/public/platform/web_coalesced_input_event.h"
-+#include "third_party/blink/public/web/web_widget.h"
++#include "third_party/blink/public/web/web_frame_widget.h"
 +#endif
 +
  using blink::WebAutofillClient;
  using blink::WebAutofillState;
  using blink::WebAXObject;
-@@ -143,6 +148,9 @@ AutofillAgent::AutofillAgent(content::RenderFrame* render_frame,
-       is_generation_popup_possibly_visible_(false),
-       is_user_gesture_required_(true),
-       is_secure_context_required_(false),
-+#if defined(ENABLE_TRIPLE_BANANA)
-+      manager_(AutoBind(authentication::mojom::AuthenticationManager)),
-+#endif
-       form_tracker_(render_frame) {
-   render_frame->GetWebFrame()->SetAutofillClient(this);
-   password_autofill_agent->SetAutofillAgent(this);
-@@ -560,12 +568,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
+@@ -576,12 +581,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
  
  void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
                                             const base::string16& password) {
@@ -43,7 +33,7 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/com
 +  if (!handled || !render_frame() || !render_frame()->GetRenderView())
 +    return;
 +
-+  blink::WebWidget* web_widget =
++  auto* web_widget =
 +      render_frame()->GetRenderView()->GetWebView()->MainFrameWidget();
 +  if (!web_widget)
 +    return;

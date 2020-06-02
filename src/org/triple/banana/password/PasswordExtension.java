@@ -6,11 +6,12 @@
 package org.triple.banana.password;
 
 import android.content.Context;
-import android.support.v7.preference.PreferenceScreen;
-import android.support.v7.preference.SwitchPreferenceCompat;
-import android.support.v7.widget.SwitchCompat;
 import android.view.View;
 import android.widget.TextView;
+
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.preference.PreferenceScreen;
+import androidx.preference.SwitchPreferenceCompat;
 
 import org.banana.cake.interfaces.BananaPasswordExtension;
 import org.triple.banana.R;

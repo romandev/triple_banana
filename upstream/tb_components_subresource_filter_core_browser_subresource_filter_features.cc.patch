@@ -1,7 +1,7 @@
 diff --git tb/components/subresource_filter/core/browser/subresource_filter_features.cc tb_diff/components/subresource_filter/core/browser/subresource_filter_features.cc
 --- tb/components/subresource_filter/core/browser/subresource_filter_features.cc
 +++ tb_diff/components/subresource_filter/core/browser/subresource_filter_features.cc
-@@ -117,18 +117,25 @@ int ParseInt(const base::StringPiece value) {
+@@ -117,18 +117,29 @@ int ParseInt(const base::StringPiece value) {
  std::vector<Configuration> FillEnabledPresetConfigurations(
      std::map<std::string, std::string>* params) {
    // If ad tagging is enabled, turn on the dryrun automatically.
@@ -14,6 +14,7 @@ diff --git tb/components/subresource_filter/core/browser/subresource_filter_feat
      Configuration (*factory_method)();
    } kAvailablePresetConfigurations[] = {
 +#if defined(ENABLE_TRIPLE_BANANA)
++    // clang-format off
 +      {kPresetLiveRunOnAllSites, true,
 +       &Configuration::MakePresetForLiveRunOnAllSites}};
 +#else
@@ -24,10 +25,13 @@ diff --git tb/components/subresource_filter/core/browser/subresource_filter_feat
        {kPresetLiveRunForBetterAds, true,
         &Configuration::MakePresetForLiveRunForBetterAds}};
 +#endif
++#if defined(ENABLE_TRIPLE_BANANA)
++// clang-format on
++#endif
  
    CommaSeparatedStrings enabled_presets(
        TakeVariationParamOrReturnEmpty(params, kEnablePresetsParameterName));
-@@ -270,6 +277,9 @@ const char kPresetPerformanceTestingDryRunOnAllSites[] =
+@@ -267,6 +278,9 @@ const char kPresetPerformanceTestingDryRunOnAllSites[] =
      "performance_testing_dryrun_on_all_sites";
  const char kPresetLiveRunForBetterAds[] =
      "liverun_on_better_ads_violating_sites";
@@ -37,7 +41,7 @@ diff --git tb/components/subresource_filter/core/browser/subresource_filter_feat
  
  // Configuration --------------------------------------------------------------
  
-@@ -300,6 +310,16 @@ Configuration Configuration::MakePresetForLiveRunForBetterAds() {
+@@ -297,6 +311,16 @@ Configuration Configuration::MakePresetForLiveRunForBetterAds() {
    return config;
  }
  

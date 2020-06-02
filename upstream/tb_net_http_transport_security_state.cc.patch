@@ -29,7 +29,7 @@ diff --git tb/net/http/transport_security_state.cc tb_diff/net/http/transport_se
  const TransportSecurityStateSource* g_hsts_source = kDefaultHSTSSource;
  
  // Parameters for remembering sent HPKP and Expect-CT reports.
-@@ -379,6 +393,20 @@ bool DecodeHSTSPreload(const std::string& search_hostname, PreloadResult* out) {
+@@ -378,6 +392,20 @@ bool DecodeHSTSPreload(const std::string& search_hostname, PreloadResult* out) {
      return false;
    }
  

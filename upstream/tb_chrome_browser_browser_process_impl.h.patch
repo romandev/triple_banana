@@ -1,9 +1,9 @@
 diff --git tb/chrome/browser/browser_process_impl.h tb_diff/chrome/browser/browser_process_impl.h
 --- tb/chrome/browser/browser_process_impl.h
 +++ tb_diff/chrome/browser/browser_process_impl.h
-@@ -35,6 +35,10 @@
- #include "services/network/public/cpp/network_quality_tracker.h"
- #include "services/network/public/mojom/network_service.mojom-forward.h"
+@@ -39,6 +39,10 @@
+ #include "chrome/browser/upgrade_detector/build_state.h"
+ #endif
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +#include "triple_banana/modules/public/interfaces.h"
@@ -12,7 +12,7 @@ diff --git tb/chrome/browser/browser_process_impl.h tb_diff/chrome/browser/brows
  class BatteryMetrics;
  class ChromeFeatureListCreator;
  class ChromeMetricsServicesManagerClient;
-@@ -397,6 +401,11 @@ class BrowserProcessImpl : public BrowserProcess,
+@@ -404,6 +408,11 @@ class BrowserProcessImpl : public BrowserProcess,
    std::unique_ptr<SecureOriginPrefsObserver> secure_origin_prefs_observer_;
    std::unique_ptr<SiteIsolationPrefsObserver> site_isolation_prefs_observer_;
  

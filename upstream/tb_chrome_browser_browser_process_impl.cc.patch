@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/browser_process_impl.cc tb_diff/chrome/browser/browser_process_impl.cc
 --- tb/chrome/browser/browser_process_impl.cc
 +++ tb_diff/chrome/browser/browser_process_impl.cc
-@@ -1277,6 +1277,26 @@ void BrowserProcessImpl::CreateSubresourceFilterRulesetService() {
+@@ -1306,6 +1306,26 @@ void BrowserProcessImpl::CreateSubresourceFilterRulesetService() {
        std::make_unique<subresource_filter::RulesetService>(
            local_state(), background_task_runner, indexed_ruleset_base_dir,
            blocking_task_runner);

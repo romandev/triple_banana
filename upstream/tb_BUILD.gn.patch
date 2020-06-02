@@ -1,7 +1,7 @@
 diff --git tb/BUILD.gn tb_diff/BUILD.gn
 --- tb/BUILD.gn
 +++ tb_diff/BUILD.gn
-@@ -88,6 +88,10 @@ group("gn_all") {
+@@ -90,6 +90,10 @@ group("gn_all") {
      "//url:url_unittests",
    ]
  

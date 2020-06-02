@@ -1,18 +1,23 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomToolbarCoordinator.java
-@@ -14,10 +14,8 @@ import org.chromium.base.supplier.ObservableSupplier;
+@@ -18,7 +18,6 @@ import org.chromium.base.supplier.Supplier;
  import org.chromium.chrome.R;
  import org.chromium.chrome.browser.ActivityTabProvider;
  import org.chromium.chrome.browser.ThemeColorProvider;
 -import org.chromium.chrome.browser.compositor.layouts.EmptyOverviewModeObserver;
  import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
  import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior.OverviewModeObserver;
+ import org.chromium.chrome.browser.feature_engagement.TrackerFactory;
+@@ -26,7 +25,6 @@ import org.chromium.chrome.browser.omnibox.LocationBar;
+ import org.chromium.chrome.browser.profiles.Profile;
+ import org.chromium.chrome.browser.share.ShareDelegate;
+ import org.chromium.chrome.browser.tab.Tab;
 -import org.chromium.chrome.browser.tasks.ReturnToChromeExperimentsUtil;
  import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
  import org.chromium.chrome.browser.toolbar.TabCountProvider;
  import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
-@@ -28,7 +26,7 @@ import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
+@@ -39,7 +37,7 @@ import org.chromium.components.feature_engagement.Tracker;
   */
  class BottomToolbarCoordinator {
      /** The browsing mode bottom toolbar component */
@@ -21,12 +26,12 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom
  
      /** The tab switcher mode bottom toolbar component */
      private TabSwitcherBottomToolbarCoordinator mTabSwitcherModeCoordinator;
-@@ -62,9 +60,9 @@ class BottomToolbarCoordinator {
-             ThemeColorProvider themeColorProvider) {
-         View root = stub.inflate();
+@@ -99,9 +97,9 @@ class BottomToolbarCoordinator {
+             setUrlBarFocusAction.onResult(LocationBar.OmniboxFocusReason.ACCELERATOR_TAP);
+         };
  
 -        mBrowsingModeCoordinator = new BrowsingModeBottomToolbarCoordinator(root, tabProvider,
--                homeButtonListener, searchAcceleratorListener, shareButtonListenerSupplier,
+-                homeButtonListener, searchAcceleratorListener, mShareButtonListenerSupplier,
 -                tabsSwitcherLongClickListner);
 +        mBrowsingModeCoordinator =
 +                org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
@@ -34,10 +39,10 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom
  
          mTabSwitcherModeStub = root.findViewById(R.id.bottom_toolbar_tab_switcher_mode_stub);
  
-@@ -94,48 +92,12 @@ class BottomToolbarCoordinator {
-             AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
-             TabCountProvider tabCountProvider, IncognitoStateProvider incognitoStateProvider,
-             ViewGroup topToolbarRoot) {
+@@ -154,48 +152,12 @@ class BottomToolbarCoordinator {
+ 
+         newTabClickListener = wrapBottomToolbarClickListenerForIPH(newTabClickListener);
+         tabSwitcherListener = wrapBottomToolbarClickListenerForIPH(tabSwitcherListener);
 -        mBrowsingModeCoordinator.initializeWithNative(newTabClickListener, tabSwitcherListener,
 -                menuButtonHelper, tabCountProvider, mThemeColorProvider, incognitoStateProvider,
 -                overviewModeBehavior);
@@ -86,7 +91,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom
      }
  
      /**
-@@ -145,7 +107,6 @@ class BottomToolbarCoordinator {
+@@ -205,7 +167,6 @@ class BottomToolbarCoordinator {
          if (mTabSwitcherModeCoordinator != null) {
              mTabSwitcherModeCoordinator.showToolbarOnTop(!isVisible);
          }

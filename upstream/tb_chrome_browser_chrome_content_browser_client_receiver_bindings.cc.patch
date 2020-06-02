@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
 --- tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
 +++ tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
-@@ -70,6 +70,10 @@
+@@ -67,6 +67,10 @@
  #endif
  #endif
  
@@ -11,8 +11,8 @@ diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc 
 +
  namespace {
  
- void AddDataReductionProxyReceiver(
-@@ -348,4 +352,8 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
+ // Helper method for ExposeInterfacesToRenderer() that checks the latest
+@@ -317,4 +321,8 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
          std::move(host_receiver));
    }
  #endif  // BUILDFLAG(ENABLE_PLUGINS)

@@ -1,0 +1,12 @@
+diff --git tb/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java tb_diff/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java
+--- tb/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java
++++ tb_diff/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java
+@@ -489,7 +489,7 @@ public class ExternalNavigationHandler {
+      */
+     private boolean isYoutubePairingCode(ExternalNavigationParams params) {
+         // TODO(https://crbug.com/1009539): Replace this regex with proper URI parsing.
+-        if (params.getUrl().matches(".*youtube\\.com(\\/.*)?\\?(.+&)?pairingCode=[^&].+")) {
++        if (UrlUtilities.sameDomainOrHost(params.getUrl(), "https://youtube.com", false)) {
+             if (DEBUG) Log.i(TAG, "YouTube URL with a pairing code");
+             return true;
+         }

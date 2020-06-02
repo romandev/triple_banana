@@ -11,7 +11,7 @@ diff --git tb/components/subresource_filter/core/browser/subresource_filter_feat
  
    ActivationConditions activation_conditions;
    ActivationOptions activation_options;
-@@ -221,6 +224,9 @@ extern const char kDisablePresetsParameterName[];
+@@ -218,6 +221,9 @@ extern const char kDisablePresetsParameterName[];
  extern const char kPresetLiveRunOnPhishingSites[];
  extern const char kPresetPerformanceTestingDryRunOnAllSites[];
  extern const char kPresetLiveRunForBetterAds[];

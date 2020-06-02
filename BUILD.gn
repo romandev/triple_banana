@@ -133,7 +133,6 @@ android_library("triple_banana_java") {
     # toolbar
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarButtonDecoration.java",
     "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
-    "//triple_banana/src/org/triple/banana/toolbar/BottomToolbarController.java",
     "//triple_banana/src/org/triple/banana/toolbar/ButtonId.java",
     "//triple_banana/src/org/triple/banana/toolbar/ButtonTouchHelperCallback.java",
     "//triple_banana/src/org/triple/banana/toolbar/CandidateToolbarButtonAdapter.java",
@@ -160,6 +159,7 @@ android_library("triple_banana_java") {
     ":triple_banana_resources",
     "//base:base_java",
     "//chrome/android:chrome_java",
+    "//components/permissions/android:java",
     "//content/public/android:content_java",
     "//mojo/public/java:base_java",
     "//mojo/public/java:bindings_java",
@@ -167,13 +167,13 @@ android_library("triple_banana_java") {
     "//mojo/public/java/system:system_impl_java",
     "//services/service_manager/public/java:service_manager_java",
     "//services/service_manager/public/mojom:mojom_java",
-    "//third_party/android_deps:com_android_support_appcompat_v7_java",
-    "//third_party/android_deps:com_android_support_preference_v7_java",
-    "//third_party/android_deps:com_android_support_recyclerview_v7_java",
-    "//third_party/android_deps:com_android_support_support_compat_java",
-    "//third_party/android_deps:com_android_support_support_fragment_java",
+    "//third_party/android_deps:androidx_appcompat_appcompat_java",
+    "//third_party/android_deps:androidx_core_core_java",
+    "//third_party/android_deps:androidx_preference_preference_java",
+    "//third_party/android_deps:androidx_recyclerview_recyclerview_java",
     "//triple_banana/modules:mojom_java",
     "//ui/android:ui_java",
+    "//url:gurl_java",
   ]
 }
 

@@ -7,7 +7,7 @@ package org.banana.cake;
 
 import org.banana.cake.interfaces.BananaFeatureFlags;
 
-import org.chromium.chrome.browser.settings.website.WebsitePreferenceBridge;
+import org.chromium.chrome.browser.site_settings.WebsitePreferenceBridge;
 import org.chromium.components.content_settings.ContentSettingsType;
 
 public class CakeFeatureFlags implements BananaFeatureFlags {

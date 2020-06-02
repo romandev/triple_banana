@@ -8,6 +8,7 @@ package org.banana.cake;
 import org.banana.cake.interfaces.BananaTab;
 
 import org.chromium.chrome.browser.tab.Tab;
+import org.chromium.url.GURL;
 
 class CakeTab implements BananaTab {
     private Tab mTab;
@@ -25,7 +26,7 @@ class CakeTab implements BananaTab {
     @Override
     public String getUrl() {
         if (mTab == null) return new String();
-        return mTab.getUrl();
+        return mTab.getUrl().getSpec();
     }
 
     /**
