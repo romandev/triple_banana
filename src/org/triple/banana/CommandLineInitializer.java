@@ -5,10 +5,8 @@
 
 package org.triple.banana;
 
-import android.os.Build;
 import android.text.TextUtils;
 
-import org.banana.cake.interfaces.BananaBuildConfig;
 import org.banana.cake.interfaces.BananaCommandLine;
 import org.banana.cake.interfaces.BananaCommandLineInitializer;
 import org.triple.banana.settings.ExtensionFeatures;
@@ -19,9 +17,6 @@ import java.util.ArrayList;
 class CommandLineInitializer implements BananaCommandLineInitializer {
     @Override
     public void initCommandLine() {
-        if (BananaBuildConfig.IS_ARM64 && Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-            BananaCommandLine.get().appendSwitchWithValue("disable_aimagereader", "1");
-        }
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             BananaCommandLine.get().appendSwitchWithValue(
                     "enable-blink-features", "BackgroundPlay");

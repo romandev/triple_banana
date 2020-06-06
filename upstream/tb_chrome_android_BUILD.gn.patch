@@ -17,15 +17,7 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -493,6 +495,7 @@ android_library("chrome_java") {
-     "//components/ui_metrics:ui_metrics_enums_java",
-     "//content/public/browser:contacts_picker_properties_requested_javagen",
-     "//net:effective_connection_type_java",
-+    "//triple_banana:triple_banana_build_config",
-   ]
- 
-   android_manifest_for_lint = chrome_public_android_manifest
-@@ -501,7 +504,7 @@ android_library("chrome_java") {
+@@ -501,7 +503,7 @@ android_library("chrome_java") {
    sources = chrome_java_sources + [
                app_hooks_impl,
                _chrome_version_java_file,

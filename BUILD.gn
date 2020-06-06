@@ -186,13 +186,3 @@ android_resources("triple_banana_resources") {
   deps = [ "//chrome/android:chrome_app_java_resources" ]
   custom_package = "org.triple.banana"
 }
-
-java_cpp_template("triple_banana_build_config") {
-  package_path = "org/banana/cake/interfaces"
-  sources = [ "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaBuildConfig.template" ]
-  defines = []
-
-  if (target_cpu == "arm64") {
-    defines += [ "_IS_ARM64" ]
-  }
-}
