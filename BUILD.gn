@@ -178,7 +178,10 @@ android_library("triple_banana_java") {
 }
 
 android_resources("triple_banana_resources") {
-  resource_dirs = [ "//triple_banana/res" ]
+  resource_dirs = [
+    "//triple_banana/res",
+    "//triple_banana/res_override",
+  ]
 
   deps = [ "//chrome/android:chrome_app_java_resources" ]
   custom_package = "org.triple.banana"

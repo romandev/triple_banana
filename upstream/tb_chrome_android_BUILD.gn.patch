@@ -34,11 +34,3 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  
    # Include sources from feed_java_sources.gni.
    sources += feed_java_sources
-@@ -1211,6 +1214,7 @@ android_resources("chrome_public_apk_resources") {
-     "java/res_chromium/mipmap-xxxhdpi/app_single_page_icon.png",
-     "java/res_chromium/values/channel_constants.xml",
-   ]
-+  sources += triple_banana_resource
- 
-   # Dep needed to ensure override works properly.
-   deps = [ ":chrome_app_java_resources" ]
