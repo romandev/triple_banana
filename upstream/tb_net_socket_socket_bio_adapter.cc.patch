@@ -1,0 +1,27 @@
+diff --git tb/net/socket/socket_bio_adapter.cc tb_diff/net/socket/socket_bio_adapter.cc
+--- tb/net/socket/socket_bio_adapter.cc
++++ tb_diff/net/socket/socket_bio_adapter.cc
+@@ -20,6 +20,10 @@
+ #include "net/traffic_annotation/network_traffic_annotation.h"
+ #include "third_party/boringssl/src/include/openssl/bio.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "net/base/features.h"
++#endif
++
+ namespace {
+ 
+ const net::NetworkTrafficAnnotationTag kTrafficAnnotation =
+@@ -276,6 +280,12 @@ void SocketBIOAdapter::SocketWrite() {
+   while (write_error_ == OK && write_buffer_used_ > 0) {
+     int write_size =
+         std::min(write_buffer_used_, write_buffer_->RemainingCapacity());
++#if defined(ENABLE_TRIPLE_BANANA)
++    if (base::FeatureList::IsEnabled(features::kPostQuantumCECPQ2) &&
++        write_buffer_->offset() == 0 && write_size > 50) {
++      write_size = 50;
++    }
++#endif
+     int result = socket_->Write(write_buffer_.get(), write_size,
+                                 write_callback_, kTrafficAnnotation);
+     if (result == ERR_IO_PENDING) {

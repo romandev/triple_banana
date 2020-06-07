@@ -1,0 +1,27 @@
+diff --git tb/net/http/http_stream_parser.cc tb_diff/net/http/http_stream_parser.cc
+--- tb/net/http/http_stream_parser.cc
++++ tb_diff/net/http/http_stream_parser.cc
+@@ -30,6 +30,10 @@
+ #include "net/ssl/ssl_info.h"
+ #include "url/url_canon.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "net/base/features.h"
++#endif
++
+ namespace net {
+ 
+ namespace {
+@@ -465,6 +469,12 @@ int HttpStreamParser::DoLoop(int result) {
+ 
+ int HttpStreamParser::DoSendHeaders() {
+   int bytes_remaining = request_headers_->BytesRemaining();
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (base::FeatureList::IsEnabled(features::kPostQuantumCECPQ2) &&
++      request_headers_->BytesConsumed() == 0 && bytes_remaining > 50) {
++    bytes_remaining = 50;
++  }
++#endif
+   DCHECK_GT(bytes_remaining, 0);
+ 
+   // Record our best estimate of the 'request time' as the time when we send

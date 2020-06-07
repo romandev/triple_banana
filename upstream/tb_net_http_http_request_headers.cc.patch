@@ -1,0 +1,29 @@
+diff --git tb/net/http/http_request_headers.cc tb_diff/net/http/http_request_headers.cc
+--- tb/net/http/http_request_headers.cc
++++ tb_diff/net/http/http_request_headers.cc
+@@ -18,6 +18,10 @@
+ #include "net/log/net_log_capture_mode.h"
+ #include "net/log/net_log_values.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "net/base/features.h"
++#endif
++
+ namespace net {
+ 
+ const char HttpRequestHeaders::kConnectMethod[] = "CONNECT";
+@@ -182,6 +186,14 @@ void HttpRequestHeaders::MergeFrom(const HttpRequestHeaders& other) {
+ std::string HttpRequestHeaders::ToString() const {
+   std::string output;
+   for (auto it = headers_.begin(); it != headers_.end(); ++it) {
++#if defined(ENABLE_TRIPLE_BANANA)
++    bool is_secure_dns_enabled =
++        base::FeatureList::IsEnabled(features::kPostQuantumCECPQ2);
++    if (is_secure_dns_enabled && it->key == kHost) {
++      base::StringAppendF(&output, "hoSt:%s\r\n", it->value.c_str());
++      continue;
++    }
++#endif
+     base::StringAppendF(&output, "%s: %s\r\n", it->key.c_str(),
+                         it->value.c_str());
+   }
