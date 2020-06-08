@@ -30,7 +30,7 @@ public class FilterLoaderImpl implements FilterLoader {
 
     private static final Uri FILTER_BASE_URL = Uri.parse("https://zino.dev/triple_banana_filter/");
     private static final String LAST_CHECK_TIME_KEY = "filter_download_last_check_time";
-    private static final long UPDATE_INTERVAL = AlarmManager.INTERVAL_DAY * 14;
+    private static final long UPDATE_INTERVAL = AlarmManager.INTERVAL_DAY * 3;
 
     private long getLastCheckTime() {
         return BananaApplicationUtils.get().getSharedPreferences().getLong(LAST_CHECK_TIME_KEY, 0);
