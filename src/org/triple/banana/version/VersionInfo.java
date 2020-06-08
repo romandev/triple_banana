@@ -13,6 +13,7 @@ import org.banana.cake.interfaces.BananaVersionInfo;
 
 public class VersionInfo implements BananaVersionInfo {
     private static final String TAG = "VersionInfo";
+    private static String sFilterVersion = "Unknown";
 
     @Override
     public String getVersionName() {
@@ -26,5 +27,13 @@ public class VersionInfo implements BananaVersionInfo {
             Log.e(TAG, "getVersionName(): Failed " + e.toString());
         }
         return null;
+    }
+
+    public static void setFilterVersion(String version) {
+        sFilterVersion = version;
+    }
+
+    public static String getFilterVersion() {
+        return sFilterVersion;
     }
 }

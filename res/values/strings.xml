@@ -5,7 +5,7 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources>
-    <string name="adblock">Ad Block</string>
+    <string name="adblock">Ad Block (Filter Version: %s)</string>
     <string name="adblock_summary">Block ads on sites that show intrusive or misleading ads</string>
     <string name="advanced_features">Advanced Features</string>
     <string name="authentication_title">Authentication</string>

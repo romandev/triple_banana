@@ -25,6 +25,7 @@ import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.theme.DarkModeController;
 import org.triple.banana.toolbar.ToolbarEditor;
+import org.triple.banana.version.VersionInfo;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
     private SwitchPreferenceCompat mSecureLogin;
@@ -39,6 +40,8 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
 
         final SwitchPreferenceCompat adblock =
                 (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
+        adblock.setTitle(
+                String.format(getString(R.string.adblock), VersionInfo.getFilterVersion()));
         adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
         adblock.setOnPreferenceChangeListener((preference, newValue) -> {
             setEnabled(FeatureName.ADBLOCK, (boolean) newValue);

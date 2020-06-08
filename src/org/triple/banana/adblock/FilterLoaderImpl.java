@@ -16,6 +16,7 @@ import org.triple.banana.adblock.mojom.FilterLoader;
 import org.triple.banana.download.SimpleDownloader;
 import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.util.Unzip;
+import org.triple.banana.version.VersionInfo;
 
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
@@ -45,12 +46,18 @@ public class FilterLoaderImpl implements FilterLoader {
     @Override
     public void load(final String currentVersion, final LoadResponse callback) {
         long now = System.currentTimeMillis();
-        if (now < getLastCheckTime() + UPDATE_INTERVAL) return;
+        if (now < getLastCheckTime() + UPDATE_INTERVAL) {
+            VersionInfo.setFilterVersion(currentVersion);
+            return;
+        }
 
         mMetaData.getAsync(info -> {
             String newVersion = info.optString("version");
             Log.i(TAG, "load(): current = " + currentVersion + ", new = " + newVersion);
-            if (TextUtils.equals(currentVersion, newVersion)) return;
+            if (TextUtils.equals(currentVersion, newVersion)) {
+                VersionInfo.setFilterVersion(currentVersion);
+                return;
+            }
 
             final long filterSize = info.optLong("size");
             Uri filterUri = Uri.withAppendedPath(FILTER_BASE_URL, newVersion + ".filter.zip");
@@ -77,6 +84,8 @@ public class FilterLoaderImpl implements FilterLoader {
 
                 compressedFilter.delete();
                 // TODO(zino): How can we remove filterFile?
+
+                VersionInfo.setFilterVersion(newVersion);
 
                 Log.i(TAG, "load(): Filter updated");
                 updateLastCheckTime();
