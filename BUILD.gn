@@ -152,6 +152,9 @@ android_library("triple_banana_java") {
     # util
     "//triple_banana/src/org/triple/banana/util/Unzip.java",
 
+    # util
+    "//triple_banana/src/org/triple/banana/version/VersionInfo.java",
+
     # legacy modules
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
   ]

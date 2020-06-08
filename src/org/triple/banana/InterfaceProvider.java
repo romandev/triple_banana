@@ -11,11 +11,13 @@ import org.banana.cake.interfaces.BananaCommandLineInitializer;
 import org.banana.cake.interfaces.BananaExtensionSettings;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
 import org.banana.cake.interfaces.BananaPasswordExtension;
+import org.banana.cake.interfaces.BananaVersionInfo;
 import org.triple.banana.CommandLineInitializer;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.password.PasswordExtension;
 import org.triple.banana.settings.SettingsOpener;
 import org.triple.banana.toolbar.BottomToolbarController;
+import org.triple.banana.version.VersionInfo;
 
 class InterfaceProvider {
     static void initialize() {
@@ -28,6 +30,8 @@ class InterfaceProvider {
         BananaInterfaceProvider.register(BananaExtensionSettings.class, SettingsOpener::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaPasswordExtension.class, PasswordExtension::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaVersionInfo.class, VersionInfo::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
     }
 }

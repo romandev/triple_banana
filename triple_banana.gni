@@ -17,5 +17,6 @@ triple_banana_hooks_sources = [
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTabManager.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTabObserver.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaToolbarManager.java",
+  "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaVersionInfo.java",
   "//triple_banana/modules/public/java/org/triple/banana/modules/Connector.java",
 ]

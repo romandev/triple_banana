@@ -1,0 +1,15 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/about_settings/AboutChromeSettings.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/about_settings/AboutChromeSettings.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/about_settings/AboutChromeSettings.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/about_settings/AboutChromeSettings.java
+@@ -51,8 +51,9 @@ public class AboutChromeSettings
+         SettingsUtils.addPreferencesFromResource(this, R.xml.about_chrome_preferences);
+ 
+         Preference p = findPreference(PREF_APPLICATION_VERSION);
+-        p.setSummary(
+-                getApplicationVersion(getActivity(), AboutSettingsBridge.getApplicationVersion()));
++        String versionName = org.banana.cake.interfaces.BananaVersionInfo.get().getVersionName();
++        if (versionName == null) versionName = AboutSettingsBridge.getApplicationVersion();
++        p.setSummary(getApplicationVersion(getActivity(), versionName));
+         p.setOnPreferenceClickListener(this);
+         p = findPreference(PREF_OS_VERSION);
+         p.setSummary(AboutSettingsBridge.getOSVersion());
