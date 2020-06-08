@@ -44,10 +44,11 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainS
  
      public MainSettings() {
          setHasOptionsMenu(true);
-@@ -82,40 +71,6 @@ public class MainSettings extends PreferenceFragmentCompat
+@@ -81,40 +70,6 @@ public class MainSettings extends PreferenceFragmentCompat
+         getListView().setItemAnimator(null);
      }
  
-     @Override
+-    @Override
 -    public void onDestroy() {
 -        super.onDestroy();
 -        mSignInPreference.onPreferenceFragmentDestroyed();
@@ -81,10 +82,9 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/settings/MainS
 -        }
 -    }
 -
--    @Override
+     @Override
      public void onResume() {
          super.onResume();
-         updatePreferences();
 @@ -125,8 +80,6 @@ public class MainSettings extends PreferenceFragmentCompat
          SettingsUtils.addPreferencesFromResource(this, R.xml.main_preferences);
          cachePreferences();
