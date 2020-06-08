@@ -47,7 +47,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     private ThemeColorProvider mThemeColorProvider;
     private OverviewModeBehavior mOverviewModeBehavior;
     private IncognitoStateProvider mIncognitoStateProvider;
-    private boolean mIsInitializeWithNative;
     private boolean mIsIncognitoMode;
 
     @Override
@@ -85,10 +84,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
             ToolbarButton toolbarButton = mToolbarButtons.get(mButtonIdList.get(i));
             viewGroup.addView(toolbarButton);
             if (i < MAX_BUTTON_SIZE - 1) addSpaceView();
-        }
-
-        if (mIsInitializeWithNative) {
-            buttonInitializeWithNative();
         }
     }
 
@@ -137,7 +132,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
             AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
             TabCountProvider tabCountProvider, ThemeColorProvider themeColorProvider,
             IncognitoStateProvider incognitoStateProvider) {
-        mIsInitializeWithNative = true;
         mTabSwitcherListener = tabSwitcherListener;
         mMenuButtonHelper = menuButtonHelper;
         mTabCountProvider = tabCountProvider;
