@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Identifikohu në Banana Browser"</string>
+<string name="sync_switch_title">"Sinkronizo të dhënat e tua të Banana Browser"</string>
+<string name="usage_and_crash_reports_title">"Ndihmo në përmirësimin e funksioneve dhe cilësisë së funksionimit të Banana Browser"</string>
+<string name="autofill_describe_local_copy">"Kopjuar në Banana Browser"</string>
+<string name="password_settings_export_action_description">"Eksporto fjalëkalimet e ruajtura me Banana Browser"</string>
+<string name="password_settings_export_subject">"Fjalëkalimet e Banana Browser"</string>
+<string name="options_homepage_chrome_homepage">"Faqja kryesore e Banana Browser"</string>
+<string name="safe_browsing_scout_reporting_title">"Ndihmo në përmirësimin e sigurisë së Banana Browser"</string>
+<string name="safe_browsing_scout_reporting_summary">"Për të zbuluar aplikacionet dhe sajtet e rrezikshme, Banana Browser dërgon URL-të e disa faqeve që viziton, informacione të kufizuara të sistemit dhe disa përmbajtje faqesh te Google"</string>
+<string name="clear_browsing_data_history_dialog_title">"Të dhënat e Banana Browser u pastruan"</string>
+<string name="clear_browsing_data_history_dialog_data_text">"Të dhënat e zgjedhura janë hequr nga Banana Browser dhe nga pajisjet e sinkronizuara.
+
+Llogaria jote e Google mund të ketë forma të tjera të historikut të shfletimit, si kërkimet dhe aktivitetet nga shërbimet e tjera të Google në &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Aktivizo lejimet për Banana Browser te &lt;link&gt;\"Cilësimet\" e Android&lt;/link&gt;."</string>
+<string name="android_permission_off">"Aktivizo lejimin për Banana Browser te &lt;link&gt;\"Cilësimet\" e Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Që të lejosh që Banana Browser të ketë qasje te vendndodhja jote, aktivizoje vendndodhjen edhe te &lt;link&gt;Cilësimet e Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Që të lejosh që Banana Browser të ketë qasje te kamera jote, aktivizoje kamerën edhe te &lt;link&gt;Cilësimet e Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Që të lejosh që Banana Browser të të dërgojë njoftime, aktivizoji njoftimet edhe te &lt;link&gt;Cilësimet e Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Që të lejosh që Banana Browser të ketë qasje te mikrofoni yt, aktivizoje mikrofonin edhe te &lt;link&gt;Cilësimet e Android&lt;/link&gt;."</string>
+<string name="data_reduction_benefits_description_lite_mode">"Në \"Modalitetin e lehtë\", Banana Browser i ngarkon faqet më shpejt dhe përdor deri në 60 përqind më pak të dhëna."</string>
+<string name="data_reduction_description_lite_mode">"Kur \"Modaliteti i lehtë\" është aktiv, Banana Browser përdor serverët e Google për të bërë që faqet të ngarkohen më shpejt. \"Modaliteti i lehtë\" i rishkruan faqet shumë të ngadalta për të ngarkuar vetëm përmbajtjen thelbësore. \"Modaliteti i lehtë\" nuk zbatohet në skedat \"e fshehta\"."</string>
+<string name="data_reduction_promo_summary_lite_mode">"Në \"Modalitetin e lehtë\", Banana Browser i ngarkon faqet më shpejt dhe përdor deri në 60 përqind më pak të dhëna. Për të optimizuar faqet që viziton, Banana Browser e dërgon trafikun tënd të uebit te Google. &lt;link&gt;Mëso më shumë&lt;/link&gt;"</string>
+<string name="data_reduction_milestone_promo_text_mb">"Banana Browser të ka kursyer %1$d MB"</string>
+<string name="data_reduction_milestone_promo_text_gb">"Banana Browser të ka kursyer %1$d GB"</string>
+<string name="prefs_about_chrome">"Rreth Banana Browser"</string>
+<string name="deprecation_warning">"Përditësimet e Banana Browser nuk mbështeten më për këtë version të Android"</string>
+<string name="account_management_sign_out">"Dil nga Banana Browser"</string>
+<string name="powered_by_chrome_message">"E mundësuar nga Banana Browser"</string>
+<string name="chrome_additional_terms_of_service_title">"Kushtet shtesë të shërbimit të Google Banana Browser dhe të sistemit operativ Banana Browser"</string>
+<string name="privacy_notice_title">"Njoftimi i privatësisë së Banana Browser"</string>
+<string name="signout_managed_account_title">"Të pastrohen të dhënat e tua të Banana Browser nga kjo pajisje?"</string>
+<string name="signout_message">"Faqeshënuesit, historiku, fjalëkalimet dhe të dhënat e tjera të Banana Browser nuk do të sinkronizohen më në \"Llogarinë tënde të Google\""</string>
+<string name="remove_local_data">"Pastro po ashtu të dhënat e tua të Banana Browser nga kjo pajisje"</string>
+<string name="signout_managed_account_message">"Duke qenë se po del nga një llogari e menaxhuar nga %1$s, të dhënat e tua të Banana Browser do të fshihen nga kjo pajisje. Ato do të mbeten në \"Llogarinë tënde të Google\"."</string>
+<string name="sign_in_managed_account_description">"Po identifikohesh me një llogari të menaxhuar nga %1$s dhe po i jep administratorit të saj kontroll mbi të dhënat e tua të Banana Browser. Duke dalë nga Banana Browser do të fshihen të dhënat e tua nga kjo pajisje, por do të mbeten të ruajtura në llogarinë tënde të Google."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Skedat që ke hapur në Banana Browser në pajisjet e tjera do të shfaqen këtu."</string>
+<string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser nuk mund ta aktivizojë përshtatësin e Bluetooth-it"</string>
+<string name="bluetooth_need_location_permission">"Banana Browser ka nevojë për qasjen te vendndodhja për të skanuar për pajisje. &lt;permission_link&gt;Përditëso lejet&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_services_on">"Banana Browser ka nevojë për qasjen te vendndodhja për të skanuar për pajisje. Qasja te vendndodhja është &lt;services_link&gt;e çaktivizuar për këtë pajisje&lt;/services_link&gt;."</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Banana Browser ka nevojë për qasjen te vendndodhja për të skanuar për pajisje. &lt;permission_link&gt;Përditëso lejet&lt;/permission_link&gt;. Qasja te vendndodhja është po ashtu &lt;services_link&gt;e çaktivizuar për këtë pajisje&lt;/services_link&gt;."</string>
+<string name="hint_android_sync_disabled">"Hap cilësimet e Android dhe riaktivizo sinkronizimin e sistemit Android për të nisur sinkronizimin e Banana Browser"</string>
+<string name="hint_sync_settings_not_confirmed_description">"Për të nisur sinkronizimin, aktivizo \"Sinkronizo të dhënat e tua të Banana Browser\"."</string>
+<string name="inline_update_infobar_ready_link_text">"Rinis Banana Browser"</string>
+<string name="inline_update_toast_downloading_message">"Po shkarkon përditësimin e Banana Browser…"</string>
+<string name="update_notification_title_default">"Përditëso Banana Browser"</string>
+<string name="update_notification_text_body_default">"Për një përvojë më të mirë shfletimi, hape për të përditësuar Banana Browser"</string>
+<string name="update_notification_title_experimental_update_chrome">"Përditëso Banana Browser"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"Për ta parë uebin në gjuhën tënde, merr versionin e fundit të Banana Browser"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Kryej përditësimin për të marrë gjuhën tënde në versionin më të fundit të Banana Browser"</string>
+<string name="missing_storage_permission_download_education_text">"Banana Browser ka nevojë për qasje te hapësira ruajtëse për të shkarkuar skedarë."</string>
+<string name="contextmenu_open_in_new_chrome_tab">"Hape në një skedë të re të Banana Browser"</string>
+<string name="fre_activity_label">"Përvoja e ekzekutimit të parë të Banana Browser"</string>
+<string name="fre_tos">"Duke përdorur Banana Browser, ti pranon &lt;LINK1&gt;Kushtet e shërbimit të Google&lt;/LINK1&gt; dhe &lt;LINK2&gt;Kushtet shtesë të shërbimit të Google Banana Browser dhe të sistemit operativ Banana Browser&lt;/LINK2&gt;."</string>
+<string name="fre_tos_and_privacy_child_account">"Duke përdorur Banana Browser, ti pranon &lt;LINK1&gt;Kushtet e shërbimit të Google&lt;/LINK1&gt; dhe &lt;LINK2&gt;Kushtet shtesë të shërbimit të Google Banana Browser dhe të sistemit operativ Banana Browser&lt;/LINK2&gt;. Zbatohet gjithashtu &lt;LINK3&gt;\"Njoftimi i privatësisë\" për \"Llogaritë e menaxhuara të Google\" me Family Link&lt;/LINK3&gt;."</string>
+<string name="lightweight_fre_associated_app_tos">"%1$s do të hapet në Banana Browser. Duke vazhduar, ti pranon &lt;LINK1&gt;Kushtet e shërbimit të Google&lt;/LINK1&gt; dhe &lt;LINK2&gt;Kushtet shtesë të shërbimit të Google Banana Browser dhe të sistemit operativ Banana Browser&lt;/LINK2&gt;."</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s do të hapet në Banana Browser. Duke vazhduar, ti pranon &lt;LINK1&gt;Kushtet e shërbimit të Google&lt;/LINK1&gt; dhe &lt;LINK2&gt;Kushtet shtesë të shërbimit të Google Banana Browser dhe të sistemit operativ Banana Browser&lt;/LINK2&gt;. Zbatohet gjithashtu &lt;LINK3&gt;\"Njoftimi i privatësisë\" për \"Llogaritë e menaxhuara të Google\" me Family Link&lt;/LINK3&gt;."</string>
+<string name="fre_send_report_check">"Ndihmo në përmirësimin e Banana Browser duke dërguar automatikisht te Google statistika përdorimi dhe raporte të ndërprerjeve aksidentale."</string>
+<string name="fre_welcome">"Mirë se vjen në Banana Browser"</string>
+<string name="menu_update">"Përditëso Banana Browser"</string>
+<string name="menu_update_unsupported">"Banana Browser s\'mund të përditësohet"</string>
+<string name="menu_inline_update_ready_summary">"Rinis Banana Browser"</string>
+<string name="menu_open_in_chrome">"Hape në Banana Browser"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Ndihmo në përmirësimin e Banana Browser. &lt;LINK&gt;Plotëso anketën&lt;/LINK&gt;"</string>
+<string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser nuk mund të përditësohet. Më shumë opsione"</string>
+<string name="unsupported_number_of_windows">"Numër i pambështetur i versioneve të Banana Browser."</string>
+<string name="storage_management_unimportant_site_data_description">"Hapësira ruajtëse që Banana Browser nuk e konsideron të rëndësishme (p.sh. sajtet pa cilësime të ruajtura ose ti që nuk i viziton shpesh)"</string>
+<string name="storage_management_clear_unimportant_dialog_text">"Kjo do të pastrojë kukit, memorien e përkohshme dhe të dhënat e tjera të sajteve që Banana Browser nuk i konsideron si të rëndësishme."</string>
+<string name="storage_management_all_storage_description">"Të dhënat gjithsej të përdorura nga Banana Browser, duke përfshirë llogaritë, faqeshënuesit dhe cilësimet e ruajtura"</string>
+<string name="storage_management_reset_app_dialog_text">"Të gjitha të dhënat e aplikacionit të Banana Browser do të fshihen përgjithmonë. Kjo përfshin të gjithë skedarët, cilësimet, llogaritë, bazat e të dhënave etj."</string>
+<string name="sogou_explanation">"Banana Browser mund të përdorë &lt;b&gt;Sogou&lt;/b&gt; për kërkimin në Kinë. Mund ta ndryshosh këtë te &lt;link&gt;Cilësimet&lt;/link&gt;."</string>
+<string name="app_running_in_chrome_disclosure">"Ky aplikacion po ekzekutohet në Banana Browser"</string>
+<string name="twa_running_in_chrome">"Po ekzekutohet në Banana Browser"</string>
+<string name="twa_clear_data_dialog_title">"%1$s ka gjithashtu të dhëna në Banana Browser"</string>
+<string name="twa_clear_data_dialog_message">"Mund t\'i pastrosh të dhënat në \"Cilësimet\" e Banana Browser"</string>
+<string name="keyboard_shortcut_help_center">"Hap \"Qendrën e ndihmës së Banana Browser\" në një skedë të re"</string>
+<string name="keyboard_shortcut_chrome_feature_group_header">"Shkurtoret e funksioneve të Google Banana Browser"</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Banana Browser po përgatitet akoma për VR. Rinise Banana Browser më vonë."</string>
+<string name="vr_preparing_vr_notification_body">"Rihap Banana Browser."</string>
+<string name="module_install_start_text">"Po instalohet %1$s për Banana Browser…"</string>
+<string name="module_install_failure_text">"%1$s nuk mund të instalohet për Banana Browser"</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser tani i shkarkon skedarët më shpejt"</string>
+<string name="sharing_no_devices_available_text">"Për të ndarë diçka nga telefoni yt në një pajisje tjetër, aktivizo sinkronizimin në cilësimet e Banana Browser në të dyja pajisjet"</string>
+<string name="sharing_chrome_settings">"Shko te \"Cilësimet\" e Banana Browser"</string>
+<string name="sharing_hub_no_devices_available_text">"Për ta ndarë këtë faqe në një pajisje tjetër, aktivizo sinkronizimin në cilësimet e Banana Browser në pajisjen tjetër"</string>
+<string name="sharing_hub_sync_disabled_text">"Për ta ndarë këtë faqe në një pajisje tjetër, aktivizo sinkronizimin në cilësimet e Banana Browser"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Sigurohu që %1$s të ketë të aktivizuar sinkronizimin në Banana Browser"</string>
+<string name="near_oom_intervention_message">"Kjo faqe përdor shumë memorie, prandaj Banana Browser e ka vendosur atë në pauzë."</string>
+<string name="near_oom_reduction_message">"Kjo faqe përdor shumë memorie, ndaj Banana Browser ka hequr disa përmbajtje."</string>
+<string name="prefs_autofill_assistant_title">"\"Asistenti i Google\" në Banana Browser"</string>
+<string name="usage_stats_consent_title">"Dëshiron të shfaqësh aktivitetin tënd të Banana Browser te \"Mirëqenia dixhitale\"?"</string>
+<string name="usage_stats_consent_prompt">"Mund të shikosh sajtet që viziton në Banana Browser dhe të caktosh kohëmatës për to.\n\nGoogle merr informacion rreth sajteve për të cilat cakton kohëmatës dhe për sa kohë i viziton ato. Ky informacion përdoret për të përmirësuar \"Mirëqenien dixhitale\"."</string>
+<string name="usage_stats_setting_title">"Hiq aktivitetin tënd të Banana Browser nga \"Mirëqenia dixhitale\""</string>
+<string name="usage_stats_revocation_prompt">"Dëshiron të heqësh aktivitetin tënd të Banana Browser nga \"Mirëqenia dixhitale\"?"</string>
+<string name="usage_stats_revocation_explanation">"Sajtet që viziton në Banana Browser nuk do të shfaqen. Të gjithë kohëmatësit e sajtit do të fshihen."</string>
+<string name="autofill_assistant_module_title">"\"Asistenti i Google\" në Banana Browser"</string>
+<string name="qr_code_open_settings_description">"Për të skanuar një kod QR, ndrysho cilësimet e tua në mënyrë që Banana Browser të mund të përdorë kamerën tënde"</string>
+<string name="infobar_missing_camera_permission_text">"Banana Browser ka nevojë për leje për t\'u qasur te kamera jote për këtë sajt."</string>
+<string name="infobar_missing_microphone_permission_text">"Banana Browser ka nevojë për leje për t\'u qasur te mikrofoni yt për këtë sajt."</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser ka nevojë për leje për t\'u qasur te kamera dhe mikrofoni yt për këtë sajt."</string>
+<string name="infobar_missing_location_permission_text">"Banana Browser ka nevojë për qasje te vendndodhja jote për të ndarë vendndodhjen me këtë sajt."</string>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;nuk do të ruajë&lt;/em&gt; informacionet e mëposhtme:
+        &lt;ul&gt;
+          &lt;li&gt;Historikun tënd të shfletimit
+          &lt;li&gt;Kukit dhe të dhënat e sajteve
+          &lt;li&gt;Informacionet e futura në formularë
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kartat dhe adresat janë nga Banana Browser dhe llogaria jote e Google (%1$s). Ato mund t\'i menaxhosh te BEGIN_LINKCilësimetEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kartat dhe adresat janë nga Banana Browser. Ato mund t\'i menaxhosh te BEGIN_LINKCilësimetEND_LINK."</string>
+</resources>

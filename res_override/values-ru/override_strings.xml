@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Войти в Banana Browser"</string>
+<string name="sync_switch_title">"Синхронизировать данные Banana Browser"</string>
+<string name="usage_and_crash_reports_title">"Помогать повышать производительность Banana Browser и улучшать функции"</string>
+<string name="autofill_describe_local_copy">"Скопировано в Banana Browser"</string>
+<string name="password_settings_export_action_description">"Экспорт паролей, сохраненных в Banana Browser"</string>
+<string name="password_settings_export_subject">"Пароли Banana Browser"</string>
+<string name="options_homepage_chrome_homepage">"Главная страница Banana Browser"</string>
+<string name="safe_browsing_scout_reporting_title">"Помочь Banana Browser стать ещё безопаснее"</string>
+<string name="safe_browsing_scout_reporting_summary">"Для обнаружения опасных приложений и сайтов Banana Browser отправляет в Google URL некоторых страниц, которые вы открываете, контент на них, а также определенные сведения о системе"</string>
+<string name="clear_browsing_data_history_dialog_title">"Данные Banana Browser удалены"</string>
+<string name="clear_browsing_data_history_dialog_data_text">"Выбранные данные удалены из Banana Browser и с синхронизированных устройств.
+
+Остальная история ваших действий в Интернете может храниться в аккаунте Google, например в виде поисковых запросов и сведений из наших сервисов. Она доступна на странице &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Разрешения для Banana Browser можно предоставить в &lt;link&gt;настройках Android&lt;/link&gt;."</string>
+<string name="android_permission_off">"Разрешение для Banana Browser можно предоставить в &lt;link&gt;настройках Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Чтобы Banana Browser получил доступ к данным о местоположении, включите геолокацию в &lt;link&gt;настройках Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Чтобы Banana Browser получил доступ к камере, включите ее в &lt;link&gt;настройках Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Чтобы Banana Browser отправлял вам уведомления, включите их в &lt;link&gt;настройках Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Чтобы Banana Browser получил доступ к микрофону, включите его в &lt;link&gt;настройках Android&lt;/link&gt;."</string>
+<string name="data_reduction_benefits_description_lite_mode">"В упрощенном режиме Banana Browser быстрее загружает страницы и экономит до 60 процентов трафика."</string>
+<string name="data_reduction_description_lite_mode">"Когда упрощенный режим включен, Banana Browser использует серверы Google, чтобы ускорить загрузку страниц. В упрощенном режиме на медленных страницах загружается только самый необходимый контент. Упрощенный режим не действует в режиме инкогнито."</string>
+<string name="data_reduction_promo_summary_lite_mode">"В упрощенном режиме Banana Browser быстрее загружает страницы и экономит до 60 % трафика. Чтобы оптимизировать страницы, которые вы посещаете, Banana Browser отправляет ваш интернет-трафик в Google. &lt;link&gt;Подробнее…&lt;/link&gt;"</string>
+<string name="data_reduction_milestone_promo_text_mb">"Благодаря Banana Browser вы сэкономили %1$d МБ свободного места"</string>
+<string name="data_reduction_milestone_promo_text_gb">"Благодаря Banana Browser вы сэкономили %1$d ГБ свободного места"</string>
+<string name="prefs_about_chrome">"О браузере Banana Browser"</string>
+<string name="deprecation_warning">"Невозможно обновить Banana Browser в текущей версии Android."</string>
+<string name="account_management_sign_out">"Выход из Banana Browser"</string>
+<string name="powered_by_chrome_message">"Технологии Banana Browser"</string>
+<string name="chrome_additional_terms_of_service_title">"Дополнительные условия использования Banana Browser и Banana Browser OS"</string>
+<string name="privacy_notice_title">"Примечание о конфиденциальности Banana Browser"</string>
+<string name="signout_managed_account_title">"Удалить данные Banana Browser с этого устройства?"</string>
+<string name="signout_message">"Ваши закладки, пароли, история и другие данные Banana Browser больше не будут синхронизироваться с аккаунтом Google."</string>
+<string name="remove_local_data">"Удалить данные Banana Browser с этого устройства"</string>
+<string name="signout_managed_account_message">"Вы выходите из аккаунта, которым управляет администратор домена %1$s. Все данные Banana Browser будут удалены с этого устройства, но сохранятся в аккаунте Google."</string>
+<string name="sign_in_managed_account_description">"Вы входите в аккаунт, которым управляет администратор домена %1$s. Он может контролировать ваши данные Banana Browser, которые теперь будут связаны с управляемым аккаунтом. При выходе из системы все данные Banana Browser, хранящиеся на этом устройстве, будут удалены, но останутся в вашем аккаунте Google."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Здесь появятся вкладки, открытые в Banana Browser на других устройствах."</string>
+<string name="bluetooth_need_location_permission">"Чтобы выполнить поиск устройств, браузеру Banana Browser нужен доступ к геоданным. &lt;permission_link&gt;Обновить разрешения&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_services_on">"Чтобы выполнить поиск устройств, браузеру Banana Browser нужен доступ к геоданным. &lt;services_link&gt;Включить&lt;/services_link&gt;"</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Чтобы выполнить поиск устройств, браузеру Banana Browser нужен доступ к геоданным. &lt;services_link&gt;Включите доступ&lt;/services_link&gt; и &lt;permission_link&gt;обновите разрешения&lt;/permission_link&gt;."</string>
+<string name="hint_sync_settings_not_confirmed_description">"Чтобы начать ее, нажмите \"Синхронизировать данные Banana Browser\"."</string>
+<string name="inline_update_infobar_ready_link_text">"Перезапустите Google Banana Browser."</string>
+<string name="inline_update_toast_downloading_message">"Скачивание обновлений для Banana Browser…"</string>
+<string name="update_notification_title_default">"Обновить Banana Browser"</string>
+<string name="update_notification_text_body_default">"Чтобы работать в браузере было удобнее, откройте Banana Browser и установите обновление."</string>
+<string name="update_notification_title_experimental_update_chrome">"Обновить Banana Browser"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"Чтобы просматривать веб-страницы на своем языке, обновите Banana Browser до последней версии."</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Чтобы читать веб-страницы на своем языке, обновите Banana Browser до последней версии."</string>
+<string name="missing_storage_permission_download_education_text">"Для скачивания файлов браузеру Banana Browser требуется доступ к хранилищу."</string>
+<string name="fre_activity_label">"Первый запуск Banana Browser"</string>
+<string name="fre_tos">"Используя Banana Browser, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;."</string>
+<string name="fre_tos_and_privacy_child_account">"Используя Banana Browser, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;. Кроме этих документов, также действует &lt;LINK3&gt;Примечание о конфиденциальности данных в аккаунтах Google, управляемых с помощью Family Link&lt;/LINK3&gt;."</string>
+<string name="lightweight_fre_associated_app_tos">"Приложение \"%1$s\" откроется в Banana Browser. Продолжая, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;."</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Приложение \"%1$s\" откроется в Banana Browser. Продолжая, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;. Кроме этих документов, также действует &lt;LINK3&gt;Примечание о конфиденциальности данных в аккаунтах Google, управляемых с помощью Family Link&lt;/LINK3&gt;."</string>
+<string name="fre_welcome">"Добро пожаловать в Banana Browser!"</string>
+<string name="menu_update">"Обновить Banana Browser"</string>
+<string name="menu_update_unsupported">"Не удалось обновить Banana Browser"</string>
+<string name="menu_inline_update_ready_summary">"Перезапустите Google Banana Browser."</string>
+<string name="menu_open_in_chrome">"Открыть в Banana Browser"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Помогите улучшить Banana Browser. &lt;LINK&gt;Пройти опрос&lt;/LINK&gt;"</string>
+<string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Не удалось обновить Banana Browser. Другие настройки"</string>
+<string name="unsupported_number_of_windows">"Конфликт версий Banana Browser"</string>
+<string name="storage_management_all_storage_description">"Общее количество данных Banana Browser, включая аккаунты, закладки и сохраненные настройки"</string>
+<string name="storage_management_reset_app_dialog_text">"Все данные приложения Banana Browser, включая файлы, настройки, аккаунты и базы данных, будут безвозвратно удалены."</string>
+<string name="sogou_explanation">"В Китае Banana Browser может использовать для поиска &lt;b&gt;Sogou&lt;/b&gt;. Это можно изменить в &lt;link&gt;Настройках&lt;/link&gt;."</string>
+<string name="app_running_in_chrome_disclosure">"Это приложение запущено в Banana Browser."</string>
+<string name="twa_running_in_chrome">"Выполняется в Banana Browser"</string>
+<string name="twa_clear_data_dialog_title">"Приложение \"%1$s\" также хранит свои данные в Banana Browser"</string>
+<string name="twa_clear_data_dialog_message">"Удалить данные можно в настройках Banana Browser"</string>
+<string name="keyboard_shortcut_help_center">"Открыть Справочный центр Banana Browser в новой вкладке"</string>
+<string name="keyboard_shortcut_chrome_feature_group_header">"Функции Google Banana Browser"</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Подготовка для VR ещё не завершена. Перезапустите Banana Browser позже."</string>
+<string name="vr_preparing_vr_notification_body">"Снова запустите браузер Banana Browser."</string>
+<string name="module_install_start_text">"Установка модуля \"%1$s\" для Banana Browser…"</string>
+<string name="module_install_failure_text">"Не удается установить модуль \"%1$s\" для Banana Browser"</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"Теперь файлы в Banana Browser будут скачиваться ещё быстрее"</string>
+<string name="sharing_no_devices_available_text">"Чтобы поделиться контентом, откройте настройки Banana Browser на своем телефоне и другом устройстве, а затем включите синхронизацию."</string>
+<string name="sharing_chrome_settings">"Открыть настройки Banana Browser"</string>
+<string name="sharing_hub_no_devices_available_text">"Чтобы открыть доступ к этой странице другому устройству, откройте на нем настройки Banana Browser и включите синхронизацию."</string>
+<string name="sharing_hub_sync_disabled_text">"Чтобы открыть доступ к этой странице другому устройству, откройте настройки Banana Browser и включите синхронизацию."</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Убедитесь, что в браузере Banana Browser на устройстве %1$s включена синхронизация."</string>
+<string name="prefs_autofill_assistant_title">"Google Ассистент в Banana Browser"</string>
+<string name="prefs_autofill_assistant_summary">"Выполнять действия в Banana Browser с помощью Ассистента: отправлять в Google контент и URL сайтов, а также информацию, сообщаемую Ассистенту"</string>
+<string name="usage_stats_consent_title">"Показать данные о ваших действиях в Banana Browser в сервисе \"Цифровое благополучие\"?"</string>
+<string name="usage_stats_consent_prompt">"Вы сможете просматривать список сайтов, посещенных в Banana Browser, и устанавливать для них таймеры.\n\nВ Google будут отправляться сведения о сайтах, для которых настроены таймеры, и времени их посещения. Мы собираем эти данные, чтобы улучшать сервис \"Цифровое благополучие\"."</string>
+<string name="usage_stats_setting_title">"Удалить данные о действиях в Banana Browser из сервиса \"Цифровое благополучие\""</string>
+<string name="usage_stats_revocation_prompt">"Удалить данные о ваших действиях в Banana Browser из сервиса \"Цифровое благополучие\"?"</string>
+<string name="usage_stats_revocation_explanation">"В сервисе больше не будут отображаться данные о сайтах, которые вы посещаете в Banana Browser. Кроме того, будут удалены все таймеры сайтов."</string>
+<string name="autofill_assistant_module_title">"Google Ассистент в Banana Browser"</string>
+<string name="qr_code_open_settings_description">"Чтобы отсканировать QR-код, разрешите Banana Browser доступ к камере в настройках."</string>
+<string name="infobar_missing_camera_permission_text">"Для этого сайта Banana Browser запрашивает разрешение на доступ к камере."</string>
+<string name="infobar_missing_microphone_permission_text">"Для этого сайта Banana Browser запрашивает разрешение на доступ к микрофону."</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"Для этого сайта Banana Browser запрашивает разрешение на доступ к камере и микрофону."</string>
+<string name="infobar_missing_location_permission_text">"Для этого сайта Banana Browser запрашивает доступ к данным о вашем местоположении."</string>
+<string name="new_tab_otr_not_saved">"В Banana Browser &lt;em&gt;не будет сохраняться&lt;/em&gt; следующая информация:
+        &lt;ul&gt;
+          &lt;li&gt;история браузера;
+          &lt;li&gt;файлы cookie и данные сайтов;
+          &lt;li&gt;сведения, которые вы указываете в формах.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Это карты и адреса, указанные в Banana Browser и вашем аккаунте Google (%1$s). Вы можете изменить их на странице BEGIN_LINKНастройкиEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Это карты и адреса, указанные в Banana Browser. Вы можете изменить их на странице BEGIN_LINKНастройкиEND_LINK."</string>
+</resources>

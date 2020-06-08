@@ -40,3 +40,7 @@ function override_resource_path() {
 function chromium_path() {
   echo $(realpath $(triple_banana_path)/..)
 }
+
+function chromium_out_release_path() {
+  echo $(chromium_path)/out/release
+}

@@ -8,56 +8,49 @@
 . $TOOLS_PATH/common/path.sh
 . $TOOLS_PATH/common/stack_dir.sh
 
-function generate_banana_strings() {
+function clear_override_strings() {
+  push_dir $(override_resource_path)
+  find $(override_resource_path) -name "override_strings.xml" -exec rm {} \;
+  find $(override_resource_path) -type d -empty -delete
+  pop_dir
+}
+
+function read_target_strings() {
   push_dir $(chromium_path)
-
-  chromium_out_path=$1
-  gn gen $chromium_out_path
-  ninja -C $chromium_out_path chrome/browser/ui/android/strings:ui_strings_grd__grit_grit components_strings
-
-  # FIXME(#69): We might refactor the following duplicated codes.
-
-  # Filter on android_chrome_strings
-  input_paths=$(ls -d $chromium_out_path/gen/chrome/browser/ui/android/strings/ui_strings_grd_grit_output/values*)
+  input_paths=$(find $(chromium_out_release_path) -name "*strings.xml")
   for input_path in $input_paths; do
-    mkdir -p $(override_resource_path)/$(basename $input_path)
-    awk '/(<string.*>.*Chrome.*|<?(resources|xml).*)/,/(<\/string>|>$)/' \
-        $input_path/android_chrome_strings.xml \
-        > $(override_resource_path)/$(basename $input_path)/android_chrome_strings.xml
+    echo "Read $input_path..."
+    localized_path=$(basename $(dirname $input_path))
+    mkdir -p $(override_resource_path)/$localized_path
+    awk '/(<string.*>.*Chrome.*)/,/(<\/string>)/' \
+        $input_path \
+        >> $(override_resource_path)/$localized_path/override_strings.xml
   done
 
-  #Filter on components_strings
-  input_paths=$(ls -d $chromium_out_path/gen/components/strings/java/res/values*)
-  for input_path in $input_paths; do
-    mkdir -p $(override_resource_path)/$(basename $input_path)
-    awk '/(<string.*>.*Chrome.*|<?(resources|xml).*)/,/(<\/string>|>$)/' \
-        $input_path/components_strings.xml \
-        > $(override_resource_path)/$(basename $input_path)/components_strings.xml
+  override_strings_paths=$(find $(override_resource_path) -name "override_strings.xml")
+  for override_string_path in $override_strings_paths; do
+    echo "Write $override_string_path..."
+    echo -e "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<resources>" > $override_string_path.tmp
+    cat $override_string_path >> $override_string_path.tmp
+    echo "</resources>" >> $override_string_path.tmp
+    mv $override_string_path.tmp $override_string_path
   done
-
   pop_dir
 }
 
 function rewrite_banana_strings() {
-  strings_path=$1
+  strings_path=$1/override_strings.xml
   pattern=$2
 
-  # Rewrite for android_chrome_strings.xml
-  sed "$pattern" $strings_path/android_chrome_strings.xml \
-      > $strings_path/android_chrome_strings_tmp.xml
-  mv $strings_path/android_chrome_strings_tmp.xml \
-      $strings_path/android_chrome_strings.xml
-
-  # Rewrite for components_strings.xml
-  sed "$pattern" $strings_path/components_strings.xml \
-      > $strings_path/components_strings_tmp.xml
-  mv $strings_path/components_strings_tmp.xml \
-      $strings_path/components_strings.xml
+  # Rewrite for override_strings.xml
+  echo "Rewrite $strings_path with \"$pattern\"..."
+  sed "$pattern" $strings_path > $strings_path.tmp
+  mv $strings_path.tmp $strings_path
 }
 
 function main() {
-  chromium_out_path=$1
-  generate_banana_strings $chromium_out_path
+  clear_override_strings
+  read_target_strings
 
   strings_paths=$(ls -d $(override_resource_path)/values*)
   for strings_path in $strings_paths; do

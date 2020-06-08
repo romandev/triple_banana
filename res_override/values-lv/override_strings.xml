@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Pierakstīties pārlūkā Banana Browser"</string>
+<string name="sync_switch_title">"Jūsu Banana Browser datu sinhronizācija"</string>
+<string name="usage_and_crash_reports_title">"Palīdzēt uzlabot Banana Browser funkcijas un veiktspēju"</string>
+<string name="autofill_describe_local_copy">"Nokopēta pārlūkā Banana Browser."</string>
+<string name="password_settings_export_action_description">"Eksportēt pārlūkā Banana Browser saglabātās paroles"</string>
+<string name="password_settings_export_subject">"Banana Browser paroles"</string>
+<string name="options_homepage_chrome_homepage">"Banana Browser sākumlapa"</string>
+<string name="safe_browsing_scout_reporting_title">"Palīdzēt uzlabot Banana Browser drošību"</string>
+<string name="safe_browsing_scout_reporting_summary">"Lai noteiktu bīstamas lietotnes un vietnes, pārlūkā Banana Browser dažu jūsu apmeklēto lapu saturs, ierobežots sistēmas informācijas apjoms un daļa lapu satura tiek nosūtīta uzņēmumam Google"</string>
+<string name="clear_browsing_data_history_dialog_title">"Banana Browser dati tika notīrīti"</string>
+<string name="clear_browsing_data_history_dialog_data_text">"Atlasītie dati ir noņemti no pārlūka Banana Browser un jūsu sinhronizētajām ierīcēm.
+
+Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var būt citu veidu pārlūkošanas vēstures dati, piemēram, meklēšanas vaicājumi un darbības citos Google pakalpojumos."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļaujas pārlūkam Banana Browser."</string>
+<string name="android_permission_off">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļauju pārlūkam Banana Browser."</string>
+<string name="android_location_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu atrašanās vietas datiem, ieslēdziet atrašanās vietas noteikšanu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu kamerai, ieslēdziet kameru arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser sūtīt jums paziņojumus, ieslēdziet paziņojumus arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu mikrofonam, ieslēdziet mikrofonu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="data_reduction_benefits_description_lite_mode">"Vienkāršotajā režīmā Banana Browser ielādē lapas ātrāk un patērē pat par 60 procentiem mazāk datu."</string>
+<string name="data_reduction_description_lite_mode">"Ja ir ieslēgts vienkāršotais režīms, pārlūkā Banana Browser tiek izmantoti Google serveri, lai ielādētu lapas ātrāk. Vienkāršotajā režīmā ļoti lēnas lapas tiek pārrakstītas, lai tās ielādētu tikai nepieciešamo saturu. Vienkāršotais režīms netiek piemērots inkognito režīma cilnēm."</string>
+<string name="data_reduction_promo_summary_lite_mode">"Pārlūka Banana Browser vienkāršotajā režīmā lapas tiek ielādētas ātrāk un tiek patērēts pat par 60 procentiem mazāk datu. Lai optimizētu jūsu apmeklētās lapas, no pārlūka Banana Browser tiek nosūtīta jūsu tīmekļa datplūsma uzņēmumam Google. &lt;link&gt;Uzziniet vairāk&lt;/link&gt;."</string>
+<string name="data_reduction_milestone_promo_text_mb">"Pārlūkā Banana Browser esat ietaupījis %1$d MB."</string>
+<string name="data_reduction_milestone_promo_text_gb">"Pārlūkā Banana Browser esat ietaupījis %1$d GB."</string>
+<string name="prefs_about_chrome">"Par Banana Browser"</string>
+<string name="deprecation_warning">"Banana Browser atjauninājumi vairs netiek atbalstīti šajā Android versijā"</string>
+<string name="account_management_sign_out">"Izrakstīšanās no pārlūka Banana Browser"</string>
+<string name="powered_by_chrome_message">"Nodrošina Banana Browser"</string>
+<string name="chrome_additional_terms_of_service_title">"Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumi"</string>
+<string name="privacy_notice_title">"Banana Browser konfidencialitātes paziņojums"</string>
+<string name="signout_managed_account_title">"Vai dzēst jūsu Banana Browser datus no šīs ierīces?"</string>
+<string name="signout_message">"Jūsu grāmatzīmes, vēsture, paroles un citi Banana Browser dati vairs netiks sinhronizēti ar jūsu Google kontu"</string>
+<string name="remove_local_data">"Arī noņemt jūsu Banana Browser datus no šīs ierīces"</string>
+<string name="signout_managed_account_message">"Jūs izrakstāties no konta, ko pārvalda %1$s, tāpēc jūsu Banana Browser dati tiks izdzēsti no šīs ierīces. Tie joprojām būs pieejami jūsu Google kontā."</string>
+<string name="sign_in_managed_account_description">"Jūs pierakstāties kontā, kas tiek pārvaldīts domēnā %1$s, un sniedzat tā administratoram kontroli pār saviem Banana Browser datiem. Jūsu dati tiks neatgriezeniski saistīti ar šo kontu. Izrakstoties no pārlūka Banana Browser, jūsu dati tiks dzēsti no šīs ierīces, taču tie tiks saglabāti jūsu Google kontā."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Šeit būs redzamas cilnes, kuras esat atvēris pārlūkā Banana Browser citās ierīcēs."</string>
+<string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser nevar ieslēgt Bluetooth adapteri."</string>
+<string name="bluetooth_need_location_permission">"Lai meklētu ierīces, pārlūkam Banana Browser ir nepieciešama piekļuve atrašanās vietai. &lt;permission_link&gt;Atjauniniet atļaujas&lt;/permission_link&gt;."</string>
+<string name="bluetooth_need_location_services_on">"Lai meklētu ierīces, pārlūkam Banana Browser ir nepieciešama piekļuve atrašanās vietas datiem. &lt;services_link&gt;Šajā ierīcē ir izslēgta piekļuve atrašanās vietas datiem&lt;/services_link&gt;."</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Lai meklētu ierīces, pārlūkam Banana Browser ir nepieciešama piekļuve atrašanās vietas datiem. &lt;permission_link&gt;Atjauniniet atļaujas&lt;/permission_link&gt;. Piekļuve atrašanās vietas datiem ir arī &lt;services_link&gt;izslēgta šai ierīcei&lt;/services_link&gt;."</string>
+<string name="hint_android_sync_disabled">"Lai sāktu Banana Browser sinhronizēšanu, atveriet Android iestatījumus un atkārtoti iespējojiet Android sistēmas sinhronizēšanu"</string>
+<string name="hint_sync_settings_not_confirmed_description">"Lai sāktu sinhronizāciju, ieslēdziet iestatījumu “Jūsu Banana Browser datu sinhronizācija”."</string>
+<string name="inline_update_infobar_ready_link_text">"Restartējiet pārlūku Banana Browser"</string>
+<string name="inline_update_toast_downloading_message">"Lejupielādē Banana Browser atjauninājumu…"</string>
+<string name="update_notification_title_default">"Atjaunināt Banana Browser"</string>
+<string name="update_notification_text_body_default">"Atveriet, lai uzlabotu pārlūkošanas ērtības, atjauninot pārlūku Banana Browser"</string>
+<string name="update_notification_title_experimental_update_chrome">"Atjaunināt Banana Browser"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"Lai skatītu tīmekli savā valodā, iegūstiet jaunāko Banana Browser versiju"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Veiciet atjaunināšanu, lai varētu lasīt savā valodā jaunākajā pārlūka Banana Browser versijā"</string>
+<string name="missing_storage_permission_download_education_text">"Banana Browser ir nepieciešama piekļuve krātuvei, lai varētu lejupielādēt failus."</string>
+<string name="contextmenu_open_in_new_chrome_tab">"Atvērt jaunā Banana Browser cilnē"</string>
+<string name="fre_activity_label">"Banana Browser pirmās palaišanas pieredze"</string>
+<string name="fre_tos">"Izmantojot pārlūkprogrammu Banana Browser, jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;."</string>
+<string name="fre_tos_and_privacy_child_account">"Izmantojot pārlūkprogrammu Banana Browser, jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;. Ir spēkā arī &lt;LINK3&gt;konfidencialitātes paziņojums Google kontiem, kas tiek pārvaldīti lietotnē Family Link&lt;/LINK3&gt;."</string>
+<string name="lightweight_fre_associated_app_tos">"Lietotne %1$s tiks atvērta pārlūkprogrammā Banana Browser. Turpinot jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;."</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Lietotne %1$s tiks atvērta pārlūkprogrammā Banana Browser. Turpinot jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;. Ir spēkā arī &lt;LINK3&gt;konfidencialitātes paziņojums Google kontiem, kas tiek pārvaldīti lietotnē Family Link&lt;/LINK3&gt;."</string>
+<string name="fre_send_report_check">"Uzlabojiet pārlūku Banana Browser, uzņēmumam Google sūtot lietojuma statistiku un avāriju pārskatus."</string>
+<string name="fre_welcome">"Laipni lūdzam pārlūkā Banana Browser"</string>
+<string name="menu_update">"Atjaunināt Banana Browser"</string>
+<string name="menu_update_unsupported">"Nevar atjaunināt Banana Browser"</string>
+<string name="menu_inline_update_ready_summary">"Restartējiet pārlūku Banana Browser"</string>
+<string name="menu_open_in_chrome">"Atvērt pārlūkā Banana Browser"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Palīdziet uzlabot pārlūku Banana Browser. &lt;LINK&gt;Atbildiet uz aptaujas jautājumiem&lt;/LINK&gt;."</string>
+<string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Nevar atjaunināt Banana Browser — citas opcijas"</string>
+<string name="unsupported_number_of_windows">"Neatbalstīts Banana Browser instanču skaits"</string>
+<string name="storage_management_unimportant_site_data_description">"Vietnes krātuve, kura pārlūkā Banana Browser netiek uzskatīta par svarīgu (piemēram, vietnes bez saglabātiem iestatījumiem vai vietnes, kuras neapmeklējat bieži)"</string>
+<string name="storage_management_clear_unimportant_dialog_text">"Tādējādi tiks dzēsti sīkfaili, kešatmiņa un citi vietņu dati, kas pārlūkā Banana Browser netiek uzskatīti par svarīgiem."</string>
+<string name="storage_management_all_storage_description">"Kopējais pārlūkā Banana Browser izmantoto datu apjoms, ieskaitot kontus, grāmatzīmes un saglabātos iestatījumus"</string>
+<string name="storage_management_reset_app_dialog_text">"Visi lietotnes Banana Browser dati tiks neatgriezeniski izdzēsti. Tas attiecas uz visiem failiem, iestatījumiem, kontiem, datu bāzēm un citiem datiem."</string>
+<string name="sogou_explanation">"Pārlūkā Banana Browser var izmantot meklētājprogrammu &lt;b&gt;Sogou&lt;/b&gt;, lai veiktu meklēšanu Ķīnā. Varat to mainīt sadaļā &lt;link&gt;Iestatījumi&lt;/link&gt;."</string>
+<string name="app_running_in_chrome_disclosure">"Šī lietotne darbojas pārlūkā Banana Browser"</string>
+<string name="twa_running_in_chrome">"Atvērta pārlūkā Banana Browser"</string>
+<string name="twa_clear_data_dialog_title">"Pārlūkā Banana Browser ir arī “%1$s” dati"</string>
+<string name="twa_clear_data_dialog_message">"Varat notīrīt datus Banana Browser iestatījumos"</string>
+<string name="keyboard_shortcut_help_center">"Atvērt Banana Browser palīdzības centru jaunā cilnē"</string>
+<string name="keyboard_shortcut_chrome_feature_group_header">"Google Banana Browser funkciju īsinājumtaustiņi"</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Banana Browser joprojām gatavojas virtuālajai realitātei. Vēlāk restartējiet pārlūku Banana Browser."</string>
+<string name="vr_preparing_vr_notification_body">"Atkārtoti atveriet pārlūku Banana Browser."</string>
+<string name="module_install_start_text">"Notiek moduļa %1$s instalēšana pārlūkprogrammai Banana Browser…"</string>
+<string name="module_install_failure_text">"Nevar instalēt moduli %1$s pārlūkprogrammai Banana Browser."</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"Tagad pārlūkā Banana Browser faili tiek lejupielādēti ātrāk."</string>
+<string name="sharing_no_devices_available_text">"Lai kopīgotu sava tālruņa saturu ar citu ierīci, ieslēdziet sinhronizāciju abu ierīču Banana Browser iestatījumos."</string>
+<string name="sharing_chrome_settings">"Pāriet uz Banana Browser iestatījumiem"</string>
+<string name="sharing_hub_no_devices_available_text">"Lai kopīgotu šo lapu ar citu ierīci, otras ierīces Banana Browser iestatījumos ieslēdziet sinhronizāciju."</string>
+<string name="sharing_hub_sync_disabled_text">"Lai kopīgotu šo lapu citā ierīcē, Banana Browser iestatījumos ieslēdziet sinhronizāciju."</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Ierīcē %1$s ieslēdziet Banana Browser sinhronizāciju"</string>
+<string name="near_oom_intervention_message">"Šī lapa izmanto pārāk daudz atmiņas, tādēļ Banana Browser to apturēja."</string>
+<string name="near_oom_reduction_message">"Šī lapa izmanto pārāk daudz atmiņas, tādēļ pārlūks Banana Browser noņēma daļu satura."</string>
+<string name="prefs_autofill_assistant_title">"Google asistents pārlūkprogrammā Banana Browser"</string>
+<string name="usage_stats_consent_title">"Vai rādīt jūsu Banana Browser darbības Digitālajā labjutībā?"</string>
+<string name="usage_stats_consent_prompt">"Varat skatīt pārlūkā Banana Browser apmeklētās vietnes un iestatīt tām taimerus.\n\nGoogle saņem informāciju par vietnēm, kurām iestatāt taimerus, kā arī šo vietņu apmeklēšanas ilgumu. Šī informācija tiek izmantota, lai uzlabotu Digitālo labjutību."</string>
+<string name="usage_stats_setting_title">"Banana Browser darbību noņemšana no Digitālās labjutības"</string>
+<string name="usage_stats_revocation_prompt">"Vai noņemt jūsu Banana Browser darbības no Digitālās labjutības?"</string>
+<string name="usage_stats_revocation_explanation">"Netiks rādītas vietnes, ko apmeklējat pārlūkā Banana Browser. Tiks izdzēsti visi vietņu taimeri."</string>
+<string name="autofill_assistant_module_title">"Google asistents pārlūkprogrammā Banana Browser"</string>
+<string name="qr_code_open_settings_description">"Lai varētu skenēt QR kodu, iestatījumos atļaujiet Banana Browser izmantot jūsu kameru"</string>
+<string name="infobar_missing_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai šajā vietnē."</string>
+<string name="infobar_missing_microphone_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu mikrofonam šajā vietnē."</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai un mikrofonam šajā vietnē."</string>
+<string name="infobar_missing_location_permission_text">"Pārlūkam Banana Browser ir nepieciešama piekļuve jūsu atrašanās vietas datiem, lai varētu tos kopīgot ar šo vietni."</string>
+<string name="new_tab_otr_not_saved">"Pārlūkprogrammā Banana Browser &lt;em&gt;netiks saglabāta&lt;/em&gt; tālāk norādītā informācija.
+        &lt;ul&gt;
+          &lt;li&gt;Jūsu pārlūkošanas vēsture
+          &lt;li&gt;Sīkfaili un vietņu dati
+          &lt;li&gt;Veidlapās ievadītā informācija
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kartes un adreses tiek iegūtas no Banana Browser un jūsu Google konta (%1$s). Varat tās pārvaldīt BEGIN_LINKiestatījumosEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kartes un adreses tiek iegūtas no Banana Browser. Varat pārvaldīt tās BEGIN_LINKiestatījumosEND_LINK."</string>
+</resources>

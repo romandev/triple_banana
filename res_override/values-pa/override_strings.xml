@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Banana Browser \'ਤੇ ਸਾਈਨ-ਇਨ ਕਰੋ"</string>
+<string name="sync_switch_title">"ਆਪਣੇ Banana Browser ਡਾਟੇ ਦਾ ਸਮਕਾਲੀਕਰਨ ਕਰੋ"</string>
+<string name="usage_and_crash_reports_title">"Banana Browser ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਕਾਰਗੁਜ਼ਾਰੀ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ"</string>
+<string name="autofill_describe_local_copy">"Banana Browser \'ਤੇ ਕਾਪੀ ਕੀਤਾ"</string>
+<string name="password_settings_export_action_description">"Banana Browser ਵਿੱਚ ਸਟੋਰ ਕੀਤੇ ਪਾਸਵਰਡਾਂ ਦਾ ਨਿਰਯਾਤ ਕਰੋ"</string>
+<string name="password_settings_export_subject">"Banana Browser ਪਾਸਵਰਡ"</string>
+<string name="options_homepage_chrome_homepage">"Banana Browser ਦਾ ਹੋਮਪੇਜ"</string>
+<string name="safe_browsing_scout_reporting_title">"Banana Browser ਸੁਰੱਖਿਆ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ"</string>
+<string name="safe_browsing_scout_reporting_summary">"ਖਤਰਨਾਕ ਐਪਾਂ ਅਤੇ ਸਾਈਟਾਂ ਦਾ ਪਤਾ ਲਗਾਉਣ ਲਈ, Banana Browser ਤੁਹਾਡੇ ਵੱਲੋਂ ਦੇਖੇ ਕੁਝ ਪੰਨਿਆਂ ਦੇ URL, ਸੀਮਤ ਸਿਸਟਮ ਜਾਣਕਾਰੀ ਅਤੇ ਕੁਝ ਪੰਨਾ ਸਮੱਗਰੀ Google ਨੂੰ ਭੇਜਦਾ ਹੈ"</string>
+<string name="clear_browsing_data_history_dialog_title">"Banana Browser ਡਾਟਾ ਕਲੀਅਰ ਕੀਤਾ ਗਿਆ"</string>
+<string name="clear_browsing_data_history_dialog_data_text">"ਚੁਣਿਆ ਗਿਆ ਡਾਟਾ Banana Browser ਅਤੇ ਤੁਹਾਡੇ ਸਮਕਾਲੀਕਿਰਤ ਕੀਤੇ ਡੀਵਾਈਸਾਂ ਤੋਂ ਹਟਾਇਆ ਜਾ ਚੁੱਕਿਆ ਹੈ।
+
+ਤੁਹਾਡੇ Google ਖਾਤੇ ਵਿੱਚ &lt;link&gt;myactivity.google.com&lt;/link&gt; \'ਤੇ ਹੋਰ Google ਸੇਵਾਵਾਂ ਤੋਂ ਖੋਜਾਂ ਅਤੇ ਸਰਗਰਮੀ ਵਰਗੇ ਹੋਰ ਕਿਸਮ ਦਾ ਬ੍ਰਾਊਜ਼ਿੰਗ ਇਤਿਹਾਸ ਵੀ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ।"</string>
+<string name="android_permission_off_plural">"Banana Browser ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਇਜਾਜ਼ਤਾਂ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_permission_off">"&lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ Banana Browser ਲਈ ਇਜਾਜ਼ਤ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_location_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਟਿਕਾਣਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_camera_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਕੈਮਰਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_notifications_permission_off">"Banana Browser ਨੂੰ ਤੁਹਾਨੂੰ ਸੂਚਨਾਵਾਂ ਭੇਜਣ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਸੂਚਨਾਵਾਂ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_microphone_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="data_reduction_benefits_description_lite_mode">"ਲਾਈਟ ਮੋਡ ਵਿੱਚ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਦਾ ਹੈ ਅਤੇ 60 ਪ੍ਰਤੀਸ਼ਤ ਤੱਕ ਘੱਟ ਡਾਟਾ ਵਰਤਦਾ ਹੈ।"</string>
+<string name="data_reduction_description_lite_mode">"ਲਾਈਟ ਮੋਡ ਚਾਲੂ ਹੋਣ \'ਤੇ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਨ ਲਈ Google ਸਰਵਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ। ਲਾਈਟ ਮੋਡ ਸਿਰਫ਼ ਜ਼ਰੂਰੀ ਸਮੱਗਰੀ ਨੂੰ ਲੋਡ ਕਰਨ ਲਈ ਬਹੁਤ ਹੀ ਧੀਮੇ ਪੰਨਿਆਂ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰਦਾ ਹੈ। ਲਾਈਟ ਮੋਡ ਇਨਕੋਗਨਿਟੋ ਟੈਬਾਂ \'ਤੇ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦਾ ਹੈ।"</string>
+<string name="data_reduction_promo_summary_lite_mode">"ਲਾਈਟ ਮੋਡ ਵਿੱਚ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਕੇ 60 ਫ਼ੀਸਦ ਤੱਕ ਘੱਟ ਡਾਟਾ ਵਰਤਦਾ ਹੈ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਦੇਖੇ ਜਾਂਦੇ ਪੰਨਿਆਂ ਨੂੰ ਸੁਯੋਗ ਬਣਾਉਣ ਲਈ, Banana Browser ਤੁਹਾਡੇ ਵੈੱਬ ਟਰੈਫ਼ਿਕ ਨੂੰ Google \'ਤੇ ਭੇਜਦਾ ਹੈ। &lt;link&gt;ਹੋਰ ਜਾਣੋ&lt;/link&gt;"</string>
+<string name="data_reduction_milestone_promo_text_mb">"Banana Browser ਨੇ ਤੁਹਾਡੀ %1$d MB ਦੀ ਬਚਤ ਕੀਤੀ ਹੈ"</string>
+<string name="data_reduction_milestone_promo_text_gb">"Banana Browser ਨੇ ਤੁਹਾਡੀ %1$d GB ਦੀ ਬਚਤ ਕੀਤੀ ਹੈ"</string>
+<string name="prefs_about_chrome">"Banana Browser ਬਾਰੇ"</string>
+<string name="deprecation_warning">"Banana Browser ਅੱਪਡੇਟਾਂ ਹੁਣ Android ਦੇ ਇਸ ਵਰਜਨ ਲਈ ਸਮਰਥਿਤ ਨਹੀਂ ਹਨ"</string>
+<string name="account_management_sign_out">"Banana Browser ਤੋਂ ਸਾਈਨ-ਆਉਟ ਕਰੋ"</string>
+<string name="chrome_additional_terms_of_service_title">"Banana Browser ਅਤੇ Banana Browser OS ਦੇ ਵਧੀਕ ਸੇਵਾ ਦੇ ਨਿਯਮ"</string>
+<string name="privacy_notice_title">"Banana Browser ਪਰਦੇਦਾਰੀ ਨੋਟਿਸ"</string>
+<string name="signout_managed_account_title">"ਕੀ ਇਸ ਡੀਵਾਈਸ ਤੋਂ ਤੁਹਾਡਾ Banana Browser ਡਾਟਾ ਕਲੀਅਰ ਕਰਨਾ ਹੈ?"</string>
+<string name="signout_message">"ਤੁਹਾਡੇ ਬੁੱਕਮਾਰਕਾਂ, ਇਤਿਹਾਸ, ਪਾਸਵਰਡਾਂ ਅਤੇ ਹੋਰ Banana Browser ਡਾਟੇ ਦਾ ਹੁਣ ਤੁਹਾਡੇ Google ਖਾਤੇ ਨਾਲ ਸਮਕਾਲੀਕਰਨ ਨਹੀਂ ਕੀਤਾ ਜਾਵੇਗਾ"</string>
+<string name="remove_local_data">"ਇਸ ਡੀਵਾਈਸ ਤੋਂ ਤੁਹਾਡਾ Banana Browser ਡਾਟਾ ਵੀ ਕਲੀਅਰ ਕਰੋ"</string>
+<string name="signout_managed_account_message">"ਕਿਉਂਕਿ ਤੁਸੀਂ %1$s ਵੱਲੋਂ ਪ੍ਰਬੰਧਿਤ ਕੀਤੇ ਖਾਤੇ ਤੋਂ ਸਾਈਨ-ਆਊਟ ਕਰ ਰਹੇ ਹੋ, ਤਾਂ ਇਸ ਡੀਵਾਈਸ ਤੋਂ ਤੁਹਾਡਾ Banana Browser ਡਾਟਾ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਪਰ ਇਹ ਤੁਹਾਡੇ Google ਖਾਤੇ ਵਿੱਚ ਬਰਕਰਾਰ ਰਹੇਗਾ।"</string>
+<string name="sign_in_managed_account_description">"ਤੁਸੀਂ %1$s ਵੱਲੋਂ ਪ੍ਰਬੰਧਿਤ ਕੀਤੇ ਖਾਤੇ ਨਾਲ ਸਾਈਨ-ਇਨ ਕਰ ਰਹੇ ਹੋ ਅਤੇ ਉਸਦੇ ਪ੍ਰਸ਼ਾਸਕ ਨੂੰ ਆਪਣੇ Banana Browser ਡਾਟੇ ਦਾ ਕੰਟਰੋਲ ਦੇ ਰਹੇ ਹੋ। ਤੁਹਾਡਾ ਡਾਟਾ ਸਥਾਈ ਤੌਰ \'ਤੇ ਇਸ ਖਾਤੇ ਨਾਲ ਜੋੜ ਦਿੱਤਾ ਜਾਵੇਗਾ। Banana Browser ਤੋਂ ਸਾਈਨ-ਆਊਟ ਹੋਣ ਨਾਲ ਤੁਹਾਡਾ ਡਾਟਾ ਇਸ ਡੀਵਾਈਸ ਤੋਂ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ, ਪਰ ਇਹ ਤੁਹਾਡੇ Google ਖਾਤੇ ਵਿੱਚ ਸਟੋਰ ਰਹੇਗਾ।"</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"ਤੁਹਾਡੇ ਹੋਰ ਡੀਵਾਈਸਾਂ \'ਤੇ Banana Browser ਵਿੱਚ ਤੁਹਾਡੇ ਵੱਲੋਂ ਖੋਲ੍ਹੀਆਂ ਗਈਆਂ ਟੈਬਾਂ ਇੱਥੇ ਦਿਖਾਈ ਦੇਣਗੀਆਂ।"</string>
+<string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser ਬਲੂਟੁੱਥ ਅਡਾਪਟਰ ਨੂੰ ਚਾਲੂ ਕਰਨ ਵਿੱਚ ਅਸਮਰੱਥ ਹੈ।"</string>
+<string name="bluetooth_need_location_permission">"ਡੀਵਾਈਸਾਂ ਲਈ ਸਕੈਨ ਕਰਨ ਲਈ Banana Browser ਨੂੰ ਟਿਕਾਣਾ ਪਹੁੰਚ ਦੀ ਲੋੜ ਹੈ। &lt;permission_link&gt;ਇਜਾਜ਼ਤਾਂ ਅੱਪਡੇਟ ਕਰੋ&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_services_on">"Banana Browser ਨੂੰ ਡੀਵਾਈਸਾਂ ਲਈ ਸਕੈਨ ਕਰਨ ਵਾਸਤੇ ਟਿਕਾਣਾ ਪਹੁੰਚ ਦੀ ਲੋੜ ਹੈ। ਟਿਕਾਣਾ ਪਹੁੰਚ &lt;services_link&gt;ਇਸ ਡੀਵਾਈਸ ਲਈ ਬੰਦ ਕੀਤੀ ਹੋਈ ਹੈ&lt;/services_link&gt;।"</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Banana Browser ਨੂੰ ਡੀਵਾਈਸਾਂ ਲਈ ਸਕੈਨ ਕਰਨ ਵਾਸਤੇ ਟਿਕਾਣਾ ਪਹੁੰਚ ਦੀ ਲੋੜ ਹੈ। &lt;permission_link&gt;ਇਜਾਜ਼ਤਾਂ ਅੱਪਡੇਟ ਕਰੋ&lt;/permission_link&gt;। ਟਿਕਾਣਾ ਪਹੁੰਚ ਵੀ &lt;services_link&gt;ਇਸ ਡੀਵਾਈਸ ਲਈ ਬੰਦ ਕੀਤੀ ਹੋਈ ਹੈ&lt;/services_link&gt;।"</string>
+<string name="hint_android_sync_disabled">"Android ਸੈਟਿੰਗਾਂ ਖੋਲ੍ਹੋ ਅਤੇ Banana Browser ਸਮਕਾਲੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਲਈ Android ਸਿਸਟਮ ਸਮਕਾਲੀਕਰਨ ਮੁੜ ਚਾਲੂ ਕਰੋ"</string>
+<string name="hint_sync_settings_not_confirmed_description">"ਸਮਕਾਲੀਕਰਨ ਸ਼ੁਰੂ ਕਰਨ ਲਈ, \"ਆਪਣੇ Banana Browser ਡਾਟੇ ਦਾ ਸਮਕਾਲੀਕਰਨ ਕਰੋ\" ਨੂੰ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="inline_update_infobar_ready_link_text">"Banana Browser ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
+<string name="inline_update_toast_downloading_message">"Banana Browser ਅੱਪਡੇਟ ਡਾਊਨਲੋਡ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"</string>
+<string name="update_notification_title_default">"Banana Browser ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ"</string>
+<string name="update_notification_text_body_default">"ਬਿਹਤਰੀਨ ਬ੍ਰਾਊਜ਼ਿੰਗ ਅਨੁਭਵ ਲਈ, Banana Browser ਨੂੰ ਅੱਪਡੇਟ ਕਰਨ ਵਾਸਤੇ ਖੋਲ੍ਹੋ"</string>
+<string name="update_notification_title_experimental_update_chrome">"Banana Browser ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"ਵੈੱਬ ਨੂੰ ਆਪਣੀ ਭਾਸ਼ਾ ਵਿੱਚ ਦੇਖਣ ਲਈ, Banana Browser ਦਾ ਨਵੀਨਤਮ ਵਰਜਨ ਪ੍ਰਾਪਤ ਕਰੋ"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Banana Browser ਦੇ ਨਵੀਨਤਮ ਵਰਜਨ ਵਿੱਚ ਆਪਣੀ ਭਾਸ਼ਾ ਪ੍ਰਾਪਤ ਕਰਨ ਲਈ ਅੱਪਡੇਟ ਕਰੋ"</string>
+<string name="missing_storage_permission_download_education_text">"ਫ਼ਾਈਲਾਂ ਡਾਉਨਲੋਡ ਕਰਨ ਲਈ Banana Browser ਨੂੰ ਸਟੋਰੋਜ ਤੱਕ ਪਹੁੰਚ ਦੀ ਲੋੜ ਹੁੰਦੀ ਹੈ।"</string>
+<string name="contextmenu_open_in_new_chrome_tab">"ਨਵੀਂ Banana Browser ਟੈਬ ਵਿੱਚ ਖੋਲ੍ਹੋ"</string>
+<string name="fre_activity_label">"Banana Browser ਪਹਿਲੀ ਵਾਰ ਚਲਾਉਣ ਦਾ ਅਨੁਭਵ"</string>
+<string name="fre_tos">"Banana Browser ਨੂੰ ਵਰਤ ਕੇ, ਤੁਸੀਂ &lt;LINK1&gt;Google ਦੇ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK1&gt; ਅਤੇ &lt;LINK2&gt;Google Banana Browser ਅਤੇ Banana Browser OS ਦੇ ਵਧੀਕ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK2&gt; ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ।"</string>
+<string name="fre_tos_and_privacy_child_account">"Banana Browser ਨੂੰ ਵਰਤ ਕੇ, ਤੁਸੀਂ &lt;LINK1&gt;Google ਦੇ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK1&gt; ਅਤੇ &lt;LINK2&gt;Google Banana Browser ਅਤੇ Banana Browser OS ਦੇ ਵਧੀਕ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK2&gt; ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ। &lt;LINK3&gt;Family Link ਨਾਲ ਪ੍ਰਤੀਬੰਧਿਤ ਕੀਤੇ ਜਾਂਦੇ Google ਖਾਤਿਆਂ ਲਈ ਪਰਦੇਦਾਰੀ ਨੋਟਿਸ&lt;/LINK3&gt; ਵੀ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।"</string>
+<string name="lightweight_fre_associated_app_tos">"%1$s ਨੂੰ Banana Browser ਵਿੱਚ ਖੋਲ੍ਹਿਆ ਜਾਵੇਗਾ। ਜਾਰੀ ਰੱਖ ਕੇ, ਤੁਸੀਂ &lt;LINK1&gt;Google ਦੇ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK1&gt; ਅਤੇ &lt;LINK2&gt;Google Banana Browser ਅਤੇ Banana Browser OS ਦੇ ਵਧੀਕ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK2&gt; ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ।"</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ਨੂੰ Banana Browser ਵਿੱਚ ਖੋਲ੍ਹਿਆ ਜਾਵੇਗਾ। ਜਾਰੀ ਰੱਖ ਕੇ, ਤੁਸੀਂ &lt;LINK1&gt;Google ਦੇ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK1&gt; ਅਤੇ &lt;LINK2&gt;Google Banana Browser ਅਤੇ Banana Browser OS ਦੇ ਵਧੀਕ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK2&gt; ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ। &lt;LINK3&gt;Family Link ਨਾਲ ਪ੍ਰਤੀਬੰਧਿਤ ਕੀਤੇ ਜਾਂਦੇ Google ਖਾਤਿਆਂ ਲਈ ਪਰਦੇਦਾਰੀ ਨੋਟਿਸ&lt;/LINK3&gt; ਵੀ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।"</string>
+<string name="fre_send_report_check">"Google ਨੂੰ ਵਰਤੋਂ ਅੰਕੜੇ ਅਤੇ ਕ੍ਰੈਸ਼ ਰਿਪੋਰਟਾਂ ਭੇਜ ਕੇ Banana Browser ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ।"</string>
+<string name="fre_welcome">"Banana Browser ਵਿੱਚ ਸੁਆਗਤ ਹੈ"</string>
+<string name="menu_update">"Banana Browser ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ"</string>
+<string name="menu_update_unsupported">"Banana Browser ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ"</string>
+<string name="menu_inline_update_ready_summary">"Banana Browser ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
+<string name="menu_open_in_chrome">"Banana Browser ਵਿੱਚ ਖੋਲ੍ਹੋ"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Banana Browser ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ। &lt;LINK&gt;ਸਰਵੇਖਣ ਪੂਰਾ ਕਰੋ&lt;/LINK&gt;"</string>
+<string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser ਅੱਪਡੇਟ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਦਾ। ਹੋਰ ਵਿਕਲਪ"</string>
+<string name="unsupported_number_of_windows">"Banana Browser ਦੇ ਕਈ ਅਸਮਰਥਿਤ ਵਰਜਨ"</string>
+<string name="storage_management_unimportant_site_data_description">"ਸਾਈਟ ਸਟੋਰੇਜ ਜੋ Banana Browser ਅਨੁਸਾਰ ਮਹੱਤਵਪੂਰਨ ਨਹੀਂ ਹੈ (ਜਿਵੇਂ ਕਿ ਉਹ ਸਾਈਟਾਂ ਜੋ ਸੈਟਿੰਗਾਂ ਰੱਖਿਅਤ ਨਹੀਂ ਕਰਦੀਆਂ ਜਾਂ ਉਹ ਸਾਈਟਾਂ ਜਿੰਨ੍ਹਾਂ \'ਤੇ ਤੁਸੀਂ ਅਕਸਰ ਨਹੀਂ ਜਾਂਦੇ ਹੋ)"</string>
+<string name="storage_management_clear_unimportant_dialog_text">"ਇਹ ਉਹਨਾਂ ਸਾਈਟਾਂ ਦੀਆਂ ਕੁਕੀਜ਼, ਕੈਸ਼ੇ, ਅਤੇ ਹੋਰ ਡਾਟੇ ਨੂੰ ਮਿਟਾ ਦੇਵੇਗਾ ਜੋ Banana Browser ਅਨੁਸਾਰ ਮਹੱਤਵਪੂਰਨ ਨਹੀਂ ਹਨ।"</string>
+<string name="storage_management_all_storage_description">"Banana Browser ਵੱਲੋਂ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਕੁੱਲ ਡਾਟਾ, ਜਿਸ ਵਿੱਚ ਖਾਤੇ, ਬੁੱਕਮਾਰਕ, ਅਤੇ ਰੱਖਿਅਤ ਕੀਤੀਆਂ ਸੈਟਿੰਗਾਂ ਸ਼ਾਮਲ ਹਨ"</string>
+<string name="storage_management_reset_app_dialog_text">"Banana Browser ਦਾ ਸਾਰਾ ਐਪ ਡਾਟਾ ਸਥਾਈ ਤੌਰ \'ਤੇ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਸ ਵਿੱਚ ਸਾਰੀਆਂ ਫ਼ਾਈਲਾਂ, ਸੈਟਿੰਗਾਂ, ਖਾਤੇ, ਡਾਟਾਬੇਸ ਆਦਿ ਸ਼ਾਮਲ ਹਨ।"</string>
+<string name="sogou_explanation">"Banana Browser ਚੀਨ ਵਿੱਚ ਖੋਜ ਲਈ &lt;b&gt;Sogou&lt;/b&gt; ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦਾ ਹੈ। ਤੁਸੀਂ ਇਸ ਨੂੰ &lt;link&gt;ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚੋਂ ਬਦਲ ਸਕਦੇ ਹੋ।"</string>
+<string name="app_running_in_chrome_disclosure">"ਇਹ ਐਪ Banana Browser ਵਿੱਚ ਚੱਲ ਰਹੀ ਹੈ"</string>
+<string name="twa_running_in_chrome">"Banana Browser ਵਿੱਚ ਦਿਖਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"</string>
+<string name="twa_clear_data_dialog_title">"%1$s ਦਾ ਡਾਟਾ ਵੀ Banana Browser ਵਿੱਚ ਹੈ"</string>
+<string name="twa_clear_data_dialog_message">"ਤੁਸੀਂ ਡਾਟੇ ਨੂੰ Banana Browser ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਲੀਅਰ ਕਰ ਸਕਦੇ ਹੋ"</string>
+<string name="keyboard_shortcut_help_center">"ਇੱਕ ਨਵੀਂ ਟੈਬ ਵਿੱਚ Banana Browser ਮਦਦ ਕੇਂਦਰ ਖੋਲ੍ਹੋ"</string>
+<string name="keyboard_shortcut_chrome_feature_group_header">"Google Banana Browser ਵਿਸ਼ੇਸ਼ਤਾ ਸ਼ਾਰਟਕੱਟ"</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Banana Browser ਹਾਲੇ ਵੀ VR ਲਈ ਤਿਆਰ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ। ਬਾਅਦ ਵਿੱਚ Banana Browser ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>
+<string name="vr_preparing_vr_notification_body">"Banana Browser ਨੂੰ ਮੁੜ-ਖੋਲ੍ਹੋ।"</string>
+<string name="module_install_start_text">"Banana Browser ਲਈ %1$s ਨੂੰ ਸਥਾਪਤ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ…"</string>
+<string name="module_install_failure_text">"Banana Browser ਲਈ %1$s ਨੂੰ ਸਥਾਪਤ ਨਹੀਂ ਕੀਤਾ ਜਾ ਸਕਿਆ"</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser ਹੁਣ ਫ਼ਾਈਲਾਂ ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਡਾਊਨਲੋਡ ਕਰਦਾ ਹੈ"</string>
+<string name="sharing_no_devices_available_text">"ਕਿਸੇ ਚੀਜ਼ ਨੂੰ ਆਪਣੇ ਫ਼ੋਨ ਤੋਂ ਕਿਸੇ ਹੋਰ ਡੀਵਾਈਸ \'ਤੇ ਸਾਂਝਾ ਕਰਨ ਲਈ, ਦੋਵੇਂ ਡੀਵਾਈਸਾਂ \'ਤੇ Banana Browser ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਸਮਕਾਲੀਕਰਨ ਚਾਲੂ ਕਰੋ"</string>
+<string name="sharing_chrome_settings">"Banana Browser ਸੈਟਿੰਗਾਂ \'ਤੇ ਜਾਓ"</string>
+<string name="sharing_hub_no_devices_available_text">"ਇਸ ਪੰਨੇ ਨੂੰ ਕਿਸੇ ਹੋਰ ਡੀਵਾਈਸ \'ਤੇ ਸਾਂਝਾ ਕਰਨ ਲਈ, ਹੋਰ ਡੀਵਾਈਸ \'ਤੇ Banana Browser ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਸਮਕਾਲੀਕਰਨ ਚਾਲੂ ਕਰੋ"</string>
+<string name="sharing_hub_sync_disabled_text">"ਇਸ ਪੰਨੇ ਨੂੰ ਕਿਸੇ ਹੋਰ ਡੀਵਾਈਸ \'ਤੇ ਸਾਂਝਾ ਕਰਨ ਲਈ, Banana Browser ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਸਮਕਾਲੀਕਰਨ ਚਾਲੂ ਕਰੋ"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"ਪੱਕਾ ਕਰੋ ਕਿ %1$s ਦੇ Banana Browser ਵਿੱਚ ਸਮਕਾਲੀਕਰਨ ਚਾਲੂ ਹੋਵੇ"</string>
+<string name="near_oom_intervention_message">"ਇਹ ਪੰਨਾ ਬਹੁਤ ਜ਼ਿਆਦਾ ਮੈਮੋਰੀ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ Banana Browser ਨੇ ਇਸਨੂੰ ਰੋਕ ਦਿੱਤਾ ਹੈ।"</string>
+<string name="near_oom_reduction_message">"ਇਹ ਪੰਨਾ ਬਹੁਤ ਜ਼ਿਆਦਾ ਮੈਮੋਰੀ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ, ਇਸ ਲਈ Banana Browser ਨੇ ਕੁਝ ਸਮੱਗਰੀ ਹਟਾ ਦਿੱਤੀ ਹੈ।"</string>
+<string name="prefs_autofill_assistant_title">"Banana Browser ਵਿੱਚ \'Google ਅਸਿਸਟੈਂਟ\'"</string>
+<string name="usage_stats_consent_title">"ਕੀ ਤੁਸੀਂ ਡਿਜੀਟਲ ਜੀਵਨਸ਼ੈਲੀ ਵਿੱਚ ਆਪਣੀ Banana Browser ਸਰਗਰਮੀ ਦਿਖਾਉਣੀ ਹੈ?"</string>
+<string name="usage_stats_consent_prompt">"ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਨੂੰ ਦੇਖ ਸਕਦੇ ਹੋ ਜਿਨ੍ਹਾਂ \'ਤੇ ਤੁਸੀਂ Banana Browser ਵਿੱਚ ਜਾਂਦੇ ਹੋ ਅਤੇ ਉਨ੍ਹਾਂ ਲਈ ਟਾਈਮਰ ਸੈੱਟ ਕਰ ਸਕਦੇ ਹੋ।\n\nGoogle ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ ਜਿਨ੍ਹਾਂ ਲਈ ਤੁਸੀਂ ਟਾਈਮਰ ਸੈੱਟ ਕੀਤਾ ਹੁੰਦਾ ਹੈ ਅਤੇ ਨਾਲ ਹੀ ਇਹ ਜਾਣਕਾਰੀ ਵੀ ਪ੍ਰਾਪਤ ਕਰਦਾ ਹੈ ਕਿ ਤੁਸੀਂ ਉਨ੍ਹਾਂ ਸਾਈਟਾਂ ਨੂੰ ਕਿੰਨੀ ਦੇਰ ਤੱਕ ਦੇਖਦੇ ਰਹੇ ਹੋ। ਇਹ ਜਾਣਕਾਰੀ ਡਿਜੀਟਲ ਜੀਵਨਸ਼ੈਲੀ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਲਈ ਵਰਤੀ ਜਾਂਦੀ ਹੈ।"</string>
+<string name="usage_stats_setting_title">"ਡਿਜੀਟਲ ਜੀਵਨਸ਼ੈਲੀ ਤੋਂ ਆਪਣੀ Banana Browser ਸਰਗਰਮੀ ਹਟਾਓ"</string>
+<string name="usage_stats_revocation_prompt">"ਕੀ ਡਿਜੀਟਲ ਜੀਵਨਸ਼ੈਲੀ ਤੋਂ ਆਪਣੀ Banana Browser ਸਰਗਰਮੀ ਹਟਾਉਣੀ ਹੈ?"</string>
+<string name="usage_stats_revocation_explanation">"Banana Browser ਵਿੱਚ ਉਹ ਸਾਈਟਾਂ ਨਹੀਂ ਦਿਸਣਗੀਆਂ, ਜਿਨ੍ਹਾਂ \'ਤੇ ਤੁਸੀਂ ਜਾਂਦੇ ਹੋ। ਸਾਰੇ ਸਾਈਟ ਟਾਈਮਰ ਮਿਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।"</string>
+<string name="autofill_assistant_module_title">"Banana Browser ਵਿੱਚ \'Google ਅਸਿਸਟੈਂਟ\'"</string>
+<string name="qr_code_open_settings_description">"ਕਿਸੇ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ, ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਬਦਲੋ ਤਾਂ ਜੋ Banana Browser ਤੁਹਾਡੇ ਕੈਮਰੇ ਨੂੰ ਵਰਤ ਸਕੇ"</string>
+<string name="infobar_missing_camera_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
+<string name="infobar_missing_microphone_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਅਤੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
+<string name="infobar_missing_location_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਨਾਲ ਤੁਹਾਡੀ ਟਿਕਾਣਾ ਜਾਣਕਾਰੀ ਸਾਂਝੀ ਕਰਨ ਵਾਸਤੇ ਤੁਹਾਡੇ ਟਿਕਾਣੇ \'ਤੇ ਪਹੁੰਚ ਕਰਨ ਦੀ ਲੋੜ ਹੈ।"</string>
+<string name="new_tab_otr_not_saved">"Banana Browser ਅੱਗੇ ਦਿੱਤੀ ਜਾਣਕਾਰੀ ਨੂੰ&lt;em&gt;ਰੱਖਿਅਤ ਨਹੀਂ ਕਰੇਗਾ&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;ਤੁਹਾਡਾ ਬ੍ਰਾਊਜ਼ਿੰਗ ਇਤਿਹਾਸ
+          &lt;li&gt;ਕੁਕੀਜ਼ ਅਤੇ ਸਾਈਟ ਡਾਟਾ
+          &lt;li&gt;ਫ਼ਾਰਮਾਂ ਵਿੱਚ ਦਾਖਲ ਕੀਤੀ ਜਾਣਕਾਰੀ
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ਕਾਰਡ ਅਤੇ ਪਤੇ Banana Browser ਅਤੇ ਤੁਹਾਡੇ Google ਖਾਤੇ (%1$s) ਤੋਂ ਹਨ। ਤੁਸੀਂ ਉਹਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ BEGIN_LINKਸੈਟਿੰਗਾਂEND_LINK ਵਿੱਚ ਕਰ ਸਕਦੇ ਹੋ।"</string>
+<string name="payments_card_and_address_settings_signed_out">"ਕਾਰਡ ਅਤੇ ਪਤੇ Banana Browser ਤੋਂ ਹਨ। ਤੁਸੀਂ ਉਹਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ BEGIN_LINKਸੈਟਿੰਗਾਂEND_LINK ਵਿੱਚ ਜਾ ਕੇ ਕਰ ਸਕਦੇ ਹੋ।"</string>
+</resources>

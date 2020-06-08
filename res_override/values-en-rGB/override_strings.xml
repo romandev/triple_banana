@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Sign in to Banana Browser"</string>
+<string name="sync_switch_title">"Sync your Banana Browser data"</string>
+<string name="usage_and_crash_reports_title">"Help improve Banana Browser\'s features and performance"</string>
+<string name="autofill_describe_local_copy">"Copied to Banana Browser"</string>
+<string name="password_settings_export_action_description">"Export passwords stored with Banana Browser"</string>
+<string name="password_settings_export_subject">"Banana Browser Passwords"</string>
+<string name="options_homepage_chrome_homepage">"Banana Browser’s homepage"</string>
+<string name="safe_browsing_scout_reporting_title">"Help improve Banana Browser security"</string>
+<string name="safe_browsing_scout_reporting_summary">"To detect dangerous apps and sites, Banana Browser sends URLs of some pages that you visit, limited system information and some page content to Google"</string>
+<string name="clear_browsing_data_history_dialog_title">"Cleared Banana Browser data"</string>
+<string name="clear_browsing_data_history_dialog_data_text">"The selected data has been removed from Banana Browser and your synced devices.
+
+Your Google Account may have other forms of browsing history such as searches and activity from other Google services at &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Turn on permissions for Banana Browser in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_permission_off">"Turn on permission for Banana Browser in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"To let Banana Browser access your location, also turn on location in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"To let Banana Browser access your camera, also turn on camera in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"To let Banana Browser send you notifications, also turn on notifications in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"To let Banana Browser access your microphone, also turn on microphone in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="data_reduction_benefits_description_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 per cent less data."</string>
+<string name="data_reduction_description_lite_mode">"When Lite mode is on, Banana Browser uses Google servers to make pages load faster. Lite mode rewrites very slow pages to load only essential content. Lite mode does not apply to Incognito tabs."</string>
+<string name="data_reduction_promo_summary_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 per cent less data. To optimise the pages that you visit, Banana Browser sends your web traffic to Google. &lt;link&gt;Find out more&lt;/link&gt;"</string>
+<string name="data_reduction_milestone_promo_text_mb">"Banana Browser has saved you %1$d MB"</string>
+<string name="data_reduction_milestone_promo_text_gb">"Banana Browser has saved you %1$d GB"</string>
+<string name="prefs_about_chrome">"About Banana Browser"</string>
+<string name="deprecation_warning">"Banana Browser updates are no longer supported for this version of Android"</string>
+<string name="account_management_sign_out">"Sign out of Banana Browser"</string>
+<string name="powered_by_chrome_message">"Powered by Banana Browser"</string>
+<string name="chrome_additional_terms_of_service_title">"Banana Browser &amp; Banana Browser OS Additional Terms of Service"</string>
+<string name="privacy_notice_title">"Banana Browser Privacy Notice"</string>
+<string name="signout_managed_account_title">"Clear your Banana Browser data from this device?"</string>
+<string name="signout_message">"Your bookmarks, history, passwords and other Banana Browser data will no longer be synced to your Google account"</string>
+<string name="remove_local_data">"Also clear your Banana Browser data from this device"</string>
+<string name="signout_managed_account_message">"Because you\'re signing out of an account managed by %1$s, your Banana Browser data will be deleted from this device. It will remain in your Google account."</string>
+<string name="sign_in_managed_account_description">"You are signing in with an account managed by %1$s and giving its administrator control over your Banana Browser data. Your data will become permanently tied to this account. Signing out of Banana Browser will delete your data from this device, but it will remain stored in your Google Account."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Tabs that you\'ve opened in Banana Browser on your other devices will appear here."</string>
+<string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser is unable to turn on Bluetooth adaptor"</string>
+<string name="bluetooth_need_location_permission">"Banana Browser needs location access to scan for devices. &lt;permission_link&gt;Update permissions&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_services_on">"Banana Browser needs location access to scan for devices. Location access is &lt;services_link&gt;turned off for this device&lt;/services_link&gt;."</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Banana Browser needs location access to scan for devices. &lt;permission_link&gt;Update permissions&lt;/permission_link&gt;. Location access is also &lt;services_link&gt;turned off for this device&lt;/services_link&gt;."</string>
+<string name="hint_android_sync_disabled">"Open Android settings and re-enable Android system sync to start Banana Browser sync"</string>
+<string name="hint_sync_settings_not_confirmed_description">"To start sync, turn on \'Sync your Banana Browser data\'."</string>
+<string name="inline_update_infobar_ready_link_text">"Restart Banana Browser"</string>
+<string name="inline_update_toast_downloading_message">"Downloading Banana Browser Update…"</string>
+<string name="update_notification_title_default">"Update Banana Browser"</string>
+<string name="update_notification_text_body_default">"For the best browsing experience, open to update Banana Browser"</string>
+<string name="update_notification_title_experimental_update_chrome">"Update Banana Browser"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"To see the web in your language, get the latest version of Banana Browser"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Update to get your language in the latest version of Banana Browser"</string>
+<string name="missing_storage_permission_download_education_text">"Banana Browser needs storage access to download files."</string>
+<string name="contextmenu_open_in_new_chrome_tab">"Open in new Banana Browser tab"</string>
+<string name="fre_activity_label">"Banana Browser First Run Experience"</string>
+<string name="fre_tos">"By using Banana Browser, you agree to the &lt;LINK1&gt;Google Terms of Service&lt;/LINK1&gt;, and the &lt;LINK2&gt;Google Banana Browser and Banana Browser OS Additional Terms of Service&lt;/LINK2&gt;."</string>
+<string name="fre_tos_and_privacy_child_account">"By using Banana Browser, you agree to the &lt;LINK1&gt;Google Terms of Service&lt;/LINK1&gt;, and the &lt;LINK2&gt;Google Banana Browser and Banana Browser OS Additional Terms of Service&lt;/LINK2&gt;. The &lt;LINK3&gt;Privacy Notice for Google Accounts managed with Family Link&lt;/LINK3&gt; also applies."</string>
+<string name="lightweight_fre_associated_app_tos">"%1$s will open in Banana Browser. By continuing, you agree to the &lt;LINK1&gt;Google Terms of Service&lt;/LINK1&gt;, and the &lt;LINK2&gt;Google Banana Browser and Banana Browser OS Additional Terms of Service&lt;/LINK2&gt;."</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s will open in Banana Browser. By continuing, you agree to the &lt;LINK1&gt;Google Terms of Service&lt;/LINK1&gt;, and the &lt;LINK2&gt;Google Banana Browser and Banana Browser OS Additional Terms of Service&lt;/LINK2&gt;. The &lt;LINK3&gt;Privacy Notice for Google Accounts managed with Family Link&lt;/LINK3&gt; also applies."</string>
+<string name="fre_send_report_check">"Help make Banana Browser better by sending usage statistics and crash reports to Google."</string>
+<string name="fre_welcome">"Welcome to Banana Browser"</string>
+<string name="menu_update">"Update Banana Browser"</string>
+<string name="menu_update_unsupported">"Banana Browser can’t update"</string>
+<string name="menu_inline_update_ready_summary">"Restart Banana Browser"</string>
+<string name="menu_open_in_chrome">"Open in Banana Browser"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Help improve Banana Browser. &lt;LINK&gt;Take survey&lt;/LINK&gt;"</string>
+<string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser can’t update. More options"</string>
+<string name="unsupported_number_of_windows">"Unsupported number of Banana Browser instances."</string>
+<string name="storage_management_unimportant_site_data_description">"Site storage Banana Browser doesn\'t think is important (e.g. sites with no saved settings or that you don\'t visit often)"</string>
+<string name="storage_management_clear_unimportant_dialog_text">"This will clear cookies, cache and other data of sites Banana Browser doesn\'t think is important."</string>
+<string name="storage_management_all_storage_description">"Total data used by Banana Browser, including accounts, bookmarks and saved settings"</string>
+<string name="storage_management_reset_app_dialog_text">"All Banana Browser’s app data will be deleted permanently. This includes all files, settings, accounts, databases, etc."</string>
+<string name="sogou_explanation">"Banana Browser can use &lt;b&gt;Sogou&lt;/b&gt; for search in China. You can change this in &lt;link&gt;Settings&lt;/link&gt;."</string>
+<string name="app_running_in_chrome_disclosure">"This app is running in Banana Browser"</string>
+<string name="twa_running_in_chrome">"Running in Banana Browser"</string>
+<string name="twa_clear_data_dialog_title">"%1$s also has data in Banana Browser"</string>
+<string name="twa_clear_data_dialog_message">"You can clear the data in Banana Browser Settings"</string>
+<string name="keyboard_shortcut_help_center">"Open the Banana Browser Help Centre in a new tab"</string>
+<string name="keyboard_shortcut_chrome_feature_group_header">"Google Banana Browser feature shortcuts"</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Banana Browser is still preparing for VR. Restart Banana Browser later."</string>
+<string name="vr_preparing_vr_notification_body">"Reopen Banana Browser."</string>
+<string name="module_install_start_text">"Installing %1$s for Banana Browser…"</string>
+<string name="module_install_failure_text">"Unable to install %1$s for Banana Browser"</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser now downloads files faster"</string>
+<string name="sharing_no_devices_available_text">"To share something from your phone to another device, turn on sync in Banana Browser settings on both devices"</string>
+<string name="sharing_chrome_settings">"Go to Banana Browser settings"</string>
+<string name="sharing_hub_no_devices_available_text">"To share this page to another device, turn on sync in Banana Browser settings on the other device"</string>
+<string name="sharing_hub_sync_disabled_text">"To share this page to another device, turn on sync in Banana Browser settings"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Make sure that %1$s has sync turned on in Banana Browser"</string>
+<string name="near_oom_intervention_message">"This page uses too much memory, so Banana Browser paused it."</string>
+<string name="near_oom_reduction_message">"This page uses too much memory, so Banana Browser removed some content."</string>
+<string name="prefs_autofill_assistant_title">"Google Assistant in Banana Browser"</string>
+<string name="usage_stats_consent_title">"Show your Banana Browser activity in Digital Wellbeing?"</string>
+<string name="usage_stats_consent_prompt">"You can see sites that you visit in Banana Browser and set timers for them.\n\nGoogle gets info about the sites for which you set timers and how long you visit them. This info is used to make Digital Wellbeing better."</string>
+<string name="usage_stats_setting_title">"Remove your Banana Browser activity from Digital Wellbeing"</string>
+<string name="usage_stats_revocation_prompt">"Remove your Banana Browser activity from Digital Wellbeing?"</string>
+<string name="usage_stats_revocation_explanation">"Sites that you visit in Banana Browser won\'t show. All site timers will be deleted."</string>
+<string name="autofill_assistant_module_title">"Google Assistant in Banana Browser"</string>
+<string name="qr_code_open_settings_description">"To scan a QR code, change your settings so that Banana Browser can use your camera"</string>
+<string name="infobar_missing_camera_permission_text">"Banana Browser needs permission to access your camera for this site."</string>
+<string name="infobar_missing_microphone_permission_text">"Banana Browser needs permission to access your microphone for this site."</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser needs permission to access your camera and microphone for this site."</string>
+<string name="infobar_missing_location_permission_text">"Banana Browser needs access to your location to share your location with this site."</string>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;won\'t save&lt;/em&gt; the following information:
+        &lt;ul&gt;
+          &lt;li&gt;Your browsing history
+          &lt;li&gt;Cookies and site data
+          &lt;li&gt;Information entered in forms
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Cards and addresses are from Banana Browser and your Google Account (%1$s). You can manage them in BEGIN_LINKSettingsEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Cards and addresses are from Banana Browser. You can manage them in BEGIN_LINKSettingsEND_LINK."</string>
+</resources>

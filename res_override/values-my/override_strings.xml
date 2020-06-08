@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Banana Browser သို့ လက်မှတ်ထိုး ဝင်"</string>
+<string name="sync_switch_title">"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ"</string>
+<string name="usage_and_crash_reports_title">"Banana Browser ၏ ဝန်ဆောင်မှုနှင့် စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်လာအောင် ကူညီရန်"</string>
+<string name="autofill_describe_local_copy">"Banana Browser သို့ ကူးယူပြီး၏"</string>
+<string name="password_settings_export_action_description">"Banana Browser တွင် သိမ်းဆည်ထားသည့် စကားဝှက်များကို ထုတ်ယူမည်"</string>
+<string name="password_settings_export_subject">"Banana Browser စကားဝှက်များ"</string>
+<string name="options_homepage_chrome_homepage">"Banana Browser ၏ ပင်မစာမျက်နှာ"</string>
+<string name="safe_browsing_scout_reporting_title">"Banana Browser လုံခြုံရေးကောင်းမွန်လာအောင် ကူညီပါ"</string>
+<string name="safe_browsing_scout_reporting_summary">"အန္တရာယ်ရှိသော အက်ပ်နှင့် ဝဘ်ဆိုက်များကို သိရှိရန် Banana Browser က သင်ဝင်ကြည့်ထားသော စာမျက်နှာအချို့၏ URL များ၊ ကန့်သတ်ထားသော စနစ် အချက်အလက်များနှင့် စာမျက်နှာ အကြောင်းအရာအချို့ကို Google သို့ ပို့ပါသည်"</string>
+<string name="clear_browsing_data_history_dialog_title">"Banana Browser ဒေတာကို ရှင်းလင်းလိုက်ပါပြီ"</string>
+<string name="clear_browsing_data_history_dialog_data_text">"ရွေးချယ်ထားသည့် ဒေတာများကို စင့်ခ်လုပ်ထားသည့် စက်ပစ္စည်းများနှင့် Banana Browser မှဖယ်ရှားလိုက်ပါပြီ။
+
+သင့် Google အကောင့်တွင် &lt;link&gt;myactivity.google.com&lt;/link&gt; ၌ ရှာဖွေမှုများနှင့် အခြား Google ဝန်ဆောင်မှုများမှ လုပ်ဆောင်ချက်များကဲ့သို့ အင်တာနက်အသုံးပြုမှု မှတ်တမ်း အခြားပုံစံများ ရှိနိုင်ပါသည်။"</string>
+<string name="android_permission_off_plural">"Banana Browser အတွက် ခွင့်ပြုချက်များကို &lt;link&gt;Android ချိန်ညှိချက်များ&lt;/link&gt; တွင် ဖွင့်ပါ။"</string>
+<string name="android_permission_off">"Banana Browser အတွက် ခွင့်ပြုချက်ကို &lt;link&gt;Android ချိန်ညှိချက်များ&lt;/link&gt; တွင် ဖွင့်ပါ။"</string>
+<string name="android_location_permission_off">"Banana Browser က သင့်တည်နေရာကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် တည်နေရာကိုလည်း ဖွင့်ပါ။"</string>
+<string name="android_camera_permission_off">"Banana Browser က သင့်ကင်မရာကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် ကင်မရာကိုလည်း ဖွင့်ပါ။"</string>
+<string name="android_notifications_permission_off">"Banana Browser က အကြောင်းကြားချက်များ ပေးပို့နိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် အကြောင်းကြားချက်များကိုလည်း ဖွင့်ပါ။"</string>
+<string name="android_microphone_permission_off">"Banana Browser က သင့်မိုက်ခရိုဖုန်းကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် မိုက်ခရိုဖုန်းကိုလည်း ဖွင့်ပါ။"</string>
+<string name="data_reduction_benefits_description_lite_mode">"\'အပေါ့စားမုဒ်\' တွင် Banana Browser သည် စာမျက်နှာများကို ပိုမိုမြန်ဆန်စွာဖွင့်ပြီး ဒေတာကို ၆၀ ရာခိုင်နှုန်းအထိ လျှော့သုံးပါသည်။"</string>
+<string name="data_reduction_description_lite_mode">"\'အပေါ့စားမုဒ်\' ဖွင့်ထားသည့်အခါ စာမျက်နှာများ ပိုမိုမြန်ဆန်စွာ ဖွင့်နိုင်ရန် Banana Browser က Google ဆာဗာများကို အသုံးပြုသည်။ အရေးကြီး အကြောင်းအရာများကိုသာ ဖွင့်ရန် \'အပေါ့စားမုဒ်\' က အလွန်နှေးသော ဝဘ်စာမျက်နှာများကို ပြန်ရေးသည်။ \'အပေါ့စားမုဒ်\' ကို \'ရုပ်ဖျက်\' တဘ်များတွင် သုံး၍မရပါ။"</string>
+<string name="data_reduction_promo_summary_lite_mode">"\'အပေါ့စားမုဒ်\' တွင် Banana Browser သည် စာမျက်နှာများကို ပိုမိုမြန်ဆန်စွာဖွင့်ပြီး ဒေတာကို ၆၀ ရာခိုင်နှုန်းအထိ လျှော့သုံးပါသည်။ သင်ဝင်ကြည့်သည့် စာမျက်နှာများကို အကောင်းဆုံးချိန်ညှိရန် Banana Browser သည် သင့်ဝဘ် ဒေတာအသွားအလာများကို Google သို့ ပို့ပါသည်။ &lt;link&gt;ပိုမိုလေ့လာရန်&lt;/link&gt;"</string>
+<string name="data_reduction_milestone_promo_text_mb">"Banana Browser သည် သင့်အတွက် %1$d မီဂါဘိုက် ချွေတာပေးထားပါသည်"</string>
+<string name="data_reduction_milestone_promo_text_gb">"Banana Browser သည် သင့်အတွက် %1$d ဂစ်ဂါဘိုက် ချွေတာပေးထားပါသည်"</string>
+<string name="prefs_about_chrome">"Banana Browser အကြောင်း"</string>
+<string name="deprecation_warning">"Banana Browser အပ်ဒိတ်များကို ဤ Android ဗားရှင်းတွင် ပံ့ပိုးထားခြင်း မရှိတော့ပါ"</string>
+<string name="account_management_sign_out">"Banana Browser ထဲမှ ထွက်သွားရန်"</string>
+<string name="powered_by_chrome_message">"Banana Browser မှ စွမ်းအင်ထုတ်ပေးပါသည်"</string>
+<string name="chrome_additional_terms_of_service_title">"Banana Browser နှင့် Banana Browser OS ထပ်တိုး ဝန်ဆောင်မှု စည်းမျဉ်းများ"</string>
+<string name="privacy_notice_title">"Banana Browser ကိုယ်ပိုင်လွတ်လပ်ခွင့် သတိပေးချက်"</string>
+<string name="signout_managed_account_title">"ဤစက်မှ သင်၏ Banana Browser ဒေတာများကို ဖျက်လိုပါသလား။"</string>
+<string name="signout_message">"သင်၏ လိပ်စာများ၊ မှတ်တမ်း၊ စကားဝှက်များနှင့် အခြားသော Banana Browser ဒေတာများကို သင့် Google အကောင့်သို့ စင့်ခ်လုပ်မည် မဟုတ်တော့ပါ။"</string>
+<string name="remove_local_data">"ဤကိရိယာမှ သင်၏ Banana Browser ဒေတာများကိုလည်း ရှင်းလင်းရန်"</string>
+<string name="signout_managed_account_message">"သင်သည် %1$s က စီမံခန့်ခွဲသည့် အကောင့်မှနေ၍ ထွက်နေသောကြောင့် သင်၏ Banana Browser ဒေတာများကို ဤစက်မှနေ၍ ဖျက်လိုက်ပါမည်။ ၎င်းသည် သင့် Google အကောင့်တွင် ရှိနေပါဦးမည်။"</string>
+<string name="sign_in_managed_account_description">"%1$s က စီမံခန့်ခွဲထားသည့် အကောင့်ဖြင့် သင်လက်မှတ်ထိုးဝင်ထားခြင်းဖြစ်ပြီး ၎င်း၏စီမံခန့်ခွဲသူကို သင့် Banana Browser ဒေတာများအား ထိန်းချုပ်ခွင့်ပေးထားပါသည်။ သင့်ဒေတာများသည် ဤအကောင့်နှင့် အပြီးအပိုင်ချိတ်ဆက်ထားပါသည်။ Banana Browser မှ ထွက်လိုက်ခြင်းဖြင့် ဤစက်ပစ္စည်းမှ ဒေတာများကို ဖျက်လိုက်မည်ဖြစ်သော်လည်း သင့် Google အကောင့်တွင် သိမ်းဆည်းထားဦးမည်ဖြစ်သည်။"</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"အခြားစက်ပစ္စည်းများပေါ်ရှိ Banana Browser တွင်ဖွင့်ထားသော တဘ်များသည် ဤနေရာတွင် ပေါ်လာပါမည်။"</string>
+<string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser က ဘလူးတုသ် ကြားခံကိရိယာကို ဖွင့်မပေးနိုင်ပါ"</string>
+<string name="bluetooth_need_location_permission">"Banana Browser သည် ကိရိယာများ စကင်လုပ်ရန် တည်နေရာကို အသုံးပြုရန် လိုအပ်ပါသည်။ &lt;permission_link&gt;အပ်ဒိတ် ခွင့်ပြုချက်များ&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_services_on">"Banana Browser သည် စက်ပစ္စည်းများကိုရှာဖွေရန်အတွက် တည်နေရာအားအသုံးပြုခွင့်ရှိရန် လိုအပ်ပါသည်။ တည်နေရာအသုံးပြုခွင့်ကို &lt;services_link&gt;ဤစက်ပစ္စည်းအတွက် ပိတ်ထားပါသည်&lt;/services_link&gt;။"</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Banana Browser သည် စက်ပစ္စည်းများကို ရှာဖွေနိုင်ရန်အတွက် တည်နေရာအားအသုံးပြုခွင့်ရှိရန် လိုအပ်ပါသည်။ &lt;permission_link&gt;ခွင့်ပြုချက်များကို အပ်ဒိတ်လုပ်ပါ&lt;/permission_link&gt;။ တည်နေရာအသုံးပြုခွင့်ကို &lt;services_link&gt;ဤစက်ပစ္စည်းအတွက်လည်း ပိတ်ထားပါသည်&lt;/services_link&gt;။"</string>
+<string name="hint_android_sync_disabled">"Banana Browser စင့်ခ်ပြုလုပ်ခြင်းကို စတင်ရန် Android ဆက်တင်ကို ဖွင့်ပြီး Android စနစ်စင့်ခ်ပြုလုပ်ခြင်းကို ပြန်ဖွင့်ပါ"</string>
+<string name="hint_sync_settings_not_confirmed_description">"စင့်ခ် စတင်ရန်အတွက် \"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ\" ကို ဖွင့်ပါ။"</string>
+<string name="inline_update_infobar_ready_link_text">"Banana Browser ကို ပိတ်ပြီးပြန်ဖွင့်ပါ"</string>
+<string name="inline_update_toast_downloading_message">"Banana Browser အပ်ဒိတ် ဒေါင်းလုဒ်လုပ်နေသည်…"</string>
+<string name="update_notification_title_default">"Update Banana Browser"</string>
+<string name="update_notification_text_body_default">"အကောင်းဆုံး အင်တာနက် ကြည့်ရှုမှုအတွက် Banana Browser ကိုအပ်ဒိတ်လုပ်ရန် ဖွင့်ပါ"</string>
+<string name="update_notification_title_experimental_update_chrome">"Update Banana Browser"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"ဝဘ်ကို သင့်ဘာသာစကားနှင့် ကြည့်ရန် Banana Browser နောက်ဆုံးဗားရှင်းကို ရယူပါ"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Banana Browser နောက်ဆုံးဗားရှင်းတွင် သင့်ဘာသာစကားကို ရယူရန် အပ်ဒိတ်လုပ်ပါ"</string>
+<string name="missing_storage_permission_download_education_text">"Banana Browser သည် ဖိုင်များကို ဒေါင်းလုဒ် လုပ်ရန် သိုလှောင်ခန်းကို သုံးရန် လိုအပ်သည်။"</string>
+<string name="contextmenu_open_in_new_chrome_tab">"Banana Browser တဘ်အသစ်တွင် ဖွင့်ပါ"</string>
+<string name="fre_activity_label">"Banana Browser ကို ပထမဆုံး ဖွင့်ခြင်း အတွေ့အကြုံ"</string>
+<string name="fre_tos">"Banana Browser ကို အသုံးပြုခြင်းဖြင့် သင်သည် &lt;LINK1&gt;Google ဝန်ဆောင်မှုဆိုင်ရာ စည်းမျဉ်းများ&lt;/LINK1&gt; နှင့် &lt;LINK2&gt;Google Banana Browser နှင့် Banana Browser OS ထပ်တိုးဝန်ဆောင်မှု စည်းမျဉ်းများ&lt;/LINK2&gt; ကို သဘောတူရာရောက်သည်။"</string>
+<string name="fre_tos_and_privacy_child_account">"Banana Browser ကို အသုံးပြုခြင်းဖြင့် သင်သည် &lt;LINK1&gt;Google ဝန်ဆောင်မှုဆိုင်ရာ စည်းမျဉ်းများ&lt;/LINK1&gt; နှင့် &lt;LINK2&gt;Google Banana Browser နှင့် Banana Browser OS ထပ်တိုးဝန်ဆောင်မှု စည်းမျဉ်းများ&lt;/LINK2&gt; ကို သဘောတူရာရောက်သည်။ &lt;LINK3&gt;Family Link ဖြင့် ကြီးကြပ်ထားသည့် Google Account များအတွက် ပုဂ္ဂိုလ်ရေးဆိုင်ရာ ကြေညာချက်&lt;/LINK3&gt; လည်း အကျုံးဝင်သည်။"</string>
+<string name="lightweight_fre_associated_app_tos">"%1$s ကို Banana Browser တွင် ဖွင့်ပါမည်။ ရှေ့ဆက်ခြင်းအားဖြင့် သင်သည် &lt;LINK1&gt;Google ဝန်ဆောင်မှုစည်းမျဉ်းများ&lt;/LINK1&gt; နှင့် &lt;LINK2&gt;Google Banana Browser နှင့် Banana Browser OS ထပ်တိုး ဝန်ဆောင်မှုစည်းမျဉ်းများ&lt;/LINK2&gt; ကို သဘောတူရာရောက်သည်။"</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ကို Banana Browser တွင် ဖွင့်ပါမည်။ ရှေ့ဆက်ခြင်းအားဖြင့် သင်သည် &lt;LINK1&gt;Google ဝန်ဆောင်မှုစည်းမျဉ်းများ&lt;/LINK1&gt; နှင့် &lt;LINK2&gt;Google Banana Browser နှင့် Banana Browser OS ထပ်တိုး ဝန်ဆောင်မှုစည်းမျဉ်းများ&lt;/LINK2&gt; ကို သဘောတူရာရောက်သည်။ &lt;LINK3&gt;Family Link ဖြင့် ကြီးကြပ်ထားသည့် Google Account များအတွက် ပုဂ္ဂိုလ်ရေးဆိုင်ရာ ကြေညာချက်&lt;/LINK3&gt; လည်း အကျုံးဝင်သည်။"</string>
+<string name="fre_send_report_check">"အသုံးပြုမှု စာရင်းအင်းများ နှင့် ပျက်စီးမှု အစီရင်ခံစာများကို Google သို့ အလိုအလျောက် ပို့ပေးခြင်းဖြင့် Banana Browser ကို ပိုကောင်းမွန်အောင် ကူညီပေးပါ။"</string>
+<string name="fre_welcome">"Banana Browser မှ ကြိုဆိုပါသည်"</string>
+<string name="menu_update">"Update Banana Browser"</string>
+<string name="menu_update_unsupported">"Banana Browser အပ်ဒိတ်လုပ်၍မရပါ"</string>
+<string name="menu_inline_update_ready_summary">"Banana Browser ကို ပိတ်ပြီးပြန်ဖွင့်ပါ"</string>
+<string name="menu_open_in_chrome">"Banana Browser ထဲတွင် ဖွင့်မည်"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Banana Browser ပိုမိုကောင်းမွန်လာစေရန် ကူညီပါ။ &lt;LINK&gt;စစ်တမ်းဖြေဆိုပါ&lt;/LINK&gt;"</string>
+<string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser ကို အပ်ဒိတ်လုပ်၍မရပါ။ နောက်ထပ်ရွေးချယ်စရာများ"</string>
+<string name="unsupported_number_of_windows">"Banana Browser ဖြစ်စဉ်များ၏ အရေအတွက်ကို ပံ့ပိုးမပေးပါ။"</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browser က အရေးကြီးသည်ဟု မယူဆသည့် ဆိုက်သိုလှောင်ခန်း (ဥပမာ၊ သိမ်းဆည်းထားသည့် ဆက်တင်များမရှိသော သို့မဟုတ် သင်သိပ်မကြည့်ဖြစ်သော ဆိုက်များ)"</string>
+<string name="storage_management_clear_unimportant_dialog_text">"၎င်းသည် Banana Browser က အရေးကြီးသည်ဟု မယူဆသည့် ကွတ်ကီးများ၊ ယာယီမှတ်ဉာဏ်များနှင့် ဆိုက်များ၏ အခြားဒေတာများကို ရှင်းလင်းလိုက်ပါမည်။"</string>
+<string name="storage_management_all_storage_description">"အကောင့်များ၊ ဝဘ်လိပ်စာများနှင့် သိမ်းဆည်းထားသည့် ဆက်တင်များအပါအဝင် Banana Browser မှ သိမ်းဆည်းထားသည့် စုစုပေါင်းဒေတာများ ပါဝင်ပါသည်"</string>
+<string name="storage_management_reset_app_dialog_text">"Banana Browser ၏ အက်ပ်ဒေတာများကို အပြီးအပိုင် ဖျက်လိုက်ပါမည်။ ၎င်းတို့တွင် ဖိုင်၊ ဆက်တင်၊ အကောင့်၊ ဒေတာဘေ့စ်၊ စသည်တို့အားလုံး ပါဝင်သည်။"</string>
+<string name="sogou_explanation">"Banana Browser သည် တရုတ်ပြည်တွင် ရှာဖွေရန် &lt;b&gt;Sogou&lt;/b&gt; ကို အသုံးပြုနိုင်ပါသည်။ ၎င်းကို &lt;link&gt;ဆက်တင်များ&lt;/link&gt; ထဲတွင် ပြောင်းလဲနိုင်သည်။"</string>
+<string name="app_running_in_chrome_disclosure">"ဤအက်ပ်သည် Banana Browser တွင် ပွင့်နေပါသည်"</string>
+<string name="twa_running_in_chrome">"Banana Browser တွင် ဖွင့်ထားသည်"</string>
+<string name="twa_clear_data_dialog_title">"%1$s သည် Banana Browser တွင်လည်း ဒေတာများရှိသည်"</string>
+<string name="twa_clear_data_dialog_message">"ဒေတာများကို \'Banana Browser ဆက်တင်များ\' တွင် ရှင်းထုတ်နိုင်သည်"</string>
+<string name="keyboard_shortcut_help_center">"Banana Browser ကူညီရေးရာဌာနကို တဘ်အသစ်တွင် ဖွင့်ရန်"</string>
+<string name="keyboard_shortcut_chrome_feature_group_header">"Google Banana Browser ဝန်ဆောင်မှု ဖြတ်လမ်းလင့်ခ်များ"</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Banana Browser သည် VR အတွက် ပြင်ဆင်နေဆဲဖြစ်သည်။ နောက်မှ Banana Browser ကို ပြန်စတင်ပါ။"</string>
+<string name="vr_preparing_vr_notification_body">"Banana Browser ပြန်ဖွင့်ပါ။"</string>
+<string name="module_install_start_text">"%1$s ကို Banana Browser အတွက် စနစ်ထည့်သွင်းနေသည်…"</string>
+<string name="module_install_failure_text">"Banana Browser အတွက် %1$s ကို စနစ်ထည့်သွင်း၍ မရပါ"</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"ယခုအခါ Banana Browser သည် ဖိုင်များကို ပိုမိုလျင်မြန်စွာ ဒေါင်းလုဒ်လုပ်ပါသည်"</string>
+<string name="sharing_no_devices_available_text">"သင့်ဖုန်းမှ အခြားစက်သို့ တစ်စုံတစ်ခုမျှဝေရန် စက်နှစ်ခုလုံးရှိ Banana Browser ဆက်တင်များထဲတွင် စင့်ခ်လုပ်ခြင်းကို ဖွင့်ထားရပါမည်။"</string>
+<string name="sharing_chrome_settings">"Banana Browser ဆက်တင်များသို့ သွားရန်"</string>
+<string name="sharing_hub_no_devices_available_text">"ဤစာမျက်နှာကို နောက်စက်တစ်လုံးသို့ မျှဝေရန် အခြားစက်၏ Banana Browser ဆက်တင်များထဲတွင် စင့်ခ်လုပ်ခြင်းကို ဖွင့်ပါ"</string>
+<string name="sharing_hub_sync_disabled_text">"ဤစာမျက်နှာကို နောက်စက်တစ်လုံးသို့ မျှဝေရန် Banana Browser ဆက်တင်များထဲတွင် စင့်ခ်လုပ်ခြင်းကို ဖွင့်ပါ"</string>
+<string name="browser_sharing_error_dialog_text_device_not_found">"Banana Browser တွင် %1$s က စင့်ခ်ဖွင့်ထားခြင်း ရှိမရှိ စစ်ဆေးပါ"</string>
+<string name="near_oom_intervention_message">"ဤစာမျက်နှာက မှတ်ဉာဏ်အများအပြား အသုံးပြုနေသောကြောင့် Banana Browser က ၎င်းကို ခေတ္တရပ်ထားပါသည်။"</string>
+<string name="near_oom_reduction_message">"ဤစာမျက်နှာသည် မှတ်ဉာဏ်များစွာ အသုံးပြုနေသည့်အတွက် Banana Browser သည် အကြောင်းအရာအချို့ကို ဖယ်ရှားထားသည်။"</string>
+<string name="prefs_autofill_assistant_title">"Banana Browser အတွင်းရှိ Google Assistant"</string>
+<string name="usage_stats_consent_title">"\'ဒစ်ဂျစ်တယ် အာရောဂျံ\' အတွင်း သင်၏ Banana Browser လုပ်ဆောင်ချက်ကို ပြစေလိုပါသလား။"</string>
+<string name="usage_stats_consent_prompt">"Banana Browser တွင် သင်ဖွင့်ကြည့်ထားသည့် ဝဘ်ဆိုက်များကို သင်မြင်ရမည်ဖြစ်ပြီး ၎င်းတို့အတွက် တိုင်မာများ သတ်မှတ်နိုင်ပါမည်။\n\nသင်တိုင်မာပေးထားသည့် ဝဘ်ဆိုက်များအကြောင်းနှင့် ၎င်းတို့ကို မည်မျှကြာကြာသင်ဖွင့်ကြည့်ကြောင်း အချက်အလက်များကို Google က ရယူပါသည်။ \'ဒစ်ဂျစ်တယ် အာရောဂျံ\' ပိုမိုကောင်းမွန်လာစေရန်အတွက် ဤအချက်အလက်များကို အသုံးပြုပါသည်။"</string>
+<string name="usage_stats_setting_title">"\'ဒစ်ဂျစ်တယ် အာရောဂျံ\' မှနေ၍ သင်၏ Banana Browser လုပ်ဆောင်ချက်ကို ဖယ်ရှားခြင်း"</string>
+<string name="usage_stats_revocation_prompt">"\'ဒစ်ဂျစ်တယ် အာရောဂျံ\' မှနေ၍ သင်၏ Banana Browser လုပ်ဆောင်ချက်ကို ‌ဖယ်ရှားလိုပါသလား။"</string>
+<string name="usage_stats_revocation_explanation">"Banana Browser တွင် သင်ဖွင့်ကြည့်ထားသည့် ဝဘ်ဆိုက်များကို ပြသမည် မဟုတ်ပါ။ ဝဘ်ဆိုက်တိုင်မာများအားလုံးကို ဖျက်လိုက်ပါမည်။"</string>
+<string name="autofill_assistant_module_title">"Banana Browser အတွင်းရှိ Google Assistant"</string>
+<string name="qr_code_open_settings_description">"QR ကုဒ်စကင်ဖတ်ရန် သင့်ဆက်တင်များ ပြောင်းပါ၊ သို့မှသာ Banana Browser က သင့်ကင်မရာကို အသုံးပြုနိုင်သည်"</string>
+<string name="infobar_missing_camera_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် ကင်မရာအသုံးပြုခွင့် လိုအပ်ပါသည်။"</string>
+<string name="infobar_missing_microphone_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် သင်၏ မိုက်ခရိုဖုန်းကို အသုံးပြုခွင့်ရရန် လိုအပ်ပါသည်။"</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် သင်၏ ကင်မရာနှင့် မိုက်ခရိုဖုန်းကို အသုံးပြုခွင့်ရရန် လိုအပ်ပါသည်။"</string>
+<string name="infobar_missing_location_permission_text">"ဤဝဘ်ဆိုက်နှင့် သင်၏တည်နေရာကို မျှဝေရန် Banana Browser သည် သင့်တည်နေရာကို အသုံးပြုခွင့် လိုအပ်သည်။"</string>
+<string name="autofill_card_unmask_prompt_storage_tooltip">"အမှန်ခြစ်ထားပါက၊ ပုံစံဖြည့်မှု မြန်လာစေရန် Banana Browser သည် သင့်ကဒ်၏ မိတ္ထူကို ဤကိရိယာထဲတွင် သိမ်းထားပါမည်။"</string>
+<string name="new_tab_otr_not_saved">"Banana Browser သည် အောက်ပါ အချက်အလက်များကို &lt;em&gt;သိမ်းမည်မဟုတ်ပါ&lt;/em&gt;−
+        &lt;ul&gt;
+          &lt;li&gt;သင်၏ ကြည့်ရှုခြင်းမှတ်တမ်း
+          &lt;li&gt;ကွတ်ကီးနှင့် ဝဘ်ဆိုက်ဒေတာများ
+          &lt;li&gt;ဖောင်များတွင် ထည့်သွင်းထားသည့် အချက်အလက်များ
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ကဒ်နှင့် လိပ်စာများသည် Banana Browser နှင့် သင်၏ Google အကောင့် (%1$s) မှဖြစ်သည်။ ၎င်းတို့ကို BEGIN_LINKဆက်တင်များEND_LINK တွင် စီမံခန့်ခွဲနိုင်သည်။"</string>
+<string name="payments_card_and_address_settings_signed_out">"ကဒ်နှင့် လိပ်စာများသည် Banana Browser မှ ဖြစ်သည်။ ၎င်းတို့ကို BEGIN_LINKဆက်တင်များEND_LINK ထဲတွင် စီမံခန့်ခွဲနိုင်သည်။"</string>
+</resources>

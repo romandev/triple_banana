@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="sign_in_to_chrome">"Prijava v Banana Browser"</string>
+<string name="autofill_describe_local_copy">"Kopirano v Banana Browser"</string>
+<string name="password_settings_export_subject">"Gesla za Banana Browser"</string>
+<string name="safe_browsing_scout_reporting_summary">"Zaradi zaznavanja nevarnih aplikacij in spletnih mest Banana Browser Googlu pošlje URL-je nekaterih strani, ki jih obiščete, omejene podatke o sistemu in vsebino nekaterih strani"</string>
+<string name="android_permission_off_plural">"V &lt;link&gt;nastavitvah za Android&lt;/link&gt; vklopite dovoljenja za Banana Browser."</string>
+<string name="android_permission_off">"V &lt;link&gt;nastavitvah za Android&lt;/link&gt; vklopite dovoljenje za Banana Browser."</string>
+<string name="android_notifications_permission_off">"Če želite, da vam Banana Browser pošilja obvestila, obvestila vklopite tudi v &lt;link&gt;nastavitvah za Android&lt;/link&gt;."</string>
+<string name="data_reduction_benefits_description_lite_mode">"Banana Browser v lahkem načinu naloži strani hitreje in uporabi do 60 odstotkov manj podatkov."</string>
+<string name="data_reduction_description_lite_mode">"Če je vklopljen lahki način, Banana Browser uporabi Googlove strežnike za hitrejše nalaganje strani. Lahki način znova zapiše zelo počasne strani in naloži samo bistveno vsebino. Lahki način se ne uporablja v zavihkih brez beleženja zgodovine."</string>
+<string name="data_reduction_promo_summary_lite_mode">"Banana Browser v lahkem načinu naloži strani hitreje in uporabi do 60 odstotkov manj podatkov. Banana Browser zaradi optimiziranja strani, ki jih obiščete, Googlu pošlje vaš spletni promet. &lt;link&gt;Več o tem&lt;/link&gt;"</string>
+<string name="prefs_about_chrome">"O brskalniku Banana Browser"</string>
+<string name="deprecation_warning">"Posodobitve za Banana Browser v tej različici Androida niso več podprte."</string>
+<string name="powered_by_chrome_message">"Uporablja tehnologijo Banana Browser"</string>
+<string name="chrome_additional_terms_of_service_title">"Dodatni pogoji za Google Banana Browser in Banana Browser OS"</string>
+<string name="privacy_notice_title">"Obvestilo o zasebnosti za Banana Browser"</string>
+<string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser ne more vklopiti vmesnika za Bluetooth"</string>
+<string name="bluetooth_need_location_permission">"Banana Browser za iskanje naprav potrebuje dostop do lokacije. &lt;permission_link&gt;Posodobite dovoljenja&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_services_on">"Banana Browser za iskanje naprav potrebuje dostop do lokacije. Dostop do lokacije &lt;services_link&gt;je izklopljen za to napravo&lt;/services_link&gt;."</string>
+<string name="bluetooth_need_location_permission_and_services_on">"Banana Browser za iskanje naprav potrebuje dostop do lokacije. &lt;permission_link&gt;Posodobite dovoljenja&lt;/permission_link&gt;. Dostop do lokacije je prav tako &lt;services_link&gt;izklopljen za to napravo&lt;/services_link&gt;."</string>
+<string name="hint_android_sync_disabled">"Odprite nast. za Android in znova omog. sinh. v Androidu za zač. sinh. za Banana Browser"</string>
+<string name="inline_update_infobar_ready_link_text">"Znova zaženite Banana Browser"</string>
+<string name="inline_update_toast_downloading_message">"Prenašanje posodobitve za Banana Browser …"</string>
+<string name="update_notification_title_default">"Posodobi Banana Browser"</string>
+<string name="update_notification_text_body_default">"Za najboljšo izkušnjo pri brskanju odprite Banana Browser, da ga posodobite"</string>
+<string name="update_notification_title_experimental_update_chrome">"Posodobi Banana Browser"</string>
+<string name="update_notification_text_body_experimental_update_chrome">"Če si želite splet ogledovati v svojem jeziku, posodobite Banana Browser na najnovejšo različico"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Posodobite Banana Browser na najnovejšo različico, če ga želite v svojem jeziku"</string>
+<string name="missing_storage_permission_download_education_text">"Banana Browser za prenos datotek potrebuje dostop do shrambe."</string>
+<string name="fre_tos">"Če uporabljate Banana Browser, se strinjate z &lt;LINK1&gt;Googlovimi pogoji storitve&lt;/LINK1&gt; in &lt;LINK2&gt;dodatnimi pogoji storitve za Google Banana Browser in Banana Browser OS&lt;/LINK2&gt;."</string>
+<string name="fre_tos_and_privacy_child_account">"Če uporabljate Banana Browser, se strinjate z &lt;LINK1&gt;Googlovimi pogoji storitve&lt;/LINK1&gt; in &lt;LINK2&gt;dodatnimi pogoji storitve za Google Banana Browser in Banana Browser OS&lt;/LINK2&gt;. Za vas velja tudi &lt;LINK3&gt;pravilnik o zasebnosti za račune Google, upravljane s Family Linkom&lt;/LINK3&gt;."</string>
+<string name="lightweight_fre_associated_app_tos">"Aplikacija %1$s se bo odprla v Chromu. Če nadaljujete, se strinjate z &lt;LINK1&gt;Googlovimi pogoji storitve&lt;/LINK1&gt; in &lt;LINK2&gt;dodatnimi pogoji storitve za Google Banana Browser in Banana Browser OS&lt;/LINK2&gt;."</string>
+<string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Aplikacija %1$s se bo odprla v Chromu. Če nadaljujete, se strinjate z &lt;LINK1&gt;Googlovimi pogoji storitve&lt;/LINK1&gt; in &lt;LINK2&gt;dodatnimi pogoji storitve za Google Banana Browser in Banana Browser OS&lt;/LINK2&gt;. Za vas velja tudi &lt;LINK3&gt;pravilnik o zasebnosti za račune Google, upravljane s Family Linkom&lt;/LINK3&gt;."</string>
+<string name="fre_send_report_check">"Pomagajte izboljšati Banana Browser s pošiljanjem statističnih podatkov o uporabi in poročil o zrušitvah Googlu."</string>
+<string name="menu_update">"Posodobi Banana Browser"</string>
+<string name="menu_inline_update_ready_summary">"Znova zaženite Banana Browser"</string>
+<string name="menu_open_in_incognito_chrome">"Open in Incognito Banana Browser"</string>
+<string name="chrome_survey_prompt">"Pomagajte izboljšati Banana Browser. &lt;LINK&gt;Sodelujte v anketi.&lt;/LINK&gt;"</string>
+<string name="storage_management_all_storage_description">"Skupna količina podatkov, ki jih uporablja Banana Browser, vključno z računi, zaznamki in shranjenimi nastavitvami."</string>
+<string name="storage_management_reset_app_dialog_text">"Vsi podatki aplikacije Banana Browser bodo trajno izbrisani, vključno z vsemi datotekami, nastavitvami, računi, zbirkami podatkov ipd."</string>
+<string name="sogou_explanation">"Banana Browser lahko za iskanje na Kitajskem uporablja &lt;b&gt;Sogou&lt;/b&gt;. To je mogoče spremeniti v &lt;link&gt;nastavitvah&lt;/link&gt;."</string>
+<string name="keyboard_shortcut_help_center">"Odpiranje centra za pomoč za Banana Browser na nov. zavih."</string>
+<string name="vr_preparing_vr_toast_standalone_text">"Banana Browser se še vedno pripravlja na navidezno resničnost. Znova zaženite Banana Browser pozneje."</string>
+<string name="vr_preparing_vr_notification_body">"Znova odprite Banana Browser."</string>
+<string name="module_install_start_text">"Nameščanje modula %1$s za Banana Browser …"</string>
+<string name="module_install_failure_text">"Modula %1$s za Banana Browser ni mogoče namestiti"</string>
+<string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser zdaj hitreje prenaša datoteke"</string>
+<string name="near_oom_intervention_message">"Ta stran uporablja preveč pomnilnika, zato jo je Banana Browser zaustavil."</string>
+<string name="near_oom_reduction_message">"Ta stran uporablja preveč pomnilnika, zato je Banana Browser odstranil nekaj vsebine."</string>
+<string name="qr_code_open_settings_description">"Če želite optično prebrati kodo QR, spremenite nastavitve, da bo Banana Browser lahko uporabljal kamero"</string>
+<string name="infobar_missing_camera_permission_text">"Banana Browser potrebuje dovoljenje za dostop do fotoaparata za to spletno mesto."</string>
+<string name="infobar_missing_microphone_permission_text">"Banana Browser potrebuje dovoljenje za dostop do mikrofona za to spletno mesto."</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser potrebuje dovoljenje za dostop do fotoaparata in mikrofona za to spletno mesto."</string>
+<string name="infobar_missing_location_permission_text">"Banana Browser potrebuje dostop do vaše lokacije, da jo bo lahko delil s tem spletnim mestom."</string>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;ne shrani&lt;/em&gt; teh podatkov:
+        &lt;ul&gt;
+          &lt;li&gt;zgodovine brskanja,
+          &lt;li&gt;piškotkov in podatkov spletnih mest,
+          &lt;li&gt;podatkov, vnesenih v obrazce.
+        &lt;/ul&gt;"</string>
+</resources>
