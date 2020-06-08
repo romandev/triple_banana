@@ -1,3 +1,21 @@
+# 3.01 @ 83.0.4103.60
+
+## Chromium base version
+- **83.0.4103.60**
+
+## Change log
+- A crash occur whenever dark mode on or off. (#447)
+- Tab switcher button isn't shown on top toolbar (#444)
+- Rename icon tint color resource (#448)
+- Implement DPI(Deep Packet Inspection) blocker (#442)
+- Fix a bug that the image reader is enabled on ARM64 (#441)
+- Fix a bug that the app icon and app name are displayed incorrectly (#438)
+- Fix a bug password update prompt always appears (#439)
+- Rebase 83.0.4103.60 (#427)
+- Disable sync related permissions (#429)
+- Fixing a zip path traversal vulnerability (#424)
+
+
 # 2.03 @ 81.0.4044.138
 
 ## Chromium base version
