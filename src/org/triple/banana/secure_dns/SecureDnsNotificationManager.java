@@ -10,6 +10,7 @@ import android.app.NotificationManager;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
+import android.os.Handler;
 
 import androidx.core.app.NotificationCompat;
 
@@ -33,7 +34,7 @@ public enum SecureDnsNotificationManager {
         Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return;
 
-        NotificationManager manager =
+        final NotificationManager manager =
                 (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
         if (manager == null) return;
 
@@ -47,6 +48,16 @@ public enum SecureDnsNotificationManager {
                 .setSound(null);
         manager.notify(10000 /* id */, builder.build());
         markNotificationShown(true);
+
+        // NOTE: The setTimeoutAfter() is not working on N- OS. So, the following code is a
+        // workaround to remove the notification after 3 seconds. It works pretty well, but it may
+        // not be canceled if the app exits before the post delayed task is not executed. Using the
+        // AlarmManager may be better, but it's not worth the effort, so simply use postDelayed().
+        if (Build.VERSION.SDK_INT <= Build.VERSION_CODES.N) {
+            (new Handler()).postDelayed(() -> {
+                manager.cancel(10000 /* id */);
+            }, 3000);
+        }
     }
 
     public void resetNotificationState() {
