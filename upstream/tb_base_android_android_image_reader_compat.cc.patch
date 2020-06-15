@@ -1,17 +1,15 @@
 diff --git tb/base/android/android_image_reader_compat.cc tb_diff/base/android/android_image_reader_compat.cc
 --- tb/base/android/android_image_reader_compat.cc
 +++ tb_diff/base/android/android_image_reader_compat.cc
-@@ -38,6 +38,13 @@ AndroidImageReader::AndroidImageReader() {
+@@ -34,7 +34,11 @@ bool AndroidImageReader::IsSupported() {
+ }
+ 
+ AndroidImageReader::AndroidImageReader() {
++#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
++  is_supported_ = false;
++#else
+   is_supported_ = LoadFunctions();
++#endif
  }
  
  bool AndroidImageReader::LoadFunctions() {
-+#if defined(ENABLE_TRIPLE_BANANA)
-+#if defined(ARCH_CPU_ARM64)
-+  // AImageReader is not working on ARM64.
-+  if (true)
-+    return false;
-+#endif
-+#endif
-   // If the Chromium build requires __ANDROID_API__ >= 26 at some
-   // point in the future, we could directly use the global functions instead of
-   // dynamic loading. However, since this would be incompatible with pre-Oreo
