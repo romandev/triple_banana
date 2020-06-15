@@ -12,14 +12,25 @@ diff --git tb/net/http/http_stream_parser.cc tb_diff/net/http/http_stream_parser
  namespace net {
  
  namespace {
-@@ -465,6 +469,12 @@ int HttpStreamParser::DoLoop(int result) {
+@@ -465,6 +469,23 @@ int HttpStreamParser::DoLoop(int result) {
  
  int HttpStreamParser::DoSendHeaders() {
    int bytes_remaining = request_headers_->BytesRemaining();
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (base::FeatureList::IsEnabled(features::kPostQuantumCECPQ2) &&
-+      request_headers_->BytesConsumed() == 0 && bytes_remaining > 50) {
-+    bytes_remaining = 50;
++      request_headers_->BytesConsumed() == 0) {
++    const int kMinFragmentSize = 13;
++    const int kBias = 8;
++
++    int fragment_size =
++        strstr(request_headers_->data(), HttpRequestHeaders::kHost) -
++        request_headers_->data() + kBias;
++
++    if (fragment_size < kMinFragmentSize)
++      fragment_size = kMinFragmentSize;
++
++    if (bytes_remaining > fragment_size)
++      bytes_remaining = fragment_size;
 +  }
 +#endif
    DCHECK_GT(bytes_remaining, 0);
