@@ -5,7 +5,7 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources>
-    <string name="adblock">광고 차단 (필터 버전: %s)</string>
+    <string name="adblock">광고 차단 (버전: %s)</string>
     <string name="adblock_summary">방해가 되거나 사용자를 현혹하는 광고를 차단합니다</string>
     <string name="advanced_features">고급 기능</string>
     <string name="authentication_title">생체 인증</string>
