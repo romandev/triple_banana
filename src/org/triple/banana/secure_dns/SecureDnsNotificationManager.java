@@ -45,7 +45,8 @@ public enum SecureDnsNotificationManager {
                 .setTimeoutAfter(3000)
                 .setAutoCancel(true)
                 .setNumber(0)
-                .setSound(null);
+                .setSound(null)
+                .setDefaults(NotificationCompat.DEFAULT_VIBRATE);
         manager.notify(10000 /* id */, builder.build());
         markNotificationShown(true);
 
