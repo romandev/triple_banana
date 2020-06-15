@@ -6,6 +6,7 @@
 package org.triple.banana.version;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.util.Log;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
@@ -13,7 +14,8 @@ import org.banana.cake.interfaces.BananaVersionInfo;
 
 public class VersionInfo implements BananaVersionInfo {
     private static final String TAG = "VersionInfo";
-    private static String sFilterVersion = "Unknown";
+    private static final String UNKNOWN_VERSION = "Unknown";
+    private static String sFilterVersion = UNKNOWN_VERSION;
 
     @Override
     public String getVersionName() {
@@ -30,7 +32,11 @@ public class VersionInfo implements BananaVersionInfo {
     }
 
     public static void setFilterVersion(String version) {
-        sFilterVersion = version;
+        if (TextUtils.isEmpty(version)) {
+            sFilterVersion = UNKNOWN_VERSION;
+        } else {
+            sFilterVersion = version;
+        }
     }
 
     public static String getFilterVersion() {

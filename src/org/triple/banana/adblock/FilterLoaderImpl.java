@@ -46,8 +46,9 @@ public class FilterLoaderImpl implements FilterLoader {
     @Override
     public void load(final String currentVersion, final LoadResponse callback) {
         long now = System.currentTimeMillis();
-        if (now < getLastCheckTime() + UPDATE_INTERVAL) {
+        if (!TextUtils.isEmpty(currentVersion) && now < getLastCheckTime() + UPDATE_INTERVAL) {
             VersionInfo.setFilterVersion(currentVersion);
+            callback.call(new String());
             return;
         }
 
@@ -56,6 +57,7 @@ public class FilterLoaderImpl implements FilterLoader {
             Log.i(TAG, "load(): current = " + currentVersion + ", new = " + newVersion);
             if (TextUtils.equals(currentVersion, newVersion)) {
                 VersionInfo.setFilterVersion(currentVersion);
+                callback.call(new String());
                 return;
             }
 
