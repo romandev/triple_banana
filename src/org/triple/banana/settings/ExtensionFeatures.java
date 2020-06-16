@@ -6,8 +6,14 @@
 package org.triple.banana.settings;
 
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.SpannableString;
 import android.text.TextUtils;
+import android.text.style.BackgroundColorSpan;
+import android.text.style.ForegroundColorSpan;
+import android.text.style.StyleSpan;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
@@ -37,6 +43,16 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         addPreferencesFromResource(R.xml.banana_extension_preferences);
 
         AppMenuDelegate.get().setNewFeatureIcon(false);
+
+        final Preference bananaNotice = (Preference) findPreference("banana_notice");
+        SpannableString spannableTitle = new SpannableString("BLACK LIVES MATTER");
+        spannableTitle.setSpan(new ForegroundColorSpan(Color.BLACK), 0, spannableTitle.length(), 0);
+        spannableTitle.setSpan(
+                new BackgroundColorSpan(Color.YELLOW), 0, spannableTitle.length(), 0);
+        spannableTitle.setSpan(new StyleSpan(Typeface.BOLD), 0, spannableTitle.length(), 0);
+        spannableTitle.setSpan(new ForegroundColorSpan(Color.YELLOW), 6, 11, 0);
+        spannableTitle.setSpan(new BackgroundColorSpan(Color.BLACK), 6, 11, 0);
+        bananaNotice.setTitle(spannableTitle);
 
         final SwitchPreferenceCompat adblock =
                 (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
