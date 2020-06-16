@@ -1,0 +1,39 @@
+diff --git tb/gpu/config/gpu_util.cc tb_diff/gpu/config/gpu_util.cc
+--- tb/gpu/config/gpu_util.cc
++++ tb_diff/gpu/config/gpu_util.cc
+@@ -43,6 +43,9 @@
+ #include "ui/gl/gl_switches.h"
+ 
+ #if defined(OS_ANDROID)
++#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
++#include "base/android/android_image_reader_compat.h"
++#endif
+ #include "base/no_destructor.h"
+ #include "base/synchronization/lock.h"
+ #include "ui/gl/android/android_surface_control_compat.h"
+@@ -109,6 +112,11 @@ GpuFeatureStatus GetAndroidSurfaceControlFeatureStatus(
+ #if !defined(OS_ANDROID)
+   return kGpuFeatureStatusDisabled;
+ #else
++#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
++  if (blacklisted_features.count(GPU_FEATURE_TYPE_ANDROID_SURFACE_CONTROL))
++    return kGpuFeatureStatusBlacklisted;
++#endif
++
+   if (!gpu_preferences.enable_android_surface_control)
+     return kGpuFeatureStatusDisabled;
+ 
+@@ -357,6 +365,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
+     gpu_feature_info->status_values[GPU_FEATURE_TYPE_ACCELERATED_WEBGL2] =
+         kGpuFeatureStatusBlacklisted;
+   }
++
++#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
++  if (!base::android::AndroidImageReader::GetInstance().IsSupported()) {
++    gpu_feature_info->status_values[GPU_FEATURE_TYPE_ANDROID_SURFACE_CONTROL] =
++        kGpuFeatureStatusBlacklisted;
++  }
++#endif
+ }
+ 
+ // Estimates roughly user total disk space by counting in the drives where
