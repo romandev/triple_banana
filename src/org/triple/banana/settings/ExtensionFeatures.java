@@ -53,6 +53,11 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         spannableTitle.setSpan(new ForegroundColorSpan(Color.YELLOW), 6, 11, 0);
         spannableTitle.setSpan(new BackgroundColorSpan(Color.BLACK), 6, 11, 0);
         bananaNotice.setTitle(spannableTitle);
+        bananaNotice.setOnPreferenceClickListener(preference -> {
+            BananaApplicationUtils.get().showInfoPage(
+                    "https://en.wikipedia.org/wiki/Black_Lives_Matter");
+            return true;
+        });
 
         final SwitchPreferenceCompat adblock =
                 (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);

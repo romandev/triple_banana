@@ -27,4 +27,5 @@ public interface BananaApplicationUtils {
     void unregisterActivityStateListener(BananaActivityStateListener listener);
     void restart();
     AlertDialog.Builder getDialogBuilder(Context context);
+    void showInfoPage(String url);
 }

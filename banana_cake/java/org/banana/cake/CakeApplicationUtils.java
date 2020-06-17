@@ -17,6 +17,7 @@ import org.chromium.base.ApplicationStatus;
 import org.chromium.base.ContextUtils;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ApplicationLifetime;
+import org.chromium.chrome.browser.customtabs.CustomTabActivity;
 import org.chromium.ui.UiUtils;
 
 class CakeApplicationUtils implements BananaApplicationUtils {
@@ -50,5 +51,10 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     public AlertDialog.Builder getDialogBuilder(Context context) {
         return new UiUtils.CompatibleAlertDialogBuilder(
                 context, R.style.Theme_Chromium_AlertDialog);
+    }
+
+    @Override
+    public void showInfoPage(String url) {
+        CustomTabActivity.showInfoPage(getApplicationContext(), url);
     }
 }
