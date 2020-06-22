@@ -126,6 +126,7 @@ android_library("triple_banana_java") {
     # settings
     "//triple_banana/src/org/triple/banana/settings/ExtensionFeatures.java",
     "//triple_banana/src/org/triple/banana/settings/SettingsOpener.java",
+    "//triple_banana/src/org/triple/banana/settings/preferences/BananaNoticePreference.java",
 
     # theme
     "//triple_banana/src/org/triple/banana/theme/DarkModeController.java",
