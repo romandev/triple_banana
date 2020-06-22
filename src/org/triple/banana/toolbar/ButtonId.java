@@ -31,7 +31,8 @@ public enum ButtonId {
     VISIT_HISTORY,
     ARCHIVE,
     PRINT,
-    DARK_MODE;
+    DARK_MODE,
+    TERMINATE;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -66,6 +67,8 @@ public enum ButtonId {
             BananaToolbarManager.get().addBookmark();
             return true;
         });
+
+        sOnClickListeners.put(ButtonId.TERMINATE, v -> BananaToolbarManager.get().terminate());
     }
 
     public static int getImageResource(ButtonId id) {
@@ -121,6 +124,9 @@ public enum ButtonId {
                 break;
             case DARK_MODE:
                 imageResource = R.drawable.ic_dark_black_24dp;
+                break;
+            case TERMINATE:
+                imageResource = R.drawable.ic_power_off_black;
                 break;
         }
         return imageResource;

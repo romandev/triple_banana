@@ -157,4 +157,11 @@ public class CakeToolbarManager implements BananaToolbarManager {
         if (activity == null) return;
         SettingsLauncher.getInstance().launchSettingsPage(activity, settingFragmentClass);
     }
+
+    @Override
+    public void terminate() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.finishAndRemoveTask();
+    }
 }
