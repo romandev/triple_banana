@@ -48,6 +48,7 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   version_name = BANANA_VERSION + " @ " + CHROMIUM_VERSION
 
   deps = [
+    ":triple_banana_assets",
     ":triple_banana_java",
     "//chrome/android:chrome_apk_pak_assets",
     "//chrome/android:chrome_public_base_module_java",
@@ -189,4 +190,8 @@ android_resources("triple_banana_resources") {
 
   deps = [ "//chrome/android:chrome_app_java_resources" ]
   custom_package = "org.triple.banana"
+}
+
+android_assets("triple_banana_assets") {
+  sources = []
 }

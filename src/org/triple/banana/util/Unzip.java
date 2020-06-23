@@ -7,9 +7,11 @@ package org.triple.banana.util;
 
 import android.util.Log;
 
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
+import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -23,15 +25,51 @@ public class Unzip {
     }
 
     public boolean extract(File targetZip, boolean isOverwritten) {
-        return extract(targetZip, targetZip.getParentFile(), isOverwritten);
+        try (InputStream stream = new FileInputStream(targetZip)) {
+            return extract(stream, targetZip.getParentFile(), isOverwritten);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean extract(File targetZip, File destination, boolean isOverwritten) {
+        try (InputStream stream = new FileInputStream(targetZip)) {
+            return extract(stream, destination.getParentFile(), isOverwritten);
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    private boolean isMarkSupported(InputStream targetStream) {
+        try {
+            return targetStream.markSupported();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+
+    public boolean extract(InputStream targetStream, File destination, boolean isOverwritten) {
+        try (InputStream markSupportedStream = targetStream.markSupported()
+                        ? targetStream
+                        : new BufferedInputStream(targetStream)) {
+            markSupportedStream.mark(10000000);
+            return extractInternal(markSupportedStream, destination, isOverwritten);
+        } catch (Exception e) {
+            return false;
+        }
     }
 
     // TODO(bk_1.ko) : This api need to work on Worker thread instead of Main thread.
-    public boolean extract(File targetZip, File destination, boolean isOverwritten) {
-        // Do dry-run
-        try (ZipInputStream zipStream = new ZipInputStream(new FileInputStream(targetZip))) {
+    private boolean extractInternal(
+            InputStream targetStream, File destination, boolean isOverwritten) {
+        ZipInputStream dryRunZipStream = null;
+        ZipInputStream zipStream = null;
+        try {
+            dryRunZipStream = new ZipInputStream(targetStream);
             ZipEntry entry;
-            while ((entry = zipStream.getNextEntry()) != null) {
+
+            // Do dry-run
+            while ((entry = dryRunZipStream.getNextEntry()) != null) {
                 File outputPath = new File(destination.getPath(), entry.getName());
 
                 // We need to check whether the output path is canonical path in order to avoid zip
@@ -40,13 +78,10 @@ public class Unzip {
                 if (!outputPath.getCanonicalPath().startsWith(destination.getPath())) return false;
                 if (!isOverwritten && outputPath.exists()) return false;
             }
-        } catch (Exception e) {
-            Log.e(TAG, "extract(): Dry-run with " + e.toString());
-            return false;
-        }
 
-        try (ZipInputStream zipStream = new ZipInputStream(new FileInputStream(targetZip))) {
-            ZipEntry entry;
+            targetStream.reset();
+            zipStream = new ZipInputStream(targetStream);
+
             while ((entry = zipStream.getNextEntry()) != null) {
                 File outputPath = new File(destination.getPath(), entry.getName());
 
@@ -71,6 +106,12 @@ public class Unzip {
         } catch (Exception e) {
             Log.e(TAG, "extract(): " + e.toString());
             return false;
+        } finally {
+            try {
+                if (dryRunZipStream != null) dryRunZipStream.close();
+                if (zipStream != null) zipStream.close();
+            } catch (Exception e) {
+            }
         }
     }
 }
