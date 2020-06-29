@@ -1,3 +1,33 @@
+# 3.02 @ 83.0.4103.106
+
+## Chromium base version
+- **83.0.4103.106**
+
+## Change log
+- Disable SyncAdapter (#480)
+- Refactor FilterLoader for adblocker (#479)
+- Show black lives matter depending on remote config (#478)
+- Add terminate button to kill browser (#477)
+- Add link for black lives matter (#473)
+- Blacklist the SurfaceControl on ARM64 (#474)
+- Add a phrase for black lives matter (#471)
+- Rebase 83.0.4103.106 (#472)
+- Replace adblock filter version string (#470)
+- Fix a bug that the filter is not updated (#469)
+- Fix a crash when YouTube play on Android L (#467)
+- Improve DPI blocker algorithm (#465)
+- Fix a build error in release build (#464)
+- Rebase 83.0.4103.101 (#463)
+- Fix a bug that the SecureDNS head-up noti doesn't show on N- OS (#461)
+- Fix a bug that the SecureDNS head-up noti doesn't disappear on N- OS (#460)
+- Disable AImageReader for ARM64 build on all Android versions (#457)
+- Reduce filter update interval (#455)
+- Display Adblocker filter version on ExtensionFeatures page (#454)
+- Rebase 83.0.4103.96 (#453)
+- Display correct app version name (#452)
+- Refactor update_strings command to cover multiple *strings.xml (#450)
+
+
 # 3.01 @ 83.0.4103.60
 
 ## Chromium base version
