@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Избраните податоци се отстранети од Banana Browser и синхронизираните уреди.
 
 Вашата сметка на Google можеби има други форми на историја на прелистување, како на пр., пребарувања и активност од други услуги на Google на &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Вклучете ги дозволите за Banana Browser во &lt;link&gt;Поставки на Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Вклучете ја дозволата за Banana Browser во &lt;link&gt;Поставки на Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"За да може Banana Browser да пристапува до вашата локација, вклучете ја дозволата за локација и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"За да може Banana Browser да пристапува до вашата камера, вклучете ја дозволата за камера и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"За да може Banana Browser да ви испраќа известувања, вклучете ја дозволата за известувања и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"За да може Banana Browser да пристапува до вашиот микрофон, вклучете ја дозволата за микрофон и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Во Lite-режим, Banana Browser побрзо ги вчитува страниците и користи до 60 проценти помалку интернет."</string>
 <string name="data_reduction_description_lite_mode">"Кога е вклучен „Лесниот режим“, Banana Browser ги користи серверите на Google за да овозможи побрзо вчитување на страниците. „Лесниот режим“ ги презапишува страниците што се премногу бавни и ги вчитува само нивните основни содржини. „Лесниот режим“ не се применува кај инкогнито картичките."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Во Lite-режим, Banana Browser побрзо ги вчитува страниците и користи до 60 проценти помалку интернет. За да ги оптимизира страниците што ги посетувате, Banana Browser го испраќа вашиот сообраќај на интернет во Google. &lt;link&gt;Дознајте повеќе&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Banana Browser може да го користи &lt;b&gt;Sogou&lt;/b&gt; за пребарување во Кина. Тоа може да го промените во &lt;link&gt;Поставки&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Апликацијава се извршува во Banana Browser"</string>
 <string name="twa_running_in_chrome">"Се извршува во Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Ќе ги видите статусот на најавување на %1$s, податоците од прелистување и податоците од сајтовите во Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$s има податоци и во Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Податоците може да ги избришете во „Поставки за Banana Browser“"</string>
 <string name="keyboard_shortcut_help_center">"Отвори „Центар за помош на Banana Browser“ во нова картичка"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"Да се отстрани вашата активност на Banana Browser од „Дигитална благосостојба“?"</string>
 <string name="usage_stats_revocation_explanation">"Сајтовите што ги посетувате во Banana Browser нема да се прикажуваат. Сите тајмери за сајтови ќе се избришат."</string>
 <string name="autofill_assistant_module_title">"„Помошникот на Google“ во Banana Browser"</string>
+<string name="qr_code_permission_description">"За да скенирате QR-код, дозволете Banana Browser да ја користи камерата"</string>
 <string name="qr_code_open_settings_description">"За да скенирате QR-код, променете ги поставките за да може Banana Browser да ја користи вашата камера"</string>
+<string name="infobar_missing_ar_camera_permission_text">"На Banana Browser му треба дозвола за да пристапи до камерата и да создаде 3D-карта од вашето опкружување."</string>
 <string name="infobar_missing_camera_permission_text">"На Banana Browser му треба дозвола за да пристапи до камерата за сајтов."</string>
 <string name="infobar_missing_microphone_permission_text">"На Banana Browser му треба дозвола за да пристапи до микрофонот за сајтов."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"На Banana Browser му треба дозвола за да пристапи до камерата и микрофонот за сајтов."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Картичките и адресите се од Banana Browser и од вашата сметка на Google (%1$s). Со нив може да управувате во BEGIN_LINKПоставкиEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Картичките и адресите се од Banana Browser. Со нив може да управувате во BEGIN_LINKПоставкиEND_LINK."</string>
+<string name="android_permission_off">"Вклучете ја дозволата за Banana Browser во &lt;link&gt;Поставки на Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Вклучете ги дозволите за Banana Browser во &lt;link&gt;Поставки на Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"За да дозволите Banana Browser да користи AR, вклучете ја и камерата во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"За да може Banana Browser да пристапува до вашата камера, вклучете ја дозволата за камера и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"За да може Banana Browser да пристапува до вашата локација, вклучете ја дозволата за локација и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"За да може Banana Browser да пристапува до вашиот микрофон, вклучете ја дозволата за микрофон и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"За да може Banana Browser да ви испраќа известувања, вклучете ја дозволата за известувања и во &lt;link&gt;Поставките за Android&lt;/link&gt;."</string>
 </resources>

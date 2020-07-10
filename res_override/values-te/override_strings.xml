@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ఎంచుకోబడిన డేటా Banana Browser నుండి, సింక్ చేసిన‌ మీ పరికరాల నుండి తీసివేయబడింది.
 
 మీ Google ఖాతా &lt;link&gt;myactivity.google.com&lt;/link&gt;లో ఇతర Google సేవలకు సంబంధించిన శోధనలు, కార్యకలాపం వంటి ఇతర రకాల బ్రౌజింగ్ చరిత్రను కలిగి ఉండవచ్చు."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android సెట్టింగ్‌లు&lt;/link&gt;లో Banana Browser కోసం అనుమతులను ఆన్ చేయండి."</string>
-<string name="android_permission_off">"&lt;link&gt;Android సెట్టిం‌గ్‌లు&lt;/link&gt;లో Banana Browser కోసం అనుమతిని ఆన్ చేయండి."</string>
-<string name="android_location_permission_off">"మీ స్థానాన్ని యాక్సెస్ చేయడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా స్థానాన్ని ఆన్ చేయండి."</string>
-<string name="android_camera_permission_off">"మీ కెమెరాను యాక్సెస్ చేయడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా కెమెరాను ఆన్ చేయండి."</string>
-<string name="android_notifications_permission_off">"మీకు నోటిఫికేషన్‌లను పంపడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా నోటిఫికేషన్‌లను ఆన్ చేయండి."</string>
-<string name="android_microphone_permission_off">"మీ మైక్రోఫోన్‌ను యాక్సెస్ చేయడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా మైక్రోఫోన్‌ను ఆన్ చేయండి."</string>
 <string name="data_reduction_benefits_description_lite_mode">"లైట్ మోడ్‌లో, Banana Browser పేజీలను వేగంగా లోడ్ చేస్తుంది, అలాగే 60 శాతం తక్కువ డేటాను ఉపయోగిస్తుంది."</string>
 <string name="data_reduction_description_lite_mode">"లైట్ మోడ్ ప్రారంభించబడినప్పుడు, పేజీలను మరింత వేగంగా లోడ్ చేయడం కోసం Google సర్వర్‌లను Banana Browser ఉపయోగిస్తుంది. చాలా నెమ్మదిగా లోడ్ అవుతున్న పేజీలలో అవసరమైన కంటెంట్‌ని మాత్రమే లోడ్ చేసే విధంగా లైట్ మోడ్ వాటిని తిరిగి వ్రాస్తుంది. అజ్ఞాత ట్యాబ్‌లలో లైట్ మోడ్ పని చేయదు."</string>
 <string name="data_reduction_promo_summary_lite_mode">"లైట్ మోడ్‌లో, Banana Browser పేజీలను వేగంగా లోడ్ చేస్తుంది, అలాగే 60 శాతం వరకు తక్కువ డేటాను ఉపయోగిస్తుంది. మీరు సందర్శించే పేజీలను ఆప్టిమైజ్ చేయడానికి, Banana Browser మీ వెబ్ ట్రాఫిక్‌ను Googleకు పంపుతుంది. &lt;link&gt;మరింత తెలుసుకోండి&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"చైనాలో వెతకడానికి &lt;b&gt;Sogou&lt;/b&gt;ను Banana Browser ఉపయోగించవచ్చు. మీరు దీనిని &lt;link&gt;సెట్టింగ్‌ల&lt;/link&gt;లో మార్చవచ్చు."</string>
 <string name="app_running_in_chrome_disclosure">"ఈ యాప్ Banana Browserలో అమలవుతోంది"</string>
 <string name="twa_running_in_chrome">"Banana Browserలో అమలు అవుతోంది"</string>
+<string name="twa_running_in_chrome_v2">"మీరు Banana Browserలో మీ %1$s సైన్ ఇన్ స్టేటస్, బ్రౌజింగ్ డేటా, సైట్ డేటాను చూస్తారు."</string>
 <string name="twa_clear_data_dialog_title">"%1$s డేటాను Banana Browserలో కూడా కలిగి ఉంటుంది"</string>
 <string name="twa_clear_data_dialog_message">"మీరు Banana Browser సెట్టింగ్‌లలో డేటాను తీసివేయవచ్చు"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser సహాయ కేంద్రాన్ని కొత్త ట్యాబ్‌లో తెరవండి"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"డిజిటల్ సంక్షేమం నుండి మీ Banana Browser కార్యకలాపం తీసివేయాలా?"</string>
 <string name="usage_stats_revocation_explanation">"మీరు Banana Browserలో సందర్శించిన సైట్‌లు చూపబడవు. అన్ని సైట్ టైమర్‌లు తొలగించబడతాయి."</string>
 <string name="autofill_assistant_module_title">"Banana Browserలో Google అసిస్టెంట్"</string>
+<string name="qr_code_permission_description">"ఒక QR కోడ్‌ను స్కాన్ చేయడానికి, మీ కెమెరాను ఉపయోగించడానికి Banana Browserను అనుమతించండి"</string>
 <string name="qr_code_open_settings_description">"QR కోడ్‌ను స్కాన్ చేయడానికి, మీ సెట్టింగ్‌లను మార్చండి. అప్పుడే, Banana Browser మీ కెమెరాను ఉపయోగించగలదు"</string>
+<string name="infobar_missing_ar_camera_permission_text">"మీ పరిసరాల 3D మ్యాప్‌ను సృష్టించడానికి Banana Browserకు మీ కెమెరాను యాక్సెస్ చేసే అనుమతి కావాలి."</string>
 <string name="infobar_missing_camera_permission_text">"ఈ సైట్ కోసం మీ కెమెరాను యాక్సెస్ చేయడానికి Banana Browserకు అనుమతి అవసరం."</string>
 <string name="infobar_missing_microphone_permission_text">"ఈ సైట్ కోసం మీ మైక్రోఫోన్‌ను యాక్సెస్ చేయడానికి Banana Browserకు అనుమతి అవసరం."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"ఈ సైట్ కోసం మీ కెమెరా మరియు మైక్రోఫోన్‌ను యాక్సెస్ చేయడానికి Banana Browserకు అనుమతి అవసరం."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"కార్డ్‌లు, చిరునామాలు- Banana Browser నుండి, మీ Google ఖాతా (%1$s) నుండి పొందినవి. మీరు BEGIN_LINKసెట్టింగ్‌లుEND_LINKలో వాటిని నిర్వహించవచ్చు."</string>
 <string name="payments_card_and_address_settings_signed_out">"కార్డ్‌లు మరియు చిరునామాలు Banana Browser నుండి పొందినవి. మీరు BEGIN_LINKసెట్టింగ్‌లుEND_LINKలో వాటిని నిర్వహించవచ్చు."</string>
+<string name="android_permission_off">"&lt;link&gt;Android సెట్టిం‌గ్‌లు&lt;/link&gt;లో Banana Browser కోసం అనుమతిని ఆన్ చేయండి."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android సెట్టింగ్‌లు&lt;/link&gt;లో Banana Browser కోసం అనుమతులను ఆన్ చేయండి."</string>
+<string name="android_ar_camera_permission_off">"ARను Banana Browser ఉపయోగించడానికి వీలుగా, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా కెమెరాను ఆన్ చేయండి."</string>
+<string name="android_camera_permission_off">"మీ కెమెరాను యాక్సెస్ చేయడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా కెమెరాను ఆన్ చేయండి."</string>
+<string name="android_location_permission_off">"మీ స్థానాన్ని యాక్సెస్ చేయడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా స్థానాన్ని ఆన్ చేయండి."</string>
+<string name="android_microphone_permission_off">"మీ మైక్రోఫోన్‌ను యాక్సెస్ చేయడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా మైక్రోఫోన్‌ను ఆన్ చేయండి."</string>
+<string name="android_notifications_permission_off">"మీకు నోటిఫికేషన్‌లను పంపడానికి Banana Browserను అనుమతించేందుకు, &lt;link&gt;Android సెట్టింగ్‌ల&lt;/link&gt;లో కూడా నోటిఫికేషన్‌లను ఆన్ చేయండి."</string>
 </resources>

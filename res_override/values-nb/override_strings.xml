@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"De valgte dataene er er fjernet fra Banana Browser og de synkroniserte enhetene dine.
 
 Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og aktivitet fra andre Google-tjenester, på &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Slå på tillatelsene for Banana Browser i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
-<string name="android_permission_off">"Slå på tillatelsen for Banana Browser i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"For å gi Banana Browser tilgang til posisjonen din må du også slå på posisjon i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"For å gi Banana Browser tilgang til kameraet må du også slå på kameraet i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"For at Banana Browser skal kunne sende deg varsler, må du også slå på varsler i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"For å gi Banana Browser tilgang til mikrofonen må du også slå på mikrofonen i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"I forenklet modus laster Banana Browser inn sider raskere og bruker opptil 60 prosent mindre data."</string>
 <string name="data_reduction_description_lite_mode">"Når forenklet modus er på, bruker Banana Browser Google-tjenere slik at sidene lastes inn raskere. Forenklet modus omskriver svært trege sider, slik at kun vesentlig innhold lastes inn. Forenklet modus brukes ikke på inkognitofaner."</string>
 <string name="data_reduction_promo_summary_lite_mode">"I forenklet modus laster Banana Browser inn sider raskere og bruker opptil 60 prosent mindre data. For å optimalisere sidene du besøker, sender Banana Browser nettrafikken din til Google. &lt;link&gt;Finn ut mer&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="sogou_explanation">"Banana Browser kan bruke &lt;b&gt;Sogou&lt;/b&gt; for søk i Kina. Du kan endre dette i &lt;link&gt;Innstillinger&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Denne appen kjører i Banana Browser"</string>
 <string name="twa_running_in_chrome">"Kjører i Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Du kommer til å se påloggingsstatus, nettlesingsdata og nettstedsdata for %1$s i Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$s har også data i Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Du kan slette dataene i Banana Browser-innstillingene"</string>
 <string name="keyboard_shortcut_help_center">"Åpne brukerstøtten for Banana Browser i en ny fane"</string>
@@ -96,7 +91,9 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="usage_stats_revocation_prompt">"Vil du fjerne Banana Browser-aktiviteten din fra Digital balanse?"</string>
 <string name="usage_stats_revocation_explanation">"Nettsteder du besøker i Banana Browser, vises ikke. Alle tidtakere for nettsteder blir slettet."</string>
 <string name="autofill_assistant_module_title">"Google-assistenten i Banana Browser"</string>
+<string name="qr_code_permission_description">"For å skanne QR-koder, la Banana Browser bruke kameraet"</string>
 <string name="qr_code_open_settings_description">"For å skanne QR-koder, endre innstillingene slik at Banana Browser kan bruke kameraet"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser trenger tilgang til kameraet for å lage et 3D-kart av omgivelsene."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser trenger tilgang til kameraet ditt for dette nettstedet."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser trenger tilgang til mikrofonen din for dette nettstedet."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser trenger tilgang til kameraet ditt og mikrofonen din for dette nettstedet."</string>
@@ -109,4 +106,11 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kortene og adressene er fra Banana Browser og Google-kontoen din (%1$s). Du kan administrere dem i BEGIN_LINKInnstillingerEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kortene og adressene er fra Banana Browser. Du kan administrere dem i BEGIN_LINKInnstillingerEND_LINK."</string>
+<string name="android_permission_off">"Slå på tillatelsen for Banana Browser i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Slå på tillatelsene for Banana Browser i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"For å la Banana Browser bruke AR, slå på kameraet i &lt;link&gt;Android-innstillingene&lt;/link&gt; også."</string>
+<string name="android_camera_permission_off">"For å gi Banana Browser tilgang til kameraet må du også slå på kameraet i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"For å gi Banana Browser tilgang til posisjonen din må du også slå på posisjon i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"For å gi Banana Browser tilgang til mikrofonen må du også slå på mikrofonen i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"For at Banana Browser skal kunne sende deg varsler, må du også slå på varsler i &lt;link&gt;Android-innstillingene&lt;/link&gt;."</string>
 </resources>

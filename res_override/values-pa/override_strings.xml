@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ਚੁਣਿਆ ਗਿਆ ਡਾਟਾ Banana Browser ਅਤੇ ਤੁਹਾਡੇ ਸਮਕਾਲੀਕਿਰਤ ਕੀਤੇ ਡੀਵਾਈਸਾਂ ਤੋਂ ਹਟਾਇਆ ਜਾ ਚੁੱਕਿਆ ਹੈ।
 
 ਤੁਹਾਡੇ Google ਖਾਤੇ ਵਿੱਚ &lt;link&gt;myactivity.google.com&lt;/link&gt; \'ਤੇ ਹੋਰ Google ਸੇਵਾਵਾਂ ਤੋਂ ਖੋਜਾਂ ਅਤੇ ਸਰਗਰਮੀ ਵਰਗੇ ਹੋਰ ਕਿਸਮ ਦਾ ਬ੍ਰਾਊਜ਼ਿੰਗ ਇਤਿਹਾਸ ਵੀ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ।"</string>
-<string name="android_permission_off_plural">"Banana Browser ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਇਜਾਜ਼ਤਾਂ ਚਾਲੂ ਕਰੋ।"</string>
-<string name="android_permission_off">"&lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ Banana Browser ਲਈ ਇਜਾਜ਼ਤ ਚਾਲੂ ਕਰੋ।"</string>
-<string name="android_location_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਟਿਕਾਣਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
-<string name="android_camera_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਕੈਮਰਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
-<string name="android_notifications_permission_off">"Banana Browser ਨੂੰ ਤੁਹਾਨੂੰ ਸੂਚਨਾਵਾਂ ਭੇਜਣ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਸੂਚਨਾਵਾਂ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
-<string name="android_microphone_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ਲਾਈਟ ਮੋਡ ਵਿੱਚ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਦਾ ਹੈ ਅਤੇ 60 ਪ੍ਰਤੀਸ਼ਤ ਤੱਕ ਘੱਟ ਡਾਟਾ ਵਰਤਦਾ ਹੈ।"</string>
 <string name="data_reduction_description_lite_mode">"ਲਾਈਟ ਮੋਡ ਚਾਲੂ ਹੋਣ \'ਤੇ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਨ ਲਈ Google ਸਰਵਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ। ਲਾਈਟ ਮੋਡ ਸਿਰਫ਼ ਜ਼ਰੂਰੀ ਸਮੱਗਰੀ ਨੂੰ ਲੋਡ ਕਰਨ ਲਈ ਬਹੁਤ ਹੀ ਧੀਮੇ ਪੰਨਿਆਂ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰਦਾ ਹੈ। ਲਾਈਟ ਮੋਡ ਇਨਕੋਗਨਿਟੋ ਟੈਬਾਂ \'ਤੇ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦਾ ਹੈ।"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ਲਾਈਟ ਮੋਡ ਵਿੱਚ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਕੇ 60 ਫ਼ੀਸਦ ਤੱਕ ਘੱਟ ਡਾਟਾ ਵਰਤਦਾ ਹੈ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਦੇਖੇ ਜਾਂਦੇ ਪੰਨਿਆਂ ਨੂੰ ਸੁਯੋਗ ਬਣਾਉਣ ਲਈ, Banana Browser ਤੁਹਾਡੇ ਵੈੱਬ ਟਰੈਫ਼ਿਕ ਨੂੰ Google \'ਤੇ ਭੇਜਦਾ ਹੈ। &lt;link&gt;ਹੋਰ ਜਾਣੋ&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@
 <string name="sogou_explanation">"Banana Browser ਚੀਨ ਵਿੱਚ ਖੋਜ ਲਈ &lt;b&gt;Sogou&lt;/b&gt; ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦਾ ਹੈ। ਤੁਸੀਂ ਇਸ ਨੂੰ &lt;link&gt;ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚੋਂ ਬਦਲ ਸਕਦੇ ਹੋ।"</string>
 <string name="app_running_in_chrome_disclosure">"ਇਹ ਐਪ Banana Browser ਵਿੱਚ ਚੱਲ ਰਹੀ ਹੈ"</string>
 <string name="twa_running_in_chrome">"Banana Browser ਵਿੱਚ ਦਿਖਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"</string>
+<string name="twa_running_in_chrome_v2">"ਤੁਸੀਂ Banana Browser ਵਿੱਚ ਆਪਣੀ %1$s ਸਾਈਨ-ਇਨ ਸਥਿਤੀ, ਬ੍ਰਾਊਜ਼ਿੰਗ ਡਾਟਾ ਅਤੇ ਸਾਈਟ ਡਾਟਾ ਦੇਖੋਗੇ।"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ਦਾ ਡਾਟਾ ਵੀ Banana Browser ਵਿੱਚ ਹੈ"</string>
 <string name="twa_clear_data_dialog_message">"ਤੁਸੀਂ ਡਾਟੇ ਨੂੰ Banana Browser ਸੈਟਿੰਗਾਂ ਵਿੱਚ ਕਲੀਅਰ ਕਰ ਸਕਦੇ ਹੋ"</string>
 <string name="keyboard_shortcut_help_center">"ਇੱਕ ਨਵੀਂ ਟੈਬ ਵਿੱਚ Banana Browser ਮਦਦ ਕੇਂਦਰ ਖੋਲ੍ਹੋ"</string>
@@ -95,7 +90,9 @@
 <string name="usage_stats_revocation_prompt">"ਕੀ ਡਿਜੀਟਲ ਜੀਵਨਸ਼ੈਲੀ ਤੋਂ ਆਪਣੀ Banana Browser ਸਰਗਰਮੀ ਹਟਾਉਣੀ ਹੈ?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser ਵਿੱਚ ਉਹ ਸਾਈਟਾਂ ਨਹੀਂ ਦਿਸਣਗੀਆਂ, ਜਿਨ੍ਹਾਂ \'ਤੇ ਤੁਸੀਂ ਜਾਂਦੇ ਹੋ। ਸਾਰੇ ਸਾਈਟ ਟਾਈਮਰ ਮਿਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।"</string>
 <string name="autofill_assistant_module_title">"Banana Browser ਵਿੱਚ \'Google ਅਸਿਸਟੈਂਟ\'"</string>
+<string name="qr_code_permission_description">"ਕਿਸੇ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ, Banana Browser ਨੂੰ ਤੁਹਾਡਾ ਕੈਮਰਾ ਵਰਤਣ ਦਿਓ"</string>
 <string name="qr_code_open_settings_description">"ਕਿਸੇ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ, ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਬਦਲੋ ਤਾਂ ਜੋ Banana Browser ਤੁਹਾਡੇ ਕੈਮਰੇ ਨੂੰ ਵਰਤ ਸਕੇ"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser ਨੂੰ ਤੁਹਾਡੇ ਆਲੇ-ਦੁਆਲੇ ਦਾ 3D ਨਕਸ਼ਾ ਬਣਾਉਣ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਅਤੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
@@ -108,4 +105,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"ਕਾਰਡ ਅਤੇ ਪਤੇ Banana Browser ਅਤੇ ਤੁਹਾਡੇ Google ਖਾਤੇ (%1$s) ਤੋਂ ਹਨ। ਤੁਸੀਂ ਉਹਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ BEGIN_LINKਸੈਟਿੰਗਾਂEND_LINK ਵਿੱਚ ਕਰ ਸਕਦੇ ਹੋ।"</string>
 <string name="payments_card_and_address_settings_signed_out">"ਕਾਰਡ ਅਤੇ ਪਤੇ Banana Browser ਤੋਂ ਹਨ। ਤੁਸੀਂ ਉਹਨਾਂ ਦਾ ਪ੍ਰਬੰਧਨ BEGIN_LINKਸੈਟਿੰਗਾਂEND_LINK ਵਿੱਚ ਜਾ ਕੇ ਕਰ ਸਕਦੇ ਹੋ।"</string>
+<string name="android_permission_off">"&lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ Banana Browser ਲਈ ਇਜਾਜ਼ਤ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_permission_off_plural">"Banana Browser ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਇਜਾਜ਼ਤਾਂ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_ar_camera_permission_off">"Banana Browser ਨੂੰ AR ਵਰਤਣ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਕੈਮਰਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_camera_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਕੈਮਰਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_location_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਟਿਕਾਣੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਟਿਕਾਣਾ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_microphone_permission_off">"Banana Browser ਨੂੰ ਆਪਣੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
+<string name="android_notifications_permission_off">"Banana Browser ਨੂੰ ਤੁਹਾਨੂੰ ਸੂਚਨਾਵਾਂ ਭੇਜਣ ਦੇਣ ਲਈ &lt;link&gt;Android ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚ ਸੂਚਨਾਵਾਂ ਵੀ ਚਾਲੂ ਕਰੋ।"</string>
 </resources>

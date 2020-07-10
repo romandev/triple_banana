@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ទិន្នន័យដែលបានជ្រើសរើស​ត្រូវបានលុបចេញពី Banana Browser និងឧបករណ៍ដែលបានធ្វើសមកាលកម្ម​របស់អ្នក​។
 
 គណនី Google របស់អ្នកអាចមានទម្រង់ប្រវត្តិរុករកផ្សេងទៀតដូចជា ការស្វែងរក និងសកម្មភាពពីសេវាកម្ម Google ផ្សេងទៀត​នៅ​ក្នុង &lt;link&gt;myactivity.google.com&lt;/link&gt; ។"</string>
-<string name="android_permission_off_plural">"បើកសិទ្ធិអនុញ្ញាតសម្រាប់ Banana Browser នៅក្នុង &lt;link&gt;ការកំណត់ Android&lt;/link&gt;។"</string>
-<string name="android_permission_off">"បើកសិទ្ធិអនុញ្ញាតសម្រាប់ Banana Browser នៅក្នុង &lt;link&gt;ការកំណត់ Android&lt;/link&gt;។"</string>
-<string name="android_location_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ចូលប្រើទីតាំង​របស់អ្នក អ្នកក៏ត្រូវបើក​ទីតាំង​នៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
-<string name="android_camera_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ចូលប្រើកាមេរ៉ា​របស់អ្នក អ្នកក៏ត្រូវបើក​កាមេរ៉ានៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
-<string name="android_notifications_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ផ្ញើការជូនដំណឹង​ទៅអ្នក អ្នកក៏ត្រូវបើក​ការជូនដំណឹង​នៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
-<string name="android_microphone_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ចូលប្រើមីក្រូហ្វូន​របស់អ្នក អ្នកក៏ត្រូវបើក​មីក្រូហ្វូន​នៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
 <string name="data_reduction_benefits_description_lite_mode">"នៅក្នុង​មុខងារស្រាល Banana Browser ផ្ទុកទំព័រ​រហ័សជាងមុន និងប្រើទិន្នន័យ​តិចជាងមុន​រហូតដល់ 60 ភាគរយ។"</string>
 <string name="data_reduction_description_lite_mode">"នៅពេលមុខងារស្រាល​បានបើក Banana Browser ប្រើម៉ាស៊ីនមេ Google ដើម្បីការផ្ទុកទំព័រ​រហ័សជាងមុន។ មុខងារស្រាល​សរសេរទំព័រយឺតខ្លាំង​ឡើងវិញ ដើម្បីផ្ទុកតែខ្លឹមសារដែលសំខាន់ប៉ុណ្ណោះ។ មុខងារស្រាលមិន​អនុវត្តចំពោះផ្ទាំងអនាមិកទេ។"</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser ផ្ទុកទំព័រ​រហ័សជាងមុន និងប្រើទិន្នន័យ​តិចជាងមុន​រហូតដល់ 60 ភាគរយ នៅក្នុង​មុខងារស្រាល។ ដើម្បី​បង្កើន​ប្រសិទ្ធភាព​ទំព័រ​ដែល​អ្នក​ចូលមើល Banana Browser ផ្ញើ​ចរាចរណ៍​បណ្ដាញ​របស់អ្នក​ទៅ Google ។ &lt;link&gt;ស្វែងយល់​បន្ថែម&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Banana Browser អាចប្រើ &lt;b&gt;Sogou&lt;/b&gt; សម្រាប់ការស្វែងរកនៅក្នុងប្រទេសចិន។ អ្នកអាចផ្លាស់ប្តូរវាបាននៅក្នុង &lt;link&gt;ការកំណត់&lt;/link&gt;។"</string>
 <string name="app_running_in_chrome_disclosure">"កម្មវិធីនេះ​កំពុងដំណើរការនៅក្នុង Banana Browser"</string>
 <string name="twa_running_in_chrome">"កំពុងដំណើរការ​នៅក្នុង Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"អ្នក​នឹងមើលឃើញ​ស្ថានភាព​ចូល %1$s, ទិន្នន័យ​រុករក និង​ទិន្នន័យគេហទំព័រ​របស់អ្នក​នៅក្នុង Banana Browser។"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ក៏មានទិន្នន័យ​នៅក្នុង Banana Browser ផងដែរ"</string>
 <string name="twa_clear_data_dialog_message">"អ្នកអាច​សម្អាតទិន្នន័យ​នៅក្នុងការកំណត់ Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"បើកមជ្ឈមណ្ឌលជំនួយ Banana Browser នៅក្នុងផ្ទាំងថ្មី"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"លុបសកម្មភាព Banana Browser របស់អ្នកពី​សុខុមាលភាព​ឌីជីថល?"</string>
 <string name="usage_stats_revocation_explanation">"គេហ​ទំព័រដែល​អ្នកចូលមើល​នៅក្នុង Banana Browser នឹងមិនបង្ហាញទេ។ កម្មវិធី​កំណត់ពេលរបស់​គេហទំព័រទាំង​អស់នឹងត្រូវ​បានលុប។"</string>
 <string name="autofill_assistant_module_title">"Google ជំនួយការនៅក្នុង Banana Browser"</string>
+<string name="qr_code_permission_description">"ដើម្បី​ស្កេនកូដ QR សូមអនុញ្ញាត​ឱ្យ Banana Browser ប្រើ​កាមេរ៉ារបស់អ្នក"</string>
 <string name="qr_code_open_settings_description">"ដើម្បី​ស្កេន​កូដ QR សូមប្ដូរ​ការកំណត់​របស់អ្នក ដើម្បីឱ្យ Banana Browser អាចប្រើ​កាមេរ៉ា​របស់អ្នក​បាន"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser ត្រូវការការអនុញ្ញាតចូលប្រើកាមេរ៉ារបស់អ្នក ដើម្បីបង្កើតផែនទី 3D នៃមជ្ឈដ្ឋានជុំវិញរបស់អ្នក។"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ត្រូវការការអនុញ្ញាត​ដើម្បី​ចូល​ប្រើប្រាស់​កាមេរ៉ា​របស់​អ្នក​សម្រាប់ទំព័រនេះ។"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ត្រូវការការអនុញ្ញាត ដើម្បីចូលប្រើប្រាស់មីក្រូហ្វូនរបស់អ្នកសម្រាប់ទំព័រនេះ។"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser ត្រូវការការអនុញ្ញាត ដើម្បីចូលប្រើប្រាស់កាមេរ៉ា និងមីក្រូហ្វូនរបស់អ្នកសម្រាប់ទំព័រនេះ។"</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"បណ្ណ និងអាសយដ្ឋានគឺបានមកពី Banana Browser និងគណនី Google របស់អ្នក (%1$s)។ អ្នកអាចគ្រប់គ្រងពួកវាបាននៅក្នុង BEGIN_LINKការកំណត់END_LINK។"</string>
 <string name="payments_card_and_address_settings_signed_out">"បណ្ណ និងអាសយដ្ឋានគឺបានមកពី Banana Browser ។ អ្នកអាចគ្រប់គ្រងពួកវាបាននៅក្នុង BEGIN_LINKការកំណត់END_LINK។"</string>
+<string name="android_permission_off">"បើកសិទ្ធិអនុញ្ញាតសម្រាប់ Banana Browser នៅក្នុង &lt;link&gt;ការកំណត់ Android&lt;/link&gt;។"</string>
+<string name="android_permission_off_plural">"បើកសិទ្ធិអនុញ្ញាតសម្រាប់ Banana Browser នៅក្នុង &lt;link&gt;ការកំណត់ Android&lt;/link&gt;។"</string>
+<string name="android_ar_camera_permission_off">"ដើម្បី​អនុញ្ញាតឱ្យ Banana Browser ប្រើ AR សូមបើក​កាមេរ៉ានៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
+<string name="android_camera_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ចូលប្រើកាមេរ៉ា​របស់អ្នក អ្នកក៏ត្រូវបើក​កាមេរ៉ានៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
+<string name="android_location_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ចូលប្រើទីតាំង​របស់អ្នក អ្នកក៏ត្រូវបើក​ទីតាំង​នៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
+<string name="android_microphone_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ចូលប្រើមីក្រូហ្វូន​របស់អ្នក អ្នកក៏ត្រូវបើក​មីក្រូហ្វូន​នៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
+<string name="android_notifications_permission_off">"ដើម្បីអនុញ្ញាតឱ្យ Banana Browser ផ្ញើការជូនដំណឹង​ទៅអ្នក អ្នកក៏ត្រូវបើក​ការជូនដំណឹង​នៅក្នុង&lt;link&gt;ការកំណត់ Android&lt;/link&gt; ផងដែរ។"</string>
 </resources>

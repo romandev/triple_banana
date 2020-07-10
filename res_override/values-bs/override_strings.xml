@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Odabrani podaci su uklonjeni iz Banana Browsera i vaših sinhroniziranih uređaja.
 
 Vaš Google račun može imati druge oblike historije pregledanja kao što su pretraživanja i aktivnosti s drugih Googleovih usluga na &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Uključite odobrenja za Banana Browser u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_permission_off">"Uključite odobrenje za Banana Browser u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Da dozvolite da Banana Browser pristupa vašoj lokaciji, uključite lokaciju i u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Da Banana Browseru dozvolite pristup kameri, uključite kameru i u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Da dozvolite da vam Banana Browser šalje obavještenja, uključite obavještenja i u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Da Banana Browseru dozvolite pristup mikrofonu, uključite mikrofon i u &lt;link&gt;Android postavkama&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"U jednostavnom načinu rada, Banana Browser učitava stranice brže i koristi do 60 procenata manje podataka."</string>
 <string name="data_reduction_description_lite_mode">"Kada je uključen Jednostavni način rada, Banana Browser koristi Googleove servere da bi se stranice brže učitavale. Jednostavni način rada ponovo ispisuje izuzetno spore stranice da bi se učitao samo ključni sadržaj. Jednostavni način rada se ne primjenjuje na anonimne kartice."</string>
 <string name="data_reduction_promo_summary_lite_mode">"U jednostavnom načinu rada, Banana Browser brže učitava stranice i koristi do 60% manje podataka. Da optimizira stranice koje posjećujete, Banana Browser Googleu šalje informacije o vašem saobraćaju na internetu. &lt;link&gt;Saznajte više&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Vaš Google račun može imati druge oblike historije pregledanja kao što su pr
 <string name="sogou_explanation">"Banana Browser može koristiti &lt;b&gt;Sogou&lt;/b&gt; za pretraživanje u Kini. To možete promijeniti u &lt;link&gt;Postavkama&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Ova aplikacija je pokrenuta u Banana Browseru"</string>
 <string name="twa_running_in_chrome">"Pokrenuto je u Banana Browseru"</string>
+<string name="twa_running_in_chrome_v2">"Vidjet ćete svoj status prijave na web lokaciji %1$s, podatke pregledanja i web lokacije na Banana Browseru."</string>
 <string name="twa_clear_data_dialog_title">"%1$s također ima podatke u Banana Browseru"</string>
 <string name="twa_clear_data_dialog_message">"Podatke možete obrisati u Postavkama Banana Browsera"</string>
 <string name="keyboard_shortcut_help_center">"Otvori Banana Browser Centar za pomoć u novoj kartici"</string>
@@ -96,7 +91,9 @@ Vaš Google račun može imati druge oblike historije pregledanja kao što su pr
 <string name="usage_stats_revocation_prompt">"Ukloniti aktivnosti Banana Browsera iz Digitalnog blagostanja?"</string>
 <string name="usage_stats_revocation_explanation">"Neće se prikazivati web lokacije koje posjetite preko Banana Browsera. Svi tajmeri web lokacija će biti izbrisani."</string>
 <string name="autofill_assistant_module_title">"Google Assistant u Banana Browseru"</string>
+<string name="qr_code_permission_description">"Da skenirate QR kôd, dozvolite Banana Browseru korištenje kamere"</string>
 <string name="qr_code_open_settings_description">"Da skenirate QR kôd, promijenite postavke tako da Banana Browser može koristiti vašu kameru"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browseru je potrebno odobrenje da pristupi kameri radi kreiranja 3D mape vašeg okruženja."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser treba odobrenje za pristup kameri za ovu web lokaciju."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser treba dopuštenje za pristup mikrofonu za ovu web-lokaciju."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browseru treba odobrenje za pristup vašoj kameri i mikrofonu na ovoj web lokaciji."</string>
@@ -108,4 +105,11 @@ Vaš Google račun može imati druge oblike historije pregledanja kao što su pr
           &lt;li&gt;Informacije koje unosite u obrasce
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartice i adrese su iz Banana Browsera. Njima možete upravljati u BEGIN_LINKPostavkamaEND_LINK."</string>
+<string name="android_permission_off">"Uključite odobrenje za Banana Browser u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Uključite odobrenja za Banana Browser u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Da Banana Browseru dozvolite korištenje AR-a, također uključite kameru u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Da Banana Browseru dozvolite pristup kameri, uključite kameru i u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Da dozvolite da Banana Browser pristupa vašoj lokaciji, uključite lokaciju i u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Da Banana Browseru dozvolite pristup mikrofonu, uključite mikrofon i u &lt;link&gt;Android postavkama&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Da dozvolite da vam Banana Browser šalje obavještenja, uključite obavještenja i u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
 </resources>

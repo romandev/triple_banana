@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Banana Browser மற்றும் ஒத்திசைக்கப்பட்ட சாதனங்களிலிருந்து, தேர்ந்தெடுத்த தரவு அகற்றப்பட்டது.
 
 &lt;link&gt;myactivity.google.com&lt;/link&gt; எனும் தளத்தில் பிற Google சேவைகளிலிருந்து தேடல்கள், செயல்பாடு போன்ற உங்கள் Google கணக்கிற்கான பிற வகை உலாவல் வரலாறும் இருக்கக்கூடும்."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; Banana Browserக்கான அனுமதிகளை இயக்கவும்."</string>
-<string name="android_permission_off">"&lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; Banana Browserக்கான அனுமதியை இயக்கவும்."</string>
-<string name="android_location_permission_off">"Banana Browser உங்கள் இருப்பிடத் தகவலை அணுக அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; இருப்பிடத்தை இயக்கவும்."</string>
-<string name="android_camera_permission_off">"உங்கள் கேமராவை அணுக Banana Browserமை அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; கேமராவை இயக்கவும்."</string>
-<string name="android_notifications_permission_off">"Banana Browser உங்களுக்கு அறிவிப்புகளை அனுப்ப அனுமதிப்பதற்கு&lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; அறிவிப்புகளை இயக்கவும்."</string>
-<string name="android_microphone_permission_off">"Banana Browser உங்கள் மைக்ரோஃபோனை அணுக அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; மைக்ரோஃபோனை இயக்கவும்."</string>
 <string name="data_reduction_benefits_description_lite_mode">"’லைட்’ பயன்முறையில், பக்கங்களை Banana Browser வேகமாக ஏற்றுவதோடு, டேட்டாவை 60 சதவீதம் குறைவாகவும் பயன்படுத்தும்."</string>
 <string name="data_reduction_description_lite_mode">"லைட் பயன்முறை இயக்கப்பட்டிருக்கும்போது, பக்கங்களை வேகமாக ஏற்றுவதற்காக Google சேவையகங்களைக் Banana Browser பயன்படுத்தும். மிகவும் மெதுவாக ஏற்றப்படும் பக்கங்களில் முக்கிய உள்ளடக்கத்தை மட்டும் ஏற்றுமாறு லைட் பயன்முறை அவற்றை மீண்டும் எழுதுகிறது. மறைநிலைத் தாவல்களுக்கு லைட் பயன்முறை பொருந்தாது."</string>
 <string name="data_reduction_promo_summary_lite_mode">"லைட் பயன்முறையில் பக்கங்களை Banana Browser வேகமாக ஏற்றுவதோடு டேட்டாவை 60 சதவீதம் வரை குறைவாகவும் பயன்படுத்தும். நீங்கள் பார்க்கும் பக்கங்களை மேம்படுத்த Banana Browser உங்கள் இணைய டிராஃபிக்கை Googleளுக்கு அனுப்பும். &lt;link&gt;மேலும் அறிக&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"சீனாவில் தேடுவதற்கு, Banana Browserமில் &lt;b&gt;Sogou&lt;/b&gt;ஐப் பயன்படுத்தலாம். இதை &lt;link&gt;அமைப்புகளுக்குச்&lt;/link&gt; சென்று மாற்றலாம்."</string>
 <string name="app_running_in_chrome_disclosure">"இந்த ஆப்ஸ் Banana Browserமில் இயங்குகிறது"</string>
 <string name="twa_running_in_chrome">"Banana Browser இல் இயங்குகிறது"</string>
+<string name="twa_running_in_chrome_v2">"%1$s என்ற தளம் தொடர்பான உங்களின் உள்நுழைவு நிலை, உலாவிய தரவு, தளத்தின் தரவு ஆகியவற்றை Banana Browserமில் பார்ப்பீர்கள்."</string>
 <string name="twa_clear_data_dialog_title">"%1$s ஆப்ஸின் தரவும் Banana Browserமில் உள்ளது"</string>
 <string name="twa_clear_data_dialog_message">"Banana Browser அமைப்புகளில் தரவை அழிக்கலாம்"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser உதவி மையத்தைப் புதிய தாவலில் திறக்கும்"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"உங்கள் Banana Browser செயல்பாட்டை டிஜிட்டல் வெல்பீயிங்கிலிருந்து நீக்கவா?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browserமில் நீங்கள் பார்க்கும் தளங்களைக் காட்டாது. தளத்தில் உள்ள அத்தனை டைமர்களும் நீக்கப்படும்."</string>
 <string name="autofill_assistant_module_title">"Banana Browserமில் Google அசிஸ்டண்ட்"</string>
+<string name="qr_code_permission_description">"QR குறியீட்டை ஸ்கேன் செய்ய, Banana Browser உலாவி உங்கள் கேமராவைப் பயன்படுத்த அனுமதிக்கவும்"</string>
 <string name="qr_code_open_settings_description">"QR குறியீட்டை ஸ்கேன் செய்ய, அமைப்புகளை மாற்றியமைக்கவும். அப்போதுதான் Banana Browser உங்கள் கேமராவைப் பயன்படுத்த முடியும்"</string>
+<string name="infobar_missing_ar_camera_permission_text">"உங்களைச் சுற்றியுள்ள இடங்களின் 3D வரைபடத்தை உருவாக்க, Banana Browserமுக்கு உங்கள் கேமராவை அணுக அனுமதி தேவை."</string>
 <string name="infobar_missing_camera_permission_text">"இந்தத் தளத்திற்காகக் கேமராவை அணுக, Banana Browserமுக்கு அனுமதி தேவை."</string>
 <string name="infobar_missing_microphone_permission_text">"இந்தத் தளத்திற்காக மைக்ரோஃபோனை அணுக, Banana Browserமுக்கு அனுமதி தேவை."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"இந்தத் தளத்திற்காகக் கேமராவையும் மைக்ரோஃபோனையும் அணுக, Banana Browserமுக்கு அனுமதி தேவை."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"கார்டுகளும் முகவரிகளும் Banana Browserமிலிருந்தும் %1$s எனும் உங்கள் Google கணக்கிலிருந்தும் பெறப்பட்டவையாகும். BEGIN_LINKஅமைப்புகளில்END_LINK அவற்றை நிர்வகிக்கலாம்."</string>
 <string name="payments_card_and_address_settings_signed_out">"கார்டுகளும் முகவரிகளும் Banana Browser இலிருந்து பெறப்பட்டவையாகும். BEGIN_LINKஅமைப்புகளில்END_LINK அவற்றை நிர்வகிக்கலாம்."</string>
+<string name="android_permission_off">"&lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; Banana Browserக்கான அனுமதியை இயக்கவும்."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; Banana Browserக்கான அனுமதிகளை இயக்கவும்."</string>
+<string name="android_ar_camera_permission_off">"ARரைப் பயன்படுத்த Banana Browserமை அனுமதிப்பதற்கு, &lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; கேமராவையும் இயக்கவும்."</string>
+<string name="android_camera_permission_off">"உங்கள் கேமராவை அணுக Banana Browserமை அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; கேமராவை இயக்கவும்."</string>
+<string name="android_location_permission_off">"Banana Browser உங்கள் இருப்பிடத் தகவலை அணுக அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; இருப்பிடத்தை இயக்கவும்."</string>
+<string name="android_microphone_permission_off">"Banana Browser உங்கள் மைக்ரோஃபோனை அணுக அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; மைக்ரோஃபோனை இயக்கவும்."</string>
+<string name="android_notifications_permission_off">"Banana Browser உங்களுக்கு அறிவிப்புகளை அனுப்ப அனுமதிப்பதற்கு&lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; அறிவிப்புகளை இயக்கவும்."</string>
 </resources>

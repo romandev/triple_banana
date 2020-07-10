@@ -7,17 +7,20 @@ package org.banana.cake;
 
 import org.banana.cake.interfaces.BananaFeatureFlags;
 
-import org.chromium.chrome.browser.site_settings.WebsitePreferenceBridge;
+import org.chromium.chrome.browser.profiles.Profile;
+import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge;
 import org.chromium.components.content_settings.ContentSettingsType;
 
 public class CakeFeatureFlags implements BananaFeatureFlags {
     @Override
     public boolean isAdblockEnabled() {
-        return !WebsitePreferenceBridge.isCategoryEnabled(ContentSettingsType.ADS);
+        return !WebsitePreferenceBridge.isCategoryEnabled(
+                Profile.getLastUsedRegularProfile(), ContentSettingsType.ADS);
     }
 
     @Override
     public void setAdblockEnabled(boolean value) {
-        WebsitePreferenceBridge.setCategoryEnabled(ContentSettingsType.ADS, !value);
+        WebsitePreferenceBridge.setCategoryEnabled(
+                Profile.getLastUsedRegularProfile(), ContentSettingsType.ADS, !value);
     }
 }

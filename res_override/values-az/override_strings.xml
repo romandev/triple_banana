@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Seçilmiş data Banana Browser və sinxronizasiya olunmuş cihazınızdan silindi. 
 
 &lt;link&gt;history.google.com&lt;/link&gt; linkində Google hesabınızın digər Google xidmətlərində axtarış və fəaliyyət kimi başqa formalı axtarış tarixçəsi ola bilər."</string>
-<string name="android_permission_off_plural">"Banana Browser üçün icazələrin yandırmaq &lt;link&gt; Android Settings &lt;/link&gt; ."</string>
-<string name="android_permission_off">"Banana Browser üçün icazə yandırmaq &lt;link&gt; Android Settings &lt;/link&gt; ."</string>
-<string name="android_location_permission_off">"Həmçinin, Banana Browser\'un məkana daxil olmasına icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; məkanı aktiv edin."</string>
-<string name="android_camera_permission_off">"Həmçinin, Banana Browser\'un kameraya daxil olmasına icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; kameranı aktiv edin."</string>
-<string name="android_notifications_permission_off">"Həmçinin, Banana Browser\'un bildirişlər göndərməsinə icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; bildirişləri aktiv edin."</string>
-<string name="android_microphone_permission_off">"Həmçinin, Banana Browser\'un mikrofona daxil olmasına icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; mikrofonu aktiv edin."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Layt rejimində Banana Browser səhifələri daha tez yükləyir və dataya 60 faizədək qənaət edir."</string>
 <string name="data_reduction_description_lite_mode">"Layt rejimi aktiv olduqda Banana Browser səhifələrin daha sürətlə yüklənməsi üçün Google serverlərindən istifadə edir. Layt rejimi yalnız əsas kontenti yükləmək üçün sürəti çox zəif olan səhifələri yenidən yazır. Layt rejimi Gizli tablara tətbiq edilmir."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Layt rejimində Banana Browser səhifələri daha tez yükləyir və dataya 60 faizədək qənaət edir. Daxil olduğunuz səhifəni optimallaşdırmaq üçün Banana Browser, veb trafiki Google\'a göndərir. &lt;link&gt;Ətraflı məlumat&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Banana Browser, Çində axtarış üçün &lt;b&gt;Sogou&lt;/b&gt; istifadə edə bilər. Bunu &lt;link&gt;Ayarlar&lt;/link&gt; bölməsindən dəyişə bilərsiniz."</string>
 <string name="app_running_in_chrome_disclosure">"Bu tətbiq Banana Browser\'da işləyir"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'da istifadə edilir"</string>
+<string name="twa_running_in_chrome_v2">"Banana Browser\'da %1$s giriş statusu, baxış datası və sayt datanızı görəcəksiniz."</string>
 <string name="twa_clear_data_dialog_title">"Həmçinin, %1$s tətbiqinin Banana Browser\'da datası var"</string>
 <string name="twa_clear_data_dialog_message">"Datanı Banana Browser Ayarlarından silə bilərsiniz"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser Yardım Mərkəzini yeni paneldə açın"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"Banana Browser fəaliyyəti Rəqəmsal Sağlamlıqdan silinsin?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'da girdiyiniz saytlar göstərilməyəcək. Bütün sayt taymerləri silinəcək."</string>
 <string name="autofill_assistant_module_title">"Google Assistent Banana Browser\'da"</string>
+<string name="qr_code_permission_description">"QR kodunu skanlamaq üçün Banana Browser\'a kameranızdan istifadə imkanı verin"</string>
 <string name="qr_code_open_settings_description">"QR kodu skan etmək üçün, ayarları dəyişərək Banana Browser\'un kameranızı istifadə etməsinə icazə verin"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser ətrafınızın 3D xəritəsini yaratmaq üçün kameranıza giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser bu sayt üçün kameraya giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser bu sayt üçün mikrofona giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser bu sayt üçün kamera və mikrofona giriş icazəsi tələb edir."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kart və ünvanlar Google Banana Browser və Google Hesabındandır (%1$s). Onları BEGIN_LINKAyarlarEND_LINK bölməsindən idarə edə bilərsiniz."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kart və ünvanlar Banana Browser\'dandır. Onları BEGIN_LINKAyarlarEND_LINK bölməsindən idarə edə bilərsiniz."</string>
+<string name="android_permission_off">"Banana Browser üçün icazə yandırmaq &lt;link&gt; Android Settings &lt;/link&gt; ."</string>
+<string name="android_permission_off_plural">"Banana Browser üçün icazələrin yandırmaq &lt;link&gt; Android Settings &lt;/link&gt; ."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser\'un artırılmış reallıqdan istifadə etməsi üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; kameranı da aktiv edin."</string>
+<string name="android_camera_permission_off">"Həmçinin, Banana Browser\'un kameraya daxil olmasına icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; kameranı aktiv edin."</string>
+<string name="android_location_permission_off">"Həmçinin, Banana Browser\'un məkana daxil olmasına icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; məkanı aktiv edin."</string>
+<string name="android_microphone_permission_off">"Həmçinin, Banana Browser\'un mikrofona daxil olmasına icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; mikrofonu aktiv edin."</string>
+<string name="android_notifications_permission_off">"Həmçinin, Banana Browser\'un bildirişlər göndərməsinə icazə vermək üçün &lt;link&gt;Android Ayarlarında&lt;/link&gt; bildirişləri aktiv edin."</string>
 </resources>

@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Ընտրված տվյալները հեռացվել են Banana Browser-ից և ձեր համաժամացված սարքերից:
 
 Այցելությունների պատմությունը կարող է պահվել նաև ձեր Google հաշվում, օրինակ՝ որոնումների և Google-ի ծառայություններում ձեր գործողությունների տեսքով: Այդ տվյալները կարող եք գտնել &lt;link&gt;history.google.com&lt;/link&gt; էջում:"</string>
-<string name="android_permission_off_plural">"Միացնել Banana Browser-ի թույլտվությունները &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;:"</string>
-<string name="android_permission_off">"Միացնել Banana Browser-ի թույլտվությունը &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;:"</string>
-<string name="android_location_permission_off">"Որպեսզի ձեր տեղադրությունը հասանելի դառնա Banana Browser-ին, միացրեք այն &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
-<string name="android_camera_permission_off">"Որպեսզի տեսախցիկը հասանելի դառնա Banana Browser-ին, միացրեք այն &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
-<string name="android_notifications_permission_off">"Որպեսզի թույլատրեք Banana Browser-ին ձեզ ծանուցումներ ուղարկել, միացրեք նաև ծանուցումները &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
-<string name="android_microphone_permission_off">"Որպեսզի խոսափողը հասանելի դառնա Banana Browser-ին, միացրեք այն &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite ռեժիմում Banana Browser-ն ավելի արագ է բեռնում էջերը և օգտագործում է մինչև 60 տոկոս պակաս թրաֆիկ:"</string>
 <string name="data_reduction_description_lite_mode">"Երբ Lite ռեժիմը միացված է, Banana Browser-ն օգտագործում է Google-ի սերվերները՝ էջերի բեռնումն արագացնելու համար: Lite ռեժիմն արտագրում է դանդաղ էջերը՝ միայն կարևոր բովանդակությունը բեռնելու համար: Lite ռեժիմը չի գործում ինկոգնիտո ներդիրներում:"</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite ռեժիմում Banana Browser-ն ավելի արագ է բեռնում էջերը և օգտագործում է մինչև 60% պակաս թրաֆիկ: Ձեր այցելած էջերն օպտիմալացնելու համար Banana Browser-ը ձեր վեբ թրաֆիկն ուղարկում է Google-ին։ &lt;link&gt;Իմանալ ավելին&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@
 <string name="sogou_explanation">"Չինաստանում որոնում կատարելու համար Banana Browser-ը կարող է օգտագործել &lt;b&gt;Sogou&lt;/b&gt; որոնման համակարգը: Սա կարող եք փոխել &lt;link&gt;կարգավորումներում&lt;/link&gt;:"</string>
 <string name="app_running_in_chrome_disclosure">"Այս հավելվածն աշխատում է Banana Browser-ում"</string>
 <string name="twa_running_in_chrome">"Այս էջն արդեն բացված է Banana Browser-ում"</string>
+<string name="twa_running_in_chrome_v2">"Դուք կտեսնեք ձեր %1$s հաշվի մուտքի կարգավիճակը, այցելությունների պատմությունը և կայքի տվյալները Banana Browser-ում։"</string>
 <string name="twa_clear_data_dialog_title">"%1$s հավելվածը նաև ունի տվյալներ Banana Browser-ում"</string>
 <string name="twa_clear_data_dialog_message">"Տվյալները կարող եք ջնջել Banana Browser-ի կարգավորումներում"</string>
 <string name="keyboard_shortcut_help_center">"Բացել Banana Browser-ի օգնության կենտրոնը նոր ներդիրում"</string>
@@ -95,7 +90,9 @@
 <string name="usage_stats_revocation_prompt">"Հեռացնե՞լ Banana Browser-ի պատմությունը Թվային բարեկեցությունից"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser-ում ձեր այցելած կայքերը չեն ցուցադրվի։ Բոլոր կայքերի ժամաչափերը կջնջվեն։"</string>
 <string name="autofill_assistant_module_title">"Google Օգնականը Banana Browser-ում"</string>
+<string name="qr_code_permission_description">"QR կոդը սկանավորելու համար թույլ տվեք Banana Browser-ին օգտագործել ձեր տեսախցիկը"</string>
 <string name="qr_code_open_settings_description">"QR կոդը սկանավորելու համար բացեք կարգավորումները և թույլ տվեք Banana Browser-ին օգտագործել ձեր տեսախցիկը"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser-ին անհրաժեշտ է տեսախցիկն օգտագործելու թույլտվություն՝ ձեր շրջակայքի եռաչափ քարտեզը ստեղծելու համար։"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր տեսախցիկն օգտագործելու թույլտվություն։"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր խոսափողն օգտագործելու թույլտվություն։"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր տեսախցիկն ու խոսափողը օգտագործելու թույլտվություն։"</string>
@@ -108,4 +105,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Քարտերն ու հասցեները նշված են ձեր Google հաշվում (%1$s) և Banana Browser-ում: Դրանք կարող եք կառավարել BEGIN_LINKԿարգավորումներումEND_LINK:"</string>
 <string name="payments_card_and_address_settings_signed_out">"Քարտերն ու հասցեները նշված են Banana Browser-ում: Դրանք կարող եք կառավարել BEGIN_LINKԿարգավորումներումEND_LINK:"</string>
+<string name="android_permission_off">"Միացնել Banana Browser-ի թույլտվությունը &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;:"</string>
+<string name="android_permission_off_plural">"Միացնել Banana Browser-ի թույլտվությունները &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;:"</string>
+<string name="android_ar_camera_permission_off">"Banana Browser-ին AR ռեժիմն օգտագործելու թույլտվություն տալու համար միացրեք նաև տեսախցիկը &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
+<string name="android_camera_permission_off">"Որպեսզի տեսախցիկը հասանելի դառնա Banana Browser-ին, միացրեք այն &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
+<string name="android_location_permission_off">"Որպեսզի ձեր տեղադրությունը հասանելի դառնա Banana Browser-ին, միացրեք այն &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
+<string name="android_microphone_permission_off">"Որպեսզի խոսափողը հասանելի դառնա Banana Browser-ին, միացրեք այն &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
+<string name="android_notifications_permission_off">"Որպեսզի թույլատրեք Banana Browser-ին ձեզ ծանուցումներ ուղարկել, միացրեք նաև ծանուցումները &lt;link&gt;Android-ի կարգավորումներում&lt;/link&gt;։"</string>
 </resources>

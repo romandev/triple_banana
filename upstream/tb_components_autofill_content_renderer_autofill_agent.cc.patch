@@ -1,19 +1,20 @@
 diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/components/autofill/content/renderer/autofill_agent.cc
 --- tb/components/autofill/content/renderer/autofill_agent.cc
 +++ tb_diff/components/autofill/content/renderer/autofill_agent.cc
-@@ -65,6 +65,11 @@
+@@ -66,6 +66,12 @@
  #include "ui/base/l10n/l10n_util.h"
  #include "ui/events/keycodes/keyboard_codes.h"
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+#include "third_party/blink/public/platform/web_coalesced_input_event.h"
++#include "third_party/blink/public/common/input/web_coalesced_input_event.h"
 +#include "third_party/blink/public/web/web_frame_widget.h"
++#include "ui/latency/latency_info.h"
 +#endif
 +
  using blink::WebAutofillClient;
  using blink::WebAutofillState;
  using blink::WebAXObject;
-@@ -576,12 +581,40 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
+@@ -579,12 +585,42 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
  
  void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
                                             const base::string16& password) {
@@ -42,10 +43,12 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/com
 +  keyboard_event.windows_key_code = ui::VKEY_RETURN;
 +  keyboard_event.SetModifiers(blink::WebInputEvent::kIsKeyPad);
 +  keyboard_event.text[0] = ui::VKEY_RETURN;
-+  keyboard_event.SetType(blink::WebInputEvent::kKeyDown);
-+  web_widget->HandleInputEvent(blink::WebCoalescedInputEvent(keyboard_event));
-+  keyboard_event.SetType(blink::WebInputEvent::kKeyUp);
-+  web_widget->HandleInputEvent(blink::WebCoalescedInputEvent(keyboard_event));
++  keyboard_event.SetType(blink::WebInputEvent::Type::kKeyDown);
++  web_widget->HandleInputEvent(
++      blink::WebCoalescedInputEvent(keyboard_event, ui::LatencyInfo()));
++  keyboard_event.SetType(blink::WebInputEvent::Type::kKeyUp);
++  web_widget->HandleInputEvent(
++      blink::WebCoalescedInputEvent(keyboard_event, ui::LatencyInfo()));
 +
 +  co_return();
 +#else

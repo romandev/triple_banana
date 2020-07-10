@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"選択したデータが Banana Browser から削除され、同期デバイスからも削除されました。
 
 他の Google サービスでの検索や操作など、Google アカウントの他の形式の閲覧履歴が &lt;link&gt;myactivity.google.com&lt;/link&gt; に残ることがあります。"</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android の設定&lt;/link&gt;で Banana Browser の権限を有効にしてください。"</string>
-<string name="android_permission_off">"&lt;link&gt;Android の設定&lt;/link&gt;で Banana Browser の権限を有効にしてください。"</string>
-<string name="android_location_permission_off">"Banana Browser に現在地へのアクセスを許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でも位置情報をオンにしてください。"</string>
-<string name="android_camera_permission_off">"Banana Browser にカメラへのアクセスを許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でもカメラをオンにしてください。"</string>
-<string name="android_notifications_permission_off">"Banana Browser に通知の送信を許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でも通知をオンにしてください。"</string>
-<string name="android_microphone_permission_off">"Banana Browser にマイクへのアクセスを許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でもマイクをオンにしてください。"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ライトモードを使用すると、Banana Browser でページの読み込みが高速化され、データ使用量も最大 60 パーセント抑えることができます。"</string>
 <string name="data_reduction_description_lite_mode">"ライトモードをオンにすると、Banana Browser では Google のサーバーを使用してページの読み込みを高速化します。特に読み込みの遅いページでは、ライトモードにより、主要コンテンツのみを読み込むようページが書き換えられます。なお、ライトモードはシークレット タブには適用されません。"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ライトモードを使用すると、Banana Browser でページの読み込みが高速化され、データ使用量も最大 60% 抑えることができます。アクセスするページを最適化するため、ウェブ トラフィックが Banana Browser から Google に送信されます。&lt;link&gt;詳細&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"中国のユーザーは Banana Browser での検索に &lt;b&gt;Sogou&lt;/b&gt; を使用できます。この設定は [&lt;link&gt;設定&lt;/link&gt;] で変更可能です。"</string>
 <string name="app_running_in_chrome_disclosure">"このアプリは Banana Browser で実行中です"</string>
 <string name="twa_running_in_chrome">"Banana Browser で実行中です"</string>
+<string name="twa_running_in_chrome_v2">"Banana Browser での %1$s のログイン ステータス、閲覧データ、サイトデータが表示されます。"</string>
 <string name="twa_clear_data_dialog_title">"Banana Browser にも %1$s のデータがあります"</string>
 <string name="twa_clear_data_dialog_message">"Banana Browser の設定でデータを削除できます"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser ヘルプセンターを新しいタブで開く"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"Banana Browser のアクティビティを Digital Wellbeing から削除しますか？"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser でアクセスしたサイトは表示されなくなり、サイトに設定したタイマーはすべて削除されます。"</string>
 <string name="autofill_assistant_module_title">"Banana Browser の Google アシスタント"</string>
+<string name="qr_code_permission_description">"QR コードをスキャンするには、Banana Browser にカメラの使用を許可してください"</string>
 <string name="qr_code_open_settings_description">"QR コードをスキャンするには、Banana Browser にカメラの使用を許可するよう設定を変更してください"</string>
+<string name="infobar_missing_ar_camera_permission_text">"周囲の 3D マップを作成するには、Banana Browser にカメラの使用を許可する必要があります。"</string>
 <string name="infobar_missing_camera_permission_text">"このサイトを利用するには、Banana Browser でカメラの使用を許可する必要があります。"</string>
 <string name="infobar_missing_microphone_permission_text">"このサイトを利用するには、Banana Browser でマイクの使用を許可する必要があります。"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"このサイトを利用するには、Banana Browser でカメラとマイクの使用を許可する必要があります。"</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Banana Browser と Google アカウント（%1$s）に保存されているクレジット カードと住所です。[BEGIN_LINK設定END_LINK] で管理できます。"</string>
 <string name="payments_card_and_address_settings_signed_out">"Banana Browser に保存されているクレジット カードと住所です。[BEGIN_LINK設定END_LINK] で管理できます。"</string>
+<string name="android_permission_off">"&lt;link&gt;Android の設定&lt;/link&gt;で Banana Browser の権限を有効にしてください。"</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android の設定&lt;/link&gt;で Banana Browser の権限を有効にしてください。"</string>
+<string name="android_ar_camera_permission_off">"Banana Browser に AR の使用を許可するには、&lt;link&gt;Android の設定&lt;/link&gt;でもカメラをオンにしてください。"</string>
+<string name="android_camera_permission_off">"Banana Browser にカメラへのアクセスを許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でもカメラをオンにしてください。"</string>
+<string name="android_location_permission_off">"Banana Browser に現在地へのアクセスを許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でも位置情報をオンにしてください。"</string>
+<string name="android_microphone_permission_off">"Banana Browser にマイクへのアクセスを許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でもマイクをオンにしてください。"</string>
+<string name="android_notifications_permission_off">"Banana Browser に通知の送信を許可するには、&lt;link&gt;Android 設定&lt;/link&gt;でも通知をオンにしてください。"</string>
 </resources>

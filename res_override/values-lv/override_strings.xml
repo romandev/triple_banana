@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Atlasītie dati ir noņemti no pārlūka Banana Browser un jūsu sinhronizētajām ierīcēm.
 
 Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var būt citu veidu pārlūkošanas vēstures dati, piemēram, meklēšanas vaicājumi un darbības citos Google pakalpojumos."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļaujas pārlūkam Banana Browser."</string>
-<string name="android_permission_off">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļauju pārlūkam Banana Browser."</string>
-<string name="android_location_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu atrašanās vietas datiem, ieslēdziet atrašanās vietas noteikšanu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu kamerai, ieslēdziet kameru arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser sūtīt jums paziņojumus, ieslēdziet paziņojumus arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu mikrofonam, ieslēdziet mikrofonu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Vienkāršotajā režīmā Banana Browser ielādē lapas ātrāk un patērē pat par 60 procentiem mazāk datu."</string>
 <string name="data_reduction_description_lite_mode">"Ja ir ieslēgts vienkāršotais režīms, pārlūkā Banana Browser tiek izmantoti Google serveri, lai ielādētu lapas ātrāk. Vienkāršotajā režīmā ļoti lēnas lapas tiek pārrakstītas, lai tās ielādētu tikai nepieciešamo saturu. Vienkāršotais režīms netiek piemērots inkognito režīma cilnēm."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Pārlūka Banana Browser vienkāršotajā režīmā lapas tiek ielādētas ātrāk un tiek patērēts pat par 60 procentiem mazāk datu. Lai optimizētu jūsu apmeklētās lapas, no pārlūka Banana Browser tiek nosūtīta jūsu tīmekļa datplūsma uzņēmumam Google. &lt;link&gt;Uzziniet vairāk&lt;/link&gt;."</string>
@@ -73,6 +67,7 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="sogou_explanation">"Pārlūkā Banana Browser var izmantot meklētājprogrammu &lt;b&gt;Sogou&lt;/b&gt;, lai veiktu meklēšanu Ķīnā. Varat to mainīt sadaļā &lt;link&gt;Iestatījumi&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Šī lietotne darbojas pārlūkā Banana Browser"</string>
 <string name="twa_running_in_chrome">"Atvērta pārlūkā Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Tiks rādīts jūsu pierakstīšanās statuss vietnē %1$s, pārlūkošanas dati un vietnes dati pārlūkā Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"Pārlūkā Banana Browser ir arī “%1$s” dati"</string>
 <string name="twa_clear_data_dialog_message">"Varat notīrīt datus Banana Browser iestatījumos"</string>
 <string name="keyboard_shortcut_help_center">"Atvērt Banana Browser palīdzības centru jaunā cilnē"</string>
@@ -96,7 +91,9 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="usage_stats_revocation_prompt">"Vai noņemt jūsu Banana Browser darbības no Digitālās labjutības?"</string>
 <string name="usage_stats_revocation_explanation">"Netiks rādītas vietnes, ko apmeklējat pārlūkā Banana Browser. Tiks izdzēsti visi vietņu taimeri."</string>
 <string name="autofill_assistant_module_title">"Google asistents pārlūkprogrammā Banana Browser"</string>
+<string name="qr_code_permission_description">"Lai skenētu QR kodu, atļaujiet pārlūkprogrammai Banana Browser izmantot jūsu kameru"</string>
 <string name="qr_code_open_settings_description">"Lai varētu skenēt QR kodu, iestatījumos atļaujiet Banana Browser izmantot jūsu kameru"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai, lai varētu izveidot jūsu apkārtnes 3D karti."</string>
 <string name="infobar_missing_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai šajā vietnē."</string>
 <string name="infobar_missing_microphone_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu mikrofonam šajā vietnē."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai un mikrofonam šajā vietnē."</string>
@@ -109,4 +106,11 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kartes un adreses tiek iegūtas no Banana Browser un jūsu Google konta (%1$s). Varat tās pārvaldīt BEGIN_LINKiestatījumosEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartes un adreses tiek iegūtas no Banana Browser. Varat pārvaldīt tās BEGIN_LINKiestatījumosEND_LINK."</string>
+<string name="android_permission_off">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļauju pārlūkam Banana Browser."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļaujas pārlūkam Banana Browser."</string>
+<string name="android_ar_camera_permission_off">"Lai pārlūkā Banana Browser varētu izmantot papildināto realitāti, ieslēdziet arī kameras atļauju &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu kamerai, ieslēdziet kameru arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu atrašanās vietas datiem, ieslēdziet atrašanās vietas noteikšanu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu mikrofonam, ieslēdziet mikrofonu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser sūtīt jums paziņojumus, ieslēdziet paziņojumus arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
 </resources>

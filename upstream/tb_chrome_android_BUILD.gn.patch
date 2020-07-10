@@ -9,15 +9,15 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  import("//weblayer/variables.gni")
  import("channel.gni")
  import("java_sources.gni")
-@@ -439,6 +440,7 @@ android_library("chrome_java") {
+@@ -460,6 +461,7 @@ android_library("chrome_java") {
+     "//third_party/cacheinvalidation:cacheinvalidation_proto_java",
      "//third_party/gif_player:gif_player_java",
      "//third_party/google_android_play_core:com_google_android_play_core_java",
-     "//third_party/jsr-305:jsr_305_javalib",
 +    "//triple_banana/modules:mojom_java",
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -501,7 +503,7 @@ android_library("chrome_java") {
+@@ -513,7 +515,7 @@ android_library("chrome_java") {
    sources = chrome_java_sources + [
                app_hooks_impl,
                _chrome_version_java_file,

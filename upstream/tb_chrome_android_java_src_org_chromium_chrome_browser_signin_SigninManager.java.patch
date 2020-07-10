@@ -9,12 +9,13 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninM
  import org.chromium.base.Callback;
  import org.chromium.base.ContextUtils;
  import org.chromium.base.Log;
-@@ -284,15 +283,14 @@ public class SigninManager
+@@ -285,16 +284,14 @@ public class SigninManager
       * Returns true if signin can be started now.
       */
      public boolean isSignInAllowed() {
 -        return !mFirstRunCheckIsPending && mSignInState == null && mSigninAllowedByPolicy
--                && ChromeSigninController.get().getSignedInUser() == null && isSigninSupported();
+-                && mIdentityManager.getPrimaryAccountInfo(ConsentLevel.SYNC) == null
+-                && isSigninSupported();
 +        return false;
      }
  
@@ -23,11 +24,11 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/signin/SigninM
       */
      public boolean isSigninDisabledByPolicy() {
 -        return !mSigninAllowedByPolicy;
-+        return true;
++        return false;
      }
  
      /**
-@@ -300,14 +298,14 @@ public class SigninManager
+@@ -302,14 +299,14 @@ public class SigninManager
       *         Google Play Services installed.
       */
      public boolean isSigninSupported() {

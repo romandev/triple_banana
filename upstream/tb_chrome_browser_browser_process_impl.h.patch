@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/browser_process_impl.h tb_diff/chrome/browser/browser_process_impl.h
 --- tb/chrome/browser/browser_process_impl.h
 +++ tb_diff/chrome/browser/browser_process_impl.h
-@@ -39,6 +39,10 @@
+@@ -38,6 +38,10 @@
  #include "chrome/browser/upgrade_detector/build_state.h"
  #endif
  
@@ -12,7 +12,7 @@ diff --git tb/chrome/browser/browser_process_impl.h tb_diff/chrome/browser/brows
  class BatteryMetrics;
  class ChromeFeatureListCreator;
  class ChromeMetricsServicesManagerClient;
-@@ -404,6 +408,11 @@ class BrowserProcessImpl : public BrowserProcess,
+@@ -397,6 +401,11 @@ class BrowserProcessImpl : public BrowserProcess,
    std::unique_ptr<SecureOriginPrefsObserver> secure_origin_prefs_observer_;
    std::unique_ptr<SiteIsolationPrefsObserver> site_isolation_prefs_observer_;
  

@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Data yang dipilih telah dialih keluar daripada Banana Browser dan peranti anda yang disegerakkan.
 
 Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain seperti carian dan aktiviti daripada perkhidmatan Google yang lain di &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Hidupkan kebenaran untuk Banana Browser dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Hidupkan kebenaran untuk Banana Browser dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Untuk membenarkan Banana Browser mengakses lokasi anda, hidupkan lokasi dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
-<string name="android_camera_permission_off">"Untuk membenarkan Banana Browser mengakses kamera anda, hidupkan kamera dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
-<string name="android_notifications_permission_off">"Untuk membenarkan Banana Browser menghantar pemberitahuan kepada anda, hidupkan pemberitahuan dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
-<string name="android_microphone_permission_off">"Untuk membenarkan Banana Browser mengakses mikrofon anda, hidupkan mikrofon dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Dalam mod Ringkas, Banana Browser memuatkan halaman lebih pantas dan mengurangkan penggunaan data sehingga 60 peratus."</string>
 <string name="data_reduction_description_lite_mode">"Apabila mod Ringkas dihidupkan, Banana Browser menggunakan pelayan Google untuk memuatkan halaman dengan lebih pantas. Mod Ringkas menulis semula halaman yang sangat perlahan untuk memuatkan kandungan yang penting sahaja. Mod Ringkas tidak digunakan pada tab Incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Dalam mod Ringkas, Banana Browser memuatkan halaman lebih pantas dan mengurangkan penggunaan data sehingga 60 peratus. Untuk mengoptimumkan halaman yang anda lawati, Banana Browser menghantar trafik web anda kepada Google. &lt;link&gt;Ketahui lebih lanjut&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="sogou_explanation">"Banana Browser boleh menggunakan &lt;b&gt;Sogou&lt;/b&gt; untuk melakukan carian di China. Anda boleh menukarnya dalam &lt;link&gt;Tetapan&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Apl ini sedang dijalankan dalam Banana Browser"</string>
 <string name="twa_running_in_chrome">"Sedang berjalan dalam Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Anda akan melihat status log masuk %1$s, data semakan imbas dan data tapak anda dalam Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$s juga mempunyai data dalam Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Anda boleh mengosongkan data dalam Tetapan Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Buka Pusat Bantuan Banana Browser dalam tab baharu"</string>
@@ -96,7 +91,9 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="usage_stats_revocation_prompt">"Alih keluar aktiviti Banana Browser anda daripada Kesejahteraan Digital?"</string>
 <string name="usage_stats_revocation_explanation">"Tapak yang anda lawati dalam Banana Browser tidak akan dipaparkan. Semua pemasa tapak akan dipadamkan."</string>
 <string name="autofill_assistant_module_title">"Google Assistant dalam Banana Browser"</string>
+<string name="qr_code_permission_description">"Untuk mengimbas kod QR, benarkan Banana Browser menggunakan kamera anda"</string>
 <string name="qr_code_open_settings_description">"Untuk mengimbas kod QR, tukar tetapan supaya Banana Browser boleh menggunakan kamera anda"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera anda untuk membuat peta 3D persekitaran anda."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera anda bagi tapak ini."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses mikrofon anda bagi tapak ini."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera dan mikrofon anda bagi tapak ini."</string>
@@ -109,4 +106,11 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kad dan alamat adalah daripada Banana Browser dan Akaun Google anda (%1$s). Anda boleh mengurus kad dan alamat ini dalam BEGIN_LINKTetapanEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kad dan alamat adalah daripada Banana Browser. Anda boleh mengurus kad dan alamat ini dalam BEGIN_LINKTetapanEND_LINK."</string>
+<string name="android_permission_off">"Hidupkan kebenaran untuk Banana Browser dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Hidupkan kebenaran untuk Banana Browser dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Untuk membolehkan Banana Browser menggunakan AR, hidupkan juga kamera dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Untuk membenarkan Banana Browser mengakses kamera anda, hidupkan kamera dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
+<string name="android_location_permission_off">"Untuk membenarkan Banana Browser mengakses lokasi anda, hidupkan lokasi dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
+<string name="android_microphone_permission_off">"Untuk membenarkan Banana Browser mengakses mikrofon anda, hidupkan mikrofon dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
+<string name="android_notifications_permission_off">"Untuk membenarkan Banana Browser menghantar pemberitahuan kepada anda, hidupkan pemberitahuan dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
 </resources>

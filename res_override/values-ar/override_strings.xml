@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"‏تمت إزالة البيانات المُحددة من متصفح Banana Browser والأجهزة التي تمت مزامنتها.
 
 قد يحتوي حسابك على Google على نماذج أخرى لسجل التصفح، مثل عمليات البحث والأنشطة من خدمات Google الأخرى في &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"‏تفعيل الأذونات لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"‏إتاحة الإذن لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;"</string>
-<string name="android_location_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى موقعك الجغرافي، يُرجى أيضًا تفعيل الموقع الجغرافي في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الكاميرا، يُرجى أيضًا تفعيل الكاميرا في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"‏للسماح لمتصفِّح Banana Browser بإرسال الإشعارات إليك، يمكنك أيضًا تفعيل الإشعارات في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الميكروفون، يُرجى أيضًا تفعيل الميكروفون في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60 بالمائة."</string>
 <string name="data_reduction_description_lite_mode">"‏عند تفعيل الوضع البسيط، يستخدم Banana Browser خدمات Google لتحميل الصفحات بشكلٍ أسرع. يعيد الوضع البسيط كتابة الصفحات البطيئة للغاية من أجل تحميل المحتوى الأساسي فقط. لا ينطبق الوضع البسيط على علامات تبويب التصفُّح المتخفي."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60%. لتحسين مستوى أداء الصفحات التي تزورها، يرسل Banana Browser عدد زيارات الويب إلى Google. &lt;link&gt;مزيد من المعلومات&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"‏يمكن لـ Banana Browser استخدام &lt;b&gt;Sogou&lt;/b&gt; للبحث في الصين. ويمكنك تغيير هذا في &lt;link&gt;الإعدادات&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"‏يتم تشغيل هذا التطبيق في Banana Browser"</string>
 <string name="twa_running_in_chrome">"‏قيد التشغيل في Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"‏ستظهر لك حالة تسجيل الدخول %1$s، وبيانات التصفُّح وبيانات الموقع الإلكتروني في متصفِّح Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"‏تتوفَّر بيانات%1$s أيضًا في Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"‏يمكنك محو البيانات في إعدادات Banana Browser."</string>
 <string name="keyboard_shortcut_help_center">"‏فتح مركز مساعدة Banana Browser في علامة تبويب جديدة"</string>
@@ -91,16 +86,18 @@
 <string name="near_oom_reduction_message">"‏تستهلك هذه الصفحة مساحة كبيرة من الذاكرة، لذلك أزال Banana Browser بعض محتواها."</string>
 <string name="prefs_autofill_assistant_title">"‏\"مساعد Google\" على Banana Browser"</string>
 <string name="usage_stats_consent_title">"‏هل تريد عرض نشاط Banana Browser في الرفاهية الرقمية؟"</string>
-<string name="usage_stats_consent_prompt">"‏يمكنك الاطِّلاع على مواقع الويب التي تزورها في Banana Browser وتحديد موقِّتات لها.\n\nتحصل Google على معلومات عن مواقع الويب التي ضبطت موقِّتات لها ومدة زيارتك لها. تُستخدم هذه المعلومات لتحسين الرفاهية الرقمية."</string>
+<string name="usage_stats_consent_prompt">"‏يمكنك الاطِّلاع على المواقع الإلكترونية التي تزورها في Banana Browser وتحديد موقِّتات لها.\n\nتحصل Google على معلومات عن المواقع الإلكترونية التي ضبطت موقِّتات لها ومدة زيارتك لها. تُستخدم هذه المعلومات لتحسين الرفاهية الرقمية."</string>
 <string name="usage_stats_setting_title">"‏إزالة نشاط Banana Browser من الرفاهية الرقمية"</string>
 <string name="usage_stats_revocation_prompt">"‏هل تريد إزالة نشاط Banana Browser من الرفاهية الرقمية؟"</string>
-<string name="usage_stats_revocation_explanation">"‏لن يتم عرض مواقع الويب التي تزورها في Banana Browser. سيتم حذف جميع موقِّتات موقع الويب."</string>
+<string name="usage_stats_revocation_explanation">"‏لن يتم عرض المواقع الإلكترونية التي تزورها في Banana Browser. سيتم حذف جميع موقِّتات الموقع الإلكتروني."</string>
 <string name="autofill_assistant_module_title">"‏\"مساعد Google\" على Banana Browser"</string>
+<string name="qr_code_permission_description">"‏لمسح رمز استجابة سريعة ضوئيًا، يُرجى السماح لمتصفّح Banana Browser باستخدام الكاميرا."</string>
 <string name="qr_code_open_settings_description">"‏لمسح رمز استجابة سريعة ضوئيًا، يُرجى تغيير الإعدادات ليتمكّن Banana Browser من استخدام الكاميرا."</string>
-<string name="infobar_missing_camera_permission_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الكاميرا لموقع الويب هذا."</string>
-<string name="infobar_missing_microphone_permission_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الميكروفون لموقع الويب هذا."</string>
-<string name="infobar_missing_microphone_camera_permissions_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الكاميرا والميكروفون لموقع الويب هذا."</string>
-<string name="infobar_missing_location_permission_text">"‏يحتاج Banana Browser إلى الوصول إلى موقعك الجغرافي لمشاركة موقعك الجغرافي مع موقع الويب هذا."</string>
+<string name="infobar_missing_ar_camera_permission_text">"‏يحتاج متصفِّح Banana Browser إلى إذن للوصول إلى الكاميرا من أجل إنشاء خريطة ثلاثية الأبعاد للبيئة المحيطة بك."</string>
+<string name="infobar_missing_camera_permission_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الكاميرا للموقع الإلكتروني هذا."</string>
+<string name="infobar_missing_microphone_permission_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الميكروفون للموقع الإلكتروني هذا."</string>
+<string name="infobar_missing_microphone_camera_permissions_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الكاميرا والميكروفون للموقع الإلكتروني هذا."</string>
+<string name="infobar_missing_location_permission_text">"‏يحتاج Banana Browser إلى الوصول إلى موقعك الجغرافي لمشاركة موقعك الجغرافي مع الموقع الإلكتروني هذا."</string>
 <string name="new_tab_otr_not_saved">"‏&lt;em&gt;لن يحفظ&lt;/em&gt; Banana Browser المعلومات التالية:
         &lt;ul&gt;
           &lt;li&gt;سجلّ التصفُّح
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"‏يتم أخذ البطاقات والعناوين من Banana Browser وحسابك على Google (%1$s)، ويمكنك إدارتها في BEGIN_LINKالإعداداتEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"‏يتم أخذ البطاقات والعناوين من Banana Browser، ويمكنك إدارتها في BEGIN_LINKالإعداداتEND_LINK."</string>
+<string name="android_permission_off">"‏إتاحة الإذن لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;"</string>
+<string name="android_permission_off_plural">"‏تفعيل الأذونات لـ Banana Browser في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"‏للسماح لمتصفِّح Banana Browser باستخدام خدمة الواقع المعزّز (AR)، يُرجى أيضًا تفعيل الكاميرا في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الكاميرا، يُرجى أيضًا تفعيل الكاميرا في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى موقعك الجغرافي، يُرجى أيضًا تفعيل الموقع الجغرافي في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"‏للسماح لمتصفِّح Banana Browser بالوصول إلى الميكروفون، يُرجى أيضًا تفعيل الميكروفون في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"‏للسماح لمتصفِّح Banana Browser بإرسال الإشعارات إليك، يمكنك أيضًا تفعيل الإشعارات في &lt;link&gt;إعدادات Android&lt;/link&gt;."</string>
 </resources>

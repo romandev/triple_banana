@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"De valgte data er fjernet fra Banana Browser og synkroniserede enheder.
 
 Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og aktivitet fra andre Google-tjenester, på &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Aktivér tilladelser for Banana Browser i &lt;link&gt;Android-indstillingerne&lt;/link&gt;."</string>
-<string name="android_permission_off">"Aktivér tilladelse for Banana Browser i &lt;link&gt;Android-indstillingerne&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Aktivér også placering i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser adgang til din placering."</string>
-<string name="android_camera_permission_off">"Aktivér også dit kamera i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser adgang til kameraet."</string>
-<string name="android_notifications_permission_off">"Aktivér også notifikationer i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser tilladelse til at sende dig notifikationer."</string>
-<string name="android_microphone_permission_off">"Aktivér også din mikrofon i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser adgang til mikrofonen."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Banana Browser indlæser sider hurtigere og bruger op til 60 procent mindre data i Lite-tilstand."</string>
 <string name="data_reduction_description_lite_mode">"Når Lite-tilstand er aktiveret, bruger Banana Browser Googles servere til at gøre sideindlæsningen hurtigere. Lite-tilstanden omskriver meget langsomme sider til kun at indlæse væsentligt indhold. Lite-tilstand kan ikke bruges i inkognitotilstand."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser indlæser sider hurtigere og bruger op til 60 procent mindre data i Lite-tilstand. Banana Browser sender din webtrafik til Google for at optimere de sider, du besøger. &lt;link&gt;Få flere oplysninger&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="sogou_explanation">"Banana Browser kan bruge &lt;b&gt;Sogou&lt;/b&gt; til søgninger i Kina. Du kan ændre dette i &lt;link&gt;Indstillinger&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Denne app kører i Banana Browser"</string>
 <string name="twa_running_in_chrome">"Kører i Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Du kan se loginstatus, browserdata og websiteoplysninger for %1$s i Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$s har også data i Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Du kan rydde dataene i Banana Browser-indstillingerne"</string>
 <string name="keyboard_shortcut_help_center">"Åbn Hjælp til Banana Browser i en ny fane"</string>
@@ -96,7 +91,9 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="usage_stats_revocation_prompt">"Vil du fjerne din Banana Browser-aktivitet fra Digital balance?"</string>
 <string name="usage_stats_revocation_explanation">"Websites, du besøger i Banana Browser, vises ikke. Alle timere for websites slettes."</string>
 <string name="autofill_assistant_module_title">"Google Assistent i Banana Browser"</string>
+<string name="qr_code_permission_description">"Hvis du vil scanne en QR-kode, skal du give Banana Browser lov til at bruge dit kamera"</string>
 <string name="qr_code_open_settings_description">"For at scanne en QR-kode skal du ændre dine indstillinger, så Banana Browser kan bruge dit kamera"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser skal have adgangstilladelse til dit kamera for at oprette et 3D-kort over dine omgivelser."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser skal have tilladelse til at bruge dit kamera på dette website."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser skal have tilladelse til at bruge din mikrofon på dette website."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser skal have tilladelse til at bruge dit kamera og din mikrofon på dette website."</string>
@@ -109,4 +106,11 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kort og adresser stammer fra Banana Browser og din Google-konto (%1$s). Du kan administrere dem i BEGIN_LINKIndstillingerEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kort og adresser stammer fra Banana Browser. Du kan administrere dem i BEGIN_LINKIndstillingerEND_LINK."</string>
+<string name="android_permission_off">"Aktivér tilladelse for Banana Browser i &lt;link&gt;Android-indstillingerne&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Aktivér tilladelser for Banana Browser i &lt;link&gt;Android-indstillingerne&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Hvis du vil give Banana Browser tilladelse til at bruge AR, skal du også aktivere kameraet i &lt;link&gt;Android-indstillingerne&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Aktivér også dit kamera i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser adgang til kameraet."</string>
+<string name="android_location_permission_off">"Aktivér også placering i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser adgang til din placering."</string>
+<string name="android_microphone_permission_off">"Aktivér også din mikrofon i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser adgang til mikrofonen."</string>
+<string name="android_notifications_permission_off">"Aktivér også notifikationer i &lt;link&gt;Android-indstillingerne&lt;/link&gt; for at give Banana Browser tilladelse til at sende dig notifikationer."</string>
 </resources>

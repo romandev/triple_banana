@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Valitud andmed eemaldati Banana Browser\'ist ja teie sünkroonitud seadmetest.
 
 Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i kontol olla muus vormis sirvimisajalugu, nt otsingud ja tegevused muudes Google\'i teenustes."</string>
-<string name="android_permission_off_plural">"Lülita &lt;link&gt;Android-seadetes&lt;/link&gt; sisse load Banana Browser\'ile."</string>
-<string name="android_permission_off">"Lülita &lt;link&gt;Android-seadetes&lt;/link&gt; sisse luba Banana Browser\'ile."</string>
-<string name="android_location_permission_off">"Selleks et anda Banana Browser\'ile juurdepääs teie asukohale, lülitage funktsioon Asukoht sisse ka &lt;link&gt;Androidi seadetes&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Selleks et anda Banana Browser\'ile juurdepääs teie kaamerale, lülitage kaamera sisse ka &lt;link&gt;Androidi seadetes&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Selleks et lubada Banana Browser\'il teile märguandeid saata, lülitage märguanded &lt;link&gt;Androidi seadetes&lt;/link&gt; ka sisse."</string>
-<string name="android_microphone_permission_off">"Selleks et anda Banana Browser\'ile juurdepääs teie mikrofonile, lülitage mikrofon sisse ka &lt;link&gt;Androidi seadetes&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lihtsustatud režiimis laadib Banana Browser lehti kiiremini ja kasutab kuni 60 protsenti vähem andmemahtu."</string>
 <string name="data_reduction_description_lite_mode">"Kui lihtsustatud režiim on sees, kasutab Banana Browser Google\'i servereid, et lehtede laadimist kiirendada. Lihtsustatud režiim kirjutab väga aeglased lehed ümber, et laadida ainult oluline sisu. Lihtsustatud režiimi ei saa kasutada inkognito režiimis vahelehtedel."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lihtsustatud režiimis laadib Banana Browser lehti kiiremini ja kasutab kuni 60% vähem andmemahtu. Külastatud lehtede optimeerimiseks saadab Banana Browser teie veebiliikluse Google’ile. &lt;link&gt;Lisateave&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="sogou_explanation">"Banana Browser saab Hiinas otsimiseks kasutada teenust &lt;b&gt;Sogou&lt;/b&gt;. Seda saate muuta menüüs &lt;link&gt;Seaded&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Rakendus töötab Banana Browser\'is"</string>
 <string name="twa_running_in_chrome">"Töötab Banana Browser\'is"</string>
+<string name="twa_running_in_chrome_v2">"Näete Banana Browser\'is oma saidi %1$s sisselogimise olekut, sirvimisandmeid ja saidi andmeid."</string>
 <string name="twa_clear_data_dialog_title">"Rakendusel %1$s on samuti Banana Browser’i andmeid"</string>
 <string name="twa_clear_data_dialog_message">"Andmeid saab kustutada Banana Browser’i seadetes."</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser\'i abikeskuse avamine uuel vahelehel"</string>
@@ -94,7 +89,9 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="usage_stats_revocation_prompt">"Kas eemaldada teie Banana Browser\'i tegevused teenusest Digitaalne heaolu?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'is külastatud saite ei kuvata. Kõik saitide taimerid kustutatakse."</string>
 <string name="autofill_assistant_module_title">"Google\'i assistent Banana Browser\'is"</string>
+<string name="qr_code_permission_description">"QR-koodi skannimiseks lubage Banana Browser\'il oma kaamerat kasutada"</string>
 <string name="qr_code_open_settings_description">"QR-koodi skannimiseks muutke seadeid, et Banana Browser saaks teie kaamerat kasutada"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser vajab luba teie kaamerale juurdepääsemiseks, et luua teid ümbritsevast 3D-kaart."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser vajab selle saidi puhul luba, et teie kaamerale juurde pääseda."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser vajab selle saidi puhul luba, et teie mikrofonile juurde pääseda."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser vajab selle saidi puhul luba, et teie kaamerale ja mikrofonile juurde pääseda."</string>
@@ -107,4 +104,11 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kaardid ja aadressid pärinevad Banana Browser\'ist ning teie Google\'i kontolt (%1$s). Neid saate hallata menüüs BEGIN_LINKSeadedEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kaardid ja aadressid pärinevad Banana Browser\'ist. Neid saate hallata menüüs BEGIN_LINKSeadedEND_LINK."</string>
+<string name="android_permission_off">"Lülita &lt;link&gt;Android-seadetes&lt;/link&gt; sisse luba Banana Browser\'ile."</string>
+<string name="android_permission_off_plural">"Lülita &lt;link&gt;Android-seadetes&lt;/link&gt; sisse load Banana Browser\'ile."</string>
+<string name="android_ar_camera_permission_off">"Selleks et Banana Browser saaks AR-i kasutada, lülitage &lt;link&gt;Androidi seadetes&lt;/link&gt; sisse ka kaamera."</string>
+<string name="android_camera_permission_off">"Selleks et anda Banana Browser\'ile juurdepääs teie kaamerale, lülitage kaamera sisse ka &lt;link&gt;Androidi seadetes&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Selleks et anda Banana Browser\'ile juurdepääs teie asukohale, lülitage funktsioon Asukoht sisse ka &lt;link&gt;Androidi seadetes&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Selleks et anda Banana Browser\'ile juurdepääs teie mikrofonile, lülitage mikrofon sisse ka &lt;link&gt;Androidi seadetes&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Selleks et lubada Banana Browser\'il teile märguandeid saata, lülitage märguanded &lt;link&gt;Androidi seadetes&lt;/link&gt; ka sisse."</string>
 </resources>

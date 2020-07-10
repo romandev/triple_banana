@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"තෝරා ගත් දත්ත Banana Browser සහ ඔබේ සමමුහුර්ත කළ උපාංග වෙතින් ඉවත් කර ඇත.
 
 ඔබගේ Google ගිණුමට සෙවීම් සහ &lt;link&gt;myactivity.google.com&lt;/link&gt; හි වෙනත් Google සේවා වෙතින් වන ක්‍රියාකාරකම් වැනි බ්‍රවුස් කිරීමේ ඉතිහාසයේ වෙනත් ආකාර තිබිය හැකිය."</string>
-<string name="android_permission_off_plural">"Banana Browser සඳහා අවසර ප්‍රවේශය &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ක්‍රියාත්මක කරන්න."</string>
-<string name="android_permission_off">"Banana Browser සඳහා අවසර ප්‍රවේශය &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ක්‍රියාත්මක කරන්න."</string>
-<string name="android_location_permission_off">"Banana Browser හට ඔබේ ස්ථානයට ප්‍රවේශ වීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද ස්ථානය සක්‍රීය කරන්න."</string>
-<string name="android_camera_permission_off">"Banana Browser හට ඔබේ කැමරාවට ප්‍රවේශ වීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද කැමරාව සක්‍රීය කරන්න."</string>
-<string name="android_notifications_permission_off">"Banana Browser හට ඔබ දැනුම්දීම් යැවීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද දැනුම්දීම් සක්‍රීය කරන්න."</string>
-<string name="android_microphone_permission_off">"Banana Browser හට ඔබේ මයික්‍රොෆෝනයට ප්‍රවේශ වීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද මයික්‍රොෆෝනය සක්‍රීය කරන්න."</string>
 <string name="data_reduction_benefits_description_lite_mode">"සැහැල්ලු ප්‍රකාරය තුළ, Banana Browser වේගයෙන් පිටු පූරණ කර ප්‍රතිශතය 60 ක් දක්වා අඩුවෙන් දත්ත භාවිත කරයි."</string>
 <string name="data_reduction_description_lite_mode">"සැහැල්ලු ප්‍රකාරය ක්‍රියාත්මක විට, Banana Browser විසින් පිටු වේගවත්ව පූරණය කිරීමට Google සේවාදායක භාවිතා කරයි. සැහැල්ලු ප්‍රකාරය අත්‍යාවශ්‍ය අන්තර්ගතය පමණක් පූරණයට ඉතා මන්දගාමී පිටු නැවත ලියයි. සැහැල්ලු ප්‍රකාරය අප්‍රසිද්ධ පටිතිවලට අදාළ නොවේ."</string>
 <string name="data_reduction_promo_summary_lite_mode">"සැහැල්ලු ප්‍රකාරය තුළ, Banana Browser වේගයෙන් පිටු පූරණය කර සියයට 60ක් දක්වා අඩුවෙන් දත්ත භාවිත කරයි. ඔබ පිවිසෙන පිටු ප්‍රශස්ත කිරීම සඳහා, Banana Browser ඔබේ වෙබ් ගමනාගමනය Google වෙත යවයි. &lt;link&gt;තව දැන ගන්න&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Banana Browser හට චීනයෙහි සෙවීම සඳහා &lt;b&gt;Sogou&lt;/b&gt; භාවිතා කළ හැකිය. ඔබට &lt;link&gt;සැකසීම්&lt;/link&gt; තුළ මෙය වෙනස් කළ හැකිය."</string>
 <string name="app_running_in_chrome_disclosure">"මෙම යෙදුම Banana Browser තුළ ධාවන වේ"</string>
 <string name="twa_running_in_chrome">"Banana Browser තුළ ධාවනය වේ"</string>
+<string name="twa_running_in_chrome_v2">"ඔබ Banana Browser තුළ ඔබේ %1$s පුරන තත්ත්‍වය, බ්‍රවුස් කිරීමේ දත්ත, සහ වෙබ් අඩවි දත්ත දකියි."</string>
 <string name="twa_clear_data_dialog_title">"%1$s හට ද Banana Browser හි දත්ත තිබේ"</string>
 <string name="twa_clear_data_dialog_message">"ඔබට Banana Browser සැකසීම් තුළින් දත්ත හිස් කළ හැක"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser උදවු මධ්‍යස්ථානය නව ටැබයක විවෘත කරන්න"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"ඩිජිටල් සුවතාව වෙතින් ඔබේ Banana Browser ක්‍රියාකාරකම් ඉවත් කරන්න ද?"</string>
 <string name="usage_stats_revocation_explanation">"ඔබ Banana Browser තුළ පිවිසෙන අඩවි පෙන්වනු නොලැබේ. සියලුම අඩවි මුහුර්තක මකනු ඇත."</string>
 <string name="autofill_assistant_module_title">"Banana Browser හි Google සහායක"</string>
+<string name="qr_code_permission_description">"QR කේතයක් ස්කෑන් කිරීමට, Banana Browser හට ඔබේ කැමරාව භාවිත කිරීමට ඉඩ දෙන්න"</string>
 <string name="qr_code_open_settings_description">"QR කේතයක් ස්කෑන් කිරීමට, Banana Browser ඔබේ කැමරාව භාවිත කළ හැකි පරිදි ඔබේ සැකසීම් වෙනස් කරන්න"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser හට ඔබේ වටපිටාවේ ත්‍රිමාන සිතියමක් සෑදීමට ඔබේ කැමරාවට ප්‍රවේශ වීමට අවසර අවශ්‍යයි."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser හට මෙම අඩවිය සදහා ඔබේ කැමරාවට ප්‍රවේශ වීමට අවසර අවශ්‍යයි."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser හට මෙම අඩවිය සදහා ඔබේ මයික්‍රෆෝනයට ප්‍රවේශ වීමට අවසර අවශ්‍යයි."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser හට මෙම අඩවිය සදහා ඔබේ කැමරාවට සහ මයික්‍රෆෝනයට ප්‍රවේශ වීමට අවසර අවශ්‍යයි."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"කාඩ්පත් සහ ලිපින Banana Browser සහ ඔබේ Google ගිණුම (%1$s) වෙතිනි. ඔබට ඒවා BEGIN_LINKසැකසීම්END_LINK තුළ කළමනාකරණය කළ හැකිය."</string>
 <string name="payments_card_and_address_settings_signed_out">"කාඩ්පත් සහ ලිපින Banana Browser වෙතිනි. ඔබට ඒවා BEGIN_LINKසැකසීම්END_LINK තුළ කළමනාකරණය කළ හැකිය."</string>
+<string name="android_permission_off">"Banana Browser සඳහා අවසර ප්‍රවේශය &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ක්‍රියාත්මක කරන්න."</string>
+<string name="android_permission_off_plural">"Banana Browser සඳහා අවසර ප්‍රවේශය &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ක්‍රියාත්මක කරන්න."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser හට AR භාවිත කිරීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ කැමරාව ද සක්‍රීය කරන්න."</string>
+<string name="android_camera_permission_off">"Banana Browser හට ඔබේ කැමරාවට ප්‍රවේශ වීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද කැමරාව සක්‍රීය කරන්න."</string>
+<string name="android_location_permission_off">"Banana Browser හට ඔබේ ස්ථානයට ප්‍රවේශ වීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද ස්ථානය සක්‍රීය කරන්න."</string>
+<string name="android_microphone_permission_off">"Banana Browser හට ඔබේ මයික්‍රොෆෝනයට ප්‍රවේශ වීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද මයික්‍රොෆෝනය සක්‍රීය කරන්න."</string>
+<string name="android_notifications_permission_off">"Banana Browser හට ඔබ දැනුම්දීම් යැවීමට ඉඩ දීමට, &lt;link&gt;Android සැකසීම්&lt;/link&gt; තුළ ද දැනුම්දීම් සක්‍රීය කරන්න."</string>
 </resources>

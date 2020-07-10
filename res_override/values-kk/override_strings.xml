@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Таңдалған деректер Banana Browser жүйесінен және синхрондалған құрылғылардан өшірілген.
 
 Google есептік жазбасының шолу тарихы басқа Google қызметтеріндегі іздеулер мен әрекеттер тізімі түрінде де болуы мүмкін, оларды &lt;link&gt;history.google.com&lt;/link&gt;бетінен табуға болады."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android параметрлері&lt;/link&gt; ішінен Banana Browser үшін рұқсаттар қосыңыз."</string>
-<string name="android_permission_off">"&lt;link&gt;Android параметрлері&lt;/link&gt; ішінен Banana Browser үшін рұқсат қосыңыз."</string>
-<string name="android_location_permission_off">"Banana Browser браузері геодерегіңізді пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де іске қосыңыз."</string>
-<string name="android_camera_permission_off">"Banana Browser браузері камераны пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де қосыңыз."</string>
-<string name="android_notifications_permission_off">"Banana Browser-нан хабарландырулар алу үшін оларды &lt;link&gt;Android параметрлерінде&lt;/link&gt; іске қосыңыз."</string>
-<string name="android_microphone_permission_off">"Banana Browser браузері микрофонды пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де іске қосыңыз."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite режимінде Banana Browser беттерді жылдамырақ жүктейді және трафикті 60 пайызға дейін аз жұмсайды."</string>
 <string name="data_reduction_description_lite_mode">"Lite режимі қосулы кезде, беттер жылдам жүктелуі үшін, Banana Browser браузері Google серверлерін пайдаланады. Lite режимі маңызды мазмұнды ғана жүктеу үшін тым баяу беттерді қайта жазады. Lite режимі инкогнито қойындыларына қолданылмайды."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite режимінде Banana Browser браузері беттерді жылдамырақ жүктейді және трафикті 60%-ға дейін аз жұмсайды. Кірген беттерді оңтайландыру үшін Banana Browser интернет трафигін Google-ға жібереді. &lt;link&gt;Толығырақ&lt;/link&gt;"</string>
@@ -71,6 +65,7 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="sogou_explanation">"Banana Browser браузері &lt;b&gt;Sogou&lt;/b&gt; жүйесін Қытайда іздеу үшін пайдалана алады. Мұны &lt;link&gt;Параметрлер&lt;/link&gt; бөлімінен өзгертуге болады."</string>
 <string name="app_running_in_chrome_disclosure">"Бұл қолданба Banana Browser браузерінде жұмыс істеп тұр"</string>
 <string name="twa_running_in_chrome">"Banana Browser браузерінде ашылған"</string>
+<string name="twa_running_in_chrome_v2">"%1$s сайтына кіру күйін, браузерді пайдалану деректерін және Banana Browser-дағы сайт деректерін көресіз."</string>
 <string name="twa_clear_data_dialog_title">"%1$s қолданбасының да Banana Browser браузерінде деректері бар"</string>
 <string name="twa_clear_data_dialog_message">"Деректерді Banana Browser параметрлерінде өшіруге болады."</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser анықтама орталығын жаңа қойындыда ашу"</string>
@@ -92,7 +87,9 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="usage_stats_revocation_prompt">"Banana Browser браузерін пайдалану деректері Digital Wellbeing қызметінен өшірілсін бе?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser браузерінде ашқан сайттар көрсетілмейді. Барлық сайт таймерлері жойылады."</string>
 <string name="autofill_assistant_module_title">"Banana Browser браузеріндегі Google Assistant"</string>
+<string name="qr_code_permission_description">"QR кодын сканерлеу үшін Banana Browser-ға камера пайдалану рұқсатын беріңіз."</string>
 <string name="qr_code_open_settings_description">"QR кодын сканерлеу үшін Banana Browser параметрлерін камера пайдалана алатындай етіп өзгертіңіз."</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser браузеріне айналаңыздың 3D картасын жасау үшін камераны пайдалану рұқсаты керек."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser браузеріне осы сайтта камераны пайдалануға рұқсат керек."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser браузеріне осы сайтта микрофонды пайдалануға рұқсат керек."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser браузеріне осы сайтта камераны және микрофонды пайдалануға рұқсат керек."</string>
@@ -105,4 +102,11 @@ Google есептік жазбасының шолу тарихы басқа Goog
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Banana Browser браузеріндегі және Google есептік жазбасындағы (%1$s) карталар мен мекенжайлар. Оларды BEGIN_LINKПараметрлерEND_LINK ішінде басқаруыңызға болады."</string>
 <string name="payments_card_and_address_settings_signed_out">"Карталар мен мекенжайлар Banana Browser браузерінен алынған. Оларды BEGIN_LINKПараметрлерEND_LINK бөлімінде басқара аласыз."</string>
+<string name="android_permission_off">"&lt;link&gt;Android параметрлері&lt;/link&gt; ішінен Banana Browser үшін рұқсат қосыңыз."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android параметрлері&lt;/link&gt; ішінен Banana Browser үшін рұқсаттар қосыңыз."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser браузеріне AR режимін пайдалануға рұқсат ету үшін &lt;link&gt;Android параметрлерінен&lt;/link&gt; камераны да қосыңыз."</string>
+<string name="android_camera_permission_off">"Banana Browser браузері камераны пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де қосыңыз."</string>
+<string name="android_location_permission_off">"Banana Browser браузері геодерегіңізді пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де іске қосыңыз."</string>
+<string name="android_microphone_permission_off">"Banana Browser браузері микрофонды пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де іске қосыңыз."</string>
+<string name="android_notifications_permission_off">"Banana Browser-нан хабарландырулар алу үшін оларды &lt;link&gt;Android параметрлерінде&lt;/link&gt; іске қосыңыз."</string>
 </resources>

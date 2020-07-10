@@ -1,7 +1,7 @@
 diff --git tb/gpu/config/gpu_util.cc tb_diff/gpu/config/gpu_util.cc
 --- tb/gpu/config/gpu_util.cc
 +++ tb_diff/gpu/config/gpu_util.cc
-@@ -43,6 +43,9 @@
+@@ -44,6 +44,9 @@
  #include "ui/gl/gl_switches.h"
  
  #if defined(OS_ANDROID)
@@ -11,7 +11,7 @@ diff --git tb/gpu/config/gpu_util.cc tb_diff/gpu/config/gpu_util.cc
  #include "base/no_destructor.h"
  #include "base/synchronization/lock.h"
  #include "ui/gl/android/android_surface_control_compat.h"
-@@ -109,6 +112,11 @@ GpuFeatureStatus GetAndroidSurfaceControlFeatureStatus(
+@@ -110,6 +113,11 @@ GpuFeatureStatus GetAndroidSurfaceControlFeatureStatus(
  #if !defined(OS_ANDROID)
    return kGpuFeatureStatusDisabled;
  #else
@@ -23,7 +23,7 @@ diff --git tb/gpu/config/gpu_util.cc tb_diff/gpu/config/gpu_util.cc
    if (!gpu_preferences.enable_android_surface_control)
      return kGpuFeatureStatusDisabled;
  
-@@ -357,6 +365,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
+@@ -358,6 +366,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
      gpu_feature_info->status_values[GPU_FEATURE_TYPE_ACCELERATED_WEBGL2] =
          kGpuFeatureStatusBlacklisted;
    }

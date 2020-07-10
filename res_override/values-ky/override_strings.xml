@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Тандалган дайындар Banana Browser\'дон жана шайкештирилген түзмөктөрүңүздөн өчүрүлдү.
 
 Google аккаунтуңуздун башка Google кызматтарынан алынган серептөө таржымалы &lt;link&gt;myactivity.google.com&lt;/link&gt; дарегинде болушу мүмкүн."</string>
-<string name="android_permission_off_plural">"Banana Browser үчүн уруксаттарды &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; күйгүзүңүз."</string>
-<string name="android_permission_off">"Banana Browser үчүн уруксатты &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; күйгүзүңүз."</string>
-<string name="android_location_permission_off">"Banana Browser\'го жайгашкан жериңизге кирүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; жайгашкан жер кызматын күйгүзүңүз."</string>
-<string name="android_camera_permission_off">"Banana Browser\'го камерага кирүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; камераны күйгүзүңүз."</string>
-<string name="android_notifications_permission_off">"Banana Browser\'го билдирмелерди жөнөтүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; билдирмелерди күйгүзүңүз."</string>
-<string name="android_microphone_permission_off">"Banana Browser\'го микрофонго кирүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; микрофонду күйгүзүңүз."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Жөнөкөй режимде Banana Browser барактарды ылдамыраак жүктөп, 60 пайызга чейин азыраак трафик сарптайт."</string>
 <string name="data_reduction_description_lite_mode">"Жөнөкөй режим иштетилсе, Banana Browser кызматы Google серверлери аркылуу барактарды тез жүктөйт. Жөнөкөй режимде өтө жай барактардагы эң маанилүү мазмун гана көрсөтүлөт. Жөнөкөй режим Жашыруун өтмөктөрдө иштебейт."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Жөнөкөй режимде Banana Browser барактарды ылдамыраак жүктөп, 60 пайызга чейин азыраак трафик сарптайт. Сиз баш баккан сайттарды оптималдаштыруу үчүн Banana Browser вебдин колдонулушу тууралуу маалыматты Google\'га жөнөтүп турат. &lt;link&gt;Кеңири маалымат&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="sogou_explanation">"Banana Browser Кытай жергесинде издөө үчүн &lt;b&gt;Sogou\'ду&lt;/b&gt; колдоно алат. Аны &lt;link&gt;Жөндөөлөрдөн&lt;/link&gt; өзгөртүп койсоңуз болот."</string>
 <string name="app_running_in_chrome_disclosure">"Бул колдонмо Banana Browser\'до иштеп жатат"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'до иштеп жатат"</string>
+<string name="twa_running_in_chrome_v2">"%1$s сайтына кирип же кирбей турганыңызды, серептөө дайындарын жана сайттын дайындарын Banana Browser\'дон көрөсүз."</string>
 <string name="twa_clear_data_dialog_title">"%1$s колдонмосунун дайындары Banana Browser\'до дагы бар"</string>
 <string name="twa_clear_data_dialog_message">"Бул дайындарды Banana Browser\'дун жөндөөлөрүнөн тазаласаңыз болот"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser Жардам борборун жаңы өтмөктө ачуу"</string>
@@ -95,7 +90,9 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="usage_stats_revocation_prompt">"Banana Browser\'ду колдонуу дайын-даректериңиз Санариптик бакубаттык кызматынан өчүрүлсүнбү?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'до кирген сайттарыңыз көрүнбөйт. Бардык сайттардагы таймерлер өчүрүлөт."</string>
 <string name="autofill_assistant_module_title">"Banana Browser\'догу Google Жардамчы"</string>
+<string name="qr_code_permission_description">"QR кодун скандоо үчүн Banana Browser\'го камераңызды колдонууга уруксат бериңиз"</string>
 <string name="qr_code_open_settings_description">"QR кодун скандоо үчүн жөндөөлөрдү өзгөртүп, Banana Browser\'го камераңызды колдонууга уруксат бериңиз"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser айланаңыздын 3D картасын түзүү үчүн камераңызды колдонушу керек."</string>
 <string name="infobar_missing_camera_permission_text">"Бул сайтта иштөө үчүн Banana Browser камераңызды колдонушу керек."</string>
 <string name="infobar_missing_microphone_permission_text">"Бул сайтта иштөө үчүн Banana Browser микрофонуңузду колдонушу керек."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Бул сайтта иштөө үчүн Banana Browser камераңызды жана микрофонуңузду колдонушу керек."</string>
@@ -108,4 +105,11 @@ Google аккаунтуңуздун башка Google кызматтарынан
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Карточкалар жана даректер Banana Browser’дон жана Google аккаунтуңуздан (%1$s) алынган. Аларды BEGIN_LINKЖөндөөлөрдөнEND_LINK башкарсаңыз болот."</string>
 <string name="payments_card_and_address_settings_signed_out">"Карточкалар жана даректер Banana Browser’дон алынган. Аларды BEGIN_LINKЖөндөөлөрдөнEND_LINK башкарсаңыз болот."</string>
+<string name="android_permission_off">"Banana Browser үчүн уруксатты &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; күйгүзүңүз."</string>
+<string name="android_permission_off_plural">"Banana Browser үчүн уруксаттарды &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; күйгүзүңүз."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser\'го AR\'ди колдоонуусуна уруксат берүү үчүн камераны &lt;link&gt;Android жөндөөлөрүнөн&lt;/link&gt; күйгүзүңүз."</string>
+<string name="android_camera_permission_off">"Banana Browser\'го камерага кирүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; камераны күйгүзүңүз."</string>
+<string name="android_location_permission_off">"Banana Browser\'го жайгашкан жериңизге кирүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; жайгашкан жер кызматын күйгүзүңүз."</string>
+<string name="android_microphone_permission_off">"Banana Browser\'го микрофонго кирүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; микрофонду күйгүзүңүз."</string>
+<string name="android_notifications_permission_off">"Banana Browser\'го билдирмелерди жөнөтүүгө уруксат берүү үчүн, &lt;link&gt;Android Жөндөөлөрүнөн&lt;/link&gt; билдирмелерди күйгүзүңүз."</string>
 </resources>

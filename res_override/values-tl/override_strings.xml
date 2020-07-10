@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Inalis ang napiling data sa Banana Browser at sa iyong mga naka-sync na device.
 
 Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad ng mga paghahanap at aktibidad mula sa iba pang serbisyo ng Google sa &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"I-on ang mga pahintulot para sa Banana Browser sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"I-on ang pahintulot para sa Banana Browser sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Para payagan ang Banana Browser na i-access ang iyong lokasyon, i-on din ang lokasyon sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Para payagang i-access ng Banana Browser ang iyong camera, i-on din ang camera sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Para payagan ang Banana Browser na magpadala sa iyo ng mga notification, i-on din ang mga notification sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Para payagang i-access ng Banana Browser ang iyong mikropono, i-on din ang mikropono sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Sa Lite mode, mas mabilis na nilo-load ng Banana Browser ang mga page at mas kaunti nang 60 porsyento ang ginagamit nitong data."</string>
 <string name="data_reduction_description_lite_mode">"Kapag naka-on ang Lite mode, ginagamit ng Banana Browser ang mga server ng Google para mapabilis ang pag-load ng mga page. Muling isinusulat ng Lite mode ang mga napakabagal na page para ma-load lang ang mahalagang content. Hindi nalalapat sa mga tab na Incognito ang Lite mode."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Sa Lite mode, mas mabilis na naglo-load ng mga page ang Banana Browser at gumagamit ito ng hanggang 60 porsyentong mas kaunting data. Para i-optimize ang mga page na binibisita mo, ipinapadala ng Banana Browser ang iyong trapiko sa web sa Google. &lt;link&gt;Matuto pa&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="sogou_explanation">"Maaaring gamitin ng Banana Browser ang &lt;b&gt;Sogou&lt;/b&gt; para sa paghahanap sa China. Maaari mo itong baguhin sa &lt;link&gt;Mga Setting&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Gumagana ang app na ito sa Banana Browser"</string>
 <string name="twa_running_in_chrome">"Gumagana sa Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Makikita mo sa Banana Browser ang iyong status ng pag-sign in sa %1$s, data mula sa pag-browse, at data ng site."</string>
 <string name="twa_clear_data_dialog_title">"May data rin ang %1$s sa Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Maaari mong i-clear ang data sa Mga Setting ng Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Buksan ang Help Center ng Banana Browser sa bagong tab"</string>
@@ -96,7 +91,9 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="usage_stats_revocation_prompt">"Alisin sa Digital Wellness ang aktibidad mo sa Banana Browser?"</string>
 <string name="usage_stats_revocation_explanation">"Hindi lalabas ang mga site na binibisita mo sa Banana Browser. Ide-delete ang lahat ng timer sa site."</string>
 <string name="autofill_assistant_module_title">"Google Assistant sa Banana Browser"</string>
+<string name="qr_code_permission_description">"Para mag-scan ng QR code, hayaang gamitin ng Banana Browser ang iyong camera"</string>
 <string name="qr_code_open_settings_description">"Para mag-scan ng QR code, baguhin ang iyong mga setting para magamit ng Banana Browser ang camera mo"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Kailangan ng Banana Browser ng access sa iyong camera para gumawa ng 3D na mapa ng kapaligiran mo."</string>
 <string name="infobar_missing_camera_permission_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong camera para sa site na ito."</string>
 <string name="infobar_missing_microphone_permission_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong mikropono para sa site na ito."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong camera at mikropono para sa site na ito."</string>
@@ -109,4 +106,11 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Ang mga card at address ay mula sa Banana Browser at sa iyong Google Account (%1$s). Maaari mong pamahalaan ang mga ito sa BEGIN_LINKMga SettingEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Ang mga card at address ay mula sa Banana Browser. Maaari mong pamahalaan ang mga ito sa BEGIN_LINKMga SettingEND_LINK."</string>
+<string name="android_permission_off">"I-on ang pahintulot para sa Banana Browser sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"I-on ang mga pahintulot para sa Banana Browser sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Para payagan ang Banana Browser na gumamit ng AR, i-on din ang camera sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Para payagang i-access ng Banana Browser ang iyong camera, i-on din ang camera sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Para payagan ang Banana Browser na i-access ang iyong lokasyon, i-on din ang lokasyon sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Para payagang i-access ng Banana Browser ang iyong mikropono, i-on din ang mikropono sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Para payagan ang Banana Browser na magpadala sa iyo ng mga notification, i-on din ang mga notification sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
 </resources>

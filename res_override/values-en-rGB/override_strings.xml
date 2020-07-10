@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"The selected data has been removed from Banana Browser and your synced devices.
 
 Your Google Account may have other forms of browsing history such as searches and activity from other Google services at &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Turn on permissions for Banana Browser in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
-<string name="android_permission_off">"Turn on permission for Banana Browser in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"To let Banana Browser access your location, also turn on location in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"To let Banana Browser access your camera, also turn on camera in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"To let Banana Browser send you notifications, also turn on notifications in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"To let Banana Browser access your microphone, also turn on microphone in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 per cent less data."</string>
 <string name="data_reduction_description_lite_mode">"When Lite mode is on, Banana Browser uses Google servers to make pages load faster. Lite mode rewrites very slow pages to load only essential content. Lite mode does not apply to Incognito tabs."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 per cent less data. To optimise the pages that you visit, Banana Browser sends your web traffic to Google. &lt;link&gt;Find out more&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="sogou_explanation">"Banana Browser can use &lt;b&gt;Sogou&lt;/b&gt; for search in China. You can change this in &lt;link&gt;Settings&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"This app is running in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Running in Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"You\'ll see your %1$s sign-in status, browsing data and site data in Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$s also has data in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"You can clear the data in Banana Browser Settings"</string>
 <string name="keyboard_shortcut_help_center">"Open the Banana Browser Help Centre in a new tab"</string>
@@ -96,7 +91,9 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="usage_stats_revocation_prompt">"Remove your Banana Browser activity from Digital Wellbeing?"</string>
 <string name="usage_stats_revocation_explanation">"Sites that you visit in Banana Browser won\'t show. All site timers will be deleted."</string>
 <string name="autofill_assistant_module_title">"Google Assistant in Banana Browser"</string>
+<string name="qr_code_permission_description">"To scan a QR code, let Banana Browser use your camera"</string>
 <string name="qr_code_open_settings_description">"To scan a QR code, change your settings so that Banana Browser can use your camera"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser needs permission to access your camera to create a 3D map of your surroundings."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser needs permission to access your camera for this site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser needs permission to access your microphone for this site."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser needs permission to access your camera and microphone for this site."</string>
@@ -109,4 +106,11 @@ Your Google Account may have other forms of browsing history such as searches an
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Cards and addresses are from Banana Browser and your Google Account (%1$s). You can manage them in BEGIN_LINKSettingsEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Cards and addresses are from Banana Browser. You can manage them in BEGIN_LINKSettingsEND_LINK."</string>
+<string name="android_permission_off">"Turn on permission for Banana Browser in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Turn on permissions for Banana Browser in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"To let Banana Browser use AR, also turn on the camera in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"To let Banana Browser access your camera, also turn on camera in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"To let Banana Browser access your location, also turn on location in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"To let Banana Browser access your microphone, also turn on microphone in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"To let Banana Browser send you notifications, also turn on notifications in &lt;link&gt;Android Settings&lt;/link&gt;."</string>
 </resources>

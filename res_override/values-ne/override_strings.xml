@@ -12,12 +12,6 @@
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser को डेटालाई खाली गरियो"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"चयन गरिएको डेटालाई Banana Browser र सिंक गरिएका तपाईंका यन्त्रहरूबाट हटाइएको छ।
 &lt;link&gt;myactivity.google.com&lt;/link&gt; मा तपाईंको Google खातासँग रहेको तपाईंका अन्य Google सेवाहरूका खोज र गतिविधि जस्ता ब्राउजिङ सम्बन्धी इतिहासका अन्य ढाँचाहरू हुनसक्छन्।"</string>
-<string name="android_permission_off_plural">"&lt;link&gt; Android सेटिङहरू &lt;/link&gt; मा Banana Browser का लागि अनुमतिहरू सक्रिय गर्नुहोस् ।"</string>
-<string name="android_permission_off">"&lt;link&gt; Android सेटिङहरू &lt;/link&gt;मा Banana Browser का लागि अनुमति सक्रिय गर्नुहोस् ।"</string>
-<string name="android_location_permission_off">"Banana Browser लाई तपाईंको स्थानमाथि पहुँच राख्न दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई स्थानसम्बन्धी सेवा सक्रिय गर्नुहोस्।"</string>
-<string name="android_camera_permission_off">"Banana Browser लाई तपाईंको क्यामेरामाथि पहुँच राख्न दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई क्यामेरा पनि सक्रिय गर्नुहोस्।"</string>
-<string name="android_notifications_permission_off">"Banana Browser लाई तपाईंलाई सूचनाहरू पठाउन दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई सूचनाहरू नामक विकल्प सक्रिय गर्नुहोस्।"</string>
-<string name="android_microphone_permission_off">"Banana Browser लाई तपाईंको माइक्रोफोनमाथि पहुँच राख्न दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई माइक्रोफोन पनि सक्रिय गर्नुहोस्।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"लाइट मोडमा हुँदा Banana Browser ले पृष्ठहरू अझ छिटो लोड गर्नुका साथै ६० प्रतिशतसम्म कम डेटा प्रयोग गर्छ।"</string>
 <string name="data_reduction_description_lite_mode">"लाइट मोड सक्रिय हुँदा, Banana Browser ले पृष्ठहरू अझ छिटो लोड गर्ने प्रयोजनका लागि Google का सर्भरहरूको प्रयोग गर्छ। लाइट मोडले अत्यावश्यक सामग्री मात्र लोड गर्नका निम्ति धेरै सुस्त पृष्ठहरू पुनर्लेखन गर्छ। इन्कोग्निटो ट्याबहरूमा भने लाइट मोड लागू हुँदैन।"</string>
 <string name="data_reduction_promo_summary_lite_mode">"लाइट मोडमा हुँदा Banana Browser ले पृष्ठहरू अझ छिटो लोड गर्नाका साथै ६० प्रतिशतसम्म कम डेटा प्रयोग गर्छ। तपाईंले भ्रमण गर्ने पृष्ठहरू अप्टिमाइज गर्न, Banana Browser ले तपाईंको वेबसम्बन्धी ट्राफिक Google मा पठाउँछ। &lt;link&gt;थप जान्नुहोस्&lt;/link&gt;"</string>
@@ -36,18 +30,18 @@
 <string name="sign_in_managed_account_description">"तपाईं %1$s द्वारा व्यवस्थापन गरिएको खाता मार्फत साइन इन गर्दै हुनुहुन्छ र त्यसको प्रशासकलाई तपाईंको Banana Browser को डेटालाई नियन्त्रण गर्न दिँदै हुनुहुन्छ। तपाईंको डेटा सदाका लागि यस खातामा बाँधिनेछ। Banana Browser बाट साइन आउट गर्नाले तपाईंको डेटा यस यन्त्रबाट मेटिनेछ तर यो तपाईंको Google खातामा भण्डारण गरिएको अवस्थामा रहनेछ।"</string>
 <string name="ntp_recent_tabs_sync_promo_instructions">"तपाईँले आफ्ना अन्य यन्त्रहरूमा Banana Browser मा खोल्नुभएका ट्याबहरू यहाँ देखिनेछन्।"</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser ले ब्लुटुथ एडाप्टरलाई सक्रिय गर्न सकेन"</string>
-<string name="bluetooth_need_location_permission">"Banana Browser यन्त्रहरूको लागि स्क्यान गर्न स्थान पहुँच आवश्यक छ। &lt;permission_link&gt; अनुमतिहरू अद्यावधिक गर्नुहोस्&lt;/permission_link&gt;"</string>
+<string name="bluetooth_need_location_permission">"Banana Browser यन्त्रहरूको लागि स्क्यान गर्न स्थान पहुँच आवश्यक छ। &lt;permission_link&gt; अनुमतिहरू अपडेट गर्नुहोस्&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"यन्त्रहरू स्क्यान गर्न Banana Browser लाई स्थान माथिको पहुँच चाहिन्छ। यस यन्त्रमा स्थान माथिको पहुँचलाई &lt;services_link&gt;निष्क्रिय पारिएको छ&lt;/services_link&gt;।"</string>
-<string name="bluetooth_need_location_permission_and_services_on">"यन्त्रहरू स्क्यान गर्न Banana Browser लाई स्थान माथिको पहुँच चाहिन्छ। &lt;permission_link&gt;अनुमतिहरूलाई अद्यावधिक गर्नुहोस्&lt;/permission_link&gt;। यो यन्त्रमा स्थान माथिको पहुँचलाई पनि &lt;services_link&gt;निष्क्रिय पारिएको छ&lt;/services_link&gt;।"</string>
+<string name="bluetooth_need_location_permission_and_services_on">"यन्त्रहरू स्क्यान गर्न Banana Browser लाई स्थान माथिको पहुँच चाहिन्छ। &lt;permission_link&gt;अनुमतिहरूलाई अपडेट गर्नुहोस्&lt;/permission_link&gt;। यो यन्त्रमा स्थान माथिको पहुँचलाई पनि &lt;services_link&gt;निष्क्रिय पारिएको छ&lt;/services_link&gt;।"</string>
 <string name="hint_android_sync_disabled">"Banana Browser सिंकलाई सुरु गर्न Android का सेटिङहरू खोल्नुहोस् र Android को प्रणालीसम्बन्धी सिंकलाई पुन:सक्षम पार्नुहोस्"</string>
 <string name="hint_sync_settings_not_confirmed_description">"सिंक गर्ने कार्य सुरु गर्न \"Banana Browser को आफ्नो डेटा सिंक गर्नुहोस्\"।"</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser पुनः सुरु गर्नुहोस्"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser को अद्यावधिक डाउनलोड गर्दै…"</string>
-<string name="update_notification_title_default">"Banana Browser अद्यावधिक गर्नुहोस्"</string>
-<string name="update_notification_text_body_default">"सर्वोत्तम ब्राउजिङ अनुभव प्राप्त गर्न Banana Browser खोलेर अद्यावधिक गर्नुहोस्"</string>
-<string name="update_notification_title_experimental_update_chrome">"Banana Browser अद्यावधिक गर्नुहोस्"</string>
+<string name="update_notification_title_default">"Banana Browser अपडेट गर्नुहोस्"</string>
+<string name="update_notification_text_body_default">"सर्वोत्तम ब्राउजिङ अनुभव प्राप्त गर्न Banana Browser खोलेर अपडेट गर्नुहोस्"</string>
+<string name="update_notification_title_experimental_update_chrome">"Banana Browser अपडेट गर्नुहोस्"</string>
 <string name="update_notification_text_body_experimental_update_chrome">"आफ्नो भाषामा वेब हेर्न Banana Browser को नवीनतम संस्करण प्राप्त गर्नुहोस्"</string>
-<string name="update_notification_text_body_experimental_translate_the_web">"Banana Browser को नवीनतम संस्करणमा आफ्नो भाषा प्राप्त गर्न अद्यावधिक गर्नुहोस्"</string>
+<string name="update_notification_text_body_experimental_translate_the_web">"Banana Browser को नवीनतम संस्करणमा आफ्नो भाषा प्राप्त गर्न अपडेट गर्नुहोस्"</string>
 <string name="missing_storage_permission_download_education_text">"Banana Browserलाई फाइलहरु डाउनलोड गर्न भण्डारणको पहुँच आवश्यक छ ।"</string>
 <string name="contextmenu_open_in_new_chrome_tab">"Banana Browser को नयाँ ट्याबमा खोल्नुहोस्"</string>
 <string name="fre_activity_label">"पहिलोपटक Banana Browser चलाउँदाको अनुभव"</string>
@@ -57,7 +51,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browser मा खुल्ने छ। जारी राखेर तपाईं &lt;LINK1&gt;Google का सेवाका सर्तहरू&lt;/LINK1&gt; र &lt;LINK2&gt;Google Banana Browser र Banana Browser OS का सेवाका अतिरिक्त सर्तहरू&lt;/LINK2&gt;मा सहमति जनाउनुहुन्छ। &lt;LINK3&gt;Family Link मार्फत व्यवस्थापन गरिएका Google खाताहरूको गोपनीयता सूचना&lt;/LINK3&gt; पनि लागू हुन्छ।"</string>
 <string name="fre_send_report_check">"Google मा प्रयोग तथ्याङ्क र क्रयास रिपोर्टहरू पठाएर Banana Browser लाई राम्रो बनाउन सहयोग गर्नुहोस्!"</string>
 <string name="fre_welcome">"Banana Browser मा स्वागत छ"</string>
-<string name="menu_update">"Banana Browser अद्यावधिक गर्नुहोस्"</string>
+<string name="menu_update">"Banana Browser अपडेट गर्नुहोस्"</string>
 <string name="menu_update_unsupported">"Banana Browser अद्यावधिक गर्न सकिँदैन"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser पुनः सुरु गर्नुहोस्"</string>
 <string name="menu_open_in_chrome">"Banana Browser मा खोल्नुहोस्"</string>
@@ -72,6 +66,7 @@
 <string name="sogou_explanation">"Banana Browser ले चीनमा खोज गर्नका लागि &lt;b&gt;Sogou&lt;/b&gt; को प्रयोग गर्न सक्छ। तपाईं &lt;link&gt;सेटिङहरू&lt;/link&gt;मा गई यसलाई बदल्न सक्नुहुन्छ।"</string>
 <string name="app_running_in_chrome_disclosure">"यो एप Banana Browser मा चलिरहेको छ"</string>
 <string name="twa_running_in_chrome">"Banana Browser मा चलिरहेको छ"</string>
+<string name="twa_running_in_chrome_v2">"तपाईं Banana Browser मा आफ्नो %1$s को साइन इनसम्बन्धी अवस्था, ब्राउजिङ डेटा र साइट डेटा देख्नु हुने छ।"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ले Banana Browser मा पनि डेटा राखेको छ"</string>
 <string name="twa_clear_data_dialog_message">"तपाईं Banana Browser का सेटिङहरूमा गई डेटा खाली गर्न सक्नुहुन्छ"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser को मद्दत केन्द्र एउटा नयाँ ट्याबमा खोल्नुहोस्"</string>
@@ -94,7 +89,9 @@
 <string name="usage_stats_revocation_prompt">"तपाईंले Banana Browser मा गर्नुभएका क्रियाकलाप डिजिटल वेलबिइङबाट हटाउने हो?"</string>
 <string name="usage_stats_revocation_explanation">"तपाईंले Banana Browser मार्फत हेर्नुभएका साइटहरू देखिने छैनन्। साइटका सबै टाइमरहरू मेटाइने छन्।"</string>
 <string name="autofill_assistant_module_title">"Banana Browser को Google सहायक"</string>
+<string name="qr_code_permission_description">"QR कोड स्क्यान गर्न Banana Browser लाई तपाईंको क्यामेरा प्रयोग गर्ने अनुमति दिनुहोस्"</string>
 <string name="qr_code_open_settings_description">"QR कोड स्क्यान गर्न आफ्नो सेटिङ परिवर्तन गरी Banana Browser लाई तपाईंको क्यामेरा प्रयोग गर्न दिनुहोस्"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser लाई तपाईं वरपरको ठाउँको 3D नक्सा बनाउन तपाईंको क्यामेरा प्रयोग गर्ने अनुमति चाहिन्छ।"</string>
 <string name="infobar_missing_camera_permission_text">"यो साइटका लागि Banana Browser लाई तपाईंको क्यमेरामाथि पहुँच राख्न अनुमति आवश्यक हुन्छ।"</string>
 <string name="infobar_missing_microphone_permission_text">"यो साइटका लागि Banana Browser लाई तपाईंको माइक्रोफोनमाथि पहुँच राख्न अनुमति आवश्यक हुन्छ।"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"यो साइटका लागि Banana Browser लाई  तपाईंको क्यामेरा र माइक्रोफोनमाथि पहुँच राख्न अनुमति आवश्यक हुन्छ।"</string>
@@ -107,4 +104,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"कार्ड र ठेगानाहरू तपाईंको Banana Browser र Google खाता (%1$s) बाट प्राप्त भएका हुन्। तपाईं  BEGIN_LINKसेटिङहरूEND_LINK मा गई तिनीहरूलाई व्यवस्थित गर्न सक्नुहुन्छ।"</string>
 <string name="payments_card_and_address_settings_signed_out">"कार्ड र ठेगानाहरू Banana Browser बाट प्राप्त भएका हुन्। तपाईं BEGIN_LINKसेटिङहरूEND_LINKमा गई तिनीहरूलाई व्यवस्थित गर्न सक्नुहुन्छ।"</string>
+<string name="android_permission_off">"&lt;link&gt; Android सेटिङहरू &lt;/link&gt;मा Banana Browser का लागि अनुमति सक्रिय गर्नुहोस् ।"</string>
+<string name="android_permission_off_plural">"&lt;link&gt; Android सेटिङहरू &lt;/link&gt; मा Banana Browser का लागि अनुमतिहरू सक्रिय गर्नुहोस् ।"</string>
+<string name="android_ar_camera_permission_off">"Banana Browser लाई AR प्रयोग गर्न दिन &lt;link&gt;Android का सेटिङ&lt;/link&gt;मा गई क्यामेरा पनि सुचारु गर्नुहोस्।"</string>
+<string name="android_camera_permission_off">"Banana Browser लाई तपाईंको क्यामेरामाथि पहुँच राख्न दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई क्यामेरा पनि सक्रिय गर्नुहोस्।"</string>
+<string name="android_location_permission_off">"Banana Browser लाई तपाईंको स्थानमाथि पहुँच राख्न दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई स्थानसम्बन्धी सेवा सक्रिय गर्नुहोस्।"</string>
+<string name="android_microphone_permission_off">"Banana Browser लाई तपाईंको माइक्रोफोनमाथि पहुँच राख्न दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई माइक्रोफोन पनि सक्रिय गर्नुहोस्।"</string>
+<string name="android_notifications_permission_off">"Banana Browser लाई तपाईंलाई सूचनाहरू पठाउन दिन &lt;link&gt;Android का सेटिङहरू&lt;/link&gt; मा गई सूचनाहरू नामक विकल्प सक्रिय गर्नुहोस्।"</string>
 </resources>

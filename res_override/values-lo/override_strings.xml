@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ລຶບຂໍ້ມູນທີ່ເລືອກອອກຈາກ Banana Browser ແລະ ອຸປະກອນທີ່ຊິ້ງຂໍ້ມູນຂອງທ່ານແລ້ວ.
 
 ບັນຊີ Google ຂອງທ່ານອາດຈະມີປະຫວັດການທ່ອງເວັບຮູບແບບອື່ນ ເຊັ່ນວ່າ ການຊອກຫາ ແລະ ການເຄື່ອນໄຫວຈາກການບໍລິການອື່ນໆຂອງ Google ຢູ່ &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"ເປີດ​ການ​ອະ​ນຸ​ຍາດ​ສຳ​ລັບ Banana Browser ຢູ່​ໃນ &lt;link&gt;ການ​ຕັ້ງ​ຄ່າ Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"ເປີດ​ການ​ອະ​ນຸ​ຍາດ​ສຳ​ລັບ Banana Browser ຢູ່​ໃນ &lt;link&gt;ກ​ານ​ຕັ້ງ​ຄ່າ Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານ, ກະລຸນາເປີດສະຖານທີ່ໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
-<string name="android_camera_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ເຂົ້າເຖິງກ້ອງຖ່າຍຮູບຂອງທ່ານ, ກະລຸນາເປີດກ້ອງຖ່າຍຮູບໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
-<string name="android_notifications_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ສົ່ງການແຈ້ງເຕືອນໃຫ້ທ່ານ, ກະລຸນາເປີດການແຈ້ງເຕືອນໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
-<string name="android_microphone_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ເຂົ້າເຖິງໄມໂຄຣໂຟນ, ກະລຸນາເປີດໄມໂຄຣໂຟນໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
 <string name="data_reduction_benefits_description_lite_mode">"ໃນໂໝດ Lite, Banana Browser ໂຫຼດໜ້າເວັບໄດ້ໄວກວ່າ ແລະ ປະຢັດອິນເຕີເນັດໄດ້ສູງສຸດ 60 ເປີເຊັນ."</string>
 <string name="data_reduction_description_lite_mode">"ເມື່ອໂໝດ Lite ເປີດຢູ່, Banana Browser ໃຊ້ເຊີບເວີຂອງ Google ເພື່ອເຮັດໃຫ້ການໂຫຼດໜ້າເວັບໄວຂຶ້ນ. ໂໝດ Lite ຂຽນຄືນໜ້າເວັບທີ່ຊ້າຫຼາຍເພື່ອໂຫຼດພຽງແຕ່ເນື້ອທີ່ສຳຄັນເທົ່ານັ້ນ. ໂໝດ Lite ບໍ່ນຳໃຊ້ກັບແຖບບໍ່ເປີດເຜີຍຕົວຕົນ."</string>
 <string name="data_reduction_promo_summary_lite_mode">"ໃນໂໝດ Lite, Banana Browser ໂຫຼດໜ້າໄດ້ໄວກວ່າ ແລະ ໃຊ້ອິນເຕີເນັດບໍ່ເກີນ 60 ເປີເຊັນ. ເພື່ອປັບໜ້າເວັບທີ່ທ່ານເຂົ້າເບິ່ງໃຫ້ເໝາະສົມ, Banana Browser ສົ່ງການຮັບສົ່ງຂໍ້ມູນເວັບຂອງທ່ານໃຫ້ Google. &lt;link&gt;ສຶກສາເພີ່ມເຕີມ&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Banana Browser ສາມາດໃຊ້ &lt;b&gt;Sogou&lt;/b&gt; ສຳລັບການຊອກຫາໃນປະເທດຈີນ. ທ່ານສາມາດປ່ຽນສິ່ງນີ້ໄດ້ໃນ &lt;link&gt;ການຕັ້ງຄ່າ&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"ແອັບນີ້ກຳລັງເປີດໃຊ້ໃນ Banana Browser"</string>
 <string name="twa_running_in_chrome">"ກຳລັງເປີດຢູ່ໃນ Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"ທ່ານຈະເຫັນສະຖານະການເຂົ້າສູ່ລະບົບ %1$s, ຂໍ້ມູນການທ່ອງເວັບ ແລະ ຂໍ້ມູນເວັບໄຊຂອງທ່ານໃນ Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$sຍັງມີຂໍ້ມູນໃນ Banana Browser ນຳ"</string>
 <string name="twa_clear_data_dialog_message">"ທ່ານສາມາດລຶບລ້າງຂໍ້ມູນໄດ້ໃນການຕັ້ງຄ່າ Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"ເປີດສູນຊ່ວຍເຫຼືອ Banana Browser ໃນແຖບໃໝ່"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"ລຶບການເຄື່ອນໄຫວໃນ Banana Browser ຂອງທ່ານອອກຈາກ Digital Wellbeing ບໍ?"</string>
 <string name="usage_stats_revocation_explanation">"ເວັບໄຊທີ່ທ່ານເຂົ້າເບິ່ງໃນ Banana Browser ຈະບໍ່ສະແດງ. ລະບົບຈະລຶບໂມງນັບຖອຍຫຼັງຂອງເວັບໄຊທັງໝົດ."</string>
 <string name="autofill_assistant_module_title">"ຜູ້ຊ່ວຍ Google ໃນ Banana Browser"</string>
+<string name="qr_code_permission_description">"ເພື່ອສະແກນລະຫັດ QR, ກະລຸນາອະນຸຍາດໃຫ້ Banana Browser ໃຊ້ກ້ອງຂອງທ່ານ"</string>
 <string name="qr_code_open_settings_description">"ເພື່ອສະແກນລະຫັດ QR, ກະລຸນາປ່ຽນການຕັ້ງຄ່າຂອງທ່ານ ເພື່ອໃຫ້ Banana Browser ສາມາດໃຊ້ກ້ອງຂອງທ່ານໄດ້"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງກ້ອງຂອງທ່ານເພື່ອສ້າງແຜນທີ່ 3 ມິຕິຂອງສະພາບແວດລ້ອມອ້ອມຂ້າງຂອງທ່ານ."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງກ້ອງຖ່າຍຮູບຂອງທ່ານສຳລັບໄຊນີ້."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງໄມໂຄຣໂຟນຂອງທ່ານສຳລັບເວັບໄຊນີ້."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງກ້ອງຖ່າຍຮູບ ແລະ ໄມໂຄຣໂຟນຂອງທ່ານສຳລັບເວັບໄຊນີ້."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"ບັດ ແລະ ທີ່ຢູ່ມາຈາກ Banana Browser ແລະ ບັນຊີ Google ຂອງທ່ານ (%1$s). ທ່ານສາມາດຈັດການພວກມັນໄດ້ໃນ BEGIN_LINKການຕັ້ງຄ່າEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"ບັດ ແລະ ທີ່ຢູ່ມາຈາກ Banana Browser. ທ່ານສາມາດຈັດການພວກມັນໄດ້ໃນ BEGIN_LINKການຕັ້ງຄ່າEND_LINK."</string>
+<string name="android_permission_off">"ເປີດ​ການ​ອະ​ນຸ​ຍາດ​ສຳ​ລັບ Banana Browser ຢູ່​ໃນ &lt;link&gt;ກ​ານ​ຕັ້ງ​ຄ່າ Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"ເປີດ​ການ​ອະ​ນຸ​ຍາດ​ສຳ​ລັບ Banana Browser ຢູ່​ໃນ &lt;link&gt;ການ​ຕັ້ງ​ຄ່າ Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ໃຊ້ AR, ກະລຸນາເປີດກ້ອງໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
+<string name="android_camera_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ເຂົ້າເຖິງກ້ອງຖ່າຍຮູບຂອງທ່ານ, ກະລຸນາເປີດກ້ອງຖ່າຍຮູບໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
+<string name="android_location_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ເຂົ້າເຖິງສະຖານທີ່ຂອງທ່ານ, ກະລຸນາເປີດສະຖານທີ່ໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
+<string name="android_microphone_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ເຂົ້າເຖິງໄມໂຄຣໂຟນ, ກະລຸນາເປີດໄມໂຄຣໂຟນໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
+<string name="android_notifications_permission_off">"ເພື່ອອະນຸຍາດໃຫ້ Banana Browser ສົ່ງການແຈ້ງເຕືອນໃຫ້ທ່ານ, ກະລຸນາເປີດການແຈ້ງເຕືອນໃນ &lt;link&gt;ການຕັ້ງຄ່າ Android&lt;/link&gt; ນຳ."</string>
 </resources>

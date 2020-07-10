@@ -1,7 +1,7 @@
 diff --git tb/net/socket/socket_bio_adapter.cc tb_diff/net/socket/socket_bio_adapter.cc
 --- tb/net/socket/socket_bio_adapter.cc
 +++ tb_diff/net/socket/socket_bio_adapter.cc
-@@ -20,6 +20,10 @@
+@@ -21,6 +21,10 @@
  #include "net/traffic_annotation/network_traffic_annotation.h"
  #include "third_party/boringssl/src/include/openssl/bio.h"
  
@@ -12,7 +12,7 @@ diff --git tb/net/socket/socket_bio_adapter.cc tb_diff/net/socket/socket_bio_ada
  namespace {
  
  const net::NetworkTrafficAnnotationTag kTrafficAnnotation =
-@@ -276,6 +280,12 @@ void SocketBIOAdapter::SocketWrite() {
+@@ -277,6 +281,12 @@ void SocketBIOAdapter::SocketWrite() {
    while (write_error_ == OK && write_buffer_used_ > 0) {
      int write_size =
          std::min(write_buffer_used_, write_buffer_->RemainingCapacity());

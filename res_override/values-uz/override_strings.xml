@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Tanlangan ma’lumotlar Banana Browser va sinxronlangan qurilmalardan o‘chirildi.
 
 Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va boshqa internetdagi faoliyatingizni &lt;link&gt;myactivity.google.com&lt;/link&gt; sahifasi orqali ko‘rishingiz mumkin."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android sozlamalaridan&lt;/link&gt; Banana Browser uchun ruxsatnomalarni yoqing."</string>
-<string name="android_permission_off">"&lt;link&gt;Android sozlamalaridan&lt;/link&gt; Banana Browser uchun ruxsatnomani yoqing."</string>
-<string name="android_location_permission_off">"Banana Browser joylashuvingizni aniqlay olishi uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali Joylashuvni aniqlash xizmatini yoqing."</string>
-<string name="android_camera_permission_off">"Banana Browser kameradan foydalanishiga ruxsat berish uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali kamerani yoqing."</string>
-<string name="android_notifications_permission_off">"Banana Browser sizga bildirishnomalar yuborishi uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali bildirishnomalarni yoqing."</string>
-<string name="android_microphone_permission_off">"Banana Browser mikrofondan foydalanishiga ruxsat berish uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali mikrofonni yoqing."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite rejimida Banana Browser sahifalarni tezroq yuklaydi va 60 foizgacha trafik tejaydi."</string>
 <string name="data_reduction_description_lite_mode">"Lite rejimi yoniqligida, Banana Browser sahifalarni tezroq yuklash uchun Google serverlaridan foydalanadi. Lite rejimi eng asosiy kontentni yuklash uchun eng sekin sahifalarni qaytadan yozib chiqadi. Lite rejimi inkognito sahifalarda ishlamaydi."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite rejimda Banana Browser sahifalarni tezroq yuklaydi va trafikni tejaydi (60% gacha). Siz kirgan saytlarni optimallashtirish uchun Banana Browser Googlega trafik axborotini yuboradi. &lt;link&gt;Batafsil&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="sogou_explanation">"Banana Browser Xitoyda &lt;b&gt;Sogou&lt;/b&gt; qidiruv tizimidan foydalanishi mumkin. Asosiy qidiruv tizimini &lt;link&gt;Sozlamalar&lt;/link&gt; orqali tayinlash mumkin."</string>
 <string name="app_running_in_chrome_disclosure">"Bu ilova Banana Browser brauzerida ishlayapti."</string>
 <string name="twa_running_in_chrome">"Banana Browser brauzerida ishga tushgan"</string>
+<string name="twa_running_in_chrome_v2">"%1$s saytiga kirish holati, brauzer va sayt maʼlumotlari Banana Browserda chiqadi."</string>
 <string name="twa_clear_data_dialog_title">"Banana Browser brauzeridagi %1$s maʼlumotlari ham tozalanadi"</string>
 <string name="twa_clear_data_dialog_message">"Maʼlumotlarni Banana Browser sozlamalaridan tozalashingiz mumkin"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser yordam markazini yangi varaqda ochish"</string>
@@ -95,7 +90,9 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="usage_stats_revocation_prompt">"Raqamli muvozanat xizmatidan Banana Browser amallari olib tashlansinmi?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser brauzerida ochilgan saytlar chiqmaydi. Barcha sayt taymerlari tozalanadi."</string>
 <string name="autofill_assistant_module_title">"Banana Browser ichidagi Google Assistent"</string>
+<string name="qr_code_permission_description">"Banana Browser QR-kodni skanerlashi uchun kameradan foydalanishga ruxsat bering"</string>
 <string name="qr_code_open_settings_description">"Banana Browser QR kodni skanerlashi uchun sozlamalar orqali kamerani yoqing."</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser atrofingiz 3D xaritasini yaratishi uchun unga kamera ruxsati zarur."</string>
 <string name="infobar_missing_camera_permission_text">"Bu sayt kamerangizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>
 <string name="infobar_missing_microphone_permission_text">"Bu sayt mikrofoningizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Bu sayt kamera va mikrofoningizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>
@@ -108,4 +105,11 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Google hisobi (%1$s), Banana Browser brauzerida saqlangan karta va manzillar. Siz ularni BEGIN_LINKSozlamalarEND_LINK orqali boshqarishingiz mumkin."</string>
 <string name="payments_card_and_address_settings_signed_out">"Banana Browser brauzerida saqlangan karta va manzillar. Siz ularni BEGIN_LINKSozlamalarEND_LINK orqali boshqarishingiz mumkin."</string>
+<string name="android_permission_off">"&lt;link&gt;Android sozlamalaridan&lt;/link&gt; Banana Browser uchun ruxsatnomani yoqing."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android sozlamalaridan&lt;/link&gt; Banana Browser uchun ruxsatnomalarni yoqing."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser AR ishlatishi uchun &lt;link&gt;Android Sozlamalar&lt;/link&gt; orqali kamerani yoqing."</string>
+<string name="android_camera_permission_off">"Banana Browser kameradan foydalanishiga ruxsat berish uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali kamerani yoqing."</string>
+<string name="android_location_permission_off">"Banana Browser joylashuvingizni aniqlay olishi uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali Joylashuvni aniqlash xizmatini yoqing."</string>
+<string name="android_microphone_permission_off">"Banana Browser mikrofondan foydalanishiga ruxsat berish uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali mikrofonni yoqing."</string>
+<string name="android_notifications_permission_off">"Banana Browser sizga bildirishnomalar yuborishi uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali bildirishnomalarni yoqing."</string>
 </resources>

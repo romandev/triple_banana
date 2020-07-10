@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Kendu dira hautatutako datuak Banana Browser-tik eta sinkronizatutako gailuetatik.
 
 Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bilaketak eta beste Google-ren zerbitzu batzuetako jarduerak) edukitzea &lt;link&gt;history.google.com&lt;/link&gt; webgunean."</string>
-<string name="android_permission_off_plural">"Aktibatu Banana Browser-rako baimenak &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
-<string name="android_permission_off">"Aktibatu Banana Browser-rako baimena &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Banana Browser-ri kokapena atzitzeko baimena emateko, kokapena aktibatu behar duzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Banana Browser-ri kamera atzitzeko baimena emateko, kamera aktibatu behar duzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Banana Browser-ri jakinarazpenak bidaltzeko baimena emateko, jakinarazpenak aktibatu behar dituzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Banana Browser-ri mikrofonoa atzitzeko baimena emateko, mikrofonoa aktibatu behar duzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Oinarrizko moduari esker, Banana Browser-k bizkorrago kargatzen ditu orriak, datuen ehuneko 60raino aurreztuta."</string>
 <string name="data_reduction_description_lite_mode">"Oinarrizko modua aktibatuta dagonean, Banana Browser-k Google-ren zerbitzariak erabiltzen ditu orriak bizkorrago karga daitezen. Oinarrizko modua eginbideak oso motel kargatzen diren orriak berriro idazten ditu, oinarrizko edukia soilik karga dadin. Oinarrizko modua ez da aplikatzen ezkutuko moduko fitxetan."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Oinarrizko moduari esker, Banana Browser-k bizkorrago kargatzen ditu orriak, datuen % 60raino aurreztuta. Bisitatzen dituzun orriak optimizatzeko, Banana Browser-k Google-ra bidaltzen du sareko trafikoa. &lt;link&gt;Lortu informazio gehiago&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bil
 <string name="sogou_explanation">"Txinan, &lt;b&gt;Sogou&lt;/b&gt; erabil dezake Banana Browser-k bilatzaile gisa. &lt;link&gt;Ezarpenak&lt;/link&gt; atalean alda dezakezu hori."</string>
 <string name="app_running_in_chrome_disclosure">"Banana Browser-n da abian aplikazioa"</string>
 <string name="twa_running_in_chrome">"Banana Browser-n abian da"</string>
+<string name="twa_running_in_chrome_v2">"%1$s webgunean saioa hasi duzun ala ez, arakatze-datuak, eta webguneko datuak ikusiko dituzu Banana Browser-n."</string>
 <string name="twa_clear_data_dialog_title">"%1$s aplikazioak ere baditu datuak Banana Browser-n"</string>
 <string name="twa_clear_data_dialog_message">"Banana Browser ezarpenetan garbi ditzakezu datuak"</string>
 <string name="keyboard_shortcut_help_center">"Ireki Banana Browser laguntza-zentroa beste fitxa batean"</string>
@@ -96,7 +91,9 @@ Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bil
 <string name="usage_stats_revocation_prompt">"Banana Browser-ko jarduerak Ongizate digitala programatik kendu nahi dituzu?"</string>
 <string name="usage_stats_revocation_explanation">"Ez dira agertuko Banana Browser-n ireki dituzun webguneak. Ezabatu egingo dira webguneen tenporizadoreak."</string>
 <string name="autofill_assistant_module_title">"Banana Browser-rako Google-ren Laguntzailea"</string>
+<string name="qr_code_permission_description">"QR kodeak eskaneatzeko, eman Banana Browser-ri kamera erabiltzeko baimena"</string>
 <string name="qr_code_open_settings_description">"QR kodeak eskaneatzeko, aldatu ezarpenak Banana Browser-k kamera erabili ahal izan dezan"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser-k kamera atzitzeko baimena behar du, ingurunearen hiru dimentsioko mapa bat sortzeko."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser-k zure baimena behar du webgune honen izenean kamera atzitzeko."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser-k zure baimena behar du webgune honen izenean mikrofonoa atzitzeko."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser-k zure baimena behar du webgune honen izenean kamera eta mikrofonoa atzitzeko."</string>
@@ -109,4 +106,11 @@ Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bil
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Banana Browser-tik eta zure Google-ko kontutik (%1$s) hartu dira txartelak eta helbideak. Kudeatu nahi badituzu, joan BEGIN_LINKEzarpenakEND_LINK atalera."</string>
 <string name="payments_card_and_address_settings_signed_out">"Banana Browser-tik hartu dira txartelak eta helbideak. Kudeatu nahi badituzu, joan BEGIN_LINKEzarpenakEND_LINK atalera."</string>
+<string name="android_permission_off">"Aktibatu Banana Browser-rako baimena &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Aktibatu Banana Browser-rako baimenak &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser-k errealitate areagotua erabil dezan, aktibatu kamera atzitzeko baimena &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Banana Browser-ri kamera atzitzeko baimena emateko, kamera aktibatu behar duzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Banana Browser-ri kokapena atzitzeko baimena emateko, kokapena aktibatu behar duzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Banana Browser-ri mikrofonoa atzitzeko baimena emateko, mikrofonoa aktibatu behar duzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Banana Browser-ri jakinarazpenak bidaltzeko baimena emateko, jakinarazpenak aktibatu behar dituzu &lt;link&gt;Android-en ezarpenetan&lt;/link&gt;."</string>
 </resources>

@@ -12,12 +12,6 @@
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser ಡೇಟಾ ತೆರವುಗೊಳಿಸಲಾಗಿದೆ"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"ಆಯ್ಕೆ ಮಾಡಿದ ಡೇಟಾವನ್ನು Banana Browser ನಿಂದ ಮತ್ತು ಸಿಂಕ್ ಮಾಡಿರುವ ನಿಮ್ಮ ಸಾಧನಗಳಿಂದ ತೆಗೆದುಹಾಕಲಾಗಿದೆ.
 ನಿಮ್ಮ Google ಖಾತೆಯು, ಹುಡುಕಾಟಗಳು ಮತ್ತು ಇತರ Google ಸೇವೆಗಳ ಚಟುವಟಿಕೆಗಳಂತಹ ಬೇರೆ ವಿಧಗಳ ಬ್ರೌಸಿಂಗ್ ಇತಿಹಾಸವನ್ನು &lt;link&gt;myactivity.google.com&lt;/link&gt;.ನಲ್ಲಿ ಹೊಂದಿರಬಹುದು."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; Banana Browser ಗೆ ಅನುಮತಿಗಳನ್ನು ಆನ್ ಮಾಡಿ."</string>
-<string name="android_permission_off">"&lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; Banana Browser ಗೆ ಅನುಮತಿಯನ್ನು ಆನ್ ಮಾಡಿ."</string>
-<string name="android_location_permission_off">"Banana Browser ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಸ್ಥಳವನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
-<string name="android_camera_permission_off">"Banana Browser ನಿಮ್ಮ ಕ್ಯಾಮರಾವನ್ನು ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಕ್ಯಾಮರಾವನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
-<string name="android_notifications_permission_off">"Banana Browser ನಿಮಗೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಅಧಿಸೂಚನೆಗಳನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
-<string name="android_microphone_permission_off">"Banana Browser ನಿಮ್ಮ ಮೈಕ್ರೋಫೋನ್‌ಗೆ ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಮೈಕ್ರೋಫೋನ್ ಅನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
 <string name="data_reduction_benefits_description_lite_mode">"ಲೈಟ್ ಮೋಡ್‍ನಲ್ಲಿ, Banana Browser ವೇಗವಾಗಿ ಪುಟಗಳನ್ನು ಲೋಡ್ ಮಾಡುತ್ತದೆ, ಮತ್ತು ಡೇಟಾವನ್ನು ಸುಮಾರು ಶೇಕಡಾ 60 ರಷ್ಟು ಕಡಿಮೆ ಬಳಸುತ್ತದೆ."</string>
 <string name="data_reduction_description_lite_mode">"ಲೈಟ್ ಮೋಡ್ ಆನ್ ಆಗಿರುವಾಗ, ಪುಟಗಳು ವೇಗವಾಗಿ ಲೋಡ್ ಆಗುವಂತೆ ಮಾಡಲು, Google ಸರ್ವರ್‌ಗಳನ್ನು Banana Browser ಬಳಸುವುದು. ಅತ್ಯಗತ್ಯವಾದ ವಿಷಯವನ್ನು ಮಾತ್ರ ಲೋಡ್ ಮಾಡಲು, ಬಹಳ ನಿಧಾನವಾಗಿ ಲೋಡ್ ಆಗುವ ಪುಟಗಳನ್ನು ಲೈಟ್ ಮೋಡ್ ಪುನಃ ಬರೆಯುತ್ತದೆ. ಅದೃಶ್ಯ ಟ್ಯಾಬ್‌ಗಳಿಗೆ ಲೈಟ್ ಮೋಡ್ ಅನ್ವಯಿಸುವುದಿಲ್ಲ."</string>
 <string name="data_reduction_usage_label">"Banana Browser ನಿಂದ ಬಳಕೆಯಾಗಿರುವ ಡೇಟಾ"</string>
@@ -74,6 +68,7 @@
 <string name="sogou_explanation">"Banana Browser ಚೀನಾದಲ್ಲಿ ಹುಡುಕಲು &lt;b&gt;Sogou&lt;/b&gt; ಬಳಸಬಹುದು. ನೀವು ಇದನ್ನು &lt;link&gt;ಸೆಟ್ಟಿಂಗ್‌ಗಳು&lt;/link&gt; ನಲ್ಲಿ ಬದಲಾಯಿಸಬಹುದು."</string>
 <string name="app_running_in_chrome_disclosure">"ಈ ಆ್ಯಪ್‌, Banana Browser ನಲ್ಲಿ ರನ್ ಆಗುತ್ತಿದೆ"</string>
 <string name="twa_running_in_chrome">"Banana Browser ನಲ್ಲಿ ಚಾಲನೆಯಾಗುತ್ತಿದೆ"</string>
+<string name="twa_running_in_chrome_v2">"ನಿಮ್ಮ %1$s ಸೈನ್-ಇನ್ ಸ್ಥಿತಿ, ಬ್ರೌಸಿಂಗ್ ಡೇಟಾ ಮತ್ತು ಸೈಟ್ ಡೇಟಾವನ್ನು Banana Browser ನಲ್ಲಿ ನೋಡುವಿರಿ."</string>
 <string name="twa_clear_data_dialog_title">"%1$sಆ್ಯಪ್‌ನ ಡೇಟಾವು Banana Browser ನಲ್ಲಿಯೂ ಇದೆ"</string>
 <string name="twa_clear_data_dialog_message">"ನೀವು ಡೇಟಾವನ್ನು Banana Browser ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ತೆರವುಗೊಳಿಸಬಹುದು"</string>
 <string name="keyboard_shortcut_help_center">"ಹೊಸ ಟ್ಯಾಬ್‌ನಲ್ಲಿ Banana Browser ಸಹಾಯ ಕೇಂದ್ರ ತೆರೆಯಿರಿ"</string>
@@ -97,7 +92,9 @@
 <string name="usage_stats_revocation_prompt">"ಡಿಜಿಟಲ್ ಯೋಗಕ್ಷೇಮದಿಂದ ನಿಮ್ಮ Banana Browser ಚಟುವಟಿಕೆಯನ್ನು ತೆಗೆದುಹಾಕಬೇಕೇ?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser ನಲ್ಲಿ ನೀವು ಭೇಟಿ ನೀಡುವ ಸೈಟ್‌ಗಳನ್ನು ತೋರಿಸುವುದಿಲ್ಲ. ಎಲ್ಲಾ ಸೈಟ್‌ ಟೈಮರ್‌ಗಳನ್ನು ಅಳಿಸಲಾಗುವುದು."</string>
 <string name="autofill_assistant_module_title">"Banana Browser ನಲ್ಲಿನ Google ಅಸಿಸ್ಟೆಂಟ್"</string>
+<string name="qr_code_permission_description">"QR ಕೋಡ್ ಸ್ಕ್ಯಾನ್ ಮಾಡಲು, Banana Browser ಗೆ ನಿಮ್ಮ ಕ್ಯಾಮರಾ ಬಳಸಲು ಅನುಮತಿಸಿ"</string>
 <string name="qr_code_open_settings_description">"QR ಕೋಡ್ ಅನ್ನು ಸ್ಕ್ಯಾನ್ ಮಾಡಲು, ನಿಮ್ಮ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಬದಲಾಯಿಸಿ, ಇದರಿಂದ Banana Browser ನಿಮ್ಮ ಕ್ಯಾಮರಾವನ್ನು ಬಳಸಬಹುದು"</string>
+<string name="infobar_missing_ar_camera_permission_text">"ನಿಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಪರಿಸರದ 3D ನಕ್ಷೆಯನ್ನು ರಚಿಸುವುದಕ್ಕಾಗಿ ನಿಮ್ಮ ಕ್ಯಾಮರಾವನ್ನು ಪ್ರವೇಶಿಸಲು Banana Browser ಗೆ ಅನುಮತಿ ಬೇಕಾಗಿದೆ."</string>
 <string name="infobar_missing_camera_permission_text">"ಈ ಸೈಟ್‌ಗೆ ನಿಮ್ಮ ಕ್ಯಾಮರಾ ಪ್ರವೇಶಿಸಲು Banana Browser ಗೆ ಅನುಮತಿಸುವ ಅಗತ್ಯವಿದೆ."</string>
 <string name="infobar_missing_microphone_permission_text">"ಈ ಸೈಟ್‌ಗೆ ನಿಮ್ಮ ಮೈಕ್ರೊಫೋನ್ ಪ್ರವೇಶಿಸಲು Banana Browser ಗೆ ಅನುಮತಿಸುವ ಅಗತ್ಯವಿದೆ."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"ಈ ಸೈಟ್‌ಗೆ ನಿಮ್ಮ ಕ್ಯಾಮರಾ ಮತ್ತು ಮೈಕ್ರೊಫೋನ್ ಪ್ರವೇಶಿಸಲು Banana Browser ಗೆ ಅನುಮತಿಸುವ ಅಗತ್ಯವಿದೆ."</string>
@@ -110,4 +107,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ವಿಳಾಸಗಳನ್ನು ನಿಮ್ಮ Banana Browser ಮತ್ತು ನಿಮ್ಮ Google ಖಾತೆಯಿಂದ (%1$s) ಪಡೆಯಲಾಗಿದೆ. ನೀವು ಅವುಗಳನ್ನು BEGIN_LINKಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿEND_LINK ನಿರ್ವಹಿಸಬಹುದು."</string>
 <string name="payments_card_and_address_settings_signed_out">"ಕಾರ್ಡ್‌ಗಳು ಮತ್ತು ವಿಳಾಸಗಳನ್ನು Banana Browser ನಿಂದ ಪಡೆಯಲಾಗಿದೆ. ನೀವು ಅವುಗಳನ್ನು BEGIN_LINKಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿEND_LINK ನಿರ್ವಹಿಸಬಹುದು."</string>
+<string name="android_permission_off">"&lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; Banana Browser ಗೆ ಅನುಮತಿಯನ್ನು ಆನ್ ಮಾಡಿ."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; Banana Browser ಗೆ ಅನುಮತಿಗಳನ್ನು ಆನ್ ಮಾಡಿ."</string>
+<string name="android_ar_camera_permission_off">"AR ಬಳಸಲು Banana Browser ಗೆ ಅನುಮತಿ ನೀಡುವುದಕ್ಕಾಗಿ, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಕ್ಯಾಮರಾವನ್ನು ಆನ್ ಮಾಡಿ."</string>
+<string name="android_camera_permission_off">"Banana Browser ನಿಮ್ಮ ಕ್ಯಾಮರಾವನ್ನು ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಕ್ಯಾಮರಾವನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
+<string name="android_location_permission_off">"Banana Browser ನಿಮ್ಮ ಸ್ಥಳವನ್ನು ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಸ್ಥಳವನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
+<string name="android_microphone_permission_off">"Banana Browser ನಿಮ್ಮ ಮೈಕ್ರೋಫೋನ್‌ಗೆ ಪ್ರವೇಶಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಮೈಕ್ರೋಫೋನ್ ಅನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
+<string name="android_notifications_permission_off">"Banana Browser ನಿಮಗೆ ಅಧಿಸೂಚನೆಗಳನ್ನು ಕಳುಹಿಸುವುದಕ್ಕೆ ಅನುಮತಿಸಲು, &lt;link&gt;Android ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ&lt;/link&gt; ಅಧಿಸೂಚನೆಗಳನ್ನು ಕೂಡ ಆನ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ."</string>
 </resources>

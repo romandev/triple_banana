@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Выбраныя даныя выдалены з Banana Browser і сінхранізаваных прылад.
 
 На сайце &lt;link&gt;myactivity.google.com&lt;/link&gt; могуць быць размешчаны іншыя формы гісторыі праглядаў сайтаў для вашага Уліковага запісу Google: напрыклад, пошукавыя запыты і дзеянні ў іншых сэрвісах Google."</string>
-<string name="android_permission_off_plural">"Уключыце дазволы для Banana Browser у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Уключыце дазвол для Banana Browser у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Каб даць браўзеру Banana Browser доступ да даных пра ваша месцазнаходжанне, уключыце апошнія ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Каб Banana Browser атрымаў доступ да камеры, уключыце камеру таксама ў &lt;link&gt;наладах Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Каб Banana Browser мог адпраўляць вам апавяшчэнні, таксама ўключыце іх у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Каб даць браўзеру Banana Browser доступ да мікрафона, уключыце апошні ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"У спрошчаным рэжыме Banana Browser загружае старонкі хутчэй і зніжае выкарыстанне трафіка максімум на 60 працэнтаў."</string>
 <string name="data_reduction_description_lite_mode">"Калі ўключаны лёгкі рэжым, браўзер Banana Browser будзе выкарыстоўваць серверы Google, каб паскорыць загрузку старонак. У лёгкім рэжыме на вельмі павольных старонках загружацца будзе толькі асноўнае змесціва. Лёгкі рэжым не працуе на ўкладках інкогніта."</string>
 <string name="data_reduction_promo_summary_lite_mode">"У спрошчаным рэжыме Banana Browser загружае старонкі хутчэй і зніжае выкарыстанне трафіка максімум на 60 працэнтаў. Каб аптымізаваць старонкі, якія вы наведваеце, Banana Browser адпраўляе даныя пра ваш інтэрнэт-трафік у Google. &lt;link&gt;Даведацца больш&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Для пошуку ў Кітаі Banana Browser можа выкарыстоўваць &lt;b&gt;Sogou&lt;/b&gt;. Гэта можна змяніць у &lt;link&gt;Наладах&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Гэта праграма працуе ў браўзеры Banana Browser"</string>
 <string name="twa_running_in_chrome">"Выконваецца ў браўзеры Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Вы ўбачыце, ці выкананы ўваход на сайт %1$s, гісторыю праглядаў і даныя сайтаў у Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"Праграма \"%1$s\" таксама мае змесціва ў Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Даныя можна выдаліць у наладах Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Адкрыць Даведачны цэнтр Banana Browser у новай укладцы"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"Выдаліць вашы дзеянні ў Banana Browser са службы лічбавага камфорту?"</string>
 <string name="usage_stats_revocation_explanation">"Не будуць паказвацца сайты, наведаныя вамі ў Banana Browser. Усе таймеры сайтаў будуць выдалены."</string>
 <string name="autofill_assistant_module_title">"Памочнік Google у Banana Browser"</string>
+<string name="qr_code_permission_description">"Каб сканіраваць QR-код, дазвольце браўзеру Banana Browser выкарыстоўваць камеру"</string>
 <string name="qr_code_open_settings_description">"Каб сканіраваць QR-код, змяніце налады, каб Banana Browser мог выкарыстоўваць камеру"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser запытвае дазвол на доступ да камеры, каб стварыць 3D-карту асяроддзя."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser запытвае дазвол на доступ да вашай камеры для гэтага сайта."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser запытвае дазвол на доступ да мікрафона для гэтага сайта."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser запытвае дазвол на доступ да вашай камеры і мікрафона для гэтага сайта."</string>
@@ -109,4 +106,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Карткі і адрасы паходзяць з Banana Browser і вашага Уліковага запісу Google (%1$s). Кіраваць імі можна ў BEGIN_LINKНаладахEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Даныя крэдытных картак і адрасы паходзяць з браўзера Banana Browser. Кіраваць імі можна ў BEGIN_LINKНаладахEND_LINK."</string>
+<string name="android_permission_off">"Уключыце дазвол для Banana Browser у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Уключыце дазволы для Banana Browser у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Каб Banana Browser мог выкарыстоўваць дапоўненую рэальнасць, уключыце таксама камеру ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Каб Banana Browser атрымаў доступ да камеры, уключыце камеру таксама ў &lt;link&gt;наладах Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Каб даць браўзеру Banana Browser доступ да даных пра ваша месцазнаходжанне, уключыце апошнія ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Каб даць браўзеру Banana Browser доступ да мікрафона, уключыце апошні ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Каб Banana Browser мог адпраўляць вам апавяшчэнні, таксама ўключыце іх у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
 </resources>

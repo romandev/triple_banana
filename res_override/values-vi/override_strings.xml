@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Dữ liệu được chọn đã bị xóa khỏi Banana Browser và các thiết bị đã đồng bộ hóa của bạn.
 
 Tài khoản Google của bạn có thể có các dạng lịch sử duyệt web khác, chẳng hạn như tìm kiếm và hoạt động từ các dịch vụ khác của Google tại &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Bật quyền cho Banana Browser trong &lt;link&gt;Cài đặt Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Bật quyền cho Banana Browser trong &lt;link&gt;Cài đặt Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Để cho phép Banana Browser truy cập vào vị trí của bạn, hãy bật cả vị trí trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Để cho phép Banana Browser truy cập vào máy ảnh của bạn, hãy bật cả máy ảnh trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Để Banana Browser có thể gửi cho bạn thông báo, hãy bật cả thông báo trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Để cho phép Banana Browser truy cập vào micrô của bạn, hãy bật cả micrô trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60 phần trăm."</string>
 <string name="data_reduction_description_lite_mode">"Khi bạn bật Chế độ thu gọn, Banana Browser sẽ sử dụng máy chủ của Google để tải trang nhanh hơn. Chế độ thu gọn sẽ ghi lại các trang tốc độ rất chậm để chỉ tải nội dung cần thiết. Chế độ thu gọn không áp dụng cho Tab ẩn danh."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60%. Để tối ưu hóa các trang bạn truy cập, Banana Browser sẽ gửi lưu lượng truy cập web của bạn cho Google. &lt;link&gt;Tìm hiểu thêm&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="sogou_explanation">"Banana Browser có thể sử dụng &lt;b&gt;Sogou&lt;/b&gt; để tìm kiếm tại Trung Quốc. Bạn có thể thay đổi điều này trong &lt;link&gt;Cài đặt&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Ứng dụng này đang chạy trong Banana Browser"</string>
 <string name="twa_running_in_chrome">"Đang chạy trong Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Trong Banana Browser, bạn sẽ thấy trạng thái đăng nhập, dữ liệu duyệt web và dữ liệu trang web trên %1$s."</string>
 <string name="twa_clear_data_dialog_title">"%1$s cũng có dữ liệu trong Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Bạn có thể xóa dữ liệu trong mục Cài đặt của Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Mở Trung tâm trợ giúp Banana Browser trong tab mới"</string>
@@ -96,6 +91,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="usage_stats_revocation_prompt">"Bạn có muốn xóa hoạt động của mình trên Banana Browser khỏi Digital Wellbeing không?"</string>
 <string name="usage_stats_revocation_explanation">"Các trang web bạn truy cập trên Banana Browser sẽ không hiển thị. Tất cả lịch hẹn giờ trên trang web sẽ bị xóa."</string>
 <string name="autofill_assistant_module_title">"Trợ lý Google trong Banana Browser"</string>
+<string name="qr_code_permission_description">"Để quét mã QR, hãy cho phép Banana Browser dùng máy ảnh của bạn"</string>
 <string name="qr_code_open_settings_description">"Để quét mã QR, hãy thay đổi các tùy chọn cài đặt để Banana Browser có thể sử dụng máy ảnh của bạn"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser cần có quyền truy cập máy ảnh của bạn cho trang web này."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser cần có quyền truy cập micrô của bạn cho trang web này."</string>
@@ -109,4 +105,11 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Thẻ và địa chỉ từ Banana Browser và Tài khoản Google của bạn (%1$s). Bạn có thể quản lý thẻ và địa chỉ trong BEGIN_LINKCài đặtEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Thẻ và địa chỉ từ Banana Browser. Bạn có thể quản lý thẻ và địa chỉ trong BEGIN_LINKCài đặtEND_LINK."</string>
+<string name="android_permission_off">"Bật quyền cho Banana Browser trong &lt;link&gt;Cài đặt Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Bật quyền cho Banana Browser trong &lt;link&gt;Cài đặt Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Để cho phép Banana Browser sử dụng công nghệ thực tế tăng cường (AR), hãy bật cả máy ảnh trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Để cho phép Banana Browser truy cập vào máy ảnh của bạn, hãy bật cả máy ảnh trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Để cho phép Banana Browser truy cập vào vị trí của bạn, hãy bật cả vị trí trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Để cho phép Banana Browser truy cập vào micrô của bạn, hãy bật cả micrô trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Để Banana Browser có thể gửi cho bạn thông báo, hãy bật cả thông báo trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
 </resources>

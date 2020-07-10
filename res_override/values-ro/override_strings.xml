@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Datele selectate au fost eliminate din Banana Browser și de pe dispozitivele sincronizate.
 
 Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi căutările și activitatea din alte servicii Google, la &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Activează permisiunile pentru Banana Browser din &lt;link&gt;Setări Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Activează permisiunea pentru Banana Browser din &lt;link&gt;Setări Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Pentru a permite Banana Browser să acceseze locația, activează locația și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Pentru a permite Banana Browser să acceseze camera, activează camera și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Pentru a permite Banana Browser să îți trimită notificări, activează notificările și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Ca să permiți Banana Browser să acceseze microfonul, activează microfonul și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"În modul Lite, Banana Browser încarcă mai repede paginile și folosește cu până la 60 de procente mai puține date."</string>
 <string name="data_reduction_description_lite_mode">"Când modul Lite este activat, Banana Browser folosește serverele Google pentru a încărca paginile mai rapid. Modul Lite rescrie paginile care se încarcă foarte greu ca să încarce numai conținutul esențial. Modul Lite nu se aplică în filele incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"În modul Lite, Banana Browser încarcă mai repede paginile și folosește cu până la 60 % mai puține date. Pentru a optimiza paginile pe care le accesezi, Banana Browser trimite traficul tău web la Google. &lt;link&gt;Află mai multe&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="sogou_explanation">"Banana Browser poate să folosească &lt;b&gt;Sogou&lt;/b&gt; pentru căutare în China. Poți să schimbi acest lucru din &lt;link&gt;Setări&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Această aplicație rulează în Banana Browser"</string>
 <string name="twa_running_in_chrome">"Rulează în Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Vei vedea starea de conectare la %1$s, datele de navigare și datele privind site-ul în Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"Și %1$s are date în Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Poți șterge datele în Setările Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Deschide Centrul de ajutor Banana Browser într-o filă nouă"</string>
@@ -96,7 +91,9 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="usage_stats_revocation_prompt">"Elimini activitatea în Banana Browser din Bunăstarea digitală?"</string>
 <string name="usage_stats_revocation_explanation">"Site-urile pe care le vizitezi în Banana Browser nu se vor afișa. Toate temporizatoarele site-urilor vor fi șterse."</string>
 <string name="autofill_assistant_module_title">"Asistentul Google în Banana Browser"</string>
+<string name="qr_code_permission_description">"Pentru a scana un cod QR, permite ca Banana Browser să utilizeze camera"</string>
 <string name="qr_code_open_settings_description">"Pentru a scana un cod QR, modifică setările astfel încât Banana Browser să poată folosi camera"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser are nevoie de permisiunea de a accesa camera foto pentru a crea o hartă 3D a lucrurilor din jurul tău."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser are nevoie de permisiune ca să acceseze camera foto pentru acest site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser are nevoie de permisiune ca să acceseze microfonul pentru acest site."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser are nevoie de permisiune ca să acceseze camera foto și microfonul pentru acest site."</string>
@@ -109,4 +106,11 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Cardurile și adresele sunt din Banana Browser și din Contul Google (%1$s). Poți să le gestionezi în BEGIN_LINKSetăriEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Cardurile și adresele sunt din Banana Browser. Le poți gestiona în BEGIN_LINKSetăriEND_LINK."</string>
+<string name="android_permission_off">"Activează permisiunea pentru Banana Browser din &lt;link&gt;Setări Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Activează permisiunile pentru Banana Browser din &lt;link&gt;Setări Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Pentru a permite ca Banana Browser să folosească RA, activează camera foto în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Pentru a permite Banana Browser să acceseze camera, activează camera și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Pentru a permite Banana Browser să acceseze locația, activează locația și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Ca să permiți Banana Browser să acceseze microfonul, activează microfonul și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Pentru a permite Banana Browser să îți trimită notificări, activează notificările și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
 </resources>

@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Die ausgewählten Daten wurden aus Banana Browser und von allen Ihren synchronisierten Geräten entfernt.
 
 Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere Formen des Browserverlaufs wie Suchanfragen oder Aktivitäten anderer Google-Dienste für Ihr Google-Konto."</string>
-<string name="android_permission_off_plural">"Berechtigungen für Banana Browser in den &lt;link&gt;Android-Einstellungen&lt;/link&gt; aktivieren"</string>
-<string name="android_permission_off">"Berechtigung für Banana Browser in den &lt;link&gt;Android-Einstellungen&lt;/link&gt; aktivieren"</string>
-<string name="android_location_permission_off">"Aktivieren Sie die Standortermittlung auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf Ihren Standort zugreifen kann."</string>
-<string name="android_camera_permission_off">"Aktivieren Sie die Kamera auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf sie zugreifen kann."</string>
-<string name="android_notifications_permission_off">"Aktivieren Sie Benachrichtigungen auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser Ihnen Benachrichtigungen senden kann."</string>
-<string name="android_microphone_permission_off">"Aktivieren Sie das Mikrofon auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf es zugreifen kann."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 Prozent weniger Daten verbraucht."</string>
 <string name="data_reduction_description_lite_mode">"Wenn der Lite-Modus aktiviert ist, wird der Seitenaufbau in Banana Browser mithilfe von Google-Servern beschleunigt. Im Lite-Modus werden sehr langsame Seiten so umgeschrieben, dass nur die wesentlichen Inhalte geladen werden. Der Lite-Modus wird nicht auf Inkognito-Tabs angewendet."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 % weniger Daten verbraucht. Zum Optimieren der von Ihnen besuchten Seiten sendet Banana Browser Ihren Datenverkehr an Google. &lt;link&gt;Weitere Informationen&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="sogou_explanation">"Banana Browser kann in China &lt;b&gt;Sogou&lt;/b&gt; für die Suche verwenden. Sie können dies unter &lt;link&gt;Einstellungen&lt;/link&gt; ändern."</string>
 <string name="app_running_in_chrome_disclosure">"Diese App wird in Banana Browser ausgeführt"</string>
 <string name="twa_running_in_chrome">"Wird in Banana Browser ausgeführt"</string>
+<string name="twa_running_in_chrome_v2">"Sie können Ihren Anmeldestatus für %1$s, Browserdaten und Websitedaten in Banana Browser einsehen."</string>
 <string name="twa_clear_data_dialog_title">"%1$s hat auch Daten in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Sie können die Daten in den Banana Browser-Einstellungen löschen"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser-Hilfe in einem neuen Tab öffnen"</string>
@@ -96,7 +91,9 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="usage_stats_revocation_prompt">"Ihre Banana Browser-Aktivitäten aus Digital Wellbeing entfernen?"</string>
 <string name="usage_stats_revocation_explanation">"In Banana Browser aufgerufene Websites werden nicht angezeigt. Alle Timer für Websites werden gelöscht."</string>
 <string name="autofill_assistant_module_title">"Google Assistant für Banana Browser"</string>
+<string name="qr_code_permission_description">"Wenn Sie einen QR-Code scannen möchten, erlauben Sie Banana Browser, Ihre Kamera zu verwenden"</string>
 <string name="qr_code_open_settings_description">"Wenn Sie einen QR-Code scannen möchten, ändern Sie die Einstellungen, damit Banana Browser Ihre Kamera verwenden kann"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser benötigt Zugriff auf die Kamera, um eine 3D-Karte Ihrer Umgebung zu erstellen."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser benötigt für diese Website die Berechtigung, auf Ihre Kamera zuzugreifen."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser benötigt für diese Website die Berechtigung, auf Ihr Mikrofon zuzugreifen."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser benötigt für diese Website die Berechtigung, auf Ihre Kamera und Ihr Mikrofon zuzugreifen."</string>
@@ -109,4 +106,11 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Karten und Adressen stammen aus Banana Browser und aus Ihrem Google-Konto (%1$s). Sie können sie in den BEGIN_LINKEinstellungenEND_LINK verwalten."</string>
 <string name="payments_card_and_address_settings_signed_out">"Die Karten und Adressen stammen aus Banana Browser. Sie werden in den BEGIN_LINKEinstellungenEND_LINK verwaltet."</string>
+<string name="android_permission_off">"Berechtigung für Banana Browser in den &lt;link&gt;Android-Einstellungen&lt;/link&gt; aktivieren"</string>
+<string name="android_permission_off_plural">"Berechtigungen für Banana Browser in den &lt;link&gt;Android-Einstellungen&lt;/link&gt; aktivieren"</string>
+<string name="android_ar_camera_permission_off">"Damit Banana Browser AR verwenden kann, muss auch die Kamera in den &lt;link&gt;Android-Einstellungen&lt;/link&gt; aktiviert sein."</string>
+<string name="android_camera_permission_off">"Aktivieren Sie die Kamera auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf sie zugreifen kann."</string>
+<string name="android_location_permission_off">"Aktivieren Sie die Standortermittlung auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf Ihren Standort zugreifen kann."</string>
+<string name="android_microphone_permission_off">"Aktivieren Sie das Mikrofon auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser auf es zugreifen kann."</string>
+<string name="android_notifications_permission_off">"Aktivieren Sie Benachrichtigungen auch in den &lt;link&gt;Android-Einstellungen&lt;/link&gt;, damit Banana Browser Ihnen Benachrichtigungen senden kann."</string>
 </resources>

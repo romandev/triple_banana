@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Völdu gögnin hafa verið fjarlægð af Banana Browser og samstilltum tækjum.
 
 Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, svo sem yfir leit og virkni í annarri þjónustu Google, á &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Kveiktu á heimildum fyrir Banana Browser í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Kveiktu á heimild fyrir Banana Browser í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Til að leyfa Banana Browser að fá aðgang að staðsetningu þinni þarftu einnig að kveikja á henni í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Til að leyfa Banana Browser að fá aðgang að myndavélinni þarftu einnig að kveikja á henni í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Til að leyfa Banana Browser að senda þér tilkynningar þarftu einnig að kveikja á þeim í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Til að leyfa Banana Browser að fá aðgang að hljóðnemanum þarftu einnig að kveikja á honum í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Í léttútgáfu hleður Banana Browser síðum hraðar og notar allt að 60 prósentum minna gagnamagn."</string>
 <string name="data_reduction_description_lite_mode">"Þegar kveikt er á léttútgáfu notar Banana Browser þjóna Google til að hlaða síðum hraðar. Léttútgáfa endurskrifar mjög hægar síður og hleður aðeins nauðsynlegu efni. Léttútgáfa er ekki notuð á huliðsflipum."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Í léttútgáfu hleður Banana Browser síðum hraðar og notar allt að 60% minna gagnamagn. Banana Browser sendir vefumferð þína til Google til þess að geta fínstillt síðurnar sem þú opnar. &lt;link&gt;Frekari upplýsingar&lt;/link&gt;"</string>
@@ -72,6 +66,7 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="sogou_explanation">"Banana Browser getur notast við &lt;b&gt;Sogou&lt;/b&gt; fyrir leit í Kína. Þú getur breytt þessu í &lt;link&gt;stillingunum&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Þetta forrit keyrir í Banana Browser"</string>
 <string name="twa_running_in_chrome">"Keyrir í Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Þú sérð innskráningarstöðu þína, vafragögn og vefsvæðagögn fyrir %1$s í Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"%1$s er einnig með gögn í Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Þú getur hreinsað gögnin í stillingum Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Opna hjálparmiðstöð Banana Browser í nýjum flipa"</string>
@@ -95,7 +90,9 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="usage_stats_revocation_prompt">"Viltu fjarlægja það sem þú gerir í Banana Browser úr stafrænni vellíðan?"</string>
 <string name="usage_stats_revocation_explanation">"Vefsvæði sem þú opnar í Banana Browser birtast ekki. Öllum teljurum vefsvæða verður eytt."</string>
 <string name="autofill_assistant_module_title">"Google hjálpari í Banana Browser"</string>
+<string name="qr_code_permission_description">"Til að skanna QR-kóða skaltu leyfa Banana Browser að nota myndavélina"</string>
 <string name="qr_code_open_settings_description">"Til að skanna QR-kóða skaltu breyta stillingunum svo að Banana Browser geti notað myndavélina þína"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser þarf leyfi til að nota myndavélina til að búa til þrívíddarkort af umhverfinu."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser þarf leyfi til að nota myndavélina þína á þessu vefsvæði."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser þarf leyfi til að nota hljóðnemann þinn á þessu vefsvæði."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser þarf leyfi til að nota myndavélina og hljóðnemann þinn á þessu vefsvæði."</string>
@@ -108,4 +105,11 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kort og heimilisföng eru fengin úr Banana Browser og Google reikningnum þínum (%1$s). Þú getur haft umsjón með þeim í BEGIN_LINKstillingunumEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Spjöld og heimilisföng eru úr Banana Browser. Þú getur haft umsjón með þeim í BEGIN_LINKstillingunumEND_LINK."</string>
+<string name="android_permission_off">"Kveiktu á heimild fyrir Banana Browser í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Kveiktu á heimildum fyrir Banana Browser í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Til að leyfa Banana Browser að nota AR þarftu einnig að kveikja á myndavél í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Til að leyfa Banana Browser að fá aðgang að myndavélinni þarftu einnig að kveikja á henni í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Til að leyfa Banana Browser að fá aðgang að staðsetningu þinni þarftu einnig að kveikja á henni í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Til að leyfa Banana Browser að fá aðgang að hljóðnemanum þarftu einnig að kveikja á honum í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Til að leyfa Banana Browser að senda þér tilkynningar þarftu einnig að kveikja á þeim í &lt;link&gt;stillingum Android&lt;/link&gt;."</string>
 </resources>

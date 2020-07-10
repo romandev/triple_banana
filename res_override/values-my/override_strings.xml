@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ရွေးချယ်ထားသည့် ဒေတာများကို စင့်ခ်လုပ်ထားသည့် စက်ပစ္စည်းများနှင့် Banana Browser မှဖယ်ရှားလိုက်ပါပြီ။
 
 သင့် Google အကောင့်တွင် &lt;link&gt;myactivity.google.com&lt;/link&gt; ၌ ရှာဖွေမှုများနှင့် အခြား Google ဝန်ဆောင်မှုများမှ လုပ်ဆောင်ချက်များကဲ့သို့ အင်တာနက်အသုံးပြုမှု မှတ်တမ်း အခြားပုံစံများ ရှိနိုင်ပါသည်။"</string>
-<string name="android_permission_off_plural">"Banana Browser အတွက် ခွင့်ပြုချက်များကို &lt;link&gt;Android ချိန်ညှိချက်များ&lt;/link&gt; တွင် ဖွင့်ပါ။"</string>
-<string name="android_permission_off">"Banana Browser အတွက် ခွင့်ပြုချက်ကို &lt;link&gt;Android ချိန်ညှိချက်များ&lt;/link&gt; တွင် ဖွင့်ပါ။"</string>
-<string name="android_location_permission_off">"Banana Browser က သင့်တည်နေရာကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် တည်နေရာကိုလည်း ဖွင့်ပါ။"</string>
-<string name="android_camera_permission_off">"Banana Browser က သင့်ကင်မရာကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် ကင်မရာကိုလည်း ဖွင့်ပါ။"</string>
-<string name="android_notifications_permission_off">"Banana Browser က အကြောင်းကြားချက်များ ပေးပို့နိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် အကြောင်းကြားချက်များကိုလည်း ဖွင့်ပါ။"</string>
-<string name="android_microphone_permission_off">"Banana Browser က သင့်မိုက်ခရိုဖုန်းကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် မိုက်ခရိုဖုန်းကိုလည်း ဖွင့်ပါ။"</string>
 <string name="data_reduction_benefits_description_lite_mode">"\'အပေါ့စားမုဒ်\' တွင် Banana Browser သည် စာမျက်နှာများကို ပိုမိုမြန်ဆန်စွာဖွင့်ပြီး ဒေတာကို ၆၀ ရာခိုင်နှုန်းအထိ လျှော့သုံးပါသည်။"</string>
 <string name="data_reduction_description_lite_mode">"\'အပေါ့စားမုဒ်\' ဖွင့်ထားသည့်အခါ စာမျက်နှာများ ပိုမိုမြန်ဆန်စွာ ဖွင့်နိုင်ရန် Banana Browser က Google ဆာဗာများကို အသုံးပြုသည်။ အရေးကြီး အကြောင်းအရာများကိုသာ ဖွင့်ရန် \'အပေါ့စားမုဒ်\' က အလွန်နှေးသော ဝဘ်စာမျက်နှာများကို ပြန်ရေးသည်။ \'အပေါ့စားမုဒ်\' ကို \'ရုပ်ဖျက်\' တဘ်များတွင် သုံး၍မရပါ။"</string>
 <string name="data_reduction_promo_summary_lite_mode">"\'အပေါ့စားမုဒ်\' တွင် Banana Browser သည် စာမျက်နှာများကို ပိုမိုမြန်ဆန်စွာဖွင့်ပြီး ဒေတာကို ၆၀ ရာခိုင်နှုန်းအထိ လျှော့သုံးပါသည်။ သင်ဝင်ကြည့်သည့် စာမျက်နှာများကို အကောင်းဆုံးချိန်ညှိရန် Banana Browser သည် သင့်ဝဘ် ဒေတာအသွားအလာများကို Google သို့ ပို့ပါသည်။ &lt;link&gt;ပိုမိုလေ့လာရန်&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"Banana Browser သည် တရုတ်ပြည်တွင် ရှာဖွေရန် &lt;b&gt;Sogou&lt;/b&gt; ကို အသုံးပြုနိုင်ပါသည်။ ၎င်းကို &lt;link&gt;ဆက်တင်များ&lt;/link&gt; ထဲတွင် ပြောင်းလဲနိုင်သည်။"</string>
 <string name="app_running_in_chrome_disclosure">"ဤအက်ပ်သည် Banana Browser တွင် ပွင့်နေပါသည်"</string>
 <string name="twa_running_in_chrome">"Banana Browser တွင် ဖွင့်ထားသည်"</string>
+<string name="twa_running_in_chrome_v2">"သင်၏ %1$s လက်မှတ်ထိုးဝင်မှု အခြေအနေ၊ ဖွင့်ကြည့်ထားသည့်မှတ်တမ်းဒေတာနှင့် ဝဘ်ဆိုက်ဒေတာများကို Banana Browser တွင် မြင်ရပါမည်။"</string>
 <string name="twa_clear_data_dialog_title">"%1$s သည် Banana Browser တွင်လည်း ဒေတာများရှိသည်"</string>
 <string name="twa_clear_data_dialog_message">"ဒေတာများကို \'Banana Browser ဆက်တင်များ\' တွင် ရှင်းထုတ်နိုင်သည်"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser ကူညီရေးရာဌာနကို တဘ်အသစ်တွင် ဖွင့်ရန်"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"\'ဒစ်ဂျစ်တယ် အာရောဂျံ\' မှနေ၍ သင်၏ Banana Browser လုပ်ဆောင်ချက်ကို ‌ဖယ်ရှားလိုပါသလား။"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser တွင် သင်ဖွင့်ကြည့်ထားသည့် ဝဘ်ဆိုက်များကို ပြသမည် မဟုတ်ပါ။ ဝဘ်ဆိုက်တိုင်မာများအားလုံးကို ဖျက်လိုက်ပါမည်။"</string>
 <string name="autofill_assistant_module_title">"Banana Browser အတွင်းရှိ Google Assistant"</string>
+<string name="qr_code_permission_description">"QR ကုဒ်ကို စကင်ဖတ်ရန် Banana Browser အား သင့်ကင်မရာ သုံးခွင့်ပြုပါ"</string>
 <string name="qr_code_open_settings_description">"QR ကုဒ်စကင်ဖတ်ရန် သင့်ဆက်တင်များ ပြောင်းပါ၊ သို့မှသာ Banana Browser က သင့်ကင်မရာကို အသုံးပြုနိုင်သည်"</string>
+<string name="infobar_missing_ar_camera_permission_text">"သင့်ပတ်ဝန်းကျင်၏ 3D မြေပုံ ပြုလုပ်ရန် Banana Browser က သင့်ကင်မရာကို အသုံးပြုခွင့် လိုအပ်သည်။"</string>
 <string name="infobar_missing_camera_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် ကင်မရာအသုံးပြုခွင့် လိုအပ်ပါသည်။"</string>
 <string name="infobar_missing_microphone_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် သင်၏ မိုက်ခရိုဖုန်းကို အသုံးပြုခွင့်ရရန် လိုအပ်ပါသည်။"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် သင်၏ ကင်မရာနှင့် မိုက်ခရိုဖုန်းကို အသုံးပြုခွင့်ရရန် လိုအပ်ပါသည်။"</string>
@@ -110,4 +107,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"ကဒ်နှင့် လိပ်စာများသည် Banana Browser နှင့် သင်၏ Google အကောင့် (%1$s) မှဖြစ်သည်။ ၎င်းတို့ကို BEGIN_LINKဆက်တင်များEND_LINK တွင် စီမံခန့်ခွဲနိုင်သည်။"</string>
 <string name="payments_card_and_address_settings_signed_out">"ကဒ်နှင့် လိပ်စာများသည် Banana Browser မှ ဖြစ်သည်။ ၎င်းတို့ကို BEGIN_LINKဆက်တင်များEND_LINK ထဲတွင် စီမံခန့်ခွဲနိုင်သည်။"</string>
+<string name="android_permission_off">"Banana Browser အတွက် ခွင့်ပြုချက်ကို &lt;link&gt;Android ချိန်ညှိချက်များ&lt;/link&gt; တွင် ဖွင့်ပါ။"</string>
+<string name="android_permission_off_plural">"Banana Browser အတွက် ခွင့်ပြုချက်များကို &lt;link&gt;Android ချိန်ညှိချက်များ&lt;/link&gt; တွင် ဖွင့်ပါ။"</string>
+<string name="android_ar_camera_permission_off">"Banana Browser ကို AR အသုံးပြုခွင့်ပေးရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင်လည်း ကင်မရာဖွင့်ပါ။"</string>
+<string name="android_camera_permission_off">"Banana Browser က သင့်ကင်မရာကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် ကင်မရာကိုလည်း ဖွင့်ပါ။"</string>
+<string name="android_location_permission_off">"Banana Browser က သင့်တည်နေရာကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် တည်နေရာကိုလည်း ဖွင့်ပါ။"</string>
+<string name="android_microphone_permission_off">"Banana Browser က သင့်မိုက်ခရိုဖုန်းကို သုံးနိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် မိုက်ခရိုဖုန်းကိုလည်း ဖွင့်ပါ။"</string>
+<string name="android_notifications_permission_off">"Banana Browser က အကြောင်းကြားချက်များ ပေးပို့နိုင်ရန် &lt;link&gt;Android ဆက်တင်များ&lt;/link&gt; တွင် အကြောင်းကြားချက်များကိုလည်း ဖွင့်ပါ။"</string>
 </resources>

@@ -6,7 +6,8 @@
 # Please keep alphabetical order
 android_channel = "stable"
 debuggable_apks = false
-enable_feed_in_chrome = false
+# FIXME(#482): `enable_feed_in_chrome = false` causes build errors
+enable_feed_in_chrome = true
 enable_triple_banana = true
 ffmpeg_branding = "Chrome"
 fieldtrial_testing_like_official_build = true

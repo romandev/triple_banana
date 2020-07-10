@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Seçilen veriler Banana Browser\'dan ve senkronize edilen cihazlarınızdan kaldırıldı.
 
 Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesabınızla ilişkili başka biçimlerde tarama geçmişi &lt;link&gt;myactivity.google.com&lt;/link&gt; adresinde bulunabilir."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android Ayarları&lt;/link&gt;\'nda Banana Browser için izinleri açın."</string>
-<string name="android_permission_off">"&lt;link&gt;Android Ayarları&lt;/link&gt;\'nda Banana Browser için izni açın."</string>
-<string name="android_location_permission_off">"Banana Browser\'un konumunuza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da konumu açın."</string>
-<string name="android_camera_permission_off">"Banana Browser\'un kameranıza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'ında da kamerayı açın."</string>
-<string name="android_notifications_permission_off">"Banana Browser\'un size bildirim gönderebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da bildirimleri açın."</string>
-<string name="android_microphone_permission_off">"Banana Browser\'un mikrofonunuza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da mikrofonu açın."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır."</string>
 <string name="data_reduction_description_lite_mode">"Basit mod açıkken, Banana Browser sayfaların daha hızlı yüklenmesi için Google sunucularını kullanır. Basit mod, çok yavaş sayfaları yalnızca önemli içerikleri yüklenecek şekilde yeniden yazar. Basit mod, Gizli sekmelerde kullanılamaz."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır. Banana Browser, ziyaret ettiğiniz sayfaları iyileştirmek için web trafiğinizi Google\'a gönderir. &lt;link&gt;Daha fazla bilgi&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="sogou_explanation">"Banana Browser, Çin\'de arama yapmak için &lt;b&gt;Sogou&lt;/b&gt;\'yu kullanabilir. Bu seçimi &lt;link&gt;Ayarlar&lt;/link&gt;\'da değiştirebilirsiniz."</string>
 <string name="app_running_in_chrome_disclosure">"Bu uygulama Banana Browser\'da çalışıyor"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'da çalıştırılıyor"</string>
+<string name="twa_running_in_chrome_v2">"%1$s sitenizin oturum açma durumunu, tarama verilerini ve site verilerini Banana Browser\'da görürsünüz."</string>
 <string name="twa_clear_data_dialog_title">"%1$s uygulamasına ait veriler Banana Browser\'da da mevcut"</string>
 <string name="twa_clear_data_dialog_message">"Verileri Banana Browser Ayarlarından temizleyebilirsiniz"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser Yardım Merkezi\'ni yeni bir sekmede açar"</string>
@@ -96,7 +91,9 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="usage_stats_revocation_prompt">"Banana Browser etkinliğiniz Dijital Denge\'den kaldırılsın mı?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'da ziyaret ettiğiniz siteler gösterilmez. Tüm site zamanlayıcıları silinir."</string>
 <string name="autofill_assistant_module_title">"Banana Browser\'da Google Asistan"</string>
+<string name="qr_code_permission_description">"QR kodu taramak için Banana Browser\'un kameranızı kullanmasına izin verin"</string>
 <string name="qr_code_open_settings_description">"QR kodu taramak için ayarlarınızı Banana Browser\'un kameranızı kullanabileceği şekilde değiştirin"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Çevrenizin 3D haritasını oluşturmak için Banana Browser\'un kameranıza erişim iznine ihtiyacı var."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser\'un bu sitede kameranıza erişmesi için izin gerekiyor."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser\'un bu sitede mikrofonunuza erişmesi için izin gerekiyor."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser\'un bu sitede kameranıza ve mikrofonunuza erişmesi için izin gerekiyor."</string>
@@ -109,4 +106,11 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kart ve adres bilgileri Banana Browser\'dan ve Google Hesabınızdan (%1$s) alınmaktadır. Bunları BEGIN_LINKAyarlarEND_LINK\'dan yönetebilirsiniz."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartlar ve adresler Banana Browser\'dan alınmaktadır. Bu bilgileri BEGIN_LINKAyarlarEND_LINK\'dan yönetebilirsiniz."</string>
+<string name="android_permission_off">"&lt;link&gt;Android Ayarları&lt;/link&gt;\'nda Banana Browser için izni açın."</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android Ayarları&lt;/link&gt;\'nda Banana Browser için izinleri açın."</string>
+<string name="android_ar_camera_permission_off">"Banana Browser\'un artırılmış gerçekliği (AR) kullanması için &lt;link&gt;Android Ayarlarında&lt;/link&gt; kamerayı da açın."</string>
+<string name="android_camera_permission_off">"Banana Browser\'un kameranıza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'ında da kamerayı açın."</string>
+<string name="android_location_permission_off">"Banana Browser\'un konumunuza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da konumu açın."</string>
+<string name="android_microphone_permission_off">"Banana Browser\'un mikrofonunuza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da mikrofonu açın."</string>
+<string name="android_notifications_permission_off">"Banana Browser\'un size bildirim gönderebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da bildirimleri açın."</string>
 </resources>

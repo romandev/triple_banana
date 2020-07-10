@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Pasirinkti duomenys pašalinti iš „Banana Browser“ ir sinchronizuojamų įrenginių.
 
 Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų formų jūsų „Google“ paskyros naršymo istorija, pvz., paieškos ir veikla kitose „Google“ paslaugose."</string>
-<string name="android_permission_off_plural">"Įjunkite „Banana Browser“ leidimus &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
-<string name="android_permission_off">"Įjunkite „Banana Browser“ leidimą &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Norėdami leisti „Banana Browser“ pasiekti jūsų vietovę, taip pat įjunkite ją &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Norėdami leisti „Banana Browser“ pasiekti jūsų kamerą, taip pat įjunkite ją &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Norėdami leisti „Banana Browser“ siųsti pranešimus, taip pat įjunkite juos &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Norėdami leisti „Banana Browser“ pasiekti jūsų mikrofoną, taip pat įjunkite jį &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Kai įjungtas supaprastintasis režimas, sistemoje „Banana Browser“ puslapiai įkeliami sparčiau ir naudojama iki 60 proc. mažiau duomenų."</string>
 <string name="data_reduction_description_lite_mode">"Kai įjungtas supaprastintasis režimas, „Banana Browser“ naudoja „Google“ serverius, kad puslapiai būtų įkeliami greičiau. Kai įjungtas supaprastintasis režimas, itin lėti puslapiai perrašomi, kad būtų įkeliamas tik svarbiausias turinys. Supaprastintasis režimas netaikomas inkognito skirtukams."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Kai įjungtas supaprastintasis režimas, „Banana Browser“ sparčiau įkelia puslapius ir sunaudoja iki 60 proc. mažiau duomenų. „Banana Browser“ siunčia žiniatinklio srauto duomenis sistemai „Google“, kad optimizuotų puslapius, kuriuose lankotės. &lt;link&gt;Sužinokite daugiau&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="sogou_explanation">"„Banana Browser“ gali naudoti &lt;b&gt;Sogou&lt;/b&gt;, kai paieškos atliekamos Kinijoje. Šį nustatymą galite pakeisti skiltyje &lt;link&gt;„Nustatymai“&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Ši programa veikia naršyklėje „Banana Browser“"</string>
 <string name="twa_running_in_chrome">"Paleista naršyklėje „Banana Browser“"</string>
+<string name="twa_running_in_chrome_v2">"Matysite %1$s prisijungimo būseną, naršymo duomenis ir svetainės duomenis sistemoje „Banana Browser“."</string>
 <string name="twa_clear_data_dialog_title">"„%1$s“ duomenų taip pat yra naršyklėje „Banana Browser“"</string>
 <string name="twa_clear_data_dialog_message">"Duomenis galite išvalyti „Banana Browser“ nustatymų“ skiltyje"</string>
 <string name="keyboard_shortcut_help_center">"Atidaryti „Banana Browser“ pagalb. centrą naujame skirtuke"</string>
@@ -94,7 +89,9 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="usage_stats_setting_title">"„Banana Browser“ veiklos pašalinimas iš Skaitmeninės gerovės"</string>
 <string name="usage_stats_revocation_prompt">"Pašalinti „Banana Browser“ veiklą iš Skaitmeninės gerovės programos?"</string>
 <string name="usage_stats_revocation_explanation">"Svetainės, kuriose lankotės naudodami „Banana Browser“, nebus rodomos. Visi svetainių laikmačiai bus ištrinti."</string>
+<string name="qr_code_permission_description">"Jei norite nuskaityti QR kodą, leiskite „Banana Browser“ naudoti jūsų kamerą"</string>
 <string name="qr_code_open_settings_description">"Jei norite nuskaityti QR kodą, pakeiskite nustatymus, kad „Banana Browser“ galėtų naudoti jūsų kamerą"</string>
+<string name="infobar_missing_ar_camera_permission_text">"„Banana Browser“ reikia leidimo naudoti fotoaparatą jūsų aplinkos 3D žemėlapiui kurti."</string>
 <string name="infobar_missing_camera_permission_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų fotoaparatą šioje svetainėje."</string>
 <string name="infobar_missing_microphone_permission_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų mikrofoną šioje svetainėje."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų fotoaparatą ir mikrofoną šioje svetainėje."</string>
@@ -107,4 +104,11 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kortelės ir adresai naudojami iš „Banana Browser“ ir jūsų „Google“ paskyros (%1$s). Galite juos tvarkyti skiltyje BEGIN_LINKNustatymaiEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kortelės ir adresai naudojami iš „Banana Browser“. Juos galite tvarkyti nuėję į BEGIN_LINKNustatymusEND_LINK."</string>
+<string name="android_permission_off">"Įjunkite „Banana Browser“ leidimą &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Įjunkite „Banana Browser“ leidimus &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Norėdami leisti „Banana Browser“ naudoti AR, taip pat įjunkite fotoaparatą &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Norėdami leisti „Banana Browser“ pasiekti jūsų kamerą, taip pat įjunkite ją &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Norėdami leisti „Banana Browser“ pasiekti jūsų vietovę, taip pat įjunkite ją &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Norėdami leisti „Banana Browser“ pasiekti jūsų mikrofoną, taip pat įjunkite jį &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Norėdami leisti „Banana Browser“ siųsti pranešimus, taip pat įjunkite juos &lt;link&gt;„Android“ nustatymuose&lt;/link&gt;."</string>
 </resources>

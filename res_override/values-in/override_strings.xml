@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Data yang dipilih telah dihapus dari Banana Browser dan perangkat yang disinkronkan.
 
 Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penelusuran dan aktivitas dari layanan Google lainnya di &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Aktifkan izin untuk Banana Browser di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Aktifkan izin untuk Banana Browser di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Untuk mengizinkan Banana Browser mengakses lokasi Anda, aktifkan juga lokasi di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Untuk mengizinkan Banana Browser mengakses kamera Anda, aktifkan juga kamera di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Untuk mengizinkan Banana Browser mengirimkan notifikasi, aktifkan juga notifikasi di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Untuk mengizinkan Banana Browser mengakses mikrofon Anda, aktifkan juga mikrofon di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Dalam mode Ringan, Banana Browser memuat halaman lebih cepat dan menghemat data hingga 60 persen."</string>
 <string name="data_reduction_description_lite_mode">"Ketika Mode Ringan dalam keadaan aktif, Banana Browser menggunakan server Google agar halaman lebih cepat dimuat. Mode Ringan akan menulis ulang halaman yang sangat lambat agar hanya memuat konten penting. Mode Ringan tidak berlaku untuk tab Samaran."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Dalam Mode Ringan, Banana Browser memuat halaman lebih cepat dan menghemat data hingga 60 persen. Untuk mengoptimalkan halaman yang Anda kunjungi, Banana Browser akan mengirimkan traffic web ke Google. &lt;link&gt;Pelajari lebih lanjut&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="sogou_explanation">"Banana Browser dapat menggunakan &lt;b&gt;Sogou&lt;/b&gt; sebagai mesin telusur di Tiongkok. Anda dapat mengubahnya di &lt;link&gt;Setelan&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Aplikasi ini dijalankan di Banana Browser"</string>
 <string name="twa_running_in_chrome">"Berjalan di Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Di Banana Browser, Anda akan melihat status login, data penjelajahan, dan data situs %1$s."</string>
 <string name="twa_clear_data_dialog_title">"%1$s juga memiliki data di Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Anda dapat menghapus data di Setelan Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Membuka Pusat Bantuan Banana Browser di tab baru"</string>
@@ -96,7 +91,9 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="usage_stats_revocation_prompt">"Hapus aktivitas Banana Browser Anda dari Kesehatan Digital?"</string>
 <string name="usage_stats_revocation_explanation">"Situs yang Anda kunjungi di Banana Browser tidak akan ditampilkan. Semua timer situs akan dihapus."</string>
 <string name="autofill_assistant_module_title">"Asisten Google di Banana Browser"</string>
+<string name="qr_code_permission_description">"Untuk memindai kode QR, izinkan Banana Browser menggunakan kamera Anda"</string>
 <string name="qr_code_open_settings_description">"Untuk memindai kode QR, ubah setelan agar Banana Browser dapat menggunakan kamera Anda"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser memerlukan izin untuk mengakses kamera guna membuat peta 3D untuk area di sekeliling Anda."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser memerlukan izin akses ke kamera untuk situs ini."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser memerlukan izin akses ke mikrofon untuk situs ini."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser memerlukan izin akses ke kamera dan mikrofon untuk situs ini."</string>
@@ -109,4 +106,11 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kartu dan alamat berasal dari Banana Browser dan Akun Google (%1$s). Anda dapat mengelolanya di BEGIN_LINKSetelanEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartu dan alamat berasal dari Banana Browser. Anda dapat mengelolanya di BEGIN_LINKSetelanEND_LINK."</string>
+<string name="android_permission_off">"Aktifkan izin untuk Banana Browser di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Aktifkan izin untuk Banana Browser di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Untuk mengizinkan Banana Browser menggunakan Augmented Reality (AR), aktifkan juga kamera di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
+<string name="android_camera_permission_off">"Untuk mengizinkan Banana Browser mengakses kamera Anda, aktifkan juga kamera di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Untuk mengizinkan Banana Browser mengakses lokasi Anda, aktifkan juga lokasi di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
+<string name="android_microphone_permission_off">"Untuk mengizinkan Banana Browser mengakses mikrofon Anda, aktifkan juga mikrofon di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
+<string name="android_notifications_permission_off">"Untuk mengizinkan Banana Browser mengirimkan notifikasi, aktifkan juga notifikasi di &lt;link&gt;Setelan Android&lt;/link&gt;."</string>
 </resources>

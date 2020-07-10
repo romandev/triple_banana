@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
-@@ -1658,7 +1658,11 @@ public class ToolbarManager implements ToolbarTabController, UrlFocusChangeListe
+@@ -1433,7 +1433,11 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
  
          mToolbar.updateButtonVisibility();
          mToolbar.updateBackButtonVisibility(currentTab != null && currentTab.canGoBack());
@@ -13,9 +13,9 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/Toolba
          updateReloadState(tabCrashed);
          updateBookmarkButtonStatus();
          if (mToolbar.getMenuButtonWrapper() != null && !isBottomToolbarVisible()) {
-@@ -1672,6 +1676,8 @@ public class ToolbarManager implements ToolbarTabController, UrlFocusChangeListe
-         boolean editingAllowed = currentTab == null || mBookmarkBridge == null
-                 || mBookmarkBridge.isEditBookmarksEnabled();
+@@ -1449,6 +1453,8 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
+         boolean editingAllowed =
+                 currentTab == null || bridge == null || bridge.isEditBookmarksEnabled();
          mToolbar.updateBookmarkButton(isBookmarked, editingAllowed);
 +        org.banana.cake.interfaces.BananaBottomToolbarController.get().updateBookmarkButtonStatus(
 +                isBookmarked, editingAllowed);

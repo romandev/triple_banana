@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ଚୟନିତ ଡାଟାକୁ Banana Browser ଓ ସିଙ୍କ୍ ହୋଇଥିବା ଆପଣଙ୍କ ଡିଭାଇସ୍‌ଗୁଡ଼ିକରୁ କାଢ଼ିଦିଆଯାଇଛି।
 
 ଆପଣଙ୍କ Google ଆକାଉଣ୍ଟରେ ସର୍ଚ୍ଚ ଭଳି ଅନ୍ୟାନ୍ୟ ପ୍ରକାର ବ୍ରାଉଜିଂ ଇତିବୃତ୍ତି ଏବଂ &lt;link&gt;myactivity.google.com&lt;/link&gt;ରେ ଅନ୍ୟ Google ସେବାଗୁଡ଼ିକରେ କରାଯାଇଥିବା କାର୍ଯ୍ୟକଳାପ ଥାଇପାରେ।"</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android Settings&lt;/link&gt;ରେ Banana Browser ପାଇଁ ଅନୁମତି ଚାଲୁ କରନ୍ତୁ।"</string>
-<string name="android_permission_off">"&lt;link&gt;Android ସେଟିଂସ୍‌&lt;/link&gt;ରେ Banana Browser ପାଇଁ ଅନୁମତି ଚାଲୁ କରନ୍ତୁ।"</string>
-<string name="android_location_permission_off">"Banana Browserକୁ ଆପଣଙ୍କର ଲୋକେସନ୍ ଆକ୍ସେସ୍ ଦେବା ପାଇଁ, &lt;link&gt;Android ସେଟିଂସ୍ &lt;/link&gt;ରେ ଲୋକେସନ୍ ମଧ୍ୟ ଚାଲୁ କରନ୍ତୁ।"</string>
-<string name="android_camera_permission_off">"Banana Browserକୁ ଆପଣଙ୍କ କ୍ୟାମେରାର ଆକ୍ସେସ୍ ଦେବା ପାଇଁ, &lt;link&gt;Android ସେଟିଂସ୍&lt;/link&gt;ରେ ମଧ୍ୟ କ୍ୟାମେରା ଚାଲୁ କରନ୍ତୁ।"</string>
-<string name="android_notifications_permission_off">"Banana Browser, ଆପଣଙ୍କୁ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ପଠାଇବାକୁ ଦେବା ପାଇଁ &lt;link&gt;Android ସେଟିଂସ୍ &lt;/link&gt;ରେ ମଧ୍ୟ ଯାଇ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଚାଲୁ କରନ୍ତୁ।"</string>
-<string name="android_microphone_permission_off">"Banana Browserକୁ ଆପଣଙ୍କର ମାଇକ୍ରୋଫୋନ୍‌ରେ ଆକ୍ସେସ୍ ଦେବା ପାଇଁ, &lt;link&gt;Android ସେଟିଂସ୍ &lt;/link&gt;ରେ ମଧ୍ୟ ଚାଲୁ କରନ୍ତୁ।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ଲାଇଟ୍ ମୋଡ୍‌ରେ, Banana Browser ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଦ୍ରୁତତର ଭାବରେ ଲୋଡ୍ କରେ ଏବଂ 60 ପ୍ରତିଶତ ପର୍ଯ୍ୟନ୍ତ କମ୍ ଡାଟା ବ୍ୟବହାର କରେ।"</string>
 <string name="data_reduction_description_lite_mode">"ଲାଇଟ୍ ମୋଡ୍ ବୈଶିଷ୍ଟ୍ୟ ଚାଲୁ ଥିବା ସମୟରେ, Banana Browser ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଦ୍ରୁତ ବେଗରେ ଲୋଡ୍ କରିବା ପାଇଁ Google ସର୍ଭର୍ ବ୍ୟବହାର କରେ। କେବଳ ଆବଶ୍ୟକୀୟ ବିଷୟବସ୍ତୁଗୁଡ଼ିକ ଲୋଡ୍ କରିବାକୁ, ଲାଇଟ୍ ମୋଡ୍ ଧୀରେ ଲୋଡ୍ ହେଉଥିବା ପୃଷ୍ଠାଗୁଡ଼ିକୁ ପୁଣି ଲୋଡ୍ କରେ। ଇନ୍‌କଗ୍‌ନିଟୋ ମୋଡ୍‌ରେ ଲାଇଟ୍ ମୋଡ୍ ଲାଗୁ ହୁଏ ନାହିଁ।"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ଲାଇଟ୍ ମୋଡ୍‌ରେ, Banana Browser ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଅତିଶୀଘ୍ର ଲୋଡ୍ କରେ ଏବଂ 60 ଶତକଡ଼ା ପର୍ଯ୍ୟନ୍ତ କମ୍ ଡାଟାର ଉପଯୋଗ କରେ। ଆପଣ ଯାଉଥିବା ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଅନୁକୂଳିତ କରିବା ପାଇଁ, Banana Browser ଆପଣଙ୍କର ୱେବ୍ ଟ୍ରାଫିକ୍‍କୁ Googleକୁ ପଠାଏ। &lt;link&gt;ଅଧିକ ଜାଣନ୍ତୁ&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@
 <string name="sogou_explanation">"ଚୀନ୍‍‍ରେ ସନ୍ଧାନ କରିବା ପାଇଁ, Banana Browser &lt;b&gt;Sogou&lt;/b&gt; ବ୍ୟବହାର କରାଯାଏ। ଆପଣ ଏହାକୁ &lt;link&gt;ସେଟିଂସ୍‍&lt;/link&gt;ରେ ପରିବର୍ତ୍ତନ କରିପାରିବେ।"</string>
 <string name="app_running_in_chrome_disclosure">"Banana Browserରେ ଏହି ଆପ୍‍ ଚାଲୁଛି"</string>
 <string name="twa_running_in_chrome">"Banana Browserରେ ଚାଲୁଛି"</string>
+<string name="twa_running_in_chrome_v2">"Banana Browserରେ ଆପଣ ଆପଣଙ୍କ %1$sର ସାଇନ୍-ଇନ୍ ସ୍ଥିତି, ବ୍ରାଉଜିଂ ଡାଟା ଏବଂ ସାଇଟ୍ ଡାଟା, ଦେଖିବେ।"</string>
 <string name="twa_clear_data_dialog_title">"%1$sର ମଧ୍ୟ Banana Browserରେ ଡାଟା ଅଛି"</string>
 <string name="twa_clear_data_dialog_message">"ଆପଣା Banana Browser ସେଟିଂସ୍‌ରେ ଡାଟା ଖାଲି କରିପାରିବେ"</string>
 <string name="keyboard_shortcut_help_center">"ଏକ ନୂଆ ଟାବ୍‌ରେ Banana Browser ସାହାଯ୍ୟ କେନ୍ଦ୍ର ଖୋଲନ୍ତୁ"</string>
@@ -96,7 +91,9 @@
 <string name="usage_stats_revocation_prompt">"ଡିଜିଟାଲ୍ ୱେଲ୍‍ବିଂରୁ ଆପଣଙ୍କର Banana Browserର କାର୍ଯ୍ୟକଳାପ କାଢ଼ିବେ?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browserରେ ଆପଣ ଯେଉଁ ସାଇଟ୍‌ଗୁଡ଼ିକୁ ଯାଆନ୍ତି ସେଗୁଡ଼ିକ ଦେଖାଇବ ନାହିଁ। ସମସ୍ତ ସାଇଟ୍‍ ଟାଇମର୍‌ ଡିଲିଟ୍‍ କରାଯିବ।"</string>
 <string name="autofill_assistant_module_title">"Banana Browserରେ Google Assistant"</string>
+<string name="qr_code_permission_description">"ଏକ QR କୋଡ୍ ସ୍କାନ୍ କରିବାକୁ, Banana Browserକୁ ଆପଣଙ୍କ କ୍ୟାମେରା ବ୍ୟବହାର କରିବାକୁ ଦିଅନ୍ତୁ"</string>
 <string name="qr_code_open_settings_description">"ଏକ QR କୋଡ୍ ସ୍କାନ୍ କରିବାକୁ ଆପଣଙ୍କର ସେଟିଂସ୍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ ଯାହା ଫଳରେ Banana Browser ଆପଣଙ୍କର କ୍ୟାମେରା ବ୍ୟବହାର କରିପାରିବ"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser ଆପଣଙ୍କ ପରିପାର୍ଶ୍ୱର ଏକ 3D ମ୍ୟାପ୍ ତିଆରି କରିବା ପାଇଁ ଆପଣଙ୍କ କ୍ୟାମେରା ଆକ୍ସେସ୍ କରିବାକୁ ଅନୁମତି ଆବଶ୍ୟକ କରେ।"</string>
 <string name="infobar_missing_camera_permission_text">"ଏହି ସାଇଟ୍ ପାଇଁ ଆପଣଙ୍କ କ୍ୟାମେରା ଆକ୍‌ସେସ୍ କରିବାକୁ Banana Browser ଆପଣଙ୍କର ଅନୁମତି ଆବଶ୍ୟକ କରୁଛି।"</string>
 <string name="infobar_missing_microphone_permission_text">"ଏହି ସାଇଟ୍ ପାଇଁ ଆପଣଙ୍କର ମାଇକ୍ରୋଫୋନ୍‌କୁ ଆକ୍ସେସ୍ କରିବାକୁ Banana Browser ଅନୁମତି ଆବଶ୍ୟକ କରୁଛି।"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"ଏହି ସାଇଟ୍ ପାଇଁ ଆପଣଙ୍କର କ୍ୟାମେରା ଓ ମାଇକ୍ରୋଫୋନ୍‍କୁ ଆକ୍ସେସ୍ କରିବା ପାଇଁ Banana Browser ଆପଣଙ୍କର ଅନୁମତି ଆବଶ୍ୟକ କରେ।"</string>
@@ -108,4 +105,11 @@
           &lt;li&gt;ଫର୍ମଗୁଡ଼ିକରେ ଲେଖାଯାଇଥିବା ସୂଚନା
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_out">"କାର୍ଡ ଓ ଠିକଣାଗୁଡ଼ିକ ଆପଣଙ୍କର Banana Browserରୁ ଆସିଛି। ଆପଣ ସେଗୁଡ଼ିକୁ BEGIN_LINKସେଟିଂସ୍‍END_LINKରେ ପରିଚାଳନ କରିପାରିବେ।"</string>
+<string name="android_permission_off">"&lt;link&gt;Android ସେଟିଂସ୍‌&lt;/link&gt;ରେ Banana Browser ପାଇଁ ଅନୁମତି ଚାଲୁ କରନ୍ତୁ।"</string>
+<string name="android_permission_off_plural">"&lt;link&gt;Android Settings&lt;/link&gt;ରେ Banana Browser ପାଇଁ ଅନୁମତି ଚାଲୁ କରନ୍ତୁ।"</string>
+<string name="android_ar_camera_permission_off">"Banana Browserକୁ AR ବ୍ୟବହାର କରିବାକୁ ଦେବା ନିମନ୍ତେ, &lt;link&gt;Android ସେଟିଂସ&lt;/link&gt;ରେ କ୍ୟାମେରା ମଧ୍ୟ ଚାଲୁ କରନ୍ତୁ।"</string>
+<string name="android_camera_permission_off">"Banana Browserକୁ ଆପଣଙ୍କ କ୍ୟାମେରାର ଆକ୍ସେସ୍ ଦେବା ପାଇଁ, &lt;link&gt;Android ସେଟିଂସ୍&lt;/link&gt;ରେ ମଧ୍ୟ କ୍ୟାମେରା ଚାଲୁ କରନ୍ତୁ।"</string>
+<string name="android_location_permission_off">"Banana Browserକୁ ଆପଣଙ୍କର ଲୋକେସନ୍ ଆକ୍ସେସ୍ ଦେବା ପାଇଁ, &lt;link&gt;Android ସେଟିଂସ୍ &lt;/link&gt;ରେ ଲୋକେସନ୍ ମଧ୍ୟ ଚାଲୁ କରନ୍ତୁ।"</string>
+<string name="android_microphone_permission_off">"Banana Browserକୁ ଆପଣଙ୍କର ମାଇକ୍ରୋଫୋନ୍‌ରେ ଆକ୍ସେସ୍ ଦେବା ପାଇଁ, &lt;link&gt;Android ସେଟିଂସ୍ &lt;/link&gt;ରେ ମଧ୍ୟ ଚାଲୁ କରନ୍ତୁ।"</string>
+<string name="android_notifications_permission_off">"Banana Browser, ଆପଣଙ୍କୁ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ପଠାଇବାକୁ ଦେବା ପାଇଁ &lt;link&gt;Android ସେଟିଂସ୍ &lt;/link&gt;ରେ ମଧ୍ୟ ଯାଇ ବିଜ୍ଞପ୍ତିଗୁଡ଼ିକ ଚାଲୁ କରନ୍ତୁ।"</string>
 </resources>

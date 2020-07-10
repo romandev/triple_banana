@@ -15,12 +15,6 @@
 
 你的 Google 帳戶仍可能保留了其他類型的瀏覽記錄，例如其他 Google 服務中的搜尋和活動記錄 (可前往 &lt;link&gt;myactivity.google.com&lt;/link&gt; 查詢)。"</string>
 <string name="languages_list_description">"Banana Browser 會儘可能以你慣用的語言顯示網站文字。"</string>
-<string name="android_permission_off_plural">"請在 &lt;link&gt;Android 設定&lt;/link&gt;中為 Banana Browser 啟用這些權限。"</string>
-<string name="android_permission_off">"請在 &lt;link&gt;Android 設定&lt;/link&gt;中為 Banana Browser 啟用這項權限。"</string>
-<string name="android_location_permission_off">"如要讓 Banana Browser 存取你的位置，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟定位功能。"</string>
-<string name="android_camera_permission_off">"如要讓 Banana Browser 存取你的相機，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟相機。"</string>
-<string name="android_notifications_permission_off">"如要讓 Banana Browser 傳送通知，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟通知功能。"</string>
-<string name="android_microphone_permission_off">"如要讓 Banana Browser 存取你的麥克風，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟麥克風。"</string>
 <string name="data_reduction_benefits_description_lite_mode">"使用精簡模式時，Banana Browser 可加快網頁載入速度，並可節省多達百分之 60 的數據用量。"</string>
 <string name="data_reduction_description_lite_mode">"開啟精簡模式後，Banana Browser 會使用 Google 伺服器來加快網頁載入速度。精簡模式會改寫載入速度特別慢的網頁，只載入基本內容。精簡模式不適用於無痕模式分頁。"</string>
 <string name="data_reduction_promo_summary_lite_mode">"使用精簡模式時，Banana Browser 可加快網頁載入速度，並可節省多達 60% 的數據用量。Banana Browser 會將你的網路流量傳送給 Google，以便針對你造訪的網頁進行最佳化處理。&lt;link&gt;瞭解詳情&lt;/link&gt;"</string>
@@ -75,6 +69,7 @@
 <string name="sogou_explanation">"Banana Browser 可以在中國使用 &lt;b&gt;Sogou&lt;/b&gt; 搜尋。你可以在&lt;link&gt;設定&lt;/link&gt;中變更這項設定。"</string>
 <string name="app_running_in_chrome_disclosure">"Banana Browser 正在執行這個應用程式"</string>
 <string name="twa_running_in_chrome">"正在 Banana Browser 中執行"</string>
+<string name="twa_running_in_chrome_v2">"你可以在 Banana Browser 中查看 %1$s 登入狀態、瀏覽資料和網站資料。"</string>
 <string name="twa_clear_data_dialog_title">"「%1$s」在 Banana Browser 中也有資料"</string>
 <string name="twa_clear_data_dialog_message">"你可以在 Banana Browser 設定中清除資料"</string>
 <string name="keyboard_shortcut_help_center">"在新分頁中開啟 Banana Browser 說明中心"</string>
@@ -98,7 +93,9 @@
 <string name="usage_stats_revocation_prompt">"要將你的 Banana Browser 活動記錄從數位健康中移除嗎？"</string>
 <string name="usage_stats_revocation_explanation">"數位健康將不會顯示你透過 Banana Browser 造訪的網站。所有網站計時器也將遭到刪除。"</string>
 <string name="autofill_assistant_module_title">"Banana Browser 版 Google 助理"</string>
+<string name="qr_code_permission_description">"如要掃描 QR 圖碼，請允許 Banana Browser 使用你的攝影機"</string>
 <string name="qr_code_open_settings_description">"如要掃描 QR 圖碼，請將設定變更為允許 Banana Browser 使用你的攝影機"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser 需要取得攝影機權限，才能根據你的周遭環境建立 3D 地圖。"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser 需要相關權限，才能讓這個網站使用你的攝影機。"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser 需要相關權限，才能讓這個網站使用你的麥克風。"</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser 需要相關權限，才能讓這個網站使用你的攝影機和麥克風。"</string>
@@ -111,4 +108,11 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"信用卡和地址資訊皆來自 Banana Browser 和你的 Google 帳戶 (%1$s)。你可以在BEGIN_LINK設定END_LINK頁面管理這些資訊。"</string>
 <string name="payments_card_and_address_settings_signed_out">"信用卡和地址資訊皆來自 Banana Browser。你可以在BEGIN_LINK設定END_LINK頁面管理這些資訊。"</string>
+<string name="android_permission_off">"請在 &lt;link&gt;Android 設定&lt;/link&gt;中為 Banana Browser 啟用這項權限。"</string>
+<string name="android_permission_off_plural">"請在 &lt;link&gt;Android 設定&lt;/link&gt;中為 Banana Browser 啟用這些權限。"</string>
+<string name="android_ar_camera_permission_off">"如要允許 Banana Browser 使用 AR，請一併開啟 &lt;link&gt;Android 設定&lt;/link&gt;中的攝影機。"</string>
+<string name="android_camera_permission_off">"如要讓 Banana Browser 存取你的相機，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟相機。"</string>
+<string name="android_location_permission_off">"如要讓 Banana Browser 存取你的位置，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟定位功能。"</string>
+<string name="android_microphone_permission_off">"如要讓 Banana Browser 存取你的麥克風，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟麥克風。"</string>
+<string name="android_notifications_permission_off">"如要讓 Banana Browser 傳送通知，請一併在 &lt;link&gt;Android 設定&lt;/link&gt;中開啟通知功能。"</string>
 </resources>

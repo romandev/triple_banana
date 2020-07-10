@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Die gekose data is van Banana Browser en jou gesinkroniseerde toestelle verwyder.
 
 Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en aktiwiteit van ander Google-dienste af, by &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Skakel toestemmings vir Banana Browser aan in &lt;link&gt;Android-instellings&lt;/link&gt;."</string>
-<string name="android_permission_off">"Skakel toestemming vir Banana Browser aan in &lt;link&gt;Android-instellings&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Vir Banana Browser om toegang tot jou ligging te kry, moet jy ligging ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
-<string name="android_camera_permission_off">"Vir Banana Browser om toegang tot jou kamera te kry, moet jy kamera ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
-<string name="android_notifications_permission_off">"Vir Banana Browser om toegang tot jou kennisgewings te kry, moet jy kennisgewings ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
-<string name="android_microphone_permission_off">"Vir Banana Browser om toegang tot jou mikrofoon te kry, moet jy mikrofoon ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
 <string name="data_reduction_benefits_description_lite_mode">"In Ligte modus laai Banana Browser bladsye vinniger en gebruik tot 60 persent minder data."</string>
 <string name="data_reduction_description_lite_mode">"Wanneer Ligte Modus aan is, gebruik Banana Browser Google-bedieners om bladsye vinniger te laat laai. Ligte Modus herskryf baie stadige bladsye om net noodsaaklike inhoud te laai. Ligte Modus geld nie vir Incognito-oortjies nie."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In Ligte modus laai Banana Browser bladsye vinniger en gebruik tot 60 persent minder data. Banana Browser stuur jou webverkeer na Google toe om die bladsye wat jy besoek, te optimeer. &lt;link&gt;Kom meer te wete&lt;/link&gt;"</string>
@@ -73,6 +67,7 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="sogou_explanation">"Banana Browser kan &lt;b&gt;Sogou&lt;/b&gt; gebruik om soektogte in China uit te voer. Jy kan dit in &lt;link&gt;Instellings&lt;/link&gt; verander."</string>
 <string name="app_running_in_chrome_disclosure">"Hierdie program loop tans in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Werk in Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Jy sal jou %1$s-aanmeldingstatus, -blaaierdata en -werfdata in Banana Browser sien."</string>
 <string name="twa_clear_data_dialog_title">"%1$s het ook data in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Jy kan die data in Banana Browser-instellings uitvee"</string>
 <string name="keyboard_shortcut_help_center">"Maak die Banana Browser-hulpsentrum in \'n nuwe oortjie oop"</string>
@@ -96,7 +91,9 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="usage_stats_revocation_prompt">"Verwyder jou Banana Browser-aktiwiteit van Digitale Welstand?"</string>
 <string name="usage_stats_revocation_explanation">"Werwe wat jy in Banana Browser besoek, sal nie wys nie. Alle werftydtellers sal uitgevee word."</string>
 <string name="autofill_assistant_module_title">"Google Assistent in Banana Browser"</string>
+<string name="qr_code_permission_description">"Laat Banana Browser jou kamera gebruik om \'n QR-kode te skandeer"</string>
 <string name="qr_code_open_settings_description">"Verander jou instellings sodat Banana Browser jou kamera kan gebruik as jy \'n QR-kode wil skandeer"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser moet toestemming hê om toegang te kry tot jou kamera om \'n 3D-kaart van jou omgewing te skep."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser het toestemming nodig vir toegang tot jou kamera vir hierdie werf."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser het toestemming nodig vir toegang tot jou mikrofoon vir hierdie werf."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser het toestemming nodig vir toegang tot jou kamera en mikrofoon vir hierdie werf."</string>
@@ -109,4 +106,11 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kaarte en adresse kom uit Banana Browser en jou Google-rekening (%1$s). Jy kan hulle in BEGIN_LINKInstellingsEND_LINK bestuur."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kaarte en adresse kom uit Banana Browser. Jy kan hulle in BEGIN_LINKInstellingsEND_LINK bestuur."</string>
+<string name="android_permission_off">"Skakel toestemming vir Banana Browser aan in &lt;link&gt;Android-instellings&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Skakel toestemmings vir Banana Browser aan in &lt;link&gt;Android-instellings&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Skakel ook kamera in &lt;link&gt;Android-instellings&lt;/link&gt; aan sodat Banana Browser AR kan gebruik."</string>
+<string name="android_camera_permission_off">"Vir Banana Browser om toegang tot jou kamera te kry, moet jy kamera ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
+<string name="android_location_permission_off">"Vir Banana Browser om toegang tot jou ligging te kry, moet jy ligging ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
+<string name="android_microphone_permission_off">"Vir Banana Browser om toegang tot jou mikrofoon te kry, moet jy mikrofoon ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
+<string name="android_notifications_permission_off">"Vir Banana Browser om toegang tot jou kennisgewings te kry, moet jy kennisgewings ook in &lt;link&gt;Android-instellings&lt;/link&gt; aanskakel."</string>
 </resources>

@@ -13,12 +13,6 @@
 <string name="clear_browsing_data_history_dialog_data_text">"A kiválasztott adatok el lettek távolítva a Banana Browser-ból és a szinkronizált eszközökről.
 
 Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/link&gt; címen) még szerepelnek a böngészési előzmények egyéb formái, így például a keresések és egyéb tevékenységek más Google-szolgáltatásokból."</string>
-<string name="android_permission_off_plural">"A Banana Browser-ra vonatkozó engedélyek aktiválása az &lt;link&gt;Android beállításaiban&lt;/link&gt;."</string>
-<string name="android_permission_off">"A Banana Browser-ra vonatkozó engedélyt az &lt;link&gt;Android beállításaiban&lt;/link&gt; lehet aktiválni."</string>
-<string name="android_location_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a helyadatokhoz, a helyadatokat az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
-<string name="android_camera_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a kamerához, a kamerát az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
-<string name="android_notifications_permission_off">"Ahhoz, hogy a Banana Browser értesítéseket küldhessen, az értesítéseket az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
-<string name="android_microphone_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a mikrofonhoz, a mikrofont az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite módban a Banana Browser gyorsabban betölti az oldalakat, és akár 60 százalékkal kisebb adatforgalmat generál."</string>
 <string name="data_reduction_description_lite_mode">"Amikor be van kapcsolva az Egyszerűsített mód, a Banana Browser a Google szervereit használja az oldalak felgyorsítására. Az Egyszerűsített mód átírja a nagyon lassú oldalakat, hogy csak a fontos tartalmakat töltsék be. Az Egyszerűsített mód nem használható inkognitólapokon."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite módban a Banana Browser gyorsabban betölti az oldalakat, és akár 60 százalékkal kisebb adatforgalmat generál. A felkeresett oldalak optimalizálása érdekében a Banana Browser elküldi az internetes forgalmát a Google-nak. &lt;link&gt;További információ&lt;/link&gt;."</string>
@@ -73,6 +67,7 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
 <string name="sogou_explanation">"A Banana Browser igénybe veheti a &lt;b&gt;Sogou&lt;/b&gt; keresőszolgáltatást, hogy Kínában kereshessen. Ezt a &lt;link&gt;Beállításokban&lt;/link&gt; módosíthatja."</string>
 <string name="app_running_in_chrome_disclosure">"Ez az alkalmazás fut a Banana Browser-ban"</string>
 <string name="twa_running_in_chrome">"Fut a Banana Browser-ban"</string>
+<string name="twa_running_in_chrome_v2">"Láthatja a(z) %1$s bejelentkezési állapotát, a böngészőadatokat és a webhelyadatokat a Banana Browser-ban."</string>
 <string name="twa_clear_data_dialog_title">"A(z) %1$s a Banana Browser-ban is rendelkezik adatokkal"</string>
 <string name="twa_clear_data_dialog_message">"Az adatokat a Banana Browser beállításaiban módosíthatja"</string>
 <string name="keyboard_shortcut_help_center">"A Banana Browser súgójának megnyitása új lapon"</string>
@@ -96,7 +91,9 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
 <string name="usage_stats_revocation_prompt">"Eltávolítja Banana Browser-beli tevékenységét a digitális jóllét funkcióból?"</string>
 <string name="usage_stats_revocation_explanation">"A Banana Browser-ban felkeresett webhelyek nem fognak megjelenni. A webhelyekkel kapcsolatos összes időzítés törlődik."</string>
 <string name="autofill_assistant_module_title">"Google Segéd a Banana Browser-ban"</string>
+<string name="qr_code_permission_description">"QR-kód beolvasásához engedélyezze a kamera használatát a Banana Browser számára"</string>
 <string name="qr_code_open_settings_description">"QR-kód beolvasásához engedélyezze a beállításokban a Banana Browser számára a kamera használatát"</string>
+<string name="infobar_missing_ar_camera_permission_text">"A Banana Browser-nak engedélyre van szüksége a kamerájához való hozzáféréshez annak érdekében, hogy 3D-s térképet készíthessen az Ön környezetéről."</string>
 <string name="infobar_missing_camera_permission_text">"A Banana Browser számára engedély szükséges, hogy hozzáférjen a kamerához ennél a webhelynél."</string>
 <string name="infobar_missing_microphone_permission_text">"A Banana Browser számára engedély szükséges, hogy hozzáférjen a mikrofonhoz ennél a webhelynél."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"A Banana Browser számára engedély szükséges, hogy hozzáférjen a kamerához és a mikrofonhoz ennél a webhelynél."</string>
@@ -109,4 +106,11 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"A kártyák és a címek a Banana Browser-ból és az Ön Google-fiókjából (%1$s) származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
 <string name="payments_card_and_address_settings_signed_out">"A kártyák és a címek a Banana Browser-ból származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
+<string name="android_permission_off">"A Banana Browser-ra vonatkozó engedélyt az &lt;link&gt;Android beállításaiban&lt;/link&gt; lehet aktiválni."</string>
+<string name="android_permission_off_plural">"A Banana Browser-ra vonatkozó engedélyek aktiválása az &lt;link&gt;Android beállításaiban&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Ahhoz, hogy a Banana Browser használhassa az AR-t, kapcsolja be a kamerát is az &lt;link&gt;Android-beállítások&lt;/link&gt; között."</string>
+<string name="android_camera_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a kamerához, a kamerát az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
+<string name="android_location_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a helyadatokhoz, a helyadatokat az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
+<string name="android_microphone_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a mikrofonhoz, a mikrofont az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
+<string name="android_notifications_permission_off">"Ahhoz, hogy a Banana Browser értesítéseket küldhessen, az értesítéseket az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
 </resources>

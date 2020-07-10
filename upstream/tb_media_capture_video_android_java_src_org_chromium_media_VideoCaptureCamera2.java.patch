@@ -1,7 +1,7 @@
 diff --git tb/media/capture/video/android/java/src/org/chromium/media/VideoCaptureCamera2.java tb_diff/media/capture/video/android/java/src/org/chromium/media/VideoCaptureCamera2.java
 --- tb/media/capture/video/android/java/src/org/chromium/media/VideoCaptureCamera2.java
 +++ tb_diff/media/capture/video/android/java/src/org/chromium/media/VideoCaptureCamera2.java
-@@ -1398,6 +1398,7 @@ public class VideoCaptureCamera2 extends VideoCapture {
+@@ -1402,6 +1402,7 @@ public class VideoCaptureCamera2 extends VideoCapture {
  
          final int[] capabilities =
                  cameraCharacteristics.get(CameraCharacteristics.REQUEST_AVAILABLE_CAPABILITIES);

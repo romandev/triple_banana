@@ -4,8 +4,6 @@
 <string name="autofill_describe_local_copy">"Skopírovaná do prehliadača Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exportovať heslá uložené v Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser odosiela Googlu webové adresy niektorých navštívených stránok, obmedzené informácie o systéme a obsah niektorých stránok na účely rozpoznávania nebezpečných aplikácií a webov."</string>
-<string name="android_permission_off_plural">"Zapnite povolenia pre Banana Browser v &lt;link&gt;nastaveniach Androidu&lt;/link&gt;."</string>
-<string name="android_permission_off">"Zapnite povolenie pre Banana Browser v &lt;link&gt;nastaveniach Androidu&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát."</string>
 <string name="data_reduction_promo_summary_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát. Banana Browser odosiela údaje o vašej návštevnosti webu do Googlu, ktorý na základe nich optimalizuje vami navštevované stránky. &lt;link&gt;Ďalšie informácie&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser ušetril %1$d MB"</string>
@@ -45,6 +43,7 @@
 <string name="sogou_explanation">"Banana Browser môže použiť &lt;b&gt;Sogou&lt;/b&gt; na vyhľadávanie v Číne. Táto možnosť sa dá zmeniť v &lt;link&gt;Nastaveniach&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Táto aplikácia je spustená v Banana Browser"</string>
 <string name="twa_running_in_chrome">"Spustená v Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Zobrazí sa váš stav prihlásenia na webe %1$s, dáta prehliadania a údaje webu v Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"V Banana Browser má údaje aj aplikácia %1$s."</string>
 <string name="keyboard_shortcut_help_center">"Otvorenie Centra pomoci prehliadača Banana Browser na novej karte"</string>
 <string name="keyboard_shortcut_chrome_feature_group_header">"Skratky pre funkcie prehliadača Google Banana Browser"</string>
@@ -64,6 +63,7 @@
 <string name="usage_stats_revocation_explanation">"Weby, ktoré navštívite v Banana Browser, sa nezobrazia. Odstránia sa všetky časovače webov."</string>
 <string name="autofill_assistant_module_title">"Asistent Google v Banana Browser"</string>
 <string name="qr_code_open_settings_description">"Ak chcete skenovať kód QR, zmeňte nastavenia, aby Banana Browser mohol použiť vašu kameru"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser potrebuje povolenie použiť fotoaparát, aby mohol vytvoriť 3D mapu vášho okolia"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu fotoaparátu."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu mikrofónu."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu fotoaparátu a mikrofónu."</string>
@@ -74,4 +74,7 @@
           &lt;li&gt;súbory cookie a dáta webov,
           &lt;li&gt;údaje zadané vo formulároch.
         &lt;/ul&gt;"</string>
+<string name="android_permission_off">"Zapnite povolenie pre Banana Browser v &lt;link&gt;nastaveniach Androidu&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Zapnite povolenia pre Banana Browser v &lt;link&gt;nastaveniach Androidu&lt;/link&gt;."</string>
+<string name="android_ar_camera_permission_off">"Fotoaparát zapnite aj v &lt;link&gt;Nastaveniach Androidu&lt;/link&gt;, aby mohol Banana Browser používať RR."</string>
 </resources>

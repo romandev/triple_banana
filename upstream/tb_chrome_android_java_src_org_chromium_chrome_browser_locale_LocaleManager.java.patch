@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/locale/LocaleManager.java
-@@ -435,8 +435,7 @@ public class LocaleManager {
+@@ -437,8 +437,7 @@ public class LocaleManager {
       * @return List of engines to show.
       */
      public List<TemplateUrl> getSearchEnginesForPromoDialog(@SearchEnginePromoType int promoType) {

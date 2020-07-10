@@ -4,8 +4,6 @@
 <string name="usage_and_crash_reports_title">"Pomoci s vylepšováním funkcí a výkonu prohlížeče Banana Browser"</string>
 <string name="password_settings_export_subject">"Hesla Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Kvůli detekci nebezpečných aplikací a webů odesílá Banana Browser do Googlu adresy URL některých navštívených stránek, omezené informace o systému a část obsahu stránek"</string>
-<string name="android_permission_off_plural">"Oprávnění pro Banana Browser zapnete v &lt;link&gt;Nastavení pro Android&lt;/link&gt;."</string>
-<string name="android_permission_off">"Oprávnění pro Banana Browser zapnete v &lt;link&gt;Nastavení pro Android&lt;/link&gt;."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Ve zjednodušeném režimu načítá Banana Browser stránky rychleji a používá až o 60 procent méně dat."</string>
 <string name="data_reduction_description_lite_mode">"Když je zapnutý zjednodušený režim, Banana Browser načítání stránek urychluje pomocí serverů Google. Ve zjednodušeném režimu se velmi pomalé stránky přepisují tak, aby se načítal jen nezbytný obsah. Zjednodušený režim se nepoužívá pro anonymní karty."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Ve zjednodušeném režimu načítá Banana Browser stránky rychleji a používá až o 60 procent méně dat. Kvůli optimalizaci navštěvovaných stránek přijímá Banana Browser váš webový provoz přes Google. &lt;link&gt;Další informace&lt;/link&gt;"</string>
@@ -56,6 +54,7 @@
 <string name="near_oom_intervention_message">"Tato stránka využívá příliš mnoho paměti, proto ji Banana Browser pozastavil."</string>
 <string name="near_oom_reduction_message">"Tato stránka využívá příliš mnoho paměti, Banana Browser proto odstranil část obsahu."</string>
 <string name="qr_code_open_settings_description">"Chcete-li naskenovat QR kód, změňte nastavení tak, aby Banana Browser mohl použít vaši kameru"</string>
+<string name="infobar_missing_ar_camera_permission_text">"Banana Browser potřebuje oprávnění k přístupu k fotoaparátu, aby mohl vytvořit 3D mapu vašeho okolí."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser pro tento web potřebuje oprávnění k přístupu k fotoaparátu."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser pro tento web potřebuje oprávnění k přístupu k mikrofonu."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser pro tento web potřebuje oprávnění k přístupu k fotoaparátu a mikrofonu."</string>
@@ -66,4 +65,6 @@
           &lt;li&gt;soubory cookie a data webů,
           &lt;li&gt;údaje zadané do formulářů.
         &lt;/ul&gt;"</string>
+<string name="android_permission_off">"Oprávnění pro Banana Browser zapnete v &lt;link&gt;Nastavení pro Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Oprávnění pro Banana Browser zapnete v &lt;link&gt;Nastavení pro Android&lt;/link&gt;."</string>
 </resources>
