@@ -9,6 +9,8 @@
 #include <string>
 #include "content/public/child/child_thread.h"
 #include "mojo/public/cpp/bindings/remote.h"
+#include "third_party/blink/public/common/thread_safe_browser_interface_broker_proxy.h"
+#include "third_party/blink/public/platform/platform.h"
 #include "triple_banana/modules/public/coroutine.h"
 #include "triple_banana/modules/public/module_service.h"
 #include "triple_banana/modules/public/mojom/adblock.mojom.h"
@@ -17,10 +19,9 @@
 #include "triple_banana/modules/public/mojom/hello.mojom.h"
 #include "triple_banana/modules/public/string_view.h"
 
-#define AutoBind(interface_name)                                \
-  triple_banana::IsBrowserProcess(__FILE__)                     \
-      ? triple_banana::BindInterfaceOnBrowser<interface_name>() \
-      : triple_banana::BindInterfaceOnRenderer<interface_name>()
+#define AutoBind(interface_name)               \
+  triple_banana::BindInterface<interface_name, \
+                               triple_banana::GetBinderType(__FILE__)>()()
 
 #define BIND_HOST_RECEIVER(interface_name)                                \
   if (auto r = receiver.As<interface_name>()) {                           \
@@ -30,25 +31,54 @@
 
 namespace triple_banana {
 
-inline constexpr bool IsBrowserProcess(const string_view& file_name) {
-  return file_name.find("/browser/") != std::string::npos;
+enum class BinderType { BROWSER, RENDERER, BLINK };
+
+inline constexpr BinderType GetBinderType(const string_view& file_name) {
+  if (file_name.find("/browser/") != std::string::npos)
+    return BinderType::BROWSER;
+  else if (file_name.find("/third_party/blink/") != std::string::npos) {
+    return BinderType::BLINK;
+  }
+  return BinderType::RENDERER;
 }
 
-template <typename Interface>
-inline mojo::Remote<Interface> BindInterfaceOnRenderer() {
-  mojo::Remote<Interface> remote_interface;
-  content::ChildThread::Get()->BindHostReceiver(
-      remote_interface.BindNewPipeAndPassReceiver());
-  return remote_interface;
-}
+template <typename Interface, BinderType binder>
+struct BindInterface {
+  mojo::Remote<Interface> operator()() {
+    mojo::Remote<Interface> remote_interface;
+    return remote_interface;
+  }
+};
 
 template <typename Interface>
-inline mojo::Remote<Interface> BindInterfaceOnBrowser() {
-  mojo::Remote<Interface> remote_interface;
-  ModuleService::Get().GetJavaInterfaces()->GetInterface(
-      remote_interface.BindNewPipeAndPassReceiver());
-  return remote_interface;
-}
+struct BindInterface<Interface, BinderType::BROWSER> {
+  mojo::Remote<Interface> operator()() {
+    mojo::Remote<Interface> remote_interface;
+    ModuleService::Get().GetJavaInterfaces()->GetInterface(
+        remote_interface.BindNewPipeAndPassReceiver());
+    return remote_interface;
+  }
+};
+
+template <typename Interface>
+struct BindInterface<Interface, BinderType::BLINK> {
+  mojo::Remote<Interface> operator()() {
+    mojo::Remote<Interface> remote_interface;
+    blink::Platform::Current()->GetBrowserInterfaceBroker()->GetInterface(
+        remote_interface.BindNewPipeAndPassReceiver());
+    return remote_interface;
+  }
+};
+
+template <typename Interface>
+struct BindInterface<Interface, BinderType::RENDERER> {
+  mojo::Remote<Interface> operator()() {
+    mojo::Remote<Interface> remote_interface;
+    content::ChildThread::Get()->BindHostReceiver(
+        remote_interface.BindNewPipeAndPassReceiver());
+    return remote_interface;
+  }
+};
 
 inline void OnBindHostReceiverForRenderer(
     mojo::GenericPendingReceiver receiver) {
