@@ -42,6 +42,8 @@ function triple_banana_build() {
 }
 
 build_target="debug"
+use_goma=false
+is_64bit=false
 
 for option in "$@"; do
   case $option in
