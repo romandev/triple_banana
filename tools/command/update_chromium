@@ -15,6 +15,7 @@ function make_base_branch() {
   git fetch origin refs/tags/$(get_chromium_version) &&
   git checkout -B triple_banana_$(get_chromium_version) \
       refs/tags/$(get_chromium_version) &&
+  rm -rf $(chromium_path)/third_party/devtools-frontend/src &&
   gclient sync --with_branch_heads --with_tags
   pop_dir
   return $?
