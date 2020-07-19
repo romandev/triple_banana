@@ -12,19 +12,19 @@
 function gn_gen() {
   local build_target=$1
   local use_goma=$2
-  local is_64bit=$3
+  local arch_type=$3
   local gn_args=$(cat $(triple_banana_build_gn_path)/$build_target.gn)
 
   if [ "$use_goma" = true ]; then
     gn_args="$gn_args use_goma = true goma_dir = \"$GOMA_DIR\""
   fi
 
-  if [ "$is_64bit" = true ]; then
+  if [ "$arch_type" = 64 ]; then
     gn_args="$gn_args target_cpu=\"arm64\""
   fi
 
   push_dir $(chromium_path)
-  gn gen out/$build_target --args="$gn_args"
+  gn gen out/$build_target$arch_type --args="$gn_args"
   pop_dir
 }
 
@@ -33,17 +33,13 @@ function ninja_build() {
   local job_flags=$2
 
   push_dir $(chromium_path)
-  autoninja $job_flags -C out/$build_target triple_banana
+  autoninja $job_flags -C out/$build_target$arch_type triple_banana
   pop_dir
-}
-
-function triple_banana_build() {
-  local build_target=$1
 }
 
 build_target="debug"
 use_goma=false
-is_64bit=false
+arch_type="32"
 
 for option in "$@"; do
   case $option in
@@ -60,7 +56,7 @@ for option in "$@"; do
       shift
     ;;
     --64bit)
-      is_64bit=true
+      arch_type="64"
       shift
     ;;
     -j*)
@@ -75,7 +71,7 @@ esac
 done
 
 if [ "$disable_gn_gen" != true ]; then
-  echo "Configuration for out/$build_target build..."
-  gn_gen $build_target $use_goma $is_64bit
+  echo "Configuration for out/$build_target$arch_type build..."
+  gn_gen $build_target $use_goma $arch_type
 fi
 ninja_build $build_target $job_flags
