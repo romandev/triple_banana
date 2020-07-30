@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Pasirinkti duomenys pašalinti iš „Banana Browser“ ir sinchronizuojamų įrenginių.
 
 Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų formų jūsų „Google“ paskyros naršymo istorija, pvz., paieškos ir veikla kitose „Google“ paslaugose."</string>
+<string name="safety_check_description">"„Banana Browser“ gali tikrinti, ar nustatymai saugo jus nuo toliau nurodytų veiksnių."</string>
+<string name="safety_check_safe_browsing_disabled">"Saugaus naršymo funkcija išjungta. „Banana Browser“ rekomenduoja ją įjungti."</string>
+<string name="safety_check_passwords_no_passwords">"Nėra išsaugotų slaptažodžių. „Banana Browser“ gali tikrinti jūsų slaptažodžius, kai juos išsaugote."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Kai įjungtas supaprastintasis režimas, sistemoje „Banana Browser“ puslapiai įkeliami sparčiau ir naudojama iki 60 proc. mažiau duomenų."</string>
 <string name="data_reduction_description_lite_mode">"Kai įjungtas supaprastintasis režimas, „Banana Browser“ naudoja „Google“ serverius, kad puslapiai būtų įkeliami greičiau. Kai įjungtas supaprastintasis režimas, itin lėti puslapiai perrašomi, kad būtų įkeliamas tik svarbiausias turinys. Supaprastintasis režimas netaikomas inkognito skirtukams."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Kai įjungtas supaprastintasis režimas, „Banana Browser“ sparčiau įkelia puslapius ir sunaudoja iki 60 proc. mažiau duomenų. „Banana Browser“ siunčia žiniatinklio srauto duomenis sistemai „Google“, kad optimizuotų puslapius, kuriuose lankotės. &lt;link&gt;Sužinokite daugiau&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"„%1$s“ bus atidaryta naršyklėje „Banana Browser“. Tęsdami sutinkate su &lt;LINK1&gt;„Google“ paslaugų teikimo sąlygomis&lt;/LINK1&gt; ir &lt;LINK2&gt;„Google Banana Browser“ bei „Banana Browser“ OS papildomomis paslaugų teikimo sąlygomis&lt;/LINK2&gt;. Taip pat taikomas &lt;LINK3&gt;„Google“ paskyrų, kurios tvarkomos naudojant „Family Link“, privatumo pranešimas&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Padėkite tobulinti „Banana Browser“ siųsdami „Google“ naudojimo statistiką ir strigčių ataskaitas."</string>
 <string name="fre_welcome">"Sveiki, tai „Banana Browser“"</string>
+<string name="external_app_restricted_access_error">"„Banana Browser“ negali pasiekti pageidaujamo ištekliaus."</string>
 <string name="menu_update">"Atnaujinkite „Banana Browser“"</string>
 <string name="menu_update_unsupported">"Nepav. atnauj. „Banana Browser“"</string>
 <string name="menu_inline_update_ready_summary">"Iš naujo paleiskite „Banana Browser“"</string>

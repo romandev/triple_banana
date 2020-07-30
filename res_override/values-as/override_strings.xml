@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"বাছনি কৰা ডেটাখিনি Banana Browser আৰু আপোনাৰ ছিংক কৰি থোৱা ডিভাইচসমূহৰ পৰা আঁতৰোৱা হৈছে।
 
 আপোনাৰ Google একাউণ্টৰ &lt;link&gt;myactivity.google.com&lt;/link&gt;ত Googleৰ অন্য সেৱাত কৰা সন্ধান আৰু অন্যান্য কাৰ্যকলাপৰ দৰে ব্ৰাউজিঙৰ ইতিহাস থাকিব পাৰে।"</string>
+<string name="safety_check_description">"আপোনাৰ ছেটিংসমূহে আপোনাক ইয়াৰ পৰা সুৰক্ষিত কৰি ৰাখিছেনে নাই সেয়া Banana Browserএ পৰীক্ষা কৰিব পাৰে:"</string>
+<string name="safety_check_safe_browsing_disabled">"সুৰক্ষিত ব্ৰাউজিং অফ আছে। Banana Browserএ ইয়াক অন কৰাটো চুপাৰিছ কৰে।"</string>
+<string name="safety_check_passwords_no_passwords">"ছেভ কৰা কোনো পাছৱৰ্ড নাই। আপুনি আপোনাৰ পাছৱর্ডসমূহ ছেভ কৰিলে Banana Browserএ সেইবোৰ পৰীক্ষা কৰিব পাৰে।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"লাইট ম\'ডত Banana Browserএ পৃষ্ঠা খৰতকীয়াকৈ ল\'ড কৰে আৰু ৬০ শতাংশলৈকে কম ডেটা ব্যৱহাৰ কৰে।"</string>
 <string name="data_reduction_description_lite_mode">"লাইট ম’ড অন কৰা থাকিলে, পৃষ্ঠাবোৰ দ্ৰুতভাৱে ল’ড কৰিবলৈ Banana Browserএ Google ছাৰ্ভাৰ ব্যৱহাৰ কৰে৷ লাইট ম’ডে অত্যন্ত লেহেমীয়া পৃষ্ঠাবোৰক দুনাই লিখে যাতে অত্যাৱশ্যকীয় সমলহে ল’ড হয়৷ লাইট ম’ড ইনক’গনিট’ টেবত প্ৰয়োগ নহয়৷"</string>
 <string name="data_reduction_promo_summary_lite_mode">"লাইট ম’ডত Banana Browserএ পৃষ্ঠাসমূহ খৰতকীয়াকৈ ল’ড কৰে আৰু ৬০ শতাংশ পৰ্যন্ত কম ডেটা ব্যৱহাৰ কৰে। আপুনি চোৱা পৃষ্ঠাসমূহ অপ্টিমাইজ কৰিবলৈ Banana Browserএ আপোনাৰ ৱেব ট্ৰেফিক Googleলৈ পঠিয়ায়। &lt;link&gt;অধিক জানক&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserত খুলিব। অব্যাহত ৰাখি আপুনি &lt;LINK1&gt;Google সেৱাৰ চৰ্তাৱলী&lt;/LINK1&gt; আৰু &lt;LINK2&gt;Google Banana Browser আৰু Banana Browser OSৰ সেৱাৰ অতিৰিক্ত চৰ্তাৱলী&lt;/LINK2&gt;ত সন্মতি দিয়ে। &lt;LINK3&gt;Family Linkৰ জৰিয়তে পৰিচালনা কৰা Google একাউণ্টৰ বাবে গোপনীয়তাৰ জাননী&lt;/LINK3&gt;টোও প্ৰযোজ্য হয়।"</string>
 <string name="fre_send_report_check">"Googleলৈ ব্যৱহাৰৰ পৰিসংখ্যা আৰু ক্ৰেশ্ব ৰিপ’ৰ্ট পঠিয়াই Banana Browser ক অধিক উন্নত কৰাত সহায় কৰক।"</string>
 <string name="fre_welcome">"Banana Browserলৈ স্বাগতম"</string>
+<string name="external_app_restricted_access_error">"অনুৰোধ জনোৱা সমললৈ Banana Browserৰ এক্সেছ নাই।"</string>
 <string name="menu_update">"Banana Browser আপডে’ট কৰক"</string>
 <string name="menu_update_unsupported">"Banana Browser আপডে’ট কৰিব নোৱাৰি"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser ৰিষ্টাৰ্ট কৰক"</string>

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Kendu dira hautatutako datuak Banana Browser-tik eta sinkronizatutako gailuetatik.
 
 Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bilaketak eta beste Google-ren zerbitzu batzuetako jarduerak) edukitzea &lt;link&gt;history.google.com&lt;/link&gt; webgunean."</string>
+<string name="safety_check_description">"Zure ezarpenek hauen aurrean babesten zaituzten ala ez egiazta dezake Banana Browser-k:"</string>
+<string name="safety_check_safe_browsing_disabled">"Arakatze segurua desaktibatuta dago. Aktibatzea gomendatzen du Banana Browser-k."</string>
+<string name="safety_check_passwords_no_passwords">"Ez dago pasahitzik gordeta. Banana Browser-k pasahitzak egiazta ditzake gorde ondoren."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Oinarrizko moduari esker, Banana Browser-k bizkorrago kargatzen ditu orriak, datuen ehuneko 60raino aurreztuta."</string>
 <string name="data_reduction_description_lite_mode">"Oinarrizko modua aktibatuta dagonean, Banana Browser-k Google-ren zerbitzariak erabiltzen ditu orriak bizkorrago karga daitezen. Oinarrizko modua eginbideak oso motel kargatzen diren orriak berriro idazten ditu, oinarrizko edukia soilik karga dadin. Oinarrizko modua ez da aplikatzen ezkutuko moduko fitxetan."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Oinarrizko moduari esker, Banana Browser-k bizkorrago kargatzen ditu orriak, datuen % 60raino aurreztuta. Bisitatzen dituzun orriak optimizatzeko, Banana Browser-k Google-ra bidaltzen du sareko trafikoa. &lt;link&gt;Lortu informazio gehiago&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bil
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Banana Browser-n irekiko da %1$s. Aurrera egiten baduzu, onartu egingo dituzu &lt;LINK1&gt;Google-ren Zerbitzu-baldintzak&lt;/LINK1&gt; eta &lt;LINK2&gt;Google Banana Browser-ren eta Banana Browser OS-ren Zerbitzu-baldintza gehigarriak&lt;/LINK2&gt;. &lt;LINK3&gt;Family Link aplikazioaren bidez kudeatutako Google-ko kontuen Pribatutasun-oharra&lt;/LINK3&gt; aplikatzen da ere."</string>
 <string name="fre_send_report_check">"Hobetu Banana Browser Google-ri erabilera-estatistikak eta hutsegite-txostenak bidalita."</string>
 <string name="fre_welcome">"Ongi etorri Banana Browser-ra"</string>
+<string name="external_app_restricted_access_error">"Banana Browser-k ez du eskatutako baliabiderako sarbiderik."</string>
 <string name="menu_update">"Eguneratu Banana Browser"</string>
 <string name="menu_update_unsupported">"Ezin da eguneratu Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Berrabiarazi Banana Browser"</string>

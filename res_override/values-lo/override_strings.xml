@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ລຶບຂໍ້ມູນທີ່ເລືອກອອກຈາກ Banana Browser ແລະ ອຸປະກອນທີ່ຊິ້ງຂໍ້ມູນຂອງທ່ານແລ້ວ.
 
 ບັນຊີ Google ຂອງທ່ານອາດຈະມີປະຫວັດການທ່ອງເວັບຮູບແບບອື່ນ ເຊັ່ນວ່າ ການຊອກຫາ ແລະ ການເຄື່ອນໄຫວຈາກການບໍລິການອື່ນໆຂອງ Google ຢູ່ &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser ສາມາດກວດເບິ່ງວ່າການຕັ້ງຄ່າຂອງທ່ານກຳລັງປົກປ້ອງທ່ານຫຼືບໍ່ຈາກ:"</string>
+<string name="safety_check_safe_browsing_disabled">"Safe Browsing ປິດຢູ່. Banana Browser ແນະນຳໃຫ້ເປີດມັນ."</string>
+<string name="safety_check_passwords_no_passwords">"ບໍ່ມີລະຫັດຜ່ານທີ່ບັນທຶກໄວ້. Banana Browser ສາມາດກວດເບິ່ງລະຫັດຜ່ານຂອງທ່ານເມື່ອທ່ານບັນທຶກພວກມັນໄວ້."</string>
 <string name="data_reduction_benefits_description_lite_mode">"ໃນໂໝດ Lite, Banana Browser ໂຫຼດໜ້າເວັບໄດ້ໄວກວ່າ ແລະ ປະຢັດອິນເຕີເນັດໄດ້ສູງສຸດ 60 ເປີເຊັນ."</string>
 <string name="data_reduction_description_lite_mode">"ເມື່ອໂໝດ Lite ເປີດຢູ່, Banana Browser ໃຊ້ເຊີບເວີຂອງ Google ເພື່ອເຮັດໃຫ້ການໂຫຼດໜ້າເວັບໄວຂຶ້ນ. ໂໝດ Lite ຂຽນຄືນໜ້າເວັບທີ່ຊ້າຫຼາຍເພື່ອໂຫຼດພຽງແຕ່ເນື້ອທີ່ສຳຄັນເທົ່ານັ້ນ. ໂໝດ Lite ບໍ່ນຳໃຊ້ກັບແຖບບໍ່ເປີດເຜີຍຕົວຕົນ."</string>
 <string name="data_reduction_promo_summary_lite_mode">"ໃນໂໝດ Lite, Banana Browser ໂຫຼດໜ້າໄດ້ໄວກວ່າ ແລະ ໃຊ້ອິນເຕີເນັດບໍ່ເກີນ 60 ເປີເຊັນ. ເພື່ອປັບໜ້າເວັບທີ່ທ່ານເຂົ້າເບິ່ງໃຫ້ເໝາະສົມ, Banana Browser ສົ່ງການຮັບສົ່ງຂໍ້ມູນເວັບຂອງທ່ານໃຫ້ Google. &lt;link&gt;ສຶກສາເພີ່ມເຕີມ&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ຈະເປີດໃນ Banana Browser. ໂດຍການສືບຕໍ່, ແມ່ນຖືວ່າທ່ານເຫັນດີນຳ &lt;LINK1&gt;ຂໍ້ກຳນົດການບໍລິການຂອງ Google&lt;/LINK1&gt; ແລະ &lt;LINK2&gt;ຂໍ້ກຳນົດການບໍລິການເພີ່ມເຕີມຂອງ Google Banana Browser ແລະ Banana Browser OS&lt;/LINK2&gt;. ນຳໃຊ້ &lt;LINK3&gt;ແຈ້ງການຄວາມເປັນສ່ວນຕົວສຳລັບບັນຊີ Google ທີ່ຈັດການດ້ວຍ Family Link&lt;/LINK3&gt; ເຊັ່ນກັນ."</string>
 <string name="fre_send_report_check">"ຊ່ວຍເຮັດໃຫ້ Banana Browser ດີກ່ວາໂດຍການສົ່ງສະຖິຕິການໃຊ້ ແລະລາຍງານການຂັດຂ້ອງຫາ Google."</string>
 <string name="fre_welcome">"ຍິນ​ດີ​ຕ້ອນ​ຮັບສູ່ Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser ບໍ່ມີການເຂົ້າເຖິງຊັບພະຍາກອນທີ່ຮ້ອງຂໍ."</string>
 <string name="menu_update">"ອັບ​ເດດ Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser ບໍ່ສາມາດອັບເດດໄດ້"</string>
 <string name="menu_inline_update_ready_summary">"ປິດເປີດ Banana Browser ຄືນໃໝ່"</string>

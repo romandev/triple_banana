@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Idatha ekhethiwe isusiwe kusukela ku-Banana Browser kanye namadivayisi akho avunyelanisiwe.
 
 I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana nosesho nomsebenzi kusukela kwamanye amasevisi e-Google ku-&lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"I-Banana Browser ingakwazi ukuhlola uma amasethingi wakho ekuvikela kusuka:"</string>
+<string name="safety_check_safe_browsing_disabled">"Ukuphequlula okuphephile kuvaliwe. I-Banana Browser incoma ukuba kuvulwe."</string>
+<string name="safety_check_passwords_no_passwords">"Awekho amaphasiwedi alondoloziwe. I-Banana Browser ingahlola amaphasiwedi akho uma uwalondolozile."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Kumodi elula, i-Banana Browser ilayisha amakhasi ngokushesha futhi isebenzisa kufikela kudatha encane ngokungu-60 wamaphesenti."</string>
 <string name="data_reduction_description_lite_mode">"Uma imodi elula ivuliwe, i-Banana Browser isebenzisa amaseva e-Google ukuze yenze amakhasi alayishe ngokushesha. Imodi elula ibhala kabusha amakhasi ahamba kancane kakhulu ukuze ilayishe kuphela okuqukethwe okubalulekile Imodi elula ayisebenzi kumathebhu e-Incognito"</string>
 <string name="data_reduction_promo_summary_lite_mode">"Kumodi elula, i-Banana Browser ilayisha amakhasi ngokushesha futhi isebenzisa kufikela kudatha encane ngokungu-60 wamaphesenti. Ukuze kulungiselelwe amakhasi owavakashelayo, i-Banana Browser ithumela ithrafikhi yakho yewebhu ku-Google. &lt;link&gt;Funda kabanzi&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"I-%1$s izovuleka ku-Banana Browser. Ngokuqhubeka, uvumelana &lt;LINK1&gt;Nemigomo Yesevisi ye-Google&lt;/LINK1&gt;, kanye &lt;LINK2&gt;ne-Google Banana Browser Nemigomo Yesevisi ye-Banana Browser OS Engeziwe&lt;/LINK2&gt;. &lt;LINK3&gt;Isaziso Esemfihlo yama-Akhawunti e-Google Aphethwe nge-Family Link&lt;/LINK3&gt; naso sizosebenza."</string>
 <string name="fre_send_report_check">"Siza ukwenza i-Google Banana Browser ukuthi ibe ngcono ngokuthumela ngokuzenzakalelayo izibalo zokusebenzisa nemibiko yokusaphazeka ku-Google."</string>
 <string name="fre_welcome">"Siyakwamukela ku-Banana Browser"</string>
+<string name="external_app_restricted_access_error">"I-Banana Browser ayinakho ukufinyelela kusisetshenziswa esiceliwe."</string>
 <string name="menu_update">"Buyekeza i-Banana Browser"</string>
 <string name="menu_update_unsupported">"I-Banana Browser ayikwazi ukubuyekeza"</string>
 <string name="menu_inline_update_ready_summary">"Qalisa kabusha i-Banana Browser"</string>

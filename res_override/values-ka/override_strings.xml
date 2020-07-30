@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"არჩეული მონაცემები ამოიშალა Banana Browser-იდან და სინქრონიზებული მოწყობილობებიდან.
 
 თქვენს Google ანგარიშში შეიძლება შენახული იყოს სხვა ტიპის დათვალიერების ისტორია (მაგალითად, ძიებები და აქტივობა Google-ის სხვა სერვისებზე), რომელიც ხელმისაწვდომია მისამართზე: &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser-ს შეუძლია შეამოწმოს, გიცავთ თუ არა:"</string>
+<string name="safety_check_safe_browsing_disabled">"Safe Browsing გამორთულია. Banana Browser გირჩევთ მის ჩართვას."</string>
+<string name="safety_check_passwords_no_passwords">"შენახული პაროლები არ არის. პაროლების შემოწმებას Banana Browser მოახერხებს მათი შენახვის შემდეგ."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite რეჟიმში Banana Browser უფრო სწრაფად ტვირთავს გვერდებს და 60 პროცენტით ნაკლებ ტრაფიკს მოიხმარს."</string>
 <string name="data_reduction_description_lite_mode">"Lite რეჟიმის ჩართვის შემთხვევაში, Banana Browser უფრო სწრაფად ჩატვირთავს გვერდებს Google-ის სერვერების დახმარებით. Lite რეჟიმი გადაწერს განსაკუთრებით ნელ გვერდებს და ჩატვირთავს მხოლოდ მნიშნველოვან კონტენტს. Lite რეჟიმი არ მოქმედებს ინკოგნიტო ჩანართებში."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite რეჟიმში Banana Browser უფრო სწრაფად ტვირთავს გვერდებს და 60%-ით ნაკლებ ტრაფიკს მოიხმარს. თქვენ მიერ მონახულებული გვერდების ოპტიმიზაციის მიზნით, Banana Browser თქვენს ვებ-ტრაფიკს Google-ს უგზავნის. &lt;link&gt;შეიტყვეთ მეტი&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s გაიხსნება Banana Browser-ში. გაგრძელებით ეთანხმებით &lt;LINK1&gt;Google-ის მომსახურების პირობებს&lt;/LINK1&gt;, ასევე, &lt;LINK2&gt;Google Banana Browser-ისა და Banana Browser OS-ის მომსახურების დამატებით პირობებს&lt;/LINK2&gt;. გარდა ამისა, ვრცელდება &lt;LINK3&gt;კონფიდენციალურობის შეტყობინება Family Link-ით მართული Google ანგარიშებისთვის&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"დაგვეხმარეთ Banana Browser-ის გაუმჯობესებაში, გამოყენების სტატისტიკისა და შეცდომების შესახებ მოხსენებების Google-ში გაგზავნით."</string>
 <string name="fre_welcome">"მოგესალმებათ Banana Browser!"</string>
+<string name="external_app_restricted_access_error">"Banana Browser-ს მოთხოვნილ რესურსზე წვდომა არ აქვს."</string>
 <string name="menu_update">"Banana Browser-ის განახლება"</string>
 <string name="menu_update_unsupported">"Banana Browser ვერ განახლდება"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser-ის გადატვირთვა"</string>

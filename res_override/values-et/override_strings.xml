@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Valitud andmed eemaldati Banana Browser\'ist ja teie sünkroonitud seadmetest.
 
 Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i kontol olla muus vormis sirvimisajalugu, nt otsingud ja tegevused muudes Google\'i teenustes."</string>
+<string name="safety_check_description">"Banana Browser saab kontrollida, kas seaded kaitsevad teid järgmise eest."</string>
+<string name="safety_check_safe_browsing_disabled">"Google\'i ohutu sirvimine on välja lülitatud. Banana Browser soovitab selle sisse lülitada."</string>
+<string name="safety_check_passwords_no_passwords">"Salvestatud paroole ei ole. Banana Browser saab teie paroole kontrollida, kui olete need salvestanud."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lihtsustatud režiimis laadib Banana Browser lehti kiiremini ja kasutab kuni 60 protsenti vähem andmemahtu."</string>
 <string name="data_reduction_description_lite_mode">"Kui lihtsustatud režiim on sees, kasutab Banana Browser Google\'i servereid, et lehtede laadimist kiirendada. Lihtsustatud režiim kirjutab väga aeglased lehed ümber, et laadida ainult oluline sisu. Lihtsustatud režiimi ei saa kasutada inkognito režiimis vahelehtedel."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lihtsustatud režiimis laadib Banana Browser lehti kiiremini ja kasutab kuni 60% vähem andmemahtu. Külastatud lehtede optimeerimiseks saadab Banana Browser teie veebiliikluse Google’ile. &lt;link&gt;Lisateave&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s avaneb Banana Browser\'is. Jätkates nõustute &lt;LINK1&gt;Google\'i teenusetingimustega&lt;/LINK1&gt; ning &lt;LINK2&gt;Google Banana Browser\'i ja Banana Browser OS-i lisateenusetingimustega&lt;/LINK2&gt;. Kehtib ka &lt;LINK3&gt;Family Linkiga hallatavate Google’i kontode privaatsusteatis&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Aidake muuta Banana Browser\'i paremaks, saates Google\'ile kasutusstatistikat ja krahhiaruandeid."</string>
 <string name="fre_welcome">"Tere tulemast Banana Browser\'i"</string>
+<string name="external_app_restricted_access_error">"Banana Browser\'il pole soovitud allikale juurdepääsu."</string>
 <string name="menu_update">"Värskenda Banana Browser\'i"</string>
 <string name="menu_inline_update_ready_summary">"Taaskäivitage Banana Browser"</string>
 <string name="menu_open_in_chrome">"Ava Banana Browser\'is"</string>

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Datele selectate au fost eliminate din Banana Browser și de pe dispozitivele sincronizate.
 
 Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi căutările și activitatea din alte servicii Google, la &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser poate verifica dacă setările te protejează de:"</string>
+<string name="safety_check_safe_browsing_disabled">"Navigarea sigură este dezactivată. Banana Browser îți recomandă să o activezi."</string>
+<string name="safety_check_passwords_no_passwords">"Nu există parole salvate. Banana Browser îți poate verifica parolele dacă le salvezi."</string>
 <string name="data_reduction_benefits_description_lite_mode">"În modul Lite, Banana Browser încarcă mai repede paginile și folosește cu până la 60 de procente mai puține date."</string>
 <string name="data_reduction_description_lite_mode">"Când modul Lite este activat, Banana Browser folosește serverele Google pentru a încărca paginile mai rapid. Modul Lite rescrie paginile care se încarcă foarte greu ca să încarce numai conținutul esențial. Modul Lite nu se aplică în filele incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"În modul Lite, Banana Browser încarcă mai repede paginile și folosește cu până la 60 % mai puține date. Pentru a optimiza paginile pe care le accesezi, Banana Browser trimite traficul tău web la Google. &lt;link&gt;Află mai multe&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s se va deschide în Banana Browser. Dacă alegi să continui, ești de acord cu &lt;LINK1&gt;Termenii și condițiile Google&lt;/LINK1&gt; și cu &lt;LINK2&gt;Termenii și condițiile suplimentare pentru Google Banana Browser și Sistemul de operare Banana Browser&lt;/LINK2&gt;. Se aplică și &lt;LINK3&gt;Notificarea privind confidențialitatea pentru Conturile Google gestionate cu Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Contribuie la îmbunătățirea Banana Browser trimițând statistici de utilizare și rapoarte de blocare la Google."</string>
 <string name="fre_welcome">"Bun venit la Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser nu are acces la resursa solicitată."</string>
 <string name="menu_update">"Actualizează Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser nu se poate actualiza"</string>
 <string name="menu_inline_update_ready_summary">"repornește Banana Browser;"</string>

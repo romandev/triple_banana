@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ఎంచుకోబడిన డేటా Banana Browser నుండి, సింక్ చేసిన‌ మీ పరికరాల నుండి తీసివేయబడింది.
 
 మీ Google ఖాతా &lt;link&gt;myactivity.google.com&lt;/link&gt;లో ఇతర Google సేవలకు సంబంధించిన శోధనలు, కార్యకలాపం వంటి ఇతర రకాల బ్రౌజింగ్ చరిత్రను కలిగి ఉండవచ్చు."</string>
+<string name="safety_check_description">"మీ సెట్టింగ్‌లు మిమ్మల్ని కింది వాటి నుండి రక్షిస్తున్నాయా లేదా అని Banana Browser చెక్ చేయగలదు:"</string>
+<string name="safety_check_safe_browsing_disabled">"సురక్షిత బ్రౌజింగ్ ఆఫ్ చేయబడింది. దాన్ని ఆన్ చేయమని Banana Browser సిఫార్సు చేస్తోంది."</string>
+<string name="safety_check_passwords_no_passwords">"సేవ్ చేసిన పాస్‌వర్డ్‌లు లేవు. మీరు మీ పాస్‌వర్డ్‌లను సేవ్ చేసినప్పుడు Banana Browser వాటిని చెక్ చేయగలదు."</string>
 <string name="data_reduction_benefits_description_lite_mode">"లైట్ మోడ్‌లో, Banana Browser పేజీలను వేగంగా లోడ్ చేస్తుంది, అలాగే 60 శాతం తక్కువ డేటాను ఉపయోగిస్తుంది."</string>
 <string name="data_reduction_description_lite_mode">"లైట్ మోడ్ ప్రారంభించబడినప్పుడు, పేజీలను మరింత వేగంగా లోడ్ చేయడం కోసం Google సర్వర్‌లను Banana Browser ఉపయోగిస్తుంది. చాలా నెమ్మదిగా లోడ్ అవుతున్న పేజీలలో అవసరమైన కంటెంట్‌ని మాత్రమే లోడ్ చేసే విధంగా లైట్ మోడ్ వాటిని తిరిగి వ్రాస్తుంది. అజ్ఞాత ట్యాబ్‌లలో లైట్ మోడ్ పని చేయదు."</string>
 <string name="data_reduction_promo_summary_lite_mode">"లైట్ మోడ్‌లో, Banana Browser పేజీలను వేగంగా లోడ్ చేస్తుంది, అలాగే 60 శాతం వరకు తక్కువ డేటాను ఉపయోగిస్తుంది. మీరు సందర్శించే పేజీలను ఆప్టిమైజ్ చేయడానికి, Banana Browser మీ వెబ్ ట్రాఫిక్‌ను Googleకు పంపుతుంది. &lt;link&gt;మరింత తెలుసుకోండి&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserలో తెరవబడుతుంది. కొనసాగడం ద్వారా, మీరు &lt;LINK1&gt;Google సేవా నిబంధనలు&lt;/LINK1&gt;, అలాగే &lt;LINK2&gt;Google Banana Browser, Banana Browser OS అదనపు సేవా నిబంధనలు&lt;/LINK2&gt;కు అంగీకరిస్తున్నారు. &lt;LINK3&gt;Family Linkతో మేనేజ్ చేస్తున్న Google ఖాతాల కోసం గోప్యతా ప్రకటన&lt;/LINK3&gt; కూడా వర్తిస్తుంది."</string>
 <string name="fre_send_report_check">"వినియోగ గణాంకాలు, క్రాష్ నివేదికలను Googleకు పంపి, తద్వారా Banana Browserను మెరుగుపరచడంలో సహాయపడండి."</string>
 <string name="fre_welcome">"Banana Browserకు స్వాగతం"</string>
+<string name="external_app_restricted_access_error">"Banana Browser అభ్యర్థించిన వనరుకు యాక్సెస్ కలిగి లేదు."</string>
 <string name="menu_update">"Banana Browserని నవీకరించు"</string>
 <string name="menu_update_unsupported">"Banana Browser అప్‌డేట్ అవదు"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browserను పునఃప్రారంభించండి"</string>

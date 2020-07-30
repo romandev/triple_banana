@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Data yang dipilih telah dialih keluar daripada Banana Browser dan peranti anda yang disegerakkan.
 
 Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain seperti carian dan aktiviti daripada perkhidmatan Google yang lain di &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser boleh menyemak sama ada tetapan anda melindungi anda daripada:"</string>
+<string name="safety_check_safe_browsing_disabled">"Penyemakan Imbas Selamat dimatikan. Banana Browser mengesyorkan agar ciri ini dihidupkan."</string>
+<string name="safety_check_passwords_no_passwords">"Tiada kata laluan yang disimpan. Banana Browser boleh menyemak kata laluan anda yang disimpan."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Dalam mod Ringkas, Banana Browser memuatkan halaman lebih pantas dan mengurangkan penggunaan data sehingga 60 peratus."</string>
 <string name="data_reduction_description_lite_mode">"Apabila mod Ringkas dihidupkan, Banana Browser menggunakan pelayan Google untuk memuatkan halaman dengan lebih pantas. Mod Ringkas menulis semula halaman yang sangat perlahan untuk memuatkan kandungan yang penting sahaja. Mod Ringkas tidak digunakan pada tab Incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Dalam mod Ringkas, Banana Browser memuatkan halaman lebih pantas dan mengurangkan penggunaan data sehingga 60 peratus. Untuk mengoptimumkan halaman yang anda lawati, Banana Browser menghantar trafik web anda kepada Google. &lt;link&gt;Ketahui lebih lanjut&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s akan dibuka dalam Banana Browser. Dengan meneruskan penggunaan, anda bersetuju menerima &lt;LINK1&gt;Syarat Perkhidmatan Google&lt;/LINK1&gt; dan &lt;LINK2&gt;Syarat Perkhidmatan Tambahan Google Banana Browser dan OS Banana Browser&lt;/LINK2&gt;. &lt;LINK3&gt;Notis Privasi untuk Akaun Google yang Diurus dengan Family Link&lt;/LINK3&gt; juga terpakai."</string>
 <string name="fre_send_report_check">"Bantu jadikan Banana Browser lebih baik dengan menghantar laporan perangkaan penggunaan dan ranap sistem kepada Google."</string>
 <string name="fre_welcome">"Selamat Datang ke Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser tidak boleh mengakses sumber yang diminta."</string>
 <string name="menu_update">"Kemas Kini Banana Browser"</string>
 <string name="menu_update_unsupported">"Gagal kemas kini Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Mulakan semula Banana Browser"</string>

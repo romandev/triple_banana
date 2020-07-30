@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Τα επιλεγμένα δεδομένα καταργήθηκαν από το Banana Browser και τις συγχρονισμένες συσκευές σας.
 
 Ο Λογαριασμός σας Google μπορεί να έχει άλλες μορφές ιστορικού περιήγησης, όπως αναζητήσεις και δραστηριότητα από άλλες υπηρεσίες της Google στη διεύθυνση &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Το Banana Browser μπορεί να ελέγχει εάν οι ρυθμίσεις σας σάς προστατεύουν από:"</string>
+<string name="safety_check_safe_browsing_disabled">"Η Ασφαλής περιήγηση είναι απενεργοποιημένη. Το Banana Browser συνιστά να την ενεργοποιήσετε."</string>
+<string name="safety_check_passwords_no_passwords">"Δεν υπάρχουν αποθηκευμένοι κωδικοί πρόσβασης. Το Banana Browser μπορεί να ελέγξει τους κωδικούς πρόσβασής σας όταν τους αποθηκεύσετε."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Στη λειτουργία Lite, το Banana Browser φορτώνει σελίδες πιο γρήγορα και χρησιμοποιεί έως και 60 τοις εκατό λιγότερα δεδομένα."</string>
 <string name="data_reduction_description_lite_mode">"Όταν η λειτουργία Lite είναι ενεργοποιημένη, το Banana Browser χρησιμοποιεί διακομιστές της Google για να επιταχύνει τη φόρτωση των σελίδων. Η λειτουργία Lite επανεγγράφει τις πολύ αργές σελίδες έτσι ώστε να φορτώνεται μόνο το απαραίτητο περιεχόμενο. Η λειτουργία Lite δεν εφαρμόζεται σε καρτέλες ανώνυμης περιήγησης."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Στη λειτουργία Lite, το Banana Browser φορτώνει τις σελίδες πιο γρήγορα και χρησιμοποιεί έως και 60% λιγότερα δεδομένα. Για να βελτιστοποιήσει τις σελίδες που επισκέπτεστε, το Banana Browser στέλνει την επισκεψιμότητα ιστού σας στο Google. &lt;link&gt;Μάθετε περισσότερα&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Η εφαρμογή %1$s θα ανοίξει στο Banana Browser. Εάν συνεχίσετε, συμφωνείτε με τους &lt;LINK1&gt;Όρους Παροχής Υπηρεσιών της Google&lt;/LINK1&gt; και τους &lt;LINK2&gt;Πρόσθετους Όρους Παροχής Υπηρεσιών του Google Banana Browser και του Banana Browser OS&lt;/LINK2&gt;. Ισχύει επίσης η &lt;LINK3&gt;Σημείωση απορρήτου για Λογαριασμούς Google που διαχειρίζονται από το Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Συμβάλετε στη βελτίωση του Banana Browser, στέλνοντας στην Google στατιστικά στοιχεία χρήσης και αναφορές σφαλμάτων."</string>
 <string name="fre_welcome">"Καλώς ήρθατε στο Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Το Banana Browser δεν έχει πρόσβαση στον πόρο που ζητήθηκε"</string>
 <string name="menu_update">"Ενημερώστε το Banana Browser"</string>
 <string name="menu_update_unsupported">"Αδύνατη ενημέρωση Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Επανεκκινήστε το Banana Browser"</string>

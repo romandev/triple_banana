@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Die gekose data is van Banana Browser en jou gesinkroniseerde toestelle verwyder.
 
 Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en aktiwiteit van ander Google-dienste af, by &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser kan nagaan of jou instellings jou beskerm teen:"</string>
+<string name="safety_check_safe_browsing_disabled">"Veiligblaai is afgeskakel. Banana Browser beveel aan dat jy dit aanskakel."</string>
+<string name="safety_check_passwords_no_passwords">"Geen gestoorde wagwoorde nie. Banana Browser kan jou wagwoorde nagaan wanneer jy hulle stoor."</string>
 <string name="data_reduction_benefits_description_lite_mode">"In Ligte modus laai Banana Browser bladsye vinniger en gebruik tot 60 persent minder data."</string>
 <string name="data_reduction_description_lite_mode">"Wanneer Ligte Modus aan is, gebruik Banana Browser Google-bedieners om bladsye vinniger te laat laai. Ligte Modus herskryf baie stadige bladsye om net noodsaaklike inhoud te laai. Ligte Modus geld nie vir Incognito-oortjies nie."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In Ligte modus laai Banana Browser bladsye vinniger en gebruik tot 60 persent minder data. Banana Browser stuur jou webverkeer na Google toe om die bladsye wat jy besoek, te optimeer. &lt;link&gt;Kom meer te wete&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sal in Banana Browser oopmaak. As jy voortgaan, stem jy in tot &lt;LINK1&gt;Google se diensbepalings&lt;/LINK1&gt; en &lt;LINK2&gt;Google Banana Browser en Banana Browser-bedryfstelsel se bykomende diensbepalings&lt;/LINK2&gt;. Die &lt;LINK3&gt;Privaatheidskennisgewing vir Google-rekeninge wat met Family Link bestuur word&lt;/LINK3&gt; is ook van toepassing."</string>
 <string name="fre_send_report_check">"Help om Banana Browser te verbeter deur gebruikstatistiek en omvalverslae na Google te stuur."</string>
 <string name="fre_welcome">"Welkom by Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser het nie toegang tot die hulpbron wat versoek is nie."</string>
 <string name="menu_update">"Dateer Banana Browser op"</string>
 <string name="menu_update_unsupported">"Banana Browser dateer nie op nie"</string>
 <string name="menu_inline_update_ready_summary">"Herbegin Banana Browser"</string>

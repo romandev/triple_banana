@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"The selected data has been removed from Banana Browser and your synced devices.
 
 Your Google account may have other forms of browsing history like searches and activity from other Google services at &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser can check if your settings are protecting you from:"</string>
+<string name="safety_check_safe_browsing_disabled">"Safe Browsing is off. Banana Browser recommends turning it on."</string>
+<string name="safety_check_passwords_no_passwords">"No saved passwords. Banana Browser can check your passwords when you save them."</string>
 <string name="data_reduction_benefits_description_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 percent less data."</string>
 <string name="data_reduction_description_lite_mode">"When Lite mode is on, Banana Browser uses Google servers to make pages load faster. Lite mode rewrites very slow pages to load only essential content. Lite mode does not apply to Incognito tabs."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 percent less data. To optimize the pages that you visit, Banana Browser sends your web traffic to Google. &lt;link&gt;Learn more&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Your Google account may have other forms of browsing history like searches and a
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s will open in Banana Browser. By continuing, you agree to the &lt;LINK1&gt;Google Terms of Service&lt;/LINK1&gt;, and the &lt;LINK2&gt;Google Banana Browser and Banana Browser OS Additional Terms of Service&lt;/LINK2&gt;. The &lt;LINK3&gt;Privacy Notice for Google Accounts Managed with Family Link&lt;/LINK3&gt; also applies."</string>
 <string name="fre_send_report_check">"Help make Banana Browser better by sending usage statistics and crash reports to Google."</string>
 <string name="fre_welcome">"Welcome to Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser does not have access to the requested resource."</string>
 <string name="menu_update">"Update Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser can’t update"</string>
 <string name="menu_inline_update_ready_summary">"Restart Banana Browser"</string>

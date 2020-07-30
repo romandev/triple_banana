@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"‏הנתונים שבחרת הוסרו מ-Banana Browser ומהמכשירים המסונכרנים.
 
 ייתכן שבכתובת &lt;link&gt;myactivity.google.com&lt;/link&gt; יש סוגים אחרים של היסטוריית גלישה בחשבון Google, כמו חיפושים ופעילות משירותי Google אחרים."</string>
+<string name="safety_check_description">"‏Banana Browser יכול לבדוק אם ההגדרות שלך מגנות עליך מפני:"</string>
+<string name="safety_check_safe_browsing_disabled">"‏הגלישה הבטוחה כבויה. ההמלצה של Banana Browser היא להפעיל אותה."</string>
+<string name="safety_check_passwords_no_passwords">"‏אין סיסמאות שמורות. Banana Browser יכול לבדוק את הסיסמאות שלך רק אם שמרת אותן."</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏במצב טעינה מהירה, Banana Browser טוען דפים מהר יותר ומפחית את השימוש בנתונים בשיעור של עד 60 אחוזים."</string>
 <string name="data_reduction_description_lite_mode">"‏כשמצב הטעינה המהירה מופעל, Banana Browser משתמש בשרתים של Google כדי להאיץ את טעינת הדפים. אם מדובר בדפים איטיים מאוד, במצב הטעינה המהירה הם עוברים שכתוב כך שרק התוכן החיוני שלהם נטען. מצב הטעינה המהירה לא חל על כרטיסיות גלישה בסתר."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏במצב טעינה מהירה, Banana Browser טוען דפים מהר יותר ומפחית את השימוש בנתונים בשיעור של עד 60 אחוזים. כדי לבצע אופטימיזציה לדפים שהמשתמש נכנס אליהם, Banana Browser שולח אל Google את התנועה שלו באינטרנט. &lt;link&gt;מידע נוסף&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"‏האפליקציה %1$s תיפתח ב-Banana Browser. המשך הפעולה מבטא הסכמה ל&lt;LINK1&gt;תנאים ולהגבלות של Google&lt;/LINK1&gt; ול&lt;LINK2&gt;תנאים ולהגבלות הנוספים של Google Banana Browser ו-Banana Browser OS&lt;/LINK2&gt;. על פעולה זו חלה גם &lt;LINK3&gt;הודעת הפרטיות לגבי חשבונות Google המנוהלים באמצעות Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"‏אם שולחים אלינו נתוני שימוש ודוחות קריסה, עוזרים לשפר את Banana Browser."</string>
 <string name="fre_welcome">"‏ברוכים הבאים ל-Banana Browser"</string>
+<string name="external_app_restricted_access_error">"‏ל-Banana Browser אין גישה למשאב המבוקש."</string>
 <string name="menu_update">"‏כדאי לעדכן את Banana Browser"</string>
 <string name="menu_update_unsupported">"‏אי אפשר לעדכן את Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"‏הפעלה מחדש של Banana Browser"</string>

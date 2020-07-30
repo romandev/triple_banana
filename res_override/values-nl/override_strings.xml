@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"De geselecteerde gegevens zijn verwijderd uit Banana Browser en van je gesynchroniseerde apparaten.
 
 Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekopdrachten en activiteit uit andere Google-services) beschikbaar zijn via &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser kan nagaan of je instellingen je beschermen tegen:"</string>
+<string name="safety_check_safe_browsing_disabled">"Safe Browsing is uitgeschakeld. Banana Browser raadt je aan deze functie in te schakelen."</string>
+<string name="safety_check_passwords_no_passwords">"Geen opgeslagen wachtwoorden. Banana Browser kan je wachtwoorden controleren als je deze hebt opgeslagen."</string>
 <string name="data_reduction_benefits_description_lite_mode">"In de Lite-versie van Banana Browser worden pagina\'s sneller geladen en wordt tot wel 60 procent minder data verbruikt."</string>
 <string name="data_reduction_description_lite_mode">"Wanneer de Lite-modus is ingeschakeld, gebruikt Banana Browser Google-servers om pagina\'s sneller te laden. In de Lite-versie worden erg trage pagina\'s herschreven zodat alleen essentiële content wordt geladen. De Lite-modus werkt niet op incognitotabbladen."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In de Lite-versie van Banana Browser worden pagina\'s sneller geladen en wordt tot wel 60 procent minder data verbruikt. Banana Browser stuurt je webverkeer naar Google om de pagina\'s te optimaliseren die je bezoekt. &lt;link&gt;Meer informatie&lt;/link&gt;"</string>
@@ -51,6 +54,7 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="lightweight_fre_associated_app_tos">"%1$s wordt geopend in Banana Browser. Als je doorgaat, ga je akkoord met de &lt;LINK1&gt;servicevoorwaarden van Google&lt;/LINK1&gt; en met de &lt;LINK2&gt;aanvullende servicevoorwaarden van Google Banana Browser en Banana Browser OS&lt;/LINK2&gt;."</string>
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s wordt geopend in Banana Browser. Als je doorgaat, ga je akkoord met de &lt;LINK1&gt;servicevoorwaarden van Google&lt;/LINK1&gt; en met de &lt;LINK2&gt;aanvullende servicevoorwaarden van Google Banana Browser en Banana Browser OS&lt;/LINK2&gt;. Ook is de &lt;LINK3&gt;privacyverklaring voor Google-accounts die worden beheerd met Family Link&lt;/LINK3&gt; van toepassing."</string>
 <string name="fre_welcome">"Welkom bij Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser heeft geen toegang tot de gevraagde bron."</string>
 <string name="menu_update">"Banana Browser updaten"</string>
 <string name="menu_update_unsupported">"Banana Browser kan niet updaten"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser opnieuw starten"</string>
@@ -105,7 +109,7 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Passen en adressen zijn afkomstig uit Banana Browser en je Google-account (%1$s). Je kunt ze beheren in BEGIN_LINKInstellingenEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Passen en adressen zijn afkomstig uit Banana Browser. Je kunt ze beheren in BEGIN_LINKInstellingenEND_LINK."</string>
-<string name="android_permission_off">"Geef Banana Browser toestemming via de &lt;link&gt;Android-instellingen&lt;/link&gt;."</string>
+<string name="android_permission_off">"Geef Banana Browser rechten via de &lt;link&gt;Android-instellingen&lt;/link&gt;."</string>
 <string name="android_permission_off_plural">"Schakel rechten in voor Banana Browser via de &lt;link&gt;Android-instellingen&lt;/link&gt;."</string>
 <string name="android_ar_camera_permission_off">"Schakel ook de camera in via de &lt;link&gt;Android-instellingen&lt;/link&gt; als je Banana Browser AR wilt laten gebruiken."</string>
 <string name="android_camera_permission_off">"Als je Banana Browser toegang wilt geven tot je camera, moet je de camera ook inschakelen via de &lt;link&gt;Android-instellingen&lt;/link&gt;."</string>

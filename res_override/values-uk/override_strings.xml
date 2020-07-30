@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Вибрані дані видалено з Banana Browser і синхронізованих пристроїв.
 
 У вашому обліковому записі Google на сторінці &lt;link&gt;myactivity.google.com&lt;/link&gt; можуть бути додаткові форми історії веб-перегляду, як-от пошукові запити чи активність в інших сервісах Google."</string>
+<string name="safety_check_description">"Banana Browser може перевіряти, чи працюють параметри безпеки нижче."</string>
+<string name="safety_check_safe_browsing_disabled">"Безпечний перегляд вимкнено. Banana Browser радить увімкнути його."</string>
+<string name="safety_check_passwords_no_passwords">"Немає збережених паролів. Banana Browser зможе перевірити ваші паролі, коли ви їх збережете."</string>
 <string name="data_reduction_benefits_description_lite_mode">"У спрощеному режимі Banana Browser завантажує сторінки швидше та використовує на 60 відсотків менше трафіку."</string>
 <string name="data_reduction_description_lite_mode">"Коли ввімкнено спрощений режим, Banana Browser використовує сервери Google, щоб швидше завантажувати сторінки. Спрощений режим переписує дуже повільні сторінки, щоб завантажувати лише основний вміст. Це не стосується анонімних вкладок."</string>
 <string name="data_reduction_promo_summary_lite_mode">"У спрощеному режимі Banana Browser завантажує сторінки швидше та використовує на 60% менше трафіку. Щоб оптимізувати сторінки, які ви відвідуєте, Banana Browser надсилає ваш веб-трафік у Google. &lt;link&gt;Докладніше&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Додаток %1$s відкриється в Banana Browser. Продовжуючи, ви погоджуєтесь із &lt;LINK1&gt;Загальними положеннями та умовами Google&lt;/LINK1&gt; і &lt;LINK2&gt;Додатковими умовами використання Google Banana Browser і ОС Banana Browser&lt;/LINK2&gt;. Також застосовується &lt;LINK3&gt;Примітка про конфіденційність для облікових записів Google, керованих у Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Допоможіть покращити Banana Browser, надсилаючи статистику та звіти про збої в Google."</string>
 <string name="fre_welcome">"Вітаємо у Banana Browser!"</string>
+<string name="external_app_restricted_access_error">"Banana Browser не має доступу до потрібного ресурсу."</string>
 <string name="menu_update">"Оновити Banana Browser"</string>
 <string name="menu_update_unsupported">"Неможливо оновити Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Перезапустіть Banana Browser"</string>

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Les dades seleccionades s\'han suprimit de Banana Browser i dels dispositius sincronitzats.
 
 És possible que el teu compte de Google tingui altres formes de l\'historial de navegació, com ara les cerques i l\'activitat d\'altres serveis de Google a &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser pot comprovar si la teva configuració et protegeix des de:"</string>
+<string name="safety_check_safe_browsing_disabled">"Navegació segura està desactivada. Banana Browser recomana activar-la."</string>
+<string name="safety_check_passwords_no_passwords">"No hi ha cap contrasenya desada. Banana Browser pot comprovar les teves contrasenyes quan les deses."</string>
 <string name="data_reduction_benefits_description_lite_mode">"En el mode bàsic, Banana Browser carrega les pàgines més ràpidament i utilitza fins a un 60 per cent menys de dades."</string>
 <string name="data_reduction_description_lite_mode">"Quan el mode bàsic estigui activat, Banana Browser utilitzarà els servidors de Google perquè les pàgines es carreguin més de pressa. El mode bàsic reescriu les pàgines molt lentes per carregar només el contingut essencial. El mode bàsic no s\'aplica a les pestanyes d\'incògnit."</string>
 <string name="data_reduction_promo_summary_lite_mode">"En el mode bàsic, Banana Browser carrega les pàgines més ràpidament i utilitza fins a un 60 per cent menys de dades. Per optimitzar les pàgines que visites, Banana Browser envia el teu trànsit web a Google. &lt;link&gt;Més informació&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s s\'obrirà a Banana Browser. En continuar, acceptes les &lt;LINK1&gt;condicions del servei de Google&lt;/LINK1&gt; i les &lt;LINK2&gt;condicions del servei addicionals de Google Banana Browser i Banana Browser OS&lt;/LINK2&gt;. També s\'aplica l\'&lt;LINK3&gt;avís de privadesa per als Comptes de Google gestionats amb Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Ajuda a millorar Banana Browser enviant estadístiques d\'ús i informes d\'error a Google."</string>
 <string name="fre_welcome">"Et donem la benvinguda a Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser no té accés al recurs sol·licitat."</string>
 <string name="menu_update">"Actualitza Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser no actualitzable"</string>
 <string name="menu_inline_update_ready_summary">"Reinicia Banana Browser"</string>
@@ -107,10 +111,10 @@
 <string name="payments_card_and_address_settings_signed_in">"Les targetes i les adreces s\'obtenen de Banana Browser i del teu Compte de Google (%1$s). Pots gestionar-les des de BEGIN_LINKConfiguracióEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Les targetes i les adreces s\'obtenen de Banana Browser. Pots gestionar-les des de BEGIN_LINKConfiguracióEND_LINK."</string>
 <string name="android_permission_off">"Activa el permís per a Banana Browser a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Activeu els permisos per a Banana Browser a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
+<string name="android_permission_off_plural">"Activa els permisos per a Banana Browser a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
 <string name="android_ar_camera_permission_off">"Per permetre que Banana Browser utilitzi RA, activa també la càmera a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
 <string name="android_camera_permission_off">"Perquè Banana Browser pugui accedir a la càmera, també has d\'activar-la a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Perquè Banana Browser pugui accedir a la teva ubicació, també l\'has d\'activar a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
+<string name="android_location_permission_off">"Perquè Banana Browser pugui accedir a la teva ubicació, també has d\'activar-la a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
 <string name="android_microphone_permission_off">"Perquè Banana Browser pugui accedir al micròfon, també has d\'activar el micròfon a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
 <string name="android_notifications_permission_off">"Perquè Banana Browser et pugui enviar notificacions, també has d\'activar-les a la &lt;link&gt;configuració d\'Android&lt;/link&gt;."</string>
 </resources>

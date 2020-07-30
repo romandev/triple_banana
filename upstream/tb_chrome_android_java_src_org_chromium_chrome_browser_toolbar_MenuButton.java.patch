@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/MenuButton.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/MenuButton.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/MenuButton.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/MenuButton.java
-@@ -62,6 +62,7 @@ public class MenuButton extends FrameLayout implements TintObserver {
+@@ -70,6 +70,7 @@ public class MenuButton extends FrameLayout implements TintObserver {
          super.onFinishInflate();
          mMenuImageButton = findViewById(R.id.menu_button);
          mUpdateBadgeView = findViewById(R.id.menu_badge);

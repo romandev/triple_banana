@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Atlasītie dati ir noņemti no pārlūka Banana Browser un jūsu sinhronizētajām ierīcēm.
 
 Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var būt citu veidu pārlūkošanas vēstures dati, piemēram, meklēšanas vaicājumi un darbības citos Google pakalpojumos."</string>
+<string name="safety_check_description">"Banana Browser var pārbaudīt, vai iestatījumos ir norādīta aizsardzība pret tālāk minēto."</string>
+<string name="safety_check_safe_browsing_disabled">"Droša pārlūkošana ir izslēgta. Pārlūkā Banana Browser tiek ieteikts to ieslēgt."</string>
+<string name="safety_check_passwords_no_passwords">"Nav saglabātu paroļu. Pārlūkprogrammā Banana Browser var pārbaudīt jūsu paroles, ja jūs tās saglabājat."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Vienkāršotajā režīmā Banana Browser ielādē lapas ātrāk un patērē pat par 60 procentiem mazāk datu."</string>
 <string name="data_reduction_description_lite_mode">"Ja ir ieslēgts vienkāršotais režīms, pārlūkā Banana Browser tiek izmantoti Google serveri, lai ielādētu lapas ātrāk. Vienkāršotajā režīmā ļoti lēnas lapas tiek pārrakstītas, lai tās ielādētu tikai nepieciešamo saturu. Vienkāršotais režīms netiek piemērots inkognito režīma cilnēm."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Pārlūka Banana Browser vienkāršotajā režīmā lapas tiek ielādētas ātrāk un tiek patērēts pat par 60 procentiem mazāk datu. Lai optimizētu jūsu apmeklētās lapas, no pārlūka Banana Browser tiek nosūtīta jūsu tīmekļa datplūsma uzņēmumam Google. &lt;link&gt;Uzziniet vairāk&lt;/link&gt;."</string>
@@ -52,6 +55,7 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Lietotne %1$s tiks atvērta pārlūkprogrammā Banana Browser. Turpinot jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;. Ir spēkā arī &lt;LINK3&gt;konfidencialitātes paziņojums Google kontiem, kas tiek pārvaldīti lietotnē Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Uzlabojiet pārlūku Banana Browser, uzņēmumam Google sūtot lietojuma statistiku un avāriju pārskatus."</string>
 <string name="fre_welcome">"Laipni lūdzam pārlūkā Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser nevar piekļūt pieprasītajam resursam."</string>
 <string name="menu_update">"Atjaunināt Banana Browser"</string>
 <string name="menu_update_unsupported">"Nevar atjaunināt Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Restartējiet pārlūku Banana Browser"</string>

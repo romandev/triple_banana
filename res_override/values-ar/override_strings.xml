@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"‏تمت إزالة البيانات المُحددة من متصفح Banana Browser والأجهزة التي تمت مزامنتها.
 
 قد يحتوي حسابك على Google على نماذج أخرى لسجل التصفح، مثل عمليات البحث والأنشطة من خدمات Google الأخرى في &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"‏بإمكان متصفِّح Banana Browser التحقّق من مستوى الحماية لديك من خلال مراجعة:"</string>
+<string name="safety_check_safe_browsing_disabled">"‏تم إيقاف \"التصفّح الآمن\" ويقترح متصفّح Banana Browser تفعيله."</string>
+<string name="safety_check_passwords_no_passwords">"‏ما مِن كلمات مرور محفوظة. لا يستطيع متصفّح Banana Browser التحقّق من كلمات المرور إلا عند حفظها."</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60 بالمائة."</string>
 <string name="data_reduction_description_lite_mode">"‏عند تفعيل الوضع البسيط، يستخدم Banana Browser خدمات Google لتحميل الصفحات بشكلٍ أسرع. يعيد الوضع البسيط كتابة الصفحات البطيئة للغاية من أجل تحميل المحتوى الأساسي فقط. لا ينطبق الوضع البسيط على علامات تبويب التصفُّح المتخفي."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60%. لتحسين مستوى أداء الصفحات التي تزورها، يرسل Banana Browser عدد زيارات الويب إلى Google. &lt;link&gt;مزيد من المعلومات&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"‏سيتم فتح تطبيق %1$s في Banana Browser. تعني المتابعة موافقتك على &lt;LINK1&gt;بنود خدمة Google&lt;/LINK1&gt; و&lt;LINK2&gt;بنود الخدمة الإضافية لكل من متصفح Google Banana Browser و\"نظام التشغيل Banana Browser\"&lt;/LINK2&gt;. وينطبق ذلك أيضًا على &lt;LINK3&gt;إشعار الخصوصية لحسابات Google المُدارة من خلال Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"‏يمكنك المساعدة في تحسين Banana Browser عن طريق إرسال إحصاءات الاستخدام وتقارير الأعطال إلى Google."</string>
 <string name="fre_welcome">"‏مرحبًا بك في Banana Browser‏"</string>
+<string name="external_app_restricted_access_error">"‏لا تتوفر لمتصفح Banana Browser إمكانية الوصول إلى المورد المطلوب."</string>
 <string name="menu_update">"‏تحديث Banana Browser‏"</string>
 <string name="menu_update_unsupported">"‏يتعذَّر تحديث Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"‏إعادة تشغيل Banana Browser"</string>

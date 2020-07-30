@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Избраните податоци се отстранети од Banana Browser и синхронизираните уреди.
 
 Вашата сметка на Google можеби има други форми на историја на прелистување, како на пр., пребарувања и активност од други услуги на Google на &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser може да провери дали поставките ве заштитуваат од:"</string>
+<string name="safety_check_safe_browsing_disabled">"„Безбедното прелистување“ е исклучено. Banana Browser препорачува да го вклучите."</string>
+<string name="safety_check_passwords_no_passwords">"Нема зачувани лозинки. Banana Browser може да ги проверува вашите лозинки кога ги зачувувате."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Во Lite-режим, Banana Browser побрзо ги вчитува страниците и користи до 60 проценти помалку интернет."</string>
 <string name="data_reduction_description_lite_mode">"Кога е вклучен „Лесниот режим“, Banana Browser ги користи серверите на Google за да овозможи побрзо вчитување на страниците. „Лесниот режим“ ги презапишува страниците што се премногу бавни и ги вчитува само нивните основни содржини. „Лесниот режим“ не се применува кај инкогнито картичките."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Во Lite-режим, Banana Browser побрзо ги вчитува страниците и користи до 60 проценти помалку интернет. За да ги оптимизира страниците што ги посетувате, Banana Browser го испраќа вашиот сообраќај на интернет во Google. &lt;link&gt;Дознајте повеќе&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ќе се отвори во Banana Browser. Ако продолжите, се согласувате со &lt;LINK1&gt;Условите за користење на Google&lt;/LINK1&gt;и &lt;LINK2&gt;Дополнителните услови за користење на Google Banana Browser и Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Известувањето за приватност за сметките на Google управувани со Family Link&lt;/LINK3&gt; исто така важи."</string>
 <string name="fre_send_report_check">"Помогнете да го подобриме Google Banana Browser со автоматско испраќање статистика за користење и извештаи за падови до Google."</string>
 <string name="fre_welcome">"Добре дојдовте на Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser нема пристап до бараниот ресурс."</string>
 <string name="menu_update">"Ажурирај го Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser не може да се аж."</string>
 <string name="menu_inline_update_ready_summary">"Рестартирајте го Banana Browser"</string>

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Выбранные данные удалены из Banana Browser и с синхронизированных устройств.
 
 Остальная история ваших действий в Интернете может храниться в аккаунте Google, например в виде поисковых запросов и сведений из наших сервисов. Она доступна на странице &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser может проверять, обеспечивают ли заданные вами настройки защиту от следующих факторов:"</string>
+<string name="safety_check_safe_browsing_disabled">"Безопасный просмотр отключен. Banana Browser рекомендует включить его."</string>
+<string name="safety_check_passwords_no_passwords">"Сохраненных паролей нет. Чтобы браузер Banana Browser мог проверять пароли, сохраните их."</string>
 <string name="data_reduction_benefits_description_lite_mode">"В упрощенном режиме Banana Browser быстрее загружает страницы и экономит до 60 процентов трафика."</string>
 <string name="data_reduction_description_lite_mode">"Когда упрощенный режим включен, Banana Browser использует серверы Google, чтобы ускорить загрузку страниц. В упрощенном режиме на медленных страницах загружается только самый необходимый контент. Упрощенный режим не действует в режиме инкогнито."</string>
 <string name="data_reduction_promo_summary_lite_mode">"В упрощенном режиме Banana Browser быстрее загружает страницы и экономит до 60 % трафика. Чтобы оптимизировать страницы, которые вы посещаете, Banana Browser отправляет ваш интернет-трафик в Google. &lt;link&gt;Подробнее…&lt;/link&gt;"</string>
@@ -48,6 +51,7 @@
 <string name="lightweight_fre_associated_app_tos">"Приложение \"%1$s\" откроется в Banana Browser. Продолжая, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;."</string>
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Приложение \"%1$s\" откроется в Banana Browser. Продолжая, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;. Кроме этих документов, также действует &lt;LINK3&gt;Примечание о конфиденциальности данных в аккаунтах Google, управляемых с помощью Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_welcome">"Добро пожаловать в Banana Browser!"</string>
+<string name="external_app_restricted_access_error">"Запрошенный ресурс недоступен в Banana Browser"</string>
 <string name="menu_update">"Обновить Banana Browser"</string>
 <string name="menu_update_unsupported">"Не удалось обновить Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Перезапустите Google Banana Browser."</string>

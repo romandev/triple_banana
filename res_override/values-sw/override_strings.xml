@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Data uliyochagua imeondolewa kwenye Banana Browser na kwenye vifaa vyako vilivyosawazishwa. 
 
 Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vile mambo uliyotafuta na shughuli kutoka huduma nyingine za Google katika &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser inaweza kuangalia iwapo mipangilio yako inakulinda dhidi ya:"</string>
+<string name="safety_check_safe_browsing_disabled">"Kipengele cha Kuvinjari Salama kimezimwa. Banana Browser inapendekeza ukiwashe."</string>
+<string name="safety_check_passwords_no_passwords">"Hakuna manenosiri yaliyohifadhiwa. Banana Browser inaweza kukagua manenosiri yako unapoyahifadhi."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Katika Hali nyepesi, Banana Browser hupakia kurasa haraka zaidi na huokoa data kwa hadi asilimia 60."</string>
 <string name="data_reduction_description_lite_mode">"Wakati umewasha Hali nyepesi, Banana Browser hutumia seva za Google kupakia kurasa haraka. Hali nyepesi hubadilisha kurasa zinazopakia polepole ili zipakie maudhui muhimu pekee. Hali nyepesi haitumiki kwenye vichupo katika hali Fiche."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Katika Hali Nyepesi, Banana Browser hupakia kurasa haraka zaidi na huokoa hadi asilimia 60 ya data. Ili kuboresha kurasa unazotembelea, Banana Browser hutumia Google data ya tovuti unazotembelea. &lt;link&gt;Pata maelezo zaidi&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s itafunguka kwenye Banana Browser. Kwa kuendelea, unakubali &lt;LINK1&gt;Sheria na Masharti ya Google&lt;/LINK1&gt; na &lt;LINK2&gt;Sheria na Masharti ya Ziada ya Google Banana Browser na Mfumo wa Uendeshaji wa Banana Browser&lt;/LINK2&gt;. &lt;LINK3&gt;Ilani ya Faragha ya Akaunti za Google Zinazodhibitiwa na Family Link&lt;/LINK3&gt; inatumika pia."</string>
 <string name="fre_send_report_check">"Saidia kuboresha Banana Browser kwa kutumia Google takwimu za matumizi na ripoti wakati wowote kivinjari hiki kinapoacha kufanya kazi."</string>
 <string name="fre_welcome">"Karibu kwenye Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser haina idhini ya kufikia rasilimali uliyoomba."</string>
 <string name="menu_update">"Sasisha Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser haiwezi kusasisha"</string>
 <string name="menu_inline_update_ready_summary">"Zima na uwashe Banana Browser"</string>

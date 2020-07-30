@@ -13,8 +13,11 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Dữ liệu được chọn đã bị xóa khỏi Banana Browser và các thiết bị đã đồng bộ hóa của bạn.
 
 Tài khoản Google của bạn có thể có các dạng lịch sử duyệt web khác, chẳng hạn như tìm kiếm và hoạt động từ các dịch vụ khác của Google tại &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser có thể kiểm tra xem các tùy chọn cài đặt có đang bảo vệ bạn thông qua:"</string>
+<string name="safety_check_safe_browsing_disabled">"Tính năng Duyệt web an toàn đang tắt. Bạn nên bật tính năng này trên Banana Browser."</string>
+<string name="safety_check_passwords_no_passwords">"Bạn chưa lưu mật khẩu nào. Banana Browser có thể kiểm tra các mật khẩu của bạn khi bạn lưu các mật khẩu đó."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60 phần trăm."</string>
-<string name="data_reduction_description_lite_mode">"Khi bạn bật Chế độ thu gọn, Banana Browser sẽ sử dụng máy chủ của Google để tải trang nhanh hơn. Chế độ thu gọn sẽ ghi lại các trang tốc độ rất chậm để chỉ tải nội dung cần thiết. Chế độ thu gọn không áp dụng cho Tab ẩn danh."</string>
+<string name="data_reduction_description_lite_mode">"Khi bạn bật Chế độ thu gọn, Banana Browser sẽ sử dụng máy chủ của Google để tải trang nhanh hơn. Chế độ thu gọn sẽ ghi lại các trang tốc độ rất chậm để chỉ tải nội dung cần thiết. Chế độ thu gọn không áp dụng cho Thẻ ẩn danh."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60%. Để tối ưu hóa các trang bạn truy cập, Banana Browser sẽ gửi lưu lượng truy cập web của bạn cho Google. &lt;link&gt;Tìm hiểu thêm&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser đã tiết kiệm %1$d MB cho bạn"</string>
 <string name="data_reduction_milestone_promo_text_gb">"Banana Browser đã tiết kiệm %1$d GB cho bạn"</string>
@@ -29,7 +32,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="remove_local_data">"Xóa cả dữ liệu của bạn trên Banana Browser khỏi thiết bị này"</string>
 <string name="signout_managed_account_message">"Vì bạn đang đăng xuất khỏi một tài khoản thuộc quản lý của %1$s nên dữ liệu của bạn trên Banana Browser sẽ bị xóa khỏi thiết bị này. Tuy nhiên, dữ liệu đó sẽ vẫn còn trong Tài khoản Google của bạn."</string>
 <string name="sign_in_managed_account_description">"Bạn đang đăng nhập bằng tài khoản do %1$s quản lý và cấp cho quản trị viên quyền kiểm soát dữ liệu Banana Browser của bạn. Dữ liệu của bạn sẽ được liên kết vĩnh viễn với tài khoản này. Việc đăng xuất khỏi Banana Browser sẽ xóa dữ liệu của bạn khỏi thiết bị này nhưng dữ liệu sẽ vẫn được lưu trữ trong Tài khoản Google."</string>
-<string name="ntp_recent_tabs_sync_promo_instructions">"Các tab bạn đã mở trong Banana Browser trên thiết bị khác sẽ xuất hiện tại đây."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Các thẻ bạn đã mở trong Banana Browser trên thiết bị khác sẽ xuất hiện tại đây."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser không thể bật bộ điều hợp Bluetooth"</string>
 <string name="bluetooth_need_location_permission">"Banana Browser cần có quyền truy cập vị trí để quét tìm thiết bị. &lt;permission_link&gt;Cập nhật quyền&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Banana Browser cần có quyền truy cập vị trí để quét tìm thiết bị. Tính năng truy cập vị trí bị &lt;services_link&gt;tắt cho thiết bị này&lt;/services_link&gt;."</string>
@@ -44,7 +47,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="update_notification_text_body_experimental_update_chrome">"Để duyệt web bằng ngôn ngữ của bạn, hãy tải phiên bản Banana Browser mới nhất"</string>
 <string name="update_notification_text_body_experimental_translate_the_web">"Hãy cập nhật để dùng ngôn ngữ của bạn trong phiên bản Banana Browser mới nhất"</string>
 <string name="missing_storage_permission_download_education_text">"Banana Browser cần quyền truy cập vào bộ nhớ để tải tệp xuống."</string>
-<string name="contextmenu_open_in_new_chrome_tab">"Mở trong tab Banana Browser mới"</string>
+<string name="contextmenu_open_in_new_chrome_tab">"Mở trong thẻ Banana Browser mới"</string>
 <string name="fre_activity_label">"Trải nghiệm lần chạy đầu tiên của Banana Browser"</string>
 <string name="fre_tos">"Bằng việc sử dụng Banana Browser, bạn đồng ý với &lt;LINK1&gt;Điều khoản dịch vụ của Google&lt;/LINK1&gt; cũng như &lt;LINK2&gt;Điều khoản dịch vụ bổ sung của Google Banana Browser và Banana Browser OS&lt;/LINK2&gt;."</string>
 <string name="fre_tos_and_privacy_child_account">"Bằng việc sử dụng Banana Browser, bạn đồng ý với &lt;LINK1&gt;Điều khoản dịch vụ của Google&lt;/LINK1&gt; cũng như &lt;LINK2&gt;Điều khoản dịch vụ bổ sung của Google Banana Browser và Banana Browser OS&lt;/LINK2&gt;. Bạn sẽ phải tuân thủ cả &lt;LINK3&gt;Thông báo về quyền riêng tư cho Tài khoản Google được quản lý bằng Family Link&lt;/LINK3&gt;."</string>
@@ -52,6 +55,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sẽ mở trong Banana Browser. Bằng việc tiếp tục, bạn đồng ý với &lt;LINK1&gt;Điều khoản dịch vụ của Google&lt;/LINK1&gt; cũng như &lt;LINK2&gt;Điều khoản dịch vụ bổ sung của Google Banana Browser và Banana Browser OS&lt;/LINK2&gt;. Bạn sẽ phải tuân thủ cả &lt;LINK3&gt;Thông báo về quyền riêng tư cho Tài khoản Google được quản lý bằng Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Giúp cải thiện Banana Browser bằng cách gửi số liệu thống kê sử dụng và báo cáo sự cố cho Google."</string>
 <string name="fre_welcome">"Chào mừng bạn đến với Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser không có quyền truy cập vào tài nguyên đã yêu cầu."</string>
 <string name="menu_update">"Cập nhật Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser không thể cập nhật"</string>
 <string name="menu_inline_update_ready_summary">"Khởi động lại Banana Browser"</string>
@@ -70,7 +74,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="twa_running_in_chrome_v2">"Trong Banana Browser, bạn sẽ thấy trạng thái đăng nhập, dữ liệu duyệt web và dữ liệu trang web trên %1$s."</string>
 <string name="twa_clear_data_dialog_title">"%1$s cũng có dữ liệu trong Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Bạn có thể xóa dữ liệu trong mục Cài đặt của Banana Browser"</string>
-<string name="keyboard_shortcut_help_center">"Mở Trung tâm trợ giúp Banana Browser trong tab mới"</string>
+<string name="keyboard_shortcut_help_center">"Mở Trung tâm trợ giúp Banana Browser trong thẻ mới"</string>
 <string name="keyboard_shortcut_chrome_feature_group_header">"Phím tắt cho các tính năng của Google Banana Browser"</string>
 <string name="vr_preparing_vr_toast_standalone_text">"Banana Browser vẫn đang chuẩn bị mô-đun Thực tế ảo. Hãy khởi động lại Banana Browser sau."</string>
 <string name="vr_preparing_vr_notification_body">"Mở lại Banana Browser."</string>

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"निवडलेला डेटा Banana Browser वरून आणि तुमच्या सिंक केलेल्या डिव्हाइसवरून काढला गेला आहे.
 
 तुमच्या Google खात्यात &lt;link&gt;myactivity.google.com&lt;/link&gt; येथील इतर Google सेवांवरील शोध आणि अ‍ॅक्टिव्हिटी यांसारखा इतर स्वरूपातील ब्राउझिंग इतिहास असू शकतो."</string>
+<string name="safety_check_description">"तुमची सेटिंग्ज तुमचे पुढील गोष्टींपासून संरक्षण करत आहेत का ते Banana Browser तपासू शकते:"</string>
+<string name="safety_check_safe_browsing_disabled">"सुरक्षित ब्राउझिंग बंद आहे. Banana Browser ते सुरू करण्याची शिफारस करते."</string>
+<string name="safety_check_passwords_no_passwords">"सेव्ह केलेले पासवर्ड नाहीत. तुम्ही तुमचे पासवर्ड सेव्ह केल्यावर Banana Browser ते तपासू शकते."</string>
 <string name="data_reduction_benefits_description_lite_mode">"लाइट मोडमध्ये, Banana Browser पेज आणखी जलद लोड करते आणि ६० टक्के पर्यंत कमी डेटा वापरते."</string>
 <string name="data_reduction_description_lite_mode">"लाइट मोड सुरू असताना, Banana Browser पेज आणखी जलद लोड होण्यासाठी Google सर्व्हर वापरते. फक्त अत्यावश्यक आशय लोड होण्यासाठी लाइट मोड खूप धीमी पेज पुनर्लिखित करते. लाइट मोड गुप्त टॅबना लागू होत नाही."</string>
 <string name="data_reduction_promo_summary_lite_mode">"लाइट मोडमध्ये, Banana Browser पेज आणखी जलद लोड करते आणि ६० टक्के कमी डेटा वापरते. तुम्ही भेट दिलेली पेज ऑप्टिमाइझ करण्यासाठी, Banana Browser तुमचे वेब ट्रॅफिक Google ला पाठवते. &lt;link&gt;अधिक जाणून घ्या&lt;/link&gt;"</string>
@@ -51,6 +54,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s हे Banana Browser मध्ये उघडेल. सुरू ठेवून, तुम्ही &lt;LINK1&gt;Google सेवा अटी&lt;/LINK1&gt; आणि &lt;LINK2&gt;Google Banana Browser व Banana Browser OS अतिरिक्त सेवा अटी&lt;/LINK2&gt; यांना सहमती दर्शवता. &lt;LINK3&gt;Family Link सोबत व्यवस्थापित केलेली Google खाती यांसाठी गोपनीयतेची सूचना&lt;/LINK3&gt; देखील लागू होते."</string>
 <string name="fre_send_report_check">"वापर आकडेवारी आणि क्रॅश अहवाल Google कडे पाठवून Banana Browser अधिक चांगले करण्यास मदत करा."</string>
 <string name="fre_welcome">"Banana Browser मध्ये स्वागत आहे"</string>
+<string name="external_app_restricted_access_error">"Banana Browser ला विनंती केलेल्या संसाधनांचा ॲक्सेस नाही."</string>
 <string name="menu_update">"Banana Browser अपडेट करा"</string>
 <string name="menu_update_unsupported">"Banana Browser अपडेट होऊ शकत नाही"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser रीस्टार्ट करा"</string>

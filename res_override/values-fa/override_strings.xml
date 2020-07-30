@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"‏داده‌های انتخاب‌‌شده از Banana Browser و دستگاه‌های همگام‌سازی‌شده شما حذف شدند.
 
 ممکن است اشکال دیگری از سابقه مرورتان در حساب Google شما وجود داشته باشد، مانند جستجو‌ها و فعالیت دیگر سرویس‌های Google در &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"‏Banana Browser می‌تواند بررسی کند که تنظیماتتان شما را دربرابر این موارد محافظت می‌کند یا نه:"</string>
+<string name="safety_check_safe_browsing_disabled">"‏«مرور ایمن» خاموش است. Banana Browser توصیه می‌کند آن را روشن کنید."</string>
+<string name="safety_check_passwords_no_passwords">"‏گذرواژه ذخیره‌شده‌ای وجود ندارد. Banana Browser زمانی می‌تواند گذرواژه‌هایتان را بررسی کند که آن‌ها را ذخیره کرده باشید."</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏در «حالت ساده»، Banana Browser صفحه‌ها را سریع‌تر بار می‌کند و تا ۶۰ درصد مصرف داده را کاهش می‌دهد."</string>
 <string name="data_reduction_description_lite_mode">"‏وقتی «حالت ساده» روشن است، Banana Browser از سرورهای Google برای بار کردن سریع‌تر صفحه‌ها استفاده می‌کند. در «حالت ساده»، صفحه‌ها خیلی آهسته بازنویسی می‌شود تا فقط محتوای اساسی بار شود. «حالت ساده» روی برگه‌های ناشناس اعمال نمی‌شود."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏در «حالت ساده»، Banana Browser صفحه‌ها را سریع‌تر بار می‌کند و تا ۶۰ درصد مصرف داده را کاهش می‌دهد. برای بهینه‌سازی صفحاتی که بازدید می‌کنید، Banana Browser ترافیک وب شما را به Google ارسال می‌کند. &lt;link&gt;بیشتر بدانید&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"‏%1$s در Banana Browser باز می‌شود. با ادامه دادن، با &lt;LINK1&gt;شرایط خدمات Google&lt;/LINK1&gt; و &lt;LINK2&gt;شرایط خدمات تکمیلی Google Banana Browser و سیستم‌عامل Banana Browser&lt;/LINK2&gt; موافقت می‌کنید. &lt;LINK3&gt;اعلان حریم‌خصوصی برای «حساب‌های Google» مدیریت‌شده با Family Link&lt;/LINK3&gt; نیز اعمال می‌شود."</string>
 <string name="fre_send_report_check">"‏‫با ارسال آمار کاربرد و گزارش‌های خرابی به Google، به بهتر شدن Banana Browser کمک کنید."</string>
 <string name="fre_welcome">"‏به Banana Browser خوش آمدید"</string>
+<string name="external_app_restricted_access_error">"‏Banana Browser به منبع درخواستی دسترسی ندارد."</string>
 <string name="menu_update">"‏به‌روزرسانی Banana Browser"</string>
 <string name="menu_update_unsupported">"‏Banana Browser به‌روزرسانی نشد"</string>
 <string name="menu_inline_update_ready_summary">"‏Banana Browser را راه‌اندازی مجدد کنید"</string>

@@ -13,6 +13,8 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Die ausgewählten Daten wurden aus Banana Browser und von allen Ihren synchronisierten Geräten entfernt.
 
 Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere Formen des Browserverlaufs wie Suchanfragen oder Aktivitäten anderer Google-Dienste für Ihr Google-Konto."</string>
+<string name="safety_check_description">"Banana Browser kann prüfen, ob Ihre Einstellungen Sie vor Folgendem schützen:"</string>
+<string name="safety_check_passwords_no_passwords">"Keine gespeicherten Passwörter. Banana Browser kann Ihre Passwörter prüfen, wenn Sie sie speichern."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 Prozent weniger Daten verbraucht."</string>
 <string name="data_reduction_description_lite_mode">"Wenn der Lite-Modus aktiviert ist, wird der Seitenaufbau in Banana Browser mithilfe von Google-Servern beschleunigt. Im Lite-Modus werden sehr langsame Seiten so umgeschrieben, dass nur die wesentlichen Inhalte geladen werden. Der Lite-Modus wird nicht auf Inkognito-Tabs angewendet."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Im Lite-Modus werden Seiten schneller in Banana Browser geladen und es werden bis zu 60 % weniger Daten verbraucht. Zum Optimieren der von Ihnen besuchten Seiten sendet Banana Browser Ihren Datenverkehr an Google. &lt;link&gt;Weitere Informationen&lt;/link&gt;"</string>
@@ -52,6 +54,7 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s wird in Banana Browser geöffnet. Wenn Sie fortfahren, stimmen Sie den &lt;LINK1&gt;Nutzungsbedingungen von Google&lt;/LINK1&gt; und den &lt;LINK2&gt;zusätzlichen Nutzungsbedingungen für Google Banana Browser und Banana Browser OS&lt;/LINK2&gt; zu. Außerdem gelten die &lt;LINK3&gt;Datenschutzhinweise für mit Family Link verwaltete Google-Konten&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Nutzungsstatistiken und Absturzberichte zur Verbesserung von Banana Browser an Google senden"</string>
 <string name="fre_welcome">"Willkommen bei Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser hat keinen Zugriff auf die angeforderte Ressource."</string>
 <string name="menu_update">"Banana Browser aktualisieren"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser neu starten"</string>
 <string name="menu_open_in_chrome">"In Banana Browser öffnen"</string>

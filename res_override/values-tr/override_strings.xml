@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Seçilen veriler Banana Browser\'dan ve senkronize edilen cihazlarınızdan kaldırıldı.
 
 Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesabınızla ilişkili başka biçimlerde tarama geçmişi &lt;link&gt;myactivity.google.com&lt;/link&gt; adresinde bulunabilir."</string>
+<string name="safety_check_description">"Banana Browser, ayarlarınızın sizi aşağıdakilerden koruyup korumadığını kontrol edebilir:"</string>
+<string name="safety_check_safe_browsing_disabled">"Güvenli Tarama kapalı. Banana Browser bunun açılmasını öneriyor."</string>
+<string name="safety_check_passwords_no_passwords">"Kaydedilen şifre yok. Kaydetmeniz halinde Banana Browser, şifrelerinizi kontrol edebilir."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır."</string>
 <string name="data_reduction_description_lite_mode">"Basit mod açıkken, Banana Browser sayfaların daha hızlı yüklenmesi için Google sunucularını kullanır. Basit mod, çok yavaş sayfaları yalnızca önemli içerikleri yüklenecek şekilde yeniden yazar. Basit mod, Gizli sekmelerde kullanılamaz."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır. Banana Browser, ziyaret ettiğiniz sayfaları iyileştirmek için web trafiğinizi Google\'a gönderir. &lt;link&gt;Daha fazla bilgi&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s, Banana Browser\'da açılacak. Devam ederek &lt;LINK1&gt;Google Hizmet Şartları&lt;/LINK1&gt; ile &lt;LINK2&gt;Google Banana Browser ve Banana Browser OS Ek Hizmet Şartları&lt;/LINK2&gt;\'nı kabul etmiş olursunuz. &lt;LINK3&gt;Family Link ile Yönetilen Google Hesapları İçin Gizlilik Uyarısı&lt;/LINK3&gt; da geçerlidir."</string>
 <string name="fre_send_report_check">"Google\'a kullanım istatistikleri ve kilitlenme raporları göndererek Banana Browser\'u iyileştirmeye yardımcı olun."</string>
 <string name="fre_welcome">"Banana Browser\'a Hoş Geldiniz"</string>
+<string name="external_app_restricted_access_error">"Banana Browser, istenen kaynağa erişemiyor."</string>
 <string name="menu_update">"Banana Browser\'u güncelle"</string>
 <string name="menu_update_unsupported">"Banana Browser güncellenemiyor"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser\'u yeniden başlatın"</string>

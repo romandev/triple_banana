@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
 --- tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
 +++ tb_diff/chrome/browser/chrome_content_browser_client_receiver_bindings.cc
-@@ -67,6 +67,10 @@
+@@ -69,6 +69,10 @@
  #endif
  #endif
  
@@ -12,7 +12,7 @@ diff --git tb/chrome/browser/chrome_content_browser_client_receiver_bindings.cc 
  namespace {
  
  // Helper method for ExposeInterfacesToRenderer() that checks the latest
-@@ -308,4 +312,8 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
+@@ -327,4 +331,8 @@ void ChromeContentBrowserClient::BindHostReceiverForRenderer(
          std::move(host_receiver));
    }
  #endif  // BUILDFLAG(ENABLE_PLUGINS)

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ទិន្នន័យដែលបានជ្រើសរើស​ត្រូវបានលុបចេញពី Banana Browser និងឧបករណ៍ដែលបានធ្វើសមកាលកម្ម​របស់អ្នក​។
 
 គណនី Google របស់អ្នកអាចមានទម្រង់ប្រវត្តិរុករកផ្សេងទៀតដូចជា ការស្វែងរក និងសកម្មភាពពីសេវាកម្ម Google ផ្សេងទៀត​នៅ​ក្នុង &lt;link&gt;myactivity.google.com&lt;/link&gt; ។"</string>
+<string name="safety_check_description">"Banana Browser អាចពិនិត្យថាតើការកំណត់របស់អ្នកកំពុងការពារអ្នកពី៖"</string>
+<string name="safety_check_safe_browsing_disabled">"បានបិទមុខងាររុករក​ដោយសុវត្ថិភាព​។ Banana Browser ណែនាំឱ្យបើក​មុខងារនេះ។"</string>
+<string name="safety_check_passwords_no_passwords">"គ្មានពាក្យសម្ងាត់ដែលបានរក្សាទុកទេ។ Banana Browser អាចពិនិត្យពាក្យសម្ងាត់របស់អ្នក នៅពេលអ្នករក្សាទុកពាក្យសម្ងាត់ទាំងនោះ។"</string>
 <string name="data_reduction_benefits_description_lite_mode">"នៅក្នុង​មុខងារស្រាល Banana Browser ផ្ទុកទំព័រ​រហ័សជាងមុន និងប្រើទិន្នន័យ​តិចជាងមុន​រហូតដល់ 60 ភាគរយ។"</string>
 <string name="data_reduction_description_lite_mode">"នៅពេលមុខងារស្រាល​បានបើក Banana Browser ប្រើម៉ាស៊ីនមេ Google ដើម្បីការផ្ទុកទំព័រ​រហ័សជាងមុន។ មុខងារស្រាល​សរសេរទំព័រយឺតខ្លាំង​ឡើងវិញ ដើម្បីផ្ទុកតែខ្លឹមសារដែលសំខាន់ប៉ុណ្ណោះ។ មុខងារស្រាលមិន​អនុវត្តចំពោះផ្ទាំងអនាមិកទេ។"</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser ផ្ទុកទំព័រ​រហ័សជាងមុន និងប្រើទិន្នន័យ​តិចជាងមុន​រហូតដល់ 60 ភាគរយ នៅក្នុង​មុខងារស្រាល។ ដើម្បី​បង្កើន​ប្រសិទ្ធភាព​ទំព័រ​ដែល​អ្នក​ចូលមើល Banana Browser ផ្ញើ​ចរាចរណ៍​បណ្ដាញ​របស់អ្នក​ទៅ Google ។ &lt;link&gt;ស្វែងយល់​បន្ថែម&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s នឹងបើកនៅក្នុង Banana Browser។ ប្រសិនបើបន្ត មានន័យថាអ្នកយល់ព្រមតាម&lt;LINK1&gt;លក្ខខណ្ឌប្រើប្រាស់ Google&lt;/LINK1&gt; និង&lt;LINK2&gt;លក្ខខណ្ឌប្រើប្រាស់បន្ថែមរបស់ Google Banana Browser និង Banana Browser OS&lt;/LINK2&gt;។ &lt;LINK3&gt;ការជូន​ដំណឹង​អំពី​ឯកជនភាព​សម្រាប់​គណនី Google ដែល​គ្រប់គ្រង​ដោយ​ប្រើ Family Link&lt;/LINK3&gt; ក៏អនុវត្តផងដែរ។"</string>
 <string name="fre_send_report_check">"ជួយធ្វើឲ្យ Banana Browser ប្រសើរជាងមុនដោយផ្ញើស្ថិតិប្រើប្រាស់ និងរបាយការណ៍ការគាំងទៅ Google។"</string>
 <string name="fre_welcome">"ស្វាគមន៍មកកាន់ Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser មិន​អាច​ចូល​ប្រើ​ធនធាន​ដែល​បាន​ស្នើ​នេះ​ទេ​។​"</string>
 <string name="menu_update">"ធ្វើបច្ចុប្បន្នភាព Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser មិន​អាចដំឡើងជំនាន់​បានទេ"</string>
 <string name="menu_inline_update_ready_summary">"ចាប់ផ្តើម Banana Browser ឡើងវិញ"</string>

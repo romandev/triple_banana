@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Os dados selecionados foram removidos do Banana Browser e dos dispositivos sincronizados.
 
 A sua Conta Google pode ter outras formas do histórico de navegação, como pesquisas e atividade de outros serviços Google, em &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"O Banana Browser consegue verificar se as suas definições estão a oferecer-lhe proteção contra:"</string>
+<string name="safety_check_safe_browsing_disabled">"A Navegação segura está desativada. O Banana Browser recomenda que a ative."</string>
+<string name="safety_check_passwords_no_passwords">"Não existem palavras-passe guardadas. O Banana Browser consegue verificar as suas palavras-passe quando as guarda."</string>
 <string name="data_reduction_benefits_description_lite_mode">"No Modo Lite, o Banana Browser carrega páginas mais rapidamente e utiliza até menos 60 por cento de dados."</string>
 <string name="data_reduction_description_lite_mode">"Quando o Modo Lite está ativado, o Banana Browser utiliza os servidores Google para carregar as páginas mais rapidamente. O Modo Lite reescreve páginas muito lentas para carregar apenas o conteúdo essencial. O Modo Lite não se aplica aos separadores de navegação anónima."</string>
 <string name="data_reduction_promo_summary_lite_mode">"No Modo Lite, o Banana Browser carrega páginas mais rapidamente e utiliza até menos 60 por cento de dados. Para otimizar as páginas que vista, o Banana Browser envia o seu tráfego da Web para a Google. &lt;link&gt;Saiba mais&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ A sua Conta Google pode ter outras formas do histórico de navegação, como pes
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"A app %1$s vai abrir no Banana Browser. Ao continuar, aceita os &lt;LINK1&gt;Termos de Utilização do Google&lt;/LINK1&gt; e os &lt;LINK2&gt;Termos de Utilização Adicionais do Google Banana Browser e Banana Browser OS&lt;/LINK2&gt;. O &lt;LINK3&gt;Aviso de Privacidade para Contas Google geridas com o Family Link&lt;/LINK3&gt; também se aplica."</string>
 <string name="fre_send_report_check">"Ajude a melhorar o Banana Browser ao enviar estatísticas de utilização e relatórios de falhas para a Google."</string>
 <string name="fre_welcome">"Bem-vindo ao Banana Browser"</string>
+<string name="external_app_restricted_access_error">"O Banana Browser não tem acesso ao recurso solicitado."</string>
 <string name="menu_update">"Atualizar o Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Reiniciar o Banana Browser"</string>
 <string name="menu_open_in_chrome">"Abrir no Banana Browser"</string>

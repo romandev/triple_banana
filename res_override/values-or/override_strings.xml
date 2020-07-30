@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ଚୟନିତ ଡାଟାକୁ Banana Browser ଓ ସିଙ୍କ୍ ହୋଇଥିବା ଆପଣଙ୍କ ଡିଭାଇସ୍‌ଗୁଡ଼ିକରୁ କାଢ଼ିଦିଆଯାଇଛି।
 
 ଆପଣଙ୍କ Google ଆକାଉଣ୍ଟରେ ସର୍ଚ୍ଚ ଭଳି ଅନ୍ୟାନ୍ୟ ପ୍ରକାର ବ୍ରାଉଜିଂ ଇତିବୃତ୍ତି ଏବଂ &lt;link&gt;myactivity.google.com&lt;/link&gt;ରେ ଅନ୍ୟ Google ସେବାଗୁଡ଼ିକରେ କରାଯାଇଥିବା କାର୍ଯ୍ୟକଳାପ ଥାଇପାରେ।"</string>
+<string name="safety_check_description">"ଆପଣଙ୍କ ସେଟିଂସ୍ ଆପଣଙ୍କୁ ନିମ୍ନୋକ୍ତ ବିଷୟଗୁଡ଼ିକରୁ ସୁରକ୍ଷିତ ରଖୁଛି ବୋଲି Banana Browser ଯାଞ୍ଚ କରିପାରିବ:"</string>
+<string name="safety_check_safe_browsing_disabled">"ସେଫ୍ ବ୍ରାଉଜିଂ ବନ୍ଦ ଅଛି। Banana Browser ଏହାକୁ ଚାଲୁ କରିବାକୁ ସୁପାରିଶ କରେ।"</string>
+<string name="safety_check_passwords_no_passwords">"ସେଭ୍ କରାଯାଇଥିବା କୌଣସି ପାସୱାର୍ଡ ନାହିଁ। ଆପଣ ପାସୱାର୍ଡଗୁଡ଼ିକୁ ସେଭ୍ କଲେ Banana Browser ସେଗୁଡ଼ିକୁ ଯାଞ୍ଚ କରିପାରିବ।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ଲାଇଟ୍ ମୋଡ୍‌ରେ, Banana Browser ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଦ୍ରୁତତର ଭାବରେ ଲୋଡ୍ କରେ ଏବଂ 60 ପ୍ରତିଶତ ପର୍ଯ୍ୟନ୍ତ କମ୍ ଡାଟା ବ୍ୟବହାର କରେ।"</string>
 <string name="data_reduction_description_lite_mode">"ଲାଇଟ୍ ମୋଡ୍ ବୈଶିଷ୍ଟ୍ୟ ଚାଲୁ ଥିବା ସମୟରେ, Banana Browser ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଦ୍ରୁତ ବେଗରେ ଲୋଡ୍ କରିବା ପାଇଁ Google ସର୍ଭର୍ ବ୍ୟବହାର କରେ। କେବଳ ଆବଶ୍ୟକୀୟ ବିଷୟବସ୍ତୁଗୁଡ଼ିକ ଲୋଡ୍ କରିବାକୁ, ଲାଇଟ୍ ମୋଡ୍ ଧୀରେ ଲୋଡ୍ ହେଉଥିବା ପୃଷ୍ଠାଗୁଡ଼ିକୁ ପୁଣି ଲୋଡ୍ କରେ। ଇନ୍‌କଗ୍‌ନିଟୋ ମୋଡ୍‌ରେ ଲାଇଟ୍ ମୋଡ୍ ଲାଗୁ ହୁଏ ନାହିଁ।"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ଲାଇଟ୍ ମୋଡ୍‌ରେ, Banana Browser ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଅତିଶୀଘ୍ର ଲୋଡ୍ କରେ ଏବଂ 60 ଶତକଡ଼ା ପର୍ଯ୍ୟନ୍ତ କମ୍ ଡାଟାର ଉପଯୋଗ କରେ। ଆପଣ ଯାଉଥିବା ପୃଷ୍ଠାଗୁଡ଼ିକୁ ଅନୁକୂଳିତ କରିବା ପାଇଁ, Banana Browser ଆପଣଙ୍କର ୱେବ୍ ଟ୍ରାଫିକ୍‍କୁ Googleକୁ ପଠାଏ। &lt;link&gt;ଅଧିକ ଜାଣନ୍ତୁ&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserରେ ଖୋଲିବ। ଜାରି ରଖିବା ଦ୍ୱାରା, ଆପଣ &lt;LINK1&gt;Google ସେବାର ସର୍ତ୍ତାବଳୀ&lt;/LINK1&gt; ଏବଂ &lt;LINK2&gt;Google Banana Browser ଏବଂ Banana Browser OS ଅତିରିକ୍ତ ସେବାର ସର୍ତ୍ତାବଳୀ&lt;/LINK2&gt; ସହିତ ସହମତ ହେଉଛନ୍ତି। &lt;LINK3&gt;Family Link ମାଧ୍ୟମରେ ପରିଚାଳନା କରାଯାଇଥିବା Google ଆକାଉଣ୍ଟଗୁଡ଼ିକ ପାଇଁ ଗୋପନୀୟତା ନୋଟିସ୍&lt;/LINK3&gt; ମଧ୍ୟ ଲାଗୁ ହୋଇଥାଏ।"</string>
 <string name="fre_send_report_check">"Googleକୁ ବ୍ୟବହାରର ପରିସଂଖ୍ୟାନ ଏବଂ କ୍ରାଶ୍ ରିପୋର୍ଟ ପଠାଇ, Banana Browserକୁ ଉନ୍ନତ କରିବାରେ ସାହାଯ୍ୟ କରନ୍ତୁ।"</string>
 <string name="fre_welcome">"Banana Browserକୁ ସ୍ୱାଗତ୍‌"</string>
+<string name="external_app_restricted_access_error">"Banana Browser ପାଖରେ ଅନୁରୋଧ କରାଯାଇଥିବା ସମ୍ବଳକୁ ଆକ୍ସେସ୍‌ ନାହିଁ।"</string>
 <string name="menu_update">"Banana Browser ଅପ୍‍‍‍‍‍ଡେଟ୍‌"</string>
 <string name="menu_update_unsupported">"Banana Browser ଅପ୍‌ଡେଟ୍ ହୋଇପାରିବ ନାହିଁ"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser ରିଷ୍ଟାର୍ଟ କରନ୍ତୁ"</string>

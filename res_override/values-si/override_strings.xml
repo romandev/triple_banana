@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"තෝරා ගත් දත්ත Banana Browser සහ ඔබේ සමමුහුර්ත කළ උපාංග වෙතින් ඉවත් කර ඇත.
 
 ඔබගේ Google ගිණුමට සෙවීම් සහ &lt;link&gt;myactivity.google.com&lt;/link&gt; හි වෙනත් Google සේවා වෙතින් වන ක්‍රියාකාරකම් වැනි බ්‍රවුස් කිරීමේ ඉතිහාසයේ වෙනත් ආකාර තිබිය හැකිය."</string>
+<string name="safety_check_description">"Banana Browser හට ඔබේ සැකසීම් ඔබව මෙයින් ආරක්ෂා කරන්නේදැයි පරීක්ෂා කළ හැකිය:"</string>
+<string name="safety_check_safe_browsing_disabled">"සුරක්ෂිත පිරික්සුම ක්‍රියාවිරහිතයි. එය ක්‍රියාත්මක කිරීමට Banana Browser නිර්දේශ කරයි."</string>
+<string name="safety_check_passwords_no_passwords">"සුරැකි මුරපද නැත. ඔබ ඔබේ මුරපද පරීක්‍ෂා කරන විට Banana Browser හට ඒවා පරීක්‍ෂා කළ හැක."</string>
 <string name="data_reduction_benefits_description_lite_mode">"සැහැල්ලු ප්‍රකාරය තුළ, Banana Browser වේගයෙන් පිටු පූරණ කර ප්‍රතිශතය 60 ක් දක්වා අඩුවෙන් දත්ත භාවිත කරයි."</string>
 <string name="data_reduction_description_lite_mode">"සැහැල්ලු ප්‍රකාරය ක්‍රියාත්මක විට, Banana Browser විසින් පිටු වේගවත්ව පූරණය කිරීමට Google සේවාදායක භාවිතා කරයි. සැහැල්ලු ප්‍රකාරය අත්‍යාවශ්‍ය අන්තර්ගතය පමණක් පූරණයට ඉතා මන්දගාමී පිටු නැවත ලියයි. සැහැල්ලු ප්‍රකාරය අප්‍රසිද්ධ පටිතිවලට අදාළ නොවේ."</string>
 <string name="data_reduction_promo_summary_lite_mode">"සැහැල්ලු ප්‍රකාරය තුළ, Banana Browser වේගයෙන් පිටු පූරණය කර සියයට 60ක් දක්වා අඩුවෙන් දත්ත භාවිත කරයි. ඔබ පිවිසෙන පිටු ප්‍රශස්ත කිරීම සඳහා, Banana Browser ඔබේ වෙබ් ගමනාගමනය Google වෙත යවයි. &lt;link&gt;තව දැන ගන්න&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browser තුළ විවෘත වෙයි. ඉදිරයට යාමෙන්, ඔබ &lt;LINK1&gt;Google සේවා නියමවලට&lt;/LINK1&gt;, සහ &lt;LINK2&gt;Google Banana Browser සහ Banana Browser OS අතිරේක සේවා නියමවලට&lt;/LINK2&gt; එකඟ වෙයි. &lt;LINK3&gt;Family Link මඟින් කළමනා කෙරෙන Google ගිණුම් සඳහා වන පෞද්ගලිකත්ව දැනුම්දීම&lt;/LINK3&gt; ද යෙදේ."</string>
 <string name="fre_send_report_check">"Google වෙත භාවිත සංඛ්‍යාන සහ බිඳවැටීම් වාර්තා යැවීමෙන් Banana Browser වඩා යහපත් කිරීමට උදවු වන්න."</string>
 <string name="fre_welcome">"Banana Browser වෙත පිළිගනිමු"</string>
+<string name="external_app_restricted_access_error">"Banana Browser හට ඉල්ලන ලද සම්පත් වෙත ප්‍රවේශය නැත."</string>
 <string name="menu_update">"Banana Browser යාවත් කරන්න"</string>
 <string name="menu_update_unsupported">"Banana Browser යාවත්කාලීන කළ නොහැක"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser යළි අරඹන්න"</string>

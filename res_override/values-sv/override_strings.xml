@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Markerad data har tagits bort från Banana Browser och från synkroniserade enheter.
 
 Det kan finnas andra former av webbhistorik i Google-kontot på &lt;link&gt;myactivity.google.com&lt;/link&gt;, t.ex. sökningar och aktivitet på andra tjänster från Google."</string>
+<string name="safety_check_description">"Banana Browser kan kontrollera om inställningarna skyddar dig från följande:"</string>
+<string name="safety_check_safe_browsing_disabled">"Säker webbsökning har inaktiverats. Du rekommenderas att aktivera funktionen i Banana Browser."</string>
+<string name="safety_check_passwords_no_passwords">"Det finns inga sparade lösenord. Banana Browser kan bara kontrollera dina lösenord om du sparar dem."</string>
 <string name="data_reduction_description_lite_mode">"När begränsat läge är aktiverat används Googles servrar så att sidinläsningen ska gå snabbare i Banana Browser. Mycket långsamma sidor skrivs om i begränsat läge så att bara det viktigaste innehållet visas. Inkognitoflikar påverkas inte av begränsat läge."</string>
 <string name="data_reduction_promo_summary_lite_mode">"I begränsat läge läses sidorna in snabbare och dataförbrukningen minskar med upp till 60 procent. Webbtrafiken skickas till Google från Banana Browser för att optimera sidorna du besöker. &lt;link&gt;Läs mer&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Du har sparat %1$d MB med Banana Browser"</string>
@@ -51,6 +54,7 @@ Det kan finnas andra former av webbhistorik i Google-kontot på &lt;link&gt;myac
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s öppnas i Banana Browser. Genom att fortsätta godkänner du &lt;LINK1&gt;Googles användarvillkor&lt;/LINK1&gt; och &lt;LINK2&gt;de ytterligare användarvillkoren för Google Banana Browser och Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Sekretessmeddelandet för Google-konton som hanteras med Family Link&lt;/LINK3&gt; gäller också."</string>
 <string name="fre_send_report_check">"Hjälp till att förbättra Banana Browser genom att skicka användningsstatistik och felrapporter till Google."</string>
 <string name="fre_welcome">"Välkommen till Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser har inte tillgång till den begärda resursen."</string>
 <string name="menu_update">"Uppdatera Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Starta om Banana Browser"</string>
 <string name="menu_open_in_chrome">"Öppna i Banana Browser"</string>

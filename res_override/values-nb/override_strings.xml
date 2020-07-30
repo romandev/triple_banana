@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"De valgte dataene er er fjernet fra Banana Browser og de synkroniserte enhetene dine.
 
 Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og aktivitet fra andre Google-tjenester, på &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser kan sjekke om innstillingene dine beskytter deg mot følgende:"</string>
+<string name="safety_check_safe_browsing_disabled">"Safe Browsing er slått av. Banana Browser anbefaler at du slår det på."</string>
+<string name="safety_check_passwords_no_passwords">"Ingen lagrede passord. Banana Browser kan sjekke passordene dine når du lagrer dem."</string>
 <string name="data_reduction_benefits_description_lite_mode">"I forenklet modus laster Banana Browser inn sider raskere og bruker opptil 60 prosent mindre data."</string>
 <string name="data_reduction_description_lite_mode">"Når forenklet modus er på, bruker Banana Browser Google-tjenere slik at sidene lastes inn raskere. Forenklet modus omskriver svært trege sider, slik at kun vesentlig innhold lastes inn. Forenklet modus brukes ikke på inkognitofaner."</string>
 <string name="data_reduction_promo_summary_lite_mode">"I forenklet modus laster Banana Browser inn sider raskere og bruker opptil 60 prosent mindre data. For å optimalisere sidene du besøker, sender Banana Browser nettrafikken din til Google. &lt;link&gt;Finn ut mer&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s åpnes i Banana Browser. Ved å fortsette samtykker du i &lt;LINK1&gt;Googles vilkår for bruk&lt;/LINK1&gt; og &lt;LINK2&gt;tilleggsvilkårene for bruk av Google Banana Browser og Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Merknaden om personvern for Google-kontoer som administreres via Family Link&lt;/LINK3&gt;, gjelder også."</string>
 <string name="fre_send_report_check">"Gjør Banana Browser bedre ved å sende bruksstatistikk og programstopprapporter til Google."</string>
 <string name="fre_welcome">"Velkommen til Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser har ikke tilgang til den forespurte ressursen."</string>
 <string name="menu_update">"Oppdater Banana Browser"</string>
 <string name="menu_update_unsupported">"Kan ikke oppdatere Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Start Banana Browser på nytt"</string>

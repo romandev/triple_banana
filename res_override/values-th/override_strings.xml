@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ระบบได้นำข้อมูลที่เลือกออกจาก Banana Browser และอุปกรณ์ที่ซิงค์แล้ว
 
 บัญชี Google ของคุณอาจมีประวัติการท่องเว็บในรูปแบบอื่นๆ เช่น การค้นหาและกิจกรรมจากบริการอื่นๆ ของ Google ที่ &lt;link&gt;myactivity.google.com&lt;/link&gt;"</string>
+<string name="safety_check_description">"Banana Browser ตรวจสอบได้ว่าการตั้งค่าต่างๆ ปกป้องคุณอยู่หรือไม่จากรายการต่อไปนี้"</string>
+<string name="safety_check_safe_browsing_disabled">"Google Safe Browsing ปิดอยู่ Banana Browser ขอแนะนำให้เปิด"</string>
+<string name="safety_check_passwords_no_passwords">"ไม่มีรหัสผ่านที่บันทึกไว้ Banana Browser จะตรวจสอบรหัสผ่านได้เมื่อคุณบันทึกรหัสผ่านไว้"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ในโหมด Lite เบราว์เซอร์ Banana Browser จะโหลดหน้าเว็บได้เร็วขึ้นและใช้เน็ตน้อยลงสูงสุดถึง 60 เปอร์เซ็นต์"</string>
 <string name="data_reduction_description_lite_mode">"เมื่อเปิดโหมด Lite ไว้ Banana Browser จะใช้เซิร์ฟเวอร์ของ Google เพื่อช่วยให้โหลดหน้าเว็บได้เร็วขึ้น โหมด Lite จะเขียนหน้าเว็บที่ช้ามากขึ้นใหม่เพื่อโหลดเฉพาะเนื้อหาที่จำเป็นเท่านั้น โหมด Lite ไม่มีผลกับแท็บที่ไม่ระบุตัวตน"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ในโหมด Lite เบราว์เซอร์ Banana Browser จะโหลดหน้าเว็บได้เร็วขึ้นและใช้อินเทอร์เน็ตน้อยลงสูงสุดถึง 60 เปอร์เซ็นต์ Banana Browser จะส่งการเข้าชมเว็บของคุณไปให้ Google เพื่อเพิ่มประสิทธิภาพหน้าเว็บที่คุณเข้าชม &lt;link&gt;ดูข้อมูลเพิ่มเติม&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s จะเปิดใน Banana Browser การดำเนินการต่อหมายความว่า คุณยอมรับ&lt;LINK1&gt;ข้อกำหนดในการให้บริการของ Google&lt;/LINK1&gt; และ&lt;LINK2&gt;ข้อกำหนดในการให้บริการเพิ่มเติมของ Google Banana Browser และ Banana Browser OS&lt;/LINK2&gt; &lt;LINK3&gt;ประกาศเกี่ยวกับนโยบายความเป็นส่วนตัวสำหรับบัญชี Google ที่มีการจัดการด้วย Family Link&lt;/LINK3&gt; จะมีผลใช้บังคับด้วย"</string>
 <string name="fre_send_report_check">"ช่วยให้ Banana Browser ทำงานได้ดีขึ้นโดยส่งสถิติการใช้งานและรายงานข้อขัดข้องให้กับ Google"</string>
 <string name="fre_welcome">"ยินดีต้อนรับสู่ Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser ไม่มีสิทธิ์เข้าถึงทรัพยากรที่ขอ"</string>
 <string name="menu_update">"อัปเดต Banana Browser"</string>
 <string name="menu_update_unsupported">"อัปเดต Banana Browser ไม่ได้"</string>
 <string name="menu_inline_update_ready_summary">"รีสตาร์ท Banana Browser"</string>

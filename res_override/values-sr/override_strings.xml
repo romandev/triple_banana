@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Изабрани подаци су уклоњени из Banana Browser-а и са синхронизованих уређаја.
 
 Google налог можда има друге облике историје прегледања, попут претрага и активности у другим Google услугама на &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser може да провери да ли вас подешавања штите помоћу функција:"</string>
+<string name="safety_check_safe_browsing_disabled">"Безбедно прегледање је искључено. Banana Browser препоручује да га укључите."</string>
+<string name="safety_check_passwords_no_passwords">"Нема сачуваних лозинки. Banana Browser може да проверава лозинке када их сачувате."</string>
 <string name="data_reduction_benefits_description_lite_mode">"У Lite режиму Banana Browser учитава странице брже и користи и до 60 процената мање података."</string>
 <string name="data_reduction_description_lite_mode">"Када је Lite режим укључен, Banana Browser убрзава учитавање страница помоћу Google сервера. Lite режим поново уписује веома споре странице да би учитавале само садржај који је неопходан. Lite режим се не примењује на картице без архивирања."</string>
 <string name="data_reduction_promo_summary_lite_mode">"У Lite режиму Banana Browser учитава странице брже и користи и до 60 процената мање података. Да би оптимизовао странице које посећујете, Banana Browser шаље Google-у ваш саобраћај на вебу. &lt;link&gt;Сазнајте више&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Google налог можда има друге облике историје п�
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ће се отворити у Banana Browser-у. Ако наставите, прихватате &lt;LINK1&gt;Google услове коришћења услуге&lt;/LINK1&gt; и &lt;LINK2&gt;додатне услове коришћења услуге за Google Banana Browser и Banana Browser ОС&lt;/LINK2&gt;. Примењује се и &lt;LINK3&gt;Обавештење о приватности за Google налоге којима се управља преко Family Link-а&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Побољшајте Banana Browser слањем статистике коришћења и извештаја о отказивању Google-у."</string>
 <string name="fre_welcome">"Добро дошли у Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser нема приступ захтеваном ресурсу."</string>
 <string name="menu_update">"Ажурирај Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser се неће ажурирати"</string>
 <string name="menu_inline_update_ready_summary">"Поново покрените Banana Browser"</string>

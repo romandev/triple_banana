@@ -13,8 +13,11 @@
 <string name="clear_browsing_data_history_dialog_data_text">"A kiválasztott adatok el lettek távolítva a Banana Browser-ból és a szinkronizált eszközökről.
 
 Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/link&gt; címen) még szerepelnek a böngészési előzmények egyéb formái, így például a keresések és egyéb tevékenységek más Google-szolgáltatásokból."</string>
+<string name="safety_check_description">"A Banana Browser ellenőrizheti, hogy az Ön beállításai rendelkeznek-e a következő védelmekkel:"</string>
+<string name="safety_check_safe_browsing_disabled">"A Biztonságos Böngészés ki van kapcsolva. A Banana Browser a szolgáltatás bekapcsolását javasolja."</string>
+<string name="safety_check_passwords_no_passwords">"Nincsenek mentett jelszavak. A Banana Browser képes a jelszavak ellenőrzésére, amikor Ön menti őket."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite módban a Banana Browser gyorsabban betölti az oldalakat, és akár 60 százalékkal kisebb adatforgalmat generál."</string>
-<string name="data_reduction_description_lite_mode">"Amikor be van kapcsolva az Egyszerűsített mód, a Banana Browser a Google szervereit használja az oldalak felgyorsítására. Az Egyszerűsített mód átírja a nagyon lassú oldalakat, hogy csak a fontos tartalmakat töltsék be. Az Egyszerűsített mód nem használható inkognitólapokon."</string>
+<string name="data_reduction_description_lite_mode">"Amikor be van kapcsolva az Egyszerűsített mód, a Banana Browser a Google szervereit használja az oldalak felgyorsítására. Az Egyszerűsített mód átírja a nagyon lassú oldalakat, hogy csak a fontos tartalmakat töltsék be. Az Egyszerűsített mód nem használható inkognitó lapokon."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite módban a Banana Browser gyorsabban betölti az oldalakat, és akár 60 százalékkal kisebb adatforgalmat generál. A felkeresett oldalak optimalizálása érdekében a Banana Browser elküldi az internetes forgalmát a Google-nak. &lt;link&gt;További információ&lt;/link&gt;."</string>
 <string name="data_reduction_milestone_promo_text_mb">"A Banana Browser %1$d MB-ot spórolt meg Önnek"</string>
 <string name="data_reduction_milestone_promo_text_gb">"A Banana Browser megspórolt Önnek %1$d GB-ot"</string>
@@ -52,6 +55,7 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"A(z) %1$s a Banana Browser-ban fog megnyílni. A továbblépéssel elfogadja a &lt;LINK1&gt;Google Általános Szerződési Feltételeket&lt;/LINK1&gt;, valamint &lt;LINK2&gt;A Google Banana Browser és a Banana Browser OS Kiegészítő Általános Szerződési Feltételeit&lt;/LINK2&gt;. A &lt;LINK3&gt;Family Link szolgáltatással kezelt Google-fiókokra vonatkozó adatvédelmi közlemény&lt;/LINK3&gt; is érvényben van."</string>
 <string name="fre_send_report_check">"Használati statisztikák és hibajelentések küldésével segíthet a Google-nak a Banana Browser fejlesztésében."</string>
 <string name="fre_welcome">"A Banana Browser üdvözli Önt!"</string>
+<string name="external_app_restricted_access_error">"A Banana Browser nem fér hozzá a kért forráshoz."</string>
 <string name="menu_update">"A Banana Browser böngésző frissítése"</string>
 <string name="menu_update_unsupported">"A Banana Browser nem frissíthető"</string>
 <string name="menu_inline_update_ready_summary">"Indítsa újra a Banana Browser-ot"</string>

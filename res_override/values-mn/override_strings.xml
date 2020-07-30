@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Сонгосон өгөгдлийг таны Banana Browser болон синк хийсэн төхөөрөмжөөс устгасан болно.
 
 Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Google-н бусад үйлчилгээнээс үйл ажиллагаа, хайлт зэрэг өөр хэлбэрийн хайлтын түүхтэй байж болно."</string>
+<string name="safety_check_description">"Banana Browser нь таны тохиргоо таныг дараахаас хамгаалж байгаа эсэхийг шалгах боломжтой:"</string>
+<string name="safety_check_safe_browsing_disabled">"Аюулгүй үзэх онцлог унтраалттай байна. Banana Browser түүнийг асаахыг зөвлөж байна."</string>
+<string name="safety_check_passwords_no_passwords">"Хадгалсан ямар ч нууц үг байхгүй байна. Таныг нууц үгсээ хадгалах үед Banana Browser тэднийг шалгах боломжтой."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite горимд байх үед Banana Browser хуудсыг илүү хурдан ачаалж, 60 хувь хүртэлх бага дата ашигладаг."</string>
 <string name="data_reduction_description_lite_mode">"Lite горимыг асаалттай үед Banana Browser хуудсыг илүү хурдан ачаалах зорилгоор Google-н серверүүдийг ашигладаг. Lite горим маш удаан хуудсыг зөвхөн шаардлагатай контентыг нь ачаалах болгож дахин бичдэг. Lite горим Нууцлалтай табад ажилладаггүй."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite горимд байх үед Banana Browser хуудсыг илүү хурдан ачаалж, 60 хувь хүртэлх бага дата ашигладаг. Таны зочилдог хуудсыг оновчтой болгохын тулд Banana Browser таны вэбийн ачааллыг Google-д илгээдэг. &lt;link&gt;Нэмэлт мэдээлэл авах&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Goo
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s-г Banana Browser-д нээнэ. Үргэлжлүүлснээр та &lt;LINK1&gt;Google-н Үйлчилгээний нөхцөл&lt;/LINK1&gt; ба &lt;LINK2&gt;Google Banana Browser болон Banana Browser үйлдлийн системийн Үйлчилгээний нэмэлт нөхцөлийг&lt;/LINK2&gt; зөвшөөрч байна. &lt;LINK3&gt;Family Link-р удирддаг Google Бүртгэлийн нууцлалын сануулгыг&lt;/LINK3&gt; мөн хэрэгжүүлнэ."</string>
 <string name="fre_send_report_check">"Хэрэглээний статистик мэдээ болон алдаа ослын тайланг автоматаар Google рүү илгээх замаар Google Banana Browser-ийг улам сайжруулахад тусална уу."</string>
 <string name="fre_welcome">"Banana Browser-д тавтай морил"</string>
+<string name="external_app_restricted_access_error">"Banana Browser хүсэлт тавьсан нөөцөд хандах эрхгүй."</string>
 <string name="menu_update">"Banana Browser-г шинэчлэх"</string>
 <string name="menu_update_unsupported">"Banana Browser-г шинэчлэх боломжгүй"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser-г дахин эхлүүлэх"</string>

@@ -4,6 +4,9 @@
 <string name="autofill_describe_local_copy">"Skopírovaná do prehliadača Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exportovať heslá uložené v Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser odosiela Googlu webové adresy niektorých navštívených stránok, obmedzené informácie o systéme a obsah niektorých stránok na účely rozpoznávania nebezpečných aplikácií a webov."</string>
+<string name="safety_check_description">"Banana Browser môže skontrolovať, či vás nastavenia chránia pred:"</string>
+<string name="safety_check_safe_browsing_disabled">"Bezpečné prehliadanie je vypnuté. Banana Browser ho odporúča zapnúť."</string>
+<string name="safety_check_passwords_no_passwords">"Žiadne uložené heslá. Banana Browser môže skontrolovať heslá, keď ich uložíte."</string>
 <string name="data_reduction_benefits_description_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát."</string>
 <string name="data_reduction_promo_summary_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát. Banana Browser odosiela údaje o vašej návštevnosti webu do Googlu, ktorý na základe nich optimalizuje vami navštevované stránky. &lt;link&gt;Ďalšie informácie&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser ušetril %1$d MB"</string>
@@ -29,6 +32,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sa otvorí v Banana Browser. Pokračovaním vyjadrujete súhlas so &lt;LINK1&gt;zmluvnými podmienkami spoločnosti Google&lt;/LINK1&gt; a &lt;LINK2&gt;dodatočnými zmluvnými podmienkami prehliadača Google Banana Browser a systému Banana Browser OS&lt;/LINK2&gt;. Platí aj &lt;LINK3&gt;oznámenie o ochrane súkromia pre účty Google spravované pomocou aplikácie Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Odosielať štatistiky používania a prehľady chýb Googlu a pomáhať tak zlepšovať Banana Browser"</string>
 <string name="fre_welcome">"Víta vás prehliadač Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser nemá prístup k požadovanému zdroju."</string>
 <string name="menu_update">"Aktualizovať Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser sa nedá aktualizovať"</string>
 <string name="menu_inline_update_ready_summary">"Reštartujte Banana Browser"</string>

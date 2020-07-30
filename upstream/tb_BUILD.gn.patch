@@ -1,9 +1,9 @@
 diff --git tb/BUILD.gn tb_diff/BUILD.gn
 --- tb/BUILD.gn
 +++ tb_diff/BUILD.gn
-@@ -90,6 +90,10 @@ group("gn_all") {
-     "//url:url_unittests",
-   ]
+@@ -95,6 +95,10 @@ group("gn_all") {
+     ]
+   }
  
 +  if (is_android) {
 +    deps += [ "//triple_banana:triple_banana" ]

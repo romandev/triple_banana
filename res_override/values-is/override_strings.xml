@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Völdu gögnin hafa verið fjarlægð af Banana Browser og samstilltum tækjum.
 
 Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, svo sem yfir leit og virkni í annarri þjónustu Google, á &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser getur athugað hvort stillingarnar þínar verja þig gegn:"</string>
+<string name="safety_check_safe_browsing_disabled">"Slökkt er á öruggri vefskoðun. Banana Browser mælir með því að kveikt sé á henni."</string>
+<string name="safety_check_passwords_no_passwords">"Engin vistuð aðgangsorð. Banana Browser getur athugað aðgangsorðin þín þegar þú vistar þau."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Í léttútgáfu hleður Banana Browser síðum hraðar og notar allt að 60 prósentum minna gagnamagn."</string>
 <string name="data_reduction_description_lite_mode">"Þegar kveikt er á léttútgáfu notar Banana Browser þjóna Google til að hlaða síðum hraðar. Léttútgáfa endurskrifar mjög hægar síður og hleður aðeins nauðsynlegu efni. Léttútgáfa er ekki notuð á huliðsflipum."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Í léttútgáfu hleður Banana Browser síðum hraðar og notar allt að 60% minna gagnamagn. Banana Browser sendir vefumferð þína til Google til þess að geta fínstillt síðurnar sem þú opnar. &lt;link&gt;Frekari upplýsingar&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s mun opnast í Banana Browser. Með því að halda áfram samþykkir þú &lt;LINK1&gt;þjónustuskilmála Google&lt;/LINK1&gt; og &lt;LINK2&gt;viðbótarskilmála Google Banana Browser og Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Persónuvernd fyrir Google reikninga sem stjórnað er með Family Link&lt;/LINK3&gt; gildir einnig."</string>
 <string name="fre_send_report_check">"Hjálpaðu til við að bæta Google Banana Browser með því að senda talnagögn um notkun og tilkynningar um hrun til Google."</string>
 <string name="fre_welcome">"Velkomin(n) í Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser hefur ekki aðgang að umbeðnu tilfangi."</string>
 <string name="menu_update">"Uppfæra Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Endurræsa Banana Browser"</string>
 <string name="menu_open_in_chrome">"Opna í Banana Browser"</string>

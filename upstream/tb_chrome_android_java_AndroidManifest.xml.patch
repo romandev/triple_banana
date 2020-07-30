@@ -18,7 +18,7 @@ diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/jav
      {% set enable_vr = enable_vr|default(0) %}
      {% if enable_vr == "true" %}
      <!-- Indicates use of Android's VR-mode, available only on Android N+. -->
-@@ -890,16 +887,6 @@ by a child template that "extends" this file.
+@@ -864,16 +861,6 @@ by a child template that "extends" this file.
                  android:resource="@xml/file_paths" />
          </provider>
  

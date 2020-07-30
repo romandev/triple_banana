@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Seçilmiş data Banana Browser və sinxronizasiya olunmuş cihazınızdan silindi. 
 
 &lt;link&gt;history.google.com&lt;/link&gt; linkində Google hesabınızın digər Google xidmətlərində axtarış və fəaliyyət kimi başqa formalı axtarış tarixçəsi ola bilər."</string>
+<string name="safety_check_description">"Banana Browser ayarların sizi aşağıdakılardan qoruyub-qorumadığını yoxlaya bilər:"</string>
+<string name="safety_check_safe_browsing_disabled">"Təhlükəsiz Baxış deaktivdir. Banana Browser onu aktiv etməyi tövsiyə edir."</string>
+<string name="safety_check_passwords_no_passwords">"Yadda saxlanmış parol yoxdur. Parollarınızı yadda saxladıqda Banana Browser onları yoxlaya bilər."</string>
 <string name="data_reduction_benefits_description_lite_mode">"Layt rejimində Banana Browser səhifələri daha tez yükləyir və dataya 60 faizədək qənaət edir."</string>
 <string name="data_reduction_description_lite_mode">"Layt rejimi aktiv olduqda Banana Browser səhifələrin daha sürətlə yüklənməsi üçün Google serverlərindən istifadə edir. Layt rejimi yalnız əsas kontenti yükləmək üçün sürəti çox zəif olan səhifələri yenidən yazır. Layt rejimi Gizli tablara tətbiq edilmir."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Layt rejimində Banana Browser səhifələri daha tez yükləyir və dataya 60 faizədək qənaət edir. Daxil olduğunuz səhifəni optimallaşdırmaq üçün Banana Browser, veb trafiki Google\'a göndərir. &lt;link&gt;Ətraflı məlumat&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browser\'da açılacaq. Davam etməklə, &lt;LINK1&gt;Google Xidmət Şərtləri&lt;/LINK1&gt; və &lt;LINK2&gt;Google Banana Browser və Banana Browser ƏS Əlavə Xidmət Şərtləri&lt;/LINK2&gt; ilə razılaşırsınız. &lt;LINK3&gt;Family Link ilə İdarə Edilən Google Hesabları üçün Məxfilik Bildirişi&lt;/LINK3&gt; də tətbiq edilir."</string>
 <string name="fre_send_report_check">"İstifadə statistikası və qəza raportlarını Google\'a göndərməklə Banana Browser\'un gəlişməsini sağlayın."</string>
 <string name="fre_welcome">"Banana Browser\'a xoş gəlmisiniz"</string>
+<string name="external_app_restricted_access_error">"Banana Browser\'un sorğulanan mənbəyə girişi yoxdur."</string>
 <string name="menu_update">"Banana Browser\'u güncəlləşdirin"</string>
 <string name="menu_update_unsupported">"Banana Browser güncəllənmir"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser\'u yenidən başladın"</string>

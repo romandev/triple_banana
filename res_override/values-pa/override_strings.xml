@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ਚੁਣਿਆ ਗਿਆ ਡਾਟਾ Banana Browser ਅਤੇ ਤੁਹਾਡੇ ਸਮਕਾਲੀਕਿਰਤ ਕੀਤੇ ਡੀਵਾਈਸਾਂ ਤੋਂ ਹਟਾਇਆ ਜਾ ਚੁੱਕਿਆ ਹੈ।
 
 ਤੁਹਾਡੇ Google ਖਾਤੇ ਵਿੱਚ &lt;link&gt;myactivity.google.com&lt;/link&gt; \'ਤੇ ਹੋਰ Google ਸੇਵਾਵਾਂ ਤੋਂ ਖੋਜਾਂ ਅਤੇ ਸਰਗਰਮੀ ਵਰਗੇ ਹੋਰ ਕਿਸਮ ਦਾ ਬ੍ਰਾਊਜ਼ਿੰਗ ਇਤਿਹਾਸ ਵੀ ਸ਼ਾਮਲ ਹੋ ਸਕਦਾ ਹੈ।"</string>
+<string name="safety_check_description">"Banana Browser ਇਹ ਜਾਂਚ ਕਰ ਸਕਦਾ ਹੈ ਕਿ ਤੁਹਾਡੀਆਂ ਸੈਟਿੰਗਾਂ ਤੁਹਾਨੂੰ ਇਹਨਾਂ ਤੋਂ ਸੁਰੱਖਿਅਤ ਰੱਖਦੀਆਂ ਹਨ ਜਾਂ ਨਹੀਂ:"</string>
+<string name="safety_check_safe_browsing_disabled">"ਸੁਰੱਖਿਅਤ ਬ੍ਰਾਊਜ਼ਿੰਗ ਬੰਦ ਹੈ। Banana Browser ਇਸਨੂੰ ਚਾਲੂ ਕਰਨ ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕਰਦਾ ਹੈ।"</string>
+<string name="safety_check_passwords_no_passwords">"ਕੋਈ ਰੱਖਿਅਤ ਕੀਤੇ ਪਾਸਵਰਡ ਨਹੀਂ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਆਪਣੇ ਪਾਸਵਰਡ ਰੱਖਿਅਤ ਕਰਨ \'ਤੇ Banana Browser ਉਹਨਾਂ ਦੀ ਜਾਂਚ ਕਰ ਸਕਦਾ ਹੈ।"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ਲਾਈਟ ਮੋਡ ਵਿੱਚ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਦਾ ਹੈ ਅਤੇ 60 ਪ੍ਰਤੀਸ਼ਤ ਤੱਕ ਘੱਟ ਡਾਟਾ ਵਰਤਦਾ ਹੈ।"</string>
 <string name="data_reduction_description_lite_mode">"ਲਾਈਟ ਮੋਡ ਚਾਲੂ ਹੋਣ \'ਤੇ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਨ ਲਈ Google ਸਰਵਰਾਂ ਦੀ ਵਰਤੋਂ ਕਰਦਾ ਹੈ। ਲਾਈਟ ਮੋਡ ਸਿਰਫ਼ ਜ਼ਰੂਰੀ ਸਮੱਗਰੀ ਨੂੰ ਲੋਡ ਕਰਨ ਲਈ ਬਹੁਤ ਹੀ ਧੀਮੇ ਪੰਨਿਆਂ ਨੂੰ ਮੁੜ-ਲੋਡ ਕਰਦਾ ਹੈ। ਲਾਈਟ ਮੋਡ ਇਨਕੋਗਨਿਟੋ ਟੈਬਾਂ \'ਤੇ ਲਾਗੂ ਨਹੀਂ ਹੁੰਦਾ ਹੈ।"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ਲਾਈਟ ਮੋਡ ਵਿੱਚ, Banana Browser ਵਧੇਰੇ ਤੇਜ਼ੀ ਨਾਲ ਪੰਨੇ ਲੋਡ ਕਰਕੇ 60 ਫ਼ੀਸਦ ਤੱਕ ਘੱਟ ਡਾਟਾ ਵਰਤਦਾ ਹੈ। ਤੁਹਾਡੇ ਵੱਲੋਂ ਦੇਖੇ ਜਾਂਦੇ ਪੰਨਿਆਂ ਨੂੰ ਸੁਯੋਗ ਬਣਾਉਣ ਲਈ, Banana Browser ਤੁਹਾਡੇ ਵੈੱਬ ਟਰੈਫ਼ਿਕ ਨੂੰ Google \'ਤੇ ਭੇਜਦਾ ਹੈ। &lt;link&gt;ਹੋਰ ਜਾਣੋ&lt;/link&gt;"</string>
@@ -51,6 +54,7 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ਨੂੰ Banana Browser ਵਿੱਚ ਖੋਲ੍ਹਿਆ ਜਾਵੇਗਾ। ਜਾਰੀ ਰੱਖ ਕੇ, ਤੁਸੀਂ &lt;LINK1&gt;Google ਦੇ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK1&gt; ਅਤੇ &lt;LINK2&gt;Google Banana Browser ਅਤੇ Banana Browser OS ਦੇ ਵਧੀਕ ਸੇਵਾ ਦੇ ਨਿਯਮਾਂ&lt;/LINK2&gt; ਨਾਲ ਸਹਿਮਤ ਹੁੰਦੇ ਹੋ। &lt;LINK3&gt;Family Link ਨਾਲ ਪ੍ਰਤੀਬੰਧਿਤ ਕੀਤੇ ਜਾਂਦੇ Google ਖਾਤਿਆਂ ਲਈ ਪਰਦੇਦਾਰੀ ਨੋਟਿਸ&lt;/LINK3&gt; ਵੀ ਲਾਗੂ ਹੁੰਦਾ ਹੈ।"</string>
 <string name="fre_send_report_check">"Google ਨੂੰ ਵਰਤੋਂ ਅੰਕੜੇ ਅਤੇ ਕ੍ਰੈਸ਼ ਰਿਪੋਰਟਾਂ ਭੇਜ ਕੇ Banana Browser ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ।"</string>
 <string name="fre_welcome">"Banana Browser ਵਿੱਚ ਸੁਆਗਤ ਹੈ"</string>
+<string name="external_app_restricted_access_error">"Banana Browser ਦੀ ਬੇਨਤੀ ਕੀਤੇ ਸਰੋਤ \'ਤੇ ਪਹੁੰਚ ਨਹੀਂ ਹੈ।"</string>
 <string name="menu_update">"Banana Browser ਨੂੰ ਅੱਪਡੇਟ ਕਰੋ"</string>
 <string name="menu_update_unsupported">"Banana Browser ਅੱਪਡੇਟ ਨਹੀਂ ਹੋਇਆ"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser ਨੂੰ ਮੁੜ-ਸ਼ੁਰੂ ਕਰੋ"</string>

@@ -13,6 +13,9 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Odabrani podaci uklonjeni su iz Banana Browsera i sa sinkroniziranih uređaja.
 
 Vaš Google račun može sadržavati druge oblike povijesti pregledavanja, na primjer pretraživanja i aktivnosti s drugih Googleovih usluga, na stranici &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
+<string name="safety_check_description">"Banana Browser može provjeriti štite li vas vaše postavke putem sljedećeg:"</string>
+<string name="safety_check_safe_browsing_disabled">"Sigurno pregledavanje je isključeno. Banana Browser preporučuje da ga uključite."</string>
+<string name="safety_check_passwords_no_passwords">"Nema nijedne spremljene zaporke. Banana Browser može provjeriti vaše zaporke kad ih spremite."</string>
 <string name="data_reduction_benefits_description_lite_mode">"U Jednostavnom načinu Banana Browser učitava stranice brže i smanjuje podatkovni promet do 60 posto."</string>
 <string name="data_reduction_description_lite_mode">"Kad je omogućen Jednostavni način, Banana Browser upotrebljava Googleove poslužitelje kako bi se stranice brže učitale. Jednostavni način ponovo ispisuje vrlo spore stranice kako bi se učitao samo neophodan sadržaj. Jednostavni se način ne primjenjuje na anonimne stranice."</string>
 <string name="data_reduction_promo_summary_lite_mode">"U Jednostavnom načinu Banana Browser učitava stranice brže i smanjuje podatkovni promet do 60 posto. Banana Browser šalje vaš web-promet Googleu radi optimizacije stranica koje posjećujete. &lt;link&gt;Saznajte više&lt;/link&gt;"</string>
@@ -52,6 +55,7 @@ Vaš Google račun može sadržavati druge oblike povijesti pregledavanja, na pr
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Aplikacija %1$s otvorit će se u Banana Browseru. Nastavljanjem prihvaćate &lt;LINK1&gt;Googleove uvjete pružanja usluge&lt;/LINK1&gt; i &lt;LINK2&gt;Dodatne uvjete pružanja usluge za Google Banana Browser i OS Banana Browser&lt;/LINK2&gt;. Primjenjuje se i &lt;LINK3&gt;Obavijest o privatnosti za Google račune kojima se upravlja putem Family Linka&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Poboljšajte Banana Browser šaljući Googleu statistike upotrebe i izvješća o rušenju."</string>
 <string name="fre_welcome">"Dobro došli u Banana Browser"</string>
+<string name="external_app_restricted_access_error">"Banana Browser nema pristup zatraženom resursu."</string>
 <string name="menu_update">"Ažuriraj Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser nije ažuriran"</string>
 <string name="menu_inline_update_ready_summary">"Ponovo pokrenite Banana Browser"</string>
