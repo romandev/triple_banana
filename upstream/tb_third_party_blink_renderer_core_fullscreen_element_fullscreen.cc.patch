@@ -1,0 +1,18 @@
+diff --git tb/third_party/blink/renderer/core/fullscreen/element_fullscreen.cc tb_diff/third_party/blink/renderer/core/fullscreen/element_fullscreen.cc
+--- tb/third_party/blink/renderer/core/fullscreen/element_fullscreen.cc
++++ tb_diff/third_party/blink/renderer/core/fullscreen/element_fullscreen.cc
+@@ -16,6 +16,14 @@ ScriptPromise ElementFullscreen::requestFullscreen(
+     Element& element,
+     const FullscreenOptions* options,
+     ExceptionState& exception_state) {
++#if defined(ENABLE_TRIPLE_BANANA)
++  auto* video_element = element.QuerySelector("video");
++  if (video_element) {
++    return Fullscreen::RequestFullscreen(*video_element, options,
++                                         Fullscreen::RequestType::kUnprefixed,
++                                         script_state, &exception_state);
++  }
++#endif
+   return Fullscreen::RequestFullscreen(element, options,
+                                        Fullscreen::RequestType::kUnprefixed,
+                                        script_state, &exception_state);

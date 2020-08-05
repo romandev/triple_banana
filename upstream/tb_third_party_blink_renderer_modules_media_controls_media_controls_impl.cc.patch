@@ -1,0 +1,36 @@
+diff --git tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
+--- tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
++++ tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
+@@ -369,6 +369,10 @@ MediaControlsImpl::MediaControlsImpl(HTMLMediaElement& media_element)
+           media_element.GetDocument().GetTaskRunner(TaskType::kInternalMedia),
+           this,
+           &MediaControlsImpl::VolumeSliderWantedTimerFired),
++#if defined(ENABLE_TRIPLE_BANANA)
++      remote_control_dispatcher_(
++          AutoBind(remote_control::mojom::BananaRemoteControlEventDispatcher)),
++#endif
+       text_track_manager_(
+           MakeGarbageCollected<MediaControlsTextTrackManager>(media_element)) {
+   // On touch devices, start with the assumption that the user will interact via
+@@ -1863,6 +1867,10 @@ void MediaControlsImpl::OnEnteredFullscreen() {
+ 
+   StopHideMediaControlsTimer();
+   StartHideMediaControlsTimer();
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (IsA<HTMLVideoElement>(MediaElement()))
++    remote_control_dispatcher_->OnEnteredVideoFullscreen();
++#endif
+ }
+ 
+ void MediaControlsImpl::OnExitedFullscreen() {
+@@ -1873,6 +1881,10 @@ void MediaControlsImpl::OnExitedFullscreen() {
+   HidePopupMenu();
+   StopHideMediaControlsTimer();
+   StartHideMediaControlsTimer();
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (IsA<HTMLVideoElement>(MediaElement()))
++    remote_control_dispatcher_->OnExitedVideoFullscreen();
++#endif
+ }
+ 
+ void MediaControlsImpl::OnPictureInPictureChanged() {
