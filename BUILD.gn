@@ -162,6 +162,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/ViewHolderDragListener.java",
 
     # util
+    "//triple_banana/src/org/triple/banana/util/BrightnessUtil.java",
     "//triple_banana/src/org/triple/banana/util/Unzip.java",
 
     # util
