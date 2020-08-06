@@ -5,6 +5,7 @@
 
 package org.triple.banana.remote_control;
 
+import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.remote_control.mojom.BananaRemoteControlEventDispatcher;
 
 import org.chromium.mojo.system.MojoException;
@@ -69,12 +70,16 @@ public enum RemoteControlService implements BananaRemoteControlEventDispatcher, 
 
     @Override
     public void play() {
-        // NOTIMPLEMENTED
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null) return;
+        tab.evaluateJavaScript("document.fullscreenElement.play();");
     }
 
     @Override
     public void pause() {
-        // NOTIMPLEMENTED
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null) return;
+        tab.evaluateJavaScript("document.fullscreenElement.pause();");
     }
 
     @Override

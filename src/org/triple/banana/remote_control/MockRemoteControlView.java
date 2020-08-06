@@ -42,9 +42,9 @@ class MockRemoteControlView extends Dialog implements View.OnClickListener {
     public void onClick(View v) {
         int id = v.getId();
         if (id == R.id.play_button) {
-            // NOTIMPLEMENTED
+            RemoteControlService.instance.play();
         } else if (id == R.id.pause_button) {
-            // NOTIMPLEMENTED
+            RemoteControlService.instance.pause();
         } else if (id == R.id.backward_button) {
             // NOTIMPLEMENTED
         } else if (id == R.id.forward_button) {
