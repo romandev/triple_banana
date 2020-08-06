@@ -5,10 +5,14 @@
 
 package org.banana.cake;
 
+import android.app.Activity;
+
 import org.banana.cake.interfaces.BananaTab;
 import org.banana.cake.interfaces.BananaTabManager;
 import org.banana.cake.interfaces.BananaTabObserver;
 
+import org.chromium.base.ApplicationStatus;
+import org.chromium.chrome.browser.ChromeTabbedActivity;
 import org.chromium.chrome.browser.tab.Tab;
 
 import java.util.HashSet;
@@ -32,5 +36,12 @@ class CakeTabManager implements BananaTabManager {
         for (BananaTabObserver observer : TAB_OBSERVERS) {
             observer.onUrlUpdated(BananaTab.get().wrap(tab));
         }
+    }
+
+    @Override
+    public BananaTab getActivityTab() {
+        Activity activity = ApplicationStatus.getLastTrackedFocusedActivity();
+        if (!(activity instanceof ChromeTabbedActivity)) return null;
+        return BananaTab.get().wrap(((ChromeTabbedActivity) activity).getActivityTab());
     }
 }

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="play" />
+
+    <Button
+        android:id="@+id/pause_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pause" />
+
+    <Button
+        android:id="@+id/forward_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="forward(+10)" />
+
+    <Button
+        android:id="@+id/backward_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="backward(-10)" />
+
+    <Button
+        android:id="@+id/volume_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volume_up" />
+
+    <Button
+        android:id="@+id/volume_down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="volume_down" />
+
+    <Button
+        android:id="@+id/brightness_up_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="brightness_up" />
+
+    <Button
+        android:id="@+id/brightness_down_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="brightness_down" />
+
+    <Button
+        android:id="@+id/rotate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="rotate" />
+
+    <Button
+        android:id="@+id/lock_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lock" />
+
+
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" />
+
+    <MediaController
+        android:id="@+id/media_controller"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+</LinearLayout>

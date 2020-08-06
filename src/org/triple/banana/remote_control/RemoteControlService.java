@@ -13,7 +13,8 @@ import org.chromium.services.service_manager.InterfaceFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoteControlService implements BananaRemoteControlEventDispatcher, RemoteControl {
+public enum RemoteControlService implements BananaRemoteControlEventDispatcher, RemoteControl {
+    instance;
     // The listeners used to notify the clients.
     private final List<EventListener> mEventListeners = new ArrayList<EventListener>();
 
@@ -87,7 +88,8 @@ public class RemoteControlService implements BananaRemoteControlEventDispatcher,
 
         @Override
         public BananaRemoteControlEventDispatcher createImpl() {
-            return new RemoteControlService();
+            RemoteControlClient.onStart();
+            return RemoteControlService.instance;
         }
     }
 }

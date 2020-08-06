@@ -5,6 +5,8 @@
 
 package org.banana.cake.interfaces;
 
+import android.content.Context;
+
 import org.chromium.chrome.browser.tab.Tab;
 
 public interface BananaTab {
@@ -16,4 +18,5 @@ public interface BananaTab {
 
     String getUrl();
     void evaluateJavaScript(String script);
+    Context getContext();
 }

@@ -126,7 +126,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/remote_config/RemoteConfig.java",
 
     # remote_control
+    "//triple_banana/src/org/triple/banana/remote_control/MockRemoteControlView.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControl.java",
+    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlClient.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlService.java",
 
     # secure_dns
@@ -220,6 +222,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/round_rect_dark.xml",
     "//triple_banana/res/drawable/toolbar_button_banana.xml",
     "//triple_banana/res/layout/fingerprint_dialog.xml",
+    "//triple_banana/res/layout/mock_remote_control_view.xml",
     "//triple_banana/res/layout/toolbar_button.xml",
     "//triple_banana/res/layout/toolbar_edit_main.xml",
     "//triple_banana/res/menu/toolbar_action_bar_menu.xml",

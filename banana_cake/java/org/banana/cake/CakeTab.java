@@ -5,6 +5,8 @@
 
 package org.banana.cake;
 
+import android.content.Context;
+
 import org.banana.cake.interfaces.BananaTab;
 
 import org.chromium.chrome.browser.tab.Tab;
@@ -39,5 +41,11 @@ class CakeTab implements BananaTab {
     public void evaluateJavaScript(String script) {
         if (mTab == null) return;
         mTab.getWebContents().evaluateJavaScript(script, null);
+    }
+
+    @Override
+    public Context getContext() {
+        if (mTab == null) return null;
+        return mTab.getContext();
     }
 }

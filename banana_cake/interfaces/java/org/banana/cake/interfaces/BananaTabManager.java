@@ -5,6 +5,8 @@
 
 package org.banana.cake.interfaces;
 
+import org.banana.cake.interfaces.BananaTab;
+
 import org.chromium.chrome.browser.tab.Tab;
 
 public interface BananaTabManager {
@@ -16,4 +18,6 @@ public interface BananaTabManager {
     void removeObserver(BananaTabObserver observer);
 
     void notifyUrlUpdated(Tab tab);
+
+    BananaTab getActivityTab();
 }
