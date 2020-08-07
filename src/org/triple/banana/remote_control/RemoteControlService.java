@@ -83,6 +83,44 @@ public enum RemoteControlService implements BananaRemoteControlEventDispatcher, 
     }
 
     @Override
+    public void setPosition(float position) {
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null) return;
+        tab.evaluateJavaScript(
+                "document.fullscreenElement.currentTime=" + Float.toString(position) + ";");
+    }
+
+    @Override
+    public void setRelativePosition(float position) {
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null) return;
+        tab.evaluateJavaScript(
+                "document.fullscreenElement.currentTime+=" + Float.toString(position) + ";");
+    }
+
+    @Override
+    public void setVolume(float value) {
+        if (value < 0.0f) {
+            value = 0.0f;
+        } else if (value > 1.0f) {
+            value = 1.0f;
+        }
+
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null) return;
+        tab.evaluateJavaScript("document.fullscreenElement.volume=" + Float.toString(value) + ";");
+    }
+
+    @Override
+    public void setRelativeVolume(float value) {
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null) return;
+        tab.evaluateJavaScript(
+                "volume = document.fullscreenElement.volume; volume = Math.min(1.0, Math.max(0.0, volume + "
+                + Float.toString(value) + ")); document.fullscreenElement.volume=volume;");
+    }
+
+    @Override
     public void close() {}
 
     @Override

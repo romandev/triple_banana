@@ -11,4 +11,8 @@ package org.triple.banana.remote_control;
 interface RemoteControl {
     void play();
     void pause();
+    void setPosition(float position);
+    void setRelativePosition(float position);
+    void setVolume(float value);
+    void setRelativeVolume(float value);
 }

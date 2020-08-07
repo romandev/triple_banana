@@ -12,6 +12,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 
 import org.triple.banana.R;
+import org.triple.banana.util.BrightnessUtil;
 
 class MockRemoteControlView extends Dialog implements View.OnClickListener {
     MockRemoteControlView(@NonNull Context context) {
@@ -22,6 +23,7 @@ class MockRemoteControlView extends Dialog implements View.OnClickListener {
         super(context, themeResId);
         setContentView(R.layout.mock_remote_control_view);
         addClickListener();
+        setBrightness(BrightnessUtil.getSystemBrightness(context));
     }
 
     private void addClickListener() {
@@ -46,17 +48,17 @@ class MockRemoteControlView extends Dialog implements View.OnClickListener {
         } else if (id == R.id.pause_button) {
             RemoteControlService.instance.pause();
         } else if (id == R.id.backward_button) {
-            // NOTIMPLEMENTED
+            RemoteControlService.instance.setRelativePosition(-10.0f);
         } else if (id == R.id.forward_button) {
-            // NOTIMPLEMENTED
-        } else if (id == R.id.brightness_down_button) {
-            // NOTIMPLEMENTED
+            RemoteControlService.instance.setRelativePosition(+10.0f);
         } else if (id == R.id.brightness_up_button) {
-            // NOTIMPLEMENTED
+            setBrightness(1.0f);
+        } else if (id == R.id.brightness_down_button) {
+            setBrightness(0.2f);
         } else if (id == R.id.volume_down_button) {
-            // NOTIMPLEMENTED
+            RemoteControlService.instance.setRelativeVolume(-0.1f);
         } else if (id == R.id.volume_up_button) {
-            // NOTIMPLEMENTED
+            RemoteControlService.instance.setRelativeVolume(+0.1f);
         } else if (id == R.id.rotate_button) {
             // NOTIMPLEMENTED
         } else if (id == R.id.lock_button) {
@@ -64,5 +66,9 @@ class MockRemoteControlView extends Dialog implements View.OnClickListener {
         } else if (id == R.id.seek_bar) {
             // NOTIMPLEMENTED
         }
+    }
+
+    private void setBrightness(float value) {
+        BrightnessUtil.setWindowBrightness(getWindow(), value);
     }
 }
