@@ -10,8 +10,10 @@ import org.triple.banana.R;
 import org.triple.banana.media.MediaController;
 import org.triple.banana.media.MediaEventListener;
 
-public enum RemoteControlService {
+public enum RemoteControlService implements RemoteControlView.Delegate {
     instance;
+
+    private RemoteControlView mView = new RemoteControlViewImpl(this);
 
     private MediaController mMediaController = MediaController.instance;
 
@@ -21,34 +23,35 @@ public enum RemoteControlService {
             public void onEnteredVideoFullscreen() {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
-                MockRemoteControlView view = new MockRemoteControlView(
-                        tab.getContext(), R.style.Theme_Chromium_Activity_Fullscreen_Transparent);
-                view.show();
+                mView.show(tab.getContext());
             }
         });
     }
 
-    public void play() {
-        mMediaController.play();
-    }
-
-    public void pause() {
-        mMediaController.pause();
-    }
-
-    public void setPosition(float position) {
-        mMediaController.setPosition(position);
-    }
-
-    public void setRelativePosition(float position) {
-        mMediaController.setRelativePosition(position);
-    }
-
-    public void setVolume(float value) {
-        mMediaController.setVolume(value);
-    }
-
-    public void setRelativeVolume(float value) {
-        mMediaController.setRelativeVolume(value);
+    @Override
+    public void onRemoteControlButtonClicked(int id) {
+        if (id == R.id.play_button) {
+            mMediaController.play();
+        } else if (id == R.id.pause_button) {
+            mMediaController.pause();
+        } else if (id == R.id.backward_button) {
+            mMediaController.setRelativePosition(-10.0f);
+        } else if (id == R.id.forward_button) {
+            mMediaController.setRelativePosition(10.0f);
+        } else if (id == R.id.brightness_up_button) {
+            mView.setBrightness(1.0f);
+        } else if (id == R.id.brightness_down_button) {
+            mView.setBrightness(0.2f);
+        } else if (id == R.id.volume_down_button) {
+            mMediaController.setRelativeVolume(-0.1f);
+        } else if (id == R.id.volume_up_button) {
+            mMediaController.setRelativeVolume(0.1f);
+        } else if (id == R.id.rotate_button) {
+            // NOTIMPLEMENTED
+        } else if (id == R.id.lock_button) {
+            // NOTIMPLEMENTED
+        } else if (id == R.id.seek_bar) {
+            // NOTIMPLEMENTED
+        }
     }
 }
