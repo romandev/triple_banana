@@ -1,23 +1,22 @@
 diff --git tb/third_party/blink/renderer/core/html/media/html_video_element.cc tb_diff/third_party/blink/renderer/core/html/media/html_video_element.cc
 --- tb/third_party/blink/renderer/core/html/media/html_video_element.cc
 +++ tb_diff/third_party/blink/renderer/core/html/media/html_video_element.cc
-@@ -90,6 +90,10 @@ HTMLVideoElement::HTMLVideoElement(Document& document)
+@@ -90,6 +90,9 @@ HTMLVideoElement::HTMLVideoElement(Document& document)
            !GetExecutionContext()->IsFeatureEnabled(
                mojom::blink::DocumentPolicyFeature::kUnsizedMedia)),
        video_has_played_(false),
 +#if defined(ENABLE_TRIPLE_BANANA)
-+      remote_control_dispatcher_(
-+          AutoBind(remote_control::mojom::BananaRemoteControlEventDispatcher)),
++      media_dispatcher_(AutoBind(media::mojom::BananaMediaEventDispatcher)),
 +#endif
        mostly_filling_viewport_(false) {
    if (document.GetSettings()) {
      default_poster_url_ =
-@@ -268,6 +272,10 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
+@@ -268,6 +271,10 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
  void HTMLVideoElement::OnBecamePersistentVideo(bool value) {
    is_auto_picture_in_picture_ = value;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  remote_control_dispatcher_->OnChangedPIPMode(value);
++  media_dispatcher_->OnChangedPIPMode(value);
 +#endif
 +
    if (value) {

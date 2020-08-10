@@ -13,7 +13,7 @@ mojom("mojom") {
     "public/mojom/authentication.mojom",
     "public/mojom/encrypter.mojom",
     "public/mojom/hello.mojom",
-    "public/mojom/remote_control.mojom",
+    "public/mojom/media.mojom",
   ]
 
   public_deps = [

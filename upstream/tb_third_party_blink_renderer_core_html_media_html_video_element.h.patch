@@ -12,13 +12,12 @@ diff --git tb/third_party/blink/renderer/core/html/media/html_video_element.h tb
  namespace gpu {
  namespace gles2 {
  class GLES2Interface;
-@@ -273,6 +277,11 @@ class CORE_EXPORT HTMLVideoElement final
+@@ -273,6 +277,10 @@ class CORE_EXPORT HTMLVideoElement final
  
    bool video_has_played_ : 1;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  mojo::Remote<remote_control::mojom::BananaRemoteControlEventDispatcher>
-+      remote_control_dispatcher_;
++  mojo::Remote<media::mojom::BananaMediaEventDispatcher> media_dispatcher_;
 +#endif
 +
    // True, if the video element occupies most of the viewport.

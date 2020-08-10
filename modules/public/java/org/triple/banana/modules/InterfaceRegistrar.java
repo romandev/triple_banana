@@ -13,8 +13,8 @@ import org.triple.banana.encrypter.EncrypterManagerImpl;
 import org.triple.banana.encrypter.mojom.EncrypterManager;
 import org.triple.banana.hello.HelloImpl;
 import org.triple.banana.hello.mojom.Hello;
-import org.triple.banana.remote_control.RemoteControlService;
-import org.triple.banana.remote_control.mojom.BananaRemoteControlEventDispatcher;
+import org.triple.banana.media.MediaEventDispatcher;
+import org.triple.banana.media.mojom.BananaMediaEventDispatcher;
 
 import org.chromium.base.annotations.CalledByNative;
 import org.chromium.base.annotations.JNINamespace;
@@ -34,7 +34,7 @@ class InterfaceRegistrar {
         registry.addInterface(
                 AuthenticationManager.MANAGER, new AuthenticationManagerImpl.Factory());
         registry.addInterface(
-                BananaRemoteControlEventDispatcher.MANAGER, new RemoteControlService.Factory());
+                BananaMediaEventDispatcher.MANAGER, new MediaEventDispatcher.Factory());
         registry.addInterface(EncrypterManager.MANAGER, new EncrypterManagerImpl.Factory());
         registry.addInterface(Hello.MANAGER, new HelloImpl.Factory());
     }

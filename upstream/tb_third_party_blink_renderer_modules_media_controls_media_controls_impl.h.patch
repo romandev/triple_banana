@@ -12,13 +12,12 @@ diff --git tb/third_party/blink/renderer/modules/media_controls/media_controls_i
  namespace blink {
  
  class Event;
-@@ -424,6 +428,11 @@ class MODULES_EXPORT MediaControlsImpl final : public HTMLDivElement,
+@@ -424,6 +428,10 @@ class MODULES_EXPORT MediaControlsImpl final : public HTMLDivElement,
    // of the slider
    TaskRunnerTimer<MediaControlsImpl> volume_slider_wanted_timer_;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  mojo::Remote<remote_control::mojom::BananaRemoteControlEventDispatcher>
-+      remote_control_dispatcher_;
++  mojo::Remote<media::mojom::BananaMediaEventDispatcher> media_dispatcher_;
 +#endif
 +
    Member<MediaControlsTextTrackManager> text_track_manager_;

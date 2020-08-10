@@ -117,6 +117,10 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/hello/HelloImpl.java",
 
     # media
+    "//triple_banana/src/org/triple/banana/media/MediaCommandProcessor.java",
+    "//triple_banana/src/org/triple/banana/media/MediaController.java",
+    "//triple_banana/src/org/triple/banana/media/MediaEventDispatcher.java",
+    "//triple_banana/src/org/triple/banana/media/MediaEventListener.java",
     "//triple_banana/src/org/triple/banana/media/MediaSuspendController.java",
 
     # password
@@ -127,8 +131,6 @@ android_library("triple_banana_java") {
 
     # remote_control
     "//triple_banana/src/org/triple/banana/remote_control/MockRemoteControlView.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControl.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlClient.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlService.java",
 
     # secure_dns

@@ -14,6 +14,7 @@ import org.banana.cake.interfaces.BananaTabManager;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.password.PasswordExtension;
+import org.triple.banana.remote_control.RemoteControlService;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
@@ -70,6 +71,8 @@ public class TripleBananaApplication extends BananaApplication {
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
             SecureDnsNotificationManager.getInstance().showSecureDnsNotificationIfNeeded();
         }
+
+        RemoteControlService.instance.start();
     }
 
     @Override

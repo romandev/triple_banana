@@ -6,133 +6,49 @@
 package org.triple.banana.remote_control;
 
 import org.banana.cake.interfaces.BananaTab;
-import org.triple.banana.remote_control.mojom.BananaRemoteControlEventDispatcher;
+import org.triple.banana.R;
+import org.triple.banana.media.MediaController;
+import org.triple.banana.media.MediaEventListener;
 
-import org.chromium.mojo.system.MojoException;
-import org.chromium.services.service_manager.InterfaceFactory;
-
-import java.util.ArrayList;
-import java.util.List;
-
-public enum RemoteControlService implements BananaRemoteControlEventDispatcher, RemoteControl {
+public enum RemoteControlService {
     instance;
-    // The listeners used to notify the clients.
-    private final List<EventListener> mEventListeners = new ArrayList<EventListener>();
 
-    /**
-     * Interface for notifying clients of the video event.
-     */
-    public interface EventListener {
-        /**
-         * Called when entered or exited the pip mode.
-         */
-        default void onChangedPipMode(boolean value) {}
+    private MediaController mMediaController = MediaController.instance;
 
-        /**
-         * Called when entered the video fullscreen.
-         */
-        default void onEnteredVideoFullscreen() {}
-
-        /**
-         * Called when exited the video fullscreen.
-         */
-        default void onExitedVideoFullscreen() {}
+    public void start() {
+        mMediaController.addEventListener(new MediaEventListener() {
+            @Override
+            public void onEnteredVideoFullscreen() {
+                BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+                if (tab == null || tab.getContext() == null) return;
+                MockRemoteControlView view = new MockRemoteControlView(
+                        tab.getContext(), R.style.Theme_Chromium_Activity_Fullscreen_Transparent);
+                view.show();
+            }
+        });
     }
 
-    public void addEventListener(EventListener listener) {
-        mEventListeners.add(listener);
-    }
-
-    public void removeEventListener(EventListener listener) {
-        mEventListeners.remove(listener);
-    }
-
-    @Override
-    public void onChangedPipMode(boolean value) {
-        for (EventListener listener : mEventListeners) {
-            listener.onChangedPipMode(value);
-        }
-    }
-
-    @Override
-    public void onEnteredVideoFullscreen() {
-        for (EventListener listener : mEventListeners) {
-            listener.onEnteredVideoFullscreen();
-        }
-    }
-
-    @Override
-    public void onExitedVideoFullscreen() {
-        for (EventListener listener : mEventListeners) {
-            listener.onExitedVideoFullscreen();
-        }
-    }
-
-    @Override
     public void play() {
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null) return;
-        tab.evaluateJavaScript("document.fullscreenElement.play();");
+        mMediaController.play();
     }
 
-    @Override
     public void pause() {
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null) return;
-        tab.evaluateJavaScript("document.fullscreenElement.pause();");
+        mMediaController.pause();
     }
 
-    @Override
     public void setPosition(float position) {
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null) return;
-        tab.evaluateJavaScript(
-                "document.fullscreenElement.currentTime=" + Float.toString(position) + ";");
+        mMediaController.setPosition(position);
     }
 
-    @Override
     public void setRelativePosition(float position) {
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null) return;
-        tab.evaluateJavaScript(
-                "document.fullscreenElement.currentTime+=" + Float.toString(position) + ";");
+        mMediaController.setRelativePosition(position);
     }
 
-    @Override
     public void setVolume(float value) {
-        if (value < 0.0f) {
-            value = 0.0f;
-        } else if (value > 1.0f) {
-            value = 1.0f;
-        }
-
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null) return;
-        tab.evaluateJavaScript("document.fullscreenElement.volume=" + Float.toString(value) + ";");
+        mMediaController.setVolume(value);
     }
 
-    @Override
     public void setRelativeVolume(float value) {
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null) return;
-        tab.evaluateJavaScript(
-                "volume = document.fullscreenElement.volume; volume = Math.min(1.0, Math.max(0.0, volume + "
-                + Float.toString(value) + ")); document.fullscreenElement.volume=volume;");
-    }
-
-    @Override
-    public void close() {}
-
-    @Override
-    public void onConnectionError(MojoException e) {}
-
-    public static class Factory implements InterfaceFactory<BananaRemoteControlEventDispatcher> {
-        public Factory() {}
-
-        @Override
-        public BananaRemoteControlEventDispatcher createImpl() {
-            RemoteControlClient.onStart();
-            return RemoteControlService.instance;
-        }
+        mMediaController.setRelativeVolume(value);
     }
 }
