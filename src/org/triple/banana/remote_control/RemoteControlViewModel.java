@@ -13,9 +13,14 @@ class RemoteControlViewModel {
     private static final String TAG = "RemoteControlViewModel";
     static class ReadonlyData {
         protected float mBrightness;
+        protected float mVolume;
 
         float getBrightness() {
             return mBrightness;
+        }
+
+        float getVolume() {
+            return mVolume;
         }
     }
 
@@ -28,6 +33,16 @@ class RemoteControlViewModel {
             }
             mBrightness = brightness;
         }
+
+        void setVolume(float volume) {
+            if (volume < 0.0f) {
+                volume = 0.0f;
+            } else if (volume > 1.0f) {
+                volume = 1.0f;
+            }
+            mVolume = volume;
+        }
+
         Data cloneData() {
             try {
                 Data clone = (Data) super.clone();

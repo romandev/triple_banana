@@ -13,6 +13,7 @@ import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaController;
 import org.triple.banana.media.MediaEventListener;
+import org.triple.banana.util.AudioUtil;
 
 public enum RemoteControlService implements RemoteControlView.Delegate {
     instance;
@@ -74,9 +75,15 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             mViewModel.getEditor().setBrightness(0.2f);
             mViewModel.commit();
         } else if (id == R.id.volume_down_button) {
-            mMediaController.setRelativeVolume(-0.1f);
+            mMediaController.setVolume(1.0f);
+            AudioUtil.setMediaVolume(0.1f);
+            mViewModel.getEditor().setVolume(0.1f);
+            mViewModel.commit();
         } else if (id == R.id.volume_up_button) {
-            mMediaController.setRelativeVolume(0.1f);
+            mMediaController.setVolume(1.0f);
+            AudioUtil.setMediaVolume(0.7f);
+            mViewModel.getEditor().setVolume(0.7f);
+            mViewModel.commit();
         } else if (id == R.id.rotate_button) {
             toggleOrientation();
         } else if (id == R.id.lock_button) {
