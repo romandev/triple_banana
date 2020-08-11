@@ -133,6 +133,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlService.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlView.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlViewImpl.java",
+    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlViewModel.java",
 
     # secure_dns
     "//triple_banana/src/org/triple/banana/secure_dns/SecureDnsNotificationManager.java",

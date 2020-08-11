@@ -17,5 +17,4 @@ interface RemoteControlView {
 
     void show(@NonNull Context context);
     void dismiss();
-    void setBrightness(float value);
 }

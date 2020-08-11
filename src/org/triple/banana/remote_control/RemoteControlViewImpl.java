@@ -18,7 +18,7 @@ import org.triple.banana.util.BrightnessUtil;
 
 import java.lang.ref.WeakReference;
 
-class RemoteControlViewImpl implements RemoteControlView {
+class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel.Listener {
     private final @NonNull WeakReference<Delegate> mDelegate;
     private final @NonNull View.OnClickListener mClickListener;
     private @Nullable Dialog mDialog;
@@ -45,7 +45,12 @@ class RemoteControlViewImpl implements RemoteControlView {
     }
 
     @Override
-    public void setBrightness(float value) {
+    public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
+        if (mDialog == null) return;
+        setBrightness(data.getBrightness());
+    }
+
+    private void setBrightness(float value) {
         if (mDialog == null) return;
         BrightnessUtil.setWindowBrightness(mDialog.getWindow(), value);
     }

@@ -13,12 +13,14 @@ import org.triple.banana.media.MediaEventListener;
 public enum RemoteControlService implements RemoteControlView.Delegate {
     instance;
 
-    private RemoteControlView mView = new RemoteControlViewImpl(this);
+    private RemoteControlViewModel mViewModel = new RemoteControlViewModel();
+    private RemoteControlViewImpl mView = new RemoteControlViewImpl(this);
     private boolean mWasPipMode;
 
     private MediaController mMediaController = MediaController.instance;
 
     public void start() {
+        mViewModel.addListener(mView);
         mMediaController.addEventListener(new MediaEventListener() {
             @Override
             public void onEnteredVideoFullscreen() {
@@ -62,9 +64,11 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         } else if (id == R.id.forward_button) {
             mMediaController.setRelativePosition(10.0f);
         } else if (id == R.id.brightness_up_button) {
-            mView.setBrightness(1.0f);
+            mViewModel.getEditor().setBrightness(1.0f);
+            mViewModel.commit();
         } else if (id == R.id.brightness_down_button) {
-            mView.setBrightness(0.2f);
+            mViewModel.getEditor().setBrightness(0.2f);
+            mViewModel.commit();
         } else if (id == R.id.volume_down_button) {
             mMediaController.setRelativeVolume(-0.1f);
         } else if (id == R.id.volume_up_button) {
