@@ -14,6 +14,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     instance;
 
     private RemoteControlView mView = new RemoteControlViewImpl(this);
+    private boolean mWasPipMode;
 
     private MediaController mMediaController = MediaController.instance;
 
@@ -25,7 +26,29 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
                 if (tab == null || tab.getContext() == null) return;
                 mView.show(tab.getContext());
             }
+
+            @Override
+            public void onExitedVideoFullscreen() {
+                mView.dismiss();
+            }
+
+            @Override
+            public void onChangedPipMode(boolean value) {
+                if (value) {
+                    mView.dismiss();
+                } else if (mWasPipMode) {
+                    onEnteredVideoFullscreen();
+                }
+                mWasPipMode = value;
+            }
         });
+    }
+
+    @Override
+    public void onCancel() {
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null || tab.getContext() == null) return;
+        tab.exitFullscreen();
     }
 
     @Override

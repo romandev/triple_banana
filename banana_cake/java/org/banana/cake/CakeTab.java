@@ -48,4 +48,10 @@ class CakeTab implements BananaTab {
         if (mTab == null) return null;
         return mTab.getContext();
     }
+
+    @Override
+    public void exitFullscreen() {
+        if (mTab == null || mTab.getWebContents() == null) return;
+        mTab.getWebContents().exitFullscreen();
+    }
 }

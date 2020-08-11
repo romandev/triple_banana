@@ -19,4 +19,5 @@ public interface BananaTab {
     String getUrl();
     void evaluateJavaScript(String script);
     Context getContext();
+    void exitFullscreen();
 }

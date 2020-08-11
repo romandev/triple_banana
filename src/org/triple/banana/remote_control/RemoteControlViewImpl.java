@@ -7,6 +7,7 @@ package org.triple.banana.remote_control;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.view.KeyEvent;
 import android.view.View;
 
 import androidx.annotation.NonNull;
@@ -53,6 +54,14 @@ class RemoteControlViewImpl implements RemoteControlView {
         if (mDialog != null) return;
 
         mDialog = new Dialog(context, R.style.Theme_Chromium_Activity_Fullscreen_Transparent);
+        mDialog.setCancelable(false);
+        mDialog.setOnKeyListener((dialog, keyCode, event) -> {
+            if (mDelegate.get() != null && keyCode == KeyEvent.KEYCODE_BACK) {
+                mDelegate.get().onCancel();
+                return true;
+            }
+            return false;
+        });
         mDialog.create();
         mDialog.setContentView(R.layout.mock_remote_control_view);
 

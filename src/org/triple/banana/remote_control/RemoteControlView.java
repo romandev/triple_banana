@@ -10,7 +10,10 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 interface RemoteControlView {
-    static interface Delegate { void onRemoteControlButtonClicked(int id); }
+    static interface Delegate {
+        void onCancel();
+        void onRemoteControlButtonClicked(int id);
+    }
 
     void show(@NonNull Context context);
     void dismiss();
