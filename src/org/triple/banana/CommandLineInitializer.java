@@ -34,5 +34,10 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
             BananaCommandLine.get().appendSwitchWithValue(
                     "enable-features", TextUtils.join(",", enableFeatures));
         }
+
+        if (!ExtensionFeatures.isEnabled(FeatureName.AUTOPLAY, true)) {
+            BananaCommandLine.get().appendSwitchWithValue(
+                    "autoplay-policy", "user-gesture-required");
+        }
     }
 }

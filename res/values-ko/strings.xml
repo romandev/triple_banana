@@ -13,6 +13,8 @@
     <string name="authentication_not_recognized">일치하지 않습니다</string>
     <string name="authentication_lockout">30초 후에 다시 시도하세요</string>
     <string name="authentication_lockout_permenent">락스크린에서 디바이스 인증 후 다시 시도하세요</string>
+    <string name="autoplay">미디어 자동재생</string>
+    <string name="autoplay_summary">사이트에서 미디어 콘텐츠를 자동재생하도록 허용합니다</string>
     <string name="background_play">백그라운드 재생</string>
     <string name="background_play_summary">탭이 활성화 상태가 아니거나 장치의 화면이 꺼져있을 때도 미디어를 재생하도록 합니다</string>
     <string name="banana_extension">Banana 확장 기능</string>
@@ -21,6 +23,7 @@
     <string name="discard">저장 안 함</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여 도구모음에 배치하세요</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
+    <string name="media_features">미디어 기능</string>
     <string name="reset">초기화</string>
     <string name="restart_message">Banana Browser를 다시 시작하면 변경사항이 적용됩니다</string>
     <string name="save">저장</string>

@@ -78,6 +78,13 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
+        final SwitchPreferenceCompat autoPlay =
+                (SwitchPreferenceCompat) findPreference(FeatureName.AUTOPLAY);
+        autoPlay.setOnPreferenceClickListener(preference -> {
+            showRestartDialog();
+            return true;
+        });
+
         final SwitchPreferenceCompat backgroundPlay =
                 (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
         boolean isVisible = wasSetByUser(FeatureName.BACKGROUND_PLAY);
@@ -146,6 +153,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
 
     public static class FeatureName {
         public static final String ADBLOCK = "feature_name_adblock";
+        public static final String AUTOPLAY = "feature_name_autoplay";
         public static final String BACKGROUND_PLAY = "feature_name_background_play";
         // bottom_toolbar_enabled preference value is referenced to enable bottom toolbar in
         // upstream. For sync with this value in triple banana, BOTTOM_TOOLBAR feature name has

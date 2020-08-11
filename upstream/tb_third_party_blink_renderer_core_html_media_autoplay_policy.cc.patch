@@ -1,0 +1,30 @@
+diff --git tb/third_party/blink/renderer/core/html/media/autoplay_policy.cc tb_diff/third_party/blink/renderer/core/html/media/autoplay_policy.cc
+--- tb/third_party/blink/renderer/core/html/media/autoplay_policy.cc
++++ tb_diff/third_party/blink/renderer/core/html/media/autoplay_policy.cc
+@@ -139,6 +139,12 @@ bool AutoplayPolicy::DocumentHasUserExceptionFlag(const Document& document) {
+ // static
+ bool AutoplayPolicy::DocumentShouldAutoplayMutedVideos(
+     const Document& document) {
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (ComputeLockPendingUserGestureRequired(document)) {
++    return false;
++  }
++#endif
++
+   return GetAutoplayPolicyForDocument(document) !=
+          AutoplayPolicy::Type::kNoUserGestureRequired;
+ }
+@@ -292,6 +298,13 @@ bool AutoplayPolicy::IsOrWillBeAutoplayingMutedInternal(bool muted) const {
+ }
+ 
+ bool AutoplayPolicy::IsLockedPendingUserGesture() const {
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (ComputeLockPendingUserGestureRequired(element_->GetDocument())) {
++    return !LocalFrame::HasTransientUserActivation(
++        element_->GetDocument().GetFrame());
++  }
++#endif
++
+   if (IsUsingDocumentUserActivationRequiredPolicy())
+     return !IsDocumentAllowedToPlay(element_->GetDocument());
+ 

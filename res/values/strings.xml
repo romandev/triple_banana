@@ -13,6 +13,8 @@
     <string name="authentication_not_recognized">Fingerprint not recognized. Try again</string>
     <string name="authentication_lockout">Please try after 30 seconds</string>
     <string name="authentication_lockout_permenent">Please try after unlock your device</string>
+    <string name="autoplay">Autoplay Media Contents</string>
+    <string name="autoplay_summary">Allow sites to autoplay media contents</string>
     <string name="background_play">Background Play</string>
     <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
     <string name="banana_extension">Banana Extension</string>
@@ -21,6 +23,7 @@
     <string name="discard">Discard</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
+    <string name="media_features">Media Features</string>
     <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
     <string name="save">Save</string>
