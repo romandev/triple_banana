@@ -5,6 +5,10 @@
 
 package org.triple.banana.remote_control;
 
+import android.app.Activity;
+import android.content.pm.ActivityInfo;
+import android.content.res.Configuration;
+
 import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaController;
@@ -74,11 +78,23 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         } else if (id == R.id.volume_up_button) {
             mMediaController.setRelativeVolume(0.1f);
         } else if (id == R.id.rotate_button) {
-            // NOTIMPLEMENTED
+            toggleOrientation();
         } else if (id == R.id.lock_button) {
             // NOTIMPLEMENTED
         } else if (id == R.id.seek_bar) {
             // NOTIMPLEMENTED
+        }
+    }
+
+    private void toggleOrientation() {
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null || tab.getContext() == null) return;
+        Activity activity = (Activity) tab.getContext();
+        int orientation = activity.getResources().getConfiguration().orientation;
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+        } else {
+            activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
     }
 }
