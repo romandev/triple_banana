@@ -115,6 +115,14 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             }
             return true;
         });
+
+        final SwitchPreferenceCompat translate =
+                (SwitchPreferenceCompat) findPreference(FeatureName.TRANSLATE);
+        translate.setChecked(isEnabled(FeatureName.TRANSLATE));
+        translate.setOnPreferenceChangeListener((preference, newValue) -> {
+            setEnabled(FeatureName.TRANSLATE, (boolean) newValue);
+            return true;
+        });
     }
 
     @Override
@@ -162,11 +170,17 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         public static final String SECURE_LOGIN = "feature_name_secure_login";
         public static final String SECURE_DNS = "feature_name_secure_dns";
         public static final String DARK_MODE = "feature_name_dark_mode";
+        public static final String TRANSLATE = "feature_name_translate";
     }
 
     public static void setEnabled(String feature, boolean value) {
         if (TextUtils.equals(feature, FeatureName.ADBLOCK)) {
             BananaFeatureFlags.get().setAdblockEnabled(value);
+            return;
+        }
+
+        if (TextUtils.equals(feature, FeatureName.TRANSLATE)) {
+            BananaFeatureFlags.get().setTranslateEnabled(value);
             return;
         }
 
@@ -187,6 +201,10 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     public static boolean isEnabled(String feature, boolean defaultValue) {
         if (TextUtils.equals(feature, FeatureName.ADBLOCK)) {
             return BananaFeatureFlags.get().isAdblockEnabled();
+        }
+
+        if (TextUtils.equals(feature, FeatureName.TRANSLATE)) {
+            return BananaFeatureFlags.get().isTranslateEnabled();
         }
 
         return BananaApplicationUtils.get().getSharedPreferences().getBoolean(

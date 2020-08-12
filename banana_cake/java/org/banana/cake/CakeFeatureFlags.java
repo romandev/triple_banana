@@ -7,9 +7,12 @@ package org.banana.cake;
 
 import org.banana.cake.interfaces.BananaFeatureFlags;
 
+import org.chromium.chrome.browser.preferences.Pref;
 import org.chromium.chrome.browser.profiles.Profile;
 import org.chromium.components.browser_ui.site_settings.WebsitePreferenceBridge;
 import org.chromium.components.content_settings.ContentSettingsType;
+import org.chromium.components.prefs.PrefService;
+import org.chromium.components.user_prefs.UserPrefs;
 
 public class CakeFeatureFlags implements BananaFeatureFlags {
     @Override
@@ -22,5 +25,19 @@ public class CakeFeatureFlags implements BananaFeatureFlags {
     public void setAdblockEnabled(boolean value) {
         WebsitePreferenceBridge.setCategoryEnabled(
                 Profile.getLastUsedRegularProfile(), ContentSettingsType.ADS, !value);
+    }
+
+    @Override
+    public boolean isTranslateEnabled() {
+        return getPrefService().getBoolean(Pref.OFFER_TRANSLATE_ENABLED);
+    }
+
+    @Override
+    public void setTranslateEnabled(boolean value) {
+        getPrefService().setBoolean(Pref.OFFER_TRANSLATE_ENABLED, value);
+    }
+
+    private static PrefService getPrefService() {
+        return UserPrefs.get(Profile.getLastUsedRegularProfile());
     }
 }

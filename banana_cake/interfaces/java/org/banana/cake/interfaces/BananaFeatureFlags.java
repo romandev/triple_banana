@@ -12,4 +12,6 @@ public interface BananaFeatureFlags {
 
     boolean isAdblockEnabled();
     void setAdblockEnabled(boolean value);
+    boolean isTranslateEnabled();
+    void setTranslateEnabled(boolean value);
 }
