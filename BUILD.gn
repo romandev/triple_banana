@@ -168,6 +168,7 @@ android_library("triple_banana_java") {
     # util
     "//triple_banana/src/org/triple/banana/util/AudioUtil.java",
     "//triple_banana/src/org/triple/banana/util/BrightnessUtil.java",
+    "//triple_banana/src/org/triple/banana/util/CountryCodeUtil.java",
     "//triple_banana/src/org/triple/banana/util/Unzip.java",
 
     # util

@@ -11,6 +11,7 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.triple.banana.util.CountryCodeUtil;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -66,9 +67,8 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
         final List<ButtonId> buttonIds = new ArrayList<>();
         for (ButtonId id : ButtonId.values()) buttonIds.add(id);
 
-        // FIXME: We need a way to check whether the user's device is India or not.
-        boolean isIndia = false;
-        if (isIndia) {
+        boolean isIndiaDevice = "IN".equals(CountryCodeUtil.getCountryCode());
+        if (isIndiaDevice) {
             Collections.swap(buttonIds, buttonIds.indexOf(ButtonId.SHARE),
                     buttonIds.indexOf(ButtonId.AT_ME_GAME));
         }
