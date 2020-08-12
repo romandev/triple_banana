@@ -13,6 +13,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentStore {
     static final String PREFERENCE_FILE_NAME = "toolbar_state";
@@ -61,8 +63,20 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
             e.printStackTrace();
         }
 
-        for (ButtonId id : ButtonId.values()) {
-            if (!arrayList.contains(id)) arrayList.add(id);
+        final List<ButtonId> buttonIds = new ArrayList<>();
+        for (ButtonId id : ButtonId.values()) buttonIds.add(id);
+
+        // FIXME: We need a way to check whether the user's device is India or not.
+        boolean isIndia = false;
+        if (isIndia) {
+            Collections.swap(buttonIds, buttonIds.indexOf(ButtonId.SHARE),
+                    buttonIds.indexOf(ButtonId.AT_ME_GAME));
+        }
+
+        for (ButtonId id : buttonIds) {
+            if (!arrayList.contains(id)) {
+                arrayList.add(id);
+            }
         }
 
         return arrayList;

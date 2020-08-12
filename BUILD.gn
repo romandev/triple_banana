@@ -210,6 +210,7 @@ android_library("triple_banana_java") {
 android_resources("triple_banana_resources") {
   sources = [
     "//triple_banana/res/drawable-v21/ic_fingerprint_black_36dp.xml",
+    "//triple_banana/res/drawable/atmegame_logo.xml",
     "//triple_banana/res/drawable/btn_done.xml",
     "//triple_banana/res/drawable/ic_add_black_24dp.xml",
     "//triple_banana/res/drawable/ic_add_secret_tab_black_24dp.xml",

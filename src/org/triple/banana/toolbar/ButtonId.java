@@ -7,6 +7,7 @@ package org.triple.banana.toolbar;
 
 import android.view.View;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.settings.ExtensionFeatures;
@@ -32,7 +33,8 @@ public enum ButtonId {
     ARCHIVE,
     PRINT,
     DARK_MODE,
-    TERMINATE;
+    TERMINATE,
+    AT_ME_GAME;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -69,6 +71,10 @@ public enum ButtonId {
         });
 
         sOnClickListeners.put(ButtonId.TERMINATE, v -> BananaToolbarManager.get().terminate());
+        sOnClickListeners.put(ButtonId.AT_ME_GAME,
+                v
+                -> BananaApplicationUtils.get().showInfoPage(
+                        "https://www.atmegame.com/?utm_source=Banana&utm_medium=Banana"));
     }
 
     public static int getImageResource(ButtonId id) {
@@ -127,6 +133,9 @@ public enum ButtonId {
                 break;
             case TERMINATE:
                 imageResource = R.drawable.ic_power_off_black;
+                break;
+            case AT_ME_GAME:
+                imageResource = R.drawable.atmegame_logo;
                 break;
         }
         return imageResource;
