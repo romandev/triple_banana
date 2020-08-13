@@ -9,4 +9,10 @@
         <item name="android:textColor">@color/chip_text_color_secondary</item>
         <item name="android:textSize">@dimen/text_size_button</item>
     </style>
+    <style name="Theme.Banana.Fullscreen.Transparent.Dialog" parent="Base.Theme.Chromium.Fullscreen">
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 </resources>

@@ -34,6 +34,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     @Override
     public void show(@NonNull Context context) {
         initializeDialogIfNeeded(context);
+        hideSystemUI();
         mDialog.show();
         setBrightness(BrightnessUtil.getSystemBrightness(mDialog.getContext()));
     }
@@ -55,10 +56,15 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         BrightnessUtil.setWindowBrightness(mDialog.getWindow(), value);
     }
 
+    private void hideSystemUI() {
+        if (mDialog == null) return;
+        mDialog.getWindow().getDecorView().setSystemUiVisibility(
+                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN);
+    }
+
     private void initializeDialogIfNeeded(@NonNull Context context) {
         if (mDialog != null) return;
-
-        mDialog = new Dialog(context, R.style.Theme_Chromium_Activity_Fullscreen_Transparent);
+        mDialog = new Dialog(context, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
         mDialog.setCancelable(false);
         mDialog.setOnKeyListener((dialog, keyCode, event) -> {
             if (mDelegate.get() != null && keyCode == KeyEvent.KEYCODE_BACK) {
