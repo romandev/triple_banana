@@ -7,9 +7,13 @@ package org.banana.cake;
 
 import android.content.Context;
 
+import androidx.annotation.NonNull;
+
+import org.banana.cake.interfaces.BananaMediaCommandProcessor;
 import org.banana.cake.interfaces.BananaTab;
 
 import org.chromium.chrome.browser.tab.Tab;
+import org.chromium.content_public.browser.MediaSession;
 import org.chromium.url.GURL;
 
 class CakeTab implements BananaTab {
@@ -53,5 +57,13 @@ class CakeTab implements BananaTab {
     public void exitFullscreen() {
         if (mTab == null || mTab.getWebContents() == null) return;
         mTab.getWebContents().exitFullscreen();
+    }
+
+    @Override
+    public @NonNull BananaMediaCommandProcessor getMediaCommandProcessor() {
+        if (mTab == null || mTab.getWebContents() == null) {
+            return new CakeMediaCommandProcessor(null);
+        }
+        return new CakeMediaCommandProcessor(MediaSession.fromWebContents(mTab.getWebContents()));
     }
 }

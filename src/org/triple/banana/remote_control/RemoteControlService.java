@@ -65,9 +65,9 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         } else if (id == R.id.pause_button) {
             mMediaController.pause();
         } else if (id == R.id.backward_button) {
-            mMediaController.setRelativePosition(-10.0f);
+            mMediaController.setRelativePosition(-10000);
         } else if (id == R.id.forward_button) {
-            mMediaController.setRelativePosition(10.0f);
+            mMediaController.setRelativePosition(10000);
         } else if (id == R.id.brightness_up_button) {
             mViewModel.getEditor().setBrightness(1.0f);
             mViewModel.commit();

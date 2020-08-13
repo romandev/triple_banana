@@ -7,6 +7,8 @@ package org.banana.cake.interfaces;
 
 import android.content.Context;
 
+import androidx.annotation.NonNull;
+
 import org.chromium.chrome.browser.tab.Tab;
 
 public interface BananaTab {
@@ -20,4 +22,6 @@ public interface BananaTab {
     void evaluateJavaScript(String script);
     Context getContext();
     void exitFullscreen();
+    @NonNull
+    BananaMediaCommandProcessor getMediaCommandProcessor();
 }
