@@ -43,6 +43,16 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     }
 
     @Override
+    public void registerApplicationStateListener(BananaApplicationStateListener listener) {
+        ApplicationStatus.registerApplicationStateListener(listener);
+    }
+
+    @Override
+    public void unregisterApplicationStateListener(BananaApplicationStateListener listener) {
+        ApplicationStatus.unregisterApplicationStateListener(listener);
+    }
+
+    @Override
     public void restart() {
         ApplicationLifetime.terminate(true);
     }

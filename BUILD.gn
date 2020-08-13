@@ -100,6 +100,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/authentication/KeyguardActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/SecurityLevelChecker.java",
 
+    # browser lock
+    "//triple_banana/src/org/triple/banana/lock/ApplicationStatusTracker.java",
+
     # base
     "//triple_banana/src/org/triple/banana/base/InterActivity.java",
 
