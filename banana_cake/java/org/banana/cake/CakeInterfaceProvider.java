@@ -9,6 +9,7 @@ import org.banana.cake.CakeApplicationUtils;
 import org.banana.cake.CakeCommandLine;
 import org.banana.cake.CakeDarkModeUtils;
 import org.banana.cake.CakeFeatureFlags;
+import org.banana.cake.CakePipController;
 import org.banana.cake.CakeTab;
 import org.banana.cake.CakeTabManager;
 import org.banana.cake.CakeToolbarManager;
@@ -17,6 +18,7 @@ import org.banana.cake.interfaces.BananaCommandLine;
 import org.banana.cake.interfaces.BananaDarkModeUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
+import org.banana.cake.interfaces.BananaPipController;
 import org.banana.cake.interfaces.BananaTab;
 import org.banana.cake.interfaces.BananaTabManager;
 import org.banana.cake.interfaces.BananaToolbarManager;
@@ -30,6 +32,8 @@ public class CakeInterfaceProvider {
         BananaInterfaceProvider.register(BananaFeatureFlags.class, CakeFeatureFlags::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaDarkModeUtils.class, CakeDarkModeUtils::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaPipController.class, CakePipController::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaTab.class, CakeTab::new);
         BananaInterfaceProvider.register(BananaTabManager.class, CakeTabManager::new,
