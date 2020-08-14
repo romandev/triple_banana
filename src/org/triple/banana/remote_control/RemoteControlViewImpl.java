@@ -74,7 +74,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
             return false;
         });
         mDialog.create();
-        mDialog.setContentView(R.layout.mock_remote_control_view);
+        mDialog.setContentView(R.layout.remote_control_view);
 
         mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.pause_button).setOnClickListener(mClickListener);
@@ -86,6 +86,6 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.volume_down_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.seek_bar).setOnClickListener(mClickListener);
+        mDialog.findViewById(R.id.time_seek_bar).setOnClickListener(mClickListener);
     }
 }

@@ -88,7 +88,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             toggleOrientation();
         } else if (id == R.id.lock_button) {
             // NOTIMPLEMENTED
-        } else if (id == R.id.seek_bar) {
+        } else if (id == R.id.time_seek_bar) {
             // NOTIMPLEMENTED
         }
     }

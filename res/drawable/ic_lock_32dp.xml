@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="32dp"
+    android:height="32dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+  <path
+      android:fillColor="@color/white"
+      android:pathData="M36,16h-2v-4c0,-5.52 -4.48,-10 -10,-10S14,6.48 14,12v4h-2c-2.21,0 -4,1.79 -4,4v20c0,2.21 1.79,4 4,4h24c2.21,0 4,-1.79 4,-4L40,20c0,-2.21 -1.79,-4 -4,-4zM24,34c-2.21,0 -4,-1.79 -4,-4s1.79,-4 4,-4 4,1.79 4,4 -1.79,4 -4,4zM30.2,16L17.8,16v-4c0,-3.42 2.78,-6.2 6.2,-6.2 3.42,0 6.2,2.78 6.2,6.2v4z"/>
+</vector>

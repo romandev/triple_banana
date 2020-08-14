@@ -8,9 +8,14 @@
     <color name="authentication_hint_color">#ffaaaaaa</color>
     <color name="authentication_title_color">#ff000000</color>
     <color name="authentication_warning_color">#f4511e</color>
+    <color name="banana_remote_control_background">#000000</color>
     <color name="cancel_text_color">#ff0099cc</color>
     <color name="candidate_icon_round_rect_stroke_color">#EEEEEE</color>
     <color name="candidate_icon_round_rect_stroke_dark_color">#AAAAAA</color>
+    <color name="colorWindowBackground">#F3DDDC</color>
+    <color name="current_time_color">#D7E82C</color>
+    <color name="progress_color">#FFFDC534</color>
     <color name="toolbar_modern_grey_background_color">#202124</color>
     <color name="toolbar_modern_grey_text_color">#3C4043</color>
+    <color name="white">#FFFFFF</color>
 </resources>

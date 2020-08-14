@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/remote_control_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/control_background">
+
+    <FrameLayout
+        android:id="@+id/control"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/margin_vertical"
+        android:layout_marginRight="@dimen/margin_horizontal"
+        android:layout_marginBottom="@dimen/margin_vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/lock_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_lock_outline_32dp" />
+
+            <ImageButton
+                android:id="@+id/close_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_close_32dp" />
+
+            <ImageButton
+                android:id="@+id/rotate_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/close_button"
+                android:src="@drawable/ic_rotate_32dp" />
+
+            <ImageButton
+                android:id="@+id/pip_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/rotate_button"
+                android:src="@drawable/ic_pip_32dp" />
+
+            <ImageButton
+                android:id="@+id/volume_down_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/pip_button"
+                android:src="@drawable/ic_volume_up_32dp" />
+
+            <ImageButton
+                android:id="@+id/volume_up_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/volume_down_button"
+                android:src="@drawable/ic_volume_up_32dp" />
+
+            <ImageButton
+                android:id="@+id/brightness_down_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/volume_up_button"
+                android:src="@drawable/ic_brightness_up_32dp" />
+
+            <ImageButton
+                android:id="@+id/brightness_up_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/brightness_down_button"
+                android:src="@drawable/ic_brightness_up_32dp" />
+
+            <ImageButton
+                android:id="@+id/pause_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_marginRight="@dimen/margin_option_button"
+                android:layout_toLeftOf="@id/brightness_up_button"
+                android:src="@drawable/ic_pause_48dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/middle_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageButton
+                android:id="@+id/play_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play_96dp" />
+
+            <ImageButton
+                android:id="@+id/backward_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_play_button"
+                android:layout_toLeftOf="@id/play_button"
+                android:src="@drawable/ic_rewind_48dp" />
+
+            <ImageButton
+                android:id="@+id/forward_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_play_button"
+                android:layout_toRightOf="@id/play_button"
+                android:src="@drawable/ic_forward_48dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bottom_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <ImageButton
+                android:id="@+id/mute_button"
+                style="@style/BananaMediaButtonTheme"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ic_mute_32dp" />
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:id="@+id/time_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toLeftOf="@id/time_layout"
+                android:layout_toRightOf="@id/mute_button"
+                android:progressTint="@color/progress_color"
+                android:thumbTint="@color/progress_color" />
+
+            <RelativeLayout
+                android:id="@+id/time_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/current_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="@color/current_time_color" />
+
+                <TextView
+                    android:id="@+id/time_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/current_time"
+                    android:text=" | "
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/time_bar"
+                    android:text="12:34"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </FrameLayout>
+</RelativeLayout>
