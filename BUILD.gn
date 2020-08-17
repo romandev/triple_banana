@@ -32,12 +32,8 @@ chrome_public_common_apk_or_module_tmpl("triple_banana") {
   shared_libraries = [ "//chrome/android:libchrome" ]
 
   is_modern = true
-  if (android_64bit_target_cpu) {
-    # FIXME(#323): We might have to support loading the native library directly
-    # from the apk (without extracting) by mmap() or the system linker.
-    load_library_from_apk = false
-    disable_library_rename = true
-  }
+  load_library_from_apk = false
+  disable_library_rename = true
 
   # The following write/read operations are required to convert number string to
   # integer because there is no conversion utility in GN side.
