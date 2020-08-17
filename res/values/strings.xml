@@ -18,6 +18,8 @@
     <string name="background_play">Background Play</string>
     <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
     <string name="banana_extension">Banana Extension</string>
+    <string name="browser_lock">Browser Lock</string>
+    <string name="browser_lock_summary">Authenticate user to use the browser</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>
     <string name="discard">Discard</string>

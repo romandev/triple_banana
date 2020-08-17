@@ -123,6 +123,15 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             setEnabled(FeatureName.TRANSLATE, (boolean) newValue);
             return true;
         });
+
+        final SwitchPreferenceCompat browserLock =
+                (SwitchPreferenceCompat) findPreference(FeatureName.BROWSER_LOCK);
+        browserLock.setChecked(isEnabled(FeatureName.BROWSER_LOCK));
+        browserLock.setOnPreferenceChangeListener((preference, newValue) -> {
+            showRestartDialog();
+            setEnabled(FeatureName.BROWSER_LOCK, (boolean) newValue);
+            return true;
+        });
     }
 
     @Override
@@ -171,6 +180,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         public static final String SECURE_DNS = "feature_name_secure_dns";
         public static final String DARK_MODE = "feature_name_dark_mode";
         public static final String TRANSLATE = "feature_name_translate";
+        public static final String BROWSER_LOCK = "feature_name_browser_lock";
     }
 
     public static void setEnabled(String feature, boolean value) {

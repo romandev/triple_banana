@@ -33,6 +33,11 @@
         android:title="@string/translate_button"
         android:summaryOn="@string/languages_offer_translate_switch"
         android:summaryOff="@string/text_off" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_browser_lock"
+        android:title="@string/browser_lock"
+        android:summaryOn="@string/browser_lock_summary"
+        android:summaryOff="@string/text_off" />
 
     <PreferenceCategory
         android:title="@string/media_features"/>
