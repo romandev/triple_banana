@@ -1,0 +1,27 @@
+diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.cc
+--- tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc
++++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.cc
+@@ -633,6 +633,11 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+     LocalFrame& frame = *window.GetFrame();
+     frame.GetChromeClient().EnterFullscreen(frame, options,
+                                             for_cross_process_descendant);
++#if defined(ENABLE_TRIPLE_BANANA)
++    if (IsA<HTMLVideoElement>(pending)) {
++      From(window).media_dispatcher_->OnEnteredVideoFullscreen();
++    }
++#endif
+ 
+     // After the first fullscreen request, the user activation should be
+     // consumed, and the following fullscreen requests should receive an error.
+@@ -882,6 +887,11 @@ void Fullscreen::DidExitFullscreen(Document& document) {
+   // If this is a response to an ExitFullscreen call then
+   // continue exiting. Otherwise call FullyExitFullscreen.
+   Fullscreen& fullscreen = From(*document.domWindow());
++#if defined(ENABLE_TRIPLE_BANANA)
++  Element* element = FullscreenElementFrom(document);
++  if (IsA<HTMLVideoElement>(element))
++    fullscreen.media_dispatcher_->OnExitedVideoFullscreen();
++#endif
+   PendingExits exits;
+   exits.swap(fullscreen.pending_exits_);
+   if (exits.IsEmpty()) {

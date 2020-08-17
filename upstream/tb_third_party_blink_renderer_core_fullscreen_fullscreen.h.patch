@@ -1,0 +1,26 @@
+diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.h tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.h
+--- tb/third_party/blink/renderer/core/fullscreen/fullscreen.h
++++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.h
+@@ -41,6 +41,10 @@
+ #include "third_party/blink/renderer/platform/wtf/deque.h"
+ #include "third_party/blink/renderer/platform/wtf/vector.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/interfaces.h"
++#endif
++
+ namespace blink {
+ 
+ class LocalDOMWindow;
+@@ -125,6 +129,11 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
+                                 Element* new_element,
+                                 RequestType new_request_type);
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  mojo::Remote<media::mojom::BananaMediaEventDispatcher> media_dispatcher_ =
++      AutoBind(media::mojom::BananaMediaEventDispatcher);
++#endif
++
+   // Stores the pending request, promise and the type for executing
+   // the asynchronous portion of the request.
+   class PendingRequest : public GarbageCollected<PendingRequest> {
