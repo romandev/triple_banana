@@ -12,7 +12,21 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.h tb_diff/th
  namespace blink {
  
  class LocalDOMWindow;
-@@ -125,6 +129,11 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
+@@ -85,6 +89,13 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
+       RequestType,
+       ScriptState* state = nullptr,
+       ExceptionState* exception_state = nullptr);
++#if defined(ENABLE_TRIPLE_BANANA)
++  static ScriptPromise RequestFullscreen(const FullscreenOptions*,
++                                         Element&,
++                                         RequestType,
++                                         ScriptState* state,
++                                         ExceptionState* exception_state);
++#endif
+ 
+   static void FullyExitFullscreen(Document&, bool ua_originated = false);
+   static ScriptPromise ExitFullscreen(Document&,
+@@ -125,6 +136,11 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
                                  Element* new_element,
                                  RequestType new_request_type);
  
