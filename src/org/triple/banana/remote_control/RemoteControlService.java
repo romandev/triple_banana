@@ -96,8 +96,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     @Override
     public void onVolumeChanged(float value) {
         mMediaController.setVolume(1.0f);
-        // FIXME(#552): Change the return type of getting media volume
-        float currentValue = 0.5f;
+        float currentValue = AudioUtil.getMediaVolume();
         AudioUtil.setMediaVolume(currentValue + value);
         mViewModel.getEditor().setVolume(currentValue + value);
         mViewModel.commit();

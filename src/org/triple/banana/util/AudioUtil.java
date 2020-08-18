@@ -16,10 +16,11 @@ public class AudioUtil {
         return (AudioManager) context.getSystemService(Context.AUDIO_SERVICE);
     }
 
-    public static int getMediaVolume() {
+    public static float getMediaVolume() {
         AudioManager am = getAudioManager();
         if (am == null) return 0;
-        return am.getStreamVolume(AudioManager.STREAM_MUSIC);
+        int maxVolume = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
+        return am.getStreamVolume(AudioManager.STREAM_MUSIC) / (float) maxVolume;
     }
 
     public static void setMediaVolume(float volume) {
