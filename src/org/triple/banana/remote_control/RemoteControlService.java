@@ -93,6 +93,26 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         }
     }
 
+    @Override
+    public void onVolumeChanged(float value) {
+        mMediaController.setVolume(1.0f);
+        // FIXME(#552): Change the return type of getting media volume
+        float currentValue = 0.5f;
+        AudioUtil.setMediaVolume(currentValue + value);
+        mViewModel.getEditor().setVolume(currentValue + value);
+        mViewModel.commit();
+    }
+
+    @Override
+    public void onBrightnessChanged(float value) {
+        float currentValue = mViewModel.getEditor().getBrightness();
+        mViewModel.getEditor().setBrightness(currentValue + value);
+        mViewModel.commit();
+    }
+
+    @Override
+    public void onPositionChanged(float value) {}
+
     private void toggleOrientation() {
         BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
         if (tab == null || tab.getContext() == null) return;

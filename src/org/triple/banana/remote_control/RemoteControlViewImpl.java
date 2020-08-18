@@ -21,6 +21,8 @@ import java.lang.ref.WeakReference;
 class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel.Listener {
     private final @NonNull WeakReference<Delegate> mDelegate;
     private final @NonNull View.OnClickListener mClickListener;
+    private final @NonNull RemoteControlGestureDetector mRemoteControlGestureDetector =
+            new RemoteControlGestureDetector();
     private @Nullable Dialog mDialog;
 
     RemoteControlViewImpl(RemoteControlView.Delegate delegate) {
@@ -43,6 +45,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     public void dismiss() {
         if (mDialog == null) return;
         mDialog.dismiss();
+        mRemoteControlGestureDetector.stopDetection();
     }
 
     @Override
@@ -87,5 +90,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.time_seek_bar).setOnClickListener(mClickListener);
+        mRemoteControlGestureDetector.startDetection(
+                mDialog.findViewById(R.id.remote_control_view), mDelegate.get());
     }
 }

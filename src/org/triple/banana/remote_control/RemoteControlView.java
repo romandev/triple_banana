@@ -10,7 +10,7 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 interface RemoteControlView {
-    static interface Delegate {
+    static interface Delegate extends RemoteControlGestureDetector.Callback {
         void onCancel();
         void onRemoteControlButtonClicked(int id);
     }

@@ -132,6 +132,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/remote_config/RemoteConfig.java",
 
     # remote_control
+    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlGestureDetector.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlService.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlView.java",
     "//triple_banana/src/org/triple/banana/remote_control/RemoteControlViewImpl.java",
