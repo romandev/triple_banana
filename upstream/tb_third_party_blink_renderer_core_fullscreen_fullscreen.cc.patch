@@ -8,7 +8,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  auto* video_element = pending.QuerySelector("video");
 +  if (video_element) {
-+    return RequestFullscreen(*video_element, options, request_type,
++    return RequestFullscreen(options, *video_element, request_type,
 +                             script_state, exception_state);
 +  }
 +  return RequestFullscreen(options, pending, request_type, script_state,
@@ -36,14 +36,30 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  
      // After the first fullscreen request, the user activation should be
      // consumed, and the following fullscreen requests should receive an error.
-@@ -882,6 +903,11 @@ void Fullscreen::DidExitFullscreen(Document& document) {
+@@ -862,6 +883,16 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
+     if (ua_originated) {
+       ContinueExitFullscreen(&doc, resolver, true /* resize */);
+     } else {
++#if defined(ENABLE_TRIPLE_BANANA)
++      // FIXME: We should check whether the remote control service is running.
++      if (IsA<HTMLVideoElement>(element)) {
++        // ScriptState::Scope scope(resolver->GetScriptState());
++        resolver->Reject(V8ThrowException::CreateTypeError(
++            resolver->GetScriptState()->GetIsolate(),
++            "Ignore the request to exit fullscreen"));
++        return promise;
++      }
++#endif
+       From(*top_level_doc.domWindow()).pending_exits_.push_back(resolver);
+       LocalFrame& frame = *doc.GetFrame();
+       frame.GetChromeClient().ExitFullscreen(frame);
+@@ -882,6 +913,10 @@ void Fullscreen::DidExitFullscreen(Document& document) {
    // If this is a response to an ExitFullscreen call then
    // continue exiting. Otherwise call FullyExitFullscreen.
    Fullscreen& fullscreen = From(*document.domWindow());
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  Element* element = FullscreenElementFrom(document);
-+  if (IsA<HTMLVideoElement>(element))
-+    fullscreen.media_dispatcher_->OnExitedVideoFullscreen();
++  // FIXME: We should check whether the remote control service is running.
++  fullscreen.media_dispatcher_->OnExitedVideoFullscreen();
 +#endif
    PendingExits exits;
    exits.swap(fullscreen.pending_exits_);

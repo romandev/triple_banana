@@ -12,14 +12,17 @@ diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_d
  namespace blink {
  
  static int g_frame_count = 0;
-@@ -2248,6 +2252,14 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
+@@ -2248,6 +2252,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
    if (!GetFrame())
      return;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
++  // FIXME: We should check whether the remote control service is running.
 +  if (GetFrame()->GetDocument()) {
-+    Element* element = Fullscreen::FullscreenElementFrom(*GetFrame()->GetDocument());
-+    if (IsA<HTMLVideoElement>(element) && Fullscreen::IsFullscreenElement(*element))
++    Element* element =
++        Fullscreen::FullscreenElementFrom(*GetFrame()->GetDocument());
++    if (IsA<HTMLVideoElement>(element) &&
++        Fullscreen::IsFullscreenElement(*element))
 +      return;
 +  }
 +#endif
