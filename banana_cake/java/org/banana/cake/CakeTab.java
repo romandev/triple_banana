@@ -6,8 +6,10 @@
 package org.banana.cake;
 
 import android.content.Context;
+import android.view.View;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import org.banana.cake.interfaces.BananaMediaCommandProcessor;
 import org.banana.cake.interfaces.BananaTab;
@@ -65,5 +67,11 @@ class CakeTab implements BananaTab {
             return new CakeMediaCommandProcessor(null);
         }
         return new CakeMediaCommandProcessor(MediaSession.fromWebContents(mTab.getWebContents()));
+    }
+
+    @Override
+    public @Nullable View getContentView() {
+        if (mTab == null) return null;
+        return mTab.getContentView();
     }
 }

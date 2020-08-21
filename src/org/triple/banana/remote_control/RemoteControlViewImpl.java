@@ -14,6 +14,7 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.util.BrightnessUtil;
 
@@ -62,8 +63,16 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
 
     private void hideSystemUI() {
         if (mDialog == null) return;
-        mDialog.getWindow().getDecorView().setSystemUiVisibility(
-                View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN);
+        int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        mDialog.getWindow().getDecorView().setSystemUiVisibility(flags);
+
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null || tab.getContext() == null) return;
+        final View contentView = tab.getContentView();
+        if (contentView == null) return;
+        contentView.setSystemUiVisibility(flags);
     }
 
     private void initializeDialogIfNeeded(@NonNull Context context) {
