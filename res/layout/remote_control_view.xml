@@ -48,7 +48,8 @@
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/rotate_button"
-                android:src="@drawable/ic_pip_32dp" />
+                android:src="@drawable/ic_pip_32dp"
+                android:visibility="gone" />
 
             <ImageButton
                 android:id="@+id/volume_down_button"

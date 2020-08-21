@@ -7,6 +7,7 @@ package org.triple.banana.remote_control;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
 
@@ -92,5 +93,11 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.time_seek_bar).setOnClickListener(mClickListener);
         mRemoteControlGestureDetector.startDetection(
                 mDialog.findViewById(R.id.remote_control_view), mDelegate.get());
+
+        // Pip mode button only visible on android 8.0 or higher.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            mDialog.findViewById(R.id.pip_button).setOnClickListener(mClickListener);
+            mDialog.findViewById(R.id.pip_button).setVisibility(View.VISIBLE);
+        }
     }
 }

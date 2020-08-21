@@ -15,6 +15,7 @@ import org.banana.cake.interfaces.BananaPipController;
 import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeActivity;
 import org.chromium.chrome.browser.media.PictureInPictureController;
+import org.chromium.content_public.browser.WebContents;
 
 class CakePipController implements BananaPipController {
     private final @Nullable PictureInPictureController mPipController;
@@ -27,11 +28,27 @@ class CakePipController implements BananaPipController {
         mPipController = new PictureInPictureController();
     }
 
+    private ChromeActivity getLastTrackedFocusedChromeActivity() {
+        Activity activity = ApplicationStatus.getLastTrackedFocusedActivity();
+        if (!(activity instanceof ChromeActivity)) return null;
+        return (ChromeActivity) activity;
+    }
+
     @Override
     public void attemptPictureInPictureForLastFocusedActivity() {
         if (mPipController == null) return;
-        Activity activity = ApplicationStatus.getLastTrackedFocusedActivity();
-        if (!(activity instanceof ChromeActivity)) return;
-        mPipController.attemptPictureInPicture((ChromeActivity) activity);
+        ChromeActivity activity = getLastTrackedFocusedChromeActivity();
+        if (activity == null) return;
+        mPipController.attemptPictureInPicture(activity);
+    }
+
+    @Override
+    public boolean isPictureInPictureAllowedForFullscreenVideo() {
+        if (mPipController == null) return false;
+        ChromeActivity activity = getLastTrackedFocusedChromeActivity();
+        if (activity == null || activity.getActivityTab() == null) return false;
+        WebContents webContents = activity.getActivityTab().getWebContents();
+        if (webContents == null) return false;
+        return webContents.isPictureInPictureAllowedForFullscreenVideo();
     }
 }

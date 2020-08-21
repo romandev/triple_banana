@@ -8,7 +8,10 @@ package org.triple.banana.remote_control;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.widget.Toast;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaPipController;
 import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaController;
@@ -90,6 +93,14 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             // NOTIMPLEMENTED
         } else if (id == R.id.time_seek_bar) {
             // NOTIMPLEMENTED
+        } else if (id == R.id.pip_button) {
+            if (BananaPipController.get().isPictureInPictureAllowedForFullscreenVideo()) {
+                BananaPipController.get().attemptPictureInPictureForLastFocusedActivity();
+            } else {
+                Toast.makeText(BananaApplicationUtils.get().getApplicationContext(),
+                             R.string.pip_not_supported, Toast.LENGTH_SHORT)
+                        .show();
+            }
         }
     }
 

@@ -14,4 +14,9 @@ public interface BananaPipController {
      * Attempt to enter Picture in Picture mode.
      */
     void attemptPictureInPictureForLastFocusedActivity();
+
+    /**
+     * Whether the WebContents is allowed to enter Picture-in-Picture
+     */
+    boolean isPictureInPictureAllowedForFullscreenVideo();
 }
