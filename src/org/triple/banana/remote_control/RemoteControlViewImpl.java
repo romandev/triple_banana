@@ -100,6 +100,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.time_seek_bar).setOnClickListener(mClickListener);
+        mDialog.findViewById(R.id.close_button).setOnClickListener(mClickListener);
         mRemoteControlGestureDetector.startDetection(
                 mDialog.findViewById(R.id.remote_control_view), mDelegate.get());
 
