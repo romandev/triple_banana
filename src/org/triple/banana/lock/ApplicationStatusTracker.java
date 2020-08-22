@@ -9,7 +9,9 @@ import android.app.Activity;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaApplicationUtils.BananaActivityState;
+import org.banana.cake.interfaces.BananaApplicationUtils.BananaActivityStateListener;
 import org.banana.cake.interfaces.BananaApplicationUtils.BananaApplicationState;
+import org.banana.cake.interfaces.BananaApplicationUtils.BananaApplicationStateListener;
 
 import java.util.HashSet;
 
@@ -27,6 +29,32 @@ public class ApplicationStatusTracker {
     private ApplicationStatus mCurrentStatus = ApplicationStatus.UNSPECIFIED;
     private Activity mLastTrackedActivity = null;
 
+    private BananaApplicationStateListener mApplicationStateListener = (state) -> {
+        ApplicationStatus newStatus = isApplicationInForeground(state)
+                ? ApplicationStatus.FOREGROUND
+                : ApplicationStatus.BACKGROUND;
+        if (newStatus != mCurrentStatus) {
+            mCurrentStatus = newStatus;
+            if (mCurrentStatus == ApplicationStatus.FOREGROUND) {
+                // In case of turning to foreground from background, if try to start activty, it
+                // doesn't work. So we just store value indicates notification is required, and
+                // when activity resumed, check this value and do something.
+                mNeedToNotify = true;
+            } else {
+                notifyListeners(mLastTrackedActivity, mCurrentStatus);
+            }
+        }
+    };
+    private BananaActivityStateListener mActivityStateListener = (activity, state) -> {
+        if (state == BananaActivityState.RESUMED && mNeedToNotify) {
+            mNeedToNotify = false;
+            assert mCurrentStatus == ApplicationStatus.FOREGROUND;
+            notifyListeners(activity, mCurrentStatus);
+        } else if (state == BananaActivityState.PAUSED) {
+            mLastTrackedActivity = activity;
+        }
+    };
+
     /**
      * Get ApplicationsStatusTracker singleton instance.
      * @return Instance of ApplicationStatusTracker
@@ -40,32 +68,13 @@ public class ApplicationStatusTracker {
     }
 
     public void start() {
-        BananaApplicationUtils.get().registerApplicationStateListener((state) -> {
-            ApplicationStatus newStatus = isApplicationInForeground(state)
-                    ? ApplicationStatus.FOREGROUND
-                    : ApplicationStatus.BACKGROUND;
-            if (newStatus != mCurrentStatus) {
-                mCurrentStatus = newStatus;
-                if (mCurrentStatus == ApplicationStatus.FOREGROUND) {
-                    // In case of turning to foreground from background, if try to start activty, it
-                    // doesn't work. So we just store value indicates notification is required, and
-                    // when activity resumed, check this value and do something.
-                    mNeedToNotify = true;
-                } else {
-                    notifyListeners(mLastTrackedActivity, mCurrentStatus);
-                }
-            }
-        });
+        BananaApplicationUtils.get().registerApplicationStateListener(mApplicationStateListener);
+        BananaApplicationUtils.get().registerStateListenerForAllActivities(mActivityStateListener);
+    }
 
-        BananaApplicationUtils.get().registerStateListenerForAllActivities((activity, state) -> {
-            if (state == BananaActivityState.RESUMED && mNeedToNotify) {
-                mNeedToNotify = false;
-                assert mCurrentStatus == ApplicationStatus.FOREGROUND;
-                notifyListeners(activity, mCurrentStatus);
-            } else if (state == BananaActivityState.PAUSED) {
-                mLastTrackedActivity = activity;
-            }
-        });
+    public void stop() {
+        BananaApplicationUtils.get().unregisterApplicationStateListener(mApplicationStateListener);
+        BananaApplicationUtils.get().unregisterActivityStateListener(mActivityStateListener);
     }
 
     /**

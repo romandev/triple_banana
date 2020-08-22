@@ -8,28 +8,38 @@ package org.triple.banana.lock;
 
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatus;
+import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatusListener;
 
 public class BrowserLock {
     private static boolean isAuthenticated = false;
-    public static void start() {
-        ApplicationStatusTracker.getInstance().addListener((lastActivity, status) -> {
-            if (status == ApplicationStatus.FOREGROUND) {
-                Authenticator.get().authenticate(result -> {
-                    // Currently, Callback is called twice when authentication done.(#546)
-                    // 1. In case of success : true, false
-                    // 2. In case of failure : false, false
-                    // So, we should ignore second callback which is always false.
-                    if (!result) {
-                        if (!isAuthenticated) {
-                            lastActivity.moveTaskToBack(true);
-                        } else {
-                            isAuthenticated = false;
-                        }
+
+    private static ApplicationStatusListener mListener = (lastActivity, status) -> {
+        if (status == ApplicationStatus.FOREGROUND) {
+            Authenticator.get().authenticate(result -> {
+                // Currently, Callback is called twice when authentication done.(#546)
+                // 1. In case of success : true, false
+                // 2. In case of failure : false, false
+                // So, we should ignore second callback which is always false.
+                if (!result) {
+                    if (!isAuthenticated) {
+                        lastActivity.moveTaskToBack(true);
                     } else {
-                        isAuthenticated = true;
+                        isAuthenticated = false;
                     }
-                });
-            }
-        });
+                } else {
+                    isAuthenticated = true;
+                }
+            });
+        }
+    };
+
+    public static void start() {
+        ApplicationStatusTracker.getInstance().start();
+        ApplicationStatusTracker.getInstance().addListener(mListener);
+    }
+
+    public static void stop() {
+        ApplicationStatusTracker.getInstance().stop();
+        ApplicationStatusTracker.getInstance().removeListener(mListener);
     }
 }

@@ -19,6 +19,7 @@ import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
+import org.triple.banana.lock.BrowserLock;
 import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.theme.DarkModeController;
@@ -128,8 +129,12 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
                 (SwitchPreferenceCompat) findPreference(FeatureName.BROWSER_LOCK);
         browserLock.setChecked(isEnabled(FeatureName.BROWSER_LOCK));
         browserLock.setOnPreferenceChangeListener((preference, newValue) -> {
-            showRestartDialog();
             setEnabled(FeatureName.BROWSER_LOCK, (boolean) newValue);
+            if ((boolean) newValue) {
+                BrowserLock.start();
+            } else {
+                BrowserLock.stop();
+            }
             return true;
         });
     }
