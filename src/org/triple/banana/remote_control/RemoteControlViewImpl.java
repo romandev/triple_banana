@@ -10,6 +10,7 @@ import android.content.Context;
 import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
+import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,6 +27,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     private final @NonNull RemoteControlGestureDetector mRemoteControlGestureDetector =
             new RemoteControlGestureDetector();
     private @Nullable Dialog mDialog;
+    private @Nullable ViewGroup mMainView;
 
     RemoteControlViewImpl(RemoteControlView.Delegate delegate) {
         mDelegate = new WeakReference<>(delegate);
@@ -54,6 +56,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
         if (mDialog == null) return;
         setBrightness(data.getBrightness());
+        showControls(data.getControlsVisibility());
     }
 
     private void setBrightness(float value) {
@@ -75,6 +78,22 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         contentView.setSystemUiVisibility(flags);
     }
 
+    private void showControls(boolean visible) {
+        if (mMainView == null) return;
+
+        if (visible) {
+            for (int i = 0; i < mMainView.getChildCount(); i++) {
+                if (mMainView.getChildAt(i).getVisibility() == View.INVISIBLE) {
+                    mMainView.getChildAt(i).setVisibility(View.VISIBLE);
+                }
+            }
+        } else {
+            for (int i = 0; i < mMainView.getChildCount(); i++) {
+                mMainView.getChildAt(i).setVisibility(View.INVISIBLE);
+            }
+        }
+    }
+
     private void initializeDialogIfNeeded(@NonNull Context context) {
         if (mDialog != null) return;
         mDialog = new Dialog(context, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
@@ -89,6 +108,9 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.create();
         mDialog.setContentView(R.layout.remote_control_view);
 
+        mMainView = mDialog.findViewById(R.id.remote_control_view);
+        mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
+
         mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.pause_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.backward_button).setOnClickListener(mClickListener);
@@ -101,8 +123,6 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.time_seek_bar).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.close_button).setOnClickListener(mClickListener);
-        mRemoteControlGestureDetector.startDetection(
-                mDialog.findViewById(R.id.remote_control_view), mDelegate.get());
 
         // Pip mode button only visible on android 8.0 or higher.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

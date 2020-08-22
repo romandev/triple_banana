@@ -23,10 +23,9 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
 
     public interface Callback {
         void onVolumeChanged(float value);
-
         void onBrightnessChanged(float value);
-
         void onPositionChanged(float value);
+        void onControlsStateChanged();
     }
 
     @Override
@@ -94,7 +93,9 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
 
                     @Override
                     public boolean onSingleTapConfirmed(MotionEvent e) {
-                        // FIXME(#555): Implement toggling control view
+                        if (mCallback != null) {
+                            mCallback.onControlsStateChanged();
+                        }
                         return false;
                     }
                 });

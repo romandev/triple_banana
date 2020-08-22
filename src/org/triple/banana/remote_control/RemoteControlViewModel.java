@@ -14,6 +14,7 @@ class RemoteControlViewModel {
     static class ReadonlyData {
         protected float mBrightness;
         protected float mVolume;
+        protected boolean mControlsVisibility;
 
         float getBrightness() {
             return mBrightness;
@@ -21,6 +22,10 @@ class RemoteControlViewModel {
 
         float getVolume() {
             return mVolume;
+        }
+
+        boolean getControlsVisibility() {
+            return mControlsVisibility;
         }
     }
 
@@ -41,6 +46,10 @@ class RemoteControlViewModel {
                 volume = 1.0f;
             }
             mVolume = volume;
+        }
+
+        void setControlsVisibility(boolean visibility) {
+            mControlsVisibility = visibility;
         }
 
         Data cloneData() {

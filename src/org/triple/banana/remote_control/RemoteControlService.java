@@ -136,4 +136,11 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             activity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
     }
+
+    @Override
+    public void onControlsStateChanged() {
+        boolean currentVisibility = mViewModel.getData().getControlsVisibility();
+        mViewModel.getEditor().setControlsVisibility(!currentVisibility);
+        mViewModel.commit();
+    }
 }
