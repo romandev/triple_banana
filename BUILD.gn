@@ -181,6 +181,7 @@ android_library("triple_banana_java") {
     "//triple_banana/modules/public/java/org/triple/banana/modules/InterfaceRegistrar.java",
   ]
   deps = [
+    ":androidx_biometric_java",
     ":triple_banana_resources",
     "//base:base_java",
     "//chrome/android:chrome_java",
@@ -375,4 +376,11 @@ android_resources("triple_banana_resources") {
 
 android_assets("triple_banana_assets") {
   sources = []
+}
+
+android_aar_prebuilt("androidx_biometric_java") {
+  aar_path = "android_deps/libs/androidx_biometric/androidx_biometric-1.0.1.aar"
+  info_path =
+      "android_deps/libs/androidx_biometric/androidx_biometric-1.0.1.info"
+  deps = [ "//third_party/android_deps:android_support_v7_appcompat_java" ]
 }
