@@ -75,6 +75,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
                 (SwitchPreferenceCompat) findPreference(FeatureName.DARK_MODE);
         darkMode.setChecked(DarkModeController.get().isDarkModeOn());
         darkMode.setOnPreferenceChangeListener((preference, newValue) -> {
+            BrowserLock.setExceptional(true);
             DarkModeController.get().toggle();
             return true;
         });

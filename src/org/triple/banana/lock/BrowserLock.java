@@ -12,9 +12,14 @@ import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatusListener
 
 public class BrowserLock {
     private static boolean isAuthenticated = false;
+    private static boolean isExceptional = false;
 
     private static ApplicationStatusListener mListener = (lastActivity, status) -> {
         if (status == ApplicationStatus.FOREGROUND) {
+            if (isExceptional) {
+                isExceptional = false;
+                return;
+            }
             Authenticator.get().authenticate(result -> {
                 // Currently, Callback is called twice when authentication done.(#546)
                 // 1. In case of success : true, false
@@ -41,5 +46,9 @@ public class BrowserLock {
     public static void stop() {
         ApplicationStatusTracker.getInstance().stop();
         ApplicationStatusTracker.getInstance().removeListener(mListener);
+    }
+
+    public static void setExceptional(boolean isException) {
+        isExceptional = isException;
     }
 }
