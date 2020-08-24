@@ -5,44 +5,36 @@
 
 package org.triple.banana.authentication;
 
-import static android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_LOCKOUT;
-import static android.hardware.biometrics.BiometricPrompt.BIOMETRIC_ERROR_LOCKOUT_PERMANENT;
+import static androidx.biometric.BiometricPrompt.ERROR_LOCKOUT;
+import static androidx.biometric.BiometricPrompt.ERROR_LOCKOUT_PERMANENT;
 
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
 import android.app.AlertDialog;
-import android.hardware.biometrics.BiometricPrompt;
-import android.os.Build;
 import android.os.Bundle;
-import android.os.CancellationSignal;
 import android.widget.LinearLayout;
+
+import androidx.biometric.BiometricPrompt;
+import androidx.biometric.BiometricPrompt.PromptInfo;
+import androidx.core.content.ContextCompat;
 
 import org.triple.banana.R;
 
-@SuppressLint("Override")
-@TargetApi(Build.VERSION_CODES.P)
 public class BiometricPromptActivity extends BaseActivity {
     private AlertDialog mLockoutDialog;
-    private CancellationSignal mCancellationSignal;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.P) {
-            finish();
-            return;
-        }
 
-        final BiometricPrompt prompt =
-                new BiometricPrompt.Builder(this)
+        final PromptInfo promptInfo =
+                new PromptInfo.Builder()
                         .setTitle(getResources().getString(R.string.authentication_title))
                         .setDescription(
                                 getResources().getString(R.string.authentication_description))
-                        .setNegativeButton(getResources().getText(android.R.string.cancel),
-                                getMainExecutor(), (dialogInterface, i) -> { handleResult(false); })
+                        .setNegativeButtonText(getResources().getText(android.R.string.cancel))
                         .build();
-        mCancellationSignal = new CancellationSignal();
-        prompt.authenticate(mCancellationSignal, getMainExecutor(), new AuthenticationCallback());
+        final BiometricPrompt prompt = new BiometricPrompt(
+                this, ContextCompat.getMainExecutor(this), new AuthenticationCallback());
+        prompt.authenticate(promptInfo);
     }
 
     @Override
@@ -52,10 +44,6 @@ public class BiometricPromptActivity extends BaseActivity {
     }
 
     private void handleResult(boolean result) {
-        if (mCancellationSignal != null) {
-            mCancellationSignal.cancel();
-            mCancellationSignal = null;
-        }
         if (mLockoutDialog != null && mLockoutDialog.isShowing()) {
             mLockoutDialog.dismiss();
         }
@@ -65,19 +53,15 @@ public class BiometricPromptActivity extends BaseActivity {
 
     private class AuthenticationCallback extends BiometricPrompt.AuthenticationCallback {
         @Override
-        @TargetApi(Build.VERSION_CODES.P)
         public void onAuthenticationError(int errorCode, CharSequence errString) {
-            if (errorCode == BIOMETRIC_ERROR_LOCKOUT_PERMANENT) {
+            if (errorCode == ERROR_LOCKOUT_PERMANENT) {
                 showLockout(getResources().getString(R.string.authentication_lockout_permenent));
-            } else if (errorCode == BIOMETRIC_ERROR_LOCKOUT) {
+            } else if (errorCode == ERROR_LOCKOUT) {
                 showLockout(getResources().getString(R.string.authentication_lockout));
             } else {
                 handleResult(false);
             }
         }
-
-        @Override
-        public void onAuthenticationHelp(int helpCode, CharSequence helpString) {}
 
         @Override
         public void onAuthenticationSucceeded(BiometricPrompt.AuthenticationResult result) {

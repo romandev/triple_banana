@@ -94,7 +94,6 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/authentication/BaseActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/BiometricPromptActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/FallbackBackend.java",
-    "//triple_banana/src/org/triple/banana/authentication/FingerprintManagerActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/KeyguardActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/SecurityLevelChecker.java",
 
@@ -201,6 +200,7 @@ android_library("triple_banana_java") {
     "//mojo/public/java/system:system_impl_java",
     "//services/service_manager/public/java:service_manager_java",
     "//services/service_manager/public/mojom:mojom_java",
+    "//third_party/android_deps:android_support_v7_appcompat_java",
     "//third_party/android_deps:androidx_appcompat_appcompat_java",
     "//third_party/android_deps:androidx_appcompat_appcompat_resources_java",
     "//third_party/android_deps:androidx_core_core_java",
@@ -250,7 +250,6 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/round_rect.xml",
     "//triple_banana/res/drawable/round_rect_dark.xml",
     "//triple_banana/res/drawable/toolbar_button_banana.xml",
-    "//triple_banana/res/layout/fingerprint_dialog.xml",
     "//triple_banana/res/layout/remote_control_view.xml",
     "//triple_banana/res/layout/toolbar_button.xml",
     "//triple_banana/res/layout/toolbar_edit_main.xml",

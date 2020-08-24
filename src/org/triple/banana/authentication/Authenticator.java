@@ -5,11 +5,13 @@
 
 package org.triple.banana.authentication;
 
+import static androidx.biometric.BiometricManager.BIOMETRIC_SUCCESS;
+
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.Build;
 
-import androidx.core.hardware.fingerprint.FingerprintManagerCompat;
+import androidx.biometric.BiometricManager;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 
@@ -40,11 +42,7 @@ public class Authenticator {
 
     private static Backend createBackend() {
         if (isBiometricsSecure()) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) {
-                return new ActivityBasedBackend(BiometricPromptActivity.class);
-            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                return new ActivityBasedBackend(FingerprintManagerActivity.class);
-            }
+            return new ActivityBasedBackend(BiometricPromptActivity.class);
         } else if (isKeyguardSecure()) {
             return new ActivityBasedBackend(KeyguardActivity.class);
         }
@@ -55,8 +53,7 @@ public class Authenticator {
     static boolean isBiometricsSecure() {
         Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return false;
-        return FingerprintManagerCompat.from(context).isHardwareDetected()
-                && FingerprintManagerCompat.from(context).hasEnrolledFingerprints();
+        return BiometricManager.from(context).canAuthenticate() == BIOMETRIC_SUCCESS;
     }
 
     static boolean isKeyguardSecure() {

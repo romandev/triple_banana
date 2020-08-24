@@ -5,17 +5,18 @@
 
 package org.triple.banana.base;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.fragment.app.FragmentActivity;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class InterActivity<Request, Response> extends Activity {
+public class InterActivity<Request, Response> extends FragmentActivity {
     public interface Callback<Response> { void onResponse(Response response); }
 
     private static final Map<Integer, Object> REQUEST_DATA = new HashMap<>();

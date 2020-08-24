@@ -10,7 +10,6 @@
     <string name="advanced_features">Advanced Features</string>
     <string name="authentication_title">Authentication</string>
     <string name="authentication_description">Scan your biometric data to sign-in\nyour credentials</string>
-    <string name="authentication_not_recognized">Fingerprint not recognized. Try again</string>
     <string name="authentication_lockout">Please try after 30 seconds</string>
     <string name="authentication_lockout_permenent">Please try after unlock your device</string>
     <string name="autoplay">Autoplay Media Contents</string>
