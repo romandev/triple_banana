@@ -10,8 +10,6 @@
     <string name="advanced_features">고급 기능</string>
     <string name="authentication_title">생체 인증</string>
     <string name="authentication_description">저장된 아이디/패스워드를 이용하려면\n생체인증을 진행하세요</string>
-    <string name="authentication_lockout">30초 후에 다시 시도하세요</string>
-    <string name="authentication_lockout_permenent">락스크린에서 디바이스 인증 후 다시 시도하세요</string>
     <string name="autoplay">미디어 자동재생</string>
     <string name="autoplay_summary">사이트에서 미디어 콘텐츠를 자동재생하도록 허용합니다</string>
     <string name="background_play">백그라운드 재생</string>

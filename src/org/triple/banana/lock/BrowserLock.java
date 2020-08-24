@@ -11,7 +11,6 @@ import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatusListener;
 
 public class BrowserLock {
-    private static boolean isAuthenticated = false;
     private static boolean isExceptional = false;
 
     private static ApplicationStatusListener mListener = (lastActivity, status) -> {
@@ -21,19 +20,7 @@ public class BrowserLock {
                 return;
             }
             Authenticator.get().authenticate(result -> {
-                // Currently, Callback is called twice when authentication done.(#546)
-                // 1. In case of success : true, false
-                // 2. In case of failure : false, false
-                // So, we should ignore second callback which is always false.
-                if (!result) {
-                    if (!isAuthenticated) {
-                        lastActivity.moveTaskToBack(true);
-                    } else {
-                        isAuthenticated = false;
-                    }
-                } else {
-                    isAuthenticated = true;
-                }
+                if (!result) lastActivity.moveTaskToBack(true);
             });
         }
     };

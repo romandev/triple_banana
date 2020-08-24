@@ -19,7 +19,7 @@ import androidx.core.content.ContextCompat;
 import org.triple.banana.R;
 
 public class BiometricPromptActivity extends BaseActivity {
-    private AlertDialog mLockoutDialog;
+    private AlertDialog mErrorDialog;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -40,56 +40,56 @@ public class BiometricPromptActivity extends BaseActivity {
     @Override
     public void onPause() {
         super.onPause();
-        handleResult(false);
-    }
-
-    private void handleResult(boolean result) {
-        if (mLockoutDialog != null && mLockoutDialog.isShowing()) {
-            mLockoutDialog.dismiss();
+        if (mErrorDialog != null && mErrorDialog.isShowing()) {
+            mErrorDialog.dismiss();
         }
-        handleCallback(result);
-        finish();
     }
 
     private class AuthenticationCallback extends BiometricPrompt.AuthenticationCallback {
         @Override
-        public void onAuthenticationError(int errorCode, CharSequence errString) {
-            if (errorCode == ERROR_LOCKOUT_PERMANENT) {
-                showLockout(getResources().getString(R.string.authentication_lockout_permenent));
-            } else if (errorCode == ERROR_LOCKOUT) {
-                showLockout(getResources().getString(R.string.authentication_lockout));
-            } else {
-                handleResult(false);
+        public void onAuthenticationError(int errorCode, CharSequence errorMessage) {
+            switch (errorCode) {
+                case ERROR_LOCKOUT_PERMANENT:
+                case ERROR_LOCKOUT:
+                    showErrorMessage(errorMessage);
+                    return;
             }
+
+            handleCallback(false);
+            finish();
         }
 
         @Override
         public void onAuthenticationSucceeded(BiometricPrompt.AuthenticationResult result) {
-            handleResult(true);
+            handleCallback(true);
+            finish();
         }
 
         @Override
         public void onAuthenticationFailed() {}
     }
 
-    private void showLockout(CharSequence lockoutString) {
-        if (mLockoutDialog == null) {
-            mLockoutDialog =
+    private void showErrorMessage(CharSequence errorMessage) {
+        if (mErrorDialog == null) {
+            mErrorDialog =
                     new AlertDialog
                             .Builder(this,
                                     android.R.style.Theme_DeviceDefault_Light_Dialog_NoActionBar)
                             .setTitle(getResources().getString(R.string.authentication_title))
                             .setPositiveButton(getResources().getString(android.R.string.ok),
-                                    (dialogInterface, i) -> { handleResult(false); })
+                                    (dialogInterface, i) -> {
+                                        handleCallback(false);
+                                        finish();
+                                    })
                             .setCancelable(false)
                             .create();
         }
 
-        if (!mLockoutDialog.isShowing()) {
-            mLockoutDialog.setMessage(lockoutString);
-            mLockoutDialog.show();
-            mLockoutDialog.getWindow().setLayout(
+        if (!mErrorDialog.isShowing()) {
+            mErrorDialog.getWindow().setLayout(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+            mErrorDialog.setMessage(errorMessage);
+            mErrorDialog.show();
         }
     }
 }
