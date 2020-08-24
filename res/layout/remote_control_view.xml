@@ -28,27 +28,27 @@
                 android:id="@+id/lock_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_lock_outline_32dp" />
+                android:src="@drawable/ic_lock" />
 
             <ImageButton
                 android:id="@+id/close_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_close_32dp" />
+                android:src="@drawable/ic_close" />
 
             <ImageButton
                 android:id="@+id/rotate_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/close_button"
-                android:src="@drawable/ic_rotate_32dp" />
+                android:src="@drawable/ic_rotate" />
 
             <ImageButton
                 android:id="@+id/pip_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/rotate_button"
-                android:src="@drawable/ic_pip_32dp"
+                android:src="@drawable/ic_pip"
                 android:visibility="gone" />
 
             <ImageButton
@@ -56,28 +56,28 @@
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/pip_button"
-                android:src="@drawable/ic_volume_up_32dp" />
+                android:src="@drawable/ic_volume_up" />
 
             <ImageButton
                 android:id="@+id/volume_up_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/volume_down_button"
-                android:src="@drawable/ic_volume_up_32dp" />
+                android:src="@drawable/ic_volume_up" />
 
             <ImageButton
                 android:id="@+id/brightness_down_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/volume_up_button"
-                android:src="@drawable/ic_brightness_up_32dp" />
+                android:src="@drawable/ic_brightness_up" />
 
             <ImageButton
                 android:id="@+id/brightness_up_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/brightness_down_button"
-                android:src="@drawable/ic_brightness_up_32dp" />
+                android:src="@drawable/ic_brightness_up" />
 
             <ImageButton
                 android:id="@+id/pause_button"
@@ -130,7 +130,7 @@
                 android:id="@+id/mute_button"
                 style="@style/BananaMediaButtonTheme"
                 android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_mute_32dp" />
+                android:src="@drawable/ic_mute" />
 
             <androidx.appcompat.widget.AppCompatSeekBar
                 android:id="@+id/time_seek_bar"

@@ -5,11 +5,11 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-    android:width="32dp"
-    android:height="32dp"
+    android:width="24dp"
+    android:height="24dp"
     android:viewportWidth="48"
     android:viewportHeight="48">
-  <path
-      android:fillColor="@color/white"
-      android:pathData="M38,12.83L35.17,10 24,21.17 12.83,10 10,12.83 21.17,24 10,35.17 12.83,38 24,26.83 35.17,38 38,35.17 26.83,24z"/>
+    <path
+        android:fillColor="@color/white"
+        android:pathData="M24,34c2.2,0 4,-1.8 4,-4s-1.8,-4 -4,-4 -4,1.8 -4,4 1.8,4 4,4zM36,16h-2v-4c0,-5.52 -4.48,-10 -10,-10S14,6.48 14,12v4h-2c-2.2,0 -4,1.8 -4,4v20c0,2.2 1.8,4 4,4h24c2.2,0 4,-1.8 4,-4L40,20c0,-2.2 -1.8,-4 -4,-4zM17.8,12c0,-3.42 2.78,-6.2 6.2,-6.2s6.2,2.78 6.2,6.2v4L17.8,16v-4zM36,40L12,40L12,20h24v20z" />
 </vector>
