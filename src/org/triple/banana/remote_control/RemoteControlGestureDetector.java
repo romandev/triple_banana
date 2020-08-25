@@ -70,7 +70,7 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
 
                         if (isMoveHorizontal) {
                             // FIXME(#557): Fix sensitivity for gesture detector
-                            float value = 0.0f;
+                            float value = distanceX * -0.001f;
                             mCallback.onPositionChanged(value);
                         } else {
                             // FIXME(#557): Fix sensitivity for gesture detector

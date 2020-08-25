@@ -14,6 +14,7 @@ class RemoteControlViewModel {
     static class ReadonlyData {
         protected float mBrightness;
         protected float mVolume;
+        protected float mPosition;
         protected boolean mControlsVisibility;
         protected boolean mIsLocked;
 
@@ -23,6 +24,10 @@ class RemoteControlViewModel {
 
         float getVolume() {
             return mVolume;
+        }
+
+        float getPosition() {
+            return mPosition;
         }
 
         boolean getControlsVisibility() {
@@ -51,6 +56,15 @@ class RemoteControlViewModel {
                 volume = 1.0f;
             }
             mVolume = volume;
+        }
+
+        void setPosition(float position) {
+            if (position < 0.0f) {
+                position = 0.0f;
+            } else if (position > 1.0f) {
+                position = 1.0f;
+            }
+            mPosition = position;
         }
 
         void setControlsVisibility(boolean visibility) {

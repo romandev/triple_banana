@@ -93,8 +93,6 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             boolean isLocked = mViewModel.getData().getIsLocked();
             mViewModel.getEditor().setIsLocked(!isLocked);
             mViewModel.commit();
-        } else if (id == R.id.time_seek_bar) {
-            // NOTIMPLEMENTED
         } else if (id == R.id.pip_button) {
             if (BananaPipController.get().isPictureInPictureAllowedForFullscreenVideo()) {
                 BananaPipController.get().attemptPictureInPictureForLastFocusedActivity();
@@ -129,7 +127,13 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     }
 
     @Override
-    public void onPositionChanged(float value) {}
+    public void onPositionChanged(float value) {
+        float position = mViewModel.getEditor().getPosition();
+        mViewModel.getEditor().setPosition(position + value);
+        mViewModel.commit();
+        // FIXME(#589): Need to fix seekTo operation of MediaSession
+        // mMediaController.setPosition(ms);
+    }
 
     private void toggleOrientation() {
         BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();

@@ -12,6 +12,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.SeekBar;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,6 +28,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     private final @NonNull View.OnClickListener mClickListener;
     private final @NonNull RemoteControlGestureDetector mRemoteControlGestureDetector =
             new RemoteControlGestureDetector();
+    private @Nullable SeekBar mTimeSeekBar;
     private @Nullable Dialog mDialog;
     private @Nullable ViewGroup mMainView;
 
@@ -58,6 +60,12 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         if (mDialog == null) return;
         setBrightness(data.getBrightness());
         showControls(data.getControlsVisibility(), data.getIsLocked());
+        setPosition(data.getPosition());
+    }
+
+    private void setPosition(float position) {
+        if (mDialog == null || mTimeSeekBar == null) return;
+        mTimeSeekBar.setProgress((int) (position * 100.0f));
     }
 
     private void setBrightness(float value) {
@@ -106,6 +114,24 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.setContentView(R.layout.remote_control_view);
 
         mMainView = mDialog.findViewById(R.id.remote_control_view);
+        mTimeSeekBar = mDialog.findViewById(R.id.time_seek_bar);
+        mTimeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+            private int mPreviousProgress;
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {}
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                mPreviousProgress = seekBar.getProgress();
+            }
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+                if (mDelegate.get() == null) return;
+                mDelegate.get().onPositionChanged(
+                        (seekBar.getProgress() - mPreviousProgress) / 100.0f);
+            }
+        });
         mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
 
         mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
@@ -118,7 +144,6 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.volume_down_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.time_seek_bar).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.close_button).setOnClickListener(mClickListener);
 
         // Pip mode button only visible on android 8.0 or higher.
