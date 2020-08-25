@@ -26,6 +26,8 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
         void onBrightnessChanged(float value);
         void onPositionChanged(float value);
         void onControlsStateChanged();
+        void onBackward();
+        void onForward();
     }
 
     @Override
@@ -80,8 +82,17 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
 
                     @Override
                     public boolean onDoubleTap(MotionEvent e) {
-                        // FIXME(#553): Implement forward and rewind when the user double-clicks the
-                        // screen
+                        if (mTargetView == null || mTargetView.get() == null || mCallback == null) {
+                            return false;
+                        }
+
+                        int width = mTargetView.get().getWidth();
+                        if (width / 2 > e.getX()) {
+                            mCallback.onBackward();
+                        } else {
+                            mCallback.onForward();
+                        }
+
                         return true;
                     }
 

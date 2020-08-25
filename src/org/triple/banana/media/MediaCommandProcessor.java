@@ -45,8 +45,8 @@ public enum MediaCommandProcessor {
         runMediaCommand("currentTime = " + Float.toString(value));
     }
 
-    public void setRelativePosition(float value) {
-        runMediaCommand("currentTime += " + Float.toString(value));
+    public void setRelativePosition(float ms) {
+        runMediaCommand("currentTime += " + Float.toString(ms));
     }
 
     public void setVolume(float value) {
