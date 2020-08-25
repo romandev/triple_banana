@@ -19,6 +19,7 @@ public class Authenticator {
     private static Authenticator sInstance;
     private Backend mAuthenticator;
     private Backend mFallback;
+    private Callback mCallback;
 
     public static interface Callback { void onResult(boolean result); }
 
@@ -33,6 +34,13 @@ public class Authenticator {
     public void authenticate(Callback callback) {
         mAuthenticator = createBackend();
         mAuthenticator.authenticate(callback);
+        mCallback = callback;
+    }
+
+    void authenticateWithKeyguardAsFallback() {
+        assert mCallback != null;
+        mAuthenticator = new ActivityBasedBackend(KeyguardActivity.class);
+        mAuthenticator.authenticate(mCallback);
     }
 
     public Authenticator setFallback(Backend fallback) {

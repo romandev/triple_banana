@@ -5,6 +5,7 @@
 
 package org.triple.banana.authentication;
 
+import static androidx.biometric.BiometricPrompt.ERROR_CANCELED;
 import static androidx.biometric.BiometricPrompt.ERROR_LOCKOUT;
 import static androidx.biometric.BiometricPrompt.ERROR_LOCKOUT_PERMANENT;
 
@@ -12,6 +13,7 @@ import android.app.AlertDialog;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import androidx.biometric.BiometricManager;
 import androidx.biometric.BiometricPrompt;
 import androidx.biometric.BiometricPrompt.PromptInfo;
 import androidx.core.content.ContextCompat;
@@ -49,6 +51,11 @@ public class BiometricPromptActivity extends BaseActivity {
         @Override
         public void onAuthenticationError(int errorCode, CharSequence errorMessage) {
             switch (errorCode) {
+                case ERROR_CANCELED:
+                    if (Authenticator.isKeyguardSecure()) {
+                        Authenticator.get().authenticateWithKeyguardAsFallback();
+                    }
+
                 case ERROR_LOCKOUT_PERMANENT:
                 case ERROR_LOCKOUT:
                     showErrorMessage(errorMessage);
