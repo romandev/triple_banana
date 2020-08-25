@@ -34,6 +34,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             public void onEnteredVideoFullscreen() {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
+                mViewModel.reset();
                 mView.show(tab.getContext());
             }
 

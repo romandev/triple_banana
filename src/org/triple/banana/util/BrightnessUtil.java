@@ -13,6 +13,7 @@ import android.view.WindowManager;
 
 public class BrightnessUtil {
     private static final String TAG = "BrightnessUtil";
+    public static final float SYSTEM_DEFAULT = -1.0f;
 
     public static float getSystemBrightness(Context context) {
         int brightness = 0;
@@ -33,7 +34,9 @@ public class BrightnessUtil {
     }
 
     public static void setWindowBrightness(Window window, float value) {
-        if (value < 0.0f) {
+        if (value == SYSTEM_DEFAULT) {
+            value = getSystemBrightness(window.getContext());
+        } else if (value < 0.0f) {
             value = 0.0f;
         } else if (value > 1.0f) {
             value = 1.0f;

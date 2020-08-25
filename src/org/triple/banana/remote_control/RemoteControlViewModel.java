@@ -7,6 +7,9 @@ package org.triple.banana.remote_control;
 
 import android.util.Log;
 
+import org.triple.banana.util.AudioUtil;
+import org.triple.banana.util.BrightnessUtil;
+
 import java.util.HashSet;
 
 class RemoteControlViewModel {
@@ -40,8 +43,16 @@ class RemoteControlViewModel {
     }
 
     static class Data extends ReadonlyData implements Cloneable {
+        void reset() {
+            setBrightness(BrightnessUtil.SYSTEM_DEFAULT);
+            setVolume(AudioUtil.getMediaVolume());
+            setControlsVisibility(true);
+            setIsLocked(false);
+            setPosition(0.0f);
+        }
+
         void setBrightness(float brightness) {
-            if (brightness < 0.0f) {
+            if (brightness != BrightnessUtil.SYSTEM_DEFAULT && brightness < 0.0f) {
                 brightness = 0.0f;
             } else if (brightness > 1.0f) {
                 brightness = 1.0f;
@@ -114,5 +125,10 @@ class RemoteControlViewModel {
         for (Listener listener : mListeners) {
             listener.onUpdate(mData);
         }
+    }
+
+    void reset() {
+        mEditor.reset();
+        commit();
     }
 }

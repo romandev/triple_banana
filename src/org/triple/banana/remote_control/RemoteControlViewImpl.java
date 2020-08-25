@@ -45,7 +45,9 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         initializeDialogIfNeeded(context);
         hideSystemUI();
         mDialog.show();
-        setBrightness(BrightnessUtil.getSystemBrightness(mDialog.getContext()));
+        if (mMainView != null && mDelegate.get() != null) {
+            mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
+        }
     }
 
     @Override
@@ -132,7 +134,6 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
                         (seekBar.getProgress() - mPreviousProgress) / 100.0f);
             }
         });
-        mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
 
         mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.pause_button).setOnClickListener(mClickListener);
