@@ -5,12 +5,23 @@
 
 package org.triple.banana.authentication;
 
+import android.os.Bundle;
+
+import org.triple.banana.R;
 import org.triple.banana.base.InterActivity;
 
 /**
  * BaseActivity
  */
-public class BaseActivity extends InterActivity<Object, Boolean> {
+public class BaseActivity extends InterActivity<Boolean /* background */, Boolean /* result */> {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Boolean isBackground = getRequestData();
+        if (Boolean.TRUE.equals(isBackground)) {
+            setContentView(R.layout.browser_lock_background);
+        }
+    }
     @Override
     public void finish() {
         super.finish();

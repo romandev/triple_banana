@@ -12,4 +12,9 @@ class FallbackBackend implements Backend {
     public void authenticate(Callback callback) {
         callback.onResult(false);
     }
+
+    @Override
+    public void authenticate(boolean isBackground, Callback callback) {
+        callback.onResult(false);
+    }
 }

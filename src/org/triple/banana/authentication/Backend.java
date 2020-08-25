@@ -7,4 +7,7 @@ package org.triple.banana.authentication;
 
 import org.triple.banana.authentication.Authenticator.Callback;
 
-public interface Backend { void authenticate(Callback callback); }
+public interface Backend {
+    void authenticate(Callback callback);
+    void authenticate(boolean isBackground, Callback callback);
+}

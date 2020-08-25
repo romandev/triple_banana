@@ -43,6 +43,11 @@ public class Authenticator {
         mAuthenticator.authenticate(mCallback);
     }
 
+    public void authenticateWithBackground(Callback callback) {
+        mAuthenticator = createBackend();
+        mAuthenticator.authenticate(true, callback);
+    }
+
     public Authenticator setFallback(Backend fallback) {
         mFallback = fallback;
         return this;

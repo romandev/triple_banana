@@ -19,7 +19,7 @@ public class BrowserLock {
                 isExceptional = false;
                 return;
             }
-            Authenticator.get().authenticate(result -> {
+            Authenticator.get().authenticateWithBackground(result -> {
                 if (!result) lastActivity.moveTaskToBack(true);
             });
         }

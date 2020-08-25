@@ -17,6 +17,11 @@ class ActivityBasedBackend implements Backend {
 
     @Override
     public void authenticate(Callback callback) {
-        InterActivity.start(mActivityClass, new Object(), callback::onResult);
+        authenticate(false, callback);
+    }
+
+    @Override
+    public void authenticate(boolean isBackground, Callback callback) {
+        InterActivity.start(mActivityClass, isBackground, callback::onResult);
     }
 }
