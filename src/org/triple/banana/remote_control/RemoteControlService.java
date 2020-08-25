@@ -34,8 +34,8 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             public void onEnteredVideoFullscreen() {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
-                mViewModel.reset();
                 mView.show(tab.getContext());
+                mViewModel.reset();
             }
 
             @Override
@@ -111,8 +111,8 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     public void onVolumeChanged(float value) {
         if (mViewModel.getData().getIsLocked()) return;
 
+        float currentValue = mViewModel.getEditor().getVolume();
         mMediaController.setVolume(1.0f);
-        float currentValue = AudioUtil.getMediaVolume();
         AudioUtil.setMediaVolume(currentValue + value);
         mViewModel.getEditor().setVolume(currentValue + value);
         mViewModel.commit();

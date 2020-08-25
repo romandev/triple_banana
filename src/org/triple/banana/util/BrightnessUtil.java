@@ -11,14 +11,16 @@ import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
+
 public class BrightnessUtil {
     private static final String TAG = "BrightnessUtil";
-    public static final float SYSTEM_DEFAULT = -1.0f;
 
-    public static float getSystemBrightness(Context context) {
+    public static float getSystemBrightness() {
         int brightness = 0;
 
         try {
+            Context context = BananaApplicationUtils.get().getApplicationContext();
             brightness = System.getInt(
                     context.getContentResolver(), System.SCREEN_BRIGHTNESS);
         } catch (Exception e) {
@@ -34,9 +36,7 @@ public class BrightnessUtil {
     }
 
     public static void setWindowBrightness(Window window, float value) {
-        if (value == SYSTEM_DEFAULT) {
-            value = getSystemBrightness(window.getContext());
-        } else if (value < 0.0f) {
+        if (value < 0.0f) {
             value = 0.0f;
         } else if (value > 1.0f) {
             value = 1.0f;

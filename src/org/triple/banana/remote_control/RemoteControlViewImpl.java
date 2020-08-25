@@ -60,6 +60,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     @Override
     public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
         if (mDialog == null) return;
+
         setBrightness(data.getBrightness());
         showControls(data.getControlsVisibility(), data.getIsLocked());
         setPosition(data.getPosition());

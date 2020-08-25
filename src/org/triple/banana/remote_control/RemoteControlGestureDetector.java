@@ -61,24 +61,18 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
                         if (mTargetView == null || mTargetView.get() == null || mCallback == null)
                             return false;
 
-                        // FIXME(#557): Fix sensitivity for gesture detector
-                        final boolean isMoveHorizontal =
-                                Math.abs(distanceX) + 1.0f > Math.abs(distanceY);
-
+                        boolean isHorizontal = Math.abs(distanceX) > Math.abs(distanceY);
                         int width = mTargetView.get().getWidth();
                         int height = mTargetView.get().getHeight();
 
-                        if (isMoveHorizontal) {
-                            // FIXME(#557): Fix sensitivity for gesture detector
-                            float value = distanceX * -0.001f;
-                            mCallback.onPositionChanged(value);
+                        if (isHorizontal) {
+                            mCallback.onPositionChanged(-distanceX / width);
                         } else {
-                            // FIXME(#557): Fix sensitivity for gesture detector
-                            float value = distanceY * 0.001f;
-                            if (width / 2 < e1.getX())
-                                mCallback.onBrightnessChanged(value);
-                            else
-                                mCallback.onVolumeChanged(value);
+                            if (width / 2 < e1.getX()) {
+                                mCallback.onBrightnessChanged(distanceY / height);
+                            } else {
+                                mCallback.onVolumeChanged(distanceY / height);
+                            }
                         }
 
                         return true;

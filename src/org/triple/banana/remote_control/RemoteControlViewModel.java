@@ -44,7 +44,7 @@ class RemoteControlViewModel {
 
     static class Data extends ReadonlyData implements Cloneable {
         void reset() {
-            setBrightness(BrightnessUtil.SYSTEM_DEFAULT);
+            setBrightness(BrightnessUtil.getSystemBrightness());
             setVolume(AudioUtil.getMediaVolume());
             setControlsVisibility(true);
             setIsLocked(false);
@@ -52,7 +52,7 @@ class RemoteControlViewModel {
         }
 
         void setBrightness(float brightness) {
-            if (brightness != BrightnessUtil.SYSTEM_DEFAULT && brightness < 0.0f) {
+            if (brightness < 0.0f) {
                 brightness = 0.0f;
             } else if (brightness > 1.0f) {
                 brightness = 1.0f;
