@@ -32,19 +32,21 @@ public enum MediaCommandProcessor {
     }
 
     public void play() {
-        getCommandProcessor().play();
+        // FIXME(#535): If the autoplay feature is disabled, then this operation is not working
+        // because the play() in JavaScript is blocked because of user gesture required.
+        runMediaCommand("play()");
     }
 
     public void pause() {
-        getCommandProcessor().pause();
+        runMediaCommand("pause()");
     }
 
-    public void setPosition(long ms) {
-        getCommandProcessor().setPosition(ms);
+    public void setPosition(float value) {
+        runMediaCommand("currentTime = " + Float.toString(value));
     }
 
-    public void setRelativePosition(long ms) {
-        getCommandProcessor().setRelativePosition(ms);
+    public void setRelativePosition(float value) {
+        runMediaCommand("currentTime += " + Float.toString(value));
     }
 
     public void setVolume(float value) {
