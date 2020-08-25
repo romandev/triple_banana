@@ -15,6 +15,7 @@ class RemoteControlViewModel {
         protected float mBrightness;
         protected float mVolume;
         protected boolean mControlsVisibility;
+        protected boolean mIsLocked;
 
         float getBrightness() {
             return mBrightness;
@@ -26,6 +27,10 @@ class RemoteControlViewModel {
 
         boolean getControlsVisibility() {
             return mControlsVisibility;
+        }
+
+        boolean getIsLocked() {
+            return mIsLocked;
         }
     }
 
@@ -50,6 +55,10 @@ class RemoteControlViewModel {
 
         void setControlsVisibility(boolean visibility) {
             mControlsVisibility = visibility;
+        }
+
+        void setIsLocked(boolean isLocked) {
+            mIsLocked = isLocked;
         }
 
         Data cloneData() {

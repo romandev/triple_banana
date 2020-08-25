@@ -10,6 +10,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/control_background">
 
+    <ImageButton
+        android:id="@+id/lock_button"
+        style="@style/BananaMediaButtonTheme"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/ic_lock" />
+
     <FrameLayout
         android:id="@+id/control"
         android:layout_width="match_parent"
@@ -23,12 +29,6 @@
             android:id="@+id/top_control"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <ImageButton
-                android:id="@+id/lock_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_lock" />
 
             <ImageButton
                 android:id="@+id/close_button"

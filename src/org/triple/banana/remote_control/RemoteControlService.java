@@ -90,7 +90,9 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         } else if (id == R.id.rotate_button) {
             toggleOrientation();
         } else if (id == R.id.lock_button) {
-            // NOTIMPLEMENTED
+            boolean isLocked = mViewModel.getData().getIsLocked();
+            mViewModel.getEditor().setIsLocked(!isLocked);
+            mViewModel.commit();
         } else if (id == R.id.time_seek_bar) {
             // NOTIMPLEMENTED
         } else if (id == R.id.pip_button) {
@@ -108,6 +110,8 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
 
     @Override
     public void onVolumeChanged(float value) {
+        if (mViewModel.getData().getIsLocked()) return;
+
         mMediaController.setVolume(1.0f);
         float currentValue = AudioUtil.getMediaVolume();
         AudioUtil.setMediaVolume(currentValue + value);
@@ -117,6 +121,8 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
 
     @Override
     public void onBrightnessChanged(float value) {
+        if (mViewModel.getData().getIsLocked()) return;
+
         float currentValue = mViewModel.getEditor().getBrightness();
         mViewModel.getEditor().setBrightness(currentValue + value);
         mViewModel.commit();

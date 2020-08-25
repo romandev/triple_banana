@@ -11,6 +11,7 @@ import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -56,7 +57,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
         if (mDialog == null) return;
         setBrightness(data.getBrightness());
-        showControls(data.getControlsVisibility());
+        showControls(data.getControlsVisibility(), data.getIsLocked());
     }
 
     private void setBrightness(float value) {
@@ -78,20 +79,16 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         contentView.setSystemUiVisibility(flags);
     }
 
-    private void showControls(boolean visible) {
+    private void showControls(boolean controlsVisibility, boolean isLocked) {
         if (mMainView == null) return;
 
-        if (visible) {
-            for (int i = 0; i < mMainView.getChildCount(); i++) {
-                if (mMainView.getChildAt(i).getVisibility() == View.INVISIBLE) {
-                    mMainView.getChildAt(i).setVisibility(View.VISIBLE);
-                }
-            }
-        } else {
-            for (int i = 0; i < mMainView.getChildCount(); i++) {
-                mMainView.getChildAt(i).setVisibility(View.INVISIBLE);
-            }
-        }
+        final ViewGroup controls = mMainView.findViewById(R.id.control);
+        final ImageButton lockButton = mMainView.findViewById(R.id.lock_button);
+        if (controls == null || lockButton == null) return;
+
+        controls.setVisibility(controlsVisibility && !isLocked ? View.VISIBLE : View.INVISIBLE);
+        lockButton.setVisibility(controlsVisibility ? View.VISIBLE : View.INVISIBLE);
+        lockButton.setImageResource(isLocked ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
     }
 
     private void initializeDialogIfNeeded(@NonNull Context context) {
