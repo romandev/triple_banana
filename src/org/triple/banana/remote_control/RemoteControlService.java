@@ -104,6 +104,11 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             }
         } else if (id == R.id.close_button) {
             onCancel();
+        } else if (id == R.id.mute_button) {
+            boolean isVolumeMuted = mViewModel.getData().getIsVolumeMuted();
+            AudioUtil.setMediaVolumeMuted(!isVolumeMuted);
+            mViewModel.getEditor().setIsVolumeMuted(!isVolumeMuted);
+            mViewModel.commit();
         }
     }
 
@@ -123,6 +128,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         mViewModel.getEditor().setControlsVisibility(false);
         mViewModel.getEditor().setVolumeControlVisibility(true);
         mViewModel.getEditor().setVolume(currentValue + value);
+        mViewModel.getEditor().setIsVolumeMuted(false);
         mViewModel.commit();
     }
 

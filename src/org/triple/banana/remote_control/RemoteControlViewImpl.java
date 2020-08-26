@@ -62,7 +62,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         if (mDialog == null) return;
         updateBrightness(data.getBrightnessControlVisibility(), data.getBrightness());
         updateVolumeUI(data.getVolumeControlVisibility(), data.getVolume());
-        showControls(data.getControlsVisibility(), data.getIsLocked());
+        showControls(data.getControlsVisibility(), data.getIsLocked(), data.getIsVolumeMuted());
         setPosition(data.getPosition());
     }
 
@@ -110,16 +110,18 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         contentView.setSystemUiVisibility(flags);
     }
 
-    private void showControls(boolean controlsVisibility, boolean isLocked) {
+    private void showControls(boolean controlsVisibility, boolean isLocked, boolean isVolumeMuted) {
         if (mMainView == null) return;
 
         final ViewGroup controls = mMainView.findViewById(R.id.control);
         final ImageButton lockButton = mMainView.findViewById(R.id.lock_button);
-        if (controls == null || lockButton == null) return;
+        final ImageButton muteButton = mMainView.findViewById(R.id.mute_button);
+        if (controls == null || lockButton == null || muteButton == null) return;
 
         controls.setVisibility(controlsVisibility && !isLocked ? View.VISIBLE : View.INVISIBLE);
         lockButton.setVisibility(controlsVisibility ? View.VISIBLE : View.INVISIBLE);
         lockButton.setImageResource(isLocked ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
+        muteButton.setImageResource(isVolumeMuted ? R.drawable.ic_volume_up : R.drawable.ic_mute);
     }
 
     private void initializeDialogIfNeeded(@NonNull Context context) {
@@ -167,6 +169,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.close_button).setOnClickListener(mClickListener);
+        mDialog.findViewById(R.id.mute_button).setOnClickListener(mClickListener);
 
         // Pip mode button only visible on android 8.0 or higher.
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {

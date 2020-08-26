@@ -18,6 +18,7 @@ class RemoteControlViewModel {
         protected float mBrightness;
         protected float mVolume;
         protected float mPosition;
+        protected boolean mIsVolumeMuted;
         protected boolean mControlsVisibility;
         protected boolean mIsLocked;
         protected boolean mVolumeControlVisibility;
@@ -33,6 +34,10 @@ class RemoteControlViewModel {
 
         float getPosition() {
             return mPosition;
+        }
+
+        boolean getIsVolumeMuted() {
+            return mIsVolumeMuted;
         }
 
         boolean getControlsVisibility() {
@@ -59,6 +64,7 @@ class RemoteControlViewModel {
             setControlsVisibility(true);
             setIsLocked(false);
             setPosition(0.0f);
+            setIsVolumeMuted(AudioUtil.isMediaVolumeMuted());
         }
 
         void setBrightness(float brightness) {
@@ -86,6 +92,10 @@ class RemoteControlViewModel {
                 position = 1.0f;
             }
             mPosition = position;
+        }
+
+        void setIsVolumeMuted(boolean isVolumeMuted) {
+            mIsVolumeMuted = isVolumeMuted;
         }
 
         void setControlsVisibility(boolean visibility) {

@@ -7,6 +7,7 @@ package org.triple.banana.util;
 
 import android.content.Context;
 import android.media.AudioManager;
+import android.os.Build;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 
@@ -33,5 +34,26 @@ public class AudioUtil {
         }
         int maxVolume = am.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
         am.setStreamVolume(AudioManager.STREAM_MUSIC, (int) (maxVolume * volume), 0 /* flag */);
+    }
+
+    public static boolean isMediaVolumeMuted() {
+        AudioManager am = getAudioManager();
+        if (am == null) return false;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            return am.isStreamMute(AudioManager.STREAM_MUSIC);
+        } else {
+            return am.getStreamVolume(AudioManager.STREAM_MUSIC) == 0;
+        }
+    }
+
+    public static void setMediaVolumeMuted(boolean isMuted) {
+        AudioManager am = getAudioManager();
+        if (am == null) return;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            am.adjustStreamVolume(AudioManager.STREAM_MUSIC,
+                    isMuted ? AudioManager.ADJUST_MUTE : AudioManager.ADJUST_UNMUTE, 0);
+        } else {
+            am.setStreamMute(AudioManager.STREAM_MUSIC, isMuted);
+        }
     }
 }
