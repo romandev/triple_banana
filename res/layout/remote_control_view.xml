@@ -30,12 +30,14 @@
             android:translationX="-70dp"
             android:translationY="-110dp" />
 
-        <SeekBar
+        <androidx.appcompat.widget.AppCompatSeekBar
             android:id="@+id/brightness_seek_bar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:max="100"
             android:min="0"
+            android:progressTint="@color/progress_color"
+            android:thumb="@android:color/transparent"
             android:rotation="270"
             android:translationX="-70dp" />
     </FrameLayout>
@@ -55,12 +57,14 @@
             android:translationX="70dp"
             android:translationY="-110dp" />
 
-        <SeekBar
+        <androidx.appcompat.widget.AppCompatSeekBar
             android:id="@+id/volume_seek_bar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:max="100"
             android:min="0"
+            android:progressTint="@color/progress_color"
+            android:thumb="@android:color/transparent"
             android:rotation="270"
             android:translationX="70dp" />
     </FrameLayout>
