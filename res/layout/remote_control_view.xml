@@ -17,6 +17,55 @@
         android:src="@drawable/ic_lock" />
 
     <FrameLayout
+        android:id="@+id/brightness_layout"
+        android:layout_width="@dimen/vertical_seek_bar_length"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_brightness_up"
+            android:translationX="-70dp"
+            android:translationY="-110dp" />
+
+        <SeekBar
+            android:id="@+id/brightness_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:min="0"
+            android:rotation="270"
+            android:translationX="-70dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/volume_layout"
+        android:layout_width="@dimen/vertical_seek_bar_length"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_volume_up"
+            android:translationX="70dp"
+            android:translationY="-110dp" />
+
+        <SeekBar
+            android:id="@+id/volume_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:max="100"
+            android:min="0"
+            android:rotation="270"
+            android:translationX="70dp" />
+    </FrameLayout>
+
+    <FrameLayout
         android:id="@+id/control"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

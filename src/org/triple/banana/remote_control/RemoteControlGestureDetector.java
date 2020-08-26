@@ -28,11 +28,18 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
         void onControlsStateChanged();
         void onBackward();
         void onForward();
+        void onTouchUpEvent();
     }
 
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
-        return mGestureDetectorCompat.onTouchEvent(motionEvent);
+        if (mGestureDetectorCompat.onTouchEvent(motionEvent)) {
+            return true;
+        } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
+            mCallback.onTouchUpEvent();
+        }
+
+        return false;
     }
 
     public void stopDetection() {
@@ -70,7 +77,7 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
                         if (isHorizontal) {
                             mCallback.onPositionChanged(-distanceX / width);
                         } else {
-                            if (width / 2 < e1.getX()) {
+                            if (width / 2 > e1.getX()) {
                                 mCallback.onBrightnessChanged(distanceY / height);
                             } else {
                                 mCallback.onVolumeChanged(distanceY / height);

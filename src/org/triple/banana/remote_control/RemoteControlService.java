@@ -114,6 +114,8 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         float currentValue = mViewModel.getEditor().getVolume();
         mMediaController.setVolume(1.0f);
         AudioUtil.setMediaVolume(currentValue + value);
+        mViewModel.getEditor().setControlsVisibility(false);
+        mViewModel.getEditor().setVolumeControlVisibility(true);
         mViewModel.getEditor().setVolume(currentValue + value);
         mViewModel.commit();
     }
@@ -123,6 +125,8 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         if (mViewModel.getData().getIsLocked()) return;
 
         float currentValue = mViewModel.getEditor().getBrightness();
+        mViewModel.getEditor().setControlsVisibility(false);
+        mViewModel.getEditor().setBrightnessControlVisibility(true);
         mViewModel.getEditor().setBrightness(currentValue + value);
         mViewModel.commit();
     }
@@ -130,6 +134,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     @Override
     public void onPositionChanged(float value) {
         float position = mViewModel.getEditor().getPosition();
+        mViewModel.getEditor().setControlsVisibility(true);
         mViewModel.getEditor().setPosition(position + value);
         mViewModel.commit();
         // FIXME(#589): Need to fix seekTo operation of MediaSession
@@ -167,5 +172,12 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         if (mViewModel.getData().getIsLocked()) return;
 
         mMediaController.setRelativePosition(10.0f);
+    }
+
+    @Override
+    public void onTouchUpEvent() {
+        mViewModel.getEditor().setBrightnessControlVisibility(false);
+        mViewModel.getEditor().setVolumeControlVisibility(false);
+        mViewModel.commit();
     }
 }

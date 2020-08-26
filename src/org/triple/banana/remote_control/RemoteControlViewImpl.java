@@ -60,8 +60,8 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     @Override
     public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
         if (mDialog == null) return;
-
-        setBrightness(data.getBrightness());
+        updateBrightness(data.getBrightnessControlVisibility(), data.getBrightness());
+        updateVolumeUI(data.getVolumeControlVisibility(), data.getVolume());
         showControls(data.getControlsVisibility(), data.getIsLocked());
         setPosition(data.getPosition());
     }
@@ -71,9 +71,29 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mTimeSeekBar.setProgress((int) (position * 100.0f));
     }
 
-    private void setBrightness(float value) {
+    private void updateVolumeUI(boolean visibility, float value) {
+        if (mDialog == null) return;
+
+        ViewGroup volumeLayout = mMainView.findViewById(R.id.volume_layout);
+        if (volumeLayout == null) return;
+        volumeLayout.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
+
+        SeekBar volumeSeekBar = volumeLayout.findViewById(R.id.volume_seek_bar);
+        if (volumeSeekBar == null) return;
+        volumeSeekBar.setProgress((int) (value * 100.0f));
+    }
+
+    private void updateBrightness(boolean visibility, float value) {
         if (mDialog == null) return;
         BrightnessUtil.setWindowBrightness(mDialog.getWindow(), value);
+
+        ViewGroup brightnessLayout = mMainView.findViewById(R.id.brightness_layout);
+        if (brightnessLayout == null) return;
+        brightnessLayout.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
+
+        SeekBar brightnessSeekBar = brightnessLayout.findViewById(R.id.brightness_seek_bar);
+        if (brightnessSeekBar == null) return;
+        brightnessSeekBar.setProgress((int) (value * 100.0f));
     }
 
     private void hideSystemUI() {

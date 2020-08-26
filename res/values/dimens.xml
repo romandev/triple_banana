@@ -14,5 +14,6 @@
     <dimen name="margin_play_button">20dp</dimen>
     <dimen name="margin_vertical">10dp</dimen>
     <dimen name="option_button_length">48dp</dimen>
+    <dimen name="vertical_seek_bar_length">200dp</dimen>
     <dimen name="text_size_button">8sp</dimen>
 </resources>
