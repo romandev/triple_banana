@@ -16,10 +16,18 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import java.lang.ref.WeakReference;
 
 public class RemoteControlGestureDetector implements View.OnTouchListener {
-    final static String TAG = "RemoteControlGestureDetector";
+    private static enum GestureType {
+        UNKNOWN,
+        VOLUME_CHANGED,
+        BRIGHTNESS_CHANGED,
+        POSITION_CHANGED
+    }
+
+    private final static String TAG = "RemoteControlGestureDetector";
     private GestureDetectorCompat mGestureDetectorCompat;
     private Callback mCallback;
     private WeakReference<View> mTargetView;
+    private GestureType mCurrentGesture;
 
     public interface Callback {
         void onVolumeChanged(float value);
@@ -28,7 +36,6 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
         void onControlsStateChanged();
         void onBackward();
         void onForward();
-        void onTouchUpEvent();
     }
 
     @Override
@@ -36,7 +43,20 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
         if (mGestureDetectorCompat.onTouchEvent(motionEvent)) {
             return true;
         } else if (motionEvent.getAction() == MotionEvent.ACTION_UP) {
-            mCallback.onTouchUpEvent();
+            switch (mCurrentGesture) {
+                case UNKNOWN:
+                    break;
+                case VOLUME_CHANGED:
+                    mCallback.onVolumeChanged(0.0f /* isFinished */);
+                    break;
+                case BRIGHTNESS_CHANGED:
+                    mCallback.onBrightnessChanged(0.0f /* isFinished */);
+                    break;
+                case POSITION_CHANGED:
+                    mCallback.onPositionChanged(0.0f /* isFinished */);
+                    break;
+            }
+            mCurrentGesture = GestureType.UNKNOWN;
         }
 
         return false;
@@ -54,6 +74,7 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
         mTargetView.get().setOnTouchListener(this);
         mCallback = callback;
         mGestureDetectorCompat = createGestureDetectorCompat();
+        mCurrentGesture = GestureType.UNKNOWN;
     }
 
     private GestureDetectorCompat createGestureDetectorCompat() {
@@ -75,12 +96,31 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
                         int height = mTargetView.get().getHeight();
 
                         if (isHorizontal) {
-                            mCallback.onPositionChanged(-distanceX / width);
+                            if (Math.abs(distanceX) == 0.0f) return false;
+
+                            if (mCurrentGesture == GestureType.UNKNOWN) {
+                                mCurrentGesture = GestureType.POSITION_CHANGED;
+                            }
+                            if (mCurrentGesture == GestureType.POSITION_CHANGED) {
+                                mCallback.onPositionChanged(-distanceX / width);
+                            }
                         } else {
+                            if (Math.abs(distanceY) == 0.0f) return false;
+
                             if (width / 2 > e1.getX()) {
-                                mCallback.onBrightnessChanged(distanceY / height);
+                                if (mCurrentGesture == GestureType.UNKNOWN) {
+                                    mCurrentGesture = GestureType.BRIGHTNESS_CHANGED;
+                                }
+                                if (mCurrentGesture == GestureType.BRIGHTNESS_CHANGED) {
+                                    mCallback.onBrightnessChanged(distanceY / height);
+                                }
                             } else {
-                                mCallback.onVolumeChanged(distanceY / height);
+                                if (mCurrentGesture == GestureType.UNKNOWN) {
+                                    mCurrentGesture = GestureType.VOLUME_CHANGED;
+                                }
+                                if (mCurrentGesture == GestureType.VOLUME_CHANGED) {
+                                    mCallback.onVolumeChanged(distanceY / height);
+                                }
                             }
                         }
 

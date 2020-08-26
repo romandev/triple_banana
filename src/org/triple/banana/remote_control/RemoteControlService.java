@@ -111,6 +111,12 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     public void onVolumeChanged(float value) {
         if (mViewModel.getData().getIsLocked()) return;
 
+        if (value == 0.0f /* isFinished */) {
+            mViewModel.getEditor().setVolumeControlVisibility(false);
+            mViewModel.commit();
+            return;
+        }
+
         float currentValue = mViewModel.getEditor().getVolume();
         mMediaController.setVolume(1.0f);
         AudioUtil.setMediaVolume(currentValue + value);
@@ -123,6 +129,12 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     @Override
     public void onBrightnessChanged(float value) {
         if (mViewModel.getData().getIsLocked()) return;
+
+        if (value == 0.0f /* isFinished */) {
+            mViewModel.getEditor().setBrightnessControlVisibility(false);
+            mViewModel.commit();
+            return;
+        }
 
         float currentValue = mViewModel.getEditor().getBrightness();
         mViewModel.getEditor().setControlsVisibility(false);
@@ -172,12 +184,5 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         if (mViewModel.getData().getIsLocked()) return;
 
         mMediaController.setRelativePosition(10.0f);
-    }
-
-    @Override
-    public void onTouchUpEvent() {
-        mViewModel.getEditor().setBrightnessControlVisibility(false);
-        mViewModel.getEditor().setVolumeControlVisibility(false);
-        mViewModel.commit();
     }
 }
