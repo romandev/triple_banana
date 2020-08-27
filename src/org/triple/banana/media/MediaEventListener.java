@@ -10,6 +10,16 @@ package org.triple.banana.media;
  */
 public interface MediaEventListener {
     /**
+     * Called when the media's play state is changed.
+     */
+    default void onPlayStateChanged(MediaPlayState state) {}
+
+    /**
+     * Called when the currentTime or duration is changed.
+     */
+    default void onTimeUpdate(double currentTime, double duration) {}
+
+    /**
      * Called when entered or exited the pip mode.
      */
     default void onChangedPipMode(boolean value) {}

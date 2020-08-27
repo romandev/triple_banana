@@ -6,6 +6,7 @@
 package org.triple.banana.media;
 
 import org.triple.banana.media.mojom.BananaMediaEventDispatcher;
+import org.triple.banana.media.mojom.BananaPlayState;
 
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
@@ -23,6 +24,34 @@ public enum MediaEventDispatcher implements BananaMediaEventDispatcher {
 
     public void removeEventListener(MediaEventListener listener) {
         mListeners.remove(listener);
+    }
+
+    @Override
+    public void onPlayStateChanged(int bananaState) {
+        MediaPlayState state;
+        switch (bananaState) {
+            case BananaPlayState.PLAYING:
+                state = MediaPlayState.PLAYING;
+                break;
+            case BananaPlayState.WAITING:
+                state = MediaPlayState.WAITING;
+                break;
+
+            case BananaPlayState.PAUSED:
+            default:
+                state = MediaPlayState.PAUSED;
+        }
+
+        for (MediaEventListener listener : mListeners) {
+            listener.onPlayStateChanged(state);
+        }
+    }
+
+    @Override
+    public void onTimeUpdate(double currentTime, double duration) {
+        for (MediaEventListener listener : mListeners) {
+            listener.onTimeUpdate(currentTime, duration);
+        }
     }
 
     @Override

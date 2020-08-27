@@ -1,0 +1,43 @@
+diff --git tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
+--- tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
++++ tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
+@@ -1745,6 +1745,11 @@ void MediaControlsImpl::OnFocusIn() {
+ void MediaControlsImpl::OnTimeUpdate() {
+   UpdateTimeIndicators(true /* suppress_aria */);
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  media_dispatcher_->OnTimeUpdate(MediaElement().currentTime(),
++                                  MediaElement().duration());
++#endif
++
+   // 'timeupdate' might be called in a paused state. The controls should not
+   // become transparent in that case.
+   if (MediaElement().paused()) {
+@@ -1790,11 +1795,17 @@ void MediaControlsImpl::OnPlay() {
+ }
+ 
+ void MediaControlsImpl::OnPlaying() {
++#if defined(ENABLE_TRIPLE_BANANA)
++  media_dispatcher_->OnPlayStateChanged(media::mojom::BananaPlayState::PLAYING);
++#endif
+   StartHideMediaControlsTimer();
+   UpdateCSSClassFromState();
+ }
+ 
+ void MediaControlsImpl::OnPause() {
++#if defined(ENABLE_TRIPLE_BANANA)
++  media_dispatcher_->OnPlayStateChanged(media::mojom::BananaPlayState::PAUSED);
++#endif
+   UpdatePlayState();
+   UpdateTimeIndicators();
+   MakeOpaque();
+@@ -2117,6 +2128,9 @@ MediaControlOverflowMenuButtonElement& MediaControlsImpl::OverflowButton() {
+ }
+ 
+ void MediaControlsImpl::OnWaiting() {
++#if defined(ENABLE_TRIPLE_BANANA)
++  media_dispatcher_->OnPlayStateChanged(media::mojom::BananaPlayState::WAITING);
++#endif
+   UpdateCSSClassFromState();
+ }
+ 

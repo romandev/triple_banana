@@ -1,0 +1,26 @@
+diff --git tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.h tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.h
+--- tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.h
++++ tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.h
+@@ -34,6 +34,10 @@
+ #include "third_party/blink/renderer/modules/modules_export.h"
+ #include "third_party/blink/renderer/platform/timer.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/interfaces.h"
++#endif
++
+ namespace blink {
+ 
+ class Event;
+@@ -426,6 +430,11 @@ class MODULES_EXPORT MediaControlsImpl final : public HTMLDivElement,
+ 
+   Member<MediaControlsTextTrackManager> text_track_manager_;
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  mojo::Remote<media::mojom::BananaMediaEventDispatcher> media_dispatcher_ =
++      AutoBind(media::mojom::BananaMediaEventDispatcher);
++#endif
++
+   bool is_test_mode_ = false;
+ 
+   DISALLOW_COPY_AND_ASSIGN(MediaControlsImpl);
