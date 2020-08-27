@@ -110,7 +110,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         contentView.setSystemUiVisibility(flags);
     }
 
-    private void showControls(boolean controlsVisibility, boolean isLocked, boolean isVolumeMuted) {
+    private void showControls(boolean controlsVisibility, boolean isLocked, boolean isMuted) {
         if (mMainView == null) return;
 
         final ViewGroup controls = mMainView.findViewById(R.id.control);
@@ -121,7 +121,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         controls.setVisibility(controlsVisibility && !isLocked ? View.VISIBLE : View.INVISIBLE);
         lockButton.setVisibility(controlsVisibility ? View.VISIBLE : View.INVISIBLE);
         lockButton.setImageResource(isLocked ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
-        muteButton.setImageResource(isVolumeMuted ? R.drawable.ic_volume_up : R.drawable.ic_mute);
+        muteButton.setImageResource(isMuted ? R.drawable.ic_mute : R.drawable.ic_volume_up);
     }
 
     private void initializeDialogIfNeeded(@NonNull Context context) {
