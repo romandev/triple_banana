@@ -16,6 +16,7 @@ import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaController;
 import org.triple.banana.media.MediaEventListener;
+import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.AudioUtil;
 
 public enum RemoteControlService implements RemoteControlView.Delegate {
@@ -30,6 +31,12 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     public void start() {
         mViewModel.addListener(mView);
         mMediaController.addEventListener(new MediaEventListener() {
+            @Override
+            public void onPlayStateChanged(MediaPlayState state) {
+                mViewModel.getEditor().setPlayState(state);
+                mViewModel.commit();
+            }
+
             @Override
             public void onEnteredVideoFullscreen() {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
@@ -65,9 +72,11 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     @Override
     public void onRemoteControlButtonClicked(int id) {
         if (id == R.id.play_button) {
-            mMediaController.play();
-        } else if (id == R.id.pause_button) {
-            mMediaController.pause();
+            if (mViewModel.getEditor().getPlayState() == MediaPlayState.PAUSED) {
+                mMediaController.play();
+            } else {
+                mMediaController.pause();
+            }
         } else if (id == R.id.backward_button) {
             onBackward();
         } else if (id == R.id.forward_button) {

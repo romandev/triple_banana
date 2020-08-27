@@ -12,6 +12,7 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 import android.widget.SeekBar;
 
 import androidx.annotation.NonNull;
@@ -19,6 +20,7 @@ import androidx.annotation.Nullable;
 
 import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
+import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.BrightnessUtil;
 
 import java.lang.ref.WeakReference;
@@ -64,6 +66,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         updateVolumeUI(data.getVolumeControlVisibility(), data.getVolume());
         showControls(data.getControlsVisibility(), data.getIsLocked(), data.getIsVolumeMuted());
         setPosition(data.getPosition());
+        setPlayState(data.getPlayState());
     }
 
     private void setPosition(float position) {
@@ -124,6 +127,30 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         muteButton.setImageResource(isMuted ? R.drawable.ic_mute : R.drawable.ic_volume_up);
     }
 
+    private void setPlayState(MediaPlayState state) {
+        final ViewGroup middleControl = mMainView.findViewById(R.id.middle_control);
+        final ImageButton playButton = mMainView.findViewById(R.id.play_button);
+        final ProgressBar waitingProgressBar = mMainView.findViewById(R.id.waiting_progress_bar);
+
+        if (middleControl == null || playButton == null || waitingProgressBar == null) return;
+        switch (state) {
+            case PLAYING:
+                middleControl.setVisibility(View.VISIBLE);
+                waitingProgressBar.setVisibility(View.INVISIBLE);
+                playButton.setImageResource(R.drawable.ic_pause);
+                break;
+            case PAUSED:
+                middleControl.setVisibility(View.VISIBLE);
+                waitingProgressBar.setVisibility(View.INVISIBLE);
+                playButton.setImageResource(R.drawable.ic_play);
+                break;
+            case WAITING:
+                middleControl.setVisibility(View.INVISIBLE);
+                waitingProgressBar.setVisibility(View.VISIBLE);
+                break;
+        }
+    }
+
     private void initializeDialogIfNeeded(@NonNull Context context) {
         if (mDialog != null) return;
         mDialog = new Dialog(context, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
@@ -159,7 +186,6 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         });
 
         mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.pause_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.backward_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.forward_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.brightness_up_button).setOnClickListener(mClickListener);

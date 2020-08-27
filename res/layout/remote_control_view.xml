@@ -16,6 +16,14 @@
         android:layout_alignParentLeft="true"
         android:src="@drawable/ic_lock" />
 
+    <ProgressBar
+        android:id="@+id/waiting_progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerInParent="true"
+        android:indeterminateTint="@color/progress_color" />
+
     <FrameLayout
         android:id="@+id/brightness_layout"
         android:layout_width="@dimen/vertical_seek_bar_length"
@@ -131,14 +139,6 @@
                 android:layout_marginRight="@dimen/margin_option_button"
                 android:layout_toLeftOf="@id/brightness_down_button"
                 android:src="@drawable/ic_brightness_up" />
-
-            <ImageButton
-                android:id="@+id/pause_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_marginRight="@dimen/margin_option_button"
-                android:layout_toLeftOf="@id/brightness_up_button"
-                android:src="@drawable/ic_pause_48dp" />
-
         </RelativeLayout>
 
         <RelativeLayout
@@ -152,7 +152,7 @@
                 style="@style/BananaMediaButtonTheme"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_play_96dp" />
+                android:src="@drawable/ic_play" />
 
             <ImageButton
                 android:id="@+id/backward_button"

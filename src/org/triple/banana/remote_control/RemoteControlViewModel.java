@@ -7,6 +7,7 @@ package org.triple.banana.remote_control;
 
 import android.util.Log;
 
+import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.AudioUtil;
 import org.triple.banana.util.BrightnessUtil;
 
@@ -14,6 +15,7 @@ import java.util.HashSet;
 
 class RemoteControlViewModel {
     private static final String TAG = "RemoteControlViewModel";
+
     static class ReadonlyData {
         protected float mBrightness;
         protected float mVolume;
@@ -23,6 +25,7 @@ class RemoteControlViewModel {
         protected boolean mIsLocked;
         protected boolean mVolumeControlVisibility;
         protected boolean mBrightnessControlVisibility;
+        protected MediaPlayState mPlayState;
 
         float getBrightness() {
             return mBrightness;
@@ -54,6 +57,10 @@ class RemoteControlViewModel {
 
         boolean getBrightnessControlVisibility() {
             return mBrightnessControlVisibility;
+        }
+
+        MediaPlayState getPlayState() {
+            return mPlayState;
         }
     }
 
@@ -112,6 +119,10 @@ class RemoteControlViewModel {
 
         void setBrightnessControlVisibility(boolean visibility) {
             mBrightnessControlVisibility = visibility;
+        }
+
+        void setPlayState(MediaPlayState state) {
+            mPlayState = state;
         }
 
         Data cloneData() {
