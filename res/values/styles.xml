@@ -23,4 +23,9 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
+    <style name="BananaRippleEffectTheme">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="colorControlHighlight">@color/double_tap_ripple_effect_color</item>
+    </style>
 </resources>

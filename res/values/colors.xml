@@ -12,6 +12,7 @@
     <color name="colorWindowBackground">#F3DDDC</color>
     <color name="current_time_color">#D7E82C</color>
     <color name="progress_color">#FFFDC534</color>
+    <color name="double_tap_ripple_effect_color">#50FFFFFF</color>
     <color name="toolbar_modern_grey_background_color">#202124</color>
     <color name="toolbar_modern_grey_text_color">#3C4043</color>
     <color name="white">#FFFFFF</color>

@@ -10,6 +10,8 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 interface RemoteControlView {
+    enum Effect { NONE, FORWARD, BACKWARD }
+
     static interface Delegate extends RemoteControlGestureDetector.Callback {
         void onCancel();
         void onRemoteControlButtonClicked(int id);
@@ -17,4 +19,5 @@ interface RemoteControlView {
 
     void show(@NonNull Context context);
     void dismiss();
+    void showEffect(Effect effect);
 }

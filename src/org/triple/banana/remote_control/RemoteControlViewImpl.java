@@ -61,6 +61,27 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     }
 
     @Override
+    public void showEffect(Effect effect) {
+        View view;
+        switch (effect) {
+            case FORWARD:
+                view = mDialog.findViewById(R.id.forward_ripple);
+                break;
+            case BACKWARD:
+                view = mDialog.findViewById(R.id.backward_ripple);
+                break;
+            case NONE:
+            default:
+                view = null;
+                break;
+        }
+        if (view != null) {
+            view.setPressed(true);
+            view.setPressed(false);
+        }
+    }
+
+    @Override
     public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
         if (mDialog == null) return;
         updateBrightness(data.getBrightnessControlVisibility(), data.getBrightness());

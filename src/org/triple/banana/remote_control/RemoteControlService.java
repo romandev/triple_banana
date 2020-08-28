@@ -86,9 +86,9 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
                 mMediaController.pause();
             }
         } else if (id == R.id.backward_button) {
-            onBackward();
+            mMediaController.setRelativePosition(-10.0f);
         } else if (id == R.id.forward_button) {
-            onForward();
+            mMediaController.setRelativePosition(10.0f);
         } else if (id == R.id.brightness_up_button) {
             mViewModel.getEditor().setBrightness(1.0f);
             mViewModel.commit();
@@ -222,14 +222,14 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     @Override
     public void onBackward() {
         if (mViewModel.getData().getIsLocked()) return;
-
         mMediaController.setRelativePosition(-10.0f);
+        mView.showEffect(RemoteControlView.Effect.BACKWARD);
     }
 
     @Override
     public void onForward() {
         if (mViewModel.getData().getIsLocked()) return;
-
         mMediaController.setRelativePosition(10.0f);
+        mView.showEffect(RemoteControlView.Effect.FORWARD);
     }
 }
