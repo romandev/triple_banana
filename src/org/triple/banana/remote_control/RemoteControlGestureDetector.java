@@ -32,7 +32,9 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
     public interface Callback {
         void onVolumeChanged(float value);
         void onBrightnessChanged(float value);
-        void onPositionChanged(float value);
+        void onPositionChangeStart();
+        void onPositionChange(float diff);
+        void onPositionChangeFinish();
         void onControlsStateChanged();
         void onBackward();
         void onForward();
@@ -53,7 +55,7 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
                     mCallback.onBrightnessChanged(0.0f /* isFinished */);
                     break;
                 case POSITION_CHANGED:
-                    mCallback.onPositionChanged(0.0f /* isFinished */);
+                    mCallback.onPositionChangeFinish();
                     break;
             }
             mCurrentGesture = GestureType.UNKNOWN;
@@ -100,9 +102,10 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
 
                             if (mCurrentGesture == GestureType.UNKNOWN) {
                                 mCurrentGesture = GestureType.POSITION_CHANGED;
+                                mCallback.onPositionChangeStart();
                             }
                             if (mCurrentGesture == GestureType.POSITION_CHANGED) {
-                                mCallback.onPositionChanged(-distanceX / width);
+                                mCallback.onPositionChange(-distanceX / width);
                             }
                         } else {
                             if (Math.abs(distanceY) == 0.0f) return false;

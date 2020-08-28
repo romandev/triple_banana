@@ -19,7 +19,8 @@ class RemoteControlViewModel {
     static class ReadonlyData {
         protected float mBrightness;
         protected float mVolume;
-        protected float mPosition;
+        protected double mCurrentTime;
+        protected double mDuration;
         protected boolean mIsVolumeMuted;
         protected boolean mControlsVisibility;
         protected boolean mIsLocked;
@@ -35,8 +36,12 @@ class RemoteControlViewModel {
             return mVolume;
         }
 
-        float getPosition() {
-            return mPosition;
+        double getCurrentTime() {
+            return mCurrentTime;
+        }
+
+        double getDuration() {
+            return mDuration;
         }
 
         boolean getIsVolumeMuted() {
@@ -70,7 +75,6 @@ class RemoteControlViewModel {
             setVolume(AudioUtil.getMediaVolume());
             setControlsVisibility(true);
             setIsLocked(false);
-            setPosition(0.0f);
             setIsVolumeMuted(AudioUtil.isMediaVolumeMuted());
         }
 
@@ -92,13 +96,12 @@ class RemoteControlViewModel {
             mVolume = volume;
         }
 
-        void setPosition(float position) {
-            if (position < 0.0f) {
-                position = 0.0f;
-            } else if (position > 1.0f) {
-                position = 1.0f;
-            }
-            mPosition = position;
+        void setCurrentTime(double currentTime) {
+            mCurrentTime = currentTime;
+        }
+
+        void setDuration(double duration) {
+            mDuration = duration;
         }
 
         void setIsVolumeMuted(boolean isVolumeMuted) {

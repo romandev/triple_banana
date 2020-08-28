@@ -25,6 +25,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     private RemoteControlViewModel mViewModel = new RemoteControlViewModel();
     private RemoteControlViewImpl mView = new RemoteControlViewImpl(this);
     private boolean mWasPipMode;
+    private boolean mWasPlaying;
 
     private MediaController mMediaController = MediaController.instance;
 
@@ -34,6 +35,13 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             @Override
             public void onPlayStateChanged(MediaPlayState state) {
                 mViewModel.getEditor().setPlayState(state);
+                mViewModel.commit();
+            }
+
+            @Override
+            public void onTimeUpdate(double currentTime, double duration) {
+                mViewModel.getEditor().setCurrentTime(currentTime);
+                mViewModel.getEditor().setDuration(duration);
                 mViewModel.commit();
             }
 
@@ -159,13 +167,37 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     }
 
     @Override
-    public void onPositionChanged(float value) {
-        float position = mViewModel.getEditor().getPosition();
+    public void onPositionChangeStart() {
+        if (mViewModel.getData().getIsLocked()) return;
+
+        if (mViewModel.getData().getPlayState() != MediaPlayState.PAUSED) {
+            mMediaController.pause();
+            mWasPlaying = true;
+        } else {
+            mWasPlaying = false;
+        }
+    }
+
+    @Override
+    public void onPositionChange(float diff) {
+        if (mViewModel.getData().getIsLocked()) return;
+
+        double diffTime = diff * mViewModel.getData().getDuration();
+        double newTime = mViewModel.getData().getCurrentTime() + diffTime;
         mViewModel.getEditor().setControlsVisibility(true);
-        mViewModel.getEditor().setPosition(position + value);
+        mViewModel.getEditor().setCurrentTime(newTime);
         mViewModel.commit();
-        // FIXME(#589): Need to fix seekTo operation of MediaSession
-        // mMediaController.setPosition(ms);
+    }
+
+    @Override
+    public void onPositionChangeFinish() {
+        if (mViewModel.getData().getIsLocked()) return;
+
+        mMediaController.setPosition((float) mViewModel.getData().getCurrentTime());
+        if (mWasPlaying) {
+            mMediaController.play();
+            mWasPlaying = false;
+        }
     }
 
     private void toggleOrientation() {

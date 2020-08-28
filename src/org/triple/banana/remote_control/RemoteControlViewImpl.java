@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -64,14 +65,30 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         if (mDialog == null) return;
         updateBrightness(data.getBrightnessControlVisibility(), data.getBrightness());
         updateVolumeUI(data.getVolumeControlVisibility(), data.getVolume());
+        updateTimeInfo(data.getCurrentTime(), data.getDuration());
         showControls(data.getControlsVisibility(), data.getIsLocked(), data.getIsVolumeMuted());
-        setPosition(data.getPosition());
         setPlayState(data.getPlayState());
     }
 
-    private void setPosition(float position) {
+    private String getTimeLabelFrom(long seconds) {
+        long s = seconds % 60;
+        long m = (seconds / 60) % 60;
+        long h = (seconds / (60 * 60));
+        if (h > 0) return String.format("%d:%02d:%02d", h, m, s);
+        return String.format("%d:%02d", m, s);
+    }
+
+    private void updateTimeInfo(double currentTime, double duration) {
         if (mDialog == null || mTimeSeekBar == null) return;
-        mTimeSeekBar.setProgress((int) (position * 100.0f));
+
+        TextView currentTimeView = mMainView.findViewById(R.id.current_time);
+        TextView durationView = mMainView.findViewById(R.id.duration);
+        if (currentTimeView == null || durationView == null) return;
+
+        currentTimeView.setText(getTimeLabelFrom((long) currentTime));
+        durationView.setText(getTimeLabelFrom((long) duration));
+        mTimeSeekBar.setMax((int) duration);
+        mTimeSeekBar.setProgress((int) currentTime);
     }
 
     private void updateVolumeUI(boolean visibility, float value) {
@@ -169,19 +186,23 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mTimeSeekBar = mDialog.findViewById(R.id.time_seek_bar);
         mTimeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             private int mPreviousProgress;
+
             @Override
             public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {}
 
             @Override
             public void onStartTrackingTouch(SeekBar seekBar) {
+                if (mDelegate.get() == null) return;
+                mDelegate.get().onPositionChangeStart();
                 mPreviousProgress = seekBar.getProgress();
             }
 
             @Override
             public void onStopTrackingTouch(SeekBar seekBar) {
                 if (mDelegate.get() == null) return;
-                mDelegate.get().onPositionChanged(
-                        (seekBar.getProgress() - mPreviousProgress) / 100.0f);
+                mDelegate.get().onPositionChange(
+                        (seekBar.getProgress() - mPreviousProgress) / (float) seekBar.getMax());
+                mDelegate.get().onPositionChangeFinish();
             }
         });
 
