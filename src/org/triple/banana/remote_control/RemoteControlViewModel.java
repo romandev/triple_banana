@@ -25,7 +25,7 @@ class RemoteControlViewModel {
         protected boolean mIsLocked;
         protected boolean mVolumeControlVisibility;
         protected boolean mBrightnessControlVisibility;
-        protected MediaPlayState mPlayState;
+        protected MediaPlayState mPlayState = MediaPlayState.PAUSED;
 
         float getBrightness() {
             return mBrightness;
