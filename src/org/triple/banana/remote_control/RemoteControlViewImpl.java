@@ -230,10 +230,6 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.backward_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.forward_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.brightness_up_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.brightness_down_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.volume_up_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.volume_down_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.close_button).setOnClickListener(mClickListener);
