@@ -6,9 +6,6 @@
 package org.banana.cake;
 
 import android.app.Activity;
-import android.os.Build;
-
-import androidx.annotation.Nullable;
 
 import org.banana.cake.interfaces.BananaPipController;
 
@@ -18,16 +15,6 @@ import org.chromium.chrome.browser.media.PictureInPictureController;
 import org.chromium.content_public.browser.WebContents;
 
 class CakePipController implements BananaPipController {
-    private final @Nullable PictureInPictureController mPipController;
-
-    CakePipController() {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.O) {
-            mPipController = null;
-            return;
-        }
-        mPipController = new PictureInPictureController();
-    }
-
     private ChromeActivity getLastTrackedFocusedChromeActivity() {
         Activity activity = ApplicationStatus.getLastTrackedFocusedActivity();
         if (!(activity instanceof ChromeActivity)) return null;
@@ -36,17 +23,20 @@ class CakePipController implements BananaPipController {
 
     @Override
     public void attemptPictureInPictureForLastFocusedActivity() {
-        if (mPipController == null) return;
         ChromeActivity activity = getLastTrackedFocusedChromeActivity();
         if (activity == null) return;
-        mPipController.attemptPictureInPicture(activity);
+        PictureInPictureController pipController = activity.getPipController();
+        if (pipController == null) return;
+        pipController.attemptPictureInPicture(activity);
     }
 
     @Override
     public boolean isPictureInPictureAllowedForFullscreenVideo() {
-        if (mPipController == null) return false;
         ChromeActivity activity = getLastTrackedFocusedChromeActivity();
-        if (activity == null || activity.getActivityTab() == null) return false;
+        if (activity == null || activity.getActivityTab() == null
+                || activity.getPipController() == null) {
+            return false;
+        }
         WebContents webContents = activity.getActivityTab().getWebContents();
         if (webContents == null) return false;
         return webContents.isPictureInPictureAllowedForFullscreenVideo();

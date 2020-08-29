@@ -13,7 +13,21 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeActivity
              @Override
              public void onCrash(Tab tab) {
                  postDeferredStartupIfNeeded();
-@@ -2024,9 +2029,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -924,6 +929,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+         getManualFillingComponent().onResume();
+     }
+ 
++    public PictureInPictureController getPipController() {
++        if (mPictureInPictureController == null) {
++            mPictureInPictureController = new PictureInPictureController();
++        }
++        return mPictureInPictureController;
++    }
++
+     @Override
+     protected void onUserLeaveHint() {
+         super.onUserLeaveHint();
+@@ -2024,9 +2036,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);
