@@ -75,7 +75,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
                 (SwitchPreferenceCompat) findPreference(FeatureName.DARK_MODE);
         darkMode.setChecked(DarkModeController.get().isDarkModeOn());
         darkMode.setOnPreferenceChangeListener((preference, newValue) -> {
-            BrowserLock.setExceptional(true);
+            BrowserLock.getInstance().setExceptional(true);
             DarkModeController.get().toggle();
             return true;
         });
@@ -132,9 +132,9 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         browserLock.setOnPreferenceChangeListener((preference, newValue) -> {
             setEnabled(FeatureName.BROWSER_LOCK, (boolean) newValue);
             if ((boolean) newValue) {
-                BrowserLock.start();
+                BrowserLock.getInstance().start();
             } else {
-                BrowserLock.stop();
+                BrowserLock.getInstance().stop();
             }
             return true;
         });

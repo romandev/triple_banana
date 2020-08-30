@@ -78,7 +78,7 @@ public class TripleBananaApplication extends BananaApplication {
 
         // Apply BrowserLock from ExtensionFeatures setting
         if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
-            BrowserLock.start();
+            BrowserLock.getInstance().start();
         }
     }
 

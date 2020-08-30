@@ -11,9 +11,19 @@ import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatusListener;
 
 public class BrowserLock {
-    private static boolean isExceptional = false;
+    private boolean isExceptional = false;
 
-    private static ApplicationStatusListener mListener = (lastActivity, status) -> {
+    /**
+     * Get BrowserLock singleton instance.
+     * @return Instance of BrowserLock
+     */
+    public static BrowserLock getInstance() {
+        return LazyHolder.INSTANCE;
+    }
+
+    private static final class LazyHolder { private static BrowserLock INSTANCE = new BrowserLock(); }
+
+    private ApplicationStatusListener mListener = (lastActivity, status) -> {
         if (status == ApplicationStatus.FOREGROUND) {
             if (isExceptional) {
                 isExceptional = false;
@@ -25,17 +35,17 @@ public class BrowserLock {
         }
     };
 
-    public static void start() {
+    public void start() {
         ApplicationStatusTracker.getInstance().start();
         ApplicationStatusTracker.getInstance().addListener(mListener);
     }
 
-    public static void stop() {
+    public void stop() {
         ApplicationStatusTracker.getInstance().stop();
         ApplicationStatusTracker.getInstance().removeListener(mListener);
     }
 
-    public static void setExceptional(boolean isException) {
+    public void setExceptional(boolean isException) {
         isExceptional = isException;
     }
 }
