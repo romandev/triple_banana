@@ -5,7 +5,7 @@
 
 package org.triple.banana.remote_control;
 
-import android.content.Context;
+import android.app.Activity;
 
 import androidx.annotation.NonNull;
 
@@ -17,7 +17,7 @@ interface RemoteControlView {
         void onRemoteControlButtonClicked(int id);
     }
 
-    void show(@NonNull Context context);
+    void show(@NonNull Activity parentActivity);
     void dismiss();
     void showEffect(Effect effect);
 }

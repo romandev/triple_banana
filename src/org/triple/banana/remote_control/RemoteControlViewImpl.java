@@ -5,8 +5,8 @@
 
 package org.triple.banana.remote_control;
 
+import android.app.Activity;
 import android.app.Dialog;
-import android.content.Context;
 import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
@@ -44,8 +44,10 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     }
 
     @Override
-    public void show(@NonNull Context context) {
-        initializeDialogIfNeeded(context);
+    public void show(@NonNull Activity parentActivity) {
+        if (parentActivity.isFinishing()) return;
+
+        initializeDialogIfNeeded(parentActivity);
         hideSystemUI();
         mDialog.show();
         if (mMainView != null && mDelegate.get() != null) {
@@ -189,9 +191,9 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         }
     }
 
-    private void initializeDialogIfNeeded(@NonNull Context context) {
+    private void initializeDialogIfNeeded(@NonNull Activity parentActivity) {
         if (mDialog != null) return;
-        mDialog = new Dialog(context, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
+        mDialog = new Dialog(parentActivity, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
         mDialog.setCancelable(false);
         mDialog.setOnKeyListener((dialog, keyCode, event) -> {
             if (mDelegate.get() != null && keyCode == KeyEvent.KEYCODE_BACK) {
