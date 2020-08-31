@@ -8,6 +8,7 @@ package org.triple.banana.remote_control;
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
+import android.os.Handler;
 import android.widget.Toast;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
@@ -26,11 +27,26 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     private RemoteControlViewImpl mView = new RemoteControlViewImpl(this);
     private boolean mWasPipMode;
     private boolean mWasPlaying;
+    private boolean mWasControlsVisible;
 
     private MediaController mMediaController = MediaController.instance;
+    private final Runnable mTaskToHideControls = () -> {
+        mViewModel.getEditor().setControlsVisibility(false);
+        mViewModel.commit();
+    };
+    private Handler mHandler = new Handler();
 
     public void start() {
         mViewModel.addListener(mView);
+        mViewModel.addListener(data -> {
+            if (data.getControlsVisibility() == mWasControlsVisible) return;
+            if (data.getControlsVisibility()) {
+                requestToHideControlsAfter5seconds();
+            } else {
+                resetTimerToHideControls();
+            }
+            mWasControlsVisible = data.getControlsVisibility();
+        });
         mMediaController.addEventListener(new MediaEventListener() {
             @Override
             public void onPlayStateChanged(MediaPlayState state) {
@@ -160,6 +176,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         } else {
             mWasPlaying = false;
         }
+        resetTimerToHideControls();
     }
 
     @Override
@@ -182,6 +199,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
             mMediaController.play();
             mWasPlaying = false;
         }
+        requestToHideControlsAfter5seconds();
     }
 
     private void toggleOrientation() {
@@ -215,5 +233,19 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
         if (mViewModel.getData().getIsLocked()) return;
         mMediaController.setRelativePosition(10.0f);
         mView.showEffect(RemoteControlView.Effect.FORWARD);
+    }
+
+    @Override
+    public void onInterceptTouchEvent() {
+        requestToHideControlsAfter5seconds();
+    }
+
+    private void resetTimerToHideControls() {
+        mHandler.removeCallbacks(mTaskToHideControls);
+    }
+
+    private void requestToHideControlsAfter5seconds() {
+        resetTimerToHideControls();
+        mHandler.postDelayed(mTaskToHideControls, 5000);
     }
 }

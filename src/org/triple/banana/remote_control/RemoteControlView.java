@@ -9,10 +9,13 @@ import android.app.Activity;
 
 import androidx.annotation.NonNull;
 
+import org.triple.banana.remote_control.RemoteControlLayout;
+
 interface RemoteControlView {
     enum Effect { NONE, FORWARD, BACKWARD }
 
-    static interface Delegate extends RemoteControlGestureDetector.Callback {
+    static interface Delegate
+            extends RemoteControlGestureDetector.Callback, RemoteControlLayout.Listener {
         void onCancel();
         void onRemoteControlButtonClicked(int id);
     }

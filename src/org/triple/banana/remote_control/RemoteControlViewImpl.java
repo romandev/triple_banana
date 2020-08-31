@@ -22,6 +22,7 @@ import androidx.annotation.Nullable;
 import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaPlayState;
+import org.triple.banana.remote_control.RemoteControlLayout;
 import org.triple.banana.util.BrightnessUtil;
 
 import java.lang.ref.WeakReference;
@@ -33,7 +34,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
             new RemoteControlGestureDetector();
     private @Nullable SeekBar mTimeSeekBar;
     private @Nullable Dialog mDialog;
-    private @Nullable ViewGroup mMainView;
+    private @Nullable RemoteControlLayout mMainView;
 
     RemoteControlViewImpl(RemoteControlView.Delegate delegate) {
         mDelegate = new WeakReference<>(delegate);
@@ -206,6 +207,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         mDialog.setContentView(R.layout.remote_control_view);
 
         mMainView = mDialog.findViewById(R.id.remote_control_view);
+        mMainView.addListener(mDelegate.get());
         mTimeSeekBar = mDialog.findViewById(R.id.time_seek_bar);
         mTimeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             private int mPreviousProgress;
