@@ -54,11 +54,14 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         if (mMainView != null && mDelegate.get() != null) {
             mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
         }
+        mDialog.getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(
+                visibility -> hideSystemUI());
     }
 
     @Override
     public void dismiss() {
         if (mDialog == null) return;
+        mDialog.getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(null);
         mDialog.dismiss();
         mRemoteControlGestureDetector.stopDetection();
     }
