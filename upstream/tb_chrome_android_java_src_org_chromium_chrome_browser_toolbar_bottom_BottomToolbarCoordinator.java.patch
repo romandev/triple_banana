@@ -26,26 +26,27 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom
  
      /** The tab switcher mode bottom toolbar component */
      private TabSwitcherBottomToolbarCoordinator mTabSwitcherModeCoordinator;
-@@ -106,9 +104,8 @@ class BottomToolbarCoordinator {
+@@ -106,9 +104,9 @@ class BottomToolbarCoordinator {
              setUrlBarFocusAction.onResult(LocationBar.OmniboxFocusReason.ACCELERATOR_TAP);
          };
  
 -        mBrowsingModeCoordinator = new BrowsingModeBottomToolbarCoordinator(root, tabProvider,
 -                homeButtonListener, searchAcceleratorListener, mShareButtonListenerSupplier,
 -                tabsSwitcherLongClickListner, mOverviewModeBehaviorSupplier);
-+        mBrowsingModeCoordinator = org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
++        mBrowsingModeCoordinator =
++                org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
 +                        root, tabProvider);
  
          mTabSwitcherModeStub = root.findViewById(R.id.bottom_toolbar_tab_switcher_mode_stub);
  
-@@ -159,44 +156,11 @@ class BottomToolbarCoordinator {
+@@ -159,44 +157,11 @@ class BottomToolbarCoordinator {
  
          newTabClickListener = wrapBottomToolbarClickListenerForIPH(newTabClickListener);
          tabSwitcherListener = wrapBottomToolbarClickListenerForIPH(tabSwitcherListener);
 -        mBrowsingModeCoordinator.initializeWithNative(newTabClickListener, tabSwitcherListener,
 -                menuButtonHelper, tabCountProvider, mThemeColorProvider, incognitoStateProvider);
-+        mBrowsingModeCoordinator.initializeWithNative(tabSwitcherListener, menuButtonHelper,
-+                null, tabCountProvider, mThemeColorProvider, incognitoStateProvider);
++        mBrowsingModeCoordinator.initializeWithNative(tabSwitcherListener, menuButtonHelper, null,
++                tabCountProvider, mThemeColorProvider, incognitoStateProvider);
          mTabSwitcherModeCoordinator = new TabSwitcherBottomToolbarCoordinator(mTabSwitcherModeStub,
                  topToolbarRoot, incognitoStateProvider, mThemeColorProvider, newTabClickListener,
                  closeTabsClickListener, menuButtonHelper, tabCountProvider);
@@ -85,7 +86,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom
      }
  
      /**
-@@ -206,7 +170,6 @@ class BottomToolbarCoordinator {
+@@ -206,7 +171,6 @@ class BottomToolbarCoordinator {
          if (mTabSwitcherModeCoordinator != null) {
              mTabSwitcherModeCoordinator.showToolbarOnTop(!isVisible);
          }
