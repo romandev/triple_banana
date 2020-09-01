@@ -97,6 +97,9 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="autofill_assistant_module_title">"Google Assistant dalam Banana Browser"</string>
 <string name="qr_code_permission_description">"Untuk mengimbas kod QR, benarkan Banana Browser menggunakan kamera anda"</string>
 <string name="qr_code_open_settings_description">"Untuk mengimbas kod QR, tukar tetapan supaya Banana Browser boleh menggunakan kamera anda"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikel tentang minat anda di Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Gunakan mod Ringkas pada Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google mengesyorkan Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera anda untuk membuat peta 3D persekitaran anda."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera anda bagi tapak ini."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses mikrofon anda bagi tapak ini."</string>

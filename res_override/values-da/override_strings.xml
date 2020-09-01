@@ -97,6 +97,9 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="autofill_assistant_module_title">"Google Assistent i Banana Browser"</string>
 <string name="qr_code_permission_description">"Hvis du vil scanne en QR-kode, skal du give Banana Browser lov til at bruge dit kamera"</string>
 <string name="qr_code_open_settings_description">"For at scanne en QR-kode skal du ændre dine indstillinger, så Banana Browser kan bruge dit kamera"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikler om dine interesser i Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Brug Lite-tilstand i Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google anbefaler Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser skal have adgangstilladelse til dit kamera for at oprette et 3D-kort over dine omgivelser."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser skal have tilladelse til at bruge dit kamera på dette website."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser skal have tilladelse til at bruge din mikrofon på dette website."</string>

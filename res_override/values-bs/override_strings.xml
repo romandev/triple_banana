@@ -97,6 +97,9 @@ Vaš Google račun može imati druge oblike historije pregledanja kao što su pr
 <string name="autofill_assistant_module_title">"Google Assistant u Banana Browseru"</string>
 <string name="qr_code_permission_description">"Da skenirate QR kôd, dozvolite Banana Browseru korištenje kamere"</string>
 <string name="qr_code_open_settings_description">"Da skenirate QR kôd, promijenite postavke tako da Banana Browser može koristiti vašu kameru"</string>
+<string name="chrome_reengagement_notification_1_description">"Članci o vašim interesovanjima na Banana Browseru"</string>
+<string name="chrome_reengagement_notification_2_description">"Koristite Jednostavni način rada na Google Banana Browseru"</string>
+<string name="chrome_reengagement_notification_3_title">"Google preporučuje Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browseru je potrebno odobrenje da pristupi kameri radi kreiranja 3D mape vašeg okruženja."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser treba odobrenje za pristup kameri za ovu web lokaciju."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser treba dopuštenje za pristup mikrofonu za ovu web-lokaciju."</string>

@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"‏Google Assistant ב-Banana Browser"</string>
 <string name="qr_code_permission_description">"‏כדי לסרוק קוד QR יש להתיר ל-Banana Browser להשתמש במצלמה"</string>
 <string name="qr_code_open_settings_description">"‏כדי לסרוק קוד QR, צריך לשנות את ההגדרות כך שמערכת Banana Browser תוכל להשתמש במצלמה"</string>
+<string name="chrome_reengagement_notification_1_description">"‏ב-Banana Browser מחכים לך מאמרים בנושאים שמעניינים אותך"</string>
+<string name="chrome_reengagement_notification_2_description">"‏כדאי להשתמש במצב הטעינה המהירה ב-Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"‏Google ממליצה על Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"‏Banana Browser זקוק להרשאת גישה למצלמה כדי ליצור מפה תלת-ממדית של הסביבה שלך."</string>
 <string name="infobar_missing_camera_permission_text">"‏Banana Browser זקוק להרשאה גישה אל המצלמה בשביל האתר הזה."</string>
 <string name="infobar_missing_microphone_permission_text">"‏Banana Browser זקוק להרשאת גישה אל המיקרופון בשביל האתר הזה."</string>

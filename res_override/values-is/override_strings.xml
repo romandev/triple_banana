@@ -96,6 +96,9 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="autofill_assistant_module_title">"Google hjálpari í Banana Browser"</string>
 <string name="qr_code_permission_description">"Til að skanna QR-kóða skaltu leyfa Banana Browser að nota myndavélina"</string>
 <string name="qr_code_open_settings_description">"Til að skanna QR-kóða skaltu breyta stillingunum svo að Banana Browser geti notað myndavélina þína"</string>
+<string name="chrome_reengagement_notification_1_description">"Greinar sem tengjast áhugamálum þínum í Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Nota Léttútgáfu í Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google mælir með Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser þarf leyfi til að nota myndavélina til að búa til þrívíddarkort af umhverfinu."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser þarf leyfi til að nota myndavélina þína á þessu vefsvæði."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser þarf leyfi til að nota hljóðnemann þinn á þessu vefsvæði."</string>

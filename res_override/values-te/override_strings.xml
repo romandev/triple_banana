@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Banana Browserలో Google అసిస్టెంట్"</string>
 <string name="qr_code_permission_description">"ఒక QR కోడ్‌ను స్కాన్ చేయడానికి, మీ కెమెరాను ఉపయోగించడానికి Banana Browserను అనుమతించండి"</string>
 <string name="qr_code_open_settings_description">"QR కోడ్‌ను స్కాన్ చేయడానికి, మీ సెట్టింగ్‌లను మార్చండి. అప్పుడే, Banana Browser మీ కెమెరాను ఉపయోగించగలదు"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browserలోని మీ అభిరుచులకు అనుగుణమైన కథనాలు"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browserలోని లైట్ మోడ్‌ను ఉపయోగించండి"</string>
+<string name="chrome_reengagement_notification_3_title">"Banana Browserను Google సిఫార్సు చేస్తోంది"</string>
 <string name="infobar_missing_ar_camera_permission_text">"మీ పరిసరాల 3D మ్యాప్‌ను సృష్టించడానికి Banana Browserకు మీ కెమెరాను యాక్సెస్ చేసే అనుమతి కావాలి."</string>
 <string name="infobar_missing_camera_permission_text">"ఈ సైట్ కోసం మీ కెమెరాను యాక్సెస్ చేయడానికి Banana Browserకు అనుమతి అవసరం."</string>
 <string name="infobar_missing_microphone_permission_text">"ఈ సైట్ కోసం మీ మైక్రోఫోన్‌ను యాక్సెస్ చేయడానికి Banana Browserకు అనుమతి అవసరం."</string>

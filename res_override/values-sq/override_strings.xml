@@ -97,6 +97,9 @@ Llogaria jote e Google mund të ketë forma të tjera të historikut të shfleti
 <string name="autofill_assistant_module_title">"\"Asistenti i Google\" në Banana Browser"</string>
 <string name="qr_code_permission_description">"Për të skanuar një kod QR, lejo që Banana Browser të përdorë kamerën tënde"</string>
 <string name="qr_code_open_settings_description">"Për të skanuar një kod QR, ndrysho cilësimet e tua në mënyrë që Banana Browser të mund të përdorë kamerën tënde"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikuj rreth interesave të tua në Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Përdor \"Modalitetin e lehtë\" në Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google rekomandon Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ka nevojë për leje për t\'u qasur te kamera jote për të krijuar një hartë 3D të ambientit tënd rrethues."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ka nevojë për leje për t\'u qasur te kamera jote për këtë sajt."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ka nevojë për leje për t\'u qasur te mikrofoni yt për këtë sajt."</string>

@@ -98,6 +98,9 @@
 <string name="autofill_assistant_module_title">"Banana Browser 的「Google 助理」"</string>
 <string name="qr_code_permission_description">"如要掃瞄二維條碼，請允許 Banana Browser 使用攝錄機"</string>
 <string name="qr_code_open_settings_description">"如要掃瞄二維條碼，請在設定中允許 Banana Browser 使用攝錄機"</string>
+<string name="chrome_reengagement_notification_1_description">"您感興趣的文章和內容，一切盡在 Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"使用 Google Banana Browser 的「精簡模式」"</string>
+<string name="chrome_reengagement_notification_3_title">"Google 建議使用 Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser 需要取得權限，才能存取相機以建立您身處環境的 3D 地圖。"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser 需要獲取權限，才能讓這個網站存取您的相機。"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser 需要獲取權限，才能讓這個網站存取您的麥克風。"</string>

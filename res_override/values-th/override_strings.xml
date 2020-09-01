@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Google Assistant ใน Banana Browser"</string>
 <string name="qr_code_permission_description">"โปรดอนุญาตให้ Banana Browser ใช้กล้องเพื่อสแกนคิวอาร์โค้ด"</string>
 <string name="qr_code_open_settings_description">"โปรดเปลี่ยนการตั้งค่าเพื่อให้ Banana Browser ใช้กล้องในการสแกนคิวอาร์โค้ดได้"</string>
+<string name="chrome_reengagement_notification_1_description">"บทความที่เกี่ยวข้องกับความสนใจของคุณใน Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"ใช้โหมด Lite ใน Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google ขอแนะนำ Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ต้องการสิทธิ์เข้าถึงกล้องเพื่อสร้างแผนที่ 3 มิติของสิ่งที่อยู่รอบตัวคุณ"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ต้องการสิทธิ์เข้าถึงกล้องถ่ายรูปของคุณสำหรับไซต์นี้"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ต้องการสิทธิ์เข้าถึงไมโครโฟนของคุณสำหรับไซต์นี้"</string>

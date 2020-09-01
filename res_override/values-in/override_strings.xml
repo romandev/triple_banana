@@ -97,6 +97,9 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="autofill_assistant_module_title">"Asisten Google di Banana Browser"</string>
 <string name="qr_code_permission_description">"Untuk memindai kode QR, izinkan Banana Browser menggunakan kamera Anda"</string>
 <string name="qr_code_open_settings_description">"Untuk memindai kode QR, ubah setelan agar Banana Browser dapat menggunakan kamera Anda"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikel di Banana Browser terkait minat Anda"</string>
+<string name="chrome_reengagement_notification_2_description">"Gunakan Mode Ringan di Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google merekomendasikan Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser memerlukan izin untuk mengakses kamera guna membuat peta 3D untuk area di sekeliling Anda."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser memerlukan izin akses ke kamera untuk situs ini."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser memerlukan izin akses ke mikrofon untuk situs ini."</string>

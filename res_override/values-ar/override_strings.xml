@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"‏\"مساعد Google\" على Banana Browser"</string>
 <string name="qr_code_permission_description">"‏لمسح رمز استجابة سريعة ضوئيًا، يُرجى السماح لمتصفّح Banana Browser باستخدام الكاميرا."</string>
 <string name="qr_code_open_settings_description">"‏لمسح رمز استجابة سريعة ضوئيًا، يُرجى تغيير الإعدادات ليتمكّن Banana Browser من استخدام الكاميرا."</string>
+<string name="chrome_reengagement_notification_1_description">"‏اقرأ مقالات حول مواضيع تهمّك على متصفِّح Banana Browser."</string>
+<string name="chrome_reengagement_notification_2_description">"‏استخدِم \"الوضع البسيط\" على Google Banana Browser."</string>
+<string name="chrome_reengagement_notification_3_title">"‏توصي Google باستخدام Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"‏يحتاج متصفِّح Banana Browser إلى إذن للوصول إلى الكاميرا من أجل إنشاء خريطة ثلاثية الأبعاد للبيئة المحيطة بك."</string>
 <string name="infobar_missing_camera_permission_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الكاميرا للموقع الإلكتروني هذا."</string>
 <string name="infobar_missing_microphone_permission_text">"‏يحتاج Banana Browser إلى إذن لاستخدام الميكروفون للموقع الإلكتروني هذا."</string>

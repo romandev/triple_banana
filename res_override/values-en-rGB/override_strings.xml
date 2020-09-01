@@ -97,6 +97,9 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="autofill_assistant_module_title">"Google Assistant in Banana Browser"</string>
 <string name="qr_code_permission_description">"To scan a QR code, let Banana Browser use your camera"</string>
 <string name="qr_code_open_settings_description">"To scan a QR code, change your settings so that Banana Browser can use your camera"</string>
+<string name="chrome_reengagement_notification_1_description">"Articles on your interests on Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Use lite mode on Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google recommends Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser needs permission to access your camera to create a 3D map of your surroundings."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser needs permission to access your camera for this site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser needs permission to access your microphone for this site."</string>

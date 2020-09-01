@@ -96,6 +96,9 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="autofill_assistant_module_title">"Banana Browser\'догу Google Жардамчы"</string>
 <string name="qr_code_permission_description">"QR кодун скандоо үчүн Banana Browser\'го камераңызды колдонууга уруксат бериңиз"</string>
 <string name="qr_code_open_settings_description">"QR кодун скандоо үчүн жөндөөлөрдү өзгөртүп, Banana Browser\'го камераңызды колдонууга уруксат бериңиз"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser\'догу сизди кызыктырган макалалар"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser\'до Жөнөкөй режимди колдонуңуз"</string>
+<string name="chrome_reengagement_notification_3_title">"Google Banana Browser\'ду сунуштайт"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser айланаңыздын 3D картасын түзүү үчүн камераңызды колдонушу керек."</string>
 <string name="infobar_missing_camera_permission_text">"Бул сайтта иштөө үчүн Banana Browser камераңызды колдонушу керек."</string>
 <string name="infobar_missing_microphone_permission_text">"Бул сайтта иштөө үчүн Banana Browser микрофонуңузду колдонушу керек."</string>

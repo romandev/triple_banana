@@ -67,6 +67,9 @@
 <string name="usage_stats_revocation_explanation">"Weby, ktoré navštívite v Banana Browser, sa nezobrazia. Odstránia sa všetky časovače webov."</string>
 <string name="autofill_assistant_module_title">"Asistent Google v Banana Browser"</string>
 <string name="qr_code_open_settings_description">"Ak chcete skenovať kód QR, zmeňte nastavenia, aby Banana Browser mohol použiť vašu kameru"</string>
+<string name="chrome_reengagement_notification_1_description">"Články o vašich záujmoch v Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Používanie zjednodušeného režimu v prehliadači Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google odporúča Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser potrebuje povolenie použiť fotoaparát, aby mohol vytvoriť 3D mapu vášho okolia"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu fotoaparátu."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu mikrofónu."</string>

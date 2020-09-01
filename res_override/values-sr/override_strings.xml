@@ -97,6 +97,9 @@ Google налог можда има друге облике историје п�
 <string name="autofill_assistant_module_title">"Google помоћник у Banana Browser-у"</string>
 <string name="qr_code_permission_description">"Да бисте скенирали QR кôд, дозволите да Banana Browser користи камеру"</string>
 <string name="qr_code_open_settings_description">"Да бисте скенирали QR кôд, промените подешавања како би Banana Browser могао да користи камеру"</string>
+<string name="chrome_reengagement_notification_1_description">"Чланци о вашим интересовањима у Banana Browser-у"</string>
+<string name="chrome_reengagement_notification_2_description">"Користите Lite режим у Google Banana Browser-у"</string>
+<string name="chrome_reengagement_notification_3_title">"Google препоручује Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser тражи дозволу да приступи камери да би направио 3D мапу окружења."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser тражи дозволу да приступи камери за овај сајт."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser тражи дозволу да приступи микрофону за овај сајт."</string>

@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"‏«دستیار Google» در Banana Browser"</string>
 <string name="qr_code_permission_description">"‏برای اسکن کردن کد QR، به Banana Browser اجازه دهید از دوربین استفاده کند"</string>
 <string name="qr_code_open_settings_description">"‏برای اسکن کردن کد QR، تنظیمات را تغییر دهید تا Banana Browser بتواند از دوربین استفاده کند"</string>
+<string name="chrome_reengagement_notification_1_description">"‏مقاله‌های مرتبط با علایقتان در Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"‏استفاده از «حالت ساده» در Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"‏Google،‏ Banana Browser را توصیه می‌کند"</string>
 <string name="infobar_missing_ar_camera_permission_text">"‏Banana Browser برای ایجاد نقشه سه‌بعدی محیط شما باید اجازه دسترسی به دوربین داشته باشد."</string>
 <string name="infobar_missing_camera_permission_text">"‏Banana Browser به مجوز دسترسی به دوربین برای این سایت نیاز دارد."</string>
 <string name="infobar_missing_microphone_permission_text">"‏Banana Browser برای این سایت به مجوز دسترسی به میکروفون نیاز دارد."</string>

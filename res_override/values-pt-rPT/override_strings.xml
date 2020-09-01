@@ -96,6 +96,9 @@ A sua Conta Google pode ter outras formas do histórico de navegação, como pes
 <string name="autofill_assistant_module_title">"Assistente Google no Banana Browser"</string>
 <string name="qr_code_permission_description">"Para ler um código QR, permita que o Banana Browser utilize a sua câmara."</string>
 <string name="qr_code_open_settings_description">"Para ler um código QR, altere as suas definições para que o Banana Browser consiga utilizar a sua câmara."</string>
+<string name="chrome_reengagement_notification_1_description">"Artigos acerca dos seus interesses no Banana Browser."</string>
+<string name="chrome_reengagement_notification_2_description">"Utilize o Modo Lite no Google Banana Browser."</string>
+<string name="chrome_reengagement_notification_3_title">"A Google recomenda o Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"O Banana Browser necessita de autorização de acesso à câmara para criar um mapa 3D do ambiente à sua volta."</string>
 <string name="infobar_missing_camera_permission_text">"O Banana Browser necessita de autorização de acesso à câmara para este site."</string>
 <string name="infobar_missing_microphone_permission_text">"O Banana Browser necessita de autorização de acesso ao microfone para este site."</string>

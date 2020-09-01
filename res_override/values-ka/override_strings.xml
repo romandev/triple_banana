@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Google ასისტენტი Banana Browser-ში"</string>
 <string name="qr_code_permission_description">"QR კოდის სკანირებისთვის მიანიჭეთ Banana Browser-ს კამერაზე წვდომის ნებართვა."</string>
 <string name="qr_code_open_settings_description">"QR კოდის სკანირებისთვის შეცვალეთ პარამეტრები იმგვარად, რომ Banana Browser-მა შეძლოს თქვენი კამერის სარგებლობა"</string>
+<string name="chrome_reengagement_notification_1_description">"თქვენს ინტერესებთან დაკავშირებული სტატიები Banana Browser-ში"</string>
+<string name="chrome_reengagement_notification_2_description">"გამოიყენეთ Lite რეჟიმი Google Banana Browser-ში"</string>
+<string name="chrome_reengagement_notification_3_title">"Google გირჩევთ Banana Browser-ს"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser საჭიროებს თქვენს კამერაზე წვდომის ნებართვას, თქვენი გარემოს 3-განზომილებიანი რუკის შექმნა რომ შეძლოს."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser საჭიროებს თქვენს კამერაზე წვდომის ნებართვას ამ საიტისთვის."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser საჭიროებს თქვენს მიკროფონზე წვდომის ნებართვას ამ საიტისთვის."</string>

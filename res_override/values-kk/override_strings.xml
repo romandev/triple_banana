@@ -93,6 +93,9 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="autofill_assistant_module_title">"Banana Browser браузеріндегі Google Assistant"</string>
 <string name="qr_code_permission_description">"QR кодын сканерлеу үшін Banana Browser-ға камера пайдалану рұқсатын беріңіз."</string>
 <string name="qr_code_open_settings_description">"QR кодын сканерлеу үшін Banana Browser параметрлерін камера пайдалана алатындай етіп өзгертіңіз."</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser браузеріндегі қызығушылықтарыңызға сай мақалалар"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser браузерінде Lite режимін пайдаланыңыз."</string>
+<string name="chrome_reengagement_notification_3_title">"Google қызметі Banana Browser браузерін ұсынады"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser браузеріне айналаңыздың 3D картасын жасау үшін камераны пайдалану рұқсаты керек."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser браузеріне осы сайтта камераны пайдалануға рұқсат керек."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser браузеріне осы сайтта микрофонды пайдалануға рұқсат керек."</string>

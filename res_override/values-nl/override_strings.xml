@@ -96,6 +96,9 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="autofill_assistant_module_title">"De Google Assistent in Banana Browser"</string>
 <string name="qr_code_permission_description">"Als je een QR-code wilt scannen, moet je Banana Browser toestemming geven om je camera te gebruiken"</string>
 <string name="qr_code_open_settings_description">"Als je een QR-code wilt scannen, wijzig je de instellingen zodat Banana Browser de camera kan gebruiken"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikelen over je interesses in Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Lite-versie van Google Banana Browser gebruiken"</string>
+<string name="chrome_reengagement_notification_3_title">"Google beveelt Banana Browser aan"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser heeft toegangsrechten voor de camera nodig om een 3D-kaart van je omgeving te maken"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser heeft toegangsrechten voor je camera nodig voor deze site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser heeft toegangsrechten voor je microfoon nodig voor deze site."</string>

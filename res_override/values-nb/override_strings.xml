@@ -97,6 +97,9 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="autofill_assistant_module_title">"Google-assistenten i Banana Browser"</string>
 <string name="qr_code_permission_description">"For å skanne QR-koder, la Banana Browser bruke kameraet"</string>
 <string name="qr_code_open_settings_description">"For å skanne QR-koder, endre innstillingene slik at Banana Browser kan bruke kameraet"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikler om interessene dine i Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Bruk forenklet modus i Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google anbefaler Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser trenger tilgang til kameraet for å lage et 3D-kart av omgivelsene."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser trenger tilgang til kameraet ditt for dette nettstedet."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser trenger tilgang til mikrofonen din for dette nettstedet."</string>

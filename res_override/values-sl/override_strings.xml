@@ -50,6 +50,7 @@
 <string name="near_oom_intervention_message">"Ta stran uporablja preveč pomnilnika, zato jo je Banana Browser zaustavil."</string>
 <string name="near_oom_reduction_message">"Ta stran uporablja preveč pomnilnika, zato je Banana Browser odstranil nekaj vsebine."</string>
 <string name="qr_code_open_settings_description">"Če želite optično prebrati kodo QR, spremenite nastavitve, da bo Banana Browser lahko uporabljal kamero"</string>
+<string name="chrome_reengagement_notification_3_title">"Google priporoča Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser potrebuje dovoljenje za dostop do fotoaparata zaradi ustvarjanja tridimenzionalnega zemljevida okolice."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser potrebuje dovoljenje za dostop do fotoaparata za to spletno mesto."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser potrebuje dovoljenje za dostop do mikrofona za to spletno mesto."</string>

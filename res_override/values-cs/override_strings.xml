@@ -58,6 +58,8 @@
 <string name="near_oom_intervention_message">"Tato stránka využívá příliš mnoho paměti, proto ji Banana Browser pozastavil."</string>
 <string name="near_oom_reduction_message">"Tato stránka využívá příliš mnoho paměti, Banana Browser proto odstranil část obsahu."</string>
 <string name="qr_code_open_settings_description">"Chcete-li naskenovat QR kód, změňte nastavení tak, aby Banana Browser mohl použít vaši kameru"</string>
+<string name="chrome_reengagement_notification_2_description">"Používejte v prohlížeči Google Banana Browser zjednodušený režim"</string>
+<string name="chrome_reengagement_notification_3_title">"Google doporučuje prohlížeč Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser potřebuje oprávnění k přístupu k fotoaparátu, aby mohl vytvořit 3D mapu vašeho okolí."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser pro tento web potřebuje oprávnění k přístupu k fotoaparátu."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser pro tento web potřebuje oprávnění k přístupu k mikrofonu."</string>

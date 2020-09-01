@@ -97,6 +97,9 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="autofill_assistant_module_title">"Google Assistant sa Banana Browser"</string>
 <string name="qr_code_permission_description">"Para mag-scan ng QR code, hayaang gamitin ng Banana Browser ang iyong camera"</string>
 <string name="qr_code_open_settings_description">"Para mag-scan ng QR code, baguhin ang iyong mga setting para magamit ng Banana Browser ang camera mo"</string>
+<string name="chrome_reengagement_notification_1_description">"Mga artikulo tungkol sa iyong mga interes sa Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Gamitin ang Lite mode sa Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Inirerekomenda ng Google ang Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Kailangan ng Banana Browser ng access sa iyong camera para gumawa ng 3D na mapa ng kapaligiran mo."</string>
 <string name="infobar_missing_camera_permission_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong camera para sa site na ito."</string>
 <string name="infobar_missing_microphone_permission_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong mikropono para sa site na ito."</string>

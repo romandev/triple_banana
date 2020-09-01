@@ -95,6 +95,9 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="autofill_assistant_module_title">"Google\'i assistent Banana Browser\'is"</string>
 <string name="qr_code_permission_description">"QR-koodi skannimiseks lubage Banana Browser\'il oma kaamerat kasutada"</string>
 <string name="qr_code_open_settings_description">"QR-koodi skannimiseks muutke seadeid, et Banana Browser saaks teie kaamerat kasutada"</string>
+<string name="chrome_reengagement_notification_1_description">"Teie huvidega seotud artiklid Banana Browser\'is"</string>
+<string name="chrome_reengagement_notification_2_description">"Kasutage Google Banana Browser\'is lihtsustatud režiimi"</string>
+<string name="chrome_reengagement_notification_3_title">"Google soovitab Banana Browser\'i"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser vajab luba teie kaamerale juurdepääsemiseks, et luua teid ümbritsevast 3D-kaart."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser vajab selle saidi puhul luba, et teie kaamerale juurde pääseda."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser vajab selle saidi puhul luba, et teie mikrofonile juurde pääseda."</string>

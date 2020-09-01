@@ -97,6 +97,9 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="autofill_assistant_module_title">"Banana Browser\'da Google Asistan"</string>
 <string name="qr_code_permission_description">"QR kodu taramak için Banana Browser\'un kameranızı kullanmasına izin verin"</string>
 <string name="qr_code_open_settings_description">"QR kodu taramak için ayarlarınızı Banana Browser\'un kameranızı kullanabileceği şekilde değiştirin"</string>
+<string name="chrome_reengagement_notification_1_description">"İlgilendiğiniz makaleler Banana Browser\'da"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser\'da Basit modu kullanın"</string>
+<string name="chrome_reengagement_notification_3_title">"Google, Banana Browser\'u önerir"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Çevrenizin 3D haritasını oluşturmak için Banana Browser\'un kameranıza erişim iznine ihtiyacı var."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser\'un bu sitede kameranıza erişmesi için izin gerekiyor."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser\'un bu sitede mikrofonunuza erişmesi için izin gerekiyor."</string>

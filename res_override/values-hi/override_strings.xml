@@ -96,6 +96,9 @@
 <string name="autofill_assistant_module_title">"Banana Browser में Google Assistant"</string>
 <string name="qr_code_permission_description">"क्यूआर कोड स्कैन करने के लिए, Banana Browser को कैमरा इस्तेमाल करने दें"</string>
 <string name="qr_code_open_settings_description">"क्यूआर कोड को स्कैन करने के लिए, अपनी सेटिंग बदलें, ताकि Banana Browser आपके कैमरे का इस्तेमाल कर सके"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser पर आपकी पसंद के लेख"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser पर लाइट मोड का इस्तेमाल करें"</string>
+<string name="chrome_reengagement_notification_3_title">"Google, Banana Browser का सुझाव देता है"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser को आपके आस-पास की जगह का 3D मैप बनाने के लिए, कैमरा ऐक्सेस करने की अनुमति चाहिए."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser को इस साइट के लिए आपका कैमरा एक्सेस करने की अनुमति चाहिए."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser को इस साइट के लिए आपका माइक्रोफ़ोन एक्सेस करने की अनुमति चाहिए."</string>

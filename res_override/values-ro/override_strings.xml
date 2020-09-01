@@ -97,6 +97,9 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="autofill_assistant_module_title">"Asistentul Google în Banana Browser"</string>
 <string name="qr_code_permission_description">"Pentru a scana un cod QR, permite ca Banana Browser să utilizeze camera"</string>
 <string name="qr_code_open_settings_description">"Pentru a scana un cod QR, modifică setările astfel încât Banana Browser să poată folosi camera"</string>
+<string name="chrome_reengagement_notification_1_description">"Articole despre ceea ce te interesează în Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Folosește modul Lite în Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google recomandă Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser are nevoie de permisiunea de a accesa camera foto pentru a crea o hartă 3D a lucrurilor din jurul tău."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser are nevoie de permisiune ca să acceseze camera foto pentru acest site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser are nevoie de permisiune ca să acceseze microfonul pentru acest site."</string>

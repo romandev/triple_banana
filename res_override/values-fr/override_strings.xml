@@ -96,6 +96,9 @@ Votre compte Google conserve peut-être d\'autres contenus d\'historique de navi
 <string name="autofill_assistant_module_title">"Assistant Google dans Banana Browser"</string>
 <string name="qr_code_permission_description">"Pour scanner un code QR, autorisez Banana Browser à utiliser votre appareil photo"</string>
 <string name="qr_code_open_settings_description">"Pour scanner un code QR, modifiez vos paramètres pour autoriser Banana Browser à utiliser votre appareil photo"</string>
+<string name="chrome_reengagement_notification_1_description">"Articles sur vos centres d\'intérêt dans Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Utilisez le mode simplifié dans Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google recommande Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser a besoin de votre autorisation pour accéder à votre appareil photo afin de créer un plan 3D de votre environnement."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser a besoin de votre autorisation pour accéder à votre appareil photo pour ce site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser a besoin de votre autorisation pour accéder à votre micro pour ce site."</string>

@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Google Assistente no Banana Browser"</string>
 <string name="qr_code_permission_description">"Para ler um código QR, permita que o Banana Browser use sua câmera"</string>
 <string name="qr_code_open_settings_description">"Para ler um código QR, mude as configurações e permita que o Banana Browser use a câmera"</string>
+<string name="chrome_reengagement_notification_1_description">"Artigos sobre seus interesses no Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Use o Modo Lite no Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"O Google recomenda o Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"O Banana Browser precisa de permissão para acessar sua câmera e criar um mapa 3D dos arredores."</string>
 <string name="infobar_missing_camera_permission_text">"O Banana Browser precisa de permissão para este site acessar sua câmera."</string>
 <string name="infobar_missing_microphone_permission_text">"O Banana Browser precisa de permissão para este site acessar seu microfone."</string>

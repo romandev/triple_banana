@@ -97,6 +97,9 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="autofill_assistant_module_title">"Google asistents pārlūkprogrammā Banana Browser"</string>
 <string name="qr_code_permission_description">"Lai skenētu QR kodu, atļaujiet pārlūkprogrammai Banana Browser izmantot jūsu kameru"</string>
 <string name="qr_code_open_settings_description">"Lai varētu skenēt QR kodu, iestatījumos atļaujiet Banana Browser izmantot jūsu kameru"</string>
+<string name="chrome_reengagement_notification_1_description">"Ar jūsu interesēm saistīti raksti pārlūkā Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Izmantojiet Google Banana Browser vienkāršoto režīmu."</string>
+<string name="chrome_reengagement_notification_3_title">"Google iesaka pārlūku Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai, lai varētu izveidot jūsu apkārtnes 3D karti."</string>
 <string name="infobar_missing_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai šajā vietnē."</string>
 <string name="infobar_missing_microphone_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu mikrofonam šajā vietnē."</string>

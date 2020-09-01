@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Google Assistent Banana Browser\'da"</string>
 <string name="qr_code_permission_description">"QR kodunu skanlamaq üçün Banana Browser\'a kameranızdan istifadə imkanı verin"</string>
 <string name="qr_code_open_settings_description">"QR kodu skan etmək üçün, ayarları dəyişərək Banana Browser\'un kameranızı istifadə etməsinə icazə verin"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser\'da maraqlarınıza dair məqalələr"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser\'da Lite rejimindən istifadə edin"</string>
+<string name="chrome_reengagement_notification_3_title">"Google, Banana Browser\'u tövsiyə edir"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ətrafınızın 3D xəritəsini yaratmaq üçün kameranıza giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser bu sayt üçün kameraya giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser bu sayt üçün mikrofona giriş icazəsi tələb edir."</string>

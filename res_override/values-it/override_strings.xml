@@ -96,6 +96,9 @@ Il tuo Account Google potrebbe avere altre forme di cronologia di navigazione, a
 <string name="autofill_assistant_module_title">"Assistente Google in Banana Browser"</string>
 <string name="qr_code_permission_description">"Per scansionare i codici QR, consenti a Banana Browser di usare la tua fotocamera"</string>
 <string name="qr_code_open_settings_description">"Per scansionare un codice QR, modifica le impostazioni affinché Banana Browser possa usare la fotocamera"</string>
+<string name="chrome_reengagement_notification_1_description">"Articoli relativi ai tuoi interessi su Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Usa la modalità Lite su Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google consiglia Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ha bisogno dell\'autorizzazione ad accedere alla fotocamera per creare una mappa 3D dell\'ambiente circostante."</string>
 <string name="infobar_missing_camera_permission_text">"Per questo sito Banana Browser ha bisogno dell\'autorizzazione ad accedere alla fotocamera."</string>
 <string name="infobar_missing_microphone_permission_text">"Per questo sito Banana Browser ha bisogno dell\'autorizzazione ad accedere al microfono."</string>

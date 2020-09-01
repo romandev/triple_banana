@@ -97,6 +97,9 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="autofill_assistant_module_title">"Mratibu wa Google katika Banana Browser"</string>
 <string name="qr_code_permission_description">"Ili uchanganue msimbo wa QR, iruhusu Banana Browser itumie kamera yako"</string>
 <string name="qr_code_open_settings_description">"Ili uchanganue msimbo wa QR, badilisha mipangilio yako ili Banana Browser iweze kutumia kamera yako"</string>
+<string name="chrome_reengagement_notification_1_description">"Makala ya yanayokuvutia kwenye Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Tumia Hali Nyepesi kwenye Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google inapendekeza utumie Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser inahitaji ruhusa ya kufikia kamera yako ili iunde ramani ya 3D ya mazingira yako."</string>
 <string name="infobar_missing_camera_permission_text">"Ruhusu Banana Browser ifikie kamera yako ya tovuti hii."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser inahitaji ruhusa ya kufikia maikrofoni yako kwa ajili ya tovuti hii."</string>

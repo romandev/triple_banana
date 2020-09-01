@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Памочнік Google у Banana Browser"</string>
 <string name="qr_code_permission_description">"Каб сканіраваць QR-код, дазвольце браўзеру Banana Browser выкарыстоўваць камеру"</string>
 <string name="qr_code_open_settings_description">"Каб сканіраваць QR-код, змяніце налады, каб Banana Browser мог выкарыстоўваць камеру"</string>
+<string name="chrome_reengagement_notification_1_description">"Цікавыя для вас артыкулы ў Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Выкарыстоўвайце Google Banana Browser, уключыўшы спрошчаны рэжым"</string>
+<string name="chrome_reengagement_notification_3_title">"Google рэкамендуе браўзер Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser запытвае дазвол на доступ да камеры, каб стварыць 3D-карту асяроддзя."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser запытвае дазвол на доступ да вашай камеры для гэтага сайта."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser запытвае дазвол на доступ да мікрафона для гэтага сайта."</string>

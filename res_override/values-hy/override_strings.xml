@@ -26,7 +26,7 @@
 <string name="account_management_sign_out">"Դուրս գալ Banana Browser-ից"</string>
 <string name="powered_by_chrome_message">"Աշխատում է Banana Browser-ով"</string>
 <string name="chrome_additional_terms_of_service_title">"Banana Browser-ի և Banana Browser OS-ի օգտագործման լրացուցիչ պայմաններ"</string>
-<string name="privacy_notice_title">"Banana Browser-ի Գաղտնիության ծանուցում"</string>
+<string name="privacy_notice_title">"Banana Browser-ի Գաղտնիության ծանուցագիր"</string>
 <string name="signout_managed_account_title">"Հեռացնե՞լ Banana Browser-ի տվյալները այս սարքից"</string>
 <string name="signout_message">"Ձեր էջանիշները, պատմությունը, գաղտնաբառերն ու Banana Browser-ի մյուս տվյալները այլևս չեն համաժամացվի ձեր Google հաշվի հետ:"</string>
 <string name="remove_local_data">"Նաև մաքրել Banana Browser-ի ձեր տվյալներն այս սարքից"</string>
@@ -96,6 +96,9 @@
 <string name="autofill_assistant_module_title">"Google Օգնականը Banana Browser-ում"</string>
 <string name="qr_code_permission_description">"QR կոդը սկանավորելու համար թույլ տվեք Banana Browser-ին օգտագործել ձեր տեսախցիկը"</string>
 <string name="qr_code_open_settings_description">"QR կոդը սկանավորելու համար բացեք կարգավորումները և թույլ տվեք Banana Browser-ին օգտագործել ձեր տեսախցիկը"</string>
+<string name="chrome_reengagement_notification_1_description">"Ձեր հետաքրքրությունների հիման վրա ընտրված հոդվածներ՝ Banana Browser-ում"</string>
+<string name="chrome_reengagement_notification_2_description">"Փորձեք Lite ռեժիմը Google Banana Browser-ում"</string>
+<string name="chrome_reengagement_notification_3_title">"Google-ը խորհուրդ է տալիս Banana Browser դիտարկիչը"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser-ին անհրաժեշտ է տեսախցիկն օգտագործելու թույլտվություն՝ ձեր շրջակայքի եռաչափ քարտեզը ստեղծելու համար։"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր տեսախցիկն օգտագործելու թույլտվություն։"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր խոսափողն օգտագործելու թույլտվություն։"</string>

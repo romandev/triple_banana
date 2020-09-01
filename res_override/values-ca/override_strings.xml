@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Assistent de Google a Banana Browser"</string>
 <string name="qr_code_permission_description">"Per escanejar un codi QR, permet que Banana Browser utilitzi la càmera"</string>
 <string name="qr_code_open_settings_description">"Per escanejar un codi QR, canvia la configuració perquè Banana Browser pugui utilitzar la càmera"</string>
+<string name="chrome_reengagement_notification_1_description">"Articles relacionats amb els teus interessos a Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Utilitza el mode bàsic a Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google recomana Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser necessita permís per accedir a la càmera i poder crear un mapa 3D del teu entorn."</string>
 <string name="infobar_missing_camera_permission_text">"Per visitar aquest lloc web, Banana Browser necessita permís per accedir a la teva càmera."</string>
 <string name="infobar_missing_microphone_permission_text">"Per visitar aquest lloc web, Banana Browser necessita permís per accedir al teu micròfon."</string>

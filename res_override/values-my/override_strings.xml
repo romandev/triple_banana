@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Banana Browser အတွင်းရှိ Google Assistant"</string>
 <string name="qr_code_permission_description">"QR ကုဒ်ကို စကင်ဖတ်ရန် Banana Browser အား သင့်ကင်မရာ သုံးခွင့်ပြုပါ"</string>
 <string name="qr_code_open_settings_description">"QR ကုဒ်စကင်ဖတ်ရန် သင့်ဆက်တင်များ ပြောင်းပါ၊ သို့မှသာ Banana Browser က သင့်ကင်မရာကို အသုံးပြုနိုင်သည်"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser ရှိ သင်စိတ်ဝင်စားသော ဆောင်းပါးများ"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser တွင် အပေါ့စားမုဒ် သုံးရန်"</string>
+<string name="chrome_reengagement_notification_3_title">"Google က Banana Browser ကို အသုံးပြုရန် အကြံပြုထားပါသည်"</string>
 <string name="infobar_missing_ar_camera_permission_text">"သင့်ပတ်ဝန်းကျင်၏ 3D မြေပုံ ပြုလုပ်ရန် Banana Browser က သင့်ကင်မရာကို အသုံးပြုခွင့် လိုအပ်သည်။"</string>
 <string name="infobar_missing_camera_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် ကင်မရာအသုံးပြုခွင့် လိုအပ်ပါသည်။"</string>
 <string name="infobar_missing_microphone_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် သင်၏ မိုက်ခရိုဖုန်းကို အသုံးပြုခွင့်ရရန် လိုအပ်ပါသည်။"</string>

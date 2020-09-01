@@ -94,6 +94,9 @@ Es posible que tu cuenta de Google tenga otros tipos de historial de navegación
 <string name="usage_stats_revocation_explanation">"Los sitios web que visites en Banana Browser no se mostrarán. Se eliminarán todos los temporizadores de los sitios web."</string>
 <string name="qr_code_permission_description">"Para escanear un código QR, permite que Banana Browser use la cámara"</string>
 <string name="qr_code_open_settings_description">"Para escanear un código QR, cambia los ajustes para que Banana Browser pueda usar tu cámara"</string>
+<string name="chrome_reengagement_notification_1_description">"Artículos sobre tus intereses en Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Usa el modo básico en Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google recomienda Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Para crear un mapa 3D de tu entorno, Banana Browser necesita permiso para acceder a tu cámara."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser necesita permiso para acceder a la cámara en este sitio web."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser necesita permiso para acceder al micrófono en este sitio web."</string>

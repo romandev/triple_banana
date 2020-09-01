@@ -96,6 +96,9 @@ Eventuell finden Sie unter &lt;link&gt;history.google.com&lt;/link&gt; weitere F
 <string name="autofill_assistant_module_title">"Google Assistant für Banana Browser"</string>
 <string name="qr_code_permission_description">"Wenn Sie einen QR-Code scannen möchten, erlauben Sie Banana Browser, Ihre Kamera zu verwenden"</string>
 <string name="qr_code_open_settings_description">"Wenn Sie einen QR-Code scannen möchten, ändern Sie die Einstellungen, damit Banana Browser Ihre Kamera verwenden kann"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikel zu Ihren Interessen in Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Verwenden Sie den Lite-Modus in Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google empfiehlt Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser benötigt Zugriff auf die Kamera, um eine 3D-Karte Ihrer Umgebung zu erstellen."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser benötigt für diese Website die Berechtigung, auf Ihre Kamera zuzugreifen."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser benötigt für diese Website die Berechtigung, auf Ihr Mikrofon zuzugreifen."</string>

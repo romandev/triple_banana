@@ -97,6 +97,9 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="autofill_assistant_module_title">"Google Assistent in Banana Browser"</string>
 <string name="qr_code_permission_description">"Laat Banana Browser jou kamera gebruik om \'n QR-kode te skandeer"</string>
 <string name="qr_code_open_settings_description">"Verander jou instellings sodat Banana Browser jou kamera kan gebruik as jy \'n QR-kode wil skandeer"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikels oor jou belangstellings op Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Gebruik Ligte Modus op Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google beveel Banana Browser aan"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser moet toestemming hê om toegang te kry tot jou kamera om \'n 3D-kaart van jou omgewing te skep."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser het toestemming nodig vir toegang tot jou kamera vir hierdie werf."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser het toestemming nodig vir toegang tot jou mikrofoon vir hierdie werf."</string>

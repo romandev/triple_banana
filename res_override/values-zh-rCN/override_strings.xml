@@ -98,6 +98,9 @@
 <string name="autofill_assistant_module_title">"Banana Browser 中的 Google 助理"</string>
 <string name="qr_code_permission_description">"如需扫描二维码，请允许 Banana Browser 使用您的摄像头"</string>
 <string name="qr_code_open_settings_description">"要扫描二维码，请更改您的设置以允许 Banana Browser 使用您的摄像头"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser 可提供您感兴趣的报道"</string>
+<string name="chrome_reengagement_notification_2_description">"使用 Google Banana Browser 的精简模式"</string>
+<string name="chrome_reengagement_notification_3_title">"Google 推荐使用 Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser 需要获得相应权限，才能使用您的摄像头为您的周边环境创建 3D 地图。"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser 需要获得相应权限，才能允许此网站使用您的摄像头。"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser 需要获得相应权限，才能允许此网站使用您的麦克风。"</string>

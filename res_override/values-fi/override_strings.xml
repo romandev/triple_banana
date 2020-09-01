@@ -96,6 +96,9 @@ Google-tililläsi voi olla muita selaushistoriatietoja, kuten hakuja ja toiminta
 <string name="autofill_assistant_module_title">"Banana Browsern Google Assistant"</string>
 <string name="qr_code_permission_description">"Jos haluat lukea QR-koodin, anna Banana Browsern käyttää kameraa."</string>
 <string name="qr_code_open_settings_description">"Jos haluat lukea QR-koodin, muuta asetuksia niin, että Banana Browser voi käyttää kameraa"</string>
+<string name="chrome_reengagement_notification_1_description">"Artikkeleita kiinnostuksen kohteistasi Banana Browserssa"</string>
+<string name="chrome_reengagement_notification_2_description">"Käytä Yksinkertaistettua tilaa Google Banana Browserssa"</string>
+<string name="chrome_reengagement_notification_3_title">"Google suosittelee Banana Browsera"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser tarvitsee luvan käyttää kameraasi ympäristön 3D-kartoittamiseen."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser tarvitsee oikeuden käyttää kameraasi tällä sivustolla."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser tarvitsee oikeuden käyttää mikrofoniasi tällä sivustolla."</string>

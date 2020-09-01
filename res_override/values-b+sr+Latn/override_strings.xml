@@ -97,6 +97,9 @@ Google nalog možda ima druge oblike istorije pregledanja, poput pretraga i akti
 <string name="autofill_assistant_module_title">"Google pomoćnik u Banana Browser-u"</string>
 <string name="qr_code_permission_description">"Da biste skenirali QR kôd, dozvolite da Banana Browser koristi kameru"</string>
 <string name="qr_code_open_settings_description">"Da biste skenirali QR kôd, promenite podešavanja kako bi Banana Browser mogao da koristi kameru"</string>
+<string name="chrome_reengagement_notification_1_description">"Članci o vašim interesovanjima u Banana Browser-u"</string>
+<string name="chrome_reengagement_notification_2_description">"Koristite Lite režim u Google Banana Browser-u"</string>
+<string name="chrome_reengagement_notification_3_title">"Google preporučuje Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser traži dozvolu da pristupi kameri da bi napravio 3D mapu okruženja."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser traži dozvolu da pristupi kameri za ovaj sajt."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser traži dozvolu da pristupi mikrofonu za ovaj sajt."</string>

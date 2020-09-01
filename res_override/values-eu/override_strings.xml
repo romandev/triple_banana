@@ -12,7 +12,7 @@
 <string name="clear_browsing_data_history_dialog_title">"Garbitu dira Banana Browser-ko datuak"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"Kendu dira hautatutako datuak Banana Browser-tik eta sinkronizatutako gailuetatik.
 
-Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bilaketak eta beste Google-ren zerbitzu batzuetako jarduerak) edukitzea &lt;link&gt;history.google.com&lt;/link&gt; webgunean."</string>
+Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, bilaketak eta beste Google-ren zerbitzu batzuetako jarduerak) edukitzea &lt;link&gt;history.google.com&lt;/link&gt; webgunean."</string>
 <string name="safety_check_description">"Zure ezarpenek hauen aurrean babesten zaituzten ala ez egiazta dezake Banana Browser-k:"</string>
 <string name="safety_check_safe_browsing_disabled">"Arakatze segurua desaktibatuta dago. Aktibatzea gomendatzen du Banana Browser-k."</string>
 <string name="safety_check_passwords_no_passwords">"Ez dago pasahitzik gordeta. Banana Browser-k pasahitzak egiazta ditzake gorde ondoren."</string>
@@ -97,6 +97,9 @@ Baliteke Google kontuak arakatze-historiako bestelako datu batzuk (adibidez, bil
 <string name="autofill_assistant_module_title">"Banana Browser-rako Google-ren Laguntzailea"</string>
 <string name="qr_code_permission_description">"QR kodeak eskaneatzeko, eman Banana Browser-ri kamera erabiltzeko baimena"</string>
 <string name="qr_code_open_settings_description">"QR kodeak eskaneatzeko, aldatu ezarpenak Banana Browser-k kamera erabili ahal izan dezan"</string>
+<string name="chrome_reengagement_notification_1_description">"Interesatzen zaizkizun gaiei buruzko artikuluak Banana Browser-n"</string>
+<string name="chrome_reengagement_notification_2_description">"Erabili oinarrizko modua Google Banana Browser-n"</string>
+<string name="chrome_reengagement_notification_3_title">"Google-k Banana Browser gomendatzen dizu"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser-k kamera atzitzeko baimena behar du, ingurunearen hiru dimentsioko mapa bat sortzeko."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser-k zure baimena behar du webgune honen izenean kamera atzitzeko."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser-k zure baimena behar du webgune honen izenean mikrofonoa atzitzeko."</string>

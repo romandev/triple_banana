@@ -95,6 +95,9 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="usage_stats_revocation_explanation">"Svetainės, kuriose lankotės naudodami „Banana Browser“, nebus rodomos. Visi svetainių laikmačiai bus ištrinti."</string>
 <string name="qr_code_permission_description">"Jei norite nuskaityti QR kodą, leiskite „Banana Browser“ naudoti jūsų kamerą"</string>
 <string name="qr_code_open_settings_description">"Jei norite nuskaityti QR kodą, pakeiskite nustatymus, kad „Banana Browser“ galėtų naudoti jūsų kamerą"</string>
+<string name="chrome_reengagement_notification_1_description">"Su jūsų pomėgiais susiję straipsniai naršyklėje „Banana Browser“"</string>
+<string name="chrome_reengagement_notification_2_description">"Naudokite supaprastintą režimą naršyklėje „Google Banana Browser“"</string>
+<string name="chrome_reengagement_notification_3_title">"„Google“ rekomenduoja „Banana Browser“"</string>
 <string name="infobar_missing_ar_camera_permission_text">"„Banana Browser“ reikia leidimo naudoti fotoaparatą jūsų aplinkos 3D žemėlapiui kurti."</string>
 <string name="infobar_missing_camera_permission_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų fotoaparatą šioje svetainėje."</string>
 <string name="infobar_missing_microphone_permission_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų mikrofoną šioje svetainėje."</string>

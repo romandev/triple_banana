@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Banana Browser の Google アシスタント"</string>
 <string name="qr_code_permission_description">"QR コードをスキャンするには、Banana Browser にカメラの使用を許可してください"</string>
 <string name="qr_code_open_settings_description">"QR コードをスキャンするには、Banana Browser にカメラの使用を許可するよう設定を変更してください"</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser の履歴に基づくおすすめの記事を表示します"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser のライトモードをご活用ください"</string>
+<string name="chrome_reengagement_notification_3_title">"Google は Banana Browser を推奨しています"</string>
 <string name="infobar_missing_ar_camera_permission_text">"周囲の 3D マップを作成するには、Banana Browser にカメラの使用を許可する必要があります。"</string>
 <string name="infobar_missing_camera_permission_text">"このサイトを利用するには、Banana Browser でカメラの使用を許可する必要があります。"</string>
 <string name="infobar_missing_microphone_permission_text">"このサイトを利用するには、Banana Browser でマイクの使用を許可する必要があります。"</string>

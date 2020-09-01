@@ -97,6 +97,9 @@ Es posible que tu cuenta de Google tenga otros formularios de historial de naveg
 <string name="autofill_assistant_module_title">"Asistente de Google en Banana Browser"</string>
 <string name="qr_code_permission_description">"Si quieres escanear un código QR, permite que Banana Browser use la cámara"</string>
 <string name="qr_code_open_settings_description">"Si quieres escanear un código QR, cambia la configuración para que Banana Browser pueda usar la cámara"</string>
+<string name="chrome_reengagement_notification_1_description">"Artículos de Banana Browser relacionados con tus intereses"</string>
+<string name="chrome_reengagement_notification_2_description">"Usa el modo lite en Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google recomienda Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser necesita permiso para acceder a la cámara a fin de crear un mapa 3D de tu entorno."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser necesita permiso para acceder a tu cámara para este sitio."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser necesita permiso para acceder a tu micrófono para este sitio."</string>

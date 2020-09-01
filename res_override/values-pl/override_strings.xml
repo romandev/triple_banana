@@ -96,6 +96,9 @@ Na stronie &lt;link&gt;myactivity.google.com&lt;/link&gt; na Twoim koncie Google
 <string name="autofill_assistant_module_title">"Asystent Google w Banana Browser"</string>
 <string name="qr_code_permission_description">"Aby zeskanować kod QR, zezwól Banana Browser na używanie aparatu"</string>
 <string name="qr_code_open_settings_description">"Aby zeskanować kod QR, otwórz ustawienia i zezwól Banana Browser na używanie aparatu"</string>
+<string name="chrome_reengagement_notification_1_description">"Artykuły dopasowane do Twoich zainteresowań w Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Użyj wersji uproszczonej w Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google zaleca Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Aby utworzyć mapę 3D Twojego otoczenia, Banana Browser potrzebuje uprawnień dostępu do kamery."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser potrzebuje uprawnień dostępu do aparatu na tej stronie."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser potrzebuje uprawnień dostępu do mikrofonu na tej stronie."</string>

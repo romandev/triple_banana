@@ -93,6 +93,9 @@ Det kan finnas andra former av webbhistorik i Google-kontot på &lt;link&gt;myac
 <string name="autofill_assistant_module_title">"Google-assistenten i Banana Browser"</string>
 <string name="qr_code_permission_description">"Tillåt att Banana Browser använder kameran om du vill skanna en QR-kod."</string>
 <string name="qr_code_open_settings_description">"Om du vill skanna en QR-kod ändrar du inställningarna så att Banana Browser kan använda kameran"</string>
+<string name="chrome_reengagement_notification_1_description">"Artiklar om dina intressen i Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Använd begränsat läge i Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google rekommenderar Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Du behöver ge Banana Browser behörighet att använda kameran om du vill skapa en 3D-karta över dina omgivningar."</string>
 <string name="infobar_missing_camera_permission_text">"Du behöver ge Banana Browser behörighet att använda kameran på den här webbplatsen."</string>
 <string name="infobar_missing_microphone_permission_text">"Du behöver ge Banana Browser behörighet att använda mikrofonen på den här webbplatsen."</string>

@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"Βοηθός Google στο Banana Browser"</string>
 <string name="qr_code_permission_description">"Για να σαρώσετε έναν κωδικό QR, επιτρέψτε στο Banana Browser να χρησιμοποιεί την κάμερά σας."</string>
 <string name="qr_code_open_settings_description">"Για τη σάρωση ενός κωδικού QR, αλλάξτε τις ρυθμίσεις σας προκειμένου το Banana Browser να μπορεί να χρησιμοποιήσει την κάμερά σας"</string>
+<string name="chrome_reengagement_notification_1_description">"Άρθρα για τα ενδιαφέροντά σας στο Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Χρησιμοποιήστε τη λειτουργία Lite στο Google Banana Browser."</string>
+<string name="chrome_reengagement_notification_3_title">"Η Google συνιστά το Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Το Banana Browser χρειάζεται άδεια, για να αποκτήσει πρόσβαση στην κάμερά σας για να δημιουργήσει έναν τρισδιάστατο χάρτη του περιβάλλοντα χώρου σας."</string>
 <string name="infobar_missing_camera_permission_text">"Το Banana Browser χρειάζεται άδεια, για να αποκτήσει πρόσβαση στην κάμερα για αυτόν τον ιστότοπο."</string>
 <string name="infobar_missing_microphone_permission_text">"Το Banana Browser χρειάζεται άδεια, για να αποκτήσει πρόσβαση στο μικρόφωνο για αυτόν τον ιστότοπο."</string>

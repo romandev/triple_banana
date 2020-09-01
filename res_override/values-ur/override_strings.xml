@@ -97,6 +97,9 @@
 <string name="autofill_assistant_module_title">"‏Banana Browser میں Google اسسٹنٹ"</string>
 <string name="qr_code_permission_description">"‏QR کوڈ اسکین کرنے کے لیے Banana Browser کو اپنا کیمرا استعمال کرنے دیں"</string>
 <string name="qr_code_open_settings_description">"‏QR کوڈ اسکین کرنے کے لیے، اپنی ترتیبات تبدیل کریں تاکہ Banana Browser آپ کا کیمرا استعمال کر سکے"</string>
+<string name="chrome_reengagement_notification_1_description">"‏Banana Browser پر آپ کی دلچسپیوں سے متعلق مضامین"</string>
+<string name="chrome_reengagement_notification_2_description">"‏Google Banana Browser پر لائٹ موڈ کا استعمال کریں"</string>
+<string name="chrome_reengagement_notification_3_title">"‏Google Banana Browser کی تجویز کرتا ہے"</string>
 <string name="infobar_missing_ar_camera_permission_text">"‏اپنے اطراف کا 3D نقشہ تخلیق کرنے کی خاطر Banana Browser کو آپ کے کیمرے تک رسائی کی اجازت درکار ہے۔"</string>
 <string name="infobar_missing_camera_permission_text">"‏Banana Browser کو اس سائٹ کیلئے آپ کے کیمرا تک رسائی کی اجازتیں درکار ہیں۔"</string>
 <string name="infobar_missing_microphone_permission_text">"‏Banana Browser کو اس سائٹ کیلئے آپ کے مائیکروفون تک رسائی کی اجازتیں درکار ہیں۔"</string>

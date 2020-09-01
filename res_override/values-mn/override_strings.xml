@@ -97,6 +97,9 @@ Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Goo
 <string name="autofill_assistant_module_title">"Banana Browser-н Google Туслах"</string>
 <string name="qr_code_permission_description">"QR кодыг скан хийхийн тулд Banana Browser-д таны камерыг ашиглахыг зөвшөөрнө үү"</string>
 <string name="qr_code_open_settings_description">"QR кодыг скан хийхийн тулд Banana Browser таны камерыг ашиглах боломжтой болгож тохиргоогоо өөрчилнө үү"</string>
+<string name="chrome_reengagement_notification_1_description">"Таны сонирхолтой холбоотой Banana Browser дээрх нийтлэлүүд"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser дээр Lite горимыг ашиглаарай"</string>
+<string name="chrome_reengagement_notification_3_title">"Google нь Banana Browser-г санал болгож байна"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Орчин тойрны тань 3D газрын зургийг үүсгэхийн тулд таны камерт хандах зөвшөөрөл Banana Browser-д шаардлагатай."</string>
 <string name="infobar_missing_camera_permission_text">"Энэ сайтыг ашиглахын тулд Banana Browser-д таны камерт хандах зөвшөөрөл шаардлагатай байна."</string>
 <string name="infobar_missing_microphone_permission_text">"Энэ сайтыг ашиглахын тулд Banana Browser-д таны микрофонд хандах зөвшөөрөл шаардлагатай байна."</string>

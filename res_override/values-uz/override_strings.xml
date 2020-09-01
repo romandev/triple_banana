@@ -96,6 +96,9 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="autofill_assistant_module_title">"Banana Browser ichidagi Google Assistent"</string>
 <string name="qr_code_permission_description">"Banana Browser QR-kodni skanerlashi uchun kameradan foydalanishga ruxsat bering"</string>
 <string name="qr_code_open_settings_description">"Banana Browser QR kodni skanerlashi uchun sozlamalar orqali kamerani yoqing."</string>
+<string name="chrome_reengagement_notification_1_description">"Banana Browser brauzerida qiziqishlaringizga oid maqolalar"</string>
+<string name="chrome_reengagement_notification_2_description">"Google Banana Browser brauzerida Lite rejimidan foydalanish"</string>
+<string name="chrome_reengagement_notification_3_title">"Google Banana Browser brauzerini  tavsiya qiladi"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser atrofingiz 3D xaritasini yaratishi uchun unga kamera ruxsati zarur."</string>
 <string name="infobar_missing_camera_permission_text">"Bu sayt kamerangizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>
 <string name="infobar_missing_microphone_permission_text">"Bu sayt mikrofoningizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>

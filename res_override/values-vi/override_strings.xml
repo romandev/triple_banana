@@ -97,6 +97,9 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="autofill_assistant_module_title">"Trợ lý Google trong Banana Browser"</string>
 <string name="qr_code_permission_description">"Để quét mã QR, hãy cho phép Banana Browser dùng máy ảnh của bạn"</string>
 <string name="qr_code_open_settings_description">"Để quét mã QR, hãy thay đổi các tùy chọn cài đặt để Banana Browser có thể sử dụng máy ảnh của bạn"</string>
+<string name="chrome_reengagement_notification_1_description">"Các bài viết về chủ đề mà bạn quan tâm trên Banana Browser"</string>
+<string name="chrome_reengagement_notification_2_description">"Dùng Chế độ thu gọn trên Google Banana Browser"</string>
+<string name="chrome_reengagement_notification_3_title">"Google đề xuất Banana Browser"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser cần có quyền truy cập máy ảnh của bạn cho trang web này."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser cần có quyền truy cập micrô của bạn cho trang web này."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser cần có quyền truy cập máy ảnh và micrô của bạn cho trang web này."</string>

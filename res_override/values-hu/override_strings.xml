@@ -97,6 +97,9 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
 <string name="autofill_assistant_module_title">"Google Segéd a Banana Browser-ban"</string>
 <string name="qr_code_permission_description">"QR-kód beolvasásához engedélyezze a kamera használatát a Banana Browser számára"</string>
 <string name="qr_code_open_settings_description">"QR-kód beolvasásához engedélyezze a beállításokban a Banana Browser számára a kamera használatát"</string>
+<string name="chrome_reengagement_notification_1_description">"Az érdeklődési köreihez kapcsolódó cikkek a Banana Browser-ban"</string>
+<string name="chrome_reengagement_notification_2_description">"Használja az Egyszerűsített módot a Google Banana Browser-ban"</string>
+<string name="chrome_reengagement_notification_3_title">"A Google a Banana Browser-ot ajánlja"</string>
 <string name="infobar_missing_ar_camera_permission_text">"A Banana Browser-nak engedélyre van szüksége a kamerájához való hozzáféréshez annak érdekében, hogy 3D-s térképet készíthessen az Ön környezetéről."</string>
 <string name="infobar_missing_camera_permission_text">"A Banana Browser számára engedély szükséges, hogy hozzáférjen a kamerához ennél a webhelynél."</string>
 <string name="infobar_missing_microphone_permission_text">"A Banana Browser számára engedély szükséges, hogy hozzáférjen a mikrofonhoz ennél a webhelynél."</string>
