@@ -36,24 +36,25 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  
      // After the first fullscreen request, the user activation should be
      // consumed, and the following fullscreen requests should receive an error.
-@@ -862,6 +883,16 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
-     if (ua_originated) {
-       ContinueExitFullscreen(&doc, resolver, true /* resize */);
-     } else {
+@@ -810,6 +831,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
+     return ScriptPromise();
+   }
+ 
 +#if defined(ENABLE_TRIPLE_BANANA)
-+      // FIXME: We should check whether the remote control service is running.
-+      if (IsA<HTMLVideoElement>(element)) {
-+        // ScriptState::Scope scope(resolver->GetScriptState());
-+        resolver->Reject(V8ThrowException::CreateTypeError(
-+            resolver->GetScriptState()->GetIsolate(),
-+            "Ignore the request to exit fullscreen"));
-+        return promise;
-+      }
++  // FIXME: We should check whether the remote control service is running.
++  if (!ua_originated && IsA<HTMLVideoElement>(FullscreenElementFrom(doc))) {
++    if (exception_state) {
++      exception_state->ThrowDOMException(DOMExceptionCode::kNotAllowedError,
++                                         "Unable to exit fullscreen");
++    }
++    return ScriptPromise();
++  }
 +#endif
-       From(*top_level_doc.domWindow()).pending_exits_.push_back(resolver);
-       LocalFrame& frame = *doc.GetFrame();
-       frame.GetChromeClient().ExitFullscreen(frame);
-@@ -882,6 +913,10 @@ void Fullscreen::DidExitFullscreen(Document& document) {
++
+   if (script_state)
+     resolver = MakeGarbageCollected<ScriptPromiseResolver>(script_state);
+ 
+@@ -882,6 +914,10 @@ void Fullscreen::DidExitFullscreen(Document& document) {
    // If this is a response to an ExitFullscreen call then
    // continue exiting. Otherwise call FullyExitFullscreen.
    Fullscreen& fullscreen = From(*document.domWindow());
