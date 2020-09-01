@@ -1,0 +1,20 @@
+diff --git tb/components/autofill/content/renderer/form_autofill_util.cc tb_diff/components/autofill/content/renderer/form_autofill_util.cc
+--- tb/components/autofill/content/renderer/form_autofill_util.cc
++++ tb_diff/components/autofill/content/renderer/form_autofill_util.cc
+@@ -1806,6 +1806,16 @@ void WebFormControlElementToFormField(
+ 
+   base::string16 value = element.Value().Utf16();
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (value.empty()) {
++    static base::NoDestructor<WebString> kValue("value");
++    const WebInputElement* input_element = ToWebInputElement(&element);
++    if (IsTextInput(input_element) && input_element->HasAttribute(*kValue)) {
++      value = input_element->GetAttribute(*kValue).Utf16();
++    }
++  }
++#endif
++
+   if (IsSelectElement(element) && (extract_mask & EXTRACT_OPTION_TEXT)) {
+     const WebSelectElement select_element = element.ToConst<WebSelectElement>();
+     // Convert the |select_element| value to text if requested.
