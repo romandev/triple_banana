@@ -185,6 +185,11 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
 
         double diffTime = diff * mViewModel.getData().getDuration();
         double newTime = mViewModel.getData().getCurrentTime() + diffTime;
+        if (newTime < 0.0) {
+            newTime = 0.0;
+        } else if (newTime > mViewModel.getData().getDuration()) {
+            newTime = mViewModel.getData().getDuration();
+        }
         mViewModel.getEditor().setControlsVisibility(true);
         mViewModel.getEditor().setCurrentTime(newTime);
         mViewModel.commit();
