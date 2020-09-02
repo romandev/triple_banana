@@ -125,19 +125,19 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/media/MediaPlayState.java",
     "//triple_banana/src/org/triple/banana/media/MediaSuspendController.java",
 
+    # media_remote
+    "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteGestureDetector.java",
+    "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteLayout.java",
+    "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteService.java",
+    "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteView.java",
+    "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteViewImpl.java",
+    "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteViewModel.java",
+
     # password
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",
 
     # remote_config
     "//triple_banana/src/org/triple/banana/remote_config/RemoteConfig.java",
-
-    # remote_control
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlGestureDetector.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlLayout.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlService.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlView.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlViewImpl.java",
-    "//triple_banana/src/org/triple/banana/remote_control/RemoteControlViewModel.java",
 
     # secure_dns
     "//triple_banana/src/org/triple/banana/secure_dns/SecureDnsNotificationManager.java",
@@ -252,7 +252,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/round_rect_dark.xml",
     "//triple_banana/res/drawable/toolbar_button_banana.xml",
     "//triple_banana/res/layout/browser_lock_background.xml",
-    "//triple_banana/res/layout/remote_control_view.xml",
+    "//triple_banana/res/layout/media_remote_view.xml",
     "//triple_banana/res/layout/toolbar_button.xml",
     "//triple_banana/res/layout/toolbar_edit_main.xml",
     "//triple_banana/res/menu/toolbar_action_bar_menu.xml",

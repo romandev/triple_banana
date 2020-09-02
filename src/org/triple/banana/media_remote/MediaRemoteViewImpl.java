@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-package org.triple.banana.remote_control;
+package org.triple.banana.media_remote;
 
 import android.app.Activity;
 import android.app.Dialog;
@@ -23,26 +23,25 @@ import androidx.annotation.Nullable;
 import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaPlayState;
-import org.triple.banana.remote_control.RemoteControlLayout;
 import org.triple.banana.util.BrightnessUtil;
 
 import java.lang.ref.WeakReference;
 
-class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel.Listener {
+class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Listener {
     private final @NonNull WeakReference<Delegate> mDelegate;
     private final @NonNull View.OnClickListener mClickListener;
-    private final @NonNull RemoteControlGestureDetector mRemoteControlGestureDetector =
-            new RemoteControlGestureDetector();
+    private final @NonNull MediaRemoteGestureDetector mMediaRemoteGestureDetector =
+            new MediaRemoteGestureDetector();
     private @Nullable SeekBar mTimeSeekBar;
     private @Nullable Dialog mDialog;
-    private @Nullable RemoteControlLayout mMainView;
+    private @Nullable MediaRemoteLayout mMainView;
     private @Nullable WeakReference<Activity> mParentActivity;
 
-    RemoteControlViewImpl(RemoteControlView.Delegate delegate) {
+    MediaRemoteViewImpl(MediaRemoteView.Delegate delegate) {
         mDelegate = new WeakReference<>(delegate);
         mClickListener = view -> {
             if (mDelegate.get() == null) return;
-            mDelegate.get().onRemoteControlButtonClicked(view.getId());
+            mDelegate.get().onMediaRemoteButtonClicked(view.getId());
         };
     }
 
@@ -54,7 +53,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         hideSystemUI();
         mDialog.show();
         if (mMainView != null && mDelegate.get() != null) {
-            mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
+            mMediaRemoteGestureDetector.startDetection(mMainView, mDelegate.get());
         }
         mParentActivity = new WeakReference<>(parentActivity);
         if (parentActivity.getWindow() != null) {
@@ -67,7 +66,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     public void dismiss() {
         if (mDialog == null) return;
         mDialog.dismiss();
-        mRemoteControlGestureDetector.stopDetection();
+        mMediaRemoteGestureDetector.stopDetection();
 
         if (mParentActivity == null) return;
         Activity activity = mParentActivity.get();
@@ -99,7 +98,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     }
 
     @Override
-    public void onUpdate(RemoteControlViewModel.ReadonlyData data) {
+    public void onUpdate(MediaRemoteViewModel.ReadonlyData data) {
         if (mDialog == null) return;
         updateBrightness(data.getBrightnessControlVisibility(), data.getBrightness());
         updateVolumeUI(data.getVolumeControlVisibility(), data.getVolume());
@@ -232,9 +231,9 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
             return false;
         });
         mDialog.create();
-        mDialog.setContentView(R.layout.remote_control_view);
+        mDialog.setContentView(R.layout.media_remote_view);
 
-        mMainView = mDialog.findViewById(R.id.remote_control_view);
+        mMainView = mDialog.findViewById(R.id.media_remote_view);
         mMainView.addListener(mDelegate.get());
         mTimeSeekBar = mDialog.findViewById(R.id.time_seek_bar);
         mTimeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {

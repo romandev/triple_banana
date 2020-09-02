@@ -5,7 +5,6 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources>
-    <color name="banana_remote_control_background">#000000</color>
     <color name="cancel_text_color">#ff0099cc</color>
     <color name="candidate_icon_round_rect_stroke_color">#EEEEEE</color>
     <color name="candidate_icon_round_rect_stroke_dark_color">#AAAAAA</color>

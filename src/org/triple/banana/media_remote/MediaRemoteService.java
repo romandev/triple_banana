@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-package org.triple.banana.remote_control;
+package org.triple.banana.media_remote;
 
 import android.app.Activity;
 import android.content.pm.ActivityInfo;
@@ -20,11 +20,12 @@ import org.triple.banana.media.MediaEventListener;
 import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.AudioUtil;
 
-public enum RemoteControlService implements RemoteControlView.Delegate {
+public enum MediaRemoteService implements MediaRemoteView
+.Delegate {
     instance;
 
-    private RemoteControlViewModel mViewModel = new RemoteControlViewModel();
-    private RemoteControlViewImpl mView = new RemoteControlViewImpl(this);
+    private MediaRemoteViewModel mViewModel = new MediaRemoteViewModel();
+    private MediaRemoteViewImpl mView = new MediaRemoteViewImpl(this);
     private boolean mWasPipMode;
     private boolean mWasPlaying;
     private boolean mWasControlsVisible;
@@ -94,7 +95,7 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     }
 
     @Override
-    public void onRemoteControlButtonClicked(int id) {
+    public void onMediaRemoteButtonClicked(int id) {
         if (id == R.id.play_button) {
             if (mViewModel.getEditor().getPlayState() == MediaPlayState.PAUSED) {
                 mMediaController.play();
@@ -230,14 +231,14 @@ public enum RemoteControlService implements RemoteControlView.Delegate {
     public void onBackward() {
         if (mViewModel.getData().getIsLocked()) return;
         mMediaController.setRelativePosition(-10.0f);
-        mView.showEffect(RemoteControlView.Effect.BACKWARD);
+        mView.showEffect(MediaRemoteView.Effect.BACKWARD);
     }
 
     @Override
     public void onForward() {
         if (mViewModel.getData().getIsLocked()) return;
         mMediaController.setRelativePosition(10.0f);
-        mView.showEffect(RemoteControlView.Effect.FORWARD);
+        mView.showEffect(MediaRemoteView.Effect.FORWARD);
     }
 
     @Override

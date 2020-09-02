@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-package org.triple.banana.remote_control;
+package org.triple.banana.media_remote;
 
 import android.view.GestureDetector;
 import android.view.MotionEvent;
@@ -15,7 +15,7 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 
 import java.lang.ref.WeakReference;
 
-public class RemoteControlGestureDetector implements View.OnTouchListener {
+public class MediaRemoteGestureDetector implements View.OnTouchListener {
     private static enum GestureType {
         UNKNOWN,
         VOLUME_CHANGED,
@@ -23,7 +23,7 @@ public class RemoteControlGestureDetector implements View.OnTouchListener {
         POSITION_CHANGED
     }
 
-    private final static String TAG = "RemoteControlGestureDetector";
+    private final static String TAG = "MediaRemoteGestureDetector";
     private GestureDetectorCompat mGestureDetectorCompat;
     private Callback mCallback;
     private WeakReference<View> mTargetView;

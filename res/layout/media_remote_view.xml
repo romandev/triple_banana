@@ -4,8 +4,8 @@
      License, v. 2.0. If a copy of the MPL was not distributed with this
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
-<org.triple.banana.remote_control.RemoteControlLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/remote_control_view"
+<org.triple.banana.media_remote.MediaRemoteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/media_remote_view"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/control_background">
@@ -217,4 +217,4 @@
             </RelativeLayout>
         </RelativeLayout>
     </FrameLayout>
-</org.triple.banana.remote_control.RemoteControlLayout>
+</org.triple.banana.media_remote.MediaRemoteLayout>

@@ -15,8 +15,8 @@ import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.lock.ApplicationStatusTracker;
 import org.triple.banana.lock.BrowserLock;
 import org.triple.banana.media.MediaSuspendController;
+import org.triple.banana.media_remote.MediaRemoteService;
 import org.triple.banana.password.PasswordExtension;
-import org.triple.banana.remote_control.RemoteControlService;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
@@ -74,7 +74,7 @@ public class TripleBananaApplication extends BananaApplication {
             SecureDnsNotificationManager.getInstance().showSecureDnsNotificationIfNeeded();
         }
 
-        RemoteControlService.instance.start();
+        MediaRemoteService.instance.start();
 
         // Apply BrowserLock from ExtensionFeatures setting
         if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {

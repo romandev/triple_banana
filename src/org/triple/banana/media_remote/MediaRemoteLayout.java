@@ -3,7 +3,7 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-package org.triple.banana.remote_control;
+package org.triple.banana.media_remote;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -16,14 +16,14 @@ import androidx.annotation.Nullable;
 import java.util.HashSet;
 import java.util.Set;
 
-public class RemoteControlLayout extends RelativeLayout {
+public class MediaRemoteLayout extends RelativeLayout {
     Set<Listener> mListeners = new HashSet<>();
 
     public interface Listener {
         void onInterceptTouchEvent();
     }
 
-    public RemoteControlLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public MediaRemoteLayout(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
     }
 
