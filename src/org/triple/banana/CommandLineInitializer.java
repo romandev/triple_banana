@@ -44,7 +44,7 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
 
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             enableBlinkFeature("BackgroundPlay");
-            BananaCommandLine.get().appendSwitchWithValue("disable-media-suspend", null);
+            BananaCommandLine.get().appendSwitchWithValue("disable-background-media-suspend", null);
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
