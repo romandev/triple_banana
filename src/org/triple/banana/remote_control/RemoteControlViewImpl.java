@@ -11,6 +11,7 @@ import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.SeekBar;
@@ -35,6 +36,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     private @Nullable SeekBar mTimeSeekBar;
     private @Nullable Dialog mDialog;
     private @Nullable RemoteControlLayout mMainView;
+    private @Nullable WeakReference<Activity> mParentActivity;
 
     RemoteControlViewImpl(RemoteControlView.Delegate delegate) {
         mDelegate = new WeakReference<>(delegate);
@@ -54,16 +56,25 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         if (mMainView != null && mDelegate.get() != null) {
             mRemoteControlGestureDetector.startDetection(mMainView, mDelegate.get());
         }
-        mDialog.getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(
-                visibility -> hideSystemUI());
+        mParentActivity = new WeakReference<>(parentActivity);
+        if (parentActivity.getWindow() != null) {
+            parentActivity.getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
     }
 
     @Override
     public void dismiss() {
         if (mDialog == null) return;
-        mDialog.getWindow().getDecorView().setOnSystemUiVisibilityChangeListener(null);
         mDialog.dismiss();
         mRemoteControlGestureDetector.stopDetection();
+
+        if (mParentActivity == null) return;
+        Activity activity = mParentActivity.get();
+        if (activity != null && activity.getWindow() != null) {
+            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
+        mParentActivity.clear();
     }
 
     @Override
@@ -144,7 +155,7 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
     }
 
     private void hideSystemUI() {
-        if (mDialog == null) return;
+        if (mDialog == null || !mDialog.isShowing()) return;
         int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
                 | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
@@ -155,6 +166,14 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         final View contentView = tab.getContentView();
         if (contentView == null) return;
         contentView.setSystemUiVisibility(flags);
+    }
+
+    private void showSystemUI() {
+        if (mDialog == null || !mDialog.isShowing()) return;
+        int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+        mDialog.getWindow().getDecorView().setSystemUiVisibility(flags);
     }
 
     private void showControls(boolean controlsVisibility, boolean isLocked, boolean isMuted) {
@@ -169,6 +188,12 @@ class RemoteControlViewImpl implements RemoteControlView, RemoteControlViewModel
         lockButton.setVisibility(controlsVisibility ? View.VISIBLE : View.INVISIBLE);
         lockButton.setImageResource(isLocked ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
         muteButton.setImageResource(isMuted ? R.drawable.ic_mute : R.drawable.ic_volume_up);
+
+        if (controlsVisibility && !isLocked) {
+            showSystemUI();
+        } else {
+            hideSystemUI();
+        }
     }
 
     private void setPlayState(MediaPlayState state) {
