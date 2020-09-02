@@ -29,14 +29,14 @@ import java.io.InputStream;
 public class FilterLoaderImpl implements FilterLoader {
     private static final String TAG = "FilterLoaderImpl";
     private final RemoteConfig mMetaData =
-            new RemoteConfig("https://zino.dev/triple_banana_filter/metadata.json");
+            new RemoteConfig("https://triplebanana.github.io/filter/metadata.json");
 
-    private static final Uri FILTER_BASE_URL = Uri.parse("https://zino.dev/triple_banana_filter/");
+    private static final Uri FILTER_BASE_URL = Uri.parse("https://triplebanana.github.io/filter/");
     private static final String LAST_CHECK_TIME_KEY = "filter_download_last_check_time";
-    private static final long UPDATE_INTERVAL = AlarmManager.INTERVAL_DAY * 3;
+    private static final long UPDATE_INTERVAL = AlarmManager.INTERVAL_DAY * 1;
     private static final String NO_FILTER = new String();
-    private static final String BUILTIN_FILTER_VERSION = "1.0.0.00001";
-    private static final long BUILTIN_FILTER_SIZE = 2974436;
+    private static final String BUILTIN_FILTER_VERSION = "1.0.0.00002";
+    private static final long BUILTIN_FILTER_SIZE = 2300826;
 
     private long getLastCheckTime() {
         return BananaApplicationUtils.get().getSharedPreferences().getLong(LAST_CHECK_TIME_KEY, 0);
