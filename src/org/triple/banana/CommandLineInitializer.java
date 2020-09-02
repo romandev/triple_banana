@@ -15,29 +15,55 @@ import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import java.util.ArrayList;
 
 class CommandLineInitializer implements BananaCommandLineInitializer {
+    ArrayList<String> mBlinkFeatures = new ArrayList<>();
+    ArrayList<String> mChromiumFeatures = new ArrayList<>();
+
+    private void enableBlinkFeature(String featureName) {
+        mBlinkFeatures.add(featureName);
+    }
+
+    private void enableChromiumFeature(String featureName) {
+        mChromiumFeatures.add(featureName);
+    }
+
+    private void enableBlinkFeatures() {
+        if (mBlinkFeatures.isEmpty()) return;
+        BananaCommandLine.get().appendSwitchWithValue(
+                "enable-blink-features", TextUtils.join(",", mBlinkFeatures));
+    }
+
+    private void enableChromiumFeatures() {
+        if (mChromiumFeatures.isEmpty()) return;
+        BananaCommandLine.get().appendSwitchWithValue(
+                "enable-features", TextUtils.join(",", mChromiumFeatures));
+    }
+
     @Override
     public void initCommandLine() {
+        enableChromiumFeature("DarkenWebsitesCheckboxInThemesSetting");
+
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
-            BananaCommandLine.get().appendSwitchWithValue(
-                    "enable-blink-features", "BackgroundPlay");
+            enableBlinkFeature("BackgroundPlay");
             BananaCommandLine.get().appendSwitchWithValue("disable-media-suspend", null);
         }
-        ArrayList<String> enableFeatures = new ArrayList<>();
-        enableFeatures.add("DarkenWebsitesCheckboxInThemesSetting");
+
         if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
-            enableFeatures.add("ChromeDuet,HomePageButtonForceEnabled,OmniboxSearchEngineLogo");
+            enableChromiumFeature("ChromeDuet");
+            enableChromiumFeature("HomePageButtonForceEnabled");
+            enableChromiumFeature("OmniboxSearchEngineLogo");
         }
+
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
-            enableFeatures.add("PostQuantumCECPQ2,DnsOverHttps");
-        }
-        if (!enableFeatures.isEmpty()) {
-            BananaCommandLine.get().appendSwitchWithValue(
-                    "enable-features", TextUtils.join(",", enableFeatures));
+            enableChromiumFeature("PostQuantumCECPQ2");
+            enableChromiumFeature("DnsOverHttps");
         }
 
         if (!ExtensionFeatures.isEnabled(FeatureName.AUTOPLAY, true)) {
             BananaCommandLine.get().appendSwitchWithValue(
                     "autoplay-policy", "user-gesture-required");
         }
+
+        enableBlinkFeatures();
+        enableChromiumFeatures();
     }
 }
