@@ -17,8 +17,8 @@ diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_d
      return;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  // FIXME: We should check whether the remote control service is running.
-+  if (GetFrame()->GetDocument()) {
++  if (RuntimeEnabledFeatures::MediaRemoteEnabled() &&
++      GetFrame()->GetDocument()) {
 +    Element* element =
 +        Fullscreen::FullscreenElementFrom(*GetFrame()->GetDocument());
 +    if (IsA<HTMLVideoElement>(element) &&

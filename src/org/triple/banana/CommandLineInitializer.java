@@ -58,6 +58,10 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
             enableChromiumFeature("DnsOverHttps");
         }
 
+        if (ExtensionFeatures.isEnabled(FeatureName.MEDIA_REMOTE, true)) {
+            enableBlinkFeature("MediaRemote");
+        }
+
         if (!ExtensionFeatures.isEnabled(FeatureName.AUTOPLAY, true)) {
             BananaCommandLine.get().appendSwitchWithValue(
                     "autoplay-policy", "user-gesture-required");

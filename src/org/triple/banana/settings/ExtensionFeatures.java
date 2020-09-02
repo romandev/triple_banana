@@ -80,6 +80,13 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
+        final SwitchPreferenceCompat mediaRemote =
+                (SwitchPreferenceCompat) findPreference(FeatureName.MEDIA_REMOTE);
+        mediaRemote.setOnPreferenceClickListener(preference -> {
+            showRestartDialog();
+            return true;
+        });
+
         final SwitchPreferenceCompat autoPlay =
                 (SwitchPreferenceCompat) findPreference(FeatureName.AUTOPLAY);
         autoPlay.setOnPreferenceClickListener(preference -> {
@@ -187,6 +194,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         public static final String DARK_MODE = "feature_name_dark_mode";
         public static final String TRANSLATE = "feature_name_translate";
         public static final String BROWSER_LOCK = "feature_name_browser_lock";
+        public static final String MEDIA_REMOTE = "feature_name_media_remote";
     }
 
     public static void setEnabled(String feature, boolean value) {

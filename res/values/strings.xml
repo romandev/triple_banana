@@ -23,6 +23,8 @@
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
     <string name="media_features">Media Features</string>
+    <string name="media_remote">Media Remote</string>
+    <string name="media_remote_summary">Enable powerful extend media player for video elements on fullscreen mode</string>
     <string name="pip_not_supported">PIP mode is not supported on this video</string>
     <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>

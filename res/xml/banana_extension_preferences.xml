@@ -42,6 +42,12 @@
     <PreferenceCategory
         android:title="@string/media_features"/>
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_media_remote"
+        android:defaultValue="true"
+        android:title="@string/media_remote"
+        android:summaryOn="@string/media_remote_summary"
+        android:summaryOff="@string/text_off" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_autoplay"
         android:defaultValue="true"
         android:title="@string/autoplay"

@@ -1,12 +1,13 @@
 diff --git tb/third_party/blink/renderer/core/html/media/html_media_element.cc tb_diff/third_party/blink/renderer/core/html/media/html_media_element.cc
 --- tb/third_party/blink/renderer/core/html/media/html_media_element.cc
 +++ tb_diff/third_party/blink/renderer/core/html/media/html_media_element.cc
-@@ -2640,6 +2640,12 @@ bool HTMLMediaElement::ShouldShowControls(
+@@ -2640,6 +2640,13 @@ bool HTMLMediaElement::ShouldShowControls(
      return false;
    }
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  if (IsFullscreen() && IsHTMLVideoElement()) {
++  if (RuntimeEnabledFeatures::MediaRemoteEnabled() && IsFullscreen() &&
++      IsHTMLVideoElement()) {
 +    return false;
 +  }
 +#endif

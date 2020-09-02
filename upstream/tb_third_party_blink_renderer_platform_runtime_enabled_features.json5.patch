@@ -1,0 +1,13 @@
+diff --git tb/third_party/blink/renderer/platform/runtime_enabled_features.json5 tb_diff/third_party/blink/renderer/platform/runtime_enabled_features.json5
+--- tb/third_party/blink/renderer/platform/runtime_enabled_features.json5
++++ tb_diff/third_party/blink/renderer/platform/runtime_enabled_features.json5
+@@ -1101,6 +1101,9 @@
+     {
+       name: "MediaQueryNavigationControls",
+     },
++    {
++      name: "MediaRemote",
++    },
+     {
+       name: "MediaSession",
+       status: "stable",

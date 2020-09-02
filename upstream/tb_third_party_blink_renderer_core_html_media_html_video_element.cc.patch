@@ -11,12 +11,14 @@ diff --git tb/third_party/blink/renderer/core/html/media/html_video_element.cc t
        mostly_filling_viewport_(false) {
    if (document.GetSettings()) {
      default_poster_url_ =
-@@ -268,6 +271,10 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
+@@ -268,6 +271,12 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
  void HTMLVideoElement::OnBecamePersistentVideo(bool value) {
    is_auto_picture_in_picture_ = value;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  media_dispatcher_->OnChangedPIPMode(value);
++  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
++    media_dispatcher_->OnChangedPIPMode(value);
++  }
 +#endif
 +
    if (value) {
