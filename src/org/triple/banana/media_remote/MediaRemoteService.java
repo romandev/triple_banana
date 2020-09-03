@@ -35,6 +35,9 @@ public enum MediaRemoteService implements MediaRemoteView
         mViewModel.getEditor().setControlsVisibility(false);
         mViewModel.commit();
     };
+    private final Runnable mTaskToRetrySeeking = () -> {
+        mMediaController.setRelativePosition(0.0f);
+    };
     private Handler mHandler = new Handler();
 
     public void start() {
@@ -51,6 +54,11 @@ public enum MediaRemoteService implements MediaRemoteView
         mMediaController.addEventListener(new MediaEventListener() {
             @Override
             public void onPlayStateChanged(MediaPlayState state) {
+                mHandler.removeCallbacks(mTaskToRetrySeeking);
+                if (mViewModel.getData().getPlayState() == MediaPlayState.PLAYING
+                        && state == MediaPlayState.WAITING) {
+                    mHandler.postDelayed(mTaskToRetrySeeking, 1000);
+                }
                 mViewModel.getEditor().setPlayState(state);
                 mViewModel.commit();
             }
