@@ -14,11 +14,17 @@ diff --git tb/third_party/blink/renderer/core/html/media/autoplay_policy.cc tb_d
    return GetAutoplayPolicyForDocument(document) !=
           AutoplayPolicy::Type::kNoUserGestureRequired;
  }
-@@ -292,6 +298,13 @@ bool AutoplayPolicy::IsOrWillBeAutoplayingMutedInternal(bool muted) const {
+@@ -292,6 +298,19 @@ bool AutoplayPolicy::IsOrWillBeAutoplayingMutedInternal(bool muted) const {
  }
  
  bool AutoplayPolicy::IsLockedPendingUserGesture() const {
 +#if defined(ENABLE_TRIPLE_BANANA)
++  if (RuntimeEnabledFeatures::MediaRemoteEnabled() &&
++      IsA<HTMLVideoElement>(element_.Get()) &&
++      DynamicTo<HTMLVideoElement>(element_.Get())->IsFullscreen()) {
++    return false;
++  }
++
 +  if (ComputeLockPendingUserGestureRequired(element_->GetDocument())) {
 +    return !LocalFrame::HasTransientUserActivation(
 +        element_->GetDocument().GetFrame());
