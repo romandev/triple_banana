@@ -34,7 +34,8 @@
             android:layout_alignParentTop="true"
             android:layout_toStartOf="@id/rotate_button"
             android:contentDescription="@string/media_remote_pip"
-            android:src="@drawable/ic_pip" />
+            android:src="@drawable/ic_pip"
+            android:visibility="invisible" />
 
         <ImageButton
             android:id="@+id/rotate_button"
