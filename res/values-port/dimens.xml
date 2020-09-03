@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<resources>
+    <dimen name="media_remote_bottom_margin">50dp</dimen>
+    <dimen name="media_remote_end_margin">10dp</dimen>
+    <dimen name="media_remote_play_button_horizontal_margin">20dp</dimen>
+    <dimen name="media_remote_start_margin">10dp</dimen>
+    <dimen name="media_remote_top_margin">25dp</dimen>
+</resources>

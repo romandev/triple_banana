@@ -81,10 +81,10 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         View view;
         switch (effect) {
             case FORWARD:
-                view = mDialog.findViewById(R.id.forward_ripple);
+                view = mDialog.findViewById(R.id.forward_effect);
                 break;
             case BACKWARD:
-                view = mDialog.findViewById(R.id.backward_ripple);
+                view = mDialog.findViewById(R.id.backward_effect);
                 break;
             case NONE:
             default:
@@ -118,12 +118,9 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     private void updateTimeInfo(double currentTime, double duration) {
         if (mDialog == null || mTimeSeekBar == null) return;
 
-        TextView currentTimeView = mMainView.findViewById(R.id.current_time);
-        TextView durationView = mMainView.findViewById(R.id.duration);
-        if (currentTimeView == null || durationView == null) return;
-
-        currentTimeView.setText(getTimeLabelFrom((long) currentTime));
-        durationView.setText(getTimeLabelFrom((long) duration));
+        TextView timeTextView = mMainView.findViewById(R.id.time_text);
+        if (timeTextView == null) return;
+        timeTextView.setText(String.format("%s | %s", getTimeLabelFrom((long) currentTime), getTimeLabelFrom((long) duration)));
         mTimeSeekBar.setMax((int) duration);
         mTimeSeekBar.setProgress((int) currentTime);
     }
@@ -131,11 +128,11 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     private void updateVolumeUI(boolean visibility, float value) {
         if (mDialog == null) return;
 
-        ViewGroup volumeLayout = mMainView.findViewById(R.id.volume_layout);
-        if (volumeLayout == null) return;
-        volumeLayout.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
+        ViewGroup volumeContainer = mMainView.findViewById(R.id.volume_container);
+        if (volumeContainer == null) return;
+        volumeContainer.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
 
-        SeekBar volumeSeekBar = volumeLayout.findViewById(R.id.volume_seek_bar);
+        SeekBar volumeSeekBar = volumeContainer.findViewById(R.id.volume_seekbar);
         if (volumeSeekBar == null) return;
         volumeSeekBar.setProgress((int) (value * 100.0f));
     }
@@ -144,11 +141,11 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         if (mDialog == null) return;
         BrightnessUtil.setWindowBrightness(mDialog.getWindow(), value);
 
-        ViewGroup brightnessLayout = mMainView.findViewById(R.id.brightness_layout);
-        if (brightnessLayout == null) return;
-        brightnessLayout.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
+        ViewGroup brightnessContainer = mMainView.findViewById(R.id.brightness_container);
+        if (brightnessContainer == null) return;
+        brightnessContainer.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
 
-        SeekBar brightnessSeekBar = brightnessLayout.findViewById(R.id.brightness_seek_bar);
+        SeekBar brightnessSeekBar = brightnessContainer.findViewById(R.id.brightness_seekbar);
         if (brightnessSeekBar == null) return;
         brightnessSeekBar.setProgress((int) (value * 100.0f));
     }
@@ -178,9 +175,9 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     private void showControls(boolean controlsVisibility, boolean isLocked, boolean isMuted) {
         if (mMainView == null) return;
 
-        final ViewGroup controls = mMainView.findViewById(R.id.control);
+        final ViewGroup controls = mMainView.findViewById(R.id.controls);
         final ImageButton lockButton = mMainView.findViewById(R.id.lock_button);
-        final ImageButton muteButton = mMainView.findViewById(R.id.mute_button);
+        final ImageButton muteButton = controls.findViewById(R.id.mute_button);
         if (controls == null || lockButton == null || muteButton == null) return;
 
         controls.setVisibility(controlsVisibility && !isLocked ? View.VISIBLE : View.INVISIBLE);
@@ -196,25 +193,24 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     }
 
     private void setPlayState(MediaPlayState state) {
-        final ViewGroup middleControl = mMainView.findViewById(R.id.middle_control);
         final ImageButton playButton = mMainView.findViewById(R.id.play_button);
-        final ProgressBar waitingProgressBar = mMainView.findViewById(R.id.waiting_progress_bar);
+        final ProgressBar waitingProgress = mMainView.findViewById(R.id.waiting_progress);
 
-        if (middleControl == null || playButton == null || waitingProgressBar == null) return;
+        if (playButton == null || waitingProgress == null) return;
         switch (state) {
             case PLAYING:
-                middleControl.setVisibility(View.VISIBLE);
-                waitingProgressBar.setVisibility(View.INVISIBLE);
+                waitingProgress.setVisibility(View.INVISIBLE);
                 playButton.setImageResource(R.drawable.ic_pause);
+                playButton.setVisibility(View.VISIBLE);
                 break;
             case PAUSED:
-                middleControl.setVisibility(View.VISIBLE);
-                waitingProgressBar.setVisibility(View.INVISIBLE);
+                waitingProgress.setVisibility(View.INVISIBLE);
                 playButton.setImageResource(R.drawable.ic_play);
+                playButton.setVisibility(View.VISIBLE);
                 break;
             case WAITING:
-                middleControl.setVisibility(View.INVISIBLE);
-                waitingProgressBar.setVisibility(View.VISIBLE);
+                waitingProgress.setVisibility(View.VISIBLE);
+                playButton.setVisibility(View.INVISIBLE);
                 break;
         }
     }
@@ -235,7 +231,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
         mMainView = mDialog.findViewById(R.id.media_remote_view);
         mMainView.addListener(mDelegate.get());
-        mTimeSeekBar = mDialog.findViewById(R.id.time_seek_bar);
+        mTimeSeekBar = mDialog.findViewById(R.id.time_seekbar);
         mTimeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             private int mPreviousProgress;
 
@@ -263,7 +259,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         mDialog.findViewById(R.id.forward_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.close_button).setOnClickListener(mClickListener);
+        mDialog.findViewById(R.id.back_button).setOnClickListener(mClickListener);
         mDialog.findViewById(R.id.mute_button).setOnClickListener(mClickListener);
 
         // Pip mode button only visible on android 8.0 or higher.

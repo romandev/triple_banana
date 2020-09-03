@@ -4,217 +4,196 @@
      License, v. 2.0. If a copy of the MPL was not distributed with this
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
-<org.triple.banana.media_remote.MediaRemoteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<org.triple.banana.media_remote.MediaRemoteLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/media_remote_view"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/control_background">
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/controls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/controls_background"
+        android:paddingTop="@dimen/media_remote_top_margin"
+        android:paddingBottom="@dimen/media_remote_bottom_margin"
+        android:paddingStart="@dimen/media_remote_start_margin"
+        android:paddingEnd="@dimen/media_remote_end_margin">
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:contentDescription="@string/media_remote_back"
+            android:src="@drawable/ic_back" />
+
+        <ImageButton
+            android:id="@+id/pip_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/rotate_button"
+            android:contentDescription="@string/media_remote_pip"
+            android:src="@drawable/ic_pip" />
+
+        <ImageButton
+            android:id="@+id/rotate_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/media_remote_button_size"
+            android:contentDescription="@string/media_remote_rotate"
+            android:src="@drawable/ic_rotate" />
+
+        <ImageButton
+            android:id="@+id/backward_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/play_button"
+            android:contentDescription="@string/media_remote_backward"
+            android:src="@drawable/ic_backward" />
+
+        <ImageButton
+            android:id="@+id/play_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="@dimen/media_remote_play_button_horizontal_margin"
+            android:contentDescription="@string/media_remote_play"
+            android:src="@drawable/ic_play" />
+
+        <ImageButton
+            android:id="@+id/forward_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/play_button"
+            android:contentDescription="@string/media_remote_forward"
+            android:src="@drawable/ic_forward" />
+
+        <ImageButton
+            android:id="@+id/mute_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:contentDescription="@string/media_remote_mute"
+            android:src="@drawable/ic_mute" />
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/time_seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mute_button"
+            android:layout_alignBottom="@id/mute_button"
+            android:layout_toStartOf="@id/time_text"
+            android:layout_toEndOf="@id/mute_button"
+            android:gravity="center"
+            android:progressTint="@color/media_remote_highlight_color"
+            android:thumbTint="@color/media_remote_highlight_color" />
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/mute_button"
+            android:layout_alignBottom="@id/mute_button"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/media_remote_time_text_end_margin"
+            android:gravity="center"
+            android:text="@string/media_remote_default_time"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/media_remote_text_size" />
+    </RelativeLayout>
 
     <ImageButton
         android:id="@+id/lock_button"
-        style="@style/BananaMediaButtonTheme"
-        android:layout_alignParentLeft="true"
+        style="@style/MediaRemoteButtonTheme"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/media_remote_top_margin"
+        android:layout_marginEnd="@dimen/media_remote_end_margin"
+        android:contentDescription="@string/media_remote_lock"
         android:src="@drawable/ic_lock" />
 
+    <LinearLayout
+        android:id="@+id/brightness_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:rotation="270"
+        android:translationX="@dimen/media_remote_brightness_container_bias"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/brightness_seekbar"
+            android:layout_width="@dimen/media_remote_vertical_seekbar_size"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/media_remote_highlight_color"
+            android:thumb="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/media_remote_brightness"
+            android:src="@drawable/ic_brightness_up" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/volume_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:rotation="270"
+        android:translationX="@dimen/media_remote_volume_container_bias"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.AppCompatSeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="@dimen/media_remote_vertical_seekbar_size"
+            android:layout_height="wrap_content"
+            android:progressTint="@color/media_remote_highlight_color"
+            android:thumb="@android:color/transparent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/media_remote_volume"
+            android:rotation="90"
+            android:src="@drawable/ic_volume_up" />
+    </LinearLayout>
+
     <ProgressBar
-        android:id="@+id/waiting_progress_bar"
+        android:id="@+id/waiting_progress"
         style="?android:attr/progressBarStyle"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="@dimen/media_remote_wait_progress_size"
+        android:layout_height="@dimen/media_remote_wait_progress_size"
         android:layout_centerInParent="true"
-        android:indeterminateTint="@color/progress_color" />
-
-    <FrameLayout
-        android:id="@+id/brightness_layout"
-        android:layout_width="@dimen/vertical_seek_bar_length"
-        android:layout_height="match_parent"
-        android:visibility="invisible">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_brightness_up"
-            android:translationX="-70dp"
-            android:translationY="-110dp" />
-
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/brightness_seek_bar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:max="100"
-            android:min="0"
-            android:progressTint="@color/progress_color"
-            android:thumb="@android:color/transparent"
-            android:rotation="270"
-            android:translationX="-70dp" />
-    </FrameLayout>
-
-    <FrameLayout
-        android:id="@+id/volume_layout"
-        android:layout_width="@dimen/vertical_seek_bar_length"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
-        android:visibility="invisible">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:src="@drawable/ic_volume_up"
-            android:translationX="70dp"
-            android:translationY="-110dp" />
-
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/volume_seek_bar"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:max="100"
-            android:min="0"
-            android:progressTint="@color/progress_color"
-            android:thumb="@android:color/transparent"
-            android:rotation="270"
-            android:translationX="70dp" />
-    </FrameLayout>
+        android:indeterminateTint="@color/media_remote_highlight_color"
+        android:visibility="invisible" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:layout_height="match_parent">
+
         <LinearLayout
-            android:id="@+id/backward_ripple"
+            android:id="@+id/backward_effect"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:theme="@style/BananaRippleEffectTheme"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:theme="@style/MediaRemoteRippleEffectTheme" />
+
         <LinearLayout
-            android:id="@+id/forward_ripple"
+            android:id="@+id/forward_effect"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:theme="@style/BananaRippleEffectTheme"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:theme="@style/MediaRemoteRippleEffectTheme" />
     </LinearLayout>
-
-    <FrameLayout
-        android:id="@+id/control"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="@dimen/margin_horizontal"
-        android:layout_marginTop="@dimen/margin_vertical"
-        android:layout_marginRight="@dimen/margin_horizontal"
-        android:layout_marginBottom="@dimen/margin_vertical">
-
-        <RelativeLayout
-            android:id="@+id/top_control"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageButton
-                android:id="@+id/close_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/ic_close" />
-
-            <ImageButton
-                android:id="@+id/rotate_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_marginRight="@dimen/margin_option_button"
-                android:layout_toLeftOf="@id/close_button"
-                android:src="@drawable/ic_rotate" />
-
-            <ImageButton
-                android:id="@+id/pip_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_marginRight="@dimen/margin_option_button"
-                android:layout_toLeftOf="@id/rotate_button"
-                android:src="@drawable/ic_pip"
-                android:visibility="gone" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/middle_control"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center">
-
-            <ImageButton
-                android:id="@+id/play_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_play" />
-
-            <ImageButton
-                android:id="@+id/backward_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="@dimen/margin_play_button"
-                android:layout_toLeftOf="@id/play_button"
-                android:src="@drawable/ic_rewind_48dp" />
-
-            <ImageButton
-                android:id="@+id/forward_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/margin_play_button"
-                android:layout_toRightOf="@id/play_button"
-                android:src="@drawable/ic_forward_48dp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/bottom_control"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom">
-
-            <ImageButton
-                android:id="@+id/mute_button"
-                style="@style/BananaMediaButtonTheme"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/ic_mute" />
-
-            <androidx.appcompat.widget.AppCompatSeekBar
-                android:id="@+id/time_seek_bar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toLeftOf="@id/time_layout"
-                android:layout_toRightOf="@id/mute_button"
-                android:progressTint="@color/progress_color"
-                android:thumbTint="@color/progress_color" />
-
-            <RelativeLayout
-                android:id="@+id/time_layout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true">
-
-                <TextView
-                    android:id="@+id/current_time"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="00:00"
-                    android:textColor="@color/current_time_color" />
-
-                <TextView
-                    android:id="@+id/time_bar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/current_time"
-                    android:text=" | "
-                    android:textColor="@color/white" />
-
-                <TextView
-                    android:id="@+id/duration"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/time_bar"
-                    android:text="12:34"
-                    android:textColor="@color/white" />
-            </RelativeLayout>
-        </RelativeLayout>
-    </FrameLayout>
 </org.triple.banana.media_remote.MediaRemoteLayout>

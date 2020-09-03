@@ -5,11 +5,16 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <style name="BananaMediaButtonTheme">
-        <item name="android:layout_width">@dimen/option_button_length</item>
-        <item name="android:layout_height">@dimen/option_button_length</item>
-        <item name="android:layout_centerInParent">true</item>
+    <style name="MediaRemoteButtonTheme">
         <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_height">@dimen/media_remote_button_size</item>
+        <item name="android:layout_width">@dimen/media_remote_button_size</item>
+    </style>
+
+    <style name="MediaRemoteRippleEffectTheme">
+        <item name="android:background">?selectableItemBackgroundBorderless</item>
+        <item name="colorControlHighlight">@color/media_remote_ripple_effect_color</item>
     </style>
 
     <style name="TextAppearance.ToolbarButton" tools:ignore="UnusedResources">
@@ -22,10 +27,5 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFullscreen">true</item>
-    </style>
-
-    <style name="BananaRippleEffectTheme">
-        <item name="android:background">?selectableItemBackgroundBorderless</item>
-        <item name="colorControlHighlight">@color/double_tap_ripple_effect_color</item>
     </style>
 </resources>

@@ -9,11 +9,17 @@
     <dimen name="candidate_icon_round_rect_stroke">1dp</dimen>
     <dimen name="layout_outer_margin">10dp</dimen>
     <dimen name="layout_vertical_margin">20dp</dimen>
-    <dimen name="margin_horizontal">20dp</dimen>
-    <dimen name="margin_option_button">2dp</dimen>
-    <dimen name="margin_play_button">20dp</dimen>
-    <dimen name="margin_vertical">10dp</dimen>
-    <dimen name="option_button_length">48dp</dimen>
-    <dimen name="vertical_seek_bar_length">200dp</dimen>
+    <dimen name="media_remote_bottom_margin">10dp</dimen>
+    <dimen name="media_remote_brightness_container_bias">-80dp</dimen>
+    <dimen name="media_remote_button_size">55dp</dimen>
+    <dimen name="media_remote_end_margin">50dp</dimen>
+    <dimen name="media_remote_play_button_horizontal_margin">40dp</dimen>
+    <dimen name="media_remote_start_margin">25dp</dimen>
+    <dimen name="media_remote_text_size">12dp</dimen>
+    <dimen name="media_remote_time_text_end_margin">20dp</dimen>
+    <dimen name="media_remote_top_margin">10dp</dimen>
+    <dimen name="media_remote_vertical_seekbar_size">200dp</dimen>
+    <dimen name="media_remote_volume_container_bias">80dp</dimen>
+    <dimen name="media_remote_wait_progress_size">96dp</dimen>
     <dimen name="text_size_button">8sp</dimen>
 </resources>

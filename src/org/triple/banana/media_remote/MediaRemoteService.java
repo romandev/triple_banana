@@ -120,7 +120,7 @@ public enum MediaRemoteService implements MediaRemoteView
                              R.string.pip_not_supported, Toast.LENGTH_SHORT)
                         .show();
             }
-        } else if (id == R.id.close_button) {
+        } else if (id == R.id.back_button) {
             onCancel();
         } else if (id == R.id.mute_button) {
             boolean isVolumeMuted = mViewModel.getData().getIsVolumeMuted();
