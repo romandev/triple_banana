@@ -173,6 +173,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/util/AudioUtil.java",
     "//triple_banana/src/org/triple/banana/util/BrightnessUtil.java",
     "//triple_banana/src/org/triple/banana/util/CountryCodeUtil.java",
+    "//triple_banana/src/org/triple/banana/util/RotationManager.java",
     "//triple_banana/src/org/triple/banana/util/Unzip.java",
 
     # util
@@ -257,12 +258,12 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/layout/toolbar_edit_main.xml",
     "//triple_banana/res/menu/toolbar_action_bar_menu.xml",
     "//triple_banana/res/values-ko/strings.xml",
+    "//triple_banana/res/values-land/dimens.xml",
+    "//triple_banana/res/values-port/dimens.xml",
     "//triple_banana/res/values/colors.xml",
     "//triple_banana/res/values/dimens.xml",
     "//triple_banana/res/values/strings.xml",
     "//triple_banana/res/values/styles.xml",
-    "//triple_banana/res/values-land/dimens.xml",
-    "//triple_banana/res/values-port/dimens.xml",
     "//triple_banana/res/xml/banana_extension_preferences.xml",
     "//triple_banana/res_override/drawable-hdpi/fre_product_logo.png",
     "//triple_banana/res_override/drawable-hdpi/product_logo_name.png",
