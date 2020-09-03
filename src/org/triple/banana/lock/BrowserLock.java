@@ -13,6 +13,10 @@ import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatusListener
 public class BrowserLock {
     private boolean isExceptional = false;
 
+    // BrowserLock Session
+    private Long mLastAuthenticationTime;
+    private static final long SESSION_DURATION = 60000;
+
     /**
      * Get BrowserLock singleton instance.
      * @return Instance of BrowserLock
@@ -25,12 +29,20 @@ public class BrowserLock {
 
     private ApplicationStatusListener mListener = (lastActivity, status) -> {
         if (status == ApplicationStatus.FOREGROUND) {
+            if (!isSessionExpired()) {
+                mLastAuthenticationTime = null;
+                return;
+            }
             if (isExceptional) {
                 isExceptional = false;
                 return;
             }
             Authenticator.get().authenticateWithBackground(result -> {
-                if (!result) lastActivity.moveTaskToBack(true);
+                if (result) {
+                    recoredLastAuthenticationTime();
+                } else {
+                    lastActivity.moveTaskToBack(true);
+                }
             });
         }
     };
@@ -47,5 +59,18 @@ public class BrowserLock {
 
     public void setExceptional(boolean isException) {
         isExceptional = isException;
+    }
+
+    private void recoredLastAuthenticationTime() {
+        mLastAuthenticationTime = System.currentTimeMillis();
+    }
+
+    private boolean isSessionExpired() {
+        if (mLastAuthenticationTime == null) {
+            return true;
+        }
+        Long currentTimestamp = System.currentTimeMillis();
+        return (currentTimestamp - mLastAuthenticationTime > SESSION_DURATION)
+                || (currentTimestamp < mLastAuthenticationTime);
     }
 }
