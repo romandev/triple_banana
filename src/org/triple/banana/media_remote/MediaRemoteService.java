@@ -117,7 +117,7 @@ public enum MediaRemoteService implements MediaRemoteView
         } else if (id == R.id.rotate_button) {
             toggleOrientation();
         } else if (id == R.id.lock_button) {
-            boolean isLocked = mViewModel.getData().getIsLocked();
+            boolean isLocked = mViewModel.getData().isLocked();
             mViewModel.getEditor().setIsLocked(!isLocked);
             mViewModel.commit();
         } else if (id == R.id.pip_button) {
@@ -131,16 +131,16 @@ public enum MediaRemoteService implements MediaRemoteView
         } else if (id == R.id.back_button) {
             onCancel();
         } else if (id == R.id.mute_button) {
-            boolean isVolumeMuted = mViewModel.getData().getIsVolumeMuted();
+            boolean isVolumeMuted = mViewModel.getData().isMuted();
             AudioUtil.setMediaVolumeMuted(!isVolumeMuted);
-            mViewModel.getEditor().setIsVolumeMuted(!isVolumeMuted);
+            mViewModel.getEditor().setIsMuted(!isVolumeMuted);
             mViewModel.commit();
         }
     }
 
     @Override
     public void onVolumeChanged(float value) {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
 
         if (value == 0.0f /* isFinished */) {
             mViewModel.getEditor().setVolumeControlVisibility(false);
@@ -154,13 +154,13 @@ public enum MediaRemoteService implements MediaRemoteView
         mViewModel.getEditor().setControlsVisibility(false);
         mViewModel.getEditor().setVolumeControlVisibility(true);
         mViewModel.getEditor().setVolume(currentValue + value);
-        mViewModel.getEditor().setIsVolumeMuted(false);
+        mViewModel.getEditor().setIsMuted(false);
         mViewModel.commit();
     }
 
     @Override
     public void onBrightnessChanged(float value) {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
 
         if (value == 0.0f /* isFinished */) {
             mViewModel.getEditor().setBrightnessControlVisibility(false);
@@ -177,7 +177,7 @@ public enum MediaRemoteService implements MediaRemoteView
 
     @Override
     public void onPositionChangeStart() {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
 
         if (mViewModel.getData().getPlayState() != MediaPlayState.PAUSED) {
             mMediaController.pause();
@@ -190,7 +190,7 @@ public enum MediaRemoteService implements MediaRemoteView
 
     @Override
     public void onPositionChange(float diff) {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
 
         double diffTime = diff * mViewModel.getData().getDuration();
         double newTime = mViewModel.getData().getCurrentTime() + diffTime;
@@ -206,7 +206,7 @@ public enum MediaRemoteService implements MediaRemoteView
 
     @Override
     public void onPositionChangeFinish() {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
 
         mMediaController.setPosition((float) mViewModel.getData().getCurrentTime());
         if (mWasPlaying) {
@@ -237,14 +237,14 @@ public enum MediaRemoteService implements MediaRemoteView
 
     @Override
     public void onBackward() {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
         mMediaController.setRelativePosition(-10.0f);
         mView.showEffect(MediaRemoteView.Effect.BACKWARD);
     }
 
     @Override
     public void onForward() {
-        if (mViewModel.getData().getIsLocked()) return;
+        if (mViewModel.getData().isLocked()) return;
         mMediaController.setRelativePosition(10.0f);
         mView.showEffect(MediaRemoteView.Effect.FORWARD);
     }

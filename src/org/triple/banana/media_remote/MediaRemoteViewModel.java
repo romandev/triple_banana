@@ -21,11 +21,11 @@ class MediaRemoteViewModel {
         protected float mVolume;
         protected double mCurrentTime;
         protected double mDuration;
-        protected boolean mIsVolumeMuted;
         protected boolean mControlsVisibility;
-        protected boolean mIsLocked;
         protected boolean mVolumeControlVisibility;
         protected boolean mBrightnessControlVisibility;
+        protected boolean mIsLocked;
+        protected boolean mIsMuted;
         protected MediaPlayState mPlayState = MediaPlayState.PAUSED;
 
         float getBrightness() {
@@ -44,16 +44,8 @@ class MediaRemoteViewModel {
             return mDuration;
         }
 
-        boolean getIsVolumeMuted() {
-            return mIsVolumeMuted;
-        }
-
         boolean getControlsVisibility() {
             return mControlsVisibility;
-        }
-
-        boolean getIsLocked() {
-            return mIsLocked;
         }
 
         boolean getVolumeControlVisibility() {
@@ -62,6 +54,14 @@ class MediaRemoteViewModel {
 
         boolean getBrightnessControlVisibility() {
             return mBrightnessControlVisibility;
+        }
+
+        boolean isLocked() {
+            return mIsLocked;
+        }
+
+        boolean isMuted() {
+            return mIsMuted;
         }
 
         MediaPlayState getPlayState() {
@@ -75,7 +75,7 @@ class MediaRemoteViewModel {
             setVolume(AudioUtil.getMediaVolume());
             setControlsVisibility(true);
             setIsLocked(false);
-            setIsVolumeMuted(AudioUtil.isMediaVolumeMuted());
+            setIsMuted(AudioUtil.isMediaVolumeMuted());
         }
 
         void setBrightness(float brightness) {
@@ -104,16 +104,8 @@ class MediaRemoteViewModel {
             mDuration = duration;
         }
 
-        void setIsVolumeMuted(boolean isVolumeMuted) {
-            mIsVolumeMuted = isVolumeMuted;
-        }
-
         void setControlsVisibility(boolean visibility) {
             mControlsVisibility = visibility;
-        }
-
-        void setIsLocked(boolean isLocked) {
-            mIsLocked = isLocked;
         }
 
         void setVolumeControlVisibility(boolean visibility) {
@@ -122,6 +114,14 @@ class MediaRemoteViewModel {
 
         void setBrightnessControlVisibility(boolean visibility) {
             mBrightnessControlVisibility = visibility;
+        }
+
+        void setIsLocked(boolean isLocked) {
+            mIsLocked = isLocked;
+        }
+
+        void setIsMuted(boolean isMuted) {
+            mIsMuted = isMuted;
         }
 
         void setPlayState(MediaPlayState state) {

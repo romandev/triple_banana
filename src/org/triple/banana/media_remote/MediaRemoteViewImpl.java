@@ -7,6 +7,7 @@ package org.triple.banana.media_remote;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.os.Build;
 import android.view.KeyEvent;
 import android.view.View;
@@ -17,6 +18,7 @@ import android.widget.ProgressBar;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -29,210 +31,34 @@ import java.lang.ref.WeakReference;
 
 class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Listener {
     private final @NonNull WeakReference<Delegate> mDelegate;
-    private final @NonNull View.OnClickListener mClickListener;
-    private final @NonNull MediaRemoteGestureDetector mMediaRemoteGestureDetector =
-            new MediaRemoteGestureDetector();
-    private @Nullable SeekBar mTimeSeekBar;
+    private final @NonNull MediaRemoteGestureDetector mGestureDetector;
+    private final @NonNull View.OnClickListener mButtonClickedListener;
+    private final @NonNull DialogInterface.OnKeyListener mCancelListener;
+    private final @NonNull SeekBar.OnSeekBarChangeListener mPositionChangeListener;
+    private @NonNull DialogViewSelector $ = new DialogViewSelector(null);
+
     private @Nullable Dialog mDialog;
-    private @Nullable MediaRemoteLayout mMainView;
     private @Nullable WeakReference<Activity> mParentActivity;
 
-    MediaRemoteViewImpl(MediaRemoteView.Delegate delegate) {
-        mDelegate = new WeakReference<>(delegate);
-        mClickListener = view -> {
+    private View.OnClickListener createButtonClickedListener() {
+        return view -> {
             if (mDelegate.get() == null) return;
             mDelegate.get().onMediaRemoteButtonClicked(view.getId());
         };
     }
 
-    @Override
-    public void show(@NonNull Activity parentActivity) {
-        if (parentActivity.isFinishing()) return;
-
-        initializeDialogIfNeeded(parentActivity);
-        hideSystemUI();
-        mDialog.show();
-        if (mMainView != null && mDelegate.get() != null) {
-            mMediaRemoteGestureDetector.startDetection(mMainView, mDelegate.get());
-        }
-        mParentActivity = new WeakReference<>(parentActivity);
-        if (parentActivity.getWindow() != null) {
-            parentActivity.getWindow().addFlags(
-                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
-    }
-
-    @Override
-    public void dismiss() {
-        if (mDialog == null) return;
-        mDialog.dismiss();
-        mMediaRemoteGestureDetector.stopDetection();
-
-        if (mParentActivity == null) return;
-        Activity activity = mParentActivity.get();
-        if (activity != null && activity.getWindow() != null) {
-            activity.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        }
-        mParentActivity.clear();
-    }
-
-    @Override
-    public void showEffect(Effect effect) {
-        View view;
-        switch (effect) {
-            case FORWARD:
-                view = mDialog.findViewById(R.id.forward_effect);
-                break;
-            case BACKWARD:
-                view = mDialog.findViewById(R.id.backward_effect);
-                break;
-            case NONE:
-            default:
-                view = null;
-                break;
-        }
-        if (view != null) {
-            view.setPressed(true);
-            view.setPressed(false);
-        }
-    }
-
-    @Override
-    public void onUpdate(MediaRemoteViewModel.ReadonlyData data) {
-        if (mDialog == null) return;
-        updateBrightness(data.getBrightnessControlVisibility(), data.getBrightness());
-        updateVolumeUI(data.getVolumeControlVisibility(), data.getVolume());
-        updateTimeInfo(data.getCurrentTime(), data.getDuration());
-        showControls(data.getControlsVisibility(), data.getIsLocked(), data.getIsVolumeMuted());
-        setPlayState(data.getPlayState());
-    }
-
-    private String getTimeLabelFrom(long seconds) {
-        long s = seconds % 60;
-        long m = (seconds / 60) % 60;
-        long h = (seconds / (60 * 60));
-        if (h > 0) return String.format("%d:%02d:%02d", h, m, s);
-        return String.format("%d:%02d", m, s);
-    }
-
-    private void updateTimeInfo(double currentTime, double duration) {
-        if (mDialog == null || mTimeSeekBar == null) return;
-
-        TextView timeTextView = mMainView.findViewById(R.id.time_text);
-        if (timeTextView == null) return;
-        timeTextView.setText(String.format("%s | %s", getTimeLabelFrom((long) currentTime), getTimeLabelFrom((long) duration)));
-        mTimeSeekBar.setMax((int) duration);
-        mTimeSeekBar.setProgress((int) currentTime);
-    }
-
-    private void updateVolumeUI(boolean visibility, float value) {
-        if (mDialog == null) return;
-
-        ViewGroup volumeContainer = mMainView.findViewById(R.id.volume_container);
-        if (volumeContainer == null) return;
-        volumeContainer.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
-
-        SeekBar volumeSeekBar = volumeContainer.findViewById(R.id.volume_seekbar);
-        if (volumeSeekBar == null) return;
-        volumeSeekBar.setProgress((int) (value * 100.0f));
-    }
-
-    private void updateBrightness(boolean visibility, float value) {
-        if (mDialog == null) return;
-        BrightnessUtil.setWindowBrightness(mDialog.getWindow(), value);
-
-        ViewGroup brightnessContainer = mMainView.findViewById(R.id.brightness_container);
-        if (brightnessContainer == null) return;
-        brightnessContainer.setVisibility(visibility == true ? View.VISIBLE : View.INVISIBLE);
-
-        SeekBar brightnessSeekBar = brightnessContainer.findViewById(R.id.brightness_seekbar);
-        if (brightnessSeekBar == null) return;
-        brightnessSeekBar.setProgress((int) (value * 100.0f));
-    }
-
-    private void hideSystemUI() {
-        if (mDialog == null || !mDialog.isShowing()) return;
-        int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
-        mDialog.getWindow().getDecorView().setSystemUiVisibility(flags);
-
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab == null || tab.getContext() == null) return;
-        final View contentView = tab.getContentView();
-        if (contentView == null) return;
-        contentView.setSystemUiVisibility(flags);
-    }
-
-    private void showSystemUI() {
-        if (mDialog == null || !mDialog.isShowing()) return;
-        int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
-        mDialog.getWindow().getDecorView().setSystemUiVisibility(flags);
-    }
-
-    private void showControls(boolean controlsVisibility, boolean isLocked, boolean isMuted) {
-        if (mMainView == null) return;
-
-        final ViewGroup controls = mMainView.findViewById(R.id.controls);
-        final ImageButton lockButton = mMainView.findViewById(R.id.lock_button);
-        final ImageButton muteButton = controls.findViewById(R.id.mute_button);
-        if (controls == null || lockButton == null || muteButton == null) return;
-
-        controls.setVisibility(controlsVisibility && !isLocked ? View.VISIBLE : View.INVISIBLE);
-        lockButton.setVisibility(controlsVisibility ? View.VISIBLE : View.INVISIBLE);
-        lockButton.setImageResource(isLocked ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
-        muteButton.setImageResource(isMuted ? R.drawable.ic_mute : R.drawable.ic_volume_up);
-
-        if (controlsVisibility && !isLocked) {
-            showSystemUI();
-        } else {
-            hideSystemUI();
-        }
-    }
-
-    private void setPlayState(MediaPlayState state) {
-        final ImageButton playButton = mMainView.findViewById(R.id.play_button);
-        final ProgressBar waitingProgress = mMainView.findViewById(R.id.waiting_progress);
-
-        if (playButton == null || waitingProgress == null) return;
-        switch (state) {
-            case PLAYING:
-                waitingProgress.setVisibility(View.INVISIBLE);
-                playButton.setImageResource(R.drawable.ic_pause);
-                playButton.setVisibility(View.VISIBLE);
-                break;
-            case PAUSED:
-                waitingProgress.setVisibility(View.INVISIBLE);
-                playButton.setImageResource(R.drawable.ic_play);
-                playButton.setVisibility(View.VISIBLE);
-                break;
-            case WAITING:
-                waitingProgress.setVisibility(View.VISIBLE);
-                playButton.setVisibility(View.INVISIBLE);
-                break;
-        }
-    }
-
-    private void initializeDialogIfNeeded(@NonNull Activity parentActivity) {
-        if (mDialog != null) return;
-        mDialog = new Dialog(parentActivity, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
-        mDialog.setCancelable(false);
-        mDialog.setOnKeyListener((dialog, keyCode, event) -> {
+    private DialogInterface.OnKeyListener createCancelListener() {
+        return (dialog, keyCode, event) -> {
             if (mDelegate.get() != null && keyCode == KeyEvent.KEYCODE_BACK) {
                 mDelegate.get().onCancel();
                 return true;
             }
             return false;
-        });
-        mDialog.create();
-        mDialog.setContentView(R.layout.media_remote_view);
+        };
+    }
 
-        mMainView = mDialog.findViewById(R.id.media_remote_view);
-        mMainView.addListener(mDelegate.get());
-        mTimeSeekBar = mDialog.findViewById(R.id.time_seekbar);
-        mTimeSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+    private SeekBar.OnSeekBarChangeListener createPositionChangeListener() {
+        return new SeekBar.OnSeekBarChangeListener() {
             private int mPreviousProgress;
 
             @Override
@@ -252,20 +78,267 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
                         (seekBar.getProgress() - mPreviousProgress) / (float) seekBar.getMax());
                 mDelegate.get().onPositionChangeFinish();
             }
+        };
+    }
+
+    MediaRemoteViewImpl(MediaRemoteView.Delegate delegate) {
+        mDelegate = new WeakReference<>(delegate);
+        mGestureDetector = new MediaRemoteGestureDetector();
+        mButtonClickedListener = createButtonClickedListener();
+        mCancelListener = createCancelListener();
+        mPositionChangeListener = createPositionChangeListener();
+    }
+
+    private void createDialog(@NonNull Activity parentActivity) {
+        if (mDialog != null) return;
+        mDialog = new Dialog(parentActivity, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
+        mDialog.setCancelable(false);
+        mDialog.setOnKeyListener(mCancelListener);
+        mDialog.create();
+        $ = new DialogViewSelector(mDialog);
+    }
+
+    private void setupParentActivity(@NonNull Activity parentActivity) {
+        mParentActivity = new WeakReference<>(parentActivity);
+        if (parentActivity.getWindow() != null) {
+            parentActivity.getWindow().addFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
+    }
+
+    private void resetParentActivity() {
+        if (mParentActivity == null || mParentActivity.get() == null) return;
+        if (mParentActivity.get().getWindow() != null) {
+            mParentActivity.get().getWindow().clearFlags(
+                    WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
+        }
+        mParentActivity.clear();
+    }
+
+    // FIXME: We should make the following class more general and factor out it to util module
+    private static class DialogViewSelector {
+        private final @NonNull WeakReference<Dialog> mContainer;
+
+        private DialogViewSelector(@Nullable Dialog container) {
+            mContainer = new WeakReference<Dialog>(container);
+        }
+
+        private static interface Action<T extends View> { public void onAction(T view); }
+
+        private <T extends View> void select(int resourceId, Action<T> action) {
+            if (mContainer.get() == null) return;
+            T view = mContainer.get().findViewById(resourceId);
+            if (view != null) action.onAction(view);
+        }
+    }
+
+    private void relayoutContentView() {
+        if (mDialog == null || !mDialog.isShowing()) return;
+
+        mDialog.setContentView(R.layout.media_remote_view);
+
+        $.<MediaRemoteLayout>select(R.id.media_remote_view, v -> {
+            v.addListener(mDelegate.get());
+            mGestureDetector.startDetection(v, mDelegate.get());
         });
 
-        mDialog.findViewById(R.id.play_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.backward_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.forward_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.rotate_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.lock_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.back_button).setOnClickListener(mClickListener);
-        mDialog.findViewById(R.id.mute_button).setOnClickListener(mClickListener);
+        $.<SeekBar>select(
+                R.id.time_seekbar, v -> v.setOnSeekBarChangeListener(mPositionChangeListener));
 
-        // Pip mode button only visible on android 8.0 or higher.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            mDialog.findViewById(R.id.pip_button).setOnClickListener(mClickListener);
-            mDialog.findViewById(R.id.pip_button).setVisibility(View.VISIBLE);
+        int[] buttons = new int[] {R.id.play_button, R.id.backward_button, R.id.forward_button,
+                R.id.rotate_button, R.id.lock_button, R.id.back_button, R.id.mute_button};
+        for (int button : buttons) {
+            $.select(button, v -> v.setOnClickListener(mButtonClickedListener));
         }
+
+        // PIP mode button is only visible on android 8.0 or higher.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            $.select(R.id.pip_button, v -> {
+                v.setOnClickListener(mButtonClickedListener);
+                v.setVisibility(View.VISIBLE);
+            });
+        }
+    }
+
+    private void resetContentViewInteractionListeners() {
+        if (mDialog == null || !mDialog.isShowing()) return;
+
+        $.<MediaRemoteLayout>select(R.id.media_remote_view, v -> {
+            v.removeListener(mDelegate.get());
+            mGestureDetector.stopDetection();
+        });
+
+        $.<SeekBar>select(R.id.time_seekbar, v -> v.setOnSeekBarChangeListener(null));
+
+        final @IdRes int[] buttons =
+                new int[] {R.id.play_button, R.id.backward_button, R.id.forward_button,
+                        R.id.rotate_button, R.id.lock_button, R.id.back_button, R.id.mute_button};
+        for (@IdRes int button : buttons) {
+            $.select(button, v -> v.setOnClickListener(null));
+        }
+
+        // PIP mode button is only visible on android 8.0 or higher.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            $.select(R.id.pip_button, v -> v.setOnClickListener(null));
+        }
+    }
+
+    @Override
+    public void show(@NonNull Activity parentActivity) {
+        if (parentActivity.isFinishing()) return;
+
+        createDialog(parentActivity);
+
+        setupParentActivity(parentActivity);
+        mDialog.show();
+        relayoutContentView();
+    }
+
+    @Override
+    public void dismiss() {
+        if (mDialog == null || !mDialog.isShowing()) return;
+
+        resetContentViewInteractionListeners();
+        mDialog.dismiss();
+        resetParentActivity();
+    }
+
+    @Override
+    public void showEffect(Effect effect) {
+        @IdRes
+        final int effectId;
+        switch (effect) {
+            case FORWARD:
+                effectId = R.id.forward_effect;
+                break;
+            case BACKWARD:
+                effectId = R.id.backward_effect;
+                break;
+            case NONE:
+            default:
+                effectId = 0;
+                break;
+        }
+
+        $.select(effectId, v -> {
+            v.setPressed(true);
+            v.setPressed(false);
+        });
+    }
+
+    @Override
+    public void onUpdate(MediaRemoteViewModel.ReadonlyData data) {
+        if (mDialog == null || !mDialog.isShowing()) return;
+
+        updateBrightness(data);
+        updateVolume(data);
+        updateControls(data);
+        updatePlayState(data);
+        updateTimeInfo(data);
+    }
+
+    private void setVisible(@NonNull View view, boolean isVisible) {
+        view.setVisibility(isVisible ? View.VISIBLE : View.INVISIBLE);
+    }
+
+    private void updateBrightness(MediaRemoteViewModel.ReadonlyData data) {
+        assert mDialog != null && mDialog.isShowing();
+
+        BrightnessUtil.setWindowBrightness(mDialog.getWindow(), data.getBrightness());
+
+        $.select(R.id.brightness_container,
+                v -> setVisible(v, data.getBrightnessControlVisibility()));
+        $.<SeekBar>select(
+                R.id.brightness_seekbar, v -> v.setProgress((int) (data.getBrightness() * 100.0f)));
+    }
+
+    private void updateVolume(MediaRemoteViewModel.ReadonlyData data) {
+        assert mDialog != null && mDialog.isShowing();
+
+        $.select(R.id.volume_container, v -> setVisible(v, data.getVolumeControlVisibility()));
+        $.<SeekBar>select(
+                R.id.volume_seekbar, v -> v.setProgress((int) (data.getVolume() * 100.0f)));
+    }
+
+    private String getTimeLabelFrom(long seconds) {
+        long s = seconds % 60;
+        long m = (seconds / 60) % 60;
+        long h = (seconds / (60 * 60));
+        if (h > 0) return String.format("%d:%02d:%02d", h, m, s);
+        return String.format("%d:%02d", m, s);
+    }
+
+    private void updateTimeInfo(MediaRemoteViewModel.ReadonlyData data) {
+        assert mDialog != null && mDialog.isShowing();
+
+        String currentTimeLabel = getTimeLabelFrom((long) data.getCurrentTime());
+        String durationLabel = getTimeLabelFrom((long) data.getDuration());
+        $.<TextView>select(R.id.time_text,
+                v -> v.setText(String.format("%s | %s", currentTimeLabel, durationLabel)));
+        $.<SeekBar>select(R.id.time_seekbar, v -> {
+            v.setMax((int) data.getDuration());
+            v.setProgress((int) data.getCurrentTime());
+        });
+    }
+
+    private void updateControls(MediaRemoteViewModel.ReadonlyData data) {
+        assert mDialog != null && mDialog.isShowing();
+
+        // isControlVisible isLocked  Action
+        //         O            O     Show lockButton / Hide controls and system UI
+        //         O            X     Show lockButton, controls, and system UI
+        //         X            O     Hide lockButton, controls, and system UI
+        //         X            X     Hide lockButton, controls, and system UI
+        $.select(R.id.controls,
+                v -> setVisible(v, data.getControlsVisibility() && !data.isLocked()));
+        $.<ImageButton>select(R.id.lock_button, v -> {
+            setVisible(v, data.getControlsVisibility());
+            v.setImageResource(data.isLocked() ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
+        });
+        $.<ImageButton>select(R.id.mute_button, v -> {
+            v.setImageResource(data.isMuted() ? R.drawable.ic_mute : R.drawable.ic_volume_up);
+        });
+
+        if (data.getControlsVisibility() && !data.isLocked()) {
+            showSystemUI();
+        } else {
+            hideSystemUI();
+        }
+    }
+
+    private void showSystemUI() {
+        assert mDialog != null && mDialog.isShowing();
+
+        int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION;
+        mDialog.getWindow().getDecorView().setSystemUiVisibility(flags);
+    }
+
+    private void hideSystemUI() {
+        assert mDialog != null && mDialog.isShowing();
+
+        int flags = View.SYSTEM_UI_FLAG_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_LOW_PROFILE
+                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION;
+        mDialog.getWindow().getDecorView().setSystemUiVisibility(flags);
+
+        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+        if (tab == null || tab.getContext() == null) return;
+        final View contentView = tab.getContentView();
+        if (contentView == null) return;
+        contentView.setSystemUiVisibility(flags);
+    }
+
+    private void updatePlayState(MediaRemoteViewModel.ReadonlyData data) {
+        assert mDialog != null && mDialog.isShowing();
+
+        $.<ImageButton>select(R.id.play_button, v -> {
+            v.setImageResource(data.getPlayState() == MediaPlayState.PLAYING ? R.drawable.ic_pause
+                                                                             : R.drawable.ic_play);
+            setVisible(v, data.getPlayState() != MediaPlayState.WAITING);
+        });
+        $.select(R.id.waiting_progress,
+                v -> setVisible(v, data.getPlayState() == MediaPlayState.WAITING));
     }
 }
