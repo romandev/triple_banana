@@ -9,6 +9,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Build;
+import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,6 +27,7 @@ import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
 import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.BrightnessUtil;
+import org.triple.banana.util.RotationManager;
 
 import java.lang.ref.WeakReference;
 
@@ -35,6 +37,9 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     private final @NonNull View.OnClickListener mButtonClickedListener;
     private final @NonNull DialogInterface.OnKeyListener mCancelListener;
     private final @NonNull SeekBar.OnSeekBarChangeListener mPositionChangeListener;
+    private final @NonNull RotationManager.Listener mOrientationChangedListener;
+    private final @NonNull RotationManager mRotationManager;
+    private final @NonNull Handler mHandler;
     private @NonNull DialogViewSelector $ = new DialogViewSelector(null);
 
     private @Nullable Dialog mDialog;
@@ -81,12 +86,27 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         };
     }
 
+    private RotationManager.Listener createOrientationChangedListener() {
+        return info -> {
+            mHandler.post(() -> {
+                // NOTE: Although the rotation manager detects the rotation and orientation
+                // information of the user device correctly, the activity configuration's
+                // orientation might be updated late. It might cause breaking layout. So, this
+                // hack postpones layouting the content view to the follow task.
+                relayoutContentView();
+            });
+        };
+    }
+
     MediaRemoteViewImpl(MediaRemoteView.Delegate delegate) {
         mDelegate = new WeakReference<>(delegate);
         mGestureDetector = new MediaRemoteGestureDetector();
         mButtonClickedListener = createButtonClickedListener();
         mCancelListener = createCancelListener();
         mPositionChangeListener = createPositionChangeListener();
+        mOrientationChangedListener = createOrientationChangedListener();
+        mRotationManager = new RotationManager();
+        mHandler = new Handler();
     }
 
     private void createDialog(@NonNull Activity parentActivity) {
@@ -163,6 +183,8 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     private void resetContentViewInteractionListeners() {
         if (mDialog == null || !mDialog.isShowing()) return;
 
+        mRotationManager.removeListener(mOrientationChangedListener);
+
         $.<MediaRemoteLayout>select(R.id.media_remote_view, v -> {
             v.removeListener(mDelegate.get());
             mGestureDetector.stopDetection();
@@ -191,7 +213,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
         setupParentActivity(parentActivity);
         mDialog.show();
-        relayoutContentView();
+        mRotationManager.addListener(mOrientationChangedListener);
     }
 
     @Override
