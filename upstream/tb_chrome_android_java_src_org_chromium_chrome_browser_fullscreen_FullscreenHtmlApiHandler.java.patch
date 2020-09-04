@@ -1,0 +1,26 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
+@@ -498,10 +498,22 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo
+         mTabInFullscreen = tab;
+     }
+ 
++// #if defined(ENABLE_TRIPLE_BANANA)
++    private boolean isMediaRemoteEnabled() {
++        org.chromium.base.CommandLine commandLine = org.chromium.base.CommandLine.getInstance();
++        final String BLINK_FEATURES = org.chromium.content_public.common.ContentSwitches.ENABLE_BLINK_FEATURES;
++        final String MEDIA_REMOTE = "MediaRemote";
++        return commandLine.getSwitchValue(BLINK_FEATURES).contains(MEDIA_REMOTE);
++    }
++// #endif
++
+     /**
+      * Create and show the fullscreen notification toast.
+      */
+     private void showNotificationToast() {
++// #if defined(ENABLE_TRIPLE_BANANA)
++        if (isMediaRemoteEnabled()) return;
++// #endif
+         if (mNotificationToast != null) {
+             mNotificationToast.cancel();
+         }
