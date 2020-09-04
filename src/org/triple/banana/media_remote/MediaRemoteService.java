@@ -80,6 +80,7 @@ public enum MediaRemoteService implements MediaRemoteView
 
             @Override
             public void onExitedVideoFullscreen() {
+                mWasControlsVisible = false;
                 mView.dismiss();
             }
 
