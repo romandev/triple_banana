@@ -74,8 +74,8 @@ public enum MediaRemoteService implements MediaRemoteView
             public void onEnteredVideoFullscreen() {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
-                mView.show((Activity) tab.getContext());
                 mViewModel.reset();
+                mView.show((Activity) tab.getContext());
             }
 
             @Override

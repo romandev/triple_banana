@@ -44,6 +44,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
     private @Nullable Dialog mDialog;
     private @Nullable WeakReference<Activity> mParentActivity;
+    private @Nullable WeakReference<MediaRemoteViewModel.ReadonlyData> mLastUpdatedData;
 
     private View.OnClickListener createButtonClickedListener() {
         return view -> {
@@ -94,6 +95,9 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
                 // orientation might be updated late. It might cause breaking layout. So, this
                 // hack postpones layouting the content view to the follow task.
                 relayoutContentView();
+                if (mLastUpdatedData != null && mLastUpdatedData.get() != null) {
+                    onUpdate(mLastUpdatedData.get());
+                }
             });
         };
     }
@@ -250,6 +254,8 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
     @Override
     public void onUpdate(MediaRemoteViewModel.ReadonlyData data) {
+        mLastUpdatedData = new WeakReference<MediaRemoteViewModel.ReadonlyData>(data);
+
         if (mDialog == null || !mDialog.isShowing()) return;
 
         updateBrightness(data);
@@ -314,8 +320,8 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         $.select(R.id.controls,
                 v -> setVisible(v, data.getControlsVisibility() && !data.isLocked()));
         $.<ImageButton>select(R.id.lock_button, v -> {
-            setVisible(v, data.getControlsVisibility());
             v.setImageResource(data.isLocked() ? R.drawable.ic_lock : R.drawable.ic_lock_opened);
+            setVisible(v, data.getControlsVisibility());
         });
         $.<ImageButton>select(R.id.mute_button, v -> {
             v.setImageResource(data.isMuted() ? R.drawable.ic_mute : R.drawable.ic_volume_up);
