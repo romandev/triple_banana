@@ -313,10 +313,12 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         assert mDialog != null && mDialog.isShowing();
 
         // isControlVisible isLocked  Action
-        //         O            O     Show lockButton / Hide controls and system UI
-        //         O            X     Show lockButton, controls, and system UI
-        //         X            O     Hide lockButton, controls, and system UI
-        //         X            X     Hide lockButton, controls, and system UI
+        //         O            O     Show background, lockButton / Hide controls and system UI
+        //         O            X     Show background, lockButton, controls, and system UI
+        //         X            O     Hide background, lockButton, controls, and system UI
+        //         X            X     Hide background, lockButton, controls, and system UI
+        $.select(R.id.controls_background,
+                v -> setVisible(v, data.getControlsVisibility()));
         $.select(R.id.controls,
                 v -> setVisible(v, data.getControlsVisibility() && !data.isLocked()));
         $.<ImageButton>select(R.id.lock_button, v -> {

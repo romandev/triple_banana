@@ -11,10 +11,15 @@
     android:layout_height="match_parent">
 
     <RelativeLayout
+        android:id="@+id/controls_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/media_remote_controls_background_color" />
+
+    <RelativeLayout
         android:id="@+id/controls"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/controls_background"
         android:paddingTop="@dimen/media_remote_top_margin"
         android:paddingBottom="@dimen/media_remote_bottom_margin"
         android:paddingStart="@dimen/media_remote_start_margin"
