@@ -1,4 +1,3 @@
-
 // Copyright 2020 The Triple Banana Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -7,8 +6,9 @@
 package org.triple.banana.lock;
 
 import org.triple.banana.authentication.Authenticator;
-import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatus;
-import org.triple.banana.lock.ApplicationStatusTracker.ApplicationStatusListener;
+import org.triple.banana.base.ApplicationStatusTracker;
+import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatus;
+import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatusListener;
 
 public class BrowserLock {
     private boolean isExceptional = false;
@@ -32,7 +32,7 @@ public class BrowserLock {
             if (!isSessionExpired()) {
                 return;
             }
-            mLastAuthenticationTime = null;
+            resetLastAuthenticationTime();
 
             if (isExceptional) {
                 isExceptional = false;
@@ -49,12 +49,12 @@ public class BrowserLock {
     };
 
     public void start() {
-        ApplicationStatusTracker.getInstance().start();
+        resetLastAuthenticationTime();
         ApplicationStatusTracker.getInstance().addListener(mListener);
     }
 
     public void stop() {
-        ApplicationStatusTracker.getInstance().stop();
+        resetLastAuthenticationTime();
         ApplicationStatusTracker.getInstance().removeListener(mListener);
     }
 
@@ -64,6 +64,10 @@ public class BrowserLock {
 
     private void recoredLastAuthenticationTime() {
         mLastAuthenticationTime = System.currentTimeMillis();
+    }
+
+    private void resetLastAuthenticationTime() {
+        mLastAuthenticationTime = null;
     }
 
     private boolean isSessionExpired() {

@@ -12,7 +12,7 @@ import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaTabManager;
 import org.triple.banana.appmenu.AppMenuDelegate;
-import org.triple.banana.lock.ApplicationStatusTracker;
+import org.triple.banana.base.ApplicationStatusTracker;
 import org.triple.banana.lock.BrowserLock;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.media_remote.MediaRemoteService;
@@ -75,6 +75,7 @@ public class TripleBananaApplication extends BananaApplication {
         }
 
         MediaRemoteService.instance.start();
+        ApplicationStatusTracker.getInstance().start();
 
         // Apply BrowserLock from ExtensionFeatures setting
         if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
