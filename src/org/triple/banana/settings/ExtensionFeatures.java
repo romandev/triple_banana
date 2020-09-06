@@ -28,6 +28,7 @@ import org.triple.banana.version.VersionInfo;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
     private SwitchPreferenceCompat mSecureLogin;
+    private SwitchPreferenceCompat mBrowserLock;
     private RemoteConfig mRemoteConfig =
             new RemoteConfig("https://zino.dev/triple_banana_config/remote_config.json");
 
@@ -133,10 +134,9 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return true;
         });
 
-        final SwitchPreferenceCompat browserLock =
-                (SwitchPreferenceCompat) findPreference(FeatureName.BROWSER_LOCK);
-        browserLock.setChecked(isEnabled(FeatureName.BROWSER_LOCK));
-        browserLock.setOnPreferenceChangeListener((preference, newValue) -> {
+        mBrowserLock = (SwitchPreferenceCompat) findPreference(FeatureName.BROWSER_LOCK);
+        mBrowserLock.setChecked(isEnabled(FeatureName.BROWSER_LOCK));
+        mBrowserLock.setOnPreferenceChangeListener((preference, newValue) -> {
             setEnabled(FeatureName.BROWSER_LOCK, (boolean) newValue);
             if ((boolean) newValue) {
                 BrowserLock.getInstance().start();
@@ -172,11 +172,17 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     }
 
     public void onSecurityLevelChanged(SecurityLevel newLevel) {
+        boolean isSecure = newLevel == SecurityLevel.SECURE;
         if (mSecureLogin != null) {
-            boolean isSecure = newLevel == SecurityLevel.SECURE;
             mSecureLogin.setEnabled(isSecure);
             if (!isSecure) {
                 mSecureLogin.setChecked(false);
+            }
+        }
+        if (mBrowserLock != null) {
+            mBrowserLock.setEnabled(isSecure);
+            if (!isSecure) {
+                mBrowserLock.setChecked(false);
             }
         }
     }
