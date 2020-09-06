@@ -128,23 +128,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:gravity="center_vertical"
-        android:rotation="270"
-        android:translationX="@dimen/media_remote_brightness_container_bias"
+        android:layout_marginStart="@dimen/media_remote_brightness_or_volume_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:visibility="invisible">
-
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/brightness_seekbar"
-            android:layout_width="@dimen/media_remote_vertical_seekbar_size"
-            android:layout_height="wrap_content"
-            android:progressTint="@color/media_remote_highlight_color"
-            android:thumb="@android:color/transparent" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/media_remote_brightness"
             android:src="@drawable/ic_brightness_up" />
+
+        <org.triple.banana.base.widget.VerticalSeekBar
+            android:id="@+id/brightness_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/media_remote_vertical_seekbar_size"
+            android:progressTint="@color/media_remote_highlight_color"
+            android:thumb="@android:color/transparent" />
     </LinearLayout>
 
     <LinearLayout
@@ -153,24 +153,23 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
-        android:gravity="center_vertical"
-        android:rotation="270"
-        android:translationX="@dimen/media_remote_volume_container_bias"
+        android:layout_marginEnd="@dimen/media_remote_brightness_or_volume_margin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
         android:visibility="invisible">
-
-        <androidx.appcompat.widget.AppCompatSeekBar
-            android:id="@+id/volume_seekbar"
-            android:layout_width="@dimen/media_remote_vertical_seekbar_size"
-            android:layout_height="wrap_content"
-            android:progressTint="@color/media_remote_highlight_color"
-            android:thumb="@android:color/transparent" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:contentDescription="@string/media_remote_volume"
-            android:rotation="90"
             android:src="@drawable/ic_volume_up" />
+
+        <org.triple.banana.base.widget.VerticalSeekBar
+            android:id="@+id/volume_seekbar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/media_remote_vertical_seekbar_size"
+            android:progressTint="@color/media_remote_highlight_color"
+            android:thumb="@android:color/transparent" />
     </LinearLayout>
 
     <ProgressBar
