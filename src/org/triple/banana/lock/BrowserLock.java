@@ -50,11 +50,19 @@ public class BrowserLock {
 
     public void start() {
         resetLastAuthenticationTime();
-        ApplicationStatusTracker.getInstance().addListener(mListener);
+        resume();
     }
 
     public void stop() {
         resetLastAuthenticationTime();
+        pause();
+    }
+
+    public void resume() {
+        ApplicationStatusTracker.getInstance().addListener(mListener);
+    }
+
+    public void pause() {
         ApplicationStatusTracker.getInstance().removeListener(mListener);
     }
 

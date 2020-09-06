@@ -11,6 +11,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 
+import org.triple.banana.lock.BrowserLock;
+
 public class KeyguardActivity extends BaseActivity {
     private static final int REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS = 1;
 
@@ -33,7 +35,14 @@ public class KeyguardActivity extends BaseActivity {
             finish();
         }
 
+        BrowserLock.getInstance().pause();
         startActivityForResult(intent, REQUEST_CODE_CONFIRM_DEVICE_CREDENTIALS);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        BrowserLock.getInstance().resume();
     }
 
     @Override
