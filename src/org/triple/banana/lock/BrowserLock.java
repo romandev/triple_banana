@@ -30,9 +30,10 @@ public class BrowserLock {
     private ApplicationStatusListener mListener = (lastActivity, status) -> {
         if (status == ApplicationStatus.FOREGROUND) {
             if (!isSessionExpired()) {
-                mLastAuthenticationTime = null;
                 return;
             }
+            mLastAuthenticationTime = null;
+
             if (isExceptional) {
                 isExceptional = false;
                 return;
