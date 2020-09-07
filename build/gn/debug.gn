@@ -4,8 +4,6 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 # Please keep alphabetical order
-# FIXME(#482): `enable_feed_in_chrome = false` causes build error
-enable_feed_in_chrome = true
 enable_triple_banana = true
 ffmpeg_branding = "Chrome"
 fieldtrial_testing_like_official_build = true

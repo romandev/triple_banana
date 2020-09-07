@@ -1,0 +1,17 @@
+diff --git tb/components/feed/core/shared_prefs/pref_names.cc tb_diff/components/feed/core/shared_prefs/pref_names.cc
+--- tb/components/feed/core/shared_prefs/pref_names.cc
++++ tb_diff/components/feed/core/shared_prefs/pref_names.cc
+@@ -19,8 +19,13 @@ const char kEnableSnippets[] = "ntp_snippets.enable";
+ const char kArticlesListVisible[] = "ntp_snippets.list_visible";
+ 
+ void RegisterFeedSharedProfilePrefs(PrefRegistrySimple* registry) {
++#if defined(ENABLE_TRIPLE_BANANA)
++  registry->RegisterBooleanPref(kEnableSnippets, false);
++  registry->RegisterBooleanPref(kArticlesListVisible, false);
++#else
+   registry->RegisterBooleanPref(kEnableSnippets, true);
+   registry->RegisterBooleanPref(kArticlesListVisible, true);
++#endif
+ }
+ 
+ }  // namespace prefs
