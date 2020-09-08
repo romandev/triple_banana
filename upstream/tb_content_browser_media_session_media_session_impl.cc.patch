@@ -1,0 +1,75 @@
+diff --git tb/content/browser/media/session/media_session_impl.cc tb_diff/content/browser/media/session/media_session_impl.cc
+--- tb/content/browser/media/session/media_session_impl.cc
++++ tb_diff/content/browser/media/session/media_session_impl.cc
+@@ -39,6 +39,11 @@
+ #include "content/browser/media/session/media_session_android.h"
+ #endif  // defined(OS_ANDROID)
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "base/command_line.h"
++#include "content/public/common/content_switches.h"
++#endif  // defined(ENABLE_TRIPLE_BANANA)
++
+ namespace content {
+ 
+ using blink::mojom::MediaSessionPlaybackState;
+@@ -521,8 +526,13 @@ void MediaSessionImpl::RebuildAndNotifyMediaPositionChanged() {
+ }
+ 
+ void MediaSessionImpl::Resume(SuspendType suspend_type) {
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (!IsMediaRemoteEnabled() && !IsSuspended())
++    return;
++#else
+   if (!IsSuspended())
+     return;
++#endif
+ 
+   if (suspend_type == SuspendType::kUI) {
+     // If the site has registered an action handler for play then we should
+@@ -576,6 +586,13 @@ void MediaSessionImpl::Suspend(SuspendType suspend_type) {
+ }
+ 
+ void MediaSessionImpl::Stop(SuspendType suspend_type) {
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (IsMediaRemoteEnabled()) {
++    Suspend(suspend_type);
++    return;
++  }
++#endif
++
+   DCHECK(audio_focus_state_ != State::INACTIVE);
+   DCHECK(suspend_type != SuspendType::kContent);
+   DCHECK(!HasPepper());
+@@ -1351,6 +1368,11 @@ void MediaSessionImpl::OnPictureInPictureAvailabilityChanged() {
+ 
+ bool MediaSessionImpl::ShouldRouteAction(
+     media_session::mojom::MediaSessionAction action) const {
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (IsMediaRemoteEnabled()) {
++    return false;
++  }
++#endif
+   return routed_service_ && base::Contains(routed_service_->actions(), action);
+ }
+ 
+@@ -1505,6 +1527,19 @@ void MediaSessionImpl::ForAllPlayers(
+     callback.Run(player);
+ }
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++bool MediaSessionImpl::IsMediaRemoteEnabled() const {
++  if (!web_contents() || !web_contents()->IsFullscreen())
++    return false;
++
++  const base::CommandLine* command_line =
++      base::CommandLine::ForCurrentProcess();
++  constexpr static const char* kMediaRemote = "MediaRemote";
++  return command_line->GetSwitchValueASCII(switches::kEnableBlinkFeatures)
++             .find(kMediaRemote) != std::string::npos;
++}
++#endif
++
+ WEB_CONTENTS_USER_DATA_KEY_IMPL(MediaSessionImpl)
+ 
+ }  // namespace content

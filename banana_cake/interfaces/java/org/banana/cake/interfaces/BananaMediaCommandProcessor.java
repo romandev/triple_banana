@@ -8,6 +8,6 @@ package org.banana.cake.interfaces;
 public interface BananaMediaCommandProcessor {
     void play();
     void pause();
-    void setPosition(long ms);
-    void setRelativePosition(long ms);
+    void setPosition(double seconds);
+    void setRelativePosition(double seconds);
 }

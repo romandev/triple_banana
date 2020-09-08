@@ -27,12 +27,12 @@ public enum MediaController {
         mCommandProcessor.pause();
     }
 
-    public void setPosition(float value) {
-        mCommandProcessor.setPosition(value);
+    public void setPosition(double seconds) {
+        mCommandProcessor.setPosition(seconds);
     }
 
-    public void setRelativePosition(float ms) {
-        mCommandProcessor.setRelativePosition(ms);
+    public void setRelativePosition(double seconds) {
+        mCommandProcessor.setRelativePosition(seconds);
     }
 
     public void setVolume(float value) {

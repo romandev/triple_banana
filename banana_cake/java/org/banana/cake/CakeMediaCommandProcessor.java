@@ -31,14 +31,21 @@ class CakeMediaCommandProcessor implements BananaMediaCommandProcessor {
     }
 
     @Override
-    public void setPosition(long ms) {
+    public void setPosition(double seconds) {
         if (mSession == null) return;
-        mSession.seek(ms);
+        if (seconds < 0.0 || Double.isNaN(seconds)) seconds = 0.0;
+        // NOTE: This only works if the website supports seekTo. There is no default behavior. Be
+        // careful when using it in the client.
+        mSession.seekTo((long) (seconds * 1000));
     }
 
     @Override
-    public void setRelativePosition(long ms) {
+    public void setRelativePosition(double seconds) {
         if (mSession == null) return;
-        mSession.seekTo(ms);
+        // NOTE: The following seek() method doesn't allow zero. On the other hands, this
+        // setRelativePosition() allows zero and it might take `0` as an input for some reasons. So,
+        // in that case, we should change the number to 1 as a workaround.
+        if (seconds == 0 || Double.isNaN(seconds)) seconds = 0.001;
+        mSession.seek((long) (seconds * 1000.0));
     }
 }

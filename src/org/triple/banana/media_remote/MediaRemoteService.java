@@ -29,6 +29,7 @@ public enum MediaRemoteService implements MediaRemoteView
     private boolean mWasPipMode;
     private boolean mWasPlaying;
     private boolean mWasControlsVisible;
+    private double mCurrentTimeBeforePositionChange;
 
     private MediaController mMediaController = MediaController.instance;
     private final Runnable mTaskToHideControls = () -> {
@@ -36,7 +37,7 @@ public enum MediaRemoteService implements MediaRemoteView
         mViewModel.commit();
     };
     private final Runnable mTaskToRetrySeeking = () -> {
-        mMediaController.setRelativePosition(0.0f);
+        mMediaController.setRelativePosition(0);
     };
     private Handler mHandler = new Handler();
 
@@ -112,9 +113,9 @@ public enum MediaRemoteService implements MediaRemoteView
                 mMediaController.pause();
             }
         } else if (id == R.id.backward_button) {
-            mMediaController.setRelativePosition(-10.0f);
+            mMediaController.setRelativePosition(-10.0);
         } else if (id == R.id.forward_button) {
-            mMediaController.setRelativePosition(10.0f);
+            mMediaController.setRelativePosition(10.0);
         } else if (id == R.id.rotate_button) {
             toggleOrientation();
         } else if (id == R.id.lock_button) {
@@ -186,6 +187,7 @@ public enum MediaRemoteService implements MediaRemoteView
         } else {
             mWasPlaying = false;
         }
+        mCurrentTimeBeforePositionChange = mViewModel.getData().getCurrentTime();
         resetTimerToHideControls();
     }
 
@@ -209,11 +211,13 @@ public enum MediaRemoteService implements MediaRemoteView
     public void onPositionChangeFinish() {
         if (mViewModel.getData().isLocked()) return;
 
-        mMediaController.setPosition((float) mViewModel.getData().getCurrentTime());
+        mMediaController.setRelativePosition(
+                mViewModel.getData().getCurrentTime() - mCurrentTimeBeforePositionChange);
         if (mWasPlaying) {
             mMediaController.play();
             mWasPlaying = false;
         }
+        mCurrentTimeBeforePositionChange = 0.0;
         requestToHideControlsAfter5seconds();
     }
 
@@ -239,14 +243,14 @@ public enum MediaRemoteService implements MediaRemoteView
     @Override
     public void onBackward() {
         if (mViewModel.getData().isLocked()) return;
-        mMediaController.setRelativePosition(-10.0f);
+        mMediaController.setRelativePosition(-10.0);
         mView.showEffect(MediaRemoteView.Effect.BACKWARD);
     }
 
     @Override
     public void onForward() {
         if (mViewModel.getData().isLocked()) return;
-        mMediaController.setRelativePosition(10.0f);
+        mMediaController.setRelativePosition(10.0);
         mView.showEffect(MediaRemoteView.Effect.FORWARD);
     }
 
