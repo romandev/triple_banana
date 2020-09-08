@@ -55,7 +55,7 @@ public class BiometricPromptActivity extends BaseActivity {
                     if (Authenticator.isKeyguardSecure()) {
                         Authenticator.get().authenticateWithKeyguardAsFallback();
                     }
-
+                    break;
                 case ERROR_LOCKOUT_PERMANENT:
                 case ERROR_LOCKOUT:
                     showErrorMessage(errorMessage);
