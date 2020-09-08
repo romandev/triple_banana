@@ -37,6 +37,11 @@ public class SecurityLevelChecker {
         mListeners.remove(listener);
     }
 
+    public boolean isSecure() {
+        checkAndUpdateSecurityLevel();
+        return mLastSecurityLevel == SecurityLevel.SECURE;
+    }
+
     private SecurityLevelChecker() {
         BananaApplicationUtils.get().registerStateListenerForAllActivities((activity, state) -> {
             if (state == BananaActivityState.RESUMED) {

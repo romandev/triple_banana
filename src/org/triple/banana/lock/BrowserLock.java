@@ -6,6 +6,7 @@
 package org.triple.banana.lock;
 
 import org.triple.banana.authentication.Authenticator;
+import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.base.ApplicationStatusTracker;
 import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatusListener;
@@ -29,6 +30,10 @@ public class BrowserLock {
 
     private ApplicationStatusListener mListener = (lastActivity, status) -> {
         if (status == ApplicationStatus.FOREGROUND) {
+            if (!SecurityLevelChecker.get().isSecure()) {
+                stop();
+                return;
+            }
             if (!isSessionExpired()) {
                 return;
             }
