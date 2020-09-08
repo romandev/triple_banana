@@ -1,26 +1,30 @@
 diff --git tb/components/ntp_snippets/features.cc tb_diff/components/ntp_snippets/features.cc
 --- tb/components/ntp_snippets/features.cc
 +++ tb_diff/components/ntp_snippets/features.cc
-@@ -39,7 +39,11 @@ const base::Feature* const kAllFeatures[] = {
+@@ -39,7 +39,12 @@ const base::Feature* const kAllFeatures[] = {
      &kOptionalImagesEnabledFeature};
  
  const base::Feature kArticleSuggestionsFeature{
+-    "NTPArticleSuggestions", base::FEATURE_ENABLED_BY_DEFAULT};
 +#if defined(ENABLE_TRIPLE_BANANA)
-+    "NTPArticleSuggestions", base::FEATURE_DISABLED_BY_DEFAULT};
++  "NTPArticleSuggestions", base::FEATURE_DISABLED_BY_DEFAULT
++};
 +#else
-     "NTPArticleSuggestions", base::FEATURE_ENABLED_BY_DEFAULT};
++  "NTPArticleSuggestions", base::FEATURE_ENABLED_BY_DEFAULT};
 +#endif
  
  const base::Feature kRemoteSuggestionsEmulateM58FetchingSchedule{
      "RemoteSuggestionsEmulateM58FetchingSchedule",
-@@ -69,7 +73,11 @@ const char kNotificationsDailyLimit[] = "daily_limit";
+@@ -69,7 +74,12 @@ const char kNotificationsDailyLimit[] = "daily_limit";
  const char kNotificationsIgnoredLimitParam[] = "ignored_limit";
  
  const base::Feature kKeepPrefetchedContentSuggestions{
+-    "KeepPrefetchedContentSuggestions", base::FEATURE_ENABLED_BY_DEFAULT};
 +#if defined(ENABLE_TRIPLE_BANANA)
-+    "KeepPrefetchedContentSuggestions", base::FEATURE_DISABLED_BY_DEFAULT};
++  "KeepPrefetchedContentSuggestions", base::FEATURE_DISABLED_BY_DEFAULT
++};
 +#else
-     "KeepPrefetchedContentSuggestions", base::FEATURE_ENABLED_BY_DEFAULT};
++  "KeepPrefetchedContentSuggestions", base::FEATURE_ENABLED_BY_DEFAULT};
 +#endif
  
  const base::Feature kOptionalImagesEnabledFeature{
