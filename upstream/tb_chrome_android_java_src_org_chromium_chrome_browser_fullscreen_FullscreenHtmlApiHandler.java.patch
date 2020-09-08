@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
-@@ -498,10 +498,23 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo
+@@ -498,10 +498,24 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo
          mTabInFullscreen = tab;
      }
  
@@ -11,7 +11,8 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/Ful
 +        final String BLINK_FEATURES =
 +                org.chromium.content_public.common.ContentSwitches.ENABLE_BLINK_FEATURES;
 +        final String MEDIA_REMOTE = "MediaRemote";
-+        return commandLine.getSwitchValue(BLINK_FEATURES).contains(MEDIA_REMOTE);
++        final String blinkFeatureList = commandLine.getSwitchValue(BLINK_FEATURES);
++        return blinkFeatureList != null && blinkFeatureList.contains(MEDIA_REMOTE);
 +    }
 +    // #endif
 +
