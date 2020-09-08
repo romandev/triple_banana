@@ -99,6 +99,9 @@ public enum MediaRemoteService implements MediaRemoteView
 
     @Override
     public void onCancel() {
+        if (mViewModel.getData().isLocked()) return;
+
+        mView.dismiss();
         BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
         if (tab == null || tab.getContext() == null) return;
         tab.exitFullscreen();
