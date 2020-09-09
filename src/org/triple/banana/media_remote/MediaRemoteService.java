@@ -126,6 +126,13 @@ public enum MediaRemoteService implements MediaRemoteView
             mViewModel.getEditor().setIsLocked(!isLocked);
             mViewModel.commit();
         } else if (id == R.id.pip_button) {
+            if (mViewModel.getEditor().getPlayState() != MediaPlayState.PLAYING) {
+                Toast.makeText(BananaApplicationUtils.get().getApplicationContext(),
+                             R.string.pip_disabled, Toast.LENGTH_SHORT)
+                        .show();
+                return;
+            }
+
             if (BananaPipController.get().isPictureInPictureAllowedForFullscreenVideo()) {
                 BananaPipController.get().attemptPictureInPictureForLastFocusedActivity();
             } else {

@@ -36,6 +36,7 @@
     <string name="media_remote_rotate">회전</string>
     <string name="media_remote_summary">전체화면 모드에서 비디오를 재생하는 경우 강력한 확장 미디어 플레이어를 사용합니다</string>
     <string name="media_remote_volume">음량</string>
+    <string name="pip_disabled">동영상이 재생 중일때 PIP 모드가 가능합니다</string>
     <string name="pip_not_supported">이 동영상에서는 PIP 모드를 지원하지 않습니다</string>
     <string name="reset">초기화</string>
     <string name="restart_message">Banana Browser를 다시 시작하면 변경사항이 적용됩니다</string>
