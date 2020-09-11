@@ -11,7 +11,7 @@ https://chromium.googlesource.com/chromium/src/+/master/docs/android_build_instr
 
 2. Checking out `triple_banana` repository in `//chromium/src`
    ```sh
-   chromium/src$ git clone https://github.com/romandev/triple_banana
+   chromium/src$ git clone https://github.com/triplebanana/triple_banana
    ```
 
 ## Setup banana tools
