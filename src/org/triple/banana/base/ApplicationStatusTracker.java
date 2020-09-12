@@ -10,8 +10,6 @@ import android.app.Activity;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaApplicationUtils.BananaActivityState;
 import org.banana.cake.interfaces.BananaApplicationUtils.BananaActivityStateListener;
-import org.banana.cake.interfaces.BananaApplicationUtils.BananaApplicationState;
-import org.banana.cake.interfaces.BananaApplicationUtils.BananaApplicationStateListener;
 
 import java.util.HashSet;
 
@@ -25,33 +23,18 @@ public class ApplicationStatusTracker {
     ;
 
     // Variables needed for BananaApplcationStateListener
-    private boolean mNeedToNotify = false;
-    private ApplicationStatus mCurrentStatus = ApplicationStatus.UNSPECIFIED;
-    private Activity mLastTrackedActivity = null;
+    private ApplicationStatus mLastStatus = ApplicationStatus.UNSPECIFIED;
 
-    private BananaApplicationStateListener mApplicationStateListener = (state) -> {
-        ApplicationStatus newStatus = isApplicationInForeground(state)
-                ? ApplicationStatus.FOREGROUND
-                : ApplicationStatus.BACKGROUND;
-        if (newStatus != mCurrentStatus) {
-            mCurrentStatus = newStatus;
-            if (mCurrentStatus == ApplicationStatus.FOREGROUND) {
-                // In case of turning to foreground from background, if try to start activty, it
-                // doesn't work. So we just store value indicates notification is required, and
-                // when activity resumed, check this value and do something.
-                mNeedToNotify = true;
-            } else {
-                notifyListeners(mLastTrackedActivity, mCurrentStatus);
-            }
-        }
-    };
     private BananaActivityStateListener mActivityStateListener = (activity, state) -> {
-        if (state == BananaActivityState.RESUMED && mNeedToNotify) {
-            mNeedToNotify = false;
-            assert mCurrentStatus == ApplicationStatus.FOREGROUND;
-            notifyListeners(activity, mCurrentStatus);
-        } else if (state == BananaActivityState.PAUSED) {
-            mLastTrackedActivity = activity;
+        if (state == BananaActivityState.RESUMED && mLastStatus != ApplicationStatus.FOREGROUND
+                && BananaApplicationUtils.get().hasVisibleActivities()) {
+            mLastStatus = ApplicationStatus.FOREGROUND;
+            notifyListeners(activity, mLastStatus);
+        } else if (state == BananaActivityState.STOPPED
+                && mLastStatus == ApplicationStatus.FOREGROUND
+                && !BananaApplicationUtils.get().hasVisibleActivities()) {
+            mLastStatus = ApplicationStatus.BACKGROUND;
+            notifyListeners(activity, mLastStatus);
         }
     };
 
@@ -68,12 +51,10 @@ public class ApplicationStatusTracker {
     }
 
     public void start() {
-        BananaApplicationUtils.get().registerApplicationStateListener(mApplicationStateListener);
         BananaApplicationUtils.get().registerStateListenerForAllActivities(mActivityStateListener);
     }
 
     public void stop() {
-        BananaApplicationUtils.get().unregisterApplicationStateListener(mApplicationStateListener);
         BananaApplicationUtils.get().unregisterActivityStateListener(mActivityStateListener);
     }
 
@@ -93,11 +74,6 @@ public class ApplicationStatusTracker {
         if (mListeners.contains(listener)) {
             mListeners.remove(listener);
         }
-    }
-
-    private static boolean isApplicationInForeground(int state) {
-        return state == BananaApplicationState.HAS_RUNNING_ACTIVITIES
-                || state == BananaApplicationState.HAS_PAUSED_ACTIVITIES;
     }
 
     private void notifyListeners(Activity activity, ApplicationStatus state) {

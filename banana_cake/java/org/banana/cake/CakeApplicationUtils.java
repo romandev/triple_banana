@@ -11,7 +11,6 @@ import android.content.SharedPreferences;
 import androidx.appcompat.app.AlertDialog;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
-import org.banana.cake.interfaces.BananaApplicationUtils.BananaActivityStateListener;
 
 import org.chromium.base.ApplicationStatus;
 import org.chromium.base.ContextUtils;
@@ -43,13 +42,8 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     }
 
     @Override
-    public void registerApplicationStateListener(BananaApplicationStateListener listener) {
-        ApplicationStatus.registerApplicationStateListener(listener);
-    }
-
-    @Override
-    public void unregisterApplicationStateListener(BananaApplicationStateListener listener) {
-        ApplicationStatus.unregisterApplicationStateListener(listener);
+    public boolean hasVisibleActivities() {
+        return ApplicationStatus.hasVisibleActivities();
     }
 
     @Override

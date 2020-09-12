@@ -11,15 +11,11 @@ import android.content.SharedPreferences;
 import androidx.appcompat.app.AlertDialog;
 
 import org.chromium.base.ActivityState;
-import org.chromium.base.ApplicationState;
 import org.chromium.base.ApplicationStatus.ActivityStateListener;
-import org.chromium.base.ApplicationStatus.ApplicationStateListener;
 
 public interface BananaApplicationUtils {
     public interface BananaActivityState extends ActivityState {}
     public interface BananaActivityStateListener extends ActivityStateListener {}
-    public interface BananaApplicationState extends ApplicationState {}
-    public interface BananaApplicationStateListener extends ApplicationStateListener {}
 
     static BananaApplicationUtils get() {
         return BananaInterfaceProvider.get(BananaApplicationUtils.class);
@@ -29,8 +25,7 @@ public interface BananaApplicationUtils {
     SharedPreferences getSharedPreferences();
     void registerStateListenerForAllActivities(BananaActivityStateListener listener);
     void unregisterActivityStateListener(BananaActivityStateListener listener);
-    void registerApplicationStateListener(BananaApplicationStateListener listener);
-    void unregisterApplicationStateListener(BananaApplicationStateListener listener);
+    boolean hasVisibleActivities();
     void restart();
     AlertDialog.Builder getDialogBuilder(Context context);
     void showInfoPage(String url);
