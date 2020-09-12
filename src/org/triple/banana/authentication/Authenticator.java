@@ -55,7 +55,7 @@ public class Authenticator {
 
     private static Backend createBackend() {
         if (isBiometricsSecure()) {
-            return new ActivityBasedBackend(BiometricPromptActivity.class);
+            return new BiometricPromptBackend();
         } else if (isKeyguardSecure()) {
             return new ActivityBasedBackend(KeyguardActivity.class);
         }
