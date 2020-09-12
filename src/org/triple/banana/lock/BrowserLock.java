@@ -48,6 +48,12 @@ public class BrowserLock {
                 if (result) {
                     recoredLastAuthenticationTime();
                 } else {
+                    // NOTE: The ApplicationStatusTracker's event is triggered asynchronously.
+                    // Therefore, if the app restarts quickly, the background/foreground events
+                    // might not be detected. In this case, the BrowserLock might be broken because
+                    // the foreground event is not detected when re-entering the app again. So, we
+                    // should reset the state explicitly in this case.
+                    ApplicationStatusTracker.getInstance().reset();
                     BananaApplicationUtils.get().shutdown();
                 }
             });

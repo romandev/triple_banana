@@ -58,6 +58,10 @@ public class ApplicationStatusTracker {
         BananaApplicationUtils.get().unregisterActivityStateListener(mActivityStateListener);
     }
 
+    public void reset() {
+        mLastStatus = ApplicationStatus.UNSPECIFIED;
+    }
+
     /**
      * Add ApplicationStatusListener
      * @param listener
