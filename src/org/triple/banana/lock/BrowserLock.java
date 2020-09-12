@@ -47,7 +47,7 @@ public class BrowserLock {
                 if (result) {
                     recoredLastAuthenticationTime();
                 } else {
-                    lastActivity.moveTaskToBack(true);
+                    BananaApplicationUtils.get().shutdown();
                 }
             });
         }
