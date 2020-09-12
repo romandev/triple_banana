@@ -5,6 +5,7 @@
 
 package org.triple.banana.lock;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.base.ApplicationStatusTracker;
