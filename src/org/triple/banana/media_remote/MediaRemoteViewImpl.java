@@ -114,7 +114,6 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     }
 
     private void createDialog(@NonNull Activity parentActivity) {
-        if (mDialog != null) return;
         mDialog = new Dialog(parentActivity, R.style.Theme_Banana_Fullscreen_Transparent_Dialog);
         mDialog.setCancelable(false);
         mDialog.setOnKeyListener(mCancelListener);
@@ -211,7 +210,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
     @Override
     public void show(@NonNull Activity parentActivity) {
-        if (parentActivity.isFinishing()) return;
+        if (parentActivity.isFinishing() || parentActivity.isDestroyed()) return;
 
         createDialog(parentActivity);
 
