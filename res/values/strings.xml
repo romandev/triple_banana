@@ -16,6 +16,7 @@
     <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
     <string name="banana_extension">Banana Extension</string>
     <string name="browser_lock">Browser Lock</string>
+    <string name="browser_lock_description">Scan your biometric data to unlock browser</string>
     <string name="browser_lock_summary">Use additional authentications to protect your personal data securely when opening Banana Browser. Once the authentication is success, its authenticated session is kept for 1 minute for your convenience.</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>

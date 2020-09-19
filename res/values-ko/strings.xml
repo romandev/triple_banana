@@ -16,6 +16,7 @@
     <string name="background_play_summary">탭이 활성화 상태가 아니거나 장치의 화면이 꺼져있을 때도 미디어를 재생하도록 합니다</string>
     <string name="banana_extension">Banana 확장 기능</string>
     <string name="browser_lock">브라우저 잠금</string>
+    <string name="browser_lock_description">브라우저 잠금을 해제하기 위해\n생체 인증을 진행하세요</string>
     <string name="browser_lock_summary">브라우저를 열 때, 추가 인증을 사용하여 개인정보를 안전하게 보호하세요. 사용자 편의를 위해 인증 성공 후 1분 간은 세션이 유지됩니다.</string>
     <string name="dark_mode">다크 모드</string>
     <string name="dark_mode_summary">야간에 다크 모드를 활성화하여 눈의 피로를 덜어주세요</string>

@@ -49,11 +49,14 @@ public class BiometricPromptBackend
     }
 
     private void authenticateInternal(FragmentActivity parent) {
+        // FIXME(#711): Consider a new way to change the biometric prompt builder description
+        boolean isBackground = mBackground != null;
         PromptInfo promptInfo =
                 new PromptInfo.Builder()
                         .setTitle(parent.getResources().getString(R.string.authentication_title))
-                        .setDescription(parent.getResources().getString(
-                                R.string.authentication_description))
+                        .setDescription(parent.getResources().getString(isBackground
+                                        ? R.string.browser_lock_description
+                                        : R.string.authentication_description))
                         .setNegativeButtonText(
                                 parent.getResources().getText(android.R.string.cancel))
                         .build();
