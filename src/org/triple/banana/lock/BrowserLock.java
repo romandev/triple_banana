@@ -5,7 +5,6 @@
 
 package org.triple.banana.lock;
 
-import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.base.ApplicationStatusTracker;
@@ -54,7 +53,7 @@ public class BrowserLock {
                     // the foreground event is not detected when re-entering the app again. So, we
                     // should reset the state explicitly in this case.
                     ApplicationStatusTracker.getInstance().reset();
-                    BananaApplicationUtils.get().shutdown();
+                    lastActivity.moveTaskToBack(true);
                 }
             });
         }

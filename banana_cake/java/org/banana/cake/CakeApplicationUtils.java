@@ -52,11 +52,6 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     }
 
     @Override
-    public void shutdown() {
-        ApplicationLifetime.terminate(false);
-    }
-
-    @Override
     public AlertDialog.Builder getDialogBuilder(Context context) {
         return new UiUtils.CompatibleAlertDialogBuilder(
                 context, R.style.Theme_Chromium_AlertDialog);
