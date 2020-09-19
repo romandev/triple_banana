@@ -21,7 +21,10 @@ public class Authenticator {
     private Backend mFallback;
     private Callback mCallback;
 
-    public static interface Callback { void onResult(boolean result); }
+    @FunctionalInterface
+    public static interface Callback {
+        void onResult(boolean result);
+    }
 
     public static Authenticator get() {
         if (sInstance == null) {
@@ -32,18 +35,19 @@ public class Authenticator {
     }
 
     public void authenticate(Callback callback) {
+        mCallback = callback;
         mAuthenticator = createBackend();
         mAuthenticator.authenticate(callback);
-        mCallback = callback;
     }
 
     void authenticateWithKeyguardAsFallback() {
         assert mCallback != null;
-        mAuthenticator = new ActivityBasedBackend(KeyguardActivity.class);
+        mAuthenticator = new KeyguardBackend();
         mAuthenticator.authenticate(mCallback);
     }
 
     public void authenticateWithBackground(Callback callback) {
+        mCallback = callback;
         mAuthenticator = createBackend();
         mAuthenticator.authenticate(true, callback);
     }
@@ -57,7 +61,7 @@ public class Authenticator {
         if (isBiometricsSecure()) {
             return new BiometricPromptBackend();
         } else if (isKeyguardSecure()) {
-            return new ActivityBasedBackend(KeyguardActivity.class);
+            return new KeyguardBackend();
         }
 
         return new FallbackBackend();

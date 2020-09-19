@@ -95,6 +95,8 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/authentication/BiometricPromptBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/FallbackBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/KeyguardActivity.java",
+    "//triple_banana/src/org/triple/banana/authentication/KeyguardBackend.java",
+    "//triple_banana/src/org/triple/banana/authentication/KeyguardFragment.java",
     "//triple_banana/src/org/triple/banana/authentication/SecurityLevelChecker.java",
 
     # browser lock
