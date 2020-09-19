@@ -87,14 +87,11 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/appmenu/AppMenuDelegate.java",
 
     # authentication
-    "//triple_banana/src/org/triple/banana/authentication/ActivityBasedBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/AuthenticationManagerImpl.java",
     "//triple_banana/src/org/triple/banana/authentication/Authenticator.java",
     "//triple_banana/src/org/triple/banana/authentication/Backend.java",
-    "//triple_banana/src/org/triple/banana/authentication/BaseActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/BiometricPromptBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/FallbackBackend.java",
-    "//triple_banana/src/org/triple/banana/authentication/KeyguardActivity.java",
     "//triple_banana/src/org/triple/banana/authentication/KeyguardBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/KeyguardFragment.java",
     "//triple_banana/src/org/triple/banana/authentication/SecurityLevelChecker.java",
