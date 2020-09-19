@@ -53,7 +53,7 @@ public class BrowserLock {
                     // the foreground event is not detected when re-entering the app again. So, we
                     // should reset the state explicitly in this case.
                     ApplicationStatusTracker.getInstance().reset();
-                    lastActivity.moveTaskToBack(true);
+                    lastActivity.finishAndRemoveTask();
                 }
             });
         }
