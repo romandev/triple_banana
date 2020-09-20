@@ -5,6 +5,8 @@
 
 package org.triple.banana.lock;
 
+import androidx.fragment.app.FragmentActivity;
+
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.base.ApplicationStatusTracker;
@@ -29,6 +31,8 @@ public class BrowserLock {
     private static final class LazyHolder { private static BrowserLock INSTANCE = new BrowserLock(); }
 
     private ApplicationStatusListener mListener = (lastActivity, status) -> {
+        if (!(lastActivity instanceof FragmentActivity)) return;
+
         if (status == ApplicationStatus.FOREGROUND) {
             if (!SecurityLevelChecker.get().isSecure()) {
                 stop();
@@ -43,7 +47,7 @@ public class BrowserLock {
                 isExceptional = false;
                 return;
             }
-            Authenticator.get().authenticateWithBackground(result -> {
+            Authenticator.get().authenticate((FragmentActivity) lastActivity, true, result -> {
                 if (result) {
                     recoredLastAuthenticationTime();
                 } else {
@@ -51,7 +55,7 @@ public class BrowserLock {
                     // Therefore, if the app restarts quickly, the background/foreground events
                     // might not be detected. In this case, the BrowserLock might be broken because
                     // the foreground event is not detected when re-entering the app again. So, we
-                    // should reset the state explicitly in this case.
+                    // should reset the state explicitly in this case
                     ApplicationStatusTracker.getInstance().reset();
                     lastActivity.finishAndRemoveTask();
                 }

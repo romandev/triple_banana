@@ -12,15 +12,13 @@ import org.triple.banana.authentication.Authenticator.Callback;
 
 public class KeyguardBackend implements Backend {
     @Override
-    public void authenticate(@NonNull Callback callback) {
-        authenticate(false, callback);
+    public void authenticate(@NonNull FragmentActivity parent, @NonNull Callback callback) {
+        authenticate(parent, false, callback);
     }
 
     @Override
-    public void authenticate(boolean isBackground, @NonNull Callback callback) {
-        FragmentActivity parent =
-                (FragmentActivity)
-                        org.chromium.base.ApplicationStatus.getLastTrackedFocusedActivity();
+    public void authenticate(
+            @NonNull FragmentActivity parent, boolean isBackground, @NonNull Callback callback) {
         KeyguardFragment fragment = KeyguardFragment.create(isBackground, callback);
         fragment.show(parent.getSupportFragmentManager(), "background");
     }

@@ -7,11 +7,14 @@ package org.triple.banana.authentication;
 
 import static androidx.biometric.BiometricManager.BIOMETRIC_SUCCESS;
 
+import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Context;
 import android.os.Build;
 
+import androidx.annotation.NonNull;
 import androidx.biometric.BiometricManager;
+import androidx.fragment.app.FragmentActivity;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 
@@ -19,7 +22,6 @@ public class Authenticator {
     private static Authenticator sInstance;
     private Backend mAuthenticator;
     private Backend mFallback;
-    private Callback mCallback;
 
     @FunctionalInterface
     public static interface Callback {
@@ -34,22 +36,30 @@ public class Authenticator {
         return sInstance;
     }
 
-    public void authenticate(Callback callback) {
-        mCallback = callback;
-        mAuthenticator = createBackend();
-        mAuthenticator.authenticate(callback);
+    public void authenticate(@NonNull Callback callback) {
+        Activity parent = org.chromium.base.ApplicationStatus.getLastTrackedFocusedActivity();
+        if (!(parent instanceof FragmentActivity)) {
+            callback.onResult(false);
+            return;
+        }
+        authenticate((FragmentActivity) parent, callback);
     }
 
-    void authenticateWithKeyguardAsFallback() {
-        assert mCallback != null;
+    public void authenticate(@NonNull FragmentActivity parent, @NonNull Callback callback) {
+        mAuthenticator = createBackend();
+        mAuthenticator.authenticate(parent, callback);
+    }
+
+    void authenticateWithKeyguardAsFallback(@NonNull FragmentActivity parent,
+            boolean hasOpaqueBackground, @NonNull Callback callback) {
         mAuthenticator = new KeyguardBackend();
-        mAuthenticator.authenticate(mCallback);
+        mAuthenticator.authenticate(parent, hasOpaqueBackground, callback);
     }
 
-    public void authenticateWithBackground(Callback callback) {
-        mCallback = callback;
+    public void authenticate(
+            @NonNull FragmentActivity parent, boolean isBackground, @NonNull Callback callback) {
         mAuthenticator = createBackend();
-        mAuthenticator.authenticate(true, callback);
+        mAuthenticator.authenticate(parent, true, callback);
     }
 
     public Authenticator setFallback(Backend fallback) {

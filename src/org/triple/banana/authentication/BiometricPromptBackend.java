@@ -25,21 +25,23 @@ import androidx.fragment.app.FragmentActivity;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator.Callback;
 
+import java.lang.ref.WeakReference;
+
 public class BiometricPromptBackend
         extends BiometricPrompt.AuthenticationCallback implements Backend {
     private @Nullable Dialog mBackground;
     private @Nullable Callback mCallback;
+    private @Nullable WeakReference<FragmentActivity> mParent;
 
     @Override
-    public void authenticate(@NonNull Callback callback) {
-        authenticate(false, callback);
+    public void authenticate(@NonNull FragmentActivity parent, @NonNull Callback callback) {
+        authenticate(parent, false, callback);
     }
 
     @Override
-    public void authenticate(boolean isBackground, @NonNull Callback callback) {
-        FragmentActivity parent =
-                (FragmentActivity)
-                        org.chromium.base.ApplicationStatus.getLastTrackedFocusedActivity();
+    public void authenticate(
+            @NonNull FragmentActivity parent, boolean isBackground, @NonNull Callback callback) {
+        mParent = new WeakReference<>(parent);
         mCallback = callback;
         if (isBackground) {
             mBackground = new Dialog(parent, android.R.style.Theme_Light_NoTitleBar_Fullscreen);
@@ -48,7 +50,7 @@ public class BiometricPromptBackend
         authenticateInternal(parent);
     }
 
-    private void authenticateInternal(FragmentActivity parent) {
+    private void authenticateInternal(@NonNull FragmentActivity parent) {
         // FIXME(#711): Consider a new way to change the biometric prompt builder description
         boolean isBackground = mBackground != null;
         PromptInfo promptInfo =
@@ -73,14 +75,22 @@ public class BiometricPromptBackend
         }
 
         mCallback.onResult(result);
+        mCallback = null;
     }
 
     @Override
     public void onAuthenticationError(int errorCode, CharSequence errorMessage) {
         switch (errorCode) {
             case ERROR_CANCELED:
+                if (mParent == null || mParent.get() == null) return;
                 if (Authenticator.isKeyguardSecure()) {
-                    Authenticator.get().authenticateWithKeyguardAsFallback();
+                    assert mCallback != null;
+                    Callback callback = mCallback;
+                    mCallback = null;
+                    boolean hasOpaqueBackground = mBackground != null;
+                    Authenticator.get().authenticateWithKeyguardAsFallback(
+                            mParent.get(), hasOpaqueBackground, callback);
+                    return;
                 }
                 break;
             case ERROR_LOCKOUT_PERMANENT:

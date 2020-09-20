@@ -5,16 +5,20 @@
 
 package org.triple.banana.authentication;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
+
 import org.triple.banana.authentication.Authenticator.Callback;
 
 class FallbackBackend implements Backend {
     @Override
-    public void authenticate(Callback callback) {
+    public void authenticate(@NonNull FragmentActivity parent, @NonNull Callback callback) {
         callback.onResult(false);
     }
 
     @Override
-    public void authenticate(boolean isBackground, Callback callback) {
+    public void authenticate(
+            @NonNull FragmentActivity parent, boolean isBackground, @NonNull Callback callback) {
         callback.onResult(false);
     }
 }

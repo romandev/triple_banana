@@ -5,9 +5,13 @@
 
 package org.triple.banana.authentication;
 
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentActivity;
+
 import org.triple.banana.authentication.Authenticator.Callback;
 
 public interface Backend {
-    void authenticate(Callback callback);
-    void authenticate(boolean isBackground, Callback callback);
+    void authenticate(@NonNull FragmentActivity parent, @NonNull Callback callback);
+    void authenticate(
+            @NonNull FragmentActivity parent, boolean isBackground, @NonNull Callback callback);
 }
