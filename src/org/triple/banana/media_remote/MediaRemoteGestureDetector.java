@@ -5,10 +5,13 @@
 
 package org.triple.banana.media_remote;
 
+import android.graphics.Rect;
+import android.graphics.RectF;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.core.view.GestureDetectorCompat;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
@@ -79,12 +82,24 @@ public class MediaRemoteGestureDetector implements View.OnTouchListener {
         mCurrentGesture = GestureType.UNKNOWN;
     }
 
+    private @NonNull RectF getTouchBounds() {
+        RectF touchBounds = new RectF();
+        if (mTargetView == null || mTargetView.get() == null) return touchBounds;
+
+        Rect viewBounds = new Rect();
+        mTargetView.get().getDrawingRect(viewBounds);
+        touchBounds.set(viewBounds);
+        touchBounds.inset(viewBounds.width() * 0.05f, viewBounds.height() * 0.05f);
+        return touchBounds;
+    }
+
     private GestureDetectorCompat createGestureDetectorCompat() {
         return new GestureDetectorCompat(BananaApplicationUtils.get().getApplicationContext(),
                 new GestureDetector.SimpleOnGestureListener() {
                     @Override
                     public boolean onDown(MotionEvent e) {
-                        return true;
+                        RectF touchBounds = getTouchBounds();
+                        return touchBounds.contains(e.getX(), e.getY());
                     }
 
                     @Override
