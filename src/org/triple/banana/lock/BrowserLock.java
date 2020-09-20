@@ -5,6 +5,9 @@
 
 package org.triple.banana.lock;
 
+import android.os.Handler;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
 
 import org.triple.banana.authentication.Authenticator;
@@ -14,11 +17,10 @@ import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatusListener;
 
 public class BrowserLock {
-    private boolean isExceptional = false;
-
     // BrowserLock Session
     private Long mLastAuthenticationTime;
     private static final long SESSION_DURATION = 60000;
+    private @NonNull Handler mHandler = new Handler();
 
     /**
      * Get BrowserLock singleton instance.
@@ -43,10 +45,6 @@ public class BrowserLock {
             }
             resetLastAuthenticationTime();
 
-            if (isExceptional) {
-                isExceptional = false;
-                return;
-            }
             Authenticator.get().authenticate((FragmentActivity) lastActivity, true, result -> {
                 if (result) {
                     recoredLastAuthenticationTime();
@@ -57,7 +55,7 @@ public class BrowserLock {
                     // the foreground event is not detected when re-entering the app again. So, we
                     // should reset the state explicitly in this case
                     ApplicationStatusTracker.getInstance().reset();
-                    lastActivity.finishAndRemoveTask();
+                    lastActivity.finishAffinity();
                 }
             });
         }
@@ -65,24 +63,18 @@ public class BrowserLock {
 
     public void start() {
         resetLastAuthenticationTime();
-        resume();
+        ApplicationStatusTracker.getInstance().addListener(mListener);
     }
 
     public void stop() {
         resetLastAuthenticationTime();
-        pause();
-    }
-
-    public void resume() {
-        ApplicationStatusTracker.getInstance().addListener(mListener);
-    }
-
-    public void pause() {
         ApplicationStatusTracker.getInstance().removeListener(mListener);
     }
 
-    public void setExceptional(boolean isException) {
-        isExceptional = isException;
+    public void pauseForAMoment() {
+        ApplicationStatusTracker.getInstance().removeListener(mListener);
+        mHandler.postDelayed(
+                () -> { ApplicationStatusTracker.getInstance().addListener(mListener); }, 1000);
     }
 
     private void recoredLastAuthenticationTime() {

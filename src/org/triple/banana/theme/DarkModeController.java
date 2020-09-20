@@ -9,6 +9,7 @@ import android.content.SharedPreferences;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaDarkModeUtils;
+import org.triple.banana.lock.BrowserLock;
 
 public class DarkModeController {
     private static final String UI_THEME_SETTING = "ui_theme_setting";
@@ -64,6 +65,7 @@ public class DarkModeController {
             else
                 setCurrentState(State.DARK);
         }
+        BrowserLock.getInstance().pauseForAMoment();
     }
 
     public boolean isDarkModeOn() {

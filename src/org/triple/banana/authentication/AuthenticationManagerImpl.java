@@ -6,6 +6,7 @@
 package org.triple.banana.authentication;
 
 import org.triple.banana.authentication.mojom.AuthenticationManager;
+import org.triple.banana.lock.BrowserLock;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
@@ -37,6 +38,7 @@ public class AuthenticationManagerImpl implements AuthenticationManager {
         if (!isRunning()) return;
         sCallback.call(result);
         sCallback = null;
+        BrowserLock.getInstance().pauseForAMoment();
     }
 
     @Override
