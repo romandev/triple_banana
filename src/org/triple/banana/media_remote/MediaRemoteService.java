@@ -66,6 +66,9 @@ public enum MediaRemoteService implements MediaRemoteView
 
             @Override
             public void onTimeUpdate(double currentTime, double duration) {
+                boolean isPositionChangeStarted = mCurrentTimeBeforePositionChange != 0.0;
+                if (isPositionChangeStarted) return;
+
                 mViewModel.getEditor().setCurrentTime(currentTime);
                 mViewModel.getEditor().setDuration(duration);
                 mViewModel.commit();

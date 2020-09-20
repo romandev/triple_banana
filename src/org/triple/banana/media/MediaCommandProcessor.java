@@ -5,13 +5,15 @@
 
 package org.triple.banana.media;
 
-import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
-import org.banana.cake.interfaces.BananaMediaCommandProcessor;
 import org.banana.cake.interfaces.BananaTab;
+import org.triple.banana.media.mojom.BananaMediaCommandProcessor;
 
 public enum MediaCommandProcessor {
     instance;
+
+    private @Nullable BananaMediaCommandProcessor mImpl;
 
     private void runMediaCommand(String mediaCommand) {
         BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
@@ -23,28 +25,28 @@ public enum MediaCommandProcessor {
         tab.evaluateJavaScript(commandBuilder.toString());
     }
 
-    private @NonNull BananaMediaCommandProcessor getCommandProcessor() {
-        BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
-        if (tab != null) return tab.getMediaCommandProcessor();
-
-        // Returns empty media command processor (no operations)
-        return BananaTab.get().getMediaCommandProcessor();
+    void setImpl(BananaMediaCommandProcessor impl) {
+        mImpl = impl;
     }
 
     public void play() {
-        getCommandProcessor().play();
+        if (mImpl == null) return;
+        mImpl.play();
     }
 
     public void pause() {
-        getCommandProcessor().pause();
+        if (mImpl == null) return;
+        mImpl.pause();
     }
 
     public void setPosition(double seconds) {
-        getCommandProcessor().setPosition(seconds);
+        if (mImpl == null) return;
+        mImpl.setRelativePosition(seconds);
     }
 
     public void setRelativePosition(double seconds) {
-        getCommandProcessor().setRelativePosition(seconds);
+        if (mImpl == null) return;
+        mImpl.setRelativePosition(seconds);
     }
 
     public void setVolume(float value) {

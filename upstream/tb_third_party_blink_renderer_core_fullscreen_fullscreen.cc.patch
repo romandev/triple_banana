@@ -1,15 +1,21 @@
 diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.cc
 --- tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.cc
-@@ -565,6 +565,25 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -565,6 +565,31 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
                                              RequestType request_type,
                                              ScriptState* script_state,
                                              ExceptionState* exception_state) {
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
-+    auto* video_element = pending.QuerySelector("video");
-+    if (video_element) {
-+      DynamicTo<HTMLMediaElement>(video_element)->Play();
++    auto* query_element = pending.QuerySelector("video");
++    if (query_element) {
++      auto* video_element = DynamicTo<HTMLVideoElement>(query_element);
++      From(*pending.GetDocument().domWindow()).media_element_ = video_element;
++      video_element->blur();
++      if (IsFullscreenElement(*video_element) ||
++          video_element->videoVisibleSize().IsEmpty()) {
++        return ScriptPromise();
++      }
 +      return RequestFullscreen(options, *video_element, request_type,
 +                               script_state, exception_state);
 +    }
@@ -27,20 +33,51 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    RequestFullscreenScope scope;
  
    // 1. Let |pending| be the context object.
-@@ -633,6 +652,12 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -633,6 +658,16 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
      LocalFrame& frame = *window.GetFrame();
      frame.GetChromeClient().EnterFullscreen(frame, options,
                                              for_cross_process_descendant);
 +#if defined(ENABLE_TRIPLE_BANANA)
 +    if (RuntimeEnabledFeatures::MediaRemoteEnabled() &&
 +        IsA<HTMLVideoElement>(pending)) {
-+      From(window).media_dispatcher_->OnEnteredVideoFullscreen();
++      if (From(window).processor_.is_bound()) {
++        From(window).processor_.reset();
++      }
++      From(window).dispatcher_->OnEnteredVideoFullscreen(
++          From(window).processor_.BindNewPipeAndPassRemote());
 +    }
 +#endif
  
      // After the first fullscreen request, the user activation should be
      // consumed, and the following fullscreen requests should receive an error.
-@@ -810,6 +835,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
+@@ -650,6 +685,26 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+   return promise;
+ }
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++void Fullscreen::Play() {
++  if (!media_element_)
++    return;
++  media_element_->Play();
++}
++
++void Fullscreen::Pause() {
++  if (!media_element_)
++    return;
++  media_element_->pause();
++}
++
++void Fullscreen::SetRelativePosition(double seconds) {
++  if (!media_element_)
++    return;
++  media_element_->setCurrentTime(media_element_->currentTime() + seconds);
++}
++#endif
++
+ void Fullscreen::DidResolveEnterFullscreenRequest(Document& document,
+                                                   bool granted) {
+   if (!document.domWindow())
+@@ -810,6 +865,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
      return ScriptPromise();
    }
  
@@ -58,15 +95,25 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    if (script_state)
      resolver = MakeGarbageCollected<ScriptPromiseResolver>(script_state);
  
-@@ -882,6 +918,11 @@ void Fullscreen::DidExitFullscreen(Document& document) {
+@@ -882,6 +948,11 @@ void Fullscreen::DidExitFullscreen(Document& document) {
    // If this is a response to an ExitFullscreen call then
    // continue exiting. Otherwise call FullyExitFullscreen.
    Fullscreen& fullscreen = From(*document.domWindow());
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
-+    fullscreen.media_dispatcher_->OnExitedVideoFullscreen();
++    fullscreen.dispatcher_->OnExitedVideoFullscreen();
 +  }
 +#endif
    PendingExits exits;
    exits.swap(fullscreen.pending_exits_);
    if (exits.IsEmpty()) {
+@@ -1023,6 +1094,9 @@ void Fullscreen::ElementRemoved(Element& node) {
+ void Fullscreen::Trace(Visitor* visitor) const {
+   visitor->Trace(pending_requests_);
+   visitor->Trace(pending_exits_);
++#if defined(ENABLE_TRIPLE_BANANA)
++  visitor->Trace(media_element_);
++#endif
+   Supplement<LocalDOMWindow>::Trace(visitor);
+   ExecutionContextLifecycleObserver::Trace(visitor);
+ }

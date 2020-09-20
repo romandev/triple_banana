@@ -5,6 +5,7 @@
 
 package org.triple.banana.media;
 
+import org.triple.banana.media.mojom.BananaMediaCommandProcessor;
 import org.triple.banana.media.mojom.BananaMediaEventDispatcher;
 import org.triple.banana.media.mojom.BananaPlayState;
 
@@ -62,7 +63,8 @@ public enum MediaEventDispatcher implements BananaMediaEventDispatcher {
     }
 
     @Override
-    public void onEnteredVideoFullscreen() {
+    public void onEnteredVideoFullscreen(BananaMediaCommandProcessor impl) {
+        MediaCommandProcessor.instance.setImpl(impl);
         for (MediaEventListener listener : mListeners) {
             listener.onEnteredVideoFullscreen();
         }

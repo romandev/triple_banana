@@ -24,8 +24,6 @@ public interface BananaTab {
     void evaluateJavaScript(String script);
     Context getContext();
     void exitFullscreen();
-    @NonNull
-    BananaMediaCommandProcessor getMediaCommandProcessor();
     @Nullable
     View getContentView();
 }
