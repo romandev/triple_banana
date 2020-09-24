@@ -1,0 +1,12 @@
+diff --git tb/third_party/blink/renderer/core/fullscreen/BUILD.gn tb_diff/third_party/blink/renderer/core/fullscreen/BUILD.gn
+--- tb/third_party/blink/renderer/core/fullscreen/BUILD.gn
++++ tb_diff/third_party/blink/renderer/core/fullscreen/BUILD.gn
+@@ -12,6 +12,8 @@ blink_core_sources("fullscreen") {
+     "element_fullscreen.h",
+     "fullscreen.cc",
+     "fullscreen.h",
++    "fullscreen_media_controller.cc",
++    "fullscreen_media_controller.h",
+     "scoped_allow_fullscreen.cc",
+     "scoped_allow_fullscreen.h",
+   ]

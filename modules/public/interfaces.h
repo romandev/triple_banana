@@ -17,7 +17,7 @@
 #include "triple_banana/modules/public/mojom/authentication.mojom.h"
 #include "triple_banana/modules/public/mojom/encrypter.mojom.h"
 #include "triple_banana/modules/public/mojom/hello.mojom.h"
-#include "triple_banana/modules/public/mojom/media.mojom.h"
+#include "triple_banana/modules/public/mojom/media.mojom-blink.h"
 #include "triple_banana/modules/public/string_view.h"
 
 #define AutoBind(interface_name)               \
@@ -87,7 +87,7 @@ inline void OnBindHostReceiverForRenderer(
   BIND_HOST_RECEIVER(authentication::mojom::AuthenticationManager);
   BIND_HOST_RECEIVER(encrypter::mojom::EncrypterManager);
   BIND_HOST_RECEIVER(hello::mojom::Hello);
-  BIND_HOST_RECEIVER(media::mojom::BananaMediaEventDispatcher);
+  BIND_HOST_RECEIVER(media::mojom::blink::BananaMediaEventDispatcher);
 }
 
 }  // namespace triple_banana

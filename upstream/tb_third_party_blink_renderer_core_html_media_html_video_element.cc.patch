@@ -1,23 +1,25 @@
 diff --git tb/third_party/blink/renderer/core/html/media/html_video_element.cc tb_diff/third_party/blink/renderer/core/html/media/html_video_element.cc
 --- tb/third_party/blink/renderer/core/html/media/html_video_element.cc
 +++ tb_diff/third_party/blink/renderer/core/html/media/html_video_element.cc
-@@ -90,6 +90,9 @@ HTMLVideoElement::HTMLVideoElement(Document& document)
-           !GetExecutionContext()->IsFeatureEnabled(
-               mojom::blink::DocumentPolicyFeature::kUnsizedMedia)),
-       video_has_played_(false),
+@@ -64,6 +64,11 @@
+ #include "third_party/blink/renderer/platform/runtime_enabled_features.h"
+ #include "third_party/blink/renderer/platform/web_test_support.h"
+ 
 +#if defined(ENABLE_TRIPLE_BANANA)
-+      media_dispatcher_(AutoBind(media::mojom::BananaMediaEventDispatcher)),
++#include "third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h"
++#include "triple_banana/modules/public/interfaces.h"
 +#endif
-       mostly_filling_viewport_(false) {
-   if (document.GetSettings()) {
-     default_poster_url_ =
-@@ -268,6 +271,12 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
++
+ namespace blink {
+ 
+ namespace {
+@@ -268,6 +273,12 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
  void HTMLVideoElement::OnBecamePersistentVideo(bool value) {
    is_auto_picture_in_picture_ = value;
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
-+    media_dispatcher_->OnChangedPIPMode(value);
++    FullscreenMediaController::Get().DispatchChangedPIPMode(value);
 +  }
 +#endif
 +

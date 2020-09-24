@@ -1,0 +1,100 @@
+--- /dev/null
++++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc
+@@ -0,0 +1,95 @@
++// Copyright 2020 The Triple Banana Authors. All rights reserved.
++// This Source Code Form is subject to the terms of the Mozilla Public
++// License, v. 2.0. If a copy of the MPL was not distributed with this
++// file, You can obtain one at https://mozilla.org/MPL/2.0/.
++
++#if defined(ENABLE_TRIPLE_BANANA)
++
++#include "third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h"
++
++#include "third_party/blink/renderer/core/html/media/html_video_element.h"
++
++namespace blink {
++
++void FullscreenMediaController::Play() {
++  if (!GetVideoElement())
++    return;
++  GetVideoElement()->Play();
++}
++
++void FullscreenMediaController::Pause() {
++  if (!GetVideoElement())
++    return;
++  GetVideoElement()->pause();
++}
++
++void FullscreenMediaController::SetRelativePosition(double seconds) {
++  if (!GetVideoElement())
++    return;
++  GetVideoElement()->setCurrentTime(GetVideoElement()->currentTime() + seconds);
++}
++
++void FullscreenMediaController::DispatchEnteredVideoFullscreen(
++    HTMLVideoElement* video_element) {
++  if (processor_.is_bound())
++    processor_.reset();
++
++  SetVideoElement(video_element);
++  EnsureBindEventDispatcher();
++  dispatcher_->OnEnteredVideoFullscreen(processor_.BindNewPipeAndPassRemote());
++}
++
++void FullscreenMediaController::DispatchExitedVideoFullscreen() {
++  EnsureBindEventDispatcher();
++  dispatcher_->OnExitedVideoFullscreen();
++}
++
++void FullscreenMediaController::DispatchChangedPIPMode(bool value) {
++  EnsureBindEventDispatcher();
++  dispatcher_->OnChangedPIPMode(value);
++}
++
++void FullscreenMediaController::DispatchTimeUpdate(double current_time,
++                                                   double duration) {
++  EnsureBindEventDispatcher();
++  dispatcher_->OnTimeUpdate(current_time, duration);
++}
++
++void FullscreenMediaController::DispatchPlayStateChanged(
++    media::mojom::BananaPlayState state) {
++  EnsureBindEventDispatcher();
++  dispatcher_->OnPlayStateChanged(state);
++}
++
++FullscreenMediaController& FullscreenMediaController::Get() {
++  static base::NoDestructor<FullscreenMediaController> instance;
++  return *instance;
++}
++
++HTMLVideoElement* FullscreenMediaController::GetVideoElement() {
++  return SetOrGetVideoElement(nullptr, false);
++}
++
++void FullscreenMediaController::SetVideoElement(HTMLVideoElement* element) {
++  SetOrGetVideoElement(element, true);
++}
++
++HTMLVideoElement* FullscreenMediaController::SetOrGetVideoElement(
++    HTMLVideoElement* element,
++    bool is_update) {
++  static HTMLVideoElement* element_storage = nullptr;
++  if (is_update) {
++    element_storage = element;
++  }
++  return element_storage;
++}
++
++void FullscreenMediaController::EnsureBindEventDispatcher() {
++  if (!dispatcher_.is_bound()) {
++    dispatcher_ = AutoBind(media::mojom::blink::BananaMediaEventDispatcher);
++  }
++}
++
++}  // namespace blink
++
++#endif  // #if defined(ENABLE_TRIPLE_BANANA)
+diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h
+new file mode 100644

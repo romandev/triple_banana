@@ -1,0 +1,54 @@
+--- /dev/null
++++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h
+@@ -0,0 +1,51 @@
++// Copyright 2020 The Triple Banana Authors. All rights reserved.
++// This Source Code Form is subject to the terms of the Mozilla Public
++// License, v. 2.0. If a copy of the MPL was not distributed with this
++// file, You can obtain one at https://mozilla.org/MPL/2.0/.
++
++#if defined(ENABLE_TRIPLE_BANANA)
++
++#ifndef THIRD_PARTY_BLINK_RENDERER_CORE_FULLSCREEN_FULLSCREEN_MEDIA_CONTROLLER_H_
++#define THIRD_PARTY_BLINK_RENDERER_CORE_FULLSCREEN_FULLSCREEN_MEDIA_CONTROLLER_H_
++
++#include "base/no_destructor.h"
++#include "third_party/blink/renderer/core/core_export.h"
++#include "triple_banana/modules/public/interfaces.h"
++
++namespace blink {
++
++class HTMLVideoElement;
++
++class CORE_EXPORT FullscreenMediaController final
++    : public media::mojom::blink::BananaMediaCommandProcessor {
++ public:
++  void Play() override;
++  void Pause() override;
++  void SetRelativePosition(double seconds) override;
++
++  void DispatchEnteredVideoFullscreen(HTMLVideoElement* video_element);
++  void DispatchExitedVideoFullscreen();
++  void DispatchChangedPIPMode(bool value);
++  void DispatchTimeUpdate(double current_time, double duration);
++  void DispatchPlayStateChanged(media::mojom::BananaPlayState state);
++
++  HTMLVideoElement* GetVideoElement();
++  void SetVideoElement(HTMLVideoElement* element);
++
++  static FullscreenMediaController& Get();
++
++ private:
++  void EnsureBindEventDispatcher();
++  HTMLVideoElement* SetOrGetVideoElement(HTMLVideoElement* element,
++                                         bool is_update);
++
++  mojo::Receiver<media::mojom::blink::BananaMediaCommandProcessor> processor_{
++      this};
++  mojo::Remote<media::mojom::blink::BananaMediaEventDispatcher> dispatcher_;
++};
++
++}  // namespace blink
++
++#endif  // THIRD_PARTY_BLINK_RENDERER_CORE_FULLSCREEN_FULLSCREEN_MEDIA_CONTROLLER_H_
++
++#endif  // #if defined(ENABLE_TRIPLE_BANANA)

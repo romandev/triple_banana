@@ -1,58 +1,11 @@
 diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.h tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.h
 --- tb/third_party/blink/renderer/core/fullscreen/fullscreen.h
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.h
-@@ -41,8 +41,15 @@
- #include "third_party/blink/renderer/platform/wtf/deque.h"
- #include "third_party/blink/renderer/platform/wtf/vector.h"
- 
-+#if defined(ENABLE_TRIPLE_BANANA)
-+#include "triple_banana/modules/public/interfaces.h"
-+#endif
-+
- namespace blink {
- 
-+#if defined(ENABLE_TRIPLE_BANANA)
-+class HTMLMediaElement;
-+#endif
- class LocalDOMWindow;
- class FullscreenOptions;
- class ScriptPromiseResolver;
-@@ -51,16 +58,24 @@ class ScriptPromiseResolver;
- // https://fullscreen.spec.whatwg.org/, especially its algorithms. It is a
- // Document supplement as each document has some fullscreen state, and to
- // actually enter and exit fullscreen it (indirectly) uses FullscreenController.
--class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
--                                     public Supplement<LocalDOMWindow>,
--                                     public ExecutionContextLifecycleObserver {
-+class CORE_EXPORT Fullscreen final
-+    : public GarbageCollected<Fullscreen>,
-+      public Supplement<LocalDOMWindow>,
-+#if defined(ENABLE_TRIPLE_BANANA)
-+      public media::mojom::BananaMediaCommandProcessor,
-+#endif
-+      public ExecutionContextLifecycleObserver {
-   USING_GARBAGE_COLLECTED_MIXIN(Fullscreen);
- 
-  public:
-   static const char kSupplementName[];
- 
-   explicit Fullscreen(LocalDOMWindow&);
-+#if defined(ENABLE_TRIPLE_BANANA)
-+  ~Fullscreen() override;
-+#else
-   virtual ~Fullscreen();
-+#endif
- 
-   static Element* FullscreenElementFrom(Document&);
-   static Element* FullscreenElementForBindingFrom(TreeScope&);
-@@ -85,6 +100,16 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
+@@ -85,6 +85,13 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
        RequestType,
        ScriptState* state = nullptr,
        ExceptionState* exception_state = nullptr);
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  void Play() override;
-+  void Pause() override;
-+  void SetRelativePosition(double seconds) override;
 +  static ScriptPromise RequestFullscreen(const FullscreenOptions*,
 +                                         Element&,
 +                                         RequestType,
@@ -62,17 +15,5 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.h tb_diff/th
  
    static void FullyExitFullscreen(Document&, bool ua_originated = false);
    static ScriptPromise ExitFullscreen(Document&,
-@@ -125,6 +150,13 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
-                                 Element* new_element,
-                                 RequestType new_request_type);
- 
-+#if defined(ENABLE_TRIPLE_BANANA)
-+  WeakMember<HTMLMediaElement> media_element_;
-+  mojo::Receiver<media::mojom::BananaMediaCommandProcessor> processor_{this};
-+  mojo::Remote<media::mojom::BananaMediaEventDispatcher> dispatcher_ =
-+      AutoBind(media::mojom::BananaMediaEventDispatcher);
-+#endif
-+
-   // Stores the pending request, promise and the type for executing
-   // the asynchronous portion of the request.
-   class PendingRequest : public GarbageCollected<PendingRequest> {
+diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc
+new file mode 100644

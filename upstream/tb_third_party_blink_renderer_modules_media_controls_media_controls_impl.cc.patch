@@ -1,28 +1,40 @@
 diff --git tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
 --- tb/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
 +++ tb_diff/third_party/blink/renderer/modules/media_controls/media_controls_impl.cc
-@@ -1745,6 +1745,14 @@ void MediaControlsImpl::OnFocusIn() {
+@@ -96,6 +96,11 @@
+ #include "third_party/blink/renderer/platform/text/platform_locale.h"
+ #include "third_party/blink/renderer/platform/web_test_support.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h"
++#include "triple_banana/modules/public/interfaces.h"
++#endif
++
+ namespace blink {
+ 
+ namespace {
+@@ -1745,6 +1750,14 @@ void MediaControlsImpl::OnFocusIn() {
  void MediaControlsImpl::OnTimeUpdate() {
    UpdateTimeIndicators(true /* suppress_aria */);
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled() &&
 +      MediaElement().IsFullscreen()) {
-+    media_dispatcher_->OnTimeUpdate(MediaElement().currentTime(),
-+                                    MediaElement().duration());
++    FullscreenMediaController::Get().DispatchTimeUpdate(
++        MediaElement().currentTime(), MediaElement().duration());
 +  }
 +#endif
 +
    // 'timeupdate' might be called in a paused state. The controls should not
    // become transparent in that case.
    if (MediaElement().paused()) {
-@@ -1790,11 +1798,23 @@ void MediaControlsImpl::OnPlay() {
+@@ -1790,11 +1803,23 @@ void MediaControlsImpl::OnPlay() {
  }
  
  void MediaControlsImpl::OnPlaying() {
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
-+    media_dispatcher_->OnPlayStateChanged(
++    FullscreenMediaController::Get().DispatchPlayStateChanged(
 +        media::mojom::BananaPlayState::PLAYING);
 +  }
 +#endif
@@ -33,20 +45,20 @@ diff --git tb/third_party/blink/renderer/modules/media_controls/media_controls_i
  void MediaControlsImpl::OnPause() {
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
-+    media_dispatcher_->OnPlayStateChanged(
++    FullscreenMediaController::Get().DispatchPlayStateChanged(
 +        media::mojom::BananaPlayState::PAUSED);
 +  }
 +#endif
    UpdatePlayState();
    UpdateTimeIndicators();
    MakeOpaque();
-@@ -2117,6 +2137,12 @@ MediaControlOverflowMenuButtonElement& MediaControlsImpl::OverflowButton() {
+@@ -2117,6 +2142,12 @@ MediaControlOverflowMenuButtonElement& MediaControlsImpl::OverflowButton() {
  }
  
  void MediaControlsImpl::OnWaiting() {
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
-+    media_dispatcher_->OnPlayStateChanged(
++    FullscreenMediaController::Get().DispatchPlayStateChanged(
 +        media::mojom::BananaPlayState::WAITING);
 +  }
 +#endif
