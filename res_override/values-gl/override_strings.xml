@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;non gardará&lt;/em&gt; a seguinte información:
+        &lt;ul&gt;
+          &lt;li&gt;o teu historial de navegación
+          &lt;li&gt;as cookies e os datos dos sitios
+          &lt;li&gt;a información que puxeses en formularios
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"As tarxetas e enderezos proceden de Banana Browser e da túa conta de Google (%1$s). Podes xestionalos en BEGIN_LINKConfiguraciónEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"As tarxetas e enderezos proceden de Banana Browser. Podes xestionalos en BEGIN_LINKConfiguraciónEND_LINK."</string>
 <string name="sign_in_to_chrome">"Iniciar sesión en Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizar os teus datos de Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Axudar a mellorar o rendemento e as funcións de Banana Browser"</string>

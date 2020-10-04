@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser төмөнкү маалыматты &lt;em&gt;сактабайт&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;Серептөө таржымалыңызды
+          &lt;li&gt;Кукилерди жана сайттардын дайындарын
+          &lt;li&gt;Формаларга киргизилген маалыматты
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Карточкалар жана даректер Banana Browser’дон жана Google аккаунтуңуздан (%1$s) алынган. Аларды BEGIN_LINKЖөндөөлөрдөнEND_LINK башкарсаңыз болот."</string>
+<string name="payments_card_and_address_settings_signed_out">"Карточкалар жана даректер Banana Browser’дон алынган. Аларды BEGIN_LINKЖөндөөлөрдөнEND_LINK башкарсаңыз болот."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'го кириңиз"</string>
 <string name="sync_switch_title">"Banana Browser дайындарын шайкештирүү"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'дун функцияларын жана өндүрүмдүүлүгүн өркүндөтүүгө жардам бериңиз"</string>

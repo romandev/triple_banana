@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"‏Banana Browser &lt;em&gt;לא ישמור&lt;/em&gt; את הנתונים הבאים:
+        &lt;ul&gt;
+          &lt;li&gt;היסטוריית הגלישה שלך
+          &lt;li&gt;קובצי cookie ונתוני אתרים
+          &lt;li&gt;מידע שהוזן בטפסים
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"‏הכרטיסים והכתובות לקוחים מ-Banana Browser ומחשבון Google שלך (%1$s). אפשר לנהל אותם בBEGIN_LINKהגדרותEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"‏הכרטיסים והכתובות נלקחים מ-Banana Browser. אפשר לנהל אותם בBEGIN_LINKהגדרותEND_LINK."</string>
 <string name="sign_in_to_chrome">"‏כניסה ל-Banana Browser"</string>
 <string name="sync_switch_title">"‏סנכרון הנתונים מ-Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"‏עזרה בשיפור התכונות והביצועים של Banana Browser"</string>

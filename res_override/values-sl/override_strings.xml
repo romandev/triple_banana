@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;ne shrani&lt;/em&gt; teh podatkov:
+        &lt;ul&gt;
+          &lt;li&gt;zgodovine brskanja,
+          &lt;li&gt;piškotkov in podatkov spletnih mest,
+          &lt;li&gt;podatkov, vnesenih v obrazce.
+        &lt;/ul&gt;"</string>
 <string name="sign_in_to_chrome">"Prijava v Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Kopirano v Banana Browser"</string>
 <string name="password_settings_export_subject">"Gesla za Banana Browser"</string>

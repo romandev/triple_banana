@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser-ის მიერ &lt;em&gt;არ შეინახება&lt;/em&gt; შემდეგი ინფორმაცია:
+        &lt;ul&gt;
+          &lt;li&gt;დათვალიერების ისტორია
+          &lt;li&gt;ქუქი-ჩანაწერები და საიტების მონაცემები
+          &lt;li&gt;ფორმებში მითითებული ინფორმაცია
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ბარათებისა და მისამართების შესახებ ინფორმაცია მიღებულია Banana Browser-იდან და თქვენი Google ანგარიშიდან (%1$s). მათი მართვა შეგიძლიათ BEGIN_LINKპარამეტრებშიEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"ბარათებისა და მისამართების შესახებ ინფორმაცია მიღებულია Banana Browser-იდან. მათი მართვა შეგიძლიათ BEGIN_LINKპარამეტრებშიEND_LINK."</string>
 <string name="sign_in_to_chrome">"შესვლა Banana Browser-ში"</string>
 <string name="sync_switch_title">"თქვენი Banana Browser მონაცემების სინქრონიზაცია"</string>
 <string name="usage_and_crash_reports_title">"შეუწყვეთ ხელი Banana Browser-ის ფუნქციებისა და წარმადობის გაუმჯობესებას"</string>

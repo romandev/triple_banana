@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;nu va salva&lt;/em&gt; următoarele informații:
+        &lt;ul&gt;
+          &lt;li&gt;istoricul de navigare,
+          &lt;li&gt;cookie-urile și datele de pe site-uri,
+          &lt;li&gt;informațiile introduse în formulare.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Cardurile și adresele sunt din Banana Browser și din Contul Google (%1$s). Poți să le gestionezi în BEGIN_LINKSetăriEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Cardurile și adresele sunt din Banana Browser. Le poți gestiona în BEGIN_LINKSetăriEND_LINK."</string>
 <string name="sign_in_to_chrome">"Conectează-te la Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizează datele din Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Contribuie la îmbunătățirea funcțiilor și performanței Banana Browser"</string>

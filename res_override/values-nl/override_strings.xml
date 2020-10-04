@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"De volgende gegevens worden &lt;em&gt;niet opgeslagen&lt;/em&gt; in Banana Browser:
+        &lt;ul&gt;
+          &lt;li&gt;Je browsegeschiedenis
+          &lt;li&gt;Cookies en sitegegevens
+          &lt;li&gt;Informatie die is opgegeven in formulieren
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Passen en adressen zijn afkomstig uit Banana Browser en je Google-account (%1$s). Je kunt ze beheren in BEGIN_LINKInstellingenEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Passen en adressen zijn afkomstig uit Banana Browser. Je kunt ze beheren in BEGIN_LINKInstellingenEND_LINK."</string>
 <string name="sign_in_to_chrome">"Inloggen bij Banana Browser"</string>
 <string name="sync_switch_title">"Je Banana Browser-gegevens synchroniseren"</string>
 <string name="usage_and_crash_reports_title">"Help de functies en prestaties van Banana Browser verbeteren"</string>

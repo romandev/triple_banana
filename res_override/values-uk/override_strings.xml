@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;не зберігатиме&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;історію веб-перегляду;
+          &lt;li&gt;файли cookie та дані із сайтів;
+          &lt;li&gt;інформацію, яку ви вводите у формах.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Дані картки та список адрес містяться в Banana Browser і вашому обліковому записі Google (%1$s). Ними можна керувати в BEGIN_LINKНалаштуванняхEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Дані картки та список адрес містяться в Banana Browser. Ними можна керувати в BEGIN_LINKНалаштуванняхEND_LINK."</string>
 <string name="sign_in_to_chrome">"Вхід у Banana Browser"</string>
 <string name="sync_switch_title">"Синхронізуйте дані Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Допоможіть покращити функції й ефективність Banana Browser"</string>

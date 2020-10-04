@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"‏&lt;em&gt;لن يحفظ&lt;/em&gt; Banana Browser المعلومات التالية:
+        &lt;ul&gt;
+          &lt;li&gt;سجلّ التصفُّح
+          &lt;li&gt;ملفات تعريف الارتباط وبيانات المواقع الإلكترونية
+          &lt;li&gt;المعلومات التي تم إدخالها في النماذج
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"‏يتم أخذ البطاقات والعناوين من Banana Browser وحسابك على Google (%1$s)، ويمكنك إدارتها في BEGIN_LINKالإعداداتEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"‏يتم أخذ البطاقات والعناوين من Banana Browser، ويمكنك إدارتها في BEGIN_LINKالإعداداتEND_LINK."</string>
 <string name="sign_in_to_chrome">"‏تسجيل الدخول إلى Banana Browser"</string>
 <string name="sync_switch_title">"‏مزامنة بيانات Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"‏المساعدة في تحسين ميزات Banana Browser وأدائه"</string>

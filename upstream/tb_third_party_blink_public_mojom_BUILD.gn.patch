@@ -1,11 +1,14 @@
 diff --git tb/third_party/blink/public/mojom/BUILD.gn tb_diff/third_party/blink/public/mojom/BUILD.gn
 --- tb/third_party/blink/public/mojom/BUILD.gn
 +++ tb_diff/third_party/blink/public/mojom/BUILD.gn
-@@ -214,6 +214,7 @@ mojom("mojom_platform") {
-     "//third_party/blink/public/mojom/dom_storage",
-     "//third_party/blink/public/mojom/frame",
-     "//third_party/blink/public/mojom/usb",
+@@ -226,6 +226,10 @@ mojom("mojom_platform") {
+     "//url/mojom:url_mojom_origin",
+   ]
+ 
++  public_deps += [
 +    "//triple_banana/modules:mojom",
-     "//ui/base/cursor/mojom",
-     "//ui/base/ime/mojom",
-     "//ui/display/mojom",
++  ]
++
+   if (is_mac) {
+     public_deps += [ "//ui/gfx/range/mojom" ]
+   }

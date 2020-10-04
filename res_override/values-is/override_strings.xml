@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;vistar ekki&lt;/em&gt; eftirfarandi upplýsingar:
+        &lt;ul&gt;
+          &lt;li&gt;vafraferilinn þinn
+          &lt;li&gt;fótspor og gögn vefsvæða
+          &lt;li&gt;upplýsingar sem eru færðar inn í eyðublöð
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kort og heimilisföng eru fengin úr Banana Browser og Google reikningnum þínum (%1$s). Þú getur haft umsjón með þeim í BEGIN_LINKstillingunumEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Spjöld og heimilisföng eru úr Banana Browser. Þú getur haft umsjón með þeim í BEGIN_LINKstillingunumEND_LINK."</string>
 <string name="sign_in_to_chrome">"Skráðu þig inn á Banana Browser"</string>
 <string name="sync_switch_title">"Samstilla gögnin þín í Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Hjálpaðu til við að bæta eiginleika og afköst Banana Browser"</string>

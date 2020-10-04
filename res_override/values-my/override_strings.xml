@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="autofill_card_unmask_prompt_storage_tooltip">"အမှန်ခြစ်ထားပါက၊ ပုံစံဖြည့်မှု မြန်လာစေရန် Banana Browser သည် သင့်ကဒ်၏ မိတ္ထူကို ဤကိရိယာထဲတွင် သိမ်းထားပါမည်။"</string>
+<string name="new_tab_otr_not_saved">"Banana Browser သည် အောက်ပါ အချက်အလက်များကို &lt;em&gt;သိမ်းမည်မဟုတ်ပါ&lt;/em&gt;−
+        &lt;ul&gt;
+          &lt;li&gt;သင်၏ ကြည့်ရှုခြင်းမှတ်တမ်း
+          &lt;li&gt;ကွတ်ကီးနှင့် ဝဘ်ဆိုက်ဒေတာများ
+          &lt;li&gt;ဖောင်များတွင် ထည့်သွင်းထားသည့် အချက်အလက်များ
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"ကဒ်နှင့် လိပ်စာများသည် Banana Browser နှင့် သင်၏ Google အကောင့် (%1$s) မှဖြစ်သည်။ ၎င်းတို့ကို BEGIN_LINKဆက်တင်များEND_LINK တွင် စီမံခန့်ခွဲနိုင်သည်။"</string>
+<string name="payments_card_and_address_settings_signed_out">"ကဒ်နှင့် လိပ်စာများသည် Banana Browser မှ ဖြစ်သည်။ ၎င်းတို့ကို BEGIN_LINKဆက်တင်များEND_LINK ထဲတွင် စီမံခန့်ခွဲနိုင်သည်။"</string>
 <string name="sign_in_to_chrome">"Banana Browser သို့ လက်မှတ်ထိုး ဝင်"</string>
 <string name="sync_switch_title">"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ၏ ဝန်ဆောင်မှုနှင့် စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်လာအောင် ကူညီရန်"</string>

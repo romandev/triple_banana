@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;ei tallenna&lt;/em&gt; näitä tietoja:
+        &lt;ul&gt;
+          &lt;li&gt;Selaushistoriasi
+          &lt;li&gt;Evästeet ja sivustodata
+          &lt;li&gt;Lomakkeisiin syötetyt tiedot
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kortit ja osoitteet ovat peräisin Banana Browsersta ja Google-tililtäsi (%1$s). Voit hallinnoida niitä BEGIN_LINKasetuksissaEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kortit ja osoitteet ovat peräisin Banana Browsersta. Voit hallinnoida niitä BEGIN_LINKasetuksissaEND_LINK."</string>
 <string name="sign_in_to_chrome">"Kirjaudu Banana Browseren"</string>
 <string name="sync_switch_title">"Banana Browser-datan synkronointi"</string>
 <string name="usage_and_crash_reports_title">"Auta parantamaan Banana Browsern ominaisuuksia ja suorituskykyä"</string>

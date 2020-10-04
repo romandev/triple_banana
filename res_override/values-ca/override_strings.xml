@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;no desarà&lt;/em&gt; la informació següent:
+        &lt;ul&gt;
+          &lt;li&gt;el teu historial de navegació
+          &lt;li&gt;les galetes i les dades de llocs web
+          &lt;li&gt;la informació que introdueixis en formularis
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Les targetes i les adreces s\'obtenen de Banana Browser i del teu Compte de Google (%1$s). Pots gestionar-les des de BEGIN_LINKConfiguracióEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Les targetes i les adreces s\'obtenen de Banana Browser. Pots gestionar-les des de BEGIN_LINKConfiguracióEND_LINK."</string>
 <string name="sign_in_to_chrome">"Inicia la sessió a Banana Browser"</string>
 <string name="sync_switch_title">"Sincronitza les dades de Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Ajuda a millorar les funcions i el rendiment de Banana Browser"</string>

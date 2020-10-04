@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;speichert die folgenden Daten nicht&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;Ihren Browserverlauf
+          &lt;li&gt;Cookies und Websitedaten
+          &lt;li&gt;In Formulare eingegebene Daten
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Karten und Adressen stammen aus Banana Browser und aus Ihrem Google-Konto (%1$s). Sie können sie in den BEGIN_LINKEinstellungenEND_LINK verwalten."</string>
+<string name="payments_card_and_address_settings_signed_out">"Die Karten und Adressen stammen aus Banana Browser. Sie werden in den BEGIN_LINKEinstellungenEND_LINK verwaltet."</string>
 <string name="sign_in_to_chrome">"In Banana Browser anmelden"</string>
 <string name="sync_switch_title">"Banana Browser-Daten synchronisieren"</string>
 <string name="usage_and_crash_reports_title">"Helfen, die Funktionen und die Leistung von Banana Browser zu verbessern"</string>

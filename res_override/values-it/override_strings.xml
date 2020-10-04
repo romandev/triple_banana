@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;non salverà&lt;/em&gt; le seguenti informazioni:
+        &lt;ul&gt;
+          &lt;li&gt;Cronologia di navigazione
+          &lt;li&gt;Cookie e dati dei siti
+          &lt;li&gt;Informazioni inserite nei moduli
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Carte di credito e indirizzi provengono da Banana Browser e dall\'Account Google (%1$s). Puoi gestirli in BEGIN_LINKImpostazioniEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Carte di credito e indirizzi provengono da Banana Browser. Puoi gestirli in BEGIN_LINKImpostazioniEND_LINK."</string>
 <string name="sign_in_to_chrome">"Accedi a Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizza i tuoi dati di Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Contribuisci a migliorare le funzionalità e le prestazioni di Banana Browser"</string>

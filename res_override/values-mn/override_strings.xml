@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser нь дараах мэдээллийг &lt;em&gt;хадгалахгүй&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;Таны хөтчийн түүх
+          &lt;li&gt;Күүки болон сайтын өгөгдөл
+          &lt;li&gt;Маягтад оруулсан мэдээлэл
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Карт, хаягийг Banana Browser болон Google Бүртгэлээсээ (%1$s) харах боломжтой. Та тэдгээрийг BEGIN_LINKТохиргооEND_LINK хэсэгт хянах боломжтой."</string>
+<string name="payments_card_and_address_settings_signed_out">"Карт, хаягийг Banana Browser-с харж болно. Та тэдгээрийг BEGIN_LINKТохиргооEND_LINK хэсэгт хянах боломжтой."</string>
 <string name="sign_in_to_chrome">"Banana Browser руу нэвтрэх"</string>
 <string name="sync_switch_title">"Banana Browser-н өгөгдлөө синк хийх"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser-н онцлог болон гүйцэтгэлийг сайжруулахад туслах"</string>

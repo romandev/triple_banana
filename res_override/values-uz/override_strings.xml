@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser quyidagi maʼlumotlarni &lt;em&gt;saqlamaydi&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;Brauzer tarixi
+          &lt;li&gt;Cookie fayllar va sayt maʼlumotlari
+          &lt;li&gt;Shakllarga kiritilgan maʼlumotlar
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Google hisobi (%1$s), Banana Browser brauzerida saqlangan karta va manzillar. Siz ularni BEGIN_LINKSozlamalarEND_LINK orqali boshqarishingiz mumkin."</string>
+<string name="payments_card_and_address_settings_signed_out">"Banana Browser brauzerida saqlangan karta va manzillar. Siz ularni BEGIN_LINKSozlamalarEND_LINK orqali boshqarishingiz mumkin."</string>
 <string name="sign_in_to_chrome">"Banana Browser hisobiga kirish"</string>
 <string name="sync_switch_title">"Banana Browser axborotini sinxronlash"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser funksiyalari va unumdorligini yaxshilashga yordam bering"</string>

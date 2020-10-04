@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Följande information sparas &lt;em&gt;inte&lt;/em&gt; i Banana Browser:
+        &lt;ul&gt;
+          &lt;li&gt;Din webbhistorik
+          &lt;li&gt;Cookies och webbplatsdata
+          &lt;li&gt;Uppgifter som anges i formulär
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kort och adresser har hämtats från Banana Browser och ditt Google-konto (%1$s). Du hanterar dessa under BEGIN_LINKInställningarEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kort och adresser har hämtats från Banana Browser. Du hanterar dessa under BEGIN_LINKInställningarEND_LINK."</string>
 <string name="sign_in_to_chrome">"Logga in i Banana Browser"</string>
 <string name="sync_switch_title">"Synkronisera data i Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Bidra till att förbättra Banana Browsers funktioner och prestanda"</string>

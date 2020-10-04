@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser-ում &lt;em&gt;չեն պահվի&lt;/em&gt;՝
+        &lt;ul&gt;
+          &lt;li&gt;ձեր այցելությունների պատմությունը,
+          &lt;li&gt;քուքիներն ու կայքերի տվյալները,
+          &lt;li&gt;ձևերում լրացրած տեղեկությունները։
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Քարտերն ու հասցեները նշված են ձեր Google հաշվում (%1$s) և Banana Browser-ում: Դրանք կարող եք կառավարել BEGIN_LINKԿարգավորումներումEND_LINK:"</string>
+<string name="payments_card_and_address_settings_signed_out">"Քարտերն ու հասցեները նշված են Banana Browser-ում: Դրանք կարող եք կառավարել BEGIN_LINKԿարգավորումներումEND_LINK:"</string>
 <string name="sign_in_to_chrome">"Մուտք գործել Banana Browser"</string>
 <string name="sync_switch_title">"Համաժամացնել Banana Browser-ի տվյալները"</string>
 <string name="usage_and_crash_reports_title">"Օգնել ավել լավը դարձնել Banana Browser-ի գործառույթներն ու աշխատանքը"</string>

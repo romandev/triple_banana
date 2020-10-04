@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;nebude ukládat&lt;/em&gt; následující informace:
+        &lt;ul&gt;
+          &lt;li&gt;vaši historii prohlížení,
+          &lt;li&gt;soubory cookie a data webů,
+          &lt;li&gt;údaje zadané do formulářů.
+        &lt;/ul&gt;"</string>
 <string name="sync_switch_title">"Synchronizovat data prohlížeče Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Pomoci s vylepšováním funkcí a výkonu prohlížeče Banana Browser"</string>
 <string name="password_settings_export_subject">"Hesla Banana Browser"</string>

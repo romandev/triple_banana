@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;ei salvesta&lt;/em&gt; järgmist teavet:
+        &lt;ul&gt;
+          &lt;li&gt;teie sirvimisajalugu;
+          &lt;li&gt;küpsisefailid ja saidi andmed;
+          &lt;li&gt;vormidesse sisestatud teave.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Kaardid ja aadressid pärinevad Banana Browser\'ist ning teie Google\'i kontolt (%1$s). Neid saate hallata menüüs BEGIN_LINKSeadedEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Kaardid ja aadressid pärinevad Banana Browser\'ist. Neid saate hallata menüüs BEGIN_LINKSeadedEND_LINK."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'i sisselogimine"</string>
 <string name="sync_switch_title">"Banana Browser\'i andmete sünkroonimine"</string>
 <string name="usage_and_crash_reports_title">"Aidake täiustada Banana Browser\'i funktsioone ja toimivust"</string>

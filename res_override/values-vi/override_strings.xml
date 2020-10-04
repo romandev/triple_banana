@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;sẽ không lưu&lt;/em&gt; những thông tin sau đây:
+        &lt;ul&gt;
+          &lt;li&gt;Lịch sử duyệt web của bạn
+          &lt;li&gt;Cookie và dữ liệu trang web
+          &lt;li&gt;Thông tin đã nhập vào các biểu mẫu
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Thẻ và địa chỉ từ Banana Browser và Tài khoản Google của bạn (%1$s). Bạn có thể quản lý thẻ và địa chỉ trong BEGIN_LINKCài đặtEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Thẻ và địa chỉ từ Banana Browser. Bạn có thể quản lý thẻ và địa chỉ trong BEGIN_LINKCài đặtEND_LINK."</string>
 <string name="sign_in_to_chrome">"Đăng nhập vào Banana Browser"</string>
 <string name="sync_switch_title">"Đồng bộ hóa dữ liệu của bạn trên Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Giúp cải thiện hiệu suất và các tính năng của Banana Browser"</string>

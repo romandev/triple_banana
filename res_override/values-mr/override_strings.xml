@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser पुढील माहिती &lt;em&gt;सेव्ह करणार नाही&lt;/em&gt;:
+        &lt;ul&gt;
+          &lt;li&gt;तुमचा ब्राउझिंग इतिहास
+          &lt;li&gt;कुकी आणि साइट डेटा
+          &lt;li&gt;फॉर्ममध्ये एंटर केलेली माहिती
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"कार्ड आणि पत्ते Banana Browser आणि आपल्या Google खात्याकडील (%1$s) आहेत. तुम्ही त्यांना BEGIN_LINKसेटिंग्‍जEND_LINK मधून व्यवस्थापित करू शकता."</string>
+<string name="payments_card_and_address_settings_signed_out">"कार्ड आणि पत्ते Banana Browser कडील आहेत. तुम्ही त्यांना BEGIN_LINKसेटिंग्‍जEND_LINK मधून व्यवस्थापित करू शकता."</string>
 <string name="sign_in_to_chrome">"Banana Browser वर साइन इन करा"</string>
 <string name="sync_switch_title">"तुमचा Banana Browser डेटा सिंक करा"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ची वैशिष्ट्ये आणि परफॉर्मन्स सुधारण्यात मदत करा"</string>

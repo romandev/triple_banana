@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"В Banana Browser &lt;em&gt;не будет сохраняться&lt;/em&gt; следующая информация:
+        &lt;ul&gt;
+          &lt;li&gt;история браузера;
+          &lt;li&gt;файлы cookie и данные сайтов;
+          &lt;li&gt;сведения, которые вы указываете в формах.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Это карты и адреса, указанные в Banana Browser и вашем аккаунте Google (%1$s). Вы можете изменить их на странице BEGIN_LINKНастройкиEND_LINK."</string>
+<string name="payments_card_and_address_settings_signed_out">"Это карты и адреса, указанные в Banana Browser. Вы можете изменить их на странице BEGIN_LINKНастройкиEND_LINK."</string>
 <string name="sign_in_to_chrome">"Войти в Banana Browser"</string>
 <string name="sync_switch_title">"Синхронизировать данные Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Помогать повышать производительность Banana Browser и улучшать функции"</string>

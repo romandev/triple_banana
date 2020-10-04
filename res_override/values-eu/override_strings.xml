@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser-k &lt;em&gt;ez du gordeko&lt;/em&gt; informazio hau:
+        &lt;ul&gt;
+          &lt;li&gt;arakatze-historia,
+          &lt;li&gt;cookieak eta webguneko datuak,
+          &lt;li&gt;inprimakietan idatzitako datuak.
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"Banana Browser-tik eta zure Google-ko kontutik (%1$s) hartu dira txartelak eta helbideak. Kudeatu nahi badituzu, joan BEGIN_LINKEzarpenakEND_LINK atalera."</string>
+<string name="payments_card_and_address_settings_signed_out">"Banana Browser-tik hartu dira txartelak eta helbideak. Kudeatu nahi badituzu, joan BEGIN_LINKEzarpenakEND_LINK atalera."</string>
 <string name="sign_in_to_chrome">"Hasi saioa Banana Browser-n"</string>
 <string name="sync_switch_title">"Sinkronizatu Banana Browser-ko datuak"</string>
 <string name="usage_and_crash_reports_title">"Lagundu Banana Browser-ren eginbideak eta errendimendua hobetzen"</string>

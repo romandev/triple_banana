@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;不會儲存&lt;/em&gt;下列資訊：
+        &lt;ul&gt;
+          &lt;li&gt;你的瀏覽記錄
+          &lt;li&gt;Cookie 和網站資料
+          &lt;li&gt;在表單中輸入的資訊
+        &lt;/ul&gt;"</string>
+<string name="payments_card_and_address_settings_signed_in">"信用卡和地址資訊皆來自 Banana Browser 和你的 Google 帳戶 (%1$s)。你可以在BEGIN_LINK設定END_LINK頁面管理這些資訊。"</string>
+<string name="payments_card_and_address_settings_signed_out">"信用卡和地址資訊皆來自 Banana Browser。你可以在BEGIN_LINK設定END_LINK頁面管理這些資訊。"</string>
 <string name="sign_in_to_chrome">"登入 Banana Browser"</string>
 <string name="sync_switch_title">"同步處理你的 Banana Browser 資料"</string>
 <string name="usage_and_crash_reports_title">"協助改善 Banana Browser 的功能與效能"</string>
