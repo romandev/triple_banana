@@ -1,3 +1,13 @@
+# 4.04 @ 85.0.4183.127
+
+## Chromium base version
+- **85.0.4183.127**
+
+## Change log
+- Fix a bug that the 32bit binary doesn't install (#755)
+- Update new built-in filter version (1.0.0.00003) (#754)
+
+
 # 4.03 @ 85.0.4183.127
 
 ## Chromium base version
