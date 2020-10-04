@@ -1,0 +1,14 @@
+diff --git tb/chrome/android/chrome_public_apk_tmpl.gni tb_diff/chrome/android/chrome_public_apk_tmpl.gni
+--- tb/chrome/android/chrome_public_apk_tmpl.gni
++++ tb_diff/chrome/android/chrome_public_apk_tmpl.gni
+@@ -523,7 +523,9 @@ template("monochrome_public_common_apk_or_module_tmpl") {
+                 [ "//chrome/android:monochrome_secondary_abi_lib" ]
+             _include_secondary_support = true
+             if (invoker.include_64_bit_webview) {
+-              shared_libraries += [ "//android_webview:monochrome" ]
++#if defined(ENABLE_TRIPLE_BANANA)
++#             shared_libraries += [ "//android_webview:monochrome" ]
++#endif
+               _include_primary_support = true
+             }
+           }

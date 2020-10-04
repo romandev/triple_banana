@@ -17,45 +17,86 @@ jinja_template("triple_banana_manifest") {
   output = triple_banana_manifest
   variables = default_chrome_public_jinja_variables + [
                 "manifest_package=$manifest_package",
-                "min_sdk_version=19",
+                "min_sdk_version=21",
                 "target_sdk_version=$android_sdk_version",
+                "use32bitAbi=$android_64bit_target_cpu",
               ]
 }
 
-chrome_public_common_apk_or_module_tmpl("triple_banana") {
-  target_type = "android_apk"
-  apk_name = "TripleBanana"
+if (android_64bit_target_cpu) {
+  monochrome_public_common_apk_or_module_tmpl("triple_banana") {
+    target_type = "android_apk"
+    apk_name = "TripleBanana64"
 
-  android_manifest = triple_banana_manifest
-  android_manifest_dep = ":triple_banana_manifest"
+    android_manifest = triple_banana_manifest
+    android_manifest_dep = ":triple_banana_manifest"
 
-  shared_libraries = [ "//chrome/android:libchrome" ]
+    is_64_bit_browser = false
+    include_64_bit_webview = true
 
-  is_modern = true
-  load_library_from_apk = false
-  disable_library_rename = true
+    shared_resources_allowlist_target =
+        "//android_webview:system_webview_no_weblayer_apk"
+    shared_resources_allowlist_locales = locales
 
-  # The following write/read operations are required to convert number string to
-  # integer because there is no conversion utility in GN side.
-  _ = "$root_out_dir/conversion.tmp"
-  write_file(_, chrome_version_code)
-  _chrome_version_code_as_number = read_file(_, "value")
-  write_file(_, string_replace(BANANA_VERSION, ".", ""))
-  _banana_version_as_number = read_file(_, "value")
+    # The following write/read operations are required to convert number string to
+    # integer because there is no conversion utility in GN side.
+    _ = "$root_out_dir/conversion.tmp"
+    write_file(_, chrome_version_code)
+    _chrome_version_code_as_number = read_file(_, "value")
+    write_file(_, string_replace(BANANA_VERSION, ".", ""))
+    _banana_version_as_number = read_file(_, "value")
 
-  version_code =
-      "" + (_banana_version_as_number + _chrome_version_code_as_number)
-  version_name = BANANA_VERSION + " @ " + CHROMIUM_VERSION
+    version_code =
+        "" + (_banana_version_as_number + _chrome_version_code_as_number)
+    version_name = BANANA_VERSION + " @ " + CHROMIUM_VERSION
 
-  deps = [
-    ":triple_banana_assets",
-    ":triple_banana_java",
-    "//chrome/android:chrome_apk_pak_assets",
-    "//chrome/android:chrome_public_base_module_java",
-    "//chrome/android:chrome_public_non_pak_assets",
-    "//chrome/android:chrome_public_v8_assets",
-    "//third_party/icu:icu_assets",
-  ]
+    deps = [
+      ":triple_banana_assets",
+      ":triple_banana_java",
+      "//chrome/android:app_hooks_java",
+      "//chrome/android:chrome_apk_pak_assets",
+      "//chrome/android:chrome_public_base_module_java",
+      "//chrome/android:chrome_public_non_pak_assets",
+      "//chrome/android:chrome_public_v8_assets",
+      "//third_party/icu:icu_assets",
+    ]
+  }
+} else {
+  chrome_public_common_apk_or_module_tmpl("triple_banana") {
+    target_type = "android_apk"
+    apk_name = "TripleBanana32"
+
+    android_manifest = triple_banana_manifest
+    android_manifest_dep = ":triple_banana_manifest"
+
+    shared_libraries = [ "//chrome/android:libchrome" ]
+
+    is_modern = true
+    load_library_from_apk = false
+    disable_library_rename = true
+
+    # The following write/read operations are required to convert number string to
+    # integer because there is no conversion utility in GN side.
+    _ = "$root_out_dir/conversion.tmp"
+    write_file(_, chrome_version_code)
+    _chrome_version_code_as_number = read_file(_, "value")
+    write_file(_, string_replace(BANANA_VERSION, ".", ""))
+    _banana_version_as_number = read_file(_, "value")
+
+    version_code =
+        "" + (_banana_version_as_number + _chrome_version_code_as_number)
+    version_name = BANANA_VERSION + " @ " + CHROMIUM_VERSION
+
+    deps = [
+      ":triple_banana_assets",
+      ":triple_banana_java",
+      "//chrome/android:chrome_apk_pak_assets",
+      "//chrome/android:chrome_public_base_module_java",
+      "//chrome/android:chrome_public_non_pak_assets",
+      "//chrome/android:chrome_public_v8_assets",
+      "//third_party/icu:icu_assets",
+    ]
+  }
 }
 
 android_library("triple_banana_java") {
