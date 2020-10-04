@@ -1,3 +1,19 @@
+# 4.03 @ 85.0.4183.127
+
+## Chromium base version
+- **85.0.4183.127**
+
+## Change log
+- Fix a bug when a user click home button on media remote on N- OS (#752)
+- Fix the update_strings command bug (#751)
+- Rebase 85.0.4183.127 (#750)
+- Remove unnecessary upstream changes (#749)
+- Enable use32bitAbi on 64bit build (#748)
+- Reduce mojo calls on media event dispatcher (#743)
+- [mojo] [bindings] Add sync response support for Java bindings (#740)
+- Fix a bug that the media remote is not working for basic video (#738)
+
+
 # 4.02 @ 85.0.4183.101
 
 ## Chromium base version
