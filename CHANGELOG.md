@@ -1,3 +1,12 @@
+# 4.05 @ 85.0.4183.127
+
+## Chromium base version
+- **85.0.4183.127**
+
+## Change log
+- Reorder media features (#757)
+
+
 # 4.04 @ 85.0.4183.127
 
 ## Chromium base version
