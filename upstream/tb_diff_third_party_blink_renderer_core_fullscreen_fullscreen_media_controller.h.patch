@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h
-@@ -0,0 +1,51 @@
+@@ -0,0 +1,50 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -33,15 +33,14 @@
 +  void DispatchPlayStateChanged(media::mojom::BananaPlayState state);
 +
 +  HTMLVideoElement* GetVideoElement();
-+  void SetVideoElement(HTMLVideoElement* element);
 +
 +  static FullscreenMediaController& Get();
 +
 + private:
 +  void EnsureBindEventDispatcher();
-+  HTMLVideoElement* SetOrGetVideoElement(HTMLVideoElement* element,
-+                                         bool is_update);
++  void SetVideoElement(HTMLVideoElement* element);
 +
++  Persistent<HTMLVideoElement> video_element_;
 +  mojo::Receiver<media::mojom::blink::BananaMediaCommandProcessor> processor_{
 +      this};
 +  mojo::Remote<media::mojom::blink::BananaMediaEventDispatcher> dispatcher_;

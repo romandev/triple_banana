@@ -12,7 +12,24 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  namespace blink {
  
  namespace {
-@@ -565,6 +569,32 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -510,7 +514,16 @@ Element* Fullscreen::FullscreenElementFrom(Document& document) {
+       return element;
+   }
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
++    Element* element = FullscreenMediaController::Get().GetVideoElement();
++    if (element && HasFullscreenFlag(*element))
++      return element;
++  }
+   return nullptr;
++#else
++  return nullptr;
++#endif
+ }
+ 
+ // https://fullscreen.spec.whatwg.org/#fullscreen-element
+@@ -565,6 +578,32 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
                                              RequestType request_type,
                                              ScriptState* script_state,
                                              ExceptionState* exception_state) {
@@ -45,7 +62,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    RequestFullscreenScope scope;
  
    // 1. Let |pending| be the context object.
-@@ -633,6 +663,13 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -633,6 +672,13 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
      LocalFrame& frame = *window.GetFrame();
      frame.GetChromeClient().EnterFullscreen(frame, options,
                                              for_cross_process_descendant);
@@ -59,7 +76,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  
      // After the first fullscreen request, the user activation should be
      // consumed, and the following fullscreen requests should receive an error.
-@@ -810,6 +847,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
+@@ -810,6 +856,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
      return ScriptPromise();
    }
  
@@ -77,15 +94,16 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    if (script_state)
      resolver = MakeGarbageCollected<ScriptPromiseResolver>(script_state);
  
-@@ -882,6 +930,11 @@ void Fullscreen::DidExitFullscreen(Document& document) {
-   // If this is a response to an ExitFullscreen call then
-   // continue exiting. Otherwise call FullyExitFullscreen.
-   Fullscreen& fullscreen = From(*document.domWindow());
+@@ -890,6 +947,12 @@ void Fullscreen::DidExitFullscreen(Document& document) {
+     for (const Member<PendingExit>& exit : exits)
+       ContinueExitFullscreen(&document, exit, true /* resize */);
+   }
++
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled()) {
 +    FullscreenMediaController::Get().DispatchExitedVideoFullscreen();
 +  }
 +#endif
-   PendingExits exits;
-   exits.swap(fullscreen.pending_exits_);
-   if (exits.IsEmpty()) {
+ }
+ 
+ void Fullscreen::ContinueExitFullscreen(Document* doc,

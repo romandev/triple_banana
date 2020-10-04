@@ -15,6 +15,8 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaPipController;
 import org.banana.cake.interfaces.BananaTab;
 import org.triple.banana.R;
+import org.triple.banana.base.ApplicationStatusTracker;
+import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.media.MediaController;
 import org.triple.banana.media.MediaEventListener;
 import org.triple.banana.media.MediaPlayState;
@@ -42,6 +44,11 @@ public enum MediaRemoteService implements MediaRemoteView
     private Handler mHandler = new Handler();
 
     public void start() {
+        ApplicationStatusTracker.getInstance().addListener((lastActivity, status) -> {
+            if (status == ApplicationStatus.BACKGROUND) {
+                onCancel();
+            }
+        });
         mViewModel.addListener(mView);
         mViewModel.addListener(data -> {
             if (data.getControlsVisibility() == mWasControlsVisible) return;
