@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;nuk do të ruajë&lt;/em&gt; informacionet e mëposhtme:
-        &lt;ul&gt;
-          &lt;li&gt;Historikun tënd të shfletimit
-          &lt;li&gt;Kukit dhe të dhënat e sajteve
-          &lt;li&gt;Informacionet e futura në formularë
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Kartat dhe adresat janë nga Banana Browser dhe llogaria jote e Google (%1$s). Ato mund t\'i menaxhosh te BEGIN_LINKCilësimetEND_LINK."</string>
-<string name="payments_card_and_address_settings_signed_out">"Kartat dhe adresat janë nga Banana Browser. Ato mund t\'i menaxhosh te BEGIN_LINKCilësimetEND_LINK."</string>
 <string name="sign_in_to_chrome">"Identifikohu në Banana Browser"</string>
 <string name="sync_switch_title">"Sinkronizo të dhënat e tua të Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Ndihmo në përmirësimin e funksioneve dhe cilësisë së funksionimit të Banana Browser"</string>

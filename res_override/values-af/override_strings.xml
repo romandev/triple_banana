@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser sal nie die volgende inligting &lt;em&gt;stoor nie&lt;/em&gt;:
-        &lt;ul&gt;
-          &lt;li&gt;Jou blaaigeskiedenis
-          &lt;li&gt;Webkoekies en werfdata
-          &lt;li&gt;Inligting wat op vorms ingevul is
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Kaarte en adresse kom uit Banana Browser en jou Google-rekening (%1$s). Jy kan hulle in BEGIN_LINKInstellingsEND_LINK bestuur."</string>
-<string name="payments_card_and_address_settings_signed_out">"Kaarte en adresse kom uit Banana Browser. Jy kan hulle in BEGIN_LINKInstellingsEND_LINK bestuur."</string>
 <string name="sign_in_to_chrome">"Meld by Banana Browser aan"</string>
 <string name="sync_switch_title">"Sinkroniseer jou Banana Browser-data"</string>
 <string name="usage_and_crash_reports_title">"Help om Banana Browser se kenmerke en werkverrigting te verbeter"</string>

@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;haitahifadhi&lt;/em&gt; maelezo yafuatayo:
-        &lt;ul&gt;
-          &lt;li&gt;Historia yako ya kuvinjari
-          &lt;li&gt;Vidakuzi na data ya tovuti
-          &lt;li&gt;Maelezo yaliyowekwa katika fomu
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Kadi na anwani zinatoka Banana Browser na Akaunti yako ya Google (%1$s). Unaweza kuzidhibiti katika BEGIN_LINKMipangilioEND_LINK."</string>
-<string name="payments_card_and_address_settings_signed_out">"Kadi na anwani zinatoka Banana Browser. Unaweza kuzidhibiti kwenye BEGIN_LINKMipangilioEND_LINK."</string>
 <string name="sign_in_to_chrome">"Ingia katika Banana Browser"</string>
 <string name="sync_switch_title">"Sawazisha data yako kwenye Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Tusaidie tuboreshe utendaji na vipengele vya Banana Browser"</string>

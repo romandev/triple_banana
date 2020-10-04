@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;lagrer ikke&lt;/em&gt;
-        &lt;ul&gt;
-          &lt;li&gt;nettleserloggen din
-          &lt;li&gt;informasjonskapsler og nettstedsdata
-          &lt;li&gt;informasjon du skriver inn i skjemaer
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Kortene og adressene er fra Banana Browser og Google-kontoen din (%1$s). Du kan administrere dem i BEGIN_LINKInnstillingerEND_LINK."</string>
-<string name="payments_card_and_address_settings_signed_out">"Kortene og adressene er fra Banana Browser. Du kan administrere dem i BEGIN_LINKInnstillingerEND_LINK."</string>
 <string name="sign_in_to_chrome">"Logg på Banana Browser"</string>
 <string name="sync_switch_title">"Synkroniser Banana Browser-dataene dine"</string>
 <string name="usage_and_crash_reports_title">"Hjelp til med å forbedre funksjonene og ytelsen til Banana Browser"</string>

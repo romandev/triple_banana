@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser келесі ақпаратты &lt;em&gt;сақтамайды&lt;/em&gt;:
-        &lt;ul&gt;
-          &lt;li&gt;браузерді көру тарихы;
-          &lt;li&gt;cookie файлдары және сайт деректері;
-          &lt;li&gt;үлгілерге енгізілген ақпарат.
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Banana Browser браузеріндегі және Google есептік жазбасындағы (%1$s) карталар мен мекенжайлар. Оларды BEGIN_LINKПараметрлерEND_LINK ішінде басқаруыңызға болады."</string>
-<string name="payments_card_and_address_settings_signed_out">"Карталар мен мекенжайлар Banana Browser браузерінен алынған. Оларды BEGIN_LINKПараметрлерEND_LINK бөлімінде басқара аласыз."</string>
 <string name="sign_in_to_chrome">"Banana Browser жүйесіне кіру"</string>
 <string name="sync_switch_title">"Banana Browser деректеріңізді синхрондау"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser мүмкіндіктері мен жұмысын жақсартуға көмектесу"</string>

@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"‏Banana Browser درج ذیل معلومات کو &lt;em&gt;محفوظ نہیں کرےگا&lt;/em&gt;:
-        &lt;ul&gt;
-          &lt;li&gt;آپ کی براؤزنگ کی سرگزشت
-          &lt;li&gt;کوکیز اور سائٹ ڈیٹا
-          &lt;li&gt;فارمز میں درج کردہ معلومات
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"‏کارڈز اور پتے Banana Browser اور آپ کے Google اکاؤنٹ (%1$s) کی جانب سے ہیں۔ آپ BEGIN_LINKترتیباتEND_LINK میں ان کا نظم کر سکتے ہیں۔"</string>
-<string name="payments_card_and_address_settings_signed_out">"‏کارڈز اور پتے Banana Browser کی جانب سے ہیں۔ آپ BEGIN_LINKترتیباتEND_LINK میں ان کا نظم کر سکتے ہیں۔"</string>
 <string name="sign_in_to_chrome">"‏Banana Browser میں سائن ان کریں"</string>
 <string name="sync_switch_title">"‏اپنے Banana Browser ڈیٹا کو مطابقت پذیر بنائیں"</string>
 <string name="usage_and_crash_reports_title">"‏Banana Browser کی خصوصیات اور کارکردگی کو بہتر بنانے میں مدد کریں"</string>

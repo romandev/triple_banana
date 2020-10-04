@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;neuloží&lt;/em&gt; nasledujúce informácie:
-        &lt;ul&gt;
-          &lt;li&gt;vašu históriu prehliadania,
-          &lt;li&gt;súbory cookie a dáta webov,
-          &lt;li&gt;údaje zadané vo formulároch.
-        &lt;/ul&gt;"</string>
 <string name="sign_in_to_chrome">"Prihlásenie do prehliadača Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Skopírovaná do prehliadača Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exportovať heslá uložené v Banana Browser"</string>

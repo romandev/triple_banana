@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;จะไม่บันทึก&lt;/em&gt;ข้อมูลต่อไปนี้
-        &lt;ul&gt;
-          &lt;li&gt;ประวัติการท่องเว็บ
-          &lt;li&gt;คุกกี้และข้อมูลเว็บไซต์
-          &lt;li&gt;ข้อมูลที่กรอกในฟอร์ม
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"ข้อมูลบัตรและที่อยู่มาจาก Banana Browser และบัญชี Google (%1$s) คุณสามารถจัดการข้อมูลเหล่านี้ในBEGIN_LINKการตั้งค่าEND_LINK"</string>
-<string name="payments_card_and_address_settings_signed_out">"ข้อมูลบัตรและที่อยู่มาจาก Banana Browser คุณสามารถจัดการข้อมูลเหล่านี้ในBEGIN_LINKการตั้งค่าEND_LINK"</string>
 <string name="sign_in_to_chrome">"ลงชื่อเข้าใช้ Banana Browser"</string>
 <string name="sync_switch_title">"ซิงค์ข้อมูล Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"ช่วยปรับปรุงฟีเจอร์และประสิทธิภาพของ Banana Browser"</string>

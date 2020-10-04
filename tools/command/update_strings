@@ -17,7 +17,7 @@ function clear_override_strings() {
 
 function read_target_strings() {
   push_dir $(chromium_path)
-  input_paths=$(find $(chromium_out_release_path) -name "*strings.xml")
+  input_paths=$(find $(chromium_out_release_path)/gen -name "*strings.xml")
   for input_path in $input_paths; do
     echo "Read $input_path..."
     localized_path=$(basename $(dirname $input_path))

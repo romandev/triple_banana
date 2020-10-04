@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;tidak akan menyimpan&lt;/em&gt; maklumat berikut:
-        &lt;ul&gt;
-          &lt;li&gt;Sejarah penyemakan imbas anda
-          &lt;li&gt;Kuki dan data tapak
-          &lt;li&gt;Maklumat yang dimasukkan dalam borang
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Kad dan alamat adalah daripada Banana Browser dan Akaun Google anda (%1$s). Anda boleh mengurus kad dan alamat ini dalam BEGIN_LINKTetapanEND_LINK."</string>
-<string name="payments_card_and_address_settings_signed_out">"Kad dan alamat adalah daripada Banana Browser. Anda boleh mengurus kad dan alamat ini dalam BEGIN_LINKTetapanEND_LINK."</string>
 <string name="sign_in_to_chrome">"Log masuk ke Banana Browser"</string>
 <string name="sync_switch_title">"Segerakkan data Banana Browser anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu meningkatkan ciri dan prestasi Banana Browser"</string>

@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;нема да ги зачувува&lt;/em&gt; следниве податоци:
-        &lt;ul&gt;
-          &lt;li&gt;Вашата историја на прелистување
-          &lt;li&gt;Колачиња и податоци од сајтовите
-          &lt;li&gt;Податоци внесени во формулари
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Картичките и адресите се од Banana Browser и од вашата сметка на Google (%1$s). Со нив може да управувате во BEGIN_LINKПоставкиEND_LINK."</string>
-<string name="payments_card_and_address_settings_signed_out">"Картичките и адресите се од Banana Browser. Со нив може да управувате во BEGIN_LINKПоставкиEND_LINK."</string>
 <string name="sign_in_to_chrome">"Најави се на Banana Browser"</string>
 <string name="sync_switch_title">"Синхронизирајте ги податоците од Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Помогнете да се подобрат функциите и изведбата на Banana Browser"</string>

@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"A Banana Browser &lt;em&gt;nem menti&lt;/em&gt; a következő adatokat:
-        &lt;ul&gt;
-          &lt;li&gt;böngészési előzmények;
-          &lt;li&gt;cookie-k és webhelyadatok;
-          &lt;li&gt;űrlapokon megadott adatok.
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"A kártyák és a címek a Banana Browser-ból és az Ön Google-fiókjából (%1$s) származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
-<string name="payments_card_and_address_settings_signed_out">"A kártyák és a címek a Banana Browser-ból származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
 <string name="sign_in_to_chrome">"Bejelentkezés a Banana Browser-ba"</string>
 <string name="sync_switch_title">"Banana Browser-adatok szinkronizálása"</string>
 <string name="usage_and_crash_reports_title">"Hozzájárulás a Banana Browser funkcióinak és teljesítményének javításához"</string>

@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser &lt;em&gt;neće spremati&lt;/em&gt; sljedeće informacije:
-        &lt;ul&gt;
-          &lt;li&gt;vašu povijest pregledavanja
-          &lt;li&gt;kolačiće i podatke o web-lokacijama
-          &lt;li&gt;informacije koje unesete u obrasce.
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_out">"Kartice i adrese dolaze iz Banana Browsera. Njima možete upravljati u BEGIN_LINKPostavkamaEND_LINK."</string>
 <string name="sign_in_to_chrome">"Prijavite se u Banana Browser"</string>
 <string name="sync_switch_title">"Sinkroniziraj podatke iz Banana Browsera"</string>
 <string name="usage_and_crash_reports_title">"Pomozite poboljšati Banana Browserove značajke i izvedbu"</string>

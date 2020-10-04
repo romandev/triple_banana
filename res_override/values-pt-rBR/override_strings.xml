@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"O Banana Browser &lt;em&gt;não salvará&lt;/em&gt; as seguintes informações:
-        &lt;ul&gt;
-          &lt;li&gt;Seu histórico de navegação
-          &lt;li&gt;Cookies e dados de sites
-          &lt;li&gt;Informações fornecidas em formulários
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"Os cartões e os endereços vieram do Banana Browser e da sua Conta do Google (%1$s). É possível gerenciar essas opções em BEGIN_LINKConfiguraçõesEND_LINK."</string>
-<string name="payments_card_and_address_settings_signed_out">"As informações dos cartões e os endereços foram acessadas pelo Banana Browser. É possível gerenciar essas opções em BEGIN_LINKConfiguraçõesEND_LINK."</string>
 <string name="sign_in_to_chrome">"Fazer login no Google Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizar seus dados do Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Ajude a melhorar os recursos e o desempenho do Banana Browser"</string>

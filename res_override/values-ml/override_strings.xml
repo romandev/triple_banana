@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"ഇനിപ്പറയുന്ന വിവരങ്ങൾ Banana Browser &lt;em&gt;സംരക്ഷിക്കില്ല&lt;/em&gt;:
-        &lt;ul&gt;
-          &lt;li&gt;നിങ്ങളുടെ ബ്രൗസിംഗ് ചരിത്രം
-          &lt;li&gt;കുക്കികളും സൈറ്റ് ഡാറ്റയും
-          &lt;li&gt;ഫോമിൽ നൽകുന്ന വിവരങ്ങൾ
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"കാർഡുകളും വിലാസങ്ങളും Banana Browser-ൽ നിന്നും നിങ്ങളുടെ അ‌ക്കൗണ്ടിൽ (%1$s) നിന്നുമുള്ളതുമാണ്. നിങ്ങൾക്ക് ഇവ BEGIN_LINKക്രമീകരണത്തിൽEND_LINK മാനേജ് ചെയ്യാം."</string>
-<string name="payments_card_and_address_settings_signed_out">"കാർഡുകളും വിലാസങ്ങളും Banana Browser-ൽ നിന്നുള്ളതാണ്. നിങ്ങൾക്ക് അവ BEGIN_LINKക്രമീകരണത്തിൽEND_LINK മാനേജ് ചെയ്യാം."</string>
 <string name="sign_in_to_chrome">"Banana Browser-ലേക്ക് സൈൻ ഇൻ ചെയ്യുക"</string>
 <string name="sync_switch_title">"നിങ്ങളുടെ Banana Browser ഡാറ്റ സമന്വയിപ്പിക്കുക"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser-ന്റെ ഫീച്ചറുകളും പ്രകടനവും മെച്ചപ്പെടുത്താൻ സഹായിക്കുക"</string>

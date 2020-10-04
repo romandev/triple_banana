@@ -1,13 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<string name="new_tab_otr_not_saved">"Banana Browser에서는 다음 정보를 &lt;em&gt;저장하지 않습니다&lt;/em&gt;.
-        &lt;ul&gt;
-          &lt;li&gt;방문 기록
-          &lt;li&gt;쿠키 및 사이트 데이터
-          &lt;li&gt;양식에 입력된 정보
-        &lt;/ul&gt;"</string>
-<string name="payments_card_and_address_settings_signed_in">"카드와 주소는 Banana Browser 및 Google 계정(%1$s)에서 가져왔습니다. 이 정보는 BEGIN_LINK설정END_LINK에서 관리할 수 있습니다."</string>
-<string name="payments_card_and_address_settings_signed_out">"카드와 주소는 Banana Browser에서 가져왔습니다. 이 정보는 BEGIN_LINK설정END_LINK에서 관리할 수 있습니다."</string>
 <string name="sign_in_to_chrome">"Banana Browser에 로그인"</string>
 <string name="sync_switch_title">"Banana Browser 데이터 동기화"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser의 기능 및 성능 개선에 참여"</string>
