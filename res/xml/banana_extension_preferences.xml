@@ -38,10 +38,9 @@
     <PreferenceCategory
         android:title="@string/media_features"/>
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
-        android:key="feature_name_media_remote"
-        android:defaultValue="true"
-        android:title="@string/media_remote"
-        android:summaryOn="@string/media_remote_summary"
+        android:key="feature_name_background_play"
+        android:title="@string/background_play"
+        android:summaryOn="@string/background_play_summary"
         android:summaryOff="@string/text_off" />
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:key="feature_name_autoplay"
@@ -50,9 +49,10 @@
         android:summaryOn="@string/autoplay_summary"
         android:summaryOff="@string/text_off" />
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
-        android:key="feature_name_background_play"
-        android:title="@string/background_play"
-        android:summaryOn="@string/background_play_summary"
+        android:key="feature_name_media_remote"
+        android:defaultValue="true"
+        android:title="@string/media_remote"
+        android:summaryOn="@string/media_remote_summary"
         android:summaryOff="@string/text_off" />
 
     <PreferenceCategory
