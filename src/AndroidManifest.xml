@@ -37,7 +37,7 @@
 
 {% block extra_application_attributes %}
 {{ super() }}
-{% if use32bitAbi %}
+{% if use_32bit_abi == "true" %}
 android:multiArch="true"
 android:extractNativeLibs="false"
 android:use32bitAbi="true"

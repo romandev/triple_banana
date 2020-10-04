@@ -19,7 +19,7 @@ jinja_template("triple_banana_manifest") {
                 "manifest_package=$manifest_package",
                 "min_sdk_version=21",
                 "target_sdk_version=$android_sdk_version",
-                "use32bitAbi=$android_64bit_target_cpu",
+                "use_32bit_abi=$android_64bit_target_cpu",
               ]
 }
 
