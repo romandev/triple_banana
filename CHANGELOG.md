@@ -1,3 +1,12 @@
+# 4.06 @ 85.0.4183.127
+
+## Chromium base version
+- **85.0.4183.127**
+
+## Change log
+- Remove AtMeGame service (#759)
+
+
 # 4.05 @ 85.0.4183.127
 
 ## Chromium base version
