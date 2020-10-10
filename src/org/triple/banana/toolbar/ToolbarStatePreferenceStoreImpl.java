@@ -67,8 +67,10 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
         final List<ButtonId> buttonIds = new ArrayList<>();
         for (ButtonId id : ButtonId.values()) buttonIds.add(id);
 
-        Collections.swap(buttonIds, buttonIds.indexOf(ButtonId.SHARE),
-                buttonIds.indexOf(ButtonId.DARK_MODE));
+        boolean isIndiaDevice = "IN".equals(CountryCodeUtil.getCountryCode());
+        ButtonId replaceId = isIndiaDevice ? ButtonId.AT_ME_GAME : ButtonId.DARK_MODE;
+        Collections.swap(
+                buttonIds, buttonIds.indexOf(ButtonId.SHARE), buttonIds.indexOf(replaceId));
 
         for (ButtonId id : buttonIds) {
             if (!arrayList.contains(id)) {
