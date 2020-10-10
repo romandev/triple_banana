@@ -1,3 +1,14 @@
+# 4.07 @ 85.0.4183.127
+
+## Chromium base version
+- **85.0.4183.127**
+
+## Change log
+- Fix a bug that the browser lock is triggered even if it is disabled (#764)
+- Fix a bug that the subresource_filter doesn't work after app update (#762)
+- Revert "Remove AtMeGame service (#759)" (#765)
+
+
 # 4.06 @ 85.0.4183.127
 
 ## Chromium base version
