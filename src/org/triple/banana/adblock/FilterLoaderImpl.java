@@ -75,7 +75,6 @@ public class FilterLoaderImpl implements FilterLoader {
             }
 
             VersionInfo.setFilterVersion(BUILTIN_FILTER_VERSION);
-            updateLastCheckTime();
             Log.d(TAG, "installBuiltInFilter(): Installed = " + BUILTIN_FILTER_VERSION);
             return destinationFile.getPath();
         } catch (Exception e) {
@@ -144,11 +143,17 @@ public class FilterLoaderImpl implements FilterLoader {
         });
     }
 
+    private long getVersionNumber(final String versionString) {
+        return Long.parseLong(versionString.replace(".", ""));
+    }
+
     @Override
     public void load(final String currentVersion, final LoadResponse callback) {
         Log.d(TAG, "load(): currentVersion = " + currentVersion);
         boolean hasInstalledFilter = !TextUtils.isEmpty(currentVersion);
-        if (!hasInstalledFilter) {
+        boolean needToUpdateBuiltInFilter = !hasInstalledFilter
+                || getVersionNumber(currentVersion) < getVersionNumber(BUILTIN_FILTER_VERSION);
+        if (needToUpdateBuiltInFilter) {
             String builtInFilter = installBuiltInFilter();
             if (!TextUtils.isEmpty(builtInFilter)) {
                 callback.call(builtInFilter);
