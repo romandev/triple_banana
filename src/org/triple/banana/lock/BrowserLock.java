@@ -15,6 +15,8 @@ import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.base.ApplicationStatusTracker;
 import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatusListener;
+import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 public class BrowserLock {
     // BrowserLock Session
@@ -63,6 +65,7 @@ public class BrowserLock {
 
     public void start() {
         resetLastAuthenticationTime();
+        ApplicationStatusTracker.getInstance().removeListener(mListener);
         ApplicationStatusTracker.getInstance().addListener(mListener);
     }
 
@@ -72,9 +75,13 @@ public class BrowserLock {
     }
 
     public void pauseForAMoment() {
-        ApplicationStatusTracker.getInstance().removeListener(mListener);
-        mHandler.postDelayed(
-                () -> { ApplicationStatusTracker.getInstance().addListener(mListener); }, 1000);
+        if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
+            ApplicationStatusTracker.getInstance().removeListener(mListener);
+            mHandler.postDelayed(() -> {
+                ApplicationStatusTracker.getInstance().removeListener(mListener);
+                ApplicationStatusTracker.getInstance().addListener(mListener);
+            }, 1000);
+        }
     }
 
     private void recoredLastAuthenticationTime() {
