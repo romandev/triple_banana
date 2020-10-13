@@ -267,6 +267,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/ic_backward.xml",
     "//triple_banana/res/drawable/ic_brightness_up.xml",
     "//triple_banana/res/drawable/ic_clear_browsing_data.xml",
+    "//triple_banana/res/drawable/ic_close_current_tab.xml",
     "//triple_banana/res/drawable/ic_dark_black_24dp.xml",
     "//triple_banana/res/drawable/ic_desktop_black_24dp.xml",
     "//triple_banana/res/drawable/ic_find_in_page_black_24dp.xml",

@@ -30,4 +30,5 @@ public interface BananaToolbarManager {
     void openSettingPage(Class settingFragmentPage);
     void openClearBrowsingDataPreference();
     void terminate();
+    void closeCurrentTab();
 }

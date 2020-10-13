@@ -172,4 +172,11 @@ public class CakeToolbarManager implements BananaToolbarManager {
         if (activity == null) return;
         activity.finishAndRemoveTask();
     }
+
+    @Override
+    public void closeCurrentTab() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.close_tab, false);
+    }
 }
