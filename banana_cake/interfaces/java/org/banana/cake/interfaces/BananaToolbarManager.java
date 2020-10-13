@@ -28,5 +28,6 @@ public interface BananaToolbarManager {
     void print();
     void goAdblockSetting();
     void openSettingPage(Class settingFragmentPage);
+    void openClearBrowsingDataPreference();
     void terminate();
 }

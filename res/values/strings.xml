@@ -48,6 +48,7 @@
     <string name="secure_login">Secure Login</string>
     <string name="secure_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>
     <string name="toolbar_editor">Toolbar Editor</string>
+    <string name="user_data">User Data</string>
     <string name="user_interface">User Interface</string>
     <string name="use_secure_login">Use Secure Login\n(Biometrics, Pattern, PIN, and so on)</string>
 </resources>

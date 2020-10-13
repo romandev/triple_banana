@@ -34,7 +34,8 @@ public enum ButtonId {
     PRINT,
     DARK_MODE,
     TERMINATE,
-    AT_ME_GAME;
+    AT_ME_GAME,
+    CLEAR_BROWSING_DATA;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -75,6 +76,8 @@ public enum ButtonId {
                 v
                 -> BananaApplicationUtils.get().showInfoPage(
                         "https://www.atmegame.com/?utm_source=Banana&utm_medium=Banana"));
+        sOnClickListeners.put(ButtonId.CLEAR_BROWSING_DATA,
+                v -> BananaToolbarManager.get().openClearBrowsingDataPreference());
     }
 
     public static int getImageResource(ButtonId id) {
@@ -136,6 +139,9 @@ public enum ButtonId {
                 break;
             case AT_ME_GAME:
                 imageResource = R.drawable.atmegame_logo;
+                break;
+            case CLEAR_BROWSING_DATA:
+                imageResource = R.drawable.ic_clear_browsing_data;
                 break;
         }
         return imageResource;

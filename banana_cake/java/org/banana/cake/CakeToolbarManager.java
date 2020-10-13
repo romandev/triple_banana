@@ -12,6 +12,7 @@ import org.triple.banana.R;
 
 import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeTabbedActivity;
+import org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment;
 import org.chromium.chrome.browser.omnibox.LocationBar;
 import org.chromium.chrome.browser.settings.SettingsLauncher;
 import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
@@ -158,6 +159,11 @@ public class CakeToolbarManager implements BananaToolbarManager {
         if (activity == null) return;
         SettingsLauncher settingsLauncher = new SettingsLauncherImpl();
         settingsLauncher.launchSettingsActivity(activity, settingFragmentClass);
+    }
+
+    @Override
+    public void openClearBrowsingDataPreference() {
+        openSettingPage(ClearBrowsingDataTabsFragment.class);
     }
 
     @Override
