@@ -64,13 +64,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
             }
         });
 
-        // Create all toolbar buttons when toolbar controller initialized
-        for (ButtonId buttonId : ButtonId.values()) {
-            mToolbarButtons.put(buttonId, createToolbarButton(buttonId));
-        }
-
-        ToolbarStateModel.getInstance().addObserver(this);
-        ToolbarStateModel.getInstance().notifyObservers(); // only first time
 
         return this;
     }
@@ -88,8 +81,17 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     }
 
     private ToolbarButton createToolbarButton(ButtonId buttonId) {
-        ToolbarButton toolbarButton =
-                new ToolbarButton(BananaApplicationUtils.get().getApplicationContext());
+        ToolbarButton toolbarButton;
+        if (buttonId == ButtonId.TAB_SWITCHER) {
+            toolbarButton = new TabSwitcherToolbarButton(
+                    BananaApplicationUtils.get().getApplicationContext());
+            toolbarButton.setOnClickListener(mTabSwitcherListener);
+        } else {
+            toolbarButton = new ToolbarButton(BananaApplicationUtils.get().getApplicationContext());
+            if (ButtonId.getOnClickListeners(buttonId) != null) {
+                toolbarButton.setOnClickListener(ButtonId.getOnClickListeners(buttonId));
+            }
+        }
         int width = (int) TypedValue.applyDimension((TypedValue.COMPLEX_UNIT_DIP), 56,
                 BananaApplicationUtils.get()
                         .getApplicationContext()
@@ -99,9 +101,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
                 new ViewGroup.LayoutParams(width, ViewGroup.LayoutParams.MATCH_PARENT));
         toolbarButton.setButtonId(buttonId);
         toolbarButton.setImageResource(ButtonId.getImageResource(buttonId));
-        if (ButtonId.getOnClickListeners(buttonId) != null) {
-            toolbarButton.setOnClickListener(ButtonId.getOnClickListeners(buttonId));
-        }
         if (ButtonId.getOnClickListeners(buttonId) != null) {
             toolbarButton.setOnLongClickListener(ButtonId.getOnLongClickListeners(buttonId));
         }
@@ -119,9 +118,24 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     }
 
     private void buttonInitializeWithNative() {
+        // Create all toolbar buttons when toolbar controller initialized
+        for (ButtonId buttonId : ButtonId.values()) {
+            mToolbarButtons.put(buttonId, createToolbarButton(buttonId));
+        }
+
+        ToolbarStateModel.getInstance().addObserver(this);
+        ToolbarStateModel.getInstance().notifyObservers(); // only first time
+
         for (ToolbarButton button : mToolbarButtons.values()) {
             button.setThemeColorProvider(mThemeColorProvider);
         }
+
+        mTabCountProvider.addObserverAndTrigger((tabCount, isIncognito) -> {
+            if (mToolbarButtons.containsKey(ButtonId.TAB_SWITCHER)) {
+                ((TabSwitcherToolbarButton) mToolbarButtons.get(ButtonId.TAB_SWITCHER))
+                        .updateForTabCount(tabCount, isIncognito);
+            }
+        });
 
         mThemeColorProvider.addThemeColorObserver(this);
         mIncognitoStateProvider.addIncognitoStateObserverAndTrigger(this);

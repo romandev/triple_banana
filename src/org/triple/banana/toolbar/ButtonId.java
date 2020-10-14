@@ -36,7 +36,8 @@ public enum ButtonId {
     TERMINATE,
     AT_ME_GAME,
     CLEAR_BROWSING_DATA,
-    CLOSE_TAB;
+    CLOSE_TAB,
+    TAB_SWITCHER;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -147,6 +148,9 @@ public enum ButtonId {
                 break;
             case CLOSE_TAB:
                 imageResource = R.drawable.ic_close_current_tab;
+                break;
+            case TAB_SWITCHER:
+                imageResource = R.drawable.btn_tabswitcher_modern;
                 break;
         }
         return imageResource;

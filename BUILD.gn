@@ -199,6 +199,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/toolbar/IToolbarStatePersistentStore.java",
     "//triple_banana/src/org/triple/banana/toolbar/OnItemMoveListener.java",
     "//triple_banana/src/org/triple/banana/toolbar/SelectedToolbarButtonAdapter.java",
+    "//triple_banana/src/org/triple/banana/toolbar/TabSwitcherToolbarButton.java",
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarButton.java",
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarButtonItem.java",
     "//triple_banana/src/org/triple/banana/toolbar/ToolbarEditActivity.java",
