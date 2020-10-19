@@ -146,6 +146,13 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             }
             return true;
         });
+
+        final SwitchPreferenceCompat autoClearBrowsingData =
+                (SwitchPreferenceCompat) findPreference(FeatureName.AUTO_CLEAR_BROWSING_DATA);
+        autoClearBrowsingData.setOnPreferenceChangeListener((preference, newValue) -> {
+            setEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA, (boolean) newValue);
+            return true;
+        });
     }
 
     @Override
@@ -191,6 +198,8 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
     public static class FeatureName {
         public static final String ADBLOCK = "feature_name_adblock";
         public static final String AUTOPLAY = "feature_name_autoplay";
+        public static final String AUTO_CLEAR_BROWSING_DATA =
+                "feature_name_auto_clear_browsing_data";
         public static final String BACKGROUND_PLAY = "feature_name_background_play";
         // bottom_toolbar_enabled preference value is referenced to enable bottom toolbar in
         // upstream. For sync with this value in triple banana, BOTTOM_TOOLBAR feature name has

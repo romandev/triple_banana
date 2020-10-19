@@ -12,6 +12,8 @@
     <string name="authentication_description">Scan your biometric data to sign-in\nyour credentials</string>
     <string name="autoplay">Autoplay Media Contents</string>
     <string name="autoplay_summary">Allow sites to autoplay media contents</string>
+    <string name="auto_clear_browsing_data_summary">Automatically clear browsing data such as history, cookies, site data, cache when exiting Banana Browser</string>
+    <string name="auto_clear_browsing_data_title">Auto-clear browsing data on quit</string>
     <string name="background_play">Background Play</string>
     <string name="background_play_summary">Enable play media in background when tab is not active or device screen is turned off</string>
     <string name="banana_extension">Banana Extension</string>
