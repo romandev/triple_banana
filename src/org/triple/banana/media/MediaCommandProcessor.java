@@ -22,7 +22,7 @@ public enum MediaCommandProcessor {
         StringBuilder commandBuilder = new StringBuilder();
         commandBuilder.append("document.fullscreenElement.");
         commandBuilder.append(mediaCommand);
-        tab.evaluateJavaScript(commandBuilder.toString());
+        tab.evaluateJavaScript(commandBuilder.toString(), null);
     }
 
     void setImpl(BananaMediaCommandProcessor impl) {

@@ -11,9 +11,11 @@ import android.view.View;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.banana.cake.interfaces.BananaJavaScriptCallback;
 import org.banana.cake.interfaces.BananaTab;
 
 import org.chromium.chrome.browser.tab.Tab;
+import org.chromium.content_public.browser.JavaScriptCallback;
 import org.chromium.url.GURL;
 
 class CakeTab implements BananaTab {
@@ -40,11 +42,12 @@ class CakeTab implements BananaTab {
      * If a result is required, pass in a callback.
      *
      * @param script The Javascript to execute.
+     * @param callback result corresponding to JS execution.
      */
     @Override
-    public void evaluateJavaScript(String script) {
+    public void evaluateJavaScript(String script, BananaJavaScriptCallback callback) {
         if (mTab == null) return;
-        mTab.getWebContents().evaluateJavaScript(script, null);
+        mTab.getWebContents().evaluateJavaScript(script, callback);
     }
 
     @Override

@@ -21,7 +21,7 @@ public interface BananaTab {
     BananaTab wrap(Tab tab);
 
     String getUrl();
-    void evaluateJavaScript(String script);
+    void evaluateJavaScript(String script, BananaJavaScriptCallback callback);
     Context getContext();
     void exitFullscreen();
     @Nullable

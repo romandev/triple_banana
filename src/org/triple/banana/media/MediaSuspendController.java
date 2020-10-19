@@ -31,7 +31,7 @@ public enum MediaSuspendController {
                 final String host = url.getHost();
                 if ("www.youtube.com".equalsIgnoreCase(host) || "youtube.com".equalsIgnoreCase(host)
                         || "m.youtube.com".equalsIgnoreCase(host)) {
-                    tab.evaluateJavaScript(DISABLE_ON_YOUTUBE_SCRIPT);
+                    tab.evaluateJavaScript(DISABLE_ON_YOUTUBE_SCRIPT, null);
                 }
             }
         } catch (MalformedURLException e) {
