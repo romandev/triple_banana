@@ -4,13 +4,8 @@
 
 package org.triple.banana.media;
 
-import android.text.TextUtils;
-import android.util.Log;
-
 import org.banana.cake.interfaces.BananaTab;
-
-import java.net.MalformedURLException;
-import java.net.URL;
+import org.triple.banana.util.YouTubeUtil;
 
 public enum MediaSuspendController {
     instance;
@@ -21,21 +16,8 @@ public enum MediaSuspendController {
             + "evt => evt.stopImmediatePropagation(), true);";
 
     public void DisableOnYouTube(BananaTab tab) {
-        if (TextUtils.isEmpty(tab.getUrl())) {
-            return;
-        }
-
-        try {
-            URL url = new URL(tab.getUrl());
-            if ("/watch".equalsIgnoreCase(url.getPath())) {
-                final String host = url.getHost();
-                if ("www.youtube.com".equalsIgnoreCase(host) || "youtube.com".equalsIgnoreCase(host)
-                        || "m.youtube.com".equalsIgnoreCase(host)) {
-                    tab.evaluateJavaScript(DISABLE_ON_YOUTUBE_SCRIPT, null);
-                }
-            }
-        } catch (MalformedURLException e) {
-            Log.e(TAG, "MalformedURLException " + e.getMessage());
+        if (YouTubeUtil.isYouTubeDomainUrl(tab.getUrl())) {
+            tab.evaluateJavaScript(DISABLE_ON_YOUTUBE_SCRIPT, null);
         }
     }
 }

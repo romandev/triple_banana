@@ -215,6 +215,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/util/CountryCodeUtil.java",
     "//triple_banana/src/org/triple/banana/util/RotationManager.java",
     "//triple_banana/src/org/triple/banana/util/Unzip.java",
+    "//triple_banana/src/org/triple/banana/util/YouTubeUtil.java",
 
     # util
     "//triple_banana/src/org/triple/banana/version/VersionInfo.java",
