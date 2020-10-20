@@ -64,6 +64,13 @@ public class BottomToolbarController implements BananaBottomToolbarController,
             }
         });
 
+        // Create all toolbar buttons when toolbar controller initialized
+        for (ButtonId buttonId : ButtonId.values()) {
+            mToolbarButtons.put(buttonId, createToolbarButton(buttonId));
+        }
+
+        ToolbarStateModel.getInstance().addObserver(this);
+        ToolbarStateModel.getInstance().notifyObservers(); // only first time
 
         return this;
     }
@@ -85,7 +92,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         if (buttonId == ButtonId.TAB_SWITCHER) {
             toolbarButton = new TabSwitcherToolbarButton(
                     BananaApplicationUtils.get().getApplicationContext());
-            toolbarButton.setOnClickListener(mTabSwitcherListener);
         } else {
             toolbarButton = new ToolbarButton(BananaApplicationUtils.get().getApplicationContext());
             if (ButtonId.getOnClickListeners(buttonId) != null) {
@@ -118,15 +124,10 @@ public class BottomToolbarController implements BananaBottomToolbarController,
     }
 
     private void buttonInitializeWithNative() {
-        // Create all toolbar buttons when toolbar controller initialized
-        for (ButtonId buttonId : ButtonId.values()) {
-            mToolbarButtons.put(buttonId, createToolbarButton(buttonId));
-        }
-
-        ToolbarStateModel.getInstance().addObserver(this);
-        ToolbarStateModel.getInstance().notifyObservers(); // only first time
-
         for (ToolbarButton button : mToolbarButtons.values()) {
+            if (button.getButtonId() == ButtonId.TAB_SWITCHER) {
+                button.setOnClickListener(mTabSwitcherListener);
+            }
             button.setThemeColorProvider(mThemeColorProvider);
         }
 
