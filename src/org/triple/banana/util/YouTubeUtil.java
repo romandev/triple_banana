@@ -8,7 +8,8 @@ package org.triple.banana.util;
 import android.text.TextUtils;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
+import org.banana.cake.interfaces.BananaTab;
+import org.banana.cake.interfaces.BananaTabManager;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -16,11 +17,19 @@ import java.net.URL;
 public class YouTubeUtil {
     private static final String TAG = "YouTubeUtil";
 
-    public static boolean isYouTubeDomainUrl(@NonNull String urlString) {
+    public static boolean isYouTubeUrl() {
+        BananaTab tab = BananaTabManager.get().getActivityTab();
+        if (tab == null) {
+            return false;
+        }
+        return isYouTubeUrl(tab);
+    }
+
+    public static boolean isYouTubeUrl(BananaTab tab) {
+        String urlString = tab.getUrl();
         if (TextUtils.isEmpty(urlString)) {
             return false;
         }
-
         try {
             URL url = new URL(urlString);
             if ("/watch".equalsIgnoreCase(url.getPath())) {

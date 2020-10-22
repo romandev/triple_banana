@@ -16,7 +16,7 @@ public enum MediaSuspendController {
             + "evt => evt.stopImmediatePropagation(), true);";
 
     public void DisableOnYouTube(BananaTab tab) {
-        if (YouTubeUtil.isYouTubeDomainUrl(tab.getUrl())) {
+        if (YouTubeUtil.isYouTubeUrl(tab)) {
             tab.evaluateJavaScript(DISABLE_ON_YOUTUBE_SCRIPT, null);
         }
     }
