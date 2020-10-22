@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
-@@ -91,6 +91,8 @@ public class ChromeApplication extends Application {
+@@ -92,6 +92,8 @@ public class ChromeApplication extends Application {
              CommandLineInitUtil.initCommandLine(
                      COMMAND_LINE_FILE, ChromeApplication::shouldUseDebugFlags);
  

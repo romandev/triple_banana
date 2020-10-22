@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Nav saglabātu paroļu. Pārlūkprogrammā Banana Browser var pārbaudīt jūsu paroles, ja jūs tās saglabājat."</string>
+<string name="password_check_status_message_error_offline">"Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles. Pārbaudiet interneta savienojumu."</string>
+<string name="password_check_status_message_error_quota_limit">"Pārlūkprogrammā Banana Browser nevarēja pārbaudīt visas paroles. Rit mēģiniet vēlreiz."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Pārlūkā Banana Browser nevarēja pārbaudīt visas paroles. Mēģiniet vēlreiz rīt vai &lt;link&gt;pārbaudiet paroles Google kontā&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Pārlūkprogrammā Banana Browser var pārbaudīt jūsu paroles, ja esat pierakstījies savā Google kontā."</string>
+<string name="password_check_status_message_error_unknown">"Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles. Mēģiniet vēlreiz."</string>
+<string name="password_check_status_subtitle_no_findings">"Ja pierakstīsieties ar uzlauztu paroli, pārlūkprogrammā Banana Browser tiks parādīts paziņojums."</string>
 <string name="sign_in_to_chrome">"Pierakstīties pārlūkā Banana Browser"</string>
 <string name="sync_switch_title">"Jūsu Banana Browser datu sinhronizācija"</string>
 <string name="usage_and_crash_reports_title">"Palīdzēt uzlabot Banana Browser funkcijas un veiktspēju"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Atlasītie dati ir noņemti no pārlūka Banana Browser un jūsu sinhronizētajām ierīcēm.
 
 Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var būt citu veidu pārlūkošanas vēstures dati, piemēram, meklēšanas vaicājumi un darbības citos Google pakalpojumos."</string>
-<string name="safety_check_description">"Banana Browser var pārbaudīt, vai iestatījumos ir norādīta aizsardzība pret tālāk minēto."</string>
-<string name="safety_check_safe_browsing_disabled">"Droša pārlūkošana ir izslēgta. Pārlūkā Banana Browser tiek ieteikts to ieslēgt."</string>
-<string name="safety_check_passwords_no_passwords">"Nav saglabātu paroļu. Pārlūkprogrammā Banana Browser var pārbaudīt jūsu paroles, ja jūs tās saglabājat."</string>
+<string name="safety_check_description">"Banana Browser var palīdzēt aizsargāt jūs pret datu noplūdi, nedrošām vietnēm un citiem apdraudējumiem."</string>
+<string name="safety_check_passwords_error">"Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles"</string>
+<string name="safety_check_passwords_error_offline">"Bezsaistē. Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles."</string>
+<string name="safety_check_passwords_error_quota_limit">"Pārlūkprogrammā Banana Browser nevarēja pārbaudīt visas paroles"</string>
+<string name="safety_check_updates_updated">"Banana Browser jaunākā versija jau ir instalēta"</string>
+<string name="safety_check_updates_outdated">"Banana Browser versija ir novecojusi."</string>
+<string name="safety_check_updates_offline">"Bezsaistē. Pārlūkprogrammā Banana Browser nevar pārbaudīt atjauninājumu pieejamību."</string>
+<string name="safety_check_updates_error">"Pārlūkā Banana Browser nevar pārbaudīt atjauninājumu pieejamību."</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Tiek nodrošināta jūsu aizsardzība pārlūkprogrammā Banana Browser. Šis režīms var tikt izmantots jūsu drošības uzlabošanai citās Google lietotnēs, kad esat pierakstījies."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Vietrāži URL tiek pārbaudīti, salīdzinot ar nedrošu vietņu sarakstu, kas glabājas pārlūkprogrammā Banana Browser. Ja kādā vietnē tiek mēģināts nozagt jūsu paroli vai ja jūs lejupielādējat kaitīgu failu, Banana Browser var nosūtīt attiecīgo URL un lapas satura fragmentus uz funkciju Droša pārlūkošana."</string>
+<string name="languages_set_application_language_prompt">"Lietot kā Banana Browser valodu"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Vienkāršotajā režīmā Banana Browser ielādē lapas ātrāk un patērē pat par 60 procentiem mazāk datu."</string>
 <string name="data_reduction_description_lite_mode">"Ja ir ieslēgts vienkāršotais režīms, pārlūkā Banana Browser tiek izmantoti Google serveri, lai ielādētu lapas ātrāk. Vienkāršotajā režīmā ļoti lēnas lapas tiek pārrakstītas, lai tās ielādētu tikai nepieciešamo saturu. Vienkāršotais režīms netiek piemērots inkognito režīma cilnēm."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Pārlūka Banana Browser vienkāršotajā režīmā lapas tiek ielādētas ātrāk un tiek patērēts pat par 60 procentiem mazāk datu. Lai optimizētu jūsu apmeklētās lapas, no pārlūka Banana Browser tiek nosūtīta jūsu tīmekļa datplūsma uzņēmumam Google. &lt;link&gt;Uzziniet vairāk&lt;/link&gt;."</string>
@@ -55,6 +70,8 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Lietotne %1$s tiks atvērta pārlūkprogrammā Banana Browser. Turpinot jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;. Ir spēkā arī &lt;LINK3&gt;konfidencialitātes paziņojums Google kontiem, kas tiek pārvaldīti lietotnē Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Uzlabojiet pārlūku Banana Browser, uzņēmumam Google sūtot lietojuma statistiku un avāriju pārskatus."</string>
 <string name="fre_welcome">"Laipni lūdzam pārlūkā Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Jūs būsiet pierakstījies savā Google kontā\n(Banana Browser sinhronizācija netiks ieslēgta)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Pārlūkā Banana Browser nevarēja verificēt jūsu informāciju"</string>
 <string name="external_app_restricted_access_error">"Banana Browser nevar piekļūt pieprasītajam resursam."</string>
 <string name="menu_update">"Atjaunināt Banana Browser"</string>
 <string name="menu_update_unsupported">"Nevar atjaunināt Banana Browser"</string>
@@ -64,7 +81,7 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="chrome_survey_prompt">"Palīdziet uzlabot pārlūku Banana Browser. &lt;LINK&gt;Atbildiet uz aptaujas jautājumiem&lt;/LINK&gt;."</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Nevar atjaunināt Banana Browser — citas opcijas"</string>
 <string name="unsupported_number_of_windows">"Neatbalstīts Banana Browser instanču skaits"</string>
-<string name="storage_management_unimportant_site_data_description">"Vietnes krātuve, kura pārlūkā Banana Browser netiek uzskatīta par svarīgu (piemēram, vietnes bez saglabātiem iestatījumiem vai vietnes, kuras neapmeklējat bieži)"</string>
+<string name="storage_management_unimportant_site_data_description">"Saglabāti dati, kas pārlūkā Banana Browser netiek uzskatīti par svarīgu (piemēram, dati, ko glabā vietnes bez saglabātiem iestatījumiem vai vietnes, kuras neapmeklējat bieži)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Tādējādi tiks dzēsti sīkfaili, kešatmiņa un citi vietņu dati, kas pārlūkā Banana Browser netiek uzskatīti par svarīgiem."</string>
 <string name="storage_management_all_storage_description">"Kopējais pārlūkā Banana Browser izmantoto datu apjoms, ieskaitot kontus, grāmatzīmes un saglabātos iestatījumus"</string>
 <string name="storage_management_reset_app_dialog_text">"Visi lietotnes Banana Browser dati tiks neatgriezeniski izdzēsti. Tas attiecas uz visiem failiem, iestatījumiem, kontiem, datu bāzēm un citiem datiem."</string>
@@ -113,11 +130,4 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kartes un adreses tiek iegūtas no Banana Browser un jūsu Google konta (%1$s). Varat tās pārvaldīt BEGIN_LINKiestatījumosEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartes un adreses tiek iegūtas no Banana Browser. Varat pārvaldīt tās BEGIN_LINKiestatījumosEND_LINK."</string>
-<string name="android_permission_off">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļauju pārlūkam Banana Browser."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android iestatījumos&lt;/link&gt; ieslēdziet atļaujas pārlūkam Banana Browser."</string>
-<string name="android_ar_camera_permission_off">"Lai pārlūkā Banana Browser varētu izmantot papildināto realitāti, ieslēdziet arī kameras atļauju &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu kamerai, ieslēdziet kameru arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu atrašanās vietas datiem, ieslēdziet atrašanās vietas noteikšanu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser piekļūt jūsu mikrofonam, ieslēdziet mikrofonu arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Lai atļautu pārlūkprogrammai Banana Browser sūtīt jums paziņojumus, ieslēdziet paziņojumus arī &lt;link&gt;Android iestatījumos&lt;/link&gt;."</string>
 </resources>

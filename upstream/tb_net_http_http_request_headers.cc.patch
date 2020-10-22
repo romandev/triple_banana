@@ -12,7 +12,7 @@ diff --git tb/net/http/http_request_headers.cc tb_diff/net/http/http_request_hea
  namespace net {
  
  const char HttpRequestHeaders::kConnectMethod[] = "CONNECT";
-@@ -183,6 +187,14 @@ void HttpRequestHeaders::MergeFrom(const HttpRequestHeaders& other) {
+@@ -187,6 +191,14 @@ void HttpRequestHeaders::MergeFrom(const HttpRequestHeaders& other) {
  std::string HttpRequestHeaders::ToString() const {
    std::string output;
    for (auto it = headers_.begin(); it != headers_.end(); ++it) {

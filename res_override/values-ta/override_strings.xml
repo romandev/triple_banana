@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"சேமித்த கடவுச்சொற்கள் எதுவும் இல்லை. நீங்கள் அவற்றைச் சேமிக்கும்போது Banana Browserமால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியும்."</string>
+<string name="password_check_status_message_error_offline">"Banana Browserமால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்க முயலவும்."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser உலாவியால் கடவுச்சொற்கள் அனைத்தையும் சரிபார்க்க முடியவில்லை. நாளை முயலவும்."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browserமால் கடவுச்சொற்கள் அனைத்தையும் சரிபார்க்க முடியவில்லை. நாளை மீண்டும் முயலவும் அல்லது &lt;link&gt;உங்கள் Google கணக்கில் கடவுச்சொற்களைச் சரிபார்க்கவும்&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Google கணக்கைப் பயன்படுத்தி நீங்கள் உள்நுழையும்போது Banana Browserமால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியும்."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser உலாவியால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை. மீண்டும் முயலவும்."</string>
+<string name="password_check_status_subtitle_no_findings">"களவாடப்பட்ட கடவுச்சொல் முலம் நீங்கள் உள்நுழையும்போது Banana Browser அது குறித்து உங்களுக்குத் தெரியப்படுத்தும்."</string>
 <string name="sign_in_to_chrome">"Banana Browser இல் உள்நுழைக"</string>
 <string name="sync_switch_title">"உங்கள் Banana Browser தரவை ஒத்திசைக்கவும்"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser இன் அம்சங்களையும் செயல்திறனையும் மேம்படுத்த உதவுக"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Banana Browser மற்றும் ஒத்திசைக்கப்பட்ட சாதனங்களிலிருந்து, தேர்ந்தெடுத்த தரவு அகற்றப்பட்டது.
 
 &lt;link&gt;myactivity.google.com&lt;/link&gt; எனும் தளத்தில் பிற Google சேவைகளிலிருந்து தேடல்கள், செயல்பாடு போன்ற உங்கள் Google கணக்கிற்கான பிற வகை உலாவல் வரலாறும் இருக்கக்கூடும்."</string>
-<string name="safety_check_description">"இவற்றில் இருந்து உங்கள் அமைப்பு உங்களைப் பாதுகாக்கிறதா என்பதை Banana Browserமால் சரிபார்க்க முடியும்:"</string>
-<string name="safety_check_safe_browsing_disabled">"’பாதுகாப்பு உலாவல்‘ அம்சம் முடக்கப்பட்டுள்ளது. அதை இயக்குமாறு Banana Browser பரிந்துரைக்கிறது."</string>
-<string name="safety_check_passwords_no_passwords">"சேமித்த கடவுச்சொற்கள் எதுவும் இல்லை. நீங்கள் அவற்றைச் சேமிக்கும்போது Banana Browserமால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியும்."</string>
+<string name="safety_check_description">"தரவு மீறல்கள், பாதுகாப்பற்ற இணையதளங்கள் மற்றும் பிற பாதுகாப்புச் சிக்கல்களிலிருந்து உங்களைப் பாதுகாக்க Banana Browser உதவும்"</string>
+<string name="safety_check_passwords_error">"Banana Browser உலாவியால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை"</string>
+<string name="safety_check_passwords_error_offline">"ஆஃப்லைன். Banana Browser உலாவியால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser உலாவியால் கடவுச்சொற்கள் அனைத்தையும் சரிபார்க்க முடியவில்லை"</string>
+<string name="safety_check_updates_updated">"Banana Browser சமீபத்திய பதிப்பில் உள்ளது"</string>
+<string name="safety_check_updates_outdated">"Banana Browser காலாவதியானது"</string>
+<string name="safety_check_updates_offline">"ஆஃப்லைன். Banana Browser உலாவியால் புதுப்பிப்புகள் உள்ளனவா எனப் பார்க்க முடியவில்லை."</string>
+<string name="safety_check_updates_error">"Banana Browserமால் புதுப்பிப்புகள் உள்ளனவா எனப் பார்க்க முடியவில்லை"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Banana Browserமைப் பயன்படுத்தும்போது இது பாதுகாப்பை வழங்கும், அத்துடன் நீங்கள் பிற Google ஆப்ஸில் உள்நுழைந்திருக்கும்போது உங்கள் பாதுகாப்பை மேம்படுத்துவதற்காக இதைப் பயன்படுத்தலாம்."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Banana Browserமில் சேமிக்கப்பட்டுள்ள பாதுகாப்பில்லாத தளங்களின் பட்டியலைப் பயன்படுத்தி URLகளைச் சரிபார்க்கும். தளம் உங்கள் கடவுச்சொல்லைத் திருட முயன்றலோ தீங்குவிளைவிக்கும் கோப்பை நீங்கள் பதிவிறக்கினாலோ Banana Browserமானது பக்க உள்ளடக்கத்தின் சிறிய பகுதிகள் உட்பட URLகளையும் பாதுகாப்பு உலாவலுக்கு அனுப்பக்கூடும்."</string>
+<string name="languages_set_application_language_prompt">"Banana Browserமின் மொழியாகப் பயன்படுத்து"</string>
 <string name="data_reduction_benefits_description_lite_mode">"’லைட்’ பயன்முறையில், பக்கங்களை Banana Browser வேகமாக ஏற்றுவதோடு, டேட்டாவை 60 சதவீதம் குறைவாகவும் பயன்படுத்தும்."</string>
 <string name="data_reduction_description_lite_mode">"லைட் பயன்முறை இயக்கப்பட்டிருக்கும்போது, பக்கங்களை வேகமாக ஏற்றுவதற்காக Google சேவையகங்களைக் Banana Browser பயன்படுத்தும். மிகவும் மெதுவாக ஏற்றப்படும் பக்கங்களில் முக்கிய உள்ளடக்கத்தை மட்டும் ஏற்றுமாறு லைட் பயன்முறை அவற்றை மீண்டும் எழுதுகிறது. மறைநிலைத் தாவல்களுக்கு லைட் பயன்முறை பொருந்தாது."</string>
 <string name="data_reduction_promo_summary_lite_mode">"லைட் பயன்முறையில் பக்கங்களை Banana Browser வேகமாக ஏற்றுவதோடு டேட்டாவை 60 சதவீதம் வரை குறைவாகவும் பயன்படுத்தும். நீங்கள் பார்க்கும் பக்கங்களை மேம்படுத்த Banana Browser உங்கள் இணைய டிராஃபிக்கை Googleளுக்கு அனுப்பும். &lt;link&gt;மேலும் அறிக&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserமில் திறக்கும். தொடர்வதன் மூலம் &lt;LINK1&gt;Google சேவை விதிமுறைகளையும்&lt;/LINK1&gt; &lt;LINK2&gt;Google Banana Browser மற்றும் Banana Browser OS தொடர்பான கூடுதல் சேவை விதிமுறைகளையும்&lt;/LINK2&gt; ஏற்கிறீர்கள். இவற்றோடு &lt;LINK3&gt;Family Link நிர்வகிக்கும் Google கணக்குகளுக்கான தனியுரிமை அறிக்கையும்&lt;/LINK3&gt; பொருந்தும்."</string>
 <string name="fre_send_report_check">"பயன்பாட்டுப் புள்ளிவிவரங்களையும், சிதைவு அறிக்கைகளையும் Googleளுக்கு அனுப்புவதன் மூலம் Banana Browserஐ மேலும் சிறப்பானதாக்க உதவவும்."</string>
 <string name="fre_welcome">"Banana Browser க்கு வருக"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"உங்கள் Google கணக்கில் உள்நுழைவீர்கள்\n(இதனால் Banana Browser ஒத்திசைவு இயக்கப்படாது)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browserமால் உங்கள் தகவல்களைச் சரிபார்க்க முடியவில்லை"</string>
 <string name="external_app_restricted_access_error">"Banana Browserமிடம் நீங்கள் கோரியதற்கான அணுகல் இல்லை."</string>
 <string name="menu_update">"Banana Browserஐப் புதுப்பி"</string>
 <string name="menu_update_unsupported">"Banana Browser புதுப்பிக்கவில்லை"</string>
@@ -64,7 +81,7 @@
 <string name="chrome_survey_prompt">"Banana Browserஐ மேம்படுத்த உதவவும். &lt;LINK&gt;கருத்துக்கணிப்பில் பங்கேற்கவும்&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browserமைப் புதுப்பிக்க முடியாது. கூடுதல் விருப்பங்கள்"</string>
 <string name="unsupported_number_of_windows">"ஆதரிக்கப்படாத Banana Browser நிகழ்வுகளின் எண்ணிக்கை."</string>
-<string name="storage_management_unimportant_site_data_description">"முக்கியமில்லை என்று Banana Browser கருதும் தளச் சேமிப்பகம் (எ.கா: சேமித்த அமைப்புகள் இல்லாத அல்லது நீங்கள் அடிக்கடி பார்க்காத தளங்கள்)"</string>
+<string name="storage_management_unimportant_site_data_description">"முக்கியமில்லை என்று Banana Browser கருதும் சேமிக்கப்பட்ட தரவுகள் (எ.கா. சேமித்த அமைப்புகள் இல்லாத/அடிக்கடி நீங்கள் பார்க்காத தளங்கள்)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"முக்கியமில்லை என்று Banana Browser கருதும் குக்கீகள், தற்காலிகச் சேமிப்பு, தளங்களின் பிற தரவு ஆகியவற்றை இது அழிக்கும்."</string>
 <string name="storage_management_all_storage_description">"கணக்குகள், புக்மார்க்குகள், சேமித்த அமைப்புகள் உள்பட Banana Browser பயன்படுத்தும் மொத்தத் தரவு"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser இன் எல்லாப் பயன்பாட்டுத் தரவும் நிரந்தரமாக நீக்கப்படும். இதில் அனைத்துக் கோப்புகள், அமைப்புகள், கணக்குகள், தரவுத்தளங்கள், மேலும் பல உள்ளடங்கும்."</string>
@@ -113,11 +130,4 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"கார்டுகளும் முகவரிகளும் Banana Browserமிலிருந்தும் %1$s எனும் உங்கள் Google கணக்கிலிருந்தும் பெறப்பட்டவையாகும். BEGIN_LINKஅமைப்புகளில்END_LINK அவற்றை நிர்வகிக்கலாம்."</string>
 <string name="payments_card_and_address_settings_signed_out">"கார்டுகளும் முகவரிகளும் Banana Browser இலிருந்து பெறப்பட்டவையாகும். BEGIN_LINKஅமைப்புகளில்END_LINK அவற்றை நிர்வகிக்கலாம்."</string>
-<string name="android_permission_off">"&lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; Banana Browserக்கான அனுமதியை இயக்கவும்."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; Banana Browserக்கான அனுமதிகளை இயக்கவும்."</string>
-<string name="android_ar_camera_permission_off">"ARரைப் பயன்படுத்த Banana Browserமை அனுமதிப்பதற்கு, &lt;link&gt;Android அமைப்புகளில்&lt;/link&gt; கேமராவையும் இயக்கவும்."</string>
-<string name="android_camera_permission_off">"உங்கள் கேமராவை அணுக Banana Browserமை அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; கேமராவை இயக்கவும்."</string>
-<string name="android_location_permission_off">"Banana Browser உங்கள் இருப்பிடத் தகவலை அணுக அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; இருப்பிடத்தை இயக்கவும்."</string>
-<string name="android_microphone_permission_off">"Banana Browser உங்கள் மைக்ரோஃபோனை அணுக அனுமதிப்பதற்கு &lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; மைக்ரோஃபோனை இயக்கவும்."</string>
-<string name="android_notifications_permission_off">"Banana Browser உங்களுக்கு அறிவிப்புகளை அனுப்ப அனுமதிப்பதற்கு&lt;link&gt;Android அமைப்புகளிலும்&lt;/link&gt; அறிவிப்புகளை இயக்கவும்."</string>
 </resources>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Hech qanday parol saqlanmagan. Banana Browser faqat saqlangan parollaringizni tekshira oladi."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser parollaringizni tekshira olmadi. Internet aloqasini tekshiring."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser ayrim parollarni tekshira olmadi. Ertaga qayta urining."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser ayrim parollarni tekshira olmadi. Ertaga qaytadan urining yoki &lt;link&gt;Google hisobingizdagi parollarni tekshiring&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Google hisobingizga kirsangiz, Banana Browser parollaringizni tekshira oladi."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser parollaringizni tekshira olmadi. Qayta urining."</string>
+<string name="password_check_status_subtitle_no_findings">"Google hisobingizga kirsangiz, Banana Browser oshkor qilingan parollar haqida xabar qiladi."</string>
 <string name="sign_in_to_chrome">"Banana Browser hisobiga kirish"</string>
 <string name="sync_switch_title">"Banana Browser axborotini sinxronlash"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser funksiyalari va unumdorligini yaxshilashga yordam bering"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Tanlangan ma’lumotlar Banana Browser va sinxronlangan qurilmalardan o‘chirildi.
 
 Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va boshqa internetdagi faoliyatingizni &lt;link&gt;myactivity.google.com&lt;/link&gt; sahifasi orqali ko‘rishingiz mumkin."</string>
-<string name="safety_check_description">"Banana Browser sozlamalaringiz himoyasini tekshira oladi:"</string>
-<string name="safety_check_safe_browsing_disabled">"Saytlarni xavfsiz kezish yoniq emas. Banana Browser uni yoqishingizni tavsiya qiladi."</string>
-<string name="safety_check_passwords_no_passwords">"Hech qanday parol saqlanmagan. Banana Browser faqat saqlangan parollaringizni tekshira oladi."</string>
+<string name="safety_check_description">"Banana Browser maʼlumotlaringizni axborotlar sizib chiqishi va xavfsizlikka oid boshqa muammolardan himoyalaydi"</string>
+<string name="safety_check_passwords_error">"Banana Browser parollaringizni tekshira olmadi"</string>
+<string name="safety_check_passwords_error_offline">"Oflayn. Banana Browser parollaringizni tekshira olmadi."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser barcha parollarni tekshira olmadi."</string>
+<string name="safety_check_updates_updated">"Banana Browser eng oxirgi versiyada"</string>
+<string name="safety_check_updates_outdated">"Banana Browser versiyasi eskirdi"</string>
+<string name="safety_check_updates_offline">"Oflayn. Banana Browser yangilanishlar chiqqanini tekshira olmadi."</string>
+<string name="safety_check_updates_error">"Banana Browser yangilanishlar chiqqanini tekshira olmadi"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Hisobingizga kirganingizda Banana Browser va boshqa Google ilovalaridan xavfsiz foydalanishingizni taʼminlaydi."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"URL manzillar Banana Browser bilgan zararli saytlar roʻyxati orqali tekshiriladi. Agar sayt parolingizni oʻgirlashga urinsa yoki zararli fayl yuklab olsangiz, Banana Browser ham URL manzillar kabi sahifa elementlarini Saytlarni xavfsiz kezish tizimiga yuborishi mumkin."</string>
+<string name="languages_set_application_language_prompt">"Banana Browser tili sifatida ishlatish"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite rejimida Banana Browser sahifalarni tezroq yuklaydi va 60 foizgacha trafik tejaydi."</string>
 <string name="data_reduction_description_lite_mode">"Lite rejimi yoniqligida, Banana Browser sahifalarni tezroq yuklash uchun Google serverlaridan foydalanadi. Lite rejimi eng asosiy kontentni yuklash uchun eng sekin sahifalarni qaytadan yozib chiqadi. Lite rejimi inkognito sahifalarda ishlamaydi."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite rejimda Banana Browser sahifalarni tezroq yuklaydi va trafikni tejaydi (60% gacha). Siz kirgan saytlarni optimallashtirish uchun Banana Browser Googlega trafik axborotini yuboradi. &lt;link&gt;Batafsil&lt;/link&gt;"</string>
@@ -54,6 +69,8 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ilovasi Banana Browser ichida ochiladi. Davom etish bilan siz &lt;LINK1&gt;Google xizmat shartlari&lt;/LINK1&gt; bilan &lt;LINK2&gt;Google Banana Browser va Banana Browser OS qoʻshimcha xizmat shartlariga&lt;/LINK2&gt; rozilik bildirgan hisoblanasiz. &lt;LINK3&gt;Family Link bilan boshqariladigan Google hisoblari uchun Maxfiylik eslatmasi&lt;/LINK3&gt; ham tatbiq qilinadi."</string>
 <string name="fre_send_report_check">"Google’ga foydalanish statistikasi va ishdan chiqish hisobotlarini jo‘natish orqali Banana Browser’ning takomillashtirishga yordam bering"</string>
 <string name="fre_welcome">"Banana Browser brauzeriga xush kelibsiz!"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Google hisobingizga kirasiz\n(bunda Banana Browser Sync ishga tushmaydi)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser axborotlaringizni tekshira olmadi"</string>
 <string name="external_app_restricted_access_error">"So‘ralgan manbadan foydalanish uchun Banana Browser brauzeriga ruxsat berilmagan."</string>
 <string name="menu_update">"Banana Browser‘ni yangilash"</string>
 <string name="menu_update_unsupported">"Banana Browser yangilanmadi"</string>
@@ -63,7 +80,7 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="chrome_survey_prompt">"Banana Browser brauzerini yaxshilashga yordam bering. &lt;LINK&gt;So‘rovnomada qatnashing.&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser yangilanmadi. Boshqa sozlamalar"</string>
 <string name="unsupported_number_of_windows">"Bir nechta Banana Browser versiyalari birdaniga ishlamaydi."</string>
-<string name="storage_management_unimportant_site_data_description">"Banana Browser muhim emas deb hisoblaydigan sayt xotirasi (masalan, saqlanmaydigan yoki kam kiriladigan saytlar)"</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browser muhim deb hisoblamaydigan saqlangan maʼlumotlar (masalan, saqlanish xususiyatga ega boʻlmagan va kam kiriladigan saytlar)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Banana Browser muhim emas deb hisoblaydigan cookie-fayllar, kesh va boshqa sayt ma’lumotlari o‘chiriladi."</string>
 <string name="storage_management_all_storage_description">"Banana Browser foydalanadigan barcha ma’lumotlar: hisoblar, xatcho‘plar va saqlangan sozlamalar"</string>
 <string name="storage_management_reset_app_dialog_text">"Barcha Banana Browser ilovalari ma’lumotlari o‘chiriladi. Bularga barcha fayllar, sozlamalar, hisoblar va ma’lumotlar bazasi kiradi."</string>
@@ -112,11 +129,4 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Google hisobi (%1$s), Banana Browser brauzerida saqlangan karta va manzillar. Siz ularni BEGIN_LINKSozlamalarEND_LINK orqali boshqarishingiz mumkin."</string>
 <string name="payments_card_and_address_settings_signed_out">"Banana Browser brauzerida saqlangan karta va manzillar. Siz ularni BEGIN_LINKSozlamalarEND_LINK orqali boshqarishingiz mumkin."</string>
-<string name="android_permission_off">"&lt;link&gt;Android sozlamalaridan&lt;/link&gt; Banana Browser uchun ruxsatnomani yoqing."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android sozlamalaridan&lt;/link&gt; Banana Browser uchun ruxsatnomalarni yoqing."</string>
-<string name="android_ar_camera_permission_off">"Banana Browser AR ishlatishi uchun &lt;link&gt;Android Sozlamalar&lt;/link&gt; orqali kamerani yoqing."</string>
-<string name="android_camera_permission_off">"Banana Browser kameradan foydalanishiga ruxsat berish uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali kamerani yoqing."</string>
-<string name="android_location_permission_off">"Banana Browser joylashuvingizni aniqlay olishi uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali Joylashuvni aniqlash xizmatini yoqing."</string>
-<string name="android_microphone_permission_off">"Banana Browser mikrofondan foydalanishiga ruxsat berish uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali mikrofonni yoqing."</string>
-<string name="android_notifications_permission_off">"Banana Browser sizga bildirishnomalar yuborishi uchun &lt;link&gt;Android sozlamalari&lt;/link&gt; orqali bildirishnomalarni yoqing."</string>
 </resources>

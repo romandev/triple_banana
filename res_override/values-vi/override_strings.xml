@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Bạn chưa lưu mật khẩu nào. Banana Browser có thể kiểm tra các mật khẩu của bạn khi bạn lưu các mật khẩu đó."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser không thể kiểm tra mật khẩu của bạn. Hãy thử kiểm tra kết nối Internet."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser không thể kiểm tra một số mật khẩu. Hãy thử lại vào ngày mai."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser không thể kiểm tra một số mật khẩu. Hãy thử lại vào ngày mai hoặc &lt;link&gt;kiểm tra các mật khẩu trong Tài khoản Google của bạn&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser có thể kiểm tra mật khẩu khi bạn đăng nhập bằng Tài khoản Google của mình."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser không thể kiểm tra mật khẩu của bạn. Hãy thử lại."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser sẽ thông báo cho bạn khi bạn đăng nhập bằng mật khẩu bị lộ."</string>
 <string name="sign_in_to_chrome">"Đăng nhập vào Banana Browser"</string>
 <string name="sync_switch_title">"Đồng bộ hóa dữ liệu của bạn trên Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Giúp cải thiện hiệu suất và các tính năng của Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Dữ liệu được chọn đã bị xóa khỏi Banana Browser và các thiết bị đã đồng bộ hóa của bạn.
 
 Tài khoản Google của bạn có thể có các dạng lịch sử duyệt web khác, chẳng hạn như tìm kiếm và hoạt động từ các dịch vụ khác của Google tại &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser có thể kiểm tra xem các tùy chọn cài đặt có đang bảo vệ bạn thông qua:"</string>
-<string name="safety_check_safe_browsing_disabled">"Tính năng Duyệt web an toàn đang tắt. Bạn nên bật tính năng này trên Banana Browser."</string>
-<string name="safety_check_passwords_no_passwords">"Bạn chưa lưu mật khẩu nào. Banana Browser có thể kiểm tra các mật khẩu của bạn khi bạn lưu các mật khẩu đó."</string>
+<string name="safety_check_description">"Banana Browser có thể bảo vệ bạn trước các sự cố rò rỉ dữ liệu, trang web không an toàn và những vấn đề khác"</string>
+<string name="safety_check_passwords_error">"Banana Browser không thể kiểm tra mật khẩu của bạn"</string>
+<string name="safety_check_passwords_error_offline">"Không có kết nối mạng. Banana Browser không thể kiểm tra mật khẩu của bạn."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser không thể kiểm tra một số mật khẩu"</string>
+<string name="safety_check_updates_updated">"Banana Browser đã được cập nhật"</string>
+<string name="safety_check_updates_outdated">"Banana Browser đã lỗi thời"</string>
+<string name="safety_check_updates_offline">"Không có kết nối mạng. Banana Browser không thể kiểm tra các bản cập nhật."</string>
+<string name="safety_check_updates_error">"Banana Browser không thể kiểm tra các bản cập nhật"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Giúp bạn an toàn trên Banana Browser và có thể dùng để tăng cường bảo mật cho bạn trong các ứng dụng khác của Google sau khi đăng nhập."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Kiểm tra đối chiếu các URL với danh sách trang web không an toàn được lưu trữ trong Banana Browser. Nếu một trang web cố ăn cắp mật khẩu của bạn hoặc nếu bạn tải một tệp gây hại xuống, Banana Browser cũng có thể gửi các URL, bao gồm cả các đoạn nội dung trên trang, đến tính năng Duyệt web an toàn."</string>
+<string name="languages_set_application_language_prompt">"Dùng làm ngôn ngữ của Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60 phần trăm."</string>
 <string name="data_reduction_description_lite_mode">"Khi bạn bật Chế độ thu gọn, Banana Browser sẽ sử dụng máy chủ của Google để tải trang nhanh hơn. Chế độ thu gọn sẽ ghi lại các trang tốc độ rất chậm để chỉ tải nội dung cần thiết. Chế độ thu gọn không áp dụng cho Thẻ ẩn danh."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60%. Để tối ưu hóa các trang bạn truy cập, Banana Browser sẽ gửi lưu lượng truy cập web của bạn cho Google. &lt;link&gt;Tìm hiểu thêm&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sẽ mở trong Banana Browser. Bằng việc tiếp tục, bạn đồng ý với &lt;LINK1&gt;Điều khoản dịch vụ của Google&lt;/LINK1&gt; cũng như &lt;LINK2&gt;Điều khoản dịch vụ bổ sung của Google Banana Browser và Banana Browser OS&lt;/LINK2&gt;. Bạn sẽ phải tuân thủ cả &lt;LINK3&gt;Thông báo về quyền riêng tư cho Tài khoản Google được quản lý bằng Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Giúp cải thiện Banana Browser bằng cách gửi số liệu thống kê sử dụng và báo cáo sự cố cho Google."</string>
 <string name="fre_welcome">"Chào mừng bạn đến với Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Bạn sẽ đăng nhập bằng Tài khoản Google của mình\n(thao tác này sẽ không bật Banana Browser Sync)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser không thể xác minh thông tin của bạn"</string>
 <string name="external_app_restricted_access_error">"Banana Browser không có quyền truy cập vào tài nguyên đã yêu cầu."</string>
 <string name="menu_update">"Cập nhật Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser không thể cập nhật"</string>
@@ -64,7 +81,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="chrome_survey_prompt">"Hãy giúp cải tiến Banana Browser. &lt;LINK&gt;Tham gia khảo sát&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser không thể cập nhật. Tùy chọn khác"</string>
 <string name="unsupported_number_of_windows">"Số phiên bản Banana Browser không được hỗ trợ."</string>
-<string name="storage_management_unimportant_site_data_description">"Bộ nhớ trang web mà Banana Browser cho rằng không quan trọng (ví dụ: những trang web không có cài đặt đã lưu nào hoặc trang web mà bạn không truy cập thường xuyên)"</string>
+<string name="storage_management_unimportant_site_data_description">"Dữ liệu lưu trữ mà Banana Browser cho là không quan trọng (ví dụ: những trang web không được lưu tùy chọn cài đặt hoặc những trang web mà bạn không truy cập thường xuyên)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Thao tác này sẽ xóa cookie, bộ nhớ đệm và các dữ liệu khác của các trang web mà Banana Browser cho rằng không quan trọng."</string>
 <string name="storage_management_all_storage_description">"Tổng số dữ liệu mà Banana Browser sử dụng, bao gồm tài khoản, dấu trang và cài đặt đã lưu"</string>
 <string name="storage_management_reset_app_dialog_text">"Tất cả dữ liệu của ứng dụng Banana Browser sẽ bị xóa vĩnh viễn, bao gồm tất cả các tệp, các tùy chọn cài đặt, tài khoản, cơ sở dữ liệu, v.v."</string>
@@ -112,11 +129,4 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Thẻ và địa chỉ từ Banana Browser và Tài khoản Google của bạn (%1$s). Bạn có thể quản lý thẻ và địa chỉ trong BEGIN_LINKCài đặtEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Thẻ và địa chỉ từ Banana Browser. Bạn có thể quản lý thẻ và địa chỉ trong BEGIN_LINKCài đặtEND_LINK."</string>
-<string name="android_permission_off">"Bật quyền cho Banana Browser trong &lt;link&gt;Cài đặt Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Bật quyền cho Banana Browser trong &lt;link&gt;Cài đặt Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Để cho phép Banana Browser sử dụng công nghệ thực tế tăng cường (AR), hãy bật cả máy ảnh trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Để cho phép Banana Browser truy cập vào máy ảnh của bạn, hãy bật cả máy ảnh trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Để cho phép Banana Browser truy cập vào vị trí của bạn, hãy bật cả vị trí trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Để cho phép Banana Browser truy cập vào micrô của bạn, hãy bật cả micrô trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Để Banana Browser có thể gửi cho bạn thông báo, hãy bật cả thông báo trong phần &lt;link&gt;Cài đặt của Android&lt;/link&gt;."</string>
 </resources>

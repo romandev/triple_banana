@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"ไม่มีรหัสผ่านที่บันทึกไว้ Banana Browser จะตรวจสอบรหัสผ่านได้เมื่อคุณบันทึกรหัสผ่านไว้"</string>
+<string name="password_check_status_message_error_offline">"Banana Browser ตรวจสอบรหัสผ่านของคุณไม่ได้ โปรดลองตรวจสอบการเชื่อมต่ออินเทอร์เน็ต"</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser ตรวจสอบรหัสผ่านได้ไม่ครบทั้งหมด โปรดลองอีกครั้งในวันพรุ่งนี้"</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser ตรวจสอบรหัสผ่านได้ไม่ครบทั้งหมด โปรดลองอีกครั้งพรุ่งนี้ หรือ&lt;link&gt;ตรวจสอบรหัสผ่านในบัญชี Google&lt;/link&gt;"</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser จะตรวจสอบรหัสผ่านได้เมื่อคุณลงชื่อเข้าใช้ด้วยบัญชี Google"</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser ตรวจสอบรหัสผ่านของคุณไม่ได้ ลองใหม่"</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser จะแจ้งให้ทราบเมื่อคุณลงชื่อเข้าใช้ด้วยรหัสผ่านที่ถูกละเมิด"</string>
 <string name="sign_in_to_chrome">"ลงชื่อเข้าใช้ Banana Browser"</string>
 <string name="sync_switch_title">"ซิงค์ข้อมูล Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"ช่วยปรับปรุงฟีเจอร์และประสิทธิภาพของ Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"ระบบได้นำข้อมูลที่เลือกออกจาก Banana Browser และอุปกรณ์ที่ซิงค์แล้ว
 
 บัญชี Google ของคุณอาจมีประวัติการท่องเว็บในรูปแบบอื่นๆ เช่น การค้นหาและกิจกรรมจากบริการอื่นๆ ของ Google ที่ &lt;link&gt;myactivity.google.com&lt;/link&gt;"</string>
-<string name="safety_check_description">"Banana Browser ตรวจสอบได้ว่าการตั้งค่าต่างๆ ปกป้องคุณอยู่หรือไม่จากรายการต่อไปนี้"</string>
-<string name="safety_check_safe_browsing_disabled">"Google Safe Browsing ปิดอยู่ Banana Browser ขอแนะนำให้เปิด"</string>
-<string name="safety_check_passwords_no_passwords">"ไม่มีรหัสผ่านที่บันทึกไว้ Banana Browser จะตรวจสอบรหัสผ่านได้เมื่อคุณบันทึกรหัสผ่านไว้"</string>
+<string name="safety_check_description">"Banana Browser ช่วยให้คุณปลอดภัยจากการละเมิดข้อมูล เว็บไซต์ที่ไม่ปลอดภัย และอื่นๆ ได้"</string>
+<string name="safety_check_passwords_error">"Banana Browser ตรวจสอบรหัสผ่านของคุณไม่ได้"</string>
+<string name="safety_check_passwords_error_offline">"ออฟไลน์ Banana Browser ตรวจสอบรหัสผ่านของคุณไม่ได้"</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser ตรวจสอบรหัสผ่านได้ไม่ครบทั้งหมด"</string>
+<string name="safety_check_updates_updated">"Banana Browser เป็นเวอร์ชันล่าสุดแล้ว"</string>
+<string name="safety_check_updates_outdated">"Banana Browser ล้าสมัย"</string>
+<string name="safety_check_updates_offline">"ออฟไลน์ Banana Browser ตรวจหาอัปเดตไม่ได้"</string>
+<string name="safety_check_updates_error">"Banana Browser ตรวจหาอัปเดตไม่ได้"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"รักษาความปลอดภัยของคุณใน Banana Browser และอาจใช้เพื่อปรับปรุงความปลอดภัยในแอปอื่นๆ ของ Google เมื่อลงชื่อเข้าใช้"</string>
+<string name="safe_browsing_standard_protection_bullet_two">"ตรวจสอบ URL กับรายการเว็บไซต์ที่ไม่ปลอดภัยซึ่งจัดเก็บไว้ใน Banana Browser หากเว็บไซต์พยายามขโมยรหัสผ่าน หรือคุณดาวน์โหลดไฟล์ที่เป็นอันตราย Banana Browser อาจส่ง URL รวมถึงเนื้อหาบางส่วนในหน้าไปยัง Google Safe Browsing ด้วย"</string>
+<string name="languages_set_application_language_prompt">"ใช้เป็นภาษาของ Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"ในโหมด Lite เบราว์เซอร์ Banana Browser จะโหลดหน้าเว็บได้เร็วขึ้นและใช้เน็ตน้อยลงสูงสุดถึง 60 เปอร์เซ็นต์"</string>
 <string name="data_reduction_description_lite_mode">"เมื่อเปิดโหมด Lite ไว้ Banana Browser จะใช้เซิร์ฟเวอร์ของ Google เพื่อช่วยให้โหลดหน้าเว็บได้เร็วขึ้น โหมด Lite จะเขียนหน้าเว็บที่ช้ามากขึ้นใหม่เพื่อโหลดเฉพาะเนื้อหาที่จำเป็นเท่านั้น โหมด Lite ไม่มีผลกับแท็บที่ไม่ระบุตัวตน"</string>
 <string name="data_reduction_promo_summary_lite_mode">"ในโหมด Lite เบราว์เซอร์ Banana Browser จะโหลดหน้าเว็บได้เร็วขึ้นและใช้อินเทอร์เน็ตน้อยลงสูงสุดถึง 60 เปอร์เซ็นต์ Banana Browser จะส่งการเข้าชมเว็บของคุณไปให้ Google เพื่อเพิ่มประสิทธิภาพหน้าเว็บที่คุณเข้าชม &lt;link&gt;ดูข้อมูลเพิ่มเติม&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s จะเปิดใน Banana Browser การดำเนินการต่อหมายความว่า คุณยอมรับ&lt;LINK1&gt;ข้อกำหนดในการให้บริการของ Google&lt;/LINK1&gt; และ&lt;LINK2&gt;ข้อกำหนดในการให้บริการเพิ่มเติมของ Google Banana Browser และ Banana Browser OS&lt;/LINK2&gt; &lt;LINK3&gt;ประกาศเกี่ยวกับนโยบายความเป็นส่วนตัวสำหรับบัญชี Google ที่มีการจัดการด้วย Family Link&lt;/LINK3&gt; จะมีผลใช้บังคับด้วย"</string>
 <string name="fre_send_report_check">"ช่วยให้ Banana Browser ทำงานได้ดีขึ้นโดยส่งสถิติการใช้งานและรายงานข้อขัดข้องให้กับ Google"</string>
 <string name="fre_welcome">"ยินดีต้อนรับสู่ Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"คุณจะลงชื่อเข้าใช้ด้วยบัญชี Google\n(การดำเนินการนี้จะไม่เปิดการซิงค์ของ Banana Browser)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser ยืนยันข้อมูลของคุณไม่ได้"</string>
 <string name="external_app_restricted_access_error">"Banana Browser ไม่มีสิทธิ์เข้าถึงทรัพยากรที่ขอ"</string>
 <string name="menu_update">"อัปเดต Banana Browser"</string>
 <string name="menu_update_unsupported">"อัปเดต Banana Browser ไม่ได้"</string>
@@ -64,7 +81,7 @@
 <string name="chrome_survey_prompt">"ช่วยปรับปรุง Banana Browser ด้วยการ&lt;LINK&gt;ตอบแบบสำรวจ&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"อัปเดต Banana Browser ไม่ได้ ตัวเลือกอื่นๆ"</string>
 <string name="unsupported_number_of_windows">"อินสแตนซ์ของ Banana Browser เกินจำนวนที่สนับสนุน"</string>
-<string name="storage_management_unimportant_site_data_description">"พื้นที่เก็บข้อมูลเว็บไซต์ที่ Banana Browser คิดว่าไม่สำคัญ (เช่น เว็บไซต์ที่ไม่มีการตั้งค่าที่บันทึกไว้หรือที่คุณไม่ได้เข้าชมบ่อยครั้ง)"</string>
+<string name="storage_management_unimportant_site_data_description">"ข้อมูลที่จัดเก็บไว้ซึ่ง Banana Browser คิดว่าไม่สำคัญ (เช่น เว็บไซต์ที่ไม่มีการตั้งค่าที่บันทึกไว้หรือที่คุณไม่ค่อยได้เข้าชม)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"การดำเนินการนี้จะล้างคุกกี้ แคช และข้อมูลอื่นๆ ของเว็บไซต์ที่ Banana Browser คิดว่าไม่สำคัญ"</string>
 <string name="storage_management_all_storage_description">"ข้อมูลทั้งหมดที่ Banana Browser ใช้ รวมถึงบัญชี บุ๊กมาร์ก และการตั้งค่าที่บันทึกไว้"</string>
 <string name="storage_management_reset_app_dialog_text">"ระบบจะลบข้อมูลแอปทั้งหมดของ Banana Browser อย่างถาวร ซึ่งรวมถึงไฟล์ทั้งหมด การตั้งค่า บัญชี ฐานข้อมูล และอื่นๆ"</string>
@@ -113,11 +130,4 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"ข้อมูลบัตรและที่อยู่มาจาก Banana Browser และบัญชี Google (%1$s) คุณสามารถจัดการข้อมูลเหล่านี้ในBEGIN_LINKการตั้งค่าEND_LINK"</string>
 <string name="payments_card_and_address_settings_signed_out">"ข้อมูลบัตรและที่อยู่มาจาก Banana Browser คุณสามารถจัดการข้อมูลเหล่านี้ในBEGIN_LINKการตั้งค่าEND_LINK"</string>
-<string name="android_permission_off">"เปิดการใช้สิทธิ์สำหรับ Banana Browser ใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt;"</string>
-<string name="android_permission_off_plural">"เปิดการใช้สิทธิ์สำหรับ Banana Browser ใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt;"</string>
-<string name="android_ar_camera_permission_off">"หากต้องการให้ Banana Browser ใช้ AR ให้เปิดกล้องใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt; ด้วย"</string>
-<string name="android_camera_permission_off">"หากต้องการให้ Banana Browser เข้าถึงกล้องถ่ายรูป ให้เปิดกล้องถ่ายรูปใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt; ด้วย"</string>
-<string name="android_location_permission_off">"หากต้องการให้ Banana Browser เข้าถึงตำแหน่งของคุณ ให้เปิดตำแหน่งใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt; ด้วย"</string>
-<string name="android_microphone_permission_off">"หากต้องการให้ Banana Browser เข้าถึงไมโครโฟน ให้เปิดไมโครโฟนใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt; ด้วย"</string>
-<string name="android_notifications_permission_off">"หากต้องการให้ Banana Browser ส่งการแจ้งเตือนให้คุณ ให้เปิดการแจ้งเตือนใน&lt;link&gt;การตั้งค่า Android&lt;/link&gt; ด้วย"</string>
 </resources>

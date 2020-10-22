@@ -1,18 +1,19 @@
 diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.cc
 --- tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.cc
-@@ -58,6 +58,10 @@
+@@ -59,6 +59,11 @@
  #include "third_party/blink/renderer/platform/heap/heap.h"
  #include "third_party/blink/renderer/platform/instrumentation/use_counter.h"
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +#include "third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h"
++#include "third_party/blink/renderer/core/html/media/html_video_element.h"
 +#endif
 +
  namespace blink {
  
  namespace {
-@@ -510,7 +514,16 @@ Element* Fullscreen::FullscreenElementFrom(Document& document) {
+@@ -521,7 +526,16 @@ Element* Fullscreen::FullscreenElementFrom(Document& document) {
        return element;
    }
  
@@ -29,8 +30,8 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  }
  
  // https://fullscreen.spec.whatwg.org/#fullscreen-element
-@@ -565,6 +578,32 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
-                                             RequestType request_type,
+@@ -576,6 +590,32 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+                                             FullscreenRequestType request_type,
                                              ScriptState* script_state,
                                              ExceptionState* exception_state) {
 +#if defined(ENABLE_TRIPLE_BANANA)
@@ -55,17 +56,17 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
 +
 +ScriptPromise Fullscreen::RequestFullscreen(const FullscreenOptions* options,
 +                                            Element& pending,
-+                                            RequestType request_type,
++                                            FullscreenRequestType request_type,
 +                                            ScriptState* script_state,
 +                                            ExceptionState* exception_state) {
 +#endif
    RequestFullscreenScope scope;
  
    // 1. Let |pending| be the context object.
-@@ -633,6 +672,13 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -647,6 +687,14 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
      LocalFrame& frame = *window.GetFrame();
-     frame.GetChromeClient().EnterFullscreen(frame, options,
-                                             for_cross_process_descendant);
+     frame.GetChromeClient().EnterFullscreen(frame, options, request_type);
+ 
 +#if defined(ENABLE_TRIPLE_BANANA)
 +    if (RuntimeEnabledFeatures::MediaRemoteEnabled() &&
 +        IsA<HTMLVideoElement>(pending)) {
@@ -73,10 +74,11 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
 +          DynamicTo<HTMLVideoElement>(pending));
 +    }
 +#endif
- 
++
      // After the first fullscreen request, the user activation should be
      // consumed, and the following fullscreen requests should receive an error.
-@@ -810,6 +856,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
+     if (!for_cross_process_descendant)
+@@ -835,6 +883,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
      return ScriptPromise();
    }
  
@@ -94,7 +96,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    if (script_state)
      resolver = MakeGarbageCollected<ScriptPromiseResolver>(script_state);
  
-@@ -890,6 +947,12 @@ void Fullscreen::DidExitFullscreen(Document& document) {
+@@ -915,6 +974,12 @@ void Fullscreen::DidExitFullscreen(Document& document) {
      for (const Member<PendingExit>& exit : exits)
        ContinueExitFullscreen(&document, exit, true /* resize */);
    }

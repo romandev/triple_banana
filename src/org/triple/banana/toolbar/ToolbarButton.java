@@ -109,7 +109,7 @@ class ToolbarButton extends LinearLayout implements TintObserver {
     public void setActivityTabProvider(ActivityTabProvider activityTabProvider) {
         mActivityTabTabObserver = new ActivityTabTabObserver(activityTabProvider) {
             @Override
-            protected void onObservingDifferentTab(Tab tab) {
+            protected void onObservingDifferentTab(Tab tab, boolean hint) {
             }
 
             @Override

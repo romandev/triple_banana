@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Hakuna manenosiri yaliyohifadhiwa. Banana Browser inaweza kukagua manenosiri yako unapoyahifadhi."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser imeshindwa kukagua manenosiri yako. Jaribu kuangalia muunganisho wako wa Intaneti."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser imeshindwa kukagua manenosiri yote. Jaribu tena kesho."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser imeshindwa kukagua manenosiri yote. Jaribu tena kesho au &lt;link&gt;ukague manenosiri katika Akaunti yako ya Google&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser inaweza kukagua manenosiri yako unapoingia ukitumia Akaunti yako ya Google."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser imeshindwa kukagua manenosiri yako. Jaribu tena."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser itakuarifu utakapokuwa ukiingia katika akaunti ukitumia nenosiri lililoathiriwa."</string>
 <string name="sign_in_to_chrome">"Ingia katika Banana Browser"</string>
 <string name="sync_switch_title">"Sawazisha data yako kwenye Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Tusaidie tuboreshe utendaji na vipengele vya Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Data uliyochagua imeondolewa kwenye Banana Browser na kwenye vifaa vyako vilivyosawazishwa. 
 
 Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vile mambo uliyotafuta na shughuli kutoka huduma nyingine za Google katika &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser inaweza kuangalia iwapo mipangilio yako inakulinda dhidi ya:"</string>
-<string name="safety_check_safe_browsing_disabled">"Kipengele cha Kuvinjari Salama kimezimwa. Banana Browser inapendekeza ukiwashe."</string>
-<string name="safety_check_passwords_no_passwords">"Hakuna manenosiri yaliyohifadhiwa. Banana Browser inaweza kukagua manenosiri yako unapoyahifadhi."</string>
+<string name="safety_check_description">"Banana Browser inaweza kukusaidia ulinde akaunti yako dhidi ya ufichuzi haramu wa data, tovuti ambazo si salama na zaidi"</string>
+<string name="safety_check_passwords_error">"Banana Browser imeshindwa kukagua manenosiri yako"</string>
+<string name="safety_check_passwords_error_offline">"Nje ya mtandao. Banana Browser imeshindwa kukagua manenosiri yako."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser imeshindwa kukagua manenosiri yote"</string>
+<string name="safety_check_updates_updated">"Banana Browser imesasishwa"</string>
+<string name="safety_check_updates_outdated">"Toleo hili la Banana Browser limepitwa na wakati"</string>
+<string name="safety_check_updates_offline">"Nje ya mtandao. Banana Browser imeshindwa kukagua kama kuna masasisho."</string>
+<string name="safety_check_updates_error">"Banana Browser imeshindwa kukagua kama kuna masasisho"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Hulinda usalama wako kwenye Banana Browser na inaweza kutumiwa kuboresha usalama wako kwenye programu nyingine za Google ukiwa umeingia katika akaunti."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Hukagua URL zilizo na orodha ya tovuti zisizo salama zinazohifadhiwa kwenye Banana Browser. Iwapo tovuti inajaribu kuiba nenosiri lako au unapopakua faili hatari, Banana Browser inaweza pia kutuma URL, ikiwa ni pamoja na sehemu za maudhui ya ukurasa, kwenye kipengele cha Kuvinjari Salama."</string>
+<string name="languages_set_application_language_prompt">"Tumia kama lugha ya Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Katika Hali nyepesi, Banana Browser hupakia kurasa haraka zaidi na huokoa data kwa hadi asilimia 60."</string>
 <string name="data_reduction_description_lite_mode">"Wakati umewasha Hali nyepesi, Banana Browser hutumia seva za Google kupakia kurasa haraka. Hali nyepesi hubadilisha kurasa zinazopakia polepole ili zipakie maudhui muhimu pekee. Hali nyepesi haitumiki kwenye vichupo katika hali Fiche."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Katika Hali Nyepesi, Banana Browser hupakia kurasa haraka zaidi na huokoa hadi asilimia 60 ya data. Ili kuboresha kurasa unazotembelea, Banana Browser hutumia Google data ya tovuti unazotembelea. &lt;link&gt;Pata maelezo zaidi&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s itafunguka kwenye Banana Browser. Kwa kuendelea, unakubali &lt;LINK1&gt;Sheria na Masharti ya Google&lt;/LINK1&gt; na &lt;LINK2&gt;Sheria na Masharti ya Ziada ya Google Banana Browser na Mfumo wa Uendeshaji wa Banana Browser&lt;/LINK2&gt;. &lt;LINK3&gt;Ilani ya Faragha ya Akaunti za Google Zinazodhibitiwa na Family Link&lt;/LINK3&gt; inatumika pia."</string>
 <string name="fre_send_report_check">"Saidia kuboresha Banana Browser kwa kutumia Google takwimu za matumizi na ripoti wakati wowote kivinjari hiki kinapoacha kufanya kazi."</string>
 <string name="fre_welcome">"Karibu kwenye Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Utaingia kwa kutumia Akaunti yako ya Google\n(hatua hii haitawasha mipangilio ya Usawazishaji wa Banana Browser)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser imeshindwa kuthibitisha maelezo yako"</string>
 <string name="external_app_restricted_access_error">"Banana Browser haina idhini ya kufikia rasilimali uliyoomba."</string>
 <string name="menu_update">"Sasisha Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser haiwezi kusasisha"</string>
@@ -64,7 +81,7 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="chrome_survey_prompt">"Tusaidie kuboresha Banana Browser.&lt;LINK&gt;Shiriki katika utafiti&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser haiwezi kusasisha. Chaguo zaidi"</string>
 <string name="unsupported_number_of_windows">"Idadi ya matukio ya Banana Browser isiyoweza kutumika."</string>
-<string name="storage_management_unimportant_site_data_description">"Hifadhi ya tovuti ambayo Banana Browser haidhani ni muhimu (k.m. tovuti ambazo hazina mipangilio iliyohifadhiwa au ambazo hutembelei sana)"</string>
+<string name="storage_management_unimportant_site_data_description">"Data iliyohifadhiwa ambayo Banana Browser haioni kuwa ni muhimu (k.m. tovuti ambazo hazina mipangilio iliyohifadhiwa au ambazo hutembelei sana)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Hatua hii itafuta vidakuzi, akiba na data nyingine ya tovuti ambazo Banana Browser haidhani kuwa muhimu."</string>
 <string name="storage_management_all_storage_description">"Jumla ya data iliyotumiwa na Banana Browser, ikiwa ni pamoja na akaunti, alamisho na mipangilio iliyohifadhiwa"</string>
 <string name="storage_management_reset_app_dialog_text">"Data yote ya programu ya Banana Browser itafutwa kabisa. Hii ni pamoja na faili, mipangilio, akaunti, hifadhidata zote, n.k."</string>
@@ -113,10 +130,4 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kadi na anwani zinatoka Banana Browser na Akaunti yako ya Google (%1$s). Unaweza kuzidhibiti katika BEGIN_LINKMipangilioEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kadi na anwani zinatoka Banana Browser. Unaweza kuzidhibiti kwenye BEGIN_LINKMipangilioEND_LINK."</string>
-<string name="android_permission_off">"Washa ruhusa ya Banana Browser katika &lt;link&gt;Mipangilio ya Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Washa ruhusa za Banana Browser katika &lt;link&gt;Mipangilio ya Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Ili uruhusu Banana Browser ifikie kamera yako, washa kamera pia katika &lt;link&gt;Mipangilio ya Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Ili uruhusu Banana Browser kufikia mahali ulipo, washa pia huduma ya mahali katika &lt;link&gt;Mipangilio ya Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Ili uruhusu Banana Browser ifikie maikrofoni yako, washa maikrofoni pia katika &lt;link&gt;Mipangilio ya Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Ili uruhusu Banana Browser ikutumie arifa, washa arifa pia katika &lt;link&gt;Mipangilio ya Android&lt;/link&gt;."</string>
 </resources>

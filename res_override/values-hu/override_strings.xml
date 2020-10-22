@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Nincsenek mentett jelszavak. A Banana Browser képes a jelszavak ellenőrzésére, amikor Ön menti őket."</string>
+<string name="password_check_status_message_error_offline">"A Banana Browser nem tudja ellenőrizni a jelszavakat. Ellenőrizze az internetkapcsolatot."</string>
+<string name="password_check_status_message_error_quota_limit">"A Banana Browser nem tudta ellenőrizni az összes jelszót. Próbálja újra holnap."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"A Banana Browser nem tudta ellenőrizni az összes jelszót. Próbálja újra holnap, vagy &lt;link&gt;ellenőrizze jelszavait a Google-fiókjában&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"A Banana Browser ellenőrizni tudja a mentett jelszavakat, ha Ön bejelentkezik Google-fiókjával."</string>
+<string name="password_check_status_message_error_unknown">"A Banana Browser nem tudja ellenőrizni a jelszavait. Próbálja újra."</string>
+<string name="password_check_status_subtitle_no_findings">"A Banana Browser figyelmezteti Önt, amikor olyan jelszóval jelentkezik be, amelyhez illetéktelenül hozzáfértek."</string>
 <string name="sign_in_to_chrome">"Bejelentkezés a Banana Browser-ba"</string>
 <string name="sync_switch_title">"Banana Browser-adatok szinkronizálása"</string>
 <string name="usage_and_crash_reports_title">"Hozzájárulás a Banana Browser funkcióinak és teljesítményének javításához"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"A kiválasztott adatok el lettek távolítva a Banana Browser-ból és a szinkronizált eszközökről.
 
 Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/link&gt; címen) még szerepelnek a böngészési előzmények egyéb formái, így például a keresések és egyéb tevékenységek más Google-szolgáltatásokból."</string>
-<string name="safety_check_description">"A Banana Browser ellenőrizheti, hogy az Ön beállításai rendelkeznek-e a következő védelmekkel:"</string>
-<string name="safety_check_safe_browsing_disabled">"A Biztonságos Böngészés ki van kapcsolva. A Banana Browser a szolgáltatás bekapcsolását javasolja."</string>
-<string name="safety_check_passwords_no_passwords">"Nincsenek mentett jelszavak. A Banana Browser képes a jelszavak ellenőrzésére, amikor Ön menti őket."</string>
+<string name="safety_check_description">"A Banana Browser segíthet az adatvédelmi incidensek, a nem biztonságos webhelyek és egyebek elleni védekezésben"</string>
+<string name="safety_check_passwords_error">"A Banana Browser nem tudja ellenőrizni a jelszavakat"</string>
+<string name="safety_check_passwords_error_offline">"Offline. A Banana Browser nem tudja ellenőrizni a jelszavakat."</string>
+<string name="safety_check_passwords_error_quota_limit">"A Banana Browser nem tudta ellenőrizni az összes jelszót"</string>
+<string name="safety_check_updates_updated">"A Banana Browser naprakész"</string>
+<string name="safety_check_updates_outdated">"A Banana Browser elavult"</string>
+<string name="safety_check_updates_offline">"Offline. A Banana Browser nem tud frissítéseket keresni."</string>
+<string name="safety_check_updates_error">"A Banana Browser nem tud frissítéseket keresni"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Gondoskodik a biztonságáról a Banana Browser-ban, és használható a biztonság növelésére más Google-alkalmazásokban olyankor, amikor Ön be van jelentkezve."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Ellenőrzi az URL-eket a Banana Browser-ban a nem biztonságos webhelyekről tárolt lista alapján. Ha egy webhely megpróbálja ellopni az Ön jelszavát, illetve ha Ön ártalmas fájlt tölt le, akkor a Banana Browser elküldheti az URL-eket is (az oldaltartalmak részleteivel együtt) a Biztonságos Böngészésnek."</string>
+<string name="languages_set_application_language_prompt">"Használat a Banana Browser nyelveként"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite módban a Banana Browser gyorsabban betölti az oldalakat, és akár 60 százalékkal kisebb adatforgalmat generál."</string>
 <string name="data_reduction_description_lite_mode">"Amikor be van kapcsolva az Egyszerűsített mód, a Banana Browser a Google szervereit használja az oldalak felgyorsítására. Az Egyszerűsített mód átírja a nagyon lassú oldalakat, hogy csak a fontos tartalmakat töltsék be. Az Egyszerűsített mód nem használható inkognitó lapokon."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite módban a Banana Browser gyorsabban betölti az oldalakat, és akár 60 százalékkal kisebb adatforgalmat generál. A felkeresett oldalak optimalizálása érdekében a Banana Browser elküldi az internetes forgalmát a Google-nak. &lt;link&gt;További információ&lt;/link&gt;."</string>
@@ -55,6 +70,8 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"A(z) %1$s a Banana Browser-ban fog megnyílni. A továbblépéssel elfogadja a &lt;LINK1&gt;Google Általános Szerződési Feltételeket&lt;/LINK1&gt;, valamint &lt;LINK2&gt;A Google Banana Browser és a Banana Browser OS Kiegészítő Általános Szerződési Feltételeit&lt;/LINK2&gt;. A &lt;LINK3&gt;Family Link szolgáltatással kezelt Google-fiókokra vonatkozó adatvédelmi közlemény&lt;/LINK3&gt; is érvényben van."</string>
 <string name="fre_send_report_check">"Használati statisztikák és hibajelentések küldésével segíthet a Google-nak a Banana Browser fejlesztésében."</string>
 <string name="fre_welcome">"A Banana Browser üdvözli Önt!"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"A rendszer bejelentkezteti majd a Google-fiókjába\n(ez nem kapcsolja be a Banana Browser-szinkronizálást)"</string>
+<string name="signin_account_picker_general_error_subtitle">"A Banana Browser nem tudta ellenőrizni az Ön adatait"</string>
 <string name="external_app_restricted_access_error">"A Banana Browser nem fér hozzá a kért forráshoz."</string>
 <string name="menu_update">"A Banana Browser böngésző frissítése"</string>
 <string name="menu_update_unsupported">"A Banana Browser nem frissíthető"</string>
@@ -64,7 +81,7 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
 <string name="chrome_survey_prompt">"Segítsen a Banana Browser fejlesztésében. &lt;LINK&gt;Töltse ki ezt a felmérést.&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"A Banana Browser frissítése nem lehetséges. További lehetőségek"</string>
 <string name="unsupported_number_of_windows">"Ilyen sok Banana Browser-példány nem futhat egyszerre."</string>
-<string name="storage_management_unimportant_site_data_description">"A Banana Browser által nem fontosnak ítélt webhelytárhely (például a mentett beállítások nélküli vagy ritkán megnyitott webhelyek)"</string>
+<string name="storage_management_unimportant_site_data_description">"A Banana Browser által nem fontosnak ítélt tárolt adatok (például a mentett beállítások nélküli vagy ritkán megnyitott webhelyek)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Ezzel törli a cookie-kat, a gyorsítótárat, valamint a webhelyek összes olyan adatát, amelyről a Banana Browser úgy véli, hogy nem fontos."</string>
 <string name="storage_management_all_storage_description">"A Banana Browser által használt teljes adatmennyiség, beleértve a fiókokat, könyvjelzőket és mentett beállításokat is"</string>
 <string name="storage_management_reset_app_dialog_text">"A Banana Browser összes alkalmazásadata véglegesen törlődik, beleértve a fájlokat, beállításokat, fiókokat, adatbázisokat stb."</string>
@@ -113,11 +130,4 @@ Előfordulhat, hogy Google-fiókjában (a &lt;link&gt;myactivity.google.com&lt;/
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"A kártyák és a címek a Banana Browser-ból és az Ön Google-fiókjából (%1$s) származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
 <string name="payments_card_and_address_settings_signed_out">"A kártyák és a címek a Banana Browser-ból származnak. A BEGIN_LINKBeállításokbanEND_LINK kezelheti őket."</string>
-<string name="android_permission_off">"A Banana Browser-ra vonatkozó engedélyt az &lt;link&gt;Android beállításaiban&lt;/link&gt; lehet aktiválni."</string>
-<string name="android_permission_off_plural">"A Banana Browser-ra vonatkozó engedélyek aktiválása az &lt;link&gt;Android beállításaiban&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Ahhoz, hogy a Banana Browser használhassa az AR-t, kapcsolja be a kamerát is az &lt;link&gt;Android-beállítások&lt;/link&gt; között."</string>
-<string name="android_camera_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a kamerához, a kamerát az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
-<string name="android_location_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a helyadatokhoz, a helyadatokat az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
-<string name="android_microphone_permission_off">"Ahhoz, hogy a Banana Browser hozzáférhessen a mikrofonhoz, a mikrofont az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
-<string name="android_notifications_permission_off">"Ahhoz, hogy a Banana Browser értesítéseket küldhessen, az értesítéseket az &lt;link&gt;Android-beállítások&lt;/link&gt; között is be kell kapcsolni."</string>
 </resources>

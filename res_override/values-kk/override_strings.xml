@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Ешқандай құпия сөз сақталмаған. Құпия сөздер сақталған кезде, Banana Browser оларды тексере алады."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser сіздің құпия сөздеріңізді тексере алмайды. Интернет байланысын тексеріп көріңіз."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser барлық құпия сөзді тексере алмады. Ертең қайталап көріңіз."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser барлық құпия сөзді тексере алмады. Ертең қайталаңыз немесе &lt;link&gt;Google есептік жазбаңыздың құпия сөздерін тексеріңіз&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Google есептік жазбаңызбен кіргенде, Banana Browser сіздің құпия сөздеріңізді тексере алады."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser сіздің құпия сөздеріңізді тексере алмайды. Қайталап көріңіз."</string>
+<string name="password_check_status_subtitle_no_findings">"Ұрланған құпия сөзбен кірген кезде, Banana Browser сізге хабарлайды."</string>
 <string name="sign_in_to_chrome">"Banana Browser жүйесіне кіру"</string>
 <string name="sync_switch_title">"Banana Browser деректеріңізді синхрондау"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser мүмкіндіктері мен жұмысын жақсартуға көмектесу"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Таңдалған деректер Banana Browser жүйесінен және синхрондалған құрылғылардан өшірілген.
 
 Google есептік жазбасының шолу тарихы басқа Google қызметтеріндегі іздеулер мен әрекеттер тізімі түрінде де болуы мүмкін, оларды &lt;link&gt;history.google.com&lt;/link&gt;бетінен табуға болады."</string>
-<string name="safety_check_description">"Banana Browser браузері параметрлердің келесілерден қорғайтынын тексере алады:"</string>
-<string name="safety_check_safe_browsing_disabled">"\"Қауіпсіз шолу\" функциясы өшірулі. Banana Browser браузері оны қосуды ұсынады."</string>
-<string name="safety_check_passwords_no_passwords">"Ешқандай құпия сөз сақталмаған. Құпия сөздер сақталған кезде, Banana Browser оларды тексере алады."</string>
+<string name="safety_check_description">"Banana Browser деректердің қолды болуынан, қауіпті веб-сайттардан және басқа зиянды нәрселерден қорғайды."</string>
+<string name="safety_check_passwords_error">"Banana Browser сіздің құпия сөздеріңізді тексере алмайды."</string>
+<string name="safety_check_passwords_error_offline">"Желіден тыс. Banana Browser сіздің құпия сөздеріңізді тексере алмайды."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser барлық құпия сөзді тексере алмады."</string>
+<string name="safety_check_updates_updated">"Banana Browser жаңартылған."</string>
+<string name="safety_check_updates_outdated">"Banana Browser ескірген"</string>
+<string name="safety_check_updates_offline">"Желіден тыс. Banana Browser жаңа нұсқалардың бар-жоғын тексере алмайды."</string>
+<string name="safety_check_updates_error">"Banana Browser жаңа нұсқалардың бар-жоғын тексере алмайды."</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Есептік жазбаға кірген болсаңыз, сізді Banana Browser браузерінде қорғайды және басқа Google қолданбаларында қауіпсіздігіңізді жақсартуға пайдаланылуы мүмкін."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Banana Browser браузерінде сақталған қауіпсіз емес сайттар тізімімен URL сілтемелерін салыстырып тексереді. Егер сайт құпия сөзіңізді ұрлағысы келсе немесе сіз зиянды файл жүктеп алған кезде, Banana Browser браузері URL мекенжайларын, сонымен қатар бет мазмұны бөліктерін, \"Қауіпсіз шолу\" функциясына жіберуі мүмкін."</string>
+<string name="languages_set_application_language_prompt">"Banana Browser тілі ретінде пайдалану"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite режимінде Banana Browser беттерді жылдамырақ жүктейді және трафикті 60 пайызға дейін аз жұмсайды."</string>
 <string name="data_reduction_description_lite_mode">"Lite режимі қосулы кезде, беттер жылдам жүктелуі үшін, Banana Browser браузері Google серверлерін пайдаланады. Lite режимі маңызды мазмұнды ғана жүктеу үшін тым баяу беттерді қайта жазады. Lite режимі инкогнито қойындыларына қолданылмайды."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite режимінде Banana Browser браузері беттерді жылдамырақ жүктейді және трафикті 60%-ға дейін аз жұмсайды. Кірген беттерді оңтайландыру үшін Banana Browser интернет трафигін Google-ға жібереді. &lt;link&gt;Толығырақ&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s қолданбасы Banana Browser браузерінде ашылады. Жалғастыру арқылы &lt;LINK1&gt;Google Қызмет көрсету шарттарына&lt;/LINK1&gt; және &lt;LINK2&gt;Google Banana Browser және Banana Browser OS Қосымша қызмет көрсету шарттарына&lt;/LINK2&gt; келісім бересіз. &lt;LINK3&gt;Family Link арқылы басқарылатын Google есептік жазбаларына арналған Құпиялылық мәлімдемесі&lt;/LINK3&gt; де қолданылады."</string>
 <string name="fre_send_report_check">"Пайдалану статистикасы мен жаңылыс туралы есептерді Google компаниясына жіберу арқылы Banana Browser қызметін жақсартуға көмектесіңіз."</string>
 <string name="fre_welcome">"Banana Browser жүйесіне қош келдіңіз"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Google есептік жазбаңызға кіресіз\n(Banana Browser Sync іске қосылмайды)."</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser сіздің ақпаратыңызды растай алмады."</string>
 <string name="external_app_restricted_access_error">"Banana Browser браузері сұралған ресурсқа кіре алмайды."</string>
 <string name="menu_update">"Banana Browser жаңарту"</string>
 <string name="menu_update_unsupported">"Banana Browser жаңартылмайды"</string>
@@ -64,6 +81,7 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="chrome_survey_prompt">"Banana Browser браузерін жақсартуға көмектесіңіз. &lt;LINK&gt;Сауалнамаға қатысыңыз&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser браузерін жаңарту мүмкін емес. Басқа опциялар"</string>
 <string name="unsupported_number_of_windows">"Banana Browser нұсқаларының қайшылығы орын алды."</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browser маңызды деп санамайтын сақталған деректер (мысалы, сақталған параметрлері жоқ немесе сіз сирек кіретін сайттар)"</string>
 <string name="storage_management_all_storage_description">"Banana Browser пайдаланатын жалпы деректер, соның ішінде есептік жазбалар, бетбелгілер және сақталған параметрлер"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser жүйесінің барлық қолданба деректері (бүкіл файлдар, параметрлер, есептік жазбалар, дерекқорлар, т.б.) біржола жойылады."</string>
 <string name="sogou_explanation">"Banana Browser браузері &lt;b&gt;Sogou&lt;/b&gt; жүйесін Қытайда іздеу үшін пайдалана алады. Мұны &lt;link&gt;Параметрлер&lt;/link&gt; бөлімінен өзгертуге болады."</string>
@@ -109,11 +127,4 @@ Google есептік жазбасының шолу тарихы басқа Goog
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Banana Browser браузеріндегі және Google есептік жазбасындағы (%1$s) карталар мен мекенжайлар. Оларды BEGIN_LINKПараметрлерEND_LINK ішінде басқаруыңызға болады."</string>
 <string name="payments_card_and_address_settings_signed_out">"Карталар мен мекенжайлар Banana Browser браузерінен алынған. Оларды BEGIN_LINKПараметрлерEND_LINK бөлімінде басқара аласыз."</string>
-<string name="android_permission_off">"&lt;link&gt;Android параметрлері&lt;/link&gt; ішінен Banana Browser үшін рұқсат қосыңыз."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android параметрлері&lt;/link&gt; ішінен Banana Browser үшін рұқсаттар қосыңыз."</string>
-<string name="android_ar_camera_permission_off">"Banana Browser браузеріне AR режимін пайдалануға рұқсат ету үшін &lt;link&gt;Android параметрлерінен&lt;/link&gt; камераны да қосыңыз."</string>
-<string name="android_camera_permission_off">"Banana Browser браузері камераны пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де қосыңыз."</string>
-<string name="android_location_permission_off">"Banana Browser браузері геодерегіңізді пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де іске қосыңыз."</string>
-<string name="android_microphone_permission_off">"Banana Browser браузері микрофонды пайдалануы үшін, оны &lt;link&gt;Android параметрлерінде&lt;/link&gt; де іске қосыңыз."</string>
-<string name="android_notifications_permission_off">"Banana Browser-нан хабарландырулар алу үшін оларды &lt;link&gt;Android параметрлерінде&lt;/link&gt; іске қосыңыз."</string>
 </resources>

@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"ምንም የተቀመጡ የይለፍ ቃላት የሉም። Banana Browser እርስዎ ሲያስቀምጧቸው የእርስዎን የይለፍ ቃላት መፈተሽ ይችላል።"</string>
+<string name="password_check_status_message_error_offline">"Banana Browser የእርስዎን የይለፍ ቃላት መፈተሽ አይችልም። የበይነመረብ ግንኙነትዎን ለመፈተሽ ይሞክሩ።"</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser ሁሉንም የይለፍ ቃላት ማረጋገጥ አልቻለም። ነገ እንደገና ይሞክሩ።"</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser ሁሉንም የይለፍ ቃላት ማረጋገጥ አልቻለም። ነገ እንደገና ይሞክሩ ወይም &lt;link&gt;በGoogle መለያዎ ውስጥ ይለፍ ቃላትን ይፈትሹ&lt;/link&gt;።"</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser በእርስዎ የGoogle መለያ በሚገቡበት ጊዜ የእርስዎን የይለፍ ቃላትን ሊፈትሽ ይችላል።"</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser የእርስዎን የይለፍ ቃላት መፈተሽ አይችልም። እንደገና ይሞክሩ።"</string>
+<string name="password_check_status_subtitle_no_findings">"እርስዎ በተጠለፈ የይለፍ ቃል ሲገቡ Banana Browser ያሳውቀዎታል።"</string>
 <string name="sign_in_to_chrome">"Banana Browser ውስጥ ይግቡ"</string>
 <string name="sync_switch_title">"የBanana Browser ውሂብዎን ያስምሩ"</string>
 <string name="usage_and_crash_reports_title">"የBanana Browser ባህሪያት እና አፈጻጸም እንዲሻሻል ያግዙ"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"የተመረጠው ውሂብ ከBanana Browser እና የሰመሩ መሣሪያዎችዎ ተወግዷል።
 
 የእርስዎ Google መለያ በ&lt;link&gt;myactivity.google.com&lt;/link&gt; ላይ እንደ ፍለጋዎች እና የሌሎች Google አገልግሎቶች እንቅስቃሴ ያሉ ሌሎች የአሰሳ ታሪክ ዓይነቶች ሊኖሩት ይችላል።"</string>
-<string name="safety_check_description">"የእርስዎ ቅንብሮች እርስዎን ከሚከተሉት እየጠበቁ መሆናቸውን Banana Browser ማየት ይችላል፦"</string>
-<string name="safety_check_safe_browsing_disabled">"የጥንቃቄ አሰሳ ጠፍቷል። Banana Browser እንዲያበሩት ይመክራል።"</string>
-<string name="safety_check_passwords_no_passwords">"ምንም የተቀመጡ የይለፍ ቃላት የሉም። Banana Browser እርስዎ ሲያስቀምጧቸው የእርስዎን የይለፍ ቃላት መፈተሽ ይችላል።"</string>
+<string name="safety_check_description">"Banana Browser ከውሂብ ጥሰቶች፣ ደህንነታቸው ካልተጠበቁ ድር ጣቢያዎች እና ከተጨማሪ ነገሮች ደህንነትዎን ለመጠበቅ ሊያግዝዎት ይችላል"</string>
+<string name="safety_check_passwords_error">"Banana Browser የእርስዎን የይለፍ ቃላት መፈተሽ አይችልም"</string>
+<string name="safety_check_passwords_error_offline">"ከመስመር ውጪ። Banana Browser የእርስዎን የይለፍ ቃላት መፈተሽ አይችልም።"</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser ሁሉንም የይለፍ ቃላት ማረጋገጥ አልቻለም"</string>
+<string name="safety_check_updates_updated">"Banana Browser የተዘመነ ነው"</string>
+<string name="safety_check_updates_outdated">"Banana Browser ጊዜው አልፎበታል"</string>
+<string name="safety_check_updates_offline">"ከመስመር ውጪ። Banana Browser ዝማኔዎች ካሉ መፈተሽ አይችልም።"</string>
+<string name="safety_check_updates_error">"Banana Browser ዝማኔዎች ካሉ መፈተሽ አይችልም"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"በBanana Browser ላይ ደህንነትዎን ይጠብቃል፣ እና በመለያ በገቡባቸው ሌሎች የGoogle መተግበሪያዎች ላይ ደህንነትዎን ለማሻሻል ስራ ላይ ሊውል ይችላል።"</string>
+<string name="safe_browsing_standard_protection_bullet_two">"በBanana Browser ላይ የተከማቹ ድህንነታቸው ያልተጠበቁ ጣቢያዎች ዝርዝር ጋር ዩአርኤሎችን ይፈትሻል። አንድ ጣቢያ የእርስዎን የይለፍ ቃል ለመስረቅ ከሞከረ ወይም ጎጂ ፋይል ካወረደ Banana Browser እንዲሁም የገጽ ይዘትን ክፍሎችም ጨምሮ ዩአርኤሎችን ወደ የጥንቃቄ አሰሳ መላክ ሊልክ ይችላል።"</string>
+<string name="languages_set_application_language_prompt">"እንደ የBanana Browser ቋንቋ ተጠቀም"</string>
 <string name="data_reduction_benefits_description_lite_mode">"በቀላል ሁነታ ላይ Banana Browser ገጾችን በበለጠ ፍጥነት የሚጭን ሲሆን እስከ 60 በመቶ ያነሰ ውሂብ ይጠቀማል።"</string>
 <string name="data_reduction_description_lite_mode">"ቀላል ሁነታ ሲበራ Banana Browser ገጾች በበለጠ ፍጥነት እንዲጭኑ ለማድረግ የGoogle አገልጋዮችን ይጠቀማል። ቀላል ሁነታ በጣም ቀርፋፋ የሆኑ ገጾች መሠረታዊ ይዘትን ብቻ እንዲጭኑ አድርጎ ዳግም ይጽፋቸዋል። ቀላል ሁነታ ማንነት በማያሳውቁ ትሮች ላይ አይተገበርም።"</string>
 <string name="data_reduction_promo_summary_lite_mode">"በቀላል ሁነታ ላይ Banana Browser ገጾችን በበለጠ ፍጥነት የሚጭን ሲሆን እስከ 60 በመቶ ያነሰ ውሂብ ይጠቀማል። የሚጎበኟቸው ገጾችን ለማትባት Banana Browser የድር ትራፊክዎን ወደ Google ይልካል። &lt;link&gt;የበለጠ ለመረዳት&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s በBanana Browser ውስጥ ይከፈታል። በመቀጠልዎ በ&lt;LINK1&gt;የGoogle አገልግሎት ውል&lt;/LINK1&gt; እና &lt;LINK2&gt;የGoogle Banana Browser እና የBanana Browser OS ተጨማሪ አገልግሎት ውል&lt;/LINK2&gt; ይስማማሉ። &lt;LINK3&gt;በFamily Link የሚቀናበሩ የGoogle መለያዎች የግላዊነት ማስታወቂያ&lt;/LINK3&gt; እንዲሁም ይተገበራል።"</string>
 <string name="fre_send_report_check">"የአጠቃቀም ስታቲክሶችን እና የብልሽት ሪፖርቶችን ወደ Google በመላክ Banana Browserን የተሻለ ለማድረግ እገዛ ያድርጉ።"</string>
 <string name="fre_welcome">"ወደ Banana Browser እንኳን ደህና መጡ"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"በGoogle መለያዎ ይገባሉ\n(ይህ Banana Browser ስምረትን አያበራም)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser መረጃዎን ማረጋገጥ አልቻለም"</string>
 <string name="external_app_restricted_access_error">"Banana Browser የተጠየቀው ግብዓት መዳረሻ የለውም።"</string>
 <string name="menu_update">"Banana Browserን አዘምን"</string>
 <string name="menu_update_unsupported">"Banana Browserን ማዘመን አይቻልም"</string>
@@ -64,7 +81,7 @@
 <string name="chrome_survey_prompt">"Banana Browser እንዲሻሻል ያግዙ። &lt;LINK&gt;የዳሰሳ ጥናት ይወሰዱ&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser መዘመን አይችልም። ተጨማሪ አማራጮች"</string>
 <string name="unsupported_number_of_windows">"የማይደገፍ የBanana Browser አብነቶች ብዛት።"</string>
-<string name="storage_management_unimportant_site_data_description">"Banana Browser አላስፈላጊ ነው የሚያስበው የጣቢያ ማከማቻ (ለምሳሌ፦ ምንም የተቀመጡ ቅንብሮች የሌላቸው ጣቢያዎች ወይም እርስዎ ብዙ ጊዜ የማይጎበኟቸው)"</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browser አላስፈላጊ ነው የሚያስበው የተከማቸ ውሂብ (ለምሳሌ፦ ምንም የተቀመጡ ቅንብሮች የሌላቸው ጣቢያዎች ወይም እርስዎ ብዙ ጊዜ የማይጎበኟቸው)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"ይሄ Banana Browser አስፈላጊ ናቸው ብሎ የማያስባቸውን ኩኪዎች፣ መሸጎጫ እና ሌሎች ጣቢያዎች ያጸዳል።"</string>
 <string name="storage_management_all_storage_description">"መለያዎች፣ ዕልባቶች እና የተቀመጡ ቅንብሮችን ጨምሮ Banana Browser የተጠቀመው ጠቅላላ ውሂብ"</string>
 <string name="storage_management_reset_app_dialog_text">"ሁሉንም የBanana Browser መተግበሪያ ውሂብ እስከመጨረሻው ይሰረዛል። ይሄ ሁሉንም ፋይሎች፣ ቅንብሮች፣ መለያዎች፣ የውሂብ ጎታዎች፣ ወዘተ. ያካትታል።"</string>
@@ -113,11 +130,4 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"ካርዶች እና አድራሻዎች ከBanana Browser እና ከGoogle መለያዎ (%1$s) የተገኙ ናቸው። በBEGIN_LINKቅንብሮችEND_LINK ውስጥ ሊያቀናብሯቸው ይችላሉ።"</string>
 <string name="payments_card_and_address_settings_signed_out">"ካርዶች እና አድራሻዎች ከBanana Browser የመጡ ናቸው። በBEGIN_LINKቅንብሮችEND_LINK ውስጥ ሊያስተዳድሯቸው ይችላሉ።"</string>
-<string name="android_permission_off">"በ&lt;link&gt;Android ቅንብሮች&lt;/link&gt; ውስጥ ፍቃዶችን ለBanana Browser ያብሩ።"</string>
-<string name="android_permission_off_plural">"በ&lt;link&gt;Android ቅንብሮች&lt;/link&gt; ውስጥ ፍቃዶችን ለBanana Browser ያብሩ።"</string>
-<string name="android_ar_camera_permission_off">"Banana Browser ኤአርን እንዲጠቀም ለማስቻል፣ እንዲሁም በ&lt;link&gt;የAndroid ቅንብሮች&lt;/link&gt; ውስጥ ካሜራውን ያብሩ።"</string>
-<string name="android_camera_permission_off">"የእርስዎን ካሜራ Banana Browser እንዲደርስበት ለማድረግ፣ በ &lt;link&gt;Android ቅንብሮች&lt;/link&gt; ውስጥ ካሜራን በተጨማሪ ያብሩ።"</string>
-<string name="android_location_permission_off">"Banana Browser የእርስዎን መገኛ አካባቢ እንዲደርስበት ለማድረግ፣ በተጨማሪ በ &lt;link&gt;Android ቅንብሮች&lt;/link&gt; ውስጥ መገኛ አካባቢን ያብሩ።"</string>
-<string name="android_microphone_permission_off">"Banana Browser የእርስዎን ማይክራፎን እንዲደርስ ለማድረግ፣ በ &lt;link&gt;Android ቅንብሮች&lt;/link&gt; ውስጥ ማይክራፎንን በተጨማሪ ያብሩ።"</string>
-<string name="android_notifications_permission_off">"Banana Browser ማሳወቂያዎችን እንዲልክልዎት ለማድረግ፣ በተጨማሪ በ &lt;link&gt;Android ቅንብሮች&lt;/link&gt; ውስጥ ማሳወቂያዎችን ያብሩ።"</string>
 </resources>

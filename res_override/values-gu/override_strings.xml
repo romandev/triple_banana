@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"કોઈ સાચવેલો પાસવર્ડ નથી. જ્યારે તમે તમારા પાસવર્ડ સાચવો ત્યારે Banana Browser તેને ચેક કરી શકે છે."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser તમારા પાસવર્ડ ચેક કરી શકતું નથી. તમારું ઇન્ટરનેટ કનેક્શન ચેક કરવાનો પ્રયાસ કરો."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser બધા પાસવર્ડ ચેક કરી શક્યું નથી. આવતી કાલે ફરી પ્રયાસ કરો."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser બધા પાસવર્ડ ચેક કરી શક્યું નથી. આવતી કાલે ફરી પ્રયાસ કરજો અથવા &lt;link&gt;તમારા Google એકાઉન્ટમાં પાસવર્ડ ચેક કરો&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"જ્યારે તમે તમારા Google એકાઉન્ટ વડે સાઇન ઇન કરો ત્યારે Banana Browser તમારા પાસવર્ડ ચેક કરી શકે છે."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser તમારા પાસવર્ડ ચેક કરી શકતું નથી. ફરી પ્રયાસ કરો."</string>
+<string name="password_check_status_subtitle_no_findings">"જ્યારે તમે ચેડાં થયેલા પાસવર્ડ વડે સાઇન ઇન કરશો ત્યારે Banana Browser તમને સૂચિત કરશે."</string>
 <string name="sign_in_to_chrome">"Banana Browser માં સાઇન ઇન કરો"</string>
 <string name="sync_switch_title">"તમારા Banana Browserના ડેટાને સિંક કરો"</string>
 <string name="usage_and_crash_reports_title">"Banana Browserની સુવિધાઓ અને પ્રદર્શનને સુધારવામાં સહાય કરો"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"પસંદ કરેલો ડેટા Banana Browser અને તમારા સિંક કરેલ ડિવાઇસમાંથી ડિલીટ કરવામાં આવ્યો છે.
 
 તમારા Google એકાઉન્ટમાં બ્રાઉઝિંગ ઇતિહાસના બીજા સ્વરૂપો જેમ કે શોધ અને બીજા Google સેવાઓ પરની પ્રવૃત્તિઓ &lt;link&gt;myactivity.google.com&lt;/link&gt; પર હોય શકે છે."</string>
-<string name="safety_check_description">"Banana Browser તે ચેક કરી શકે છે કે તમારા સેટિંગ આની સામે તમારી સુરક્ષા કરે છે કે નહીં:"</string>
-<string name="safety_check_safe_browsing_disabled">"Safe Browsingની સુવિધા બંધ છે. Banana Browser તેને ચાલુ રાખવાનો સુઝાવ આપે છે."</string>
-<string name="safety_check_passwords_no_passwords">"કોઈ સાચવેલો પાસવર્ડ નથી. જ્યારે તમે તમારા પાસવર્ડ સાચવો ત્યારે Banana Browser તેને ચેક કરી શકે છે."</string>
+<string name="safety_check_description">"ડેટા ઉલ્લંઘનો, અસુરક્ષિત વેબસાઇટ જેવી બીજી ઘણી બાબતોથી તમને સુરક્ષિત રાખવામાં Banana Browser તમારી સહાય કરી શકે છે"</string>
+<string name="safety_check_passwords_error">"Banana Browser તમારા પાસવર્ડ ચેક કરી શકતું નથી"</string>
+<string name="safety_check_passwords_error_offline">"ઑફલાઇન. Banana Browser તમારા પાસવર્ડ ચેક કરી શકતું નથી."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser બધા પાસવર્ડ ચેક કરી શક્યું નથી"</string>
+<string name="safety_check_updates_updated">"Banana Browser અપ ટૂ ડેટ છે"</string>
+<string name="safety_check_updates_outdated">"Banana Browser જૂનું થઈ ગયું છે"</string>
+<string name="safety_check_updates_offline">"ઑફલાઇન. Banana Browser અપડેટ ચેક કરી શકતું નથી."</string>
+<string name="safety_check_updates_error">"Banana Browser અપડેટ ચેક કરી શકતું નથી"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"તમને Banana Browser પર સલામત રાખે છે અને જ્યારે તમે સાઇન ઇન થયા હો, ત્યારે Googleની અન્ય ઍપમાં તમારી સુરક્ષા બહેતર બનાવવામાં ઉપયોગમાં લેવાઈ શકે છે."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"URLsને Banana Browserમાં સંગ્રહિત અસુરક્ષિત સાઇટની સૂચિ સાથે ચેક કરે છે. જો કોઈ સાઇટ તમારો પાસવર્ડ ચોરી કરવાનો પ્રયાસ કરે અથવા તમે કોઈ નુકસાનકારક ફાઇલ ડાઉનલોડ કરો, ત્યારે Banana Browser પેજ કન્ટેન્ટના બિટની સાથોસાથ URLs પણ Safe Browsingને મોકલી શકે છે."</string>
+<string name="languages_set_application_language_prompt">"Banana Browserની ભાષા તરીકે ઉપયોગ કરો"</string>
 <string name="data_reduction_benefits_description_lite_mode">"લાઇટ મોડમાં, Banana Browser પેજને વધુ ઝડપથી લોડ કરે છે અને તે 60 ટકા ઓછા ડેટાનો ઉપયોગ કરે છે."</string>
 <string name="data_reduction_description_lite_mode">"જ્યારે લાઇટ મોડ ચાલુ હોય છે, ત્યારે Banana Browser પેજ લોડ થવાની ક્રિયાને વધુ ઝડપી બનાવવા માટે Google સર્વરનો ઉપયોગ કરે છે. લાઇટ મોડ ફક્ત જરૂરી કન્ટેન્ટને લોડ કરવા માટે ખૂબ ધીમા પેજને ફરીથી લખે છે. લાઇટ મોડ, છૂપા મોડમાં લાગુ થતું નથી."</string>
 <string name="data_reduction_promo_summary_lite_mode">"લાઇટ મોડમાં, Banana Browser પેજને વધુ ઝડપથી લોડ કરે છે અને તે 60 ટકા ઓછા ડેટાનો વપરાશ કરે છે. તમે જે પેજની મુલાકાત લેતા હો તેને ઑપ્ટિમાઇઝ કરવા માટે, Banana Browser તમારો વેબ ટ્રાફિક Googleને મોકલે છે. &lt;link&gt;વધુ જાણો&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserમાં ખૂલશે. આગળ વધીને, તમે &lt;LINK1&gt;Googleની સેવાની શરતો&lt;/LINK1&gt; અને &lt;LINK2&gt;Google Banana Browser તથા Banana Browser OSની વધારાની સેવાની શરતો&lt;/LINK2&gt; સાથે સંમત થાઓ છો. &lt;LINK3&gt;Family Link વડે મેનેજ કરવામાં આવતા Google એકાઉન્ટ માટેની પ્રાઇવસી નોટિસ&lt;/LINK3&gt; પણ લાગુ."</string>
 <string name="fre_send_report_check">"ઉપયોગનાં આંકડા અને ક્રૅશ રિપોર્ટ Googleને મોકલીને Banana Browserને વધુ સારું બનાવવામાં મદદ કરો."</string>
 <string name="fre_welcome">"Banana Browser પર આપનું સ્વાગત છે"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"તમને તમારા Google એકાઉન્ટ વડે સાઇન ઇન કરવામાં આવશે\n(આમ થવાથી Banana Browser સિંકની સુવિધા ચાલુ થશે નહીં)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser તમારી માહિતી ચકાસી શક્યું નથી"</string>
 <string name="external_app_restricted_access_error">"Banana Browser ને વિનંતી કરેલ સંસાધનની ઍક્સેસ નથી."</string>
 <string name="menu_update">"Banana Browser અપડેટ કરો"</string>
 <string name="menu_update_unsupported">"Banana Browser અપડેટ કરી શકતા નથી"</string>
@@ -64,7 +81,7 @@
 <string name="chrome_survey_prompt">"Banana Browserને બહેતર બનાવવામાં સહાય કરો. &lt;LINK&gt;સર્વેક્ષણમાં ભાગ લો&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser અપડેટ કરી શકાતું નથી. વધુ વિકલ્પો"</string>
 <string name="unsupported_number_of_windows">"અસમર્થિત સંખ્યામાં Banana Browser આવૃત્તિઓ."</string>
-<string name="storage_management_unimportant_site_data_description">"Banana Browser ને મહત્વનું ન લાગતું સાઇટ સ્ટોરેજ (ઉદા., કોઇ સાચવેલ સેટિંગ્સ ન હોય તેવી અથવા વારંવાર મુલાકાત ન લેવાતી હોય તેવી સાઇટ્સ)"</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browserને મહત્ત્વનો ન લાગતો હોય તેવો સ્ટોર કરેલો ડેટા (દા.ત., કોઇ સાચવેલા સેટિંગ ન હોય તેવી અથવા વારંવાર મુલાકાત ન લેવાતી હોય તેવી સાઇટ)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"આ કુકી, કૅશ અને Banana Browserને લાગતું હોય કે આ મહત્વનું નથી એવા સાઇટના બીજા ડેટાને સાફ કરશે."</string>
 <string name="storage_management_all_storage_description">"Banana Browser દ્વારા ઉપયોગમાં લેવાયેલ કુલ સ્ટોરેજ, એકાઉન્ટ્સ, બુકમાર્ક્સ અને સાચવેલ સેટિંગ્સ સહિત"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser નો તમામ ઍપ્લિકેશન ડેટા કાયમીરૂપે કાઢી નાખવામાં આવશે. આમાં તમામ ફાઇલો, સેટિંગ્સ, એકાઉન્ટ, ડેટાબેઝ, વગેરેનો સમાવેશ થાય છે."</string>
@@ -113,11 +130,4 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"કાર્ડ અને સરનામા Banana Browser અને Google એકાઉન્ટ (%1$s)માંથી છે. તમે તેને BEGIN_LINKસેટિંગEND_LINKમાં જઈને મેનેજ કરી શકો છો."</string>
 <string name="payments_card_and_address_settings_signed_out">"કાર્ડ અને સરનામા Banana Browserમાંથી છે. તમે તેને BEGIN_LINKસેટિંગ્સEND_LINKમાં સંચાલિત કરી શકો છો."</string>
-<string name="android_permission_off">"&lt;link&gt;Android સેટિંગ્સ&lt;/link&gt;માં Banana Browser માટે પરવાનગી ચાલુ કરો."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android સેટિંગ્સ&lt;/link&gt;માં Banana Browser માટે પરવાનગીઓ ચાલુ કરો."</string>
-<string name="android_ar_camera_permission_off">"Banana Browserને ARનો વપરાશ કરવા દેવા માટે, &lt;link&gt;Android સેટિંગ&lt;/link&gt;માંથી કૅમેરા પણ ચાલુ કરો."</string>
-<string name="android_camera_permission_off">"Banana Browser તમારો કૅમેરા ઍક્સેસ કરી શકે તે માટે &lt;link&gt;Android સેટિંગ&lt;/link&gt;માં પણ કૅમેરા ચાલુ કરો."</string>
-<string name="android_location_permission_off">"Banana Browser તમારું સ્થાન ઍક્સેસ કરી શકે તે માટે &lt;link&gt;Android સેટિંગ&lt;/link&gt;માં પણ સ્થાન ચાલુ કરો."</string>
-<string name="android_microphone_permission_off">"Banana Browser તમારું માઇક્રોફોન ઍક્સેસ કરી શકે તે માટે &lt;link&gt;Android સેટિંગ&lt;/link&gt;માં પણ માઇક્રોફોન ચાલુ કરો."</string>
-<string name="android_notifications_permission_off">"Banana Browser તમને નોટિફિકેશન મોકલી શકે તે માટે &lt;link&gt;Android સેટિંગ&lt;/link&gt;માં પણ નોટિફિકેશન ચાલુ કરો."</string>
 </resources>

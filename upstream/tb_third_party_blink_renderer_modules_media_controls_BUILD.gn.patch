@@ -1,10 +1,10 @@
 diff --git tb/third_party/blink/renderer/modules/media_controls/BUILD.gn tb_diff/third_party/blink/renderer/modules/media_controls/BUILD.gn
 --- tb/third_party/blink/renderer/modules/media_controls/BUILD.gn
 +++ tb_diff/third_party/blink/renderer/modules/media_controls/BUILD.gn
-@@ -100,6 +100,7 @@ blink_modules_sources("media_controls") {
-   deps = [
-     ":media_controls_resources",
-     "//services/service_manager/public/cpp",
+@@ -105,6 +105,7 @@ blink_modules_sources("media_controls") {
+     "//third_party/blink/renderer/modules/picture_in_picture",
+     "//third_party/blink/renderer/modules/remoteplayback",
+     "//third_party/blink/renderer/modules/screen_orientation",
 +    "//triple_banana/modules:native",
    ]
  }

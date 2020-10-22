@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Walang naka-save na password. Masusuri ng Banana Browser ang iyong mga password kapag na-save mo ang mga ito."</string>
+<string name="password_check_status_message_error_offline">"Hindi masuri ng Banana Browser ang iyong mga password. Subukang tingnan ang iyong koneksyon sa internet."</string>
+<string name="password_check_status_message_error_quota_limit">"Hindi masuri ng Banana Browser ang lahat ng password. Subukan ulit bukas."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Hindi masuri ng Banana Browser ang lahat ng password. Subukan ulit bukas o &lt;link&gt;tingnan ang mga password sa iyong Google Account&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Matitingnan ng Banana Browser ang iyong mga password kapag nag-sign in ka gamit ang Google Account mo."</string>
+<string name="password_check_status_message_error_unknown">"Hindi masuri ng Banana Browser ang iyong mga password. Subukan ulit."</string>
+<string name="password_check_status_subtitle_no_findings">"Aabisuhan ka ng Banana Browser kapag nag-sign in ka gamit ang isang nakompromisong password."</string>
 <string name="sign_in_to_chrome">"Mag-sign in sa Banana Browser"</string>
 <string name="sync_switch_title">"I-sync ang iyong data ng Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Tumulong sa pagpapahusay sa mga feature at performance ng Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Inalis ang napiling data sa Banana Browser at sa iyong mga naka-sync na device.
 
 Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad ng mga paghahanap at aktibidad mula sa iba pang serbisyo ng Google sa &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Puwedeng tingnan ng Banana Browser kung pinoprotektahan ka ng iyong mga setting sa:"</string>
-<string name="safety_check_safe_browsing_disabled">"Naka-off ang Ligtas na Pag-browse. Inirerekomenda ng Banana Browser na i-on ito."</string>
-<string name="safety_check_passwords_no_passwords">"Walang naka-save na password. Masusuri ng Banana Browser ang iyong mga password kapag na-save mo ang mga ito."</string>
+<string name="safety_check_description">"Makakatulong ang Banana Browser na panatilihin kang ligtas laban sa mga paglabag sa data, hindi ligtas na website, at higit pa"</string>
+<string name="safety_check_passwords_error">"Hindi masuri ng Banana Browser ang iyong mga password"</string>
+<string name="safety_check_passwords_error_offline">"Offline. Hindi masuri ng Banana Browser ang iyong mga password."</string>
+<string name="safety_check_passwords_error_quota_limit">"Hindi masuri ng Banana Browser ang lahat ng password"</string>
+<string name="safety_check_updates_updated">"Updated ang Banana Browser"</string>
+<string name="safety_check_updates_outdated">"Luma na ang Banana Browser"</string>
+<string name="safety_check_updates_offline">"Offline. Hindi matingnan ng Banana Browser kung may mga update."</string>
+<string name="safety_check_updates_error">"Hindi matingnan ng Banana Browser kung may mga update"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Pinapanatili kang ligtas sa Banana Browser at puwedeng gamitin para paigtingin ang iyong seguridad sa iba pang Google app kapag naka-sign in ka."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Sinusuri ang mga URL sa pamamagitan ng listahan ng mga hindi ligtas na site na naka-store sa Banana Browser. Kung susubukan ng site na nakawin ang iyong password, o kapag nag-download ka ng mapaminsalang file, posible ring magpadala ang Banana Browser sa Ligtas na Pag-browse ng mga URL, kabilang ang ilang content ng page"</string>
+<string name="languages_set_application_language_prompt">"Gamitin bilang wika ng Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Sa Lite mode, mas mabilis na nilo-load ng Banana Browser ang mga page at mas kaunti nang 60 porsyento ang ginagamit nitong data."</string>
 <string name="data_reduction_description_lite_mode">"Kapag naka-on ang Lite mode, ginagamit ng Banana Browser ang mga server ng Google para mapabilis ang pag-load ng mga page. Muling isinusulat ng Lite mode ang mga napakabagal na page para ma-load lang ang mahalagang content. Hindi nalalapat sa mga tab na Incognito ang Lite mode."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Sa Lite mode, mas mabilis na naglo-load ng mga page ang Banana Browser at gumagamit ito ng hanggang 60 porsyentong mas kaunting data. Para i-optimize ang mga page na binibisita mo, ipinapadala ng Banana Browser ang iyong trapiko sa web sa Google. &lt;link&gt;Matuto pa&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Bubukas ang %1$s sa Banana Browser. Sa pamamagitan ng pagpapatuloy, sumasang-ayon ka sa &lt;LINK1&gt;Mga Tuntunin ng Serbisyo ng Google&lt;/LINK1&gt;, at sa &lt;LINK2&gt;Mga Karagdagang Tuntunin ng Serbisyo ng Google Banana Browser at Banana Browser OS&lt;/LINK2&gt;. Nalalapat din ang &lt;LINK3&gt;Notification ng Privacy para sa Mga Google Account na Pinapamahalaan Gamit ang Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Tulungang mapahusay ang Banana Browser sa pamamagitan ng pagpapadala sa Google ng mga istatistika ng paggamit at ulat ng pag-crash."</string>
 <string name="fre_welcome">"Welcome sa Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Masa-sign in ka sa iyong Google Account\n(hindi nito mao-on ang Banana Browser Sync)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Hindi ma-verify ng Banana Browser ang iyong impormasyon"</string>
 <string name="external_app_restricted_access_error">"Walang access ang Banana Browser sa hiniling na mapagkukunan."</string>
 <string name="menu_update">"I-update ang Banana Browser"</string>
 <string name="menu_update_unsupported">"Hindi ma-update: Banana Browser"</string>
@@ -64,7 +81,7 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="chrome_survey_prompt">"Tumulong na pahusayin ang Banana Browser. &lt;LINK&gt;Sagutan ang survey&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Hindi ma-update ang Banana Browser. Higit pang opsyon"</string>
 <string name="unsupported_number_of_windows">"Hindi sinusuportahang bilang ng mga instance ng Banana Browser."</string>
-<string name="storage_management_unimportant_site_data_description">"Storage ng site na sa tingin ng Banana Browser ay hindi mahalaga (hal. mga site na walang mga naka-save na setting o hindi mo madalas bisitahin)"</string>
+<string name="storage_management_unimportant_site_data_description">"Naka-store na data na sa tingin ng Banana Browser ay hindi mahalaga (hal. mga site na walang naka-save na setting o hindi mo madalas bisitahin)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Iki-clear nito ang cookies, cache at iba pang data ng mga site na sa tingin ng Banana Browser ay hindi mahalaga."</string>
 <string name="storage_management_all_storage_description">"Kabuuang data na ginagamit ng Banana Browser, kabilang ang mga account, bookmark at naka-save na setting"</string>
 <string name="storage_management_reset_app_dialog_text">"Permanenteng ide-delete ang lahat ng data ng app ng Banana Browser. Kabilang dito ang lahat ng file, setting, account, database, atbp."</string>
@@ -113,11 +130,4 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Ang mga card at address ay mula sa Banana Browser at sa iyong Google Account (%1$s). Maaari mong pamahalaan ang mga ito sa BEGIN_LINKMga SettingEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Ang mga card at address ay mula sa Banana Browser. Maaari mong pamahalaan ang mga ito sa BEGIN_LINKMga SettingEND_LINK."</string>
-<string name="android_permission_off">"I-on ang pahintulot para sa Banana Browser sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"I-on ang mga pahintulot para sa Banana Browser sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Para payagan ang Banana Browser na gumamit ng AR, i-on din ang camera sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Para payagang i-access ng Banana Browser ang iyong camera, i-on din ang camera sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Para payagan ang Banana Browser na i-access ang iyong lokasyon, i-on din ang lokasyon sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Para payagang i-access ng Banana Browser ang iyong mikropono, i-on din ang mikropono sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Para payagan ang Banana Browser na magpadala sa iyo ng mga notification, i-on din ang mga notification sa &lt;link&gt;Mga Setting ng Android&lt;/link&gt;."</string>
 </resources>

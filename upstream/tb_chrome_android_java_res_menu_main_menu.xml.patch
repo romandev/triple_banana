@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/res/menu/main_menu.xml tb_diff/chrome/android/java/res/menu/main_menu.xml
 --- tb/chrome/android/java/res/menu/main_menu.xml
 +++ tb_diff/chrome/android/java/res/menu/main_menu.xml
-@@ -32,6 +32,8 @@
+@@ -42,6 +42,8 @@
                  android:icon="@drawable/btn_reload_stop"/>
              </menu>
          </item>

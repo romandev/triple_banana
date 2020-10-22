@@ -71,9 +71,7 @@ if (android_64bit_target_cpu) {
 
     shared_libraries = [ "//chrome/android:libchrome" ]
 
-    is_modern = true
-    load_library_from_apk = false
-    disable_library_rename = true
+    load_library_from_apk = chromium_linker_supported
 
     # The following write/read operations are required to convert number string to
     # integer because there is no conversion utility in GN side.
@@ -232,6 +230,7 @@ android_library("triple_banana_java") {
     "//chrome/browser/profiles/android:java",
     "//chrome/browser/settings:java",
     "//chrome/browser/tab:java",
+    "//chrome/browser/ui/android/appmenu:java",
     "//components/browser_ui/site_settings/android:java",
     "//components/content_settings/android:content_settings_enums_java",
     "//components/permissions/android:java",
@@ -245,6 +244,7 @@ android_library("triple_banana_java") {
     "//services/service_manager/public/java:service_manager_java",
     "//services/service_manager/public/mojom:mojom_java",
     "//third_party/android_deps:android_support_v7_appcompat_java",
+    "//third_party/android_deps:androidx_annotation_annotation_java",
     "//third_party/android_deps:androidx_appcompat_appcompat_java",
     "//third_party/android_deps:androidx_appcompat_appcompat_resources_java",
     "//third_party/android_deps:androidx_core_core_java",

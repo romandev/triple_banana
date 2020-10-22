@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Nu există parole salvate. Banana Browser îți poate verifica parolele dacă le salvezi."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser nu îți poate verifica parolele. Verifică-ți conexiunea la internet."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser nu a putut verifica toate parolele. Încearcă din nou mâine."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser nu a putut verifica toate parolele. Încearcă din nou mâine sau &lt;link&gt;verifică parolele din Contul Google&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser poate să îți verifice parolele atunci când te conectezi folosind Contul Google."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser nu îți poate verifica parolele. Încearcă din nou."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser te va anunța dacă te conectezi folosind o parolă compromisă."</string>
 <string name="sign_in_to_chrome">"Conectează-te la Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizează datele din Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Contribuie la îmbunătățirea funcțiilor și performanței Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Datele selectate au fost eliminate din Banana Browser și de pe dispozitivele sincronizate.
 
 Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi căutările și activitatea din alte servicii Google, la &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser poate verifica dacă setările te protejează de:"</string>
-<string name="safety_check_safe_browsing_disabled">"Navigarea sigură este dezactivată. Banana Browser îți recomandă să o activezi."</string>
-<string name="safety_check_passwords_no_passwords">"Nu există parole salvate. Banana Browser îți poate verifica parolele dacă le salvezi."</string>
+<string name="safety_check_description">"Banana Browser te protejează împotriva încălcării securității datelor, a site-urilor nesigure și nu numai"</string>
+<string name="safety_check_passwords_error">"Banana Browser nu îți poate verifica parolele"</string>
+<string name="safety_check_passwords_error_offline">"Offline. Banana Browser nu îți poate verifica parolele."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser nu a putut verifica toate parolele"</string>
+<string name="safety_check_updates_updated">"Banana Browser este actualizat"</string>
+<string name="safety_check_updates_outdated">"Banana Browser nu este actualizat"</string>
+<string name="safety_check_updates_offline">"Offline. Banana Browser nu poate căuta actualizări."</string>
+<string name="safety_check_updates_error">"Banana Browser nu poate căuta actualizări"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Te protejează în Banana Browser și poate fi folosită pentru a spori securitatea în alte aplicații Google dacă te-ai conectat."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Verifică adresele URL folosind o listă de site-uri nesigure, stocată în Banana Browser. Dacă un site încearcă să îți fure parola sau descarci un fișier dăunător, Banana Browser poate să trimită adresele URL, inclusiv fragmente din conținutul paginilor, către funcția Navigare sigură."</string>
+<string name="languages_set_application_language_prompt">"Folosește ca limbă pentru Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"În modul Lite, Banana Browser încarcă mai repede paginile și folosește cu până la 60 de procente mai puține date."</string>
 <string name="data_reduction_description_lite_mode">"Când modul Lite este activat, Banana Browser folosește serverele Google pentru a încărca paginile mai rapid. Modul Lite rescrie paginile care se încarcă foarte greu ca să încarce numai conținutul esențial. Modul Lite nu se aplică în filele incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"În modul Lite, Banana Browser încarcă mai repede paginile și folosește cu până la 60 % mai puține date. Pentru a optimiza paginile pe care le accesezi, Banana Browser trimite traficul tău web la Google. &lt;link&gt;Află mai multe&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s se va deschide în Banana Browser. Dacă alegi să continui, ești de acord cu &lt;LINK1&gt;Termenii și condițiile Google&lt;/LINK1&gt; și cu &lt;LINK2&gt;Termenii și condițiile suplimentare pentru Google Banana Browser și Sistemul de operare Banana Browser&lt;/LINK2&gt;. Se aplică și &lt;LINK3&gt;Notificarea privind confidențialitatea pentru Conturile Google gestionate cu Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Contribuie la îmbunătățirea Banana Browser trimițând statistici de utilizare și rapoarte de blocare la Google."</string>
 <string name="fre_welcome">"Bun venit la Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Vei fi conectat(ă) cu Contul tău Google\n(acest lucru nu va activa Sincronizarea Banana Browser)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser nu a putut verifica informațiile"</string>
 <string name="external_app_restricted_access_error">"Banana Browser nu are acces la resursa solicitată."</string>
 <string name="menu_update">"Actualizează Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser nu se poate actualiza"</string>
@@ -64,7 +81,7 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="chrome_survey_prompt">"Contribuie la îmbunătățirea browserului Banana Browser. &lt;LINK&gt;Participă la sondaj.&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser nu se poate actualiza. Mai multe opțiuni"</string>
 <string name="unsupported_number_of_windows">"Număr de instanțe Banana Browser neacceptat."</string>
-<string name="storage_management_unimportant_site_data_description">"Stocare a site-urilor pe care Banana Browser nu o consideră importantă (de ex., site-uri care nu au setări salvate sau pe care nu le accesezi frecvent)"</string>
+<string name="storage_management_unimportant_site_data_description">"Datele stocate pe care Banana Browser nu le consideră importante (de ex., site-uri care nu au setări salvate sau pe care nu le accesezi frecvent)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Astfel, vor fi șterse cookie-urile, memoria cache și alte date ale site-urilor pe care Banana Browser nu le consideră importante."</string>
 <string name="storage_management_all_storage_description">"Totalul datelor folosite de Banana Browser, inclusiv conturile, marcajele și setările salvate"</string>
 <string name="storage_management_reset_app_dialog_text">"Toate datele aplicației Banana Browser vor fi șterse definitiv. Sunt incluse toate fișierele, setările, conturile, bazele de date etc."</string>
@@ -113,11 +130,4 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Cardurile și adresele sunt din Banana Browser și din Contul Google (%1$s). Poți să le gestionezi în BEGIN_LINKSetăriEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Cardurile și adresele sunt din Banana Browser. Le poți gestiona în BEGIN_LINKSetăriEND_LINK."</string>
-<string name="android_permission_off">"Activează permisiunea pentru Banana Browser din &lt;link&gt;Setări Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Activează permisiunile pentru Banana Browser din &lt;link&gt;Setări Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Pentru a permite ca Banana Browser să folosească RA, activează camera foto în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Pentru a permite Banana Browser să acceseze camera, activează camera și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Pentru a permite Banana Browser să acceseze locația, activează locația și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Ca să permiți Banana Browser să acceseze microfonul, activează microfonul și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Pentru a permite Banana Browser să îți trimită notificări, activează notificările și în &lt;link&gt;Setările Android&lt;/link&gt;."</string>
 </resources>

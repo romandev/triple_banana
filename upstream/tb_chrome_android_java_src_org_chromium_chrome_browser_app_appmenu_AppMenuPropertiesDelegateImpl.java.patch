@@ -1,12 +1,12 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java
-@@ -293,6 +293,8 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate
- 
+@@ -346,6 +346,8 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate
          // Only display the Enter VR button if VR Shell Dev environment is enabled.
          menu.findItem(R.id.enter_vr_id).setVisible(shouldShowEnterVr());
-+
-+        org.banana.cake.interfaces.BananaAppMenu.get().prepareMenu(menu);
-     }
  
-     private void prepareCommonMenuItems(Menu menu, @MenuGroup int menuGroup, boolean isIncognito) {
++        org.banana.cake.interfaces.BananaAppMenu.get().prepareMenu(menu);
++
+         MenuItem managedByMenuItem = menu.findItem(R.id.managed_by_menu_id);
+         managedByMenuItem.setVisible(shouldShowManagedByMenuItem(currentTab));
+         // TODO(https://crbug.com/1092175): Enable "managed by" menu item after chrome://management

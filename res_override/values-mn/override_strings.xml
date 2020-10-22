@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Хадгалсан ямар ч нууц үг байхгүй байна. Таныг нууц үгсээ хадгалах үед Banana Browser тэднийг шалгах боломжтой."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser таны нууц үгсийг шалгах боломжгүй байна. Интернэт холболтоо шалгаж үзнэ үү."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser бүх нууц үгийг шалгаж чадсангүй. Маргааш дахин оролдоно уу."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser бүх нууц үгийг шалгаж чадсангүй. Маргааш дахин оролдоно уу эсвэл &lt;link&gt;өөрийн Google Бүртгэл дэх нууц үгсийг шалгана уу&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Таныг Google Бүртгэлээрээ нэвтрэх үед Banana Browser таны нууц үгсийг шалгах боломжтой."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser таны нууц үгсийг шалгах боломжгүй байна. Дахин оролдоно уу."</string>
 <string name="sign_in_to_chrome">"Banana Browser руу нэвтрэх"</string>
 <string name="sync_switch_title">"Banana Browser-н өгөгдлөө синк хийх"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser-н онцлог болон гүйцэтгэлийг сайжруулахад туслах"</string>
@@ -13,9 +19,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Сонгосон өгөгдлийг таны Banana Browser болон синк хийсэн төхөөрөмжөөс устгасан болно.
 
 Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Google-н бусад үйлчилгээнээс үйл ажиллагаа, хайлт зэрэг өөр хэлбэрийн хайлтын түүхтэй байж болно."</string>
-<string name="safety_check_description">"Banana Browser нь таны тохиргоо таныг дараахаас хамгаалж байгаа эсэхийг шалгах боломжтой:"</string>
-<string name="safety_check_safe_browsing_disabled">"Аюулгүй үзэх онцлог унтраалттай байна. Banana Browser түүнийг асаахыг зөвлөж байна."</string>
-<string name="safety_check_passwords_no_passwords">"Хадгалсан ямар ч нууц үг байхгүй байна. Таныг нууц үгсээ хадгалах үед Banana Browser тэднийг шалгах боломжтой."</string>
+<string name="safety_check_description">"Banana Browser таныг өгөгдлийн зөрчил, аюултай вэб сайт болон бусад зүйлээс хамгаалахад туслах боломжтой"</string>
+<string name="safety_check_passwords_error">"Banana Browser таны нууц үгийг шалгах боломжгүй байна"</string>
+<string name="safety_check_passwords_error_offline">"Офлайн. Banana Browser таны нууц үгийг шалгах боломжгүй байна."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser бүх нууц үгийг шалгаж чадсангүй"</string>
+<string name="safety_check_updates_updated">"Banana Browser шинэчлэгдсэн байна"</string>
+<string name="safety_check_updates_outdated">"Banana Browser хуучирсан байна."</string>
+<string name="safety_check_updates_offline">"Офлайн. Banana Browser шинэчлэлтийг шалгах боломжгүй байна."</string>
+<string name="safety_check_updates_error">"Banana Browser шинэчлэлтийг шалгах боломжгүй байна"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Таныг нэвтэрсэн үед Banana Browser дээр таны аюулгүй байдлыг хангадаг бөгөөд Google-н бусад апп дахь таны аюулгүй байдлыг сайжруулахын тулд ашиглагдах боломжтой."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"URL-г Banana Browser-д хадгалсан аюултай сайтын жагсаалттай харьцуулж шалгадаг. Хэрэв сайт таны нууц үгийг хулгайлах гэж оролдвол эсвэл таныг аюултай файл татах үед Banana Browser нь хуудасны бага зэрэг контентын хамт URL-г Аюулгүй хайлт руу мөн илгээж болзошгүй."</string>
+<string name="languages_set_application_language_prompt">"Banana Browser-н хэл болгон ашиглах"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite горимд байх үед Banana Browser хуудсыг илүү хурдан ачаалж, 60 хувь хүртэлх бага дата ашигладаг."</string>
 <string name="data_reduction_description_lite_mode">"Lite горимыг асаалттай үед Banana Browser хуудсыг илүү хурдан ачаалах зорилгоор Google-н серверүүдийг ашигладаг. Lite горим маш удаан хуудсыг зөвхөн шаардлагатай контентыг нь ачаалах болгож дахин бичдэг. Lite горим Нууцлалтай табад ажилладаггүй."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite горимд байх үед Banana Browser хуудсыг илүү хурдан ачаалж, 60 хувь хүртэлх бага дата ашигладаг. Таны зочилдог хуудсыг оновчтой болгохын тулд Banana Browser таны вэбийн ачааллыг Google-д илгээдэг. &lt;link&gt;Нэмэлт мэдээлэл авах&lt;/link&gt;"</string>
@@ -55,6 +69,8 @@ Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Goo
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s-г Banana Browser-д нээнэ. Үргэлжлүүлснээр та &lt;LINK1&gt;Google-н Үйлчилгээний нөхцөл&lt;/LINK1&gt; ба &lt;LINK2&gt;Google Banana Browser болон Banana Browser үйлдлийн системийн Үйлчилгээний нэмэлт нөхцөлийг&lt;/LINK2&gt; зөвшөөрч байна. &lt;LINK3&gt;Family Link-р удирддаг Google Бүртгэлийн нууцлалын сануулгыг&lt;/LINK3&gt; мөн хэрэгжүүлнэ."</string>
 <string name="fre_send_report_check">"Хэрэглээний статистик мэдээ болон алдаа ослын тайланг автоматаар Google рүү илгээх замаар Google Banana Browser-ийг улам сайжруулахад тусална уу."</string>
 <string name="fre_welcome">"Banana Browser-д тавтай морил"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Та Google Бүртгэлээрээ нэвтэрнэ\n(ингэснээр Banana Browser Синк идэвхжихгүй)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser мэдээллийг тань баталгаажуулж чадсангүй"</string>
 <string name="external_app_restricted_access_error">"Banana Browser хүсэлт тавьсан нөөцөд хандах эрхгүй."</string>
 <string name="menu_update">"Banana Browser-г шинэчлэх"</string>
 <string name="menu_update_unsupported">"Banana Browser-г шинэчлэх боломжгүй"</string>
@@ -64,7 +80,7 @@ Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Goo
 <string name="chrome_survey_prompt">"Banana Browser-г сайжруулахад тусална уу. &lt;LINK&gt;Судалгаанд оролцоно уу&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser-г шинэчлэх боломжгүй байна. Бусад сонголт"</string>
 <string name="unsupported_number_of_windows">"Banana Browser-ийн хэд хэдэн дэмжигдээгүй тохиолдол"</string>
-<string name="storage_management_unimportant_site_data_description">"Banana Browser-н чухал гэж тооцдоггүй сайтын сан (жишээ нь: тохиргоог нь хадгалаагүй, эсвэл таны тогтмол зочилдоггүй сайт)"</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browser-н зүгээс чухал гэж тооцдоггүй хадгалсан өгөгдөл (жишээ нь: тохиргоог нь хадгалаагүй эсвэл таны тогтмол зочилдоггүй сайтууд)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Энэ нь күүки, кэш болон Banana Browser-н чухалд тооцдоггүй бусад сайтын өгөгдлийг устгах болно."</string>
 <string name="storage_management_all_storage_description">"Бүртгэл, хавчуурга, хадгалсан тохиргоо зэрэг Banana Browser-н ашигласан нийт өгөгдөл"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser-н бүх аппын өгөгдлийг бүрмөсөн устгана. Үүнд бүх файл, тохиргоо, бүртгэл, өгөгдлийн сан орно."</string>
@@ -113,11 +129,4 @@ Tаны Google бүртгэл &lt;link&gt;history.google.com&lt;/link&gt;-д Goo
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Карт, хаягийг Banana Browser болон Google Бүртгэлээсээ (%1$s) харах боломжтой. Та тэдгээрийг BEGIN_LINKТохиргооEND_LINK хэсэгт хянах боломжтой."</string>
 <string name="payments_card_and_address_settings_signed_out">"Карт, хаягийг Banana Browser-с харж болно. Та тэдгээрийг BEGIN_LINKТохиргооEND_LINK хэсэгт хянах боломжтой."</string>
-<string name="android_permission_off">"Banana Browser-ын зөвшөөрлийг &lt;link&gt;Android-ын Тохиргоо&lt;/link&gt;-д асаагаарай."</string>
-<string name="android_permission_off_plural">"Banana Browser-ын зөвшөөрлийг &lt;link&gt;Android-ын Тохиргоо&lt;/link&gt;-д асаагаарай."</string>
-<string name="android_ar_camera_permission_off">"AR ашиглах боломжийг Banana Browser-д олгохын тулд камерыг &lt;link&gt;Android тохиргоо&lt;/link&gt; хэсэгт мөн асаана уу."</string>
-<string name="android_camera_permission_off">"Banana Browser-д камертаа хандахыг зөвшөөрөхийн тулд камерыг &lt;link&gt;Android-н тохиргоонд&lt;/link&gt; мөн адил асаана уу."</string>
-<string name="android_location_permission_off">"Banana Browser-д таны байршилд хандахыг зөвшөөрөхийн тулд байршлыг &lt;link&gt;Android-н тохиргоонд&lt;/link&gt; мөн адил асаана уу."</string>
-<string name="android_microphone_permission_off">"Banana Browser-д микрофондоо хандахыг зөвшөөрөхийн тулд микрофоныг &lt;link&gt;Android-н тохиргоонд&lt;/link&gt; мөн адил асаана уу."</string>
-<string name="android_notifications_permission_off">"Banana Browser-д танд мэдэгдэл илгээхийг зөвшөөрөхийн тулд мэдэгдлийг &lt;link&gt;Android-н тохиргоонд&lt;/link&gt; мөн адил асаана уу"</string>
 </resources>

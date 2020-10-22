@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Kaydedilen şifre yok. Kaydetmeniz halinde Banana Browser, şifrelerinizi kontrol edebilir."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser, şifrelerinizi kontrol edemiyor. İnternet bağlantınızı kontrol etmeyi deneyin."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser, şifrelerin tümünü kontrol edemedi. Yarın tekrar deneyin."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser, şifrelerin tümünü kontrol edemedi. Yarın tekrar deneyin veya &lt;link&gt;Google Hesabınızdaki şifreleri kontrol edin&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser, Google Hesabınızla oturum açtığınızda şifrelerinizi kontrol edebilir."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser, şifrelerinizi kontrol edemiyor. Tekrar deneyin."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser, güvenliği ihlal edilmiş bir şifreyle oturum açtığınızda size haber verir."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'da oturum aç"</string>
 <string name="sync_switch_title">"Banana Browser verilerimi senkronize et"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'un özelliklerini ve performansını iyileştirmeye yardımcı olun"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Seçilen veriler Banana Browser\'dan ve senkronize edilen cihazlarınızdan kaldırıldı.
 
 Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesabınızla ilişkili başka biçimlerde tarama geçmişi &lt;link&gt;myactivity.google.com&lt;/link&gt; adresinde bulunabilir."</string>
-<string name="safety_check_description">"Banana Browser, ayarlarınızın sizi aşağıdakilerden koruyup korumadığını kontrol edebilir:"</string>
-<string name="safety_check_safe_browsing_disabled">"Güvenli Tarama kapalı. Banana Browser bunun açılmasını öneriyor."</string>
-<string name="safety_check_passwords_no_passwords">"Kaydedilen şifre yok. Kaydetmeniz halinde Banana Browser, şifrelerinizi kontrol edebilir."</string>
+<string name="safety_check_description">"Banana Browser; veri ihlallerine, güvenli olmayan web sitelerine ve diğer tehditlere karşı güvende kalmanıza yardımcı olabilir"</string>
+<string name="safety_check_passwords_error">"Banana Browser, şifrelerinizi kontrol edemiyor"</string>
+<string name="safety_check_passwords_error_offline">"Çevrimdışı. Banana Browser, şifrelerinizi kontrol edemiyor."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser, şifrelerin tümünü kontrol edemedi"</string>
+<string name="safety_check_updates_updated">"Banana Browser güncel"</string>
+<string name="safety_check_updates_outdated">"Banana Browser sürümü eski"</string>
+<string name="safety_check_updates_offline">"Çevrimdışı. Banana Browser, güncellemeleri denetleyemiyor."</string>
+<string name="safety_check_updates_error">"Banana Browser, güncellemeleri denetleyemiyor"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Banana Browser\'da güvende kalmanızı sağlar ve oturum açtığınızda diğer Google uygulamalarındaki güvenliğinizi artırmak için kullanılabilir."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"URL\'leri, Banana Browser\'da kayıtlı güvenli olmayan siteler listesine göre kontrol eder. Banana Browser, bir sitenin şifrenizi çalmaya çalışması veya zararlı bir dosya indirmeniz halinde de Güvenli Tarama\'ya sayfa içeriğinden parçalarla birlikte URL\'ler gönderebilir."</string>
+<string name="languages_set_application_language_prompt">"Banana Browser’un dili olarak kullan"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır."</string>
 <string name="data_reduction_description_lite_mode">"Basit mod açıkken, Banana Browser sayfaların daha hızlı yüklenmesi için Google sunucularını kullanır. Basit mod, çok yavaş sayfaları yalnızca önemli içerikleri yüklenecek şekilde yeniden yazar. Basit mod, Gizli sekmelerde kullanılamaz."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır. Banana Browser, ziyaret ettiğiniz sayfaları iyileştirmek için web trafiğinizi Google\'a gönderir. &lt;link&gt;Daha fazla bilgi&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s, Banana Browser\'da açılacak. Devam ederek &lt;LINK1&gt;Google Hizmet Şartları&lt;/LINK1&gt; ile &lt;LINK2&gt;Google Banana Browser ve Banana Browser OS Ek Hizmet Şartları&lt;/LINK2&gt;\'nı kabul etmiş olursunuz. &lt;LINK3&gt;Family Link ile Yönetilen Google Hesapları İçin Gizlilik Uyarısı&lt;/LINK3&gt; da geçerlidir."</string>
 <string name="fre_send_report_check">"Google\'a kullanım istatistikleri ve kilitlenme raporları göndererek Banana Browser\'u iyileştirmeye yardımcı olun."</string>
 <string name="fre_welcome">"Banana Browser\'a Hoş Geldiniz"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Google Hesabınızla oturum açacaksınız\n(bu, Banana Browser Senkronizasyonunu açmaz)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser, bilgilerinizi doğrulayamadı"</string>
 <string name="external_app_restricted_access_error">"Banana Browser, istenen kaynağa erişemiyor."</string>
 <string name="menu_update">"Banana Browser\'u güncelle"</string>
 <string name="menu_update_unsupported">"Banana Browser güncellenemiyor"</string>
@@ -64,7 +81,7 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="chrome_survey_prompt">"Banana Browser\'u daha iyi hale getirmeye yardımcı olun. &lt;LINK&gt;Ankete katıl&lt;/LINK&gt;."</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser güncellenemiyor. Diğer seçenekler"</string>
 <string name="unsupported_number_of_windows">"Desteklenmeyen sayıda Banana Browser örneği var."</string>
-<string name="storage_management_unimportant_site_data_description">"Banana Browser\'un önemli olmadığını düşündüğü site depolama alanı (ör. kayıtlı ayarları bulunmayan veya sık ziyaret etmediğiniz siteler)"</string>
+<string name="storage_management_unimportant_site_data_description">"Banana Browser\'un önemli olmadığını düşündüğü depolanmış veriler (ör. kayıtlı ayarları bulunmayan veya sık ziyaret etmediğiniz siteler)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Bu işlem Banana Browser\'un önemli olmadığını düşündüğü çerezleri, önbelleği ve diğer site verilerini temizleyecek."</string>
 <string name="storage_management_all_storage_description">"Hesaplar, yer işaretleri ve kayıtlı ayarlar da dahil olmak üzere Banana Browser tarafından kullanılan tüm veriler"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser\'un tüm uygulama verileri kalıcı olarak silinecek. Buna tüm dosyalar, ayarlar, hesaplar, veritabanları vb. dahildir."</string>
@@ -113,11 +130,4 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kart ve adres bilgileri Banana Browser\'dan ve Google Hesabınızdan (%1$s) alınmaktadır. Bunları BEGIN_LINKAyarlarEND_LINK\'dan yönetebilirsiniz."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartlar ve adresler Banana Browser\'dan alınmaktadır. Bu bilgileri BEGIN_LINKAyarlarEND_LINK\'dan yönetebilirsiniz."</string>
-<string name="android_permission_off">"&lt;link&gt;Android Ayarları&lt;/link&gt;\'nda Banana Browser için izni açın."</string>
-<string name="android_permission_off_plural">"&lt;link&gt;Android Ayarları&lt;/link&gt;\'nda Banana Browser için izinleri açın."</string>
-<string name="android_ar_camera_permission_off">"Banana Browser\'un artırılmış gerçekliği (AR) kullanması için &lt;link&gt;Android Ayarlarında&lt;/link&gt; kamerayı da açın."</string>
-<string name="android_camera_permission_off">"Banana Browser\'un kameranıza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'ında da kamerayı açın."</string>
-<string name="android_location_permission_off">"Banana Browser\'un konumunuza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da konumu açın."</string>
-<string name="android_microphone_permission_off">"Banana Browser\'un mikrofonunuza erişebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da mikrofonu açın."</string>
-<string name="android_notifications_permission_off">"Banana Browser\'un size bildirim gönderebilmesi için &lt;link&gt;Android Ayarları&lt;/link&gt;\'nda da bildirimleri açın."</string>
 </resources>

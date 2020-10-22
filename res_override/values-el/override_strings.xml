@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Δεν υπάρχουν αποθηκευμένοι κωδικοί πρόσβασης. Το Banana Browser μπορεί να ελέγξει τους κωδικούς πρόσβασής σας όταν τους αποθηκεύσετε."</string>
+<string name="password_check_status_message_error_offline">"Το Banana Browser δεν μπορεί να ελέγξει τους κωδικούς πρόσβασής σας. Δοκιμάστε να ελέγξετε τη σύνδεσή σας στο διαδίκτυο."</string>
+<string name="password_check_status_message_error_quota_limit">"Το Banana Browser δεν μπόρεσε να ελέγξει όλους τους κωδικούς πρόσβασης. Δοκιμάστε ξανά αύριο."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Το Banana Browser δεν μπόρεσε να ελέγξει όλους τους κωδικούς πρόσβασης. Δοκιμάστε ξανά αύριο ή &lt;link&gt;ελέγξτε τους κωδικούς πρόσβασης στον Λογαριασμό σας Google&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Το Banana Browser μπορεί να ελέγξει τους κωδικούς πρόσβασής σας όταν συνδέεστε με τον Λογαριασμό σας Google."</string>
+<string name="password_check_status_message_error_unknown">"Το Banana Browser δεν μπορεί να ελέγξει τους κωδικούς πρόσβασής σας. Δοκιμάστε ξανά."</string>
+<string name="password_check_status_subtitle_no_findings">"Το Banana Browser θα σας ειδοποιήσει όταν συνδεθείτε με έναν παραβιασμένο κωδικό πρόσβασης."</string>
 <string name="sign_in_to_chrome">"Σύνδεση στο Banana Browser"</string>
 <string name="sync_switch_title">"Συγχρονισμός των δεδομένων του Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Συμβάλλετε στη βελτίωση των λειτουργιών και της απόδοσης του Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Τα επιλεγμένα δεδομένα καταργήθηκαν από το Banana Browser και τις συγχρονισμένες συσκευές σας.
 
 Ο Λογαριασμός σας Google μπορεί να έχει άλλες μορφές ιστορικού περιήγησης, όπως αναζητήσεις και δραστηριότητα από άλλες υπηρεσίες της Google στη διεύθυνση &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Το Banana Browser μπορεί να ελέγχει εάν οι ρυθμίσεις σας σάς προστατεύουν από:"</string>
-<string name="safety_check_safe_browsing_disabled">"Η Ασφαλής περιήγηση είναι απενεργοποιημένη. Το Banana Browser συνιστά να την ενεργοποιήσετε."</string>
-<string name="safety_check_passwords_no_passwords">"Δεν υπάρχουν αποθηκευμένοι κωδικοί πρόσβασης. Το Banana Browser μπορεί να ελέγξει τους κωδικούς πρόσβασής σας όταν τους αποθηκεύσετε."</string>
+<string name="safety_check_description">"Το Banana Browser μπορεί να σας προστατέψει από παραβιάσεις δεδομένων, μη ασφαλείς ιστοτόπους κ.α."</string>
+<string name="safety_check_passwords_error">"Το Banana Browser δεν μπορεί να ελέγξει τους κωδικούς πρόσβασής σας."</string>
+<string name="safety_check_passwords_error_offline">"Εκτός σύνδεσης. Το Banana Browser δεν μπορεί να ελέγξει τους κωδικούς πρόσβασής σας."</string>
+<string name="safety_check_passwords_error_quota_limit">"Το Banana Browser δεν μπόρεσε να ελέγξει όλους τους κωδικούς πρόσβασης."</string>
+<string name="safety_check_updates_updated">"Το Banana Browser έχει ενημερωθεί."</string>
+<string name="safety_check_updates_outdated">"Το Banana Browser δεν είναι ενημερωμένο"</string>
+<string name="safety_check_updates_offline">"Εκτός σύνδεσης. Το Banana Browser δεν μπορεί να ελέγξει για ενημερώσεις."</string>
+<string name="safety_check_updates_error">"Το Banana Browser δεν μπορεί να ελέγξει για ενημερώσεις."</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Διατηρεί την ασφάλειά σας στο Banana Browser και μπορεί να χρησιμοποιηθεί για τη βελτίωση της ασφάλειάς σας σε άλλες εφαρμογές Google όταν είστε συνδεδεμένοι."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Ελέγχει αν τα URL περιλαμβάνονται στην λίστα μη ασφαλών ιστοτόπων που είναι αποθηκευμένη στο Banana Browser. Εάν ένας ιστότοπος προσπαθήσει να κλέψει τον κωδικό σας ή όταν κάνετε λήψη ενός επιβλαβούς αρχείου, το Banana Browser μπορεί επίσης να στείλει URL, καθώς και τμήματα του περιεχομένου της σελίδας, στην Ασφαλή περιήγηση."</string>
+<string name="languages_set_application_language_prompt">"Χρήση ως γλώσσας του Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Στη λειτουργία Lite, το Banana Browser φορτώνει σελίδες πιο γρήγορα και χρησιμοποιεί έως και 60 τοις εκατό λιγότερα δεδομένα."</string>
 <string name="data_reduction_description_lite_mode">"Όταν η λειτουργία Lite είναι ενεργοποιημένη, το Banana Browser χρησιμοποιεί διακομιστές της Google για να επιταχύνει τη φόρτωση των σελίδων. Η λειτουργία Lite επανεγγράφει τις πολύ αργές σελίδες έτσι ώστε να φορτώνεται μόνο το απαραίτητο περιεχόμενο. Η λειτουργία Lite δεν εφαρμόζεται σε καρτέλες ανώνυμης περιήγησης."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Στη λειτουργία Lite, το Banana Browser φορτώνει τις σελίδες πιο γρήγορα και χρησιμοποιεί έως και 60% λιγότερα δεδομένα. Για να βελτιστοποιήσει τις σελίδες που επισκέπτεστε, το Banana Browser στέλνει την επισκεψιμότητα ιστού σας στο Google. &lt;link&gt;Μάθετε περισσότερα&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Η εφαρμογή %1$s θα ανοίξει στο Banana Browser. Εάν συνεχίσετε, συμφωνείτε με τους &lt;LINK1&gt;Όρους Παροχής Υπηρεσιών της Google&lt;/LINK1&gt; και τους &lt;LINK2&gt;Πρόσθετους Όρους Παροχής Υπηρεσιών του Google Banana Browser και του Banana Browser OS&lt;/LINK2&gt;. Ισχύει επίσης η &lt;LINK3&gt;Σημείωση απορρήτου για Λογαριασμούς Google που διαχειρίζονται από το Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Συμβάλετε στη βελτίωση του Banana Browser, στέλνοντας στην Google στατιστικά στοιχεία χρήσης και αναφορές σφαλμάτων."</string>
 <string name="fre_welcome">"Καλώς ήρθατε στο Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Θα συνδεθείτε με τον Λογαριασμό σας Google\n(αυτή η ενέργεια δεν θα απενεργοποιήσει τον Συγχρονισμό Banana Browser)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Το Banana Browser δεν ήταν σε θέση να επαληθεύσει τις πληροφορίες σας."</string>
 <string name="external_app_restricted_access_error">"Το Banana Browser δεν έχει πρόσβαση στον πόρο που ζητήθηκε"</string>
 <string name="menu_update">"Ενημερώστε το Banana Browser"</string>
 <string name="menu_update_unsupported">"Αδύνατη ενημέρωση Banana Browser"</string>
@@ -64,7 +81,7 @@
 <string name="chrome_survey_prompt">"Συμβάλλετε στη βελτίωση του Banana Browser. &lt;LINK&gt;Λάβετε μέρος στην έρευνα&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Δεν είναι δυνατή η ενημέρωση του Banana Browser. Περισσότερες επιλογές"</string>
 <string name="unsupported_number_of_windows">"Μη υποστηριζόμενος αριθμός παρουσιών Banana Browser."</string>
-<string name="storage_management_unimportant_site_data_description">"Αποθηκευτικός χώρος ιστοτόπων που το Banana Browser θεωρεί ότι δεν είναι σημαντικός (π.χ. ιστότοποι χωρίς αποθηκευμένες ρυθμίσεις ή που δεν επισκέπτεστε συχνά)"</string>
+<string name="storage_management_unimportant_site_data_description">"Αποθηκευμένα δεδομένα τα οποία το Banana Browser θεωρεί ότι δεν είναι σημαντικά (π.χ. ιστότοποι χωρίς αποθηκευμένες ρυθμίσεις ή που δεν επισκέπτεστε συχνά)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Αυτό θα διαγράψει τα cookie, την κρυφή μνήμη και άλλα δεδομένα ιστοτόπων που το Banana Browser θεωρεί ότι δεν είναι σημαντικά."</string>
 <string name="storage_management_all_storage_description">"Σύνολο δεδομένων που χρησιμοποιούνται από το Banana Browser, συμπεριλαμβανομένων των λογαριασμών, των σελιδοδεικτών και των αποθηκευμένων ρυθμίσεων"</string>
 <string name="storage_management_reset_app_dialog_text">"Όλα τα δεδομένα εφαρμογών του Banana Browser θα διαγραφούν οριστικά. Σε αυτά περιλαμβάνονται όλα τα αρχεία, οι ρυθμίσεις, οι λογαριασμοί, οι βάσεις δεδομένων, κ.λπ."</string>
@@ -113,11 +130,4 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Οι κάρτες και οι διευθύνσεις προέρχονται από το Banana Browser και τον Λογαριασμό σας Google (%1$s). Μπορείτε να τις διαχειριστείτε στις BEGIN_LINKΡυθμίσειςEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Οι κάρτες και οι διευθύνσεις προέρχονται από το Banana Browser. Μπορείτε να τις διαχειριστείτε στις BEGIN_LINKΡυθμίσειςEND_LINK."</string>
-<string name="android_permission_off">"Ενεργοποίηση των αδειών για το Banana Browser στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Ενεργοποίηση των αδειών για το Banana Browser στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Για να επιτρέπεται στο Banana Browser να χρησιμοποιεί AR, ενεργοποιήστε επίσης την κάμερα στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Για να επιτρέψετε στο Banana Browser να αποκτήσει πρόσβαση στην κάμερά σας, ενεργοποιήστε επίσης την κάμερα στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Για να επιτρέψετε στο Banana Browser να αποκτήσει πρόσβαση στην τοποθεσία σας, ενεργοποιήστε επίσης την τοποθεσία στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Για να επιτρέψετε στο Banana Browser να αποκτήσει πρόσβαση στο μικρόφωνό σας, ενεργοποιήστε επίσης το μικρόφωνο στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Για να επιτρέψετε στο Banana Browser να σας στέλνει ειδοποιήσεις, ενεργοποιήστε επίσης τις ειδοποιήσεις στις &lt;link&gt;Ρυθμίσεις Android&lt;/link&gt;."</string>
 </resources>

@@ -16,22 +16,22 @@ diff --git tb/gpu/config/gpu_util.cc tb_diff/gpu/config/gpu_util.cc
    return kGpuFeatureStatusDisabled;
  #else
 +#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
-+  if (blacklisted_features.count(GPU_FEATURE_TYPE_ANDROID_SURFACE_CONTROL))
-+    return kGpuFeatureStatusBlacklisted;
++  if (blocklisted_features.count(GPU_FEATURE_TYPE_ANDROID_SURFACE_CONTROL))
++    return kGpuFeatureStatusBlocklisted;
 +#endif
 +
    if (!gpu_preferences.enable_android_surface_control)
      return kGpuFeatureStatusDisabled;
  
-@@ -371,6 +379,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
+@@ -374,6 +382,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
      gpu_feature_info->status_values[GPU_FEATURE_TYPE_ACCELERATED_WEBGL2] =
-         kGpuFeatureStatusBlacklisted;
+         kGpuFeatureStatusBlocklisted;
    }
 +
 +#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
 +  if (!base::android::AndroidImageReader::GetInstance().IsSupported()) {
 +    gpu_feature_info->status_values[GPU_FEATURE_TYPE_ANDROID_SURFACE_CONTROL] =
-+        kGpuFeatureStatusBlacklisted;
++        kGpuFeatureStatusBlocklisted;
 +  }
 +#endif
  }

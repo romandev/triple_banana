@@ -1,7 +1,7 @@
 diff --git tb/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc tb_diff/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
 --- tb/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
 +++ tb_diff/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
-@@ -156,7 +156,7 @@ void ChromeSubresourceFilterClient::LogAction(SubresourceFilterAction action) {
+@@ -159,7 +159,7 @@ void ChromeSubresourceFilterClient::LogAction(SubresourceFilterAction action) {
  }
  
  void ChromeSubresourceFilterClient::ShowUI(const GURL& url) {

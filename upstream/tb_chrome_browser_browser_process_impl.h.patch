@@ -10,9 +10,9 @@ diff --git tb/chrome/browser/browser_process_impl.h tb_diff/chrome/browser/brows
 +#endif
 +
  class BatteryMetrics;
- class ChromeFeatureListCreator;
  class ChromeMetricsServicesManagerClient;
-@@ -402,6 +406,11 @@ class BrowserProcessImpl : public BrowserProcess,
+ class DevToolsAutoOpener;
+@@ -394,6 +398,11 @@ class BrowserProcessImpl : public BrowserProcess,
    std::unique_ptr<SecureOriginPrefsObserver> secure_origin_prefs_observer_;
    std::unique_ptr<SiteIsolationPrefsObserver> site_isolation_prefs_observer_;
  

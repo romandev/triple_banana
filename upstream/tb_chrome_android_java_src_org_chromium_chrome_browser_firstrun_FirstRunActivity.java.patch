@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunActivity.java
-@@ -141,13 +141,6 @@ public class FirstRunActivity extends FirstRunActivityBase implements FirstRunPa
+@@ -173,13 +173,6 @@ public class FirstRunActivity extends FirstRunActivityBase implements FirstRunPa
              notifyAdapter = true;
          }
  
@@ -15,7 +15,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/First
          if (notifyAdapter && mPagerAdapter != null) {
              mPagerAdapter.notifyDataSetChanged();
          }
-@@ -173,7 +166,7 @@ public class FirstRunActivity extends FirstRunActivityBase implements FirstRunPa
+@@ -205,7 +198,7 @@ public class FirstRunActivity extends FirstRunActivityBase implements FirstRunPa
      protected View createContentView() {
          mPager = new FirstRunViewPager(this);
          mPager.setId(R.id.fre_pager);

@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Žiadne uložené heslá. Banana Browser môže skontrolovať heslá, keď ich uložíte."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser nemôže skontrolovať heslá. Skontrolujte internetové pripojenie."</string>
+<string name="password_check_status_message_error_signed_out">"Keď sa prihlásite pomocou účtu Google, Banana Browser môže skontrolovať vaše heslá."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser nemôže skontrolovať heslá. Skúste to znova."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser vás upozorní, keď sa prihlásite prelomeným heslom."</string>
 <string name="sign_in_to_chrome">"Prihlásenie do prehliadača Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Skopírovaná do prehliadača Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exportovať heslá uložené v Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser odosiela Googlu webové adresy niektorých navštívených stránok, obmedzené informácie o systéme a obsah niektorých stránok na účely rozpoznávania nebezpečných aplikácií a webov."</string>
-<string name="safety_check_description">"Banana Browser môže skontrolovať, či vás nastavenia chránia pred:"</string>
-<string name="safety_check_safe_browsing_disabled">"Bezpečné prehliadanie je vypnuté. Banana Browser ho odporúča zapnúť."</string>
-<string name="safety_check_passwords_no_passwords">"Žiadne uložené heslá. Banana Browser môže skontrolovať heslá, keď ich uložíte."</string>
+<string name="safety_check_description">"Banana Browser vás môže chrániť pred porušeniami ochrany údajov, nebezpečnými webmi a ďalšími hrozbami"</string>
+<string name="safety_check_passwords_error">"Banana Browser nemôže kontrolovať heslá"</string>
+<string name="safety_check_passwords_error_offline">"Offline. Banana Browser nemôže kontrolovať heslá."</string>
+<string name="safety_check_updates_updated">"Banana Browser je aktuálny"</string>
+<string name="safety_check_updates_outdated">"Prehliadač Banana Browser je zastaraný"</string>
+<string name="safety_check_updates_offline">"Offline. Banana Browser nemôže skontrolovať dostupnosť aktualizácií."</string>
+<string name="safety_check_updates_error">"Banana Browser nemôže skontrolovať dostupnosť aktualizácií"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Chráni vás v Banana Browser a môže zlepšiť zabezpečenie v ďalších aplikáciách Google, keď sa prihlásite."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Kontroluje webové adresy podľa zoznamu nebezpečných webov uloženého v Banana Browser. Ak sa vám určitý web pokúsi ukradnúť heslo alebo stiahnete škodlivý súbor, Banana Browser môže tiež odoslať webové adresy vrátane častí obsahu stránky Bezpečnému prehliadaniu."</string>
 <string name="data_reduction_benefits_description_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát."</string>
 <string name="data_reduction_promo_summary_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát. Banana Browser odosiela údaje o vašej návštevnosti webu do Googlu, ktorý na základe nich optimalizuje vami navštevované stránky. &lt;link&gt;Ďalšie informácie&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser ušetril %1$d MB"</string>
@@ -41,7 +52,7 @@
 <string name="chrome_survey_prompt">"Pomôžte zlepšiť Banana Browser. &lt;LINK&gt;Zúčastniť sa prieskumu&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser sa nedá aktualizovať. Ďalšie možnosti"</string>
 <string name="unsupported_number_of_windows">"Nepodporovaný počet inštancií prehliadača Banana Browser."</string>
-<string name="storage_management_unimportant_site_data_description">"Úložisko webu, ktoré Banana Browser nepovažuje za dôležité (napr. webové stránky bez uložených nastavení alebo také, ktoré nenavštevujete často)"</string>
+<string name="storage_management_unimportant_site_data_description">"Uložené dáta, ktoré Banana Browser nepovažuje za dôležité (napríklad weby bez uložených nastavení alebo také, ktoré nenavštevujete často)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Táto akcia vymaže súbory cookie, vyrovnávaciu pamäť a ďalšie údaje webov, ktoré Banana Browser nepovažuje za dôležité."</string>
 <string name="storage_management_reset_app_dialog_text">"Všetky dáta aplikácií v Banana Browser budú natrvalo odstránené. Platí to aj pre všetky súbory, nastavenia, účty, databázy atď."</string>
 <string name="sogou_explanation">"Banana Browser môže použiť &lt;b&gt;Sogou&lt;/b&gt; na vyhľadávanie v Číne. Táto možnosť sa dá zmeniť v &lt;link&gt;Nastaveniach&lt;/link&gt;."</string>
@@ -81,7 +92,4 @@
           &lt;li&gt;súbory cookie a dáta webov,
           &lt;li&gt;údaje zadané vo formulároch.
         &lt;/ul&gt;"</string>
-<string name="android_permission_off">"Zapnite povolenie pre Banana Browser v &lt;link&gt;nastaveniach Androidu&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Zapnite povolenia pre Banana Browser v &lt;link&gt;nastaveniach Androidu&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Fotoaparát zapnite aj v &lt;link&gt;Nastaveniach Androidu&lt;/link&gt;, aby mohol Banana Browser používať RR."</string>
 </resources>

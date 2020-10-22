@@ -10,7 +10,7 @@ import android.app.Activity;
 import org.banana.cake.interfaces.BananaPipController;
 
 import org.chromium.base.ApplicationStatus;
-import org.chromium.chrome.browser.ChromeActivity;
+import org.chromium.chrome.browser.app.ChromeActivity;
 import org.chromium.chrome.browser.media.PictureInPictureController;
 import org.chromium.content_public.browser.WebContents;
 

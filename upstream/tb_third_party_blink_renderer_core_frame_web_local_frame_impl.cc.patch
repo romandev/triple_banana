@@ -1,7 +1,7 @@
 diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_diff/third_party/blink/renderer/core/frame/web_local_frame_impl.cc
 --- tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc
 +++ tb_diff/third_party/blink/renderer/core/frame/web_local_frame_impl.cc
-@@ -264,6 +264,10 @@
+@@ -260,6 +260,10 @@
  #include "third_party/blink/renderer/platform/weborigin/security_policy.h"
  #include "third_party/blink/renderer/platform/wtf/hash_map.h"
  
@@ -12,7 +12,7 @@ diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_d
  namespace blink {
  
  static int g_frame_count = 0;
-@@ -2258,6 +2262,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
+@@ -2311,6 +2315,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
    if (!GetFrame())
      return;
  

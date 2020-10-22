@@ -1,7 +1,7 @@
 diff --git tb/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java tb_diff/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java
 --- tb/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java
 +++ tb_diff/components/external_intents/android/java/src/org/chromium/components/external_intents/ExternalNavigationHandler.java
-@@ -746,7 +746,7 @@ public class ExternalNavigationHandler {
+@@ -752,7 +752,7 @@ public class ExternalNavigationHandler {
       */
      private boolean isYoutubePairingCode(ExternalNavigationParams params) {
          // TODO(https://crbug.com/1009539): Replace this regex with proper URI parsing.

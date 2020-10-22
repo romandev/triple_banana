@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Няма захаваных пароляў. Banana Browser можа правяраць толькі захаваныя паролі."</string>
+<string name="password_check_status_message_error_offline">"Браўзеру Banana Browser не ўдаецца праверыць паролі. Паспрабуйце праверыць падключэнне да інтэрнэту."</string>
+<string name="password_check_status_message_error_quota_limit">"Браўзеру Banana Browser не ўдалося праверыць усе паролі. Паўтарыце спробу заўтра."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Браўзеру Banana Browser не ўдалося праверыць усе паролі. Паўтарыце спробу заўтра або &lt;link&gt;праверце паролі ва Уліковым запісе Google&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser зможа праверыць паролі толькі пасля таго, як вы ўвойдзеце ва Уліковы запіс Google."</string>
+<string name="password_check_status_message_error_unknown">"Браўзеру Banana Browser не ўдаецца праверыць паролі. Паўтарыце спробу."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser адправіць вам апавяшчэнне, калі вы ўвойдзеце ва ўліковы запіс, выкарыстаўшы раскрыты пароль."</string>
 <string name="sign_in_to_chrome">"Увайсці ў Banana Browser"</string>
 <string name="sync_switch_title">"Сінхранізацыя даных Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Дапамажыце палепшыць функцыі і прадукцыйнасць Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Выбраныя даныя выдалены з Banana Browser і сінхранізаваных прылад.
 
 На сайце &lt;link&gt;myactivity.google.com&lt;/link&gt; могуць быць размешчаны іншыя формы гісторыі праглядаў сайтаў для вашага Уліковага запісу Google: напрыклад, пошукавыя запыты і дзеянні ў іншых сэрвісах Google."</string>
-<string name="safety_check_description">"Banana Browser можа праверыць налады наступных фактараў бяспекі:"</string>
-<string name="safety_check_safe_browsing_disabled">"\"Бяспечны прагляд\" выключаны. Banana Browser рэкамендуе ўключыць гэты рэжым."</string>
-<string name="safety_check_passwords_no_passwords">"Няма захаваных пароляў. Banana Browser можа правяраць толькі захаваныя паролі."</string>
+<string name="safety_check_description">"Banana Browser дапамагае прадухіляць праблемы, звязаныя з уцечкай даных, наведваннем небяспечных вэб-сайтаў і г. д."</string>
+<string name="safety_check_passwords_error">"Браўзеру Banana Browser не ўдаецца праверыць паролі"</string>
+<string name="safety_check_passwords_error_offline">"Няма падключэння да сеткі. Браўзеру Banana Browser не ўдаецца праверыць паролі."</string>
+<string name="safety_check_passwords_error_quota_limit">"Браўзеру Banana Browser не ўдалося праверыць усе паролі"</string>
+<string name="safety_check_updates_updated">"Banana Browser не патрабуе абнаўлення"</string>
+<string name="safety_check_updates_outdated">"Banana Browser састарэў"</string>
+<string name="safety_check_updates_offline">"Няма падключэння да сеткі. Браўзеру Banana Browser не ўдаецца праверыць наяўнасць абнаўленняў."</string>
+<string name="safety_check_updates_error">"Браўзеру Banana Browser не ўдаецца праверыць наяўнасць абнаўленняў"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Абараняе вас у браўзеры Banana Browser і можа выкарыстоўвацца для паляпшэння бяспекі ў іншых праграмах Google, калі вы ўвайшлі ва ўліковы запіс."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Правярае, ці знаходзяцца URL-адрасы ў спісе небяспечных сайтаў, захаваным у Banana Browser. Пры спробе сайта выкрасці пароль або пры спампоўванні шкоднага файла браўзер Banana Browser можа таксама адпраўляць у Бяспечны прагляд URL-адрасы, уключаючы фрагменты змесціва старонкі."</string>
+<string name="languages_set_application_language_prompt">"Выкарыстоўваць як мову Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"У спрошчаным рэжыме Banana Browser загружае старонкі хутчэй і зніжае выкарыстанне трафіка максімум на 60 працэнтаў."</string>
 <string name="data_reduction_description_lite_mode">"Калі ўключаны лёгкі рэжым, браўзер Banana Browser будзе выкарыстоўваць серверы Google, каб паскорыць загрузку старонак. У лёгкім рэжыме на вельмі павольных старонках загружацца будзе толькі асноўнае змесціва. Лёгкі рэжым не працуе на ўкладках інкогніта."</string>
 <string name="data_reduction_promo_summary_lite_mode">"У спрошчаным рэжыме Banana Browser загружае старонкі хутчэй і зніжае выкарыстанне трафіка максімум на 60 працэнтаў. Каб аптымізаваць старонкі, якія вы наведваеце, Banana Browser адпраўляе даныя пра ваш інтэрнэт-трафік у Google. &lt;link&gt;Даведацца больш&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Праграма \"%1$s\" адкрыецца ў Banana Browser. Працягваючы, вы згаджаецеся з &lt;LINK1&gt;Умовамі выкарыстання Google&lt;/LINK1&gt; і &lt;LINK2&gt;Дадатковымі ўмовамі выкарыстання Google Banana Browser і Banana Browser OS&lt;/LINK2&gt;. Таксама прымяняецца &lt;LINK3&gt;Паведамленне аб прыватнасці ў дачыненні да Уліковых запісаў Google, якія кіруюцца праз Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Дапамажыце палепшыць Banana Browser, адпраўляючы ў Google статыстыку выкарыстання і справаздачы аб збоях."</string>
 <string name="fre_welcome">"Вас вітае Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Вы ўвойдзеце ва Уліковы запіс Google\n(Сінхранізацыя Banana Browser не ўключыцца)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Браўзеру Banana Browser не ўдалося спраўдзіць вашы звесткі"</string>
 <string name="external_app_restricted_access_error">"Banana Browser не мае доступу да запытанай крыніцы."</string>
 <string name="menu_update">"Абнавіць Banana Browser"</string>
 <string name="menu_update_unsupported">"Немагчыма абнавіць Banana Browser"</string>
@@ -64,7 +81,7 @@
 <string name="chrome_survey_prompt">"Дапамажыце палепшыць Banana Browser. &lt;LINK&gt;Прыміце ўдзел у апытанні&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Немагчыма абнавіць Banana Browser. Дадатковыя параметры"</string>
 <string name="unsupported_number_of_windows">"Недапушчальная колькасць версій Banana Browser."</string>
-<string name="storage_management_unimportant_site_data_description">"Даныя сайтаў, якія Banana Browser не лічыць важнымі (напрыклад, сайты, налады якіх не захаваны або якія вы наведваеце рэдка)"</string>
+<string name="storage_management_unimportant_site_data_description">"Захаваныя даныя, якія Banana Browser не лічыць важнымі (напрыклад, сайты, налады якіх не захаваны або якія вы наведваеце рэдка)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Пры гэтым ачысціцца кэш, будуць выдалены файлы cookie і іншыя даныя сайтаў, якія Banana Browser не лічыць важнымі."</string>
 <string name="storage_management_all_storage_description">"Агульны аб\'ём даных Banana Browser, у тым ліку закладкі, уліковыя запісы і захаваныя налады"</string>
 <string name="storage_management_reset_app_dialog_text">"Усе даныя праграмы Banana Browser будуць назаўсёды выдалены. Гэта датычыцца ўсіх файлаў, налад, уліковых запісаў, баз даных і г. д."</string>
@@ -113,11 +130,4 @@
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Карткі і адрасы паходзяць з Banana Browser і вашага Уліковага запісу Google (%1$s). Кіраваць імі можна ў BEGIN_LINKНаладахEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Даныя крэдытных картак і адрасы паходзяць з браўзера Banana Browser. Кіраваць імі можна ў BEGIN_LINKНаладахEND_LINK."</string>
-<string name="android_permission_off">"Уключыце дазвол для Banana Browser у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Уключыце дазволы для Banana Browser у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Каб Banana Browser мог выкарыстоўваць дапоўненую рэальнасць, уключыце таксама камеру ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Каб Banana Browser атрымаў доступ да камеры, уключыце камеру таксама ў &lt;link&gt;наладах Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Каб даць браўзеру Banana Browser доступ да даных пра ваша месцазнаходжанне, уключыце апошнія ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Каб даць браўзеру Banana Browser доступ да мікрафона, уключыце апошні ў &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Каб Banana Browser мог адпраўляць вам апавяшчэнні, таксама ўключыце іх у &lt;link&gt;Наладах Android&lt;/link&gt;."</string>
 </resources>

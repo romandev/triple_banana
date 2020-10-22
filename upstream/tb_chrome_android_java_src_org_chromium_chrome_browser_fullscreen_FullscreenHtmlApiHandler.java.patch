@@ -1,8 +1,8 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/fullscreen/FullscreenHtmlApiHandler.java
-@@ -498,10 +498,24 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo
-         mTabInFullscreen = tab;
+@@ -505,10 +505,24 @@ public class FullscreenHtmlApiHandler implements ActivityStateListener, WindowFo
+                 || VrModuleProvider.getDelegate().bootsToVr());
      }
  
 +    // #if defined(ENABLE_TRIPLE_BANANA)

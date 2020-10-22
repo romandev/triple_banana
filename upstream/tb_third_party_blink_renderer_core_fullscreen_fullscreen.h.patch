@@ -1,14 +1,14 @@
 diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.h tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.h
 --- tb/third_party/blink/renderer/core/fullscreen/fullscreen.h
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen.h
-@@ -85,6 +85,13 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
-       RequestType,
+@@ -73,6 +73,13 @@ class CORE_EXPORT Fullscreen final : public GarbageCollected<Fullscreen>,
+       FullscreenRequestType,
        ScriptState* state = nullptr,
        ExceptionState* exception_state = nullptr);
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  static ScriptPromise RequestFullscreen(const FullscreenOptions*,
 +                                         Element&,
-+                                         RequestType,
++                                         FullscreenRequestType,
 +                                         ScriptState* state,
 +                                         ExceptionState* exception_state);
 +#endif

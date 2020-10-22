@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Nema nijedne spremljene zaporke. Banana Browser može provjeriti vaše zaporke kad ih spremite."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser ne može provjeriti vaše zaporke. Provjerite internetsku vezu."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser nije uspio provjeriti sve zaporke. Pokušajte ponovo sutra."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser nije uspio provjeriti sve zaporke. Pokušajte ponovo sutra ili &lt;link&gt;provjerite zaporke na svojem Google računu&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser može provjeriti vaše zaporke kad se prijavite Google računom."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser ne može provjeriti vaše zaporke. Pokušajte ponovo."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser će vas obavijestiti kada se prijavite ugroženom zaporkom."</string>
 <string name="sign_in_to_chrome">"Prijavite se u Banana Browser"</string>
 <string name="sync_switch_title">"Sinkroniziraj podatke iz Banana Browsera"</string>
 <string name="usage_and_crash_reports_title">"Pomozite poboljšati Banana Browserove značajke i izvedbu"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Odabrani podaci uklonjeni su iz Banana Browsera i sa sinkroniziranih uređaja.
 
 Vaš Google račun može sadržavati druge oblike povijesti pregledavanja, na primjer pretraživanja i aktivnosti s drugih Googleovih usluga, na stranici &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser može provjeriti štite li vas vaše postavke putem sljedećeg:"</string>
-<string name="safety_check_safe_browsing_disabled">"Sigurno pregledavanje je isključeno. Banana Browser preporučuje da ga uključite."</string>
-<string name="safety_check_passwords_no_passwords">"Nema nijedne spremljene zaporke. Banana Browser može provjeriti vaše zaporke kad ih spremite."</string>
+<string name="safety_check_description">"Banana Browser vam može pomoći da se bolje zaštitite od povrede podataka, nesigurnih web-lokacija i još mnogo toga"</string>
+<string name="safety_check_passwords_error">"Banana Browser ne može provjeriti vaše zaporke"</string>
+<string name="safety_check_passwords_error_offline">"Offline. Banana Browser ne može provjeriti vaše zaporke."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser nije uspio provjeriti sve zaporke"</string>
+<string name="safety_check_updates_updated">"Banana Browser je ažuriran"</string>
+<string name="safety_check_updates_outdated">"Banana Browser je zastario"</string>
+<string name="safety_check_updates_offline">"Offline. Banana Browser ne može provjeriti ima li ažuriranja."</string>
+<string name="safety_check_updates_error">"Banana Browser ne može provjeriti ima li ažuriranja"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Štiti vas na Banana Browseru i može se upotrebljavati za poboljšanje vaše sigurnosti u drugim Googleovim aplikacijama kad ste prijavljeni."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Provjerava URL-ove s popisom nesigurnih web-lokacija pohranjenih u Banana Browseru. Ako neka web-lokacija pokuša ukrasti vašu zaporku ili ako preuzmete štetnu datoteku, Banana Browser također može poslati URL-ove, uključujući dijelove sadržaja web-stranice, Sigurnom pregledavanju."</string>
+<string name="languages_set_application_language_prompt">"Upotrijebi kao jezik Banana Browsera"</string>
 <string name="data_reduction_benefits_description_lite_mode">"U Jednostavnom načinu Banana Browser učitava stranice brže i smanjuje podatkovni promet do 60 posto."</string>
 <string name="data_reduction_description_lite_mode">"Kad je omogućen Jednostavni način, Banana Browser upotrebljava Googleove poslužitelje kako bi se stranice brže učitale. Jednostavni način ponovo ispisuje vrlo spore stranice kako bi se učitao samo neophodan sadržaj. Jednostavni se način ne primjenjuje na anonimne stranice."</string>
 <string name="data_reduction_promo_summary_lite_mode">"U Jednostavnom načinu Banana Browser učitava stranice brže i smanjuje podatkovni promet do 60 posto. Banana Browser šalje vaš web-promet Googleu radi optimizacije stranica koje posjećujete. &lt;link&gt;Saznajte više&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Vaš Google račun može sadržavati druge oblike povijesti pregledavanja, na pr
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Aplikacija %1$s otvorit će se u Banana Browseru. Nastavljanjem prihvaćate &lt;LINK1&gt;Googleove uvjete pružanja usluge&lt;/LINK1&gt; i &lt;LINK2&gt;Dodatne uvjete pružanja usluge za Google Banana Browser i OS Banana Browser&lt;/LINK2&gt;. Primjenjuje se i &lt;LINK3&gt;Obavijest o privatnosti za Google račune kojima se upravlja putem Family Linka&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Poboljšajte Banana Browser šaljući Googleu statistike upotrebe i izvješća o rušenju."</string>
 <string name="fre_welcome">"Dobro došli u Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Prijavit ćete se Google računom\n(time se neće uključiti Banana Browser sinkronizacija)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser nije uspio potvrditi vaše podatke"</string>
 <string name="external_app_restricted_access_error">"Banana Browser nema pristup zatraženom resursu."</string>
 <string name="menu_update">"Ažuriraj Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser nije ažuriran"</string>
@@ -64,7 +81,7 @@ Vaš Google račun može sadržavati druge oblike povijesti pregledavanja, na pr
 <string name="chrome_survey_prompt">"Pomognite poboljšati Banana Browser. &lt;LINK&gt;Ispunite anketu&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser se ne može ažurirati. Više opcija"</string>
 <string name="unsupported_number_of_windows">"Nepodržan broj različitih verzija Banana Browsera."</string>
-<string name="storage_management_unimportant_site_data_description">"Pohrana web-lokacije koju Banana Browser ne smatra važnom (primjerice web-lokacije koje nemaju spremljene postavke ili koje ne posjećujete često)"</string>
+<string name="storage_management_unimportant_site_data_description">"Pohranjeni podaci koje Banana Browser ne smatra važnim (primjerice web-lokacije za koje nema spremljenih postavki ili koje ne posjećujete često)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Time će se izbrisati kolačići, predmemorija i ostali podaci o web-lokacijama koje Banana Browser ne smatra važnima."</string>
 <string name="storage_management_all_storage_description">"Ukupna količina podataka koju Banana Browser upotrebljava, uključujući račune, oznake i spremljene postavke."</string>
 <string name="storage_management_reset_app_dialog_text">"Svi Banana Browserovi podaci aplikacije trajno će se izbrisati. To uključuje sve datoteke, postavke, račune, baze podataka i slično."</string>
@@ -112,11 +129,4 @@ Vaš Google račun može sadržavati druge oblike povijesti pregledavanja, na pr
           &lt;li&gt;informacije koje unesete u obrasce.
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_out">"Kartice i adrese dolaze iz Banana Browsera. Njima možete upravljati u BEGIN_LINKPostavkamaEND_LINK."</string>
-<string name="android_permission_off">"Uključite dopuštenje za Banana Browser u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Uključite dopuštenja za Banana Browser u &lt;link&gt;Postavkama Androida&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Da bi Banana Browser mogao koristiti proširenu stvarnost, uključite i kameru u &lt;link&gt;Androidovim postavkama&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Da bi Banana Browser mogao pristupiti vašoj kameri, uključite kameru i u &lt;link&gt;postavkama Androida&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Da bi Banana Browser mogao pristupiti vašoj lokaciji, uključite lokaciju i u &lt;link&gt;postavkama Androida&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Da bi Banana Browser mogao pristupiti vašem mikrofonu, uključite mikrofon i u &lt;link&gt;postavkama Androida&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Da bi vam Banana Browser mogao slati obavijesti, uključite obavijesti i u &lt;link&gt;postavkama Androida&lt;/link&gt;."</string>
 </resources>

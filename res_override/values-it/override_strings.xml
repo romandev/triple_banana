@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Nessuna password salvata. Banana Browser può controllare le password quando le salvi."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser non può controllare le tue password. Prova a controllare la connessione a Internet."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser non ha potuto controllare tutte le password. Riprova domani."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser non ha potuto controllare tutte le password. Riprova domani oppure &lt;link&gt;controlla le password salvate nel tuo Account Google&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser può controllare le tue password quando accedi con il tuo Account Google."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser non può controllare le tue password. Riprova."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser ti invierà una notifica quando esegui l\'accesso con una password compromessa."</string>
 <string name="sign_in_to_chrome">"Accedi a Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizza i tuoi dati di Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Contribuisci a migliorare le funzionalità e le prestazioni di Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"I dati selezionati sono stati rimossi da Banana Browser e dai dispositivi sincronizzati.
 
 Il tuo Account Google potrebbe avere altre forme di cronologia di navigazione, ad esempio ricerche e attività, di altri servizi Google alla pagina &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser può controllare se le tue impostazioni ti proteggono tramite:"</string>
-<string name="safety_check_safe_browsing_disabled">"Navigazione sicura è disattivata. Banana Browser consiglia di attivarla."</string>
-<string name="safety_check_passwords_no_passwords">"Nessuna password salvata. Banana Browser può controllare le password quando le salvi."</string>
+<string name="safety_check_description">"Banana Browser può contribuire a proteggerti da violazioni dei dati, siti web non sicuri e non solo"</string>
+<string name="safety_check_passwords_error">"Banana Browser non può controllare le tue password"</string>
+<string name="safety_check_passwords_error_offline">"Offline. Banana Browser non può controllare le tue password."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser non ha potuto controllare tutte le password"</string>
+<string name="safety_check_updates_updated">"Banana Browser è aggiornato"</string>
+<string name="safety_check_updates_outdated">"Banana Browser non è aggiornato"</string>
+<string name="safety_check_updates_offline">"Offline. Banana Browser non può controllare la disponibilità di aggiornamenti."</string>
+<string name="safety_check_updates_error">"Banana Browser non può controllare la disponibilità di aggiornamenti"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Ti protegge su Banana Browser e potrebbe essere utilizzata per migliorare la sicurezza su altre app Google se esegui l\'accesso."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Verifica gli URL con un elenco di siti non sicuri archiviati in Banana Browser. Se un sito cerca di rubare la tua password o se scarichi un file dannoso, Banana Browser potrebbe inviare anche gli URL, inclusi bit e contenuti di pagina, a Navigazione sicura."</string>
+<string name="languages_set_application_language_prompt">"Usa come lingua di Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Nella modalità Lite, Banana Browser carica le pagine più rapidamente e utilizza fino al 60 percento di dati in meno."</string>
 <string name="data_reduction_description_lite_mode">"Quando la modalità Lite è attiva, Banana Browser utilizza i server di Google per caricare più velocemente le pagine. La modalità Lite riscrive le pagine molto lente in modo che carichino solo i contenuti essenziali. La modalità Lite non si applica alle schede di navigazione in incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Nella modalità Lite, Banana Browser carica le pagine più rapidamente e utilizza fino al 60% di dati in meno. Per ottimizzare le pagine che visiti, Banana Browser invia il tuo traffico web a Google. &lt;link&gt;Ulteriori informazioni&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Il tuo Account Google potrebbe avere altre forme di cronologia di navigazione, a
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s si aprirà in Banana Browser. Se continui, accetti i &lt;LINK1&gt;Termini di servizio di Google&lt;/LINK1&gt; e i &lt;LINK2&gt;Termini di servizio aggiuntivi di Google Banana Browser e Banana Browser OS&lt;/LINK2&gt;.Si applica inoltre l\'&lt;LINK3&gt;Informativa sulla privacy per gli Account Google gestiti tramite Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Aiutaci a migliorare Banana Browser inviando a Google statistiche sull\'utilizzo e rapporti sugli arresti anomali."</string>
 <string name="fre_welcome">"Benvenuto in Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Verrà eseguito l\'accesso con il tuo Account Google\n(questa operazione non attiverà Sincronizzazione Banana Browser)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser non ha potuto verificare le tue informazioni"</string>
 <string name="external_app_restricted_access_error">"Banana Browser non ha accesso alla risorsa richiesta."</string>
 <string name="menu_update">"Aggiorna Banana Browser"</string>
 <string name="menu_update_unsupported">"Imp. aggiornare Banana Browser"</string>
@@ -64,7 +81,7 @@ Il tuo Account Google potrebbe avere altre forme di cronologia di navigazione, a
 <string name="chrome_survey_prompt">"Contribuisci a migliorare Banana Browser. &lt;LINK&gt;Rispondi al sondaggio&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Impossibile aggiornare Banana Browser. Altre opzioni"</string>
 <string name="unsupported_number_of_windows">"Numero di istanze di Banana Browser non supportato."</string>
-<string name="storage_management_unimportant_site_data_description">"Memoria utilizzata da siti che Banana Browser non ritiene importanti (ad esempio siti senza impostazioni salvate o che non visiti spesso)"</string>
+<string name="storage_management_unimportant_site_data_description">"I dati memorizzati che Banana Browser non ritiene importanti (ad esempio siti senza impostazioni salvate o che non visiti spesso)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Verrà svuotata la cache e verranno cancellati i cookie e altri dati relativi a siti che Banana Browser non ritiene importanti."</string>
 <string name="storage_management_all_storage_description">"Dati totali utilizzati da Banana Browser, tra cui account, preferiti e impostazioni salvate"</string>
 <string name="storage_management_reset_app_dialog_text">"Tutti i dati delle app di Banana Browser saranno eliminati definitivamente. Sono inclusi tutti i file, le impostazioni, gli account, i database e così via."</string>
@@ -112,11 +129,4 @@ Il tuo Account Google potrebbe avere altre forme di cronologia di navigazione, a
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Carte di credito e indirizzi provengono da Banana Browser e dall\'Account Google (%1$s). Puoi gestirli in BEGIN_LINKImpostazioniEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Carte di credito e indirizzi provengono da Banana Browser. Puoi gestirli in BEGIN_LINKImpostazioniEND_LINK."</string>
-<string name="android_permission_off">"Abilita l\'autorizzazione per Banana Browser in &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Abilita le autorizzazioni per Banana Browser in &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Per consentire a Banana Browser di utilizzare l\'AR, attiva anche la fotocamera nelle &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Per consentire a Banana Browser di accedere alla tua videocamera, devi attivare la videocamera anche nelle &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
-<string name="android_location_permission_off">"Per consentire a Banana Browser di accedere alla tua posizione, devi attivare la posizione anche nelle &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
-<string name="android_microphone_permission_off">"Per consentire a Banana Browser di accedere al tuo microfono, devi attivare il microfono anche nelle &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
-<string name="android_notifications_permission_off">"Per consentire a Banana Browser di inviarti notifiche, devi attivare le notifiche anche nelle &lt;link&gt;Impostazioni Android&lt;/link&gt;."</string>
 </resources>

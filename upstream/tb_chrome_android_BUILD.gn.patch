@@ -9,15 +9,15 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  import("//weblayer/variables.gni")
  import("channel.gni")
  import("java_sources.gni")
-@@ -477,6 +478,7 @@ android_library("chrome_java") {
-     "//third_party/cacheinvalidation:cacheinvalidation_proto_java",
+@@ -490,6 +491,7 @@ android_library("chrome_java") {
+     "//third_party/blink/public/mojom:mojom_platform_java",
      "//third_party/gif_player:gif_player_java",
      "//third_party/google_android_play_core:com_google_android_play_core_java",
 +    "//triple_banana/modules:mojom_java",
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -530,7 +532,7 @@ android_library("chrome_java") {
+@@ -540,7 +542,7 @@ android_library("chrome_java") {
    sources = chrome_java_sources + [
                app_hooks_impl,
                _chrome_version_java_file,
@@ -26,3 +26,14 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  
    # Include sources from feed_java_sources.gni.
    sources += feed_java_sources
+@@ -1429,7 +1431,9 @@ jinja_template_resources("chrome_public_apk_template_resources") {
+     "java/res_template/xml/file_paths.xml",
+     "java/res_template/xml/launchershortcuts.xml",
+     "java/res_template/xml/searchable.xml",
+-    "java/res_template/xml/syncadapter.xml",
++#if defined(ENABLE_TRIPLE_BANANA)
++#   "java/res_template/xml/syncadapter.xml",
++#endif
+   ]
+   res_dir = "java/res_template"
+   variables = [ "manifest_package=$chrome_public_manifest_package" ]

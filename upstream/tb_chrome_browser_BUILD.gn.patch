@@ -1,10 +1,10 @@
 diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
 --- tb/chrome/browser/BUILD.gn
 +++ tb_diff/chrome/browser/BUILD.gn
-@@ -2143,6 +2143,7 @@ static_library("browser") {
-     "//third_party/zlib:minizip",
+@@ -2177,6 +2177,7 @@ static_library("browser") {
      "//third_party/zlib/google:compression_utils",
      "//third_party/zlib/google:zip",
+     "//third_party/zxcvbn-cpp",
 +    "//triple_banana/modules:native",
      "//ui/accessibility",
      "//ui/base",

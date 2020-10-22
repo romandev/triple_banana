@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="password_check_status_message_error_no_passwords">"Tiada kata laluan yang disimpan. Banana Browser boleh menyemak kata laluan anda yang disimpan."</string>
+<string name="password_check_status_message_error_offline">"Banana Browser tidak dapat menyemak kata laluan anda. Cuba periksa sambungan Internet anda."</string>
+<string name="password_check_status_message_error_quota_limit">"Banana Browser tidak dapat menyemak semua kata laluan. Cuba lagi esok."</string>
+<string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser tidak dapat menyemak semua kata laluan. Cuba lagi esok atau &lt;link&gt;semak kata laluan dalam Akaun Google anda&lt;/link&gt;."</string>
+<string name="password_check_status_message_error_signed_out">"Banana Browser boleh menyemak kata laluan anda apabila anda log masuk menggunakan Akaun Google anda."</string>
+<string name="password_check_status_message_error_unknown">"Banana Browser tidak dapat menyemak kata laluan anda. Cuba lagi."</string>
+<string name="password_check_status_subtitle_no_findings">"Banana Browser akan memaklumkan kepada anda apabila anda log masuk menggunakan kata laluan yang terjejas."</string>
 <string name="sign_in_to_chrome">"Log masuk ke Banana Browser"</string>
 <string name="sync_switch_title">"Segerakkan data Banana Browser anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu meningkatkan ciri dan prestasi Banana Browser"</string>
@@ -13,9 +20,17 @@
 <string name="clear_browsing_data_history_dialog_data_text">"Data yang dipilih telah dialih keluar daripada Banana Browser dan peranti anda yang disegerakkan.
 
 Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain seperti carian dan aktiviti daripada perkhidmatan Google yang lain di &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser boleh menyemak sama ada tetapan anda melindungi anda daripada:"</string>
-<string name="safety_check_safe_browsing_disabled">"Penyemakan Imbas Selamat dimatikan. Banana Browser mengesyorkan agar ciri ini dihidupkan."</string>
-<string name="safety_check_passwords_no_passwords">"Tiada kata laluan yang disimpan. Banana Browser boleh menyemak kata laluan anda yang disimpan."</string>
+<string name="safety_check_description">"Banana Browser dapat membantu untuk memastikan anda selamat daripada pelanggaran data, tapak web yang tidak selamat dan pelbagai lagi"</string>
+<string name="safety_check_passwords_error">"Banana Browser tidak dapat menyemak kata laluan anda"</string>
+<string name="safety_check_passwords_error_offline">"Luar talian. Banana Browser tidak dapat menyemak kata laluan anda."</string>
+<string name="safety_check_passwords_error_quota_limit">"Banana Browser tidak dapat menyemak semua kata laluan"</string>
+<string name="safety_check_updates_updated">"Banana Browser sudah dikemas kini"</string>
+<string name="safety_check_updates_outdated">"Banana Browser sudah usang"</string>
+<string name="safety_check_updates_offline">"Luar talian. Banana Browser tidak dapat menyemak kemas kini."</string>
+<string name="safety_check_updates_error">"Banana Browser tidak dapat menyemak kemas kini"</string>
+<string name="safe_browsing_enhanced_protection_bullet_two">"Memastikan anda selamat pada Banana Browser dan mungkin digunakan untuk meningkatkan keselamatan anda dalam apl Google yang lain apabila anda log masuk."</string>
+<string name="safe_browsing_standard_protection_bullet_two">"Semak URL melalui perbandingan dengan senarai tapak tidak selamat yang disimpan dalam Banana Browser. Jika tapak cuba mencuri kata laluan anda atau apabila anda memuat turun fail yang berbahaya, Banana Browser juga mungkin menghantar URL, termasuk sedikit kandungan halaman, kepada Penyemakan Imbas Selamat."</string>
+<string name="languages_set_application_language_prompt">"Gunakan sebagai bahasa Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Dalam mod Ringkas, Banana Browser memuatkan halaman lebih pantas dan mengurangkan penggunaan data sehingga 60 peratus."</string>
 <string name="data_reduction_description_lite_mode">"Apabila mod Ringkas dihidupkan, Banana Browser menggunakan pelayan Google untuk memuatkan halaman dengan lebih pantas. Mod Ringkas menulis semula halaman yang sangat perlahan untuk memuatkan kandungan yang penting sahaja. Mod Ringkas tidak digunakan pada tab Incognito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Dalam mod Ringkas, Banana Browser memuatkan halaman lebih pantas dan mengurangkan penggunaan data sehingga 60 peratus. Untuk mengoptimumkan halaman yang anda lawati, Banana Browser menghantar trafik web anda kepada Google. &lt;link&gt;Ketahui lebih lanjut&lt;/link&gt;"</string>
@@ -55,6 +70,8 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s akan dibuka dalam Banana Browser. Dengan meneruskan penggunaan, anda bersetuju menerima &lt;LINK1&gt;Syarat Perkhidmatan Google&lt;/LINK1&gt; dan &lt;LINK2&gt;Syarat Perkhidmatan Tambahan Google Banana Browser dan OS Banana Browser&lt;/LINK2&gt;. &lt;LINK3&gt;Notis Privasi untuk Akaun Google yang Diurus dengan Family Link&lt;/LINK3&gt; juga terpakai."</string>
 <string name="fre_send_report_check">"Bantu jadikan Banana Browser lebih baik dengan menghantar laporan perangkaan penggunaan dan ranap sistem kepada Google."</string>
 <string name="fre_welcome">"Selamat Datang ke Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Anda akan log masuk dengan Akaun Google anda\n(ini tidak akan menghidupkan Penyegerakan Banana Browser)"</string>
+<string name="signin_account_picker_general_error_subtitle">"Banana Browser tidak dapat mengesahkan maklumat anda"</string>
 <string name="external_app_restricted_access_error">"Banana Browser tidak boleh mengakses sumber yang diminta."</string>
 <string name="menu_update">"Kemas Kini Banana Browser"</string>
 <string name="menu_update_unsupported">"Gagal kemas kini Banana Browser"</string>
@@ -64,7 +81,7 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="chrome_survey_prompt">"Bantu meningkatkan Banana Browser. &lt;LINK&gt;Jawab tinjauan&lt;/LINK&gt;"</string>
 <string name="accessibility_toolbar_btn_menu_os_version_unsupported">"Banana Browser tidak dapat dikemas kini. Lagi pilihan"</string>
 <string name="unsupported_number_of_windows">"Bilangan kejadian Banana Browser tidak disokong."</string>
-<string name="storage_management_unimportant_site_data_description">"Storan tapak yang Banana Browser anggap tidak penting (misalnya tapak yang tiada tetapan yang disimpan atau yang jarang anda lawati)"</string>
+<string name="storage_management_unimportant_site_data_description">"Data tersimpan yang Banana Browser anggap tidak penting (misalnya tapak yang tiada tetapan yang disimpan atau yang jarang anda lawati)"</string>
 <string name="storage_management_clear_unimportant_dialog_text">"Tindakan ini akan menghapuskan kuki, cache dan data tapak yang lain yang Banana Browser anggap tidak penting."</string>
 <string name="storage_management_all_storage_description">"Jumlah data yang digunakan oleh Banana Browser, termasuk akaun, penanda halaman dan tetapan yang disimpan"</string>
 <string name="storage_management_reset_app_dialog_text">"Semua data apl Banana Browser akan dipadamkan selama-lamanya. Ini termasuk semua fail, tetapan, akaun, pangkalan data dan sebagainya."</string>
@@ -113,11 +130,4 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
         &lt;/ul&gt;"</string>
 <string name="payments_card_and_address_settings_signed_in">"Kad dan alamat adalah daripada Banana Browser dan Akaun Google anda (%1$s). Anda boleh mengurus kad dan alamat ini dalam BEGIN_LINKTetapanEND_LINK."</string>
 <string name="payments_card_and_address_settings_signed_out">"Kad dan alamat adalah daripada Banana Browser. Anda boleh mengurus kad dan alamat ini dalam BEGIN_LINKTetapanEND_LINK."</string>
-<string name="android_permission_off">"Hidupkan kebenaran untuk Banana Browser dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
-<string name="android_permission_off_plural">"Hidupkan kebenaran untuk Banana Browser dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
-<string name="android_ar_camera_permission_off">"Untuk membolehkan Banana Browser menggunakan AR, hidupkan juga kamera dalam &lt;link&gt;Tetapan Android&lt;/link&gt;."</string>
-<string name="android_camera_permission_off">"Untuk membenarkan Banana Browser mengakses kamera anda, hidupkan kamera dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
-<string name="android_location_permission_off">"Untuk membenarkan Banana Browser mengakses lokasi anda, hidupkan lokasi dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
-<string name="android_microphone_permission_off">"Untuk membenarkan Banana Browser mengakses mikrofon anda, hidupkan mikrofon dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
-<string name="android_notifications_permission_off">"Untuk membenarkan Banana Browser menghantar pemberitahuan kepada anda, hidupkan pemberitahuan dalam &lt;link&gt;Tetapan Android&lt;/link&gt; juga."</string>
 </resources>
