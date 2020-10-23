@@ -285,6 +285,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/ic_pip.xml",
     "//triple_banana/res/drawable/ic_play.xml",
     "//triple_banana/res/drawable/ic_power_off_black.xml",
+    "//triple_banana/res/drawable/ic_quality.xml",
     "//triple_banana/res/drawable/ic_refresh_black_24dp.xml",
     "//triple_banana/res/drawable/ic_rotate.xml",
     "//triple_banana/res/drawable/ic_search_black_24dp.xml",

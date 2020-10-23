@@ -5,9 +5,14 @@
 
 package org.triple.banana.util;
 
+import android.content.Context;
 import android.text.TextUtils;
 import android.util.Log;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+import org.banana.cake.interfaces.BananaJavaScriptCallback;
 import org.banana.cake.interfaces.BananaTab;
 import org.banana.cake.interfaces.BananaTabManager;
 
@@ -43,5 +48,29 @@ public class YouTubeUtil {
             Log.e(TAG, "MalformedURLException " + e.getMessage());
         }
         return false;
+    }
+
+    public static void showQualityOptionsDialog(@Nullable Context context) {
+        if (context == null || !isYouTubeUrl()) {
+            return;
+        }
+        // NOTIMPLEMENTED
+    }
+
+    public static void dismissQualityOptionsDialog() {
+        // NOTIMPLEMENTED
+    }
+
+    private static void getQualityInfos(@NonNull BananaJavaScriptCallback callback) {
+        // NOTIMPLEMENTED
+    }
+
+    private static void setQuality(@NonNull String quality) {
+        // NOTIMPLEMENTED
+    }
+
+    private static void runScriptOnYouTube(
+            @NonNull String script, @NonNull BananaJavaScriptCallback callback) {
+        // NOTIMPLEMENTED
     }
 }

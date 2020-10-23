@@ -28,6 +28,7 @@ import org.triple.banana.R;
 import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.BrightnessUtil;
 import org.triple.banana.util.RotationManager;
+import org.triple.banana.util.YouTubeUtil;
 
 import java.lang.ref.WeakReference;
 
@@ -181,8 +182,16 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
                 v.setVisibility(View.VISIBLE);
             });
         }
-    }
 
+        // Quality button is supported only on YouTube site.
+        if (YouTubeUtil.isYouTubeUrl()) {
+            $.select(R.id.quality_button, v -> {
+                v.setOnClickListener(
+                        view -> YouTubeUtil.showQualityOptionsDialog(mDialog.getContext()));
+                v.setVisibility(View.VISIBLE);
+            });
+        }
+    }
     private void resetContentViewInteractionListeners() {
         if (mDialog == null || !mDialog.isShowing()) return;
 
@@ -195,9 +204,9 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
         $.<SeekBar>select(R.id.time_seekbar, v -> v.setOnSeekBarChangeListener(null));
 
-        final @IdRes int[] buttons =
-                new int[] {R.id.play_button, R.id.backward_button, R.id.forward_button,
-                        R.id.rotate_button, R.id.lock_button, R.id.back_button, R.id.mute_button};
+        final @IdRes int[] buttons = new int[] {R.id.play_button, R.id.backward_button,
+                R.id.forward_button, R.id.rotate_button, R.id.lock_button, R.id.back_button,
+                R.id.mute_button, R.id.quality_button};
         for (@IdRes int button : buttons) {
             $.select(button, v -> v.setOnClickListener(null));
         }
@@ -224,6 +233,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         if (mDialog == null || !mDialog.isShowing()) return;
 
         resetContentViewInteractionListeners();
+        YouTubeUtil.dismissQualityOptionsDialog();
         mDialog.dismiss();
         resetParentActivity();
     }

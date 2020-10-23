@@ -36,6 +36,7 @@
     <string name="media_remote_mute">음소거</string>
     <string name="media_remote_pip">Picture in picture</string>
     <string name="media_remote_play">재생</string>
+    <string name="media_remote_quality">화질</string>
     <string name="media_remote_rotate">회전</string>
     <string name="media_remote_summary">전체화면 모드에서 비디오를 재생하는 경우 강력한 확장 미디어 플레이어를 사용합니다</string>
     <string name="media_remote_volume">음량</string>
