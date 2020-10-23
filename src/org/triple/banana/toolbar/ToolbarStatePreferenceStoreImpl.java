@@ -71,6 +71,8 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
         ButtonId replaceId = isIndiaDevice ? ButtonId.AT_ME_GAME : ButtonId.DARK_MODE;
         Collections.swap(
                 buttonIds, buttonIds.indexOf(ButtonId.SHARE), buttonIds.indexOf(replaceId));
+        Collections.swap(buttonIds, buttonIds.indexOf(ButtonId.NEW_TAB),
+                buttonIds.indexOf(ButtonId.TAB_SWITCHER));
 
         for (ButtonId id : buttonIds) {
             if (!arrayList.contains(id)) {
