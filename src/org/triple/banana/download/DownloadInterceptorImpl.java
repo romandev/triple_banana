@@ -5,9 +5,17 @@
 
 package org.triple.banana.download;
 
+import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
+
 import androidx.annotation.NonNull;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.triple.banana.R;
 import org.triple.banana.download.mojom.DownloadInterceptor;
+import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 import org.chromium.mojo.system.MojoException;
 import org.chromium.services.service_manager.InterfaceFactory;
@@ -18,7 +26,20 @@ public enum DownloadInterceptorImpl implements DownloadInterceptor {
     @Override
     public void intercept(
             @NonNull String url, @NonNull String mimeType, @NonNull InterceptResponse callback) {
-        callback.call(false /* wasIntercepted */);
+        if (!ExtensionFeatures.isEnabled(FeatureName.EXTERNAL_DOWNLOAD_MANAGER)) {
+            callback.call(false /* wasIntercepted */);
+            return;
+        }
+
+        Uri uri = Uri.parse(url);
+        Intent intent = new Intent(android.content.Intent.ACTION_VIEW, uri);
+        intent.setDataAndType(uri, mimeType);
+        Context context = BananaApplicationUtils.get().getApplicationContext();
+        context.startActivity(
+                Intent.createChooser(
+                              intent, context.getResources().getString(R.string.menu_download))
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));
+        callback.call(true /* wasIntercepted */);
     }
 
     @Override

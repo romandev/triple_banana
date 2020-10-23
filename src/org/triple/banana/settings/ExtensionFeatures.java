@@ -205,6 +205,8 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         // upstream. For sync with this value in triple banana, BOTTOM_TOOLBAR feature name has
         // diffrent name style like others.
         public static final String BOTTOM_TOOLBAR = "bottom_toolbar_enabled";
+        public static final String EXTERNAL_DOWNLOAD_MANAGER =
+                "feature_name_external_download_manager";
         public static final String SECURE_LOGIN = "feature_name_secure_login";
         public static final String SECURE_DNS = "feature_name_secure_dns";
         public static final String DARK_MODE = "feature_name_dark_mode";

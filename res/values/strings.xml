@@ -25,6 +25,7 @@
     <string name="discard">Discard</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
+    <string name="external_download_manager">Use external download manager</string>
     <string name="media_features">Media Features</string>
     <string name="media_remote">Media Remote</string>
     <string name="media_remote_back">Back</string>

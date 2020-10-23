@@ -84,4 +84,12 @@
         android:summaryOn="@string/auto_clear_browsing_data_summary"
         android:summaryOff="@string/text_off" />
 
+    <PreferenceCategory
+        android:title="@string/menu_download"/>
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_external_download_manager"
+        android:title="@string/external_download_manager"
+        android:summaryOn="@string/text_on"
+        android:summaryOff="@string/text_off" />
+
 </PreferenceScreen>

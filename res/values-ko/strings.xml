@@ -25,6 +25,7 @@
     <string name="discard">저장 안 함</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여 도구모음에 배치하세요</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
+    <string name="external_download_manager">외부 다운로드 관리자 사용</string>
     <string name="media_features">미디어 기능</string>
     <string name="media_remote">미디어 리모컨</string>
     <string name="media_remote_back">뒤로가기</string>
