@@ -143,6 +143,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/base/widget/VerticalSeekBar.java",
 
     # download
+    "//triple_banana/src/org/triple/banana/download/DownloadInterceptorImpl.java",
     "//triple_banana/src/org/triple/banana/download/SimpleDownloader.java",
 
     # encrypter

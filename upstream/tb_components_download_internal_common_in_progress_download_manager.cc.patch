@@ -1,0 +1,37 @@
+diff --git tb/components/download/internal/common/in_progress_download_manager.cc tb_diff/components/download/internal/common/in_progress_download_manager.cc
+--- tb/components/download/internal/common/in_progress_download_manager.cc
++++ tb_diff/components/download/internal/common/in_progress_download_manager.cc
+@@ -487,7 +487,33 @@ void InProgressDownloadManager::StartDownload(
+       (info->result != DOWNLOAD_INTERRUPT_REASON_NONE && stream->IsEmpty()));
+   DVLOG(20) << __func__
+             << "() result=" << DownloadInterruptReasonToString(info->result);
++#if defined(ENABLE_TRIPLE_BANANA)
++  GURL url = info->url();
++  std::string mime_type = info->mime_type;
++  interceptor_->Intercept(
++      url.spec(), mime_type,
++      base::BindOnce(&InProgressDownloadManager::StartDownloadInternal,
++                     base::Unretained(this), std::move(info), std::move(stream),
++                     std::move(url_loader_factory_provider),
++                     std::move(cancel_request_callback),
++                     std::move(on_started)));
++}
+ 
++void InProgressDownloadManager::StartDownloadInternal(
++    std::unique_ptr<DownloadCreateInfo> info,
++    std::unique_ptr<InputStream> stream,
++    URLLoaderFactoryProvider::URLLoaderFactoryProviderPtr
++        url_loader_factory_provider,
++    DownloadJob::CancelRequestCallback cancel_request_callback,
++    DownloadUrlParameters::OnStartedCallback on_started,
++    bool was_intercepted) {
++  if (was_intercepted) {
++    if (cancel_request_callback)
++      std::move(cancel_request_callback).Run(false);
++    GetDownloadTaskRunner()->DeleteSoon(FROM_HERE, stream.release());
++    return;
++  }
++#endif
+   GURL url = info->url();
+   std::vector<GURL> url_chain = info->url_chain;
+   std::string mime_type = info->mime_type;

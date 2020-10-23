@@ -9,6 +9,8 @@ import org.triple.banana.adblock.FilterLoaderImpl;
 import org.triple.banana.adblock.mojom.FilterLoader;
 import org.triple.banana.authentication.AuthenticationManagerImpl;
 import org.triple.banana.authentication.mojom.AuthenticationManager;
+import org.triple.banana.download.DownloadInterceptorImpl;
+import org.triple.banana.download.mojom.DownloadInterceptor;
 import org.triple.banana.encrypter.EncrypterManagerImpl;
 import org.triple.banana.encrypter.mojom.EncrypterManager;
 import org.triple.banana.hello.HelloImpl;
@@ -37,5 +39,6 @@ class InterfaceRegistrar {
                 BananaMediaEventDispatcher.MANAGER, new MediaEventDispatcher.Factory());
         registry.addInterface(EncrypterManager.MANAGER, new EncrypterManagerImpl.Factory());
         registry.addInterface(Hello.MANAGER, new HelloImpl.Factory());
+        registry.addInterface(DownloadInterceptor.MANAGER, new DownloadInterceptorImpl.Factory());
     }
 }

@@ -1,0 +1,11 @@
+// Copyright 2020 The Triple Banana Authors. All rights reserved.
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+[JavaPackage="org.triple.banana.download.mojom"]
+module download.mojom;
+
+interface DownloadInterceptor {
+  Intercept(string url, string mime_type) => (bool was_intercepted);
+};

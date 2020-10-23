@@ -1,0 +1,44 @@
+diff --git tb/components/download/public/common/in_progress_download_manager.h tb_diff/components/download/public/common/in_progress_download_manager.h
+--- tb/components/download/public/common/in_progress_download_manager.h
++++ tb_diff/components/download/public/common/in_progress_download_manager.h
+@@ -27,6 +27,10 @@
+ #include "services/network/public/mojom/url_response_head.mojom-forward.h"
+ #include "url/gurl.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "triple_banana/modules/public/interfaces.h"
++#endif
++
+ namespace network {
+ class SharedURLLoaderFactory;
+ }  // namespace network
+@@ -131,6 +135,16 @@ class COMPONENTS_DOWNLOAD_EXPORT InProgressDownloadManager
+                          url_loader_factory_provider,
+                      DownloadJob::CancelRequestCallback cancel_request_callback,
+                      DownloadUrlParameters::OnStartedCallback on_started);
++#if defined(ENABLE_TRIPLE_BANANA)
++  void StartDownloadInternal(
++      std::unique_ptr<DownloadCreateInfo> info,
++      std::unique_ptr<InputStream> stream,
++      URLLoaderFactoryProvider::URLLoaderFactoryProviderPtr
++          url_loader_factory_provider,
++      DownloadJob::CancelRequestCallback cancel_request_callback,
++      DownloadUrlParameters::OnStartedCallback on_started,
++      bool was_intercepted);
++#endif
+ 
+   // Shutting down the manager and stop all downloads.
+   void ShutDown();
+@@ -277,6 +291,12 @@ class COMPONENTS_DOWNLOAD_EXPORT InProgressDownloadManager
+   base::FilePath default_download_dir_;
+ #endif
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  mojo::Remote<download::mojom::DownloadInterceptor> interceptor_ =
++      triple_banana::BindInterface<download::mojom::DownloadInterceptor,
++                                   triple_banana::BinderType::BROWSER>()();
++#endif
++
+   // A list of in-progress download items, could be null if DownloadManagerImpl
+   // is managing all downloads.
+   std::vector<std::unique_ptr<DownloadItemImpl>> in_progress_downloads_;

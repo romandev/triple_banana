@@ -1,0 +1,11 @@
+diff --git tb/components/download/internal/common/BUILD.gn tb_diff/components/download/internal/common/BUILD.gn
+--- tb/components/download/internal/common/BUILD.gn
++++ tb_diff/components/download/internal/common/BUILD.gn
+@@ -82,6 +82,7 @@ source_set("internal") {
+     "//services/metrics/public/cpp:ukm_builders",
+     "//services/network/public/cpp",
+     "//services/service_manager/public/cpp:cpp",
++    "//triple_banana/modules:native",
+   ]
+ 
+   # TODO(crbug/1056278): Enable this on Fuchsia

@@ -15,6 +15,7 @@
 #include "triple_banana/modules/public/module_service.h"
 #include "triple_banana/modules/public/mojom/adblock.mojom.h"
 #include "triple_banana/modules/public/mojom/authentication.mojom.h"
+#include "triple_banana/modules/public/mojom/download.mojom.h"
 #include "triple_banana/modules/public/mojom/encrypter.mojom.h"
 #include "triple_banana/modules/public/mojom/hello.mojom.h"
 #include "triple_banana/modules/public/mojom/media.mojom-blink.h"
