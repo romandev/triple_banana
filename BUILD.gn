@@ -104,6 +104,7 @@ android_library("triple_banana_java") {
     # banana_cake layer
     "//triple_banana/banana_cake/bootstrap/java/org/banana/cake/bootstrap/BananaApplication.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeApplicationUtils.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeClearBrowsingData.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeCommandLine.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeDarkModeUtils.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeFeatureFlags.java",
@@ -141,6 +142,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/base/ApplicationStatusTracker.java",
     "//triple_banana/src/org/triple/banana/base/InterActivity.java",
     "//triple_banana/src/org/triple/banana/base/widget/VerticalSeekBar.java",
+
+    # browsing_data
+    "//triple_banana/src/org/triple/banana/browsing_data/AutoClearBrowsingData.java",
 
     # download
     "//triple_banana/src/org/triple/banana/download/DownloadInterceptorImpl.java",

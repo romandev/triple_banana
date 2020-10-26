@@ -1,0 +1,12 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
+@@ -1941,6 +1941,8 @@ public class ChromeTabbedActivity extends ChromeActivity<ChromeActivityComponent
+ 
+         final boolean shouldCloseTab = backShouldCloseTab(currentTab);
+ 
++        org.banana.cake.interfaces.BananaApplicationEvent.get().onTerminate();
++
+         // Minimize the app if either:
+         // - we decided not to close the tab
+         // - we decided to close the tab, but it was opened by an external app, so we will go
