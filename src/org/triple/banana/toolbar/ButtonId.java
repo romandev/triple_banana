@@ -35,7 +35,7 @@ public enum ButtonId {
     DARK_MODE,
     TERMINATE,
     AT_ME_GAME,
-    CLEAR_BROWSING_DATA,
+    CLEAR_DATA,
     CLOSE_TAB,
     TAB_SWITCHER;
 
@@ -78,7 +78,7 @@ public enum ButtonId {
                 v
                 -> BananaApplicationUtils.get().showInfoPage(
                         "https://www.atmegame.com/?utm_source=Banana&utm_medium=Banana"));
-        sOnClickListeners.put(ButtonId.CLEAR_BROWSING_DATA,
+        sOnClickListeners.put(ButtonId.CLEAR_DATA,
                 v -> BananaToolbarManager.get().openClearBrowsingDataPreference());
         sOnClickListeners.put(ButtonId.CLOSE_TAB, v -> BananaToolbarManager.get().closeCurrentTab());
     }
@@ -143,7 +143,7 @@ public enum ButtonId {
             case AT_ME_GAME:
                 imageResource = R.drawable.atmegame_logo;
                 break;
-            case CLEAR_BROWSING_DATA:
+            case CLEAR_DATA:
                 imageResource = R.drawable.ic_clear_browsing_data;
                 break;
             case CLOSE_TAB:
