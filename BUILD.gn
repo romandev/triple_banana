@@ -97,6 +97,22 @@ if (android_64bit_target_cpu) {
   }
 }
 
+source_set("cpp") {
+  sources = []
+  deps = []
+
+  if (is_android) {
+    sources += [ "//triple_banana/banana_cake/cpp/cake_subresource_filter.cc" ]
+    deps += [ ":jni_headers" ]
+  }
+}
+
+if (is_android) {
+  generate_jni("jni_headers") {
+    sources = [ "//triple_banana/banana_cake/java/org/banana/cake/CakeSubresourceFilter.java" ]
+  }
+}
+
 android_library("triple_banana_java") {
   proguard_configs = [ "//triple_banana/proguard.flags" ]
 
@@ -110,6 +126,7 @@ android_library("triple_banana_java") {
     "//triple_banana/banana_cake/java/org/banana/cake/CakeFeatureFlags.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeInterfaceProvider.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakePipController.java",
+    "//triple_banana/banana_cake/java/org/banana/cake/CakeSubresourceFilter.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeTab.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeTabManager.java",
     "//triple_banana/banana_cake/java/org/banana/cake/CakeToolbarManager.java",
@@ -120,7 +137,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
 
     # adblock
-    "//triple_banana/src/org/triple/banana/adblock/FilterLoaderImpl.java",
+    "//triple_banana/src/org/triple/banana/adblock/FilterLoader.java",
 
     # appmenu
     "//triple_banana/src/org/triple/banana/appmenu/AppMenuDelegate.java",
@@ -230,6 +247,7 @@ android_library("triple_banana_java") {
     ":androidx_biometric_java",
     ":triple_banana_resources",
     "//base:base_java",
+    "//base:jni_java",
     "//chrome/android:chrome_java",
     "//chrome/browser/preferences:java",
     "//chrome/browser/profiles/android:java",
@@ -259,6 +277,8 @@ android_library("triple_banana_java") {
     "//ui/android:ui_java",
     "//url:gurl_java",
   ]
+
+  annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
 
 android_resources("triple_banana_resources") {

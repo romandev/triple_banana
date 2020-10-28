@@ -5,12 +5,29 @@
 
 package org.banana.cake.bootstrap;
 
+import android.content.Context;
+
 import org.banana.cake.CakeInterfaceProvider;
 
 import org.chromium.chrome.browser.ChromeApplication;
+import org.chromium.chrome.browser.init.ChromeBrowserInitializer;
 
-public class BananaApplication extends ChromeApplication {
+public abstract class BananaApplication extends ChromeApplication {
     static {
         CakeInterfaceProvider.initialize();
     }
+
+    @Override
+    protected void attachBaseContext(Context context) {
+        super.attachBaseContext(context);
+        if (isBrowserProcess()) {
+            runNowOrAfterFullBrowserStarted(() -> { onInitialized(); });
+        }
+    }
+
+    protected void runNowOrAfterFullBrowserStarted(Runnable task) {
+        ChromeBrowserInitializer.getInstance().runNowOrAfterFullBrowserStarted(task);
+    }
+
+    protected abstract void onInitialized();
 }

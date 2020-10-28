@@ -11,6 +11,7 @@ import android.content.SharedPreferences;
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaTabManager;
+import org.triple.banana.adblock.FilterLoader;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.base.ApplicationStatusTracker;
 import org.triple.banana.lock.BrowserLock;
@@ -56,13 +57,17 @@ public class TripleBananaApplication extends BananaApplication {
         editor.apply();
     }
 
-    private void initializeOnBrowser() {
+    @Override
+    protected void onInitialized() {
         if (isFirstInstall()) {
             setLastUpdatedVersion(getCurrentVersion());
         }
         if (!getLastUpdatedVersion().equals(getCurrentVersion())) {
             AppMenuDelegate.get().setNewFeatureIcon(true);
             setLastUpdatedVersion(getCurrentVersion());
+            FilterLoader.instance.forceUpdate();
+        } else {
+            FilterLoader.instance.updateIfNeeded();
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
@@ -80,14 +85,6 @@ public class TripleBananaApplication extends BananaApplication {
         // Apply BrowserLock from ExtensionFeatures setting
         if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
             BrowserLock.getInstance().start();
-        }
-    }
-
-    @Override
-    protected void attachBaseContext(Context context) {
-        super.attachBaseContext(context);
-        if (isBrowserProcess()) {
-            initializeOnBrowser();
         }
     }
 }

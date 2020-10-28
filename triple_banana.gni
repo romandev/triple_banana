@@ -17,6 +17,7 @@ triple_banana_hooks_sources = [
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaJavaScriptCallback.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaPasswordExtension.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaPipController.java",
+  "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaSubresourceFilter.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTab.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTabManager.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTabObserver.java",
