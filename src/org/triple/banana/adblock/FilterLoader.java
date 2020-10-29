@@ -128,7 +128,7 @@ public enum FilterLoader {
                 return;
             }
 
-            if (TextUtils.equals(currentVersion, newVersion)) {
+            if (getVersionNumber(currentVersion) >= getVersionNumber(newVersion)) {
                 VersionInfo.setFilterVersion(currentVersion);
                 updateLastCheckTime();
                 return;
