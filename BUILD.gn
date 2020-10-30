@@ -277,6 +277,7 @@ android_library("triple_banana_java") {
     "//ui/android:ui_java",
     "//url:gurl_java",
   ]
+  srcjar_deps = [ ":builtin_filter_version" ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
@@ -444,6 +445,18 @@ android_resources("triple_banana_resources") {
 
   deps = [ "//chrome/android:chrome_app_java_resources" ]
   custom_package = "org.triple.banana"
+}
+
+java_cpp_template("builtin_filter_version") {
+  builtin_filter_version = "0"
+  builtin_filter_size = "0"
+
+  package_path = "org/triple/banana/adblock/filter"
+  sources = [ "//triple_banana/src/org/triple/banana/adblock/filter/FilterVersion.template" ]
+  defines = [
+    "BUILTIN_FILTER_VERSION_VALUE=\"$builtin_filter_version\"",
+    "BUILTIN_FILTER_SIZE_VALUE=$builtin_filter_size",
+  ]
 }
 
 android_assets("triple_banana_assets") {
