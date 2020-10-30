@@ -187,6 +187,13 @@ public class YouTubeUtil {
         try {
             JSONObject json = new JSONObject(jsonString);
             JSONArray availableQualities = json.getJSONArray("availableQualities");
+            for (int i = availableQualities.length() - 1; i >= 0; i--) {
+                if (availableQualities.getString(i).equals("auto")) {
+                    // Auto option should be first element among the quality options if exists.
+                    info.addAvailableQuality(String.valueOf(availableQualities.remove(i)));
+                    break;
+                }
+            }
             for (int i = 0; i < availableQualities.length(); i++) {
                 info.addAvailableQuality(availableQualities.getString(i));
             }
