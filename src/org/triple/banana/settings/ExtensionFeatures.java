@@ -17,6 +17,7 @@ import androidx.preference.SwitchPreferenceCompat;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
+import org.triple.banana.adblock.FilterLoader;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
@@ -40,13 +41,17 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
 
         AppMenuDelegate.get().setNewFeatureIcon(false);
 
-        final SwitchPreferenceCompat adblock =
-                (SwitchPreferenceCompat) findPreference(FeatureName.ADBLOCK);
+        final LongClickableSwitchPreference adblock =
+                (LongClickableSwitchPreference) findPreference(FeatureName.ADBLOCK);
         adblock.setTitle(
                 String.format(getString(R.string.adblock), VersionInfo.getFilterVersion()));
         adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
         adblock.setOnPreferenceChangeListener((preference, newValue) -> {
             setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
+            return true;
+        });
+        adblock.setOnLongClickListener(view -> {
+            // FIXME(#803): We should implement the force update of adblock filter ruleset.
             return true;
         });
 
