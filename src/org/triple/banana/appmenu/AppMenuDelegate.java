@@ -73,6 +73,6 @@ public class AppMenuDelegate implements BananaAppMenu {
         editor.apply();
 
         if (mNewFeatureIcon == null || mNewFeatureIcon.get() == null) return;
-        mNewFeatureIcon.setVisibility(value ? View.VISIBLE : View.GONE);
+        mNewFeatureIcon.get().setVisibility(value ? View.VISIBLE : View.GONE);
     }
 }
