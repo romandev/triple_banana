@@ -14,7 +14,7 @@ public class AutoClearBrowsingData implements BananaApplicationEvent {
     @Override
     public void onTerminate() {
         if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
-            BananaClearBrowsingData.get().clearBrowsingData();
+            BananaClearBrowsingData.get().clearBrowsingData(null);
         }
     }
 }

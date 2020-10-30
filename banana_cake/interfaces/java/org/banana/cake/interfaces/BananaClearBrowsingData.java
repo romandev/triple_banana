@@ -5,10 +5,14 @@
 
 package org.banana.cake.interfaces;
 
+import org.chromium.chrome.browser.browsing_data.BrowsingDataBridge.OnClearBrowsingDataListener;
+
 public interface BananaClearBrowsingData {
+    public interface BananaOnClearBrowsingDataListener extends OnClearBrowsingDataListener {}
+
     static BananaClearBrowsingData get() {
         return BananaInterfaceProvider.get(BananaClearBrowsingData.class);
     }
 
-    void clearBrowsingData();
+    void clearBrowsingData(BananaOnClearBrowsingDataListener listener);
 }

@@ -8,9 +8,11 @@ package org.triple.banana.toolbar;
 import android.view.View;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaClearBrowsingData;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.theme.DarkModeController;
 
 import java.util.EnumMap;
@@ -73,7 +75,14 @@ public enum ButtonId {
             return true;
         });
 
-        sOnClickListeners.put(ButtonId.TERMINATE, v -> BananaToolbarManager.get().terminate());
+        sOnClickListeners.put(ButtonId.TERMINATE, v -> {
+            if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
+                BananaClearBrowsingData.get().clearBrowsingData(
+                        () -> BananaToolbarManager.get().terminate());
+            } else {
+                BananaToolbarManager.get().terminate();
+            }
+        });
         sOnClickListeners.put(ButtonId.AT_ME_GAME,
                 v
                 -> BananaApplicationUtils.get().showInfoPage(

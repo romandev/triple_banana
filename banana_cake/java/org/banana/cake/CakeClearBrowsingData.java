@@ -6,6 +6,7 @@
 package org.banana.cake;
 
 import org.banana.cake.interfaces.BananaClearBrowsingData;
+import org.banana.cake.interfaces.BananaClearBrowsingData.BananaOnClearBrowsingDataListener;
 
 import org.chromium.chrome.browser.browsing_data.BrowsingDataBridge;
 import org.chromium.chrome.browser.browsing_data.BrowsingDataType;
@@ -13,8 +14,8 @@ import org.chromium.chrome.browser.browsing_data.TimePeriod;
 
 public class CakeClearBrowsingData implements BananaClearBrowsingData {
     @Override
-    public void clearBrowsingData() {
-        BrowsingDataBridge.getInstance().clearBrowsingData(null,
+    public void clearBrowsingData(BananaOnClearBrowsingDataListener listener) {
+        BrowsingDataBridge.getInstance().clearBrowsingData(listener,
                 new int[] {
                         BrowsingDataType.HISTORY, BrowsingDataType.CACHE, BrowsingDataType.COOKIES},
                 TimePeriod.ALL_TIME);
