@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h
-@@ -0,0 +1,50 @@
+@@ -0,0 +1,53 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -12,8 +12,11 @@
 +#define THIRD_PARTY_BLINK_RENDERER_CORE_FULLSCREEN_FULLSCREEN_MEDIA_CONTROLLER_H_
 +
 +#include "base/no_destructor.h"
++#include "mojo/public/cpp/bindings/receiver.h"
++#include "mojo/public/cpp/bindings/remote.h"
 +#include "third_party/blink/renderer/core/core_export.h"
-+#include "triple_banana/modules/public/interfaces.h"
++#include "third_party/blink/renderer/platform/heap/persistent.h"
++#include "triple_banana/modules/public/mojom/media.mojom-blink.h"
 +
 +namespace blink {
 +

@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc
-@@ -0,0 +1,86 @@
+@@ -0,0 +1,89 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -10,6 +10,8 @@
 +
 +#include "third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h"
 +
++#include "third_party/blink/public/common/thread_safe_browser_interface_broker_proxy.h"
++#include "third_party/blink/public/platform/platform.h"
 +#include "third_party/blink/renderer/core/html/media/html_video_element.h"
 +
 +namespace blink {
@@ -80,7 +82,8 @@
 +
 +void FullscreenMediaController::EnsureBindEventDispatcher() {
 +  if (!dispatcher_.is_bound()) {
-+    dispatcher_ = AutoBind(media::mojom::blink::BananaMediaEventDispatcher);
++    blink::Platform::Current()->GetBrowserInterfaceBroker()->GetInterface(
++        dispatcher_.BindNewPipeAndPassReceiver());
 +  }
 +}
 +
