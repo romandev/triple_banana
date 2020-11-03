@@ -11,7 +11,7 @@
         android:title="@string/advanced_features"/>
     <org.triple.banana.settings.LongClickableSwitchPreference
         android:key="feature_name_adblock"
-        android:title="@string/adblock"
+        android:title="@string/adblock_with_version"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference

@@ -5,9 +5,13 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources>
-    <string name="adblock">광고 차단 (버전: %s)</string>
+    <string name="adblock">광고 차단</string>
+    <string name="adblock_with_version">광고 차단 (버전: %s)</string>
     <string name="adblock_summary">방해가 되거나 사용자를 현혹하는 광고를 차단합니다</string>
     <string name="advanced_features">고급 기능</string>
+    <string name="advanced_features_summary">광고차단 필터 업데이트, 번역, 외부 다운로드 매니저...</string>
+    <string name="appearance">모양</string>
+    <string name="appearance_summary">브라우저의 모양을 변경하세요</string>
     <string name="authentication_title">생체 인증</string>
     <string name="authentication_description">저장된 아이디/패스워드를 이용하려면\n생체인증을 진행하세요</string>
     <string name="autoplay">미디어 자동재생</string>
@@ -22,11 +26,14 @@
     <string name="browser_lock_summary">브라우저를 열 때, 추가 인증을 사용하여 개인정보를 안전하게 보호하세요. 사용자 편의를 위해 인증 성공 후 1분 간은 세션이 유지됩니다.</string>
     <string name="dark_mode">다크 모드</string>
     <string name="dark_mode_summary">야간에 다크 모드를 활성화하여 눈의 피로를 덜어주세요</string>
+    <string name="detail_settings">상세 설정</string>
     <string name="discard">저장 안 함</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여 도구모음에 배치하세요</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
+    <string name="etc">기타</string>
     <string name="external_download_manager">외부 다운로드 관리자 사용</string>
     <string name="media_features">미디어 기능</string>
+    <string name="media_features_summary">바나나 브라우저만의 특별한 미디어 기능을 사용하세요</string>
     <string name="media_remote">미디어 리모컨</string>
     <string name="media_remote_back">뒤로가기</string>
     <string name="media_remote_backward">되감기</string>
@@ -43,6 +50,9 @@
     <string name="media_remote_volume">음량</string>
     <string name="pip_disabled">동영상이 재생 중일때 PIP 모드가 가능합니다</string>
     <string name="pip_not_supported">이 동영상에서는 PIP 모드를 지원하지 않습니다</string>
+    <string name="privacy">개인정보 보호</string>
+    <string name="privacy_summary">여러분의 개인정보를 보호하세요</string>
+    <string name="quick_settings">빠른 설정</string>
     <string name="reset">초기화</string>
     <string name="restart_message">Banana Browser를 다시 시작하면 변경사항이 적용됩니다</string>
     <string name="save">저장</string>
@@ -52,6 +62,9 @@
     <string name="secure_login">안전한 로그인</string>
     <string name="secure_login_summary">웹 페이지에 로그인을 할 때, 저장된 사용자 비밀번호를 사용하는 경우 추가 인증을 사용합니다 (예: 생체 인증, 패턴, PIN 등)</string>
     <string name="toolbar_editor">도구모음 편집하기</string>
+    <string name="toolbar_editor_summary">자주 사용하는 버튼을 툴바에 지정할 수 있습니다</string>
+    <string name="update_adblock_filter">광고 차단 필터 업데이트</string>
+    <string name="update_adblock_filter_summary">최신 필터로 더욱 강력한 광고차단 기능을 경험하세요</string>
     <string name="user_data">사용자 기록</string>
     <string name="user_interface">사용자 인터페이스</string>
     <string name="use_secure_login">안전한 로그인 사용하기\n(예: 생체인증, 패턴, PIN 등)</string>

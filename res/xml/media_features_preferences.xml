@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orderingFromXml="false">
+    <PreferenceCategory android:title="@string/media_features" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_background_play"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/background_play_summary"
+        android:title="@string/background_play" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:defaultValue="true"
+        android:key="feature_name_autoplay"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/autoplay_summary"
+        android:title="@string/autoplay" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:defaultValue="true"
+        android:key="feature_name_media_remote"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/media_remote_summary"
+        android:title="@string/media_remote" />
+</PreferenceScreen>

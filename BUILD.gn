@@ -203,8 +203,13 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/secure_dns/SecureDnsNotificationManager.java",
 
     # settings
+    "//triple_banana/src/org/triple/banana/settings/AdvancedFeatureSettings.java",
+    "//triple_banana/src/org/triple/banana/settings/AppearanceSettings.java",
     "//triple_banana/src/org/triple/banana/settings/ExtensionFeatures.java",
     "//triple_banana/src/org/triple/banana/settings/LongClickableSwitchPreference.java",
+    "//triple_banana/src/org/triple/banana/settings/MediaFeatureSettings.java",
+    "//triple_banana/src/org/triple/banana/settings/NewExtensionFeatures.java",
+    "//triple_banana/src/org/triple/banana/settings/PrivacySettings.java",
     "//triple_banana/src/org/triple/banana/settings/SettingsOpener.java",
 
     # theme
@@ -334,7 +339,12 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/values/dimens.xml",
     "//triple_banana/res/values/strings.xml",
     "//triple_banana/res/values/styles.xml",
+    "//triple_banana/res/xml/advanced_features_preferences.xml",
+    "//triple_banana/res/xml/appearance_preferences.xml",
     "//triple_banana/res/xml/banana_extension_preferences.xml",
+    "//triple_banana/res/xml/media_features_preferences.xml",
+    "//triple_banana/res/xml/new_banana_extension_preferences.xml",
+    "//triple_banana/res/xml/privacy_preferences.xml",
     "//triple_banana/res_override/drawable-hdpi/fre_product_logo.png",
     "//triple_banana/res_override/drawable-hdpi/product_logo_name.png",
     "//triple_banana/res_override/drawable-mdpi/fre_product_logo.png",

@@ -5,9 +5,13 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources>
-    <string name="adblock">Ad Block (Ver: %s)</string>
+    <string name="adblock">Ad Block</string>
+    <string name="adblock_with_version">Ad Block (Ver: %s)</string>
     <string name="adblock_summary">Block ads on sites that show intrusive or misleading ads</string>
     <string name="advanced_features">Advanced Features</string>
+    <string name="advanced_features_summary">Update adblock filter, Translate, External download manager...</string>
+    <string name="appearance">Appearance</string>
+    <string name="appearance_summary">Change the look of your browser</string>
     <string name="authentication_title">Authentication</string>
     <string name="authentication_description">Scan your biometric data to sign-in\nyour credentials</string>
     <string name="autoplay">Autoplay Media Contents</string>
@@ -22,11 +26,14 @@
     <string name="browser_lock_summary">Use additional authentications to protect your personal data securely when opening Banana Browser. Once the authentication is success, its authenticated session is kept for 1 minute for your convenience.</string>
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>
+    <string name="detail_settings">Detail settings</string>
     <string name="discard">Discard</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
+    <string name="etc">Etc</string>
     <string name="external_download_manager">Use external download manager</string>
     <string name="media_features">Media Features</string>
+    <string name="media_features_summary">Use Banana Browser\'s specialized media features</string>
     <string name="media_remote">Media Remote</string>
     <string name="media_remote_back">Back</string>
     <string name="media_remote_backward">Backward</string>
@@ -43,6 +50,9 @@
     <string name="media_remote_volume">Volume</string>
     <string name="pip_disabled">PIP mode only enable when the video is playing</string>
     <string name="pip_not_supported">PIP mode is not supported on this video</string>
+    <string name="privacy">Privacy</string>
+    <string name="privacy_summary">Improve your internet privacy</string>
+    <string name="quick_settings">Quick Settings</string>
     <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
     <string name="save">Save</string>
@@ -52,6 +62,9 @@
     <string name="secure_login">Secure Login</string>
     <string name="secure_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>
     <string name="toolbar_editor">Toolbar Editor</string>
+    <string name="toolbar_editor_summary">Frequently used buttons can be assigned to the toolbar</string>
+    <string name="update_adblock_filter">Update adblock filter</string>
+    <string name="update_adblock_filter_summary">Experience even more powerful adblock feature with the latest filters</string>
     <string name="user_data">User Data</string>
     <string name="user_interface">User Interface</string>
     <string name="use_secure_login">Use Secure Login\n(Biometrics, Pattern, PIN, and so on)</string>

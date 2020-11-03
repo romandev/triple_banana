@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orderingFromXml="false">
+    <PreferenceCategory android:title="@string/appearance" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_dark_mode"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/dark_mode_summary"
+        android:title="@string/dark_mode" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="bottom_toolbar_enabled"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/text_on"
+        android:title="@string/enable_bottom_toolbar" />
+    <Preference
+        android:key="launch_toolbar_editor"
+        android:summary="@string/toolbar_editor_summary"
+        android:title="@string/toolbar_editor" />
+</PreferenceScreen>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2020 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orderingFromXml="false">
+    <PreferenceCategory android:title="@string/adblock" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_adblock"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/adblock_summary"
+        android:title="@string/adblock_with_version" />
+    <Preference
+        android:summary="@string/update_adblock_filter_summary"
+        android:title="@string/update_adblock_filter" />
+
+    <PreferenceCategory android:title="@string/etc" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_translate"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/languages_offer_translate_switch"
+        android:title="@string/translate_button" />
+    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:key="feature_name_external_download_manager"
+        android:summaryOff="@string/text_off"
+        android:summaryOn="@string/text_on"
+        android:title="@string/external_download_manager" />
+</PreferenceScreen>
