@@ -5,6 +5,7 @@
 
 #include <jni.h>
 #include "base/android/jni_string.h"
+#include "base/android/task_scheduler/post_task_android.h"
 #include "base/logging.h"
 #include "chrome/browser/browser_process.h"
 #include "components/subresource_filter/content/browser/ruleset_service.h"
@@ -13,7 +14,8 @@
 
 static void JNI_CakeSubresourceFilter_Install(
     JNIEnv* env,
-    const base::android::JavaParamRef<jstring>& ruleset_path_string) {
+    const base::android::JavaParamRef<jstring>& ruleset_path_string,
+    const base::android::JavaParamRef<jobject>& success_callback) {
   base::FilePath ruleset_path(
       ConvertJavaStringToUTF8(env, ruleset_path_string));
   std::string new_version = ruleset_path.BaseName().RemoveExtension().value();
@@ -24,6 +26,9 @@ static void JNI_CakeSubresourceFilter_Install(
 
   auto* ruleset_service =
       g_browser_process->subresource_filter_ruleset_service();
+  ruleset_service->SetRulesetPublishedCallbackForTesting(base::BindOnce(
+      &base::PostTaskAndroid::RunJavaTask,
+      base::android::ScopedJavaGlobalRef<jobject>(success_callback)));
   ruleset_service->IndexAndStoreAndPublishRulesetIfNeeded(ruleset_info);
 }
 

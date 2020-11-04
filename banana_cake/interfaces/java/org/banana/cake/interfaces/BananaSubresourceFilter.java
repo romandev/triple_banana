@@ -12,7 +12,7 @@ public interface BananaSubresourceFilter {
         return BananaInterfaceProvider.get(BananaSubresourceFilter.class);
     }
 
-    void install(@NonNull String rulesetPath);
+    void install(@NonNull String rulesetPath, @NonNull Runnable successCallback);
     void reset();
     @NonNull
     String getVersion();

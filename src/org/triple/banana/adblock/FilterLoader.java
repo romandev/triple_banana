@@ -106,14 +106,16 @@ public enum FilterLoader {
             }
 
             compressedFilter.delete();
-            updateLastCheckTime();
-            Log.d(TAG, "updateLatestFilter(): Installed = " + newVersion);
-
-            installFilter(filterFile.getPath());
+            Log.d(TAG, "updateLatestFilter(): Request to install = " + newVersion);
+            installFilter(filterFile.getPath(), () -> {
+                updateLastCheckTime();
+                Log.d(TAG, "updateLatestFilter(): Installed = " + newVersion);
+            });
         });
     }
 
     private void checkUpdate(final String currentVersion) {
+        Log.d(TAG, "checkUpdate(): Request checkUpdate");
         mMetaData.getAsync(info -> {
             String newVersion = info.optString("version");
             long filterSize = info.optLong("size");
@@ -147,8 +149,8 @@ public enum FilterLoader {
         return 0;
     }
 
-    private void installFilter(@NonNull String rulesetPath) {
-        BananaSubresourceFilter.get().install(rulesetPath);
+    private void installFilter(@NonNull String rulesetPath, @NonNull Runnable successCallback) {
+        BananaSubresourceFilter.get().install(rulesetPath, successCallback);
     }
 
     private void reset() {
@@ -173,7 +175,11 @@ public enum FilterLoader {
         if (needToUpdateBuiltInFilter) {
             String builtInFilter = installBuiltInFilter();
             if (!TextUtils.isEmpty(builtInFilter)) {
-                installFilter(builtInFilter);
+                Log.d(TAG, "updateIfNeeded(): Request to install = " + BUILTIN_FILTER_VERSION);
+                installFilter(builtInFilter, () -> {
+                    Log.d(TAG, "updateIfNeeded(): Installed = " + getVersion());
+                    checkUpdate(getVersion());
+                });
                 return;
             }
         }
