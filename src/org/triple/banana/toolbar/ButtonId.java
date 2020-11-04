@@ -13,7 +13,6 @@ import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
-import org.triple.banana.settings.NewExtensionFeatures;
 import org.triple.banana.theme.DarkModeController;
 
 import java.util.EnumMap;
@@ -54,7 +53,7 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolbarManager.get().search());
         sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolbarManager.get().addNewTab());
         sOnClickListeners.put(ButtonId.BANANA_EXTENSION,
-                v -> BananaToolbarManager.get().openSettingPage(NewExtensionFeatures.class));
+                v -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
         sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(
                 ButtonId.ADD_SECRET_TAB, v -> BananaToolbarManager.get().addSecretTab());
