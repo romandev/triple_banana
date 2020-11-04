@@ -23,7 +23,6 @@ import org.banana.cake.interfaces.BananaSubresourceFilter;
 import org.triple.banana.download.SimpleDownloader;
 import org.triple.banana.remote_config.RemoteConfig;
 import org.triple.banana.util.Unzip;
-import org.triple.banana.version.VersionInfo;
 
 import java.io.File;
 import java.io.InputStream;
@@ -76,7 +75,6 @@ public enum FilterLoader {
                 return NO_FILTER;
             }
 
-            VersionInfo.setFilterVersion(BUILTIN_FILTER_VERSION);
             Log.d(TAG, "installBuiltInFilter(): Installed = " + BUILTIN_FILTER_VERSION);
             return destinationFile.getPath();
         } catch (Exception e) {
@@ -108,7 +106,6 @@ public enum FilterLoader {
             }
 
             compressedFilter.delete();
-            VersionInfo.setFilterVersion(newVersion);
             updateLastCheckTime();
             Log.d(TAG, "updateLatestFilter(): Installed = " + newVersion);
 
@@ -125,12 +122,11 @@ public enum FilterLoader {
             boolean isMetaDataParsingFailed = TextUtils.isEmpty(newVersion) || filterSize == 0;
             if (isMetaDataParsingFailed) {
                 Log.e(TAG, "checkUpdate(): Parsing metadata failed");
-                VersionInfo.setFilterVersion(currentVersion);
                 return;
             }
 
             if (getVersionNumber(currentVersion) >= getVersionNumber(newVersion)) {
-                VersionInfo.setFilterVersion(currentVersion);
+                Log.d(TAG, "checkUpdate(): The current version is already latest");
                 updateLastCheckTime();
                 return;
             }
@@ -140,8 +136,15 @@ public enum FilterLoader {
         });
     }
 
-    private long getVersionNumber(final String versionString) {
-        return Long.parseLong(versionString.replace(".", ""));
+    private long getVersionNumber(@NonNull String versionString) {
+        if (TextUtils.isEmpty(versionString)) return 0;
+
+        try {
+            return Long.parseLong(versionString.replace(".", ""));
+        } catch (Exception e) {
+            Log.e(TAG, "getVersionNumber(): Parsing error \"" + versionString + "\"");
+        }
+        return 0;
     }
 
     private void installFilter(@NonNull String rulesetPath) {
@@ -179,7 +182,6 @@ public enum FilterLoader {
         boolean isUpdateCheckTimeExpired = now >= getLastCheckTime() + UPDATE_INTERVAL;
         if (hasInstalledFilter && !isUpdateCheckTimeExpired) {
             Log.d(TAG, "updateIfNeeded(): Skip checkUpdate()");
-            VersionInfo.setFilterVersion(currentVersion);
             return;
         }
 
