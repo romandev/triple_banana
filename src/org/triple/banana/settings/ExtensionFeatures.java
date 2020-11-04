@@ -44,7 +44,7 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         final LongClickableSwitchPreference adblock =
                 (LongClickableSwitchPreference) findPreference(FeatureName.ADBLOCK);
         adblock.setTitle(
-                String.format(getString(R.string.adblock), VersionInfo.getFilterVersion()));
+                String.format(getString(R.string.adblock_with_version), VersionInfo.getFilterVersion()));
         adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
         adblock.setOnPreferenceChangeListener((preference, newValue) -> {
             setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
