@@ -7,13 +7,21 @@ package org.triple.banana.settings;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
 import androidx.preference.PreferenceFragmentCompat;
 
 import org.triple.banana.R;
 
 public class NewExtensionFeatures extends PreferenceFragmentCompat {
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+    public void onCreatePreferences(@NonNull Bundle savedInstanceState, @NonNull String rootKey) {
+        addPreferencesFromResource(R.xml.new_banana_extension_preferences);
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        getPreferenceScreen().removeAll();
         addPreferencesFromResource(R.xml.new_banana_extension_preferences);
     }
 }
