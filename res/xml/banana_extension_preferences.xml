@@ -57,7 +57,7 @@
         android:summary="@string/appearance_summary"
         android:title="@string/appearance" />
     <Preference
-        android:fragment="org.triple.banana.settings.PrivacySettings"
+        android:fragment="org.triple.banana.settings.PrivacyFeatureSettings"
         android:summary="@string/privacy_summary"
-        android:title="@string/privacy" />
+        android:title="@string/privacy_features" />
 </PreferenceScreen>
