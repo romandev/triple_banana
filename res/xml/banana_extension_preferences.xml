@@ -9,27 +9,27 @@
 
     <PreferenceCategory
         android:title="@string/advanced_features"/>
-    <org.triple.banana.settings.LongClickableSwitchPreference
+    <org.triple.banana.settings.preference.AdblockPreference
         android:key="feature_name_adblock"
         android:title="@string/adblock_with_version"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.SecureLoginPreference
         android:key="feature_name_secure_login"
         android:title="@string/secure_login"
         android:summaryOn="@string/secure_login_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.SecureDnsPreference
         android:key="feature_name_secure_dns"
         android:title="@string/secure_dns"
         android:summaryOn="@string/secure_dns_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.TranslatePreference
         android:key="feature_name_translate"
         android:title="@string/translate_button"
         android:summaryOn="@string/languages_offer_translate_switch"
         android:summaryOff="@string/text_off" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.BrowserLockPreference
         android:key="feature_name_browser_lock"
         android:title="@string/browser_lock"
         android:summaryOn="@string/browser_lock_summary"
@@ -37,7 +37,7 @@
 
     <PreferenceCategory
         android:title="@string/media_features"/>
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.BackgroundPlayPreference
         android:key="feature_name_background_play"
         android:title="@string/background_play"
         android:summaryOn="@string/background_play_summary"
@@ -57,7 +57,7 @@
 
     <PreferenceCategory
         android:title="@string/user_interface"/>
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.DarkModePreference
         android:key="feature_name_dark_mode"
         android:title="@string/dark_mode"
         android:summaryOn="@string/dark_mode_summary"

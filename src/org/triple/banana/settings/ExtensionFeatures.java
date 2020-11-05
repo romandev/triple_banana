@@ -18,52 +18,16 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
 import org.triple.banana.appmenu.AppMenuDelegate;
-import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;
 import org.triple.banana.authentication.SecurityLevelChecker.SecurityLevel;
-import org.triple.banana.lock.BrowserLock;
-import org.triple.banana.remote_config.RemoteConfig;
-import org.triple.banana.secure_dns.SecureDnsNotificationManager;
-import org.triple.banana.theme.DarkModeController;
 import org.triple.banana.toolbar.ToolbarEditor;
-import org.triple.banana.version.VersionInfo;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
-    private SwitchPreferenceCompat mSecureLogin;
-    private SwitchPreferenceCompat mBrowserLock;
-    private RemoteConfig mRemoteConfig =
-            new RemoteConfig("https://zino.dev/triple_banana_config/remote_config.json");
-
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.banana_extension_preferences);
 
         AppMenuDelegate.get().setNewFeatureIcon(false);
-
-        final LongClickableSwitchPreference adblock =
-                (LongClickableSwitchPreference) findPreference(FeatureName.ADBLOCK);
-        adblock.setTitle(
-                String.format(getString(R.string.adblock_with_version), VersionInfo.getFilterVersion()));
-        adblock.setChecked(isEnabled(FeatureName.ADBLOCK));
-        adblock.setOnPreferenceChangeListener((preference, newValue) -> {
-            setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
-            return true;
-        });
-        adblock.setOnLongClickListener(view -> {
-            // FIXME(#803): We should implement the force update of adblock filter ruleset.
-            return true;
-        });
-
-        mSecureLogin = (SwitchPreferenceCompat) findPreference(FeatureName.SECURE_LOGIN);
-        mSecureLogin.setOnPreferenceChangeListener((preference, newValue) -> {
-            if (mSecureLogin.isChecked()) {
-                Authenticator.get().authenticate(result -> {
-                    if (result) mSecureLogin.setChecked(false);
-                });
-                return false;
-            }
-            return true;
-        });
 
         final SwitchPreferenceCompat bottomToolbar =
                 (SwitchPreferenceCompat) findPreference(FeatureName.BOTTOM_TOOLBAR);
@@ -78,14 +42,6 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
             return false;
         });
 
-        final SwitchPreferenceCompat darkMode =
-                (SwitchPreferenceCompat) findPreference(FeatureName.DARK_MODE);
-        darkMode.setChecked(DarkModeController.get().isDarkModeOn());
-        darkMode.setOnPreferenceChangeListener((preference, newValue) -> {
-            DarkModeController.get().toggle();
-            return true;
-        });
-
         final SwitchPreferenceCompat mediaRemote =
                 (SwitchPreferenceCompat) findPreference(FeatureName.MEDIA_REMOTE);
         mediaRemote.setOnPreferenceClickListener(preference -> {
@@ -97,57 +53,6 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
                 (SwitchPreferenceCompat) findPreference(FeatureName.AUTOPLAY);
         autoPlay.setOnPreferenceClickListener(preference -> {
             showRestartDialog();
-            return true;
-        });
-
-        final SwitchPreferenceCompat backgroundPlay =
-                (SwitchPreferenceCompat) findPreference(FeatureName.BACKGROUND_PLAY);
-        boolean isVisible = wasSetByUser(FeatureName.BACKGROUND_PLAY);
-        backgroundPlay.setVisible(isVisible);
-        backgroundPlay.setOnPreferenceChangeListener((preference, newValue) -> {
-            showRestartDialog();
-            return true;
-        });
-
-        if (!isVisible) {
-            mRemoteConfig.getAsync(config -> {
-                boolean isRemoteEnabled = config.optBoolean("background_play");
-                if (isRemoteEnabled && backgroundPlay != null) {
-                    setEnabled(FeatureName.BACKGROUND_PLAY, backgroundPlay.isChecked());
-                    backgroundPlay.setVisible(true);
-                }
-            });
-        }
-
-        final SwitchPreferenceCompat secureDNS =
-                (SwitchPreferenceCompat) findPreference(FeatureName.SECURE_DNS);
-        secureDNS.setChecked(isEnabled(FeatureName.SECURE_DNS));
-        secureDNS.setOnPreferenceChangeListener((preference, newValue) -> {
-            showRestartDialog();
-            if (((boolean) newValue)
-                    && SecureDnsNotificationManager.getInstance().wasNotificationShown()) {
-                SecureDnsNotificationManager.getInstance().resetNotificationState();
-            }
-            return true;
-        });
-
-        final SwitchPreferenceCompat translate =
-                (SwitchPreferenceCompat) findPreference(FeatureName.TRANSLATE);
-        translate.setChecked(isEnabled(FeatureName.TRANSLATE));
-        translate.setOnPreferenceChangeListener((preference, newValue) -> {
-            setEnabled(FeatureName.TRANSLATE, (boolean) newValue);
-            return true;
-        });
-
-        mBrowserLock = (SwitchPreferenceCompat) findPreference(FeatureName.BROWSER_LOCK);
-        mBrowserLock.setChecked(isEnabled(FeatureName.BROWSER_LOCK));
-        mBrowserLock.setOnPreferenceChangeListener((preference, newValue) -> {
-            setEnabled(FeatureName.BROWSER_LOCK, (boolean) newValue);
-            if ((boolean) newValue) {
-                BrowserLock.getInstance().start();
-            } else {
-                BrowserLock.getInstance().stop();
-            }
             return true;
         });
 
@@ -185,18 +90,6 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
 
     public void onSecurityLevelChanged(SecurityLevel newLevel) {
         boolean isSecure = newLevel == SecurityLevel.SECURE;
-        if (mSecureLogin != null) {
-            mSecureLogin.setEnabled(isSecure);
-            if (!isSecure) {
-                mSecureLogin.setChecked(false);
-            }
-        }
-        if (mBrowserLock != null) {
-            mBrowserLock.setEnabled(isSecure);
-            if (!isSecure) {
-                mBrowserLock.setChecked(false);
-            }
-        }
     }
 
     public static class FeatureName {
