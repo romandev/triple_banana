@@ -7,57 +7,57 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:orderingFromXml="false">
     <PreferenceCategory android:title="@string/quick_settings" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.AdblockPreference
         android:key="feature_name_adblock"
-        android:summaryOff="@string/text_off"
+        android:title="@string/adblock_with_version"
         android:summaryOn="@string/adblock_summary"
-        android:title="@string/adblock_with_version" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.SecureLoginPreference
         android:key="feature_name_secure_login"
-        android:summaryOff="@string/text_off"
+        android:title="@string/secure_login"
         android:summaryOn="@string/secure_login_summary"
-        android:title="@string/secure_login" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.SecureDnsPreference
         android:key="feature_name_secure_dns"
-        android:summaryOff="@string/text_off"
+        android:title="@string/secure_dns"
         android:summaryOn="@string/secure_dns_summary"
-        android:title="@string/secure_dns" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.BackgroundPlayPreference
         android:key="feature_name_background_play"
-        android:summaryOff="@string/text_off"
+        android:title="@string/background_play"
         android:summaryOn="@string/background_play_summary"
-        android:title="@string/background_play" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.DarkModePreference
         android:key="feature_name_dark_mode"
-        android:summaryOff="@string/text_off"
+        android:title="@string/dark_mode"
         android:summaryOn="@string/dark_mode_summary"
-        android:title="@string/dark_mode" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.TranslatePreference
         android:key="feature_name_translate"
-        android:summaryOff="@string/text_off"
+        android:title="@string/translate_button"
         android:summaryOn="@string/languages_offer_translate_switch"
-        android:title="@string/translate_button" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.BrowserLockPreference
         android:key="feature_name_browser_lock"
-        android:summaryOff="@string/text_off"
+        android:title="@string/browser_lock"
         android:summaryOn="@string/browser_lock_summary"
-        android:title="@string/browser_lock" />
+        android:summaryOff="@string/text_off" />
 
     <PreferenceCategory android:title="@string/detail_settings" />
     <Preference
-        android:fragment="org.triple.banana.settings.AdvancedFeatures"
+        android:fragment="org.triple.banana.settings.AdvancedFeatureSettings"
         android:summary="@string/advanced_features_summary"
         android:title="@string/advanced_features" />
     <Preference
-        android:fragment="org.triple.banana.settings.MediaFeatures"
+        android:fragment="org.triple.banana.settings.MediaFeatureSettings"
         android:summary="@string/media_features_summary"
         android:title="@string/media_features" />
     <Preference
-        android:fragment="org.triple.banana.settings.AppearanceFeatures"
+        android:fragment="org.triple.banana.settings.AppearanceSettings"
         android:summary="@string/appearance_summary"
         android:title="@string/appearance" />
     <Preference
-        android:fragment="org.triple.banana.settings.PrivacyFeatures"
+        android:fragment="org.triple.banana.settings.PrivacySettings"
         android:summary="@string/privacy_summary"
         android:title="@string/privacy" />
 </PreferenceScreen>

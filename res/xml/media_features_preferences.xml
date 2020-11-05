@@ -7,11 +7,11 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:orderingFromXml="false">
     <PreferenceCategory android:title="@string/media_features" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.BackgroundPlayPreference
         android:key="feature_name_background_play"
-        android:summaryOff="@string/text_off"
+        android:title="@string/background_play"
         android:summaryOn="@string/background_play_summary"
-        android:title="@string/background_play" />
+        android:summaryOff="@string/text_off" />
     <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
         android:defaultValue="true"
         android:key="feature_name_autoplay"
