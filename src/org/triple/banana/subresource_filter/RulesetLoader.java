@@ -3,10 +3,10 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-package org.triple.banana.adblock;
+package org.triple.banana.subresource_filter;
 
-import static org.triple.banana.adblock.filter.FilterVersion.BUILTIN_FILTER_SIZE;
-import static org.triple.banana.adblock.filter.FilterVersion.BUILTIN_FILTER_VERSION;
+import static org.triple.banana.subresource_filter.ruleset.RulesetVersion.BUILTIN_RULESET_SIZE;
+import static org.triple.banana.subresource_filter.ruleset.RulesetVersion.BUILTIN_RULESET_VERSION;
 
 import android.app.AlarmManager;
 import android.content.Context;
@@ -27,14 +27,14 @@ import org.triple.banana.util.Unzip;
 import java.io.File;
 import java.io.InputStream;
 
-public enum FilterLoader {
+public enum RulesetLoader {
     instance;
 
-    private static final String TAG = "FilterLoader";
+    private static final String TAG = "RulesetLoader";
     private final RemoteConfig mMetaData =
             new RemoteConfig("https://triplebanana.github.io/filter/metadata.json");
 
-    private static final Uri FILTER_BASE_URL = Uri.parse("https://triplebanana.github.io/filter/");
+    private static final Uri RULESET_BASE_URL = Uri.parse("https://triplebanana.github.io/filter/");
     private static final String LAST_CHECK_TIME_KEY = "filter_download_last_check_time";
     private static final long UPDATE_INTERVAL = AlarmManager.INTERVAL_DAY * 1;
 
@@ -61,21 +61,21 @@ public enum FilterLoader {
 
     private boolean updateBuiltInRuleset() {
         String currentVersion = getVersion();
-        if (getVersionNumber(currentVersion) >= getVersionNumber(BUILTIN_FILTER_VERSION)) {
+        if (getVersionNumber(currentVersion) >= getVersionNumber(BUILTIN_RULESET_VERSION)) {
             Log.d(TAG, "updateBuiltInRuleset(): It is already latest version = " + currentVersion);
             return false;
         }
 
-        Log.d(TAG, "updateBuiltInRuleset(): VERSION = " + BUILTIN_FILTER_VERSION);
-        Log.d(TAG, "updateBuiltInRuleset(): SIZE = " + BUILTIN_FILTER_SIZE);
+        Log.d(TAG, "updateBuiltInRuleset(): VERSION = " + BUILTIN_RULESET_VERSION);
+        Log.d(TAG, "updateBuiltInRuleset(): SIZE = " + BUILTIN_RULESET_SIZE);
 
         Context context = BananaApplicationUtils.get().getApplicationContext();
         if (context == null) return false;
 
         AssetManager manager = context.getAssets();
-        try (InputStream stream = manager.open(BUILTIN_FILTER_VERSION + ".filter.zip")) {
+        try (InputStream stream = manager.open(BUILTIN_RULESET_VERSION + ".filter.zip")) {
             File destinationDir = context.getExternalFilesDir(null);
-            File destinationFile = new File(destinationDir, BUILTIN_FILTER_VERSION + ".filter");
+            File destinationFile = new File(destinationDir, BUILTIN_RULESET_VERSION + ".filter");
             Log.d(TAG, "updateBuiltInRuleset(): destinationFile = " + destinationFile);
 
             if (!Unzip.get().extract(stream, destinationDir, true)) {
@@ -83,7 +83,7 @@ public enum FilterLoader {
                 return false;
             }
 
-            if (destinationFile.length() != BUILTIN_FILTER_SIZE) {
+            if (destinationFile.length() != BUILTIN_RULESET_SIZE) {
                 Log.e(TAG,
                         "updateBuiltInRuleset(): The ruleset is corrupted "
                                 + destinationFile.length());
@@ -136,7 +136,7 @@ public enum FilterLoader {
             final String currentVersion, final String newVersion, final long rulesetSize) {
         Log.d(TAG,
                 "downloadLatestRuleset(): current = " + currentVersion + ", new = " + newVersion);
-        Uri rulesetUri = Uri.withAppendedPath(FILTER_BASE_URL, newVersion + ".filter.zip");
+        Uri rulesetUri = Uri.withAppendedPath(RULESET_BASE_URL, newVersion + ".filter.zip");
         SimpleDownloader.get().download(rulesetUri, compressedRuleset -> {
             if (compressedRuleset == null) {
                 Log.e(TAG, "downloadLatestRuleset(): Downloading failed");

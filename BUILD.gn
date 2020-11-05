@@ -136,9 +136,6 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/InterfaceProvider.java",
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
 
-    # adblock
-    "//triple_banana/src/org/triple/banana/adblock/FilterLoader.java",
-
     # appmenu
     "//triple_banana/src/org/triple/banana/appmenu/AppMenuDelegate.java",
 
@@ -212,6 +209,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/settings/PrivacySettings.java",
     "//triple_banana/src/org/triple/banana/settings/SettingsOpener.java",
 
+    # subresource_filter
+    "//triple_banana/src/org/triple/banana/subresource_filter/RulesetLoader.java",
+
     # theme
     "//triple_banana/src/org/triple/banana/theme/DarkModeController.java",
 
@@ -283,7 +283,7 @@ android_library("triple_banana_java") {
     "//ui/android:ui_java",
     "//url:gurl_java",
   ]
-  srcjar_deps = [ ":builtin_filter_version" ]
+  srcjar_deps = [ ":builtin_ruleset_version" ]
 
   annotation_processor_deps = [ "//base/android/jni_generator:jni_processor" ]
 }
@@ -458,15 +458,15 @@ android_resources("triple_banana_resources") {
   custom_package = "org.triple.banana"
 }
 
-java_cpp_template("builtin_filter_version") {
-  builtin_filter_version = "0"
-  builtin_filter_size = "0"
+java_cpp_template("builtin_ruleset_version") {
+  builtin_ruleset_version = "0"
+  builtin_ruleset_size = "0"
 
-  package_path = "org/triple/banana/adblock/filter"
-  sources = [ "//triple_banana/src/org/triple/banana/adblock/filter/FilterVersion.template" ]
+  package_path = "org/triple/banana/subresource_filter/ruleset"
+  sources = [ "//triple_banana/src/org/triple/banana/subresource_filter/ruleset/RulesetVersion.template" ]
   defines = [
-    "BUILTIN_FILTER_VERSION_VALUE=\"$builtin_filter_version\"",
-    "BUILTIN_FILTER_SIZE_VALUE=$builtin_filter_size",
+    "BUILTIN_RULESET_VERSION_VALUE=\"$builtin_ruleset_version\"",
+    "BUILTIN_RULESET_SIZE_VALUE=$builtin_ruleset_size",
   ]
 }
 

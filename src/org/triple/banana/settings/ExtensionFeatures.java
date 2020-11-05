@@ -17,7 +17,6 @@ import androidx.preference.SwitchPreferenceCompat;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
-import org.triple.banana.adblock.FilterLoader;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.authentication.Authenticator;
 import org.triple.banana.authentication.SecurityLevelChecker;

@@ -3,11 +3,11 @@
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
-package org.triple.banana.adblock.filter;
+package org.triple.banana.subresource_filter.ruleset;
 
 import androidx.annotation.NonNull;
 
-public interface FilterVersion {
-    public static final @NonNull String BUILTIN_FILTER_VERSION = BUILTIN_FILTER_VERSION_VALUE;
-    public static final long BUILTIN_FILTER_SIZE = BUILTIN_FILTER_SIZE_VALUE;
+public interface RulesetVersion {
+    public static final @NonNull String BUILTIN_RULESET_VERSION = BUILTIN_RULESET_VERSION_VALUE;
+    public static final long BUILTIN_RULESET_SIZE = BUILTIN_RULESET_SIZE_VALUE;
 }

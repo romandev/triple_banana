@@ -11,7 +11,6 @@ import android.content.SharedPreferences;
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaTabManager;
-import org.triple.banana.adblock.FilterLoader;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.base.ApplicationStatusTracker;
 import org.triple.banana.lock.BrowserLock;
@@ -21,6 +20,7 @@ import org.triple.banana.password.PasswordExtension;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
+import org.triple.banana.subresource_filter.RulesetLoader;
 
 public class TripleBananaApplication extends BananaApplication {
     static {
@@ -65,9 +65,9 @@ public class TripleBananaApplication extends BananaApplication {
         if (!getLastUpdatedVersion().equals(getCurrentVersion())) {
             AppMenuDelegate.get().setNewFeatureIcon(true);
             setLastUpdatedVersion(getCurrentVersion());
-            FilterLoader.instance.forceUpdateRuleset();
+            RulesetLoader.instance.forceUpdateRuleset();
         } else {
-            FilterLoader.instance.updateRulesetIfNeeded();
+            RulesetLoader.instance.updateRulesetIfNeeded();
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
