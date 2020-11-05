@@ -65,9 +65,9 @@ public class TripleBananaApplication extends BananaApplication {
         if (!getLastUpdatedVersion().equals(getCurrentVersion())) {
             AppMenuDelegate.get().setNewFeatureIcon(true);
             setLastUpdatedVersion(getCurrentVersion());
-            FilterLoader.instance.forceUpdate();
+            FilterLoader.instance.forceUpdateRuleset();
         } else {
-            FilterLoader.instance.updateIfNeeded();
+            FilterLoader.instance.updateRulesetIfNeeded();
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
