@@ -9,67 +9,26 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import androidx.appcompat.app.AlertDialog;
-import androidx.preference.Preference;
+import androidx.annotation.NonNull;
 import androidx.preference.PreferenceFragmentCompat;
-import androidx.preference.SwitchPreferenceCompat;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.triple.banana.R;
 import org.triple.banana.appmenu.AppMenuDelegate;
-import org.triple.banana.toolbar.ToolbarEditor;
 
 public class ExtensionFeatures extends PreferenceFragmentCompat {
     @Override
-    public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+    public void onCreatePreferences(@NonNull Bundle savedInstanceState, @NonNull String rootKey) {
         addPreferencesFromResource(R.xml.banana_extension_preferences);
-
         AppMenuDelegate.get().setNewFeatureIcon(false);
-
-        final SwitchPreferenceCompat bottomToolbar =
-                (SwitchPreferenceCompat) findPreference(FeatureName.BOTTOM_TOOLBAR);
-        bottomToolbar.setOnPreferenceChangeListener((preference, newValue) -> {
-            showRestartDialog();
-            return true;
-        });
-
-        final Preference toolbarEditor = findPreference("launch_toolbar_editor");
-        toolbarEditor.setOnPreferenceClickListener(preference -> {
-            ToolbarEditor.show(getActivity());
-            return false;
-        });
-
-        final SwitchPreferenceCompat mediaRemote =
-                (SwitchPreferenceCompat) findPreference(FeatureName.MEDIA_REMOTE);
-        mediaRemote.setOnPreferenceClickListener(preference -> {
-            showRestartDialog();
-            return true;
-        });
-
-        final SwitchPreferenceCompat autoPlay =
-                (SwitchPreferenceCompat) findPreference(FeatureName.AUTOPLAY);
-        autoPlay.setOnPreferenceClickListener(preference -> {
-            showRestartDialog();
-            return true;
-        });
-
-        final SwitchPreferenceCompat autoClearBrowsingData =
-                (SwitchPreferenceCompat) findPreference(FeatureName.AUTO_CLEAR_BROWSING_DATA);
-        autoClearBrowsingData.setOnPreferenceChangeListener((preference, newValue) -> {
-            setEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA, (boolean) newValue);
-            return true;
-        });
     }
 
-    private void showRestartDialog() {
-        AlertDialog.Builder builder = BananaApplicationUtils.get().getDialogBuilder(getActivity());
-        builder.setMessage(R.string.restart_message)
-                .setNegativeButton(android.R.string.cancel, null)
-                .setPositiveButton(android.R.string.ok,
-                        (dialog, which) -> { BananaApplicationUtils.get().restart(); })
-                .create()
-                .show();
+    @Override
+    public void onResume() {
+        super.onResume();
+        getPreferenceScreen().removeAll();
+        addPreferencesFromResource(R.xml.banana_extension_preferences);
     }
 
     public static class FeatureName {
