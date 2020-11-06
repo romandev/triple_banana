@@ -12,7 +12,7 @@
         android:title="@string/dark_mode"
         android:summaryOn="@string/dark_mode_summary"
         android:summaryOff="@string/text_off" />
-    <org.chromium.components.browser_ui.settings.ChromeSwitchPreference
+    <org.triple.banana.settings.preference.BottomToolbarPreference
         android:key="bottom_toolbar_enabled"
         android:summaryOff="@string/text_off"
         android:summaryOn="@string/text_on"

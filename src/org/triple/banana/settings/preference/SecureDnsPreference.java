@@ -8,7 +8,6 @@ package org.triple.banana.settings.preference;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.banana.cake.interfaces.BananaSwitchPreference;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
