@@ -27,4 +27,8 @@
         android:summaryOff="@string/text_off"
         android:summaryOn="@string/text_on"
         android:title="@string/external_download_manager" />
+    <org.chromium.components.browser_ui.settings.ChromeBasePreference
+        android:fragment="org.chromium.chrome.browser.datareduction.settings.DataReductionPreferenceFragment"
+        android:key="data_reduction"
+        android:title="@string/data_reduction_title_lite_mode" />
 </PreferenceScreen>
