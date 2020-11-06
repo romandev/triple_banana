@@ -23,6 +23,7 @@ public class PrivacyAndSecuritySettings extends PreferenceFragmentCompat {
 
     @Override
     public void onCreatePreferences(@NonNull Bundle savedInstanceState, @NonNull String rootKey) {
+        getActivity().setTitle(R.string.privacy_and_security);
         addPreferencesFromResource(R.xml.privacy_and_security_preferences);
         mSecureLogin = findPreference(FeatureName.SECURE_LOGIN);
         mBrowserLock = findPreference(FeatureName.BROWSER_LOCK);

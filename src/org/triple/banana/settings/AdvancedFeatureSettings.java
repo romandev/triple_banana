@@ -14,6 +14,7 @@ import org.triple.banana.R;
 public class AdvancedFeatureSettings extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        getActivity().setTitle(R.string.advanced_features);
         addPreferencesFromResource(R.xml.advanced_features_preferences);
     }
 }

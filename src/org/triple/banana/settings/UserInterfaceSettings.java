@@ -13,6 +13,7 @@ import org.triple.banana.R;
 public class UserInterfaceSettings extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        getActivity().setTitle(R.string.user_interface);
         addPreferencesFromResource(R.xml.user_interface_preferences);
     }
 }

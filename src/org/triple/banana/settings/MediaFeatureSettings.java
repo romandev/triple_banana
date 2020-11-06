@@ -14,6 +14,7 @@ import org.triple.banana.R;
 public class MediaFeatureSettings extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
+        getActivity().setTitle(R.string.media_features);
         addPreferencesFromResource(R.xml.media_features_preferences);
     }
 }

@@ -20,6 +20,7 @@ import org.triple.banana.appmenu.AppMenuDelegate;
 public class ExtensionFeatures extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(@NonNull Bundle savedInstanceState, @NonNull String rootKey) {
+        getActivity().setTitle(R.string.banana_extension);
         addPreferencesFromResource(R.xml.banana_extension_preferences);
         AppMenuDelegate.get().setNewFeatureIcon(false);
     }
