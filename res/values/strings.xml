@@ -5,11 +5,11 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <resources>
-    <string name="adblock">Ad Block</string>
-    <string name="adblock_with_version">Ad Block (Ver: %s)</string>
+    <string name="adblock">AdBlock</string>
+    <string name="adblock_with_version">AdBlock (Ver: %s)</string>
     <string name="adblock_summary">Block ads on sites that show intrusive or misleading ads</string>
     <string name="advanced_features">Advanced Features</string>
-    <string name="advanced_features_summary">Update adblock filter, Translate, External download manager...</string>
+    <string name="advanced_features_summary"> AdBlock, Translate, Data reduction mode, External download manager...</string>
     <string name="authentication_title">Authentication</string>
     <string name="authentication_description">Scan your biometric data to sign-in\nyour credentials</string>
     <string name="autoplay">Autoplay Media Contents</string>
@@ -31,7 +31,7 @@
     <string name="etc">Etc</string>
     <string name="external_download_manager">Use external download manager</string>
     <string name="media_features">Media Features</string>
-    <string name="media_features_summary">Use Banana Browser\'s specialized media features</string>
+    <string name="media_features_summary">Use specialized media features of Banana Browser</string>
     <string name="media_remote">Media Remote</string>
     <string name="media_remote_back">Back</string>
     <string name="media_remote_backward">Backward</string>
@@ -49,7 +49,7 @@
     <string name="pip_disabled">PIP mode only enable when the video is playing</string>
     <string name="pip_not_supported">PIP mode is not supported on this video</string>
     <string name="privacy_and_security">Privacy and Security</string>
-    <string name="privacy_and_security_summary">Improve your internet privacy</string>
+    <string name="privacy_and_security_summary">Protect your privacy online with strong security features provided by Banana Browser</string>
     <string name="quick_settings">Quick Settings</string>
     <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
@@ -60,8 +60,8 @@
     <string name="secure_login">Secure Login</string>
     <string name="secure_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>
     <string name="toolbar_editor">Toolbar Editor</string>
-    <string name="toolbar_editor_summary">Frequently used buttons can be assigned to the toolbar</string>
-    <string name="update_adblock_filter">Update adblock filter</string>
+    <string name="toolbar_editor_summary">Personalize your browing experience rearranging frequently used buttons on the bottom toolbar</string>
+    <string name="update_adblock_filter">Check for adblock filter updates</string>
     <string name="update_adblock_filter_summary">Experience even more powerful adblock feature with the latest filters</string>
     <string name="user_data">User Data</string>
     <string name="user_interface">User Interface</string>
