@@ -10,8 +10,6 @@
     <string name="adblock_summary">Block ads on sites that show intrusive or misleading ads</string>
     <string name="advanced_features">Advanced Features</string>
     <string name="advanced_features_summary">Update adblock filter, Translate, External download manager...</string>
-    <string name="appearance">Appearance</string>
-    <string name="appearance_summary">Change the look of your browser</string>
     <string name="authentication_title">Authentication</string>
     <string name="authentication_description">Scan your biometric data to sign-in\nyour credentials</string>
     <string name="autoplay">Autoplay Media Contents</string>
@@ -50,8 +48,8 @@
     <string name="media_remote_volume">Volume</string>
     <string name="pip_disabled">PIP mode only enable when the video is playing</string>
     <string name="pip_not_supported">PIP mode is not supported on this video</string>
-    <string name="privacy_features">Privacy Features</string>
-    <string name="privacy_summary">Improve your internet privacy</string>
+    <string name="privacy_and_security">Privacy and Security</string>
+    <string name="privacy_and_security_summary">Improve your internet privacy</string>
     <string name="quick_settings">Quick Settings</string>
     <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
@@ -67,5 +65,6 @@
     <string name="update_adblock_filter_summary">Experience even more powerful adblock feature with the latest filters</string>
     <string name="user_data">User Data</string>
     <string name="user_interface">User Interface</string>
+    <string name="user_interface_summary">Change the look of your browser</string>
     <string name="use_secure_login">Use Secure Login\n(Biometrics, Pattern, PIN, and so on)</string>
 </resources>

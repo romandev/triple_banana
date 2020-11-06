@@ -13,10 +13,10 @@ import androidx.preference.PreferenceFragmentCompat;
 import org.triple.banana.R;
 import org.triple.banana.toolbar.ToolbarEditor;
 
-public class AppearanceSettings extends PreferenceFragmentCompat {
+public class UserInterfaceSettings extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.appearance_preferences);
+        addPreferencesFromResource(R.xml.user_interface_preferences);
 
         final Preference toolbarEditor = findPreference("launch_toolbar_editor");
         toolbarEditor.setOnPreferenceClickListener(preference -> {

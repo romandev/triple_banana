@@ -10,8 +10,6 @@
     <string name="adblock_summary">방해가 되거나 사용자를 현혹하는 광고를 차단합니다</string>
     <string name="advanced_features">고급 기능</string>
     <string name="advanced_features_summary">광고차단 필터 업데이트, 번역, 외부 다운로드 매니저...</string>
-    <string name="appearance">모양</string>
-    <string name="appearance_summary">브라우저의 모양을 변경하세요</string>
     <string name="authentication_title">생체 인증</string>
     <string name="authentication_description">저장된 아이디/패스워드를 이용하려면\n생체인증을 진행하세요</string>
     <string name="autoplay">미디어 자동재생</string>
@@ -50,8 +48,8 @@
     <string name="media_remote_volume">음량</string>
     <string name="pip_disabled">동영상이 재생 중일때 PIP 모드가 가능합니다</string>
     <string name="pip_not_supported">이 동영상에서는 PIP 모드를 지원하지 않습니다</string>
-    <string name="privacy_features">개인정보 보호 기능</string>
-    <string name="privacy_summary">여러분의 개인정보를 보호하세요</string>
+    <string name="privacy_and_security">개인정보 및 보안</string>
+    <string name="privacy_and_security_summary">여러분의 개인정보를 보호하세요</string>
     <string name="quick_settings">빠른 설정</string>
     <string name="reset">초기화</string>
     <string name="restart_message">Banana Browser를 다시 시작하면 변경사항이 적용됩니다</string>
@@ -67,5 +65,6 @@
     <string name="update_adblock_filter_summary">최신 필터로 더욱 강력한 광고차단 기능을 경험하세요</string>
     <string name="user_data">사용자 기록</string>
     <string name="user_interface">사용자 인터페이스</string>
+    <string name="user_interface_summary">브라우저의 모양을 변경하세요</string>
     <string name="use_secure_login">안전한 로그인 사용하기\n(예: 생체인증, 패턴, PIN 등)</string>
 </resources>

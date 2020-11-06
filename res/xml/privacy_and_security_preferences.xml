@@ -6,7 +6,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:orderingFromXml="false">
-    <PreferenceCategory android:title="@string/privacy_features" />
+    <PreferenceCategory android:title="@string/privacy_and_security" />
     <org.triple.banana.settings.preference.SecureLoginPreference
         android:key="feature_name_secure_login"
         android:title="@string/secure_login"

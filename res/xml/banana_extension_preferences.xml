@@ -53,11 +53,11 @@
         android:summary="@string/media_features_summary"
         android:title="@string/media_features" />
     <Preference
-        android:fragment="org.triple.banana.settings.AppearanceSettings"
-        android:summary="@string/appearance_summary"
-        android:title="@string/appearance" />
+        android:fragment="org.triple.banana.settings.UserInterfaceSettings"
+        android:summary="@string/user_interface_summary"
+        android:title="@string/user_interface" />
     <Preference
-        android:fragment="org.triple.banana.settings.PrivacyFeatureSettings"
-        android:summary="@string/privacy_summary"
-        android:title="@string/privacy_features" />
+        android:fragment="org.triple.banana.settings.PrivacyAndSecuritySettings"
+        android:summary="@string/privacy_and_security_summary"
+        android:title="@string/privacy_and_security" />
 </PreferenceScreen>
