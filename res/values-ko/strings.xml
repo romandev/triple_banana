@@ -24,6 +24,8 @@
     <string name="browser_lock_summary">브라우저를 열 때, 추가 인증을 사용하여 개인정보를 안전하게 보호하세요. 사용자 편의를 위해 인증 성공 후 1분 간은 세션이 유지됩니다.</string>
     <string name="dark_mode">다크 모드</string>
     <string name="dark_mode_summary">야간에 다크 모드를 활성화하여 눈의 피로를 덜어주세요</string>
+    <string name="data_reduction_mode">데이터 절약 모드</string>
+    <string name="data_reduction_mode_summary">페이지가 더 빠르게 로드되고 데이터가 최대 60퍼센트 절약됩니다</string>
     <string name="detail_settings">상세 설정</string>
     <string name="discard">저장 안 함</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여 도구모음에 배치하세요</string>

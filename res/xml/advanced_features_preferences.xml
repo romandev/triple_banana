@@ -30,5 +30,6 @@
     <org.chromium.components.browser_ui.settings.ChromeBasePreference
         android:fragment="org.chromium.chrome.browser.datareduction.settings.DataReductionPreferenceFragment"
         android:key="data_reduction"
-        android:title="@string/data_reduction_title_lite_mode" />
+        android:title="@string/data_reduction_mode"
+        android:summary="@string/data_reduction_mode_summary" />
 </PreferenceScreen>
