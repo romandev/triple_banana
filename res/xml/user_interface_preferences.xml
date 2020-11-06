@@ -17,8 +17,8 @@
         android:summaryOff="@string/text_off"
         android:summaryOn="@string/text_on"
         android:title="@string/enable_bottom_toolbar" />
-    <Preference
+    <org.triple.banana.settings.preference.ToolbarEditorPreference
         android:key="launch_toolbar_editor"
-        android:summary="@string/toolbar_editor_summary"
-        android:title="@string/toolbar_editor" />
+        android:title="@string/toolbar_editor"
+        android:summary="@string/toolbar_editor_summary" />
 </PreferenceScreen>

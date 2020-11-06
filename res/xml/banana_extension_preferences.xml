@@ -12,52 +12,46 @@
         android:title="@string/adblock_with_version"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.SecureLoginPreference
-        android:key="feature_name_secure_login"
-        android:title="@string/secure_login"
-        android:summaryOn="@string/secure_login_summary"
+    <org.triple.banana.settings.preference.BackgroundPlayPreference
+        android:key="feature_name_background_play"
+        android:title="@string/background_play"
+        android:summaryOn="@string/background_play_summary"
         android:summaryOff="@string/text_off" />
     <org.triple.banana.settings.preference.SecureDnsPreference
         android:key="feature_name_secure_dns"
         android:title="@string/secure_dns"
         android:summaryOn="@string/secure_dns_summary"
         android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.BackgroundPlayPreference
-        android:key="feature_name_background_play"
-        android:title="@string/background_play"
-        android:summaryOn="@string/background_play_summary"
-        android:summaryOff="@string/text_off" />
     <org.triple.banana.settings.preference.DarkModePreference
         android:key="feature_name_dark_mode"
         android:title="@string/dark_mode"
         android:summaryOn="@string/dark_mode_summary"
         android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.TranslatePreference
-        android:key="feature_name_translate"
-        android:title="@string/translate_button"
-        android:summaryOn="@string/languages_offer_translate_switch"
-        android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.BrowserLockPreference
-        android:key="feature_name_browser_lock"
-        android:title="@string/browser_lock"
-        android:summaryOn="@string/browser_lock_summary"
-        android:summaryOff="@string/text_off" />
+    <org.triple.banana.settings.preference.ToolbarEditorPreference
+        android:key="launch_toolbar_editor"
+        android:title="@string/toolbar_editor"
+        android:summary="@string/toolbar_editor_summary" />
+    <Preference
+        android:fragment="org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment"
+        android:key="clear_browsing_data"
+        android:title="@string/clear_browsing_data_title"
+        android:summary="@string/clear_browsing_data_summary" />
 
     <PreferenceCategory android:title="@string/detail_settings" />
     <Preference
         android:fragment="org.triple.banana.settings.AdvancedFeatureSettings"
-        android:summary="@string/advanced_features_summary"
-        android:title="@string/advanced_features" />
+        android:title="@string/advanced_features"
+        android:summary="@string/advanced_features_summary" />
     <Preference
         android:fragment="org.triple.banana.settings.MediaFeatureSettings"
-        android:summary="@string/media_features_summary"
-        android:title="@string/media_features" />
+        android:title="@string/media_features"
+        android:summary="@string/media_features_summary" />
     <Preference
         android:fragment="org.triple.banana.settings.UserInterfaceSettings"
-        android:summary="@string/user_interface_summary"
-        android:title="@string/user_interface" />
+        android:title="@string/user_interface"
+        android:summary="@string/user_interface_summary" />
     <Preference
         android:fragment="org.triple.banana.settings.PrivacyAndSecuritySettings"
-        android:summary="@string/privacy_and_security_summary"
-        android:title="@string/privacy_and_security" />
+        android:title="@string/privacy_and_security"
+        android:summary="@string/privacy_and_security_summary" />
 </PreferenceScreen>

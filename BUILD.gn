@@ -215,6 +215,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/settings/preference/SecureDnsPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/SecureLoginPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/TranslatePreference.java",
+    "//triple_banana/src/org/triple/banana/settings/preference/ToolbarEditorPreference.java",
 
     # subresource_filter
     "//triple_banana/src/org/triple/banana/subresource_filter/RulesetLoader.java",

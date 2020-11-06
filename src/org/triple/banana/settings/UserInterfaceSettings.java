@@ -6,22 +6,13 @@
 package org.triple.banana.settings;
 
 import android.os.Bundle;
-
-import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
 import org.triple.banana.R;
-import org.triple.banana.toolbar.ToolbarEditor;
 
 public class UserInterfaceSettings extends PreferenceFragmentCompat {
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         addPreferencesFromResource(R.xml.user_interface_preferences);
-
-        final Preference toolbarEditor = findPreference("launch_toolbar_editor");
-        toolbarEditor.setOnPreferenceClickListener(preference -> {
-            ToolbarEditor.show(getActivity());
-            return false;
-        });
     }
 }
