@@ -1,3 +1,61 @@
+# 5.01 @ 86.0.4240.185
+
+## Chromium base version
+- **86.0.4240.185**
+
+## Change log
+- Fix a bug that the android lint doesn't work
+- Implement subresource filter update UI (#839)
+- Update title and summary for data reduction mode (#838)
+- Extends RestartSwitchPreference for bottom toolbar preference (#837)
+- Set the title of settings screens (#835)
+- Change feature name and summary (#834)
+- Reorganize the quick settings on Banana Extension (#833)
+- Add data reduction mode to advanced features (#831)
+- Rename "Privacy" and "Appearance" with new things (#829)
+- Fix a crash that the "Privacy" menu on Settings (#827)
+- Merge NewExtensionFeatures with ExtensionFeatures (#826)
+- Fix a bug that the quick settings aren't synced with the detail settings (#825)
+- Implement SecurityLevelChecker for SecureLogin and BrowserLock (#824)
+- Enable NewExtensionFeatures settings by default (#823)
+- Factor out custom preferences from ExtensionFeatures (#818)
+- Rename FilterLoader with RulesetLoader (#821)
+- Rebase 86.0.4240.185 (#822)
+- Refactor FilterLoader to support the force ruleset update (#820)
+- Introduce successCallback parameter to Banana/CakeSubresourceFilter (#819)
+- Remove setFilterVersion() method in VersionInfo (#817)
+- Disable NewExtensionFeatures settings (#815)
+- Fix a bug that the adblock version is not displayed (#814)
+- Fix a crash when running the new banana extension features (#812)
+- Implement new extension preferences (#805)
+- Fix a build break in clear build (#808)
+- Implement LongClickableSwitchPreference and use it for adblock pref (#804)
+- Move the built-in filter version info to BUILD.gn (#801)
+- Fix a build break in AppMenuDelegate (#802)
+- Change the order of available quality options (#798)
+- Fix a bug that the new feature icon is not displayed sometimes (#800)
+- Adding "clear brwosing data" logic on terminate (#793)
+- Fix a bug that the subresource filter's ruleset data is downgraded (#799)
+- Reimplement subresource filter using JNI instead of mojom IPC (#797)
+- Add options to select quality on media remote (#777)
+- Replace CLEAR_BROWSING_DATA with CLEAR_DATA (#792)
+- Add clear browsing data logic (#778)
+- Enable TabSwitcher on bottom toolbar by default (#789)
+- Implement external download manager supports (#788)
+- Implement YouTube quality options skeleton code (#786)
+- Implement DownloadInterceptor (#787)
+- Rebase 86.0.4240.110 (#785)
+- Add new version the function to check YouTube url (#784)
+- Move function to check youtube domain to common class (#781)
+- Fix a bug the upstream toolbar appears for a while (#783)
+- Add switch preference for clearing browsing data (#779)
+- Add BananaJavaScriptCallback interface (#780)
+- Add Tab Switcher button on the bottom toolbar (#773)
+- Change the icon resource for clear browsing data (#775)
+- Add close current tab button (#770)
+- Add clear browsing data preference (#771)
+
+
 # 4.07 @ 85.0.4183.127
 
 ## Chromium base version
