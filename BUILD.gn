@@ -31,6 +31,8 @@ if (android_64bit_target_cpu) {
     android_manifest = triple_banana_manifest
     android_manifest_dep = ":triple_banana_manifest"
 
+    enable_lint = is_debug
+
     is_64_bit_browser = false
     include_64_bit_webview = true
 
@@ -68,6 +70,8 @@ if (android_64bit_target_cpu) {
 
     android_manifest = triple_banana_manifest
     android_manifest_dep = ":triple_banana_manifest"
+
+    enable_lint = is_debug
 
     shared_libraries = [ "//chrome/android:libchrome" ]
 

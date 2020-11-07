@@ -37,3 +37,11 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
    ]
    res_dir = "java/res_template"
    variables = [ "manifest_package=$chrome_public_manifest_package" ]
+@@ -1938,6 +1942,7 @@ template("chrome_public_apk_or_module_tmpl") {
+                              "jni_registration_header",
+                              "target_type",
+                              "enable_multidex",
++                             "lint_baseline_file",
+                              "lint_suppressions_dep",
+                              "lint_suppressions_file",
+                            ])

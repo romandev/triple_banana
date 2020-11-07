@@ -11,3 +11,4 @@ is_component_build = true
 is_debug = true
 proprietary_codecs = true
 target_os = "android"
+treat_warnings_as_errors = false
