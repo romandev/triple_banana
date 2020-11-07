@@ -10,14 +10,13 @@ import android.util.AttributeSet;
 import android.view.View.OnLongClickListener;
 
 import androidx.annotation.Nullable;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceViewHolder;
 
-import org.banana.cake.interfaces.BananaSwitchPreference;
-
-public class LongClickableSwitchPreference extends BananaSwitchPreference {
+public class LongClickablePreference extends Preference {
     private @Nullable OnLongClickListener mLongClickListener;
 
-    public LongClickableSwitchPreference(Context context, AttributeSet attrs) {
+    public LongClickablePreference(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 

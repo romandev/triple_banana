@@ -26,6 +26,8 @@ import org.triple.banana.util.Unzip;
 
 import java.io.File;
 import java.io.InputStream;
+import java.util.HashSet;
+import java.util.Set;
 
 public enum RulesetLoader {
     instance;
@@ -37,6 +39,34 @@ public enum RulesetLoader {
     private static final Uri RULESET_BASE_URL = Uri.parse("https://triplebanana.github.io/filter/");
     private static final String LAST_CHECK_TIME_KEY = "filter_download_last_check_time";
     private static final long UPDATE_INTERVAL = AlarmManager.INTERVAL_DAY * 1;
+
+    private final @NonNull Set<Listener> mListeners = new HashSet<>();
+
+    public enum UpdateState {
+        VERSION_CHANGED,
+        ALREADY_LATEST,
+    }
+
+    @FunctionalInterface
+    public interface Listener {
+        void onStateChanged(@NonNull UpdateState state);
+    }
+
+    public void addListener(@NonNull Listener listener) {
+        mListeners.add(listener);
+    }
+
+    public void removeListener(@NonNull Listener listener) {
+        if (mListeners.contains(listener)) {
+            mListeners.remove(listener);
+        }
+    }
+
+    private void notifyListeners(@NonNull UpdateState state) {
+        for (Listener listener : mListeners) {
+            listener.onStateChanged(state);
+        }
+    }
 
     private boolean isUpdateCheckTimeExpired() {
         long now = System.currentTimeMillis();
@@ -124,6 +154,7 @@ public enum RulesetLoader {
             if (getVersionNumber(currentVersion) >= getVersionNumber(newVersion)) {
                 setLastUpdateCheckTime();
                 Log.d(TAG, "checkUpdate(): It is already latest version = " + currentVersion);
+                notifyListeners(UpdateState.ALREADY_LATEST);
                 return;
             }
 
@@ -177,6 +208,7 @@ public enum RulesetLoader {
         BananaSubresourceFilter.get().install(rulesetPath, () -> {
             Log.d(TAG, "installRuleset(): Installed = " + getVersion());
             successCallback.run();
+            notifyListeners(UpdateState.VERSION_CHANGED);
         });
     }
 
@@ -204,13 +236,15 @@ public enum RulesetLoader {
      */
     public void forceUpdateRemoteRuleset() {
         resetUpdateCheckTime();
-        updateRemoteRuleset();
+        updateRulesetIfNeeded();
     }
 
     /**
      * This is called if the application is launched.
      */
     public void updateRulesetIfNeeded() {
+        notifyListeners(UpdateState.VERSION_CHANGED);
+
         if (updateBuiltInRuleset()) return;
         updateRemoteRuleset();
     }

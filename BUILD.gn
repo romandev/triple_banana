@@ -211,12 +211,12 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/settings/preference/BottomToolbarPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/BrowserLockPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/DarkModePreference.java",
-    "//triple_banana/src/org/triple/banana/settings/preference/LongClickableSwitchPreference.java",
+    "//triple_banana/src/org/triple/banana/settings/preference/LongClickablePreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/RestartSwitchPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/SecureDnsPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/SecureLoginPreference.java",
-    "//triple_banana/src/org/triple/banana/settings/preference/TranslatePreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/ToolbarEditorPreference.java",
+    "//triple_banana/src/org/triple/banana/settings/preference/TranslatePreference.java",
 
     # subresource_filter
     "//triple_banana/src/org/triple/banana/subresource_filter/RulesetLoader.java",

@@ -12,7 +12,8 @@
         android:title="@string/adblock_with_version"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
-    <Preference
+    <org.triple.banana.settings.preference.LongClickablePreference
+        android:key="update_adblock_filter"
         android:summary="@string/update_adblock_filter_summary"
         android:title="@string/update_adblock_filter" />
 

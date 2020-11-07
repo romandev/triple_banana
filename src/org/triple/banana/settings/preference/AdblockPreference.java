@@ -17,12 +17,16 @@ import org.triple.banana.version.VersionInfo;
 public class AdblockPreference extends BananaSwitchPreference {
     public AdblockPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setTitle(String.format(context.getResources().getString(R.string.adblock_with_version),
-                VersionInfo.getFilterVersion()));
+        refresh();
         setChecked(ExtensionFeatures.isEnabled(FeatureName.ADBLOCK));
         setOnPreferenceChangeListener((preference, newValue) -> {
             ExtensionFeatures.setEnabled(FeatureName.ADBLOCK, (boolean) newValue);
             return true;
         });
+    }
+
+    public void refresh() {
+        setTitle(String.format(getContext().getResources().getString(R.string.adblock_with_version),
+                VersionInfo.getFilterVersion()));
     }
 }
