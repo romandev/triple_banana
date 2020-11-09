@@ -14,10 +14,15 @@ import org.triple.banana.theme.DarkModeController;
 public class DarkModePreference extends BananaSwitchPreference {
     public DarkModePreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setChecked(DarkModeController.get().isDarkModeOn());
         setOnPreferenceChangeListener((preference, newValue) -> {
             DarkModeController.get().toggle();
             return true;
         });
+    }
+
+    @Override
+    protected void onSetInitialValue(Object defaultValue) {
+        super.onSetInitialValue(defaultValue);
+        setChecked(DarkModeController.get().isDarkModeOn());
     }
 }
