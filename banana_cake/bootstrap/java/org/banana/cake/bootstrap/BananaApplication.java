@@ -21,6 +21,7 @@ public abstract class BananaApplication extends ChromeApplication {
     protected void attachBaseContext(Context context) {
         super.attachBaseContext(context);
         if (isBrowserProcess()) {
+            onBeforeInitialized();
             runNowOrAfterFullBrowserStarted(() -> { onInitialized(); });
         }
     }
@@ -29,5 +30,6 @@ public abstract class BananaApplication extends ChromeApplication {
         ChromeBrowserInitializer.getInstance().runNowOrAfterFullBrowserStarted(task);
     }
 
+    protected abstract void onBeforeInitialized();
     protected abstract void onInitialized();
 }

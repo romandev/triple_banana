@@ -58,6 +58,15 @@ public class TripleBananaApplication extends BananaApplication {
     }
 
     @Override
+    protected void onBeforeInitialized() {
+        ApplicationStatusTracker.getInstance().start();
+        // Apply BrowserLock from ExtensionFeatures setting
+        if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
+            BrowserLock.getInstance().start();
+        }
+    }
+
+    @Override
     protected void onInitialized() {
         if (isFirstInstall()) {
             setLastUpdatedVersion(getCurrentVersion());
@@ -80,11 +89,5 @@ public class TripleBananaApplication extends BananaApplication {
         }
 
         MediaRemoteService.instance.start();
-        ApplicationStatusTracker.getInstance().start();
-
-        // Apply BrowserLock from ExtensionFeatures setting
-        if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
-            BrowserLock.getInstance().start();
-        }
     }
 }
