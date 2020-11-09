@@ -1,12 +1,27 @@
 diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
 --- tb/chrome/browser/BUILD.gn
 +++ tb_diff/chrome/browser/BUILD.gn
-@@ -2177,6 +2177,8 @@ static_library("browser") {
+@@ -34,6 +34,7 @@ import("//sandbox/features.gni")
+ import("//third_party/protobuf/proto_library.gni")
+ import("//third_party/webrtc/webrtc.gni")
+ import("//third_party/widevine/cdm/widevine.gni")
++import("//triple_banana/triple_banana.gni")
+ import("//ui/base/ui_features.gni")
+ 
+ # //build/config/android/rules.gni imports //tools/grit/grit_rule.gni, which
+@@ -2177,6 +2178,7 @@ static_library("browser") {
      "//third_party/zlib/google:compression_utils",
      "//third_party/zlib/google:zip",
      "//third_party/zxcvbn-cpp",
-+    "//triple_banana:cpp",
 +    "//triple_banana/modules:native",
      "//ui/accessibility",
      "//ui/base",
      "//ui/base:ui_data_pack",
+@@ -2960,6 +2962,7 @@ static_library("browser") {
+       "updates/update_notification_service_bridge_android.h",
+       "webauthn/android/cable_module_android.cc",
+     ]
++    sources += triple_banana_native_sources
+     public_deps += [
+       "//chrome/android/features/dev_ui:buildflags",
+       "//components/image_fetcher/core",

@@ -7,10 +7,10 @@
 #include "base/android/jni_string.h"
 #include "base/android/task_scheduler/post_task_android.h"
 #include "base/logging.h"
+#include "chrome/android/chrome_jni_headers/CakeSubresourceFilter_jni.h"
 #include "chrome/browser/browser_process.h"
 #include "components/subresource_filter/content/browser/ruleset_service.h"
 #include "components/subresource_filter/content/browser/ruleset_version.h"
-#include "triple_banana/jni_headers/CakeSubresourceFilter_jni.h"
 
 static void JNI_CakeSubresourceFilter_Install(
     JNIEnv* env,
