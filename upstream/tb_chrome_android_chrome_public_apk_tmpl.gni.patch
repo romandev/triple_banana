@@ -1,7 +1,26 @@
 diff --git tb/chrome/android/chrome_public_apk_tmpl.gni tb_diff/chrome/android/chrome_public_apk_tmpl.gni
 --- tb/chrome/android/chrome_public_apk_tmpl.gni
 +++ tb_diff/chrome/android/chrome_public_apk_tmpl.gni
-@@ -373,6 +373,18 @@ template("chrome_public_common_apk_or_module_tmpl") {
+@@ -135,7 +135,7 @@ template("chrome_public_common_apk_or_module_tmpl") {
+   }
+ 
+   target(_target_type, target_name) {
+-    forward_variables_from(invoker, "*")
++    forward_variables_from(invoker, "*", [ "disable_library_rename" ])
+     if (defined(shared_resources_whitelist_target)) {
+       shared_resources_allowlist_target = shared_resources_whitelist_target
+       shared_resources_allowlist_locales = shared_resources_whitelist_locales
+@@ -283,7 +283,8 @@ template("chrome_public_common_apk_or_module_tmpl") {
+       ]
+ 
+       # Adds "crazy." prefix to avoid libraries being extracted when installed.
+-      if (use_chromium_linker) {
++      if (use_chromium_linker && !(defined(invoker.disable_library_rename) &&
++                                   invoker.disable_library_rename)) {
+         if (!defined(library_renames)) {
+           library_renames = []
+         }
+@@ -373,6 +374,18 @@ template("chrome_public_common_apk_or_module_tmpl") {
  
      deps += [ "//chrome/android:chrome_all_java" ]
  
@@ -20,7 +39,7 @@ diff --git tb/chrome/android/chrome_public_apk_tmpl.gni tb_diff/chrome/android/c
      # Prefer to add this data_dep on the final target instead of java targets
      # like chrome_all_java so that all other targets can build in parallel with
      # lint.
-@@ -516,7 +528,9 @@ template("monochrome_public_common_apk_or_module_tmpl") {
+@@ -516,7 +529,9 @@ template("monochrome_public_common_apk_or_module_tmpl") {
                  [ "//chrome/android:monochrome_secondary_abi_lib" ]
              _include_secondary_support = true
              if (invoker.include_64_bit_webview) {

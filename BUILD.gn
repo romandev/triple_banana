@@ -76,7 +76,7 @@ if (android_64bit_target_cpu) {
     shared_libraries = [ "//chrome/android:libchrome" ]
 
     load_library_from_apk = false
-    use_chromium_linker = false
+    disable_library_rename = true
 
     # The following write/read operations are required to convert number string to
     # integer because there is no conversion utility in GN side.
