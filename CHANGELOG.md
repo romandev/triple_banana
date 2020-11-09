@@ -1,3 +1,18 @@
+# 5.02 @ 86.0.4240.185
+
+## Chromium base version
+- **86.0.4240.185**
+
+## Change log
+- Disable "Touch to fill" feature by default (#854)
+- Refactor touch_to_fill_view_impl.(h|cc) (#852)
+- Fix a bug that "Touch to fill" UI doesn't work when switching dark mode (#851)
+- Fix a bug that the dark mode switch is not synced (#849)
+- Fix a bug that the BrowserLock is not working when app restarts (#848)
+- Fix a crash when launching application with 32bit apk (#847)
+- Extends RestartPreference for Media Features (#845
+
+
 # 5.01 @ 86.0.4240.185
 
 ## Chromium base version
