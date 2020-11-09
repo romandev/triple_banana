@@ -1,0 +1,21 @@
+diff --git tb/chrome/browser/touch_to_fill/android/touch_to_fill_view_impl.cc tb_diff/chrome/browser/touch_to_fill/android/touch_to_fill_view_impl.cc
+--- tb/chrome/browser/touch_to_fill/android/touch_to_fill_view_impl.cc
++++ tb_diff/chrome/browser/touch_to_fill/android/touch_to_fill_view_impl.cc
+@@ -111,13 +111,14 @@ void TouchToFillViewImpl::OnDismiss(JNIEnv* env) {
+ 
+ base::android::ScopedJavaGlobalRef<jobject>
+ TouchToFillViewImpl::GetOrCreateJavaObject() {
+-  if (java_object_internal_) {
+-    return java_object_internal_;
+-  }
+   if (controller_->GetNativeView() == nullptr ||
+       controller_->GetNativeView()->GetWindowAndroid() == nullptr) {
+     return nullptr;  // No window attached (yet or anymore).
+   }
++  if (java_object_internal_) {
++    Java_TouchToFillBridge_destroy(AttachCurrentThread(),
++                                   java_object_internal_);
++  }
+   return java_object_internal_ = Java_TouchToFillBridge_create(
+              AttachCurrentThread(), reinterpret_cast<intptr_t>(this),
+              controller_->GetNativeView()->GetWindowAndroid()->GetJavaObject());
