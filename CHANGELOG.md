@@ -1,3 +1,12 @@
+# 5.03 @ 86.0.4240.185
+
+## Chromium base version
+- **86.0.4240.185**
+
+## Change log
+- Disable chromium crazy linker for 32bit binary (#856)
+
+
 # 5.02 @ 86.0.4240.185
 
 ## Chromium base version
