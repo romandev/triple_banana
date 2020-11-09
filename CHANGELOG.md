@@ -1,3 +1,13 @@
+# 5.04 @ 86.0.4240.185
+
+## Chromium base version
+- **86.0.4240.185**
+
+## Change log
+- Fix a bug that the state isn't synced between dark mode button and pref (#860)
+- Introduce disable_library_rename flag and use it (#859)
+
+
 # 5.03 @ 86.0.4240.185
 
 ## Chromium base version
