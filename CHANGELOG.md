@@ -1,3 +1,12 @@
+# 5.05 @ 86.0.4240.185
+
+## Chromium base version
+- **86.0.4240.185**
+
+## Change log
+- Reland: Use system linker instead of crazy linker since N+ OS (#862)
+
+
 # 5.04 @ 86.0.4240.185
 
 ## Chromium base version
