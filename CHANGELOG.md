@@ -1,3 +1,12 @@
+# 5.06 @ 86.0.4240.185
+
+## Chromium base version
+- **86.0.4240.185**
+
+## Change log
+- Missing internal patches
+
+
 # 5.05 @ 86.0.4240.185
 
 ## Chromium base version
