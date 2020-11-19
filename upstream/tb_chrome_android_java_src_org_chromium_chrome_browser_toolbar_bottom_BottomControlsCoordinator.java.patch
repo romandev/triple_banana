@@ -1,0 +1,39 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java
+@@ -60,6 +60,10 @@ public class BottomControlsCoordinator {
+     /** The coordinator for the split toolbar's bottom toolbar component. */
+     private @Nullable TabGroupUi mTabGroupUi;
+ 
++    /** The browsing mode bottom toolbar component */
++    private @Nullable org.banana.cake.interfaces
++            .BananaBottomToolbarController mBottomToolbarController;
++
+     /**
+      * Build the coordinator that manages the bottom controls.
+      * @param controlsSizer A {@link BrowserControlsSizer} to update the bottom controls
+@@ -112,6 +116,12 @@ public class BottomControlsCoordinator {
+                     root.findViewById(R.id.bottom_container_slot), themeColorProvider,
+                     scrimCoordinator, omniboxFocusStateSupplier);
+         }
++        if (org.banana.cake.interfaces.BananaBottomToolbarController.get().isEnabled()) {
++            mBottomToolbarController =
++                    org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
++                            root, tabProvider, themeColorProvider);
++        }
++
+         Toast.setGlobalExtraYOffset(
+                 root.getResources().getDimensionPixelSize(bottomControlsHeightId));
+ 
+@@ -151,6 +161,11 @@ public class BottomControlsCoordinator {
+         if (mTabGroupUi != null) {
+             mTabGroupUi.initializeWithNative(chromeActivity, mMediator::setBottomControlsVisible);
+         }
++        if (mBottomToolbarController != null) {
++            mBottomToolbarController.initializeWithNative(
++                    tabSwitcherListener, tabCountProvider, incognitoStateProvider);
++            setBottomControlsVisible(true);
++        }
+     }
+ 
+     /**

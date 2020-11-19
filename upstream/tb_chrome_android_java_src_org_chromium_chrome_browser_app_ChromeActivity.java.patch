@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java
-@@ -634,6 +634,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -672,6 +672,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                  OfflinePageUtils.showOfflineSnackbarIfNecessary(tab);
              }
  
@@ -13,7 +13,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActi
              @Override
              public void onCrash(Tab tab) {
                  postDeferredStartupIfNeeded();
-@@ -902,6 +907,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -946,6 +951,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
          getManualFillingComponent().onResume();
      }
  
@@ -27,7 +27,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActi
      @Override
      protected void onUserLeaveHint() {
          super.onUserLeaveHint();
-@@ -2008,9 +2020,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -2057,9 +2069,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);

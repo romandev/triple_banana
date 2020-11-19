@@ -1,7 +1,7 @@
 diff --git tb/components/search_engines/template_url_prepopulate_data.cc tb_diff/components/search_engines/template_url_prepopulate_data.cc
 --- tb/components/search_engines/template_url_prepopulate_data.cc
 +++ tb_diff/components/search_engines/template_url_prepopulate_data.cc
-@@ -509,11 +509,18 @@ const PrepopulatedEngine* const engines_KE[] = {
+@@ -506,11 +506,18 @@ const PrepopulatedEngine* const engines_KE[] = {
  
  // South Korea
  const PrepopulatedEngine* const engines_KR[] = {
@@ -20,7 +20,7 @@ diff --git tb/components/search_engines/template_url_prepopulate_data.cc tb_diff
  };
  
  // Kuwait
-@@ -941,11 +948,18 @@ const PrepopulatedEngine* const engines_UA[] = {
+@@ -938,11 +945,18 @@ const PrepopulatedEngine* const engines_UA[] = {
  
  // United States
  const PrepopulatedEngine* const engines_US[] = {

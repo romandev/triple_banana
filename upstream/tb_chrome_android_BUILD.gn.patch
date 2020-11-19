@@ -1,15 +1,15 @@
 diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
 --- tb/chrome/android/BUILD.gn
 +++ tb_diff/chrome/android/BUILD.gn
-@@ -29,6 +29,7 @@ import("//third_party/icu/config.gni")
+@@ -28,6 +28,7 @@ import("//third_party/icu/config.gni")
  import("//third_party/protobuf/proto_library.gni")
- import("//tools/resources/generate_resource_whitelist.gni")
+ import("//tools/resources/generate_resource_allowlist.gni")
  import("//tools/v8_context_snapshot/v8_context_snapshot.gni")
 +import("//triple_banana/triple_banana.gni")
  import("//weblayer/variables.gni")
  import("channel.gni")
  import("java_sources.gni")
-@@ -490,6 +491,7 @@ android_library("chrome_java") {
+@@ -517,6 +518,7 @@ android_library("chrome_java") {
      "//third_party/blink/public/mojom:mojom_platform_java",
      "//third_party/gif_player:gif_player_java",
      "//third_party/google_android_play_core:com_google_android_play_core_java",
@@ -17,16 +17,16 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -542,6 +544,8 @@ android_library("chrome_java") {
-               _chrome_version_java_file,
-             ]
+@@ -561,6 +563,8 @@ android_library("chrome_java") {
+   # From java_sources.gni.
+   sources = chrome_java_sources + [ app_hooks_impl ]
  
 +  sources += triple_banana_hooks_sources + triple_banana_jni_sources
 +
    # Include sources from feed_java_sources.gni.
    sources += feed_java_sources
    srcjar_deps += feed_srcjar_deps
-@@ -1429,7 +1433,9 @@ jinja_template_resources("chrome_public_apk_template_resources") {
+@@ -1470,7 +1474,9 @@ jinja_template_resources("chrome_public_apk_template_resources") {
      "java/res_template/xml/file_paths.xml",
      "java/res_template/xml/launchershortcuts.xml",
      "java/res_template/xml/searchable.xml",
@@ -37,15 +37,7 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
    ]
    res_dir = "java/res_template"
    variables = [ "manifest_package=$chrome_public_manifest_package" ]
-@@ -1938,6 +1944,7 @@ template("chrome_public_apk_or_module_tmpl") {
-                              "jni_registration_header",
-                              "target_type",
-                              "enable_multidex",
-+                             "lint_baseline_file",
-                              "lint_suppressions_dep",
-                              "lint_suppressions_file",
-                            ])
-@@ -3157,6 +3164,8 @@ generate_jni("chrome_jni_headers") {
+@@ -3272,6 +3278,8 @@ generate_jni("chrome_jni_headers") {
      "java/src/org/chromium/chrome/browser/webauth/Fido2Helper.java",
    ]
  

@@ -13,7 +13,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  namespace blink {
  
  namespace {
-@@ -521,7 +526,16 @@ Element* Fullscreen::FullscreenElementFrom(Document& document) {
+@@ -528,7 +533,16 @@ Element* Fullscreen::FullscreenElementFrom(Document& document) {
        return element;
    }
  
@@ -30,7 +30,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
  }
  
  // https://fullscreen.spec.whatwg.org/#fullscreen-element
-@@ -576,6 +590,32 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -583,6 +597,32 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
                                              FullscreenRequestType request_type,
                                              ScriptState* script_state,
                                              ExceptionState* exception_state) {
@@ -63,7 +63,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    RequestFullscreenScope scope;
  
    // 1. Let |pending| be the context object.
-@@ -647,6 +687,14 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
+@@ -654,6 +694,14 @@ ScriptPromise Fullscreen::RequestFullscreen(Element& pending,
      LocalFrame& frame = *window.GetFrame();
      frame.GetChromeClient().EnterFullscreen(frame, options, request_type);
  
@@ -78,7 +78,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
      // After the first fullscreen request, the user activation should be
      // consumed, and the following fullscreen requests should receive an error.
      if (!for_cross_process_descendant)
-@@ -835,6 +883,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
+@@ -842,6 +890,17 @@ ScriptPromise Fullscreen::ExitFullscreen(Document& doc,
      return ScriptPromise();
    }
  
@@ -96,7 +96,7 @@ diff --git tb/third_party/blink/renderer/core/fullscreen/fullscreen.cc tb_diff/t
    if (script_state)
      resolver = MakeGarbageCollected<ScriptPromiseResolver>(script_state);
  
-@@ -915,6 +974,12 @@ void Fullscreen::DidExitFullscreen(Document& document) {
+@@ -922,6 +981,12 @@ void Fullscreen::DidExitFullscreen(Document& document) {
      for (const Member<PendingExit>& exit : exits)
        ContinueExitFullscreen(&document, exit, true /* resize */);
    }

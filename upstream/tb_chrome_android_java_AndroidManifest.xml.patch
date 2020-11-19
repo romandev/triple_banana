@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/java/AndroidManifest.xml
 --- tb/chrome/android/java/AndroidManifest.xml
 +++ tb_diff/chrome/android/java/AndroidManifest.xml
-@@ -50,8 +50,6 @@ by a child template that "extends" this file.
+@@ -54,8 +54,6 @@ by a child template that "extends" this file.
      <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
      <uses-permission android:name="android.permission.NFC"/>
      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
@@ -10,7 +10,7 @@ diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/jav
      <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
      <uses-permission android:name="android.permission.RECORD_AUDIO"/>
      <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
-@@ -60,7 +58,6 @@ by a child template that "extends" this file.
+@@ -64,7 +62,6 @@ by a child template that "extends" this file.
      <uses-permission android:name="android.permission.VIBRATE"/>
      <uses-permission android:name="android.permission.WAKE_LOCK"/>
      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -18,7 +18,7 @@ diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/jav
      {% set enable_vr = enable_vr|default(0) %}
      {% if enable_vr == "true" %}
      <!-- Indicates use of Android's VR-mode, available only on Android N+. -->
-@@ -881,16 +878,6 @@ by a child template that "extends" this file.
+@@ -910,16 +907,6 @@ by a child template that "extends" this file.
                  android:resource="@xml/file_paths" />
          </provider>
  
@@ -33,5 +33,5 @@ diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/jav
 -        </service>
 -
          <!-- Broadcast receiver that will be notified of account changes -->
-         <receiver android:name="org.chromium.chrome.browser.services.AccountsChangedReceiver">
-             <intent-filter>
+         <receiver android:name="org.chromium.chrome.browser.services.AccountsChangedReceiver"
+             android:exported="true">

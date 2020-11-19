@@ -1,15 +1,15 @@
 diff --git tb/base/android/android_image_reader_compat.cc tb_diff/base/android/android_image_reader_compat.cc
 --- tb/base/android/android_image_reader_compat.cc
 +++ tb_diff/base/android/android_image_reader_compat.cc
-@@ -34,7 +34,11 @@ bool AndroidImageReader::IsSupported() {
+@@ -42,7 +42,11 @@ bool AndroidImageReader::LimitAImageReaderMaxSizeToOne() {
+                     CompareCase::INSENSITIVE_ASCII);
  }
  
- AndroidImageReader::AndroidImageReader() {
 +#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)
-+  is_supported_ = false;
++AndroidImageReader::AndroidImageReader() : is_supported_(false) {}
 +#else
-   is_supported_ = LoadFunctions();
+ AndroidImageReader::AndroidImageReader() : is_supported_(LoadFunctions()) {}
 +#endif
- }
  
  bool AndroidImageReader::LoadFunctions() {
+   // If the Chromium build requires __ANDROID_API__ >= 26 at some

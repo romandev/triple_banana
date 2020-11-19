@@ -9,7 +9,7 @@ diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
  import("//ui/base/ui_features.gni")
  
  # //build/config/android/rules.gni imports //tools/grit/grit_rule.gni, which
-@@ -2177,6 +2178,7 @@ static_library("browser") {
+@@ -2258,6 +2259,7 @@ static_library("browser") {
      "//third_party/zlib/google:compression_utils",
      "//third_party/zlib/google:zip",
      "//third_party/zxcvbn-cpp",
@@ -17,8 +17,8 @@ diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
      "//ui/accessibility",
      "//ui/base",
      "//ui/base:ui_data_pack",
-@@ -2960,6 +2962,7 @@ static_library("browser") {
-       "updates/update_notification_service_bridge_android.h",
+@@ -3097,6 +3099,7 @@ static_library("browser") {
+       "video_tutorials/internal/android/video_tutorial_service_bridge_factory.cc",
        "webauthn/android/cable_module_android.cc",
      ]
 +    sources += triple_banana_native_sources

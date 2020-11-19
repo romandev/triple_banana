@@ -1,12 +1,12 @@
 diff --git tb/components/autofill/core/common/autofill_features.cc tb_diff/components/autofill/core/common/autofill_features.cc
 --- tb/components/autofill/core/common/autofill_features.cc
 +++ tb_diff/components/autofill/core/common/autofill_features.cc
-@@ -274,7 +274,7 @@ const base::Feature kAutofillTokenPrefixMatching{
+@@ -265,7 +265,7 @@ const base::Feature kAutofillTokenPrefixMatching{
  
  // Enables the touch to fill feature for Android.
  const base::Feature kAutofillTouchToFill = {"TouchToFillAndroid",
 -                                            base::FEATURE_ENABLED_BY_DEFAULT};
 +                                            base::FEATURE_DISABLED_BY_DEFAULT};
  
+ // Autofill upload throttling is used for testing.
  const base::Feature kAutofillUploadThrottling{"AutofillUploadThrottling",
-                                               base::FEATURE_ENABLED_BY_DEFAULT};

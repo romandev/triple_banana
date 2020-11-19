@@ -14,7 +14,7 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.cc tb_diff/com
  using blink::WebAutofillClient;
  using blink::WebAutofillState;
  using blink::WebAXObject;
-@@ -575,12 +581,42 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
+@@ -574,12 +580,42 @@ void AutofillAgent::AcceptDataListSuggestion(const base::string16& value) {
  
  void AutofillAgent::FillPasswordSuggestion(const base::string16& username,
                                             const base::string16& password) {

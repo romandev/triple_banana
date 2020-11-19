@@ -7,5 +7,5 @@ diff --git tb/chrome/android/java/res/xml/privacy_preferences.xml tb_diff/chrome
      <org.chromium.components.browser_ui.settings.TextMessagePreference
 +        app:isPreferenceVisible="false"
          android:key="sync_and_services_link"
-         android:summary="@string/privacy_sync_and_services_link"
+         android:summary="@string/privacy_sync_and_services_link_legacy"
          app:allowDividerBelow="false"

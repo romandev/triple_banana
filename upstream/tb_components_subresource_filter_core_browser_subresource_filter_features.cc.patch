@@ -31,7 +31,7 @@ diff --git tb/components/subresource_filter/core/browser/subresource_filter_feat
  
    CommaSeparatedStrings enabled_presets(
        TakeVariationParamOrReturnEmpty(params, kEnablePresetsParameterName));
-@@ -267,6 +278,9 @@ const char kPresetPerformanceTestingDryRunOnAllSites[] =
+@@ -274,6 +285,9 @@ const char kPresetPerformanceTestingDryRunOnAllSites[] =
      "performance_testing_dryrun_on_all_sites";
  const char kPresetLiveRunForBetterAds[] =
      "liverun_on_better_ads_violating_sites";
@@ -41,7 +41,7 @@ diff --git tb/components/subresource_filter/core/browser/subresource_filter_feat
  
  // Configuration --------------------------------------------------------------
  
-@@ -297,6 +311,16 @@ Configuration Configuration::MakePresetForLiveRunForBetterAds() {
+@@ -304,6 +318,16 @@ Configuration Configuration::MakePresetForLiveRunForBetterAds() {
    return config;
  }
  

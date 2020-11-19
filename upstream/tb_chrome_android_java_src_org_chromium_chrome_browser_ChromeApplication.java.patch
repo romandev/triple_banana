@@ -1,12 +1,12 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
-@@ -92,6 +92,8 @@ public class ChromeApplication extends Application {
-             CommandLineInitUtil.initCommandLine(
-                     COMMAND_LINE_FILE, ChromeApplication::shouldUseDebugFlags);
+@@ -97,6 +97,8 @@ public class ChromeApplication extends SplitCompatApplication {
+                 CommandLineInitUtil.initCommandLine(
+                         COMMAND_LINE_FILE, ChromeApplicationImpl::shouldUseDebugFlags);
  
-+            org.banana.cake.interfaces.BananaCommandLineInitializer.get().initCommandLine();
++                org.banana.cake.interfaces.BananaCommandLineInitializer.get().initCommandLine();
 +
-             // Requires command-line flags.
-             TraceEvent.maybeEnableEarlyTracing();
-             TraceEvent.begin("ChromeApplication.attachBaseContext");
+                 // Enable ATrace on debug OS or app builds.
+                 int applicationFlags = context.getApplicationInfo().flags;
+                 boolean isAppDebuggable = (applicationFlags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;

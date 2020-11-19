@@ -12,7 +12,7 @@ diff --git tb/third_party/blink/renderer/core/frame/history.cc tb_diff/third_par
  namespace blink {
  
  namespace {
-@@ -363,6 +367,13 @@ void History::StateObjectAdded(scoped_refptr<SerializedScriptValue> data,
+@@ -368,6 +372,13 @@ void History::StateObjectAdded(
    GetFrame()->GetDocument()->Loader()->UpdateForSameDocumentNavigation(
        full_url, kSameDocumentNavigationHistoryApi, std::move(data),
        restoration_type, type, GetFrame()->GetDocument());

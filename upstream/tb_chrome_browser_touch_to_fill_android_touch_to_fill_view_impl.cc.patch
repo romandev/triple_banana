@@ -41,8 +41,10 @@ diff --git tb/chrome/browser/touch_to_fill/android/touch_to_fill_view_impl.cc tb
 +    java_object_internal_.Reset();
    }
 -  return java_object_internal_ = Java_TouchToFillBridge_create(
+-             AttachCurrentThread(), reinterpret_cast<intptr_t>(this),
+-             controller_->GetNativeView()->GetWindowAndroid()->GetJavaObject());
 +  java_object_internal_ = Java_TouchToFillBridge_create(
-              AttachCurrentThread(), reinterpret_cast<intptr_t>(this),
-              controller_->GetNativeView()->GetWindowAndroid()->GetJavaObject());
++      AttachCurrentThread(), reinterpret_cast<intptr_t>(this),
++      controller_->GetNativeView()->GetWindowAndroid()->GetJavaObject());
 +  return !!java_object_internal_;
  }

@@ -9,22 +9,20 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.ThemeColorProvider;
-import org.chromium.chrome.browser.compositor.layouts.OverviewModeBehavior;
-import org.chromium.chrome.browser.toolbar.IncognitoStateProvider;
+import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.ui.appmenu.AppMenuButtonHelper;
+import org.chromium.chrome.browser.toolbar.ThemeColorProvider;
 
 public interface BananaBottomToolbarController {
     static BananaBottomToolbarController get() {
         return BananaInterfaceProvider.get(BananaBottomToolbarController.class);
     }
 
-    BananaBottomToolbarController init(View root, ActivityTabProvider tabProvider);
+    BananaBottomToolbarController init(
+            View root, ActivityTabProvider tabProvider, ThemeColorProvider themeColorProvider);
     void initializeWithNative(OnClickListener tabSwitcherListener,
-            AppMenuButtonHelper menuButtonHelper, OverviewModeBehavior overviewModeBehavior,
-            TabCountProvider tabCountProvider, ThemeColorProvider themeColorProvider,
-            IncognitoStateProvider incognitoStateProvider);
+            TabCountProvider tabCountProvider, IncognitoStateProvider incognitoStateProvider);
+    boolean isEnabled();
     void destroy();
     void updateBookmarkButtonStatus(boolean isBookmarked, boolean editingAllowed);
     void updateBackButtonVisibility(boolean canGoBack);

@@ -41,16 +41,11 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
     @Override
     public void initCommandLine() {
         enableChromiumFeature("DarkenWebsitesCheckboxInThemesSetting");
+        enableChromiumFeature("OmniboxSearchEngineLogo");
 
         if (ExtensionFeatures.isEnabled(FeatureName.BACKGROUND_PLAY)) {
             enableBlinkFeature("BackgroundPlay");
             BananaCommandLine.get().appendSwitchWithValue("disable-background-media-suspend", null);
-        }
-
-        if (ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true)) {
-            enableChromiumFeature("ChromeDuet");
-            enableChromiumFeature("HomePageButtonForceEnabled");
-            enableChromiumFeature("OmniboxSearchEngineLogo");
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
