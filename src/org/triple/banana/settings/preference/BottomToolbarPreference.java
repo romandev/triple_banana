@@ -14,6 +14,6 @@ import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 public class BottomToolbarPreference extends RestartSwitchPreference {
     public BottomToolbarPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setChecked(ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR));
+        setChecked(ExtensionFeatures.isEnabled(FeatureName.BOTTOM_TOOLBAR, true));
     }
 }
