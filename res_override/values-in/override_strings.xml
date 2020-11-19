@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Gunakan saran isi otomatis Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Tidak ada sandi yang tersimpan. Banana Browser dapat memeriksa sandi Anda saat menyimpannya."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser tidak dapat memeriksa sandi Anda. Coba periksa koneksi internet Anda."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser tidak dapat memeriksa semua sandi. Coba lagi besok."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser akan memberi tahu Anda saat Anda login dengan sandi yang telah dibobol."</string>
 <string name="sign_in_to_chrome">"Login ke Banana Browser"</string>
 <string name="sync_switch_title">"Sinkronkan data Banana Browser Anda"</string>
+<string name="offer_chrome_signin_title">"Izinkan login Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Menampilkan perintah login Banana Browser saat Anda login ke Akun Google Anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu sempurnakan fitur dan performa Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Disalin ke Banana Browser"</string>
 <string name="password_settings_export_action_description">"Ekspor sandi yang disimpan dengan Banana Browser"</string>
 <string name="password_settings_export_subject">"Sandi Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Halaman beranda Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Dapatkan keamanan terkuat Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Bantu meningkatkan keamanan Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Untuk mendeteksi aplikasi dan situs berbahaya, Banana Browser mengirimkan URL beberapa halaman yang Anda kunjungi, informasi sistem terbatas, dan beberapa konten halaman ke Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Data Banana Browser telah dihapus"</string>
@@ -31,6 +35,7 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="safe_browsing_enhanced_protection_bullet_two">"Memastikan Anda tetap aman di Banana Browser dan dapat digunakan untuk menyempurnakan keamanan Anda di aplikasi Google lainnya saat login."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Memeriksa kesesuaian URL dengan daftar situs tidak aman yang disimpan di Banana Browser. Jika situs berusaha mencuri sandi Anda, atau jika Anda mendownload file berbahaya, Banana Browser mungkin juga mengirim URL, termasuk bit konten halaman, ke Safe Browsing."</string>
 <string name="languages_set_application_language_prompt">"Gunakan sebagai bahasa di Banana Browser"</string>
+<string name="languages_infobar_restart">"Buka Ulang Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Dalam mode Ringan, Banana Browser memuat halaman lebih cepat dan menghemat data hingga 60 persen."</string>
 <string name="data_reduction_description_lite_mode">"Ketika Mode Ringan dalam keadaan aktif, Banana Browser menggunakan server Google agar halaman lebih cepat dimuat. Mode Ringan akan menulis ulang halaman yang sangat lambat agar hanya memuat konten penting. Mode Ringan tidak berlaku untuk tab Samaran."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Dalam Mode Ringan, Banana Browser memuat halaman lebih cepat dan menghemat data hingga 60 persen. Untuk mengoptimalkan halaman yang Anda kunjungi, Banana Browser akan mengirimkan traffic web ke Google. &lt;link&gt;Pelajari lebih lanjut&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="bluetooth_need_location_services_on">"Banana Browser memerlukan akses lokasi untuk memindai perangkat. Akses lokasi &lt;services_link&gt;dinonaktifkan untuk perangkat ini&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser memerlukan akses lokasi untuk memindai perangkat. &lt;permission_link&gt;Perbarui izin&lt;/permission_link&gt;. Akses lokasi juga &lt;services_link&gt;dinonaktifkan untuk perangkat ini&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Buka setelan Android dan aktifkan kembali sinkronisasi sistem Android untuk memulai Sinkronisasi Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Untuk memulai sinkronisasi, aktifkan \"Sinkronkan data Banana Browser Anda\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Untuk memulai sinkronisasi, aktifkan \"Sinkronkan data Banana Browser Anda\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Buka Ulang Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Mendownload Update Banana Browser…"</string>
 <string name="update_notification_title_default">"Perbarui browser Banana Browser"</string>
@@ -70,9 +75,14 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s akan dibuka di Banana Browser. Dengan melanjutkan, Anda menyetujui &lt;LINK1&gt;Persyaratan Layanan Google&lt;/LINK1&gt;, dan &lt;LINK2&gt;Persyaratan Layanan Tambahan Google Banana Browser dan Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Pemberitahuan Privasi untuk Akun Google yang Dikelola dengan Family Link&lt;/LINK3&gt; juga berlaku."</string>
 <string name="fre_send_report_check">"Bantu penyempurnaan Banana Browser dengan mengirimkan statistik penggunaan dan laporan error ke Google."</string>
 <string name="fre_welcome">"Selamat Datang di Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Anda akan login dengan Akun Google\n(ini tidak akan mengaktifkan Sinkronisasi Banana Browser)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Login ke situs ini dan Banana Browser dengan Akun Google Anda. Anda dapat mengaktifkan sinkronisasi nanti."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser tidak dapat memverifikasi informasi Anda"</string>
 <string name="external_app_restricted_access_error">"Banana Browser tidak memiliki akses ke sumber daya yang diminta."</string>
+<string name="video_tutorials_card_chrome_intro">"Cara menggunakan Banana Browser"</string>
+<string name="video_tutorials_card_search">"Cara menelusuri dengan Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Video tentang cara menggunakan Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Pelajari Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigate Banana Browser"</string>
 <string name="menu_update">"Perbarui browser Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser tak bisa diupdate"</string>
 <string name="menu_inline_update_ready_summary">"Buka Ulang Banana Browser"</string>
@@ -88,7 +98,7 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="sogou_explanation">"Banana Browser dapat menggunakan &lt;b&gt;Sogou&lt;/b&gt; sebagai mesin telusur di Tiongkok. Anda dapat mengubahnya di &lt;link&gt;Setelan&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Aplikasi ini dijalankan di Banana Browser"</string>
 <string name="twa_running_in_chrome">"Berjalan di Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Di Banana Browser, Anda akan melihat status login, data penjelajahan, dan data situs %1$s."</string>
+<string name="twa_running_in_chrome_v2">"Di Banana Browser, Anda akan melihat status login, data penjelajahan, dan data situs %1$s"</string>
 <string name="twa_clear_data_dialog_title">"%1$s juga memiliki data di Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Anda dapat menghapus data di Setelan Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Membuka Pusat Bantuan Banana Browser di tab baru"</string>

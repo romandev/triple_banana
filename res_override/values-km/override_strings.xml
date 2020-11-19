@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"ប្រើការ​ណែនាំអំពីការបំពេញស្វ័យប្រវត្តិរបស់ Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"គ្មានពាក្យសម្ងាត់ដែលបានរក្សាទុកទេ។ Banana Browser អាចពិនិត្យពាក្យសម្ងាត់របស់អ្នក នៅពេលអ្នករក្សាទុកពាក្យសម្ងាត់ទាំងនោះ។"</string>
 <string name="password_check_status_message_error_offline">"Banana Browser មិន​អាចពិនិត្យ​ពាក្យសម្ងាត់របស់អ្នកបានទេ។ សូមសាកល្បងពិនិត្យ​ការតភ្ជាប់អ៊ីនធឺណិត​របស់អ្នក។"</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser មិនអាចពិនិត្យពាក្យសម្ងាត់ទាំងអស់បានទេ។ សូម​ព្យាយាម​ម្ដងទៀតនៅថ្ងៃស្អែក។"</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser នឹង​ជូនដំណឹងដល់អ្នក នៅពេលអ្នកចូល​គណនី​ដោយប្រើពាក្យសម្ងាត់ដែល​រងការលុកលុយ។"</string>
 <string name="sign_in_to_chrome">"ចូលទៅ Banana Browser"</string>
 <string name="sync_switch_title">"ធ្វើសមកាលកម្ម​ទិន្នន័យ Banana Browser របស់អ្នក"</string>
+<string name="offer_chrome_signin_title">"អនុញ្ញាត​ការចូល Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"បង្ហាញសារចូល Banana Browser នៅពេល​អ្នកចូលគណនី Google របស់អ្នក"</string>
 <string name="usage_and_crash_reports_title">"ជួយ​កែលម្អ​មុខងារ និង​ប្រតិបត្តិការ​របស់ Banana Browser"</string>
 <string name="autofill_describe_local_copy">"បានចម្លងទៅ Banana Browser"</string>
 <string name="password_settings_export_action_description">"នាំចេញ​ពាក្យ​សម្ងាត់​ដែលផ្ទុក​នៅក្នុង Banana Browser"</string>
 <string name="password_settings_export_subject">"ពាក្យ​សម្ងាត់ Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"ទំព័រដើម​របស់ Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"ទទួលបានសុវត្ថិភាពខ្លាំងបំផុតរបស់ Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"ជួយ​កែលម្អ​សុវត្ថិភាព Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"ដើម្បី​រកមើល​កម្មវិធី​ និងគេហទំព័រ​គ្រោះថ្នាក់ Banana Browser ផ្ញើ​ URL របស់ទំព័រ​មួយចំនួន​ដែលអ្នកចូលមើល ព្រមទាំងខ្លឹមសារទំព័រ និងព័ត៌មានប្រព័ន្ធមួយចំនួន​ទៅ Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"បានជម្រះទិន្នន័យ Banana Browser"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"រក្សា​សុវត្ថិភាព​របស់អ្នក​នៅលើ Banana Browser និង​អាចប្រើ​សម្រាប់​កែលម្អ​សុវត្ថិភាព​របស់អ្នក​នៅក្នុង​កម្មវិធីរបស់ Google ផ្សេងទៀត នៅពេល​អ្នក​ចូលគណនី។"</string>
 <string name="safe_browsing_standard_protection_bullet_two">"ពិនិត្យ URL ធៀបនឹងបញ្ជីគេហទំព័រគ្មានសុវត្ថិភាព ដែលរក្សាទុកនៅក្នុង Banana Browser។ ប្រសិនបើគេហទំព័រណាមួយ​ព្យាយាមលួចពាក្យសម្ងាត់របស់អ្នក ឬនៅពេលអ្នកទាញយក​ឯកសារដែលអាចបង្កគ្រោះថ្នាក់នោះ Banana Browser ក៏ប្រហែលជាបញ្ជូន URL រួមជាមួយផ្នែកនៃខ្លឹមសារទំព័រ ទៅការរុករកដោយសុវត្ថិភាពផងដែរ។"</string>
 <string name="languages_set_application_language_prompt">"ប្រើជាភាសារបស់ Banana Browser"</string>
+<string name="languages_infobar_restart">"ចាប់ផ្តើម Banana Browser ឡើងវិញ"</string>
 <string name="data_reduction_benefits_description_lite_mode">"នៅក្នុង​មុខងារស្រាល Banana Browser ផ្ទុកទំព័រ​រហ័សជាងមុន និងប្រើទិន្នន័យ​តិចជាងមុន​រហូតដល់ 60 ភាគរយ។"</string>
 <string name="data_reduction_description_lite_mode">"នៅពេលមុខងារស្រាល​បានបើក Banana Browser ប្រើម៉ាស៊ីនមេ Google ដើម្បីការផ្ទុកទំព័រ​រហ័សជាងមុន។ មុខងារស្រាល​សរសេរទំព័រយឺតខ្លាំង​ឡើងវិញ ដើម្បីផ្ទុកតែខ្លឹមសារដែលសំខាន់ប៉ុណ្ណោះ។ មុខងារស្រាលមិន​អនុវត្តចំពោះផ្ទាំងអនាមិកទេ។"</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser ផ្ទុកទំព័រ​រហ័សជាងមុន និងប្រើទិន្នន័យ​តិចជាងមុន​រហូតដល់ 60 ភាគរយ នៅក្នុង​មុខងារស្រាល។ ដើម្បី​បង្កើន​ប្រសិទ្ធភាព​ទំព័រ​ដែល​អ្នក​ចូលមើល Banana Browser ផ្ញើ​ចរាចរណ៍​បណ្ដាញ​របស់អ្នក​ទៅ Google ។ &lt;link&gt;ស្វែងយល់​បន្ថែម&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"Banana Browser ត្រូវការចូលប្រើទីតាំងដើម្បីស្កេនរកឧបករណ៍។ ការចូលប្រើទីតាំងត្រូវ&lt;services_link&gt;បិទសម្រាប់ឧបករណ៍នេះ&lt;/services_link&gt;។"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser ត្រូវការចូលប្រើទីតាំងដើម្បីស្កេនរកឧបករណ៍ សូម&lt;permission_link&gt;អាប់ដេតសិទ្ធិអនុញ្ញាត&lt;/permission_link&gt;។ ការចូលប្រើទីតាំងក៏ត្រូវ&lt;services_link&gt;បានបិទសម្រាប់ឧបករណ៍នេះផងដែរ&lt;/services_link&gt;។"</string>
 <string name="hint_android_sync_disabled">"បើកការកំណត់ Android និងបើកដំណើរការសមកាលកម្មប្រព័ន្ធ Android ឡើងវិញដើម្បីចាប់ផ្តើមសមកាលកម្ម Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"ដើម្បី​ចាប់ផ្ដើមសមកាលកម្ម សូមបើក​ \"ធ្វើសមកាលកម្មទិន្នន័យ​ Banana Browser របស់អ្នក\"។"</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"ដើម្បី​ចាប់ផ្ដើមសមកាលកម្ម សូមបើក​ \"ធ្វើសមកាលកម្មទិន្នន័យ​ Banana Browser របស់អ្នក\"។"</string>
 <string name="inline_update_infobar_ready_link_text">"ចាប់ផ្តើម Banana Browser ឡើងវិញ"</string>
 <string name="inline_update_toast_downloading_message">"កំពុងទាញយក​កំណែថ្មី Banana Browser …"</string>
 <string name="update_notification_title_default">"ធ្វើបច្ចុប្បន្នភាព Banana Browser"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s នឹងបើកនៅក្នុង Banana Browser។ ប្រសិនបើបន្ត មានន័យថាអ្នកយល់ព្រមតាម&lt;LINK1&gt;លក្ខខណ្ឌប្រើប្រាស់ Google&lt;/LINK1&gt; និង&lt;LINK2&gt;លក្ខខណ្ឌប្រើប្រាស់បន្ថែមរបស់ Google Banana Browser និង Banana Browser OS&lt;/LINK2&gt;។ &lt;LINK3&gt;ការជូន​ដំណឹង​អំពី​ឯកជនភាព​សម្រាប់​គណនី Google ដែល​គ្រប់គ្រង​ដោយ​ប្រើ Family Link&lt;/LINK3&gt; ក៏អនុវត្តផងដែរ។"</string>
 <string name="fre_send_report_check">"ជួយធ្វើឲ្យ Banana Browser ប្រសើរជាងមុនដោយផ្ញើស្ថិតិប្រើប្រាស់ និងរបាយការណ៍ការគាំងទៅ Google។"</string>
 <string name="fre_welcome">"ស្វាគមន៍មកកាន់ Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"អ្នកនឹង​ចូលគណនី​ដោយប្រើ​គណនី Google របស់អ្នក\n(ការធ្វើបែបនេះ​នឹងមិនបើក Banana Browser សមកាលកម្មទេ)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"ចូលគេហទំព័រនេះ និង Banana Browser ដោយប្រើគណនី Google របស់អ្នក។ អ្នក​អាចបើកសមកាលកម្ម​នៅពេលក្រោយ។"</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser មិនអាច​ផ្ទៀងផ្ទាត់​ព័ត៌មាន​របស់អ្នក​បានទេ"</string>
 <string name="external_app_restricted_access_error">"Banana Browser មិន​អាច​ចូល​ប្រើ​ធនធាន​ដែល​បាន​ស្នើ​នេះ​ទេ​។​"</string>
+<string name="video_tutorials_card_chrome_intro">"របៀបប្រើ Banana Browser"</string>
+<string name="video_tutorials_card_search">"របៀបស្វែងរកដោយប្រើ Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"វីដេអូអំពីរបៀបប្រើប្រាស់ Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"ស្វែងយល់អំពី Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"រុករក Banana Browser"</string>
 <string name="menu_update">"ធ្វើបច្ចុប្បន្នភាព Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser មិន​អាចដំឡើងជំនាន់​បានទេ"</string>
 <string name="menu_inline_update_ready_summary">"ចាប់ផ្តើម Banana Browser ឡើងវិញ"</string>
@@ -88,7 +98,7 @@
 <string name="sogou_explanation">"Banana Browser អាចប្រើ &lt;b&gt;Sogou&lt;/b&gt; សម្រាប់ការស្វែងរកនៅក្នុងប្រទេសចិន។ អ្នកអាចផ្លាស់ប្តូរវាបាននៅក្នុង &lt;link&gt;ការកំណត់&lt;/link&gt;។"</string>
 <string name="app_running_in_chrome_disclosure">"កម្មវិធីនេះ​កំពុងដំណើរការនៅក្នុង Banana Browser"</string>
 <string name="twa_running_in_chrome">"កំពុងដំណើរការ​នៅក្នុង Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"អ្នក​នឹងមើលឃើញ​ស្ថានភាព​ចូល %1$s, ទិន្នន័យ​រុករក និង​ទិន្នន័យគេហទំព័រ​របស់អ្នក​នៅក្នុង Banana Browser។"</string>
+<string name="twa_running_in_chrome_v2">"អ្នក​នឹងមើលឃើញ​ស្ថានភាព​ចូល %1$s, ទិន្នន័យ​រុករក និង​ទិន្នន័យគេហទំព័រ​របស់អ្នក​នៅក្នុង Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ក៏មានទិន្នន័យ​នៅក្នុង Banana Browser ផងដែរ"</string>
 <string name="twa_clear_data_dialog_message">"អ្នកអាច​សម្អាតទិន្នន័យ​នៅក្នុងការកំណត់ Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"បើកមជ្ឈមណ្ឌលជំនួយ Banana Browser នៅក្នុងផ្ទាំងថ្មី"</string>

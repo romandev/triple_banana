@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browserமின் தன்னிரப்பிப் பரிந்துரையைப் பயன்படுத்துங்கள்"</string>
 <string name="password_check_status_message_error_no_passwords">"சேமித்த கடவுச்சொற்கள் எதுவும் இல்லை. நீங்கள் அவற்றைச் சேமிக்கும்போது Banana Browserமால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியும்."</string>
 <string name="password_check_status_message_error_offline">"Banana Browserமால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை. உங்கள் இணைய இணைப்பைச் சரிபார்க்க முயலவும்."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser உலாவியால் கடவுச்சொற்கள் அனைத்தையும் சரிபார்க்க முடியவில்லை. நாளை முயலவும்."</string>
@@ -9,18 +10,21 @@
 <string name="password_check_status_subtitle_no_findings">"களவாடப்பட்ட கடவுச்சொல் முலம் நீங்கள் உள்நுழையும்போது Banana Browser அது குறித்து உங்களுக்குத் தெரியப்படுத்தும்."</string>
 <string name="sign_in_to_chrome">"Banana Browser இல் உள்நுழைக"</string>
 <string name="sync_switch_title">"உங்கள் Banana Browser தரவை ஒத்திசைக்கவும்"</string>
+<string name="offer_chrome_signin_title">"Banana Browser உள்நுழைவை அனுமதித்தல்"</string>
+<string name="offer_chrome_signin_summary">"நான் Google கணக்கில் உள்நுழையும்போது Banana Browser உள்நுழைவு அறிவிப்புகளைக் காட்டு"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser இன் அம்சங்களையும் செயல்திறனையும் மேம்படுத்த உதவுக"</string>
 <string name="autofill_describe_local_copy">"Banana Browserக்கு நகலெடுக்கப்பட்டது"</string>
 <string name="password_settings_export_action_description">"Banana Browser இல் சேமித்த கடவுச்சொற்களை ஏற்றும்"</string>
 <string name="password_settings_export_subject">"Banana Browser கடவுச்சொற்கள்"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browserமின் முகப்புப்பக்கம்"</string>
+<string name="enhanced_protection_promo_title">"Banana Browserமின் வலிமையான பாதுகாப்பைப் பெறுங்கள்"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browserமின் பாதுகாப்பை மேம்படுத்த உதவுக"</string>
 <string name="safe_browsing_scout_reporting_summary">"ஆபத்தான ஆப்ஸையும் தளங்களையும் கண்டறிய நீங்கள் பார்வையிட்ட சில பக்கங்களின் URLகளையும், வரம்பிற்குட்பட்ட சிஸ்டம் தகவல்களையும், சில பக்கங்களின் உள்ளடக்கத்தையும் Googleளுக்கு Banana Browser அனுப்பும்"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser தரவு அழிக்கப்பட்டது"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"Banana Browser மற்றும் ஒத்திசைக்கப்பட்ட சாதனங்களிலிருந்து, தேர்ந்தெடுத்த தரவு அகற்றப்பட்டது.
 
 &lt;link&gt;myactivity.google.com&lt;/link&gt; எனும் தளத்தில் பிற Google சேவைகளிலிருந்து தேடல்கள், செயல்பாடு போன்ற உங்கள் Google கணக்கிற்கான பிற வகை உலாவல் வரலாறும் இருக்கக்கூடும்."</string>
-<string name="safety_check_description">"தரவு மீறல்கள், பாதுகாப்பற்ற இணையதளங்கள் மற்றும் பிற பாதுகாப்புச் சிக்கல்களிலிருந்து உங்களைப் பாதுகாக்க Banana Browser உதவும்"</string>
+<string name="safety_check_description">"தரவு மீறல்கள், பாதுகாப்பற்ற இணையதளங்கள், பிற பாதுகாப்புச் சிக்கல்கள் போன்றவற்றில் இருந்து உங்களைப் பாதுகாக்க Banana Browser உதவும்"</string>
 <string name="safety_check_passwords_error">"Banana Browser உலாவியால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை"</string>
 <string name="safety_check_passwords_error_offline">"ஆஃப்லைன். Banana Browser உலாவியால் உங்கள் கடவுச்சொற்களைச் சரிபார்க்க முடியவில்லை."</string>
 <string name="safety_check_passwords_error_quota_limit">"Banana Browser உலாவியால் கடவுச்சொற்கள் அனைத்தையும் சரிபார்க்க முடியவில்லை"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"Banana Browserமைப் பயன்படுத்தும்போது இது பாதுகாப்பை வழங்கும், அத்துடன் நீங்கள் பிற Google ஆப்ஸில் உள்நுழைந்திருக்கும்போது உங்கள் பாதுகாப்பை மேம்படுத்துவதற்காக இதைப் பயன்படுத்தலாம்."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Banana Browserமில் சேமிக்கப்பட்டுள்ள பாதுகாப்பில்லாத தளங்களின் பட்டியலைப் பயன்படுத்தி URLகளைச் சரிபார்க்கும். தளம் உங்கள் கடவுச்சொல்லைத் திருட முயன்றலோ தீங்குவிளைவிக்கும் கோப்பை நீங்கள் பதிவிறக்கினாலோ Banana Browserமானது பக்க உள்ளடக்கத்தின் சிறிய பகுதிகள் உட்பட URLகளையும் பாதுகாப்பு உலாவலுக்கு அனுப்பக்கூடும்."</string>
 <string name="languages_set_application_language_prompt">"Banana Browserமின் மொழியாகப் பயன்படுத்து"</string>
+<string name="languages_infobar_restart">"Banana Browserஐ மீண்டும் தொடங்கவும்"</string>
 <string name="data_reduction_benefits_description_lite_mode">"’லைட்’ பயன்முறையில், பக்கங்களை Banana Browser வேகமாக ஏற்றுவதோடு, டேட்டாவை 60 சதவீதம் குறைவாகவும் பயன்படுத்தும்."</string>
 <string name="data_reduction_description_lite_mode">"லைட் பயன்முறை இயக்கப்பட்டிருக்கும்போது, பக்கங்களை வேகமாக ஏற்றுவதற்காக Google சேவையகங்களைக் Banana Browser பயன்படுத்தும். மிகவும் மெதுவாக ஏற்றப்படும் பக்கங்களில் முக்கிய உள்ளடக்கத்தை மட்டும் ஏற்றுமாறு லைட் பயன்முறை அவற்றை மீண்டும் எழுதுகிறது. மறைநிலைத் தாவல்களுக்கு லைட் பயன்முறை பொருந்தாது."</string>
 <string name="data_reduction_promo_summary_lite_mode">"லைட் பயன்முறையில் பக்கங்களை Banana Browser வேகமாக ஏற்றுவதோடு டேட்டாவை 60 சதவீதம் வரை குறைவாகவும் பயன்படுத்தும். நீங்கள் பார்க்கும் பக்கங்களை மேம்படுத்த Banana Browser உங்கள் இணைய டிராஃபிக்கை Googleளுக்கு அனுப்பும். &lt;link&gt;மேலும் அறிக&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"சாதனங்களைத் தேட Banana Browserமுக்கு இருப்பிட அணுகல் தேவை. இருப்பிட அணுகல், &lt;services_link&gt;இந்தச் சாதனத்தில் முடக்கப்பட்டுள்ளது&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"சாதனங்களைத் தேட Banana Browserமுக்கு இருப்பிட அணுகல் தேவை. &lt;permission_link&gt;அனுமதிகளை மாற்றவும்&lt;/permission_link&gt;. இருப்பிட அணுகலும் &lt;services_link&gt;இந்தச் சாதனத்தில் முடக்கப்பட்டுள்ளது&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Banana Browser ஒத்திசைவைத் தொடங்க, Android அமைப்புகளைத் திறந்து Android சாதன ஒத்திசைவை மீண்டும் இயக்கவும்"</string>
-<string name="hint_sync_settings_not_confirmed_description">"ஒத்திசைவைத் தொடங்க \"Banana Browser தரவை ஒத்திசை\" என்பதை இயக்கவும்."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"ஒத்திசைவைத் தொடங்க \"Banana Browser தரவை ஒத்திசை\" என்பதை இயக்கவும்."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browserஐ மீண்டும் தொடங்கவும்"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser புதுப்பிப்பைப் பதிவிறக்குகிறது…"</string>
 <string name="update_notification_title_default">"Banana Browserஐப் புதுப்பி"</string>
@@ -70,9 +75,13 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserமில் திறக்கும். தொடர்வதன் மூலம் &lt;LINK1&gt;Google சேவை விதிமுறைகளையும்&lt;/LINK1&gt; &lt;LINK2&gt;Google Banana Browser மற்றும் Banana Browser OS தொடர்பான கூடுதல் சேவை விதிமுறைகளையும்&lt;/LINK2&gt; ஏற்கிறீர்கள். இவற்றோடு &lt;LINK3&gt;Family Link நிர்வகிக்கும் Google கணக்குகளுக்கான தனியுரிமை அறிக்கையும்&lt;/LINK3&gt; பொருந்தும்."</string>
 <string name="fre_send_report_check">"பயன்பாட்டுப் புள்ளிவிவரங்களையும், சிதைவு அறிக்கைகளையும் Googleளுக்கு அனுப்புவதன் மூலம் Banana Browserஐ மேலும் சிறப்பானதாக்க உதவவும்."</string>
 <string name="fre_welcome">"Banana Browser க்கு வருக"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"உங்கள் Google கணக்கில் உள்நுழைவீர்கள்\n(இதனால் Banana Browser ஒத்திசைவு இயக்கப்படாது)"</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browserமால் உங்கள் தகவல்களைச் சரிபார்க்க முடியவில்லை"</string>
 <string name="external_app_restricted_access_error">"Banana Browserமிடம் நீங்கள் கோரியதற்கான அணுகல் இல்லை."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browserமை எப்படிப் பயன்படுத்துவது?"</string>
+<string name="video_tutorials_card_search">"Banana Browserமைப் பயன்படுத்தி எப்படித் தேடுவது?"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browserமை எப்படிப் பயன்படுத்துவது என்பது குறித்த வீடியோக்கள்"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser குறித்து அறிந்துகொள்ளுங்கள்"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browserமிற்குச் செல்லுதல்"</string>
 <string name="menu_update">"Banana Browserஐப் புதுப்பி"</string>
 <string name="menu_update_unsupported">"Banana Browser புதுப்பிக்கவில்லை"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browserஐ மீண்டும் தொடங்கவும்"</string>
@@ -88,7 +97,7 @@
 <string name="sogou_explanation">"சீனாவில் தேடுவதற்கு, Banana Browserமில் &lt;b&gt;Sogou&lt;/b&gt;ஐப் பயன்படுத்தலாம். இதை &lt;link&gt;அமைப்புகளுக்குச்&lt;/link&gt; சென்று மாற்றலாம்."</string>
 <string name="app_running_in_chrome_disclosure">"இந்த ஆப்ஸ் Banana Browserமில் இயங்குகிறது"</string>
 <string name="twa_running_in_chrome">"Banana Browser இல் இயங்குகிறது"</string>
-<string name="twa_running_in_chrome_v2">"%1$s என்ற தளம் தொடர்பான உங்களின் உள்நுழைவு நிலை, உலாவிய தரவு, தளத்தின் தரவு ஆகியவற்றை Banana Browserமில் பார்ப்பீர்கள்."</string>
+<string name="twa_running_in_chrome_v2">"%1$s என்ற தளம் தொடர்பான உங்களின் உள்நுழைவு நிலை, உலாவிய தரவு, தளத்தின் தரவு ஆகியவை Banana Browserமில் காட்டப்படும்"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ஆப்ஸின் தரவும் Banana Browserமில் உள்ளது"</string>
 <string name="twa_clear_data_dialog_message">"Banana Browser அமைப்புகளில் தரவை அழிக்கலாம்"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser உதவி மையத்தைப் புதிய தாவலில் திறக்கும்"</string>

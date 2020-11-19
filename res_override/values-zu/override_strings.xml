@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Sebenzisa isiphakamiso sokugcwalisa ngokuzenzakalela se-Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Awekho amaphasiwedi alondoloziwe. I-Banana Browser ingahlola amaphasiwedi akho uma uwalondolozile."</string>
 <string name="password_check_status_message_error_offline">"I-Banana Browser ayikwazi ukuhlola amaphasiwedi akho. Zama ukuhlola ukuxhumeka kwakho ku-inthanethi."</string>
 <string name="password_check_status_message_error_quota_limit">"I-Banana Browser ayikwazanga ukuhlola wonke amaphasiwedi. Zama futhi kusasa."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"I-Banana Browser izokwazisa uma ungena ngemvume ngephasiwedi eyonakalisiwe."</string>
 <string name="sign_in_to_chrome">"Ngena ngemvume ku-Banana Browser"</string>
 <string name="sync_switch_title">"Vumelanisa idatha yakho ye-Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Vumela ukungena ngemvume kwe-Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Bonisa ukwaziswa kokungena ngemvume kwe-Banana Browser uma ungena ngemvume ku-Akhawunti yakho ye-Google"</string>
 <string name="usage_and_crash_reports_title">"Siza ukuthuthukisa izici ze-Banana Browser nokusebenza"</string>
 <string name="autofill_describe_local_copy">"Ikopishelwe ku-Banana Browser"</string>
 <string name="password_settings_export_action_description">"Khipha amaphasiwedi alondolozwe nge-Banana Browser"</string>
 <string name="password_settings_export_subject">"Amaphasiwedi we-Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Ikhasi eliyisiqalo le-Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Thola isivikelo esinamandla kakhulu se-Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Siza ukuthuthukisa ukuvikeleka kwe-Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Ukuze uthole izinhlelo zokusebenza namasayithi ayingozi, i-Banana Browser ithumela ama-URL wamanye amakhasi owavakashelayo, ulwazi lwesistimu olukhawulelwe, kanye nokuqukethwe kwekhasi ku-Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Idatha ye-Banana Browser esuliwe"</string>
@@ -31,6 +35,7 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="safe_browsing_enhanced_protection_bullet_two">"Kukugcina uphephile ku-Banana Browser futhi kungase kusetshenziswe ukuthuthukisa ukuvikeleka kwakho kwezinye izinhlelo zokusebenza ze-Google lapho ungene ngemvume."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Kuhlola ama-URL anohlu lwamasayithi angaphephile agcinwe ku-Banana Browser. Uma isayithi lizama ukuntshontsha iphasiwedi yakho, noma uma ulanda ifayela eliyingozi, i-Banana Browser ingathumela nama-URL, kuhlanganise nokuthile okuqukethwe kulelo khasi, Ekuphequluleni Okuphephile."</string>
 <string name="languages_set_application_language_prompt">"Yisebenzise njengolimi lwe-Banana Browser"</string>
+<string name="languages_infobar_restart">"Qalisa kabusha i-Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Kumodi elula, i-Banana Browser ilayisha amakhasi ngokushesha futhi isebenzisa kufikela kudatha encane ngokungu-60 wamaphesenti."</string>
 <string name="data_reduction_description_lite_mode">"Uma imodi elula ivuliwe, i-Banana Browser isebenzisa amaseva e-Google ukuze yenze amakhasi alayishe ngokushesha. Imodi elula ibhala kabusha amakhasi ahamba kancane kakhulu ukuze ilayishe kuphela okuqukethwe okubalulekile Imodi elula ayisebenzi kumathebhu e-Incognito"</string>
 <string name="data_reduction_promo_summary_lite_mode">"Kumodi elula, i-Banana Browser ilayisha amakhasi ngokushesha futhi isebenzisa kufikela kudatha encane ngokungu-60 wamaphesenti. Ukuze kulungiselelwe amakhasi owavakashelayo, i-Banana Browser ithumela ithrafikhi yakho yewebhu ku-Google. &lt;link&gt;Funda kabanzi&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="bluetooth_need_location_services_on">"I-Banana Browser idinga ukufinyelela kwendawo ukuze iskene amadivayisi. Ukufinyelela kwendawo &lt;services_link&gt;kuvaliwe kule divayisi&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"I-Banana Browser idinga ukufinyelela kwendawo ukuze iskene amadivayisi. &lt;permission_link&gt;Buyekeza izimvume&lt;/permission_link&gt;. Ukufinyelela kwendawo nakho &lt;services_link&gt;kuvaliwe kule divayisi&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Vula izilungiselelo ze-Android futhi unike amandla kabusha isistimu ye-Android ukuze uqale ukuvumelanisa kwe-Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Ukuze uqale ukuvumelanisa, vula idatha yokuthi \"Vumelanisa i-Banana Browser yakho\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Ukuze uqale ukuvumelanisa, vula idatha yokuthi \"Vumelanisa i-Banana Browser yakho\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Qalisa kabusha i-Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Ilanda isibuyekezo se-Banana Browser…"</string>
 <string name="update_notification_title_default">"Buyekeza i-Banana Browser"</string>
@@ -70,9 +75,14 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"I-%1$s izovuleka ku-Banana Browser. Ngokuqhubeka, uvumelana &lt;LINK1&gt;Nemigomo Yesevisi ye-Google&lt;/LINK1&gt;, kanye &lt;LINK2&gt;ne-Google Banana Browser Nemigomo Yesevisi ye-Banana Browser OS Engeziwe&lt;/LINK2&gt;. &lt;LINK3&gt;Isaziso Esemfihlo yama-Akhawunti e-Google Aphethwe nge-Family Link&lt;/LINK3&gt; naso sizosebenza."</string>
 <string name="fre_send_report_check">"Siza ukwenza i-Google Banana Browser ukuthi ibe ngcono ngokuthumela ngokuzenzakalelayo izibalo zokusebenzisa nemibiko yokusaphazeka ku-Google."</string>
 <string name="fre_welcome">"Siyakwamukela ku-Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Uzongeniswa ngemvume nge-akhawunti yakho ye-Google\n(lokhu ngeke kuvule Ukuvumelanisa kwe-Banana Browser)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Ngena ngemvume kuleli sayithi naku-Banana Browser nge-Akhawunti yakho ye-Google. Ungavula ukuvumelanisa kamuva."</string>
 <string name="signin_account_picker_general_error_subtitle">"I-Banana Browser ayikwazanga ukuqinisekisa imininingwane yakho"</string>
 <string name="external_app_restricted_access_error">"I-Banana Browser ayinakho ukufinyelela kusisetshenziswa esiceliwe."</string>
+<string name="video_tutorials_card_chrome_intro">"Indlela yokusebenzisa i-Banana Browser"</string>
+<string name="video_tutorials_card_search">"Indlela yokusesha nge-Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Amavidiyo wendlela yokusebenzisa i-Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Funda i-Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Zulazula ku-Banana Browser"</string>
 <string name="menu_update">"Buyekeza i-Banana Browser"</string>
 <string name="menu_update_unsupported">"I-Banana Browser ayikwazi ukubuyekeza"</string>
 <string name="menu_inline_update_ready_summary">"Qalisa kabusha i-Banana Browser"</string>
@@ -88,7 +98,7 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="sogou_explanation">"I-Banana Browser ingasebenzisa i-&lt;b&gt;Sogou&lt;/b&gt; ukusesha e-China. Ungashintsha lokhu &lt;link&gt;kuzilungiselelo&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Lolu hlelo lokusebenza lisebenza ku-Banana Browser"</string>
 <string name="twa_running_in_chrome">"Ukusebenza ku-Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Uzobona isimo sokungena ngemvume ku-%1$s yakho, idatha yokuphequlula, kanye nesayithi yedatha ku-Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Uzobona isimo sakho sokungena ngemvume se-%1$s, idatha yokuphequlula, nedatha yesayithi ku-Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"I-%1$s iphinda ibe nedatha ku-Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Ungasula idatha kuzilungiselelo ze-Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Vula isikhungo sosizo se-Banana Browser kuthebhu entsha"</string>

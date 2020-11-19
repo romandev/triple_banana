@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Use Banana Browser autofill suggestion"</string>
 <string name="password_check_status_message_error_no_passwords">"No saved passwords. Banana Browser can check your passwords when you save them."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser can\'t check your passwords. Try checking your Internet connection."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser couldn\'t check all passwords. Try again tomorrow."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser will notify you when you sign in with a compromised password."</string>
 <string name="sign_in_to_chrome">"Sign in to Banana Browser"</string>
 <string name="sync_switch_title">"Sync your Banana Browser data"</string>
+<string name="offer_chrome_signin_title">"Allow Banana Browser sign-in"</string>
+<string name="offer_chrome_signin_summary">"Show Banana Browser sign-in prompts when you sign in to your Google Account"</string>
 <string name="usage_and_crash_reports_title">"Help improve Banana Browser\'s features and performance"</string>
 <string name="autofill_describe_local_copy">"Copied to Banana Browser"</string>
 <string name="password_settings_export_action_description">"Export passwords stored with Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser Passwords"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser’s homepage"</string>
+<string name="enhanced_protection_promo_title">"Get Banana Browser’s strongest security"</string>
 <string name="safe_browsing_scout_reporting_title">"Help improve Banana Browser security"</string>
 <string name="safe_browsing_scout_reporting_summary">"To detect dangerous apps and sites, Banana Browser sends URLs of some pages that you visit, limited system information and some page content to Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Cleared Banana Browser data"</string>
@@ -31,6 +35,7 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="safe_browsing_enhanced_protection_bullet_two">"Keeps you safe on Banana Browser and may be used to improve your security in other Google apps when you are signed in."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Checks URLs with a list of unsafe sites stored in Banana Browser. If a site tries to steal your password, or when you download a harmful file, Banana Browser may also send URLs, including bits of page content, to Safe Browsing."</string>
 <string name="languages_set_application_language_prompt">"Use as Banana Browser’s language"</string>
+<string name="languages_infobar_restart">"Restart Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 per cent less data."</string>
 <string name="data_reduction_description_lite_mode">"When Lite mode is on, Banana Browser uses Google servers to make pages load faster. Lite mode rewrites very slow pages to load only essential content. Lite mode does not apply to Incognito tabs."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In Lite mode, Banana Browser loads pages faster and uses up to 60 per cent less data. To optimise the pages that you visit, Banana Browser sends your web traffic to Google. &lt;link&gt;Find out more&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="bluetooth_need_location_services_on">"Banana Browser needs location access to scan for devices. Location access is &lt;services_link&gt;turned off for this device&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser needs location access to scan for devices. &lt;permission_link&gt;Update permissions&lt;/permission_link&gt;. Location access is also &lt;services_link&gt;turned off for this device&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Open Android settings and re-enable Android system sync to start Banana Browser sync"</string>
-<string name="hint_sync_settings_not_confirmed_description">"To start sync, turn on \'Sync your Banana Browser data\'."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"To start sync, turn on \'Sync your Banana Browser data\'."</string>
 <string name="inline_update_infobar_ready_link_text">"Restart Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Downloading Banana Browser Update…"</string>
 <string name="update_notification_title_default">"Update Banana Browser"</string>
@@ -70,9 +75,14 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s will open in Banana Browser. By continuing, you agree to the &lt;LINK1&gt;Google Terms of Service&lt;/LINK1&gt;, and the &lt;LINK2&gt;Google Banana Browser and Banana Browser OS Additional Terms of Service&lt;/LINK2&gt;. The &lt;LINK3&gt;Privacy Notice for Google Accounts managed with Family Link&lt;/LINK3&gt; also applies."</string>
 <string name="fre_send_report_check">"Help make Banana Browser better by sending usage statistics and crash reports to Google."</string>
 <string name="fre_welcome">"Welcome to Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"You’ll be signed in with your Google Account\n(this won’t turn on Banana Browser Sync)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Sign in to this site and Banana Browser with your Google Account. You can turn on sync later."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser couldn’t verify your information"</string>
 <string name="external_app_restricted_access_error">"Banana Browser does not have access to the requested resource."</string>
+<string name="video_tutorials_card_chrome_intro">"How to use Banana Browser"</string>
+<string name="video_tutorials_card_search">"How to search with Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Videos about how to use Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Learn Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigate Banana Browser"</string>
 <string name="menu_update">"Update Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser can’t update"</string>
 <string name="menu_inline_update_ready_summary">"Restart Banana Browser"</string>
@@ -88,7 +98,7 @@ Your Google Account may have other forms of browsing history such as searches an
 <string name="sogou_explanation">"Banana Browser can use &lt;b&gt;Sogou&lt;/b&gt; for search in China. You can change this in &lt;link&gt;Settings&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"This app is running in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Running in Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"You\'ll see your %1$s sign-in status, browsing data and site data in Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"You\'ll see your %1$s sign-in status, browsing data and site data in Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s also has data in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"You can clear the data in Banana Browser Settings"</string>
 <string name="keyboard_shortcut_help_center">"Open the Banana Browser Help Centre in a new tab"</string>

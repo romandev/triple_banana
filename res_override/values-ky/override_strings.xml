@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browser\'дун автотолтуруу сунушун колдонуңуз"</string>
 <string name="password_check_status_message_error_no_passwords">"Сакталган сырсөздөр жок. Сырсөздөрүңүздү сактаганда Banana Browser аларды текшере алат."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser сырсөздөрүңүздү текшере албай жатат. Интернет байланышын текшерип көрүңүз."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser бардык сырсөздөрдү текшере алган жок. Эртең кайталап көрүңүз."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser уурдалган сырсөз менен киргениңизде эскертет."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'го кириңиз"</string>
 <string name="sync_switch_title">"Banana Browser дайындарын шайкештирүү"</string>
+<string name="offer_chrome_signin_title">"Banana Browser\'го кирүүгө уруксат берүү"</string>
+<string name="offer_chrome_signin_summary">"Google аккаунтуңузга кирген сайын Banana Browser\'до билдирмелер көрүнүп турат"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'дун функцияларын жана өндүрүмдүүлүгүн өркүндөтүүгө жардам бериңиз"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'го көчүрүлдү"</string>
 <string name="password_settings_export_action_description">"Banana Browser\'до сакталган сырсөздөрдү экспорттоо"</string>
 <string name="password_settings_export_subject">"Banana Browser сырсөздөрү"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser’дун башкы бети"</string>
+<string name="enhanced_protection_promo_title">"Banana Browser\'дун эң күчтүү коопсуздук тутумун колдонуңуз"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser\'догу коопсуздукту коргоону жакшыртууга жардам берүү"</string>
 <string name="safe_browsing_scout_reporting_summary">"Кооптуу колдонмолор менен сайттарды аныктоо үчүн, Banana Browser сиз баш баккан айрым сайттардын URL\'дерин, тутум тууралуу чектелген маалыматты жана барактагы айрым мазмунду Google\'га жөнөтүп турат"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser дайындары тазаланды"</string>
@@ -31,6 +35,7 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="safe_browsing_enhanced_protection_bullet_two">"Аккаунтуңузга киргенде Banana Browser\'до жана башка Google колдонмолорунда коопсуздугуңузду коргоп турат."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Banana Browser\'догу кооптуу сайттардын тизмесиндеги URL даректерин текшерет. Эгер сайт сырсөзүңүздү уурдоого аракет кылса же кооптуу файлды жүктөп алсаңыз, Banana Browser URL даректерди, анын ичинде барактардагы мазмунду Коопсуз серептөөгө жөнөтүшү мүмкүн."</string>
 <string name="languages_set_application_language_prompt">"Banana Browser’дун тили катары колдонуу"</string>
+<string name="languages_infobar_restart">"Banana Browser’ду өчүрүп-күйгүзүңүз"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Жөнөкөй режимде Banana Browser барактарды ылдамыраак жүктөп, 60 пайызга чейин азыраак трафик сарптайт."</string>
 <string name="data_reduction_description_lite_mode">"Жөнөкөй режим иштетилсе, Banana Browser кызматы Google серверлери аркылуу барактарды тез жүктөйт. Жөнөкөй режимде өтө жай барактардагы эң маанилүү мазмун гана көрсөтүлөт. Жөнөкөй режим Жашыруун өтмөктөрдө иштебейт."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Жөнөкөй режимде Banana Browser барактарды ылдамыраак жүктөп, 60 пайызга чейин азыраак трафик сарптайт. Сиз баш баккан сайттарды оптималдаштыруу үчүн Banana Browser вебдин колдонулушу тууралуу маалыматты Google\'га жөнөтүп турат. &lt;link&gt;Кеңири маалымат&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="bluetooth_need_location_services_on">"Түзмөктөрдү издөө үчүн Banana Browser жайгашкан жерди колдонууга мүмкүнчүлүк алышы керек. Жайгашкан жерди колдонуу функциясы &lt;services_link&gt;бул түзмөк үчүн өчүрүлгөн&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Түзмөктөрдү издөө үчүн Banana Browser жайгашкан жерди колдонууга мүмкүнчүлүк алышы керек. &lt;permission_link&gt;Уруксаттарды жаңыртыңыз&lt;/permission_link&gt;. Жайгашкан жерди колдонуу функциясы да &lt;services_link&gt;бул түзмөк үчүн өчүрүлгөн&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Android жөнд. ачып, Banana Browser шайк. баштоого Android тутумунун шайк. кайра иштетиңз"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Шайкештирүүнү баштоо үчүн, \"Banana Browser дайындарын шайкештирүүнү\" күйгүзүңүз."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Шайкештирүүнү баштоо үчүн, \"Banana Browser дайындарын шайкештирүүнү\" күйгүзүңүз."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser’ду өчүрүп-күйгүзүңүз"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser жаңыртуусу жүктөлүп алынууда…"</string>
 <string name="update_notification_title_default">"Banana Browser\'ду жаңыртуу"</string>
@@ -70,9 +75,14 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browser\'до ачылат. Улантуу менен, &lt;LINK1&gt;Google\'дун Тейлөө шарттарына&lt;/LINK1&gt; жана &lt;LINK2&gt;Google Banana Browser менен Banana Browser OS\'тун Кошумча Тейлөө шарттарына&lt;/LINK2&gt; макулдугуңузду билдиресиз. &lt;LINK3&gt;Family Link\'те башкарылган Google аккаунттары үчүн Купуялык эскертүүсү&lt;/LINK3&gt; да колдонулат."</string>
 <string name="fre_send_report_check">"Google\'га колдонуу статистикасын жөнөтүп, ката жөнүндө кабарлап, Banana Browser өркүндөтүлүшүнө жардам бериңиз."</string>
 <string name="fre_welcome">"Banana Browser\'го кош келиңиз"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Google аккаунтуңуз менен киресиз\n(Banana Browser шайкештирүү күйгүзүлбөйт)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Бул сайтка жана Banana Browser\'го Google аккаунтуңуз менен кириңиз. Шайкештирүүнү кийинчерээк күйгүзө аласыз."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser маалыматыңызды текшере алган жок"</string>
 <string name="external_app_restricted_access_error">"Суралган булакка Banana Browser’дун кирүү мүмкүнчүлүгү жок."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser\'ду кантип колдонуу керек"</string>
+<string name="video_tutorials_card_search">"Banana Browser менен кантип издөө керек"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browser\'ду кантип колдонуу жөнүндө видеолор"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser\'ду үйрөнүңүз"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browser\'до чабыттаңыз"</string>
 <string name="menu_update">"Banana Browser\'ду жаңыртуу"</string>
 <string name="menu_update_unsupported">"Banana Browser жаңырбай жатат"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser’ду өчүрүп-күйгүзүңүз"</string>
@@ -88,7 +98,7 @@ Google аккаунтуңуздун башка Google кызматтарынан
 <string name="sogou_explanation">"Banana Browser Кытай жергесинде издөө үчүн &lt;b&gt;Sogou\'ду&lt;/b&gt; колдоно алат. Аны &lt;link&gt;Жөндөөлөрдөн&lt;/link&gt; өзгөртүп койсоңуз болот."</string>
 <string name="app_running_in_chrome_disclosure">"Бул колдонмо Banana Browser\'до иштеп жатат"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'до иштеп жатат"</string>
-<string name="twa_running_in_chrome_v2">"%1$s сайтына кирип же кирбей турганыңызды, серептөө дайындарын жана сайттын дайындарын Banana Browser\'дон көрөсүз."</string>
+<string name="twa_running_in_chrome_v2">"Banana Browser\'до %1$s сайтына кирүү статусуңузду, серептөө дайындарын жана сайттын маалыматын көрөсүз"</string>
 <string name="twa_clear_data_dialog_title">"%1$s колдонмосунун дайындары Banana Browser\'до дагы бар"</string>
 <string name="twa_clear_data_dialog_message">"Бул дайындарды Banana Browser\'дун жөндөөлөрүнөн тазаласаңыз болот"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser Жардам борборун жаңы өтмөктө ачуу"</string>

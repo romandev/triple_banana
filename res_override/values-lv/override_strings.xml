@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Izmantojiet Banana Browser automātiskās aizpildes ieteikumu"</string>
 <string name="password_check_status_message_error_no_passwords">"Nav saglabātu paroļu. Pārlūkprogrammā Banana Browser var pārbaudīt jūsu paroles, ja jūs tās saglabājat."</string>
 <string name="password_check_status_message_error_offline">"Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles. Pārbaudiet interneta savienojumu."</string>
 <string name="password_check_status_message_error_quota_limit">"Pārlūkprogrammā Banana Browser nevarēja pārbaudīt visas paroles. Rit mēģiniet vēlreiz."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Ja pierakstīsieties ar uzlauztu paroli, pārlūkprogrammā Banana Browser tiks parādīts paziņojums."</string>
 <string name="sign_in_to_chrome">"Pierakstīties pārlūkā Banana Browser"</string>
 <string name="sync_switch_title">"Jūsu Banana Browser datu sinhronizācija"</string>
+<string name="offer_chrome_signin_title">"Atļaut pierakstīties pārlūkā Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Pierakstoties Google kontā, rādīt Banana Browser pierakstīšanās uzvednes"</string>
 <string name="usage_and_crash_reports_title">"Palīdzēt uzlabot Banana Browser funkcijas un veiktspēju"</string>
 <string name="autofill_describe_local_copy">"Nokopēta pārlūkā Banana Browser."</string>
 <string name="password_settings_export_action_description">"Eksportēt pārlūkā Banana Browser saglabātās paroles"</string>
 <string name="password_settings_export_subject">"Banana Browser paroles"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser sākumlapa"</string>
+<string name="enhanced_protection_promo_title">"Visaugstākais Banana Browser drošības līmenis"</string>
 <string name="safe_browsing_scout_reporting_title">"Palīdzēt uzlabot Banana Browser drošību"</string>
 <string name="safe_browsing_scout_reporting_summary">"Lai noteiktu bīstamas lietotnes un vietnes, pārlūkā Banana Browser dažu jūsu apmeklēto lapu saturs, ierobežots sistēmas informācijas apjoms un daļa lapu satura tiek nosūtīta uzņēmumam Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser dati tika notīrīti"</string>
@@ -24,13 +28,14 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="safety_check_passwords_error">"Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles"</string>
 <string name="safety_check_passwords_error_offline">"Bezsaistē. Pārlūkprogrammā Banana Browser nevar pārbaudīt jūsu paroles."</string>
 <string name="safety_check_passwords_error_quota_limit">"Pārlūkprogrammā Banana Browser nevarēja pārbaudīt visas paroles"</string>
-<string name="safety_check_updates_updated">"Banana Browser jaunākā versija jau ir instalēta"</string>
+<string name="safety_check_updates_updated">"Banana Browser jaunākā versija jau ir instalēta."</string>
 <string name="safety_check_updates_outdated">"Banana Browser versija ir novecojusi."</string>
 <string name="safety_check_updates_offline">"Bezsaistē. Pārlūkprogrammā Banana Browser nevar pārbaudīt atjauninājumu pieejamību."</string>
 <string name="safety_check_updates_error">"Pārlūkā Banana Browser nevar pārbaudīt atjauninājumu pieejamību."</string>
 <string name="safe_browsing_enhanced_protection_bullet_two">"Tiek nodrošināta jūsu aizsardzība pārlūkprogrammā Banana Browser. Šis režīms var tikt izmantots jūsu drošības uzlabošanai citās Google lietotnēs, kad esat pierakstījies."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Vietrāži URL tiek pārbaudīti, salīdzinot ar nedrošu vietņu sarakstu, kas glabājas pārlūkprogrammā Banana Browser. Ja kādā vietnē tiek mēģināts nozagt jūsu paroli vai ja jūs lejupielādējat kaitīgu failu, Banana Browser var nosūtīt attiecīgo URL un lapas satura fragmentus uz funkciju Droša pārlūkošana."</string>
 <string name="languages_set_application_language_prompt">"Lietot kā Banana Browser valodu"</string>
+<string name="languages_infobar_restart">"Restartējiet pārlūku Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Vienkāršotajā režīmā Banana Browser ielādē lapas ātrāk un patērē pat par 60 procentiem mazāk datu."</string>
 <string name="data_reduction_description_lite_mode">"Ja ir ieslēgts vienkāršotais režīms, pārlūkā Banana Browser tiek izmantoti Google serveri, lai ielādētu lapas ātrāk. Vienkāršotajā režīmā ļoti lēnas lapas tiek pārrakstītas, lai tās ielādētu tikai nepieciešamo saturu. Vienkāršotais režīms netiek piemērots inkognito režīma cilnēm."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Pārlūka Banana Browser vienkāršotajā režīmā lapas tiek ielādētas ātrāk un tiek patērēts pat par 60 procentiem mazāk datu. Lai optimizētu jūsu apmeklētās lapas, no pārlūka Banana Browser tiek nosūtīta jūsu tīmekļa datplūsma uzņēmumam Google. &lt;link&gt;Uzziniet vairāk&lt;/link&gt;."</string>
@@ -53,7 +58,7 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="bluetooth_need_location_services_on">"Lai meklētu ierīces, pārlūkam Banana Browser ir nepieciešama piekļuve atrašanās vietas datiem. &lt;services_link&gt;Šajā ierīcē ir izslēgta piekļuve atrašanās vietas datiem&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Lai meklētu ierīces, pārlūkam Banana Browser ir nepieciešama piekļuve atrašanās vietas datiem. &lt;permission_link&gt;Atjauniniet atļaujas&lt;/permission_link&gt;. Piekļuve atrašanās vietas datiem ir arī &lt;services_link&gt;izslēgta šai ierīcei&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Lai sāktu Banana Browser sinhronizēšanu, atveriet Android iestatījumus un atkārtoti iespējojiet Android sistēmas sinhronizēšanu"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Lai sāktu sinhronizāciju, ieslēdziet iestatījumu “Jūsu Banana Browser datu sinhronizācija”."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Lai sāktu sinhronizāciju, ieslēdziet iestatījumu “Jūsu Banana Browser datu sinhronizācija”."</string>
 <string name="inline_update_infobar_ready_link_text">"Restartējiet pārlūku Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Lejupielādē Banana Browser atjauninājumu…"</string>
 <string name="update_notification_title_default">"Atjaunināt Banana Browser"</string>
@@ -70,9 +75,14 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Lietotne %1$s tiks atvērta pārlūkprogrammā Banana Browser. Turpinot jūs piekrītat &lt;LINK1&gt;Google pakalpojumu sniegšanas noteikumiem&lt;/LINK1&gt; un &lt;LINK2&gt;Google Banana Browser un Banana Browser OS pakalpojumu sniegšanas papildu noteikumiem&lt;/LINK2&gt;. Ir spēkā arī &lt;LINK3&gt;konfidencialitātes paziņojums Google kontiem, kas tiek pārvaldīti lietotnē Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Uzlabojiet pārlūku Banana Browser, uzņēmumam Google sūtot lietojuma statistiku un avāriju pārskatus."</string>
 <string name="fre_welcome">"Laipni lūdzam pārlūkā Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Jūs būsiet pierakstījies savā Google kontā\n(Banana Browser sinhronizācija netiks ieslēgta)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Pierakstieties šajā vietnē un pārlūkā Banana Browser, izmantojot savu Google kontu. Sinhronizāciju varat ieslēgt vēlāk."</string>
 <string name="signin_account_picker_general_error_subtitle">"Pārlūkā Banana Browser nevarēja verificēt jūsu informāciju"</string>
 <string name="external_app_restricted_access_error">"Banana Browser nevar piekļūt pieprasītajam resursam."</string>
+<string name="video_tutorials_card_chrome_intro">"Padomi par Banana Browser lietošanu"</string>
+<string name="video_tutorials_card_search">"Meklēšana pārlūkā Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Video pamācības par Banana Browser lietošanu"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser pamācības"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigācija pārlūkā Banana Browser"</string>
 <string name="menu_update">"Atjaunināt Banana Browser"</string>
 <string name="menu_update_unsupported">"Nevar atjaunināt Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Restartējiet pārlūku Banana Browser"</string>

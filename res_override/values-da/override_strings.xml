@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Brug forslag fra Autofyld i Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Der er ingen gemte adgangskoder. Banana Browser kan tjekke dine adgangskoder, når du gemmer dem."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser kan ikke tjekke dine adgangskoder. Prøv at tjekke din internetforbindelse."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser kunne ikke tjekke alle adgangskoder. Prøv igen i morgen."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser giver dig besked, når du logger ind med en kompromitteret adgangskode."</string>
 <string name="sign_in_to_chrome">"Log ind i Banana Browser"</string>
 <string name="sync_switch_title">"Synkroniser dine Banana Browser-data"</string>
+<string name="offer_chrome_signin_title">"Tillad login i Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Vis Banana Browser-loginbeskeder, når du logger ind på din Google-konto"</string>
 <string name="usage_and_crash_reports_title">"Vær med til at forbedre Banana Browsers funktioner og ydeevne"</string>
 <string name="autofill_describe_local_copy">"Kopieret til Banana Browser"</string>
 <string name="password_settings_export_action_description">"Eksportér adgangskoder, der er gemt med Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser-adgangskoder"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browsers startside"</string>
+<string name="enhanced_protection_promo_title">"Få Banana Browsers stærkeste beskyttelse"</string>
 <string name="safe_browsing_scout_reporting_title">"Hjælp med at forbedre sikkerheden i Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser sender webadresser på nogle sider, du besøger, begrænsede systemoplysninger og noget sideindhold til Google med henblik på at registrere farlige apps og websites."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-dataene blev ryddet"</string>
@@ -31,6 +35,7 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="safe_browsing_enhanced_protection_bullet_two">"Beskytter dig i Banana Browser og kan bruges til at forbedre din sikkerhed i andre Google-apps, når du er logget ind."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Tjekker webadresser ift. en liste over usikre websites, der er gemt i Banana Browser. Hvis et website forsøger at stjæle din adgangskode, eller når du downloader en skadelig fil, sender Banana Browser muligvis også webadresser, bl.a. mindre mængder sideindhold, til Beskyttet browsing."</string>
 <string name="languages_set_application_language_prompt">"Brug som sprog i Banana Browser"</string>
+<string name="languages_infobar_restart">"Genstart Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Banana Browser indlæser sider hurtigere og bruger op til 60 procent mindre data i Lite-tilstand."</string>
 <string name="data_reduction_description_lite_mode">"Når Lite-tilstand er aktiveret, bruger Banana Browser Googles servere til at gøre sideindlæsningen hurtigere. Lite-tilstanden omskriver meget langsomme sider til kun at indlæse væsentligt indhold. Lite-tilstand kan ikke bruges i inkognitotilstand."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser indlæser sider hurtigere og bruger op til 60 procent mindre data i Lite-tilstand. Banana Browser sender din webtrafik til Google for at optimere de sider, du besøger. &lt;link&gt;Få flere oplysninger&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="bluetooth_need_location_services_on">"Banana Browser skal have placeringsadgang for at kunne scanne efter enheder. Placeringsadgang er &lt;services_link&gt;slået fra på denne enhed&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser skal have placeringsadgang for at kunne scanne efter enheder. &lt;permission_link&gt;Opdater tilladelser&lt;/permission_link&gt;. Placeringsadgang er også &lt;services_link&gt;slået fra på denne enhed&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Åbn Android-indstillinger, og genaktiver synkronisering af Android-systemet for at starte Banana Browser-synkroniseringen"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Aktivér \"Synkroniser dine Banana Browser-data\" for starte synkroniseringen."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Aktivér \"Synkroniser dine Banana Browser-data\" for starte synkroniseringen."</string>
 <string name="inline_update_infobar_ready_link_text">"Genstart Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Downloader Banana Browser-opdateringen…"</string>
 <string name="update_notification_title_default">"Opdater Banana Browser"</string>
@@ -70,9 +75,14 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s åbnes i Banana Browser. Når du fortsætter, accepterer du &lt;LINK1&gt;Googles servicevilkår&lt;/LINK1&gt; og de &lt;LINK2&gt;yderligere servicevilkår for Google Banana Browser og Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Erklæringen om privatliv for Google-konti, der administreres med Family Link&lt;/LINK3&gt;, gælder også."</string>
 <string name="fre_send_report_check">"Vær med til at gøre Banana Browser bedre ved at sende brugsstatistik og nedbrudsrapporter til Google."</string>
 <string name="fre_welcome">"Velkommen til Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Du bliver logget ind på din Google-konto\n(Banana Browser-synkronisering aktiveres ikke)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Log ind på dette website og i Banana Browser med din Google-konto. Du kan aktivere synkronisering senere."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser kunne ikke bekræfte dine oplysninger"</string>
 <string name="external_app_restricted_access_error">"Banana Browser har ikke adgang til den ressource, du anmoder om."</string>
+<string name="video_tutorials_card_chrome_intro">"Sådan bruger du Banana Browser"</string>
+<string name="video_tutorials_card_search">"Sådan søger du i Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Videoer om, hvordan du bruger Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Lær Banana Browser at kende"</string>
+<string name="video_tutorials_tile_chrome_intro">"Find rundt i Banana Browser"</string>
 <string name="menu_update">"Opdater Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser kan ikke opdateres"</string>
 <string name="menu_inline_update_ready_summary">"Genstart Banana Browser"</string>
@@ -88,7 +98,7 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="sogou_explanation">"Banana Browser kan bruge &lt;b&gt;Sogou&lt;/b&gt; til søgninger i Kina. Du kan ændre dette i &lt;link&gt;Indstillinger&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Denne app kører i Banana Browser"</string>
 <string name="twa_running_in_chrome">"Kører i Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Du kan se loginstatus, browserdata og websiteoplysninger for %1$s i Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Du kan se loginstatus, browserdata og websiteoplysninger for %1$s i Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s har også data i Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Du kan rydde dataene i Banana Browser-indstillingerne"</string>
 <string name="keyboard_shortcut_help_center">"Åbn Hjælp til Banana Browser i en ny fane"</string>

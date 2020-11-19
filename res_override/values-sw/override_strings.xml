@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Tumia pendekezo la kujaza kiotomatiki la Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Hakuna manenosiri yaliyohifadhiwa. Banana Browser inaweza kukagua manenosiri yako unapoyahifadhi."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser imeshindwa kukagua manenosiri yako. Jaribu kuangalia muunganisho wako wa Intaneti."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser imeshindwa kukagua manenosiri yote. Jaribu tena kesho."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser itakuarifu utakapokuwa ukiingia katika akaunti ukitumia nenosiri lililoathiriwa."</string>
 <string name="sign_in_to_chrome">"Ingia katika Banana Browser"</string>
 <string name="sync_switch_title">"Sawazisha data yako kwenye Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Ruhusu kuingia katika akaunti ya Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Onyesha vidokezo vya kuingia katika akaunti vya Banana Browser unapoingia katika Akaunti yako ya Google"</string>
 <string name="usage_and_crash_reports_title">"Tusaidie tuboreshe utendaji na vipengele vya Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Imenakiliwa kwenye Banana Browser"</string>
 <string name="password_settings_export_action_description">"Tuma manenosiri yaliyohifadhiwa kwenye Banana Browser"</string>
 <string name="password_settings_export_subject">"Manenosiri ya Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Ukurasa wa kwanza wa Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Pata usalama thabiti zaidi kutoka Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Tusaidie kuboresha usalama wa Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Ili kutambua programu na tovuti hatari, Banana Browser hutuma URL za baadhi ya kurasa unazotembelea. maelezo machache ya mfumo na maudhui ya ukurasa kwa Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Data ya Banana Browser imefutwa"</string>
@@ -31,6 +35,7 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="safe_browsing_enhanced_protection_bullet_two">"Hulinda usalama wako kwenye Banana Browser na inaweza kutumiwa kuboresha usalama wako kwenye programu nyingine za Google ukiwa umeingia katika akaunti."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Hukagua URL zilizo na orodha ya tovuti zisizo salama zinazohifadhiwa kwenye Banana Browser. Iwapo tovuti inajaribu kuiba nenosiri lako au unapopakua faili hatari, Banana Browser inaweza pia kutuma URL, ikiwa ni pamoja na sehemu za maudhui ya ukurasa, kwenye kipengele cha Kuvinjari Salama."</string>
 <string name="languages_set_application_language_prompt">"Tumia kama lugha ya Banana Browser"</string>
+<string name="languages_infobar_restart">"Zima na uwashe Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Katika Hali nyepesi, Banana Browser hupakia kurasa haraka zaidi na huokoa data kwa hadi asilimia 60."</string>
 <string name="data_reduction_description_lite_mode">"Wakati umewasha Hali nyepesi, Banana Browser hutumia seva za Google kupakia kurasa haraka. Hali nyepesi hubadilisha kurasa zinazopakia polepole ili zipakie maudhui muhimu pekee. Hali nyepesi haitumiki kwenye vichupo katika hali Fiche."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Katika Hali Nyepesi, Banana Browser hupakia kurasa haraka zaidi na huokoa hadi asilimia 60 ya data. Ili kuboresha kurasa unazotembelea, Banana Browser hutumia Google data ya tovuti unazotembelea. &lt;link&gt;Pata maelezo zaidi&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="bluetooth_need_location_services_on">"Banana Browser inahitaji idhini ya kufikia mahali ili itafute vifaa. Kipengele cha kufikia mahali &lt;services_link&gt;kimezimwa kwenye kifaa hiki&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser inahitaji idhini ya kufikia mahali ili itafute vifaa. &lt;permission_link&gt;Badilisha ruhusa&lt;/permission_link&gt;. Kipengele cha idhini ya kufikia mahali pia &lt;services_link&gt;kimezimwa kwenye kifaa hiki&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Fungua mipangilio ya Android na uwashe upya usawazishaji wa mfumo wa Android ili uanze usawazishaji wa Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Ili uanze kusawazisha, washa mipangilio ya \"Sawazisha data yako kwenye Banana Browser\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Ili uanze kusawazisha, washa mipangilio ya \"Sawazisha data yako kwenye Banana Browser\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Zima na uwashe Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Inapakua Sasisho la Banana Browser…"</string>
 <string name="update_notification_title_default">"Sasisha Banana Browser"</string>
@@ -70,9 +75,14 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s itafunguka kwenye Banana Browser. Kwa kuendelea, unakubali &lt;LINK1&gt;Sheria na Masharti ya Google&lt;/LINK1&gt; na &lt;LINK2&gt;Sheria na Masharti ya Ziada ya Google Banana Browser na Mfumo wa Uendeshaji wa Banana Browser&lt;/LINK2&gt;. &lt;LINK3&gt;Ilani ya Faragha ya Akaunti za Google Zinazodhibitiwa na Family Link&lt;/LINK3&gt; inatumika pia."</string>
 <string name="fre_send_report_check">"Saidia kuboresha Banana Browser kwa kutumia Google takwimu za matumizi na ripoti wakati wowote kivinjari hiki kinapoacha kufanya kazi."</string>
 <string name="fre_welcome">"Karibu kwenye Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Utaingia kwa kutumia Akaunti yako ya Google\n(hatua hii haitawasha mipangilio ya Usawazishaji wa Banana Browser)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Ingia katika tovuti hii na Banana Browser ukitumia Akaunti yako ya Google. Unaweza kuwasha kipengele cha kusawazisha baadaye."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser imeshindwa kuthibitisha maelezo yako"</string>
 <string name="external_app_restricted_access_error">"Banana Browser haina idhini ya kufikia rasilimali uliyoomba."</string>
+<string name="video_tutorials_card_chrome_intro">"Jinsi ya kutumia Banana Browser"</string>
+<string name="video_tutorials_card_search">"Jinsi ya kutafuta kwa kutumia Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Video kuhusu jinsi ya kutumia Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Jifunze kuhusu Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Kutumia Banana Browser"</string>
 <string name="menu_update">"Sasisha Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser haiwezi kusasisha"</string>
 <string name="menu_inline_update_ready_summary">"Zima na uwashe Banana Browser"</string>
@@ -88,7 +98,7 @@ Huenda akaunti yako ya Google ina aina nyingine za historia ya kuvinjari kama vi
 <string name="sogou_explanation">"Banana Browser inaweza kutumia &lt;b&gt;Sogou&lt;/b&gt; kutafuta nchini Uchina. Unaweza kuibadilisha katika &lt;link&gt;MipangilioE&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Programu hii inatumika katika Banana Browser"</string>
 <string name="twa_running_in_chrome">"Umefunguka katika Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Utaona hali yako ya kuingia katika akaunti ya %1$s, data ya kuvinjari na data ya tovuti katika Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Utaona hali yako ya kuingia katika akaunti ya %1$s, data ya kuvinjari na data ya tovuti katika Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s pia ina data katika Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Unaweza kufuta data hii katika Mipangilio ya Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Fungua Kituo cha Usaidizi cha Banana Browser katika kichupo kipya"</string>

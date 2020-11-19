@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browser স্বয়ংক্ৰিয়ভাৱে পূৰ হোৱা পৰামৰ্শৰ সুবিধাটো ব্যৱহাৰ কৰক"</string>
 <string name="password_check_status_message_error_no_passwords">"ছেভ কৰা কোনো পাছৱৰ্ড নাই। আপুনি আপোনাৰ পাছৱর্ডসমূহ ছেভ কৰিলে Banana Browserএ সেইবোৰ পৰীক্ষা কৰিব পাৰে।"</string>
 <string name="password_check_status_message_error_offline">"Banana Browserএ আপোনাৰ পাছৱর্ডসমূহ পৰীক্ষা কৰিব নোৱাৰে। আপোনাৰ ইণ্টাৰনেট সংযোগ পৰীক্ষা কৰি চাওক।"</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browserএ সকলো পাছৱৰ্ড পৰীক্ষা কৰিব নোৱাৰিলে। কাইলৈ পুনৰ চেষ্টা কৰক।"</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"আপুনি কোনো হেক কৰা পাছৱৰ্ডৰ জৰিয়তে ছাইন ইন কৰিলে Banana Browserএ আপোনাক জাননী দিব।"</string>
 <string name="sign_in_to_chrome">"Banana Browserত ছাইন-ইন কৰক"</string>
 <string name="sync_switch_title">"আপোনাৰ Banana Browser ডেটা ছিংক কৰক"</string>
+<string name="offer_chrome_signin_title">"Banana Browserত ছাইন ইন কৰিব দিয়ক"</string>
+<string name="offer_chrome_signin_summary">"আপোনাৰ Google একাউণ্টত ছাইন ইন কৰোঁতে Banana Browserৰ ছাইন-ইন প্ৰম্পট্‌ দেখুৱাওক"</string>
 <string name="usage_and_crash_reports_title">"Banana Browserৰ সুবিধা আৰু প্ৰদৰ্শন উন্নত কৰাত সহায় কৰক"</string>
 <string name="autofill_describe_local_copy">"Banana Browserলৈ প্ৰতিলিপি কৰা হ’ল"</string>
 <string name="password_settings_export_action_description">"Banana Browserত ছেভ কৰি ৰখা পাছৱৰ্ড ৰপ্তানি কৰক"</string>
 <string name="password_settings_export_subject">"Banana Browserৰ পাছৱৰ্ড"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browserৰ গৃহপৃষ্ঠা"</string>
+<string name="enhanced_protection_promo_title">"Banana Browserৰ আটাইতকৈ শক্তিশালী সুৰক্ষা লাভ কৰক"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browserৰ সুৰক্ষা উন্নত কৰাত সহায় কৰক"</string>
 <string name="safe_browsing_scout_reporting_summary">"বিপজ্জনক এপ্‌ আৰু ছাইটসমূহ চিনাক্ত কৰিবলৈ Banana Browserএ আপুনি চোৱা পৃষ্ঠাৰ URLসমূহ, ছিষ্টেমৰ সীমিত তথ্য আৰু পৃষ্ঠাৰ কিছু সমল Googleলৈ পঠিয়ায়"</string>
 <string name="clear_browsing_data_history_dialog_title">"মচা Banana Browser ডেটা"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"আপোনাক Banana Browserত সুৰক্ষিত কৰি ৰাখে আৰু আপুনি ছাইন ইন হৈ থকা অৱস্থাত Googleৰ অন্য এপ্‌সমূহত আপোনাৰ সুৰক্ষা উন্নত কৰিবলৈ ব্যৱহাৰ কৰা হ’ব পাৰে।"</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Banana Browserত ষ্ট\'ৰ কৰি ৰখা অসুৰক্ষিত ছাইটসমূহৰ এখন সূচীৰ সৈতে URLসমূহ পৰীক্ষা কৰে। যদি কোনোবা ছাইটে আপোনাৰ পাছৱর্ড চুৰি কৰিবলৈ চেষ্টা কৰে অথবা আপুনি কোনো ক্ষতিকাৰক ফাইল ডাউনল\'ড কৰাৰ সময়ত Banana Browserএ পৃষ্ঠাৰ সমলৰ বিটসমূহকে ধৰি URLসমূহ সুৰক্ষিত ব্ৰাউজিঙলৈ পঠিয়াব পাৰে।"</string>
 <string name="languages_set_application_language_prompt">"Banana Browserৰ ভাষা হিচাপে ব্যৱহাৰ কৰক"</string>
+<string name="languages_infobar_restart">"Banana Browser ৰিষ্টাৰ্ট কৰক"</string>
 <string name="data_reduction_benefits_description_lite_mode">"লাইট ম\'ডত Banana Browserএ পৃষ্ঠা খৰতকীয়াকৈ ল\'ড কৰে আৰু ৬০ শতাংশলৈকে কম ডেটা ব্যৱহাৰ কৰে।"</string>
 <string name="data_reduction_description_lite_mode">"লাইট ম’ড অন কৰা থাকিলে, পৃষ্ঠাবোৰ দ্ৰুতভাৱে ল’ড কৰিবলৈ Banana Browserএ Google ছাৰ্ভাৰ ব্যৱহাৰ কৰে৷ লাইট ম’ডে অত্যন্ত লেহেমীয়া পৃষ্ঠাবোৰক দুনাই লিখে যাতে অত্যাৱশ্যকীয় সমলহে ল’ড হয়৷ লাইট ম’ড ইনক’গনিট’ টেবত প্ৰয়োগ নহয়৷"</string>
 <string name="data_reduction_promo_summary_lite_mode">"লাইট ম’ডত Banana Browserএ পৃষ্ঠাসমূহ খৰতকীয়াকৈ ল’ড কৰে আৰু ৬০ শতাংশ পৰ্যন্ত কম ডেটা ব্যৱহাৰ কৰে। আপুনি চোৱা পৃষ্ঠাসমূহ অপ্টিমাইজ কৰিবলৈ Banana Browserএ আপোনাৰ ৱেব ট্ৰেফিক Googleলৈ পঠিয়ায়। &lt;link&gt;অধিক জানক&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"ডিভাইচ স্কেন কৰিবলৈ Banana Browserএ অৱস্থান এক্সেছ কৰাটো প্ৰয়োজনীয়। এই ডিভাইচটোৰ বাবে &lt;services_link&gt;অৱস্থান এক্সেছ অফ কৰা আছে৷&lt;/services_link&gt;"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"ডিভাইচ স্কেন কৰিবলৈ Banana Browserএ অৱস্থান এক্সেছ কৰাটো প্ৰয়োজনীয়। &lt;permission_link&gt;অনুমতি আপডে’ট কৰক&lt;/permission_link&gt;। অৱস্থান ইতিহাস &lt;services_link&gt;এই ডিভাইচটোৰ বাবেও অফ কৰি থোৱা হৈছে&lt;/services_link&gt;।"</string>
 <string name="hint_android_sync_disabled">"Banana Browser ছিংক আৰম্ভ কৰিবলৈ Android ছেটিংসমূহ খোলক আৰু Android ছিষ্টেম ছিংক পুনৰ সক্ষম কৰক"</string>
-<string name="hint_sync_settings_not_confirmed_description">"ছিংক কৰা আৰম্ভ কৰিবলৈ \"আপোনাৰ Banana Browser ডেটা ছিংক কৰক\" অন কৰক।"</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"ছিংক কৰা আৰম্ভ কৰিবলৈ \"আপোনাৰ Banana Browser ডেটা ছিংক কৰক\" অন কৰক।"</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser ৰিষ্টাৰ্ট কৰক"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browserৰ আপডে’ট ডাউনল’ড কৰি থকা হৈছে…"</string>
 <string name="update_notification_title_default">"Banana Browser আপডে’ট কৰক"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s Banana Browserত খুলিব। অব্যাহত ৰাখি আপুনি &lt;LINK1&gt;Google সেৱাৰ চৰ্তাৱলী&lt;/LINK1&gt; আৰু &lt;LINK2&gt;Google Banana Browser আৰু Banana Browser OSৰ সেৱাৰ অতিৰিক্ত চৰ্তাৱলী&lt;/LINK2&gt;ত সন্মতি দিয়ে। &lt;LINK3&gt;Family Linkৰ জৰিয়তে পৰিচালনা কৰা Google একাউণ্টৰ বাবে গোপনীয়তাৰ জাননী&lt;/LINK3&gt;টোও প্ৰযোজ্য হয়।"</string>
 <string name="fre_send_report_check">"Googleলৈ ব্যৱহাৰৰ পৰিসংখ্যা আৰু ক্ৰেশ্ব ৰিপ’ৰ্ট পঠিয়াই Banana Browser ক অধিক উন্নত কৰাত সহায় কৰক।"</string>
 <string name="fre_welcome">"Banana Browserলৈ স্বাগতম"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"আপোনাক নিজৰ Google একাউণ্টটোৰে ছাইন ইন কৰোৱা হ’ব\n(এইটোৱে Banana Browser ছিংক অন নকৰে)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"আপোনাৰ Google একাউণ্টটোৰ জৰিয়তে এইটো ছাইট আৰু Banana Browserত ছাইন ইন কৰক। পাছত আপুনি ছিংক অন কৰিব পাৰে।"</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browserএ আপোনাৰ তথ্য সত্যাপন কৰিব নোৱাৰিলে"</string>
 <string name="external_app_restricted_access_error">"অনুৰোধ জনোৱা সমললৈ Banana Browserৰ এক্সেছ নাই।"</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser কেনেকৈ ব্যৱহাৰ কৰিব লাগে"</string>
+<string name="video_tutorials_card_search">"Banana Browserৰ জৰিয়তে কেনেকৈ সন্ধান কৰিব লাগে"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browser কেনেকৈ ব্যৱহাৰ কৰিব লাগে সেই সম্পৰ্কে ভিডিঅ\'"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browserৰ বিষয়ে জানক"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browserত নেভিগে’ট কৰা"</string>
 <string name="menu_update">"Banana Browser আপডে’ট কৰক"</string>
 <string name="menu_update_unsupported">"Banana Browser আপডে’ট কৰিব নোৱাৰি"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser ৰিষ্টাৰ্ট কৰক"</string>
@@ -88,7 +98,7 @@
 <string name="sogou_explanation">"Banana Browserএ চীনত সন্ধানৰ বাবে &lt;b&gt;Sogou&lt;/b&gt; ব্যৱহাৰ কৰিব পাৰে। আপুনি এইটো &lt;link&gt;ছেটিংসমূহ&lt;/link&gt;-ত সলনি কৰিব পাৰে।"</string>
 <string name="app_running_in_chrome_disclosure">"এই এপ্‌টো Banana Browserত চলি আছে"</string>
 <string name="twa_running_in_chrome">"Banana Browserত চলি আছে"</string>
-<string name="twa_running_in_chrome_v2">"আপুনি আপোনাৰ %1$sৰ ছাইন ইনৰ স্থিতি, ব্ৰাউজ কৰা ডেটা আৰু ছাইটৰ ডেটা Banana Browserত দেখা পাব।"</string>
+<string name="twa_running_in_chrome_v2">"আপুনি আপোনাৰ %1$sৰ ছাইন ইনৰ স্থিতি, ব্ৰাউজ কৰা ডেটা আৰু ছাইটৰ ডেটা Banana Browserত দেখা পাব"</string>
 <string name="twa_clear_data_dialog_title">"%1$sও Banana Browserত ডেটা আছে"</string>
 <string name="twa_clear_data_dialog_message">"আাপুনি Banana Browser ছেটিংসমূহত এই ডেটা মচিব পাৰে"</string>
 <string name="keyboard_shortcut_help_center">"এটা নতুন টেবত Banana Browser সহায় কেন্দ্ৰ খোলক"</string>

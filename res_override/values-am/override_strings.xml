@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"የBanana Browser የራስ-ሙላ አስተያየት ጥቆማን ይጠቀሙ"</string>
 <string name="password_check_status_message_error_no_passwords">"ምንም የተቀመጡ የይለፍ ቃላት የሉም። Banana Browser እርስዎ ሲያስቀምጧቸው የእርስዎን የይለፍ ቃላት መፈተሽ ይችላል።"</string>
 <string name="password_check_status_message_error_offline">"Banana Browser የእርስዎን የይለፍ ቃላት መፈተሽ አይችልም። የበይነመረብ ግንኙነትዎን ለመፈተሽ ይሞክሩ።"</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser ሁሉንም የይለፍ ቃላት ማረጋገጥ አልቻለም። ነገ እንደገና ይሞክሩ።"</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"እርስዎ በተጠለፈ የይለፍ ቃል ሲገቡ Banana Browser ያሳውቀዎታል።"</string>
 <string name="sign_in_to_chrome">"Banana Browser ውስጥ ይግቡ"</string>
 <string name="sync_switch_title">"የBanana Browser ውሂብዎን ያስምሩ"</string>
+<string name="offer_chrome_signin_title">"የBanana Browser በመለያ መግባትን ይፍቀዱ"</string>
+<string name="offer_chrome_signin_summary">"ወደ የእርስዎ Google መለያ ሲገቡ የBanana Browser በመለያ መግቢያ ጥያቄዎችን ያሳይ"</string>
 <string name="usage_and_crash_reports_title">"የBanana Browser ባህሪያት እና አፈጻጸም እንዲሻሻል ያግዙ"</string>
 <string name="autofill_describe_local_copy">"ወደ Banana Browser ተቀድቷል"</string>
 <string name="password_settings_export_action_description">"ከBanana Browser ጋር የተከማቹ የይለፍ ቃሎችን ወደ ውጭ ላክ"</string>
 <string name="password_settings_export_subject">"የBanana Browser ይለፍ ቃላት"</string>
 <string name="options_homepage_chrome_homepage">"የBanana Browser መነሻ ገጽ"</string>
+<string name="enhanced_protection_promo_title">"የBanana Browserን በጣም ጠንካራ ደህንነት ያግኙ"</string>
 <string name="safe_browsing_scout_reporting_title">"የBanana Browser ደህንነት እንዲሻሻል ያግዙ"</string>
 <string name="safe_browsing_scout_reporting_summary">"አደገኛ መተግበሪያዎችን እና ጣቢያዎችን ፈልጎ ለማግኘት፣ Banana Browser እርስዎ የጎበኟቸውን አንዳንድ ገጾች ዩአርኤሎች፣ የተወሰነ የሥርዓት መረጃ እና አንዳንድ የገጽ ይዘት ወደ Google ይልካል"</string>
 <string name="clear_browsing_data_history_dialog_title">"የBanana Browser ውሂብ ጸድቷል"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"በBanana Browser ላይ ደህንነትዎን ይጠብቃል፣ እና በመለያ በገቡባቸው ሌሎች የGoogle መተግበሪያዎች ላይ ደህንነትዎን ለማሻሻል ስራ ላይ ሊውል ይችላል።"</string>
 <string name="safe_browsing_standard_protection_bullet_two">"በBanana Browser ላይ የተከማቹ ድህንነታቸው ያልተጠበቁ ጣቢያዎች ዝርዝር ጋር ዩአርኤሎችን ይፈትሻል። አንድ ጣቢያ የእርስዎን የይለፍ ቃል ለመስረቅ ከሞከረ ወይም ጎጂ ፋይል ካወረደ Banana Browser እንዲሁም የገጽ ይዘትን ክፍሎችም ጨምሮ ዩአርኤሎችን ወደ የጥንቃቄ አሰሳ መላክ ሊልክ ይችላል።"</string>
 <string name="languages_set_application_language_prompt">"እንደ የBanana Browser ቋንቋ ተጠቀም"</string>
+<string name="languages_infobar_restart">"Banana Browserን ዳግም ያስጀምሩት"</string>
 <string name="data_reduction_benefits_description_lite_mode">"በቀላል ሁነታ ላይ Banana Browser ገጾችን በበለጠ ፍጥነት የሚጭን ሲሆን እስከ 60 በመቶ ያነሰ ውሂብ ይጠቀማል።"</string>
 <string name="data_reduction_description_lite_mode">"ቀላል ሁነታ ሲበራ Banana Browser ገጾች በበለጠ ፍጥነት እንዲጭኑ ለማድረግ የGoogle አገልጋዮችን ይጠቀማል። ቀላል ሁነታ በጣም ቀርፋፋ የሆኑ ገጾች መሠረታዊ ይዘትን ብቻ እንዲጭኑ አድርጎ ዳግም ይጽፋቸዋል። ቀላል ሁነታ ማንነት በማያሳውቁ ትሮች ላይ አይተገበርም።"</string>
 <string name="data_reduction_promo_summary_lite_mode">"በቀላል ሁነታ ላይ Banana Browser ገጾችን በበለጠ ፍጥነት የሚጭን ሲሆን እስከ 60 በመቶ ያነሰ ውሂብ ይጠቀማል። የሚጎበኟቸው ገጾችን ለማትባት Banana Browser የድር ትራፊክዎን ወደ Google ይልካል። &lt;link&gt;የበለጠ ለመረዳት&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"Banana Browser መሣሪያዎችን መቃኘት እንዲችል የአካባቢ መዳረሻ ያስፈልገዋል። የአካባቢ መዳረሻ &lt;services_link&gt;ለዚህ መሣሪያ ጠፍቷል&lt;/services_link&gt;።"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser መሣሪያዎችን መቃኘት እንዲችል የአካባቢ መዳረሻ ያስፈልገዋል። &lt;permission_link&gt;ፈቃዶችን ያዘምኑ&lt;/permission_link&gt;። የአካባቢ መዳረሻ እንዲሁም &lt;services_link&gt;ለዚህ መዳረሻ ጠፍቷል&lt;/services_link&gt;።"</string>
 <string name="hint_android_sync_disabled">"የBanana Browser ስምረትን ለመጀመር የAndroid ቅንብሮችን ይክፈቱና የAndroid ስርዓት ስምረትን ዳግም ያንቁ"</string>
-<string name="hint_sync_settings_not_confirmed_description">"ስምረትን ለመጀመር «የBanana Browser ውሂብዎን ያስምሩ»ን ያብሩት።"</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"ስምረትን ለመጀመር «የBanana Browser ውሂብዎን ያስምሩ»ን ያብሩት።"</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browserን ዳግም ያስጀምሩት"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser ዝማኔን በማውረድ ላይ…"</string>
 <string name="update_notification_title_default">"Banana Browserን አዘምን"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s በBanana Browser ውስጥ ይከፈታል። በመቀጠልዎ በ&lt;LINK1&gt;የGoogle አገልግሎት ውል&lt;/LINK1&gt; እና &lt;LINK2&gt;የGoogle Banana Browser እና የBanana Browser OS ተጨማሪ አገልግሎት ውል&lt;/LINK2&gt; ይስማማሉ። &lt;LINK3&gt;በFamily Link የሚቀናበሩ የGoogle መለያዎች የግላዊነት ማስታወቂያ&lt;/LINK3&gt; እንዲሁም ይተገበራል።"</string>
 <string name="fre_send_report_check">"የአጠቃቀም ስታቲክሶችን እና የብልሽት ሪፖርቶችን ወደ Google በመላክ Banana Browserን የተሻለ ለማድረግ እገዛ ያድርጉ።"</string>
 <string name="fre_welcome">"ወደ Banana Browser እንኳን ደህና መጡ"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"በGoogle መለያዎ ይገባሉ\n(ይህ Banana Browser ስምረትን አያበራም)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"ወደዚህ ጣቢያ እና Banana Browser በGoogle መለያዎ ይግቡ። በኋላ ስምረትን ማብራት ይችላሉ።"</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser መረጃዎን ማረጋገጥ አልቻለም"</string>
 <string name="external_app_restricted_access_error">"Banana Browser የተጠየቀው ግብዓት መዳረሻ የለውም።"</string>
+<string name="video_tutorials_card_chrome_intro">"እንዴት Banana Browserን እንደሚጠቀሙበት"</string>
+<string name="video_tutorials_card_search">"በBanana Browser እንዴት መፈለግ እንደሚቻል"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browserን እንዴት እንደሚጠቀሙ ቪዲዮዎች"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browserን ይረዱ"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browserን ያስሱ"</string>
 <string name="menu_update">"Banana Browserን አዘምን"</string>
 <string name="menu_update_unsupported">"Banana Browserን ማዘመን አይቻልም"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browserን ዳግም ያስጀምሩት"</string>
@@ -88,7 +98,7 @@
 <string name="sogou_explanation">"Banana Browser በቻይና ውስጥ &lt;b&gt;Sogou&lt;/b&gt;ን ለፍለጋ መጠቀም ይችላል። ይህን በ&lt;link&gt;ቅንብሮች&lt;/link&gt; ውስጥ መጠቀም ይችላሉ።"</string>
 <string name="app_running_in_chrome_disclosure">"ይህ መተግበሪያ በBanana Browser ውስጥ እያሄደ ነው"</string>
 <string name="twa_running_in_chrome">"በBanana Browser ውስጥ በማሄድ ላይ"</string>
-<string name="twa_running_in_chrome_v2">"የእርስዎን %1$s በመለያ የመግባት ሁኔታ፣ የአሰሳ ውሂብ እና የጣቢያ ውሂብ በBanana Browser ውስጥ ይመለከታሉ።"</string>
+<string name="twa_running_in_chrome_v2">"የእርስዎን %1$s በመለያ የመግባት ሁኔታ፣ የአሰሳ ውሂብ እና የጣቢያ ውሂብ በBanana Browser ውስጥ ይመለከታሉ"</string>
 <string name="twa_clear_data_dialog_title">"%1$s እንዲሁም በBanana Browser ውስጥ ውሂብ አለው"</string>
 <string name="twa_clear_data_dialog_message">"ውሂቡን በBanana Browser ቅንብሮች ውስጥ ማጽዳት ይችላሉ"</string>
 <string name="keyboard_shortcut_help_center">"የBanana Browser እገዛ ማዕከልን በአዲስ ትር ውስጥ ክፈት"</string>

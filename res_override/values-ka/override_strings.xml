@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browser-ის ავტომატური შევსების შემოთავაზების გამოყენება"</string>
 <string name="password_check_status_message_error_no_passwords">"შენახული პაროლები არ არის. პაროლების შემოწმებას Banana Browser მოახერხებს მათი შენახვის შემდეგ."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser ვერ ახერხებს პაროლების შემოწმებას. შეამოწმეთ კავშირი ინტერნეტთან."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser-მა ვერ შეამოწმა ყველა პაროლი. ცადეთ ხვალ."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser შეგატყობინებთ, როცა სისტემაში გატეხილი პაროლით შეხვალთ."</string>
 <string name="sign_in_to_chrome">"შესვლა Banana Browser-ში"</string>
 <string name="sync_switch_title">"თქვენი Banana Browser მონაცემების სინქრონიზაცია"</string>
+<string name="offer_chrome_signin_title">"Banana Browser-ში შესვლის დაშვება"</string>
+<string name="offer_chrome_signin_summary">"Banana Browser-ის სისტემაში შესვლის მოთხოვნების ჩვენება, როცა თქვენს Google ანგარიშში შეხვალთ"</string>
 <string name="usage_and_crash_reports_title">"შეუწყვეთ ხელი Banana Browser-ის ფუნქციებისა და წარმადობის გაუმჯობესებას"</string>
 <string name="autofill_describe_local_copy">"დაკოპირდა Banana Browser-ში"</string>
 <string name="password_settings_export_action_description">"Banana Browser-ში შენახული პაროლების ექსპორტი"</string>
 <string name="password_settings_export_subject">"Banana Browser-ის პაროლები"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser-ის მთავარი გვერდი"</string>
+<string name="enhanced_protection_promo_title">"ისარგებლეთ Banana Browser-ის უსაფრთხოების ყველაზე ძლიერი ფუნქციებით"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser-ის უსაფრთხოების გაუმჯობესების ხელშეწყობა"</string>
 <string name="safe_browsing_scout_reporting_summary">"სახიფათო აპებისა და საიტების აღმოსაჩენად Banana Browser უგზავნის Google-ს თქვენ მიერ მონახულებული ზოგიერთი გვერდის URL-ებს, სისტემის შეზღუდულ ინფორმაციასა და გვერდების გარკვეულ კონტენტს"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser მონაცემები გასუფთავდა"</string>
@@ -30,6 +34,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"უზრუნველყოფს თქვენს უსაფრთხოებას Banana Browser-ში და Google-ის სხვა აპებში, როცა სისტემაში შესული ხართ."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"შეამოწმებს URL-ების თანხვედრას Banana Browser-ში შენახულ არაუსაფრთხო საიტების სიასთან. საიტის მიერ პაროლის მოპარვის მცდელობის ან თქვენ მიერ საზიანო ფაილის ჩამოტვირთვის შემთხვევაში Banana Browser-ის მიერ Safe Browsing-ს გაეგზავნება URL-ები და შესაბამისი გვერდის კონტენტის გარკვეული ნაწილი."</string>
 <string name="languages_set_application_language_prompt">"Banana Browser-ის ენად გამოყენება"</string>
+<string name="languages_infobar_restart">"Banana Browser-ის გადატვირთვა"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lite რეჟიმში Banana Browser უფრო სწრაფად ტვირთავს გვერდებს და 60 პროცენტით ნაკლებ ტრაფიკს მოიხმარს."</string>
 <string name="data_reduction_description_lite_mode">"Lite რეჟიმის ჩართვის შემთხვევაში, Banana Browser უფრო სწრაფად ჩატვირთავს გვერდებს Google-ის სერვერების დახმარებით. Lite რეჟიმი გადაწერს განსაკუთრებით ნელ გვერდებს და ჩატვირთავს მხოლოდ მნიშნველოვან კონტენტს. Lite რეჟიმი არ მოქმედებს ინკოგნიტო ჩანართებში."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lite რეჟიმში Banana Browser უფრო სწრაფად ტვირთავს გვერდებს და 60%-ით ნაკლებ ტრაფიკს მოიხმარს. თქვენ მიერ მონახულებული გვერდების ოპტიმიზაციის მიზნით, Banana Browser თქვენს ვებ-ტრაფიკს Google-ს უგზავნის. &lt;link&gt;შეიტყვეთ მეტი&lt;/link&gt;"</string>
@@ -52,7 +57,7 @@
 <string name="bluetooth_need_location_services_on">"მოწყობილობების სკანირებისთვის, Banana Browser მდებარეობაზე წვდომას საჭიროებს. მდებარეობაზე წვდომა &lt;services_link&gt;ამ მოწყობილობისთვის გამორთულია&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"მოწყობილობების სკანირებისთვის, Banana Browser მდებარეობაზე წვდომას საჭიროებს. გთხოვთ, &lt;permission_link&gt;განაახლოთ ნებართვები&lt;/permission_link&gt;. მდებარეობაზე წვდომა &lt;services_link&gt;ამ მოწყობილობისთვისაც გამორთულია&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Banana Browser სინქრონიზაციის დასაწყებად, გახსენით Android-ის პარამეტრები და ხელახლა ჩართეთ Android სისტემის სინქრონიზაცია"</string>
-<string name="hint_sync_settings_not_confirmed_description">"სიქრონიზაციის დასაწყებად ჩართეთ „თქვენი Banana Browser მონაცემების სინქრონიზაციის“ პარამეტრი."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"სიქრონიზაციის დასაწყებად ჩართეთ „თქვენი Banana Browser მონაცემების სინქრონიზაციის“ პარამეტრი."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser-ის გადატვირთვა"</string>
 <string name="inline_update_toast_downloading_message">"მიმდინარეობს Banana Browser-ის განახლების ჩამოტვირთვა…"</string>
 <string name="update_notification_title_default">"Banana Browser-ის განახლება"</string>
@@ -69,9 +74,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s გაიხსნება Banana Browser-ში. გაგრძელებით ეთანხმებით &lt;LINK1&gt;Google-ის მომსახურების პირობებს&lt;/LINK1&gt;, ასევე, &lt;LINK2&gt;Google Banana Browser-ისა და Banana Browser OS-ის მომსახურების დამატებით პირობებს&lt;/LINK2&gt;. გარდა ამისა, ვრცელდება &lt;LINK3&gt;კონფიდენციალურობის შეტყობინება Family Link-ით მართული Google ანგარიშებისთვის&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"დაგვეხმარეთ Banana Browser-ის გაუმჯობესებაში, გამოყენების სტატისტიკისა და შეცდომების შესახებ მოხსენებების Google-ში გაგზავნით."</string>
 <string name="fre_welcome">"მოგესალმებათ Banana Browser!"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"სისტემაში თქვენი Google ანგარიშით შეხვალთ\n(ეს მოქმედება არ ჩართავს Banana Browser სინქრონიზაციას)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"შედით ამ საიტსა და Banana Browser-ში თქვენი Google ანგარიშით. სინქრონიზაციის ჩართვა მოგვიანებით შეგიძლიათ."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser-მა ვერ დაადასტურა თქვენი ინფორმაცია"</string>
 <string name="external_app_restricted_access_error">"Banana Browser-ს მოთხოვნილ რესურსზე წვდომა არ აქვს."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser-ის გამოყენების წესი"</string>
+<string name="video_tutorials_card_search">"Banana Browser-ით ძიების წესი"</string>
+<string name="video_tutorials_card_all_videos">"ვიდეოები Banana Browser-ის გამოყენების წესის შესახებ"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser-ის სწავლა"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browser-ში ნავიგაცია"</string>
 <string name="menu_update">"Banana Browser-ის განახლება"</string>
 <string name="menu_update_unsupported">"Banana Browser ვერ განახლდება"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser-ის გადატვირთვა"</string>
@@ -87,7 +97,7 @@
 <string name="sogou_explanation">"ჩინეთის ტერიტორიაზე ძიების განსახორციელებლად, Banana Browser-ს &lt;b&gt;Sogou&lt;/b&gt;-ს გამოყენება შეუძლია. ამის შეცვლა &lt;link&gt;პარამეტრებიდან&lt;/link&gt; შეგიძლიათ."</string>
 <string name="app_running_in_chrome_disclosure">"ეს აპი გაშვებულია Banana Browser-ში"</string>
 <string name="twa_running_in_chrome">"გაშვებულია Banana Browser-ში"</string>
-<string name="twa_running_in_chrome_v2">"Banana Browser-ში იხილავთ როგორც %1$s-ში შესვლის სტატუსს, ისე დათვალიერების/საიტის მონაცემებს."</string>
+<string name="twa_running_in_chrome_v2">"Banana Browser-ში იხილავთ როგორც %1$s-ში შესვლის სტატუსს, ისე დათვალიერების/საიტის მონაცემებს"</string>
 <string name="twa_clear_data_dialog_title">"%1$s-ს Banana Browser-შიც აქვს მონაცემები"</string>
 <string name="twa_clear_data_dialog_message">"მონაცემების გასუფთავება შეგიძლიათ Banana Browser-ის პარამეტრებიდან"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser-ის დახმარების ცენტრის ახალ ჩანართში გახსნა"</string>

@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"‏از پیشنهاد تکمیل خودکار Banana Browser استفاده کنید"</string>
 <string name="password_check_status_message_error_no_passwords">"‏گذرواژه ذخیره‌شده‌ای وجود ندارد. Banana Browser زمانی می‌تواند گذرواژه‌هایتان را بررسی کند که آن‌ها را ذخیره کرده باشید."</string>
 <string name="password_check_status_message_error_offline">"‏Banana Browser نمی‌تواند گذرواژه‌هایتان را بررسی کند. اتصال اینترنت را بررسی کنید."</string>
 <string name="password_check_status_message_error_quota_limit">"‏Banana Browser نمی‌تواند همه گذرواژه‌هایتان را بررسی کند. فردا دوباره امتحان کنید."</string>
 <string name="password_check_status_message_error_quota_limit_account_check">"‏Banana Browser نمی‌تواند همه گذرواژه‌هایتان را بررسی کند. فردا دوباره امتحان کنید یا &lt;link&gt;گذرواژه‌ها را در «حساب Google» بررسی کنید&lt;/link&gt;."</string>
 <string name="password_check_status_message_error_signed_out">"‏Banana Browser زمانی می‌تواند گذرواژه‌هایتان را بررسی کند که با «حساب Google» خود به سیستم وارد شوید."</string>
 <string name="password_check_status_message_error_unknown">"‏Banana Browser نمی‌تواند گذرواژه‌هایتان را بررسی کند. دوباره امتحان کنید."</string>
-<string name="password_check_status_subtitle_no_findings">"‏وقتی با گذرواژه لورفته به سیستم وارد شوید، Banana Browser به شما اطلاع خواهد داد"</string>
+<string name="password_check_status_subtitle_no_findings">"‏وقتی با گذرواژه لورفته‌ای به سیستم وارد شوید، Banana Browser به شما اطلاع خواهد داد"</string>
 <string name="sign_in_to_chrome">"‏ورود به Banana Browser"</string>
 <string name="sync_switch_title">"‏همگام‌سازی داده‌های Banana Browser"</string>
+<string name="offer_chrome_signin_title">"‏مجاز کردن ورود به سیستم Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"‏درخواست‌های ورود به سیستم Banana Browser را وقتی به سیستم «حساب Google» خود وارد می‌شوید نمایش می‌دهد"</string>
 <string name="usage_and_crash_reports_title">"‏کمک به بهبود ویژگی‌ها و عملکرد Banana Browser"</string>
 <string name="autofill_describe_local_copy">"‏کپی در Banana Browser"</string>
 <string name="password_settings_export_action_description">"‏صادر کردن گذرواژه‌های ذخیره‌شده در Banana Browser"</string>
 <string name="password_settings_export_subject">"‏گذرواژه‌های Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"‏صفحه اصلی Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"‏بهره‌مندی از بالاترین سطح امنیت در Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"‏کمک به بهبود امنیت Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"‏برای حذف برنامه‌ها و سایت‌های خطرناک، Banana Browser نشانی‌های وب برخی از صفحه‌هایی را که بازدید می‌کنید، اطلاعات سیستم محدود و برخی از محتوای صفحه را به Google می‌فرستد."</string>
 <string name="clear_browsing_data_history_dialog_title">"‏داده‌های Banana Browser پاک شد"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"‏وقتی به سیستم وارد شده باشید، امنیت شما را در Banana Browser حفظ می‌کند و ممکن است برای بهبود امنیت شما در برنامه‌های دیگر Google استفاده شود."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"‏نشانی‌های وب را با فهرست سایت‌های ناامنی که در Banana Browser ذخیره شده است مقایسه می‌کند. اگر سایتی تلاش کند گذرواژه شما را به‌سرقت ببرد، یا وقتی فایل مخربی بارگیری می‌کنید، Banana Browser ممکن است نشانی‌های وب را نیز به همراه بخش‌های کوچکی از محتوای صفحه، به «مرور ایمن» ارسال کند."</string>
 <string name="languages_set_application_language_prompt">"‏استفاده به‌عنوان زبان Banana Browser"</string>
+<string name="languages_infobar_restart">"‏Banana Browser را راه‌اندازی مجدد کنید"</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏در «حالت ساده»، Banana Browser صفحه‌ها را سریع‌تر بار می‌کند و تا ۶۰ درصد مصرف داده را کاهش می‌دهد."</string>
 <string name="data_reduction_description_lite_mode">"‏وقتی «حالت ساده» روشن است، Banana Browser از سرورهای Google برای بار کردن سریع‌تر صفحه‌ها استفاده می‌کند. در «حالت ساده»، صفحه‌ها خیلی آهسته بازنویسی می‌شود تا فقط محتوای اساسی بار شود. «حالت ساده» روی برگه‌های ناشناس اعمال نمی‌شود."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏در «حالت ساده»، Banana Browser صفحه‌ها را سریع‌تر بار می‌کند و تا ۶۰ درصد مصرف داده را کاهش می‌دهد. برای بهینه‌سازی صفحاتی که بازدید می‌کنید، Banana Browser ترافیک وب شما را به Google ارسال می‌کند. &lt;link&gt;بیشتر بدانید&lt;/link&gt;"</string>
@@ -41,7 +46,7 @@
 <string name="account_management_sign_out">"‏خروج از سیستم Banana Browser"</string>
 <string name="powered_by_chrome_message">"‏ارائه توسط Banana Browser"</string>
 <string name="chrome_additional_terms_of_service_title">"‏شرایط خدمات تکمیلی Banana Browser و سیستم‌عامل Banana Browser"</string>
-<string name="privacy_notice_title">"‏اخطار حریم خصوصی Banana Browser"</string>
+<string name="privacy_notice_title">"‏اخطار حریم‌خصوصی Banana Browser"</string>
 <string name="signout_managed_account_title">"‏داده‌های Banana Browser شما از این دستگاه پاک شود؟"</string>
 <string name="signout_message">"‏نشانک‌ها، سابقه، گذرواژه‌ها و سایر داده‌های Banana Browser، دیگر با حساب Google شما همگام‌سازی نمی‌شود."</string>
 <string name="remove_local_data">"‏داده‌های این Banana Browser هم از این دستگاه پاک شود"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"‏Banana Browser برای جستجوی دستگاه‌ها باید به مکان دسترسی داشته باشد. دسترسی به مکان &lt;services_link&gt;برای این دستگاه خاموش است&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"‏Banana Browser برای جستجوی دستگاه‌ها باید به مکان دسترسی داشته باشد. &lt;permission_link&gt;به‌روزرسانی مجوزها&lt;/permission_link&gt; . دسترسی به مکان نیز &lt;services_link&gt;برای این دستگاه خاموش است&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"‏برای شروع همگام‌سازی Banana Browser، تنظیمات Android را باز کنید و همگام‌سازی سیستم Android را دوباره فعال کنید"</string>
-<string name="hint_sync_settings_not_confirmed_description">"‏برای شروع همگام‌سازی، «همگام‌سازی داده‌های Banana Browser» را روشن کنید."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"‏برای شروع همگام‌سازی، «همگام‌سازی داده‌های Banana Browser» را روشن کنید."</string>
 <string name="inline_update_infobar_ready_link_text">"‏Banana Browser را راه‌اندازی مجدد کنید"</string>
 <string name="inline_update_toast_downloading_message">"‏درحال بارگیری به‌روزرسانی Banana Browser…"</string>
 <string name="update_notification_title_default">"‏به‌روزرسانی Banana Browser"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"‏%1$s در Banana Browser باز می‌شود. با ادامه دادن، با &lt;LINK1&gt;شرایط خدمات Google&lt;/LINK1&gt; و &lt;LINK2&gt;شرایط خدمات تکمیلی Google Banana Browser و سیستم‌عامل Banana Browser&lt;/LINK2&gt; موافقت می‌کنید. &lt;LINK3&gt;اعلان حریم‌خصوصی برای «حساب‌های Google» مدیریت‌شده با Family Link&lt;/LINK3&gt; نیز اعمال می‌شود."</string>
 <string name="fre_send_report_check">"‏‫با ارسال آمار کاربرد و گزارش‌های خرابی به Google، به بهتر شدن Banana Browser کمک کنید."</string>
 <string name="fre_welcome">"‏به Banana Browser خوش آمدید"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"‏با «حساب Google» خود به سیستم وارد خواهید شد\n(با این کار، «همگام‌سازی Banana Browser» روشن نخواهد شد)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"‏با «حساب Google» به سیستم این سایت و Banana Browser وارد شوید. می‌توانید بعداً همگام‌سازی را روشن کنید."</string>
 <string name="signin_account_picker_general_error_subtitle">"‏Banana Browser نتوانست اطلاعاتتان را تأیید کند"</string>
 <string name="external_app_restricted_access_error">"‏Banana Browser به منبع درخواستی دسترسی ندارد."</string>
+<string name="video_tutorials_card_chrome_intro">"‏نحوه استفاده از Banana Browser"</string>
+<string name="video_tutorials_card_search">"‏نحوه جستجو با Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"‏ویدیوهایی درباره نحوه استفاده از Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"‏آشنایی با Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"‏پیمایش در Banana Browser"</string>
 <string name="menu_update">"‏به‌روزرسانی Banana Browser"</string>
 <string name="menu_update_unsupported">"‏Banana Browser به‌روزرسانی نشد"</string>
 <string name="menu_inline_update_ready_summary">"‏Banana Browser را راه‌اندازی مجدد کنید"</string>

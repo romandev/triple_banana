@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browser အော်တိုဖြည့် အကြံပြုချက် အသုံးပြုပါ"</string>
 <string name="password_check_status_message_error_no_passwords">"သိမ်းထားသော စကားဝှက် မရှိပါ။ သင်စကားဝှက်များကို သိမ်းသည့်အခါ Banana Browser က ၎င်းတို့ကို စစ်ဆေးနိုင်သည်။"</string>
 <string name="password_check_status_message_error_offline">"Banana Browser က သင့်စကားဝှက်များကို စစ်ဆေး၍မရပါ။ သင့်အင်တာနက် ချိတ်ဆက်မှုကို စစ်ဆေးပါ။"</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser က စကားဝှက်အားလုံးကို စစ်ဆေး၍မရပါ။ မနက်ဖြန် ထပ်စမ်းကြည့်ပါ။"</string>
 <string name="password_check_status_message_error_quota_limit_account_check">"Banana Browser က စကားဝှက်အားလုံးကို စစ်ဆေး၍မရပါ။ မနက်ဖြန် ထပ်စမ်းကြည့်ပါ သို့မဟုတ် &lt;link&gt;သင့် Google Account ရှိ စကားဝှက်များကို စစ်ဆေးပါ&lt;/link&gt;။"</string>
 <string name="password_check_status_message_error_signed_out">"သင်၏ Google Account နှင့် လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser က သင့်စကားဝှက်များကို စစ်ဆေးနိုင်သည်။"</string>
 <string name="password_check_status_message_error_unknown">"Banana Browser က သင့်စကားဝှက်များကို စစ်ဆေး၍မရပါ။ ထပ်စမ်းကြည့်ပါ။"</string>
-<string name="password_check_status_subtitle_no_findings">"ကျိုးပေါက်ထားသည့် စကားဝှက်ဖြင့် လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser က သင့်ကို ကြောင်းကြားပါမည်။"</string>
+<string name="password_check_status_subtitle_no_findings">"ကျိုးပေါက်ထားသည့် စကားဝှက်ဖြင့် လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser က သင့်ကို အကြောင်းကြားပါမည်။"</string>
 <string name="sign_in_to_chrome">"Banana Browser သို့ လက်မှတ်ထိုး ဝင်"</string>
 <string name="sync_switch_title">"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ"</string>
+<string name="offer_chrome_signin_title">"Banana Browser သို့ လက်မှတ်ထိုးဝင်ခွင့် ပေးပါ"</string>
+<string name="offer_chrome_signin_summary">"သင်၏ Google Account သို့ လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser လက်မှတ်ထိုးဝင်ရန် အတည်ပြုခြင်းစနစ်များကို ပြသည်"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ၏ ဝန်ဆောင်မှုနှင့် စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်လာအောင် ကူညီရန်"</string>
 <string name="autofill_describe_local_copy">"Banana Browser သို့ ကူးယူပြီး၏"</string>
 <string name="password_settings_export_action_description">"Banana Browser တွင် သိမ်းဆည်ထားသည့် စကားဝှက်များကို ထုတ်ယူမည်"</string>
 <string name="password_settings_export_subject">"Banana Browser စကားဝှက်များ"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser ၏ ပင်မစာမျက်နှာ"</string>
+<string name="enhanced_protection_promo_title">"Banana Browser ၏ အခိုင်မာဆုံးလုံခြုံရေးကို ရယူခြင်း"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser လုံခြုံရေးကောင်းမွန်လာအောင် ကူညီပါ"</string>
 <string name="safe_browsing_scout_reporting_summary">"အန္တရာယ်ရှိသော အက်ပ်နှင့် ဝဘ်ဆိုက်များကို သိရှိရန် Banana Browser က သင်ဝင်ကြည့်ထားသော စာမျက်နှာအချို့၏ URL များ၊ ကန့်သတ်ထားသော စနစ် အချက်အလက်များနှင့် စာမျက်နှာ အကြောင်းအရာအချို့ကို Google သို့ ပို့ပါသည်"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser ဒေတာကို ရှင်းလင်းလိုက်ပါပြီ"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"Banana Browser တွင် ဘေးကင်းစေပြီး အခြား Google အက်ပ်များတွင် သင်လက်မှတ်ထိုးဝင်ထားသည့်အခါ လုံခြုံရေး ပိုကောင်းမွန်စေရန်လည်း သုံးနိုင်သည်။"</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Banana Browser တွင် သိမ်းဆည်းထားသော လုံခြုံမှုမရှိသည့် ဝဘ်ဆိုက်များ၏ URL များကို စစ်ဆေးပေးသည်။ ဝဘ်ဆိုက်တစ်ခုက သင့်စကားဝှက်ကို ခိုးယူရန် ကြိုးပမ်းလာပါက သို့မဟုတ် အန္တရာယ်ရှိသည့်ဖိုင်တစ်ခုကို သင်ဒေါင်းလုဒ်လုပ်သည့်အခါ Banana Browser သည် Safe Browsing သို့ URL များအပြင် ဝဘ်ဆိုက်ပါ အကြောင်းအရာအချို့ကို ပို့နိုင်သည်။"</string>
 <string name="languages_set_application_language_prompt">"Banana Browser ၏ ဘာသာစကားအဖြစ် သုံးပါ"</string>
+<string name="languages_infobar_restart">"Banana Browser ကို ပိတ်ပြီးပြန်ဖွင့်ပါ"</string>
 <string name="data_reduction_benefits_description_lite_mode">"\'အပေါ့စားမုဒ်\' တွင် Banana Browser သည် စာမျက်နှာများကို ပိုမိုမြန်ဆန်စွာဖွင့်ပြီး ဒေတာကို ၆၀ ရာခိုင်နှုန်းအထိ လျှော့သုံးပါသည်။"</string>
 <string name="data_reduction_description_lite_mode">"\'အပေါ့စားမုဒ်\' ဖွင့်ထားသည့်အခါ စာမျက်နှာများ ပိုမိုမြန်ဆန်စွာ ဖွင့်နိုင်ရန် Banana Browser က Google ဆာဗာများကို အသုံးပြုသည်။ အရေးကြီး အကြောင်းအရာများကိုသာ ဖွင့်ရန် \'အပေါ့စားမုဒ်\' က အလွန်နှေးသော ဝဘ်စာမျက်နှာများကို ပြန်ရေးသည်။ \'အပေါ့စားမုဒ်\' ကို \'ရုပ်ဖျက်\' တဘ်များတွင် သုံး၍မရပါ။"</string>
 <string name="data_reduction_promo_summary_lite_mode">"\'အပေါ့စားမုဒ်\' တွင် Banana Browser သည် စာမျက်နှာများကို ပိုမိုမြန်ဆန်စွာဖွင့်ပြီး ဒေတာကို ၆၀ ရာခိုင်နှုန်းအထိ လျှော့သုံးပါသည်။ သင်ဝင်ကြည့်သည့် စာမျက်နှာများကို အကောင်းဆုံးချိန်ညှိရန် Banana Browser သည် သင့်ဝဘ် ဒေတာအသွားအလာများကို Google သို့ ပို့ပါသည်။ &lt;link&gt;ပိုမိုလေ့လာရန်&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"Banana Browser သည် စက်ပစ္စည်းများကိုရှာဖွေရန်အတွက် တည်နေရာအားအသုံးပြုခွင့်ရှိရန် လိုအပ်ပါသည်။ တည်နေရာအသုံးပြုခွင့်ကို &lt;services_link&gt;ဤစက်ပစ္စည်းအတွက် ပိတ်ထားပါသည်&lt;/services_link&gt;။"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser သည် စက်ပစ္စည်းများကို ရှာဖွေနိုင်ရန်အတွက် တည်နေရာအားအသုံးပြုခွင့်ရှိရန် လိုအပ်ပါသည်။ &lt;permission_link&gt;ခွင့်ပြုချက်များကို အပ်ဒိတ်လုပ်ပါ&lt;/permission_link&gt;။ တည်နေရာအသုံးပြုခွင့်ကို &lt;services_link&gt;ဤစက်ပစ္စည်းအတွက်လည်း ပိတ်ထားပါသည်&lt;/services_link&gt;။"</string>
 <string name="hint_android_sync_disabled">"Banana Browser စင့်ခ်ပြုလုပ်ခြင်းကို စတင်ရန် Android ဆက်တင်ကို ဖွင့်ပြီး Android စနစ်စင့်ခ်ပြုလုပ်ခြင်းကို ပြန်ဖွင့်ပါ"</string>
-<string name="hint_sync_settings_not_confirmed_description">"စင့်ခ် စတင်ရန်အတွက် \"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ\" ကို ဖွင့်ပါ။"</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"စင့်ခ် စတင်ရန်အတွက် \"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ\" ကို ဖွင့်ပါ။"</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser ကို ပိတ်ပြီးပြန်ဖွင့်ပါ"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser အပ်ဒိတ် ဒေါင်းလုဒ်လုပ်နေသည်…"</string>
 <string name="update_notification_title_default">"Update Banana Browser"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ကို Banana Browser တွင် ဖွင့်ပါမည်။ ရှေ့ဆက်ခြင်းအားဖြင့် သင်သည် &lt;LINK1&gt;Google ဝန်ဆောင်မှုစည်းမျဉ်းများ&lt;/LINK1&gt; နှင့် &lt;LINK2&gt;Google Banana Browser နှင့် Banana Browser OS ထပ်တိုး ဝန်ဆောင်မှုစည်းမျဉ်းများ&lt;/LINK2&gt; ကို သဘောတူရာရောက်သည်။ &lt;LINK3&gt;Family Link ဖြင့် ကြီးကြပ်ထားသည့် Google Account များအတွက် ပုဂ္ဂိုလ်ရေးဆိုင်ရာ ကြေညာချက်&lt;/LINK3&gt; လည်း အကျုံးဝင်သည်။"</string>
 <string name="fre_send_report_check">"အသုံးပြုမှု စာရင်းအင်းများ နှင့် ပျက်စီးမှု အစီရင်ခံစာများကို Google သို့ အလိုအလျောက် ပို့ပေးခြင်းဖြင့် Banana Browser ကို ပိုကောင်းမွန်အောင် ကူညီပေးပါ။"</string>
 <string name="fre_welcome">"Banana Browser မှ ကြိုဆိုပါသည်"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"သင့် Google Account ဖြင့် လက်မှတ်ထိုးဝင်ရပါမည်\n(၎င်းသည် Banana Browser စင့်ခ်ကို ဖွင့်မည်မဟုတ်ပါ)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"သင်၏ Google Account ဖြင့် ဤဝဘ်ဆိုက်နှင့် Banana Browser သို့ လက်မှတ်ထိုးဝင်ပါ။ စင့်ခ်လုပ်ခြင်းကို နောင်တွင် ဖွင့်နိုင်သည်။"</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser က သင့်အချက်အလက်ကို မစိစစ်နိုင်ခဲ့ပါ"</string>
 <string name="external_app_restricted_access_error">"တောင်းဆိုထားသည့် အရင်းမြစ်ကို Banana Browser သည် အသုံးပြုခွင့်မရှိပါ။"</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser အသုံးပြုနည်း"</string>
+<string name="video_tutorials_card_search">"Banana Browser ဖြင့် ရှာဖွေနည်း"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browser အသုံးပြုနည်းအကြောင်း ဗီဒီယိုများ"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser ကို လေ့လာခြင်း"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigate Banana Browser"</string>
 <string name="menu_update">"Update Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser အပ်ဒိတ်လုပ်၍မရပါ"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser ကို ပိတ်ပြီးပြန်ဖွင့်ပါ"</string>
@@ -88,7 +98,7 @@
 <string name="sogou_explanation">"Banana Browser သည် တရုတ်ပြည်တွင် ရှာဖွေရန် &lt;b&gt;Sogou&lt;/b&gt; ကို အသုံးပြုနိုင်ပါသည်။ ၎င်းကို &lt;link&gt;ဆက်တင်များ&lt;/link&gt; ထဲတွင် ပြောင်းလဲနိုင်သည်။"</string>
 <string name="app_running_in_chrome_disclosure">"ဤအက်ပ်သည် Banana Browser တွင် ပွင့်နေပါသည်"</string>
 <string name="twa_running_in_chrome">"Banana Browser တွင် ဖွင့်ထားသည်"</string>
-<string name="twa_running_in_chrome_v2">"သင်၏ %1$s လက်မှတ်ထိုးဝင်မှု အခြေအနေ၊ ဖွင့်ကြည့်ထားသည့်မှတ်တမ်းဒေတာနှင့် ဝဘ်ဆိုက်ဒေတာများကို Banana Browser တွင် မြင်ရပါမည်။"</string>
+<string name="twa_running_in_chrome_v2">"သင်၏ %1$s လက်မှတ်ထိုးဝင်မှု အခြေအနေ၊ ဖွင့်ကြည့်ထားသည့်မှတ်တမ်းဒေတာနှင့် ဝဘ်ဆိုက်ဒေတာများကို Banana Browser တွင် မြင်ရပါမည်"</string>
 <string name="twa_clear_data_dialog_title">"%1$s သည် Banana Browser တွင်လည်း ဒေတာများရှိသည်"</string>
 <string name="twa_clear_data_dialog_message">"ဒေတာများကို \'Banana Browser ဆက်တင်များ\' တွင် ရှင်းထုတ်နိုင်သည်"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser ကူညီရေးရာဌာနကို တဘ်အသစ်တွင် ဖွင့်ရန်"</string>

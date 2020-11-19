@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"‏استخدام اقتراح الملء التلقائي في Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"‏ما مِن كلمات مرور محفوظة. لا يستطيع متصفّح Banana Browser التحقّق من كلمات المرور إلا عند حفظها."</string>
 <string name="password_check_status_message_error_offline">"‏يتعذّر على Banana Browser التحقّق من كلمات المرور. يُرجى التحقّق من اتصال الإنترنت."</string>
 <string name="password_check_status_message_error_quota_limit">"‏تعذّر على متصفِّح Banana Browser التحقّق من جميع كلمات المرور. يُرجى إعادة المحاولة غدًا."</string>
 <string name="password_check_status_message_error_quota_limit_account_check">"‏تعذّر على متصفِّح Banana Browser التحقُّق من جميع كلمات المرور. يُرجى إعادة المحاولة غدًا أو &lt;link&gt;التحقُّق من كلمات المرور في حسابك على Google&lt;/link&gt;."</string>
 <string name="password_check_status_message_error_signed_out">"‏لا يستطيع Banana Browser التحقّق من كلمات المرور إلا عند تسجيل الدخول باستخدام حسابك على Google."</string>
 <string name="password_check_status_message_error_unknown">"‏يتعذّر على Banana Browser التحقّق من كلمات المرور. يُرجى إعادة المحاولة."</string>
-<string name="password_check_status_subtitle_no_findings">"‏في حال تسجيل الدخول باستخدام كلمة مرور محتمَل تعرّضها للاختراق، سيرسل Banana Browser إشعاراً إليك."</string>
+<string name="password_check_status_subtitle_no_findings">"‏في حال تسجيل الدخول باستخدام كلمة مرور محتمَل تعرّضها للاختراق، سيرسل Banana Browser إشعارًا إليك."</string>
 <string name="sign_in_to_chrome">"‏تسجيل الدخول إلى Banana Browser"</string>
 <string name="sync_switch_title">"‏مزامنة بيانات Banana Browser"</string>
+<string name="offer_chrome_signin_title">"‏السماح بتسجيل الدخول إلى Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"‏عرض تعليمات تسجيل الدخول إلى متصفِّح Banana Browser عند تسجيل الدخول إلى حسابك في Google"</string>
 <string name="usage_and_crash_reports_title">"‏المساعدة في تحسين ميزات Banana Browser وأدائه"</string>
 <string name="autofill_describe_local_copy">"‏تم النسخ إلى Banana Browser"</string>
 <string name="password_settings_export_action_description">"‏تصدير كلمات المرور المخزنة من خلال Banana Browser"</string>
 <string name="password_settings_export_subject">"‏كلمات المرور في Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"‏الصفحة الرئيسية لمتصفّح Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"‏الحصول على أعلى مستوى من الحماية في متصفِّح Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"‏المساعدة في تحسين أمان Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"‏لرصد التطبيقات ومواقع الويب الضارة، يُرسل Banana Browser عناوين URL لبعض الصفحات التي زرتها ومعلومات محدودة للنظام وبعض أنواع محتوى الصفحات إلى Google."</string>
 <string name="clear_browsing_data_history_dialog_title">"‏بيانات Banana Browser التي تم محوها"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"‏يوفِّر لك هذا الوضع حماية في Banana Browser، ويمكن استخدامه لتحسين مستوى أمانك في تطبيقات Google الأخرى عندما تكون مسجّلاً الدخول."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"‏يعمل على التحقّق من عناوين URL التي تحتوي على قائمة بمواقع إلكترونية غير آمنة مُخزّنة في Banana Browser. وإذا حاول موقع إلكتروني سرقة كلمة المرور أو إذا نزّلت ملفًا ضارًا، قد يرسل متصفّح Banana Browser أيضًا عناوين URL تتضمّن أجزاء من محتوى الصفحة إلى \"التصفّح الآمن\"."</string>
 <string name="languages_set_application_language_prompt">"‏الاستخدام كلغة Banana Browser"</string>
+<string name="languages_infobar_restart">"‏إعادة تشغيل Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60 بالمائة."</string>
 <string name="data_reduction_description_lite_mode">"‏عند تفعيل الوضع البسيط، يستخدم Banana Browser خدمات Google لتحميل الصفحات بشكلٍ أسرع. يعيد الوضع البسيط كتابة الصفحات البطيئة للغاية من أجل تحميل المحتوى الأساسي فقط. لا ينطبق الوضع البسيط على علامات تبويب التصفُّح المتخفي."</string>
 <string name="data_reduction_promo_summary_lite_mode">"‏في الوضع البسيط، يُحمِّل Banana Browser الصفحات بشكلٍ أسرع ويستخدم بيانات أقل بنسبة تصل إلى 60%. لتحسين مستوى أداء الصفحات التي تزورها، يرسل Banana Browser عدد زيارات الويب إلى Google. &lt;link&gt;مزيد من المعلومات&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_services_on">"‏يحتاج Banana Browser للوصول إلى الموقع للبحث عن الأجهزة. الوصول إلى الموقع &lt;services_link&gt;غير مفعّل لهذا الجهاز&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"‏يحتاج Banana Browser للوصول إلى الموقع للبحث عن الأجهزة. &lt;permission_link&gt;تحديث الأذونات&lt;/permission_link&gt;. الوصول إلى الموقع &lt;services_link&gt;غير مفعّل لهذا الجهاز&lt;/services_link&gt; أيضًا."</string>
 <string name="hint_android_sync_disabled">"‏فتح إعدادات Android وإعادة تفعيل مزامنة نظام Android لبدء مزامنة Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"‏لبدء المزامنة، يُرجى تفعيل \"مزامنة بيانات Banana Browser\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"‏لبدء المزامنة، يُرجى تفعيل \"مزامنة بيانات Banana Browser\"."</string>
 <string name="inline_update_infobar_ready_link_text">"‏إعادة تشغيل Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"‏جارٍ تنزيل تحديث Banana Browser…"</string>
 <string name="update_notification_title_default">"‏تحديث Banana Browser‏"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"‏سيتم فتح تطبيق %1$s في Banana Browser. تعني المتابعة موافقتك على &lt;LINK1&gt;بنود خدمة Google&lt;/LINK1&gt; و&lt;LINK2&gt;بنود الخدمة الإضافية لكل من متصفح Google Banana Browser و\"نظام التشغيل Banana Browser\"&lt;/LINK2&gt;. وينطبق ذلك أيضًا على &lt;LINK3&gt;إشعار الخصوصية لحسابات Google المُدارة من خلال Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"‏يمكنك المساعدة في تحسين Banana Browser عن طريق إرسال إحصاءات الاستخدام وتقارير الأعطال إلى Google."</string>
 <string name="fre_welcome">"‏مرحبًا بك في Banana Browser‏"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"‏سيتمّ تسجيل دخولك باستخدام حسابك على Google\n(لن يُفعِّل هذا الإجراء ميزة \"مزامنة Banana Browser\")."</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"‏سيتم تسجيل الدخول إلى هذا الموقع الإلكتروني وإلى Banana Browser باستخدام حسابك على Google. يمكنك تفعيل المزامنة لاحقًا."</string>
 <string name="signin_account_picker_general_error_subtitle">"‏تعذّر على متصفِّح Banana Browser التحقُّق من معلوماتك."</string>
 <string name="external_app_restricted_access_error">"‏لا تتوفر لمتصفح Banana Browser إمكانية الوصول إلى المورد المطلوب."</string>
+<string name="video_tutorials_card_chrome_intro">"‏كيفية استخدام Banana Browser"</string>
+<string name="video_tutorials_card_search">"‏كيفية البحث باستخدام Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"‏فيديوهات حول كيفية استخدام Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"‏التعرُّف على Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"‏التنقُّل في Banana Browser"</string>
 <string name="menu_update">"‏تحديث Banana Browser‏"</string>
 <string name="menu_update_unsupported">"‏يتعذَّر تحديث Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"‏إعادة تشغيل Banana Browser"</string>
@@ -88,7 +98,7 @@
 <string name="sogou_explanation">"‏يمكن لـ Banana Browser استخدام &lt;b&gt;Sogou&lt;/b&gt; للبحث في الصين. ويمكنك تغيير هذا في &lt;link&gt;الإعدادات&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"‏يتم تشغيل هذا التطبيق في Banana Browser"</string>
 <string name="twa_running_in_chrome">"‏قيد التشغيل في Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"‏ستظهر لك حالة تسجيل الدخول %1$s، وبيانات التصفُّح وبيانات الموقع الإلكتروني في متصفِّح Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"‏ستظهر لك حالة تسجيل الدخول على %1$s، وبيانات التصفُّح وبيانات الموقع الإلكتروني في Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"‏تتوفَّر بيانات%1$s أيضًا في Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"‏يمكنك محو البيانات في إعدادات Banana Browser."</string>
 <string name="keyboard_shortcut_help_center">"‏فتح مركز مساعدة Banana Browser في علامة تبويب جديدة"</string>

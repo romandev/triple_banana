@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Erabili Banana Browser-ren automatikoki betetzeko iradokizuna"</string>
 <string name="password_check_status_message_error_no_passwords">"Ez dago pasahitzik gordeta. Banana Browser-k pasahitzak egiazta ditzake gorde ondoren."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser-k ezin ditu egiaztatu pasahitzak. Egiaztatu Internetera konektatuta zaudela."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser-k ezin izan ditu egiaztatu pasahitz guztiak. Saiatu berriro bihar."</string>
@@ -9,18 +10,21 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser-k jakinarazpen bat bidaliko dizu arriskuan dagoen pasahitz batekin hasten duzunean saioa."</string>
 <string name="sign_in_to_chrome">"Hasi saioa Banana Browser-n"</string>
 <string name="sync_switch_title">"Sinkronizatu Banana Browser-ko datuak"</string>
+<string name="offer_chrome_signin_title">"Baimendu Banana Browser-n saioa hastea"</string>
+<string name="offer_chrome_signin_summary">"Erakutsi saioa hasteko Banana Browser-ren onarpen-mezuak Google-ko kontuan saioa hasten duzunean"</string>
 <string name="usage_and_crash_reports_title">"Lagundu Banana Browser-ren eginbideak eta errendimendua hobetzen"</string>
 <string name="autofill_describe_local_copy">"Banana Browser-n kopiatu da"</string>
 <string name="password_settings_export_action_description">"Esportatu Banana Browser-rekin gordetako pasahitzak"</string>
 <string name="password_settings_export_subject">"Banana Browser-ko pasahitzak"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser-ren hasierako pantaila"</string>
+<string name="enhanced_protection_promo_title">"Lortu Banana Browser-ren segurtasun-neurri sendoenak"</string>
 <string name="safe_browsing_scout_reporting_title">"Lagundu Banana Browser-ren segurtasuna hobetzen"</string>
 <string name="safe_browsing_scout_reporting_summary">"Aplikazio eta webgune arriskutsuak hautemateko, ireki dituzun orrietako batzuen URLak, sistemari buruzko informazio mugatua eta orrietako edukiaren zati bat bidaltzen dizkio Banana Browser-k Google-ri."</string>
 <string name="clear_browsing_data_history_dialog_title">"Garbitu dira Banana Browser-ko datuak"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"Kendu dira hautatutako datuak Banana Browser-tik eta sinkronizatutako gailuetatik.
 
 Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, bilaketak eta beste Google-ren zerbitzu batzuetako jarduerak) edukitzea &lt;link&gt;history.google.com&lt;/link&gt; webgunean."</string>
-<string name="safety_check_description">"Datuen isilpekotasunaren urratzeen, seguruak ez diren webguneen eta abarren aurrean babes zaitzake Banana Browser-k"</string>
+<string name="safety_check_description">"Datuen isilpekotasunaren urratzeen, seguruak ez diren webguneen eta abarren aurrean babes zaitzake Banana Browser-k."</string>
 <string name="safety_check_passwords_error">"Banana Browser-k ezin ditu egiaztatu pasahitzak"</string>
 <string name="safety_check_passwords_error_offline">"Konexiorik gabe. Banana Browser-k ezin ditu egiaztatu pasahitzak."</string>
 <string name="safety_check_passwords_error_quota_limit">"Banana Browser-k ezin izan ditu egiaztatu pasahitz guztiak"</string>
@@ -31,6 +35,7 @@ Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, 
 <string name="safe_browsing_enhanced_protection_bullet_two">"Babestuta mantentzen zaitu Banana Browser-n, eta segurtasuna hobetzeko erabil daiteke Google-ren beste aplikazio batzuetan saioa hasita daukazunean."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"URLak Banana Browser-n gordetako webgune ez-seguruen zerrendan dauden ala ez egiaztatzen du. Webguneren bat pasahitza lapurtzen saiatzen bada, edo fitxategi kaltegarriren bat deskargatzen baduzu, baliteke Banana Browser-k URLak ere bidaltzea (orriko edukiaren zati batzuk barne) Arakatze segurua eginbideari."</string>
 <string name="languages_set_application_language_prompt">"Erabili Banana Browser-n hizkuntza gisa"</string>
+<string name="languages_infobar_restart">"Berrabiarazi Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Oinarrizko moduari esker, Banana Browser-k bizkorrago kargatzen ditu orriak, datuen ehuneko 60raino aurreztuta."</string>
 <string name="data_reduction_description_lite_mode">"Oinarrizko modua aktibatuta dagonean, Banana Browser-k Google-ren zerbitzariak erabiltzen ditu orriak bizkorrago karga daitezen. Oinarrizko modua eginbideak oso motel kargatzen diren orriak berriro idazten ditu, oinarrizko edukia soilik karga dadin. Oinarrizko modua ez da aplikatzen ezkutuko moduko fitxetan."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Oinarrizko moduari esker, Banana Browser-k bizkorrago kargatzen ditu orriak, datuen % 60raino aurreztuta. Bisitatzen dituzun orriak optimizatzeko, Banana Browser-k Google-ra bidaltzen du sareko trafikoa. &lt;link&gt;Lortu informazio gehiago&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, 
 <string name="bluetooth_need_location_services_on">"Banana Browser-k kokapenerako sarbidea izan behar du gailuak bilatzeko. Kokapenerako sarbidea &lt;services_link&gt;desaktibatuta dago gailu honetan&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser-k kokapenerako sarbidea izan behar du gailuak bilatzeko. &lt;permission_link&gt;Eguneratu baimenak&lt;/permission_link&gt;. Kokapenerako sarbidea &lt;services_link&gt;desaktibatuta dago gailu honetan&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Ireki Android-en ezarpenak eta gaitu Android sistemaren sinkronizazioa Banana Browser sinkronizatzeko"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Sinkronizatzen hasteko, aktibatu \"Sinkronizatu Banana Browser-ko datuak\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Sinkronizatzen hasteko, aktibatu \"Sinkronizatu Banana Browser-ko datuak\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Berrabiarazi Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser-ren eguneratzea deskargatzen…"</string>
 <string name="update_notification_title_default">"Eguneratu Banana Browser"</string>
@@ -70,9 +75,14 @@ Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Banana Browser-n irekiko da %1$s. Aurrera egiten baduzu, onartu egingo dituzu &lt;LINK1&gt;Google-ren Zerbitzu-baldintzak&lt;/LINK1&gt; eta &lt;LINK2&gt;Google Banana Browser-ren eta Banana Browser OS-ren Zerbitzu-baldintza gehigarriak&lt;/LINK2&gt;. &lt;LINK3&gt;Family Link aplikazioaren bidez kudeatutako Google-ko kontuen Pribatutasun-oharra&lt;/LINK3&gt; aplikatzen da ere."</string>
 <string name="fre_send_report_check">"Hobetu Banana Browser Google-ri erabilera-estatistikak eta hutsegite-txostenak bidalita."</string>
 <string name="fre_welcome">"Ongi etorri Banana Browser-ra"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Google-ko kontuarekin hasiko duzu saioa\n(ez da aktibatuko Banana Browser-ren Sinkronizazioa)."</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Hasi saioa webgune honetan eta Banana Browser-n Google-ko kontuarekin. Geroago aktiba dezakezu sinkronizazioa."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser-k ezin izan du egiaztatu zure informazioa"</string>
 <string name="external_app_restricted_access_error">"Banana Browser-k ez du eskatutako baliabiderako sarbiderik."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser erabiltzeko argibideak"</string>
+<string name="video_tutorials_card_search">"Banana Browser-rekin bilatzeko argibideak"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browser erabiltzeko argibideei buruzko bideoak"</string>
+<string name="video_tutorials_learn_chrome">"Ikasi Banana Browser erabiltzen"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browser-n nabigatzea"</string>
 <string name="menu_update">"Eguneratu Banana Browser"</string>
 <string name="menu_update_unsupported">"Ezin da eguneratu Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Berrabiarazi Banana Browser"</string>
@@ -88,7 +98,7 @@ Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, 
 <string name="sogou_explanation">"Txinan, &lt;b&gt;Sogou&lt;/b&gt; erabil dezake Banana Browser-k bilatzaile gisa. &lt;link&gt;Ezarpenak&lt;/link&gt; atalean alda dezakezu hori."</string>
 <string name="app_running_in_chrome_disclosure">"Banana Browser-n da abian aplikazioa"</string>
 <string name="twa_running_in_chrome">"Banana Browser-n abian da"</string>
-<string name="twa_running_in_chrome_v2">"%1$s webgunean saioa hasi duzun ala ez, arakatze-datuak, eta webguneko datuak ikusiko dituzu Banana Browser-n."</string>
+<string name="twa_running_in_chrome_v2">"%1$s webgunean saioa hasi duzun ala ez, arakatze-datuak eta webguneko datuak ikusiko dituzu Banana Browser-n"</string>
 <string name="twa_clear_data_dialog_title">"%1$s aplikazioak ere baditu datuak Banana Browser-n"</string>
 <string name="twa_clear_data_dialog_message">"Banana Browser ezarpenetan garbi ditzakezu datuak"</string>
 <string name="keyboard_shortcut_help_center">"Ireki Banana Browser laguntza-zentroa beste fitxa batean"</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Kasuta Banana Browser\'i automaattäite soovitust"</string>
 <string name="password_check_status_message_error_no_passwords">"Salvestatud paroole ei ole. Banana Browser saab teie paroole kontrollida, kui olete need salvestanud."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser ei saa teie paroole kontrollida. Kontrollige internetiühendust."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser\'il ei õnnestunud kõiki paroole kontrollida. Proovige homme uuesti."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser teavitab teid, kui logite sisse ohustatud parooliga."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'i sisselogimine"</string>
 <string name="sync_switch_title">"Banana Browser\'i andmete sünkroonimine"</string>
+<string name="offer_chrome_signin_title">"Luba Banana Browser\'i sisselogimine"</string>
+<string name="offer_chrome_signin_summary">"Kuva Google\'i kontole sisse logides Banana Browser\'i sisselogimisviibad"</string>
 <string name="usage_and_crash_reports_title">"Aidake täiustada Banana Browser\'i funktsioone ja toimivust"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'i kopeeritud"</string>
 <string name="password_settings_export_action_description">"Banana Browser\'i salvestatud paroolide eksportimine"</string>
 <string name="password_settings_export_subject">"Banana Browser\'i paroolid"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser\'i avaleht"</string>
+<string name="enhanced_protection_promo_title">"Hankige Banana Browser\'i parim turvatase"</string>
 <string name="safe_browsing_scout_reporting_title">"Aidake Banana Browser\'i turvalisust täiustada"</string>
 <string name="safe_browsing_scout_reporting_summary">"Ohtlike rakenduste ja saitide tuvastamiseks saadab Banana Browser mõnede teie külastatud lehtede URL-id, piiratud süsteemiteabe ja mõne lehe sisu Google\'ile"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser\'i andmed kustutati"</string>
@@ -31,6 +35,7 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="safe_browsing_enhanced_protection_bullet_two">"Kaitseb teid Banana Browser\'is ja seda võidakse kasutada teie turvalisuse suurendamiseks muudes Google\'i rakendustes, kui olete sisse logitud."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Kontrollib URL-e Banana Browser\'i talletatud ohtlike saitide loendi alusel. Kui sait üritab teie parooli varastada või laadite alla kahjuliku faili, võib Banana Browser saata URL-id ja lehe sisu osad teenusesse Google\'i ohutu sirvimine."</string>
 <string name="languages_set_application_language_prompt">"Kasuta Banana Browser\'i keelena"</string>
+<string name="languages_infobar_restart">"Taaskäivitage Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Lihtsustatud režiimis laadib Banana Browser lehti kiiremini ja kasutab kuni 60 protsenti vähem andmemahtu."</string>
 <string name="data_reduction_description_lite_mode">"Kui lihtsustatud režiim on sees, kasutab Banana Browser Google\'i servereid, et lehtede laadimist kiirendada. Lihtsustatud režiim kirjutab väga aeglased lehed ümber, et laadida ainult oluline sisu. Lihtsustatud režiimi ei saa kasutada inkognito režiimis vahelehtedel."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Lihtsustatud režiimis laadib Banana Browser lehti kiiremini ja kasutab kuni 60% vähem andmemahtu. Külastatud lehtede optimeerimiseks saadab Banana Browser teie veebiliikluse Google’ile. &lt;link&gt;Lisateave&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="bluetooth_need_location_services_on">"Banana Browser vajab seadmete otsimiseks juurdepääsu teie asukohale. Juurdepääs asukohale on &lt;services_link&gt;selles seadmes välja lülitatud&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser vajab seadmete otsimiseks juurdepääsu teie asukohale. &lt;permission_link&gt;Värskendage lube&lt;/permission_link&gt;. Juurdepääs asukohale on samuti &lt;services_link&gt;selles seadmes välja lülitatud&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Banana Browser\'i sünkroonimise alustamiseks avage Androidi seaded ja lubage uuesti Androidi süsteemi sünkroonimine"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Sünkroonimise alustamiseks lülitage sisse valik „Banana Browser\'i andmete sünkroonimine”."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Sünkroonimise alustamiseks lülitage sisse valik „Banana Browser\'i andmete sünkroonimine”."</string>
 <string name="inline_update_infobar_ready_link_text">"Taaskäivitage Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser\'i värskenduse allalaadimine …"</string>
 <string name="update_notification_title_default">"Värskenda Banana Browser\'i"</string>
@@ -70,9 +75,14 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s avaneb Banana Browser\'is. Jätkates nõustute &lt;LINK1&gt;Google\'i teenusetingimustega&lt;/LINK1&gt; ning &lt;LINK2&gt;Google Banana Browser\'i ja Banana Browser OS-i lisateenusetingimustega&lt;/LINK2&gt;. Kehtib ka &lt;LINK3&gt;Family Linkiga hallatavate Google’i kontode privaatsusteatis&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Aidake muuta Banana Browser\'i paremaks, saates Google\'ile kasutusstatistikat ja krahhiaruandeid."</string>
 <string name="fre_welcome">"Tere tulemast Banana Browser\'i"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Teid logitakse oma Google\'i kontole sisse\n(see ei lülita Banana Browser\'i sünkroonimist sisse)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Logite sellele saidile ja Banana Browser\'i sisse oma Google\'i kontoga. Sünkroonimise saate hiljem sisse lülitada."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser\'il ei õnnestunud teie teavet kinnitada"</string>
 <string name="external_app_restricted_access_error">"Banana Browser\'il pole soovitud allikale juurdepääsu."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser\'i kasutamine"</string>
+<string name="video_tutorials_card_search">"Kuidas Banana Browser\'iga otsida?"</string>
+<string name="video_tutorials_card_all_videos">"Videod Banana Browser\'i kasutamise kohta"</string>
+<string name="video_tutorials_learn_chrome">"Õppige Banana Browser\'i kasutama"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browser\'is navigeerimine"</string>
 <string name="menu_update">"Värskenda Banana Browser\'i"</string>
 <string name="menu_inline_update_ready_summary">"Taaskäivitage Banana Browser"</string>
 <string name="menu_open_in_chrome">"Ava Banana Browser\'is"</string>
@@ -87,7 +97,7 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="sogou_explanation">"Banana Browser saab Hiinas otsimiseks kasutada teenust &lt;b&gt;Sogou&lt;/b&gt;. Seda saate muuta menüüs &lt;link&gt;Seaded&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Rakendus töötab Banana Browser\'is"</string>
 <string name="twa_running_in_chrome">"Töötab Banana Browser\'is"</string>
-<string name="twa_running_in_chrome_v2">"Näete Banana Browser\'is oma saidi %1$s sisselogimise olekut, sirvimisandmeid ja saidi andmeid."</string>
+<string name="twa_running_in_chrome_v2">"Näete Banana Browser\'is oma saidi %1$s sisselogimise olekut, sirvimisandmeid ja saidi andmeid"</string>
 <string name="twa_clear_data_dialog_title">"Rakendusel %1$s on samuti Banana Browser’i andmeid"</string>
 <string name="twa_clear_data_dialog_message">"Andmeid saab kustutada Banana Browser’i seadetes."</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser\'i abikeskuse avamine uuel vahelehel"</string>

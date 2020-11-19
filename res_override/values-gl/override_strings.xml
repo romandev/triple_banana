@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Usar a suxestión da función de autocompletar de Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Non hai contrasinais gardados. Banana Browser pode comprobar os teus contrasinais cando os gardes."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser non puido comprobar os teus contrasinais. Verifica a conexión a Internet."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser non puido comprobar todos os contrasinais. Téntao de novo mañá."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser enviarache unha notificación cando inicies sesión cun contrasinal vulnerado."</string>
 <string name="sign_in_to_chrome">"Iniciar sesión en Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizar os teus datos de Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Permitir inicio de sesión en Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Mostrar solicitudes de inicio de sesión en Banana Browser cando inicies sesión na túa Conta de Google"</string>
 <string name="usage_and_crash_reports_title">"Axudar a mellorar o rendemento e as funcións de Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Copiouse en Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exporta os contrasinais almacenados en Banana Browser"</string>
 <string name="password_settings_export_subject">"Contrasinais de Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Páxina de inicio de Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Goza da máxima seguranza de Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Axudar a mellorar a seguranza de Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Para detectar aplicacións e sitios perigosos, Banana Browser envíalle a Google os URL dalgunhas das páxinas que visitas, parte da información do sistema e parte do contido das páxinas"</string>
 <string name="clear_browsing_data_history_dialog_title">"Borráronse os datos de Banana Browser"</string>
@@ -30,6 +34,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"Protéxete en Banana Browser e pode utilizarse para mellorar a túa seguranza noutras aplicacións de Google cando teñas a sesión iniciada."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Comproba enderezos URL cunha lista de sitios non seguros almacenada en Banana Browser. Se un sitio tenta roubarche o contrasinal ou se descargas un ficheiro daniño, Banana Browser tamén pode comprobar os enderezos URL, entre os que se inclúen fragmentos de contido das páxinas, a través da función Navegación segura."</string>
 <string name="languages_set_application_language_prompt">"Usar como idioma de Banana Browser"</string>
+<string name="languages_infobar_restart">"Reinicia Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"No modo básico, Banana Browser carga as páxinas máis rápido e usa un 60 por cento menos de datos."</string>
 <string name="data_reduction_description_lite_mode">"Cando está activado o modo básico, Banana Browser usa os servidores de Google para facer que as páxinas carguen máis rápido. O modo básico reescribe as páxinas que se executan de forma moi lenta para que carguen só contido esencial. O modo básico non se aplica ás pestanas do modo de incógnito."</string>
 <string name="data_reduction_promo_summary_lite_mode">"No modo básico, Banana Browser carga as páxinas máis rápido e usa un 60 % menos de datos. Para optimizar as páxinas que visitas, Banana Browser envíalle o teu tráfico web a Google. &lt;link&gt;Máis información&lt;/link&gt;"</string>
@@ -52,7 +57,7 @@
 <string name="bluetooth_need_location_services_on">"Banana Browser necesita acceder á localización para buscar dispositivos. O acceso á localización deste dispositivo está &lt;services_link&gt;desactivado&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser necesita acceder á localización para buscar dispositivos. &lt;permission_link&gt;Actualizar permisos&lt;/permission_link&gt;. O acceso á localización deste dispositivo está &lt;services_link&gt;desactivado&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Sincronizar Banana Browser: abre a config. de Android e sincroniza de novo o seu sistema"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Para iniciar a sincronización, activa a opción Sincronizar os teus datos de Banana Browser."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Para iniciar a sincronización, activa a opción Sincronizar os teus datos de Banana Browser."</string>
 <string name="inline_update_infobar_ready_link_text">"Reinicia Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Descargando actualización de Banana Browser…"</string>
 <string name="update_notification_title_default">"Actualizar Banana Browser"</string>
@@ -69,9 +74,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s abrirase en Banana Browser. Ao continuar, aceptas as &lt;LINK1&gt;Condicións de servizo de Google&lt;/LINK1&gt;, así como as &lt;LINK2&gt;Condicións de servizo adicionais de Google Banana Browser e Banana Browser OS&lt;/LINK2&gt;. Tamén se aplica o &lt;LINK3&gt;Aviso de privacidade das Contas de Google xestionadas a través de Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Axúdanos a mellorar Banana Browser enviando estatísticas de uso e informes de erros a Google."</string>
 <string name="fre_welcome">"Dámosche a benvida a Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Iniciarás sesión coa túa Conta de Google\n(isto non activará a Sincronización de Banana Browser)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Inicia sesión coa túa Conta de Google neste sitio e en Banana Browser. Podes activar a sincronización máis tarde."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser non puido verificar a túa información"</string>
 <string name="external_app_restricted_access_error">"Banana Browser non ten acceso ao recurso solicitado."</string>
+<string name="video_tutorials_card_chrome_intro">"Como usar Banana Browser?"</string>
+<string name="video_tutorials_card_search">"Como facer buscas con Banana Browser?"</string>
+<string name="video_tutorials_card_all_videos">"Vídeos sobre como usar Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Aprende a usar Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navega por Banana Browser"</string>
 <string name="menu_update">"Actualizar Banana Browser"</string>
 <string name="menu_update_unsupported">"Non se actualiza Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Reinicia Banana Browser"</string>
@@ -87,7 +97,7 @@
 <string name="sogou_explanation">"Banana Browser pode utilizar &lt;b&gt;Sogou&lt;/b&gt; para a busca en China. Podes cambiar esta opción en &lt;link&gt;Configuración&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Esta aplicación execútase en Banana Browser"</string>
 <string name="twa_running_in_chrome">"A páxina estase executando en Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Poderás ver o teu estado de inicio de sesión en %1$s, os teus datos de navegación e os datos do sitio en Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Poderás ver o teu estado de inicio de sesión de %1$s, os teus datos de navegación e os datos do sitio en Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s tamén ten datos en Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Podes borrar os datos na configuración de Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Abrir o Centro de Axuda de Banana Browser nunha nova pestana"</string>

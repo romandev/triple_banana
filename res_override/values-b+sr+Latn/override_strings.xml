@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Koristite predlog Banana Browser automatskog popunjavanja"</string>
 <string name="password_check_status_message_error_no_passwords">"Nema sačuvanih lozinki. Banana Browser može da proverava lozinke kada ih sačuvate."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser ne može da vam proverava lozinke. Proverite internet vezu."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser nije uspeo da proveri sve lozinke. Probajte ponovo sutra."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser će vas obavestiti kada se prijavite pomoću ugrožene lozinke."</string>
 <string name="sign_in_to_chrome">"Prijavljivanje u Banana Browser"</string>
 <string name="sync_switch_title">"Sinhronizujte Banana Browser podatke"</string>
+<string name="offer_chrome_signin_title">"Dozvoli prijavljivanje u Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Prikaži Banana Browser upite za prijavljivanje pri prijavljivanju na Google nalog"</string>
 <string name="usage_and_crash_reports_title">"Pomozite nam da poboljšamo Banana Browser-ove funkcije i učinak"</string>
 <string name="autofill_describe_local_copy">"Kopirana u Banana Browser"</string>
 <string name="password_settings_export_action_description">"Izvezite lozinke sačuvane u Banana Browser-u"</string>
 <string name="password_settings_export_subject">"Lozinke za Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser početna stranica"</string>
+<string name="enhanced_protection_promo_title">"Nabavite najjaču zaštitu u Banana Browser-u"</string>
 <string name="safe_browsing_scout_reporting_title">"Pomozite nam da poboljšamo Banana Browser bezbednost"</string>
 <string name="safe_browsing_scout_reporting_summary">"Da bi otkrivao opasne aplikacije i sajtove, Banana Browser šalje Google-u URL-ove nekih stranica koje posećujete, ograničene informacije o sistemu i određeni sadržaj stranica"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser podaci su obrisani"</string>
@@ -31,6 +35,7 @@ Google nalog možda ima druge oblike istorije pregledanja, poput pretraga i akti
 <string name="safe_browsing_enhanced_protection_bullet_two">"Štiti vas u Banana Browser-u i može da se koristi za poboljšanje bezbednosti u drugim Google aplikacijama kada ste prijavljeni."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Proverava URL-ove sa listom nebezbednih sajtova koji se čuvaju u Banana Browser-u. Ako neki sajt pokuša da ukrade vašu lozinku ili probate da preuzmete štetnu datoteku, Banana Browser može da pošalje URL-ove, uključujući delove sadržaja stranice, u Bezbedno pregledanje."</string>
 <string name="languages_set_application_language_prompt">"Koristi kao jezik Banana Browser-a"</string>
+<string name="languages_infobar_restart">"Ponovo pokrenite Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"U Lite režimu Banana Browser učitava stranice brže i koristi i do 60 procenata manje podataka."</string>
 <string name="data_reduction_description_lite_mode">"Kada je Lite režim uključen, Banana Browser ubrzava učitavanje stranica pomoću Google servera. Lite režim ponovo upisuje veoma spore stranice da bi učitavale samo sadržaj koji je neophodan. Lite režim se ne primenjuje na kartice bez arhiviranja."</string>
 <string name="data_reduction_promo_summary_lite_mode">"U Lite režimu Banana Browser učitava stranice brže i koristi i do 60 procenata manje podataka. Da bi optimizovao stranice koje posećujete, Banana Browser šalje Google-u vaš saobraćaj na vebu. &lt;link&gt;Saznajte više&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Google nalog možda ima druge oblike istorije pregledanja, poput pretraga i akti
 <string name="bluetooth_need_location_services_on">"Banana Browser-u je potreban pristup lokaciji da bi tražio uređaje. Pristup lokaciji je &lt;services_link&gt;isključen za ovaj uređaj&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser-u je potreban pristup lokaciji da bi tražio uređaje. &lt;permission_link&gt;Ažurirajte dozvole&lt;/permission_link&gt;. Pristup lokaciji je takođe &lt;services_link&gt;isključen za ovaj uređaj&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Otvorite Android podešavanja i ponovo omogućite sinhronizaciju Android sistema da biste započeli Banana Browser sinhronizaciju"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Da biste pokrenuli sinhronizaciju, uključite opciju „Sinhronizujte Banana Browser podatke“."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Da biste pokrenuli sinhronizaciju, uključite opciju „Sinhronizujte Banana Browser podatke“."</string>
 <string name="inline_update_infobar_ready_link_text">"Ponovo pokrenite Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Preuzima se ažuriranje za Banana Browser…"</string>
 <string name="update_notification_title_default">"Ažuriraj Banana Browser"</string>
@@ -70,9 +75,14 @@ Google nalog možda ima druge oblike istorije pregledanja, poput pretraga i akti
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s će se otvoriti u Banana Browser-u. Ako nastavite, prihvatate &lt;LINK1&gt;Google uslove korišćenja usluge&lt;/LINK1&gt; i &lt;LINK2&gt;dodatne uslove korišćenja usluge za Google Banana Browser i Banana Browser OS&lt;/LINK2&gt;. Primenjuje se i &lt;LINK3&gt;Obaveštenje o privatnosti za Google naloge kojima se upravlja preko Family Link-a&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Poboljšajte Banana Browser slanjem statistike korišćenja i izveštaja o otkazivanju Google-u."</string>
 <string name="fre_welcome">"Dobro došli u Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Bićete prijavljeni pomoću Google naloga\n(to neće uključiti Banana Browser sinhronizaciju)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Prijavite se na ovaj sajt i u Banana Browser pomoću Google naloga. Sinhronizaciju možete da uključite kasnije."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser nije uspeo da potvrdi podatke"</string>
 <string name="external_app_restricted_access_error">"Banana Browser nema pristup zahtevanom resursu."</string>
+<string name="video_tutorials_card_chrome_intro">"Kako da koristite Banana Browser"</string>
+<string name="video_tutorials_card_search">"Kako da pretražujete pomoću Banana Browser-a"</string>
+<string name="video_tutorials_card_all_videos">"Video snimci o tome kako da koristite Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Upoznajte se sa Banana Browser-om"</string>
+<string name="video_tutorials_tile_chrome_intro">"Krećite se po Banana Browser-u"</string>
 <string name="menu_update">"Ažuriraj Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser se neće ažurirati"</string>
 <string name="menu_inline_update_ready_summary">"Ponovo pokrenite Banana Browser"</string>
@@ -88,7 +98,7 @@ Google nalog možda ima druge oblike istorije pregledanja, poput pretraga i akti
 <string name="sogou_explanation">"Banana Browser može da koristi &lt;b&gt;Sogou&lt;/b&gt; za pretragu u Kini. Ovo možete da promenite u &lt;link&gt;Podešavanjima&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Ova aplikacija je aktivna u Banana Browser-u"</string>
 <string name="twa_running_in_chrome">"Pokrenuto je u Banana Browser-u"</string>
-<string name="twa_running_in_chrome_v2">"Videćete status prijave na %1$s, podatke pregledanja i podatke o sajtu u Banana Browser-u."</string>
+<string name="twa_running_in_chrome_v2">"U Banana Browser-u ćete videti da li ste prijavljeni, podatke pregledanja i podatke o sajtu za %1$s"</string>
 <string name="twa_clear_data_dialog_title">"%1$s takođe ima podatke u Banana Browser-u"</string>
 <string name="twa_clear_data_dialog_message">"Možete da obrišete podatke u Banana Browser podešavanjima"</string>
 <string name="keyboard_shortcut_help_center">"Otvaranje Banana Browser centra za pomoć na novoj kartici"</string>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Nota tillögu fyrir sjálfvirka útfyllingu í Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Engin vistuð aðgangsorð. Banana Browser getur athugað aðgangsorðin þín þegar þú vistar þau."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser getur ekki athugað aðgangsorðin þín. Athugaðu nettenginguna þína."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser gat ekki athugað öll aðgangsorð. Reyndu aftur á morgun."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser lætur þig vita þegar þú skráir þig inn með aðgangsorði í hættu."</string>
 <string name="sign_in_to_chrome">"Skráðu þig inn á Banana Browser"</string>
 <string name="sync_switch_title">"Samstilla gögnin þín í Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Leyfa innskráningu í Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Sýna áminningar um innskráningu á Banana Browser þegar þú skráir þig inn á Google reikninginn þinn"</string>
 <string name="usage_and_crash_reports_title">"Hjálpaðu til við að bæta eiginleika og afköst Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Afritað yfir í Banana Browser"</string>
 <string name="password_settings_export_action_description">"Flytja aðgangsorð út úr Banana Browser"</string>
 <string name="password_settings_export_subject">"Aðgangsorð í Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Heimasíða Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Fá mesta öryggi Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Hjálpaðu til við að bæta öryggi Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Til að greina hættuleg forrit og vefsvæði sendir Banana Browser vefslóðir einhverra síðna sem þú skoðar, kerfisupplýsingar og efni síðu til Google."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser gögnum eytt"</string>
@@ -31,6 +35,7 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="safe_browsing_enhanced_protection_bullet_two">"Tryggir öryggi þitt í Banana Browser og kann að vera notað til að auka öryggi þitt í öðrum Google forritum þegar þú hefur skráð þig inn."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Ber vefslóðir saman við lista yfir óörugg vefsvæði sem er vistaður í Banana Browser. Ef vefsvæði reynir að stela aðgangsorðinu þínu, eða ef þú sækir skaðlega skrá, gæti Banana Browser einnig sent vefslóðir í Örugga vefskoðun, þar á meðal hluta af innihaldi síðna."</string>
 <string name="languages_set_application_language_prompt">"Nota sem tungumál í Banana Browser"</string>
+<string name="languages_infobar_restart">"Endurræsa Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Í léttútgáfu hleður Banana Browser síðum hraðar og notar allt að 60 prósentum minna gagnamagn."</string>
 <string name="data_reduction_description_lite_mode">"Þegar kveikt er á léttútgáfu notar Banana Browser þjóna Google til að hlaða síðum hraðar. Léttútgáfa endurskrifar mjög hægar síður og hleður aðeins nauðsynlegu efni. Léttútgáfa er ekki notuð á huliðsflipum."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Í léttútgáfu hleður Banana Browser síðum hraðar og notar allt að 60% minna gagnamagn. Banana Browser sendir vefumferð þína til Google til þess að geta fínstillt síðurnar sem þú opnar. &lt;link&gt;Frekari upplýsingar&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="bluetooth_need_location_services_on">"Banana Browser þarf að hafa aðgang að staðsetningu til að geta leitað að tækjum. Aðgangur að staðsetningu er &lt;services_link&gt;óvirkur fyrir þetta tæki&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser þarf að hafa aðgang að staðsetningu til að geta leitað að tækjum. &lt;permission_link&gt;Uppfæra heimildir&lt;/permission_link&gt;. Aðgangur að staðsetningu er einnig &lt;services_link&gt;óvirkur fyrir þetta tæki&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Kveiktu á samstillingu kerfis í Android stillingum til að samstilla Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Til að hefja samstillingu skaltu kveikja á „Samstilla gögnin þín í Banana Browser“."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Til að hefja samstillingu skaltu kveikja á „Samstilla gögnin þín í Banana Browser“."</string>
 <string name="inline_update_infobar_ready_link_text">"Endurræsa Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Sækir Banana Browser uppfærslu…"</string>
 <string name="update_notification_title_default">"Uppfæra Banana Browser"</string>
@@ -70,9 +75,14 @@ Google reikningurinn þinn kann að vera með annars konar vefskoðunarferil, sv
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s mun opnast í Banana Browser. Með því að halda áfram samþykkir þú &lt;LINK1&gt;þjónustuskilmála Google&lt;/LINK1&gt; og &lt;LINK2&gt;viðbótarskilmála Google Banana Browser og Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Persónuvernd fyrir Google reikninga sem stjórnað er með Family Link&lt;/LINK3&gt; gildir einnig."</string>
 <string name="fre_send_report_check">"Hjálpaðu til við að bæta Google Banana Browser með því að senda talnagögn um notkun og tilkynningar um hrun til Google."</string>
 <string name="fre_welcome">"Velkomin(n) í Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Þú verður skráð(ur) inn á Google reikninginn þinn\n(þetta mun ekki kveikja á Banana Browser samstillingu)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Skráðu þig inn á þetta vefsvæði og Banana Browser með Google reikningnum þínum. Þú getur kveikt á samstillingu síðar."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser gat ekki staðfest upplýsingarnar þínar"</string>
 <string name="external_app_restricted_access_error">"Banana Browser hefur ekki aðgang að umbeðnu tilfangi."</string>
+<string name="video_tutorials_card_chrome_intro">"Svona notarðu Banana Browser"</string>
+<string name="video_tutorials_card_search">"Svona leitarðu með Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Myndskeið um hvernig á að nota Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Læra á Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Flettu í Banana Browser"</string>
 <string name="menu_update">"Uppfæra Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Endurræsa Banana Browser"</string>
 <string name="menu_open_in_chrome">"Opna í Banana Browser"</string>

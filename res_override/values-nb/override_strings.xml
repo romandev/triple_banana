@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Bruk autofyllforslag fra Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Ingen lagrede passord. Banana Browser kan sjekke passordene dine når du lagrer dem."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser kan ikke sjekke passordene dine. Prøv å kontrollere internettilkoblingen."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser kunne ikke sjekke alle passordene. Prøv på nytt i morgen."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser varsler deg når du logger på med passord som er utsatt for sikkerhetsbrudd."</string>
 <string name="sign_in_to_chrome">"Logg på Banana Browser"</string>
 <string name="sync_switch_title">"Synkroniser Banana Browser-dataene dine"</string>
+<string name="offer_chrome_signin_title">"Tillat Banana Browser-pålogging"</string>
+<string name="offer_chrome_signin_summary">"Vis påloggingsbilde for Banana Browser når du logger på Google-kontoen din"</string>
 <string name="usage_and_crash_reports_title">"Hjelp til med å forbedre funksjonene og ytelsen til Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Kopiert til Banana Browser"</string>
 <string name="password_settings_export_action_description">"Eksportér passord som er lagret med Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser-passord"</string>
 <string name="options_homepage_chrome_homepage">"Startsiden for Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Få den sterkeste sikkerheten Banana Browser tilbyr"</string>
 <string name="safe_browsing_scout_reporting_title">"Bidra til å gjøre Banana Browser sikrere"</string>
 <string name="safe_browsing_scout_reporting_summary">"For å oppdage farlige apper og nettsteder sender Banana Browser nettadressene til noen av sidene du besøker, begrenset systeminformasjon og noe sideinnhold til Google."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-dataene er slettet"</string>
@@ -31,6 +35,7 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="safe_browsing_enhanced_protection_bullet_two">"Holder deg trygg i Banana Browser og kan brukes til å øke sikkerheten din i andre Google-apper når du er pålogget."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Kontrollerer nettadresser opp mot en liste i Banana Browser over utrygge nettsteder. Hvis nettsteder prøver å stjele passordet ditt, eller når du laster ned skadelige filer, kan Banana Browser også sende nettadresser, inkludert deler av sideinnholdet, til Safe Browsing."</string>
 <string name="languages_set_application_language_prompt">"Bruk som språk for Banana Browser"</string>
+<string name="languages_infobar_restart">"Start Banana Browser på nytt"</string>
 <string name="data_reduction_benefits_description_lite_mode">"I forenklet modus laster Banana Browser inn sider raskere og bruker opptil 60 prosent mindre data."</string>
 <string name="data_reduction_description_lite_mode">"Når forenklet modus er på, bruker Banana Browser Google-tjenere slik at sidene lastes inn raskere. Forenklet modus omskriver svært trege sider, slik at kun vesentlig innhold lastes inn. Forenklet modus brukes ikke på inkognitofaner."</string>
 <string name="data_reduction_promo_summary_lite_mode">"I forenklet modus laster Banana Browser inn sider raskere og bruker opptil 60 prosent mindre data. For å optimalisere sidene du besøker, sender Banana Browser nettrafikken din til Google. &lt;link&gt;Finn ut mer&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="bluetooth_need_location_services_on">"Banana Browser trenger posisjonstilgang for å søke etter enheter. Posisjonstilgang er &lt;services_link&gt;slått av for denne enheten&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser trenger posisjonstilgang for å søke etter enheter. &lt;permission_link&gt;Oppdater tillatelsene&lt;/permission_link&gt;. Posisjonstilgang er også &lt;services_link&gt;slått av for denne enheten&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Start Banana Browser-synkronisering ved å slå på synkronisering i Android-innstillingene"</string>
-<string name="hint_sync_settings_not_confirmed_description">"For å starte synkronisering, slå på «Synkroniser Banana Browser-dataene dine»."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"For å starte synkronisering, slå på «Synkroniser Banana Browser-dataene dine»."</string>
 <string name="inline_update_infobar_ready_link_text">"Start Banana Browser på nytt"</string>
 <string name="inline_update_toast_downloading_message">"Laster ned en Banana Browser-oppdatering …"</string>
 <string name="update_notification_title_default">"Oppdater Banana Browser"</string>
@@ -70,9 +75,14 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s åpnes i Banana Browser. Ved å fortsette samtykker du i &lt;LINK1&gt;Googles vilkår for bruk&lt;/LINK1&gt; og &lt;LINK2&gt;tilleggsvilkårene for bruk av Google Banana Browser og Banana Browser OS&lt;/LINK2&gt;. &lt;LINK3&gt;Merknaden om personvern for Google-kontoer som administreres via Family Link&lt;/LINK3&gt;, gjelder også."</string>
 <string name="fre_send_report_check">"Gjør Banana Browser bedre ved å sende bruksstatistikk og programstopprapporter til Google."</string>
 <string name="fre_welcome">"Velkommen til Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Du blir logget på med Google-kontoen din\n(dette medfører ikke at Banana Browser-synkronisering slås på)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Logg på dette nettstedet og Banana Browser med Google-kontoen din. Du kan slå på synkronisering senere."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser kunne ikke verifisere informasjonen din"</string>
 <string name="external_app_restricted_access_error">"Banana Browser har ikke tilgang til den forespurte ressursen."</string>
+<string name="video_tutorials_card_chrome_intro">"Slik bruker du Banana Browser"</string>
+<string name="video_tutorials_card_search">"Slik søker du med Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Videoer om hvordan du bruker Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Lær deg Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Naviger i Banana Browser"</string>
 <string name="menu_update">"Oppdater Banana Browser"</string>
 <string name="menu_update_unsupported">"Kan ikke oppdatere Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Start Banana Browser på nytt"</string>
@@ -88,7 +98,7 @@ Google-kontoen din kan ha andre former for nettleserlogger, for eksempel søk og
 <string name="sogou_explanation">"Banana Browser kan bruke &lt;b&gt;Sogou&lt;/b&gt; for søk i Kina. Du kan endre dette i &lt;link&gt;Innstillinger&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Denne appen kjører i Banana Browser"</string>
 <string name="twa_running_in_chrome">"Kjører i Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Du kommer til å se påloggingsstatus, nettlesingsdata og nettstedsdata for %1$s i Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Du kommer til å se påloggingsstatus, nettlesingsdata og nettstedsdata for %1$s i Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s har også data i Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Du kan slette dataene i Banana Browser-innstillingene"</string>
 <string name="keyboard_shortcut_help_center">"Åpne brukerstøtten for Banana Browser i en ny fane"</string>

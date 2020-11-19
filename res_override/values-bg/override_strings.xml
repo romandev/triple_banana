@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Използване на предложението от функцията за автоматично попълване в Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Няма запазени пароли. Banana Browser може да проверява паролите ви, когато ги запазите."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser не може да провери паролите ви. Проверете връзката си с интернет."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser не успя да провери всички пароли. Опитайте отново утре."</string>
@@ -9,12 +10,15 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser ще ви уведоми, когато влизате в профил с компрометирана парола."</string>
 <string name="sign_in_to_chrome">"Вход в Banana Browser"</string>
 <string name="sync_switch_title">"Синхронизиране на данните ви в Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Разрешаване на влизането в Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Показване на подкани за влизане в Banana Browser, когато влизате в профила си в Google"</string>
 <string name="usage_and_crash_reports_title">"Помощ за подобряването на функциите и ефективността на Banana Browser"</string>
 <string name="usage_and_crash_reports_summary">"Автоматично изпраща до Google статистически данни за използването на Banana Browser и сигнали за сривове"</string>
 <string name="autofill_describe_local_copy">"Копирано в Banana Browser"</string>
 <string name="password_settings_export_action_description">"Експортиране на паролите, съхранявани в Banana Browser"</string>
 <string name="password_settings_export_subject">"Пароли в Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Началната страница на Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Получете най-високото ниво на сигурност на Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Помощ за подобряването на сигурността на Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"За да открива опасни приложения и сайтове, Banana Browser изпраща до Google URL адресите на някои от страниците, които посещавате, ограничена системна информация и част от съдържанието на страниците"</string>
 <string name="clear_browsing_data_history_dialog_title">"Данните в Banana Browser са изчистени"</string>
@@ -32,6 +36,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"Осигурява безопасността ви в Banana Browser и може да се използва с цел подобряване на сигурността ви в други приложения на Google, докато сте в профила си."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Проверка на URL адресите в съхраняван в Banana Browser списък с опасни сайтове. Ако сайт се опита да открадне паролата ви или изтеглите опасен файл от сайт, Banana Browser може също така да изпрати до „Безопасно сърфиране“ URL адресите и част от съдържанието на страницата."</string>
 <string name="languages_set_application_language_prompt">"Използване като език на Banana Browser"</string>
+<string name="languages_infobar_restart">"Рестартирайте Banana Browser."</string>
 <string name="data_reduction_benefits_description_lite_mode">"В олекотения режим на Banana Browser страниците се зареждат по-бързо и се използват до 60 процента по-малко данни."</string>
 <string name="data_reduction_description_lite_mode">"Когато олекотеният режим е включен, Banana Browser използва сървърите на Google, за да ускорява зареждането на страниците. Бавните страници се пренаписват, за да се зареди само основното съдържание. Олекотеният режим не се поддържа за раздели в режим „инкогнито“."</string>
 <string name="data_reduction_promo_summary_lite_mode">"В олекотения режим на Banana Browser страниците се зареждат по-бързо и се използват до 60 процента по-малко данни. С цел оптимизиране на посещаваните от вас страници Banana Browser изпраща до Google уеб трафика ви. &lt;link&gt;Научете повече&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@
 <string name="bluetooth_need_location_permission">"Banana Browser се нуждае от достъп до местоположението, за да сканира за устройства. &lt;permission_link&gt;Актуализиране на разрешенията&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Banana Browser се нуждае от достъп до местоположението, за да сканира за устройства, но съответните услуги са &lt;services_link&gt;изключени за това устройство&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser се нуждае от достъп до местоположението, за да сканира за устройства. &lt;permission_link&gt;Актуализирайте разрешенията&lt;/permission_link&gt;. Също така услугите за местоположение са &lt;services_link&gt;изключени за това устройство&lt;/services_link&gt;."</string>
-<string name="hint_sync_settings_not_confirmed_description">"За да стартирате синхронизирането, включете „Синхронизиране на данните ви в Banana Browser“."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"За да стартирате синхронизирането, включете „Синхронизиране на данните ви в Banana Browser“."</string>
 <string name="inline_update_infobar_ready_link_text">"Рестартирайте Banana Browser."</string>
 <string name="inline_update_toast_downloading_message">"Актуализацията на Banana Browser се изтегля…"</string>
 <string name="update_notification_title_default">"Актуализиране на Banana Browser"</string>
@@ -70,9 +75,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s ще се отвори в Banana Browser. С продължаването си приемате &lt;LINK1&gt;Общите условия на Google&lt;/LINK1&gt; и &lt;LINK2&gt;Допълнителните общи условия на Banana Browser и Banana Browser OS&lt;/LINK2&gt;. В сила е и &lt;LINK3&gt;Съобщението за поверителност за профилите в Google, управлявани чрез Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Помогнете за подобряването на Banana Browser, като изпращате до Google статистически данни за употребата и сигнали за сривове."</string>
 <string name="fre_welcome">"Добре дошли в Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Ще влезете в профила си в Google\n(синхронизирането в Banana Browser няма да се включи)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Ще влезете в този сайт и в Banana Browser с профила си в Google. Можете да включите синхронизирането по-късно."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser не можа да потвърди информацията ви"</string>
 <string name="external_app_restricted_access_error">"Banana Browser няма достъп до заявения ресурс."</string>
+<string name="video_tutorials_card_chrome_intro">"Начин на използване на Banana Browser"</string>
+<string name="video_tutorials_card_search">"Начини за търсене с Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Видеоклипове за използването на Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Научете повече за Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Навигиране в Banana Browser"</string>
 <string name="menu_update">"Актуализиране на Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Рестартирайте Banana Browser."</string>
 <string name="menu_open_in_chrome">"Отваряне в Banana Browser"</string>
@@ -87,7 +97,7 @@
 <string name="sogou_explanation">"Banana Browser може да използва &lt;b&gt;Sogou&lt;/b&gt; за търсене в Китай. Можете да промените това от &lt;link&gt;Настройки&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Това приложение се изпълнява в Banana Browser"</string>
 <string name="twa_running_in_chrome">"Изпълнява се в Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"В Banana Browser ще виждате дали сте влезли в профила си в %1$s, както и съответните данни за сърфирането и сайта."</string>
+<string name="twa_running_in_chrome_v2">"В Banana Browser ще виждате дали сте влезли в профила си в %1$s, както и съответните данни за сърфирането и сайта"</string>
 <string name="twa_clear_data_dialog_title">"%1$s също има данни в Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Можете да изчистите данните в настройките на Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Отваряне на Помощния център на Banana Browser в нов раздел"</string>

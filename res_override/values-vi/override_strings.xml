@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Sử dụng nội dung tự động điền do Banana Browser đề xuất"</string>
 <string name="password_check_status_message_error_no_passwords">"Bạn chưa lưu mật khẩu nào. Banana Browser có thể kiểm tra các mật khẩu của bạn khi bạn lưu các mật khẩu đó."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser không thể kiểm tra mật khẩu của bạn. Hãy thử kiểm tra kết nối Internet."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser không thể kiểm tra một số mật khẩu. Hãy thử lại vào ngày mai."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser sẽ thông báo cho bạn khi bạn đăng nhập bằng mật khẩu bị lộ."</string>
 <string name="sign_in_to_chrome">"Đăng nhập vào Banana Browser"</string>
 <string name="sync_switch_title">"Đồng bộ hóa dữ liệu của bạn trên Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Cho phép đăng nhập vào Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Hiển thị lời nhắc đăng nhập vào Banana Browser khi bạn đăng nhập vào Tài khoản Google"</string>
 <string name="usage_and_crash_reports_title">"Giúp cải thiện hiệu suất và các tính năng của Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Đã sao chép vào Banana Browser"</string>
 <string name="password_settings_export_action_description">"Xuất mật khẩu đã lưu trữ với Banana Browser"</string>
 <string name="password_settings_export_subject">"Mật khẩu Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Trang chủ của Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Tận dụng mức bảo mật mạnh nhất của Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Giúp cải thiện khả năng bảo mật của Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Để phát hiện các ứng dụng và trang web nguy hiểm, Banana Browser sẽ gửi URL của một số trang mà bạn truy cập, thông tin hệ thống giới hạn và một số nội dung trang cho Google"</string>
 <string name="clear_browsing_data_history_dialog_title">"Đã xóa dữ liệu Banana Browser"</string>
@@ -26,11 +30,12 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="safety_check_passwords_error_quota_limit">"Banana Browser không thể kiểm tra một số mật khẩu"</string>
 <string name="safety_check_updates_updated">"Banana Browser đã được cập nhật"</string>
 <string name="safety_check_updates_outdated">"Banana Browser đã lỗi thời"</string>
-<string name="safety_check_updates_offline">"Không có kết nối mạng. Banana Browser không thể kiểm tra các bản cập nhật."</string>
-<string name="safety_check_updates_error">"Banana Browser không thể kiểm tra các bản cập nhật"</string>
+<string name="safety_check_updates_offline">"Không có kết nối mạng. Banana Browser không thể kiểm tra để tìm các bản cập nhật."</string>
+<string name="safety_check_updates_error">"Banana Browser không thể kiểm tra để tìm các bản cập nhật"</string>
 <string name="safe_browsing_enhanced_protection_bullet_two">"Giúp bạn an toàn trên Banana Browser và có thể dùng để tăng cường bảo mật cho bạn trong các ứng dụng khác của Google sau khi đăng nhập."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Kiểm tra đối chiếu các URL với danh sách trang web không an toàn được lưu trữ trong Banana Browser. Nếu một trang web cố ăn cắp mật khẩu của bạn hoặc nếu bạn tải một tệp gây hại xuống, Banana Browser cũng có thể gửi các URL, bao gồm cả các đoạn nội dung trên trang, đến tính năng Duyệt web an toàn."</string>
 <string name="languages_set_application_language_prompt">"Dùng làm ngôn ngữ của Banana Browser"</string>
+<string name="languages_infobar_restart">"Khởi động lại Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60 phần trăm."</string>
 <string name="data_reduction_description_lite_mode">"Khi bạn bật Chế độ thu gọn, Banana Browser sẽ sử dụng máy chủ của Google để tải trang nhanh hơn. Chế độ thu gọn sẽ ghi lại các trang tốc độ rất chậm để chỉ tải nội dung cần thiết. Chế độ thu gọn không áp dụng cho Thẻ ẩn danh."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Ở Chế độ thu gọn, Banana Browser tải trang nhanh hơn và sử dụng ít dữ liệu hơn lên tới 60%. Để tối ưu hóa các trang bạn truy cập, Banana Browser sẽ gửi lưu lượng truy cập web của bạn cho Google. &lt;link&gt;Tìm hiểu thêm&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="bluetooth_need_location_services_on">"Banana Browser cần có quyền truy cập vị trí để quét tìm thiết bị. Tính năng truy cập vị trí bị &lt;services_link&gt;tắt cho thiết bị này&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser cần có quyền truy cập vị trí để quét tìm thiết bị. &lt;permission_link&gt;Cập nhật quyền&lt;/permission_link&gt;. Tính năng truy cập vị trí cũng bị &lt;services_link&gt;tắt cho thiết bị này&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Mở c.đặt Android &amp; bật lại đ.bộ hóa hệ thống Android để b.đầu đồng bộ hóa Banana Browser"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Để bắt đầu đồng bộ hóa, hãy bật tùy chọn \"Đồng bộ hóa dữ liệu của bạn trên Banana Browser\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Để bắt đầu đồng bộ hóa, hãy bật tùy chọn \"Đồng bộ hóa dữ liệu của bạn trên Banana Browser\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Khởi động lại Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Đang tải Bản cập nhật Banana Browser…"</string>
 <string name="update_notification_title_default">"Cập nhật Banana Browser"</string>
@@ -70,9 +75,14 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sẽ mở trong Banana Browser. Bằng việc tiếp tục, bạn đồng ý với &lt;LINK1&gt;Điều khoản dịch vụ của Google&lt;/LINK1&gt; cũng như &lt;LINK2&gt;Điều khoản dịch vụ bổ sung của Google Banana Browser và Banana Browser OS&lt;/LINK2&gt;. Bạn sẽ phải tuân thủ cả &lt;LINK3&gt;Thông báo về quyền riêng tư cho Tài khoản Google được quản lý bằng Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Giúp cải thiện Banana Browser bằng cách gửi số liệu thống kê sử dụng và báo cáo sự cố cho Google."</string>
 <string name="fre_welcome">"Chào mừng bạn đến với Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Bạn sẽ đăng nhập bằng Tài khoản Google của mình\n(thao tác này sẽ không bật Banana Browser Sync)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Bạn sẽ đăng nhập vào trang web này và Banana Browser bằng Tài khoản Google của bạn. Bạn có thể bật tính năng đồng bộ hóa sau."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser không thể xác minh thông tin của bạn"</string>
 <string name="external_app_restricted_access_error">"Banana Browser không có quyền truy cập vào tài nguyên đã yêu cầu."</string>
+<string name="video_tutorials_card_chrome_intro">"Cách sử dụng Banana Browser"</string>
+<string name="video_tutorials_card_search">"Cách tìm kiếm bằng Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Video về cách sử dụng Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Tìm hiểu Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Thao tác trong Banana Browser"</string>
 <string name="menu_update">"Cập nhật Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser không thể cập nhật"</string>
 <string name="menu_inline_update_ready_summary">"Khởi động lại Banana Browser"</string>
@@ -88,7 +98,7 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="sogou_explanation">"Banana Browser có thể sử dụng &lt;b&gt;Sogou&lt;/b&gt; để tìm kiếm tại Trung Quốc. Bạn có thể thay đổi điều này trong &lt;link&gt;Cài đặt&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Ứng dụng này đang chạy trong Banana Browser"</string>
 <string name="twa_running_in_chrome">"Đang chạy trong Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Trong Banana Browser, bạn sẽ thấy trạng thái đăng nhập, dữ liệu duyệt web và dữ liệu trang web trên %1$s."</string>
+<string name="twa_running_in_chrome_v2">"Trong Banana Browser, bạn sẽ thấy trạng thái đăng nhập, dữ liệu duyệt web và dữ liệu trang web trên %1$s"</string>
 <string name="twa_clear_data_dialog_title">"%1$s cũng có dữ liệu trong Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Bạn có thể xóa dữ liệu trong mục Cài đặt của Banana Browser"</string>
 <string name="keyboard_shortcut_help_center">"Mở Trung tâm trợ giúp Banana Browser trong thẻ mới"</string>

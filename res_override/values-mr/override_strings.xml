@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browser ऑटोफिल सूचना वापरा"</string>
 <string name="password_check_status_message_error_no_passwords">"सेव्ह केलेले पासवर्ड नाहीत. तुम्ही तुमचे पासवर्ड सेव्ह केल्यावर Banana Browser ते तपासू शकते."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser तुमचे पासवर्ड तपासू शकत नाही. तुमचे इंटरनेट कनेक्शन तपासून पहा."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser ला सर्व पासवर्ड तपासता आले नाहीत. उद्या पुन्हा प्रयत्न करा."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"तुम्ही धोक्यात असलेल्या पासवर्डने साइन इन कराल तेव्‍हा Banana Browser तुम्हाला सूचित करेल."</string>
 <string name="sign_in_to_chrome">"Banana Browser वर साइन इन करा"</string>
 <string name="sync_switch_title">"तुमचा Banana Browser डेटा सिंक करा"</string>
+<string name="offer_chrome_signin_title">"Banana Browser मध्ये साइन इन करण्यासाठी अनुमती द्या"</string>
+<string name="offer_chrome_signin_summary">"तुम्ही तुमच्या Google खाते मध्ये साइन इन करता तेव्हा Banana Browser मध्ये साइन इन सूचना दाखवा"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ची वैशिष्ट्ये आणि परफॉर्मन्स सुधारण्यात मदत करा"</string>
 <string name="autofill_describe_local_copy">"Banana Browser वर कॉपी केले"</string>
 <string name="password_settings_export_action_description">"Banana Browser सह स्टोअर केलेला पासवर्ड पाठवा"</string>
 <string name="password_settings_export_subject">"Banana Browser पासवर्ड"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser चे होम पेज"</string>
+<string name="enhanced_protection_promo_title">"Banana Browser ची सर्वोत्तम सुरक्षितता मिळवा"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser सुरक्षेमध्ये सुधारणा करण्यात मदत करा"</string>
 <string name="safe_browsing_scout_reporting_summary">"धोकादायक ॲप्स आणि साइट शोधण्यासाठी, Banana Browser तुम्ही भेट दिलेल्या काही पेजचे URL, मर्यादित सिस्टमची माहिती आणि काही पेजचा आशय Google कडे पाठवतो"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser डेटा साफ केला"</string>
@@ -31,6 +35,7 @@
 <string name="safe_browsing_enhanced_protection_bullet_two">"तुम्हाला Banana Browser वर सुरक्षित ठेवते आणि तुम्ही साइन इन केलेले असताना इतर Google अ‍ॅप्समध्ये तुमच्या सुरक्षेत सुधारणा करण्यासाठी वापरले जाऊ शकते."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Banana Browser मध्ये स्टोअर केलेल्या असुरक्षित साइटच्या सूचीमध्ये URL तपासतो. साइटने तुमचा पासवर्ड चोरण्याचा प्रयत्न केल्यास किंवा तुम्ही हानीकारक फाइल डाउनलोड केल्यावर, Banana Browser, पेज आशयाच्या भागांसह, URL सुरक्षित ब्राउझिंग कडे पाठवू शकतो."</string>
 <string name="languages_set_application_language_prompt">"Banana Browser ची भाषा म्‍हणून वापरा"</string>
+<string name="languages_infobar_restart">"Banana Browser रीस्टार्ट करा"</string>
 <string name="data_reduction_benefits_description_lite_mode">"लाइट मोडमध्ये, Banana Browser पेज आणखी जलद लोड करते आणि ६० टक्के पर्यंत कमी डेटा वापरते."</string>
 <string name="data_reduction_description_lite_mode">"लाइट मोड सुरू असताना, Banana Browser पेज आणखी जलद लोड होण्यासाठी Google सर्व्हर वापरते. फक्त अत्यावश्यक आशय लोड होण्यासाठी लाइट मोड खूप धीमी पेज पुनर्लिखित करते. लाइट मोड गुप्त टॅबना लागू होत नाही."</string>
 <string name="data_reduction_promo_summary_lite_mode">"लाइट मोडमध्ये, Banana Browser पेज आणखी जलद लोड करते आणि ६० टक्के कमी डेटा वापरते. तुम्ही भेट दिलेली पेज ऑप्टिमाइझ करण्यासाठी, Banana Browser तुमचे वेब ट्रॅफिक Google ला पाठवते. &lt;link&gt;अधिक जाणून घ्या&lt;/link&gt;"</string>
@@ -52,7 +57,7 @@
 <string name="bluetooth_need_location_services_on">"डिव्हाइस स्कॅन करण्‍यासाठी Banana Browser ला स्थान ॲक्सेसची आवश्यकता असते. स्थान ॲक्सेस &lt;services_link&gt;या डिव्हाइसाठी बंद केला आहे&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"डिव्हाइस स्कॅन करण्‍यासाठी Banana Browser ला स्थान ॲक्सेसची आवश्यकता असते. &lt;permission_link&gt;परवानग्या अपडेट करा&lt;/permission_link&gt;. स्थान ॲक्सेस देखील &lt;services_link&gt;या डिव्हाइसाठी बंद केला आहे&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Banana Browser सिंक सुरू करण्यासाठी Android सेटिंग्ज उघडा आणि Android सिस्टम सिंक पुन्हा सक्षम करा"</string>
-<string name="hint_sync_settings_not_confirmed_description">"सिंक सुरू करण्यासाठी, \"तुमचा Banana Browser डेटा सिंक करा\" सुरू करा."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"सिंक सुरू करण्यासाठी, \"तुमचा Banana Browser डेटा सिंक करा\" सुरू करा."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser रीस्टार्ट करा"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser अपडेट डाउनलोड करत आहे…"</string>
 <string name="update_notification_title_default">"Banana Browser अपडेट करा"</string>
@@ -69,9 +74,14 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s हे Banana Browser मध्ये उघडेल. सुरू ठेवून, तुम्ही &lt;LINK1&gt;Google सेवा अटी&lt;/LINK1&gt; आणि &lt;LINK2&gt;Google Banana Browser व Banana Browser OS अतिरिक्त सेवा अटी&lt;/LINK2&gt; यांना सहमती दर्शवता. &lt;LINK3&gt;Family Link सोबत व्यवस्थापित केलेली Google खाती यांसाठी गोपनीयतेची सूचना&lt;/LINK3&gt; देखील लागू होते."</string>
 <string name="fre_send_report_check">"वापर आकडेवारी आणि क्रॅश अहवाल Google कडे पाठवून Banana Browser अधिक चांगले करण्यास मदत करा."</string>
 <string name="fre_welcome">"Banana Browser मध्ये स्वागत आहे"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"तुम्हाला तुमच्या Google खाते सह साइन इन केले जाईल\n(यामुळे Banana Browser सिंक सुरू होणार नाही)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"तुमच्या Google खाते सह या साइट आणि Banana Browser वर साइन इन करा. तुम्ही सिंक करणे नंतर सुरू करू शकता."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser ला तुमच्या माहितीची पडताळणी करता आली नाही"</string>
 <string name="external_app_restricted_access_error">"Banana Browser ला विनंती केलेल्या संसाधनांचा ॲक्सेस नाही."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser कसे वापरावे"</string>
+<string name="video_tutorials_card_search">"Banana Browser सह कसे शोधावे"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browser कसे वापरावे याबद्दल व्हिडिओ"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser बद्दल जाणून घ्या"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browser नेव्हिगेट करा"</string>
 <string name="menu_update">"Banana Browser अपडेट करा"</string>
 <string name="menu_update_unsupported">"Banana Browser अपडेट होऊ शकत नाही"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser रीस्टार्ट करा"</string>
@@ -87,7 +97,7 @@
 <string name="sogou_explanation">"Banana Browser चीनमध्ये शोध करण्‍यासाठी &lt;b&gt;Sogou&lt;/b&gt; चा वापर करू शकते. तुम्ही हे &lt;link&gt;सेटिंग्जमध्ये&lt;/link&gt; बदलू शकता."</string>
 <string name="app_running_in_chrome_disclosure">"हे अ‍ॅप Banana Browser मध्‍‍‍ये रन होत आहे"</string>
 <string name="twa_running_in_chrome">"Banana Browser मध्ये चालत आहे"</string>
-<string name="twa_running_in_chrome_v2">"तुम्हाला Banana Browser मध्ये तुमची %1$s साइन इन स्थिती, ब्राउझिंग डेटा आणि साइट डेटा दिसेल."</string>
+<string name="twa_running_in_chrome_v2">"तुम्हाला Banana Browser मध्ये तुमची %1$s साइन-इन स्थिती, ब्राउझिंग डेटा आणि साइट डेटा दिसेल"</string>
 <string name="twa_clear_data_dialog_title">"%1$sचा Banana Browser मध्ये देखील डेटा आहे"</string>
 <string name="twa_clear_data_dialog_message">"तुम्ही Banana Browser सेटिंग्जमध्ये डेटा साफ करू शकता"</string>
 <string name="keyboard_shortcut_help_center">"नवीन टॅबमध्ये Banana Browser मदत केंद्र उघडा"</string>

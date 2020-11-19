@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Gebruik Banana Browser-outovulvoorstel"</string>
 <string name="password_check_status_message_error_no_passwords">"Geen gestoorde wagwoorde nie. Banana Browser kan jou wagwoorde nagaan wanneer jy hulle stoor."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser kan nie jou wagwoorde nagaan nie. Probeer om jou internetverbinding na te gaan."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser kon nie alle wagwoorde nagaan nie. Probeer môre weer."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser sal jou in kennis stel wanneer jy met \'n gekompromitteerde wagwoord aanmeld."</string>
 <string name="sign_in_to_chrome">"Meld by Banana Browser aan"</string>
 <string name="sync_switch_title">"Sinkroniseer jou Banana Browser-data"</string>
+<string name="offer_chrome_signin_title">"Laat Banana Browser-aanmelding toe"</string>
+<string name="offer_chrome_signin_summary">"Wys Banana Browser-aanmeldporboodskappe wanneer jy by jou Google-rekening aanmeld"</string>
 <string name="usage_and_crash_reports_title">"Help om Banana Browser se kenmerke en werkverrigting te verbeter"</string>
 <string name="autofill_describe_local_copy">"Na Banana Browser gekopieer"</string>
 <string name="password_settings_export_action_description">"Voer wagwoorde wat met Banana Browser gestoor word, uit"</string>
 <string name="password_settings_export_subject">"Banana Browser-wagwoorde"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser se tuisblad"</string>
+<string name="enhanced_protection_promo_title">"Kry Banana Browser se sterkste beskerming"</string>
 <string name="safe_browsing_scout_reporting_title">"Help om Banana Browser-sekuriteit te verbeter"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser stuur URL\'e van sommige bladsye wat jy besoek, beperkte stelselinligting en sekere bladinhoud aan Google om gevaarlike programme en werwe te bespeur"</string>
 <string name="clear_browsing_data_history_dialog_title">"Het Banana Browser-data uitgevee"</string>
@@ -31,6 +35,7 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="safe_browsing_enhanced_protection_bullet_two">"Hou jou veilig op Banana Browser en kan gebruik word om jou sekuriteit in ander Google-programme te verbeter wanneer jy aangemeld is."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Vergelyk URL\'e met \'n lys onveilige werwe wat in Banana Browser geberg word. As \'n werf probeer om jou wagwoord te steel, of wanneer jy \'n skadelike lêer aflaai, sal Banana Browser dalk ook URL\'e, insluitend stukkies bladsyinhoud, na Veiligblaai toe stuur."</string>
 <string name="languages_set_application_language_prompt">"Gebruik as Banana Browser se taal"</string>
+<string name="languages_infobar_restart">"Herbegin Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"In Ligte modus laai Banana Browser bladsye vinniger en gebruik tot 60 persent minder data."</string>
 <string name="data_reduction_description_lite_mode">"Wanneer Ligte Modus aan is, gebruik Banana Browser Google-bedieners om bladsye vinniger te laat laai. Ligte Modus herskryf baie stadige bladsye om net noodsaaklike inhoud te laai. Ligte Modus geld nie vir Incognito-oortjies nie."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In Ligte modus laai Banana Browser bladsye vinniger en gebruik tot 60 persent minder data. Banana Browser stuur jou webverkeer na Google toe om die bladsye wat jy besoek, te optimeer. &lt;link&gt;Kom meer te wete&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="bluetooth_need_location_services_on">"Banana Browser benodig liggingtoegang om toestelle te soek. Liggingtoegang is &lt;services_link&gt;afgeskakel vir hierdie toestel&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser benodig liggingtoegang om toestelle te soek. &lt;permission_link&gt;Dateer toestemmings op&lt;/permission_link&gt;. Liggingtoegang is ook &lt;services_link&gt;afgeskakel vir hierdie toestel&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Maak Android-instellings oop en heraktiveer Android-stelselsinkronisering om Banana Browser-sinkronisering te begin"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Skakel \"Sinkroniseer jou Banana Browser-data\" aan om met sinkronisering te begin."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Skakel \"Sinkroniseer jou Banana Browser-data\" aan om met sinkronisering te begin."</string>
 <string name="inline_update_infobar_ready_link_text">"Herbegin Banana Browser"</string>
 <string name="inline_update_toast_downloading_message">"Laai tans Banana Browser-opdatering af …"</string>
 <string name="update_notification_title_default">"Dateer Banana Browser op"</string>
@@ -70,9 +75,14 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sal in Banana Browser oopmaak. As jy voortgaan, stem jy in tot &lt;LINK1&gt;Google se diensbepalings&lt;/LINK1&gt; en &lt;LINK2&gt;Google Banana Browser en Banana Browser-bedryfstelsel se bykomende diensbepalings&lt;/LINK2&gt;. Die &lt;LINK3&gt;Privaatheidskennisgewing vir Google-rekeninge wat met Family Link bestuur word&lt;/LINK3&gt; is ook van toepassing."</string>
 <string name="fre_send_report_check">"Help om Banana Browser te verbeter deur gebruikstatistiek en omvalverslae na Google te stuur."</string>
 <string name="fre_welcome">"Welkom by Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Jy sal met jou Google-rekening aangemeld word\n(dit sal nie Banana Browser-sinkronisering aanskakel nie)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Meld met jou Google-rekening op hierdie werf en by Banana Browser aan. Jy kan sinkronisering later aanskakel."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser kon nie jou inligting verifieer nie"</string>
 <string name="external_app_restricted_access_error">"Banana Browser het nie toegang tot die hulpbron wat versoek is nie."</string>
+<string name="video_tutorials_card_chrome_intro">"Hoe om Banana Browser te gebruik"</string>
+<string name="video_tutorials_card_search">"Hoe om met Banana Browser te soek"</string>
+<string name="video_tutorials_card_all_videos">"Video\'s oor hoe om Banana Browser te gebruik"</string>
+<string name="video_tutorials_learn_chrome">"Leer Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigeer in Banana Browser"</string>
 <string name="menu_update">"Dateer Banana Browser op"</string>
 <string name="menu_update_unsupported">"Banana Browser dateer nie op nie"</string>
 <string name="menu_inline_update_ready_summary">"Herbegin Banana Browser"</string>
@@ -88,7 +98,7 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="sogou_explanation">"Banana Browser kan &lt;b&gt;Sogou&lt;/b&gt; gebruik om soektogte in China uit te voer. Jy kan dit in &lt;link&gt;Instellings&lt;/link&gt; verander."</string>
 <string name="app_running_in_chrome_disclosure">"Hierdie program loop tans in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Werk in Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Jy sal jou %1$s-aanmeldingstatus, -blaaierdata en -werfdata in Banana Browser sien."</string>
+<string name="twa_running_in_chrome_v2">"Jy sal jou %1$s-aanmeldingstatus, -blaaierdata en -werfdata in Banana Browser sien"</string>
 <string name="twa_clear_data_dialog_title">"%1$s het ook data in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Jy kan die data in Banana Browser-instellings uitvee"</string>
 <string name="keyboard_shortcut_help_center">"Maak die Banana Browser-hulpsentrum in \'n nuwe oortjie oop"</string>

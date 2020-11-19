@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Banana Browser otomatik doldurma önerisini kullan"</string>
 <string name="password_check_status_message_error_no_passwords">"Kaydedilen şifre yok. Kaydetmeniz halinde Banana Browser, şifrelerinizi kontrol edebilir."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser, şifrelerinizi kontrol edemiyor. İnternet bağlantınızı kontrol etmeyi deneyin."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser, şifrelerin tümünü kontrol edemedi. Yarın tekrar deneyin."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser, güvenliği ihlal edilmiş bir şifreyle oturum açtığınızda size haber verir."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'da oturum aç"</string>
 <string name="sync_switch_title">"Banana Browser verilerimi senkronize et"</string>
+<string name="offer_chrome_signin_title">"Banana Browser\'da oturum açmaya izin verin"</string>
+<string name="offer_chrome_signin_summary">"Google Hesabınızda oturum açtığınızda Banana Browser oturum açma istemleri gösterilsin"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'un özelliklerini ve performansını iyileştirmeye yardımcı olun"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'a kopyalandı"</string>
 <string name="password_settings_export_action_description">"Banana Browser\'da depolanan şifreleri dışa aktarın"</string>
 <string name="password_settings_export_subject">"Banana Browser Şifreleri"</string>
 <string name="options_homepage_chrome_homepage">"Banana Browser’un ana sayfası"</string>
+<string name="enhanced_protection_promo_title">"Banana Browser’un en güçlü güvenlik özelliklerinden faydalanın"</string>
 <string name="safe_browsing_scout_reporting_title">"Banana Browser güvenliğini iyileştirmeye yardımcı olun"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser, tehlikeli uygulamaları ve siteleri algılamak için Google\'a ziyaret ettiğiniz bazı sitelerin URL\'lerini, sınırlı sistem bilgisini ve bazı sayfa içeriklerini gönderir."</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser verileri temizlendi"</string>
@@ -31,6 +35,7 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="safe_browsing_enhanced_protection_bullet_two">"Banana Browser\'da güvende kalmanızı sağlar ve oturum açtığınızda diğer Google uygulamalarındaki güvenliğinizi artırmak için kullanılabilir."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"URL\'leri, Banana Browser\'da kayıtlı güvenli olmayan siteler listesine göre kontrol eder. Banana Browser, bir sitenin şifrenizi çalmaya çalışması veya zararlı bir dosya indirmeniz halinde de Güvenli Tarama\'ya sayfa içeriğinden parçalarla birlikte URL\'ler gönderebilir."</string>
 <string name="languages_set_application_language_prompt">"Banana Browser’un dili olarak kullan"</string>
+<string name="languages_infobar_restart">"Banana Browser\'u yeniden başlatın"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır."</string>
 <string name="data_reduction_description_lite_mode">"Basit mod açıkken, Banana Browser sayfaların daha hızlı yüklenmesi için Google sunucularını kullanır. Basit mod, çok yavaş sayfaları yalnızca önemli içerikleri yüklenecek şekilde yeniden yazar. Basit mod, Gizli sekmelerde kullanılamaz."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Banana Browser, Basit modda sayfaları daha hızlı yükler ve yüzde 60\'a kadar daha az veri kullanır. Banana Browser, ziyaret ettiğiniz sayfaları iyileştirmek için web trafiğinizi Google\'a gönderir. &lt;link&gt;Daha fazla bilgi&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="bluetooth_need_location_services_on">"Banana Browser\'un cihazları taraması için konum bilgilerine erişmesi gerekiyor. Konum bilgilerine erişim &lt;services_link&gt;bu cihaz için kapalı&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser\'un cihazları taraması için konum bilgilerine erişmesi gerekiyor. &lt;permission_link&gt;İzinleri güncelleyin&lt;/permission_link&gt;. Ayrıca, konum bilgilerine erişim &lt;services_link&gt;bu cihaz için kapalı&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Banana Browser Senkronizasyonu\'nu başlatmak için Android ayarlarını açın ve Android sistem senkronizasyonunu yeniden etkinleştirin"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Senkronizasyonu başlatmak için \"Banana Browser verilerimi senkronize et\" ayarını etkinleştirin."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Senkronizasyonu başlatmak için \"Banana Browser verilerimi senkronize et\" ayarını etkinleştirin."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser\'u yeniden başlatın"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser Güncellemesi indiriliyor…"</string>
 <string name="update_notification_title_default">"Banana Browser\'u güncelle"</string>
@@ -70,9 +75,14 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s, Banana Browser\'da açılacak. Devam ederek &lt;LINK1&gt;Google Hizmet Şartları&lt;/LINK1&gt; ile &lt;LINK2&gt;Google Banana Browser ve Banana Browser OS Ek Hizmet Şartları&lt;/LINK2&gt;\'nı kabul etmiş olursunuz. &lt;LINK3&gt;Family Link ile Yönetilen Google Hesapları İçin Gizlilik Uyarısı&lt;/LINK3&gt; da geçerlidir."</string>
 <string name="fre_send_report_check">"Google\'a kullanım istatistikleri ve kilitlenme raporları göndererek Banana Browser\'u iyileştirmeye yardımcı olun."</string>
 <string name="fre_welcome">"Banana Browser\'a Hoş Geldiniz"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Google Hesabınızla oturum açacaksınız\n(bu, Banana Browser Senkronizasyonunu açmaz)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Bu sitede ve Banana Browser\'da Google Hesabınızla oturum açın. Senkronizasyonu daha sonra açabilirsiniz."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser, bilgilerinizi doğrulayamadı"</string>
 <string name="external_app_restricted_access_error">"Banana Browser, istenen kaynağa erişemiyor."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser\'u kullanma"</string>
+<string name="video_tutorials_card_search">"Banana Browser ile arama yapma"</string>
+<string name="video_tutorials_card_all_videos">"Banana Browser\'un nasıl kullanılacağıyla ilgili videolar"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser\'u Öğrenin"</string>
+<string name="video_tutorials_tile_chrome_intro">"Banana Browser\'da gezinme"</string>
 <string name="menu_update">"Banana Browser\'u güncelle"</string>
 <string name="menu_update_unsupported">"Banana Browser güncellenemiyor"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser\'u yeniden başlatın"</string>
@@ -88,7 +98,7 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="sogou_explanation">"Banana Browser, Çin\'de arama yapmak için &lt;b&gt;Sogou&lt;/b&gt;\'yu kullanabilir. Bu seçimi &lt;link&gt;Ayarlar&lt;/link&gt;\'da değiştirebilirsiniz."</string>
 <string name="app_running_in_chrome_disclosure">"Bu uygulama Banana Browser\'da çalışıyor"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'da çalıştırılıyor"</string>
-<string name="twa_running_in_chrome_v2">"%1$s sitenizin oturum açma durumunu, tarama verilerini ve site verilerini Banana Browser\'da görürsünüz."</string>
+<string name="twa_running_in_chrome_v2">"%1$s sitenizin oturum açma durumunu, tarama verilerini ve site verilerini Banana Browser\'da görürsünüz"</string>
 <string name="twa_clear_data_dialog_title">"%1$s uygulamasına ait veriler Banana Browser\'da da mevcut"</string>
 <string name="twa_clear_data_dialog_message">"Verileri Banana Browser Ayarlarından temizleyebilirsiniz"</string>
 <string name="keyboard_shortcut_help_center">"Banana Browser Yardım Merkezi\'ni yeni bir sekmede açar"</string>

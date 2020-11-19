@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Použite návrh automtického dopĺňania v Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Žiadne uložené heslá. Banana Browser môže skontrolovať heslá, keď ich uložíte."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser nemôže skontrolovať heslá. Skontrolujte internetové pripojenie."</string>
 <string name="password_check_status_message_error_signed_out">"Keď sa prihlásite pomocou účtu Google, Banana Browser môže skontrolovať vaše heslá."</string>
@@ -10,14 +11,15 @@
 <string name="password_settings_export_action_description">"Exportovať heslá uložené v Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser odosiela Googlu webové adresy niektorých navštívených stránok, obmedzené informácie o systéme a obsah niektorých stránok na účely rozpoznávania nebezpečných aplikácií a webov."</string>
 <string name="safety_check_description">"Banana Browser vás môže chrániť pred porušeniami ochrany údajov, nebezpečnými webmi a ďalšími hrozbami"</string>
-<string name="safety_check_passwords_error">"Banana Browser nemôže kontrolovať heslá"</string>
-<string name="safety_check_passwords_error_offline">"Offline. Banana Browser nemôže kontrolovať heslá."</string>
+<string name="safety_check_passwords_error">"Banana Browser nemôže skontrolovať heslá"</string>
+<string name="safety_check_passwords_error_offline">"Offline. Banana Browser nemôže skontrolovať heslá."</string>
 <string name="safety_check_updates_updated">"Banana Browser je aktuálny"</string>
 <string name="safety_check_updates_outdated">"Prehliadač Banana Browser je zastaraný"</string>
 <string name="safety_check_updates_offline">"Offline. Banana Browser nemôže skontrolovať dostupnosť aktualizácií."</string>
 <string name="safety_check_updates_error">"Banana Browser nemôže skontrolovať dostupnosť aktualizácií"</string>
 <string name="safe_browsing_enhanced_protection_bullet_two">"Chráni vás v Banana Browser a môže zlepšiť zabezpečenie v ďalších aplikáciách Google, keď sa prihlásite."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Kontroluje webové adresy podľa zoznamu nebezpečných webov uloženého v Banana Browser. Ak sa vám určitý web pokúsi ukradnúť heslo alebo stiahnete škodlivý súbor, Banana Browser môže tiež odoslať webové adresy vrátane častí obsahu stránky Bezpečnému prehliadaniu."</string>
+<string name="languages_infobar_restart">"Reštartujte Banana Browser"</string>
 <string name="data_reduction_benefits_description_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát."</string>
 <string name="data_reduction_promo_summary_lite_mode">"V zjednodušenom režime načítava Banana Browser stránky rýchlejšie a využíva až o 60 percent menej dát. Banana Browser odosiela údaje o vašej návštevnosti webu do Googlu, ktorý na základe nich optimalizuje vami navštevované stránky. &lt;link&gt;Ďalšie informácie&lt;/link&gt;"</string>
 <string name="data_reduction_milestone_promo_text_mb">"Banana Browser ušetril %1$d MB"</string>
@@ -43,7 +45,12 @@
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s sa otvorí v Banana Browser. Pokračovaním vyjadrujete súhlas so &lt;LINK1&gt;zmluvnými podmienkami spoločnosti Google&lt;/LINK1&gt; a &lt;LINK2&gt;dodatočnými zmluvnými podmienkami prehliadača Google Banana Browser a systému Banana Browser OS&lt;/LINK2&gt;. Platí aj &lt;LINK3&gt;oznámenie o ochrane súkromia pre účty Google spravované pomocou aplikácie Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Odosielať štatistiky používania a prehľady chýb Googlu a pomáhať tak zlepšovať Banana Browser"</string>
 <string name="fre_welcome">"Víta vás prehliadač Banana Browser"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Prihláste sa na tomto webe a v Banana Browser pomocou účtu Google. Neskôr môžete zapnúť synchronizáciu."</string>
 <string name="external_app_restricted_access_error">"Banana Browser nemá prístup k požadovanému zdroju."</string>
+<string name="video_tutorials_card_chrome_intro">"Ako používať Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Videá, ako používať Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Naučte sa používať Banana Browser"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigácia v Banana Browser"</string>
 <string name="menu_update">"Aktualizovať Banana Browser"</string>
 <string name="menu_update_unsupported">"Banana Browser sa nedá aktualizovať"</string>
 <string name="menu_inline_update_ready_summary">"Reštartujte Banana Browser"</string>
@@ -58,7 +65,7 @@
 <string name="sogou_explanation">"Banana Browser môže použiť &lt;b&gt;Sogou&lt;/b&gt; na vyhľadávanie v Číne. Táto možnosť sa dá zmeniť v &lt;link&gt;Nastaveniach&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Táto aplikácia je spustená v Banana Browser"</string>
 <string name="twa_running_in_chrome">"Spustená v Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Zobrazí sa váš stav prihlásenia na webe %1$s, dáta prehliadania a údaje webu v Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Zobrazí sa váš stav prihlásenia na webe %1$s, dáta prehliadania a údaje webu v Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"V Banana Browser má údaje aj aplikácia %1$s."</string>
 <string name="keyboard_shortcut_help_center">"Otvorenie Centra pomoci prehliadača Banana Browser na novej karte"</string>
 <string name="keyboard_shortcut_chrome_feature_group_header">"Skratky pre funkcie prehliadača Google Banana Browser"</string>

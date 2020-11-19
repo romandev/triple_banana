@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Использовать вариант автозаполнения, предложенный Banana Browser"</string>
 <string name="password_check_status_message_error_no_passwords">"Сохраненных паролей нет. Чтобы браузер Banana Browser мог проверять пароли, сохраните их."</string>
 <string name="password_check_status_message_error_offline">"Не удается запустить проверку паролей в Banana Browser. Проверьте подключение к Интернету."</string>
 <string name="password_check_status_message_error_quota_limit">"Браузеру Banana Browser не удается проверить все пароли. Повторите попытку завтра."</string>
@@ -9,28 +10,32 @@
 <string name="password_check_status_subtitle_no_findings">"Вы получите уведомление от Banana Browser, если войдете в аккаунт с паролем, который был раскрыт."</string>
 <string name="sign_in_to_chrome">"Войти в Banana Browser"</string>
 <string name="sync_switch_title">"Синхронизировать данные Banana Browser"</string>
+<string name="offer_chrome_signin_title">"Разрешить вход в Banana Browser"</string>
+<string name="offer_chrome_signin_summary">"Предлагать войти в Banana Browser после входа в аккаунт Google"</string>
 <string name="usage_and_crash_reports_title">"Помогать повышать производительность Banana Browser и улучшать функции"</string>
 <string name="autofill_describe_local_copy">"Скопировано в Banana Browser"</string>
 <string name="password_settings_export_action_description">"Экспорт паролей, сохраненных в Banana Browser"</string>
 <string name="password_settings_export_subject">"Пароли Banana Browser"</string>
 <string name="options_homepage_chrome_homepage">"Главная страница Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Обеспечьте максимальную защиту в Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Помочь Banana Browser стать ещё безопаснее"</string>
 <string name="safe_browsing_scout_reporting_summary">"Для обнаружения опасных приложений и сайтов Banana Browser отправляет в Google URL некоторых страниц, которые вы открываете, контент на них, а также определенные сведения о системе"</string>
 <string name="clear_browsing_data_history_dialog_title">"Данные Banana Browser удалены"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"Выбранные данные удалены из Banana Browser и с синхронизированных устройств.
 
 Остальная история ваших действий в Интернете может храниться в аккаунте Google, например в виде поисковых запросов и сведений из наших сервисов. Она доступна на странице &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser поможет обеспечить защиту от утечки данных, подозрительных сайтов и других проблем с безопасностью."</string>
+<string name="safety_check_description">"Banana Browser поможет защитить вас от утечки данных, подозрительных сайтов и других проблем с безопасностью."</string>
 <string name="safety_check_passwords_error">"Браузеру Banana Browser не удается проверить пароли."</string>
 <string name="safety_check_passwords_error_offline">"Вы не в Сети. Браузеру Banana Browser не удается проверить пароли."</string>
 <string name="safety_check_passwords_error_quota_limit">"Браузеру Banana Browser удалось проверить не все пароли."</string>
-<string name="safety_check_updates_updated">"У вас установлена новейшая версия Banana Browser."</string>
+<string name="safety_check_updates_updated">"У вас установлена последняя версия Banana Browser."</string>
 <string name="safety_check_updates_outdated">"Версия Banana Browser устарела"</string>
 <string name="safety_check_updates_offline">"Вы не в Сети. Браузеру Banana Browser не удается проверить наличие обновлений."</string>
 <string name="safety_check_updates_error">"Не удалось проверить наличие обновлений в Banana Browser."</string>
 <string name="safe_browsing_enhanced_protection_bullet_two">"Позволяет избегать угроз при работе в браузере Banana Browser и может использоваться для повышения уровня безопасности в других приложениях Google, когда выполнен вход в аккаунт."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Сверяет URL со списком небезопасных сайтов в Banana Browser. Кроме того, если вы скачаете вредоносный файл или сайт попытается похитить ваш пароль, Banana Browser может отправить URL с образцами контента на проверку с помощью Безопасного просмотра."</string>
 <string name="languages_set_application_language_prompt">"Выбрать этот язык для Banana Browser"</string>
+<string name="languages_infobar_restart">"Перезапустите Google Banana Browser."</string>
 <string name="data_reduction_benefits_description_lite_mode">"В упрощенном режиме Banana Browser быстрее загружает страницы и экономит до 60 процентов трафика."</string>
 <string name="data_reduction_description_lite_mode">"Когда упрощенный режим включен, Banana Browser использует серверы Google, чтобы ускорить загрузку страниц. В упрощенном режиме на медленных страницах загружается только самый необходимый контент. Упрощенный режим не действует в режиме инкогнито."</string>
 <string name="data_reduction_promo_summary_lite_mode">"В упрощенном режиме Banana Browser быстрее загружает страницы и экономит до 60 % трафика. Чтобы оптимизировать страницы, которые вы посещаете, Banana Browser отправляет ваш интернет-трафик в Google. &lt;link&gt;Подробнее…&lt;/link&gt;"</string>
@@ -51,7 +56,7 @@
 <string name="bluetooth_need_location_permission">"Чтобы выполнить поиск устройств, браузеру Banana Browser нужен доступ к геоданным. &lt;permission_link&gt;Обновить разрешения&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Чтобы выполнить поиск устройств, браузеру Banana Browser нужен доступ к геоданным. &lt;services_link&gt;Включить&lt;/services_link&gt;"</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Чтобы выполнить поиск устройств, браузеру Banana Browser нужен доступ к геоданным. &lt;services_link&gt;Включите доступ&lt;/services_link&gt; и &lt;permission_link&gt;обновите разрешения&lt;/permission_link&gt;."</string>
-<string name="hint_sync_settings_not_confirmed_description">"Чтобы начать ее, нажмите \"Синхронизировать данные Banana Browser\"."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Чтобы начать ее, нажмите \"Синхронизировать данные Banana Browser\"."</string>
 <string name="inline_update_infobar_ready_link_text">"Перезапустите Google Banana Browser."</string>
 <string name="inline_update_toast_downloading_message">"Скачивание обновлений для Banana Browser…"</string>
 <string name="update_notification_title_default">"Обновить Banana Browser"</string>
@@ -66,9 +71,14 @@
 <string name="lightweight_fre_associated_app_tos">"Приложение \"%1$s\" откроется в Banana Browser. Продолжая, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;."</string>
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"Приложение \"%1$s\" откроется в Banana Browser. Продолжая, вы принимаете &lt;LINK1&gt;Условия использования Google&lt;/LINK1&gt; и &lt;LINK2&gt;Дополнительные условия использования Banana Browser и Banana Browser OS&lt;/LINK2&gt;. Кроме этих документов, также действует &lt;LINK3&gt;Примечание о конфиденциальности данных в аккаунтах Google, управляемых с помощью Family Link&lt;/LINK3&gt;."</string>
 <string name="fre_welcome">"Добро пожаловать в Banana Browser!"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Вы войдете в свой аккаунт Google\n(синхронизация Banana Browser при этом не включится)."</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Войдите на сайт и в Banana Browser со своим аккаунтом Google. Синхронизацию можно включить позже."</string>
 <string name="signin_account_picker_general_error_subtitle">"Браузеру Banana Browser не удалось проверить ваши данные."</string>
 <string name="external_app_restricted_access_error">"Запрошенный ресурс недоступен в Banana Browser"</string>
+<string name="video_tutorials_card_chrome_intro">"Работа в браузере Banana Browser"</string>
+<string name="video_tutorials_card_search">"Как выполнять поиск в Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Видео о том, как пользоваться Banana Browser"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser: обучение"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigate Banana Browser"</string>
 <string name="menu_update">"Обновить Banana Browser"</string>
 <string name="menu_update_unsupported">"Не удалось обновить Banana Browser"</string>
 <string name="menu_inline_update_ready_summary">"Перезапустите Google Banana Browser."</string>

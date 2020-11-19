@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Suggesties voor automatisch invullen van Banana Browser gebruiken"</string>
 <string name="password_check_status_message_error_no_passwords">"Geen opgeslagen wachtwoorden. Banana Browser kan je wachtwoorden controleren als je deze hebt opgeslagen."</string>
 <string name="password_check_status_message_error_offline">"Banana Browser kan je wachtwoorden niet checken. Check de internetverbinding."</string>
 <string name="password_check_status_message_error_quota_limit">"Banana Browser kan niet alle wachtwoorden checken. Probeer het morgen opnieuw."</string>
@@ -9,18 +10,21 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser laat het je weten als je inlogt met een gehackt wachtwoord."</string>
 <string name="sign_in_to_chrome">"Inloggen bij Banana Browser"</string>
 <string name="sync_switch_title">"Je Banana Browser-gegevens synchroniseren"</string>
+<string name="offer_chrome_signin_title">"Inloggen bij Banana Browser toestaan"</string>
+<string name="offer_chrome_signin_summary">"Banana Browser-inlogprompts weergeven als je inlogt op je Google-account"</string>
 <string name="usage_and_crash_reports_title">"Help de functies en prestaties van Banana Browser verbeteren"</string>
 <string name="autofill_describe_local_copy">"Gekopieerd naar Banana Browser"</string>
 <string name="password_settings_export_action_description">"Wachtwoorden exporteren die zijn opgeslagen in Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser-wachtwoorden"</string>
 <string name="options_homepage_chrome_homepage">"Homepage van Banana Browser"</string>
+<string name="enhanced_protection_promo_title">"Gebruik het hoogste beveiligingsniveau van Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_title">"Help de beveiliging van Banana Browser te verbeteren"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser verzendt de URL\'s van sommige pagina\'s die je bezoekt, beperkte systeemgegevens en bepaalde paginacontent naar Google om gevaarlijke apps en sites te detecteren"</string>
 <string name="clear_browsing_data_history_dialog_title">"Banana Browser-gegevens gewist"</string>
 <string name="clear_browsing_data_history_dialog_data_text">"De geselecteerde gegevens zijn verwijderd uit Banana Browser en van je gesynchroniseerde apparaten.
 
 Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekopdrachten en activiteit uit andere Google-services) beschikbaar zijn via &lt;link&gt;myactivity.google.com&lt;/link&gt;."</string>
-<string name="safety_check_description">"Banana Browser kan je beschermen tegen gegevenslekken, niet-beveiligde websites en meer"</string>
+<string name="safety_check_description">"Banana Browser kan je beschermen tegen gegevenslekken, onveilige websites en meer."</string>
 <string name="safety_check_passwords_error">"Banana Browser kan je wachtwoorden niet checken"</string>
 <string name="safety_check_passwords_error_offline">"Offline. Banana Browser kan je wachtwoorden niet checken."</string>
 <string name="safety_check_passwords_error_quota_limit">"Banana Browser kan niet alle wachtwoorden checken"</string>
@@ -31,6 +35,7 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="safe_browsing_enhanced_protection_bullet_two">"Beschermt je op Banana Browser en kan worden gebruikt om de beveiliging in andere Google-apps te verbeteren als je bent ingelogd."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Controleert URL\'s aan de hand van een lijst met onveilige sites die is opgeslagen in Banana Browser. Als een site je wachtwoord probeert te stelen of als je een schadelijk bestand downloadt, kan Banana Browser ook URL\'s, inclusief delen van de paginacontent, naar Safe Browsing sturen."</string>
 <string name="languages_set_application_language_prompt">"Gebruiken als taal voor Banana Browser"</string>
+<string name="languages_infobar_restart">"Banana Browser opnieuw starten"</string>
 <string name="data_reduction_benefits_description_lite_mode">"In de Lite-versie van Banana Browser worden pagina\'s sneller geladen en wordt tot wel 60 procent minder data verbruikt."</string>
 <string name="data_reduction_description_lite_mode">"Wanneer de Lite-modus is ingeschakeld, gebruikt Banana Browser Google-servers om pagina\'s sneller te laden. In de Lite-versie worden erg trage pagina\'s herschreven zodat alleen essentiële content wordt geladen. De Lite-modus werkt niet op incognitotabbladen."</string>
 <string name="data_reduction_promo_summary_lite_mode">"In de Lite-versie van Banana Browser worden pagina\'s sneller geladen en wordt tot wel 60 procent minder data verbruikt. Banana Browser stuurt je webverkeer naar Google om de pagina\'s te optimaliseren die je bezoekt. &lt;link&gt;Meer informatie&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="bluetooth_need_location_services_on">"Banana Browser heeft locatietoegang nodig om naar apparaten te scannen. Locatietoegang is &lt;services_link&gt;uitgeschakeld voor dit apparaat&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"Banana Browser heeft locatietoegang nodig om naar apparaten te scannen. &lt;permission_link&gt;Rechten updaten&lt;/permission_link&gt;. Locatietoegang is ook &lt;services_link&gt;uitgeschakeld voor dit apparaat&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Open Android-instellingen en schakel Android-systeemsynchronisatie weer in om Banana Browser-synchronisatie te starten"</string>
-<string name="hint_sync_settings_not_confirmed_description">"Schakel \'Je Banana Browser-gegevens synchroniseren\' in om de synchronisatie te starten."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Schakel \'Je Banana Browser-gegevens synchroniseren\' in om de synchronisatie te starten."</string>
 <string name="inline_update_infobar_ready_link_text">"Banana Browser opnieuw starten"</string>
 <string name="inline_update_toast_downloading_message">"Banana Browser-update downloaden…"</string>
 <string name="update_notification_title_default">"Banana Browser updaten"</string>
@@ -69,9 +74,14 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="lightweight_fre_associated_app_tos">"%1$s wordt geopend in Banana Browser. Als je doorgaat, ga je akkoord met de &lt;LINK1&gt;servicevoorwaarden van Google&lt;/LINK1&gt; en met de &lt;LINK2&gt;aanvullende servicevoorwaarden van Google Banana Browser en Banana Browser OS&lt;/LINK2&gt;."</string>
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"%1$s wordt geopend in Banana Browser. Als je doorgaat, ga je akkoord met de &lt;LINK1&gt;servicevoorwaarden van Google&lt;/LINK1&gt; en met de &lt;LINK2&gt;aanvullende servicevoorwaarden van Google Banana Browser en Banana Browser OS&lt;/LINK2&gt;. Ook is de &lt;LINK3&gt;privacyverklaring voor Google-accounts die worden beheerd met Family Link&lt;/LINK3&gt; van toepassing."</string>
 <string name="fre_welcome">"Welkom bij Banana Browser"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Je wordt ingelogd met je Google-account\n(hierdoor wordt Banana Browser-synchronisatie niet ingeschakeld)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Log in bij deze site en Banana Browser met je Google-account. Je kunt synchronisatie later inschakelen."</string>
 <string name="signin_account_picker_general_error_subtitle">"Banana Browser kan je gegevens niet verifiëren"</string>
 <string name="external_app_restricted_access_error">"Banana Browser heeft geen toegang tot de gevraagde bron."</string>
+<string name="video_tutorials_card_chrome_intro">"Banana Browser gebruiken"</string>
+<string name="video_tutorials_card_search">"Zoeken met Banana Browser"</string>
+<string name="video_tutorials_card_all_videos">"Video\'s over hoe je Banana Browser kunt gebruiken"</string>
+<string name="video_tutorials_learn_chrome">"Banana Browser leren gebruiken"</string>
+<string name="video_tutorials_tile_chrome_intro">"Navigeren in Banana Browser"</string>
 <string name="menu_update">"Banana Browser updaten"</string>
 <string name="menu_update_unsupported">"Banana Browser kan niet updaten"</string>
 <string name="menu_inline_update_ready_summary">"Banana Browser opnieuw starten"</string>
@@ -87,7 +97,7 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="sogou_explanation">"Banana Browser kan &lt;b&gt;Sogou&lt;/b&gt; gebruiken voor zoekopdrachten in China. Je kunt dit wijzigen in &lt;link&gt;Instellingen&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Deze app wordt uitgevoerd in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Actief in Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Je ziet je inlogstatus, browsergegevens en sitegegevens van %1$s in Banana Browser."</string>
+<string name="twa_running_in_chrome_v2">"Je ziet je inlogstatus, browsergegevens en sitegegevens van %1$s in Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s heeft ook gegevens in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Je kunt de gegevens wissen in de Banana Browser-instellingen"</string>
 <string name="keyboard_shortcut_help_center">"Helpcentrum van Banana Browser openen in een nieuw tabblad"</string>

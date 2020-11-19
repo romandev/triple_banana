@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<string name="iph_keyboard_accessory_fill_with_chrome">"Naudoti „Banana Browser“ automatinio pildymo pasiūlymą"</string>
 <string name="password_check_status_message_error_no_passwords">"Nėra išsaugotų slaptažodžių. „Banana Browser“ gali tikrinti jūsų slaptažodžius, kai juos išsaugote."</string>
 <string name="password_check_status_message_error_offline">"„Banana Browser“ negali patikrinti jūsų slaptažodžių. Pabandykite patikrinti interneto ryšį."</string>
 <string name="password_check_status_message_error_quota_limit">"„Banana Browser“ nepavyko patikrinti visų slaptažodžių. Rytoj bandykite dar kartą."</string>
@@ -9,11 +10,14 @@
 <string name="password_check_status_subtitle_no_findings">"„Banana Browser“ praneš jums, kai prisijungsite naudodami pažeistą slaptažodį."</string>
 <string name="sign_in_to_chrome">"Prisijungti prie „Banana Browser“"</string>
 <string name="sync_switch_title">"„Banana Browser“ duomenų sinchronizavimas"</string>
+<string name="offer_chrome_signin_title">"Leisti „Banana Browser“ prisijungti"</string>
+<string name="offer_chrome_signin_summary">"Rodomi „Banana Browser“ prisijungimo raginimai, kai prisijungiate prie „Google“ paskyros"</string>
 <string name="usage_and_crash_reports_title">"Padėti tobulinti „Banana Browser“ funkcijas ir našumą"</string>
 <string name="autofill_describe_local_copy">"Nukopijuota į „Banana Browser“"</string>
 <string name="password_settings_export_action_description">"Eksportuoti sistemoje „Banana Browser“ saugomus slaptažodžius"</string>
 <string name="password_settings_export_subject">"„Banana Browser“ slaptažodžiai"</string>
 <string name="options_homepage_chrome_homepage">"Pagrindinis „Banana Browser“ puslapis"</string>
+<string name="enhanced_protection_promo_title">"Gaukite patikimiausią „Banana Browser“ apsaugą"</string>
 <string name="safe_browsing_scout_reporting_title">"Padėkite tobulinti „Banana Browser“ saugą"</string>
 <string name="safe_browsing_scout_reporting_summary">"Tam, kad būtų aptiktos pavojingos programos ir svetainės, „Banana Browser“ siunčia „Google“ kai kurių puslapių, kuriuose lankotės, URL, ribotą sistemos informaciją ir kai kurių puslapių turinį"</string>
 <string name="clear_browsing_data_history_dialog_title">"Išvalyti „Banana Browser“ duomenys"</string>
@@ -31,6 +35,7 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="safe_browsing_enhanced_protection_bullet_two">"Apsaugo jus naršyklėje „Banana Browser“ ir gali būti naudojama apsaugai kitose „Google“ programose pagerinti, kai esate prisijungę."</string>
 <string name="safe_browsing_standard_protection_bullet_two">"Tikrinami URL pagal nesaugių svetainių sąrašą, saugomą naršyklėje „Banana Browser“. Jei svetainė bando pavogti slaptažodį ar atsisiuntėte žalingą failą, „Banana Browser“ taip pat gali siųsti URL, įskaitant puslapio turinio dalis, Saugaus naršymo funkcijai."</string>
 <string name="languages_set_application_language_prompt">"Naudoti kaip „Banana Browser“ kalbą"</string>
+<string name="languages_infobar_restart">"Iš naujo paleiskite „Banana Browser“"</string>
 <string name="data_reduction_benefits_description_lite_mode">"Kai įjungtas supaprastintasis režimas, sistemoje „Banana Browser“ puslapiai įkeliami sparčiau ir naudojama iki 60 proc. mažiau duomenų."</string>
 <string name="data_reduction_description_lite_mode">"Kai įjungtas supaprastintasis režimas, „Banana Browser“ naudoja „Google“ serverius, kad puslapiai būtų įkeliami greičiau. Kai įjungtas supaprastintasis režimas, itin lėti puslapiai perrašomi, kad būtų įkeliamas tik svarbiausias turinys. Supaprastintasis režimas netaikomas inkognito skirtukams."</string>
 <string name="data_reduction_promo_summary_lite_mode">"Kai įjungtas supaprastintasis režimas, „Banana Browser“ sparčiau įkelia puslapius ir sunaudoja iki 60 proc. mažiau duomenų. „Banana Browser“ siunčia žiniatinklio srauto duomenis sistemai „Google“, kad optimizuotų puslapius, kuriuose lankotės. &lt;link&gt;Sužinokite daugiau&lt;/link&gt;"</string>
@@ -53,7 +58,7 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="bluetooth_need_location_services_on">"„Banana Browser“ reikalinga prieiga prie informacijos apie vietovę, kad galėtų nuskaityti įrenginius. Galimybė pasiekti informaciją apie vietovę &lt;services_link&gt;išjungta šiame įrenginyje&lt;/services_link&gt;."</string>
 <string name="bluetooth_need_location_permission_and_services_on">"„Banana Browser“ reikalinga prieiga prie informacijos apie vietovę, kad galėtų nuskaityti įrenginius. &lt;permission_link&gt;Atnaujinkite leidimus&lt;/permission_link&gt;. Be to, galimybė pasiekti informaciją apie vietovę &lt;services_link&gt;išjungta šiame įrenginyje&lt;/services_link&gt;."</string>
 <string name="hint_android_sync_disabled">"Atid. „Android“ nust. ir iš n. įgal. „Android“ sist., kad prad. „Banana Browser“ sinchr."</string>
-<string name="hint_sync_settings_not_confirmed_description">"Norėdami pradėti sinchronizuoti, įjunkite parinktį „Banana Browser“ duomenų sinchronizavimas“."</string>
+<string name="hint_sync_settings_not_confirmed_description_legacy">"Norėdami pradėti sinchronizuoti, įjunkite parinktį „Banana Browser“ duomenų sinchronizavimas“."</string>
 <string name="inline_update_infobar_ready_link_text">"Iš naujo paleiskite „Banana Browser“"</string>
 <string name="inline_update_toast_downloading_message">"Atsisiunčiamas „Banana Browser“ naujinys…"</string>
 <string name="update_notification_title_default">"Atnaujinkite „Banana Browser“"</string>
@@ -70,9 +75,14 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="lightweight_fre_associated_app_tos_and_privacy_child_account">"„%1$s“ bus atidaryta naršyklėje „Banana Browser“. Tęsdami sutinkate su &lt;LINK1&gt;„Google“ paslaugų teikimo sąlygomis&lt;/LINK1&gt; ir &lt;LINK2&gt;„Google Banana Browser“ bei „Banana Browser“ OS papildomomis paslaugų teikimo sąlygomis&lt;/LINK2&gt;. Taip pat taikomas &lt;LINK3&gt;„Google“ paskyrų, kurios tvarkomos naudojant „Family Link“, privatumo pranešimas&lt;/LINK3&gt;."</string>
 <string name="fre_send_report_check">"Padėkite tobulinti „Banana Browser“ siųsdami „Google“ naudojimo statistiką ir strigčių ataskaitas."</string>
 <string name="fre_welcome">"Sveiki, tai „Banana Browser“"</string>
-<string name="signin_account_picker_bottom_sheet_subtitle">"Prisijungsite naudodami savo „Google“ paskyrą\n(„Banana Browser“ sinchronizavimo funkcija nebus įjungta)"</string>
+<string name="signin_account_picker_bottom_sheet_subtitle">"Prisijunkite prie šios svetainės ir „Banana Browser“ naudodami „Google“ paskyrą. Sinchronizavimą galėsite įjungti vėliau."</string>
 <string name="signin_account_picker_general_error_subtitle">"„Banana Browser“ nepavyko patvirtinti jūsų informacijos"</string>
 <string name="external_app_restricted_access_error">"„Banana Browser“ negali pasiekti pageidaujamo ištekliaus."</string>
+<string name="video_tutorials_card_chrome_intro">"Kaip naudoti „Banana Browser“"</string>
+<string name="video_tutorials_card_search">"Kaip ieškoti naudojant „Banana Browser“"</string>
+<string name="video_tutorials_card_all_videos">"Vaizdo įrašai apie „Banana Browser“ naudojimą"</string>
+<string name="video_tutorials_learn_chrome">"Informacija apie „Banana Browser“"</string>
+<string name="video_tutorials_tile_chrome_intro">"Naršyti „Banana Browser“"</string>
 <string name="menu_update">"Atnaujinkite „Banana Browser“"</string>
 <string name="menu_update_unsupported">"Nepav. atnauj. „Banana Browser“"</string>
 <string name="menu_inline_update_ready_summary">"Iš naujo paleiskite „Banana Browser“"</string>
@@ -88,7 +98,7 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="sogou_explanation">"„Banana Browser“ gali naudoti &lt;b&gt;Sogou&lt;/b&gt;, kai paieškos atliekamos Kinijoje. Šį nustatymą galite pakeisti skiltyje &lt;link&gt;„Nustatymai“&lt;/link&gt;."</string>
 <string name="app_running_in_chrome_disclosure">"Ši programa veikia naršyklėje „Banana Browser“"</string>
 <string name="twa_running_in_chrome">"Paleista naršyklėje „Banana Browser“"</string>
-<string name="twa_running_in_chrome_v2">"Matysite %1$s prisijungimo būseną, naršymo duomenis ir svetainės duomenis sistemoje „Banana Browser“."</string>
+<string name="twa_running_in_chrome_v2">"Matysite %1$s prisijungimo būseną, naršymo duomenis ir svetainės duomenis sistemoje „Banana Browser“"</string>
 <string name="twa_clear_data_dialog_title">"„%1$s“ duomenų taip pat yra naršyklėje „Banana Browser“"</string>
 <string name="twa_clear_data_dialog_message">"Duomenis galite išvalyti „Banana Browser“ nustatymų“ skiltyje"</string>
 <string name="keyboard_shortcut_help_center">"Atidaryti „Banana Browser“ pagalb. centrą naujame skirtuke"</string>
