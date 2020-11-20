@@ -1,3 +1,15 @@
+# 6.01 @ 87.0.4280.66
+
+## Chromium base version
+- **87.0.4280.66**
+
+## Change log
+- Rebase 87.0.4280.66 (#871)
+- Update strings for 87.0.4280.60 (#869)
+- Fix a crash when enabling "Tab Groups" feature (#868)
+- Rebase 87.0.4280.60 (#866)
+
+
 # 5.06 @ 86.0.4240.185
 
 ## Chromium base version
