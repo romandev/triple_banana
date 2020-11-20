@@ -1,0 +1,12 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/privacy/settings/PrivacySettings.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/privacy/settings/PrivacySettings.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/privacy/settings/PrivacySettings.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/privacy/settings/PrivacySettings.java
+@@ -110,6 +110,8 @@ public class PrivacySettings
+ 
+         Preference secureDnsPref = findPreference(PREF_SECURE_DNS);
+         secureDnsPref.setVisible(SecureDnsSettings.isUiEnabled());
++        // FIXME(#874): Resolve conflict with upstream "Secure DNS".
++        secureDnsPref.setVisible(false);
+ 
+         Preference syncAndServicesLink = findPreference(PREF_SYNC_AND_SERVICES_LINK);
+         syncAndServicesLink.setSummary(buildSyncAndServicesLink());
