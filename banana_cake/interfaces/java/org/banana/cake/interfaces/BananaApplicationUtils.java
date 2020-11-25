@@ -29,4 +29,5 @@ public interface BananaApplicationUtils {
     void restart();
     AlertDialog.Builder getDialogBuilder(Context context);
     void showInfoPage(String url);
+    boolean isFirstInstall();
 }

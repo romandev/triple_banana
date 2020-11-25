@@ -17,6 +17,7 @@ import org.chromium.base.ContextUtils;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ApplicationLifetime;
 import org.chromium.chrome.browser.customtabs.CustomTabActivity;
+import org.chromium.chrome.browser.firstrun.FirstRunStatus;
 import org.chromium.ui.UiUtils;
 
 class CakeApplicationUtils implements BananaApplicationUtils {
@@ -60,5 +61,10 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     @Override
     public void showInfoPage(String url) {
         CustomTabActivity.showInfoPage(getApplicationContext(), url);
+    }
+
+    @Override
+    public boolean isFirstInstall() {
+        return !FirstRunStatus.getFirstRunFlowComplete();
     }
 }

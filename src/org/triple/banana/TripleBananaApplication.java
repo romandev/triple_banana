@@ -27,11 +27,6 @@ public class TripleBananaApplication extends BananaApplication {
         InterfaceProvider.initialize();
     }
 
-    private boolean isFirstInstall() {
-        return !BananaApplicationUtils.get().getSharedPreferences().contains(
-                FeatureName.BOTTOM_TOOLBAR);
-    }
-
     private String getCurrentVersion() {
         try {
             Context context = BananaApplicationUtils.get().getApplicationContext();
@@ -59,6 +54,9 @@ public class TripleBananaApplication extends BananaApplication {
 
     @Override
     protected void onBeforeInitialized() {
+        if (BananaApplicationUtils.get().isFirstInstall()) {
+            setLastUpdatedVersion(getCurrentVersion());
+        }
         ApplicationStatusTracker.getInstance().start();
         // Apply BrowserLock from ExtensionFeatures setting
         if (ExtensionFeatures.isEnabled(FeatureName.BROWSER_LOCK)) {
@@ -68,9 +66,6 @@ public class TripleBananaApplication extends BananaApplication {
 
     @Override
     protected void onInitialized() {
-        if (isFirstInstall()) {
-            setLastUpdatedVersion(getCurrentVersion());
-        }
         if (!getLastUpdatedVersion().equals(getCurrentVersion())) {
             AppMenuDelegate.get().setNewFeatureIcon(true);
             setLastUpdatedVersion(getCurrentVersion());
