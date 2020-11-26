@@ -1,3 +1,13 @@
+# 6.02 @ 87.0.4280.66
+
+## Chromium base version
+- **87.0.4280.66**
+
+## Change log
+- Change check logic whether it is first install (#876)
+- Disable "Secure DNS" menu on Privacy Settings (#875)
+
+
 # 6.01 @ 87.0.4280.66
 
 ## Chromium base version
