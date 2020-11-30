@@ -6,8 +6,10 @@
 package org.triple.banana.media_remote;
 
 import android.app.Activity;
+import android.content.Context;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 interface MediaRemoteView {
     enum Effect { NONE, FORWARD, BACKWARD }
@@ -21,4 +23,6 @@ interface MediaRemoteView {
     void show(@NonNull Activity parentActivity);
     void dismiss();
     void showEffect(Effect effect);
+    @Nullable
+    Context getContext();
 }

@@ -21,6 +21,7 @@ import org.triple.banana.media.MediaController;
 import org.triple.banana.media.MediaEventListener;
 import org.triple.banana.media.MediaPlayState;
 import org.triple.banana.util.AudioUtil;
+import org.triple.banana.util.YouTubeUtil;
 
 public enum MediaRemoteService implements MediaRemoteView
 .Delegate {
@@ -160,6 +161,10 @@ public enum MediaRemoteService implements MediaRemoteView
             mViewModel.commit();
         } else if (id == R.id.download_button) {
             mMediaController.download();
+        } else if (id == R.id.closed_caption_button) {
+            // FIXME(#884): We should implement this.
+        } else if (id == R.id.quality_button) {
+            YouTubeUtil.showQualityOptionsDialog(mView.getContext());
         }
     }
 

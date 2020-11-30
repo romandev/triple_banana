@@ -7,6 +7,7 @@ package org.triple.banana.media_remote;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Handler;
@@ -37,11 +38,13 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
     private static final @NonNull @IdRes int[] BUTTON_IDS = new int[] {
             R.id.back_button,
             R.id.backward_button,
+            R.id.closed_caption_button,
             R.id.download_button,
             R.id.forward_button,
             R.id.mute_button,
             R.id.lock_button,
             R.id.play_button,
+            R.id.quality_button,
             R.id.rotate_button,
     };
     // clang-format on
@@ -193,15 +196,6 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
                 v.setVisibility(View.VISIBLE);
             });
         }
-
-        // Quality button is supported only on YouTube site.
-        if (YouTubeUtil.isYouTubeUrl()) {
-            $.select(R.id.quality_button, v -> {
-                v.setOnClickListener(
-                        view -> YouTubeUtil.showQualityOptionsDialog(mDialog.getContext()));
-                v.setVisibility(View.VISIBLE);
-            });
-        }
     }
     private void resetContentViewInteractionListeners() {
         if (mDialog == null || !mDialog.isShowing()) return;
@@ -284,6 +278,12 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         updateOptionalButtons(data);
         updatePlayState(data);
         updateTimeInfo(data);
+    }
+
+    @Override
+    public @Nullable Context getContext() {
+        if (mDialog == null) return null;
+        return mDialog.getContext();
     }
 
     private void setVisible(@NonNull View view, boolean isVisible) {
@@ -389,6 +389,8 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         assert mDialog != null && mDialog.isShowing();
 
         $.select(R.id.download_button, v -> setVisibleOrGone(v, data.isDownloadable()));
+        $.select(R.id.closed_caption_button, v -> setVisibleOrGone(v, YouTubeUtil.isYouTubeUrl()));
+        $.select(R.id.quality_button, v -> setVisibleOrGone(v, YouTubeUtil.isYouTubeUrl()));
     }
 
     private void updatePlayState(MediaRemoteViewModel.ReadonlyData data) {

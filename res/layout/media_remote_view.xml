@@ -37,9 +37,18 @@
             android:id="@+id/quality_button"
             style="@style/MediaRemoteButtonTheme"
             android:layout_alignParentTop="true"
-            android:layout_toStartOf="@id/download_button"
+            android:layout_toStartOf="@id/closed_caption_button"
             android:contentDescription="@string/media_remote_quality"
             android:src="@drawable/ic_quality"
+            android:visibility="gone" />
+
+	<ImageButton
+            android:id="@+id/closed_caption_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/download_button"
+            android:contentDescription="@string/media_remote_closed_caption"
+            android:src="@drawable/ic_closed_caption"
             android:visibility="gone" />
 
 	<ImageButton

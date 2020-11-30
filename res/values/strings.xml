@@ -39,6 +39,7 @@
     <string name="media_remote_back">Back</string>
     <string name="media_remote_backward">Backward</string>
     <string name="media_remote_brightness">Brightness</string>
+    <string name="media_remote_closed_caption">Closed Caption</string>
     <string name="media_remote_default_time">00:00 | 00:00</string>
     <string name="media_remote_download">Download</string>
     <string name="media_remote_forward">Forward</string>
