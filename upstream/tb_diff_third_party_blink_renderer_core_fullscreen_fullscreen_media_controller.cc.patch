@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc
-@@ -0,0 +1,89 @@
+@@ -0,0 +1,90 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -41,7 +41,8 @@
 +
 +  SetVideoElement(video_element);
 +  EnsureBindEventDispatcher();
-+  dispatcher_->OnEnteredVideoFullscreen(processor_.BindNewPipeAndPassRemote());
++  dispatcher_->OnEnteredVideoFullscreen(processor_.BindNewPipeAndPassRemote(),
++                                        video_element->SupportsSave());
 +}
 +
 +void FullscreenMediaController::DispatchExitedVideoFullscreen() {

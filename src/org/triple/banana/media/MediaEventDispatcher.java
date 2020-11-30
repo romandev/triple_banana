@@ -63,10 +63,10 @@ public enum MediaEventDispatcher implements BananaMediaEventDispatcher {
     }
 
     @Override
-    public void onEnteredVideoFullscreen(BananaMediaCommandProcessor impl) {
+    public void onEnteredVideoFullscreen(BananaMediaCommandProcessor impl, boolean isDownloadable) {
         MediaCommandProcessor.instance.setImpl(impl);
         for (MediaEventListener listener : mListeners) {
-            listener.onEnteredVideoFullscreen();
+            listener.onEnteredVideoFullscreen(isDownloadable);
         }
     }
 

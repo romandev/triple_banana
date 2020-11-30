@@ -16,7 +16,7 @@ interface BananaMediaEventDispatcher {
   OnPlayStateChanged(BananaPlayState state);
   OnTimeUpdate(double current_time, double duration);
   OnChangedPIPMode(bool value);
-  OnEnteredVideoFullscreen(pending_remote<BananaMediaCommandProcessor> impl);
+  OnEnteredVideoFullscreen(pending_remote<BananaMediaCommandProcessor> impl, bool isDownloadable);
   OnExitedVideoFullscreen();
 };
 

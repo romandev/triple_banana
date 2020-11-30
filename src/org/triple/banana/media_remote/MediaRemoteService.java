@@ -82,13 +82,11 @@ public enum MediaRemoteService implements MediaRemoteView
             }
 
             @Override
-            public void onEnteredVideoFullscreen() {
+            public void onEnteredVideoFullscreen(boolean isDownloadable) {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
                 mViewModel.reset();
-                // FIXME(#885): We should update the following value to the value passed from engine
-                // side.
-                mViewModel.getEditor().setIsDownloadable(false);
+                mViewModel.getEditor().setIsDownloadable(isDownloadable);
                 mView.show((Activity) tab.getContext());
             }
 
@@ -103,7 +101,7 @@ public enum MediaRemoteService implements MediaRemoteView
                 if (value) {
                     mView.dismiss();
                 } else if (mWasPipMode) {
-                    onEnteredVideoFullscreen();
+                    onEnteredVideoFullscreen(mViewModel.getEditor().isDownloadable());
                 }
                 mWasPipMode = value;
             }

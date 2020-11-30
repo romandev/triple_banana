@@ -27,7 +27,7 @@ public interface MediaEventListener {
     /**
      * Called when entered the video fullscreen.
      */
-    default void onEnteredVideoFullscreen() {}
+    default void onEnteredVideoFullscreen(boolean isDownloadable) {}
 
     /**
      * Called when exited the video fullscreen.
