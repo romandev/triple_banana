@@ -35,6 +35,10 @@ public enum MediaController {
         mCommandProcessor.setRelativePosition(seconds);
     }
 
+    public void download() {
+        mCommandProcessor.download();
+    }
+
     public void setVolume(float value) {
         mCommandProcessor.setVolume(value);
     }

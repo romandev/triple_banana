@@ -24,4 +24,5 @@ interface BananaMediaCommandProcessor {
   Play();
   Pause();
   SetRelativePosition(double seconds);
+  Download();
 };

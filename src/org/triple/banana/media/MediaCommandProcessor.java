@@ -49,6 +49,11 @@ public enum MediaCommandProcessor {
         mImpl.setRelativePosition(seconds);
     }
 
+    public void download() {
+        if (mImpl == null) return;
+        mImpl.download();
+    }
+
     public void setVolume(float value) {
         if (value < 0.0f) {
             value = 0.0f;

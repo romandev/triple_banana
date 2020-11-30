@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h
-@@ -0,0 +1,53 @@
+@@ -0,0 +1,54 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -28,6 +28,7 @@
 +  void Play() override;
 +  void Pause() override;
 +  void SetRelativePosition(double seconds) override;
++  void Download() override;
 +
 +  void DispatchEnteredVideoFullscreen(HTMLVideoElement* video_element);
 +  void DispatchExitedVideoFullscreen();

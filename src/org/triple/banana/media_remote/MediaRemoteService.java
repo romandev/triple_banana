@@ -158,6 +158,8 @@ public enum MediaRemoteService implements MediaRemoteView
             AudioUtil.setMediaVolumeMuted(!isVolumeMuted);
             mViewModel.getEditor().setIsMuted(!isVolumeMuted);
             mViewModel.commit();
+        } else if (id == R.id.download_button) {
+            mMediaController.download();
         }
     }
 
