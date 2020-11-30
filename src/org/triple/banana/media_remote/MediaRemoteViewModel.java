@@ -26,6 +26,7 @@ class MediaRemoteViewModel {
         protected boolean mBrightnessControlVisibility;
         protected boolean mIsLocked;
         protected boolean mIsMuted;
+        protected boolean mIsDownloadable;
         protected MediaPlayState mPlayState = MediaPlayState.PAUSED;
 
         float getBrightness() {
@@ -64,6 +65,10 @@ class MediaRemoteViewModel {
             return mIsMuted;
         }
 
+        boolean isDownloadable() {
+            return mIsDownloadable;
+        }
+
         MediaPlayState getPlayState() {
             return mPlayState;
         }
@@ -76,6 +81,7 @@ class MediaRemoteViewModel {
             setControlsVisibility(true);
             setIsLocked(false);
             setIsMuted(AudioUtil.isMediaVolumeMuted());
+            setIsDownloadable(true);
         }
 
         void setBrightness(float brightness) {
@@ -122,6 +128,10 @@ class MediaRemoteViewModel {
 
         void setIsMuted(boolean isMuted) {
             mIsMuted = isMuted;
+        }
+
+        void setIsDownloadable(boolean isDownloadable) {
+            mIsDownloadable = isDownloadable;
         }
 
         void setPlayState(MediaPlayState state) {

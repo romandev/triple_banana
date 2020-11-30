@@ -33,6 +33,19 @@ import org.triple.banana.util.YouTubeUtil;
 import java.lang.ref.WeakReference;
 
 class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Listener {
+    // clang-format off
+    private static final @NonNull @IdRes int[] BUTTON_IDS = new int[] {
+            R.id.back_button,
+            R.id.backward_button,
+            R.id.download_button,
+            R.id.forward_button,
+            R.id.mute_button,
+            R.id.lock_button,
+            R.id.play_button,
+            R.id.rotate_button,
+    };
+    // clang-format on
+
     private final @NonNull WeakReference<Delegate> mDelegate;
     private final @NonNull MediaRemoteGestureDetector mGestureDetector;
     private final @NonNull View.OnClickListener mButtonClickedListener;
@@ -169,10 +182,8 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         $.<SeekBar>select(
                 R.id.time_seekbar, v -> v.setOnSeekBarChangeListener(mPositionChangeListener));
 
-        int[] buttons = new int[] {R.id.play_button, R.id.backward_button, R.id.forward_button,
-                R.id.rotate_button, R.id.lock_button, R.id.back_button, R.id.mute_button};
-        for (int button : buttons) {
-            $.select(button, v -> v.setOnClickListener(mButtonClickedListener));
+        for (@IdRes int buttonId : BUTTON_IDS) {
+            $.select(buttonId, v -> v.setOnClickListener(mButtonClickedListener));
         }
 
         // PIP mode button is only visible on android 8.0 or higher.
@@ -270,12 +281,17 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         updateBrightness(data);
         updateVolume(data);
         updateControls(data);
+        updateOptionalButtons(data);
         updatePlayState(data);
         updateTimeInfo(data);
     }
 
     private void setVisible(@NonNull View view, boolean isVisible) {
         view.setVisibility(isVisible ? View.VISIBLE : View.INVISIBLE);
+    }
+
+    private void setVisibleOrGone(@NonNull View view, boolean isVisible) {
+        view.setVisibility(isVisible ? View.VISIBLE : View.GONE);
     }
 
     private void updateBrightness(MediaRemoteViewModel.ReadonlyData data) {
@@ -367,6 +383,12 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         final View contentView = tab.getContentView();
         if (contentView == null) return;
         contentView.setSystemUiVisibility(flags);
+    }
+
+    private void updateOptionalButtons(MediaRemoteViewModel.ReadonlyData data) {
+        assert mDialog != null && mDialog.isShowing();
+
+        $.select(R.id.download_button, v -> setVisibleOrGone(v, data.isDownloadable()));
     }
 
     private void updatePlayState(MediaRemoteViewModel.ReadonlyData data) {

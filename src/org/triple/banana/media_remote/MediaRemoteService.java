@@ -86,6 +86,9 @@ public enum MediaRemoteService implements MediaRemoteView
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
                 mViewModel.reset();
+                // FIXME(#885): We should update the following value to the value passed from engine
+                // side.
+                mViewModel.getEditor().setIsDownloadable(false);
                 mView.show((Activity) tab.getContext());
             }
 
