@@ -39,7 +39,8 @@ public enum ButtonId {
     AT_ME_GAME,
     CLEAR_DATA,
     CLOSE_TAB,
-    TAB_SWITCHER;
+    TAB_SWITCHER,
+    QRCode;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -90,6 +91,7 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.CLEAR_DATA,
                 v -> BananaToolbarManager.get().openClearBrowsingDataPreference());
         sOnClickListeners.put(ButtonId.CLOSE_TAB, v -> BananaToolbarManager.get().closeCurrentTab());
+        sOnClickListeners.put(ButtonId.QRCode, v -> BananaToolbarManager.get().openQRCodeDialog());
     }
 
     public static int getImageResource(ButtonId id) {
@@ -160,6 +162,9 @@ public enum ButtonId {
                 break;
             case TAB_SWITCHER:
                 imageResource = R.drawable.btn_tabswitcher_modern;
+                break;
+            case QRCode:
+                imageResource = R.drawable.qr_code;
                 break;
         }
         return imageResource;

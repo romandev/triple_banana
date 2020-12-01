@@ -31,4 +31,5 @@ public interface BananaToolbarManager {
     void openClearBrowsingDataPreference();
     void terminate();
     void closeCurrentTab();
+    void openQRCodeDialog();
 }

@@ -19,6 +19,8 @@ import org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment;
 import org.chromium.chrome.browser.omnibox.LocationBar;
 import org.chromium.chrome.browser.settings.SettingsLauncher;
 import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
+import org.chromium.chrome.browser.share.qrcode.QrCodeCoordinator;
+import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.ToolbarManager;
 
 public class CakeToolbarManager implements BananaToolbarManager {
@@ -185,5 +187,15 @@ public class CakeToolbarManager implements BananaToolbarManager {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;
         activity.onMenuOrKeyboardAction(R.id.close_tab, false);
+    }
+
+    @Override
+    public void openQRCodeDialog() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        Tab tab = activity.getActivityTab();
+        if (activity == null || tab == null) return;
+        QrCodeCoordinator qrCodeCoordinator =
+                new QrCodeCoordinator(activity, tab.getUrl().getSpec());
+        qrCodeCoordinator.show();
     }
 }

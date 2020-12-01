@@ -1,0 +1,18 @@
+diff --git tb/chrome/browser/share/android/java/res/layout/qrcode_dialog.xml tb_diff/chrome/browser/share/android/java/res/layout/qrcode_dialog.xml
+--- tb/chrome/browser/share/android/java/res/layout/qrcode_dialog.xml
++++ tb_diff/chrome/browser/share/android/java/res/layout/qrcode_dialog.xml
+@@ -22,12 +22,12 @@
+         <com.google.android.material.tabs.TabItem
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:text="@string/qr_code_share_tab_label" />
++            android:text="@string/qr_code_scan_tab_label" />
+ 
+         <com.google.android.material.tabs.TabItem
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+-            android:text="@string/qr_code_scan_tab_label" />
++            android:text="@string/qr_code_share_tab_label" />
+     </com.google.android.material.tabs.TabLayout>
+ 
+     <org.chromium.ui.widget.ChromeImageButton
