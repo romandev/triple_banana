@@ -6,12 +6,15 @@
 package org.banana.cake;
 
 import android.app.Activity;
+import android.os.Bundle;
 
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 
 import org.chromium.base.ApplicationStatus;
 import org.chromium.chrome.browser.ChromeTabbedActivity;
+import org.chromium.chrome.browser.banners.AppBannerManager;
+import org.chromium.chrome.browser.banners.AppMenuVerbiage;
 import org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment;
 import org.chromium.chrome.browser.omnibox.LocationBar;
 import org.chromium.chrome.browser.settings.SettingsLauncher;
@@ -117,7 +120,11 @@ public class CakeToolbarManager implements BananaToolbarManager {
     public void addToHomeScreen() {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;
-        activity.onMenuOrKeyboardAction(R.id.add_to_homescreen_id, false);
+        // FIXME(#896): Rather than creating the bundle directly, use getBundleForMenuItem
+        Bundle bundle = new Bundle();
+        bundle.putInt(
+                AppBannerManager.MENU_TITLE_KEY, AppMenuVerbiage.APP_MENU_OPTION_ADD_TO_HOMESCREEN);
+        activity.onOptionsItemSelected(R.id.add_to_homescreen_id, bundle);
     }
 
     @Override
