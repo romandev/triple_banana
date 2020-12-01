@@ -21,6 +21,7 @@ import org.banana.cake.interfaces.BananaCommandLine;
 import org.banana.cake.interfaces.BananaDarkModeUtils;
 import org.banana.cake.interfaces.BananaFeatureFlags;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
+import org.banana.cake.interfaces.BananaLocalState;
 import org.banana.cake.interfaces.BananaPipController;
 import org.banana.cake.interfaces.BananaSubresourceFilter;
 import org.banana.cake.interfaces.BananaTab;
@@ -46,6 +47,8 @@ public class CakeInterfaceProvider {
         BananaInterfaceProvider.register(BananaToolbarManager.class, CakeToolbarManager::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaClearBrowsingData.class, CakeClearBrowsingData::new,
+                BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaLocalState.class, CakeLocalState::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
     }
 }
