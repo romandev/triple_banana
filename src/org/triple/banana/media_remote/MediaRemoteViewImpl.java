@@ -9,7 +9,6 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Build;
 import android.os.Handler;
 import android.view.KeyEvent;
 import android.view.View;
@@ -43,6 +42,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
             R.id.forward_button,
             R.id.mute_button,
             R.id.lock_button,
+            R.id.pip_button,
             R.id.play_button,
             R.id.quality_button,
             R.id.rotate_button,
@@ -188,14 +188,6 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         for (@IdRes int buttonId : BUTTON_IDS) {
             $.select(buttonId, v -> v.setOnClickListener(mButtonClickedListener));
         }
-
-        // PIP mode button is only visible on android 8.0 or higher.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            $.select(R.id.pip_button, v -> {
-                v.setOnClickListener(mButtonClickedListener);
-                v.setVisibility(View.VISIBLE);
-            });
-        }
     }
     private void resetContentViewInteractionListeners() {
         if (mDialog == null || !mDialog.isShowing()) return;
@@ -209,16 +201,8 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
         $.<SeekBar>select(R.id.time_seekbar, v -> v.setOnSeekBarChangeListener(null));
 
-        final @IdRes int[] buttons = new int[] {R.id.play_button, R.id.backward_button,
-                R.id.forward_button, R.id.rotate_button, R.id.lock_button, R.id.back_button,
-                R.id.mute_button, R.id.quality_button};
-        for (@IdRes int button : buttons) {
+        for (@IdRes int button : BUTTON_IDS) {
             $.select(button, v -> v.setOnClickListener(null));
-        }
-
-        // PIP mode button is only visible on android 8.0 or higher.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-            $.select(R.id.pip_button, v -> v.setOnClickListener(null));
         }
     }
 
@@ -389,6 +373,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         assert mDialog != null && mDialog.isShowing();
 
         $.select(R.id.download_button, v -> setVisibleOrGone(v, data.isDownloadable()));
+        $.select(R.id.pip_button, v -> setVisibleOrGone(v, data.isPipSupported()));
         $.select(R.id.closed_caption_button, v -> setVisibleOrGone(v, YouTubeUtil.isYouTubeUrl()));
         $.select(R.id.quality_button, v -> setVisibleOrGone(v, YouTubeUtil.isYouTubeUrl()));
     }
