@@ -18,10 +18,9 @@
         android:summaryOn="@string/background_play_summary"
         android:summaryOff="@string/text_off" />
     <org.triple.banana.settings.preference.SecureDnsPreference
-        android:key="feature_name_secure_dns"
-        android:title="@string/secure_dns"
-        android:summaryOn="@string/secure_dns_summary"
-        android:summaryOff="@string/text_off" />
+        android:key="secure_dns"
+        android:title="@string/settings_secure_dns_title"
+        android:fragment="org.chromium.chrome.browser.privacy.secure_dns.SecureDnsSettings" />
     <org.triple.banana.settings.preference.DarkModePreference
         android:key="feature_name_dark_mode"
         android:title="@string/dark_mode"

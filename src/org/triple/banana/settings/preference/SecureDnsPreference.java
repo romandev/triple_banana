@@ -8,20 +8,13 @@ package org.triple.banana.settings.preference;
 import android.content.Context;
 import android.util.AttributeSet;
 
-import org.triple.banana.secure_dns.SecureDnsNotificationManager;
-import org.triple.banana.settings.ExtensionFeatures;
-import org.triple.banana.settings.ExtensionFeatures.FeatureName;
+import androidx.preference.Preference;
 
-public class SecureDnsPreference extends RestartSwitchPreference {
+import org.banana.cake.interfaces.BananaSecureDnsSettings;
+
+public class SecureDnsPreference extends Preference {
     public SecureDnsPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setChecked(ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS));
-        setOnPreferenceChangeListener((preference, newValue) -> {
-            if (((boolean) newValue)
-                    && SecureDnsNotificationManager.getInstance().wasNotificationShown()) {
-                SecureDnsNotificationManager.getInstance().resetNotificationState();
-            }
-            return true;
-        });
+        setSummary(BananaSecureDnsSettings.get().getSummary(context));
     }
 }
