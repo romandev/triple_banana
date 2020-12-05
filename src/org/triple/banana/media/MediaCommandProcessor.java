@@ -54,6 +54,17 @@ public enum MediaCommandProcessor {
         mImpl.download();
     }
 
+    public void setPlaybackRate(double rate) {
+        if (mImpl == null) return;
+        mImpl.setPlaybackRate(rate);
+    }
+
+    public void getPlaybackRate(
+            final @Nullable BananaMediaCommandProcessor.GetPlaybackRateResponse callback) {
+        if (mImpl == null || callback == null) return;
+        mImpl.getPlaybackRate(callback);
+    }
+
     public void setVolume(float value) {
         if (value < 0.0f) {
             value = 0.0f;

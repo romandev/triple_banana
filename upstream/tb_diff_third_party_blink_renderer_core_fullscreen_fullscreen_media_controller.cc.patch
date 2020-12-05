@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc
-@@ -0,0 +1,111 @@
+@@ -0,0 +1,124 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -53,6 +53,19 @@
 +  request.SetRequestorOrigin(GetVideoElement()->GetExecutionContext()->GetSecurityOrigin());
 +  GetVideoElement()->GetDocument().GetFrame()->DownloadURL(
 +      request, network::mojom::blink::RedirectMode::kError);
++}
++
++void FullscreenMediaController::SetPlaybackRate(double rate) {
++  if (!GetVideoElement())
++    return;
++  GetVideoElement()->setPlaybackRate(rate);
++}
++
++void FullscreenMediaController::GetPlaybackRate(
++    GetPlaybackRateCallback callback) {
++  if (!GetVideoElement())
++    return;
++  std::move(callback).Run(GetVideoElement()->playbackRate());
 +}
 +
 +void FullscreenMediaController::DispatchEnteredVideoFullscreen(

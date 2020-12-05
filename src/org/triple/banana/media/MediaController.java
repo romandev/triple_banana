@@ -5,6 +5,8 @@
 
 package org.triple.banana.media;
 
+import org.triple.banana.media.mojom.BananaMediaCommandProcessor;
+
 public enum MediaController {
     instance;
 
@@ -37,6 +39,15 @@ public enum MediaController {
 
     public void download() {
         mCommandProcessor.download();
+    }
+
+    public void setPlaybackRate(double rate) {
+        mCommandProcessor.setPlaybackRate(rate);
+    }
+
+    public void getPlaybackRate(
+            final BananaMediaCommandProcessor.GetPlaybackRateResponse callback) {
+        mCommandProcessor.getPlaybackRate(callback);
     }
 
     public void setVolume(float value) {
