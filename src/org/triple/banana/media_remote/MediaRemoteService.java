@@ -6,11 +6,14 @@
 package org.triple.banana.media_remote;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Build;
 import android.os.Handler;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaPipController;
@@ -44,6 +47,8 @@ public enum MediaRemoteService implements MediaRemoteView
         mMediaController.setRelativePosition(0);
     };
     private Handler mHandler = new Handler();
+    private final @NonNull YouTubeOptionDialogDelegate mYouTubeDelegate =
+            new YouTubeOptionDialogDelegate();
 
     public void start() {
         ApplicationStatusTracker.getInstance().addListener((lastActivity, status) -> {
@@ -98,12 +103,14 @@ public enum MediaRemoteService implements MediaRemoteView
             public void onExitedVideoFullscreen() {
                 mWasControlsVisible = false;
                 mView.dismiss();
+                mYouTubeDelegate.dismiss();
             }
 
             @Override
             public void onChangedPipMode(boolean value) {
                 if (value) {
                     mView.dismiss();
+                    mYouTubeDelegate.dismiss();
                 } else if (mWasPipMode) {
                     onEnteredVideoFullscreen(mViewModel.getEditor().isDownloadable());
                 }
@@ -117,6 +124,8 @@ public enum MediaRemoteService implements MediaRemoteView
         if (mViewModel.getData().isLocked()) return;
 
         mView.dismiss();
+        mYouTubeDelegate.dismiss();
+
         BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
         if (tab == null || tab.getContext() == null) return;
         tab.exitFullscreen();
@@ -165,7 +174,7 @@ public enum MediaRemoteService implements MediaRemoteView
         } else if (id == R.id.download_button) {
             mMediaController.download();
         } else if (id == R.id.closed_caption_button) {
-            // FIXME(#884): We should implement this.
+            mYouTubeDelegate.showCaptionDialog(mView.getContext());
         } else if (id == R.id.quality_button) {
             YouTubeUtil.showQualityOptionsDialog(mView.getContext());
         }
