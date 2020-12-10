@@ -64,10 +64,18 @@
             android:id="@+id/pip_button"
             style="@style/MediaRemoteButtonTheme"
             android:layout_alignParentTop="true"
-            android:layout_toStartOf="@id/rotate_button"
+            android:layout_toStartOf="@id/playback_rate_button"
             android:contentDescription="@string/media_remote_pip"
             android:src="@drawable/ic_pip"
             android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/playback_rate_button"
+            style="@style/MediaRemoteButtonTheme"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/rotate_button"
+            android:contentDescription="@string/media_remote_playback_rate"
+            android:src="@drawable/ic_playback_rate" />
 
         <ImageButton
             android:id="@+id/rotate_button"

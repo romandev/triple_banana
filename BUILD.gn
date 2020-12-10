@@ -179,7 +179,8 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteView.java",
     "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteViewImpl.java",
     "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteViewModel.java",
-    "//triple_banana/src/org/triple/banana/media_remote/YouTubeOptionDialogDelegate.java",
+    "//triple_banana/src/org/triple/banana/media_remote/OptionDialogManager.java",
+    "//triple_banana/src/org/triple/banana/media_remote/PlaybackRateDataModel.java",
 
     # password
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",
@@ -326,6 +327,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/ic_phone_black_24dp.xml",
     "//triple_banana/res/drawable/ic_pip.xml",
     "//triple_banana/res/drawable/ic_play.xml",
+    "//triple_banana/res/drawable/ic_playback_rate.xml",
     "//triple_banana/res/drawable/ic_power_off_black.xml",
     "//triple_banana/res/drawable/ic_quality.xml",
     "//triple_banana/res/drawable/ic_refresh_black_24dp.xml",

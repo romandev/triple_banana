@@ -10,13 +10,15 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.triple.banana.media.MediaController;
 import org.triple.banana.youtube.YouTubePlayerController;
 
-class YouTubeOptionDialogDelegate {
+class OptionDialogManager {
     private final @NonNull MediaRemoteOptionDialog mDialog;
     private final @NonNull YouTubePlayerController mYouTubeController;
+    private final @NonNull MediaController mMediaController = MediaController.instance;
 
-    YouTubeOptionDialogDelegate() {
+    OptionDialogManager() {
         mDialog = new MediaRemoteOptionDialog();
         mYouTubeController = new YouTubePlayerController();
     }
@@ -30,6 +32,15 @@ class YouTubeOptionDialogDelegate {
                 mDialog.show(context, model,
                         result -> { mYouTubeController.setCaption(result.languageCode); });
             });
+        });
+    }
+
+    void showPlaybackRateDialog(final @Nullable Context context) {
+        if (context == null) return;
+
+        mMediaController.getPlaybackRate(rate -> {
+            PlaybackRateDataModel model = new PlaybackRateDataModel(rate);
+            mDialog.show(context, model, result -> mMediaController.setPlaybackRate(result.rate));
         });
     }
 

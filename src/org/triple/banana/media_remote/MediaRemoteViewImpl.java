@@ -44,6 +44,7 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
             R.id.lock_button,
             R.id.pip_button,
             R.id.play_button,
+            R.id.playback_rate_button,
             R.id.quality_button,
             R.id.rotate_button,
     };

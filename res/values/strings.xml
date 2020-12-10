@@ -47,6 +47,7 @@
     <string name="media_remote_mute">Mute</string>
     <string name="media_remote_pip">Picture in picture</string>
     <string name="media_remote_play">Play</string>
+    <string name="media_remote_playback_rate">Playback Rate</string>
     <string name="media_remote_quality">Quality</string>
     <string name="media_remote_rotate">Rotate</string>
     <string name="media_remote_summary">Enable powerful extend media player for video elements on fullscreen mode</string>

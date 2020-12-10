@@ -47,8 +47,7 @@ public enum MediaRemoteService implements MediaRemoteView
         mMediaController.setRelativePosition(0);
     };
     private Handler mHandler = new Handler();
-    private final @NonNull YouTubeOptionDialogDelegate mYouTubeDelegate =
-            new YouTubeOptionDialogDelegate();
+    private final @NonNull OptionDialogManager mOptionDialogManager = new OptionDialogManager();
 
     public void start() {
         ApplicationStatusTracker.getInstance().addListener((lastActivity, status) -> {
@@ -103,14 +102,14 @@ public enum MediaRemoteService implements MediaRemoteView
             public void onExitedVideoFullscreen() {
                 mWasControlsVisible = false;
                 mView.dismiss();
-                mYouTubeDelegate.dismiss();
+                mOptionDialogManager.dismiss();
             }
 
             @Override
             public void onChangedPipMode(boolean value) {
                 if (value) {
                     mView.dismiss();
-                    mYouTubeDelegate.dismiss();
+                    mOptionDialogManager.dismiss();
                 } else if (mWasPipMode) {
                     onEnteredVideoFullscreen(mViewModel.getEditor().isDownloadable());
                 }
@@ -124,7 +123,7 @@ public enum MediaRemoteService implements MediaRemoteView
         if (mViewModel.getData().isLocked()) return;
 
         mView.dismiss();
-        mYouTubeDelegate.dismiss();
+        mOptionDialogManager.dismiss();
 
         BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
         if (tab == null || tab.getContext() == null) return;
@@ -174,9 +173,11 @@ public enum MediaRemoteService implements MediaRemoteView
         } else if (id == R.id.download_button) {
             mMediaController.download();
         } else if (id == R.id.closed_caption_button) {
-            mYouTubeDelegate.showCaptionDialog(mView.getContext());
+            mOptionDialogManager.showCaptionDialog(mView.getContext());
         } else if (id == R.id.quality_button) {
             YouTubeUtil.showQualityOptionsDialog(mView.getContext());
+        } else if (id == R.id.playback_rate_button) {
+            mOptionDialogManager.showPlaybackRateDialog(mView.getContext());
         }
     }
 
