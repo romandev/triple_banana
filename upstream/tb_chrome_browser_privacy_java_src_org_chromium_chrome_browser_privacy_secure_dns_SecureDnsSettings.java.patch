@@ -1,0 +1,15 @@
+diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java tb_diff/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java
+--- tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java
++++ tb_diff/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java
+@@ -67,6 +67,11 @@ public class SecureDnsSettings extends PreferenceFragmentCompat {
+         mSecureDnsSwitch.setManagedPreferenceDelegate(
+                 (ChromeManagedPreferenceDelegate) preference -> SecureDnsBridge.isModeManaged());
+         mSecureDnsSwitch.setOnPreferenceChangeListener((preference, enabled) -> {
++            if ((boolean) enabled) {
++                mSecureDnsProviderPreference.setState(new State(true /* secure */,
++                        "https://chrome.cloudflare-dns.com/dns-query" /* templates */,
++                        true /* valid */));
++            }
+             storePreferenceState((boolean) enabled, mSecureDnsProviderPreference.getState());
+             loadPreferenceState();
+             return true;
