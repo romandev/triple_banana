@@ -12,7 +12,5 @@ interface QuickMenuView {
         void onClickQuickMenuButton(@IdRes int buttonId);
     }
 
-    void show();
-    void dismiss();
     void setDelegate(Delegate delegate);
 }

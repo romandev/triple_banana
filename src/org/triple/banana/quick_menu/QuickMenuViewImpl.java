@@ -16,16 +16,6 @@ class QuickMenuViewImpl implements QuickMenuView {
     }
 
     @Override
-    public void show() {
-        // NOTIMPLEMENTED
-    }
-
-    @Override
-    public void dismiss() {
-        // NOTIMPLEMENTED
-    }
-
-    @Override
     public void setDelegate(@NonNull Delegate delegate) {
         mDelegate = delegate;
     }
