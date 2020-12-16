@@ -375,8 +375,11 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
 
         $.select(R.id.download_button, v -> setVisibleOrGone(v, data.isDownloadable()));
         $.select(R.id.pip_button, v -> setVisibleOrGone(v, data.isPipSupported()));
-        $.select(R.id.closed_caption_button, v -> setVisibleOrGone(v, YouTubeUtil.isYouTubeUrl()));
         $.select(R.id.quality_button, v -> setVisibleOrGone(v, YouTubeUtil.isYouTubeUrl()));
+
+        // FIXME(#883, #884, #937): Disable the CC feature temporarily until it is implemented
+        // completely.
+        $.select(R.id.closed_caption_button, v -> setVisibleOrGone(v, false));
     }
 
     private void updatePlayState(MediaRemoteViewModel.ReadonlyData data) {
