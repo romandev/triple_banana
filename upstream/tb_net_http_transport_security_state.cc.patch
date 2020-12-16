@@ -1,7 +1,7 @@
 diff --git tb/net/http/transport_security_state.cc tb_diff/net/http/transport_security_state.cc
 --- tb/net/http/transport_security_state.cc
 +++ tb_diff/net/http/transport_security_state.cc
-@@ -45,6 +45,10 @@
+@@ -46,6 +46,10 @@
  #include "net/net_buildflags.h"
  #include "net/ssl/ssl_info.h"
  
@@ -12,7 +12,7 @@ diff --git tb/net/http/transport_security_state.cc tb_diff/net/http/transport_se
  namespace net {
  
  const base::Feature kEnforceCTForNewCerts{"EnforceCTForNewCerts",
-@@ -62,6 +66,16 @@ const TransportSecurityStateSource* const kDefaultHSTSSource = &kHSTSSource;
+@@ -63,6 +67,16 @@ const TransportSecurityStateSource* const kDefaultHSTSSource = &kHSTSSource;
  const TransportSecurityStateSource* const kDefaultHSTSSource = nullptr;
  #endif
  
@@ -29,7 +29,7 @@ diff --git tb/net/http/transport_security_state.cc tb_diff/net/http/transport_se
  const TransportSecurityStateSource* g_hsts_source = kDefaultHSTSSource;
  
  // Parameters for remembering sent HPKP and Expect-CT reports.
-@@ -382,6 +396,20 @@ bool DecodeHSTSPreload(const std::string& search_hostname, PreloadResult* out) {
+@@ -381,6 +395,20 @@ bool DecodeHSTSPreload(const std::string& search_hostname, PreloadResult* out) {
      return false;
    }
  

@@ -8,7 +8,6 @@ package org.banana.cake.interfaces;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
 import org.chromium.chrome.browser.toolbar.ThemeColorProvider;
@@ -19,7 +18,7 @@ public interface BananaBottomToolbarController {
     }
 
     BananaBottomToolbarController init(
-            View root, ActivityTabProvider tabProvider, ThemeColorProvider themeColorProvider);
+            View root, ThemeColorProvider themeColorProvider);
     void initializeWithNative(OnClickListener tabSwitcherListener,
             TabCountProvider tabCountProvider, IncognitoStateProvider incognitoStateProvider);
     boolean isEnabled();

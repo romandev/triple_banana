@@ -16,7 +16,7 @@ import org.chromium.chrome.browser.ChromeTabbedActivity;
 import org.chromium.chrome.browser.banners.AppBannerManager;
 import org.chromium.chrome.browser.banners.AppMenuVerbiage;
 import org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment;
-import org.chromium.chrome.browser.omnibox.LocationBar;
+import org.chromium.chrome.browser.omnibox.OmniboxFocusReason;
 import org.chromium.chrome.browser.settings.SettingsLauncher;
 import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
 import org.chromium.chrome.browser.share.qrcode.QrCodeCoordinator;
@@ -66,7 +66,7 @@ public class CakeToolbarManager implements BananaToolbarManager {
     public void search() {
         ToolbarManager toolbarManager = getToolbarManager();
         if (toolbarManager == null) return;
-        toolbarManager.setUrlBarFocus(true, LocationBar.OmniboxFocusReason.ACCELERATOR_TAP);
+        toolbarManager.setUrlBarFocus(true, OmniboxFocusReason.ACCELERATOR_TAP);
     }
 
     @Override

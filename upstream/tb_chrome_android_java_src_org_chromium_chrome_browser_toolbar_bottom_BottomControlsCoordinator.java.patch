@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom/BottomControlsCoordinator.java
-@@ -60,6 +60,10 @@ public class BottomControlsCoordinator {
+@@ -57,6 +57,10 @@ public class BottomControlsCoordinator {
      /** The coordinator for the split toolbar's bottom toolbar component. */
      private @Nullable TabGroupUi mTabGroupUi;
  
@@ -12,22 +12,22 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/bottom
      /**
       * Build the coordinator that manages the bottom controls.
       * @param controlsSizer A {@link BrowserControlsSizer} to update the bottom controls
-@@ -112,6 +116,12 @@ public class BottomControlsCoordinator {
+@@ -103,6 +107,12 @@ public class BottomControlsCoordinator {
                      root.findViewById(R.id.bottom_container_slot), themeColorProvider,
                      scrimCoordinator, omniboxFocusStateSupplier);
          }
 +        if (org.banana.cake.interfaces.BananaBottomToolbarController.get().isEnabled()) {
 +            mBottomToolbarController =
 +                    org.banana.cake.interfaces.BananaBottomToolbarController.get().init(
-+                            root, tabProvider, themeColorProvider);
++                            root, themeColorProvider);
 +        }
 +
          Toast.setGlobalExtraYOffset(
                  root.getResources().getDimensionPixelSize(bottomControlsHeightId));
  
-@@ -151,6 +161,11 @@ public class BottomControlsCoordinator {
+@@ -142,6 +152,11 @@ public class BottomControlsCoordinator {
          if (mTabGroupUi != null) {
-             mTabGroupUi.initializeWithNative(chromeActivity, mMediator::setBottomControlsVisible);
+             mTabGroupUi.initializeWithNative(activity, mMediator::setBottomControlsVisible);
          }
 +        if (mBottomToolbarController != null) {
 +            mBottomToolbarController.initializeWithNative(

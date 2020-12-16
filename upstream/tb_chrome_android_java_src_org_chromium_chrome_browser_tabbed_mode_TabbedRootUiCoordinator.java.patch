@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/tabbed_mode/TabbedRootUiCoordinator.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/tabbed_mode/TabbedRootUiCoordinator.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/tabbed_mode/TabbedRootUiCoordinator.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/tabbed_mode/TabbedRootUiCoordinator.java
-@@ -257,6 +257,10 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator implements Native
+@@ -274,6 +274,10 @@ public class TabbedRootUiCoordinator extends RootUiCoordinator {
      @Override
      protected void initializeToolbar() {
          super.initializeToolbar();

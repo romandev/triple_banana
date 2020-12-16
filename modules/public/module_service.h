@@ -29,8 +29,8 @@ class ModuleService {
 
  private:
 #if defined(OS_ANDROID)
-  // InterfaceProvider that is bound to the Java-side interface registry.
-  std::unique_ptr<service_manager::InterfaceProvider> java_interface_provider_;
+  service_manager::InterfaceProvider java_interface_provider_{base::ThreadTaskRunnerHandle::Get()};
+  bool java_interface_provider_initialized_ = false;
 #endif
   DISALLOW_COPY_AND_ASSIGN(ModuleService);
 };

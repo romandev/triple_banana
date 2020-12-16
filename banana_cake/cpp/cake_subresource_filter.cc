@@ -15,7 +15,8 @@
 static void JNI_CakeSubresourceFilter_Install(
     JNIEnv* env,
     const base::android::JavaParamRef<jstring>& ruleset_path_string,
-    const base::android::JavaParamRef<jobject>& success_callback) {
+    const base::android::JavaParamRef<jobject>& success_callback,
+    const base::android::JavaParamRef<jstring>& runnable_class_name) {
   base::FilePath ruleset_path(
       ConvertJavaStringToUTF8(env, ruleset_path_string));
   std::string new_version = ruleset_path.BaseName().RemoveExtension().value();
@@ -28,7 +29,8 @@ static void JNI_CakeSubresourceFilter_Install(
       g_browser_process->subresource_filter_ruleset_service();
   ruleset_service->SetRulesetPublishedCallbackForTesting(base::BindOnce(
       &base::PostTaskAndroid::RunJavaTask,
-      base::android::ScopedJavaGlobalRef<jobject>(success_callback)));
+      base::android::ScopedJavaGlobalRef<jobject>(success_callback),
+      ConvertJavaStringToUTF8(env, runnable_class_name)));
   ruleset_service->IndexAndStoreAndPublishRulesetIfNeeded(ruleset_info);
 }
 

@@ -19,8 +19,6 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.R;
 
 import org.chromium.base.ApiCompatibilityUtils;
-import org.chromium.chrome.browser.ActivityTabProvider;
-import org.chromium.chrome.browser.ActivityTabProvider.ActivityTabTabObserver;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.ThemeColorProvider;
 import org.chromium.chrome.browser.toolbar.ThemeColorProvider.TintObserver;
@@ -36,7 +34,6 @@ class ToolbarButton extends LinearLayout implements TintObserver {
 
     private ButtonId mButtonId;
     private ThemeColorProvider mThemeColorProvider;
-    private ActivityTabTabObserver mActivityTabTabObserver;
 
     private LinearLayout mToolbarWrapper;
     private ChromeImageButton mImageButton;
@@ -106,18 +103,6 @@ class ToolbarButton extends LinearLayout implements TintObserver {
         mThemeColorProvider.addTintObserver(this);
     }
 
-    public void setActivityTabProvider(ActivityTabProvider activityTabProvider) {
-        mActivityTabTabObserver = new ActivityTabTabObserver(activityTabProvider) {
-            @Override
-            protected void onObservingDifferentTab(Tab tab, boolean hint) {
-            }
-
-            @Override
-            public void onUpdateUrl(Tab tab, String url) {
-            }
-        };
-    }
-
     public void updateBookmarkButtonState(boolean isBookmarked, boolean editingAllowed) {
         if (mButtonId == ButtonId.BOOKMARK) {
             if (mThemeColorProvider == null) return;
@@ -168,11 +153,6 @@ class ToolbarButton extends LinearLayout implements TintObserver {
         if (mThemeColorProvider != null) {
             mThemeColorProvider.removeTintObserver(this);
             mThemeColorProvider = null;
-        }
-
-        if (mActivityTabTabObserver != null) {
-            mActivityTabTabObserver.destroy();
-            mActivityTabTabObserver = null;
         }
     }
 }

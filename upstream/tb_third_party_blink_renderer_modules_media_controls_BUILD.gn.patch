@@ -1,7 +1,7 @@
 diff --git tb/third_party/blink/renderer/modules/media_controls/BUILD.gn tb_diff/third_party/blink/renderer/modules/media_controls/BUILD.gn
 --- tb/third_party/blink/renderer/modules/media_controls/BUILD.gn
 +++ tb_diff/third_party/blink/renderer/modules/media_controls/BUILD.gn
-@@ -105,6 +105,7 @@ blink_modules_sources("media_controls") {
+@@ -103,6 +103,7 @@ blink_modules_sources("media_controls") {
      "//third_party/blink/renderer/modules/picture_in_picture",
      "//third_party/blink/renderer/modules/remoteplayback",
      "//third_party/blink/renderer/modules/screen_orientation",

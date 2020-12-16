@@ -1,15 +1,15 @@
 diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
 --- tb/chrome/browser/BUILD.gn
 +++ tb_diff/chrome/browser/BUILD.gn
-@@ -34,6 +34,7 @@ import("//sandbox/features.gni")
- import("//third_party/protobuf/proto_library.gni")
+@@ -36,6 +36,7 @@ import("//third_party/protobuf/proto_library.gni")
  import("//third_party/webrtc/webrtc.gni")
  import("//third_party/widevine/cdm/widevine.gni")
+ import("//tools/grit/grit_rule.gni")
 +import("//triple_banana/triple_banana.gni")
  import("//ui/base/ui_features.gni")
  
  # //build/config/android/rules.gni imports //tools/grit/grit_rule.gni, which
-@@ -2258,6 +2259,7 @@ static_library("browser") {
+@@ -2294,6 +2295,7 @@ static_library("browser") {
      "//third_party/zlib/google:compression_utils",
      "//third_party/zlib/google:zip",
      "//third_party/zxcvbn-cpp",
@@ -17,7 +17,7 @@ diff --git tb/chrome/browser/BUILD.gn tb_diff/chrome/browser/BUILD.gn
      "//ui/accessibility",
      "//ui/base",
      "//ui/base:ui_data_pack",
-@@ -3097,6 +3099,7 @@ static_library("browser") {
+@@ -3169,6 +3171,7 @@ static_library("browser") {
        "video_tutorials/internal/android/video_tutorial_service_bridge_factory.cc",
        "webauthn/android/cable_module_android.cc",
      ]

@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/ToolbarManager.java
-@@ -1206,7 +1206,11 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
+@@ -1508,7 +1508,11 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
  
          mToolbar.updateButtonVisibility();
          mToolbar.updateBackButtonVisibility(currentTab != null && currentTab.canGoBack());
@@ -13,7 +13,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/Toolba
          updateReloadState(tabCrashed);
          updateBookmarkButtonStatus();
          if (mToolbar.getMenuButtonWrapper() != null) {
-@@ -1222,6 +1226,8 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
+@@ -1524,6 +1528,8 @@ public class ToolbarManager implements UrlFocusChangeListener, ThemeColorObserve
          boolean editingAllowed =
                  currentTab == null || bridge == null || bridge.isEditBookmarksEnabled();
          mToolbar.updateBookmarkButton(isBookmarked, editingAllowed);

@@ -14,7 +14,7 @@ import org.chromium.base.annotations.NativeMethods;
 public class CakeSubresourceFilter implements BananaSubresourceFilter {
     @Override
     public void install(@NonNull String rulesetPath, @NonNull Runnable successCallback) {
-        CakeSubresourceFilterJni.get().install(rulesetPath, successCallback);
+        CakeSubresourceFilterJni.get().install(rulesetPath, successCallback, successCallback.getClass().getName());
     }
 
     @Override
@@ -29,7 +29,7 @@ public class CakeSubresourceFilter implements BananaSubresourceFilter {
 
     @NativeMethods
     interface Natives {
-        void install(@NonNull String rulesetPath, @NonNull Runnable successCallback);
+        void install(@NonNull String rulesetPath, @NonNull Runnable successCallback, String runnableClassName);
         void reset();
         @NonNull String getVersion();
     }

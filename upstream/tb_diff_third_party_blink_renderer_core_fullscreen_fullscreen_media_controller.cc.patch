@@ -1,6 +1,6 @@
 --- /dev/null
 +++ tb_diff/third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.cc
-@@ -0,0 +1,124 @@
+@@ -0,0 +1,125 @@
 +// Copyright 2020 The Triple Banana Authors. All rights reserved.
 +// This Source Code Form is subject to the terms of the Mozilla Public
 +// License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -10,8 +10,8 @@
 +
 +#include "third_party/blink/renderer/core/fullscreen/fullscreen_media_controller.h"
 +
-+#include "third_party/blink/public/mojom/fetch/fetch_api_request.mojom-blink.h"
 +#include "third_party/blink/public/common/thread_safe_browser_interface_broker_proxy.h"
++#include "third_party/blink/public/mojom/fetch/fetch_api_request.mojom-blink.h"
 +#include "third_party/blink/public/platform/platform.h"
 +#include "third_party/blink/renderer/core/dom/node.h"
 +#include "third_party/blink/renderer/core/execution_context/execution_context.h"
@@ -50,7 +50,8 @@
 +  ResourceRequest request(url);
 +  request.SetSuggestedFilename(GetVideoElement()->title());
 +  request.SetRequestContext(mojom::blink::RequestContextType::DOWNLOAD);
-+  request.SetRequestorOrigin(GetVideoElement()->GetExecutionContext()->GetSecurityOrigin());
++  request.SetRequestorOrigin(
++      GetVideoElement()->GetExecutionContext()->GetSecurityOrigin());
 +  GetVideoElement()->GetDocument().GetFrame()->DownloadURL(
 +      request, network::mojom::blink::RedirectMode::kError);
 +}

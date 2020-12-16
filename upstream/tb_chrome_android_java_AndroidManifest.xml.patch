@@ -1,16 +1,16 @@
 diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/java/AndroidManifest.xml
 --- tb/chrome/android/java/AndroidManifest.xml
 +++ tb_diff/chrome/android/java/AndroidManifest.xml
-@@ -54,8 +54,6 @@ by a child template that "extends" this file.
-     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+@@ -55,8 +55,6 @@ by a child template that "extends" this file.
      <uses-permission android:name="android.permission.NFC"/>
+     <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES" />
      <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 -    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
 -    <uses-permission android:name="android.permission.READ_SYNC_STATS"/>
      <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
      <uses-permission android:name="android.permission.RECORD_AUDIO"/>
      <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
-@@ -64,7 +62,6 @@ by a child template that "extends" this file.
+@@ -65,7 +63,6 @@ by a child template that "extends" this file.
      <uses-permission android:name="android.permission.VIBRATE"/>
      <uses-permission android:name="android.permission.WAKE_LOCK"/>
      <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
@@ -18,7 +18,7 @@ diff --git tb/chrome/android/java/AndroidManifest.xml tb_diff/chrome/android/jav
      {% set enable_vr = enable_vr|default(0) %}
      {% if enable_vr == "true" %}
      <!-- Indicates use of Android's VR-mode, available only on Android N+. -->
-@@ -910,16 +907,6 @@ by a child template that "extends" this file.
+@@ -903,16 +900,6 @@ by a child template that "extends" this file.
                  android:resource="@xml/file_paths" />
          </provider>
  

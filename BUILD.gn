@@ -272,6 +272,7 @@ android_library("triple_banana_java") {
     "//base:base_java",
     "//base:jni_java",
     "//chrome/android:chrome_java",
+    "//chrome/browser/banners/android:java",
     "//chrome/browser/preferences:java",
     "//chrome/browser/profiles/android:java",
     "//chrome/browser/settings:java",
@@ -309,6 +310,7 @@ android_library("triple_banana_java") {
 }
 
 android_resources("triple_banana_resources") {
+  resource_overlay = true
   sources = [
     "//triple_banana/res/drawable-v21/ic_fingerprint_black_36dp.xml",
     "//triple_banana/res/drawable/atmegame_logo.xml",
@@ -486,7 +488,6 @@ java_cpp_template("builtin_ruleset_version") {
   builtin_ruleset_version = "0"
   builtin_ruleset_size = "0"
 
-  package_path = "org/triple/banana/subresource_filter/ruleset"
   sources = [ "//triple_banana/src/org/triple/banana/subresource_filter/ruleset/RulesetVersion.template" ]
   defines = [
     "BUILTIN_RULESET_VERSION_VALUE=\"$builtin_ruleset_version\"",

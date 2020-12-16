@@ -1,7 +1,7 @@
 diff --git tb/BUILD.gn tb_diff/BUILD.gn
 --- tb/BUILD.gn
 +++ tb_diff/BUILD.gn
-@@ -94,6 +94,10 @@ group("gn_all") {
+@@ -97,6 +97,10 @@ group("gn_all") {
      deps += [ "//third_party/abseil-cpp:absl_tests" ]
    }
  

@@ -1,7 +1,7 @@
 diff --git tb/content/browser/renderer_host/render_frame_host_impl.cc tb_diff/content/browser/renderer_host/render_frame_host_impl.cc
 --- tb/content/browser/renderer_host/render_frame_host_impl.cc
 +++ tb_diff/content/browser/renderer_host/render_frame_host_impl.cc
-@@ -1639,7 +1639,9 @@ void RenderFrameHostImpl::ExecuteJavaScriptMethod(
+@@ -1684,7 +1684,9 @@ void RenderFrameHostImpl::ExecuteJavaScriptMethod(
  void RenderFrameHostImpl::ExecuteJavaScript(const base::string16& javascript,
                                              JavaScriptResultCallback callback) {
    DCHECK_CURRENTLY_ON(BrowserThread::UI);

@@ -74,7 +74,7 @@ public class PasswordExtension implements BananaPasswordExtension {
 
         mSecureLoginSwitchChecked = mCurrentSecurityLevel == SecurityLevel.SECURE;
 
-        SwitchCompat switchView = container.findViewById(R.id.infobar_extra_check);
+        SwitchCompat switchView = container.findViewById(R.id.password_infobar_use_authentication);
         mInfobarSwitch = new WeakReference<>(switchView);
         switchView.setOnCheckedChangeListener(
                 (buttonView, isChecked) -> { mSecureLoginSwitchChecked = isChecked; });

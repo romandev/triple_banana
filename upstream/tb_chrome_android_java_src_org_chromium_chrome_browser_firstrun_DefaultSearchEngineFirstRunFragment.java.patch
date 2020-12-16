@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/DefaultSearchEngineFirstRunFragment.java
-@@ -54,7 +54,7 @@ public class DefaultSearchEngineFirstRunFragment extends Fragment implements Fir
+@@ -55,7 +55,7 @@ public class DefaultSearchEngineFirstRunFragment extends Fragment implements Fir
  
          assert TemplateUrlServiceFactory.get().isLoaded();
          mSearchEnginePromoDialoType = LocaleManager.getInstance().getSearchEnginePromoShowType();
@@ -10,7 +10,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/Defau
              Runnable dismissRunnable = new Runnable() {
                  @Override
                  public void run() {
-@@ -72,7 +72,7 @@ public class DefaultSearchEngineFirstRunFragment extends Fragment implements Fir
+@@ -82,7 +82,7 @@ public class DefaultSearchEngineFirstRunFragment extends Fragment implements Fir
      public void setUserVisibleHint(boolean isVisibleToUser) {
          super.setUserVisibleHint(isVisibleToUser);
  

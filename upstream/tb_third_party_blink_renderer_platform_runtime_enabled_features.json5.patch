@@ -1,7 +1,7 @@
 diff --git tb/third_party/blink/renderer/platform/runtime_enabled_features.json5 tb_diff/third_party/blink/renderer/platform/runtime_enabled_features.json5
 --- tb/third_party/blink/renderer/platform/runtime_enabled_features.json5
 +++ tb_diff/third_party/blink/renderer/platform/runtime_enabled_features.json5
-@@ -1157,6 +1157,9 @@
+@@ -1207,6 +1207,9 @@
      {
        name: "MediaQueryNavigationControls",
      },

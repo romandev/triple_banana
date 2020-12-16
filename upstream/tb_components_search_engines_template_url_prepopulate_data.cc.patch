@@ -1,7 +1,7 @@
 diff --git tb/components/search_engines/template_url_prepopulate_data.cc tb_diff/components/search_engines/template_url_prepopulate_data.cc
 --- tb/components/search_engines/template_url_prepopulate_data.cc
 +++ tb_diff/components/search_engines/template_url_prepopulate_data.cc
-@@ -506,11 +506,18 @@ const PrepopulatedEngine* const engines_KE[] = {
+@@ -505,11 +505,18 @@ const PrepopulatedEngine* const engines_KE[] = {
  
  // South Korea
  const PrepopulatedEngine* const engines_KR[] = {
@@ -12,7 +12,7 @@ diff --git tb/components/search_engines/template_url_prepopulate_data.cc tb_diff
      &naver,
      &bing,
      &daum,
-     &yahoo_jp,
+     &yahoo,
 +#if defined(ENABLE_TRIPLE_BANANA)
 +    &youtube,
 +// clang-format on
@@ -20,7 +20,7 @@ diff --git tb/components/search_engines/template_url_prepopulate_data.cc tb_diff
  };
  
  // Kuwait
-@@ -938,11 +945,18 @@ const PrepopulatedEngine* const engines_UA[] = {
+@@ -935,11 +942,18 @@ const PrepopulatedEngine* const engines_UA[] = {
  
  // United States
  const PrepopulatedEngine* const engines_US[] = {

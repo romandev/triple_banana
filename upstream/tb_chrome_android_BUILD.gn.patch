@@ -9,15 +9,15 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
  import("//weblayer/variables.gni")
  import("channel.gni")
  import("java_sources.gni")
-@@ -517,6 +518,7 @@ android_library("chrome_java") {
-     "//third_party/blink/public/mojom:mojom_platform_java",
+@@ -522,6 +523,7 @@ android_library("chrome_java") {
      "//third_party/gif_player:gif_player_java",
      "//third_party/google_android_play_core:com_google_android_play_core_java",
+     "//third_party/metrics_proto:metrics_proto_java",
 +    "//triple_banana/modules:mojom_java",
      "//ui/android:ui_java",
      "//ui/base/mojom:mojom_java",
      "//ui/gfx/geometry/mojom:mojom_java",
-@@ -561,6 +563,8 @@ android_library("chrome_java") {
+@@ -565,6 +567,8 @@ android_library("chrome_java") {
    # From java_sources.gni.
    sources = chrome_java_sources + [ app_hooks_impl ]
  
@@ -26,18 +26,19 @@ diff --git tb/chrome/android/BUILD.gn tb_diff/chrome/android/BUILD.gn
    # Include sources from feed_java_sources.gni.
    sources += feed_java_sources
    srcjar_deps += feed_srcjar_deps
-@@ -1470,7 +1474,9 @@ jinja_template_resources("chrome_public_apk_template_resources") {
+@@ -1505,7 +1509,10 @@ jinja_template_resources("chrome_public_apk_template_resources") {
      "java/res_template/xml/file_paths.xml",
      "java/res_template/xml/launchershortcuts.xml",
      "java/res_template/xml/searchable.xml",
 -    "java/res_template/xml/syncadapter.xml",
-+#if defined(ENABLE_TRIPLE_BANANA)
-+#   "java/res_template/xml/syncadapter.xml",
-+#endif
++
++    #if defined(ENABLE_TRIPLE_BANANA)
++    #   "java/res_template/xml/syncadapter.xml",
++    #endif
    ]
    res_dir = "java/res_template"
    variables = [ "manifest_package=$chrome_public_manifest_package" ]
-@@ -3272,6 +3278,8 @@ generate_jni("chrome_jni_headers") {
+@@ -3404,6 +3411,8 @@ generate_jni("chrome_jni_headers") {
      "java/src/org/chromium/chrome/browser/webauth/Fido2Helper.java",
    ]
  

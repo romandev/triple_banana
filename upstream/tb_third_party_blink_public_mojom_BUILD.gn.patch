@@ -1,8 +1,8 @@
 diff --git tb/third_party/blink/public/mojom/BUILD.gn tb_diff/third_party/blink/public/mojom/BUILD.gn
 --- tb/third_party/blink/public/mojom/BUILD.gn
 +++ tb_diff/third_party/blink/public/mojom/BUILD.gn
-@@ -249,6 +249,8 @@ mojom("mojom_platform") {
-     sources += [ "serial/serial.mojom" ]
+@@ -255,6 +255,8 @@ mojom("mojom_platform") {
+     ]
    }
  
 +  public_deps += [ "//triple_banana/modules:mojom" ]

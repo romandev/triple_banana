@@ -1,10 +1,10 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/menu_button/MenuButton.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/menu_button/MenuButton.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/toolbar/menu_button/MenuButton.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/toolbar/menu_button/MenuButton.java
-@@ -68,6 +68,7 @@ public class MenuButton extends FrameLayout implements TintObserver {
-         super.onFinishInflate();
+@@ -70,6 +70,7 @@ public class MenuButton extends FrameLayout implements TintObserver {
          mMenuImageButton = findViewById(R.id.menu_button);
          mUpdateBadgeView = findViewById(R.id.menu_badge);
+         mOriginalBackground = getBackground();
 +        org.banana.cake.interfaces.BananaAppMenu.get().prepareMenuButton(this);
      }
  

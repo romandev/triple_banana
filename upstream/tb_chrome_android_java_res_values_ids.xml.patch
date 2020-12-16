@@ -1,0 +1,13 @@
+diff --git tb/chrome/android/java/res/values/ids.xml tb_diff/chrome/android/java/res/values/ids.xml
+--- tb/chrome/android/java/res/values/ids.xml
++++ tb_diff/chrome/android/java/res/values/ids.xml
+@@ -46,6 +46,9 @@
+ 
+     <!-- Password update prompt -->
+     <item type="id" name="password_infobar_accounts_spinner" />
++    <!-- #if defined(ENABLE_TRIPLEP_BANANA) -->
++    <item type="id" name="password_infobar_use_authentication" />
++    <!-- #endif -->
+ 
+     <!-- Context Menu Ids -->
+     <!-- Custom Tab Group -->

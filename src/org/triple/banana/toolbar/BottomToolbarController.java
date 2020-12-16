@@ -19,7 +19,6 @@ import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 
 // TODO(zino): We should remove this upstream dependency.
-import org.chromium.chrome.browser.ActivityTabProvider;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
 import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider.IncognitoStateObserver;
@@ -40,7 +39,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
 
     Map<ButtonId, ToolbarButton> mToolbarButtons;
 
-    private ActivityTabProvider mTabProvider;
     private OnClickListener mTabSwitcherListener;
     private TabCountProvider mTabCountProvider;
     private ThemeColorProvider mThemeColorProvider;
@@ -49,18 +47,9 @@ public class BottomToolbarController implements BananaBottomToolbarController,
 
     @Override
     public BananaBottomToolbarController init(
-            View root, ActivityTabProvider tabProvider, ThemeColorProvider themeColorProvider) {
+            View root, ThemeColorProvider themeColorProvider) {
         mViewGroup = new WeakReference<>(root.findViewById(R.id.bottom_toolbar_container));
         mToolbarButtons = new HashMap<>();
-        mTabProvider = tabProvider;
-
-        mTabProvider.addObserverAndTrigger(new ActivityTabProvider.HintlessActivityTabObserver() {
-            @Override
-            public void onActivityTabChanged(Tab tab) {
-                if (tab == null) return;
-                tabProvider.removeObserver(this);
-            }
-        });
         mThemeColorProvider = themeColorProvider;
 
         // Create all toolbar buttons when toolbar controller initialized
@@ -108,9 +97,6 @@ public class BottomToolbarController implements BananaBottomToolbarController,
         toolbarButton.setImageResource(ButtonId.getImageResource(buttonId));
         if (ButtonId.getOnClickListeners(buttonId) != null) {
             toolbarButton.setOnLongClickListener(ButtonId.getOnLongClickListeners(buttonId));
-        }
-        if (mTabProvider != null) {
-            toolbarButton.setActivityTabProvider(mTabProvider);
         }
         return toolbarButton;
     }

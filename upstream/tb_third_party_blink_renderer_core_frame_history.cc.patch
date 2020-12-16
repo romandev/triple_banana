@@ -1,26 +1,26 @@
 diff --git tb/third_party/blink/renderer/core/frame/history.cc tb_diff/third_party/blink/renderer/core/frame/history.cc
 --- tb/third_party/blink/renderer/core/frame/history.cc
 +++ tb_diff/third_party/blink/renderer/core/frame/history.cc
-@@ -46,6 +46,10 @@
+@@ -42,6 +42,11 @@
  #include "third_party/blink/renderer/platform/weborigin/security_origin.h"
  #include "third_party/blink/renderer/platform/wtf/text/string_view.h"
  
 +#if defined(ENABLE_TRIPLE_BANANA)
++#include "third_party/blink/renderer/core/frame/settings.h"
 +#include "third_party/blink/renderer/core/html/media/autoplay_policy.h"
 +#endif
 +
  namespace blink {
  
  namespace {
-@@ -368,6 +372,13 @@ void History::StateObjectAdded(
-   GetFrame()->GetDocument()->Loader()->UpdateForSameDocumentNavigation(
+@@ -344,6 +349,12 @@ void History::StateObjectAdded(
+   DomWindow()->document()->Loader()->UpdateForSameDocumentNavigation(
        full_url, kSameDocumentNavigationHistoryApi, std::move(data),
-       restoration_type, type, GetFrame()->GetDocument());
-+
+       restoration_type, type, DomWindow()->document());
 +#if defined(ENABLE_TRIPLE_BANANA)
-+  if (GetFrame()->GetDocument()->GetSettings()->GetAutoplayPolicy() ==
++  if (DomWindow()->document()->GetSettings()->GetAutoplayPolicy() ==
 +      AutoplayPolicy::Type::kUserGestureRequired) {
-+    GetFrame()->ClearUserActivation();
++    DomWindow()->GetFrame()->ClearUserActivation();
 +  }
 +#endif
  }

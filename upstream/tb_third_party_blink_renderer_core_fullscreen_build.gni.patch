@@ -1,0 +1,12 @@
+diff --git tb/third_party/blink/renderer/core/fullscreen/build.gni tb_diff/third_party/blink/renderer/core/fullscreen/build.gni
+--- tb/third_party/blink/renderer/core/fullscreen/build.gni
++++ tb_diff/third_party/blink/renderer/core/fullscreen/build.gni
+@@ -9,6 +9,8 @@ blink_core_sources_fullscreen = [
+   "element_fullscreen.h",
+   "fullscreen.cc",
+   "fullscreen.h",
++  "fullscreen_media_controller.cc",
++  "fullscreen_media_controller.h",
+   "fullscreen_request_type.cc",
+   "fullscreen_request_type.h",
+   "scoped_allow_fullscreen.cc",
