@@ -185,6 +185,16 @@ android_library("triple_banana_java") {
     # password
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",
 
+    # quick_menu
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuController.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuControllerImpl.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactory.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactoryImpl.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuView.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewImpl.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewModel.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewModelImpl.java",
+
     # remote_config
     "//triple_banana/src/org/triple/banana/remote_config/RemoteConfig.java",
 
