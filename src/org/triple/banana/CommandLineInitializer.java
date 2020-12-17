@@ -50,7 +50,6 @@ class CommandLineInitializer implements BananaCommandLineInitializer {
 
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
             enableChromiumFeature("PostQuantumCECPQ2");
-            enableChromiumFeature("DnsOverHttps");
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.MEDIA_REMOTE, true)) {

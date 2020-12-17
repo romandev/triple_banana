@@ -8,6 +8,7 @@ package org.triple.banana.settings.preference;
 import android.content.Context;
 import android.util.AttributeSet;
 
+import org.banana.cake.interfaces.BananaSecureDnsBridge;
 import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
@@ -15,12 +16,14 @@ import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 public class SecureDnsPreference extends RestartSwitchPreference {
     public SecureDnsPreference(Context context, AttributeSet attrs) {
         super(context, attrs);
-        setChecked(ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS));
+        ExtensionFeatures.setEnabled(
+                FeatureName.SECURE_DNS, BananaSecureDnsBridge.get().isSecureDNSMode());
         setOnPreferenceChangeListener((preference, newValue) -> {
             if (((boolean) newValue)
                     && SecureDnsNotificationManager.getInstance().wasNotificationShown()) {
                 SecureDnsNotificationManager.getInstance().resetNotificationState();
             }
+            BananaSecureDnsBridge.get().setSecureDNSMode((boolean) newValue);
             return true;
         });
     }

@@ -1,0 +1,30 @@
+diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java tb_diff/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java
+--- tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java
++++ tb_diff/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java
+@@ -17,7 +17,7 @@ import java.util.List;
+ /**
+  * Reads and writes preferences related to Secure DNS.
+  */
+-class SecureDnsBridge {
++public class SecureDnsBridge {
+     /**
+      * An Entry represents the subset of a net::DohProviderEntry that is relevant
+      * for display in the UI.
+@@ -65,7 +65,7 @@ class SecureDnsBridge {
+      *
+      * @param mode The desired new Secure DNS mode.
+      */
+-    static void setMode(@SecureDnsMode int mode) {
++    public static void setMode(@SecureDnsMode int mode) {
+         SecureDnsBridgeJni.get().setMode(mode);
+     }
+ 
+@@ -107,7 +107,7 @@ class SecureDnsBridge {
+      *     the setting.
+      * @return True if the input was valid.
+      */
+-    static boolean setTemplates(String templates) {
++    public static boolean setTemplates(String templates) {
+         return SecureDnsBridgeJni.get().setTemplates(templates);
+     }
+ 
