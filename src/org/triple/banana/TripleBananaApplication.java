@@ -10,6 +10,7 @@ import android.content.SharedPreferences;
 
 import org.banana.cake.bootstrap.BananaApplication;
 import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.banana.cake.interfaces.BananaSecureDnsBridge;
 import org.banana.cake.interfaces.BananaTabManager;
 import org.triple.banana.appmenu.AppMenuDelegate;
 import org.triple.banana.base.ApplicationStatusTracker;
@@ -80,6 +81,10 @@ public class TripleBananaApplication extends BananaApplication {
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
+            if (!BananaSecureDnsBridge.get().isSecureDNSMode()) {
+                BananaSecureDnsBridge.get().setSecureDNSMode(true);
+            }
+
             SecureDnsNotificationManager.getInstance().showSecureDnsNotificationIfNeeded();
         }
 
