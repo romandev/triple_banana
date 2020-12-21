@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import org.banana.cake.interfaces.BananaJavaScriptCallback;
 import org.banana.cake.interfaces.BananaTab;
 
+import org.chromium.chrome.browser.infobar.InfoBarContainer;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.content_public.browser.JavaScriptCallback;
 import org.chromium.url.GURL;
@@ -66,5 +67,10 @@ class CakeTab implements BananaTab {
     public @Nullable View getContentView() {
         if (mTab == null) return null;
         return mTab.getContentView();
+    }
+
+    @Override
+    public void setInfobarEnabled(boolean value) {
+        InfoBarContainer.get(mTab).setHidden(!value);
     }
 }

@@ -26,4 +26,5 @@ public interface BananaTab {
     void exitFullscreen();
     @Nullable
     View getContentView();
+    void setInfobarEnabled(boolean value);
 }

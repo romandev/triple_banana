@@ -91,6 +91,7 @@ public enum MediaRemoteService implements MediaRemoteView
             public void onEnteredVideoFullscreen(boolean isDownloadable) {
                 BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
                 if (tab == null || tab.getContext() == null) return;
+                tab.setInfobarEnabled(false);
                 mViewModel.reset();
                 mViewModel.getEditor().setIsPipSupported(
                         Build.VERSION.SDK_INT >= Build.VERSION_CODES.O);
@@ -100,6 +101,11 @@ public enum MediaRemoteService implements MediaRemoteView
 
             @Override
             public void onExitedVideoFullscreen() {
+                BananaTab tab = org.banana.cake.interfaces.BananaTabManager.get().getActivityTab();
+                if (tab != null && tab.getContext() != null) {
+                    tab.setInfobarEnabled(true);
+                }
+
                 mWasControlsVisible = false;
                 mView.dismiss();
                 mOptionDialogManager.dismiss();
