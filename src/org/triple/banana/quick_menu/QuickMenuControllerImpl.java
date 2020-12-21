@@ -8,25 +8,40 @@ package org.triple.banana.quick_menu;
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 
-class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Delegate {
-    private final @NonNull QuickMenuViewModel mQuickMenuViewModel;
+import org.triple.banana.R;
+import org.triple.banana.quick_menu.QuickMenuViewModelImpl.Data.ButtonInfo;
 
-    QuickMenuControllerImpl(@NonNull QuickMenuViewModel quickMenuViewModel) {
+class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Delegate {
+    private final @NonNull QuickMenuViewModel<QuickMenuViewModelImpl.Data> mQuickMenuViewModel;
+    private final @NonNull QuickMenuActionProvider mQuickMenuActionProvider;
+
+    QuickMenuControllerImpl(
+            @NonNull QuickMenuViewModel<QuickMenuViewModelImpl.Data> quickMenuViewModel,
+            @NonNull QuickMenuActionProvider quickMenuActionProvider) {
         mQuickMenuViewModel = quickMenuViewModel;
+        mQuickMenuActionProvider = quickMenuActionProvider;
+        loadButtons();
+    }
+
+    private void loadButtons() {
+        mQuickMenuViewModel.getEditor().addButton(
+                new ButtonInfo(R.id.dark_mode, R.drawable.ic_dark_black_24dp, R.string.dark_mode));
     }
 
     @Override
     public void onClickQuickMenuButton(@IdRes int buttonId) {
-        // NOTIMPLEMENTED
+        mQuickMenuActionProvider.getAction(buttonId).doAction();
     }
 
     @Override
     public void show() {
-        // NOTIMPLEMENTED
+        mQuickMenuViewModel.getEditor().setIsShowing(true);
+        mQuickMenuViewModel.commit();
     }
 
     @Override
     public void dismiss() {
-        // NOTIMPLEMENTED
+        mQuickMenuViewModel.getEditor().setIsShowing(false);
+        mQuickMenuViewModel.commit();
     }
 }

@@ -5,6 +5,15 @@
 
 package org.triple.banana.quick_menu;
 
-interface QuickMenuFactory {
-    QuickMenuController create();
+import android.content.Context;
+
+import androidx.annotation.NonNull;
+
+public interface QuickMenuFactory {
+    static @NonNull QuickMenuFactory get() {
+        return new QuickMenuFactoryImpl();
+    }
+
+    @NonNull
+    QuickMenuController create(@NonNull Context context);
 }

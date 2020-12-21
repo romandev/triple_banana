@@ -187,6 +187,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",
 
     # quick_menu
+    "//triple_banana/src/org/triple/banana/quick_menu/MockQuickMenuViewImpl.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuActionProvider.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuActionProviderImpl.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuController.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuControllerImpl.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactory.java",
@@ -356,6 +359,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/toolbar_button_banana.xml",
     "//triple_banana/res/layout/browser_lock_background.xml",
     "//triple_banana/res/layout/media_remote_view.xml",
+    "//triple_banana/res/layout/mock_quick_menu_view.xml",
     "//triple_banana/res/layout/toolbar_button.xml",
     "//triple_banana/res/layout/toolbar_edit_main.xml",
     "//triple_banana/res/layout/toolbar_space.xml",
@@ -365,6 +369,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/values-port/dimens.xml",
     "//triple_banana/res/values/colors.xml",
     "//triple_banana/res/values/dimens.xml",
+    "//triple_banana/res/values/ids.xml",
     "//triple_banana/res/values/strings.xml",
     "//triple_banana/res/values/styles.xml",
     "//triple_banana/res/xml/advanced_features_preferences.xml",

@@ -6,11 +6,12 @@
 package org.triple.banana.quick_menu;
 
 import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
 
 interface QuickMenuView {
     interface Delegate {
         void onClickQuickMenuButton(@IdRes int buttonId);
     }
 
-    void setDelegate(Delegate delegate);
+    void setDelegate(@NonNull Delegate delegate);
 }

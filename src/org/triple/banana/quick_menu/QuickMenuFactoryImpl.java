@@ -5,12 +5,17 @@
 
 package org.triple.banana.quick_menu;
 
+import android.content.Context;
+
+import androidx.annotation.NonNull;
+
 class QuickMenuFactoryImpl implements QuickMenuFactory {
     @Override
-    public QuickMenuController create() {
-        QuickMenuViewImpl view = new QuickMenuViewImpl();
+    public @NonNull QuickMenuController create(@NonNull Context context) {
+        MockQuickMenuViewImpl view = new MockQuickMenuViewImpl(context);
         QuickMenuViewModelImpl viewModel = new QuickMenuViewModelImpl();
-        QuickMenuControllerImpl controller = new QuickMenuControllerImpl(viewModel);
+        QuickMenuActionProvider actionProvider = new QuickMenuActionProviderImpl();
+        QuickMenuControllerImpl controller = new QuickMenuControllerImpl(viewModel, actionProvider);
 
         view.setDelegate(controller::onClickQuickMenuButton);
         viewModel.addListener(view::onUpdate);

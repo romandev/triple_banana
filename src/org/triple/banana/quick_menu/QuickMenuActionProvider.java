@@ -5,7 +5,13 @@
 
 package org.triple.banana.quick_menu;
 
-public interface QuickMenuController {
-    void show();
-    void dismiss();
+import androidx.annotation.IdRes;
+import androidx.annotation.NonNull;
+
+interface QuickMenuActionProvider {
+    interface Action {
+        void doAction();
+    }
+    @NonNull
+    Action getAction(@IdRes int id);
 }

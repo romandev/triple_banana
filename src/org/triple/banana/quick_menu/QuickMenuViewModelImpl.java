@@ -13,7 +13,9 @@ import androidx.annotation.StringRes;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 class QuickMenuViewModelImpl implements QuickMenuViewModel<QuickMenuViewModelImpl.Data> {
@@ -25,13 +27,38 @@ class QuickMenuViewModelImpl implements QuickMenuViewModel<QuickMenuViewModelImp
     static class Data implements Cloneable {
         static class ButtonInfo {
             @IdRes
+            int id;
+            @IdRes
             int image;
             @StringRes
             int label;
+
+            ButtonInfo(@IdRes int id, @IdRes int image, @StringRes int label) {
+                this.id = id;
+                this.image = image;
+                this.label = label;
+            }
         }
         @NonNull
-        List<ButtonInfo> buttons = new ArrayList<>();
+        Map<Integer, ButtonInfo> buttons = new LinkedHashMap<>();
         boolean isShowing;
+
+        void addButton(@NonNull ButtonInfo info) {
+            buttons.put(info.id, info);
+        }
+
+        @NonNull
+        List<ButtonInfo> getButtons() {
+            return new ArrayList<ButtonInfo>(buttons.values());
+        }
+
+        boolean getIsShowing() {
+            return isShowing;
+        }
+
+        void setIsShowing(boolean showing) {
+            isShowing = showing;
+        }
 
         Data cloneData() {
             try {

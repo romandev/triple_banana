@@ -5,12 +5,16 @@
 
 package org.triple.banana.toolbar;
 
+import android.content.Context;
 import android.view.View;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaClearBrowsingData;
+import org.banana.cake.interfaces.BananaTab;
+import org.banana.cake.interfaces.BananaTabManager;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
+import org.triple.banana.quick_menu.QuickMenuFactory;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.theme.DarkModeController;
@@ -53,8 +57,17 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.SHARE, v -> BananaToolbarManager.get().share());
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolbarManager.get().search());
         sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolbarManager.get().addNewTab());
-        sOnClickListeners.put(ButtonId.BANANA_EXTENSION,
-                v -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
+        sOnClickListeners.put(ButtonId.BANANA_EXTENSION, v -> {
+            BananaTab tab = BananaTabManager.get().getActivityTab();
+            if (tab == null) {
+                return;
+            }
+            Context context = tab.getContext();
+            if (context == null) {
+                return;
+            }
+            QuickMenuFactory.get().create(context).show();
+        });
         sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(
                 ButtonId.ADD_SECRET_TAB, v -> BananaToolbarManager.get().addSecretTab());
