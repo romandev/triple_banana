@@ -29,7 +29,7 @@
     <string name="data_reduction_mode_summary">페이지가 더 빠르게 로드되고 데이터가 최대 60퍼센트 절약됩니다</string>
     <string name="detail_settings">상세 설정</string>
     <string name="discard">저장 안 함</string>
-    <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여 도구모음에 배치하세요</string>
+    <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여\n도구모음에 배치하세요</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
     <string name="etc">기타</string>
     <string name="external_download_manager">외부 다운로드 관리자 사용</string>

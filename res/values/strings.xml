@@ -29,7 +29,7 @@
     <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>
     <string name="detail_settings">Detail settings</string>
     <string name="discard">Discard</string>
-    <string name="drag_and_drop_buttons">Drag the frequently used buttons to the Toolbar</string>
+    <string name="drag_and_drop_buttons">Drag the frequently used buttons\nto the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
     <string name="etc">Etc</string>
     <string name="external_download_manager">Use external download manager</string>
