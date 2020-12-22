@@ -9,14 +9,13 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 
 import org.triple.banana.R;
-import org.triple.banana.quick_menu.QuickMenuViewModelImpl.Data.ButtonInfo;
+import org.triple.banana.quick_menu.QuickMenuViewModelData.ButtonInfo;
 
 class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Delegate {
-    private final @NonNull QuickMenuViewModel<QuickMenuViewModelImpl.Data> mQuickMenuViewModel;
+    private final @NonNull QuickMenuViewModel<QuickMenuViewModelData> mQuickMenuViewModel;
     private final @NonNull QuickMenuActionProvider mQuickMenuActionProvider;
 
-    QuickMenuControllerImpl(
-            @NonNull QuickMenuViewModel<QuickMenuViewModelImpl.Data> quickMenuViewModel,
+    QuickMenuControllerImpl(@NonNull QuickMenuViewModel<QuickMenuViewModelData> quickMenuViewModel,
             @NonNull QuickMenuActionProvider quickMenuActionProvider) {
         mQuickMenuViewModel = quickMenuViewModel;
         mQuickMenuActionProvider = quickMenuActionProvider;

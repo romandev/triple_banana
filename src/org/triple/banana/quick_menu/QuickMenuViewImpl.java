@@ -20,7 +20,7 @@ class QuickMenuViewImpl implements QuickMenuView {
         createDialog(context);
     }
 
-    public void onUpdate(@NonNull QuickMenuViewModelImpl.Data data) {
+    public void onUpdate(@NonNull QuickMenuViewModelData data) {
         // NOTIMPLEMENTED
     }
 

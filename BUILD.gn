@@ -198,6 +198,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuView.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewImpl.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewModel.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewModelData.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuViewModelImpl.java",
 
     # remote_config
