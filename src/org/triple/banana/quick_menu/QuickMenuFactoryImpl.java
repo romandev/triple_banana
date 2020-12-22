@@ -12,7 +12,8 @@ import androidx.annotation.NonNull;
 class QuickMenuFactoryImpl implements QuickMenuFactory {
     @Override
     public @NonNull QuickMenuController create(@NonNull Context context) {
-        MockQuickMenuViewImpl view = new MockQuickMenuViewImpl(context);
+        MockQuickMenuViewImpl mockView = new MockQuickMenuViewImpl(context);
+        QuickMenuViewImpl view = new QuickMenuViewImpl(context);
         QuickMenuViewModelImpl viewModel = new QuickMenuViewModelImpl();
         QuickMenuActionProvider actionProvider = new QuickMenuActionProviderImpl();
         QuickMenuControllerImpl controller = new QuickMenuControllerImpl(viewModel, actionProvider);

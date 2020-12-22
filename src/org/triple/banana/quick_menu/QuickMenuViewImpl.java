@@ -5,18 +5,31 @@
 
 package org.triple.banana.quick_menu;
 
+import android.content.Context;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.triple.banana.R;
+
 class QuickMenuViewImpl implements QuickMenuView {
     private @Nullable Delegate mDelegate;
+    private @Nullable QuickMenuDialog mQuickMenuDialog;
+
+    QuickMenuViewImpl(@NonNull Context context) {
+        createDialog(context);
+    }
 
     public void onUpdate(@NonNull QuickMenuViewModelImpl.Data data) {
-        // NOTIMPLEMENTED        
+        // NOTIMPLEMENTED
     }
 
     @Override
     public void setDelegate(@NonNull Delegate delegate) {
         mDelegate = delegate;
+    }
+
+    private void createDialog(@NonNull Context context) {
+        mQuickMenuDialog = new QuickMenuDialog(context, R.layout.quick_menu_layout);
     }
 }

@@ -28,4 +28,9 @@
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowFullscreen">true</item>
     </style>
+
+    <style name="AnimationPopupStyle">
+        <item name="android:windowEnterAnimation">@anim/open_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/close_to_bottom</item>
+    </style>
 </resources>

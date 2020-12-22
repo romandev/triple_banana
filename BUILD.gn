@@ -192,6 +192,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuActionProviderImpl.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuController.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuControllerImpl.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuDialog.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactory.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactoryImpl.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuView.java",
@@ -317,6 +318,8 @@ android_library("triple_banana_java") {
 android_resources("triple_banana_resources") {
   resource_overlay = true
   sources = [
+    "//triple_banana/res/anim/close_to_bottom.xml",
+    "//triple_banana/res/anim/open_from_bottom.xml",
     "//triple_banana/res/drawable-v21/ic_fingerprint_black_36dp.xml",
     "//triple_banana/res/drawable/atmegame_logo.xml",
     "//triple_banana/res/drawable/btn_done.xml",
@@ -354,12 +357,14 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/ic_star_border_black_24dp.xml",
     "//triple_banana/res/drawable/ic_visit_history_black_24dp.xml",
     "//triple_banana/res/drawable/ic_volume_up.xml",
+    "//triple_banana/res/drawable/quick_menu_background.xml",
     "//triple_banana/res/drawable/round_rect.xml",
     "//triple_banana/res/drawable/round_rect_dark.xml",
     "//triple_banana/res/drawable/toolbar_button_banana.xml",
     "//triple_banana/res/layout/browser_lock_background.xml",
     "//triple_banana/res/layout/media_remote_view.xml",
     "//triple_banana/res/layout/mock_quick_menu_view.xml",
+    "//triple_banana/res/layout/quick_menu_layout.xml",
     "//triple_banana/res/layout/toolbar_button.xml",
     "//triple_banana/res/layout/toolbar_edit_main.xml",
     "//triple_banana/res/layout/toolbar_space.xml",
