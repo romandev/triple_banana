@@ -24,6 +24,8 @@ import org.triple.banana.base.ApplicationStatusTracker.ApplicationStatus;
 import org.triple.banana.media.MediaController;
 import org.triple.banana.media.MediaEventListener;
 import org.triple.banana.media.MediaPlayState;
+import org.triple.banana.settings.ExtensionFeatures;
+import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.util.AudioUtil;
 import org.triple.banana.util.YouTubeUtil;
 
@@ -95,7 +97,10 @@ public enum MediaRemoteService implements MediaRemoteView
                 mViewModel.reset();
                 mViewModel.getEditor().setIsPipSupported(
                         Build.VERSION.SDK_INT >= Build.VERSION_CODES.O);
-                mViewModel.getEditor().setIsDownloadable(isDownloadable);
+                boolean isExternalDownloadEnabled =
+                        ExtensionFeatures.isEnabled(FeatureName.EXTERNAL_DOWNLOAD_MANAGER);
+                mViewModel.getEditor().setIsDownloadable(
+                        isDownloadable && isExternalDownloadEnabled);
                 mView.show((Activity) tab.getContext());
             }
 
