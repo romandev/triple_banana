@@ -10,7 +10,7 @@ import android.content.Context;
 import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
-import android.widget.LinearLayout;
+import android.widget.GridLayout;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -30,7 +30,7 @@ class MockQuickMenuViewImpl extends Dialog implements QuickMenuView, View.OnClic
     }
 
     private void updateButtons(@NonNull List<ButtonInfo> buttons) {
-        final LinearLayout layout = (LinearLayout) findViewById(R.id.mock_quick_menu_layout);
+        final GridLayout layout = (GridLayout) findViewById(R.id.mock_quick_menu_layout);
         layout.removeAllViews();
         for (final ButtonInfo info : buttons) {
             final Button button = new Button(getContext());
@@ -39,6 +39,7 @@ class MockQuickMenuViewImpl extends Dialog implements QuickMenuView, View.OnClic
             button.setId(info.id);
             button.setCompoundDrawablesWithIntrinsicBounds(info.image, 0, 0, 0);
             button.setText(info.label);
+            button.setAllCaps(false);
             button.setOnClickListener(this);
             layout.addView(button);
         }

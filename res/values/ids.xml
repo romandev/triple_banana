@@ -6,5 +6,24 @@
 
 <resources>
     <!-- QuickMenu Buttons -->
+    <item type="id" name="add_secret_tab" />
+    <item type="id" name="add_to_home" />
+    <item type="id" name="archive" />
+    <item type="id" name="at_me_game" />
+    <item type="id" name="back" />
+    <item type="id" name="clear_data" />
+    <item type="id" name="close_tab" />
     <item type="id" name="dark_mode" />
+    <item type="id" name="desktop_view" />
+    <item type="id" name="download" />
+    <item type="id" name="find_in_page" />
+    <item type="id" name="forward" />
+    <item type="id" name="new_tab" />
+    <item type="id" name="print" />
+    <item type="id" name="qr_code" />
+    <item type="id" name="reload" />
+    <item type="id" name="search" />
+    <item type="id" name="share" />
+    <item type="id" name="terminate" />
+    <item type="id" name="visit_history" />
 </resources>

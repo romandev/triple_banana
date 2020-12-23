@@ -32,4 +32,5 @@ public interface BananaToolbarManager {
     void terminate();
     void closeCurrentTab();
     void openQRCodeDialog();
+    boolean getUseDesktopUserAgent();
 }

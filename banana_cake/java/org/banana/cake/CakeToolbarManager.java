@@ -198,4 +198,13 @@ public class CakeToolbarManager implements BananaToolbarManager {
                 new QrCodeCoordinator(activity, tab.getUrl().getSpec());
         qrCodeCoordinator.show();
     }
+
+    @Override
+    public boolean getUseDesktopUserAgent() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return false;
+        Tab tab = activity.getActivityTab();
+        if (tab == null || tab.getWebContents() == null) return false;
+        return tab.getWebContents().getNavigationController().getUseDesktopUserAgent();
+    }
 }
