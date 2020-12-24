@@ -38,4 +38,32 @@ class QuickMenuDialog extends Dialog {
             window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
     }
+
+    @Override
+    public void onContentChanged() {
+        setTopLayout();
+        setBottomLayout();
+    }
+
+    // FIXME: Move below code to quick_menu_layout.xml(#962)
+    private void setTopLayout() {
+        QuickMenuButton titleButton = findViewById(R.id.title_button);
+        titleButton.setImageVisible(false);
+        titleButton.setLabel("Triple Banana Browser");
+    }
+
+    // FIXME: Move below code to quick_menu_layout.xml(#962)
+    private void setBottomLayout() {
+        QuickMenuButton clearButton = findViewById(R.id.clear_browsing_data_button);
+        clearButton.setLabelVisible(false);
+        clearButton.setImageResource(R.drawable.ic_clear_browsing_data);
+
+        QuickMenuButton cancelButton = findViewById(R.id.cancel_button);
+        cancelButton.setLabelVisible(false);
+        cancelButton.setImageResource(R.drawable.ic_download);
+
+        QuickMenuButton terminateButton = findViewById(R.id.terminate_button);
+        terminateButton.setLabelVisible(false);
+        terminateButton.setImageResource(R.drawable.ic_power_off_black);
+    }
 }

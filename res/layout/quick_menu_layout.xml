@@ -6,8 +6,73 @@
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/quick_menu_layout_vertical_margin"
+    android:paddingBottom="@dimen/quick_menu_layout_vertical_margin"
     android:background="@drawable/quick_menu_background"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/quick_menu_top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <org.triple.banana.quick_menu.QuickMenuButton
+            android:id="@+id/title_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/quick_menu_layout_vertical_margin"
+        android:layout_marginBottom="@dimen/quick_menu_layout_vertical_margin"
+        android:background="@android:color/darker_gray" />
+
+    <org.triple.banana.quick_menu.QuickMenuGridLayout
+        android:id="@+id/quick_menu_middle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/quick_menu_layout_vertical_margin"
+        android:layout_marginBottom="@dimen/quick_menu_layout_vertical_margin"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:id="@+id/quick_menu_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <org.triple.banana.quick_menu.QuickMenuButton
+            android:id="@+id/clear_browsing_data_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="start" />
+
+        <org.triple.banana.quick_menu.QuickMenuButton
+            android:id="@+id/cancel_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" />
+
+        <org.triple.banana.quick_menu.QuickMenuButton
+            android:id="@+id/terminate_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -21,7 +21,11 @@ class QuickMenuViewImpl implements QuickMenuView {
     }
 
     public void onUpdate(@NonNull QuickMenuViewModelData data) {
-        // NOTIMPLEMENTED
+        if (data.getIsShowing()) {
+            mQuickMenuDialog.show();
+        } else {
+            mQuickMenuDialog.dismiss();
+        }
     }
 
     @Override
