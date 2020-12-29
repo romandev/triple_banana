@@ -14,9 +14,11 @@ class QuickMenuFactoryImpl implements QuickMenuFactory {
     public @NonNull QuickMenuController create(@NonNull Context context) {
         MockQuickMenuViewImpl mockView = new MockQuickMenuViewImpl(context);
         QuickMenuViewImpl view = new QuickMenuViewImpl(context);
+        QuickMenuStorageModel storageModel = new QuickMenuStorageModelImpl();
         QuickMenuViewModelImpl viewModel = new QuickMenuViewModelImpl();
         QuickMenuActionProvider actionProvider = new QuickMenuActionProviderImpl();
-        QuickMenuControllerImpl controller = new QuickMenuControllerImpl(viewModel, actionProvider);
+        QuickMenuControllerImpl controller =
+                new QuickMenuControllerImpl(viewModel, storageModel, actionProvider);
 
         view.setDelegate(controller::onClickQuickMenuButton);
         viewModel.addListener(view::onUpdate);
