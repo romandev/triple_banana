@@ -1,17 +1,18 @@
 diff --git tb/build/android/gyp/proguard.py tb_diff/build/android/gyp/proguard.py
 --- tb/build/android/gyp/proguard.py
 +++ tb_diff/build/android/gyp/proguard.py
-@@ -425,6 +425,13 @@ def _CheckForMissingSymbols(r8_path, dex_files, classpath, warnings_as_errors):
+@@ -426,6 +426,14 @@ def _CheckForMissingSymbols(r8_path, dex_files, classpath, warnings_as_errors):
          'Ljavax/management/ObjectInstance',
          'Ljavax/management/ObjectName',
          'Ljavax/management/StandardMBean',
 +
-+        # triple_banana/android_deps/
++        # For Triple Banana
 +        'Landroidx/biometric/BiometricFragment',
 +        'Landroidx/biometric/FingerprintDialogFragment',
 +        'Landroidx/biometric/FingerprintHelperFragment',
 +        'Landroidx/fragment/app/Fragment',
 +        'Landroidx/fragment/app/FragmentActivity',
++        'Lorg/chromium/android_webview/common/PlatformServiceBridgeImpl',
      ]
  
      had_unfiltered_items = '  ' in stderr
