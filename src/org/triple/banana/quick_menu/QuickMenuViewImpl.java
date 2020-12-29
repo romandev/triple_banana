@@ -6,13 +6,14 @@
 package org.triple.banana.quick_menu;
 
 import android.content.Context;
+import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.triple.banana.R;
 
-class QuickMenuViewImpl implements QuickMenuView {
+class QuickMenuViewImpl implements QuickMenuView, View.OnClickListener {
     private @Nullable Delegate mDelegate;
     private @Nullable QuickMenuDialog mQuickMenuDialog;
 
@@ -22,10 +23,18 @@ class QuickMenuViewImpl implements QuickMenuView {
 
     public void onUpdate(@NonNull QuickMenuViewModelData data) {
         if (data.getIsShowing()) {
-            mQuickMenuDialog.show();
+            mQuickMenuDialog.show(data.getButtons(), this);
         } else {
             mQuickMenuDialog.dismiss();
         }
+    }
+
+    @Override
+    public void onClick(@NonNull View view) {
+        if (mDelegate == null) {
+            return;
+        }
+        mDelegate.onClickQuickMenuButton(view.getId());
     }
 
     @Override

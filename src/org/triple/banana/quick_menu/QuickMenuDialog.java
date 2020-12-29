@@ -11,6 +11,7 @@ import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.view.Gravity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.GridLayout;
@@ -19,6 +20,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.triple.banana.R;
+import org.triple.banana.quick_menu.QuickMenuViewModelData.ButtonInfo;
+
+import java.util.List;
 
 class QuickMenuDialog extends Dialog {
     private @Nullable GridLayout mMiddleGridLayout;
@@ -51,15 +55,17 @@ class QuickMenuDialog extends Dialog {
         setTopLayout();
         setBottomLayout();
         setGridLayoutColumn();
-        addQuickMenuButtonToGridLayout();
     }
 
-    private void addQuickMenuButtonToGridLayout() {
-        // FIXME(#973): Bind button with QuickMenuViewModelData.
-        for (int i = 0; i < 16; i++) {
-            QuickMenuButton button = new QuickMenuButton(getContext());
-            button.setLabel(Integer.toString(i));
-            button.setImageResource(R.drawable.btn_done);
+    private void updateButtons(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
+        mMiddleGridLayout.removeAllViews();
+
+        for (final ButtonInfo info : buttons) {
+            final QuickMenuButton button = new QuickMenuButton(getContext());
+            button.setId(info.id);
+            button.setImageResource(info.image);
+            button.setLabel(info.label);
+            button.setOnClickListener(listener);
             setColumnWeight(button);
             mMiddleGridLayout.addView(button);
         }
@@ -87,7 +93,7 @@ class QuickMenuDialog extends Dialog {
     private void setTopLayout() {
         QuickMenuButton titleButton = findViewById(R.id.title_button);
         titleButton.setImageVisible(false);
-        titleButton.setLabel("Triple Banana Browser");
+        titleButton.setLabel(R.string.app_name);
     }
 
     // FIXME(#962): Move below code to quick_menu_layout.xml
@@ -103,5 +109,10 @@ class QuickMenuDialog extends Dialog {
         QuickMenuButton terminateButton = findViewById(R.id.terminate_button);
         terminateButton.setLabelVisible(false);
         terminateButton.setImageResource(R.drawable.ic_power_off_black);
+    }
+
+    public void show(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
+        updateButtons(buttons, listener);
+        show();
     }
 }

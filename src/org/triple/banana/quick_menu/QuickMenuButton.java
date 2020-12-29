@@ -14,8 +14,10 @@ import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
 
 import org.triple.banana.R;
 
@@ -34,7 +36,7 @@ class QuickMenuButton extends RelativeLayout {
     }
 
     // FIXME(#960): Relativelayout.LayoutParams codes need to move to quick_menu_button.xml
-    private void initialize(Context context) {
+    private void initialize(@NonNull Context context) {
         LayoutInflater.from(context).inflate(R.layout.quick_menu_button, this, true);
 
         mImageButton = findViewById(R.id.quick_menu_button_image);
@@ -52,11 +54,11 @@ class QuickMenuButton extends RelativeLayout {
         mTextView.setLayoutParams(textViewParams);
     }
 
-    public void setLabel(String str) {
-        mTextView.setText(str);
+    public void setLabel(@StringRes int resId) {
+        mTextView.setText(resId);
     }
 
-    public void setImageResource(int resId) {
+    public void setImageResource(@DrawableRes int resId) {
         mImageButton.setImageResource(resId);
     }
 
