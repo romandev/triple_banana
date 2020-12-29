@@ -33,7 +33,7 @@ class QuickMenuButton extends RelativeLayout {
         initialize(context);
     }
 
-    // FIXME: Relativelayout.LayoutParams codes need to move to quick_menu_button.xml(#960)
+    // FIXME(#960): Relativelayout.LayoutParams codes need to move to quick_menu_button.xml
     private void initialize(Context context) {
         LayoutInflater.from(context).inflate(R.layout.quick_menu_button, this, true);
 

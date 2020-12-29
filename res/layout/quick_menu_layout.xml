@@ -34,10 +34,11 @@
         android:layout_marginBottom="@dimen/quick_menu_layout_vertical_margin"
         android:background="@android:color/darker_gray" />
 
-    <org.triple.banana.quick_menu.QuickMenuGridLayout
-        android:id="@+id/quick_menu_middle_layout"
+    <GridLayout
+        android:id="@+id/quick_menu_grid_layout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true" />
 
     <View
         android:layout_width="match_parent"
