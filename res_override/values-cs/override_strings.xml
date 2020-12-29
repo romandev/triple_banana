@@ -7,6 +7,8 @@
 <string name="password_check_status_subtitle_no_findings">"Pokud se přihlásíte pomocí prolomeného hesla, Banana Browser vám to oznámí."</string>
 <string name="sync_switch_title">"Synchronizovat data prohlížeče Banana Browser"</string>
 <string name="usage_and_crash_reports_title">"Pomoci s vylepšováním funkcí a výkonu prohlížeče Banana Browser"</string>
+<string name="metrics_settings_description">"Vyberte, co chcete sdílet s Banana Browserm. Sdílené metriky budou použity k vylepšení funkcí, výkonu a stability Chromu."</string>
+<string name="metrics_settings_basic_summary">"Jak pracujete s Banana Browserm, vybraná nastavení, podrobnosti o pádech Chromu"</string>
 <string name="password_settings_export_subject">"Hesla Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Kvůli detekci nebezpečných aplikací a webů odesílá Banana Browser do Googlu adresy URL některých navštívených stránek, omezené informace o systému a část obsahu stránek"</string>
 <string name="safety_check_description">"Banana Browser vás pomáhá chránit před porušeními zabezpečení údajů, nebezpečnými weby a dalšími hrozbami"</string>
@@ -71,6 +73,7 @@
 <string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser teď stahuje soubory rychleji"</string>
 <string name="near_oom_intervention_message">"Tato stránka využívá příliš mnoho paměti, proto ji Banana Browser pozastavil."</string>
 <string name="near_oom_reduction_message">"Tato stránka využívá příliš mnoho paměti, Banana Browser proto odstranil část obsahu."</string>
+<string name="cablev2_activity_title">"Google Banana Browser jako bezpečnostní klíč"</string>
 <string name="qr_code_open_settings_description">"Chcete-li naskenovat QR kód, změňte nastavení tak, aby Banana Browser mohl použít vaši kameru"</string>
 <string name="chrome_reengagement_notification_2_description">"Používejte v prohlížeči Google Banana Browser zjednodušený režim"</string>
 <string name="chrome_reengagement_notification_3_title">"Google doporučuje prohlížeč Banana Browser"</string>

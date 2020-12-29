@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser ће вас обавестити када се пријавите помоћу угрожене лозинке."</string>
 <string name="sign_in_to_chrome">"Пријављивање у Banana Browser"</string>
 <string name="sync_switch_title">"Синхронизујте Banana Browser податке"</string>
-<string name="offer_chrome_signin_title">"Дозволи пријављивање у Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Прикажи Banana Browser упите за пријављивање при пријављивању на Google налог"</string>
+<string name="allow_chrome_signin_title">"Дозволи пријављивање у Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Прикажи Banana Browser упите за пријављивање при пријављивању на Google налог"</string>
 <string name="usage_and_crash_reports_title">"Помозите нам да побољшамо Banana Browser-ове функције и учинак"</string>
+<string name="metrics_settings_description">"Изаберите шта желите да делите са Banana Browser-ом. Показатеље које делите користимо за побољшање функција, перформанси и стабилности Banana Browser-а."</string>
+<string name="metrics_settings_basic_summary">"Како остварујете интеракцију са Banana Browser-ом, подешавања која сте изабрали, детаљи о отказивањима Banana Browser-а"</string>
 <string name="autofill_describe_local_copy">"Копирана у Banana Browser"</string>
 <string name="password_settings_export_action_description">"Извезите лозинке сачуване у Banana Browser-у"</string>
 <string name="password_settings_export_subject">"Лозинке за Banana Browser"</string>
@@ -96,7 +98,6 @@ Google налог можда има друге облике историје п�
 <string name="storage_management_all_storage_description">"Сви подаци које користи Banana Browser, укључујући налоге, обележиваче и сачувана подешавања"</string>
 <string name="storage_management_reset_app_dialog_text">"Сви подаци Banana Browser апликација ће бити трајно избрисани. То обухвата све датотеке, подешавања, налоге, базе података итд."</string>
 <string name="sogou_explanation">"Banana Browser може да користи &lt;b&gt;Sogou&lt;/b&gt; за претрагу у Кини. Ово можете да промените у &lt;link&gt;Подешавањима&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Ова апликација је активна у Banana Browser-у"</string>
 <string name="twa_running_in_chrome">"Покренуто је у Banana Browser-у"</string>
 <string name="twa_running_in_chrome_v2">"У Banana Browser-у ћете видети да ли сте пријављени, податке прегледања и податке о сајту за %1$s"</string>
 <string name="twa_clear_data_dialog_title">"%1$s такође има податке у Banana Browser-у"</string>
@@ -122,11 +123,13 @@ Google налог можда има друге облике историје п�
 <string name="usage_stats_revocation_prompt">"Желите ли да уклоните Banana Browser активности из Дигиталног благостања?"</string>
 <string name="usage_stats_revocation_explanation">"Сајтови које посећујете у Banana Browser-у се неће приказивати. Биће избрисани тајмери за све сајтове."</string>
 <string name="autofill_assistant_module_title">"Google помоћник у Banana Browser-у"</string>
+<string name="cablev2_activity_title">"Google Banana Browser као безбедносни кључ"</string>
 <string name="qr_code_permission_description">"Да бисте скенирали QR кôд, дозволите да Banana Browser користи камеру"</string>
 <string name="qr_code_open_settings_description">"Да бисте скенирали QR кôд, промените подешавања како би Banana Browser могао да користи камеру"</string>
 <string name="chrome_reengagement_notification_1_description">"Чланци о вашим интересовањима у Banana Browser-у"</string>
 <string name="chrome_reengagement_notification_2_description">"Користите Lite режим у Google Banana Browser-у"</string>
 <string name="chrome_reengagement_notification_3_title">"Google препоручује Banana Browser"</string>
+<string name="avs_consent_ui_body">"Да би вам помогао у обављању задатака, Google ће добијати URL-ове и садржај сајтова на којима користите Помоћник, као и информације које пошаљете преко Помоћника. Ове информације могу да се чувају на Google налогу. Помоћник можете да искључите у подешавањима Banana Browser-а."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser тражи дозволу да приступи камери да би направио 3D мапу окружења."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser тражи дозволу да приступи камери за овај сајт."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser тражи дозволу да приступи микрофону за овај сајт."</string>

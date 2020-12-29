@@ -10,10 +10,12 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser ще ви уведоми, когато влизате в профил с компрометирана парола."</string>
 <string name="sign_in_to_chrome">"Вход в Banana Browser"</string>
 <string name="sync_switch_title">"Синхронизиране на данните ви в Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Разрешаване на влизането в Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Показване на подкани за влизане в Banana Browser, когато влизате в профила си в Google"</string>
+<string name="allow_chrome_signin_title">"Разрешаване на влизането в Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Показване на подкани за влизане в Banana Browser, когато влизате в профила си в Google"</string>
 <string name="usage_and_crash_reports_title">"Помощ за подобряването на функциите и ефективността на Banana Browser"</string>
 <string name="usage_and_crash_reports_summary">"Автоматично изпраща до Google статистически данни за използването на Banana Browser и сигнали за сривове"</string>
+<string name="metrics_settings_description">"Изберете какви данни сте готови да споделяте с Banana Browser. Показателите, които споделяте, ще се използват за подобряване на функциите, производителността и стабилността на Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Взаимодействието ви с Banana Browser, избраните от вас настройки, подробности за сривовете на Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Копирано в Banana Browser"</string>
 <string name="password_settings_export_action_description">"Експортиране на паролите, съхранявани в Banana Browser"</string>
 <string name="password_settings_export_subject">"Пароли в Banana Browser"</string>
@@ -95,7 +97,6 @@
 <string name="storage_management_all_storage_description">"Общо място в хранилището, което се използва от Banana Browser, включително за профили, отметки и запазени настройки"</string>
 <string name="storage_management_reset_app_dialog_text">"Всички данни на приложението Banana Browser ще се изтрият за постоянно. Това включва всички файлове, настройки, профили, бази от данни и др."</string>
 <string name="sogou_explanation">"Banana Browser може да използва &lt;b&gt;Sogou&lt;/b&gt; за търсене в Китай. Можете да промените това от &lt;link&gt;Настройки&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Това приложение се изпълнява в Banana Browser"</string>
 <string name="twa_running_in_chrome">"Изпълнява се в Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"В Banana Browser ще виждате дали сте влезли в профила си в %1$s, както и съответните данни за сърфирането и сайта"</string>
 <string name="twa_clear_data_dialog_title">"%1$s също има данни в Banana Browser"</string>
@@ -121,11 +122,13 @@
 <string name="usage_stats_revocation_prompt">"Искате ли активността ви в Banana Browser да се премахне от „Дигитално благополучие“?"</string>
 <string name="usage_stats_revocation_explanation">"Посетените от вас сайтове в Banana Browser няма да се показват. Всички таймери за сайтове ще бъдат изтрити."</string>
 <string name="autofill_assistant_module_title">"Google Асистент в Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser като ключ за сигурност"</string>
 <string name="qr_code_permission_description">"За да сканирате QR код, разрешете на Banana Browser да използва камерата ви"</string>
 <string name="qr_code_open_settings_description">"За да сканирате QR код, променете настройките, така че Banana Browser да може да използва камерата."</string>
 <string name="chrome_reengagement_notification_1_description">"Статии, свързани с интересите ви, в Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Използване на олекотения режим в Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google препоръчва Banana Browser"</string>
+<string name="avs_consent_ui_body">"За да ви помага да изпълнявате задачи, Google ще получава URL адресите и съдържанието на сайтовете, в които използвате Асистент, както и данните, които изпращате чрез услугата. Тази информация може да се съхранява в профила ви в Google. Имате възможност да изключите Асистент от настройките на Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser се нуждае от разрешение за достъп до камерата ви, за да създаде триизмерна карта на заобикалящата ви среда."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser се нуждае от разрешение за достъп до камерата ви за този сайт."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser се нуждае от разрешение за достъп до микрофона ви за този сайт."</string>

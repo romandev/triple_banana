@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"களவாடப்பட்ட கடவுச்சொல் முலம் நீங்கள் உள்நுழையும்போது Banana Browser அது குறித்து உங்களுக்குத் தெரியப்படுத்தும்."</string>
 <string name="sign_in_to_chrome">"Banana Browser இல் உள்நுழைக"</string>
 <string name="sync_switch_title">"உங்கள் Banana Browser தரவை ஒத்திசைக்கவும்"</string>
-<string name="offer_chrome_signin_title">"Banana Browser உள்நுழைவை அனுமதித்தல்"</string>
-<string name="offer_chrome_signin_summary">"நான் Google கணக்கில் உள்நுழையும்போது Banana Browser உள்நுழைவு அறிவிப்புகளைக் காட்டு"</string>
+<string name="allow_chrome_signin_title">"Banana Browser உள்நுழைவை அனுமதித்தல்"</string>
+<string name="allow_chrome_signin_summary">"நான் Google கணக்கில் உள்நுழையும்போது Banana Browser உள்நுழைவு அறிவிப்புகளைக் காட்டு"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser இன் அம்சங்களையும் செயல்திறனையும் மேம்படுத்த உதவுக"</string>
+<string name="metrics_settings_description">"Banana Browserமுடன் எதையெல்லாம் பகிரலாம் என்பதைத் தேர்வுசெய்யுங்கள். Banana Browserமின் அம்சங்கள், செயல்திறன், நிலைப்புத்தன்மை ஆகியவற்றை மேம்படுத்த இந்த அளவீடுகள் பயன்படுத்தப்படும்."</string>
+<string name="metrics_settings_basic_summary">"Banana Browserமில் நீங்கள் செயல்படும் விதம், நீங்கள் தேர்ந்தெடுத்துள்ள அமைப்புகள், Banana Browser சிதைவுகளின் விவரங்கள்"</string>
 <string name="autofill_describe_local_copy">"Banana Browserக்கு நகலெடுக்கப்பட்டது"</string>
 <string name="password_settings_export_action_description">"Banana Browser இல் சேமித்த கடவுச்சொற்களை ஏற்றும்"</string>
 <string name="password_settings_export_subject">"Banana Browser கடவுச்சொற்கள்"</string>
@@ -95,7 +97,6 @@
 <string name="storage_management_all_storage_description">"கணக்குகள், புக்மார்க்குகள், சேமித்த அமைப்புகள் உள்பட Banana Browser பயன்படுத்தும் மொத்தத் தரவு"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser இன் எல்லாப் பயன்பாட்டுத் தரவும் நிரந்தரமாக நீக்கப்படும். இதில் அனைத்துக் கோப்புகள், அமைப்புகள், கணக்குகள், தரவுத்தளங்கள், மேலும் பல உள்ளடங்கும்."</string>
 <string name="sogou_explanation">"சீனாவில் தேடுவதற்கு, Banana Browserமில் &lt;b&gt;Sogou&lt;/b&gt;ஐப் பயன்படுத்தலாம். இதை &lt;link&gt;அமைப்புகளுக்குச்&lt;/link&gt; சென்று மாற்றலாம்."</string>
-<string name="app_running_in_chrome_disclosure">"இந்த ஆப்ஸ் Banana Browserமில் இயங்குகிறது"</string>
 <string name="twa_running_in_chrome">"Banana Browser இல் இயங்குகிறது"</string>
 <string name="twa_running_in_chrome_v2">"%1$s என்ற தளம் தொடர்பான உங்களின் உள்நுழைவு நிலை, உலாவிய தரவு, தளத்தின் தரவு ஆகியவை Banana Browserமில் காட்டப்படும்"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ஆப்ஸின் தரவும் Banana Browserமில் உள்ளது"</string>
@@ -121,11 +122,13 @@
 <string name="usage_stats_revocation_prompt">"உங்கள் Banana Browser செயல்பாட்டை டிஜிட்டல் வெல்பீயிங்கிலிருந்து நீக்கவா?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browserமில் நீங்கள் பார்க்கும் தளங்களைக் காட்டாது. தளத்தில் உள்ள அத்தனை டைமர்களும் நீக்கப்படும்."</string>
 <string name="autofill_assistant_module_title">"Banana Browserமில் Google அசிஸ்டண்ட்"</string>
+<string name="cablev2_activity_title">"Google Banana Browserமைப் பாதுகாப்பு விசையாகப் பயன்படுத்தும் வசதி"</string>
 <string name="qr_code_permission_description">"QR குறியீட்டை ஸ்கேன் செய்ய, Banana Browser உலாவி உங்கள் கேமராவைப் பயன்படுத்த அனுமதிக்கவும்"</string>
 <string name="qr_code_open_settings_description">"QR குறியீட்டை ஸ்கேன் செய்ய, அமைப்புகளை மாற்றியமைக்கவும். அப்போதுதான் Banana Browser உங்கள் கேமராவைப் பயன்படுத்த முடியும்"</string>
 <string name="chrome_reengagement_notification_1_description">"உங்களுக்குப் பிடித்த கட்டுரைகளை Banana Browserமில் படிக்கலாம்"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser உலாவியில் லைட் பயன்முறையைப் பயன்படுத்தலாம்"</string>
 <string name="chrome_reengagement_notification_3_title">"Google ஆனது Banana Browserஐப் பரிந்துரைக்கிறது"</string>
+<string name="avs_consent_ui_body">"பணிகளை நிறைவுசெய்ய உங்களுக்கு உதவும் வகையில் நீங்கள் Assistantடைப் பயன்படுத்தும் தளங்களின் URLகளையும் உள்ளடக்கங்களையும் Assistant மூலம் சமர்ப்பிக்கும் தகவல்களையும் Google பெறும். இந்தத் தகவல்கள் உங்கள் Google கணக்கில் சேமிக்கப்படலாம். Banana Browser அமைப்புகளுக்குச் சென்று Assistantடை முடக்கலாம்."</string>
 <string name="infobar_missing_ar_camera_permission_text">"உங்களைச் சுற்றியுள்ள இடங்களின் 3D வரைபடத்தை உருவாக்க, Banana Browserமுக்கு உங்கள் கேமராவை அணுக அனுமதி தேவை."</string>
 <string name="infobar_missing_camera_permission_text">"இந்தத் தளத்திற்காகக் கேமராவை அணுக, Banana Browserமுக்கு அனுமதி தேவை."</string>
 <string name="infobar_missing_microphone_permission_text">"இந்தத் தளத்திற்காக மைக்ரோஃபோனை அணுக, Banana Browserமுக்கு அனுமதி தேவை."</string>

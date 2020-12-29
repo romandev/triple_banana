@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser akan memberi tahu Anda saat Anda login dengan sandi yang telah dibobol."</string>
 <string name="sign_in_to_chrome">"Login ke Banana Browser"</string>
 <string name="sync_switch_title">"Sinkronkan data Banana Browser Anda"</string>
-<string name="offer_chrome_signin_title">"Izinkan login Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Menampilkan perintah login Banana Browser saat Anda login ke Akun Google Anda"</string>
+<string name="allow_chrome_signin_title">"Izinkan login Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Menampilkan perintah login Banana Browser saat Anda login ke Akun Google Anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu sempurnakan fitur dan performa Banana Browser"</string>
+<string name="metrics_settings_description">"Pilih metrik yang ingin dibagikan ke Banana Browser. Metrik yang Anda bagikan akan digunakan untuk membantu menyempurnakan fitur, performa, dan stabilitas Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Cara Anda berinteraksi dengan Banana Browser, setelan yang Anda pilih, detail error Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Disalin ke Banana Browser"</string>
 <string name="password_settings_export_action_description">"Ekspor sandi yang disimpan dengan Banana Browser"</string>
 <string name="password_settings_export_subject">"Sandi Banana Browser"</string>
@@ -96,7 +98,6 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="storage_management_all_storage_description">"Total data yang digunakan oleh Banana Browser, termasuk akun, bookmark, dan setelan yang tersimpan"</string>
 <string name="storage_management_reset_app_dialog_text">"Semua data aplikasi Banana Browser akan dihapus secara permanen. Hal ini meliputi semua file, setelan, akun, database, dll."</string>
 <string name="sogou_explanation">"Banana Browser dapat menggunakan &lt;b&gt;Sogou&lt;/b&gt; sebagai mesin telusur di Tiongkok. Anda dapat mengubahnya di &lt;link&gt;Setelan&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Aplikasi ini dijalankan di Banana Browser"</string>
 <string name="twa_running_in_chrome">"Berjalan di Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Di Banana Browser, Anda akan melihat status login, data penjelajahan, dan data situs %1$s"</string>
 <string name="twa_clear_data_dialog_title">"%1$s juga memiliki data di Banana Browser"</string>
@@ -122,11 +123,13 @@ Akun Google Anda mungkin memiliki bentuk histori penjelajahan lain seperti penel
 <string name="usage_stats_revocation_prompt">"Hapus aktivitas Banana Browser Anda dari Kesehatan Digital?"</string>
 <string name="usage_stats_revocation_explanation">"Situs yang Anda kunjungi di Banana Browser tidak akan ditampilkan. Semua timer situs akan dihapus."</string>
 <string name="autofill_assistant_module_title">"Asisten Google di Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser sebagai Kunci Keamanan"</string>
 <string name="qr_code_permission_description">"Untuk memindai kode QR, izinkan Banana Browser menggunakan kamera Anda"</string>
 <string name="qr_code_open_settings_description">"Untuk memindai kode QR, ubah setelan agar Banana Browser dapat menggunakan kamera Anda"</string>
 <string name="chrome_reengagement_notification_1_description">"Artikel di Banana Browser terkait minat Anda"</string>
 <string name="chrome_reengagement_notification_2_description">"Gunakan Mode Ringan di Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google merekomendasikan Banana Browser"</string>
+<string name="avs_consent_ui_body">"Untuk membantu Anda menyelesaikan tugas, Google akan menerima URL dan konten situs tempat Anda menggunakan Asisten, serta informasi yang Anda kirimkan melalui Asisten. Informasi ini mungkin disimpan di Akun Google Anda. Anda dapat menonaktifkan Asisten di setelan Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser memerlukan izin untuk mengakses kamera guna membuat peta 3D untuk area di sekeliling Anda."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser memerlukan izin akses ke kamera untuk situs ini."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser memerlukan izin akses ke mikrofon untuk situs ini."</string>

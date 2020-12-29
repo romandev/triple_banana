@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Aabisuhan ka ng Banana Browser kapag nag-sign in ka gamit ang isang nakompromisong password."</string>
 <string name="sign_in_to_chrome">"Mag-sign in sa Banana Browser"</string>
 <string name="sync_switch_title">"I-sync ang iyong data ng Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Pagayan ang pag-sign in sa Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Ipakita ang mga prompt sa pag-sign in sa Banana Browser kapag nag-sign in ka sa iyong Google Account"</string>
+<string name="allow_chrome_signin_title">"Pagayan ang pag-sign in sa Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Ipakita ang mga prompt sa pag-sign in sa Banana Browser kapag nag-sign in ka sa iyong Google Account"</string>
 <string name="usage_and_crash_reports_title">"Tumulong sa pagpapahusay sa mga feature at performance ng Banana Browser"</string>
+<string name="metrics_settings_description">"Piliin kung ano ang kumportable kang ibahagi sa Banana Browser. Gagamitin ang mga sukatang ibabahagi mo para makatulong sa pagpapahusay ng mga feature, performance, at stability ng Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Paano ka makipag-ugnayan sa Banana Browser, ang mga setting na pinili mo, ang mga detalye ng mga pag-crash ng Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Kinopya sa Banana Browser"</string>
 <string name="password_settings_export_action_description">"Mag-export ng mga password na naka-store sa Banana Browser"</string>
 <string name="password_settings_export_subject">"Mga Password sa Banana Browser"</string>
@@ -96,7 +98,6 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="storage_management_all_storage_description">"Kabuuang data na ginagamit ng Banana Browser, kabilang ang mga account, bookmark at naka-save na setting"</string>
 <string name="storage_management_reset_app_dialog_text">"Permanenteng ide-delete ang lahat ng data ng app ng Banana Browser. Kabilang dito ang lahat ng file, setting, account, database, atbp."</string>
 <string name="sogou_explanation">"Maaaring gamitin ng Banana Browser ang &lt;b&gt;Sogou&lt;/b&gt; para sa paghahanap sa China. Maaari mo itong baguhin sa &lt;link&gt;Mga Setting&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Gumagana ang app na ito sa Banana Browser"</string>
 <string name="twa_running_in_chrome">"Gumagana sa Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Makikita mo sa Banana Browser ang iyong status ng pag-sign in sa %1$s, data mula sa pag-browse, at data ng site"</string>
 <string name="twa_clear_data_dialog_title">"May data rin ang %1$s sa Banana Browser"</string>
@@ -122,11 +123,13 @@ Maaaring may ibang uri ng history ng pag-browse ang iyong Google account tulad n
 <string name="usage_stats_revocation_prompt">"Alisin sa Digital Wellness ang aktibidad mo sa Banana Browser?"</string>
 <string name="usage_stats_revocation_explanation">"Hindi lalabas ang mga site na binibisita mo sa Banana Browser. Ide-delete ang lahat ng timer sa site."</string>
 <string name="autofill_assistant_module_title">"Google Assistant sa Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser bilang Security Key"</string>
 <string name="qr_code_permission_description">"Para mag-scan ng QR code, hayaang gamitin ng Banana Browser ang iyong camera"</string>
 <string name="qr_code_open_settings_description">"Para mag-scan ng QR code, baguhin ang iyong mga setting para magamit ng Banana Browser ang camera mo"</string>
 <string name="chrome_reengagement_notification_1_description">"Mga artikulo tungkol sa iyong mga interes sa Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Gamitin ang Lite mode sa Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Inirerekomenda ng Google ang Banana Browser"</string>
+<string name="avs_consent_ui_body">"Para tulungan kang tapusin ang mga gawain, matatanggap ng Google ang mga URL at content ng mga site kung saan ka gumamit ng Assistant, gayundin ang impormasyong isinumite mo sa pamamagitan ng Assistant. Puwedeng i-store sa iyong Google account ang impormasyong ito. Puwede mong i-off ang Assistant sa mga setting ng Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Kailangan ng Banana Browser ng access sa iyong camera para gumawa ng 3D na mapa ng kapaligiran mo."</string>
 <string name="infobar_missing_camera_permission_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong camera para sa site na ito."</string>
 <string name="infobar_missing_microphone_permission_text">"Kailangan ng Banana Browser ng pahintulot na i-access ang iyong mikropono para sa site na ito."</string>

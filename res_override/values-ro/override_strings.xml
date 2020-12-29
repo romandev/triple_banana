@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser te va anunța dacă te conectezi folosind o parolă compromisă."</string>
 <string name="sign_in_to_chrome">"Conectează-te la Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizează datele din Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Permite conectarea la Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Afișează solicitări de conectare de la Banana Browser când te conectezi la Contul Google"</string>
+<string name="allow_chrome_signin_title">"Permite conectarea la Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Afișează solicitări de conectare de la Banana Browser când te conectezi la Contul Google"</string>
 <string name="usage_and_crash_reports_title">"Contribuie la îmbunătățirea funcțiilor și performanței Banana Browser"</string>
+<string name="metrics_settings_description">"Alege informațiile la care permiți accesul Banana Browser. Valorile transmise vor fi folosite pentru a ajuta la îmbunătățirea funcțiilor, performanței și stabilității Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Modul în care interacționezi cu Banana Browser, setările selectate, detalii despre blocările browserului Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Copiat în Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exportă parolele stocate în Banana Browser"</string>
 <string name="password_settings_export_subject">"Parole Banana Browser"</string>
@@ -96,7 +98,6 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="storage_management_all_storage_description">"Totalul datelor folosite de Banana Browser, inclusiv conturile, marcajele și setările salvate"</string>
 <string name="storage_management_reset_app_dialog_text">"Toate datele aplicației Banana Browser vor fi șterse definitiv. Sunt incluse toate fișierele, setările, conturile, bazele de date etc."</string>
 <string name="sogou_explanation">"Banana Browser poate să folosească &lt;b&gt;Sogou&lt;/b&gt; pentru căutare în China. Poți să schimbi acest lucru din &lt;link&gt;Setări&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Această aplicație rulează în Banana Browser"</string>
 <string name="twa_running_in_chrome">"Rulează în Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Vei vedea starea de conectare la %1$s, datele de navigare și datele privind site-ul în Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"Și %1$s are date în Banana Browser"</string>
@@ -122,11 +123,13 @@ Contul Google poate să ofere alte forme ale istoricului de navigare, cum ar fi 
 <string name="usage_stats_revocation_prompt">"Elimini activitatea în Banana Browser din Bunăstarea digitală?"</string>
 <string name="usage_stats_revocation_explanation">"Site-urile pe care le vizitezi în Banana Browser nu se vor afișa. Toate temporizatoarele site-urilor vor fi șterse."</string>
 <string name="autofill_assistant_module_title">"Asistentul Google în Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser drept cheie de securitate"</string>
 <string name="qr_code_permission_description">"Pentru a scana un cod QR, permite ca Banana Browser să utilizeze camera"</string>
 <string name="qr_code_open_settings_description">"Pentru a scana un cod QR, modifică setările astfel încât Banana Browser să poată folosi camera"</string>
 <string name="chrome_reengagement_notification_1_description">"Articole despre ceea ce te interesează în Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Folosește modul Lite în Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google recomandă Banana Browser"</string>
+<string name="avs_consent_ui_body">"Pentru a te ajuta să finalizezi sarcini, Google va primi adresele URL și conținutul site-urilor în care folosești Asistentul, precum și informațiile pe care le trimiți cu ajutorul Asistentului. Aceste informații pot fi stocate în contul tău Google. Poți să dezactivezi Asistentul din setările Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser are nevoie de permisiunea de a accesa camera foto pentru a crea o hartă 3D a lucrurilor din jurul tău."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser are nevoie de permisiune ca să acceseze camera foto pentru acest site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser are nevoie de permisiune ca să acceseze microfonul pentru acest site."</string>

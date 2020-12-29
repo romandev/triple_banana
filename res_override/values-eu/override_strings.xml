@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser-k jakinarazpen bat bidaliko dizu arriskuan dagoen pasahitz batekin hasten duzunean saioa."</string>
 <string name="sign_in_to_chrome">"Hasi saioa Banana Browser-n"</string>
 <string name="sync_switch_title">"Sinkronizatu Banana Browser-ko datuak"</string>
-<string name="offer_chrome_signin_title">"Baimendu Banana Browser-n saioa hastea"</string>
-<string name="offer_chrome_signin_summary">"Erakutsi saioa hasteko Banana Browser-ren onarpen-mezuak Google-ko kontuan saioa hasten duzunean"</string>
+<string name="allow_chrome_signin_title">"Baimendu Banana Browser-n saioa hastea"</string>
+<string name="allow_chrome_signin_summary">"Erakutsi saioa hasteko Banana Browser-ren onarpen-mezuak Google-ko kontuan saioa hasten duzunean"</string>
 <string name="usage_and_crash_reports_title">"Lagundu Banana Browser-ren eginbideak eta errendimendua hobetzen"</string>
+<string name="metrics_settings_description">"Aukeratu zer partekatu nahi duzun Banana Browser-rekin. Banana Browser-ren eginbideak, funtzionamendua eta egonkortasuna hobetzen laguntzeko erabiliko dira partekatzen dituzun neurketak."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser-rekin dituzun interakzioak, hautatu dituzun ezarpenak, Banana Browser-ren hutsegiteen xehetasunak"</string>
 <string name="autofill_describe_local_copy">"Banana Browser-n kopiatu da"</string>
 <string name="password_settings_export_action_description">"Esportatu Banana Browser-rekin gordetako pasahitzak"</string>
 <string name="password_settings_export_subject">"Banana Browser-ko pasahitzak"</string>
@@ -96,7 +98,6 @@ Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, 
 <string name="storage_management_all_storage_description">"Banana Browser-k erabilitako datuak, guztira; hala nola kontuak, laster-markak eta gordetako ezarpenak."</string>
 <string name="storage_management_reset_app_dialog_text">"Betiko ezabatuko dira Banana Browser aplikazioko datu guztiak, besteak beste, fitxategiak, ezarpenak, kontuak eta datu-baseak."</string>
 <string name="sogou_explanation">"Txinan, &lt;b&gt;Sogou&lt;/b&gt; erabil dezake Banana Browser-k bilatzaile gisa. &lt;link&gt;Ezarpenak&lt;/link&gt; atalean alda dezakezu hori."</string>
-<string name="app_running_in_chrome_disclosure">"Banana Browser-n da abian aplikazioa"</string>
 <string name="twa_running_in_chrome">"Banana Browser-n abian da"</string>
 <string name="twa_running_in_chrome_v2">"%1$s webgunean saioa hasi duzun ala ez, arakatze-datuak eta webguneko datuak ikusiko dituzu Banana Browser-n"</string>
 <string name="twa_clear_data_dialog_title">"%1$s aplikazioak ere baditu datuak Banana Browser-n"</string>
@@ -122,11 +123,13 @@ Baliteke Google-ko kontuak arakatze-historiako bestelako datu batzuk (adibidez, 
 <string name="usage_stats_revocation_prompt">"Banana Browser-ko jarduerak Ongizate digitala programatik kendu nahi dituzu?"</string>
 <string name="usage_stats_revocation_explanation">"Ez dira agertuko Banana Browser-n ireki dituzun webguneak. Ezabatu egingo dira webguneen tenporizadoreak."</string>
 <string name="autofill_assistant_module_title">"Banana Browser-rako Google-ren Laguntzailea"</string>
+<string name="cablev2_activity_title">"Erabili Google Banana Browser segurtasun-giltza gisa"</string>
 <string name="qr_code_permission_description">"QR kodeak eskaneatzeko, eman Banana Browser-ri kamera erabiltzeko baimena"</string>
 <string name="qr_code_open_settings_description">"QR kodeak eskaneatzeko, aldatu ezarpenak Banana Browser-k kamera erabili ahal izan dezan"</string>
 <string name="chrome_reengagement_notification_1_description">"Interesatzen zaizkizun gaiei buruzko artikuluak Banana Browser-n"</string>
 <string name="chrome_reengagement_notification_2_description">"Erabili oinarrizko modua Google Banana Browser-n"</string>
 <string name="chrome_reengagement_notification_3_title">"Google-k Banana Browser gomendatzen dizu"</string>
+<string name="avs_consent_ui_body">"Zereginak osatzen laguntzeko, Laguntzailea eginbidearen bidez erabiltzen dituzun webguneen URLak eta edukia jasoko ditu Google-k, baita Laguntzailea erabilita bidaltzen duzun informazioa ere. Baliteke informazio hori Google-n duzun kontuan gordetzea. Laguntzailea desaktibatzeko, joan Banana Browser-ren ezarpenetara."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser-k kamera atzitzeko baimena behar du, ingurunearen hiru dimentsioko mapa bat sortzeko."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser-k zure baimena behar du webgune honen izenean kamera atzitzeko."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser-k zure baimena behar du webgune honen izenean mikrofonoa atzitzeko."</string>

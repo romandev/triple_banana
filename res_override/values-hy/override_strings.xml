@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser-ը կտեղեկացնի ձեզ, երբ կոտրված գաղտնաբառ օգտագործեք։"</string>
 <string name="sign_in_to_chrome">"Մուտք գործել Banana Browser"</string>
 <string name="sync_switch_title">"Համաժամացնել Banana Browser-ի տվյալները"</string>
-<string name="offer_chrome_signin_title">"Թույլատրել մուտքը Banana Browser-ում"</string>
-<string name="offer_chrome_signin_summary">"Ցուցադրել Banana Browser-ի մուտքի հաղորդագրություններ, երբ մտնում եք Google հաշիվ"</string>
+<string name="allow_chrome_signin_title">"Թույլատրել մուտքը Banana Browser-ում"</string>
+<string name="allow_chrome_signin_summary">"Ցուցադրել Banana Browser-ի մուտքի հաղորդագրություններ, երբ մտնում եք Google հաշիվ"</string>
 <string name="usage_and_crash_reports_title">"Օգնել ավել լավը դարձնել Banana Browser-ի գործառույթներն ու աշխատանքը"</string>
+<string name="metrics_settings_description">"Ընտրեք, թե ինչ տվյալներ եք պատրաստ փոխանցել Banana Browser-ին։ Ձեր տրամադրած ցուցանիշները կօգնեն բարելավել Banana Browser-ի գործառույթները, աշխատանքի արդյունավետությունը և կայունությունը։"</string>
+<string name="metrics_settings_basic_summary">"Ձեր փոխգործությունը Banana Browser-ի հետ, ձեր ընտրած կարգավորումները, Banana Browser-ի խափանումների մանրամասները"</string>
 <string name="autofill_describe_local_copy">"Պատճենվել է Banana Browser-ում"</string>
 <string name="password_settings_export_action_description">"Արտահանեք Banana Browser-ում պահված գաղտնաբառերը"</string>
 <string name="password_settings_export_subject">"Banana Browser-ի գաղտնաբառեր"</string>
@@ -95,7 +97,6 @@
 <string name="storage_management_all_storage_description">"Banana Browser-ի օգտագործած ընդհանուր տարածքը, ներառյալ` հաշիվները, էջանիշները և պահված կարգավորումները"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser հավելվածի բոլոր տվյալներն ընդմիշտ կջնջվեն, ներառյալ` բոլոր ֆայլերը, կարգավորումները, հաշիվները, տվյալների շտեմարանները և այլն:"</string>
 <string name="sogou_explanation">"Չինաստանում որոնում կատարելու համար Banana Browser-ը կարող է օգտագործել &lt;b&gt;Sogou&lt;/b&gt; որոնման համակարգը: Սա կարող եք փոխել &lt;link&gt;կարգավորումներում&lt;/link&gt;:"</string>
-<string name="app_running_in_chrome_disclosure">"Այս հավելվածն աշխատում է Banana Browser-ում"</string>
 <string name="twa_running_in_chrome">"Այս էջն արդեն բացված է Banana Browser-ում"</string>
 <string name="twa_running_in_chrome_v2">"Դուք կտեսնեք ձեր %1$s հաշվի մուտքի կարգավիճակը, այցելությունների պատմությունը և կայքի տվյալները Banana Browser-ում"</string>
 <string name="twa_clear_data_dialog_title">"%1$s հավելվածը նաև ունի տվյալներ Banana Browser-ում"</string>
@@ -121,11 +122,13 @@
 <string name="usage_stats_revocation_prompt">"Հեռացնե՞լ Banana Browser-ի պատմությունը Թվային բարեկեցությունից"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser-ում ձեր այցելած կայքերը չեն ցուցադրվի։ Բոլոր կայքերի ժամաչափերը կջնջվեն։"</string>
 <string name="autofill_assistant_module_title">"Google Օգնականը Banana Browser-ում"</string>
+<string name="cablev2_activity_title">"Google Banana Browser-ը որպես անվտանգության բանալի"</string>
 <string name="qr_code_permission_description">"QR կոդը սկանավորելու համար թույլ տվեք Banana Browser-ին օգտագործել ձեր տեսախցիկը"</string>
 <string name="qr_code_open_settings_description">"QR կոդը սկանավորելու համար բացեք կարգավորումները և թույլ տվեք Banana Browser-ին օգտագործել ձեր տեսախցիկը"</string>
 <string name="chrome_reengagement_notification_1_description">"Ձեր հետաքրքրությունների հիման վրա ընտրված հոդվածներ՝ Banana Browser-ում"</string>
 <string name="chrome_reengagement_notification_2_description">"Փորձեք Lite ռեժիմը Google Banana Browser-ում"</string>
 <string name="chrome_reengagement_notification_3_title">"Google-ը խորհուրդ է տալիս Banana Browser դիտարկիչը"</string>
+<string name="avs_consent_ui_body">"Ձեր աշխատանքը հեշտացնելու համար Google-ը կստանա կայքերի հասցեներն ու բովանդակությունը, որոնցում օգտվում եք Օգնականից, ինչպես նաև տվյալները, որոնք ուղարկում եք Օգնականի միջոցով։ Այս տեղեկությունները կարող են պահվել ձեր Google հաշվում։ Օգնականը կարող եք անջատել Banana Browser-ի կարգավորումներում։"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser-ին անհրաժեշտ է տեսախցիկն օգտագործելու թույլտվություն՝ ձեր շրջակայքի եռաչափ քարտեզը ստեղծելու համար։"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր տեսախցիկն օգտագործելու թույլտվություն։"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser-ին այս կայքի համար անհրաժեշտ է ձեր խոսափողն օգտագործելու թույլտվություն։"</string>

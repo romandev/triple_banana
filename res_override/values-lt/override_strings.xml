@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"„Banana Browser“ praneš jums, kai prisijungsite naudodami pažeistą slaptažodį."</string>
 <string name="sign_in_to_chrome">"Prisijungti prie „Banana Browser“"</string>
 <string name="sync_switch_title">"„Banana Browser“ duomenų sinchronizavimas"</string>
-<string name="offer_chrome_signin_title">"Leisti „Banana Browser“ prisijungti"</string>
-<string name="offer_chrome_signin_summary">"Rodomi „Banana Browser“ prisijungimo raginimai, kai prisijungiate prie „Google“ paskyros"</string>
+<string name="allow_chrome_signin_title">"Leisti „Banana Browser“ prisijungti"</string>
+<string name="allow_chrome_signin_summary">"Rodomi „Banana Browser“ prisijungimo raginimai, kai prisijungiate prie „Google“ paskyros"</string>
 <string name="usage_and_crash_reports_title">"Padėti tobulinti „Banana Browser“ funkcijas ir našumą"</string>
+<string name="metrics_settings_description">"Pasirinkite, ką norėtumėte bendrinti su „Banana Browser“. Jūsų bendrinama metrika bus naudojama „Banana Browser“ funkcijoms, našumui ir stabilumui tobulinti."</string>
+<string name="metrics_settings_basic_summary">"Kaip sąveikaujate su „Banana Browser“, jūsų pasirinkti nustatymai, išsami „Banana Browser“ strigčių informacija"</string>
 <string name="autofill_describe_local_copy">"Nukopijuota į „Banana Browser“"</string>
 <string name="password_settings_export_action_description">"Eksportuoti sistemoje „Banana Browser“ saugomus slaptažodžius"</string>
 <string name="password_settings_export_subject">"„Banana Browser“ slaptažodžiai"</string>
@@ -96,7 +98,6 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="storage_management_all_storage_description">"Bendras „Banana Browser“ naudojamų duomenų kiekis, įskaitant paskyras, žymes ir išsaugotus nustatymus"</string>
 <string name="storage_management_reset_app_dialog_text">"Visi „Banana Browser“ duomenys bus ištrinti visam laikui. Tai apima visus failus, nustatymus, paskyras, duomenų bazes ir kt."</string>
 <string name="sogou_explanation">"„Banana Browser“ gali naudoti &lt;b&gt;Sogou&lt;/b&gt;, kai paieškos atliekamos Kinijoje. Šį nustatymą galite pakeisti skiltyje &lt;link&gt;„Nustatymai“&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Ši programa veikia naršyklėje „Banana Browser“"</string>
 <string name="twa_running_in_chrome">"Paleista naršyklėje „Banana Browser“"</string>
 <string name="twa_running_in_chrome_v2">"Matysite %1$s prisijungimo būseną, naršymo duomenis ir svetainės duomenis sistemoje „Banana Browser“"</string>
 <string name="twa_clear_data_dialog_title">"„%1$s“ duomenų taip pat yra naršyklėje „Banana Browser“"</string>
@@ -120,11 +121,13 @@ Adresu &lt;link&gt;myactivity.google.com&lt;/link&gt; gali būti pateikta kitų 
 <string name="usage_stats_setting_title">"„Banana Browser“ veiklos pašalinimas iš Skaitmeninės gerovės"</string>
 <string name="usage_stats_revocation_prompt">"Pašalinti „Banana Browser“ veiklą iš Skaitmeninės gerovės programos?"</string>
 <string name="usage_stats_revocation_explanation">"Svetainės, kuriose lankotės naudodami „Banana Browser“, nebus rodomos. Visi svetainių laikmačiai bus ištrinti."</string>
+<string name="cablev2_activity_title">"„Google Banana Browser“ kaip saugos raktas"</string>
 <string name="qr_code_permission_description">"Jei norite nuskaityti QR kodą, leiskite „Banana Browser“ naudoti jūsų kamerą"</string>
 <string name="qr_code_open_settings_description">"Jei norite nuskaityti QR kodą, pakeiskite nustatymus, kad „Banana Browser“ galėtų naudoti jūsų kamerą"</string>
 <string name="chrome_reengagement_notification_1_description">"Su jūsų pomėgiais susiję straipsniai naršyklėje „Banana Browser“"</string>
 <string name="chrome_reengagement_notification_2_description">"Naudokite supaprastintą režimą naršyklėje „Google Banana Browser“"</string>
 <string name="chrome_reengagement_notification_3_title">"„Google“ rekomenduoja „Banana Browser“"</string>
+<string name="avs_consent_ui_body">"Kad padėtų atlikti užduotis, „Google“ gaus svetainių, kuriose naudojate Padėjėją, URL ir turinį bei informaciją, kurią pateikiate naudodami Padėjėją. Ši informacija gali būti saugoma jūsų „Google“ paskyroje. Padėjėją galite išjungti „Banana Browser“ nustatymuose."</string>
 <string name="infobar_missing_ar_camera_permission_text">"„Banana Browser“ reikia leidimo naudoti fotoaparatą jūsų aplinkos 3D žemėlapiui kurti."</string>
 <string name="infobar_missing_camera_permission_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų fotoaparatą šioje svetainėje."</string>
 <string name="infobar_missing_microphone_permission_text">"„Banana Browser“ reikia leidimo, kad galėtų naudoti jūsų mikrofoną šioje svetainėje."</string>

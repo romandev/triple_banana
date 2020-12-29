@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser ilmoittaa, kun kirjaudut sisään vaarantuneella salasanalla."</string>
 <string name="sign_in_to_chrome">"Kirjaudu Banana Browseren"</string>
 <string name="sync_switch_title">"Banana Browser-datan synkronointi"</string>
-<string name="offer_chrome_signin_title">"Salli Banana Browser-kirjautuminen"</string>
-<string name="offer_chrome_signin_summary">"Näytä Banana Browsern kirjautumiskehotteita kirjautuessasi Google-tilille"</string>
+<string name="allow_chrome_signin_title">"Salli Banana Browser-kirjautuminen"</string>
+<string name="allow_chrome_signin_summary">"Näytä Banana Browsern kirjautumiskehotteita kirjautuessasi Google-tilille"</string>
 <string name="usage_and_crash_reports_title">"Auta parantamaan Banana Browsern ominaisuuksia ja suorituskykyä"</string>
+<string name="metrics_settings_description">"Valitse, mitä olet valmis jakamaan Banana Browserlle. Jakamasi mittarit auttavat parantamaan Banana Browsern ominaisuuksia, toimintaa ja vakautta."</string>
+<string name="metrics_settings_basic_summary">"Banana Browsern käyttösi, valitsemasi asetukset, tiedot Banana Browsern kaatumisista"</string>
 <string name="autofill_describe_local_copy">"Kopioitiin Banana Browseren."</string>
 <string name="password_settings_export_action_description">"Vie Banana Browseren tallennetut salasanat"</string>
 <string name="password_settings_export_subject">"Banana Browser-salasanat"</string>
@@ -95,7 +97,6 @@ Google-tililläsi voi olla muita selaushistoriatietoja, kuten hakuja ja toiminta
 <string name="storage_management_all_storage_description">"Banana Browsern käyttämän tallennustilan kokonaismäärä, mukaan lukien tilit, kirjanmerkit ja tallennetut asetukset."</string>
 <string name="storage_management_reset_app_dialog_text">"Kaikki Banana Browsern sovellustiedot, mukaan lukien tiedostot, asetukset, tilit ja tietokannat, poistetaan pysyvästi."</string>
 <string name="sogou_explanation">"Banana Browser voi käyttää &lt;b&gt;Sogouta&lt;/b&gt; hakujen tekemiseen Kiinassa. Voit muokata tätä &lt;link&gt;Asetuksissa&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Tämä sovellus on käynnissä Banana Browserssa"</string>
 <string name="twa_running_in_chrome">"Käynnissä Banana Browserssa"</string>
 <string name="twa_running_in_chrome_v2">"Näet kirjautumisen tilan, selausdatan ja sivustodatan (%1$s) Banana Browserssa"</string>
 <string name="twa_clear_data_dialog_title">"%1$s sisältää dataa myös Banana Browserssa"</string>
@@ -121,11 +122,14 @@ Google-tililläsi voi olla muita selaushistoriatietoja, kuten hakuja ja toiminta
 <string name="usage_stats_revocation_prompt">"Poistetaanko Banana Browser-toimintasi Digitaalisesta hyvinvoinnista?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browserssa käyttämäsi sivustot eivät näy. Kaikki sivuston ajastimet poistetaan."</string>
 <string name="autofill_assistant_module_title">"Banana Browsern Google Assistant"</string>
+<string name="cablev2_activity_title">"Google Banana Browser suojausavaimena"</string>
 <string name="qr_code_permission_description">"Jos haluat lukea QR-koodin, anna Banana Browsern käyttää kameraa."</string>
 <string name="qr_code_open_settings_description">"Jos haluat lukea QR-koodin, muuta asetuksia niin, että Banana Browser voi käyttää kameraa"</string>
 <string name="chrome_reengagement_notification_1_description">"Artikkeleita kiinnostuksen kohteistasi Banana Browserssa"</string>
 <string name="chrome_reengagement_notification_2_description">"Käytä Yksinkertaistettua tilaa Google Banana Browserssa"</string>
 <string name="chrome_reengagement_notification_3_title">"Google suosittelee Banana Browsera"</string>
+<string name="avs_consent_ui_subtitle">"Banana Browsern Google Assistant voi tehdä asioita puolestasi eri sivustoilla"</string>
+<string name="avs_consent_ui_body">"Jotta tehtävien hoitaminen sujuisi helpommin, Google saa tiedot niiden sivustojen URL-osoitteista ja sisällöstä, joilla käytät Assistantia, sekä Assistantin kautta lähettämäsi tiedot. Nämä tiedot voidaan tallentaa Google-tilillesi. Voit poistaa Assistantin käytöstä Banana Browsern asetuksissa."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser tarvitsee luvan käyttää kameraasi ympäristön 3D-kartoittamiseen."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser tarvitsee oikeuden käyttää kameraasi tällä sivustolla."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser tarvitsee oikeuden käyttää mikrofoniasi tällä sivustolla."</string>

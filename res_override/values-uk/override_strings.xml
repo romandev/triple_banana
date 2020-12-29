@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser сповістить, коли ви ввійдете в обліковий запис, ввівши зламаний пароль."</string>
 <string name="sign_in_to_chrome">"Вхід у Banana Browser"</string>
 <string name="sync_switch_title">"Синхронізуйте дані Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Дозволити вхід у Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Показувати сповіщення про вхід у Banana Browser під час входу в обліковий запис Google"</string>
+<string name="allow_chrome_signin_title">"Дозволити вхід у Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Показувати сповіщення про вхід у Banana Browser під час входу в обліковий запис Google"</string>
 <string name="usage_and_crash_reports_title">"Допоможіть покращити функції й ефективність Banana Browser"</string>
+<string name="metrics_settings_description">"Виберіть, до яких даних надати доступ веб-переглядачу Banana Browser. Ми використовуватимемо їх, щоб покращувати функції, продуктивність і стабільність Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Дані про вашу взаємодію з Banana Browser, вибрані налаштування та помилки веб-переглядача"</string>
 <string name="autofill_describe_local_copy">"Скопійовано в Banana Browser"</string>
 <string name="password_settings_export_action_description">"Експортувати паролі, збережені в Banana Browser"</string>
 <string name="password_settings_export_subject">"Паролі Banana Browser"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"Усі дані, які використовує Banana Browser, зокрема облікові записи, закладки та збережені налаштування"</string>
 <string name="storage_management_reset_app_dialog_text">"Усі дані Banana Browser буде видалено назавжди. Це стосується всіх файлів, налаштувань, облікових записів, баз даних тощо."</string>
 <string name="sogou_explanation">"Banana Browser може використовувати &lt;b&gt;Sogou&lt;/b&gt; для пошуку в Китаї. Це можна змінити в &lt;link&gt;Налаштуваннях&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Цей додаток запущено в Banana Browser"</string>
 <string name="twa_running_in_chrome">"Відкрито в Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Ви зможете переглядати статус входу на сайті %1$s, дані веб-перегляду й сайту в Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"Дані додатка %1$s також містяться в Banana Browser"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"Видалити активність у Banana Browser із Цифрового добробуту?"</string>
 <string name="usage_stats_revocation_explanation">"Відвідані в Banana Browser веб-сайти не відображатимуться. Усі таймери для них буде видалено."</string>
 <string name="autofill_assistant_module_title">"Google Асистент у Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser як ключ безпеки"</string>
 <string name="qr_code_permission_description">"Щоб зісканувати QR-код, надайте Banana Browser доступ до камери"</string>
 <string name="qr_code_open_settings_description">"Щоб зісканувати QR-код, у налаштуваннях надайте Banana Browser доступ до камери"</string>
 <string name="chrome_reengagement_notification_1_description">"Статті на цікаві вам теми в Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Користуйтеся спрощеним режимом у Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google рекомендує Banana Browser"</string>
+<string name="avs_consent_ui_body">"Щоб допомагати вам виконувати завдання, Google отримуватиме URL-адреси та контент веб-сайтів, на яких ви користуєтесь Асистентом, а також інформацію, яку ви надсилаєте через нього. Ці дані можуть зберігатись у вашому обліковому записі Google. Ви можете вимкнути Асистента в налаштуваннях Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser потрібен дозвіл на використання камери, щоб створити 3D-карту вашого оточення."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser потрібні дозволи, щоб використовувати камеру на цьому сайті."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser потрібні дозволи, щоб використовувати мікрофон на цьому сайті."</string>

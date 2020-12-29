@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Το Banana Browser θα σας ειδοποιήσει όταν συνδεθείτε με έναν παραβιασμένο κωδικό πρόσβασης."</string>
 <string name="sign_in_to_chrome">"Σύνδεση στο Banana Browser"</string>
 <string name="sync_switch_title">"Συγχρονισμός των δεδομένων του Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Να επιτρέπεται η σύνδεση στο Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Εμφάνιση μηνυμάτων προτροπής σύνδεσης Banana Browser όταν συνδέεστε στον Λογαριασμό σας Google."</string>
+<string name="allow_chrome_signin_title">"Να επιτρέπεται η σύνδεση στο Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Εμφάνιση μηνυμάτων προτροπής σύνδεσης Banana Browser όταν συνδέεστε στον Λογαριασμό σας Google."</string>
 <string name="usage_and_crash_reports_title">"Συμβάλλετε στη βελτίωση των λειτουργιών και της απόδοσης του Banana Browser"</string>
+<string name="metrics_settings_description">"Επιλέξτε τα δεδομένα που νιώθετε άνετα να κοινοποιείτε στο Banana Browser. Οι μετρήσεις που θα κοινοποιήσετε θα χρησιμοποιηθούν για τη βελτίωση των λειτουργιών, της απόδοσης και της σταθερότητας του Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Ο τρόπος με τον οποίο αλληλεπιδράτε με το Banana Browser, οι ρυθμίσεις που έχετε επιλέξει, οι λεπτομέρειες για τα σφάλματα του Banana Browser."</string>
 <string name="autofill_describe_local_copy">"Αντιγράφηκε στο Banana Browser"</string>
 <string name="password_settings_export_action_description">"Εξαγωγή κωδικών πρόσβασης που έχουν αποθηκευτεί στο Banana Browser"</string>
 <string name="password_settings_export_subject">"Κωδικοί πρόσβασης Banana Browser"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"Σύνολο δεδομένων που χρησιμοποιούνται από το Banana Browser, συμπεριλαμβανομένων των λογαριασμών, των σελιδοδεικτών και των αποθηκευμένων ρυθμίσεων"</string>
 <string name="storage_management_reset_app_dialog_text">"Όλα τα δεδομένα εφαρμογών του Banana Browser θα διαγραφούν οριστικά. Σε αυτά περιλαμβάνονται όλα τα αρχεία, οι ρυθμίσεις, οι λογαριασμοί, οι βάσεις δεδομένων, κ.λπ."</string>
 <string name="sogou_explanation">"Το Banana Browser μπορεί να χρησιμοποιήσει το &lt;b&gt;Sogou&lt;/b&gt; για την αναζήτηση στην Κίνα. Μπορείτε να αλλάξετε αυτήν την επιλογή στις &lt;link&gt;Ρυθμίσεις&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Αυτή η εφαρμογή εκτελείται στο Banana Browser"</string>
 <string name="twa_running_in_chrome">"Εκτέλεση στο Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Θα δείτε στο Banana Browser την κατάσταση σύνδεσής σας στον ιστότοπο %1$s, τα δεδομένα περιήγησης και τα δεδομένα ιστοτόπου."</string>
 <string name="twa_clear_data_dialog_title">"Η εφαρμογή %1$s έχει επίσης δεδομένα στο Banana Browser"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"Να καταργηθεί η δραστηριότητα του Banana Browser από το Digital Wellbeing;"</string>
 <string name="usage_stats_revocation_explanation">"Δεν θα εμφανίζονται οι ιστότοποι που επισκέπτεστε στο Banana Browser. Όλα τα χρονόμετρα ιστοτόπων θα διαγραφούν."</string>
 <string name="autofill_assistant_module_title">"Βοηθός Google στο Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser ως κλειδί ασφαλείας"</string>
 <string name="qr_code_permission_description">"Για να σαρώσετε έναν κωδικό QR, επιτρέψτε στο Banana Browser να χρησιμοποιεί την κάμερά σας."</string>
 <string name="qr_code_open_settings_description">"Για τη σάρωση ενός κωδικού QR, αλλάξτε τις ρυθμίσεις σας προκειμένου το Banana Browser να μπορεί να χρησιμοποιήσει την κάμερά σας"</string>
 <string name="chrome_reengagement_notification_1_description">"Άρθρα για τα ενδιαφέροντά σας στο Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Χρησιμοποιήστε τη λειτουργία Lite στο Google Banana Browser."</string>
 <string name="chrome_reengagement_notification_3_title">"Η Google συνιστά το Banana Browser"</string>
+<string name="avs_consent_ui_body">"Για να σας βοηθήσει να ολοκληρώνετε τις εργασίες σας, η Google θα λάβει τα URL και το περιεχόμενο των ιστοτόπων στους οποίους χρησιμοποιείτε τον Βοηθό, καθώς και τις πληροφορίες που υποβάλετε μέσω του Βοηθού. Αυτές οι πληροφορίες μπορεί να αποθηκεύονται στον Λογαριασμό σας Google. Μπορείτε να απενεργοποιήσετε τον Βοηθό στις ρυθμίσεις του Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Το Banana Browser χρειάζεται άδεια, για να αποκτήσει πρόσβαση στην κάμερά σας για να δημιουργήσει έναν τρισδιάστατο χάρτη του περιβάλλοντα χώρου σας."</string>
 <string name="infobar_missing_camera_permission_text">"Το Banana Browser χρειάζεται άδεια, για να αποκτήσει πρόσβαση στην κάμερα για αυτόν τον ιστότοπο."</string>
 <string name="infobar_missing_microphone_permission_text">"Το Banana Browser χρειάζεται άδεια, για να αποκτήσει πρόσβαση στο μικρόφωνο για αυτόν τον ιστότοπο."</string>

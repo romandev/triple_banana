@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"如果你使用遭外洩的密碼登入帳戶，Banana Browser 會通知你。"</string>
 <string name="sign_in_to_chrome">"登入 Banana Browser"</string>
 <string name="sync_switch_title">"同步處理你的 Banana Browser 資料"</string>
-<string name="offer_chrome_signin_title">"允許登入 Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"當你登入 Google 帳戶時，顯示 Banana Browser 登入提示"</string>
+<string name="allow_chrome_signin_title">"允許登入 Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"當你登入 Google 帳戶時，顯示 Banana Browser 登入提示"</string>
 <string name="usage_and_crash_reports_title">"協助改善 Banana Browser 的功能與效能"</string>
+<string name="metrics_settings_description">"選擇你要與 Banana Browser 分享的使用資料。你分享的指標將用於協助改善 Banana Browser 的功能、效能和穩定性。"</string>
+<string name="metrics_settings_basic_summary">"你與 Banana Browser 互動的方式、選取的設定、Banana Browser 發生當機狀況的詳細資料"</string>
 <string name="autofill_describe_local_copy">"已複製到 Banana Browser"</string>
 <string name="password_settings_export_action_description">"將使用 Banana Browser 儲存的密碼匯出"</string>
 <string name="password_settings_export_subject">"Banana Browser 密碼"</string>
@@ -98,7 +100,6 @@
 <string name="storage_management_all_storage_description">"Banana Browser 使用的資料總量，包括帳戶、書籤和儲存的設定"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser 的應用程式資料會全部遭到永久刪除，包括所有檔案、設定、帳戶、資料庫等等。"</string>
 <string name="sogou_explanation">"Banana Browser 可以在中國使用 &lt;b&gt;Sogou&lt;/b&gt; 搜尋。你可以在&lt;link&gt;設定&lt;/link&gt;中變更這項設定。"</string>
-<string name="app_running_in_chrome_disclosure">"Banana Browser 正在執行這個應用程式"</string>
 <string name="twa_running_in_chrome">"正在 Banana Browser 中執行"</string>
 <string name="twa_running_in_chrome_v2">"你將可在 Banana Browser 中查看 %1$s 登入狀態、瀏覽資料和網站資料"</string>
 <string name="twa_clear_data_dialog_title">"「%1$s」在 Banana Browser 中也有資料"</string>
@@ -124,11 +125,13 @@
 <string name="usage_stats_revocation_prompt">"要將你的 Banana Browser 活動記錄從數位健康中移除嗎？"</string>
 <string name="usage_stats_revocation_explanation">"數位健康將不會顯示你透過 Banana Browser 造訪的網站。所有網站計時器也將遭到刪除。"</string>
 <string name="autofill_assistant_module_title">"Banana Browser 版 Google 助理"</string>
+<string name="cablev2_activity_title">"使用 Google Banana Browser 做為安全金鑰"</string>
 <string name="qr_code_permission_description">"如要掃描 QR 圖碼，請允許 Banana Browser 使用你的攝影機"</string>
 <string name="qr_code_open_settings_description">"如要掃描 QR 圖碼，請將設定變更為允許 Banana Browser 使用你的攝影機"</string>
 <string name="chrome_reengagement_notification_1_description">"在 Banana Browser 上閱讀你有興趣的文章"</string>
 <string name="chrome_reengagement_notification_2_description">"使用 Google Banana Browser 精簡模式"</string>
 <string name="chrome_reengagement_notification_3_title">"Google 推薦使用 Banana Browser"</string>
+<string name="avs_consent_ui_body">"為協助你完成工作，當你在網站上使用 Google 助理時，系統會將該網站的網址和內容，連同你透過 Google 助理提交的資訊，一併傳送給 Google。這類資訊可能會儲存在你的 Google 帳戶中。你可以透過 Banana Browser 設定停用 Google 助理。"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser 需要取得攝影機權限，才能根據你的周遭環境建立 3D 地圖。"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser 需要相關權限，才能讓這個網站使用你的攝影機。"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser 需要相關權限，才能讓這個網站使用你的麥克風。"</string>

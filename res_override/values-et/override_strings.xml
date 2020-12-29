@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser teavitab teid, kui logite sisse ohustatud parooliga."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'i sisselogimine"</string>
 <string name="sync_switch_title">"Banana Browser\'i andmete sünkroonimine"</string>
-<string name="offer_chrome_signin_title">"Luba Banana Browser\'i sisselogimine"</string>
-<string name="offer_chrome_signin_summary">"Kuva Google\'i kontole sisse logides Banana Browser\'i sisselogimisviibad"</string>
+<string name="allow_chrome_signin_title">"Luba Banana Browser\'i sisselogimine"</string>
+<string name="allow_chrome_signin_summary">"Kuva Google\'i kontole sisse logides Banana Browser\'i sisselogimisviibad"</string>
 <string name="usage_and_crash_reports_title">"Aidake täiustada Banana Browser\'i funktsioone ja toimivust"</string>
+<string name="metrics_settings_description">"Valige, mida olete nõus Banana Browser\'iga jagama. Teie jagatavaid mõõdikuid kasutatakse Banana Browser\'i funktsioonide, toimivuse ja stabiilsuse täiustamiseks."</string>
+<string name="metrics_settings_basic_summary">"Kuidas Banana Browser\'iga suhtlete, teie valitud seaded, Banana Browser\'i kokkujooksmiste üksikasjad"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'i kopeeritud"</string>
 <string name="password_settings_export_action_description">"Banana Browser\'i salvestatud paroolide eksportimine"</string>
 <string name="password_settings_export_subject">"Banana Browser\'i paroolid"</string>
@@ -95,7 +97,6 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="storage_management_all_storage_description">"Banana Browser\'i kasutatav andmemaht kokku, sh kontod, järjehoidjad ja salvestatud seaded"</string>
 <string name="storage_management_reset_app_dialog_text">"Kõik Banana Browser\'i rakenduse andmed kustutatakse jäädavalt. See hõlmab kõiki faile, seadeid, kontosid, andmebaase jms."</string>
 <string name="sogou_explanation">"Banana Browser saab Hiinas otsimiseks kasutada teenust &lt;b&gt;Sogou&lt;/b&gt;. Seda saate muuta menüüs &lt;link&gt;Seaded&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Rakendus töötab Banana Browser\'is"</string>
 <string name="twa_running_in_chrome">"Töötab Banana Browser\'is"</string>
 <string name="twa_running_in_chrome_v2">"Näete Banana Browser\'is oma saidi %1$s sisselogimise olekut, sirvimisandmeid ja saidi andmeid"</string>
 <string name="twa_clear_data_dialog_title">"Rakendusel %1$s on samuti Banana Browser’i andmeid"</string>
@@ -120,11 +121,13 @@ Veebisaidil &lt;link&gt;myactivity.google.com&lt;/link&gt; võib teie Google\'i 
 <string name="usage_stats_revocation_prompt">"Kas eemaldada teie Banana Browser\'i tegevused teenusest Digitaalne heaolu?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'is külastatud saite ei kuvata. Kõik saitide taimerid kustutatakse."</string>
 <string name="autofill_assistant_module_title">"Google\'i assistent Banana Browser\'is"</string>
+<string name="cablev2_activity_title">"Google Banana Browser turvavõtmena"</string>
 <string name="qr_code_permission_description">"QR-koodi skannimiseks lubage Banana Browser\'il oma kaamerat kasutada"</string>
 <string name="qr_code_open_settings_description">"QR-koodi skannimiseks muutke seadeid, et Banana Browser saaks teie kaamerat kasutada"</string>
 <string name="chrome_reengagement_notification_1_description">"Teie huvidega seotud artiklid Banana Browser\'is"</string>
 <string name="chrome_reengagement_notification_2_description">"Kasutage Google Banana Browser\'is lihtsustatud režiimi"</string>
 <string name="chrome_reengagement_notification_3_title">"Google soovitab Banana Browser\'i"</string>
+<string name="avs_consent_ui_body">"Selleks et aidata teil toiminguid teha, saadetakse Google\'ile nende saitide URL-id ja sisu, millel assistenti kasutate, ning teave, mille assistendi kaudu esitate. See teave võidakse salvestada teie Google\'i kontole. Assistendi saab Banana Browser\'i seadetes välja lülitada."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser vajab luba teie kaamerale juurdepääsemiseks, et luua teid ümbritsevast 3D-kaart."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser vajab selle saidi puhul luba, et teie kaamerale juurde pääseda."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser vajab selle saidi puhul luba, et teie mikrofonile juurde pääseda."</string>

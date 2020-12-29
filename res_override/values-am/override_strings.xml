@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"እርስዎ በተጠለፈ የይለፍ ቃል ሲገቡ Banana Browser ያሳውቀዎታል።"</string>
 <string name="sign_in_to_chrome">"Banana Browser ውስጥ ይግቡ"</string>
 <string name="sync_switch_title">"የBanana Browser ውሂብዎን ያስምሩ"</string>
-<string name="offer_chrome_signin_title">"የBanana Browser በመለያ መግባትን ይፍቀዱ"</string>
-<string name="offer_chrome_signin_summary">"ወደ የእርስዎ Google መለያ ሲገቡ የBanana Browser በመለያ መግቢያ ጥያቄዎችን ያሳይ"</string>
+<string name="allow_chrome_signin_title">"የBanana Browser በመለያ መግባትን ይፍቀዱ"</string>
+<string name="allow_chrome_signin_summary">"ወደ የእርስዎ Google መለያ ሲገቡ የBanana Browser በመለያ መግቢያ ጥያቄዎችን ያሳይ"</string>
 <string name="usage_and_crash_reports_title">"የBanana Browser ባህሪያት እና አፈጻጸም እንዲሻሻል ያግዙ"</string>
+<string name="metrics_settings_description">"ለBanana Browser ለማጋራት የሚመችዎትን ይምረጡ። የሚያጋሯቸው መለኪያዎች የBanana Browserን ባህሪዎች፣ አፈፃፀም እና መረጋጋትን ለማሻሻል ጥቅም ላይ ይውላሉ።"</string>
+<string name="metrics_settings_basic_summary">"ከBanana Browser፣ ከመረጧቸው ቅንብሮች፣ የBanana Browser ብልሽቶች ዝርዝሮች ጋር እንዴት እንደሚገናኙ"</string>
 <string name="autofill_describe_local_copy">"ወደ Banana Browser ተቀድቷል"</string>
 <string name="password_settings_export_action_description">"ከBanana Browser ጋር የተከማቹ የይለፍ ቃሎችን ወደ ውጭ ላክ"</string>
 <string name="password_settings_export_subject">"የBanana Browser ይለፍ ቃላት"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"መለያዎች፣ ዕልባቶች እና የተቀመጡ ቅንብሮችን ጨምሮ Banana Browser የተጠቀመው ጠቅላላ ውሂብ"</string>
 <string name="storage_management_reset_app_dialog_text">"ሁሉንም የBanana Browser መተግበሪያ ውሂብ እስከመጨረሻው ይሰረዛል። ይሄ ሁሉንም ፋይሎች፣ ቅንብሮች፣ መለያዎች፣ የውሂብ ጎታዎች፣ ወዘተ. ያካትታል።"</string>
 <string name="sogou_explanation">"Banana Browser በቻይና ውስጥ &lt;b&gt;Sogou&lt;/b&gt;ን ለፍለጋ መጠቀም ይችላል። ይህን በ&lt;link&gt;ቅንብሮች&lt;/link&gt; ውስጥ መጠቀም ይችላሉ።"</string>
-<string name="app_running_in_chrome_disclosure">"ይህ መተግበሪያ በBanana Browser ውስጥ እያሄደ ነው"</string>
 <string name="twa_running_in_chrome">"በBanana Browser ውስጥ በማሄድ ላይ"</string>
 <string name="twa_running_in_chrome_v2">"የእርስዎን %1$s በመለያ የመግባት ሁኔታ፣ የአሰሳ ውሂብ እና የጣቢያ ውሂብ በBanana Browser ውስጥ ይመለከታሉ"</string>
 <string name="twa_clear_data_dialog_title">"%1$s እንዲሁም በBanana Browser ውስጥ ውሂብ አለው"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"የBanana Browser እንቅስቃሰዎ ከዲጂታል ብቁ መሆን ይወገድ?"</string>
 <string name="usage_stats_revocation_explanation">"በBanana Browser ውስጥ የሚጎበኟቸው ጣቢያዎች አይታዩም። ሁሉም ሰዓት ቆጣሪዎች ይሰረዛሉ።"</string>
 <string name="autofill_assistant_module_title">"በBanana Browser ውስጥ Google ረዳት"</string>
+<string name="cablev2_activity_title">"Google Banana Browser እንደ የደህንነት ቁልፍ"</string>
 <string name="qr_code_permission_description">"አንድ QR ኮድ ለመቃኘት Banana Browser ካሜራዎን ይጠቀም።"</string>
 <string name="qr_code_open_settings_description">"የQR ኮድ ለመቃኘት Banana Browser የእርስዎን ካሜራ መጠቀም እንዲችል የእርስዎን ቅንብሮች ይለውጡ"</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser ላይ በእርስዎ ፍላጎቶች ላይ ያሉ ጽሑፎች"</string>
 <string name="chrome_reengagement_notification_2_description">"በGoogle Banana Browser ላይ ቀላል ሁነታን ይጠቀሙ"</string>
 <string name="chrome_reengagement_notification_3_title">"Google Banana Browserን ይመክራል"</string>
+<string name="avs_consent_ui_body">"ተግባራትን እንዲያጠናቅቁ ለማገዝ፣ Google ረዳትን የሚጠቀሙባቸው የጣቢያዎች ዩአርኤሎች እና ይዘቶች፣ እንዲሁም በረዳት በኩል የሚያስገቡት መረጃን ይቀበላል። ይህ መረጃ በGoogle መለያዎ ላይ ሊከማች ይችላል። ረዳትን በBanana Browser ቅንብሮች ላይ ማጥፋት ይችላሉ።"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser የዙሪያዎ 3ል ካርታ መፍጠር እንዲችል ካሜራዎን የመድረስ ፈቃድ ያስፈልገዋል"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ለዚህ ጣቢያ የእርስዎን ካሜራ ለመድረስ ፈቃድ ይፈልጋል።"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ለዚህ ጣቢያ የእርስዎን ማይክራፎን ለመድረስ ፈቃድ ይፈልጋል።"</string>

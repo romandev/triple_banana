@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"ကျိုးပေါက်ထားသည့် စကားဝှက်ဖြင့် လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser က သင့်ကို အကြောင်းကြားပါမည်။"</string>
 <string name="sign_in_to_chrome">"Banana Browser သို့ လက်မှတ်ထိုး ဝင်"</string>
 <string name="sync_switch_title">"သင်၏ Banana Browser ဒေတာ စင့်ခ်လုပ်ပါ"</string>
-<string name="offer_chrome_signin_title">"Banana Browser သို့ လက်မှတ်ထိုးဝင်ခွင့် ပေးပါ"</string>
-<string name="offer_chrome_signin_summary">"သင်၏ Google Account သို့ လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser လက်မှတ်ထိုးဝင်ရန် အတည်ပြုခြင်းစနစ်များကို ပြသည်"</string>
+<string name="allow_chrome_signin_title">"Banana Browser သို့ လက်မှတ်ထိုးဝင်ခွင့် ပေးပါ"</string>
+<string name="allow_chrome_signin_summary">"သင်၏ Google Account သို့ လက်မှတ်ထိုးဝင်သည့်အခါ Banana Browser လက်မှတ်ထိုးဝင်ရန် အတည်ပြုခြင်းစနစ်များကို ပြသည်"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ၏ ဝန်ဆောင်မှုနှင့် စွမ်းဆောင်ရည် ပိုမိုကောင်းမွန်လာအောင် ကူညီရန်"</string>
+<string name="metrics_settings_description">"Banana Browser အားမျှဝေရန် အဆင်ပြေသောအရာများကို ရွေးပါ။ Banana Browser ၏ ဝန်ဆောင်မှုများ၊ စွမ်းဆောင်ရည်နှင့် တည်ငြိမ်မှုတို့ ပိုကောင်းမွန်စေရန် သင်မျှဝေသောမက်ထရစ်ကို အသုံးပြုပါမည်။"</string>
+<string name="metrics_settings_basic_summary">"Banana Browser နှင့် ပြန်လှန်တုံ့ပြန်ပုံ၊ သင်ရွေးထားသော ဆက်တင်များ၊ Banana Browser ရပ်တန့်သွားခြင်းများ၏ အသေးစိတ်"</string>
 <string name="autofill_describe_local_copy">"Banana Browser သို့ ကူးယူပြီး၏"</string>
 <string name="password_settings_export_action_description">"Banana Browser တွင် သိမ်းဆည်ထားသည့် စကားဝှက်များကို ထုတ်ယူမည်"</string>
 <string name="password_settings_export_subject">"Banana Browser စကားဝှက်များ"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"အကောင့်များ၊ ဝဘ်လိပ်စာများနှင့် သိမ်းဆည်းထားသည့် ဆက်တင်များအပါအဝင် Banana Browser မှ သိမ်းဆည်းထားသည့် စုစုပေါင်းဒေတာများ ပါဝင်ပါသည်"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser ၏ အက်ပ်ဒေတာများကို အပြီးအပိုင် ဖျက်လိုက်ပါမည်။ ၎င်းတို့တွင် ဖိုင်၊ ဆက်တင်၊ အကောင့်၊ ဒေတာဘေ့စ်၊ စသည်တို့အားလုံး ပါဝင်သည်။"</string>
 <string name="sogou_explanation">"Banana Browser သည် တရုတ်ပြည်တွင် ရှာဖွေရန် &lt;b&gt;Sogou&lt;/b&gt; ကို အသုံးပြုနိုင်ပါသည်။ ၎င်းကို &lt;link&gt;ဆက်တင်များ&lt;/link&gt; ထဲတွင် ပြောင်းလဲနိုင်သည်။"</string>
-<string name="app_running_in_chrome_disclosure">"ဤအက်ပ်သည် Banana Browser တွင် ပွင့်နေပါသည်"</string>
 <string name="twa_running_in_chrome">"Banana Browser တွင် ဖွင့်ထားသည်"</string>
 <string name="twa_running_in_chrome_v2">"သင်၏ %1$s လက်မှတ်ထိုးဝင်မှု အခြေအနေ၊ ဖွင့်ကြည့်ထားသည့်မှတ်တမ်းဒေတာနှင့် ဝဘ်ဆိုက်ဒေတာများကို Banana Browser တွင် မြင်ရပါမည်"</string>
 <string name="twa_clear_data_dialog_title">"%1$s သည် Banana Browser တွင်လည်း ဒေတာများရှိသည်"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"\'ဒစ်ဂျစ်တယ် အာရောဂျံ\' မှနေ၍ သင်၏ Banana Browser လုပ်ဆောင်ချက်ကို ‌ဖယ်ရှားလိုပါသလား။"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser တွင် သင်ဖွင့်ကြည့်ထားသည့် ဝဘ်ဆိုက်များကို ပြသမည် မဟုတ်ပါ။ ဝဘ်ဆိုက်တိုင်မာများအားလုံးကို ဖျက်လိုက်ပါမည်။"</string>
 <string name="autofill_assistant_module_title">"Banana Browser အတွင်းရှိ Google Assistant"</string>
+<string name="cablev2_activity_title">"Google Banana Browser ကို \'လုံခြုံရေးကီး\' အဖြစ်"</string>
 <string name="qr_code_permission_description">"QR ကုဒ်ကို စကင်ဖတ်ရန် Banana Browser အား သင့်ကင်မရာ သုံးခွင့်ပြုပါ"</string>
 <string name="qr_code_open_settings_description">"QR ကုဒ်စကင်ဖတ်ရန် သင့်ဆက်တင်များ ပြောင်းပါ၊ သို့မှသာ Banana Browser က သင့်ကင်မရာကို အသုံးပြုနိုင်သည်"</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser ရှိ သင်စိတ်ဝင်စားသော ဆောင်းပါးများ"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser တွင် အပေါ့စားမုဒ် သုံးရန်"</string>
 <string name="chrome_reengagement_notification_3_title">"Google က Banana Browser ကို အသုံးပြုရန် အကြံပြုထားပါသည်"</string>
+<string name="avs_consent_ui_body">"သင်၏လုပ်ဆောင်စရာများ ပြီးမြောက်အောင် ကူညီရန် Assistant ကို အသုံးပြုထားသည့် ဝဘ်ဆိုက်များ၏ URL နှင့် အကြောင်းအရာများအပြင် Assistant ဖြင့် ပေးပို့ထားသည့် အချက်အလက်များကို Google က ရရှိပါမည်။ ဤအချက်အလက်များကို သင်၏ Google အကောင့်တွင် သိမ်းနိုင်သည်။ Assistant ကို Banana Browser ဆက်တင်များတွင် ပိတ်နိုင်သည်။"</string>
 <string name="infobar_missing_ar_camera_permission_text">"သင့်ပတ်ဝန်းကျင်၏ 3D မြေပုံ ပြုလုပ်ရန် Banana Browser က သင့်ကင်မရာကို အသုံးပြုခွင့် လိုအပ်သည်။"</string>
 <string name="infobar_missing_camera_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် ကင်မရာအသုံးပြုခွင့် လိုအပ်ပါသည်။"</string>
 <string name="infobar_missing_microphone_permission_text">"ဤဝဘ်ဆိုက်အတွက် Banana Browser သည် သင်၏ မိုက်ခရိုဖုန်းကို အသုံးပြုခွင့်ရရန် လိုအပ်ပါသည်။"</string>

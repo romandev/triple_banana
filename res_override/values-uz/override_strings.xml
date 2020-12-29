@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Google hisobingizga kirsangiz, Banana Browser oshkor qilingan parollar haqida xabar qiladi."</string>
 <string name="sign_in_to_chrome">"Banana Browser hisobiga kirish"</string>
 <string name="sync_switch_title">"Banana Browser axborotini sinxronlash"</string>
-<string name="offer_chrome_signin_title">"Banana Browser hisobiga kirishga ruxsat berish"</string>
-<string name="offer_chrome_signin_summary">"Google hisobingizga kirish vaqtida Banana Browser brauzeriga kirish oynasi chiqsin"</string>
+<string name="allow_chrome_signin_title">"Banana Browser hisobiga kirishga ruxsat berish"</string>
+<string name="allow_chrome_signin_summary">"Google hisobingizga kirish vaqtida Banana Browser brauzeriga kirish oynasi chiqsin"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser funksiyalari va unumdorligini yaxshilashga yordam bering"</string>
+<string name="metrics_settings_description">"Banana Browserga qaysi maʼlumotlarni ulashish mumkinligini tanlang. Siz taqdim qiladigan statistik maʼlumotlar Banana Browser funksiyalari, unumdorligi va barqarorligini yaxshilashga yordam beradi."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser bilan qanday ishlashingiz, tanlagan sozlamalaringiz, ishdan chiqish hisobotlari"</string>
 <string name="autofill_describe_local_copy">"Banana Browser’ga nusxalandi"</string>
 <string name="password_settings_export_action_description">"Banana Browser saqlab qolgan parollarni eksport qilish"</string>
 <string name="password_settings_export_subject">"Banana Browser parollari"</string>
@@ -95,7 +97,6 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="storage_management_all_storage_description">"Banana Browser foydalanadigan barcha ma’lumotlar: hisoblar, xatcho‘plar va saqlangan sozlamalar"</string>
 <string name="storage_management_reset_app_dialog_text">"Barcha Banana Browser ilovalari ma’lumotlari o‘chiriladi. Bularga barcha fayllar, sozlamalar, hisoblar va ma’lumotlar bazasi kiradi."</string>
 <string name="sogou_explanation">"Banana Browser Xitoyda &lt;b&gt;Sogou&lt;/b&gt; qidiruv tizimidan foydalanishi mumkin. Asosiy qidiruv tizimini &lt;link&gt;Sozlamalar&lt;/link&gt; orqali tayinlash mumkin."</string>
-<string name="app_running_in_chrome_disclosure">"Bu ilova Banana Browser brauzerida ishlayapti."</string>
 <string name="twa_running_in_chrome">"Banana Browser brauzerida ishga tushgan"</string>
 <string name="twa_running_in_chrome_v2">"%1$s saytiga kirish holati, brauzer va sayt maʼlumotlari Banana Browserda chiqadi"</string>
 <string name="twa_clear_data_dialog_title">"Banana Browser brauzeridagi %1$s maʼlumotlari ham tozalanadi"</string>
@@ -121,11 +122,13 @@ Google hisobingiz orqali amalga oshirgan qidiruvlaringiz, brauzer tarixi va bosh
 <string name="usage_stats_revocation_prompt">"Raqamli muvozanat xizmatidan Banana Browser amallari olib tashlansinmi?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser brauzerida ochilgan saytlar chiqmaydi. Barcha sayt taymerlari tozalanadi."</string>
 <string name="autofill_assistant_module_title">"Banana Browser ichidagi Google Assistent"</string>
+<string name="cablev2_activity_title">"Google Banana Browserni elektron kalit sifatida ishlatish"</string>
 <string name="qr_code_permission_description">"Banana Browser QR-kodni skanerlashi uchun kameradan foydalanishga ruxsat bering"</string>
 <string name="qr_code_open_settings_description">"Banana Browser QR kodni skanerlashi uchun sozlamalar orqali kamerani yoqing."</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser brauzerida qiziqishlaringizga oid maqolalar"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser brauzerida Lite rejimidan foydalanish"</string>
 <string name="chrome_reengagement_notification_3_title">"Google Banana Browser brauzerini  tavsiya qiladi"</string>
+<string name="avs_consent_ui_body">"Google internetda ishlashingizni osonlashtirish uchun Assistent orqali kirilgan saytlarning URL manzillari va kontentlarini, shuningdek, soʻrovlarni ham oladi. Bu axborot Google hisobingizga saqlanishi mumkin. Banana Browser sozlamalari ichidan Assistentni faolsizlantirishingiz mumkin."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser atrofingiz 3D xaritasini yaratishi uchun unga kamera ruxsati zarur."</string>
 <string name="infobar_missing_camera_permission_text">"Bu sayt kamerangizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>
 <string name="infobar_missing_microphone_permission_text">"Bu sayt mikrofoningizdan foydalanishi uchun Banana Browser brauzeriga ruxsat berishingiz lozim."</string>

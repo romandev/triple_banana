@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser sẽ thông báo cho bạn khi bạn đăng nhập bằng mật khẩu bị lộ."</string>
 <string name="sign_in_to_chrome">"Đăng nhập vào Banana Browser"</string>
 <string name="sync_switch_title">"Đồng bộ hóa dữ liệu của bạn trên Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Cho phép đăng nhập vào Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Hiển thị lời nhắc đăng nhập vào Banana Browser khi bạn đăng nhập vào Tài khoản Google"</string>
+<string name="allow_chrome_signin_title">"Cho phép đăng nhập vào Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Hiển thị lời nhắc đăng nhập vào Banana Browser khi bạn đăng nhập vào Tài khoản Google"</string>
 <string name="usage_and_crash_reports_title">"Giúp cải thiện hiệu suất và các tính năng của Banana Browser"</string>
+<string name="metrics_settings_description">"Chọn những thông tin mà bạn muốn chia sẻ với Banana Browser. Những thông tin bạn chia sẻ sẽ góp phần cải thiện các tính năng, hiệu suất và độ ổn định của Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Cách bạn tương tác với Banana Browser, các tùy chọn cài đặt bạn đã chọn, thông tin chi tiết về sự cố của Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Đã sao chép vào Banana Browser"</string>
 <string name="password_settings_export_action_description">"Xuất mật khẩu đã lưu trữ với Banana Browser"</string>
 <string name="password_settings_export_subject">"Mật khẩu Banana Browser"</string>
@@ -96,7 +98,6 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="storage_management_all_storage_description">"Tổng số dữ liệu mà Banana Browser sử dụng, bao gồm tài khoản, dấu trang và cài đặt đã lưu"</string>
 <string name="storage_management_reset_app_dialog_text">"Tất cả dữ liệu của ứng dụng Banana Browser sẽ bị xóa vĩnh viễn, bao gồm tất cả các tệp, các tùy chọn cài đặt, tài khoản, cơ sở dữ liệu, v.v."</string>
 <string name="sogou_explanation">"Banana Browser có thể sử dụng &lt;b&gt;Sogou&lt;/b&gt; để tìm kiếm tại Trung Quốc. Bạn có thể thay đổi điều này trong &lt;link&gt;Cài đặt&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Ứng dụng này đang chạy trong Banana Browser"</string>
 <string name="twa_running_in_chrome">"Đang chạy trong Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Trong Banana Browser, bạn sẽ thấy trạng thái đăng nhập, dữ liệu duyệt web và dữ liệu trang web trên %1$s"</string>
 <string name="twa_clear_data_dialog_title">"%1$s cũng có dữ liệu trong Banana Browser"</string>
@@ -122,11 +123,13 @@ Tài khoản Google của bạn có thể có các dạng lịch sử duyệt we
 <string name="usage_stats_revocation_prompt">"Bạn có muốn xóa hoạt động của mình trên Banana Browser khỏi Digital Wellbeing không?"</string>
 <string name="usage_stats_revocation_explanation">"Các trang web bạn truy cập trên Banana Browser sẽ không hiển thị. Tất cả lịch hẹn giờ trên trang web sẽ bị xóa."</string>
 <string name="autofill_assistant_module_title">"Trợ lý Google trong Banana Browser"</string>
+<string name="cablev2_activity_title">"Dùng Google Banana Browser làm khóa bảo mật"</string>
 <string name="qr_code_permission_description">"Để quét mã QR, hãy cho phép Banana Browser dùng máy ảnh của bạn"</string>
 <string name="qr_code_open_settings_description">"Để quét mã QR, hãy thay đổi các tùy chọn cài đặt để Banana Browser có thể sử dụng máy ảnh của bạn"</string>
 <string name="chrome_reengagement_notification_1_description">"Các bài viết về chủ đề mà bạn quan tâm trên Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Dùng Chế độ thu gọn trên Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google đề xuất Banana Browser"</string>
+<string name="avs_consent_ui_body">"Để giúp bạn hoàn thành những việc cần làm, Google sẽ nhận URL và nội dung của các trang web mà bạn sử dụng Trợ lý, cũng như thông tin bạn gửi qua Trợ lý. Thông tin này có thể được lưu trữ trong Tài khoản Google của bạn. Bạn có thể tắt Trợ lý trong phần cài đặt của Banana Browser."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser cần có quyền truy cập máy ảnh của bạn cho trang web này."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser cần có quyền truy cập micrô của bạn cho trang web này."</string>
 <string name="infobar_missing_microphone_camera_permissions_text">"Banana Browser cần có quyền truy cập máy ảnh và micrô của bạn cho trang web này."</string>

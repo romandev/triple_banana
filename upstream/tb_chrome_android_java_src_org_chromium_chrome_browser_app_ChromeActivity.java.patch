@@ -27,7 +27,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActi
      @Override
      protected void onUserLeaveHint() {
          super.onUserLeaveHint();
-@@ -2087,9 +2099,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -2092,9 +2104,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);

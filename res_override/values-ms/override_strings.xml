@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser akan memaklumkan kepada anda apabila anda log masuk menggunakan kata laluan yang terjejas."</string>
 <string name="sign_in_to_chrome">"Log masuk ke Banana Browser"</string>
 <string name="sync_switch_title">"Segerakkan data Banana Browser anda"</string>
-<string name="offer_chrome_signin_title">"Benarkan log masuk Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Paparkan gesaan log masuk Banana Browser apabila anda log masuk ke Akaun Google anda"</string>
+<string name="allow_chrome_signin_title">"Benarkan log masuk Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Paparkan gesaan log masuk Banana Browser apabila anda log masuk ke Akaun Google anda"</string>
 <string name="usage_and_crash_reports_title">"Bantu meningkatkan ciri dan prestasi Banana Browser"</string>
+<string name="metrics_settings_description">"Pilih perkara yang anda selesa untuk dikongsi dengan Banana Browser. Metrik yang anda kongsi akan digunakan untuk membantu kami meningkatkan ciri, prestasi dan kestabilan Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"Cara anda berinteraksi dengan Banana Browser, tetapan yang telah anda pilih, butiran ranap sistem Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Disalin ke Banana Browser"</string>
 <string name="password_settings_export_action_description">"Eksport kata laluan yang disimpan dengan menggunakan Banana Browser"</string>
 <string name="password_settings_export_subject">"Kata Laluan Banana Browser"</string>
@@ -96,7 +98,6 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="storage_management_all_storage_description">"Jumlah data yang digunakan oleh Banana Browser, termasuk akaun, penanda halaman dan tetapan yang disimpan"</string>
 <string name="storage_management_reset_app_dialog_text">"Semua data apl Banana Browser akan dipadamkan selama-lamanya. Ini termasuk semua fail, tetapan, akaun, pangkalan data dan sebagainya."</string>
 <string name="sogou_explanation">"Banana Browser boleh menggunakan &lt;b&gt;Sogou&lt;/b&gt; untuk melakukan carian di China. Anda boleh menukarnya dalam &lt;link&gt;Tetapan&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Apl ini sedang dijalankan dalam Banana Browser"</string>
 <string name="twa_running_in_chrome">"Sedang berjalan dalam Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Anda akan melihat status log masuk %1$s, data semakan imbas dan data tapak anda dalam Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s juga mempunyai data dalam Banana Browser"</string>
@@ -122,11 +123,13 @@ Akaun Google anda mungkin mempunyai sejarah penyemakan imbas dalam bentuk lain s
 <string name="usage_stats_revocation_prompt">"Alih keluar aktiviti Banana Browser anda daripada Kesejahteraan Digital?"</string>
 <string name="usage_stats_revocation_explanation">"Tapak yang anda lawati dalam Banana Browser tidak akan dipaparkan. Semua pemasa tapak akan dipadamkan."</string>
 <string name="autofill_assistant_module_title">"Google Assistant dalam Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser sebagai Kunci Keselamatan"</string>
 <string name="qr_code_permission_description">"Untuk mengimbas kod QR, benarkan Banana Browser menggunakan kamera anda"</string>
 <string name="qr_code_open_settings_description">"Untuk mengimbas kod QR, tukar tetapan supaya Banana Browser boleh menggunakan kamera anda"</string>
 <string name="chrome_reengagement_notification_1_description">"Artikel tentang minat anda di Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Gunakan mod Ringkas pada Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google mengesyorkan Banana Browser"</string>
+<string name="avs_consent_ui_body">"Untuk membantu anda menyelesaikan tugas, Google akan menerima URL dan kandungan bagi laman tempat anda menggunakan Assistant, serta maklumat yang anda serahkan menerusi Assistant. Maklumat ini mungkin disimpan dalam akaun Google anda. Anda boleh mematikan Assistant dalam tetapan Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera anda untuk membuat peta 3D persekitaran anda."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses kamera anda bagi tapak ini."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser memerlukan kebenaran untuk mengakses mikrofon anda bagi tapak ini."</string>

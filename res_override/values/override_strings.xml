@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser will notify you when you sign in with a compromised password."</string>
 <string name="sign_in_to_chrome">"Sign in to Banana Browser"</string>
 <string name="sync_switch_title">"Sync your Banana Browser data"</string>
-<string name="offer_chrome_signin_title">"Allow Banana Browser sign-in"</string>
-<string name="offer_chrome_signin_summary">"Show Banana Browser sign-in prompts when you sign in to your Google Account"</string>
+<string name="allow_chrome_signin_title">"Allow Banana Browser sign-in"</string>
+<string name="allow_chrome_signin_summary">"Show Banana Browser sign-in prompts when you sign in to your Google Account"</string>
 <string name="usage_and_crash_reports_title">"Help improve Banana Browser\'s features and performance"</string>
+<string name="metrics_settings_description">"Choose what you’re comfortable to share with Banana Browser. The metrics you share will be used to help improve Banana Browser’s features, performance, and stability."</string>
+<string name="metrics_settings_basic_summary">"How you interact with Banana Browser, settings you’ve selected, details of Banana Browser crashes"</string>
 <string name="autofill_describe_local_copy">"Copied to Banana Browser"</string>
 <string name="password_settings_export_action_description">"Export passwords stored with Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser Passwords"</string>
@@ -96,7 +98,6 @@ Your Google account may have other forms of browsing history like searches and a
 <string name="storage_management_all_storage_description">"Total data used by Banana Browser, including accounts, bookmarks, and saved settings"</string>
 <string name="storage_management_reset_app_dialog_text">"All Banana Browser’s app data will be deleted permanently. This includes all files, settings, accounts, databases, etc."</string>
 <string name="sogou_explanation">"Banana Browser can use &lt;b&gt;Sogou&lt;/b&gt; for search in China. You can change this in &lt;link&gt;Settings&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"This app is running in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Running in Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"You\'ll see your %1$s sign-in status, browsing data, and site data in Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s also has data in Banana Browser"</string>
@@ -122,11 +123,13 @@ Your Google account may have other forms of browsing history like searches and a
 <string name="usage_stats_revocation_prompt">"Remove your Banana Browser activity from Digital Wellbeing?"</string>
 <string name="usage_stats_revocation_explanation">"Sites you visit in Banana Browser won\'t show. All site timers will be deleted."</string>
 <string name="autofill_assistant_module_title">"Google Assistant in Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser as a Security Key"</string>
 <string name="qr_code_permission_description">"To scan a QR code, let Banana Browser use your camera"</string>
 <string name="qr_code_open_settings_description">"To scan a QR code, change your settings so that Banana Browser can use your camera"</string>
 <string name="chrome_reengagement_notification_1_description">"Articles on your interests on Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Use Lite mode on Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google recommends Banana Browser"</string>
+<string name="avs_consent_ui_body">"To help you complete tasks, Google will receive the URLs and contents of sites on which you use Assistant, as well as information you submit through Assistant. This information may be stored in your Google account. You can turn off Assistant in Banana Browser settings."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser needs permission to access your camera to create a 3D map of your surroundings."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser needs permission to access your camera for this site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser needs permission to access your microphone for this site."</string>

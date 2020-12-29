@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser laat het je weten als je inlogt met een gehackt wachtwoord."</string>
 <string name="sign_in_to_chrome">"Inloggen bij Banana Browser"</string>
 <string name="sync_switch_title">"Je Banana Browser-gegevens synchroniseren"</string>
-<string name="offer_chrome_signin_title">"Inloggen bij Banana Browser toestaan"</string>
-<string name="offer_chrome_signin_summary">"Banana Browser-inlogprompts weergeven als je inlogt op je Google-account"</string>
+<string name="allow_chrome_signin_title">"Inloggen bij Banana Browser toestaan"</string>
+<string name="allow_chrome_signin_summary">"Banana Browser-inlogprompts weergeven als je inlogt op je Google-account"</string>
 <string name="usage_and_crash_reports_title">"Help de functies en prestaties van Banana Browser verbeteren"</string>
+<string name="metrics_settings_description">"Kies welke informatie je bereid bent te delen met Banana Browser. De statistieken die je deelt, worden gebruikt om de functies, prestaties en stabiliteit van Banana Browser te verbeteren."</string>
+<string name="metrics_settings_basic_summary">"Hoe je Banana Browser gebruikt, de instellingen die je hebt geselecteerd, details van Banana Browser-crashes"</string>
 <string name="autofill_describe_local_copy">"Gekopieerd naar Banana Browser"</string>
 <string name="password_settings_export_action_description">"Wachtwoorden exporteren die zijn opgeslagen in Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser-wachtwoorden"</string>
@@ -95,7 +97,6 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="storage_management_all_storage_description">"Totale gegevens gebruikt door Banana Browser, inclusief accounts, bookmarks en opgeslagen instellingen"</string>
 <string name="storage_management_reset_app_dialog_text">"Alle app-gegevens voor Banana Browser worden definitief verwijderd. Dit omvat alle bestanden, instellingen, accounts, databases, enzovoort."</string>
 <string name="sogou_explanation">"Banana Browser kan &lt;b&gt;Sogou&lt;/b&gt; gebruiken voor zoekopdrachten in China. Je kunt dit wijzigen in &lt;link&gt;Instellingen&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Deze app wordt uitgevoerd in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Actief in Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Je ziet je inlogstatus, browsergegevens en sitegegevens van %1$s in Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s heeft ook gegevens in Banana Browser"</string>
@@ -121,11 +122,13 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="usage_stats_revocation_prompt">"Je Banana Browser-activiteit verwijderen uit Digitaal welzijn?"</string>
 <string name="usage_stats_revocation_explanation">"Sites die je in Banana Browser bezoekt, worden niet weergegeven. Alle sitetimers worden verwijderd."</string>
 <string name="autofill_assistant_module_title">"De Google Assistent in Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser als beveiligingssleutel"</string>
 <string name="qr_code_permission_description">"Als je een QR-code wilt scannen, moet je Banana Browser toestemming geven om je camera te gebruiken"</string>
 <string name="qr_code_open_settings_description">"Als je een QR-code wilt scannen, wijzig je de instellingen zodat Banana Browser de camera kan gebruiken"</string>
 <string name="chrome_reengagement_notification_1_description">"Artikelen over je interesses in Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Lite-versie van Google Banana Browser gebruiken"</string>
 <string name="chrome_reengagement_notification_3_title">"Google beveelt Banana Browser aan"</string>
+<string name="avs_consent_ui_body">"Google kan je helpen taken sneller af te ronden en krijgt daarom de URL\'s en content van sites waarop je de Assistent gebruikt en informatie die je via de Assistent indient. Deze informatie kan worden opgeslagen in je Google-account. Je kunt de Assistent uitschakelen in de instellingen van Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser heeft toegangsrechten voor de camera nodig om een 3D-kaart van je omgeving te maken"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser heeft toegangsrechten voor je camera nodig voor deze site."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser heeft toegangsrechten voor je microfoon nodig voor deze site."</string>

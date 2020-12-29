@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Oğurlanmış parol ilə daxil olduqda Banana Browser sizə bildiriş göndərəcək."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'a daxil olun"</string>
 <string name="sync_switch_title">"Banana Browser datasını sinxronizasiya edin"</string>
-<string name="offer_chrome_signin_title">"Banana Browser girişinə icazə verin"</string>
-<string name="offer_chrome_signin_summary">"Google Hesabınıza daxil olarkən Banana Browser giriş dəvətlərini göstərin"</string>
+<string name="allow_chrome_signin_title">"Banana Browser girişinə icazə verin"</string>
+<string name="allow_chrome_signin_summary">"Google Hesabınıza daxil olarkən Banana Browser giriş dəvətlərini göstərin"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'un funksiya və performansını təkmilləşdirməyə kömək edin"</string>
+<string name="metrics_settings_description">"Banana Browser ilə nəyi paylaşmağa hazır olduğunuzu seçin. Paylaşdığınız göstəricilər Banana Browser funksiyaları, məhsuldarlığı və stabilliyini yaxşılaşdırmaq üçün istifadə ediləcək."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser ilə necə əlaqə yaratmağınız, seçdiyiniz ayarlar, Banana Browser xətalarının detalları"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'a kopYanlışır"</string>
 <string name="password_settings_export_action_description">"Banana Browser\'da saxlanılan parolları eksport edin"</string>
 <string name="password_settings_export_subject">"Banana Browser Parolları"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"Hesablar, əlfəcinlər və yadda saxlanılan ayarlar daxil olmaqla, Banana Browser tərəfindən istifadə olunmuş ümumi data"</string>
 <string name="storage_management_reset_app_dialog_text">"Bütün Banana Browser tətbiq datası həmişəlik silinəcək. Bura fayllar, ayarlar, hesablar, data bazası və s. daxildir."</string>
 <string name="sogou_explanation">"Banana Browser, Çində axtarış üçün &lt;b&gt;Sogou&lt;/b&gt; istifadə edə bilər. Bunu &lt;link&gt;Ayarlar&lt;/link&gt; bölməsindən dəyişə bilərsiniz."</string>
-<string name="app_running_in_chrome_disclosure">"Bu tətbiq Banana Browser\'da işləyir"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'da istifadə edilir"</string>
 <string name="twa_running_in_chrome_v2">"Banana Browser\'da %1$s üçün giriş statusu, baxış datası və sayt datanızı görəcəksiniz"</string>
 <string name="twa_clear_data_dialog_title">"Həmçinin, %1$s tətbiqinin Banana Browser\'da datası var"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"Banana Browser fəaliyyəti Rəqəmsal Sağlamlıqdan silinsin?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'da girdiyiniz saytlar göstərilməyəcək. Bütün sayt taymerləri silinəcək."</string>
 <string name="autofill_assistant_module_title">"Google Assistent Banana Browser\'da"</string>
+<string name="cablev2_activity_title">"Təhlükəsizlik Açarı olaraq Google Banana Browser"</string>
 <string name="qr_code_permission_description">"QR kodunu skanlamaq üçün Banana Browser\'a kameranızdan istifadə imkanı verin"</string>
 <string name="qr_code_open_settings_description">"QR kodu skan etmək üçün, ayarları dəyişərək Banana Browser\'un kameranızı istifadə etməsinə icazə verin"</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser\'da maraqlarınıza dair məqalələr"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser\'da Lite rejimindən istifadə edin"</string>
 <string name="chrome_reengagement_notification_3_title">"Google, Banana Browser\'u tövsiyə edir"</string>
+<string name="avs_consent_ui_body">"Tapşırıqları tamamlamaqda sizə kömək etmək üçün Google Assistentdən istifadə etdiyiniz saytların URL və məzmunlarını, eləcə də Assistent vasitəsilə təqdim etdiyiniz məlumatları əldə edəcək. Bu məlumat Google hesabınızda saxlanıla bilər. Assistenti Banana Browser ayarlarında söndürə bilərsiniz."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ətrafınızın 3D xəritəsini yaratmaq üçün kameranıza giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser bu sayt üçün kameraya giriş icazəsi tələb edir."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser bu sayt üçün mikrofona giriş icazəsi tələb edir."</string>

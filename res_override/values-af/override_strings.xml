@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser sal jou in kennis stel wanneer jy met \'n gekompromitteerde wagwoord aanmeld."</string>
 <string name="sign_in_to_chrome">"Meld by Banana Browser aan"</string>
 <string name="sync_switch_title">"Sinkroniseer jou Banana Browser-data"</string>
-<string name="offer_chrome_signin_title">"Laat Banana Browser-aanmelding toe"</string>
-<string name="offer_chrome_signin_summary">"Wys Banana Browser-aanmeldporboodskappe wanneer jy by jou Google-rekening aanmeld"</string>
+<string name="allow_chrome_signin_title">"Laat Banana Browser-aanmelding toe"</string>
+<string name="allow_chrome_signin_summary">"Wys Banana Browser-aanmeldporboodskappe wanneer jy by jou Google-rekening aanmeld"</string>
 <string name="usage_and_crash_reports_title">"Help om Banana Browser se kenmerke en werkverrigting te verbeter"</string>
+<string name="metrics_settings_description">"Kies wat jy gemaklik voel om met Banana Browser te deel. Die maatstawwe wat jy deel, sal gebruik word om te help om Banana Browser se kenmerke, werkverrigting en stabiliteit te verbeter."</string>
+<string name="metrics_settings_basic_summary">"Hoe jy interaksie met Banana Browser het, instellings wat jy gekies het, besonderhede van Banana Browser-omvalle"</string>
 <string name="autofill_describe_local_copy">"Na Banana Browser gekopieer"</string>
 <string name="password_settings_export_action_description">"Voer wagwoorde wat met Banana Browser gestoor word, uit"</string>
 <string name="password_settings_export_subject">"Banana Browser-wagwoorde"</string>
@@ -96,7 +98,6 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="storage_management_all_storage_description">"Alle data deur Banana Browser gebruik, insluitend rekeninge, boekmerke en gestoorde instellings"</string>
 <string name="storage_management_reset_app_dialog_text">"Al Banana Browser se programdata sal permanent uitgevee word. Dit sluit in alle lêers, instellings, rekeninge, databasisse, ens."</string>
 <string name="sogou_explanation">"Banana Browser kan &lt;b&gt;Sogou&lt;/b&gt; gebruik om soektogte in China uit te voer. Jy kan dit in &lt;link&gt;Instellings&lt;/link&gt; verander."</string>
-<string name="app_running_in_chrome_disclosure">"Hierdie program loop tans in Banana Browser"</string>
 <string name="twa_running_in_chrome">"Werk in Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Jy sal jou %1$s-aanmeldingstatus, -blaaierdata en -werfdata in Banana Browser sien"</string>
 <string name="twa_clear_data_dialog_title">"%1$s het ook data in Banana Browser"</string>
@@ -122,11 +123,13 @@ Jou Google-rekening het dalk ander vorme van blaaigeskiedenis, soos soektogte en
 <string name="usage_stats_revocation_prompt">"Verwyder jou Banana Browser-aktiwiteit van Digitale Welstand?"</string>
 <string name="usage_stats_revocation_explanation">"Werwe wat jy in Banana Browser besoek, sal nie wys nie. Alle werftydtellers sal uitgevee word."</string>
 <string name="autofill_assistant_module_title">"Google Assistent in Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser as \'n sekuriteitsleutel"</string>
 <string name="qr_code_permission_description">"Laat Banana Browser jou kamera gebruik om \'n QR-kode te skandeer"</string>
 <string name="qr_code_open_settings_description">"Verander jou instellings sodat Banana Browser jou kamera kan gebruik as jy \'n QR-kode wil skandeer"</string>
 <string name="chrome_reengagement_notification_1_description">"Artikels oor jou belangstellings op Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Gebruik Ligte Modus op Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google beveel Banana Browser aan"</string>
+<string name="avs_consent_ui_body">"Om jou te help om take te voltooi, sal Google die URL\'e en inhoud ontvang van werwe waarop jy Assistent gebruik, asook inligting wat jy deur Assistent indien. Hierdie inligting kan in jou Google-rekening geberg word. Jy kan Assistent in Banana Browser-instellings afskakel."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser moet toestemming hê om toegang te kry tot jou kamera om \'n 3D-kaart van jou omgewing te skep."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser het toestemming nodig vir toegang tot jou kamera vir hierdie werf."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser het toestemming nodig vir toegang tot jou mikrofoon vir hierdie werf."</string>

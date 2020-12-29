@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser enviarache unha notificación cando inicies sesión cun contrasinal vulnerado."</string>
 <string name="sign_in_to_chrome">"Iniciar sesión en Banana Browser"</string>
 <string name="sync_switch_title">"Sincronizar os teus datos de Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Permitir inicio de sesión en Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Mostrar solicitudes de inicio de sesión en Banana Browser cando inicies sesión na túa Conta de Google"</string>
+<string name="allow_chrome_signin_title">"Permitir inicio de sesión en Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Mostrar solicitudes de inicio de sesión en Banana Browser cando inicies sesión na túa Conta de Google"</string>
 <string name="usage_and_crash_reports_title">"Axudar a mellorar o rendemento e as funcións de Banana Browser"</string>
+<string name="metrics_settings_description">"Escolle a información que queiras compartir con Banana Browser. As métricas que compartas usaranse para axudar a mellorar as funcións, o rendemento e a estabilidade de Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"A túa forma de interactuar con Banana Browser, as opcións de configuración que seleccionases e os detalles sobre os fallos de Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Copiouse en Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exporta os contrasinais almacenados en Banana Browser"</string>
 <string name="password_settings_export_subject">"Contrasinais de Banana Browser"</string>
@@ -95,7 +97,6 @@
 <string name="storage_management_all_storage_description">"Datos totais usados por Banana Browser, incluídas as contas, os marcadores e a configuración gardada"</string>
 <string name="storage_management_reset_app_dialog_text">"Eliminaranse permanentemente todos os datos da aplicación Banana Browser, mesmo os ficheiros, a configuración, as contas, as bases de datos  etc."</string>
 <string name="sogou_explanation">"Banana Browser pode utilizar &lt;b&gt;Sogou&lt;/b&gt; para a busca en China. Podes cambiar esta opción en &lt;link&gt;Configuración&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Esta aplicación execútase en Banana Browser"</string>
 <string name="twa_running_in_chrome">"A páxina estase executando en Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Poderás ver o teu estado de inicio de sesión de %1$s, os teus datos de navegación e os datos do sitio en Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s tamén ten datos en Banana Browser"</string>
@@ -121,11 +122,13 @@
 <string name="usage_stats_revocation_prompt">"Queres quitar a túa actividade de Banana Browser de Benestar dixital?"</string>
 <string name="usage_stats_revocation_explanation">"Non se mostrarán os sitios que visites en Banana Browser. Eliminaranse todos os temporizadores dos sitios."</string>
 <string name="autofill_assistant_module_title">"Asistente de Google en Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser como chave de seguranza"</string>
 <string name="qr_code_permission_description">"Para escanear un código QR, permite que Banana Browser utilice a cámara"</string>
 <string name="qr_code_open_settings_description">"Se queres escanear un código QR, cambia a configuración para que Banana Browser poida utilizar a cámara"</string>
 <string name="chrome_reengagement_notification_1_description">"Artigos sobre os teus intereses en Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Usa o modo básico en Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google recomenda Banana Browser"</string>
+<string name="avs_consent_ui_body">"Para axudarche a completar tarefas, Google recibirá os URL e os contidos dos sitios nos que uses o Asistente, ademais da información que envíes a través del. Esta información pode almacenarse na túa conta de Google. Podes desactivar o Asistente de Google na configuración de Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser necesita permiso para acceder á cámara co fin de crear un mapa 3D do que te rodea."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser precisa permiso para que este sitio poida acceder á túa cámara."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser precisa permiso para que este sitio poida acceder ao teu micrófono."</string>

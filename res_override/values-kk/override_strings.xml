@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Ұрланған құпия сөзбен кірген кезде, Banana Browser сізге хабарлайды."</string>
 <string name="sign_in_to_chrome">"Banana Browser жүйесіне кіру"</string>
 <string name="sync_switch_title">"Banana Browser деректеріңізді синхрондау"</string>
-<string name="offer_chrome_signin_title">"Banana Browser браузеріне кіруге рұқсат ету"</string>
-<string name="offer_chrome_signin_summary">"Google есептік жазбаңызға кіргенде, Banana Browser браузеріне кіру туралы хабар көрсету"</string>
+<string name="allow_chrome_signin_title">"Banana Browser браузеріне кіруге рұқсат ету"</string>
+<string name="allow_chrome_signin_summary">"Google есептік жазбаңызға кіргенде, Banana Browser браузеріне кіру туралы хабар көрсету"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser мүмкіндіктері мен жұмысын жақсартуға көмектесу"</string>
+<string name="metrics_settings_description">"Banana Browser-мен қандай ақпарат бөлісетініңізді таңдаңыз. Сіз бөліскен көрсеткіштер Banana Browser функцияларын, оның жұмысын және тұрақтылығын жақсартуға қолданылады."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser-мен қалай жұмыс істейтініңіз, таңдаған параметрлеріңіз, Banana Browser-дағы жаңылыстар туралы деректер"</string>
 <string name="autofill_describe_local_copy">"Banana Browser жүйесіне көшірілген"</string>
 <string name="password_settings_export_action_description">"Banana Browser арқылы сақталған құпия сөздерді экспорттау"</string>
 <string name="password_settings_export_subject">"Banana Browser құпия сөздері"</string>
@@ -46,7 +48,7 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="account_management_sign_out">"Banana Browser жүйесінен шығу"</string>
 <string name="powered_by_chrome_message">"Banana Browser арқылы"</string>
 <string name="chrome_additional_terms_of_service_title">"Banana Browser және Banana Browser OS Қосымша қызмет көрсету шарттары"</string>
-<string name="privacy_notice_title">"Banana Browser құпиялылық ескертпесі"</string>
+<string name="privacy_notice_title">"Banana Browser Құпиялылық мәлімдемесі"</string>
 <string name="signout_managed_account_title">"Banana Browser деректері осы құрылғыдан жойылсын ба?"</string>
 <string name="signout_message">"Бетбелгілер, тарих, құпия сөздер және Banana Browser браузерінің басқа деректері сіздің Google есептік жазбаңызбен синхрондалмайды."</string>
 <string name="remove_local_data">"Бұл құрылғыдан Banana Browser браузерінің деректерін де өшіру"</string>
@@ -95,7 +97,6 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="storage_management_all_storage_description">"Banana Browser пайдаланатын жалпы деректер, соның ішінде есептік жазбалар, бетбелгілер және сақталған параметрлер"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser жүйесінің барлық қолданба деректері (бүкіл файлдар, параметрлер, есептік жазбалар, дерекқорлар, т.б.) біржола жойылады."</string>
 <string name="sogou_explanation">"Banana Browser браузері &lt;b&gt;Sogou&lt;/b&gt; жүйесін Қытайда іздеу үшін пайдалана алады. Мұны &lt;link&gt;Параметрлер&lt;/link&gt; бөлімінен өзгертуге болады."</string>
-<string name="app_running_in_chrome_disclosure">"Бұл қолданба Banana Browser браузерінде жұмыс істеп тұр"</string>
 <string name="twa_running_in_chrome">"Banana Browser браузерінде ашылған"</string>
 <string name="twa_running_in_chrome_v2">"%1$s сайтына кіру күйін, браузерді пайдалану деректерін және Banana Browser-дағы сайт деректерін көресіз."</string>
 <string name="twa_clear_data_dialog_title">"%1$s қолданбасының да Banana Browser браузерінде деректері бар"</string>
@@ -119,11 +120,13 @@ Google есептік жазбасының шолу тарихы басқа Goog
 <string name="usage_stats_revocation_prompt">"Banana Browser браузерін пайдалану деректері Digital Wellbeing қызметінен өшірілсін бе?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser браузерінде ашқан сайттар көрсетілмейді. Барлық сайт таймерлері жойылады."</string>
 <string name="autofill_assistant_module_title">"Banana Browser браузеріндегі Google Assistant"</string>
+<string name="cablev2_activity_title">"Google Banana Browser браузерін қауіпсіздік кілті ретінде пайдалану"</string>
 <string name="qr_code_permission_description">"QR кодын сканерлеу үшін Banana Browser-ға камера пайдалану рұқсатын беріңіз."</string>
 <string name="qr_code_open_settings_description">"QR кодын сканерлеу үшін Banana Browser параметрлерін камера пайдалана алатындай етіп өзгертіңіз."</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser браузеріндегі қызығушылықтарыңызға сай мақалалар"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser браузерінде Lite режимін пайдаланыңыз."</string>
 <string name="chrome_reengagement_notification_3_title">"Google қызметі Banana Browser браузерін ұсынады"</string>
+<string name="avs_consent_ui_body">"Жұмыстарыңызға көмектесу үшін Assistant қызметі қолданылған сайттардың URL мекенжайлары және мазмұны, сонымен қатар Assistant арқылы жіберілген ақпарат Google-ға жіберіледі. Бұл ақпарат Google есептік жазбасында сақталуы мүмкін. Assistant қызметін Banana Browser параметрлерінен өшіре аласыз."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser браузеріне айналаңыздың 3D картасын жасау үшін камераны пайдалану рұқсаты керек."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser браузеріне осы сайтта камераны пайдалануға рұқсат керек."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser браузеріне осы сайтта микрофонды пайдалануға рұқсат керек."</string>

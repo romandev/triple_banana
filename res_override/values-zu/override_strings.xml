@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"I-Banana Browser izokwazisa uma ungena ngemvume ngephasiwedi eyonakalisiwe."</string>
 <string name="sign_in_to_chrome">"Ngena ngemvume ku-Banana Browser"</string>
 <string name="sync_switch_title">"Vumelanisa idatha yakho ye-Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Vumela ukungena ngemvume kwe-Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Bonisa ukwaziswa kokungena ngemvume kwe-Banana Browser uma ungena ngemvume ku-Akhawunti yakho ye-Google"</string>
+<string name="allow_chrome_signin_title">"Vumela ukungena ngemvume kwe-Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Bonisa ukwaziswa kokungena ngemvume kwe-Banana Browser uma ungena ngemvume ku-Akhawunti yakho ye-Google"</string>
 <string name="usage_and_crash_reports_title">"Siza ukuthuthukisa izici ze-Banana Browser nokusebenza"</string>
+<string name="metrics_settings_description">"Khetha lokho onethezeke ngakho ukukwaba ne-Banana Browser. Ama-metric owabayo azosetshenziselwa ukusiza ukuthuthukisa izici ze-Banana Browser, ukusebenza, nokuzinza."</string>
+<string name="metrics_settings_basic_summary">"Indlela yokuxhumana ne-Banana Browser, amasethingi owakhethile, imininingwane yokukhubazeka kwe-Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Ikopishelwe ku-Banana Browser"</string>
 <string name="password_settings_export_action_description">"Khipha amaphasiwedi alondolozwe nge-Banana Browser"</string>
 <string name="password_settings_export_subject">"Amaphasiwedi we-Banana Browser"</string>
@@ -96,7 +98,6 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="storage_management_all_storage_description">"Idatha ephelele esetshenziswe i-Banana Browser, kufaka phakathi ama-akhawunti, amabhukhimakhi, nezilungiselelo ezilondoloziwe"</string>
 <string name="storage_management_reset_app_dialog_text">"Yonke idatha yohlelo lokusebenza le-Banana Browser izosuswa ngunaphakade. Lokhu kufaka phakathi onke amafayela, izilungiselelo, ama-akhawunti, isizindalwazi, njll."</string>
 <string name="sogou_explanation">"I-Banana Browser ingasebenzisa i-&lt;b&gt;Sogou&lt;/b&gt; ukusesha e-China. Ungashintsha lokhu &lt;link&gt;kuzilungiselelo&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Lolu hlelo lokusebenza lisebenza ku-Banana Browser"</string>
 <string name="twa_running_in_chrome">"Ukusebenza ku-Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Uzobona isimo sakho sokungena ngemvume se-%1$s, idatha yokuphequlula, nedatha yesayithi ku-Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"I-%1$s iphinda ibe nedatha ku-Banana Browser"</string>
@@ -122,11 +123,13 @@ I-akhawunti yakho ye-Google ingaba namanye amafomu omlando okuphequlula afana no
 <string name="usage_stats_revocation_prompt">"Susa umsebenzi wakho we-Banana Browser kusukela ku-Digital Wellbeing?"</string>
 <string name="usage_stats_revocation_explanation">"Amasayithi owavakashelayo ku-Banana Browser ngeke aze avele. Zonke izibali sikhathi zesayithi zizosuswa."</string>
 <string name="autofill_assistant_module_title">"Umsizi we-Google ku-Banana Browser"</string>
+<string name="cablev2_activity_title">"I-Google Banana Browser Njengokhiye Wokuqinisekisa Ubunikazi"</string>
 <string name="qr_code_permission_description">"Ukuskena ikhodi ye-QR, vumela i-Banana Browser ukusebenzisa ikhamera yakho"</string>
 <string name="qr_code_open_settings_description">"Ukuze uskene ikhodi ye-QR, shintsha izilungiselelo zakho ukuze i-Banana Browser ikwazi ukusebenzisa ikhamera yakho"</string>
 <string name="chrome_reengagement_notification_1_description">"Ama-athikili akho wongaba nentshisekelo kukho ku-Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Sebenzisa Imodi elula ku-Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"I-Google incoma i-Banana Browser"</string>
+<string name="avs_consent_ui_body">"Ukukusiza uqedele imisebenzi, i-Google izothola ama-URL nokuqukethwe kwamasayithi osebenzisa kuwo umsizi, kanye nolwazi oluthumela ngomsizi. Lolu lwazi lungase lugcinwe ku-akhawunti yakho ye-Google. Ungavala umsizi kumasethingi we-Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"I-Banana Browser idinga imvume yokufinyelela kwikhamera yakho ukudala imephu engu-3D yendawo yakho ekuzungezile."</string>
 <string name="infobar_missing_camera_permission_text">"I-Banana Browser idinga imvume yokufinyelela ikhamera yakho kuleli sayithi."</string>
 <string name="infobar_missing_microphone_permission_text">"I-Banana Browser idinga ukufinyelela imakrofoni yakho yaleli sayithi."</string>

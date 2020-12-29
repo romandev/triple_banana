@@ -6,8 +6,9 @@
 <string name="password_check_status_message_error_unknown">"Banana Browser ne more preveriti vaših gesel. Poskusite znova."</string>
 <string name="password_check_status_subtitle_no_findings">"Banana Browser vas bo obvestil, če se prijavite z ogroženim geslom."</string>
 <string name="sign_in_to_chrome">"Prijava v Banana Browser"</string>
-<string name="offer_chrome_signin_title">"Omogočanje prijave v Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Prikaz pozivov za prijavo v Banana Browser, ko se prijavite v račun Google."</string>
+<string name="allow_chrome_signin_title">"Omogočanje prijave v Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Prikaz pozivov za prijavo v Banana Browser, ko se prijavite v račun Google."</string>
+<string name="metrics_settings_basic_summary">"Kako uporabljate Banana Browser, katere nastavitve ste izbrali, podrobnosti zrušitev Chroma"</string>
 <string name="autofill_describe_local_copy">"Kopirano v Banana Browser"</string>
 <string name="password_settings_export_subject">"Gesla za Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Zaradi zaznavanja nevarnih aplikacij in spletnih mest Banana Browser Googlu pošlje URL-je nekaterih strani, ki jih obiščete, omejene podatke o sistemu in vsebino nekaterih strani"</string>
@@ -65,6 +66,7 @@
 <string name="iph_download_infobar_downloads_are_faster_text">"Banana Browser zdaj hitreje prenaša datoteke"</string>
 <string name="near_oom_intervention_message">"Ta stran uporablja preveč pomnilnika, zato jo je Banana Browser zaustavil."</string>
 <string name="near_oom_reduction_message">"Ta stran uporablja preveč pomnilnika, zato je Banana Browser odstranil nekaj vsebine."</string>
+<string name="cablev2_activity_title">"Google Banana Browser kot varnostni ključ"</string>
 <string name="qr_code_open_settings_description">"Če želite optično prebrati kodo QR, spremenite nastavitve, da bo Banana Browser lahko uporabljal kamero"</string>
 <string name="chrome_reengagement_notification_3_title">"Google priporoča Banana Browser"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser potrebuje dovoljenje za dostop do fotoaparata zaradi ustvarjanja tridimenzionalnega zemljevida okolice."</string>

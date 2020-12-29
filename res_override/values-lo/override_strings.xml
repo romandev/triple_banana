@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser ຈະແຈ້ງບອກທ່ານເມື່ອທ່ານເຂົ້າສູ່ລະບົບດ້ວຍລະຫັດຜ່ານທີ່ຖືກລະເມີດ."</string>
 <string name="sign_in_to_chrome">"ລົງຊື່ເຂົ້າ​ໃຊ້ Banana Browser"</string>
 <string name="sync_switch_title">"ຊິ້ງຂໍ້ມູນ Banana Browser ຂອງທ່ານ"</string>
-<string name="offer_chrome_signin_title">"ອະນຸຍາດການເຂົ້າສູ່ລະບົບ Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"ສະແດງການເຕືອນການເຂົ້າສູ່ລະບົບຂອງ Banana Browser ເມື່ອທ່ານເຂົ້າສູ່ລະບົບບັນຊີ Google ຂອງທ່ານ"</string>
+<string name="allow_chrome_signin_title">"ອະນຸຍາດການເຂົ້າສູ່ລະບົບ Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"ສະແດງການເຕືອນການເຂົ້າສູ່ລະບົບຂອງ Banana Browser ເມື່ອທ່ານເຂົ້າສູ່ລະບົບບັນຊີ Google ຂອງທ່ານ"</string>
 <string name="usage_and_crash_reports_title">"ຊ່ວຍປັບປຸງຄຸນສົມບັດ ແລະ ປະສິດທິພາບຂອງ Banana Browser"</string>
+<string name="metrics_settings_description">"ເລືອກສິ່ງທີ່ທ່ານສະບາຍໃຈຈະແບ່ງປັນກັບ Banana Browser. ການວັດແທກທີ່ທ່ານແບ່ງປັນຈະຖືກໃຊ້ເພື່ອຊ່ວຍປັບປຸງຄຸນສົມບັດ, ປະສິດທິພາບ ແລະ ຄວາມສະຖຽນຂອງ Banana Browser."</string>
+<string name="metrics_settings_basic_summary">"ວິທີທີ່ທ່ານໂຕ້ຕອບກັບ Banana Browser, ການຕັ້ງຄ່າທີ່ທ່ານເລືອກ, ລາຍລະອຽດການຂັດຂ້ອງຂອງ Banana Browser"</string>
 <string name="autofill_describe_local_copy">"ອັດ​ສຳ​ເນົາ​ໃສ່ Banana Browser ແລ້ວ"</string>
 <string name="password_settings_export_action_description">"ສົ່ງອອກລະຫັດຜ່ານທີ່ເກັບໄວ້ນຳ Banana Browser"</string>
 <string name="password_settings_export_subject">"ລະຫັດຜ່ານຂອງ Banana Browser"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"ຂໍ້ມູນທັງໝົດທີ່ໃຊ້ໂດຍ Banana Browser, ລວມທັງບັນຊີ, ບຸກມາກ ແລະ ການຕັ້ງຄ່າທີ່ບັນທຶກໄວ້"</string>
 <string name="storage_management_reset_app_dialog_text">"ທຸກຂໍ້ມູນແອັບຂອງ Banana Browser ຈະຖືກລຶບຢ່າງຖາວອນ. ນີ້ຮວມເອົາທຸກໄຟລ໌, ການຕັ້ງຄ່າ, ບັນຊີ, ຖານຂໍ້ມູນ ແລະ ອື່ນໆ."</string>
 <string name="sogou_explanation">"Banana Browser ສາມາດໃຊ້ &lt;b&gt;Sogou&lt;/b&gt; ສຳລັບການຊອກຫາໃນປະເທດຈີນ. ທ່ານສາມາດປ່ຽນສິ່ງນີ້ໄດ້ໃນ &lt;link&gt;ການຕັ້ງຄ່າ&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"ແອັບນີ້ກຳລັງເປີດໃຊ້ໃນ Banana Browser"</string>
 <string name="twa_running_in_chrome">"ກຳລັງເປີດຢູ່ໃນ Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"ທ່ານຈະເຫັນສະຖານະການເຂົ້າສູ່ລະບົບ %1$s, ຂໍ້ມູນການທ່ອງເວັບ ແລະ ຂໍ້ມູນເວັບໄຊຂອງທ່ານໃນ Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$sຍັງມີຂໍ້ມູນໃນ Banana Browser ນຳ"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"ລຶບການເຄື່ອນໄຫວໃນ Banana Browser ຂອງທ່ານອອກຈາກ Digital Wellbeing ບໍ?"</string>
 <string name="usage_stats_revocation_explanation">"ເວັບໄຊທີ່ທ່ານເຂົ້າເບິ່ງໃນ Banana Browser ຈະບໍ່ສະແດງ. ລະບົບຈະລຶບໂມງນັບຖອຍຫຼັງຂອງເວັບໄຊທັງໝົດ."</string>
 <string name="autofill_assistant_module_title">"ຜູ້ຊ່ວຍ Google ໃນ Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser ເປັນກະແຈຄວາມປອດໄພ"</string>
 <string name="qr_code_permission_description">"ເພື່ອສະແກນລະຫັດ QR, ກະລຸນາອະນຸຍາດໃຫ້ Banana Browser ໃຊ້ກ້ອງຂອງທ່ານ"</string>
 <string name="qr_code_open_settings_description">"ເພື່ອສະແກນລະຫັດ QR, ກະລຸນາປ່ຽນການຕັ້ງຄ່າຂອງທ່ານ ເພື່ອໃຫ້ Banana Browser ສາມາດໃຊ້ກ້ອງຂອງທ່ານໄດ້"</string>
 <string name="chrome_reengagement_notification_1_description">"ບົດຄວາມທີ່ທ່ານສົນໃຈໃນ Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"ໃຊ້ໂໝດ Lite ໃນ Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google ແນະນຳໃຫ້ໃຊ້ Banana Browser"</string>
+<string name="avs_consent_ui_body">"ເພື່ອຊ່ວຍທ່ານເຮັດສຳເລັດໜ້າວຽກ, Google ຈະໄດ້ຮັບ URL ແລະ ເນື້ອຫາຂອງເວັບໄຊທີ່ທ່ານໃຊ້ຜູ້ຊ່ວຍ, ພ້ອມກັບຂໍ້ມູນທີ່ທ່ານສົ່ງຜ່ານຜູ້ຊ່ວຍ. ຂໍ້ມູນນີ້ອາດຈະຖືກເກັບໄວ້ໃນບັນຊີ Google ຂອງທ່ານ. ທ່ານສາມາດປິດຜູ້ຊ່ວຍໄດ້ໃນການຕັ້ງຄ່າ Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງກ້ອງຂອງທ່ານເພື່ອສ້າງແຜນທີ່ 3 ມິຕິຂອງສະພາບແວດລ້ອມອ້ອມຂ້າງຂອງທ່ານ."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງກ້ອງຖ່າຍຮູບຂອງທ່ານສຳລັບໄຊນີ້."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ຕ້ອງການການອະນຸຍາດເພື່ອເຂົ້າເຖິງໄມໂຄຣໂຟນຂອງທ່ານສຳລັບເວັບໄຊນີ້."</string>

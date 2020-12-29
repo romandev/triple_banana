@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser giver dig besked, når du logger ind med en kompromitteret adgangskode."</string>
 <string name="sign_in_to_chrome">"Log ind i Banana Browser"</string>
 <string name="sync_switch_title">"Synkroniser dine Banana Browser-data"</string>
-<string name="offer_chrome_signin_title">"Tillad login i Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Vis Banana Browser-loginbeskeder, når du logger ind på din Google-konto"</string>
+<string name="allow_chrome_signin_title">"Tillad login i Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Vis Banana Browser-loginbeskeder, når du logger ind på din Google-konto"</string>
 <string name="usage_and_crash_reports_title">"Vær med til at forbedre Banana Browsers funktioner og ydeevne"</string>
+<string name="metrics_settings_description">"Vælg, hvad der gerne må deles med Banana Browser. De metrics, du deler, bruges til at hjælpe med at forbedre Banana Browsers funktioner, ydeevne og stabilitet."</string>
+<string name="metrics_settings_basic_summary">"Den måde, du interagerer med Banana Browser på, de indstillinger, du har valgt, og oplysninger om Banana Browser-nedbrud"</string>
 <string name="autofill_describe_local_copy">"Kopieret til Banana Browser"</string>
 <string name="password_settings_export_action_description">"Eksportér adgangskoder, der er gemt med Banana Browser"</string>
 <string name="password_settings_export_subject">"Banana Browser-adgangskoder"</string>
@@ -96,7 +98,6 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="storage_management_all_storage_description">"Samlet mængde data, som Banana Browser anvender, herunder konti, bogmærker og gemte indstillinger"</string>
 <string name="storage_management_reset_app_dialog_text">"Alle Banana Browsers appdata slettes permanent. Dette omfatter alle filer, indstillinger, konti, databaser osv."</string>
 <string name="sogou_explanation">"Banana Browser kan bruge &lt;b&gt;Sogou&lt;/b&gt; til søgninger i Kina. Du kan ændre dette i &lt;link&gt;Indstillinger&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Denne app kører i Banana Browser"</string>
 <string name="twa_running_in_chrome">"Kører i Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Du kan se loginstatus, browserdata og websiteoplysninger for %1$s i Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s har også data i Banana Browser"</string>
@@ -122,11 +123,13 @@ Din Google-konto kan have andre former for browserhistorik, f.eks. søgninger og
 <string name="usage_stats_revocation_prompt">"Vil du fjerne din Banana Browser-aktivitet fra Digital balance?"</string>
 <string name="usage_stats_revocation_explanation">"Websites, du besøger i Banana Browser, vises ikke. Alle timere for websites slettes."</string>
 <string name="autofill_assistant_module_title">"Google Assistent i Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser som sikkerhedsnøgle"</string>
 <string name="qr_code_permission_description">"Hvis du vil scanne en QR-kode, skal du give Banana Browser lov til at bruge dit kamera"</string>
 <string name="qr_code_open_settings_description">"For at scanne en QR-kode skal du ændre dine indstillinger, så Banana Browser kan bruge dit kamera"</string>
 <string name="chrome_reengagement_notification_1_description">"Artikler om dine interesser i Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Brug Lite-tilstand i Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google anbefaler Banana Browser"</string>
+<string name="avs_consent_ui_body">"For at hjælpe dig med at udføre opgaver modtager Google webadresser for og indhold på websites, hvor du bruger Assistent, samt oplysninger du indsender via Assistent. Disse oplysninger gemmes muligvis på din Google-konto. Du kan deaktivere Assistent i indstillingerne for Banana Browser."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser skal have adgangstilladelse til dit kamera for at oprette et 3D-kort over dine omgivelser."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser skal have tilladelse til at bruge dit kamera på dette website."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser skal have tilladelse til at bruge din mikrofon på dette website."</string>

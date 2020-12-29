@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"유출된 비밀번호로 로그인하면 Banana Browser에서 알림을 표시합니다."</string>
 <string name="sign_in_to_chrome">"Banana Browser에 로그인"</string>
 <string name="sync_switch_title">"Banana Browser 데이터 동기화"</string>
-<string name="offer_chrome_signin_title">"Banana Browser 로그인 허용"</string>
-<string name="offer_chrome_signin_summary">"Google 계정에 로그인하면 Banana Browser 로그인 메시지 표시"</string>
+<string name="allow_chrome_signin_title">"Banana Browser 로그인 허용"</string>
+<string name="allow_chrome_signin_summary">"Google 계정에 로그인하면 Banana Browser 로그인 메시지 표시"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser의 기능 및 성능 개선에 참여"</string>
+<string name="metrics_settings_description">"Banana Browser과 공유할 항목을 선택합니다. 공유하는 측정항목은 Banana Browser의 기능, 성능, 안정성을 개선하는 데 사용됩니다."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser과 상호작용하는 방식, 선택한 설정, Banana Browser 비정상 종료 세부정보"</string>
 <string name="autofill_describe_local_copy">"Banana Browser에 복사됨"</string>
 <string name="password_settings_export_action_description">"Banana Browser으로 저장한 비밀번호 내보내기"</string>
 <string name="password_settings_export_subject">"Banana Browser 비밀번호"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"계정, 북마크, 저장된 설정 등 Banana Browser에서 사용한 전체 데이터"</string>
 <string name="storage_management_reset_app_dialog_text">"모든 파일, 설정, 계정, 데이터베이스 등을 포함한 Banana Browser의 모든 앱 데이터가 완전히 삭제됩니다."</string>
 <string name="sogou_explanation">"중국에서 검색할 때 Banana Browser에서 &lt;b&gt;Sogou&lt;/b&gt;를 사용할 수 있습니다. &lt;link&gt;설정&lt;/link&gt;에서 변경할 수 있습니다."</string>
-<string name="app_running_in_chrome_disclosure">"이 앱은 Banana Browser에서 실행 중입니다."</string>
 <string name="twa_running_in_chrome">"Banana Browser에서 실행 중"</string>
 <string name="twa_running_in_chrome_v2">"Banana Browser에서 %1$s 로그인 상태, 인터넷 사용 기록, 사이트 데이터를 볼 수 있습니다."</string>
 <string name="twa_clear_data_dialog_title">"%1$s도 Banana Browser에서 데이터를 보유하고 있습니다"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"디지털 웰빙에서 Banana Browser 활동을 삭제할까요?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser에서 방문한 사이트가 표시되지 않습니다. 모든 사이트 타이머가 삭제됩니다."</string>
 <string name="autofill_assistant_module_title">"Banana Browser의 Google 어시스턴트"</string>
+<string name="cablev2_activity_title">"Banana Browser를 보안 키로 사용"</string>
 <string name="qr_code_permission_description">"QR 코드를 스캔하려면 Banana Browser에서 카메라를 사용할 수 있도록 허용하세요."</string>
 <string name="qr_code_open_settings_description">"QR 코드를 스캔하려면 Banana Browser에서 카메라를 사용할 수 있도록 설정을 변경하세요."</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser에서 관심분야 기사를 읽어보세요."</string>
 <string name="chrome_reengagement_notification_2_description">"Banana Browser에서 라이트 모드를 사용하세요."</string>
 <string name="chrome_reengagement_notification_3_title">"Google에서 추천하는 Banana Browser"</string>
+<string name="avs_consent_ui_body">"작업 처리를 돕기 위해 내가 어시스턴트를 통해 제출한 정보뿐만 아니라 어시스턴트를 이용한 사이트의 URL과 콘텐츠도 Google에 전송됩니다. 이 정보는 Google 계정에 저장될 수 있습니다. Banana Browser 설정에서 어시스턴트를 사용 중지할 수 있습니다."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser에서 주변 3D 지도를 만들려면 카메라 액세스 권한이 필요합니다."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser가 이 사이트에서 카메라에 액세스하려면 권한이 필요합니다."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser가 이 사이트에서 마이크에 액세스하려면 권한이 필요합니다."</string>

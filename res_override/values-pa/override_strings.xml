@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"ਤੁਹਾਡੇ ਵੱਲੋਂ ਕਿਸੇ ਛੇੜਛਾੜ ਵਾਲੇ ਪਾਸਵਰਡ ਨਾਲ ਸਾਈਨ-ਇਨ ਕਰਨ \'ਤੇ Banana Browser ਤੁਹਾਨੂੰ ਸੂਚਿਤ ਕਰੇਗਾ।"</string>
 <string name="sign_in_to_chrome">"Banana Browser \'ਤੇ ਸਾਈਨ-ਇਨ ਕਰੋ"</string>
 <string name="sync_switch_title">"ਆਪਣੇ Banana Browser ਡਾਟੇ ਦਾ ਸਮਕਾਲੀਕਰਨ ਕਰੋ"</string>
-<string name="offer_chrome_signin_title">"Banana Browser ਵਿੱਚ ਸਾਈਨ-ਇਨ ਕਰਨ ਦਿਓ"</string>
-<string name="offer_chrome_signin_summary">"ਆਪਣੇ Google ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ-ਇਨ ਕਰਨ \'ਤੇ Banana Browser ਸਾਈਨ-ਇਨ ਉਤਪ੍ਰੇਰਕ ਦਿਖਾਓ"</string>
+<string name="allow_chrome_signin_title">"Banana Browser ਵਿੱਚ ਸਾਈਨ-ਇਨ ਕਰਨ ਦਿਓ"</string>
+<string name="allow_chrome_signin_summary">"ਆਪਣੇ Google ਖਾਤੇ ਵਿੱਚ ਸਾਈਨ-ਇਨ ਕਰਨ \'ਤੇ Banana Browser ਸਾਈਨ-ਇਨ ਉਤਪ੍ਰੇਰਕ ਦਿਖਾਓ"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ ਅਤੇ ਕਾਰਗੁਜ਼ਾਰੀ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰੋ"</string>
+<string name="metrics_settings_description">"ਚੁਣੋ ਕਿ ਜਿਸ ਨਾਲ ਤੁਸੀਂ Banana Browser ਨਾਲ ਜਾਣਕਾਰੀ ਸਾਂਝੀ ਕਰਨ ਵਿੱਚ ਸਹਿਜ ਹੋ। ਤੁਹਾਡੇ ਦੁਆਰਾ ਸਾਂਝੀ ਕੀਤੀ ਗਈ ਮੈਟਰਿਕਸ Banana Browser ਦੀਆਂ ਵਿਸ਼ੇਸ਼ਤਾਵਾਂ, ਪ੍ਰਦਰਸ਼ਨ ਅਤੇ ਸਥਿਰਤਾ ਨੂੰ ਬਿਹਤਰ ਬਣਾਉਣ ਵਿੱਚ ਸਹਾਇਤਾ ਲਈ ਵਰਤੀ ਜਾਵੇਗੀ।"</string>
+<string name="metrics_settings_basic_summary">"ਤੁਹਾਡਾ Banana Browser ਨਾਲ ਅੰਤਰਕਿਰਿਆ ਕਰਨ ਦਾ ਤਰੀਕਾ, ਤੁਹਾਡੀਆਂ ਚੁਣੀਆਂ ਹੋਈਆਂ ਸੈਟਿੰਗਾਂ, Banana Browser ਕ੍ਰੈਸ਼ ਸੰਬੰਧੀ ਵੇਰਵੇ"</string>
 <string name="autofill_describe_local_copy">"Banana Browser \'ਤੇ ਕਾਪੀ ਕੀਤਾ"</string>
 <string name="password_settings_export_action_description">"Banana Browser ਵਿੱਚ ਸਟੋਰ ਕੀਤੇ ਪਾਸਵਰਡਾਂ ਦਾ ਨਿਰਯਾਤ ਕਰੋ"</string>
 <string name="password_settings_export_subject">"Banana Browser ਪਾਸਵਰਡ"</string>
@@ -95,7 +97,6 @@
 <string name="storage_management_all_storage_description">"Banana Browser ਵੱਲੋਂ ਵਰਤਿਆ ਜਾਣ ਵਾਲਾ ਕੁੱਲ ਡਾਟਾ, ਜਿਸ ਵਿੱਚ ਖਾਤੇ, ਬੁੱਕਮਾਰਕ, ਅਤੇ ਰੱਖਿਅਤ ਕੀਤੀਆਂ ਸੈਟਿੰਗਾਂ ਸ਼ਾਮਲ ਹਨ"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser ਦਾ ਸਾਰਾ ਐਪ ਡਾਟਾ ਸਥਾਈ ਤੌਰ \'ਤੇ ਮਿਟਾ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਇਸ ਵਿੱਚ ਸਾਰੀਆਂ ਫ਼ਾਈਲਾਂ, ਸੈਟਿੰਗਾਂ, ਖਾਤੇ, ਡਾਟਾਬੇਸ ਆਦਿ ਸ਼ਾਮਲ ਹਨ।"</string>
 <string name="sogou_explanation">"Banana Browser ਚੀਨ ਵਿੱਚ ਖੋਜ ਲਈ &lt;b&gt;Sogou&lt;/b&gt; ਦੀ ਵਰਤੋਂ ਕਰ ਸਕਦਾ ਹੈ। ਤੁਸੀਂ ਇਸ ਨੂੰ &lt;link&gt;ਸੈਟਿੰਗਾਂ&lt;/link&gt; ਵਿੱਚੋਂ ਬਦਲ ਸਕਦੇ ਹੋ।"</string>
-<string name="app_running_in_chrome_disclosure">"ਇਹ ਐਪ Banana Browser ਵਿੱਚ ਚੱਲ ਰਹੀ ਹੈ"</string>
 <string name="twa_running_in_chrome">"Banana Browser ਵਿੱਚ ਦਿਖਾਇਆ ਜਾ ਰਿਹਾ ਹੈ"</string>
 <string name="twa_running_in_chrome_v2">"ਤੁਸੀਂ Banana Browser ਵਿੱਚ ਆਪਣੀ %1$s ਸਾਈਨ-ਇਨ ਸਥਿਤੀ, ਬ੍ਰਾਊਜ਼ਿੰਗ ਡਾਟਾ ਅਤੇ ਸਾਈਟ ਡਾਟਾ ਦੇਖੋਗੇ"</string>
 <string name="twa_clear_data_dialog_title">"%1$s ਦਾ ਡਾਟਾ ਵੀ Banana Browser ਵਿੱਚ ਹੈ"</string>
@@ -121,11 +122,13 @@
 <string name="usage_stats_revocation_prompt">"ਕੀ ਡਿਜੀਟਲ ਜੀਵਨਸ਼ੈਲੀ ਤੋਂ ਆਪਣੀ Banana Browser ਸਰਗਰਮੀ ਹਟਾਉਣੀ ਹੈ?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser ਵਿੱਚ ਉਹ ਸਾਈਟਾਂ ਨਹੀਂ ਦਿਸਣਗੀਆਂ, ਜਿਨ੍ਹਾਂ \'ਤੇ ਤੁਸੀਂ ਜਾਂਦੇ ਹੋ। ਸਾਰੇ ਸਾਈਟ ਟਾਈਮਰ ਮਿਟਾ ਦਿੱਤੇ ਜਾਣਗੇ।"</string>
 <string name="autofill_assistant_module_title">"Banana Browser ਵਿੱਚ \'Google ਅਸਿਸਟੈਂਟ\'"</string>
+<string name="cablev2_activity_title">"Google Banana Browser ਨੂੰ ਤੁਹਾਡੇ ਫ਼ੋਨ ਦੀ ਸੁਰੱਖਿਆ ਕੁੰਜੀ ਵਜੋਂ ਵਰਤਣਾ"</string>
 <string name="qr_code_permission_description">"ਕਿਸੇ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ, Banana Browser ਨੂੰ ਤੁਹਾਡਾ ਕੈਮਰਾ ਵਰਤਣ ਦਿਓ"</string>
 <string name="qr_code_open_settings_description">"ਕਿਸੇ QR ਕੋਡ ਨੂੰ ਸਕੈਨ ਕਰਨ ਲਈ, ਆਪਣੀਆਂ ਸੈਟਿੰਗਾਂ ਬਦਲੋ ਤਾਂ ਜੋ Banana Browser ਤੁਹਾਡੇ ਕੈਮਰੇ ਨੂੰ ਵਰਤ ਸਕੇ"</string>
 <string name="chrome_reengagement_notification_1_description">"Banana Browser \'ਤੇ ਤੁਹਾਡੀਆਂ ਦਿਲਚਸਪੀਆਂ ਬਾਰੇ ਲੇਖ"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser \'ਤੇ ਲਾਈਟ ਮੋਡ ਵਰਤੋ"</string>
 <string name="chrome_reengagement_notification_3_title">"Google, Banana Browser ਦੀ ਸਿਫ਼ਾਰਸ਼ ਕਰਦਾ ਹੈ"</string>
+<string name="avs_consent_ui_body">"ਕਾਰਜ ਪੂਰੇ ਕਰਨ ਵਿੱਚ ਤੁਹਾਡੀ ਮਦਦ ਕਰਨ ਲਈ, Google ਨੂੰ ਉਹਨਾਂ ਸਾਈਟਾਂ ਦੇ URL ਅਤੇ ਸਮੱਗਰੀਆਂ ਮਿਲਣਗੀਆਂ ਜਿਨ੍ਹਾਂ \'ਤੇ ਤੁਸੀਂ Assistant ਨੂੰ ਵਰਤਦੇ ਹੋ, ਨਾਲ ਹੀ ਤੁਹਾਡੇ ਵੱਲੋਂ Assistant ਰਾਹੀਂ ਸਪੁਰਦ ਕੀਤੀ ਜਾਣਕਾਰੀ ਵੀ ਮਿਲੇਗੀ। ਇਹ ਜਾਣਕਾਰੀ ਸ਼ਾਇਦ ਤੁਹਾਡੇ Google ਖਾਤੇ ਵਿੱਚ ਸਟੋਰ ਕੀਤੀ ਜਾਵੇ। ਤੁਸੀਂ Banana Browser ਸੈਟਿੰਗਾਂ ਵਿੱਚ Assistant ਨੂੰ ਬੰਦ ਕਰ ਸਕਦੇ ਹੋ।"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser ਨੂੰ ਤੁਹਾਡੇ ਆਲੇ-ਦੁਆਲੇ ਦਾ 3D ਨਕਸ਼ਾ ਬਣਾਉਣ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਕੈਮਰੇ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser ਨੂੰ ਇਸ ਸਾਈਟ ਵਾਸਤੇ ਤੁਹਾਡੇ ਮਾਈਕ੍ਰੋਫ਼ੋਨ ਤੱਕ ਪਹੁੰਚ ਕਰਨ ਲਈ ਇਜਾਜ਼ਤ ਦੀ ਲੋੜ ਹੈ।"</string>

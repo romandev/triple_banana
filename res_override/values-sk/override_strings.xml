@@ -63,7 +63,6 @@
 <string name="storage_management_clear_unimportant_dialog_text">"Táto akcia vymaže súbory cookie, vyrovnávaciu pamäť a ďalšie údaje webov, ktoré Banana Browser nepovažuje za dôležité."</string>
 <string name="storage_management_reset_app_dialog_text">"Všetky dáta aplikácií v Banana Browser budú natrvalo odstránené. Platí to aj pre všetky súbory, nastavenia, účty, databázy atď."</string>
 <string name="sogou_explanation">"Banana Browser môže použiť &lt;b&gt;Sogou&lt;/b&gt; na vyhľadávanie v Číne. Táto možnosť sa dá zmeniť v &lt;link&gt;Nastaveniach&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Táto aplikácia je spustená v Banana Browser"</string>
 <string name="twa_running_in_chrome">"Spustená v Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Zobrazí sa váš stav prihlásenia na webe %1$s, dáta prehliadania a údaje webu v Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"V Banana Browser má údaje aj aplikácia %1$s."</string>
@@ -84,10 +83,12 @@
 <string name="usage_stats_revocation_prompt">"Chcete z digitálnej rovnováhy odstrániť svoju aktivitu v Banana Browser?"</string>
 <string name="usage_stats_revocation_explanation">"Weby, ktoré navštívite v Banana Browser, sa nezobrazia. Odstránia sa všetky časovače webov."</string>
 <string name="autofill_assistant_module_title">"Asistent Google v Banana Browser"</string>
+<string name="cablev2_activity_title">"Google Banana Browser ako bezpečnostný kľúč"</string>
 <string name="qr_code_open_settings_description">"Ak chcete skenovať kód QR, zmeňte nastavenia, aby Banana Browser mohol použiť vašu kameru"</string>
 <string name="chrome_reengagement_notification_1_description">"Články o vašich záujmoch v Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Používanie zjednodušeného režimu v prehliadači Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"Google odporúča Banana Browser"</string>
+<string name="avs_consent_ui_subtitle">"Asistent Google v Banana Browser môže za vás dokončovať akcie na rôznych weboch"</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser potrebuje povolenie použiť fotoaparát, aby mohol vytvoriť 3D mapu vášho okolia"</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu fotoaparátu."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser potrebuje povolenie pre tento web na prístup k vášmu mikrofónu."</string>

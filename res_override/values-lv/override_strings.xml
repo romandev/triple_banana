@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Ja pierakstīsieties ar uzlauztu paroli, pārlūkprogrammā Banana Browser tiks parādīts paziņojums."</string>
 <string name="sign_in_to_chrome">"Pierakstīties pārlūkā Banana Browser"</string>
 <string name="sync_switch_title">"Jūsu Banana Browser datu sinhronizācija"</string>
-<string name="offer_chrome_signin_title">"Atļaut pierakstīties pārlūkā Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Pierakstoties Google kontā, rādīt Banana Browser pierakstīšanās uzvednes"</string>
+<string name="allow_chrome_signin_title">"Atļaut pierakstīties pārlūkā Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Pierakstoties Google kontā, rādīt Banana Browser pierakstīšanās uzvednes"</string>
 <string name="usage_and_crash_reports_title">"Palīdzēt uzlabot Banana Browser funkcijas un veiktspēju"</string>
+<string name="metrics_settings_description">"Izvēlieties, kādu informāciju jums nav iebildumu kopīgot ar Banana Browser. Jūsu kopīgotie rādītāji tiks izmantoti, lai uzlabotu Banana Browser funkcijas, veiktspēju un stabilitāti."</string>
+<string name="metrics_settings_basic_summary">"Jūsu mijiedarbība ar Banana Browser, atlasītie iestatījumi un detalizēta informācija par Banana Browser avārijām"</string>
 <string name="autofill_describe_local_copy">"Nokopēta pārlūkā Banana Browser."</string>
 <string name="password_settings_export_action_description">"Eksportēt pārlūkā Banana Browser saglabātās paroles"</string>
 <string name="password_settings_export_subject">"Banana Browser paroles"</string>
@@ -96,7 +98,6 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="storage_management_all_storage_description">"Kopējais pārlūkā Banana Browser izmantoto datu apjoms, ieskaitot kontus, grāmatzīmes un saglabātos iestatījumus"</string>
 <string name="storage_management_reset_app_dialog_text">"Visi lietotnes Banana Browser dati tiks neatgriezeniski izdzēsti. Tas attiecas uz visiem failiem, iestatījumiem, kontiem, datu bāzēm un citiem datiem."</string>
 <string name="sogou_explanation">"Pārlūkā Banana Browser var izmantot meklētājprogrammu &lt;b&gt;Sogou&lt;/b&gt;, lai veiktu meklēšanu Ķīnā. Varat to mainīt sadaļā &lt;link&gt;Iestatījumi&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Šī lietotne darbojas pārlūkā Banana Browser"</string>
 <string name="twa_running_in_chrome">"Atvērta pārlūkā Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"Tiks rādīts jūsu pierakstīšanās statuss vietnē %1$s, pārlūkošanas dati un vietnes dati pārlūkā Banana Browser."</string>
 <string name="twa_clear_data_dialog_title">"Pārlūkā Banana Browser ir arī “%1$s” dati"</string>
@@ -122,11 +123,13 @@ Jūsu Google kontam vietnē &lt;link&gt;myactivity.google.com&lt;/link&gt; var b
 <string name="usage_stats_revocation_prompt">"Vai noņemt jūsu Banana Browser darbības no Digitālās labjutības?"</string>
 <string name="usage_stats_revocation_explanation">"Netiks rādītas vietnes, ko apmeklējat pārlūkā Banana Browser. Tiks izdzēsti visi vietņu taimeri."</string>
 <string name="autofill_assistant_module_title">"Google asistents pārlūkprogrammā Banana Browser"</string>
+<string name="cablev2_activity_title">"Pārlūka Google Banana Browser izmantošana drošības atslēgas vietā"</string>
 <string name="qr_code_permission_description">"Lai skenētu QR kodu, atļaujiet pārlūkprogrammai Banana Browser izmantot jūsu kameru"</string>
 <string name="qr_code_open_settings_description">"Lai varētu skenēt QR kodu, iestatījumos atļaujiet Banana Browser izmantot jūsu kameru"</string>
 <string name="chrome_reengagement_notification_1_description">"Ar jūsu interesēm saistīti raksti pārlūkā Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"Izmantojiet Google Banana Browser vienkāršoto režīmu."</string>
 <string name="chrome_reengagement_notification_3_title">"Google iesaka pārlūku Banana Browser"</string>
+<string name="avs_consent_ui_body">"Lai palīdzētu jums paveikt uzdevumus, Google saņems to vietņu vietrāžus URL un saturu, kurās izmantojat Asistentu, kā arī informāciju, ko iesniedzat, izmantojot Asistentu. Šī informācija var tikt glabāta jūsu Google kontā. Banana Browser iestatījumos varat izslēgt Asistentu."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai, lai varētu izveidot jūsu apkārtnes 3D karti."</string>
 <string name="infobar_missing_camera_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu kamerai šajā vietnē."</string>
 <string name="infobar_missing_microphone_permission_text">"Pārlūkam Banana Browser ir nepieciešama atļauja piekļūt jūsu mikrofonam šajā vietnē."</string>

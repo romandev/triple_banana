@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"‏وقتی با گذرواژه لورفته‌ای به سیستم وارد شوید، Banana Browser به شما اطلاع خواهد داد"</string>
 <string name="sign_in_to_chrome">"‏ورود به Banana Browser"</string>
 <string name="sync_switch_title">"‏همگام‌سازی داده‌های Banana Browser"</string>
-<string name="offer_chrome_signin_title">"‏مجاز کردن ورود به سیستم Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"‏درخواست‌های ورود به سیستم Banana Browser را وقتی به سیستم «حساب Google» خود وارد می‌شوید نمایش می‌دهد"</string>
+<string name="allow_chrome_signin_title">"‏مجاز کردن ورود به سیستم Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"‏درخواست‌های ورود به سیستم Banana Browser را وقتی به سیستم «حساب Google» خود وارد می‌شوید نمایش می‌دهد"</string>
 <string name="usage_and_crash_reports_title">"‏کمک به بهبود ویژگی‌ها و عملکرد Banana Browser"</string>
+<string name="metrics_settings_description">"‏انتخاب کنید می‌خواهید چه چیزهایی با Banana Browser هم‌رسانی شود. از سنجه‌هایی که هم‌رسانی می‌کنید برای کمک به بهبود ویژگی‌ها، عملکرد، و پایداری Banana Browser استفاده خواهد شد."</string>
+<string name="metrics_settings_basic_summary">"‏نحوه تعامل شما با Banana Browser، تنظیماتی که انتخاب کرده‌اید، جزئیات خرابی‌های Banana Browser"</string>
 <string name="autofill_describe_local_copy">"‏کپی در Banana Browser"</string>
 <string name="password_settings_export_action_description">"‏صادر کردن گذرواژه‌های ذخیره‌شده در Banana Browser"</string>
 <string name="password_settings_export_subject">"‏گذرواژه‌های Banana Browser"</string>
@@ -96,7 +98,6 @@
 <string name="storage_management_all_storage_description">"‏کل داده‌های استفاده‌شده توسط Banana Browser، شامل حساب‌ها، نشانک‌ها و تنظیمات ذخیره‌شده"</string>
 <string name="storage_management_reset_app_dialog_text">"‏همه داده‌های برنامه Banana Browser به‌طور دائم حذف خواهند شد. این داده‌ها شامل همه فایل‌ها، تنظیمات، حساب‌ها، پایگاه‌های داده و غیره می‌شود."</string>
 <string name="sogou_explanation">"‏Banana Browser می‌تواند از &lt;b&gt;Sogou&lt;/b&gt; برای جستجو در چین استفاده کند. در &lt;link&gt;تنظیمات&lt;/link&gt; می‌توانید این را تغییر دهید."</string>
-<string name="app_running_in_chrome_disclosure">"‏این برنامه در Banana Browser درحال اجرا است"</string>
 <string name="twa_running_in_chrome">"‏درحال اجرا در Banana Browser"</string>
 <string name="twa_running_in_chrome_v2">"‏وضعیت ورود به سیستم %1$s، داده‌های محصول مرور، و داده‌های سایت را در Banana Browser خواهید دید"</string>
 <string name="twa_clear_data_dialog_title">"‏%1$s داده‌هایی در Banana Browser نیز دارد"</string>
@@ -122,11 +123,13 @@
 <string name="usage_stats_revocation_prompt">"‏فعالیت Banana Browser شما در «آسایش دیجیتالی» برداشته شود؟"</string>
 <string name="usage_stats_revocation_explanation">"‏سایت‌هایی که در Banana Browser بازدید می‌کنید، نشان داده نخواهد شد. همه تایمرهای سایت حذف خواهد شد."</string>
 <string name="autofill_assistant_module_title">"‏«دستیار Google» در Banana Browser"</string>
+<string name="cablev2_activity_title">"‏Google Banana Browser به‌عنوان «کلید امنیتی»"</string>
 <string name="qr_code_permission_description">"‏برای اسکن کردن رمزینه پاسخ‌سریع، به Banana Browser اجازه دهید از دوربین استفاده کند"</string>
 <string name="qr_code_open_settings_description">"‏برای اسکن کردن رمزینه پاسخ‌سریع، تنظیمات را تغییر دهید تا Banana Browser بتواند از دوربین استفاده کند"</string>
-<string name="chrome_reengagement_notification_1_description">"‏مقاله‌های مرتبط با علایقتان در Banana Browser"</string>
+<string name="chrome_reengagement_notification_1_description">"‏مقاله‌های مربوط با علایقتان در Banana Browser"</string>
 <string name="chrome_reengagement_notification_2_description">"‏استفاده از «حالت ساده» در Google Banana Browser"</string>
 <string name="chrome_reengagement_notification_3_title">"‏Google،‏ Banana Browser را توصیه می‌کند"</string>
+<string name="avs_consent_ui_body">"‏برای کمک به انجام کارها، Google نشانی‌های وب و محتوای سایت‌هایی را که در آن‌ها از «دستیار» استفاده می‌کنید، و همچنین اطلاعاتی را که ازطریق «دستیار» ارسال می‌کنید دریافت خواهد کرد. ممکن است این اطلاعات در «حساب Google» شما ذخیره شود. می‌توانید «دستیار» را در «تنظیمات Banana Browser» خاموش کنید."</string>
 <string name="infobar_missing_ar_camera_permission_text">"‏Banana Browser برای ایجاد نقشه سه‌بعدی محیط شما باید اجازه دسترسی به دوربین داشته باشد."</string>
 <string name="infobar_missing_camera_permission_text">"‏Banana Browser به مجوز دسترسی به دوربین برای این سایت نیاز دارد."</string>
 <string name="infobar_missing_microphone_permission_text">"‏Banana Browser برای این سایت به مجوز دسترسی به میکروفون نیاز دارد."</string>

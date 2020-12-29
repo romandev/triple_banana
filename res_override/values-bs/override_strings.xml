@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser će vas obavijestiti kada se prijavite s ugroženom lozinkom."</string>
 <string name="sign_in_to_chrome">"Prijava na Banana Browser"</string>
 <string name="sync_switch_title">"Sinhroniziranje Banana Browser podataka"</string>
-<string name="offer_chrome_signin_title">"Omogući prijavu na Banana Browser"</string>
-<string name="offer_chrome_signin_summary">"Prikazuj upite za prijavu u Banana Browser prilikom prijavljivanja na Google račun"</string>
+<string name="allow_chrome_signin_title">"Omogući prijavu na Banana Browser"</string>
+<string name="allow_chrome_signin_summary">"Prikazuj upite za prijavu u Banana Browser prilikom prijavljivanja na Google račun"</string>
 <string name="usage_and_crash_reports_title">"Pomozite nam da poboljšamo funkcije i performanse Banana Browsera"</string>
+<string name="metrics_settings_description">"Odaberite šta vam odgovara da dijelite s Banana Browserom. Pokazatelji koje dijelite će se koristiti da se poboljšaju funkcije, rad i stabilnost Banana Browsera."</string>
+<string name="metrics_settings_basic_summary">"Kako ostvarujete interakciju s Banana Browserom, odabrane postavke, detalji o padovima Banana Browsera"</string>
 <string name="autofill_describe_local_copy">"Kopirano u Banana Browser"</string>
 <string name="password_settings_export_action_description">"Izvoz lozinki pohranjenih u Banana Browseru"</string>
 <string name="password_settings_export_subject">"Banana Browser lozinke"</string>
@@ -96,7 +98,6 @@ Vaš Google račun može imati druge oblike historije pregledanja kao što su pr
 <string name="storage_management_all_storage_description">"Ukupna količina podataka koju je Banana Browser iskoristio, uključujući račune, oznake i sačuvane postavke"</string>
 <string name="storage_management_reset_app_dialog_text">"Svi podaci aplikacije Banana Browser bit će trajno izbrisani. To uključuje sve fajlove, postavke, račune, baze podataka, itd."</string>
 <string name="sogou_explanation">"Banana Browser može koristiti &lt;b&gt;Sogou&lt;/b&gt; za pretraživanje u Kini. To možete promijeniti u &lt;link&gt;Postavkama&lt;/link&gt;."</string>
-<string name="app_running_in_chrome_disclosure">"Ova aplikacija je pokrenuta u Banana Browseru"</string>
 <string name="twa_running_in_chrome">"Pokrenuto je u Banana Browseru"</string>
 <string name="twa_running_in_chrome_v2">"Vidjet ćete svoj status prijave na web lokaciji %1$s, podatke pregledanja i podatke web lokacije na Banana Browseru"</string>
 <string name="twa_clear_data_dialog_title">"%1$s također ima podatke u Banana Browseru"</string>
@@ -122,11 +123,13 @@ Vaš Google račun može imati druge oblike historije pregledanja kao što su pr
 <string name="usage_stats_revocation_prompt">"Ukloniti aktivnosti Banana Browsera iz Digitalnog blagostanja?"</string>
 <string name="usage_stats_revocation_explanation">"Neće se prikazivati web lokacije koje posjetite preko Banana Browsera. Svi tajmeri web lokacija će biti izbrisani."</string>
 <string name="autofill_assistant_module_title">"Google Assistant u Banana Browseru"</string>
+<string name="cablev2_activity_title">"Google Banana Browser kao sigurnosni ključ"</string>
 <string name="qr_code_permission_description">"Da skenirate QR kôd, dozvolite Banana Browseru korištenje kamere"</string>
 <string name="qr_code_open_settings_description">"Da skenirate QR kôd, promijenite postavke tako da Banana Browser može koristiti vašu kameru"</string>
 <string name="chrome_reengagement_notification_1_description">"Članci o vašim interesovanjima na Banana Browseru"</string>
 <string name="chrome_reengagement_notification_2_description">"Koristite Jednostavni način rada na Google Banana Browseru"</string>
 <string name="chrome_reengagement_notification_3_title">"Google preporučuje Banana Browser"</string>
+<string name="avs_consent_ui_body">"Radi lakšeg završavanja zadataka, Google će primati URL-ove i sadržaj web lokacija na kojima koristite Asistenta, kao i informacije koje pošaljete putem Asistenta. Ove informacije se mogu pohraniti na vaš Google račun. Možete isključiti Asistenta u postavkama Banana Browsera."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browseru je potrebno odobrenje da pristupi kameri radi kreiranja 3D mape vašeg okruženja."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser treba odobrenje za pristup kameri za ovu web lokaciju."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser treba dopuštenje za pristup mikrofonu za ovu web-lokaciju."</string>

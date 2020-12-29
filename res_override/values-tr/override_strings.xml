@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser, güvenliği ihlal edilmiş bir şifreyle oturum açtığınızda size haber verir."</string>
 <string name="sign_in_to_chrome">"Banana Browser\'da oturum aç"</string>
 <string name="sync_switch_title">"Banana Browser verilerimi senkronize et"</string>
-<string name="offer_chrome_signin_title">"Banana Browser\'da oturum açmaya izin verin"</string>
-<string name="offer_chrome_signin_summary">"Google Hesabınızda oturum açtığınızda Banana Browser oturum açma istemleri gösterilsin"</string>
+<string name="allow_chrome_signin_title">"Banana Browser\'da oturum açmaya izin verin"</string>
+<string name="allow_chrome_signin_summary">"Google Hesabınızda oturum açtığınızda Banana Browser oturum açma istemleri gösterilsin"</string>
 <string name="usage_and_crash_reports_title">"Banana Browser\'un özelliklerini ve performansını iyileştirmeye yardımcı olun"</string>
+<string name="metrics_settings_description">"Banana Browser\'la paylaşmak istediklerinizi seçin. Paylaştığınız metrikler Banana Browser’un özelliklerini, performansını ve kararlılığını iyileştirmeye yardımcı olmak için kullanılır."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser\'la etkileşim kurma şekliniz, seçtiğiniz ayarlar, Banana Browser\'un kilitlenmesi ile ilgili bilgiler"</string>
 <string name="autofill_describe_local_copy">"Banana Browser\'a kopyalandı"</string>
 <string name="password_settings_export_action_description">"Banana Browser\'da depolanan şifreleri dışa aktarın"</string>
 <string name="password_settings_export_subject">"Banana Browser Şifreleri"</string>
@@ -96,7 +98,6 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="storage_management_all_storage_description">"Hesaplar, yer işaretleri ve kayıtlı ayarlar da dahil olmak üzere Banana Browser tarafından kullanılan tüm veriler"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser\'un tüm uygulama verileri kalıcı olarak silinecek. Buna tüm dosyalar, ayarlar, hesaplar, veritabanları vb. dahildir."</string>
 <string name="sogou_explanation">"Banana Browser, Çin\'de arama yapmak için &lt;b&gt;Sogou&lt;/b&gt;\'yu kullanabilir. Bu seçimi &lt;link&gt;Ayarlar&lt;/link&gt;\'da değiştirebilirsiniz."</string>
-<string name="app_running_in_chrome_disclosure">"Bu uygulama Banana Browser\'da çalışıyor"</string>
 <string name="twa_running_in_chrome">"Banana Browser\'da çalıştırılıyor"</string>
 <string name="twa_running_in_chrome_v2">"%1$s sitenizin oturum açma durumunu, tarama verilerini ve site verilerini Banana Browser\'da görürsünüz"</string>
 <string name="twa_clear_data_dialog_title">"%1$s uygulamasına ait veriler Banana Browser\'da da mevcut"</string>
@@ -122,11 +123,13 @@ Diğer Google hizmetlerinden yapılan aramalar ve etkinlikler gibi Google hesab�
 <string name="usage_stats_revocation_prompt">"Banana Browser etkinliğiniz Dijital Denge\'den kaldırılsın mı?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser\'da ziyaret ettiğiniz siteler gösterilmez. Tüm site zamanlayıcıları silinir."</string>
 <string name="autofill_assistant_module_title">"Banana Browser\'da Google Asistan"</string>
+<string name="cablev2_activity_title">"Güvenlik Anahtarı olarak Google Banana Browser"</string>
 <string name="qr_code_permission_description">"QR kodu taramak için Banana Browser\'un kameranızı kullanmasına izin verin"</string>
 <string name="qr_code_open_settings_description">"QR kodu taramak için ayarlarınızı Banana Browser\'un kameranızı kullanabileceği şekilde değiştirin"</string>
 <string name="chrome_reengagement_notification_1_description">"İlgilendiğiniz makaleler Banana Browser\'da"</string>
 <string name="chrome_reengagement_notification_2_description">"Google Banana Browser\'da Basit modu kullanın"</string>
 <string name="chrome_reengagement_notification_3_title">"Google, Banana Browser\'u önerir"</string>
+<string name="avs_consent_ui_body">"Google, görevleri tamamlamanıza yardımcı olmak için Asistan\'ı kullandığınız sitelerin URL\'lerinin ve içeriklerinin yanı sıra Asistan aracılığıyla gönderdiğiniz bilgileri alır. Bu bilgiler Google hesabınızda depolanabilir. Asistan\'ı Banana Browser ayarlarından kapatabilirsiniz."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Çevrenizin 3D haritasını oluşturmak için Banana Browser\'un kameranıza erişim iznine ihtiyacı var."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser\'un bu sitede kameranıza erişmesi için izin gerekiyor."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser\'un bu sitede mikrofonunuza erişmesi için izin gerekiyor."</string>

@@ -10,9 +10,11 @@
 <string name="password_check_status_subtitle_no_findings">"Banana Browser შეგატყობინებთ, როცა სისტემაში გატეხილი პაროლით შეხვალთ."</string>
 <string name="sign_in_to_chrome">"შესვლა Banana Browser-ში"</string>
 <string name="sync_switch_title">"თქვენი Banana Browser მონაცემების სინქრონიზაცია"</string>
-<string name="offer_chrome_signin_title">"Banana Browser-ში შესვლის დაშვება"</string>
-<string name="offer_chrome_signin_summary">"Banana Browser-ის სისტემაში შესვლის მოთხოვნების ჩვენება, როცა თქვენს Google ანგარიშში შეხვალთ"</string>
+<string name="allow_chrome_signin_title">"Banana Browser-ში შესვლის დაშვება"</string>
+<string name="allow_chrome_signin_summary">"Banana Browser-ის სისტემაში შესვლის მოთხოვნების ჩვენება, როცა თქვენს Google ანგარიშში შეხვალთ"</string>
 <string name="usage_and_crash_reports_title">"შეუწყვეთ ხელი Banana Browser-ის ფუნქციებისა და წარმადობის გაუმჯობესებას"</string>
+<string name="metrics_settings_description">"აირჩიეთ, რისი გაზიარება გაწყობთ Banana Browser-თან. თქვენ მიერ გაზიარებული მეტრიკა ხელს შეუწყობს Banana Browser-ის ფუნქციების, წარმადობისა და სტაბილურობის გაუმჯობესებას."</string>
+<string name="metrics_settings_basic_summary">"Banana Browser-თან ინტერაქციის ხერხები, თქვენ მიერ არჩეული პარამეტრები, Banana Browser-ის ავარიულად გათიშვების დეტალები"</string>
 <string name="autofill_describe_local_copy">"დაკოპირდა Banana Browser-ში"</string>
 <string name="password_settings_export_action_description">"Banana Browser-ში შენახული პაროლების ექსპორტი"</string>
 <string name="password_settings_export_subject">"Banana Browser-ის პაროლები"</string>
@@ -95,7 +97,6 @@
 <string name="storage_management_all_storage_description">"Banana Browser-ის მიერ გამოყენებული მეხსიერების საერთო მოცულობა, რომელშიც ინახება ანგარიშები, სანიშნეები და შენახული პარამეტრები"</string>
 <string name="storage_management_reset_app_dialog_text">"Banana Browser-ში არსებული აპების მონაცემები სამუდამოდ წაიშლება. მათ შორის, აპებთან დაკავშირებული ყველა ფაილი, პარამეტრი, ანგარიში, მონაცემთა ბაზა და ა.შ."</string>
 <string name="sogou_explanation">"ჩინეთის ტერიტორიაზე ძიების განსახორციელებლად, Banana Browser-ს &lt;b&gt;Sogou&lt;/b&gt;-ს გამოყენება შეუძლია. ამის შეცვლა &lt;link&gt;პარამეტრებიდან&lt;/link&gt; შეგიძლიათ."</string>
-<string name="app_running_in_chrome_disclosure">"ეს აპი გაშვებულია Banana Browser-ში"</string>
 <string name="twa_running_in_chrome">"გაშვებულია Banana Browser-ში"</string>
 <string name="twa_running_in_chrome_v2">"Banana Browser-ში იხილავთ როგორც %1$s-ში შესვლის სტატუსს, ისე დათვალიერების/საიტის მონაცემებს"</string>
 <string name="twa_clear_data_dialog_title">"%1$s-ს Banana Browser-შიც აქვს მონაცემები"</string>
@@ -121,11 +122,13 @@
 <string name="usage_stats_revocation_prompt">"გსურთ, ციფრული კომფორტიდან ამოშალოთ თქვენი აქტივობა Banana Browser-ში?"</string>
 <string name="usage_stats_revocation_explanation">"Banana Browser-იდან მონახულებული ვებსაიტები არ გამოჩნდება. ვებსაიტების ყველა ტაიმერი წაიშლება."</string>
 <string name="autofill_assistant_module_title">"Google ასისტენტი Banana Browser-ში"</string>
+<string name="cablev2_activity_title">"Google Banana Browser უსაფრთხოების გასაღების სახით"</string>
 <string name="qr_code_permission_description">"QR კოდის სკანირებისთვის მიანიჭეთ Banana Browser-ს კამერაზე წვდომის ნებართვა."</string>
 <string name="qr_code_open_settings_description">"QR კოდის სკანირებისთვის შეცვალეთ პარამეტრები იმგვარად, რომ Banana Browser-მა შეძლოს თქვენი კამერის სარგებლობა"</string>
 <string name="chrome_reengagement_notification_1_description">"თქვენს ინტერესებთან დაკავშირებული სტატიები Banana Browser-ში"</string>
 <string name="chrome_reengagement_notification_2_description">"გამოიყენეთ Lite რეჟიმი Google Banana Browser-ში"</string>
 <string name="chrome_reengagement_notification_3_title">"Google გირჩევთ Banana Browser-ს"</string>
+<string name="avs_consent_ui_body">"ამოცანების შესრულებაში დასახმარებლად Google მიიღებს იმ საიტების URL-ებსა და კონტენტს, რომლებზეც ასისტენტს იყენებთ, ასევე, თქვენ მიერ ასისტენტის მეშვეობით გადაგზავნილ ინფორმაციას. აღნიშნული ინფორმაცია შეიძლება შეინახოს თქვენს Google ანგარიშში. ასისტენტის გამორთვა შეგიძლიათ Banana Browser-ის პარამეტრებიდან."</string>
 <string name="infobar_missing_ar_camera_permission_text">"Banana Browser საჭიროებს თქვენს კამერაზე წვდომის ნებართვას, თქვენი გარემოს 3-განზომილებიანი რუკის შექმნა რომ შეძლოს."</string>
 <string name="infobar_missing_camera_permission_text">"Banana Browser საჭიროებს თქვენს კამერაზე წვდომის ნებართვას ამ საიტისთვის."</string>
 <string name="infobar_missing_microphone_permission_text">"Banana Browser საჭიროებს თქვენს მიკროფონზე წვდომის ნებართვას ამ საიტისთვის."</string>
