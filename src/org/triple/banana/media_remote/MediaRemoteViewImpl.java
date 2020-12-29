@@ -223,7 +223,6 @@ class MediaRemoteViewImpl implements MediaRemoteView, MediaRemoteViewModel.Liste
         if (mDialog == null || !mDialog.isShowing()) return;
 
         resetContentViewInteractionListeners();
-        YouTubeUtil.dismissQualityOptionsDialog();
         mDialog.dismiss();
         resetParentActivity();
     }

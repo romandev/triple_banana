@@ -186,7 +186,7 @@ public enum MediaRemoteService implements MediaRemoteView
         } else if (id == R.id.closed_caption_button) {
             mOptionDialogManager.showCaptionDialog(mView.getContext());
         } else if (id == R.id.quality_button) {
-            YouTubeUtil.showQualityOptionsDialog(mView.getContext());
+            mOptionDialogManager.showQualityDialog(mView.getContext());
         } else if (id == R.id.playback_rate_button) {
             mOptionDialogManager.showPlaybackRateDialog(mView.getContext());
         }

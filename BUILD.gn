@@ -182,6 +182,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/media_remote/MediaRemoteViewModel.java",
     "//triple_banana/src/org/triple/banana/media_remote/OptionDialogManager.java",
     "//triple_banana/src/org/triple/banana/media_remote/PlaybackRateDataModel.java",
+    "//triple_banana/src/org/triple/banana/media_remote/QualityDataModel.java",
 
     # password
     "//triple_banana/src/org/triple/banana/password/PasswordExtension.java",

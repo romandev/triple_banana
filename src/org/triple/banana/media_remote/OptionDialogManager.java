@@ -44,6 +44,17 @@ class OptionDialogManager {
         });
     }
 
+    void showQualityDialog(final @Nullable Context context) {
+        if (context == null) return;
+        mYouTubeController.getAvailableQualityLevels(availableQualites -> {
+            mYouTubeController.getPreferredQuality(preferredQuality -> {
+                QualityDataModel model = new QualityDataModel(availableQualites, preferredQuality);
+                mDialog.show(
+                        context, model, result -> mYouTubeController.setQuality(result.quality));
+            });
+        });
+    }
+
     void dismiss() {
         mDialog.dismiss();
     }

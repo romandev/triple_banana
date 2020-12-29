@@ -24,4 +24,24 @@ class YouTubeCommandBuilder {
         return String.format(
                 "%s.setOption('%s', '%s', %s);", PLAYER, module, option, value.toString());
     }
+
+    @NonNull
+    String getPreferredQuality() {
+        return String.format("%s.getPreferredQuality();", PLAYER);
+    }
+
+    @NonNull
+    String getAvailableQualityLevels() {
+        return String.format("%s.getAvailableQualityLevels();", PLAYER);
+    }
+
+    @NonNull
+    String setPlaybackQualityRange(@NonNull String quality) {
+        return String.format("%s.setPlaybackQualityRange('%s');", PLAYER, quality);
+    }
+
+    @NonNull
+    String setPlaybackQuality(@NonNull String quality) {
+        return String.format("%s.setPlaybackQuality('%s');", PLAYER, quality);
+    }
 }

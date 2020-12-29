@@ -22,6 +22,8 @@ public class YouTubePlayerController {
 
     public static interface ObjectCallback { void onResult(@NonNull JSONObject object); }
 
+    public static interface StringCallback { void onResult(@NonNull String string); }
+
     public YouTubePlayerController() {
         mCommandBuilder = new YouTubeCommandBuilder();
     }
@@ -58,6 +60,28 @@ public class YouTubePlayerController {
         }
         String command = mCommandBuilder.setOption("captions", "track", value);
         runCommand(command, result -> {});
+    }
+
+    public void getPreferredQuality(final @NonNull StringCallback callback) {
+        runCommand(mCommandBuilder.getPreferredQuality(), result -> {
+            // Replace " with blank in the script result.
+            callback.onResult(result.replace("\"", ""));
+        });
+    }
+
+    public void getAvailableQualityLevels(final @NonNull ArrayCallback callback) {
+        runCommand(mCommandBuilder.getAvailableQualityLevels(), result -> {
+            try {
+                callback.onResult(new JSONArray(result));
+            } catch (Exception e) {
+                callback.onResult(new JSONArray());
+            }
+        });
+    }
+
+    public void setQuality(@NonNull String quality) {
+        runCommand(mCommandBuilder.setPlaybackQuality(quality), (result) -> {});
+        runCommand(mCommandBuilder.setPlaybackQualityRange(quality), (result) -> {});
     }
 
     private void runCommand(@NonNull String command, @NonNull BananaJavaScriptCallback callback) {
