@@ -144,6 +144,8 @@ android_library("triple_banana_java") {
     # base
     "//triple_banana/src/org/triple/banana/base/ApplicationStatusTracker.java",
     "//triple_banana/src/org/triple/banana/base/InterActivity.java",
+    "//triple_banana/src/org/triple/banana/base/function/Supplier.java",
+    "//triple_banana/src/org/triple/banana/base/model/Model.java",
     "//triple_banana/src/org/triple/banana/base/widget/VerticalSeekBar.java",
 
     # browsing_data
