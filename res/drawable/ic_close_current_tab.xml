@@ -5,17 +5,20 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:width="24dp"
     android:height="24dp"
     android:viewportWidth="512"
-    android:viewportHeight="512">
+    android:viewportHeight="512"
+    tools:targetApi="21">
     <group
         android:scaleX="0.86"
         android:scaleY="0.86"
         android:translateX="55"
         android:translateY="33">
         <path
-            android:fillColor="#FF000000"
+            android:fillColor="@color/default_icon_color"
+            android:fillType="nonZero"
             android:pathData="m440.039,401.281 l71.961,71.961 -28.27,28.27 -71.957,-71.961 -71.961,71.961 -28.27,-28.27 71.961,-71.961 -71.961,-71.957 28.27,-28.27 71.961,71.961 71.957,-71.961 28.27,28.27zM39.977,421.273v-351.809c0,-11.02 8.969,-19.988 19.988,-19.988h83.957c11.02,0 19.988,8.969 19.988,19.988v59.969h307.828v103.09l39.977,39.977v-203.035c0,-33.063 -26.898,-59.965 -59.965,-59.965h-227.926c8.75,11.629 15.023,25.215 18.031,39.977h209.895c11.02,0 19.988,8.969 19.988,19.988v19.992h-267.852v-19.992c0,-33.063 -26.902,-59.965 -59.965,-59.965h-83.957c-33.063,0 -59.965,26.902 -59.965,59.965v351.809c0,33.063 26.902,59.965 59.965,59.965h182.855l31.73,-39.977h-214.586c-11.02,0 -19.988,-8.969 -19.988,-19.988zM39.977,421.273" />
     </group>
 </vector>

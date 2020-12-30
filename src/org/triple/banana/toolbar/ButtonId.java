@@ -111,10 +111,10 @@ public enum ButtonId {
         int imageResource = 0;
         switch (id) {
             case BACK:
-                imageResource = R.drawable.btn_back;
+                imageResource = R.drawable.ic_arrow_backward;
                 break;
             case FORWARD:
-                imageResource = R.drawable.btn_forward;
+                imageResource = R.drawable.ic_arrow_forward;
                 break;
             case SHARE:
                 imageResource = R.drawable.ic_share_black_24dp;
@@ -129,7 +129,7 @@ public enum ButtonId {
                 imageResource = R.drawable.ic_star_border_black_24dp;
                 break;
             case DOWNLOAD:
-                imageResource = R.drawable.ic_file_download_24dp;
+                imageResource = R.drawable.ic_download;
                 break;
             case DESKTOP_VIEW:
                 imageResource = R.drawable.ic_desktop_black_24dp;

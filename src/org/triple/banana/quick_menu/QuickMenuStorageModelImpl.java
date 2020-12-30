@@ -27,7 +27,7 @@ class QuickMenuStorageModelImpl implements QuickMenuStorageModel<QuickMenuStorag
                         R.id.archive, R.drawable.ic_archive_black_24dp, R.string.archive));
                 add(new QuickMenuStorageModelData(
                         R.id.at_me_game, R.drawable.atmegame_logo, R.string.at_me_game));
-                add(new QuickMenuStorageModelData(R.id.back, R.drawable.btn_back, R.string.back));
+                add(new QuickMenuStorageModelData(R.id.back, R.drawable.ic_arrow_backward, R.string.back));
                 add(new QuickMenuStorageModelData(
                         R.id.clear_data, R.drawable.ic_clear_browsing_data, R.string.clear_data));
                 add(new QuickMenuStorageModelData(
@@ -40,11 +40,11 @@ class QuickMenuStorageModelImpl implements QuickMenuStorageModel<QuickMenuStorag
                                        : R.drawable.ic_desktop_black_24dp,
                         useDesktopView ? R.string.mobile_view : R.string.desktop_view));
                 add(new QuickMenuStorageModelData(
-                        R.id.download, R.drawable.ic_file_download_24dp, R.string.download));
+                        R.id.download, R.drawable.ic_download, R.string.download));
                 add(new QuickMenuStorageModelData(R.id.find_in_page,
                         R.drawable.ic_find_in_page_black_24dp, R.string.find_in_page));
                 add(new QuickMenuStorageModelData(
-                        R.id.forward, R.drawable.btn_forward, R.string.forward));
+                        R.id.forward, R.drawable.ic_arrow_forward, R.string.forward));
                 add(new QuickMenuStorageModelData(
                         R.id.new_tab, R.drawable.ic_add_black_24dp, R.string.new_tab));
                 add(new QuickMenuStorageModelData(

@@ -31,7 +31,7 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:contentDescription="@string/media_remote_back"
-            android:src="@drawable/ic_back" />
+            android:src="@drawable/ic_arrow_backward_white" />
 
 	<ImageButton
             android:id="@+id/quality_button"
