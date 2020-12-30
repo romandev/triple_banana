@@ -9,13 +9,15 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
+import org.triple.banana.base.model.Model;
+
 class QuickMenuFactoryImpl implements QuickMenuFactory {
     @Override
     public @NonNull QuickMenuController create(@NonNull Context context) {
         MockQuickMenuViewImpl mockView = new MockQuickMenuViewImpl(context);
         QuickMenuViewImpl view = new QuickMenuViewImpl(context);
         QuickMenuStorageModel storageModel = new QuickMenuStorageModelImpl();
-        QuickMenuViewModelImpl viewModel = new QuickMenuViewModelImpl();
+        Model<QuickMenuViewModel> viewModel = new Model<>(QuickMenuViewModel::new);
         QuickMenuActionProvider actionProvider = new QuickMenuActionProviderImpl();
         QuickMenuControllerImpl controller =
                 new QuickMenuControllerImpl(viewModel, storageModel, actionProvider);

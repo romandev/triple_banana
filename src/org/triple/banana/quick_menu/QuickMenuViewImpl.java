@@ -21,7 +21,7 @@ class QuickMenuViewImpl implements QuickMenuView, View.OnClickListener {
         createDialog(context);
     }
 
-    public void onUpdate(@NonNull QuickMenuViewModelData data) {
+    public void onUpdate(@NonNull QuickMenuViewModel data) {
         if (data.getIsShowing()) {
             mQuickMenuDialog.show(data.getButtons(), this);
         } else {

@@ -20,7 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.triple.banana.R;
-import org.triple.banana.quick_menu.QuickMenuViewModelData.ButtonInfo;
+import org.triple.banana.quick_menu.QuickMenuViewModel.ButtonInfo;
 
 import java.util.List;
 

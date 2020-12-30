@@ -8,17 +8,18 @@ package org.triple.banana.quick_menu;
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 
-import org.triple.banana.quick_menu.QuickMenuViewModelData.ButtonInfo;
+import org.triple.banana.base.model.Model;
+import org.triple.banana.quick_menu.QuickMenuViewModel.ButtonInfo;
 
 class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Delegate {
-    private final @NonNull QuickMenuViewModel<QuickMenuViewModelData> mQuickMenuViewModel;
+    private final @NonNull Model<QuickMenuViewModel> mViewModel;
     private final @NonNull QuickMenuStorageModel<QuickMenuStorageModelData> mQuickMenuStorageModel;
     private final @NonNull QuickMenuActionProvider mQuickMenuActionProvider;
 
-    QuickMenuControllerImpl(@NonNull QuickMenuViewModel<QuickMenuViewModelData> quickMenuViewModel,
+    QuickMenuControllerImpl(@NonNull Model<QuickMenuViewModel> viewModel,
             @NonNull QuickMenuStorageModel<QuickMenuStorageModelData> quickMenuStorageModel,
             @NonNull QuickMenuActionProvider quickMenuActionProvider) {
-        mQuickMenuViewModel = quickMenuViewModel;
+        mViewModel = viewModel;
         mQuickMenuStorageModel = quickMenuStorageModel;
         mQuickMenuActionProvider = quickMenuActionProvider;
         loadButtons();
@@ -26,7 +27,7 @@ class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Dele
 
     private void loadButtons() {
         for (QuickMenuStorageModelData data : mQuickMenuStorageModel.loadData()) {
-            mQuickMenuViewModel.getEditor().addButton(
+            mViewModel.data.addButton(
                     new ButtonInfo(data.id, data.image, data.label));
         }
     }
@@ -39,13 +40,13 @@ class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Dele
 
     @Override
     public void show() {
-        mQuickMenuViewModel.getEditor().setIsShowing(true);
-        mQuickMenuViewModel.commit();
+        mViewModel.data.setIsShowing(true);
+        mViewModel.commit();
     }
 
     @Override
     public void dismiss() {
-        mQuickMenuViewModel.getEditor().setIsShowing(false);
-        mQuickMenuViewModel.commit();
+        mViewModel.data.setIsShowing(false);
+        mViewModel.commit();
     }
 }

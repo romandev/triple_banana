@@ -16,7 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.triple.banana.R;
-import org.triple.banana.quick_menu.QuickMenuViewModelData.ButtonInfo;
+import org.triple.banana.quick_menu.QuickMenuViewModel.ButtonInfo;
 
 import java.util.List;
 
@@ -45,7 +45,7 @@ class MockQuickMenuViewImpl extends Dialog implements QuickMenuView, View.OnClic
         }
     }
 
-    public void onUpdate(@NonNull QuickMenuViewModelData data) {
+    public void onUpdate(@NonNull QuickMenuViewModel data) {
         if (data.getIsShowing()) {
             updateButtons(data.getButtons());
             show();
