@@ -4,3 +4,4 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 -keep public class org.triple.banana.settings.*
+-keep public class org.triple.banana.media.MediaPlayState
