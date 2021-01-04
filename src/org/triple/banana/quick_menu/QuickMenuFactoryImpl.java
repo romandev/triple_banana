@@ -14,7 +14,6 @@ import org.triple.banana.base.model.Model;
 class QuickMenuFactoryImpl implements QuickMenuFactory {
     @Override
     public @NonNull QuickMenuController create(@NonNull Context context) {
-        MockQuickMenuViewImpl mockView = new MockQuickMenuViewImpl(context);
         QuickMenuViewImpl view = new QuickMenuViewImpl(context);
         QuickMenuStorageModel storageModel = new QuickMenuStorageModelImpl();
         Model<QuickMenuViewModel> viewModel = new Model<>(QuickMenuViewModel::new);
