@@ -20,7 +20,10 @@
     <dimen name="media_remote_top_margin">10dp</dimen>
     <dimen name="media_remote_vertical_seekbar_size">200dp</dimen>
     <dimen name="media_remote_wait_progress_size">96dp</dimen>
+    <dimen name="quick_menu_button_icon_padding">10dp</dimen>
     <dimen name="quick_menu_button_image_length">36dp</dimen>
+    <dimen name="quick_menu_button_background_padding">18dp</dimen>
+    <dimen name="quick_menu_button_text_size">10sp</dimen>
     <dimen name="quick_menu_layout_vertical_margin">10dp</dimen>
     <dimen name="text_size_button">8sp</dimen>
 </resources>
