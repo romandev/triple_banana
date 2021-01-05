@@ -8,15 +8,14 @@ package org.triple.banana.quick_menu;
 import androidx.annotation.IdRes;
 import androidx.annotation.StringRes;
 
-class QuickMenuStorageModelData {
-    @IdRes
-    int id;
-    @IdRes
-    int image;
-    @StringRes
-    int label;
+import org.triple.banana.base.model.Model;
 
-    QuickMenuStorageModelData(@IdRes int id, @IdRes int image, @StringRes int label) {
+class ButtonInfo implements Model.Data {
+    final @IdRes int id;
+    final @IdRes int image;
+    final @StringRes int label;
+
+    ButtonInfo(@IdRes int id, @IdRes int image, @StringRes int label) {
         this.id = id;
         this.image = image;
         this.label = label;

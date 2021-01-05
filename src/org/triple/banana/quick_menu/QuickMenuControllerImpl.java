@@ -9,27 +9,18 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 
 import org.triple.banana.base.model.Model;
-import org.triple.banana.quick_menu.QuickMenuViewModel.ButtonInfo;
 
 class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Delegate {
     private final @NonNull Model<QuickMenuViewModel> mViewModel;
-    private final @NonNull QuickMenuStorageModel<QuickMenuStorageModelData> mQuickMenuStorageModel;
+    private final @NonNull QuickMenuStorage mStorage;
     private final @NonNull QuickMenuActionProvider mQuickMenuActionProvider;
 
     QuickMenuControllerImpl(@NonNull Model<QuickMenuViewModel> viewModel,
-            @NonNull QuickMenuStorageModel<QuickMenuStorageModelData> quickMenuStorageModel,
+            @NonNull QuickMenuStorage storage,
             @NonNull QuickMenuActionProvider quickMenuActionProvider) {
         mViewModel = viewModel;
-        mQuickMenuStorageModel = quickMenuStorageModel;
+        mStorage = storage;
         mQuickMenuActionProvider = quickMenuActionProvider;
-        loadButtons();
-    }
-
-    private void loadButtons() {
-        for (QuickMenuStorageModelData data : mQuickMenuStorageModel.loadData()) {
-            mViewModel.data.addButton(
-                    new ButtonInfo(data.id, data.image, data.label));
-        }
     }
 
     @Override
@@ -40,13 +31,14 @@ class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Dele
 
     @Override
     public void show() {
-        mViewModel.data.setIsShowing(true);
+        mViewModel.data.buttons = mStorage.getButtons();
+        mViewModel.data.isShowing = true;
         mViewModel.commit();
     }
 
     @Override
     public void dismiss() {
-        mViewModel.data.setIsShowing(false);
+        mViewModel.data.isShowing = false;
         mViewModel.commit();
     }
 }

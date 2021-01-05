@@ -15,11 +15,11 @@ class QuickMenuFactoryImpl implements QuickMenuFactory {
     @Override
     public @NonNull QuickMenuController create(@NonNull Context context) {
         QuickMenuViewImpl view = new QuickMenuViewImpl(context);
-        QuickMenuStorageModel storageModel = new QuickMenuStorageModelImpl();
         Model<QuickMenuViewModel> viewModel = new Model<>(QuickMenuViewModel::new);
+        QuickMenuStorage storage = new QuickMenuStorageImpl();
         QuickMenuActionProvider actionProvider = new QuickMenuActionProviderImpl();
         QuickMenuControllerImpl controller =
-                new QuickMenuControllerImpl(viewModel, storageModel, actionProvider);
+                new QuickMenuControllerImpl(viewModel, storage, actionProvider);
 
         view.setDelegate(controller::onClickQuickMenuButton);
         viewModel.addListener(view::onUpdate);

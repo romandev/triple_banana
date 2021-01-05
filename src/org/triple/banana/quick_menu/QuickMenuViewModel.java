@@ -5,46 +5,14 @@
 
 package org.triple.banana.quick_menu;
 
-import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
-import androidx.annotation.StringRes;
 
 import org.triple.banana.base.model.Model;
 
 import java.util.ArrayList;
-import java.util.LinkedHashMap;
 import java.util.List;
-import java.util.Map;
 
 class QuickMenuViewModel implements Model.Data {
-    static class ButtonInfo implements Model.Data {
-        @IdRes int id;
-        @IdRes int image;
-        @StringRes int label;
-
-        ButtonInfo(@IdRes int id, @IdRes int image, @StringRes int label) {
-            this.id = id;
-            this.image = image;
-            this.label = label;
-        }
-    }
-
-    @NonNull Map<Integer, ButtonInfo> buttons = new LinkedHashMap<>();
+    @NonNull List<ButtonInfo> buttons = new ArrayList<>();
     boolean isShowing;
-
-    void addButton(@NonNull ButtonInfo info) {
-        buttons.put(info.id, info);
-    }
-
-    @NonNull List<ButtonInfo> getButtons() {
-        return new ArrayList<ButtonInfo>(buttons.values());
-    }
-
-    boolean getIsShowing() {
-        return isShowing;
-    }
-
-    void setIsShowing(boolean showing) {
-        isShowing = showing;
-    }
 }
