@@ -25,7 +25,7 @@ class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Dele
 
     @Override
     public void onClickQuickMenuButton(@IdRes int buttonId) {
-        mQuickMenuActionProvider.getAction(buttonId).doAction();
+        mQuickMenuActionProvider.getAction(buttonId).run();
         dismiss();
     }
 

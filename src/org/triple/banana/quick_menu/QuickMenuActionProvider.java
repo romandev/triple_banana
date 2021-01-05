@@ -9,9 +9,6 @@ import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 
 interface QuickMenuActionProvider {
-    interface Action {
-        void doAction();
-    }
     @NonNull
-    Action getAction(@IdRes int id);
+    Runnable getAction(@IdRes int id);
 }

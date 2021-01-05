@@ -20,10 +20,10 @@ import java.util.HashMap;
 import java.util.Map;
 
 class QuickMenuActionProviderImpl implements QuickMenuActionProvider {
-    final private @NonNull Map<Integer, Action> mActionMap;
+    final private @NonNull Map<Integer, Runnable> mActionMap;
 
     QuickMenuActionProviderImpl() {
-        mActionMap = new HashMap<Integer, Action>() {
+        mActionMap = new HashMap<Integer, Runnable>() {
             {
                 put(R.id.add_secret_tab, BananaToolbarManager.get()::addSecretTab);
                 put(R.id.add_to_home, BananaToolbarManager.get()::addToHomeScreen);
@@ -60,7 +60,7 @@ class QuickMenuActionProviderImpl implements QuickMenuActionProvider {
     }
 
     @Override
-    public @NonNull Action getAction(@IdRes int id) {
+    public @NonNull Runnable getAction(@IdRes int id) {
         if (mActionMap.containsKey(id)) {
             return mActionMap.get(id);
         }
