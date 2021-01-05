@@ -61,17 +61,17 @@ class QuickMenuDialog extends Dialog {
         mMiddleGridLayout.removeAllViews();
 
         for (final ButtonInfo info : buttons) {
-            final QuickMenuButton button = new QuickMenuButton(getContext());
+            final QuickMenuMiddleButton button = new QuickMenuMiddleButton(getContext());
             button.setId(info.id);
-            button.setImageResource(info.image);
-            button.setLabel(info.label);
+            button.setIcon(info.image);
+            button.setText(info.label);
             button.setOnClickListener(listener);
             setColumnWeight(button);
             mMiddleGridLayout.addView(button);
         }
     }
 
-    private void setColumnWeight(@NonNull QuickMenuButton button) {
+    private void setColumnWeight(@NonNull QuickMenuMiddleButton button) {
         GridLayout.LayoutParams params =
                 new GridLayout.LayoutParams(GridLayout.spec(GridLayout.UNDEFINED, 1f),
                         GridLayout.spec(GridLayout.UNDEFINED, 1f));

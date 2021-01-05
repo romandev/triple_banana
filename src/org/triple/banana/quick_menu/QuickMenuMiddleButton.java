@@ -10,7 +10,9 @@ import android.graphics.drawable.Drawable;
 import android.graphics.drawable.LayerDrawable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
+import android.view.Gravity;
 
+import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatButton;
@@ -18,12 +20,12 @@ import androidx.core.content.res.ResourcesCompat;
 
 import org.triple.banana.R;
 
-class QuickMenuNewButton extends AppCompatButton {
-    public QuickMenuNewButton(@NonNull Context context) {
+class QuickMenuMiddleButton extends AppCompatButton {
+    public QuickMenuMiddleButton(@NonNull Context context) {
         this(context, null);
     }
 
-    public QuickMenuNewButton(@NonNull Context context, @Nullable AttributeSet attrs) {
+    public QuickMenuMiddleButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
         initialize();
@@ -36,6 +38,7 @@ class QuickMenuNewButton extends AppCompatButton {
                 getResources().getDimensionPixelSize(R.dimen.quick_menu_button_icon_padding));
         setTextSize(TypedValue.COMPLEX_UNIT_PX,
                 getResources().getDimensionPixelSize(R.dimen.quick_menu_button_text_size));
+        setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
     }
 
     @Override
@@ -49,5 +52,9 @@ class QuickMenuNewButton extends AppCompatButton {
         iconDrawable.setLayerInset(1, paddingSize, paddingSize, paddingSize, paddingSize);
 
         super.setCompoundDrawablesWithIntrinsicBounds(left, iconDrawable, right, bottom);
+    }
+
+    public void setIcon(@DrawableRes int icon) {
+        setCompoundDrawablesWithIntrinsicBounds(0, icon, 0, 0);
     }
 }

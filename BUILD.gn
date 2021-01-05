@@ -198,7 +198,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuDialog.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactory.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuFactoryImpl.java",
-    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuNewButton.java",
+    "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuMiddleButton.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuStorageModel.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuStorageModelData.java",
     "//triple_banana/src/org/triple/banana/quick_menu/QuickMenuStorageModelImpl.java",
