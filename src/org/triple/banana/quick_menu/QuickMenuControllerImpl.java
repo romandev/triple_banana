@@ -11,13 +11,15 @@ import androidx.annotation.NonNull;
 import org.triple.banana.base.model.Model;
 
 class QuickMenuControllerImpl implements QuickMenuController, QuickMenuView.Delegate {
+    private final @NonNull QuickMenuView mView;
     private final @NonNull Model<QuickMenuViewModel> mViewModel;
     private final @NonNull QuickMenuStorage mStorage;
     private final @NonNull QuickMenuActionProvider mQuickMenuActionProvider;
 
-    QuickMenuControllerImpl(@NonNull Model<QuickMenuViewModel> viewModel,
+    QuickMenuControllerImpl(@NonNull QuickMenuView view, @NonNull Model<QuickMenuViewModel> viewModel,
             @NonNull QuickMenuStorage storage,
             @NonNull QuickMenuActionProvider quickMenuActionProvider) {
+        mView = view;
         mViewModel = viewModel;
         mStorage = storage;
         mQuickMenuActionProvider = quickMenuActionProvider;
