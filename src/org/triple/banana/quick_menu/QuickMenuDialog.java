@@ -15,11 +15,14 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.GridLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.triple.banana.R;
+import org.triple.banana.quick_menu.ButtonInfo;
+import org.triple.banana.version.VersionInfo;
 
 import java.util.List;
 
@@ -50,10 +53,18 @@ class QuickMenuDialog extends Dialog {
     @Override
     public void onContentChanged() {
         mMiddleGridLayout = findViewById(R.id.quick_menu_grid_layout);
+        // FIXME(#995): The code below need to move to xml.
+        findViewById(R.id.quick_menu_icon).setClipToOutline(true);
 
-        setTopLayout();
+        setVersion();
         setBottomLayout();
         setGridLayoutColumn();
+    }
+
+    private void setVersion() {
+        TextView versionTextView = findViewById(R.id.version_text_view);
+        VersionInfo versionInfo = new VersionInfo();
+        versionTextView.setText(versionInfo.getVersionName());
     }
 
     private void updateButtons(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
@@ -86,13 +97,6 @@ class QuickMenuDialog extends Dialog {
         else if (getContext().getResources().getConfiguration().orientation
                 == Configuration.ORIENTATION_PORTRAIT)
             mMiddleGridLayout.setColumnCount(4);
-    }
-
-    // FIXME(#962): Move below code to quick_menu_layout.xml
-    private void setTopLayout() {
-        QuickMenuButton titleButton = findViewById(R.id.title_button);
-        titleButton.setImageVisible(false);
-        titleButton.setLabel(R.string.app_name);
     }
 
     // FIXME(#962): Move below code to quick_menu_layout.xml
