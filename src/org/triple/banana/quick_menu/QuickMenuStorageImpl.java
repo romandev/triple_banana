@@ -9,11 +9,12 @@ import androidx.annotation.NonNull;
 
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
+import org.triple.banana.base.model.Model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class QuickMenuStorageImpl implements QuickMenuStorage {
+class QuickMenuStorageImpl implements QuickMenuStorage, Model.Data {
     private final @NonNull List<ButtonInfo> mButtons;
 
     QuickMenuStorageImpl() {

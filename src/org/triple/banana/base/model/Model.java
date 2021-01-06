@@ -5,6 +5,7 @@
 
 package org.triple.banana.base.model;
 
+import android.util.Log;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
@@ -44,6 +45,7 @@ import java.util.Set;
  *   model.commit();
  */
 public class Model<T extends Model.Data> {
+    private static final @NonNull String TAG = "Model";
     private final @NonNull Supplier<T> mFactory;
     private final @NonNull Set<Listener<T>> mListeners;
     private @NonNull byte[] mInternalData;
@@ -95,6 +97,7 @@ public class Model<T extends Model.Data> {
             byte[] serializedData = baos.toByteArray();
             if (serializedData != null) return serializedData;
         } catch (Exception e) {
+            Log.e(TAG, "serialize(): " + e.toString());
         }
         return new byte[0];
     }
@@ -104,6 +107,7 @@ public class Model<T extends Model.Data> {
                 ObjectInputStream ois = new ObjectInputStream(bais)) {
             return (T) ois.readObject();
         } catch (Exception e) {
+            Log.e(TAG, "deserialize(): " + e.toString());
         }
         return mFactory.get();
     }
