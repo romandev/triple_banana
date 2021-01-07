@@ -60,37 +60,34 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_marginTop="@dimen/quick_menu_layout_vertical_margin"
-        android:layout_marginBottom="@dimen/quick_menu_layout_vertical_margin"
-        android:background="@android:color/darker_gray" />
+        android:background="#f2f2f2" />
 
     <LinearLayout
         android:id="@+id/quick_menu_bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
-        <org.triple.banana.quick_menu.QuickMenuButton
-            android:id="@+id/clear_browsing_data_button"
+        <org.triple.banana.quick_menu.QuickMenuBottomButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="start" />
+            android:background="@drawable/quick_menu_button_image_ripple" />
 
-        <org.triple.banana.quick_menu.QuickMenuButton
-            android:id="@+id/cancel_button"
+        <org.triple.banana.quick_menu.QuickMenuBottomButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="center_horizontal" />
+            android:background="@drawable/quick_menu_button_image_ripple" />
 
-        <org.triple.banana.quick_menu.QuickMenuButton
-            android:id="@+id/terminate_button"
+        <org.triple.banana.quick_menu.QuickMenuBottomButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="end" />
+            android:background="@drawable/quick_menu_button_image_ripple" />
     </LinearLayout>
 
 </LinearLayout>

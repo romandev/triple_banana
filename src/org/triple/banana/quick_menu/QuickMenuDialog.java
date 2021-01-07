@@ -57,7 +57,6 @@ class QuickMenuDialog extends Dialog {
         findViewById(R.id.quick_menu_icon).setClipToOutline(true);
 
         setVersion();
-        setBottomLayout();
         setGridLayoutColumn();
     }
 
@@ -97,21 +96,6 @@ class QuickMenuDialog extends Dialog {
         else if (getContext().getResources().getConfiguration().orientation
                 == Configuration.ORIENTATION_PORTRAIT)
             mMiddleGridLayout.setColumnCount(4);
-    }
-
-    // FIXME(#962): Move below code to quick_menu_layout.xml
-    private void setBottomLayout() {
-        QuickMenuButton clearButton = findViewById(R.id.clear_browsing_data_button);
-        clearButton.setLabelVisible(false);
-        clearButton.setImageResource(R.drawable.ic_clear_browsing_data);
-
-        QuickMenuButton cancelButton = findViewById(R.id.cancel_button);
-        cancelButton.setLabelVisible(false);
-        cancelButton.setImageResource(R.drawable.ic_download);
-
-        QuickMenuButton terminateButton = findViewById(R.id.terminate_button);
-        terminateButton.setLabelVisible(false);
-        terminateButton.setImageResource(R.drawable.ic_power_off_black);
     }
 
     public void show(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
