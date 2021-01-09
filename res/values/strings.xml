@@ -9,7 +9,7 @@
     <string name="adblock_with_version">AdBlock (Ver: %s)</string>
     <string name="adblock_summary">Block ads on sites that show intrusive or misleading ads</string>
     <string name="add_secret_tab">Add Secret tab</string>
-    <string name="add_to_home">Add to Home screen</string>
+    <string name="add_to_home">Add to Home</string>
     <string name="advanced_features">Advanced Features</string>
     <string name="advanced_features_summary">AdBlock, Translate, Data reduction mode, External download manager...</string>
     <string name="already_latest_version">Latest version already installed</string>
