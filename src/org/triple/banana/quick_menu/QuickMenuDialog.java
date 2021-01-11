@@ -7,9 +7,9 @@ package org.triple.banana.quick_menu;
 
 import android.app.Dialog;
 import android.content.Context;
-import android.content.res.Configuration;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.View;
 import android.view.Window;
@@ -22,15 +22,23 @@ import androidx.annotation.Nullable;
 
 import org.triple.banana.R;
 import org.triple.banana.quick_menu.ButtonInfo;
+import org.triple.banana.util.RotationManager;
 import org.triple.banana.version.VersionInfo;
 
 import java.util.List;
 
 class QuickMenuDialog extends Dialog {
     private @Nullable GridLayout mMiddleGridLayout;
+    private final @NonNull RotationManager mRotationManager;
+    private final @NonNull RotationManager.Listener mOrientationChangedListener;
+    private final @NonNull Handler mHandler;
 
     QuickMenuDialog(@NonNull Context context, int resId) {
         super(context);
+
+        mRotationManager = new RotationManager();
+        mOrientationChangedListener = createOrientationChangedListener();
+        mHandler = new Handler();
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(resId);
@@ -48,16 +56,11 @@ class QuickMenuDialog extends Dialog {
             window.setGravity(Gravity.BOTTOM);
             window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
-    }
 
-    @Override
-    public void onContentChanged() {
         mMiddleGridLayout = findViewById(R.id.quick_menu_grid_layout);
         // FIXME(#995): The code below need to move to xml.
         findViewById(R.id.quick_menu_icon).setClipToOutline(true);
-
         setVersion();
-        setGridLayoutColumn();
     }
 
     private void setVersion() {
@@ -89,17 +92,39 @@ class QuickMenuDialog extends Dialog {
         button.setLayoutParams(params);
     }
 
-    private void setGridLayoutColumn() {
-        if (getContext().getResources().getConfiguration().orientation
-                == Configuration.ORIENTATION_LANDSCAPE)
-            mMiddleGridLayout.setColumnCount(8);
-        else if (getContext().getResources().getConfiguration().orientation
-                == Configuration.ORIENTATION_PORTRAIT)
-            mMiddleGridLayout.setColumnCount(4);
+    private void relayout(RotationManager.Orientation orientation) {
+        int columnCount = (orientation == RotationManager.Orientation.LANDSCAPE) ? 8 : 4;
+        if (mMiddleGridLayout.getColumnCount() != columnCount) {
+            final int viewsCount = mMiddleGridLayout.getChildCount();
+            for (int i = 0; i < viewsCount; i++) {
+                setColumnWeight((QuickMenuMiddleButton) mMiddleGridLayout.getChildAt(i));
+            }
+            mMiddleGridLayout.setColumnCount(columnCount);
+        }
     }
 
     public void show(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
         updateButtons(buttons, listener);
         show();
+    }
+
+    @Override
+    public void show() {
+        super.show();
+
+        mRotationManager.addListener(mOrientationChangedListener);
+    }
+
+    @Override
+    public void dismiss() {
+        super.dismiss();
+
+        mRotationManager.removeListener(mOrientationChangedListener);
+    }
+
+    private RotationManager.Listener createOrientationChangedListener() {
+        return info -> {
+            mHandler.post(() -> relayout(info.orientation));
+        };
     }
 }
