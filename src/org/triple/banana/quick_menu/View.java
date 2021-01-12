@@ -9,10 +9,6 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-class QuickMenuServiceImpl implements QuickMenuService {
-    @Override
-    public void show(@NonNull Context context) {
-        View view = new DialogBasedViewImpl(context);
-        view.show();
-    }
+interface View {
+    void show();
 }

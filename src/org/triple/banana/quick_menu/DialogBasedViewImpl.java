@@ -5,14 +5,22 @@
 
 package org.triple.banana.quick_menu;
 
+import android.app.Dialog;
 import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-class QuickMenuServiceImpl implements QuickMenuService {
+import org.triple.banana.R;
+
+class DialogBasedViewImpl extends Dialog implements View {
+    DialogBasedViewImpl(@NonNull Context context) {
+        super(context);
+        setContentView(R.layout.quick_menu_layout);        
+    }
+
     @Override
-    public void show(@NonNull Context context) {
-        View view = new DialogBasedViewImpl(context);
-        view.show();
+    public void show() {
+        // This calls Dialog.show()
+        super.show();
     }
 }
