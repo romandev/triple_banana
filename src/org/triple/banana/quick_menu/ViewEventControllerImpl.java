@@ -5,16 +5,17 @@
 
 package org.triple.banana.quick_menu;
 
-import android.content.Context;
-
 import androidx.annotation.NonNull;
 
-class QuickMenuServiceImpl implements QuickMenuService {
+class ViewEventControllerImpl implements ViewEventController {
+    private @NonNull ViewModelImpl mViewModel;
+
+    ViewEventControllerImpl(@NonNull ViewModelImpl viewModel) {
+        mViewModel = viewModel;
+    }
+
     @Override
-    public void show(@NonNull Context context) {
-        ViewModelImpl viewModel = new ViewModelImpl();
-        ViewEventController controller = new ViewEventControllerImpl(viewModel);
-        View view = new DialogBasedViewImpl(context, controller);
-        view.show();
+    public void onShow() {
+        mViewModel.notifyViews();
     }
 }

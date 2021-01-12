@@ -13,14 +13,21 @@ import androidx.annotation.NonNull;
 import org.triple.banana.R;
 
 class DialogBasedViewImpl extends Dialog implements View {
-    DialogBasedViewImpl(@NonNull Context context) {
+    private @NonNull ViewEventController mController;
+
+    DialogBasedViewImpl(@NonNull Context context, @NonNull ViewEventController controller) {
         super(context);
-        setContentView(R.layout.quick_menu_layout);        
+
+        mController = controller;
+
+        setContentView(R.layout.quick_menu_layout);
     }
 
     @Override
     public void show() {
         // This calls Dialog.show()
         super.show();
+
+        mController.onShow();
     }
 }
