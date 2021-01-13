@@ -22,7 +22,6 @@
     <dimen name="media_remote_wait_progress_size">96dp</dimen>
     <dimen name="quick_menu_button_icon_padding">7dp</dimen>
     <dimen name="quick_menu_button_icon_size">36dp</dimen>
-    <dimen name="quick_menu_button_image_length">36dp</dimen>
     <dimen name="quick_menu_button_background_padding">14dp</dimen>
     <dimen name="quick_menu_button_text_size">10sp</dimen>
     <dimen name="quick_menu_layout_vertical_margin">10dp</dimen>
