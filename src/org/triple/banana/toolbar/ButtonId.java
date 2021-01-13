@@ -14,7 +14,7 @@ import org.banana.cake.interfaces.BananaTab;
 import org.banana.cake.interfaces.BananaTabManager;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
-import org.triple.banana.quick_menu.QuickMenuFactory;
+import org.triple.banana.quick_menu.QuickMenuService;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.theme.DarkModeController;
@@ -66,7 +66,7 @@ public enum ButtonId {
             if (context == null) {
                 return;
             }
-            QuickMenuFactory.get().create(context).show();
+            QuickMenuService.create().show(context);
         });
         sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(

@@ -1,4 +1,4 @@
-// Copyright 2020 The Triple Banana Authors. All rights reserved.
+// Copyright 2021 The Triple Banana Authors. All rights reserved.
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
 // file, You can obtain one at https://mozilla.org/MPL/2.0/.
@@ -11,7 +11,6 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
 import android.view.Gravity;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.GridLayout;
@@ -27,20 +26,24 @@ import org.triple.banana.version.VersionInfo;
 
 import java.util.List;
 
-class QuickMenuDialog extends Dialog {
-    private @Nullable GridLayout mMiddleGridLayout;
+class DialogBasedViewImpl extends Dialog implements View {
+    private final @NonNull ViewController mController;
     private final @NonNull RotationManager mRotationManager;
     private final @NonNull RotationManager.Listener mOrientationChangedListener;
     private final @NonNull Handler mHandler;
+    private final @NonNull android.view.View.OnClickListener mClickListener;
+    private @Nullable GridLayout mMiddleButtonContainer;
 
-    QuickMenuDialog(@NonNull Context context, int resId) {
+    DialogBasedViewImpl(@NonNull Context context, @NonNull ViewController controller) {
         super(context);
 
+        mController = controller;
         mRotationManager = new RotationManager();
         mOrientationChangedListener = createOrientationChangedListener();
         mHandler = new Handler();
+        mClickListener = createClickListener();
 
-        setContentView(resId);
+        setContentView(R.layout.quick_menu_layout);
         setCancelable(true);
         setCanceledOnTouchOutside(true);
 
@@ -56,10 +59,31 @@ class QuickMenuDialog extends Dialog {
             window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         }
 
-        mMiddleGridLayout = findViewById(R.id.quick_menu_grid_layout);
+        mMiddleButtonContainer = findViewById(R.id.quick_menu_grid_layout);
         // FIXME(#995): The code below need to move to xml.
         findViewById(R.id.quick_menu_icon).setClipToOutline(true);
         setVersion();
+    }
+
+    @Override
+    public void onUpdate(ViewModelReadOnly data) {
+        updateButtons(data.getButtons());
+    }
+
+    @Override
+    public void show() {
+        // This calls Dialog.show()
+        super.show();
+
+        mRotationManager.addListener(mOrientationChangedListener);
+        mController.onShow();
+    }
+
+    @Override
+    public void dismiss() {
+        super.dismiss();
+
+        mRotationManager.removeListener(mOrientationChangedListener);
     }
 
     private void setVersion() {
@@ -68,17 +92,17 @@ class QuickMenuDialog extends Dialog {
         versionTextView.setText(versionInfo.getVersionName());
     }
 
-    private void updateButtons(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
-        mMiddleGridLayout.removeAllViews();
+    private void updateButtons(@NonNull List<ButtonInfo> buttons) {
+        mMiddleButtonContainer.removeAllViews();
 
         for (final ButtonInfo info : buttons) {
             final QuickMenuMiddleButton button = new QuickMenuMiddleButton(getContext());
             button.setId(info.id);
             button.setIcon(info.image);
             button.setText(info.label);
-            button.setOnClickListener(listener);
+            button.setOnClickListener(mClickListener);
             setColumnWeight(button);
-            mMiddleGridLayout.addView(button);
+            mMiddleButtonContainer.addView(button);
         }
     }
 
@@ -93,37 +117,27 @@ class QuickMenuDialog extends Dialog {
 
     private void relayout(RotationManager.Orientation orientation) {
         int columnCount = (orientation == RotationManager.Orientation.LANDSCAPE) ? 8 : 4;
-        if (mMiddleGridLayout.getColumnCount() != columnCount) {
-            final int viewsCount = mMiddleGridLayout.getChildCount();
+        if (mMiddleButtonContainer.getColumnCount() != columnCount) {
+            final int viewsCount = mMiddleButtonContainer.getChildCount();
             for (int i = 0; i < viewsCount; i++) {
-                setColumnWeight((QuickMenuMiddleButton) mMiddleGridLayout.getChildAt(i));
+                setColumnWeight((QuickMenuMiddleButton) mMiddleButtonContainer.getChildAt(i));
             }
-            mMiddleGridLayout.setColumnCount(columnCount);
+            mMiddleButtonContainer.setColumnCount(columnCount);
         }
-    }
-
-    public void show(@NonNull List<ButtonInfo> buttons, @NonNull View.OnClickListener listener) {
-        updateButtons(buttons, listener);
-        show();
-    }
-
-    @Override
-    public void show() {
-        super.show();
-
-        mRotationManager.addListener(mOrientationChangedListener);
-    }
-
-    @Override
-    public void dismiss() {
-        super.dismiss();
-
-        mRotationManager.removeListener(mOrientationChangedListener);
     }
 
     private RotationManager.Listener createOrientationChangedListener() {
         return info -> {
             mHandler.post(() -> relayout(info.orientation));
+        };
+    }
+
+    private android.view.View.OnClickListener createClickListener() {
+        return view -> {
+            boolean shouldBeDismissed = mController.onClickQuickMenuButton(view.getId());
+            if (shouldBeDismissed) {
+                dismiss();
+            }
         };
     }
 }
