@@ -19,10 +19,10 @@ import org.triple.banana.theme.DarkModeController;
 import java.util.HashMap;
 import java.util.Map;
 
-class QuickMenuActionProviderImpl implements QuickMenuActionProvider {
+class ButtonActionProviderImpl implements ButtonActionProvider {
     final private @NonNull Map<Integer, Runnable> mActionMap;
 
-    QuickMenuActionProviderImpl() {
+    ButtonActionProviderImpl() {
         mActionMap = new HashMap<Integer, Runnable>() {
             {
                 put(R.id.add_secret_tab, BananaToolbarManager.get()::addSecretTab);

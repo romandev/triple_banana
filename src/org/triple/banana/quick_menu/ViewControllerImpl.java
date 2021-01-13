@@ -10,11 +10,11 @@ import androidx.annotation.NonNull;
 
 class ViewControllerImpl implements ViewController {
     private final @NonNull ViewModelImpl mViewModel;
-    private final @NonNull QuickMenuStorage mStorage;
-    private final @NonNull QuickMenuActionProvider mActionProvider;
+    private final @NonNull ButtonInfoStorage mStorage;
+    private final @NonNull ButtonActionProvider mActionProvider;
 
-    ViewControllerImpl(@NonNull ViewModelImpl viewModel, @NonNull QuickMenuStorage storage,
-            @NonNull QuickMenuActionProvider actionProvider) {
+    ViewControllerImpl(@NonNull ViewModelImpl viewModel, @NonNull ButtonInfoStorage storage,
+            @NonNull ButtonActionProvider actionProvider) {
         mViewModel = viewModel;
         mStorage = storage;
         mActionProvider = actionProvider;

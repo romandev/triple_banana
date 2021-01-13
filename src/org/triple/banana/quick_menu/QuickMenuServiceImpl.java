@@ -15,8 +15,8 @@ class QuickMenuServiceImpl implements QuickMenuService {
     @Override
     public void show(@NonNull Context context) {
         ViewModelImpl viewModel = new ViewModelImpl();
-        QuickMenuStorage storage = new QuickMenuStorageImpl();
-        QuickMenuActionProvider actionProvider = new QuickMenuActionProviderImpl();
+        ButtonInfoStorage storage = new ButtonInfoStorageImpl();
+        ButtonActionProvider actionProvider = new ButtonActionProviderImpl();
         ViewController controller =
                 new ViewControllerImpl(viewModel, storage, actionProvider);
         View view = new DialogBasedViewImpl(context, controller);

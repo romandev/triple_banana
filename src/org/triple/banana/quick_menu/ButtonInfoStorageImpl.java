@@ -14,10 +14,10 @@ import org.triple.banana.base.model.Model;
 import java.util.ArrayList;
 import java.util.List;
 
-class QuickMenuStorageImpl implements QuickMenuStorage, Model.Data {
+class ButtonInfoStorageImpl implements ButtonInfoStorage, Model.Data {
     private final @NonNull List<ButtonInfo> mButtons;
 
-    QuickMenuStorageImpl() {
+    ButtonInfoStorageImpl() {
         mButtons = new ArrayList<ButtonInfo>() {
             {
                 add(new ButtonInfo(R.id.add_secret_tab,
