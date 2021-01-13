@@ -383,6 +383,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/menu/toolbar_action_bar_menu.xml",
     "//triple_banana/res/values-ko/strings.xml",
     "//triple_banana/res/values-land/dimens.xml",
+    "//triple_banana/res/values-night/colors.xml",
     "//triple_banana/res/values-port/dimens.xml",
     "//triple_banana/res/values/colors.xml",
     "//triple_banana/res/values/dimens.xml",

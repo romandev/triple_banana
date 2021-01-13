@@ -40,7 +40,6 @@ class QuickMenuDialog extends Dialog {
         mOrientationChangedListener = createOrientationChangedListener();
         mHandler = new Handler();
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(resId);
         setCancelable(true);
         setCanceledOnTouchOutside(true);

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2021 The Triple Banana Authors. All rights reserved.
+     This Source Code Form is subject to the terms of the Mozilla Public
+     License, v. 2.0. If a copy of the MPL was not distributed with this
+     file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
+
+<resources>
+    <color name="quick_menu_app_name_text">#FBFBFB</color>
+    <color name="quick_menu_dialog_background">#1B1B1B</color>
+    <color name="quick_menu_image_background">#2C2C2C</color>
+    <color name="quick_menu_text">#FFFFFF</color>
+    <color name="quick_menu_version_text">#6B6B6B</color>
+    <color name="quick_menu_vertical_line">#3D3D3D</color>
+</resources>

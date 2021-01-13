@@ -33,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="16dp"
+                android:textColor="@color/quick_menu_app_name_text"
                 android:textStyle="bold"
                 android:textSize="16sp"
                 android:text="@string/app_name" />
@@ -42,6 +43,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_gravity="center_vertical"
+                android:textColor="@color/quick_menu_version_text"
                 android:textSize="10sp" />
         </LinearLayout>
     </LinearLayout>
@@ -49,7 +51,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#f2f2f2" />
+        android:background="@color/quick_menu_vertical_line" />
 
     <GridLayout
         android:id="@+id/quick_menu_grid_layout"
@@ -60,7 +62,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#f2f2f2" />
+        android:background="@color/quick_menu_vertical_line" />
 
     <LinearLayout
         android:id="@+id/quick_menu_bottom_layout"

@@ -39,6 +39,7 @@ class QuickMenuMiddleButton extends AppCompatButton {
         setTextSize(TypedValue.COMPLEX_UNIT_PX,
                 getResources().getDimensionPixelSize(R.dimen.quick_menu_button_text_size));
         setGravity(Gravity.TOP | Gravity.CENTER_HORIZONTAL);
+        setTextColor(getResources().getColorStateList(R.color.quick_menu_text));
     }
 
     @Override

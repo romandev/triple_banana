@@ -11,6 +11,12 @@
     <color name="media_remote_controls_background_color">#33000000</color>
     <color name="media_remote_highlight_color">#FFFDC534</color>
     <color name="media_remote_ripple_effect_color">#50FFFFFF</color>
+    <color name="quick_menu_app_name_text">#3C3C3C</color>
+    <color name="quick_menu_dialog_background">#FFFFFF</color>
+    <color name="quick_menu_image_background">#F2F2F2</color>
+    <color name="quick_menu_text">#303030</color>
+    <color name="quick_menu_version_text">#999999</color>
+    <color name="quick_menu_vertical_line">#F2F2F2</color>
     <color name="toolbar_modern_grey_background_color">#202124</color>
     <color name="toolbar_modern_grey_text_color">#3C4043</color>
 </resources>
