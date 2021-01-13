@@ -9,6 +9,8 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
+import java.lang.ref.WeakReference;
+
 class QuickMenuServiceImpl implements QuickMenuService {
     @Override
     public void show(@NonNull Context context) {
@@ -19,7 +21,7 @@ class QuickMenuServiceImpl implements QuickMenuService {
                 new ViewControllerImpl(viewModel, storage, actionProvider);
         View view = new DialogBasedViewImpl(context, controller);
 
-        viewModel.addListener(view::onUpdate);
+        viewModel.addListener(new WeakReference(view));
         view.show();
     }
 }

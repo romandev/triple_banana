@@ -8,6 +8,7 @@ package org.triple.banana.quick_menu;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.lang.ref.WeakReference;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -16,25 +17,26 @@ abstract class ViewModelBase {
         void onUpdate(@NonNull ViewModelReadOnly data);
     }
 
-    private final @NonNull Set<Listener> mListeners;
+    private final @NonNull Set<WeakReference<Listener>> mListeners;
 
     ViewModelBase() {
         mListeners = new HashSet<>();
     }
 
-    void addListener(@NonNull Listener listener) {
+    void addListener(@NonNull WeakReference<Listener> listener) {
         mListeners.add(listener);
     }
 
-    void removeListener(@Nullable Listener listener) {
+    void removeListener(@NonNull WeakReference<Listener> listener) {
         if (mListeners.contains(listener)) {
             mListeners.remove(listener);
         }
     }
 
     void notifyViews() {
-        for (Listener listener : mListeners) {
-            listener.onUpdate((ViewModelReadOnly) this);
+        for (WeakReference<Listener> listener : mListeners) {
+            if (listener.get() == null) continue;
+            listener.get().onUpdate((ViewModelReadOnly) this);
         }
     }
 }
