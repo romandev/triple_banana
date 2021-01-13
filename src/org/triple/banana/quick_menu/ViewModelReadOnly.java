@@ -9,6 +9,7 @@ import androidx.annotation.NonNull;
 
 import java.util.List;
 
-interface ViewModelData {
-    @NonNull List<ButtonInfo> getButtons();
+interface ViewModelReadOnly {
+    @NonNull
+    List<ButtonInfo> getButtons();
 }

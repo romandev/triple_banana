@@ -9,6 +9,6 @@ import android.content.Context;
 
 import androidx.annotation.NonNull;
 
-interface View {
+interface View extends ViewModelBase.Listener {
     void show();
 }

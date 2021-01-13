@@ -7,12 +7,21 @@ package org.triple.banana.quick_menu;
 
 import androidx.annotation.NonNull;
 
+import java.util.ArrayList;
 import java.util.List;
 
-class ViewModelImpl extends ViewModel implements ViewModelData {
+class ViewModelImpl extends ViewModelBase implements ViewModelReadOnly {
+    private final @NonNull List<ButtonInfo> mButtons = new ArrayList<>();
+
+    void setButtons(List<ButtonInfo> buttons) {
+        mButtons.clear();
+        for (ButtonInfo buttonInfo : buttons) {
+            mButtons.add(buttonInfo);
+        }
+    }
+
     @Override
     public @NonNull List<ButtonInfo> getButtons() {
-        // NOTIMPLEMENTED
-        return null;
+        return mButtons;
     }
 }

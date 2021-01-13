@@ -11,14 +11,14 @@ import androidx.annotation.Nullable;
 import java.util.HashSet;
 import java.util.Set;
 
-abstract class ViewModel {
+abstract class ViewModelBase {
     interface Listener {
-        void onUpdate(@NonNull ViewModelData data);
+        void onUpdate(@NonNull ViewModelReadOnly data);
     }
 
     private final @NonNull Set<Listener> mListeners;
 
-    ViewModel() {
+    ViewModelBase() {
         mListeners = new HashSet<>();
     }
 
@@ -34,7 +34,7 @@ abstract class ViewModel {
 
     void notifyViews() {
         for (Listener listener : mListeners) {
-            listener.onUpdate((ViewModelData) this);
+            listener.onUpdate((ViewModelReadOnly) this);
         }
     }
 }

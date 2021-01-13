@@ -5,6 +5,9 @@
 
 package org.triple.banana.quick_menu;
 
-interface ViewEventController {
+import androidx.annotation.IdRes;
+
+interface ViewController {
     void onShow();
+    boolean onClickQuickMenuButton(@IdRes int buttonId);
 }
