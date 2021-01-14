@@ -47,6 +47,10 @@ class QuickMenuMiddleButton extends AppCompatButton {
             @Nullable Drawable top, @Nullable Drawable right, @Nullable Drawable bottom) {
         Drawable background = ResourcesCompat.getDrawable(getResources(),
                 R.drawable.quick_menu_button_image_background, getContext().getTheme());
+        if (top == null || background == null) {
+            super.setCompoundDrawablesWithIntrinsicBounds(left, top, right, bottom);
+            return;
+        }
         LayerDrawable iconDrawable = new LayerDrawable(new Drawable[] {background, top});
         final int paddingSize =
                 getResources().getDimensionPixelSize(R.dimen.quick_menu_button_background_padding);
