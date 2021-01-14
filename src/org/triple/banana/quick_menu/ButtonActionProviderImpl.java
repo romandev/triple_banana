@@ -55,6 +55,8 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                     }
                 });
                 put(R.id.visit_history, BananaToolbarManager.get()::goVisitHistory);
+                put(R.id.banana_extension_settings,
+                        () -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
             }
         };
     }

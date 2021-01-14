@@ -63,6 +63,16 @@ class DialogBasedViewImpl extends Dialog implements View {
         // FIXME(#995): The code below need to move to xml.
         findViewById(R.id.quick_menu_icon).setClipToOutline(true);
         setVersion();
+
+        QuickMenuTopButton clearData = findViewById(R.id.clear_data);
+        if (clearData != null) {
+            clearData.setOnClickListener(mClickListener);
+        }
+
+        QuickMenuTopButton settings = findViewById(R.id.banana_extension_settings);
+        if (settings != null) {
+            settings.setOnClickListener(mClickListener);
+        }
     }
 
     @Override
