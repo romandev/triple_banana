@@ -116,6 +116,7 @@ class DialogBasedViewImpl extends Dialog implements View {
         super.dismiss();
 
         mRotationManager.removeListener(mOrientationChangedListener);
+        mController.onDismiss();
     }
 
     private void setVersion() {

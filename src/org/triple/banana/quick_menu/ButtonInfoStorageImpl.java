@@ -7,7 +7,6 @@ package org.triple.banana.quick_menu;
 
 import androidx.annotation.NonNull;
 
-import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.base.model.Model;
 
@@ -35,11 +34,8 @@ class ButtonInfoStorageImpl implements ButtonInfoStorage, Model.Data {
                         R.id.close_tab, R.drawable.ic_close_current_tab, R.string.close_tab));
                 add(new ButtonInfo(
                         R.id.dark_mode, R.drawable.ic_dark_black_24dp, R.string.dark_mode));
-                final boolean useDesktopView = BananaToolbarManager.get().getUseDesktopUserAgent();
-                add(new ButtonInfo(R.id.desktop_view,
-                        useDesktopView ? R.drawable.ic_phone_black_24dp
-                                       : R.drawable.ic_desktop_black_24dp,
-                        useDesktopView ? R.string.mobile_view : R.string.desktop_view));
+                add(new ButtonInfo(R.id.desktop_view, R.drawable.ic_desktop_black_24dp,
+                        R.string.desktop_view));
                 add(new ButtonInfo(
                         R.id.download, R.drawable.ic_download, R.string.download));
                 add(new ButtonInfo(R.id.find_in_page,

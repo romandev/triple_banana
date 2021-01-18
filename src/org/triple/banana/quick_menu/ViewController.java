@@ -9,5 +9,6 @@ import androidx.annotation.IdRes;
 
 interface ViewController {
     void onShow();
+    void onDismiss();
     boolean onClickQuickMenuButton(@IdRes int buttonId);
 }

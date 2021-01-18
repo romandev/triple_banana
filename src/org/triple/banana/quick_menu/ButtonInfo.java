@@ -12,8 +12,10 @@ import org.triple.banana.base.model.Model;
 
 class ButtonInfo implements Model.Data {
     final @IdRes int id;
-    final @IdRes int image;
-    final @StringRes int label;
+    @IdRes
+    int image;
+    @StringRes
+    int label;
 
     ButtonInfo(@IdRes int id, @IdRes int image, @StringRes int label) {
         this.id = id;

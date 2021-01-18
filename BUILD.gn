@@ -151,6 +151,9 @@ android_library("triple_banana_java") {
     # browsing_data
     "//triple_banana/src/org/triple/banana/browsing_data/AutoClearBrowsingData.java",
 
+    # button_state
+    "//triple_banana/src/org/triple/banana/button_state/ButtonStateManager.java",
+
     # download
     "//triple_banana/src/org/triple/banana/download/DownloadInterceptorImpl.java",
     "//triple_banana/src/org/triple/banana/download/SimpleDownloader.java",
