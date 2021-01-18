@@ -12,8 +12,6 @@ import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import org.triple.banana.R;
-
 class QuickMenuBottomButton extends ImageButton {
     public QuickMenuBottomButton(@NonNull Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);

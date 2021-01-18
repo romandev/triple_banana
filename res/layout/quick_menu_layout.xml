@@ -55,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toLeftOf="@id/banana_extension_settings"
-            android:background="@android:color/transparent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_clear_browsing_data" />
 
         <org.triple.banana.quick_menu.QuickMenuTopButton
@@ -65,7 +65,7 @@
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="18dp"
-            android:background="@android:color/transparent"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_settings" />
     </RelativeLayout>
 
@@ -89,28 +89,39 @@
         android:id="@+id/quick_menu_bottom_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
 
         <org.triple.banana.quick_menu.QuickMenuBottomButton
+            android:id="@+id/add_secret_tab"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/quick_menu_button_image_ripple" />
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_add_secret_tab_black_24dp"
+            android:background="@drawable/quick_menu_bottom_button_ripple" />
 
         <org.triple.banana.quick_menu.QuickMenuBottomButton
+            android:id="@+id/terminate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/quick_menu_button_image_ripple" />
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_power_off_black"
+            android:background="@drawable/quick_menu_bottom_button_ripple" />
 
         <org.triple.banana.quick_menu.QuickMenuBottomButton
+            android:id="@+id/new_tab"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/quick_menu_button_image_ripple" />
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/ic_add_black_24dp"
+            android:background="@drawable/quick_menu_bottom_button_ripple" />
+
     </LinearLayout>
 
 </LinearLayout>

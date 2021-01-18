@@ -64,6 +64,11 @@ class DialogBasedViewImpl extends Dialog implements View {
         findViewById(R.id.quick_menu_icon).setClipToOutline(true);
         setVersion();
 
+        bindClickListenerToTopButtons();
+        bindClickListenerToBottomButtons();
+    }
+
+    private void bindClickListenerToTopButtons() {
         QuickMenuTopButton clearData = findViewById(R.id.clear_data);
         if (clearData != null) {
             clearData.setOnClickListener(mClickListener);
@@ -72,6 +77,23 @@ class DialogBasedViewImpl extends Dialog implements View {
         QuickMenuTopButton settings = findViewById(R.id.banana_extension_settings);
         if (settings != null) {
             settings.setOnClickListener(mClickListener);
+        }
+    }
+
+    private void bindClickListenerToBottomButtons() {
+        QuickMenuBottomButton addSecretTabButton = findViewById(R.id.add_secret_tab);
+        if (addSecretTabButton != null) {
+            addSecretTabButton.setOnClickListener(mClickListener);
+        }
+
+        QuickMenuBottomButton terminateButton = findViewById(R.id.terminate);
+        if (terminateButton != null) {
+            terminateButton.setOnClickListener(mClickListener);
+        }
+
+        QuickMenuBottomButton addNewTabButton = findViewById(R.id.new_tab);
+        if (addNewTabButton != null) {
+            addNewTabButton.setOnClickListener(mClickListener);
         }
     }
 

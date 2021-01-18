@@ -33,7 +33,7 @@ class QuickMenuMiddleButton extends AppCompatButton {
 
     private void initialize() {
         setBackground(getResources().getDrawable(
-                R.drawable.quick_menu_button_image_ripple, getContext().getTheme()));
+                R.drawable.quick_menu_middle_button_ripple, getContext().getTheme()));
         setCompoundDrawablePadding(
                 getResources().getDimensionPixelSize(R.dimen.quick_menu_button_icon_padding));
         setTextSize(TypedValue.COMPLEX_UNIT_PX,
