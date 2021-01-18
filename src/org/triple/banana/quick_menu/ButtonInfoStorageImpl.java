@@ -22,7 +22,7 @@ class ButtonInfoStorageImpl implements ButtonInfoStorage, Model.Data {
                 add(new ButtonInfo(R.id.adblock,
                         R.drawable.adblock, R.string.adblock));
                 add(new ButtonInfo(R.id.secure_dns,
-                        R.drawable.vpn, R.string.secure_dns));
+                        R.drawable.secure_dns, R.string.secure_dns));
                 add(new ButtonInfo(
                         R.id.archive, R.drawable.ic_archive_black_24dp, R.string.archive));
                 add(new ButtonInfo(
