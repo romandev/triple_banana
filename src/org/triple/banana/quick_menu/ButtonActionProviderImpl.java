@@ -14,6 +14,7 @@ import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
+import org.triple.banana.settings.MediaFeatureSettings;
 import org.triple.banana.theme.DarkModeController;
 
 import java.util.HashMap;
@@ -52,6 +53,10 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                 put(R.id.visit_history, BananaToolbarManager.get()::goVisitHistory);
                 put(R.id.banana_extension_settings,
                         () -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));
+                put(R.id.media_feature,
+                        ()
+                                -> BananaToolbarManager.get().openSettingPage(
+                                        MediaFeatureSettings.class));
             }
         };
     }

@@ -15,6 +15,7 @@
     <item type="id" name="desktop_view" />
     <item type="id" name="download" />
     <item type="id" name="find_in_page" />
+    <item type="id" name="media_feature" />
     <item type="id" name="new_tab" />
     <item type="id" name="print" />
     <item type="id" name="qr_code" />

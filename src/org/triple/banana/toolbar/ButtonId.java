@@ -17,6 +17,7 @@ import org.triple.banana.R;
 import org.triple.banana.quick_menu.QuickMenuService;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
+import org.triple.banana.settings.MediaFeatureSettings;
 import org.triple.banana.theme.DarkModeController;
 
 import java.util.EnumMap;
@@ -44,7 +45,8 @@ public enum ButtonId {
     CLEAR_DATA,
     CLOSE_TAB,
     TAB_SWITCHER,
-    QRCode;
+    QRCode,
+    MEDIA_FEATURE;
 
     static EnumMap<ButtonId, View.OnClickListener> sOnClickListeners =
             new EnumMap<>(ButtonId.class);
@@ -105,6 +107,8 @@ public enum ButtonId {
                 v -> BananaToolbarManager.get().openClearBrowsingDataPreference());
         sOnClickListeners.put(ButtonId.CLOSE_TAB, v -> BananaToolbarManager.get().closeCurrentTab());
         sOnClickListeners.put(ButtonId.QRCode, v -> BananaToolbarManager.get().openQRCodeDialog());
+        sOnClickListeners.put(ButtonId.MEDIA_FEATURE,
+                v -> BananaToolbarManager.get().openSettingPage(MediaFeatureSettings.class));
     }
 
     public static int getImageResource(ButtonId id) {
@@ -178,6 +182,9 @@ public enum ButtonId {
                 break;
             case QRCode:
                 imageResource = R.drawable.qr_code;
+                break;
+            case MEDIA_FEATURE:
+                imageResource = R.drawable.media_feature_circle;
                 break;
         }
         return imageResource;

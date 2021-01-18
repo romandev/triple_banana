@@ -36,7 +36,7 @@ class ButtonInfoStorageImpl implements ButtonInfoStorage, Model.Data {
                 add(new ButtonInfo(R.id.find_in_page,
                         R.drawable.ic_find_in_page_black_24dp, R.string.find_in_page));
                 add(new ButtonInfo(
-                        R.id.print, R.drawable.ic_local_printshop_black_24dp, R.string.print));
+                        R.id.media_feature, R.drawable.media_feature, R.string.media_features));
                 add(new ButtonInfo(
                         R.id.qr_code, R.drawable.qr_code, R.string.qr_code));
                 add(new ButtonInfo(
