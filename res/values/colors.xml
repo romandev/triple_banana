@@ -19,4 +19,5 @@
     <color name="quick_menu_vertical_line">#F2F2F2</color>
     <color name="toolbar_modern_grey_background_color">#202124</color>
     <color name="toolbar_modern_grey_text_color">#3C4043</color>
+    <color name="toolbar_button_diabled">#F2F2F2</color>
 </resources>

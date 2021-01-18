@@ -187,7 +187,9 @@ public class SelectedToolbarButtonAdapter
     public int getItemCount() {
         if (mButtonList == null) return 0;
 
-        return mButtonList.size();
+        // The number of the toolbar buttons should be 6, but the 6th button should be the quick
+        // menu button. So, we need to exclude it from the total button count.
+        return mButtonList.size() - 1;
     }
 
     public ArrayList<ToolbarButtonItem> getButtonList() {

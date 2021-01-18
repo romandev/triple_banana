@@ -80,6 +80,9 @@ public class ToolbarStatePreferenceStoreImpl implements IToolbarStatePersistentS
             }
         }
 
+        final int QUICK_MENU_INDEX = 5;
+        Collections.swap(arrayList, QUICK_MENU_INDEX, arrayList.indexOf(ButtonId.BANANA_EXTENSION));
+
         return arrayList;
     }
 }

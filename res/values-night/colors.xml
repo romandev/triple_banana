@@ -11,4 +11,5 @@
     <color name="quick_menu_text">#FFFFFF</color>
     <color name="quick_menu_version_text">#6B6B6B</color>
     <color name="quick_menu_vertical_line">#3D3D3D</color>
+    <color name="toolbar_button_diabled">#454545</color>
 </resources>

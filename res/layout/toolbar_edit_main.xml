@@ -57,22 +57,35 @@
         android:id="@+id/bottom_container_top_shadow"
         android:layout_width="match_parent"
         android:layout_height="@dimen/toolbar_shadow_height"
-        android:layout_above="@+id/selected_recycler_view"
+        android:layout_above="@+id/selected_view_wrapper"
         android:scaleType="fitXY"
         android:scaleY="-1"
         android:src="@drawable/modern_toolbar_shadow"
         tools:ignore="ContentDescription" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/selected_recycler_view"
+    <LinearLayout
+        android:id="@+id/selected_view_wrapper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom"
         android:layout_marginStart="@dimen/layout_outer_margin"
-        android:layout_marginEnd="@dimen/layout_outer_margin"
-        android:foregroundGravity="center"
-        app:layoutManager="GridLayoutManager"
-        app:spanCount="6" />
+        android:layout_marginEnd="@dimen/layout_outer_margin">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selected_recycler_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:foregroundGravity="center"
+            app:layoutManager="GridLayoutManager"
+            app:spanCount="5" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:tint="@color/toolbar_button_diabled"
+            android:src="@drawable/toolbar_button_banana" />
+    </LinearLayout>
 
 </RelativeLayout>
