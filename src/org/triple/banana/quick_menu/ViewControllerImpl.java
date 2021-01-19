@@ -46,16 +46,26 @@ class ViewControllerImpl implements ViewController, ButtonStateManager.Listener 
 
     @Override
     public void onUpdateButtonState(@IdRes int id, @NonNull ButtonState state) {
-        int image;
-        int label;
-        if (state == ButtonState.MOBILE_PAGE) {
-            image = R.drawable.ic_phone_black_24dp;
-            label = R.string.mobile_view;
-        } else {
-            image = R.drawable.ic_desktop_black_24dp;
-            label = R.string.desktop_view;
+        int image = 0;
+        int label = 0;
+        boolean enabled = true;
+        switch (state) {
+            case MOBILE_PAGE:
+                image = R.drawable.ic_phone_black_24dp;
+                label = R.string.mobile_view;
+                break;
+            case DESKTOP_PAGE:
+                image = R.drawable.ic_desktop_black_24dp;
+                label = R.string.desktop_view;
+                break;
+            case DISABLE:
+                enabled = false;
+                break;
+            case ENABLE:
+                // The enabled is already `true`. So, do nothing here.
+                break;
         }
-        mViewModel.updateButton(new ButtonInfo(id, image, label));
+        mViewModel.updateButton(new ButtonInfo(id, image, label, enabled));
         mViewModel.notifyViews();
     }
 }

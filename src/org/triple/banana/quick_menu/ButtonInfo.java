@@ -16,10 +16,19 @@ class ButtonInfo implements Model.Data {
     int image;
     @StringRes
     int label;
+    boolean enabled;
 
     ButtonInfo(@IdRes int id, @IdRes int image, @StringRes int label) {
         this.id = id;
         this.image = image;
         this.label = label;
+        this.enabled = true;
+    }
+
+    ButtonInfo(@IdRes int id, @IdRes int image, @StringRes int label, boolean enabled) {
+        this.id = id;
+        this.image = image;
+        this.label = label;
+        this.enabled = enabled;
     }
 }

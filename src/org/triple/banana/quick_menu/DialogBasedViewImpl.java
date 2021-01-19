@@ -131,6 +131,7 @@ class DialogBasedViewImpl extends Dialog implements View {
         for (final ButtonInfo info : buttons) {
             final QuickMenuMiddleButton button = new QuickMenuMiddleButton(getContext());
             button.setId(info.id);
+            button.setEnabled(info.enabled);
             button.setIcon(info.image);
             button.setText(info.label);
             button.setOnClickListener(mClickListener);

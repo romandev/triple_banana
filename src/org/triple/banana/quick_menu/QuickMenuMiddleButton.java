@@ -59,6 +59,17 @@ class QuickMenuMiddleButton extends AppCompatButton {
         super.setCompoundDrawablesWithIntrinsicBounds(left, iconDrawable, right, bottom);
     }
 
+    @Override
+    public void setEnabled(boolean enabled) {
+        super.setEnabled(enabled);
+        if (enabled) {
+            setAlpha(1.0f);
+        } else {
+            // This button is shown to be disabled by alpha value.
+            setAlpha(0.25f);
+        }
+    }
+
     public void setIcon(@DrawableRes int icon) {
         setCompoundDrawablesWithIntrinsicBounds(0, icon, 0, 0);
     }

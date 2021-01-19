@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import org.banana.cake.interfaces.BananaButtonStateManager;
+import org.banana.cake.interfaces.BananaButtonStateProvider;
 import org.triple.banana.R;
 
 import java.util.HashMap;
@@ -23,6 +24,8 @@ public class ButtonStateManager implements BananaButtonStateManager {
     }
 
     public enum ButtonState {
+        ENABLE,
+        DISABLE,
         DESKTOP_PAGE,
         MOBILE_PAGE,
     }
@@ -42,6 +45,7 @@ public class ButtonStateManager implements BananaButtonStateManager {
 
     public void addListener(@NonNull Listener listener) {
         mListeners.add(listener);
+        updateButtonStates();
         for (final Map.Entry<Integer, ButtonState> state : mCachedState.entrySet()) {
             notifyListeners(state.getKey(), state.getValue());
         }
@@ -65,5 +69,20 @@ public class ButtonStateManager implements BananaButtonStateManager {
         for (final Listener listener : mListeners) {
             listener.onUpdateButtonState(id, state);
         }
+    }
+
+    private void updateButtonStates() {
+        mCachedState.put(R.id.download,
+                BananaButtonStateProvider.get().canUseDownloadPage() ? ButtonState.ENABLE
+                                                                     : ButtonState.DISABLE);
+        mCachedState.put(R.id.find_in_page,
+                BananaButtonStateProvider.get().canUseFindInPage() ? ButtonState.ENABLE
+                                                                   : ButtonState.DISABLE);
+        mCachedState.put(R.id.share,
+                BananaButtonStateProvider.get().canUseShare() ? ButtonState.ENABLE
+                                                              : ButtonState.DISABLE);
+        mCachedState.put(R.id.add_to_home,
+                BananaButtonStateProvider.get().canUseAddToHome() ? ButtonState.ENABLE
+                                                                  : ButtonState.DISABLE);
     }
 }

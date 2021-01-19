@@ -34,7 +34,12 @@ class ViewModelImpl extends ViewModelBase implements ViewModelReadOnly {
         if (existingInfo == null) {
             return;
         }
-        existingInfo.image = newInfo.image;
-        existingInfo.label = newInfo.label;
+        if (newInfo.image != 0) {
+            existingInfo.image = newInfo.image;
+        }
+        if (newInfo.label != 0) {
+            existingInfo.label = newInfo.label;
+        }
+        existingInfo.enabled = newInfo.enabled;
     }
 }
