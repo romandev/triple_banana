@@ -15,7 +15,7 @@
     <Preference
         android:key="secure_dns"
         android:title="@string/settings_secure_dns_title"
-        android:fragment="org.chromium.chrome.browser.privacy.secure_dns.SecureDnsSettings" />
+        android:fragment="org.banana.cake.interfaces.BananaSecureDnsSettings" />
     <org.triple.banana.settings.preference.BrowserLockPreference
         android:key="feature_name_browser_lock"
         android:title="@string/browser_lock"

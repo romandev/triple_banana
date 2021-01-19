@@ -10,8 +10,10 @@ import androidx.annotation.NonNull;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaClearBrowsingData;
+import org.banana.cake.interfaces.BananaSecureDnsSettings;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
+import org.triple.banana.settings.AdblockFeatureSettings;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.settings.MediaFeatureSettings;
@@ -26,8 +28,10 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
     ButtonActionProviderImpl() {
         mActionMap = new HashMap<Integer, Runnable>() {
             {
-                // FIXME(#1031): We should add actions for SecureDNS and AdBlock.
-
+                put(R.id.adblock,
+                        ()
+                                -> BananaToolbarManager.get().openSettingPage(
+                                        AdblockFeatureSettings.class));
                 put(R.id.add_secret_tab, BananaToolbarManager.get()::addSecretTab);
                 put(R.id.add_to_home, BananaToolbarManager.get()::addToHomeScreen);
                 put(R.id.archive, BananaToolbarManager.get()::goArchive);
@@ -41,6 +45,10 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                 put(R.id.print, BananaToolbarManager.get()::print);
                 put(R.id.qr_code, BananaToolbarManager.get()::openQRCodeDialog);
                 put(R.id.search, BananaToolbarManager.get()::search);
+                put(R.id.secure_dns,
+                        ()
+                                -> BananaToolbarManager.get().openSettingPage(
+                                        BananaSecureDnsSettings.class));
                 put(R.id.share, BananaToolbarManager.get()::share);
                 put(R.id.terminate, () -> {
                     if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
