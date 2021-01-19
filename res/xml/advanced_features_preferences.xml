@@ -6,18 +6,11 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:orderingFromXml="false">
-    <PreferenceCategory android:title="@string/adblock" />
-    <org.triple.banana.settings.preference.AdblockPreference
-        android:key="feature_name_adblock"
-        android:title="@string/adblock_with_version"
-        android:summaryOn="@string/adblock_summary"
-        android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.LongClickablePreference
-        android:key="update_adblock_filter"
-        android:summary="@string/update_adblock_filter_summary"
-        android:title="@string/update_adblock_filter" />
-
-    <PreferenceCategory android:title="@string/etc" />
+    <PreferenceCategory android:title="@string/advanced_features" />
+    <Preference
+        android:fragment="org.triple.banana.settings.AdblockFeatureSettings"
+        android:title="@string/adblock"
+        android:summary="@string/adblock_summary" />
     <org.triple.banana.settings.preference.TranslatePreference
         android:key="feature_name_translate"
         android:title="@string/translate_button"
