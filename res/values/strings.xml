@@ -35,7 +35,6 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="dark_mode_summary">Relieve eyestrain by activating dark mode at night</string>
     <string name="desktop_view">Desktop site</string>
-    <string name="detail_settings">Detail settings</string>
     <string name="discard">Discard</string>
     <string name="download">Download</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons\nto the Toolbar</string>
@@ -70,7 +69,6 @@
     <string name="privacy_and_security">Privacy and Security</string>
     <string name="privacy_and_security_summary">Protect your privacy online with strong security features provided by Banana Browser</string>
     <string name="qr_code">QR code</string>
-    <string name="quick_settings">Quick Settings</string>
     <string name="reload">Reload</string>
     <string name="reset">Reset</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>

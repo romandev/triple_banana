@@ -6,38 +6,7 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:orderingFromXml="false">
-    <PreferenceCategory android:title="@string/quick_settings" />
-    <org.triple.banana.settings.preference.AdblockPreference
-        android:key="feature_name_adblock"
-        android:title="@string/adblock_with_version"
-        android:summaryOn="@string/adblock_summary"
-        android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.BackgroundPlayPreference
-        android:key="feature_name_background_play"
-        android:title="@string/background_play"
-        android:summaryOn="@string/background_play_summary"
-        android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.SecureDnsPreference
-        android:key="feature_name_secure_dns"
-        android:title="@string/secure_dns"
-        android:summaryOn="@string/secure_dns_summary"
-        android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.DarkModePreference
-        android:key="feature_name_dark_mode"
-        android:title="@string/dark_mode"
-        android:summaryOn="@string/dark_mode_summary"
-        android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.ToolbarEditorPreference
-        android:key="launch_toolbar_editor"
-        android:title="@string/toolbar_editor"
-        android:summary="@string/toolbar_editor_summary" />
-    <Preference
-        android:fragment="org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment"
-        android:key="clear_browsing_data"
-        android:title="@string/clear_browsing_data_title"
-        android:summary="@string/clear_browsing_data_summary" />
-
-    <PreferenceCategory android:title="@string/detail_settings" />
+    <PreferenceCategory android:title="@string/banana_extension" />
     <Preference
         android:fragment="org.triple.banana.settings.AdvancedFeatureSettings"
         android:title="@string/advanced_features"
