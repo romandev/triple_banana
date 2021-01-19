@@ -68,7 +68,7 @@ public enum ButtonId {
             if (context == null) {
                 return;
             }
-            QuickMenuService.create().show(context);
+            QuickMenuService.get().show(context);
         });
         sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(

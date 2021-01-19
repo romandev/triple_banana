@@ -7,4 +7,5 @@ package org.triple.banana.quick_menu;
 
 interface View extends ViewModelBase.Listener {
     void show();
+    boolean isShowing();
 }

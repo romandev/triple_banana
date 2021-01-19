@@ -10,8 +10,8 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 public interface QuickMenuService {
-    static @NonNull QuickMenuService create() {
-        return new QuickMenuServiceImpl();
+    static @NonNull QuickMenuService get() {
+        return QuickMenuServiceImpl.instance;
     }
 
     void show(@NonNull Context context);
