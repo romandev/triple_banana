@@ -17,6 +17,7 @@ import org.triple.banana.settings.AdblockFeatureSettings;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.settings.MediaFeatureSettings;
+import org.triple.banana.settings.UserInterfaceSettings;
 import org.triple.banana.theme.DarkModeController;
 
 import java.util.HashMap;
@@ -35,7 +36,6 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                 put(R.id.add_secret_tab, BananaToolbarManager.get()::addSecretTab);
                 put(R.id.add_to_home, BananaToolbarManager.get()::addToHomeScreen);
                 put(R.id.archive, BananaToolbarManager.get()::goArchive);
-                put(R.id.clear_data, BananaToolbarManager.get()::openClearBrowsingDataPreference);
                 put(R.id.close_tab, BananaToolbarManager.get()::closeCurrentTab);
                 put(R.id.dark_mode, DarkModeController.get()::toggle);
                 put(R.id.desktop_view, BananaToolbarManager.get()::changeDesktopMode);
@@ -58,6 +58,10 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                         BananaToolbarManager.get().terminate();
                     }
                 });
+                put(R.id.user_interface,
+                        ()
+                                -> BananaToolbarManager.get().openSettingPage(
+                                        UserInterfaceSettings.class));
                 put(R.id.visit_history, BananaToolbarManager.get()::goVisitHistory);
                 put(R.id.banana_extension_settings,
                         () -> BananaToolbarManager.get().openSettingPage(ExtensionFeatures.class));

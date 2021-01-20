@@ -69,9 +69,9 @@ class DialogBasedViewImpl extends Dialog implements View {
     }
 
     private void bindClickListenerToTopButtons() {
-        QuickMenuTopButton clearData = findViewById(R.id.clear_data);
-        if (clearData != null) {
-            clearData.setOnClickListener(mClickListener);
+        QuickMenuTopButton userInterface = findViewById(R.id.user_interface);
+        if (userInterface != null) {
+            userInterface.setOnClickListener(mClickListener);
         }
 
         QuickMenuTopButton settings = findViewById(R.id.banana_extension_settings);
