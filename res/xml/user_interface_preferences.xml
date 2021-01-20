@@ -7,11 +7,6 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     android:orderingFromXml="false">
     <PreferenceCategory android:title="@string/user_interface" />
-    <org.triple.banana.settings.preference.DarkModePreference
-        android:key="feature_name_dark_mode"
-        android:title="@string/dark_mode"
-        android:summaryOn="@string/dark_mode_summary"
-        android:summaryOff="@string/text_off" />
     <org.triple.banana.settings.preference.BottomToolbarPreference
         android:key="bottom_toolbar_enabled"
         android:summaryOff="@string/text_off"

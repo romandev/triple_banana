@@ -11,7 +11,7 @@
     <string name="add_secret_tab">시크릿 탭 열기</string>
     <string name="add_to_home">홈 화면에 추가</string>
     <string name="advanced_features">고급 기능</string>
-    <string name="advanced_features_summary">광고차단, 번역, 데이터 절약, 외부 다운로드 매니저...</string>
+    <string name="advanced_features_summary">광고차단, 다크 모드, 번역, 데이터 절약, 외부 다운로드 매니저...</string>
     <string name="already_latest_version">이미 최신버전으로 설치되었습니다</string>
     <string name="archive">저장소</string>
     <string name="authentication_title">생체 인증</string>

@@ -11,6 +11,11 @@
         android:fragment="org.triple.banana.settings.AdblockFeatureSettings"
         android:title="@string/adblock"
         android:summary="@string/adblock_summary" />
+    <org.triple.banana.settings.preference.DarkModePreference
+        android:key="feature_name_dark_mode"
+        android:title="@string/dark_mode"
+        android:summaryOn="@string/dark_mode_summary"
+        android:summaryOff="@string/text_off" />
     <org.triple.banana.settings.preference.TranslatePreference
         android:key="feature_name_translate"
         android:title="@string/translate_button"
