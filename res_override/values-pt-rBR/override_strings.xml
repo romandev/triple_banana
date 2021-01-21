@@ -55,7 +55,7 @@
 <string name="remove_local_data">"Limpar também seus dados do Banana Browser deste dispositivo"</string>
 <string name="signout_managed_account_message">"Você está saindo de uma conta gerenciada por %1$s, por isso seus dados do Banana Browser serão excluídos deste dispositivo. No entanto, eles permanecerão na sua Conta do Google."</string>
 <string name="sign_in_managed_account_description">"Você está fazendo login com uma conta gerenciada por %1$s e dando ao administrador dela o controle sobre seus dados do Banana Browser, os quais ficarão permanentemente vinculados a essa conta. Se você sair do Banana Browser, seus dados serão excluídos desse dispositivo, mas permanecerão armazenados na sua Conta do Google."</string>
-<string name="ntp_recent_tabs_sync_promo_instructions">"As guias que você abriu no Banana Browser nos seus outros dispositivos serão exibidas aqui."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Aqui ficam as guias do Banana Browser que você abriu em outros dispositivos."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"O Banana Browser não pôde ativar o adaptador Bluetooth"</string>
 <string name="bluetooth_need_location_permission">"O Banana Browser precisa de acesso ao local para procurar por dispositivos. &lt;permission_link&gt;Atualizar permissões&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"O Banana Browser precisa ter acesso ao local para verificar dispositivos. O acesso ao local está &lt;services_link&gt;desativado neste dispositivo&lt;/services_link&gt;."</string>

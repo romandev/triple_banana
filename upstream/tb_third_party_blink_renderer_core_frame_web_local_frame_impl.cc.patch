@@ -12,7 +12,7 @@ diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_d
  namespace blink {
  
  static int g_frame_count = 0;
-@@ -2377,6 +2381,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
+@@ -2383,6 +2387,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
    if (!GetFrame() || !GetFrame()->DomWindow())
      return;
  

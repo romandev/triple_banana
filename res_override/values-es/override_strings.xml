@@ -54,7 +54,7 @@ Es posible que tu cuenta de Google tenga otros tipos de historial de navegación
 <string name="remove_local_data">"Borrar también los datos de Banana Browser de este dispositivo"</string>
 <string name="signout_managed_account_message">"Estás cerrando sesión de una cuenta gestionada por %1$s, por lo que tus datos de Banana Browser se eliminarán de este dispositivo. Sin embargo, permanecerán en tu cuenta de Google."</string>
 <string name="sign_in_managed_account_description">"Estás iniciando sesión con una cuenta gestionada por %1$s, lo que significa que vas a proporcionar a su administrador el control sobre tus datos de Banana Browser. Los datos se vincularán de forma permanente a esta cuenta. Si cierras sesión en Banana Browser, se eliminarán los datos de este dispositivo, pero permanecerán almacenados en tu cuenta de Google."</string>
-<string name="ntp_recent_tabs_sync_promo_instructions">"Aquí aparecen las pestañas que hayas abierto en Banana Browser en otros dispositivos."</string>
+<string name="ntp_recent_tabs_sync_promo_instructions">"Las pestañas que hayas abierto en Banana Browser en otros dispositivos aparecerán aquí."</string>
 <string name="bluetooth_unable_to_turn_on_adapter">"Banana Browser no ha podido activar el adaptador Bluetooth"</string>
 <string name="bluetooth_need_location_permission">"Banana Browser necesita acceder a la ubicación para buscar dispositivos. &lt;permission_link&gt;Actualizar los permisos&lt;/permission_link&gt;"</string>
 <string name="bluetooth_need_location_services_on">"Banana Browser necesita acceder a la ubicación para buscar dispositivos. El acceso a la ubicación está &lt;services_link&gt;desactivado en este dispositivo&lt;/services_link&gt;."</string>

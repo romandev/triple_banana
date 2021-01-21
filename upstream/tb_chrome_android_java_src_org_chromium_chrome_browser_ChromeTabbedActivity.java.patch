@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeTabbedActivity.java
-@@ -1879,6 +1879,8 @@ public class ChromeTabbedActivity extends ChromeActivity<ChromeActivityComponent
+@@ -1895,6 +1895,8 @@ public class ChromeTabbedActivity extends ChromeActivity<ChromeActivityComponent
  
          final boolean shouldCloseTab = backShouldCloseTab(currentTab);
  

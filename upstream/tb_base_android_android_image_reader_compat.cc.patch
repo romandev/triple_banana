@@ -1,8 +1,8 @@
 diff --git tb/base/android/android_image_reader_compat.cc tb_diff/base/android/android_image_reader_compat.cc
 --- tb/base/android/android_image_reader_compat.cc
 +++ tb_diff/base/android/android_image_reader_compat.cc
-@@ -42,7 +42,11 @@ bool AndroidImageReader::LimitAImageReaderMaxSizeToOne() {
-                     CompareCase::INSENSITIVE_ASCII);
+@@ -34,7 +34,11 @@ bool AndroidImageReader::IsSupported() {
+   return is_supported_;
  }
  
 +#if defined(ENABLE_TRIPLE_BANANA) && defined(ARCH_CPU_ARM64)

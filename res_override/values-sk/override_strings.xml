@@ -6,7 +6,6 @@
 <string name="password_check_status_message_error_signed_out">"Keď sa prihlásite pomocou účtu Google, Banana Browser môže skontrolovať vaše heslá."</string>
 <string name="password_check_status_message_error_unknown">"Banana Browser nemôže skontrolovať heslá. Skúste to znova."</string>
 <string name="password_check_status_subtitle_no_findings">"Banana Browser vás upozorní, keď sa prihlásite prelomeným heslom."</string>
-<string name="sign_in_to_chrome">"Prihlásenie do prehliadača Banana Browser"</string>
 <string name="autofill_describe_local_copy">"Skopírovaná do prehliadača Banana Browser"</string>
 <string name="password_settings_export_action_description">"Exportovať heslá uložené v Banana Browser"</string>
 <string name="safe_browsing_scout_reporting_summary">"Banana Browser odosiela Googlu webové adresy niektorých navštívených stránok, obmedzené informácie o systéme a obsah niektorých stránok na účely rozpoznávania nebezpečných aplikácií a webov."</string>

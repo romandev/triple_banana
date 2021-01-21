@@ -98,7 +98,7 @@ Voor je Google-account kunnen andere vormen van browsegeschiedenis (zoals zoekop
 <string name="storage_management_reset_app_dialog_text">"Alle app-gegevens voor Banana Browser worden definitief verwijderd. Dit omvat alle bestanden, instellingen, accounts, databases, enzovoort."</string>
 <string name="sogou_explanation">"Banana Browser kan &lt;b&gt;Sogou&lt;/b&gt; gebruiken voor zoekopdrachten in China. Je kunt dit wijzigen in &lt;link&gt;Instellingen&lt;/link&gt;."</string>
 <string name="twa_running_in_chrome">"Actief in Banana Browser"</string>
-<string name="twa_running_in_chrome_v2">"Je ziet je inlogstatus, browsergegevens en sitegegevens van %1$s in Banana Browser"</string>
+<string name="twa_running_in_chrome_v2">"Je ziet je inlogstatus, browsegegevens en sitegegevens van %1$s in Banana Browser"</string>
 <string name="twa_clear_data_dialog_title">"%1$s heeft ook gegevens in Banana Browser"</string>
 <string name="twa_clear_data_dialog_message">"Je kunt de gegevens wissen in de Banana Browser-instellingen"</string>
 <string name="keyboard_shortcut_help_center">"Helpcentrum van Banana Browser openen in een nieuw tabblad"</string>
