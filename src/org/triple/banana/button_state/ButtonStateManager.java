@@ -84,5 +84,8 @@ public class ButtonStateManager implements BananaButtonStateManager {
         mCachedState.put(R.id.add_to_home,
                 BananaButtonStateProvider.get().canUseAddToHome() ? ButtonState.ENABLE
                                                                   : ButtonState.DISABLE);
+        mCachedState.put(R.id.translate,
+                BananaButtonStateProvider.get().canUseTranslate() ? ButtonState.ENABLE
+                                                                  : ButtonState.DISABLE);
     }
 }

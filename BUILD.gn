@@ -373,6 +373,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/ic_settings.xml",
     "//triple_banana/res/drawable/ic_share_black_24dp.xml",
     "//triple_banana/res/drawable/ic_star_border_black_24dp.xml",
+    "//triple_banana/res/drawable/ic_translate.xml",
     "//triple_banana/res/drawable/ic_visit_history_black_24dp.xml",
     "//triple_banana/res/drawable/ic_volume_up.xml",
     "//triple_banana/res/drawable/media_feature.xml",

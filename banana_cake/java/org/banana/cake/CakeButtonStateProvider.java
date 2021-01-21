@@ -18,6 +18,7 @@ import org.chromium.chrome.browser.ShortcutHelper;
 import org.chromium.chrome.browser.download.DownloadUtils;
 import org.chromium.chrome.browser.share.ShareUtils;
 import org.chromium.chrome.browser.tab.Tab;
+import org.chromium.chrome.browser.translate.TranslateUtils;
 import org.chromium.components.embedder_support.util.UrlConstants;
 
 class CakeButtonStateProvider implements BananaButtonStateProvider {
@@ -60,6 +61,15 @@ class CakeButtonStateProvider implements BananaButtonStateProvider {
 
         return ShortcutHelper.isAddToHomeIntentSupported() && !isChromeScheme && !isFileScheme
                 && !isContentScheme && !isIncognito && !TextUtils.isEmpty(url);
+    }
+
+    @Override
+    public boolean canUseTranslate() {
+        Tab currentTab = getActivityTab();
+        if (currentTab == null) {
+            return false;
+        }
+        return TranslateUtils.canTranslateCurrentTab(currentTab);
     }
 
     private @Nullable Tab getActivityTab() {

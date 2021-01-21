@@ -83,6 +83,7 @@
     <string name="terminate">Terminate</string>
     <string name="toolbar_editor">Toolbar Editor</string>
     <string name="toolbar_editor_summary">Personalize your browing experience rearranging frequently used buttons on the bottom toolbar</string>
+    <string name="translate">Translate</string>
     <string name="update_adblock_filter">Check for adblock filter updates</string>
     <string name="update_adblock_filter_summary">Experience even more powerful adblock feature with the latest filters</string>
     <string name="user_data">User Data</string>

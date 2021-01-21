@@ -34,7 +34,6 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                                 -> BananaToolbarManager.get().openSettingPage(
                                         AdblockFeatureSettings.class));
                 put(R.id.add_secret_tab, BananaToolbarManager.get()::addSecretTab);
-                put(R.id.add_to_home, BananaToolbarManager.get()::addToHomeScreen);
                 put(R.id.archive, BananaToolbarManager.get()::goArchive);
                 put(R.id.close_tab, BananaToolbarManager.get()::closeCurrentTab);
                 put(R.id.dark_mode, DarkModeController.get()::toggle);
@@ -58,6 +57,7 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                         BananaToolbarManager.get().terminate();
                     }
                 });
+                put(R.id.translate, BananaToolbarManager.get()::translateCurrentTab);
                 put(R.id.user_interface,
                         ()
                                 -> BananaToolbarManager.get().openSettingPage(

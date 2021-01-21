@@ -33,4 +33,5 @@ public interface BananaToolbarManager {
     void closeCurrentTab();
     void openQRCodeDialog();
     boolean getUseDesktopUserAgent();
+    void translateCurrentTab();
 }

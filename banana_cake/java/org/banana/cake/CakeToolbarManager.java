@@ -207,4 +207,11 @@ public class CakeToolbarManager implements BananaToolbarManager {
         if (tab == null || tab.getWebContents() == null) return false;
         return tab.getWebContents().getNavigationController().getUseDesktopUserAgent();
     }
+
+    @Override
+    public void translateCurrentTab() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+        activity.onMenuOrKeyboardAction(R.id.translate_id, false);
+    }
 }

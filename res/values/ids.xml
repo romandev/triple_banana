@@ -22,6 +22,7 @@
     <item type="id" name="settings" />
     <item type="id" name="share" />
     <item type="id" name="terminate" />
+    <item type="id" name="translate" />
     <item type="id" name="user_interface" />
     <item type="id" name="visit_history" />
 </resources>

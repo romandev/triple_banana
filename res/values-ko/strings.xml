@@ -82,6 +82,7 @@
     <string name="terminate">종료</string>
     <string name="toolbar_editor">도구모음 편집하기</string>
     <string name="toolbar_editor_summary">여러분의 취향에 따라 자주 사용하는 기능을 도구모음에 배치하세요</string>
+    <string name="translate">번역</string>
     <string name="update_adblock_filter">광고차단 필터 업데이트 확인</string>
     <string name="update_adblock_filter_summary">최신 필터로 더욱 강력한 광고차단 기능을 경험하세요</string>
     <string name="user_data">사용자 기록</string>
