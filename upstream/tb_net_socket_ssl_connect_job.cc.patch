@@ -1,0 +1,28 @@
+diff --git tb/net/socket/ssl_connect_job.cc tb_diff/net/socket/ssl_connect_job.cc
+--- tb/net/socket/ssl_connect_job.cc
++++ tb_diff/net/socket/ssl_connect_job.cc
+@@ -35,6 +35,10 @@
+ #include "third_party/boringssl/src/include/openssl/pool.h"
+ #include "third_party/boringssl/src/include/openssl/ssl.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "net/dns/public/secure_dns_mode.h"
++#endif
++
+ namespace net {
+ 
+ namespace {
+@@ -366,6 +370,13 @@ int SSLConnectJob::DoSSLConnect() {
+   ssl_config.network_isolation_key = params_->network_isolation_key();
+   ssl_config.privacy_mode = params_->privacy_mode();
+   ssl_config.disable_legacy_crypto = disable_legacy_crypto_with_fallback_;
++#if defined(ENABLE_TRIPLE_BANANA)
++  ssl_config.secure_dns_mode =
++      static_cast<SecureDnsMode>(host_resolver()
++                                     ->GetDnsConfigAsValue()
++                                     .FindIntKey("secure_dns_mode")
++                                     .value_or(0));
++#endif
+   ssl_socket_ = client_socket_factory()->CreateSSLClientSocket(
+       ssl_client_context(), std::move(nested_socket_), params_->host_and_port(),
+       ssl_config);

@@ -1,0 +1,25 @@
+diff --git tb/net/ssl/ssl_config.h tb_diff/net/ssl/ssl_config.h
+--- tb/net/ssl/ssl_config.h
++++ tb_diff/net/ssl/ssl_config.h
+@@ -16,6 +16,10 @@
+ #include "net/socket/next_proto.h"
+ #include "net/ssl/ssl_private_key.h"
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++#include "net/dns/public/secure_dns_mode.h"
++#endif
++
+ namespace net {
+ 
+ // Various TLS/SSL ProtocolVersion values encoded as uint16_t
+@@ -141,6 +145,10 @@ struct NET_EXPORT SSLConfig {
+   // PartitionSSLSessionsByNetworkIsolationKey.
+   PrivacyMode privacy_mode = PRIVACY_MODE_DISABLED;
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  SecureDnsMode secure_dns_mode = SecureDnsMode::kOff;
++#endif
++
+   // True if the post-handshake peeking of the transport should be skipped. This
+   // logic ensures tickets are resolved early, but can interfere with some unit
+   // tests.
