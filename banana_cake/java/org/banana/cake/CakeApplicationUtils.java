@@ -8,13 +8,14 @@ package org.banana.cake;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
+import org.triple.banana.R;
 
 import org.chromium.base.ApplicationStatus;
 import org.chromium.base.ContextUtils;
-import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ApplicationLifetime;
 import org.chromium.chrome.browser.customtabs.CustomTabActivity;
 import org.chromium.chrome.browser.firstrun.FirstRunStatus;
@@ -66,5 +67,15 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     @Override
     public boolean isFirstInstall() {
         return !FirstRunStatus.getFirstRunFlowComplete();
+    }
+
+    @Override
+    public void showRestartDialog(@NonNull Context context) {
+        getDialogBuilder(context)
+                .setMessage(R.string.restart_message)
+                .setNegativeButton(android.R.string.cancel, null)
+                .setPositiveButton(android.R.string.ok, (dialog, which) -> restart())
+                .create()
+                .show();
     }
 }

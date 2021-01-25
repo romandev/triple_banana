@@ -1,6 +1,15 @@
 diff --git tb/chrome/android/java/res/xml/privacy_preferences.xml tb_diff/chrome/android/java/res/xml/privacy_preferences.xml
 --- tb/chrome/android/java/res/xml/privacy_preferences.xml
 +++ tb_diff/chrome/android/java/res/xml/privacy_preferences.xml
+@@ -31,7 +31,7 @@
+     <org.chromium.components.browser_ui.settings.ChromeBasePreference
+         android:key="secure_dns"
+         android:title="@string/settings_secure_dns_title"
+-        android:fragment="org.chromium.chrome.browser.privacy.secure_dns.SecureDnsSettings"
++        android:fragment="org.banana.cake.interfaces.BananaSecureDnsSettings"
+         android:order="4"/>
+     <Preference
+         android:key="clear_browsing_data"
 @@ -46,6 +46,7 @@
          android:fragment="org.chromium.chrome.browser.safe_browsing.settings.SafeBrowsingSettingsFragment"
          android:order="6"/>

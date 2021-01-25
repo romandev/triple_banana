@@ -1,6 +1,15 @@
 diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java tb_diff/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java
 --- tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java
 +++ tb_diff/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsSettings.java
+@@ -27,7 +27,7 @@ public class SecureDnsSettings extends PreferenceFragmentCompat {
+     private static final String PREF_SECURE_DNS_SWITCH = "secure_dns_switch";
+     private static final String PREF_SECURE_DNS_PROVIDER = "secure_dns_provider";
+ 
+-    private ChromeSwitchPreference mSecureDnsSwitch;
++    protected ChromeSwitchPreference mSecureDnsSwitch;
+     private SecureDnsProviderPreference mSecureDnsProviderPreference;
+ 
+     public static boolean isUiEnabled() {
 @@ -67,6 +67,11 @@ public class SecureDnsSettings extends PreferenceFragmentCompat {
          mSecureDnsSwitch.setManagedPreferenceDelegate(
                  (ChromeManagedPreferenceDelegate) preference -> SecureDnsBridge.isModeManaged());

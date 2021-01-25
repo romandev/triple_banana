@@ -10,12 +10,10 @@ import android.util.AttributeSet;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.preference.Preference;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaSwitchPreference;
-import org.triple.banana.R;
 
 class RestartSwitchPreference extends BananaSwitchPreference {
     protected RestartSwitchPreference(Context context, AttributeSet attrs) {
@@ -30,7 +28,7 @@ class RestartSwitchPreference extends BananaSwitchPreference {
             boolean isValueChanged =
                     ensureNonNull(listener).onPreferenceChange(preference, newValue);
             if (isValueChanged) {
-                showRestartDialog();
+                BananaApplicationUtils.get().showRestartDialog(getContext());
             }
             return isValueChanged;
         });
@@ -44,16 +42,5 @@ class RestartSwitchPreference extends BananaSwitchPreference {
             };
         }
         return listener;
-    }
-
-    private void showRestartDialog() {
-        BananaApplicationUtils.get()
-                .getDialogBuilder(getContext())
-                .setMessage(R.string.restart_message)
-                .setNegativeButton(android.R.string.cancel, null)
-                .setPositiveButton(android.R.string.ok,
-                        (dialog, which) -> { BananaApplicationUtils.get().restart(); })
-                .create()
-                .show();
     }
 }
