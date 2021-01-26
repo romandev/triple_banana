@@ -4,3 +4,9 @@
 # file, You can obtain one at https://mozilla.org/MPL/2.0/.
 
 -keep public class org.triple.banana.settings.*
+
+# Every fragment must have an empty constructor, so it can be instantiated when
+# restoring its activity's state.
+-keep public class org.banana.** extends androidx.fragment.app.Fragment {
+  public <init>();
+}
