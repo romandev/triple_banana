@@ -1,0 +1,15 @@
+diff --git tb/components/autofill/core/common/autofill_util.cc tb_diff/components/autofill/core/common/autofill_util.cc
+--- tb/components/autofill/core/common/autofill_util.cc
++++ tb_diff/components/autofill/core/common/autofill_util.cc
+@@ -64,9 +64,9 @@ bool IsKeyboardAccessoryEnabled() {
+ }
+ 
+ bool IsTouchToFillEnabled() {
+-#if defined(OS_ANDROID)
++#if defined(OS_ANDROID) && !defined(ENABLE_TRIPLE_BANANA)
+   return true;
+-#else  // !defined(OS_ANDROID)
++#else  // !defined(OS_ANDROID) || defined(ENABLE_TRIPLE_BANANA)
+   return false;
+ #endif
+ }
