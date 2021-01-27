@@ -92,12 +92,15 @@ public enum ButtonId {
         });
 
         sOnClickListeners.put(ButtonId.TERMINATE, v -> {
-            if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
-                BananaClearBrowsingData.get().clearBrowsingData(
-                        () -> BananaToolbarManager.get().terminate());
-            } else {
-                BananaToolbarManager.get().terminate();
+            BananaTab tab = BananaTabManager.get().getActivityTab();
+            if (tab == null) {
+                return;
             }
+            Context context = tab.getContext();
+            if (context == null) {
+                return;
+            }
+            TerminateBrowser.getInstance().terminate(context);
         });
         sOnClickListeners.put(ButtonId.AT_ME_GAME,
                 v

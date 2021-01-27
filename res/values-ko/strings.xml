@@ -80,6 +80,7 @@
     <string name="secure_login_summary">웹 페이지에 로그인을 할 때, 저장된 사용자 비밀번호를 사용하는 경우 추가 인증을 사용합니다 (예: 생체 인증, 패턴, PIN 등)</string>
     <string name="share">공유</string>
     <string name="terminate">종료</string>
+    <string name="terminate_browser">바나나 브라우저를 종료 하시겠습니까?</string>
     <string name="toolbar_editor">도구모음 편집하기</string>
     <string name="toolbar_editor_summary">여러분의 취향에 따라 자주 사용하는 기능을 도구모음에 배치하세요</string>
     <string name="translate">번역</string>

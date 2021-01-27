@@ -5,12 +5,16 @@
 
 package org.triple.banana.quick_menu;
 
+import android.content.Context;
+
 import androidx.annotation.IdRes;
 import androidx.annotation.NonNull;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaClearBrowsingData;
 import org.banana.cake.interfaces.BananaSecureDnsSettings;
+import org.banana.cake.interfaces.BananaTab;
+import org.banana.cake.interfaces.BananaTabManager;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.settings.AdblockFeatureSettings;
@@ -19,6 +23,7 @@ import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.settings.MediaFeatureSettings;
 import org.triple.banana.settings.UserInterfaceSettings;
 import org.triple.banana.theme.DarkModeController;
+import org.triple.banana.toolbar.TerminateBrowser;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -50,12 +55,15 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                                         BananaSecureDnsSettings.class));
                 put(R.id.share, BananaToolbarManager.get()::share);
                 put(R.id.terminate, () -> {
-                    if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
-                        BananaClearBrowsingData.get().clearBrowsingData(
-                                () -> BananaToolbarManager.get().terminate());
-                    } else {
-                        BananaToolbarManager.get().terminate();
+                    BananaTab tab = BananaTabManager.get().getActivityTab();
+                    if (tab == null) {
+                        return;
                     }
+                    Context context = tab.getContext();
+                    if (context == null) {
+                        return;
+                    }
+                    TerminateBrowser.getInstance().terminate(context);
                 });
                 put(R.id.translate, BananaToolbarManager.get()::translateCurrentTab);
                 put(R.id.user_interface,

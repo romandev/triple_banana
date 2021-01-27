@@ -81,6 +81,7 @@
     <string name="secure_login_summary">Use additional authentications to autofill stored credentials data securely when you try to sign-in on web sites (e.g. Biometrics, Pattern, PIN and so on)</string>
     <string name="share">Share</string>
     <string name="terminate">Terminate</string>
+    <string name="terminate_browser">Will you terminate Banana Browser?</string>
     <string name="toolbar_editor">Toolbar Editor</string>
     <string name="toolbar_editor_summary">Personalize your browing experience rearranging frequently used buttons on the bottom toolbar</string>
     <string name="translate">Translate</string>
