@@ -36,7 +36,6 @@
     <string name="desktop_view">데스크톱 사이트</string>
     <string name="detail_settings">상세 설정</string>
     <string name="discard">저장 안 함</string>
-    <string name="download">다운로드</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여\n도구모음에 배치하세요</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
     <string name="external_download_manager">외부 다운로드 관리자 사용</string>
@@ -72,6 +71,7 @@
     <string name="reset">초기화</string>
     <string name="restart_message">Banana Browser를 다시 시작하면 변경사항이 적용됩니다</string>
     <string name="save">저장</string>
+    <string name="save_page">페이지 저장</string>
     <string name="save_suggestion_message">변경사항을 저장하시겠습니까?</string>
     <string name="search">검색</string>
     <string name="secure_dns">안전한 DNS</string>

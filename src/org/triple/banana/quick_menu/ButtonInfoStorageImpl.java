@@ -24,15 +24,15 @@ class ButtonInfoStorageImpl implements ButtonInfoStorage, Model.Data {
                 add(new ButtonInfo(R.id.secure_dns,
                         R.drawable.secure_dns, R.string.secure_dns));
                 add(new ButtonInfo(
-                        R.id.dark_mode, R.drawable.ic_dark_black_24dp, R.string.dark_mode));
-                add(new ButtonInfo(
                         R.id.media_feature, R.drawable.media_feature, R.string.media_features));
+                add(new ButtonInfo(R.id.translate, R.drawable.ic_translate, R.string.translate));
                 add(new ButtonInfo(
                         R.id.visit_history, R.drawable.ic_visit_history_black_24dp, R.string.visit_history));
                 add(new ButtonInfo(
                         R.id.archive, R.drawable.ic_archive_black_24dp, R.string.archive));
-                add(new ButtonInfo(R.id.download, R.drawable.ic_download, R.string.download));
-                add(new ButtonInfo(R.id.translate, R.drawable.ic_translate, R.string.translate));
+                add(new ButtonInfo(R.id.download, R.drawable.ic_download, R.string.save_page));
+                add(new ButtonInfo(
+                        R.id.dark_mode, R.drawable.ic_dark_black_24dp, R.string.dark_mode));
                 add(new ButtonInfo(R.id.share, R.drawable.ic_share_black_24dp, R.string.share));
                 add(new ButtonInfo(R.id.qr_code, R.drawable.qr_code, R.string.qr_code));
                 add(new ButtonInfo(R.id.find_in_page,
