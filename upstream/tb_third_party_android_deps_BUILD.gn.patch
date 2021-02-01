@@ -1,0 +1,16 @@
+diff --git tb/third_party/android_deps/BUILD.gn tb_diff/third_party/android_deps/BUILD.gn
+--- tb/third_party/android_deps/BUILD.gn
++++ tb_diff/third_party/android_deps/BUILD.gn
+@@ -367,8 +367,10 @@ android_aar_prebuilt("androidx_fragment_fragment_java") {
+ 
+   ignore_proguard_configs = true
+ 
+-  bytecode_rewriter_target =
+-      "//build/android/bytecode:fragment_activity_replacer"
++  #if !defined(ENABLE_TRIPLE_BANANA)
++  # bytecode_rewriter_target =
++  #     "//build/android/bytecode:fragment_activity_replacer"
++  #endif
+ }
+ 
+ # This is generated, do not edit. Update BuildConfigGenerator.groovy instead.
