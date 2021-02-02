@@ -20,6 +20,7 @@ import org.chromium.chrome.browser.share.ShareUtils;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.translate.TranslateUtils;
 import org.chromium.components.embedder_support.util.UrlConstants;
+import org.chromium.content_public.browser.NavigationController;
 
 class CakeButtonStateProvider implements BananaButtonStateProvider {
     @Override
@@ -35,15 +36,6 @@ class CakeButtonStateProvider implements BananaButtonStateProvider {
     public boolean canUseShare() {
         ShareUtils shareUtils = new ShareUtils();
         return shareUtils.shouldEnableShare(getActivityTab());
-    }
-
-    @Override
-    public boolean canUseFindInPage() {
-        Tab currentTab = getActivityTab();
-        if (currentTab == null) {
-            return false;
-        }
-        return !currentTab.isNativePage() && currentTab.getWebContents() != null;
     }
 
     @Override
@@ -70,6 +62,29 @@ class CakeButtonStateProvider implements BananaButtonStateProvider {
             return false;
         }
         return TranslateUtils.canTranslateCurrentTab(currentTab);
+    }
+
+    @Override
+    public boolean isWebContentAvailable() {
+        final Tab currentTab = getActivityTab();
+        if (currentTab == null) {
+            return false;
+        }
+        return !currentTab.isNativePage() && currentTab.getWebContents() != null;
+    }
+
+    @Override
+    public boolean isDesktopPage() {
+        final Tab currentTab = getActivityTab();
+        if (currentTab == null || currentTab.getWebContents() == null) {
+            return false;
+        }
+        final NavigationController controller =
+                currentTab.getWebContents().getNavigationController();
+        if (controller == null) {
+            return false;
+        }
+        return controller.getUseDesktopUserAgent();
     }
 
     private @Nullable Tab getActivityTab() {

@@ -14,7 +14,8 @@ public interface BananaButtonStateProvider {
 
     boolean canUseDownloadPage();
     boolean canUseShare();
-    boolean canUseFindInPage();
     boolean canUseAddToHome();
     boolean canUseTranslate();
+    boolean isWebContentAvailable();
+    boolean isDesktopPage();
 }

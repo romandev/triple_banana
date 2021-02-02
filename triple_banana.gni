@@ -7,7 +7,6 @@ triple_banana_hooks_sources = [
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaApplicationEvent.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaApplicationUtils.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaBottomToolbarController.java",
-  "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaButtonStateManager.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaButtonStateProvider.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaClearBrowsingData.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaCommandLine.java",

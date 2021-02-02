@@ -27,14 +27,12 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActi
      @Override
      protected void onUserLeaveHint() {
          super.onUserLeaveHint();
-@@ -2093,9 +2105,15 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -2093,9 +2105,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);
 +            org.banana.cake.interfaces.BananaBottomToolbarController.get()
 +                    .updateDesktopViewButtonState(!usingDesktopUserAgent);
-+            org.banana.cake.interfaces.BananaButtonStateManager.get().updateDesktopPageButtonState(
-+                    !usingDesktopUserAgent);
              RecordUserAction.record("MobileMenuRequestDesktopSite");
          } else if (id == R.id.reader_mode_prefs_id) {
              DomDistillerUIUtils.openSettings(currentTab.getWebContents());

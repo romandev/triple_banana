@@ -12,30 +12,33 @@ import org.triple.banana.R;
 import org.triple.banana.button_state.ButtonStateManager;
 import org.triple.banana.button_state.ButtonStateManager.ButtonState;
 
-class ViewControllerImpl implements ViewController, ButtonStateManager.Listener {
+class ViewControllerImpl implements ViewController {
     private final @NonNull ViewModelImpl mViewModel;
     private final @NonNull ButtonInfoStorage mStorage;
     private final @NonNull ButtonActionProvider mActionProvider;
     private final @NonNull ButtonStateManager mStateManager;
 
     ViewControllerImpl(@NonNull ViewModelImpl viewModel, @NonNull ButtonInfoStorage storage,
-            @NonNull ButtonActionProvider actionProvider) {
+            @NonNull ButtonActionProvider actionProvider,
+            @NonNull ButtonStateManager stateManager) {
         mViewModel = viewModel;
         mStorage = storage;
         mActionProvider = actionProvider;
-        mStateManager = ButtonStateManager.getInstance();
+        mStateManager = stateManager;
     }
 
     @Override
     public void onShow() {
         mViewModel.setButtons(mStorage.getButtons());
-        mStateManager.addListener(this);
+        for (final ButtonInfo buttonInfo : mViewModel.getButtons()) {
+            final ButtonState state = mStateManager.getButtonState(buttonInfo.id);
+            updateButtonState(buttonInfo.id, state);
+        }
         mViewModel.notifyViews();
     }
 
     @Override
     public void onDismiss() {
-        mStateManager.removeListener(this);
     }
 
     @Override
@@ -44,8 +47,7 @@ class ViewControllerImpl implements ViewController, ButtonStateManager.Listener 
         return true /* dismiss */;
     }
 
-    @Override
-    public void onUpdateButtonState(@IdRes int id, @NonNull ButtonState state) {
+    private void updateButtonState(final @IdRes int id, final @NonNull ButtonState state) {
         int image = 0;
         int label = 0;
         boolean enabled = true;
@@ -66,6 +68,5 @@ class ViewControllerImpl implements ViewController, ButtonStateManager.Listener 
                 break;
         }
         mViewModel.updateButton(new ButtonInfo(id, image, label, enabled));
-        mViewModel.notifyViews();
     }
 }

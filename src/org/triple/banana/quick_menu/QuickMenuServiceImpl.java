@@ -10,6 +10,8 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import org.triple.banana.button_state.ButtonStateManager;
+
 import java.lang.ref.WeakReference;
 
 enum QuickMenuServiceImpl implements QuickMenuService {
@@ -26,8 +28,9 @@ enum QuickMenuServiceImpl implements QuickMenuService {
         ViewModelImpl viewModel = new ViewModelImpl();
         ButtonInfoStorage storage = new ButtonInfoStorageImpl();
         ButtonActionProvider actionProvider = new ButtonActionProviderImpl();
+        ButtonStateManager stateManager = ButtonStateManager.get();
         ViewController controller =
-                new ViewControllerImpl(viewModel, storage, actionProvider);
+                new ViewControllerImpl(viewModel, storage, actionProvider, stateManager);
         View view = new DialogBasedViewImpl(context, controller);
         mView = new WeakReference(view);
 
