@@ -8,6 +8,7 @@ package org.banana.cake;
 import android.content.Context;
 import android.content.SharedPreferences;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
@@ -18,6 +19,8 @@ import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ApplicationLifetime;
 import org.chromium.chrome.browser.customtabs.CustomTabActivity;
 import org.chromium.chrome.browser.firstrun.FirstRunStatus;
+import org.chromium.chrome.browser.settings.SettingsLauncher;
+import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
 import org.chromium.ui.UiUtils;
 
 class CakeApplicationUtils implements BananaApplicationUtils {
@@ -66,5 +69,11 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     @Override
     public boolean isFirstInstall() {
         return !FirstRunStatus.getFirstRunFlowComplete();
+    }
+
+    @Override
+    public void openBrowserSettings(@NonNull Context context) {
+        SettingsLauncher settingsLauncher = new SettingsLauncherImpl();
+        settingsLauncher.launchSettingsActivity(context);
     }
 }

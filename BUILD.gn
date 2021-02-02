@@ -232,6 +232,7 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/settings/preference/BackgroundPlayPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/BottomToolbarPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/BrowserLockPreference.java",
+    "//triple_banana/src/org/triple/banana/settings/preference/BrowserSettingsPreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/DarkModePreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/LongClickablePreference.java",
     "//triple_banana/src/org/triple/banana/settings/preference/MediaRemotePreference.java",
