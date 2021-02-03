@@ -11,7 +11,7 @@
 
 function reset_upstream_patches() {
   push_dir $(triple_banana_upstream_path)
-  rm -f *.patch
+  find . ! -name "*androidx_preference_preference_java.jar*" -delete
   pop_dir
 }
 
@@ -21,6 +21,7 @@ function update_upstream_patches() {
   git diff refs/tags/$(get_chromium_version) \
       --src-prefix="tb/" \
       --dst-prefix="tb_diff/" \
+      ":!*androidx_preference_preference_java.jar" \
       | sed -r "/^index\ [a-z|0-9]+\.\.[a-z|0-9]+[\ ]?[0-9]*$/d" \
       > /tmp/triple_banana.patch &&
   push_dir $(triple_banana_upstream_path) &&
