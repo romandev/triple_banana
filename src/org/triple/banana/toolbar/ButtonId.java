@@ -5,13 +5,11 @@
 
 package org.triple.banana.toolbar;
 
-import android.content.Context;
+import android.app.Activity;
 import android.view.View;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaClearBrowsingData;
-import org.banana.cake.interfaces.BananaTab;
-import org.banana.cake.interfaces.BananaTabManager;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 import org.triple.banana.quick_menu.QuickMenuService;
@@ -60,15 +58,11 @@ public enum ButtonId {
         sOnClickListeners.put(ButtonId.SEARCH, v -> BananaToolbarManager.get().search());
         sOnClickListeners.put(ButtonId.NEW_TAB, v -> BananaToolbarManager.get().addNewTab());
         sOnClickListeners.put(ButtonId.BANANA_EXTENSION, v -> {
-            BananaTab tab = BananaTabManager.get().getActivityTab();
-            if (tab == null) {
+            Activity activity = BananaApplicationUtils.get().getLastTrackedFocusedActivity();
+            if (activity == null) {
                 return;
             }
-            Context context = tab.getContext();
-            if (context == null) {
-                return;
-            }
-            QuickMenuService.get().show(context);
+            QuickMenuService.get().show(activity);
         });
         sOnClickListeners.put(ButtonId.BOOKMARK, v -> BananaToolbarManager.get().goBookmark());
         sOnClickListeners.put(

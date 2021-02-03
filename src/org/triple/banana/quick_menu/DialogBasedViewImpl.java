@@ -5,8 +5,8 @@
 
 package org.triple.banana.quick_menu;
 
+import android.app.Activity;
 import android.app.Dialog;
-import android.content.Context;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Handler;
@@ -34,8 +34,8 @@ class DialogBasedViewImpl extends Dialog implements View {
     private final @NonNull android.view.View.OnClickListener mClickListener;
     private @Nullable GridLayout mMiddleButtonContainer;
 
-    DialogBasedViewImpl(@NonNull Context context, @NonNull ViewController controller) {
-        super(context);
+    DialogBasedViewImpl(@NonNull Activity activity, @NonNull ViewController controller) {
+        super(activity);
 
         mController = controller;
         mRotationManager = new RotationManager();

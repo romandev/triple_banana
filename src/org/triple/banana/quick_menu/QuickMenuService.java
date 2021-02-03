@@ -5,7 +5,7 @@
 
 package org.triple.banana.quick_menu;
 
-import android.content.Context;
+import android.app.Activity;
 
 import androidx.annotation.NonNull;
 
@@ -14,5 +14,5 @@ public interface QuickMenuService {
         return QuickMenuServiceImpl.instance;
     }
 
-    void show(@NonNull Context context);
+    void show(@NonNull Activity activity);
 }

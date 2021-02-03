@@ -5,10 +5,12 @@
 
 package org.banana.cake.interfaces;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
 import org.chromium.base.ActivityState;
@@ -32,4 +34,6 @@ public interface BananaApplicationUtils {
     void showInfoPage(String url);
     boolean isFirstInstall();
     void openBrowserSettings(@NonNull Context context);
+    @Nullable
+    Activity getLastTrackedFocusedActivity();
 }

@@ -37,7 +37,7 @@ public class Authenticator {
     }
 
     public void authenticate(@NonNull Callback callback) {
-        Activity parent = org.chromium.base.ApplicationStatus.getLastTrackedFocusedActivity();
+        Activity parent = BananaApplicationUtils.get().getLastTrackedFocusedActivity();
         if (!(parent instanceof FragmentActivity)) {
             callback.onResult(false);
             return;

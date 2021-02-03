@@ -22,6 +22,7 @@ import androidx.biometric.BiometricPrompt.PromptInfo;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.triple.banana.R;
 import org.triple.banana.authentication.Authenticator.Callback;
 
@@ -110,7 +111,8 @@ public class BiometricPromptBackend
     public void onAuthenticationFailed() {}
 
     private void showErrorMessage(CharSequence errorMessage) {
-        Activity parent = org.chromium.base.ApplicationStatus.getLastTrackedFocusedActivity();
+        Activity parent = BananaApplicationUtils.get().getLastTrackedFocusedActivity();
+        if (parent == null) return;
         AlertDialog errorDialog =
                 new AlertDialog
                         .Builder(parent,

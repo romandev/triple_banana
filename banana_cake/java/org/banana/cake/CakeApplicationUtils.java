@@ -5,10 +5,12 @@
 
 package org.banana.cake;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 
 import org.banana.cake.interfaces.BananaApplicationUtils;
@@ -75,5 +77,10 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     public void openBrowserSettings(@NonNull Context context) {
         SettingsLauncher settingsLauncher = new SettingsLauncherImpl();
         settingsLauncher.launchSettingsActivity(context);
+    }
+
+    @Override
+    public @Nullable Activity getLastTrackedFocusedActivity() {
+        return ApplicationStatus.getLastTrackedFocusedActivity();
     }
 }

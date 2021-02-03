@@ -5,7 +5,7 @@
 
 package org.triple.banana.quick_menu;
 
-import android.content.Context;
+import android.app.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -20,7 +20,7 @@ enum QuickMenuServiceImpl implements QuickMenuService {
     private @Nullable WeakReference<View> mView;
 
     @Override
-    public void show(@NonNull Context context) {
+    public void show(@NonNull Activity activity) {
         if (mView != null && mView.get() != null && mView.get().isShowing()) {
             // Prevent showing the quick menu duplicately
             return;
@@ -31,7 +31,7 @@ enum QuickMenuServiceImpl implements QuickMenuService {
         ButtonStateManager stateManager = ButtonStateManager.get();
         ViewController controller =
                 new ViewControllerImpl(viewModel, storage, actionProvider, stateManager);
-        View view = new DialogBasedViewImpl(context, controller);
+        View view = new DialogBasedViewImpl(activity, controller);
         mView = new WeakReference(view);
 
         viewModel.addListener(new WeakReference(view));
