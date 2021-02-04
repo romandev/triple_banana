@@ -5,9 +5,9 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="@android:anim/accelerate_interpolator">
+    android:interpolator="@android:anim/decelerate_interpolator">
     <translate
-        android:fromYDelta="100%"
+        android:fromYDelta="50%"
         android:toYDelta="0%"
-        android:duration="200" />
+        android:duration="140" />
 </set>

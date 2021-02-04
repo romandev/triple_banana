@@ -60,6 +60,7 @@ class DialogBasedViewImpl extends Dialog implements View {
         }
 
         mMiddleButtonContainer = findViewById(R.id.quick_menu_grid_layout);
+        inflateMiddleLayout();
         // FIXME(#995): The code below need to move to xml.
         findViewById(R.id.quick_menu_icon).setClipToOutline(true);
         setVersion();
@@ -125,18 +126,27 @@ class DialogBasedViewImpl extends Dialog implements View {
         versionTextView.setText(versionInfo.getVersionName());
     }
 
-    private void updateButtons(@NonNull List<ButtonInfo> buttons) {
-        mMiddleButtonContainer.removeAllViews();
-
-        for (final ButtonInfo info : buttons) {
+    private void inflateMiddleLayout() {
+        int viewsCount = new ButtonInfoStorageImpl().getButtons().size();
+        for (int i = 0; i < viewsCount; i++) {
             final QuickMenuMiddleButton button = new QuickMenuMiddleButton(getContext());
+            setColumnWeight(button);
+            mMiddleButtonContainer.addView(button);
+            button.setOnClickListener(mClickListener);
+        }
+    }
+
+    private void updateButtons(@NonNull List<ButtonInfo> buttons) {
+        int viewsCount = mMiddleButtonContainer.getChildCount();
+        for (int i = 0; i < viewsCount; i++) {
+            QuickMenuMiddleButton button =
+                    (QuickMenuMiddleButton) mMiddleButtonContainer.getChildAt(i);
+            ButtonInfo info = buttons.get(i);
+
             button.setId(info.id);
             button.setEnabled(info.enabled);
             button.setIcon(info.image);
             button.setText(info.label);
-            button.setOnClickListener(mClickListener);
-            setColumnWeight(button);
-            mMiddleButtonContainer.addView(button);
         }
     }
 
