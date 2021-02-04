@@ -10,22 +10,27 @@
     <Preference
         android:fragment="org.triple.banana.settings.AdvancedFeatureSettings"
         android:title="@string/advanced_features"
+        android:icon="@drawable/advanced_settings"
         android:summary="@string/advanced_features_summary" />
     <Preference
         android:fragment="org.triple.banana.settings.MediaFeatureSettings"
         android:title="@string/media_features"
+        android:icon="@drawable/media_feature"
         android:summary="@string/media_features_summary" />
     <Preference
         android:fragment="org.triple.banana.settings.UserInterfaceSettings"
         android:title="@string/user_interface"
+        android:icon="@drawable/ic_edit"
         android:summary="@string/user_interface_summary" />
     <Preference
         android:fragment="org.triple.banana.settings.PrivacyAndSecuritySettings"
         android:title="@string/privacy_and_security"
+        android:icon="@drawable/secure_dns"
         android:summary="@string/privacy_and_security_summary" />
 
     <PreferenceCategory android:title="@string/other_settings" />
     <org.triple.banana.settings.preference.BrowserSettingsPreference
         android:title="@string/browser_settings"
+        android:icon="@drawable/ic_settings"
         android:summary="@string/browser_settings_summary" />
 </PreferenceScreen>
