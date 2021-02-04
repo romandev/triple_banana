@@ -55,6 +55,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
+            android:padding="6dp"
             android:layout_toLeftOf="@id/banana_extension_settings"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_edit" />
@@ -65,7 +66,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
-            android:layout_marginLeft="18dp"
+            android:padding="6dp"
+            android:layout_marginLeft="6dp"
             android:background="?android:attr/selectableItemBackgroundBorderless"
             android:src="@drawable/ic_settings" />
     </RelativeLayout>
