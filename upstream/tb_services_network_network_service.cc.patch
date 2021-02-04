@@ -1,0 +1,22 @@
+diff --git tb/services/network/network_service.cc tb_diff/services/network/network_service.cc
+--- tb/services/network/network_service.cc
++++ tb_diff/services/network/network_service.cc
+@@ -531,6 +531,18 @@ void NetworkService::ConfigureStubHostResolver(
+         dns_over_https_servers) {
+   DCHECK(!dns_over_https_servers || !dns_over_https_servers->empty());
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  switch (secure_dns_mode) {
++    case net::SecureDnsMode::kOff:
++    case net::SecureDnsMode::kAutomatic:
++      base::FeatureList::SetEnabled(net::features::kPostQuantumCECPQ2, false);
++      break;
++    case net::SecureDnsMode::kSecure:
++      base::FeatureList::SetEnabled(net::features::kPostQuantumCECPQ2, true);
++      break;
++  }
++#endif
++
+   // Enable or disable the insecure part of DnsClient. "DnsClient" is the class
+   // that implements the stub resolver.
+   host_resolver_manager_->SetInsecureDnsClientEnabled(

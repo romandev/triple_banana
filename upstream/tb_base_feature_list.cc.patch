@@ -1,0 +1,24 @@
+diff --git tb/base/feature_list.cc tb_diff/base/feature_list.cc
+--- tb/base/feature_list.cc
++++ tb_diff/base/feature_list.cc
+@@ -364,6 +364,20 @@ bool FeatureList::IsEnabled(const Feature& feature) {
+   return g_feature_list_instance->IsFeatureEnabled(feature);
+ }
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++// static
++void FeatureList::SetEnabled(const Feature& feature, bool value) {
++  DCHECK(GetInstance());
++  DCHECK(!GetInstance()->initialized_);
++
++  OverrideState override_state = value
++                                     ? OverrideState::OVERRIDE_ENABLE_FEATURE
++                                     : OverrideState::OVERRIDE_DISABLE_FEATURE;
++  GetInstance()->overrides_.insert_or_assign(
++      feature.name, OverrideEntry(override_state, nullptr));
++}
++#endif
++
+ // static
+ FieldTrial* FeatureList::GetFieldTrial(const Feature& feature) {
+   if (!g_feature_list_instance) {
