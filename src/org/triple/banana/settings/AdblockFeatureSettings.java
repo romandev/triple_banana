@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 
 import org.triple.banana.R;
@@ -22,6 +24,8 @@ import org.triple.banana.subresource_filter.RulesetLoader.UpdateState;
 public class AdblockFeatureSettings
         extends PreferenceFragmentCompat implements RulesetLoader.Listener {
     private static final @NonNull String PREF_UPDATE_ADBLOCK_FILTER = "update_adblock_filter";
+    private static final @NonNull String PREF_RESET_ADBLOCK_FILTER = "reset_adblock_filter";
+    private @Nullable Toast mToast;
 
     @Override
     public void onCreatePreferences(@Nullable Bundle savedInstanceState, @Nullable String rootKey) {
@@ -30,13 +34,19 @@ public class AdblockFeatureSettings
 
         RulesetLoader.instance.addListener(this);
 
-        final LongClickablePreference updateAdblockFilterPreference =
-                findPreference(PREF_UPDATE_ADBLOCK_FILTER);
-        updateAdblockFilterPreference.setOnPreferenceClickListener(preference -> {
+        final Preference updateFilterPreference = findPreference(PREF_UPDATE_ADBLOCK_FILTER);
+        updateFilterPreference.setOnPreferenceClickListener(preference -> {
             RulesetLoader.instance.forceUpdateRemoteRuleset();
             return false;
         });
-        updateAdblockFilterPreference.setOnLongClickListener(view -> {
+
+        final LongClickablePreference resetFilterPreference =
+                findPreference(PREF_RESET_ADBLOCK_FILTER);
+        resetFilterPreference.setOnPreferenceClickListener(preference -> {
+            showToast(R.string.please_long_click_to_reset_filter);
+            return false;
+        });
+        resetFilterPreference.setOnLongClickListener(view -> {
             RulesetLoader.instance.forceUpdateRuleset();
             return true;
         });
@@ -56,11 +66,17 @@ public class AdblockFeatureSettings
                 adblockPreference.refresh();
                 return;
             case ALREADY_LATEST:
-                Toast.makeText(getContext(),
-                             getContext().getResources().getString(R.string.already_latest_version),
-                             Toast.LENGTH_LONG)
-                        .show();
+                showToast(R.string.already_latest_version);
                 return;
         }
+    }
+
+    private void showToast(@StringRes int message) {
+        if (mToast != null) {
+            mToast.cancel();
+        }
+        mToast = Toast.makeText(
+                getContext(), getContext().getResources().getString(message), Toast.LENGTH_LONG);
+        mToast.show();
     }
 }

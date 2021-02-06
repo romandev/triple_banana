@@ -12,8 +12,12 @@
         android:title="@string/adblock_with_version"
         android:summaryOn="@string/adblock_summary"
         android:summaryOff="@string/text_off" />
-    <org.triple.banana.settings.preference.LongClickablePreference
+    <Preference
         android:key="update_adblock_filter"
         android:summary="@string/update_adblock_filter_summary"
         android:title="@string/update_adblock_filter" />
+    <org.triple.banana.settings.preference.LongClickablePreference
+        android:key="reset_adblock_filter"
+        android:summary="@string/reset_adblock_filter_summary"
+        android:title="@string/reset_adblock_filter" />
 </PreferenceScreen>

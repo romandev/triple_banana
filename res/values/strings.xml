@@ -67,12 +67,15 @@
     <string name="other_settings">Other settings</string>
     <string name="pip_disabled">PIP mode only enable when the video is playing</string>
     <string name="pip_not_supported">PIP mode is not supported on this video</string>
+    <string name="please_long_click_to_reset_filter">Please long click if you\'d like to reset adblock filter</string>
     <string name="print">Print</string>
     <string name="privacy_and_security">Privacy and Security</string>
     <string name="privacy_and_security_summary">Protect your privacy online with strong security features provided by Banana Browser</string>
     <string name="qr_code">QR code</string>
     <string name="reload">Reload</string>
     <string name="reset">Reset</string>
+    <string name="reset_adblock_filter">Reset adblock filter</string>
+    <string name="reset_adblock_filter_summary">Please long click if you\'d like to reset the adblock filter (NOTE: This will remove the existing filter and then re-install latest filter again)</string>
     <string name="restart_message">Your changes will take effect the next time you relaunch Banana Browser.</string>
     <string name="save">Save</string>
     <string name="save_page">Save page</string>
