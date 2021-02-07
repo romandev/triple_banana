@@ -9,7 +9,7 @@ diff --git tb/base/feature_list.cc tb_diff/base/feature_list.cc
 +// static
 +void FeatureList::SetEnabled(const Feature& feature, bool value) {
 +  DCHECK(GetInstance());
-+  DCHECK(!GetInstance()->initialized_);
++  DCHECK(GetInstance()->initialized_);
 +
 +  OverrideState override_state = value
 +                                     ? OverrideState::OVERRIDE_ENABLE_FEATURE
