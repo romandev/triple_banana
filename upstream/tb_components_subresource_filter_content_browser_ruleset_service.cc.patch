@@ -1,0 +1,19 @@
+diff --git tb/components/subresource_filter/content/browser/ruleset_service.cc tb_diff/components/subresource_filter/content/browser/ruleset_service.cc
+--- tb/components/subresource_filter/content/browser/ruleset_service.cc
++++ tb_diff/components/subresource_filter/content/browser/ruleset_service.cc
+@@ -76,9 +76,15 @@ class SentinelFile {
+   explicit SentinelFile(const base::FilePath& version_directory)
+       : path_(IndexedRulesetLocator::GetSentinelFilePath(version_directory)) {}
+ 
++#if defined(ENABLE_TRIPLE_BANANA)
++  bool IsPresent() { return false; }
++  bool Create() { return true; }
++  bool Remove() { return true; }
++#else
+   bool IsPresent() { return base::PathExists(path_); }
+   bool Create() { return base::WriteFile(path_, nullptr, 0) == 0; }
+   bool Remove() { return base::DeleteFile(path_); }
++#endif
+ 
+  private:
+   base::FilePath path_;
