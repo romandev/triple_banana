@@ -126,6 +126,9 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/InterfaceProvider.java",
     "//triple_banana/src/org/triple/banana/TripleBananaApplication.java",
 
+    # application
+    "//triple_banana/src/org/triple/banana/application/ApplicationLifeTime.java",
+
     # appmenu
     "//triple_banana/src/org/triple/banana/appmenu/AppMenuDelegate.java",
 
@@ -390,6 +393,7 @@ android_resources("triple_banana_resources") {
     "//triple_banana/res/drawable/round_rect_dark.xml",
     "//triple_banana/res/drawable/secure_dns.xml",
     "//triple_banana/res/drawable/toolbar_button_banana.xml",
+    "//triple_banana/res/layout/auto_clear_suggestion.xml",
     "//triple_banana/res/layout/browser_lock_background.xml",
     "//triple_banana/res/layout/media_remote_view.xml",
     "//triple_banana/res/layout/quick_menu_layout.xml",

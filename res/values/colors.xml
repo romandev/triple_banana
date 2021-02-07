@@ -8,6 +8,7 @@
     <color name="cancel_text_color">#ff0099cc</color>
     <color name="candidate_icon_round_rect_stroke_color">#EEEEEE</color>
     <color name="candidate_icon_round_rect_stroke_dark_color">#AAAAAA</color>
+    <color name="auto_clear_suggestion_dialog_text">#656565</color>
     <color name="media_remote_controls_background_color">#33000000</color>
     <color name="media_remote_highlight_color">#FFFDC534</color>
     <color name="media_remote_ripple_effect_color">#50FFFFFF</color>

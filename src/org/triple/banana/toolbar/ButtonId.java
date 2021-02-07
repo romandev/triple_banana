@@ -12,6 +12,7 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 import org.banana.cake.interfaces.BananaClearBrowsingData;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
+import org.triple.banana.application.ApplicationLifeTime;
 import org.triple.banana.quick_menu.QuickMenuService;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
@@ -85,14 +86,7 @@ public enum ButtonId {
             return true;
         });
 
-        sOnClickListeners.put(ButtonId.TERMINATE, v -> {
-            if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
-                BananaClearBrowsingData.get().clearBrowsingData(
-                        () -> BananaToolbarManager.get().terminate());
-            } else {
-                BananaToolbarManager.get().terminate();
-            }
-        });
+        sOnClickListeners.put(ButtonId.TERMINATE, v -> (new ApplicationLifeTime()).terminate());
         sOnClickListeners.put(ButtonId.AT_ME_GAME,
                 v
                 -> BananaApplicationUtils.get().showInfoPage(

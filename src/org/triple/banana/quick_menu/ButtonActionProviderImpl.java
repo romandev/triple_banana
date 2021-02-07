@@ -13,6 +13,7 @@ import org.banana.cake.interfaces.BananaClearBrowsingData;
 import org.banana.cake.interfaces.BananaSecureDnsSettings;
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
+import org.triple.banana.application.ApplicationLifeTime;
 import org.triple.banana.settings.AdblockFeatureSettings;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
@@ -49,14 +50,7 @@ class ButtonActionProviderImpl implements ButtonActionProvider {
                                 -> BananaToolbarManager.get().openSettingPage(
                                         BananaSecureDnsSettings.class));
                 put(R.id.share, BananaToolbarManager.get()::share);
-                put(R.id.terminate, () -> {
-                    if (ExtensionFeatures.isEnabled(FeatureName.AUTO_CLEAR_BROWSING_DATA)) {
-                        BananaClearBrowsingData.get().clearBrowsingData(
-                                () -> BananaToolbarManager.get().terminate());
-                    } else {
-                        BananaToolbarManager.get().terminate();
-                    }
-                });
+                put(R.id.terminate, () -> (new ApplicationLifeTime()).terminate());
                 put(R.id.translate, BananaToolbarManager.get()::translateCurrentTab);
                 put(R.id.user_interface,
                         ()

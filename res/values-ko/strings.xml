@@ -13,12 +13,14 @@
     <string name="advanced_features">고급 기능</string>
     <string name="advanced_features_summary">광고차단, 다크 모드, 번역, 데이터 절약, 외부 다운로드 매니저...</string>
     <string name="already_latest_version">이미 최신버전으로 설치되었습니다</string>
+    <string name="always">항상</string>
     <string name="archive">저장소</string>
     <string name="authentication_title">생체 인증</string>
     <string name="authentication_description">저장된 아이디/패스워드를 이용하려면\n생체인증을 진행하세요</string>
     <string name="autoplay">미디어 자동재생</string>
     <string name="autoplay_summary">사이트에서 미디어 콘텐츠를 자동재생하도록 허용합니다</string>
     <string name="auto_clear_browsing_data_summary">브라우저 종료 시 방문 기록, 쿠키, 사이트 데이터, 캐시 등을 자동으로 삭제합니다</string>
+    <string name="auto_clear_browsing_data_tip">[Banana 확장 기능 > 개인정보 및 보안 > 종료 시 인터넷 사용기록 자동 삭제] 에서 변경 가능합니다.</string>
     <string name="auto_clear_browsing_data_title">종료 시 인터넷 사용기록 자동 삭제</string>
     <string name="back">뒤로 가기</string>
     <string name="background_play">백그라운드 재생</string>
@@ -39,10 +41,12 @@
     <string name="detail_settings">상세 설정</string>
     <string name="discard">저장 안 함</string>
     <string name="drag_and_drop_buttons">자주 사용하는 기능을 드래그(Drag)하여\n도구모음에 배치하세요</string>
+    <string name="exit_banana_browser">Banana Browser 종료</string>
     <string name="enable_bottom_toolbar">하단 도구모음 활성화</string>
     <string name="external_download_manager">외부 다운로드 관리자 사용</string>
     <string name="find_in_page">페이지에서 찾기</string>
     <string name="forward">앞으로 가기</string>
+    <string name="just_once">한 번만</string>
     <string name="media_features">미디어 기능</string>
     <string name="media_features_summary">Banana Browser만의 특별한 미디어 기능을 사용하세요</string>
     <string name="media_remote">미디어 리모컨</string>

@@ -13,6 +13,7 @@
     <string name="advanced_features">Advanced Features</string>
     <string name="advanced_features_summary">AdBlock, Dark Mode, Translate, Data reduction mode, External download manager...</string>
     <string name="already_latest_version">Latest version already installed</string>
+    <string name="always">Always</string>
     <string name="archive">Archive</string>
     <string name="at_me_game">At Me Game</string>
     <string name="authentication_title">Authentication</string>
@@ -20,6 +21,7 @@
     <string name="autoplay">Autoplay Media Contents</string>
     <string name="autoplay_summary">Allow sites to autoplay media contents</string>
     <string name="auto_clear_browsing_data_summary">Automatically clear browsing data such as history, cookies, site data, cache when exiting Banana Browser</string>
+    <string name="auto_clear_browsing_data_tip"> You can change it at [Banana Extension > Privacy and Security > Auto-clear browsing data on quit]</string>
     <string name="auto_clear_browsing_data_title">Auto-clear browsing data on quit</string>
     <string name="back">Back</string>
     <string name="background_play">Background Play</string>
@@ -40,9 +42,11 @@
     <string name="discard">Discard</string>
     <string name="drag_and_drop_buttons">Drag the frequently used buttons\nto the Toolbar</string>
     <string name="enable_bottom_toolbar">Enable Bottom Toolbar</string>
+    <string name="exit_banana_browser">Exit Banana Browser</string>
     <string name="external_download_manager">Use external download manager</string>
     <string name="find_in_page">Find in page</string>
     <string name="forward">Forward</string>
+    <string name="just_once">Just once</string>
     <string name="media_features">Media Features</string>
     <string name="media_features_summary">Use specialized media features of Banana Browser</string>
     <string name="media_remote">Media Remote</string>
