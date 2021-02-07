@@ -20,6 +20,7 @@ triple_banana_hooks_sources = [
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaPipController.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaSecureDnsBridge.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaSecureDnsSettings.java",
+  "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaStatusBarController.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaSubresourceFilter.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaSwitchPreference.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTab.java",

@@ -12,6 +12,7 @@ import org.banana.cake.interfaces.BananaCommandLineInitializer;
 import org.banana.cake.interfaces.BananaExtensionSettings;
 import org.banana.cake.interfaces.BananaInterfaceProvider;
 import org.banana.cake.interfaces.BananaPasswordExtension;
+import org.banana.cake.interfaces.BananaStatusBarController;
 import org.banana.cake.interfaces.BananaVersionInfo;
 import org.triple.banana.CommandLineInitializer;
 import org.triple.banana.appmenu.AppMenuDelegate;
@@ -19,6 +20,7 @@ import org.triple.banana.browsing_data.AutoClearBrowsingData;
 import org.triple.banana.password.PasswordExtension;
 import org.triple.banana.settings.SettingsOpener;
 import org.triple.banana.toolbar.BottomToolbarController;
+import org.triple.banana.util.StatusBarController;
 import org.triple.banana.version.VersionInfo;
 
 class InterfaceProvider {
@@ -37,5 +39,7 @@ class InterfaceProvider {
                 BananaInterfaceProvider.InstanceType.SINGLETON);
         BananaInterfaceProvider.register(BananaApplicationEvent.class, AutoClearBrowsingData::new,
                 BananaInterfaceProvider.InstanceType.SINGLETON);
+        BananaInterfaceProvider.register(BananaStatusBarController.class, StatusBarController::new,
+                BananaInterfaceProvider.InstanceType.NORMAL);
     }
 }

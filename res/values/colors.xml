@@ -21,4 +21,5 @@
     <color name="toolbar_modern_grey_background_color">#202124</color>
     <color name="toolbar_modern_grey_text_color">#3C4043</color>
     <color name="toolbar_button_diabled">#F2F2F2</color>
+    <color name="secure_dns_status_bar_color">#571CCE</color>
 </resources>

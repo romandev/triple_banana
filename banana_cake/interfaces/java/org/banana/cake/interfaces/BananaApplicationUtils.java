@@ -36,4 +36,5 @@ public interface BananaApplicationUtils {
     void openBrowserSettings(@NonNull Context context);
     @Nullable
     Activity getLastTrackedFocusedActivity();
+    boolean isNativeInitialized();
 }

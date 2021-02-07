@@ -1,0 +1,12 @@
+diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java
+--- tb/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java
++++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java
+@@ -342,6 +342,8 @@ public class StatusBarColorController
+         if (UiUtils.isSystemUiThemingDisabled()) return;
+ 
+         final View root = mWindow.getDecorView().getRootView();
++        color = org.banana.cake.interfaces.BananaStatusBarController.get().overrideStatusBarColor(
++                color);
+         boolean needsDarkStatusBarIcons = !ColorUtils.shouldUseLightForegroundOnBackground(color);
+         ApiCompatibilityUtils.setStatusBarIconColor(root, needsDarkStatusBarIcons);
+         ApiCompatibilityUtils.setStatusBarColor(mWindow, color);

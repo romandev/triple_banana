@@ -17,6 +17,7 @@ import org.banana.cake.interfaces.BananaApplicationUtils;
 
 import org.chromium.base.ApplicationStatus;
 import org.chromium.base.ContextUtils;
+import org.chromium.base.FeatureList;
 import org.chromium.chrome.R;
 import org.chromium.chrome.browser.ApplicationLifetime;
 import org.chromium.chrome.browser.customtabs.CustomTabActivity;
@@ -82,5 +83,10 @@ class CakeApplicationUtils implements BananaApplicationUtils {
     @Override
     public @Nullable Activity getLastTrackedFocusedActivity() {
         return ApplicationStatus.getLastTrackedFocusedActivity();
+    }
+
+    @Override
+    public boolean isNativeInitialized() {
+        return FeatureList.isNativeInitialized();
     }
 }
