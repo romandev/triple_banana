@@ -18,7 +18,6 @@ import org.triple.banana.lock.BrowserLock;
 import org.triple.banana.media.MediaSuspendController;
 import org.triple.banana.media_remote.MediaRemoteService;
 import org.triple.banana.password.PasswordExtension;
-import org.triple.banana.secure_dns.SecureDnsNotificationManager;
 import org.triple.banana.settings.ExtensionFeatures;
 import org.triple.banana.settings.ExtensionFeatures.FeatureName;
 import org.triple.banana.subresource_filter.RulesetLoader;
@@ -81,11 +80,8 @@ public class TripleBananaApplication extends BananaApplication {
         }
 
         if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
-            if (!BananaSecureDnsBridge.get().isSecureDNSMode()) {
-                BananaSecureDnsBridge.get().setSecureDNSMode(true);
-            }
-
-            SecureDnsNotificationManager.getInstance().showSecureDnsNotificationIfNeeded();
+            BananaSecureDnsBridge.get().setSecureMode(true);
+            ExtensionFeatures.setEnabled(FeatureName.SECURE_DNS, false);
         }
 
         MediaRemoteService.instance.start();

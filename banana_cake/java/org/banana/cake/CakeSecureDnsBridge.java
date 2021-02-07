@@ -12,15 +12,14 @@ import org.chromium.net.SecureDnsMode;
 
 public class CakeSecureDnsBridge implements BananaSecureDnsBridge {
     @Override
-    public boolean isSecureDNSMode() {
-        @SecureDnsMode
+    public boolean isSecureMode() {
         int mode = SecureDnsBridge.getMode();
-        return mode != SecureDnsMode.OFF;
+        return mode == SecureDnsMode.SECURE;
     }
 
     @Override
-    public void setSecureDNSMode(boolean isSecure) {
-        SecureDnsBridge.setMode(isSecure ? SecureDnsMode.SECURE : SecureDnsMode.OFF);
-        SecureDnsBridge.setTemplates(isSecure ? "https://chrome.cloudflare-dns.com/dns-query" : "");
+    public void setSecureMode(boolean enabled) {
+        SecureDnsBridge.setMode(enabled ? SecureDnsMode.SECURE : SecureDnsMode.OFF);
+        SecureDnsBridge.setTemplates(enabled ? "https://chrome.cloudflare-dns.com/dns-query" : "");
     }
 }

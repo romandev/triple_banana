@@ -10,6 +10,6 @@ public interface BananaSecureDnsBridge {
         return BananaInterfaceProvider.get(BananaSecureDnsBridge.class);
     }
 
-    boolean isSecureDNSMode();
-    void setSecureDNSMode(boolean isSecure);
+    boolean isSecureMode();
+    void setSecureMode(boolean enabled);
 }
