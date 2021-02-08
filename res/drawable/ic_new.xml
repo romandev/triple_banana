@@ -5,24 +5,22 @@
      file, You can obtain one at https://mozilla.org/MPL/2.0/. -->
 
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:width="48dp"
-        android:height="48dp"
-        android:viewportHeight="24"
-        android:viewportWidth="24"
-        tools:targetApi="21">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    tools:targetApi="21">
     <path
-        android:fillColor="@color/default_icon_color"
-        android:fillType="nonZero"
-android:pathData="M11.87,11.96m-5.13,0a5.13,5.13 0,1 1,10.26 0a5.13,5.13
-0,1 1,-10.26 0"/>
+        android:fillColor="#FF4F3C"
+        android:pathData="M11.87,11.96m-5.13,0a5.13,5.13 0,1 1,10.26 0a5.13,5.13
+0,1 1,-10.26 0" />
     <path
-        android:fillColor="@color/default_icon_color"
-        android:fillType="nonZero"
-android:pathData="M11.21,11.59l0.04,2.57c0.01,0.22 -0.04,0.31
+        android:fillColor="#FFFFFF"
+        android:pathData="M11.21,11.59l0.04,2.57c0.01,0.22 -0.04,0.31
 -0.26,0.31h-0.6c-0.23,0 -0.26,-0.09 -0.27,-0.31l-0.07,-4.37c-0.01,-0.27
 0.08,-0.36 0.32,-0.36h0.43c0.14,0 0.22,0.01 0.28,0.03c0.06,0.03 0.1,0.09
 0.14,0.18l1.53,2.94v-2.8c0,-0.27 0.08,-0.36 0.32,-0.36h0.5c0.24,0
 0.32,0.09 0.32,0.36v4.31c0,0.27 -0.07,0.36 -0.31,0.36h-0.51c-0.27,0
--0.37,-0.09 -0.51,-0.33L11.21,11.59z"/>
+-0.37,-0.09 -0.51,-0.33L11.21,11.59z" />
 </vector>
