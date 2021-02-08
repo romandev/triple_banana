@@ -25,13 +25,6 @@ public class ExtensionFeatures extends PreferenceFragmentCompat {
         AppMenuDelegate.get().setNewFeatureIcon(false);
     }
 
-    @Override
-    public void onResume() {
-        super.onResume();
-        getPreferenceScreen().removeAll();
-        addPreferencesFromResource(R.xml.banana_extension_preferences);
-    }
-
     public static class FeatureName {
         public static final String ADBLOCK = "feature_name_adblock";
         public static final String AUTOPLAY = "feature_name_autoplay";
