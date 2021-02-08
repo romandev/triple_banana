@@ -192,10 +192,17 @@ public class CakeToolbarManager implements BananaToolbarManager {
     @Override
     public void openQRCodeDialog() {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return;
+
         Tab tab = activity.getActivityTab();
-        if (activity == null || tab == null) return;
-        QrCodeCoordinator qrCodeCoordinator =
-                new QrCodeCoordinator(activity, tab.getUrl().getSpec());
+        String url;
+        if (tab == null) {
+            url = null;
+        } else {
+            url = tab.getUrl().getSpec();
+        }
+
+        QrCodeCoordinator qrCodeCoordinator = new QrCodeCoordinator(activity, url);
         qrCodeCoordinator.show();
     }
 
