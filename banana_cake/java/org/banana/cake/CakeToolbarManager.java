@@ -8,6 +8,8 @@ package org.banana.cake;
 import android.app.Activity;
 import android.os.Bundle;
 
+import androidx.annotation.Nullable;
+
 import org.banana.cake.interfaces.BananaToolbarManager;
 import org.triple.banana.R;
 
@@ -24,18 +26,13 @@ import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.toolbar.ToolbarManager;
 
 public class CakeToolbarManager implements BananaToolbarManager {
-    private ToolbarManager mToolbarManager;
-
-    private ToolbarManager getToolbarManager() {
-        if (mToolbarManager == null) {
-            ChromeTabbedActivity activity = getChromeTabbedActivity();
-            if (activity == null) return null;
-            mToolbarManager = activity.getToolbarManager();
-        }
-        return mToolbarManager;
+    private @Nullable ToolbarManager getToolbarManager() {
+        ChromeTabbedActivity activity = getChromeTabbedActivity();
+        if (activity == null) return null;
+        return activity.getToolbarManager();
     }
 
-    private ChromeTabbedActivity getChromeTabbedActivity() {
+    private @Nullable ChromeTabbedActivity getChromeTabbedActivity() {
         Activity activity = ApplicationStatus.getLastTrackedFocusedActivity();
         if (!(activity instanceof ChromeTabbedActivity)) return null;
         return (ChromeTabbedActivity) activity;
