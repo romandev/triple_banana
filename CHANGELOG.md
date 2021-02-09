@@ -1,3 +1,12 @@
+# 6.05 @ 88.0.4324.152
+
+## Chromium base version
+- **88.0.4324.152**
+
+## Change log
+- Fix a bug that the Secure DNS migration is sometimes failed (#1109)
+
+
 # 6.04 @ 88.0.4324.152
 
 ## Chromium base version
