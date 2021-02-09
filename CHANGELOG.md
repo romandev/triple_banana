@@ -1,3 +1,16 @@
+# 6.04 @ 88.0.4324.152
+
+## Chromium base version
+- **88.0.4324.152**
+
+## Change log
+- Fixed toolbar editor layout issue (#1107)
+- Fix a blinking bug in the banana extension settings (#1106)
+- Fixed wrong update button color (#1104)
+- Fix a crash when clicking search button after dark mode change (#1103)
+- Fix a bug that the QR code scan doesn't work if there are no tab (#1102)
+
+
 # 6.03 @ 88.0.4324.152
 
 ## Chromium base version
