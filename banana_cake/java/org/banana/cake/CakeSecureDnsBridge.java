@@ -12,6 +12,11 @@ import org.chromium.net.SecureDnsMode;
 
 public class CakeSecureDnsBridge implements BananaSecureDnsBridge {
     @Override
+    public boolean wasDnsModeSet() {
+        return SecureDnsBridge.wasDnsModeSet();
+    }
+
+    @Override
     public boolean isSecureMode() {
         int mode = SecureDnsBridge.getMode();
         return mode == SecureDnsMode.SECURE;

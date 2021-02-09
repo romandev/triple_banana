@@ -79,9 +79,8 @@ public class TripleBananaApplication extends BananaApplication {
                     bananaTab -> { MediaSuspendController.instance.DisableOnYouTube(bananaTab); });
         }
 
-        if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS)) {
+        if (ExtensionFeatures.isEnabled(FeatureName.SECURE_DNS) && !BananaSecureDnsBridge.get().wasDnsModeSet()) {
             BananaSecureDnsBridge.get().setSecureMode(true);
-            ExtensionFeatures.setEnabled(FeatureName.SECURE_DNS, false);
         }
 
         MediaRemoteService.instance.start();

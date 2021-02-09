@@ -10,7 +10,21 @@ diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privac
      /**
       * An Entry represents the subset of a net::DohProviderEntry that is relevant
       * for display in the UI.
-@@ -65,7 +65,7 @@ class SecureDnsBridge {
+@@ -52,6 +52,13 @@ class SecureDnsBridge {
+                 ChromeFeatureList.DNS_OVER_HTTPS, showUiParam, showUiParamDefault);
+     }
+ 
++    /**
++     * @return The Secure DNS mode has been set.
++     */
++   public static boolean wasDnsModeSet() {
++        return SecureDnsBridgeJni.get().wasDnsModeSet();
++    }
++
+     /**
+      * @return The current Secure DNS mode (off, automatic, or secure).
+      */
+@@ -65,7 +72,7 @@ class SecureDnsBridge {
       *
       * @param mode The desired new Secure DNS mode.
       */
@@ -19,7 +33,7 @@ diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privac
          SecureDnsBridgeJni.get().setMode(mode);
      }
  
-@@ -107,7 +107,7 @@ class SecureDnsBridge {
+@@ -107,7 +114,7 @@ class SecureDnsBridge {
       *     the setting.
       * @return True if the input was valid.
       */
@@ -28,3 +42,11 @@ diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privac
          return SecureDnsBridgeJni.get().setTemplates(templates);
      }
  
+@@ -157,6 +164,7 @@ class SecureDnsBridge {
+ 
+     @NativeMethods
+     interface Natives {
++        boolean wasDnsModeSet();
+         @SecureDnsMode
+         int getMode();
+         void setMode(@SecureDnsMode int mode);
