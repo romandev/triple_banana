@@ -17,7 +17,7 @@ diff --git tb/chrome/browser/privacy/java/src/org/chromium/chrome/browser/privac
 +    /**
 +     * @return The Secure DNS mode has been set.
 +     */
-+   public static boolean wasDnsModeSet() {
++    public static boolean wasDnsModeSet() {
 +        return SecureDnsBridgeJni.get().wasDnsModeSet();
 +    }
 +

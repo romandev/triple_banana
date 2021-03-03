@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActivity.java
-@@ -670,6 +670,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -680,6 +680,11 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                  OfflinePageUtils.showOfflineSnackbarIfNecessary(tab);
              }
  
@@ -13,13 +13,14 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActi
              @Override
              public void onCrash(Tab tab) {
                  postDeferredStartupIfNeeded();
-@@ -940,6 +945,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -962,6 +967,14 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
          getManualFillingComponent().onResume();
      }
  
 +    public PictureInPictureController getPipController() {
 +        if (mPictureInPictureController == null) {
-+            mPictureInPictureController = new PictureInPictureController();
++            mPictureInPictureController = new PictureInPictureController(
++                    this, getActivityTabProvider(), getFullscreenManager());
 +        }
 +        return mPictureInPictureController;
 +    }
@@ -27,7 +28,7 @@ diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/ChromeActi
      @Override
      protected void onUserLeaveHint() {
          super.onUserLeaveHint();
-@@ -2093,9 +2105,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
+@@ -2127,9 +2140,13 @@ public abstract class ChromeActivity<C extends ChromeActivityComponent>
                      currentTab.getWebContents().getNavigationController().getUseDesktopUserAgent();
              currentTab.getWebContents().getNavigationController().setUseDesktopUserAgent(
                      !usingDesktopUserAgent, reloadOnChange);

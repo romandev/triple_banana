@@ -1,13 +1,11 @@
 diff --git tb/chrome/browser/privacy/BUILD.gn tb_diff/chrome/browser/privacy/BUILD.gn
 --- tb/chrome/browser/privacy/BUILD.gn
 +++ tb_diff/chrome/browser/privacy/BUILD.gn
-@@ -9,7 +9,9 @@ android_library("java") {
-     ":*",
-     "//chrome/android:chrome_all_java",
+@@ -11,6 +11,7 @@ android_library("java") {
      "//chrome/android:chrome_java",
+     "//chrome/android:chrome_junit_tests__java_binary",
+     "//chrome/android:chrome_test_java",
 +    "//triple_banana:triple_banana_java",
    ]
-+
    sources = [
      "java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsBridge.java",
-     "java/src/org/chromium/chrome/browser/privacy/secure_dns/SecureDnsProviderPreference.java",

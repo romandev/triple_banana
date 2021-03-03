@@ -9,4 +9,4 @@ diff --git tb/weblayer/variables.gni tb_diff/weblayer/variables.gni
 +  webview_includes_weblayer = false
  
    # Whether WebLayer will be included as a DFM.
-   weblayer_in_split = android_channel != "stable"
+   weblayer_in_split = true

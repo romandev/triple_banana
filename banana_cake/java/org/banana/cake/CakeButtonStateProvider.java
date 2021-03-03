@@ -20,6 +20,7 @@ import org.chromium.chrome.browser.share.ShareUtils;
 import org.chromium.chrome.browser.tab.Tab;
 import org.chromium.chrome.browser.translate.TranslateUtils;
 import org.chromium.components.embedder_support.util.UrlConstants;
+import org.chromium.components.webapps.WebappsUtils;
 import org.chromium.content_public.browser.NavigationController;
 
 class CakeButtonStateProvider implements BananaButtonStateProvider {
@@ -51,7 +52,7 @@ class CakeButtonStateProvider implements BananaButtonStateProvider {
         boolean isContentScheme = url.startsWith(UrlConstants.CONTENT_URL_PREFIX);
         boolean isIncognito = currentTab.isIncognito();
 
-        return ShortcutHelper.isAddToHomeIntentSupported() && !isChromeScheme && !isFileScheme
+        return WebappsUtils.isAddToHomeIntentSupported() && !isChromeScheme && !isFileScheme
                 && !isContentScheme && !isIncognito && !TextUtils.isEmpty(url);
     }
 

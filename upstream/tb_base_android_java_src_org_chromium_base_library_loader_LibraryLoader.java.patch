@@ -1,7 +1,7 @@
 diff --git tb/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java tb_diff/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
 --- tb/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
 +++ tb_diff/base/android/java/src/org/chromium/base/library_loader/LibraryLoader.java
-@@ -218,7 +218,7 @@ public class LibraryLoader {
+@@ -344,7 +344,7 @@ public class LibraryLoader {
      // both be used as the basis to ship on L, and the default APK used by developers on 10+.
      private boolean forceSystemLinker() {
          boolean result =

@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/app/appmenu/AppMenuPropertiesDelegateImpl.java
-@@ -515,6 +515,8 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate
+@@ -531,6 +531,8 @@ public class AppMenuPropertiesDelegateImpl implements AppMenuPropertiesDelegate
          // Only display the Enter VR button if VR Shell Dev environment is enabled.
          menu.findItem(R.id.enter_vr_id).setVisible(shouldShowEnterVr());
  

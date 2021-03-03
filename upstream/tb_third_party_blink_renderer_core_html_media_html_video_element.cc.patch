@@ -13,7 +13,7 @@ diff --git tb/third_party/blink/renderer/core/html/media/html_video_element.cc t
  namespace blink {
  
  namespace {
-@@ -268,6 +273,12 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
+@@ -271,6 +276,12 @@ void HTMLVideoElement::UpdatePictureInPictureAvailability() {
  void HTMLVideoElement::OnBecamePersistentVideo(bool value) {
    is_auto_picture_in_picture_ = value;
  

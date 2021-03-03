@@ -19,7 +19,6 @@ import org.chromium.chrome.browser.banners.AppBannerManager;
 import org.chromium.chrome.browser.banners.AppMenuVerbiage;
 import org.chromium.chrome.browser.browsing_data.ClearBrowsingDataTabsFragment;
 import org.chromium.chrome.browser.omnibox.OmniboxFocusReason;
-import org.chromium.chrome.browser.settings.SettingsLauncher;
 import org.chromium.chrome.browser.settings.SettingsLauncherImpl;
 import org.chromium.chrome.browser.share.qrcode.QrCodeCoordinator;
 import org.chromium.chrome.browser.tab.Tab;
@@ -163,7 +162,7 @@ public class CakeToolbarManager implements BananaToolbarManager {
     public void openSettingPage(Class settingFragmentClass) {
         ChromeTabbedActivity activity = getChromeTabbedActivity();
         if (activity == null) return;
-        SettingsLauncher settingsLauncher = new SettingsLauncherImpl();
+        SettingsLauncherImpl settingsLauncher = new SettingsLauncherImpl();
         settingsLauncher.launchSettingsActivity(activity, settingFragmentClass);
     }
 

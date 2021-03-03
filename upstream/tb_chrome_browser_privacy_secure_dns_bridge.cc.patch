@@ -1,14 +1,15 @@
 diff --git tb/chrome/browser/privacy/secure_dns_bridge.cc tb_diff/chrome/browser/privacy/secure_dns_bridge.cc
 --- tb/chrome/browser/privacy/secure_dns_bridge.cc
 +++ tb_diff/chrome/browser/privacy/secure_dns_bridge.cc
-@@ -70,7 +70,19 @@ void RunProbe(base::WaitableEvent* waiter,
+@@ -71,7 +71,20 @@ void RunProbe(base::WaitableEvent* waiter,
  
  }  // namespace
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +static jboolean JNI_SecureDnsBridge_WasDnsModeSet(JNIEnv* env) {
 +  PrefService* local_state = g_browser_process->local_state();
-+  return !local_state->FindPreference(prefs::kDnsOverHttpsMode)->IsDefaultValue();
++  return !local_state->FindPreference(prefs::kDnsOverHttpsMode)
++              ->IsDefaultValue();
 +}
 +#endif
 +

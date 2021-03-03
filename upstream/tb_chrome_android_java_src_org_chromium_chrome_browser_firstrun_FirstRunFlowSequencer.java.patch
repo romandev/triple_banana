@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunFlowSequencer.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunFlowSequencer.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunFlowSequencer.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/firstrun/FirstRunFlowSequencer.java
-@@ -133,10 +133,7 @@ public abstract class FirstRunFlowSequencer  {
+@@ -129,10 +129,7 @@ public abstract class FirstRunFlowSequencer  {
  
      @VisibleForTesting
      protected boolean shouldShowSearchEnginePage() {

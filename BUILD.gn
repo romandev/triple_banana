@@ -141,6 +141,8 @@ android_library("triple_banana_java") {
     "//triple_banana/src/org/triple/banana/authentication/KeyguardBackend.java",
     "//triple_banana/src/org/triple/banana/authentication/KeyguardFragment.java",
     "//triple_banana/src/org/triple/banana/authentication/SecurityLevelChecker.java",
+    "//triple_banana/src/org/triple/banana/banana_api/BananaApiLoaderImpl.java",
+    "//triple_banana/src/org/triple/banana/banana_api/export/BananaApiLoader.java",
 
     # browser lock
     "//triple_banana/src/org/triple/banana/lock/BrowserLock.java",
@@ -303,12 +305,14 @@ android_library("triple_banana_java") {
     "//chrome/browser/tab:java",
     "//chrome/browser/tabmodel:java",
     "//chrome/browser/ui/android/appmenu:java",
+    "//chrome/browser/ui/android/theme:java",
     "//components/browser_ui/site_settings/android:java",
     "//components/content_settings/android:content_settings_enums_java",
     "//components/embedder_support/android:util_java",
     "//components/permissions/android:java",
     "//components/prefs/android:java",
     "//components/user_prefs/android:java",
+    "//components/webapps/browser/android:java",
     "//content/public/android:content_java",
     "//mojo/public/java:base_java",
     "//mojo/public/java:bindings_java",

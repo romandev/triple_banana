@@ -1,7 +1,7 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ui/system/StatusBarColorController.java
-@@ -342,6 +342,8 @@ public class StatusBarColorController
+@@ -340,6 +340,8 @@ public class StatusBarColorController
          if (UiUtils.isSystemUiThemingDisabled()) return;
  
          final View root = mWindow.getDecorView().getRootView();

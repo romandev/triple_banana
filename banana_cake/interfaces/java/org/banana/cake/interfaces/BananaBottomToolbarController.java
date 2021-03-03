@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.View.OnClickListener;
 
 import org.chromium.chrome.browser.tabmodel.IncognitoStateProvider;
+import org.chromium.chrome.browser.theme.ThemeColorProvider;
 import org.chromium.chrome.browser.toolbar.TabCountProvider;
-import org.chromium.chrome.browser.toolbar.ThemeColorProvider;
 
 public interface BananaBottomToolbarController {
     static BananaBottomToolbarController get() {

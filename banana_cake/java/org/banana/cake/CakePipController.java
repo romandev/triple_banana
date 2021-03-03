@@ -27,7 +27,7 @@ class CakePipController implements BananaPipController {
         if (activity == null) return;
         PictureInPictureController pipController = activity.getPipController();
         if (pipController == null) return;
-        pipController.attemptPictureInPicture(activity);
+        pipController.attemptPictureInPicture();
     }
 
     @Override

@@ -1,7 +1,7 @@
 diff --git tb/third_party/android_deps/BUILD.gn tb_diff/third_party/android_deps/BUILD.gn
 --- tb/third_party/android_deps/BUILD.gn
 +++ tb_diff/third_party/android_deps/BUILD.gn
-@@ -367,8 +367,10 @@ android_aar_prebuilt("androidx_fragment_fragment_java") {
+@@ -381,8 +381,10 @@ android_aar_prebuilt("androidx_fragment_fragment_java") {
  
    ignore_proguard_configs = true
  

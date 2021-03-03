@@ -28,13 +28,11 @@ triple_banana_hooks_sources = [
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaTabObserver.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaToolbarManager.java",
   "//triple_banana/banana_cake/interfaces/java/org/banana/cake/interfaces/BananaVersionInfo.java",
-  "//triple_banana/modules/public/java/org/triple/banana/modules/Connector.java",
 ]
 
 triple_banana_jni_sources = [
   "//triple_banana/banana_cake/java/org/banana/cake/CakeSubresourceFilter.java",
 ]
 
-triple_banana_native_sources = [
-  "//triple_banana/banana_cake/cpp/cake_subresource_filter.cc",
- ]
+triple_banana_native_sources =
+    [ "//triple_banana/banana_cake/cpp/cake_subresource_filter.cc" ]

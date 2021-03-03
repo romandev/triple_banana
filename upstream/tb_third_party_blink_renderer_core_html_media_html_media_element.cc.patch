@@ -1,7 +1,7 @@
 diff --git tb/third_party/blink/renderer/core/html/media/html_media_element.cc tb_diff/third_party/blink/renderer/core/html/media/html_media_element.cc
 --- tb/third_party/blink/renderer/core/html/media/html_media_element.cc
 +++ tb_diff/third_party/blink/renderer/core/html/media/html_media_element.cc
-@@ -2677,6 +2677,13 @@ bool HTMLMediaElement::ShouldShowControls(
+@@ -2703,6 +2703,13 @@ bool HTMLMediaElement::ShouldShowControls(
      return false;
    }
  

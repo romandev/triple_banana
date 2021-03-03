@@ -1,12 +1,26 @@
 diff --git tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
 --- tb/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
 +++ tb_diff/chrome/android/java/src/org/chromium/chrome/browser/ChromeApplication.java
-@@ -99,6 +99,8 @@ public class ChromeApplication extends SplitCompatApplication {
-                 CommandLineInitUtil.initCommandLine(
-                         COMMAND_LINE_FILE, ChromeApplicationImpl::shouldUseDebugFlags);
+@@ -4,6 +4,7 @@
  
-+                org.banana.cake.interfaces.BananaCommandLineInitializer.get().initCommandLine();
-+
-                 // Enable ATrace on debug OS or app builds.
-                 int applicationFlags = context.getApplicationInfo().flags;
-                 boolean isAppDebuggable = (applicationFlags & ApplicationInfo.FLAG_DEBUGGABLE) != 0;
+ package org.chromium.chrome.browser;
+ 
++import android.content.Context;
+ import android.content.Intent;
+ import android.content.res.Configuration;
+ import android.os.Bundle;
+@@ -73,6 +74,14 @@ public class ChromeApplication extends SplitCompatApplication {
+                 AppHooks.get().getChimeDelegate().initialize();
+             }
+         }
++        /*
++                @Override
++                protected void attachBaseContext(Context context) {
++                    if (isBrowserProcess()) {
++                        org.banana.cake.interfaces.BananaCommandLineInitializer.get().initCommandLine();
++                    }
++                }
++        */
+ 
+         @MainDex
+         @Override

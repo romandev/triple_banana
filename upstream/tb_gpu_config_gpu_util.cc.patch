@@ -23,7 +23,7 @@ diff --git tb/gpu/config/gpu_util.cc tb_diff/gpu/config/gpu_util.cc
    if (!gpu_preferences.enable_android_surface_control)
      return kGpuFeatureStatusDisabled;
  
-@@ -327,6 +335,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
+@@ -316,6 +324,13 @@ void AdjustGpuFeatureStatusToWorkarounds(GpuFeatureInfo* gpu_feature_info) {
      gpu_feature_info->status_values[GPU_FEATURE_TYPE_ACCELERATED_WEBGL2] =
          kGpuFeatureStatusBlocklisted;
    }

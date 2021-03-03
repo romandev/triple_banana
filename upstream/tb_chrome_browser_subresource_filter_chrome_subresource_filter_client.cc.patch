@@ -1,12 +1,12 @@
 diff --git tb/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc tb_diff/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
 --- tb/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
 +++ tb_diff/chrome/browser/subresource_filter/chrome_subresource_filter_client.cc
-@@ -220,7 +220,7 @@ void ChromeSubresourceFilterClient::ToggleForceActivationInCurrentWebContents(
+@@ -122,7 +122,7 @@ ChromeSubresourceFilterClient::GetProfileInteractionManager() {
  }
  
  void ChromeSubresourceFilterClient::ShowUI(const GURL& url) {
 -#if defined(OS_ANDROID)
 +#if defined(OS_ANDROID) && !defined(ENABLE_TRIPLE_BANANA)
    InfoBarService* infobar_service =
-       InfoBarService::FromWebContents(web_contents());
-   subresource_filter::AdsBlockedInfobarDelegate::Create(
+       InfoBarService::FromWebContents(web_contents_);
+   subresource_filter::AdsBlockedInfobarDelegate::Create(infobar_service);

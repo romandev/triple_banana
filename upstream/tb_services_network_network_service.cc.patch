@@ -1,7 +1,7 @@
 diff --git tb/services/network/network_service.cc tb_diff/services/network/network_service.cc
 --- tb/services/network/network_service.cc
 +++ tb_diff/services/network/network_service.cc
-@@ -531,6 +531,18 @@ void NetworkService::ConfigureStubHostResolver(
+@@ -533,6 +533,18 @@ void NetworkService::ConfigureStubHostResolver(
          dns_over_https_servers) {
    DCHECK(!dns_over_https_servers || !dns_over_https_servers->empty());
  

@@ -1,7 +1,7 @@
 diff --git tb/build/android/gyp/proguard.py tb_diff/build/android/gyp/proguard.py
 --- tb/build/android/gyp/proguard.py
 +++ tb_diff/build/android/gyp/proguard.py
-@@ -234,7 +234,6 @@ def _OptimizeWithR8(options,
+@@ -239,7 +239,6 @@ def _OptimizeWithR8(options,
  
      cmd = build_utils.JavaCmd(options.warnings_as_errors) + [
          '-Dcom.android.tools.r8.allowTestProguardOptions=1',
@@ -9,7 +9,7 @@ diff --git tb/build/android/gyp/proguard.py tb_diff/build/android/gyp/proguard.p
      ]
      if options.disable_outlining:
        cmd += ['-Dcom.android.tools.r8.disableOutlining=1']
-@@ -426,6 +425,14 @@ def _CheckForMissingSymbols(r8_path, dex_files, classpath, warnings_as_errors):
+@@ -430,6 +429,14 @@ def _CheckForMissingSymbols(r8_path,
          'Ljavax/management/ObjectInstance',
          'Ljavax/management/ObjectName',
          'Ljavax/management/StandardMBean',

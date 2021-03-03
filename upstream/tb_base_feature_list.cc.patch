@@ -1,7 +1,7 @@
 diff --git tb/base/feature_list.cc tb_diff/base/feature_list.cc
 --- tb/base/feature_list.cc
 +++ tb_diff/base/feature_list.cc
-@@ -364,6 +364,20 @@ bool FeatureList::IsEnabled(const Feature& feature) {
+@@ -373,6 +373,20 @@ bool FeatureList::IsEnabled(const Feature& feature) {
    return g_feature_list_instance->IsFeatureEnabled(feature);
  }
  
@@ -21,4 +21,4 @@ diff --git tb/base/feature_list.cc tb_diff/base/feature_list.cc
 +
  // static
  FieldTrial* FeatureList::GetFieldTrial(const Feature& feature) {
-   if (!g_feature_list_instance) {
+ #if DCHECK_IS_ON()

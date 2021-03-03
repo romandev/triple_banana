@@ -10,7 +10,7 @@ diff --git tb/chrome/android/chrome_public_apk_tmpl.gni tb_diff/chrome/android/c
  
      if (_is_trichrome) {
        min_sdk_version = 29
-@@ -277,7 +277,8 @@ template("chrome_public_common_apk_or_module_tmpl") {
+@@ -243,7 +243,8 @@ template("chrome_public_common_apk_or_module_tmpl") {
        ]
  
        # Adds "crazy." prefix to avoid libraries being extracted when installed.
@@ -20,7 +20,7 @@ diff --git tb/chrome/android/chrome_public_apk_tmpl.gni tb_diff/chrome/android/c
          if (!defined(library_renames)) {
            library_renames = []
          }
-@@ -610,7 +611,9 @@ template("monochrome_public_common_apk_or_module_tmpl") {
+@@ -520,7 +521,9 @@ template("monochrome_public_common_apk_or_module_tmpl") {
                  [ "//chrome/android:monochrome_secondary_abi_lib" ]
              _include_secondary_support = true
              if (invoker.include_64_bit_webview) {

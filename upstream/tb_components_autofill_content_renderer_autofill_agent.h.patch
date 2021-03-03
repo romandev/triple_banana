@@ -12,7 +12,7 @@ diff --git tb/components/autofill/content/renderer/autofill_agent.h tb_diff/comp
  namespace blink {
  class WebNode;
  class WebView;
-@@ -350,6 +354,11 @@ class AutofillAgent : public content::RenderFrameObserver,
+@@ -355,6 +359,11 @@ class AutofillAgent : public content::RenderFrameObserver,
    blink::WebFormControlElement last_clicked_form_control_element_for_testing_;
    bool last_clicked_form_control_element_was_focused_for_testing_ = false;
  

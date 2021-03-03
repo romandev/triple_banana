@@ -1,7 +1,7 @@
 diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_diff/third_party/blink/renderer/core/frame/web_local_frame_impl.cc
 --- tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc
 +++ tb_diff/third_party/blink/renderer/core/frame/web_local_frame_impl.cc
-@@ -258,6 +258,10 @@
+@@ -261,6 +261,10 @@
  #include "third_party/blink/renderer/platform/weborigin/security_policy.h"
  #include "third_party/blink/renderer/platform/wtf/hash_map.h"
  
@@ -12,9 +12,9 @@ diff --git tb/third_party/blink/renderer/core/frame/web_local_frame_impl.cc tb_d
  namespace blink {
  
  static int g_frame_count = 0;
-@@ -2383,6 +2387,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
-   if (!GetFrame() || !GetFrame()->DomWindow())
-     return;
+@@ -2448,6 +2452,17 @@ void WebLocalFrameImpl::SendOrientationChangeEvent() {
+   SCOPED_CRASH_KEY_NUMBER("debug-1154141", "web_frame_dom_window",
+                           reinterpret_cast<uintptr_t>(GetFrame()->DomWindow()));
  
 +#if defined(ENABLE_TRIPLE_BANANA)
 +  if (RuntimeEnabledFeatures::MediaRemoteEnabled() &&
